@@ -1,0 +1,62 @@
+<?python
+import math
+from operator import itemgetter
+contries = [
+            {'name':'United States', 'title':'Fedora', 'url':'http://fedoraproject.org'}
+
+]
+region="northam"
+contries.sort(key=itemgetter('name'))
+index=math.ceil(len(contries)/float(2))
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Fedora Community | North America (NA)')}</title>
+  </head>
+	<body id="fedoracommunity-org">
+
+				<div class="container_16 continent_details">
+					<!-- North America -->
+					<div class="grid_2" id="large_graphic">
+						<img src="static/images/header_northam.png" />
+					</div>
+					<div class="grid_14 continent_header northam">
+						<h2 class="continent-section-name">${_('North America')}</h2>
+						<h3>${_('Region-Wide Resources')}</h3>
+						<div class="prefix_1">
+						${Markup(_('The North America region, including the USA and the Canada is served by the &lt;a href="%s"&gt;Fedora Ambassadors NA (FAmna) group&lt;/a&gt;.' % 'http://fedoraproject.org/wiki/Ambassadors/NA'))}
+			
+						<table>
+							<tr>
+								<th>${_('Fedora Wiki Page')}</th>
+								<td><a href="http://fedoraproject.org/wiki/Ambassadors/NA">http://fedoraproject.org/wiki/Ambassadors/NA</a></td>
+							</tr><tr>
+								<th>${_('Mailing List')}</th>
+								<td><a href="mailto:ambassadors@lists.fedoraproject.org">ambassadors@lists.fedoraproject.org</a></td>
+							</tr><tr>
+								<th>${_('Events')}</th>
+								<td>${Markup(_('&lt;a href="%s"&gt;North American events listing&lt;/a&gt; on the Fedora Project wiki.' % 'http://fedoraproject.org/wiki/Events#North_America_.28NA.29'))}</td>
+							</tr>
+						</table>
+						</div>
+					</div>
+					<div class="clear">&nbsp;</div>
+
+					<!-- End Header -->
+
+					<div class="prefix_2 grid_15 northam">
+						<h3>${_('Community Sites in this Region')}</h3>
+					</div>
+
+          <!--  Now we includes the region specific websites-->
+          <xi:include href="../templates/regions-site.html" />
+
+
+          <xi:include href="../templates/content-fpolinkback.html" />
+				</div>
+	</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../../templates/master.html" />
+  <head>
+    <title>${_('Download Fedora Design Suite')}</title>
+  </head>
+
+
+<body id="spins">
+<xi:include href="../../../templates/regulations.html" />
+<xi:include href="../../../templates/design-suite/header.html" />
+
+<header id="head" class="downloadheader">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-md-offset-5 text-left">
+          <h2>${Markup(_('Download Fedora %(rel)s Design Suite')) % {'rel':global_variables.release['curr_id']}}</h2>
+            <p class="gr"><a class="btn btn-success design-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/x86_64/Fedora-Live-Design_suite-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p>
+            <h5>${Markup(_('%s GB ISO Image for 64-bit PC')) % global_variables.iso_size['x86_64_Live_Design']}</h5>
+        </div>
+      </div>
+    </div>
+</header>
+<div class="container download-container top-space">
+  <div class="row">
+    <div class="col-md-8 text-left bottom-space">
+        <h3>${_('What is a Live image?')}</h3>
+        <p>${_('Fedora Design Suite is shipped as a live operating system. It\'s everything you need to try out Fedora\'s Design Suite - you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop if you like.')}</p>
+	    <p>${_('To use this image, you need a drive that can create or "burn" DVDs, or a USB flash drive at least as big as the image.')}</p>
+    </div>
+    <div class="col-md-3 text-left col-md-offset-1">
+          <h3>${_('Other Downloads')}</h3>
+          <h4>${_('Direct Downloads')}</h4>
+          <ul>
+              <li>
+                  <p><a class="design-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/i386/Fedora-Live-Design_suite-i686-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('32-bit %sGB Live image')) % global_variables.iso_size['i686_Live_Design']}</a></p>
+              </li>
+          </ul>
+          <h4>${_('Older Releases')}</h4>
+          <ul>
+              <li>
+                  <p><a href="http://archive.fedoraproject.org/">archive.fedoraproject.org</a></p>
+              </li>
+          </ul>
+          <div class="bottom-margin">
+          <py:choose>
+            <py:when test="global_variables.release['curr_state'] == 'Alpha'">
+              <h3>${Markup(_('Try Fedora %(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+              <a href="${path}/${lang}/prerelease"><img alt="Fedora ${global_variables.release['next_id']} Alpha is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}alpha.png" /></a>
+            </py:when>
+            <py:when test="global_variables.release['curr_state'] == 'Beta'">
+                <h3>${Markup(_('Try Fedora %(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                <a href="${path}/${lang}/prerelease"><img alt="Fedora ${global_variables.release['next_id']} Beta is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}beta.png" /></a>
+            </py:when>
+          </py:choose>
+          </div>
+          <noscript>
+          <div class="bottom-margin">
+            <h3>${_('Verify')}</h3>
+              <ul>
+              <li>
+                  <p><a href="/verify">${_('Verify your Image')}</a></p>
+              </li>
+              </ul>
+          </div>
+          </noscript>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron using-dl">
+<div class="container using">
+    <!-- Using Spins for mobile -->
+  	<div class="row bottom-space visible-xs">
+  	  <div class="col-xs-12 text-center">
+  	  	<h2>${_('Downloading')}</h2>
+	      <p class="text-justify">${_('Spin downloads are offered via direct download, but you can also get them via BitTorrent. In this case you will need to install a Bittorrent client in order to download a spin. If you cannot use BitTorrent, some spins offer alternative download methods.')}</p>
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-howto-download" role="button">${_('Learn more')}</a></p>
+  	  </div>
+  	  <div class="col-xs-12 text-center">
+  	  	<h2>${_('Installing')}</h2>
+	      <p class="text-justify">${_('To install a spin, you run the spin on your computer and click the "Install to Hard Drive" link on the desktop. You\'ll be guided through the install process via a series of prompts.')}</p>
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Burning_ISO_images_to_disc/" role="button">${_('Learn more')}</a></p>
+  	  </div>
+  	  <div class="col-xs-12 text-center">
+  	  	<h2>${_('Using')}</h2>
+	      <p class="text-justify">${_('After installing either the software bundle or the complete Fedora version you can run these tools by launching the applications that correspond with them.')}</p>
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/21/html/Installation_Guide/sect-installation-graphical-mode.html" role="button">${_('Learn more')}</a></p>
+  	  </div>
+  	</div>
+
+  <!-- Using Spins for desktop and tablet -->
+  	<div class="row hidden-xs">
+  	  <div class="col-sm-4 text-center">
+  	  	<h2>${_('Downloading')}</h2>
+	      <p class="text-justify">${_('Spin downloads are offered via direct download, but you can also get them via BitTorrent. In this case you will need to install a BitTorrent client in order to download a spin. If you cannot use BitTorrent, some spins offer alternative download methods.')}</p>
+  	  </div>
+  	  <div class="col-sm-4 text-center">
+  	  	<h2>${_('Installing')}</h2>
+	      <p class="text-justify">${_('To install a spin, you run the spin on your computer and click the "Install to Hard Drive" link on the desktop. You\'ll be guided through the install process via a series of prompts.')}</p>
+  	  </div>
+  	  <div class="col-sm-4 text-center">
+  	  	<h2>${_('Using')}</h2>
+	      <p class="text-justify">${_('After installing either the software bundle or the complete Fedora version you can run these tools by launching the applications that correspond with them.')}</p>
+  	  </div>
+  	</div>
+  	<div class="row bottom-space hidden-xs">
+  	  <div class="col-sm-4 text-center">
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-howto-download" role="button">${_('Learn more')}</a></p>
+  	  </div>
+  	  <div class="col-sm-4 text-center">
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/21/html/Installation_Guide/sect-installation-graphical-mode.html" role="button">${_('Learn more')}</a></p>
+  	  </div>
+  	  <div class="col-sm-4 text-center">
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Burning_ISO_images_to_disc/" role="button">${_('Learn more')}</a></p>
+  	  </div>
+  	</div>
+  </div>
+</div>
+
+<xi:include href="../../../templates/export-regulations.html" />
+
+<div class="jumbotron greybox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-design&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-design'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;design-team@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/design-team'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Specific documentation and tutorials are available at the &lt;a href="%s"&gt;Design Suite tutorials page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Design_Suite/Tutorials'))}</p>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

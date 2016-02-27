@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Fedora Labs')}</title>
+  </head>
+
+<body class="home">
+<xi:include href="../templates/head.html" />
+
+  <!-- Labs Screenshots -->
+  <header id="head" class="main-head">
+  <!-- Desktop -->
+  	<div class="container hidden-xs">
+      <div id="lab">
+  	   <div class="row top-space high">
+  	  	<div class="col-md-5 col-md-offset-1 text-center fadescreen design">
+  	  	  <div class="spin-banner"><a href="/${lang}/design-suite"><img class="screenshot-banner" src="${path}/static/images/design-suite-banner.png" alt="Design suite banner" /></a></div>
+  	  	  <a href="/${lang}/design-suite"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-design.jpg" alt="Design-suite Screenshot" /></a>
+  	  	  <div class="screenshot-text bottom-border"><a href="/${lang}/design-suite"><h3>${_('Open Creativity.')}</h3></a>
+  	  	  <span class="grey">${_('Visual design, multimedia production, and publishing suite of free and open source creative tools.')}</span></div>
+  	  	</div>
+  	  	<div class="col-md-5 text-center fadescreen">
+          <div class="spin-banner"><a href="/${lang}/games"><img class="screenshot-banner" src="${path}/static/images/games-banner.png" alt="Games banner" /></a></div>
+          <a href="/${lang}/games"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-games.jpg" alt="Games Screenshot" /></a>
+          <div class="screenshot-text bottom-border"><a href="/${lang}/games"><h3>${_('Play with Fedora Today!')}</h3></a>
+          <span class="grey">${_('A collection and perfect show-case of the best games available in Fedora.')}</span></div>
+        </div>
+  	   </div>
+
+       <div class="row top-margin high">
+        <div class="col-md-5 col-md-offset-1 text-center fadescreen">
+          <div class="spin-banner"><a href="/${lang}/robotics"><img class="screenshot-banner" src="${path}/static/images/robotics-suite-banner.png" alt="Robotics banner" /></a></div>
+          <a href="/${lang}/robotics"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-robotics.jpg" alt="Robotics Screenshot" /></a>
+          <div class="screenshot-text bottom-border"><a href="/${lang}/robotics"><h3>${_('Dive into Robotics.')}</h3></a>
+          <span class="grey">${_('A wide variety of free and open robotics software packages for beginners and experts in robotics.')}</span></div>
+        </div>
+        <div class="col-md-5 text-center fadescreen">
+          <div class="spin-banner"><a href="/${lang}/scientific"><img class="screenshot-banner" src="${path}/static/images/scientific-banner.png" alt="Scientific banner" /></a></div>
+          <a href="/${lang}/scientific"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-scientific.jpg" alt="Scientific Screenshot" /></a>
+  	  	  <div class="screenshot-text bottom-border"><a href="/${lang}/scientific"><h3>${_('Open source scientific computing.')}</h3></a>
+          <span class="grey">${_('A bundle of open source scientific and numerical tools used in research.')}</span></div>
+        </div>
+       </div>
+
+       <div class="row bottom-space top-margin high">
+        <div class="col-xs-6 col-xs-offset-3">
+         <div class="col-xs-10 col-xs-offset-1 text-center fadescreen">
+          <div class="spin-banner"><a href="/${lang}/security"><img class="screenshot-banner" src="${path}/static/images/security-lab-banner.png" alt="Security Lab banner" /></a></div>
+          <a href="/${lang}/security"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-security.jpg" alt="Security Lab Screenshot" /></a>
+          <div class="screenshot-text bottom-border"><a href="/${lang}/security"><h3>${_('Thorough, safe and secure.')}</h3></a>
+          <span class="grey">${_('A safe test environment to work on security auditing, forensics, system rescue and teaching security testing methodologies.')}</span></div>
+         </div>
+        </div>
+       </div>
+      </div>
+	  </div>
+
+    <!-- Mobile and Tablets -->
+    <div class="container visible-xs">
+      <div class="row top-space">
+        <div class="col-xs-12 text-center fadescreen">
+          <div class="spin-banner"><a href="/${lang}/design-suite"><img class="screenshot-banner" src="${path}/static/images/design-suite-banner.png" alt="Design suite banner" /></a></div>
+  	  	  <a href="/${lang}/design-suite"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-design.jpg" alt="Design-suite Screenshot" /></a>
+  	  	  <div class="screenshot-text bottom-border"><a href="/${lang}/design-suite"><h3>${_('Open Creativity.')}</h3></a>
+  	  	  <span class="grey">${_('Visual design, multimedia production, and publishing suite of free and open source creative tools.')}</span></div>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center fadescreen">
+          <div class="spin-banner"><a href="/${lang}/games"><img class="screenshot-banner" src="${path}/static/images/games-banner.png" alt="Games banner" /></a></div>
+          <a href="/${lang}/games"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-games.jpg" alt="Games Screenshot" /></a>
+  	  	  <div class="screenshot-text bottom-border"><a href="/${lang}/games"><h3>${_('Play with Fedora Today!')}</h3></a>
+          <span class="grey">${_('A collection and perfect show-case of the best games available in Fedora.')}</span></div>
+        </div>
+      </div>
+<!--      <div class="row top-margin">
+        <div class="col-xs-12 text-center fadescreen">
+          <div class="spin-banner"><a href="/${lang}/jam"><img class="screenshot-banner" src="${path}/static/images/jam-banner.png" alt="Jam banner" /></a></div>
+          <a href="/${lang}/jam"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-jam.jpg" alt="Jam Screenshot" /></a>
+  	  	  <div class="screenshot-text bottom-border"><a href="/${lang}/jam"><h3>${_('Unleash your inner musician.')}</h3></a>
+          <span class="grey">${_('For audio enthusiasts and musicians who want to create, edit and produce audio and music on Linux.')}</span></div>
+        </div>
+      </div> -->
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center fadescreen">
+          <div class="spin-banner"><a href="/${lang}/robotics"><img class="screenshot-banner" src="${path}/static/images/robotics-suite-banner.png" alt="Robotics banner" /></a></div>
+          <a href="/${lang}/robotics"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-robotics.jpg" alt="Robotics Screenshot" /></a>
+  	  	  <div class="screenshot-text bottom-border"><a href="/${lang}/robotics"><h3>${_('Dive into Robotics.')}</h3></a>
+          <span class="grey">${_('A wide variety of free and open robotics software packages for beginners and experts in robotics.')}</span></div>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center fadescreen">
+          <div class="spin-banner"><a href="/${lang}/scientific"><img class="screenshot-banner" src="${path}/static/images/scientific-banner.png" alt="Scientific banner" /></a></div>
+          <a href="/${lang}/scientific"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-scientific.jpg" alt="Scientific Screenshot" /></a>
+  	  	  <div class="screenshot-text bottom-border"><a href="/${lang}/scientific"><h3>${_('Open source scientific computing.')}</h3></a>
+          <span class="grey">${_('A bundle of open source scientific and numerical tools used in research.')}</span></div>
+        </div>
+      </div>
+      <div class="row bottom-space top-margin">
+        <div class="col-xs-12 text-center fadescreen">
+          <div class="spin-banner"><a href="/${lang}/security"><img class="screenshot-banner" src="${path}/static/images/security-lab-banner.png" alt="Security Lab banner" /></a></div>
+          <a href="/${lang}/security"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-security.jpg" alt="Security Lab Screenshot" /></a>
+          <div class="screenshot-text bottom-border"><a href="/${lang}/security"><h3>${_('Thorough, safe and secure.')}</h3></a>
+          <span class="grey">${_('A safe test environment to work on security auditing, forensics, system rescue and teaching security testing methodologies.')}</span></div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Feature: Labs -->
+  <div class="jumbotron product-feature bluebox">
+    <div class="container">
+      <div class="row">
+	    <div class="col-xs-12 caption">
+	      <h2 class="text-center">${_('What is Fedora Labs?')}</h2>
+	      <p class="thin text-justify">${_('Fedora Labs is a selection of curated bundles of purpose-driven software and content as curated and maintained by members of the Fedora Community. These may be installed as standalone full versions of Fedora or as add-ons to existing Fedora installations.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container using">
+
+    <!-- Using Labs for mobile -->
+  	<div class="row bottom-space visible-xs">
+  	  <div class="col-xs-12 text-center">
+  	  	<h2>${_('Downloading')}</h2>
+	      <p class="text-justify">${_('You can download these tools as complete Fedora image, or you can install them using a software manager on an existing Fedora installation.')}</p>
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-howto-download" role="button">${_('Learn more')}</a></p>
+  	  </div>
+  	  <div class="col-xs-12 text-center">
+  	  	<h2>${_('Installing')}</h2>
+	      <p class="text-justify">${_('To install a spin, you run the spin on your computer and click the "Install to Hard Drive" link on the desktop. You\'ll be guided through the install process via a series of prompts.')}</p>
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/21/html/Installation_Guide/sect-installation-graphical-mode.html" role="button">${_('Learn more')}</a></p>
+  	  </div>
+  	  <div class="col-xs-12 text-center">
+  	  	<h2>${_('Using')}</h2>
+	      <p class="text-justify">${_('After installing either the software bundle or the complete Fedora version you can run these tools by launching the applications that correspond with them.')}</p>
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Burning_ISO_images_to_disc/" role="button">${_('Learn more')}</a></p>
+  	  </div>
+  	</div>
+
+  <!-- Using Labs for desktop and tablet -->
+  	<div class="row hidden-xs">
+  	  <div class="col-sm-4 text-center">
+  	  	<h2>${_('Downloading')}</h2>
+	      <p class="text-justify">${_('You can download these tools as complete Fedora image, or you can install them using a software manager on an existing Fedora installation.')}</p>
+  	  </div>
+  	  <div class="col-sm-4 text-center">
+  	  	<h2>${_('Installing')}</h2>
+	      <p class="text-justify">${_('To install a spin, you run the spin on your computer and click the "Install to Hard Drive" link on the desktop. You\'ll be guided through the install process via a series of prompts.')}</p>
+  	  </div>
+  	  <div class="col-sm-4 text-center">
+  	  	<h2>${_('Using')}</h2>
+	      <p class="text-justify">${_('After installing either the software bundle or the complete Fedora version you can run these tools by launching the applications that correspond with them.')}</p>
+  	  </div>
+  	</div>
+  	<div class="row bottom-space hidden-xs">
+  	  <div class="col-sm-4 text-center">
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-howto-download" role="button">${_('Learn more')}</a></p>
+  	  </div>
+      <div class="col-sm-4 text-center">
+        <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/21/html/Installation_Guide/sect-installation-graphical-mode.html" role="button">${_('Learn more')}</a></p>
+      </div>
+  	  <div class="col-sm-4 text-center">
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Burning_ISO_images_to_disc/" role="button">${_('Learn more')}</a></p>
+  	  </div>
+  	</div>
+
+  </div>
+
+<!-- News 
+      <py:choose>
+        <py:when test="global_variables.release['curr_state'] == 'Alpha'">
+          <div class="newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Fedora %(rel)s %(state)s released! &lt;a href="%(link)s"&gt;Try it now >&lt;/a&gt;')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state'], 'link':'prerelease.html'}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:when>
+        <py:when test="global_variables.release['curr_state'] == 'Beta'">
+          <div class="jumbotron newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Fedora %(rel)s %(state)s released! &lt;a href="%(link)s"&gt;Try it now >&lt;/a&gt;')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state'], 'link':'prerelease.html'}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:when>
+        <py:otherwise>
+          <div class="jumbotron newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Fedora %(rel)s released! Check it out in the Download section.')) % {'rel':global_variables.release['curr_id']}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:otherwise>
+      </py:choose>
+-->
+</body>
+</html>

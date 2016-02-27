@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Design Suite')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/design-suite/header.html" />
+
+  <header id="head">
+    <div class="col-xs-12 text-center widewrapper copr-design">
+    </div>
+    <div class="container product-feature">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-justify top-space bottom-space">
+          <p>${_('Looking for a ready-to-go desktop environment brimming with free and open source multimedia production and publishing tools? Try the Design Suite, a Fedora Spin created by designers, for designers.')}</p>
+          <p>${_('The Design Suite includes the favorite tools of the Fedora Design Team. These are the same programs we use to create all the artwork that you see within the Fedora Project, from desktop backgrounds to CD sleeves, web page designs, application interfaces, flyers, posters and more. From document publication to vector and bitmap editing or 3D modeling to photo management, the Design Suite has an application for you — and you can install thousands more from the Fedora universe of packages.')}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature main-head">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/design-suite/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Applications -->
+  <div class="jumbotron whitebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>${_('Featured Applications')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/design/gimp.png" alt="GIMP" />
+          	<h4>${_('GIMP')}</h4>
+          	<p>${_('A powerful image composition and graphic editing app, similar to Adobe® Photoshop™.')}</p>
+          	<a href="http://www.gimp.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/design/inkscape.png" alt="Inkscape" />
+          	<h4>${_('Inkscape')}</h4>
+          	<p>${_('An easy-to-use vector graphics editor, similar to Adobe® Illustrator™.')}</p>
+          	<a href="https://inkscape.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/design/blender.png" alt="Blender" />
+          	<h4>${_('Blender')}</h4>
+          	<p>${_('An all-in-one 3D graphics suite, with tools for modeling, animation, rendering and post-production.')}</p>
+          	<a href="http://www.blender.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/design/darktable.png" alt="Darktable" />
+          	<h4>${_('Darktable')}</h4>
+          	<p>${_('A virtual light-table and darkroom for photographers; includes tools to develop and enhance raw images.')}</p>
+          	<a href="http://www.darktable.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/design/krita.png" alt="Krita" />
+          	<h4>${_('Krita')}</h4>
+          	<p>${_('A creative sketching and digital painting app, modeled on real-life painting materials and workflows.')}</p>
+          	<a href="https://krita.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/design/scribus.png" alt="Scribus" />
+          	<h4>${_('Scribus')}</h4>
+          	<p>${_('A desktop publishing and page layout application with professional publishing features.')}</p>
+          	<a href="http://www.scribus.net/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/design/sparkleshare.png" alt="SparkleShare" />
+          	<h4>${_('SparkleShare')}</h4>
+          	<p>${_('Easy file sharing based on git. Share, backup, and collaborate on design assets.')}</p>
+          	<a href="http://sparkleshare.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/design/pitivi.png" alt="Pitivi" />
+          	<h4>${_('Pitivi')}</h4>
+          	<p>${_('A powerful multi-track non-linear video editor that includes editing, transcoding, effects and transitions.')}</p>
+          	<a href="http://www.pitivi.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/design/colorman.png" alt="GNOME Color Manager" />
+          	<h4>${_('GNOME Color Manager')}</h4>
+          	<p>${_('Manage, install, and generate color profiles for your desktop. Keep your screen calibrated!')}</p>
+          	<a href="http://www.freedesktop.org/software/colord/intro.html">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Download -->
+    <div class="container using product-feature">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/design-suite/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="jumbotron greybox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-design&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-design'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;design-team@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/design-team'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Specific documentation and tutorials are available at the &lt;a href="%s"&gt;Design Suite tutorials page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Design_Suite/Tutorials'))}</p>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>

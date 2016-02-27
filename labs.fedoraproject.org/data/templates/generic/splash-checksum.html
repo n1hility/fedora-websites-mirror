@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  py:strip="">
+
+	<h3>${Markup(_('Verify your Download!'))}</h3>
+    	<p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="../../%s/verify"&gt;these instructions&lt;/a&gt;.') % (lang))}</p>
+        <div class="row bottom-margin">
+            <div class="col-sm-4 col-xs-12">
+              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Spins-x86_64-${global_variables.release['curr_id']}-CHECKSUM">${_('Validate 64bit!')}</a>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Spins-i386-${global_variables.release['curr_id']}-CHECKSUM">${_('Validate 32bit!')}</a>
+            </div>
+          </div>
+
+</html>

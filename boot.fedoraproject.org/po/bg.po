@@ -1,0 +1,293 @@
+# Translations template for PROJECT.
+# Copyright (C) 2013 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# 
+# Translators:
+# Valentin Laskov <laskov@festa.bg>, 2011-2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Fedora Websites\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2013-08-10 10:24+0200\n"
+"PO-Revision-Date: 2015-02-03 15:16+0000\n"
+"Last-Translator: Valentin Laskov <laskov@festa.bg>\n"
+"Language-Team: Bulgarian (http://www.transifex.com/projects/p/fedora-web/language/bg/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+"Language: bg\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/content/download.html:7
+msgid "Download - boot.fedoraproject.org"
+msgstr "Сваляне - boot.fedoraproject.org"
+
+#: data/content/download.html:12
+msgid "Download ISO: "
+msgstr "Сваляне на ISO: "
+
+#: data/content/download.html:12
+msgid "DVD/CD"
+msgstr "DVD/CD"
+
+#: data/content/download.html:13
+msgid "Download USB: "
+msgstr "Сваляне на USB: "
+
+#: data/content/download.html:13
+msgid "USB"
+msgstr "USB"
+
+#: data/content/download.html:14
+msgid "Download Floppy: "
+msgstr "Сваляне на дискета: "
+
+#: data/content/download.html:14
+msgid "Floppy"
+msgstr "Дискета"
+
+#: data/content/download.html:15
+msgid "Download lkrn: "
+msgstr "Сваляне на lkrn: "
+
+#: data/content/download.html:15
+msgid "lkrn"
+msgstr "lkrn"
+
+#: data/content/faq.html:7
+msgid "FAQs - boot.fedoraproject.org"
+msgstr "ЧЗВ - boot.fedoraproject.org"
+
+#: data/content/faq.html:12
+msgid "Frequently-Asked Questions"
+msgstr "Често Задавани Въпроси"
+
+#: data/content/faq.html:13
+msgid "How do I use it?"
+msgstr "Как да го използвам?"
+
+#: data/content/faq.html:14
+msgid ""
+"First download one of the available BFO specific images. You have a choice "
+"of ISO (DVD/CD), USB, Floppy and lkrn images. Then write that image to an "
+"appropriate medium.  Next boot from that medium.  After that you're using "
+"BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora"
+" installer or rescue mode."
+msgstr "Първо свалете един от наличните специфични BFO образи. Можете да изберете образ измежду ISO (DVD/CD), USB, Дискета или lkrn. След това го запишете на съответната медия.  Стартирайте компютъра и заредете от тази медия.  Вече използвате BFO!  Като използвате клавиатурата изберете необходимото Ви меню за диагностика, стартиране на инсталатора на Fedora или за влизане в спасителен режим."
+
+#: data/content/faq.html:15
+msgid "Can I use it with grub?"
+msgstr "Мога ли да го използвам с grub?"
+
+#: data/content/faq.html:16
+msgid "Yes!  Just run the following commands as root"
+msgstr "Да! Просто изпълнете следната команда като root"
+
+#: data/content/faq.html:22
+msgid "How does it work?"
+msgstr "Как работи това?"
+
+#: data/content/faq.html:23
+msgid ""
+"BFO was started by boot.kernel.org (BKO) and combines a series of recent "
+"technologies to produce a new boot stack.  The glue that holds everything "
+"together is ipxe.  Users familiar with pxe will find ipxe very familiar.  "
+"Latest versions support several protocols beyond just tftp.  We are using "
+"http to transfer files around.  The basic steps are as follows:"
+msgstr "BFO е създаден на основата на boot.kernel.org (BKO) и комбинира различни най-нови технологии, за да предложи нов зареждащ комплект.  Елементът, който обединява всичко е ipxe.  Ако сте използвали pxe, ipxe ще Ви се стори познат.  Последните версии поддържат няколко протокола, различни от tftp.  Ние използваме http за пренос на файловете.  Основните стъпки са следните:"
+
+#: data/content/faq.html:25
+msgid ""
+"Download the boot.fedoraproject.org media fitting your preferred boot "
+"method."
+msgstr "Свалете boot.fedoraproject.org медия, съответстваща на предпочитания от Вас начин на първоначално зареждане."
+
+#: data/content/faq.html:27
+msgid "burn ISO images to a CD-R or DVD-R"
+msgstr "запишете ISO образа на CD-R или DVD-R"
+
+#: data/content/faq.html:28
+msgid "write USB image for a USB stick"
+msgstr "запишете USB образа в USB памет"
+
+#: data/content/faq.html:29
+msgid "write Floppy image to a 3.5 inch HD floppy"
+msgstr "запишете образа Дискета върху 3.5 инчова HD дискета"
+
+#: data/content/faq.html:30
+#, python-format
+msgid ""
+"lkrn image for PXE booting, grub booting and in conjunction with kexec "
+"(c.f.: <a href=\"%s\">pxkxc</a>)"
+msgstr "lkrn образа за PXE зареждане, зареждане с grub във връзка с kexec (виж: <a href=\"%s\">pxkxc</a>)"
+
+#: data/content/faq.html:33
+msgid "Boot from the medium you created."
+msgstr "Заредете от създадената от Вас медия."
+
+#: data/content/faq.html:34
+msgid "It will first configure network via DHCP."
+msgstr "Мрежата ще се конфигурира автоматично от DHCP."
+
+#: data/content/faq.html:35
+msgid ""
+"After network is configured, it will go out to our boot.fedoraproject.org "
+"website and download the menus and other prompts from us"
+msgstr "След като работата в мрежа заработи, ще бъдете насочени към нашия сайт boot.fedoraproject.org, от който ще се заредят менютата и другите опции"
+
+#: data/content/faq.html:36
+msgid ""
+"Those boot menus will then be displayed to the user for selection.  After a "
+"selection (like install Fedora 12) the regular boot process takes over just "
+"as it would had you booted from normal local media."
+msgstr "Тези менюта ще се изобразят на екрана за избор.  Ако изберете например да инсталирате Fedora 15, зареждащият процес протича точно по същия начин, както ако сте заредили от нормална медия."
+
+#: data/content/faq.html:38
+msgid "Why should I use BFO?"
+msgstr "Защо бих използвал BFO?"
+
+#: data/content/faq.html:39
+msgid ""
+"The BFO downloads are very small and once you have them, you'll rarely have "
+"to download more.  Even as more versions of Fedora come out, you just boot "
+"from your image and they will appear.  Users with fast internet connections "
+"will have the best experience with BFO.  They basically replace having to "
+"regularly download large ISO images and burn them to disk."
+msgstr "BFO образите са много малки, а и след като веднъж сте свалили такъв, надали ще Ви се наложи да го сваляте отново.  Даже и да са излезли няколко нови версии на Fedora, веднага след като заредите от Вашия образ, те ще се появят.  Потребителите, разполагащи с бърза връзка към Интернет, ще останат най-доволни от използването на BFO.  Те повече няма да имат нужда да свалят големи ISO образи и да ги записват на дискове."
+
+#: data/content/faq.html:40
+msgid "What is required?"
+msgstr "Какво е необходимо?"
+
+#: data/content/faq.html:41
+msgid ""
+"For all image types, you need a working DHCP in the network you use it from "
+"as well as HTTP internet access. To use the ISO, a CD/DVD burner. To use the"
+" USB image, a USB stick.  Floppy and lkrn images are also available."
+msgstr "Независимо от образа, Вие ще трябва да имате работещ DHCP в мрежата, която ползвате, както и HTTP достъп до Интернет. Ако ще използвате ISO, ще Ви трябва CD/DVD записвачка, а за USB образа - USB памет.  Налични са също и образи Дискета и lkrn."
+
+#: data/content/faq.html:42
+msgid "Does BFO replace the installer or anaconda?"
+msgstr "Заместител ли е BFO на инсталатора или на anaconda?"
+
+#: data/content/faq.html:43
+msgid ""
+"No.  BFO is also not part of Anaconda.  BFO is a way to load the installer "
+"via network.  Normally users download a large ISO image that contains all of"
+" the installer bits.  BFO is a smaller booting method that downloads the "
+"installer bits at runtime.  In theory with BFO one iso download can install "
+"all future versions of Fedora."
+msgstr "Не.  Също така, BFO не е част от Anaconda.  BFO е начин да заредите инсталатора през мрежата.  Обикновено потребителите свалят голям ISO образ, съдържащ всички части на инсталатора.  BFO е малък зареждащ модул, който сваля частите на инсталатора по време на инсталирането.  На теория, чрез еднократно сваляне на образ на BFO, ще можете да инсталирате всички бъдещи версии на Fedora."
+
+#: data/content/faq.html:44
+msgid "What about the Live CDs?"
+msgstr "Нещо относно живите CD образи?"
+
+#: data/content/faq.html:45
+msgid ""
+"At this time booting Live CDs is experimental and not available.  We hope to"
+" have them available soon."
+msgstr "Към момента зареждането на жив CD образ през мрежата е в експериментален стадий и не е достъпно.  Надяваме се скоро и това да е възможно."
+
+#: data/content/faq.html:46
+msgid "Why won't BFO boot?"
+msgstr "Защо BFO не иска да зареди?"
+
+#: data/content/faq.html:47
+msgid ""
+"BFO uses ipxe so it's not actually booting a Linux kernel at first.  As "
+"such, some drivers and devices may not be supported.  If this is the case "
+"for you please check upstream at http://etherboot.org/ for bug updates, etc."
+"  If you feel a bug or device is supported but not working in BFO, contact: "
+msgstr "BFO използва ipxe, така че той не зарежда Linux ядрото в началото.  Поради това, някои драйвери и устройства може да не се поддържат.  Ако Вашият случай е такъв, моля вижте на http://etherboot.org/ за отстранени грешки и други.  Ако устройството е поддържано, но не работи в BFO, свържете се с: "
+
+#: data/content/faq.html:48
+msgid "Where can I find the BFO sources and configuration?"
+msgstr "Къде мога да намеря изходния код и конфигурацията на BFO?"
+
+#: data/content/faq.html:50
+msgid "Where do I report issues?"
+msgstr "Къде да докладвам за проблем?"
+
+#: data/content/faq.html:55
+msgid ""
+"At this time booting Live CDs is experimental and not available. We hope to "
+"have them available soon."
+msgstr "Към момента зареждането на Live CD-та е експериментално и не е достъпно. Надяваме се да е налично скоро."
+
+#: data/content/index.html:7 data/content/index.html:10
+msgid "boot.fedoraproject.org"
+msgstr "boot.fedoraproject.org"
+
+#: data/content/index.html:11
+msgid ""
+"boot.fedoraproject.org (BFO) is a way to boot hosts in order to run install "
+"or other types of media via the network.  It works similarly to a pxeboot "
+"environment."
+msgstr "boot.fedoraproject.org (BFO) е начин да заредите система на компютъра с цел инсталиране през мрежата.  Процесът наподобява работата с PXE."
+
+#: data/content/index.html:12
+msgid "BFO welcome screen"
+msgstr "Начален екран на BFO"
+
+#: data/content/index.html:13
+msgid "BFO is based on the work of the BKO - "
+msgstr "BFO работи на базата на BKO - "
+
+#: data/content/index.html:13
+msgid "To download BFO please select BFO Download along the left side menu."
+msgstr "За да свалите BFO изберете BFO Сваляне от менюто в ляво."
+
+#: data/templates/foot.html:9
+msgid ""
+"&copy; 2013 Red Hat, Inc. and others.  Please send any comments or "
+"corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
+"team</a>."
+msgstr "&copy; 2013 Red Hat, Inc. и други.  Молим, каквито и да са коментари или корекции, изпращайте на <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
+
+#: data/templates/foot.html:12
+msgid ""
+"The Fedora Project is maintained and driven by the community and sponsored "
+"by Red Hat.  This is a community maintained site.  Red Hat is not "
+"responsible for content."
+msgstr "Проектът Fedora е управляван и поддържан от общността и е спонсориран от Red Hat.  Този сайт се поддържа от общността.  Red Hat не носи отговорност за съдържанието му."
+
+#: data/templates/foot.html:15
+msgid "Sponsors"
+msgstr "Спонсори"
+
+#: data/templates/foot.html:16
+msgid "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Legal</a>"
+msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Правни</a>"
+
+#: data/templates/foot.html:17
+msgid ""
+"<a "
+"href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Trademark "
+"Guidelines</a>"
+msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Указания за запазените марки</a>"
+
+#: data/templates/head.html:7
+msgid "Fedora"
+msgstr "Fedora"
+
+#: data/templates/sidebar.html:10
+msgid "Navigation"
+msgstr "Меню"
+
+#: data/templates/sidebar.html:12
+msgid "Home"
+msgstr "Начало"
+
+#: data/templates/sidebar.html:13
+msgid "Download"
+msgstr "Сваляне"
+
+#: data/templates/sidebar.html:14
+msgid "FAQ"
+msgstr "ЧЗВ"
+
+#: data/templates/sidebar.html:16
+msgid "Website Language"
+msgstr "Език на сайта"

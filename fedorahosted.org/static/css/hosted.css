@@ -1,0 +1,82 @@
+#head h1 a
+{
+  background: url(https://fedorahosted.org/web/static/images/fedora-hosted-banner.png) 20px 50% no-repeat;
+  height: 88px;
+  width: 201px;
+}
+
+#content img
+{
+  margin: 0;
+  height: 22px;
+  vertical-align: baseline;
+}
+
+#content table
+{
+  width: 90%;
+}
+
+td.desccol
+{
+  width: 80%;
+}
+
+td.vcscol
+{
+  text-align: center;
+}
+
+#content table th, #content table td
+{
+  border: 0;
+  padding: 0.1ex;
+  height: 22px;
+}
+
+#content table tr.row:hover
+{
+  background-color: #abd3ff;
+}
+
+pre
+{
+  padding: 1ex 1ex;
+  background-color: #C0DBDD;
+}
+#content span.question
+{
+  font-weight: bold;
+}
+
+#grouplist
+{
+  background-color: #fbfbfb;
+  width: 90%;
+  text-align: center;
+  margin-top: 10px;
+  display: none;
+}
+
+span.group
+{
+  padding: 5px;
+  margin-left: 5px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  cursor: hand;
+}
+
+span.group:hover
+{
+  color: #337ACC;
+}
+
+#nodata
+{
+  background-color: #abd3ff;
+  text-align: center;
+  font-weight: bold;
+  display: none;
+}

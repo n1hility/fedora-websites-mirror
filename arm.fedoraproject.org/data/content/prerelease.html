@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Fedora ARM Prerelease Images')}</title>
+  </head>
+
+<body class="home">
+<xi:include href="../templates/head.html" />
+
+  <!-- ARM prerelease -->
+  <div class="jumbotron main-head">
+    <div class="container using">
+
+       <div class="high">
+        <div class="row top-margin">
+          <div class="col-xs-12 text-left bottom-margin">
+            <h2>${Markup(_('Download Fedora %(rel)s %(state)s for ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt;-based Computers')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h2>
+            </div>
+          </div>
+       <div class="row">
+            <div class="col-md-12 text-center">
+          <p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="%(team_url)s"&gt;ARM Team&lt;/a&gt;. Please direct questions to their &lt;a href="%(team_list)s"&gt;mailing list&lt;/a&gt; or %(team_irc)s on freenode.') % {'team_url':'https://fedoraproject.org/wiki/Architectures/ARM', 'team_list':'https://lists.fedoraproject.org/mailman/listinfo/arm', 'team_irc':'#fedora-arm'})}
+            ${Markup(_('All issues or bugs should be reported via the &lt;a href="%s"&gt;Red Hat Bugzilla&lt;/a&gt;. The Fedora Project makes no guarantees as to its suitability or usefulness.') % 'https://bugzilla.redhat.com/')}
+                <py:choose>
+                  <py:when test="global_variables.release['curr_state'] == 'Alpha'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'https://fedoraproject.org/wiki/Fedora_%s_Alpha_release_notes' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+                  </py:when>
+                  <py:when test="global_variables.release['curr_state'] == 'Beta'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'https://fedoraproject.org/wiki/F%s_Beta_release_announcement' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+                  </py:when>
+                </py:choose>
+            </p>
+          </div>
+          </div>
+       </div>
+
+       <div class="high">
+        <div class="row top-margin">
+         <div class="col-xs-12 white">
+            <div class="col-xs-3 col-sm-1 text-center">
+              <img class="img-responsive" src="/static/images/server.png" alt="Server" />
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <h3>${_('Fedora Server')}</h3>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['pre_ARM_Server']}</p>
+            </div>
+            <div class="col-sm-5 hidden-xs">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Server-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+            <div class="col-xs-9 visible-xs">
+            <h3>${_('Fedora Server')}</h3>
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Server-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+         </div>
+         <div class="col-xs-12 white bottom-margin">
+            <div class="col-xs-3 col-sm-1 text-center">
+              <img class="img-responsive" src="/static/images/minimal.png" alt="Minimal" />
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <h3>${_('Fedora Minimal')}</h3>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['pre_ARM_Minimal']}</p>
+            </div>
+            <div class="col-sm-5 hidden-xs">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+            <div class="col-xs-9 visible-xs">
+            <h3>${_('Fedora Minimal')}</h3>
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+         </div>
+         <div class="col-xs-12 white top-margin">
+            <div class="col-xs-3 col-sm-1 text-center">
+              <img class="img-responsive" src="/static/images/workstation.png" alt="Workstation" />
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <h3>${_('Fedora Workstation')}</h3>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['pre_ARM_Workstation']}</p>
+            </div>
+            <div class="col-sm-5 hidden-xs">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/armhfp/Images/Fedora-Workstation-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Workstation-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+            <div class="col-xs-9 visible-xs">
+            <h3>${_('Fedora Workstation')}</h3>
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/armhfp/Images/Fedora-Workstation-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Workstation-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+         </div>
+         <div class="col-xs-12 white">
+            <div class="col-xs-3 col-sm-1 text-center">
+              <img class="img-responsive" src="/static/images/kde.png" alt="KDE Plasma" />
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <h3>${_('KDE Plasma Desktop')}</h3>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['pre_ARM_KDE']}</p>
+            </div>
+            <div class="col-sm-5 hidden-xs">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Images/armhfp/Fedora-KDE-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+            <div class="col-xs-9 visible-xs">
+            <h3>${_('KDE Plasma Desktop')}</h3>
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Images/armhfp/Fedora-KDE-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+         </div>
+         <div class="col-xs-12 white">
+            <div class="col-xs-3 col-sm-1 text-center">
+              <img class="img-responsive" src="/static/images/xfce.png" alt="Xfce" />
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <h3>${_('Xfce Desktop')}</h3>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['pre_ARM_Xfce']}</p>
+            </div>
+            <div class="col-sm-5 hidden-xs">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Images/armhfp/Fedora-Xfce-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+            <div class="col-xs-9 visible-xs">
+            <h3>${_('Xfce Desktop')}</h3>
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Images/armhfp/Fedora-Xfce-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+         </div>
+         <div class="col-xs-12 white">
+            <div class="col-xs-3 col-sm-1 text-center">
+              <img class="img-responsive" src="/static/images/lxde.png" alt="LXDE" />
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <h3>${_('LXDE Desktop')}</h3>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['pre_ARM_LXDE']}</p>
+            </div>
+            <div class="col-sm-5 hidden-xs">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Images/armhfp/Fedora-LXDE-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+            <div class="col-xs-9 visible-xs">
+            <h3>${_('LXDE Desktop')}</h3>
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Images/armhfp/Fedora-LXDE-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+         </div>
+         <div class="col-xs-12 white">
+            <div class="col-xs-3 col-sm-1 text-center">
+              <img class="img-responsive" src="/static/images/mate.png" alt="MATE-Compiz" />
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <h3>${_('MATE-Compiz Desktop')}</h3>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['pre_ARM_Mate']}</p>
+            </div>
+            <div class="col-sm-5 hidden-xs">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Images/armhfp/Fedora-Mate-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+            <div class="col-xs-9 visible-xs">
+            <h3>${_('MATE-Compiz Desktop')}</h3>
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Images/armhfp/Fedora-Mate-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+         </div>
+<!--         <div class="col-xs-12 white">
+            <div class="col-xs-3 col-sm-1 text-center">
+              <img class="img-responsive" src="/static/images/cinnamon.png" alt="Cinnamon" />
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <h3>${_('Cinnamon Desktop')}</h3>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['pre_ARM_Cinnamon']}</p>
+            </div>
+            <div class="col-sm-5 hidden-xs">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Images/armhfp/Fedora-Cinnamon-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+            <div class="col-xs-9 visible-xs">
+            <h3>${_('Cinnamon Desktop')}</h3>
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Images/armhfp/Fedora-Cinnamon-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+         </div>
+-->
+         <div class="col-xs-12 white bottom-space">
+            <div class="col-xs-3 col-sm-1 text-center">
+              <img class="img-responsive" src="/static/images/soas.png" alt="SoaS" />
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <h3>${_('Sugar on a Stick')}</h3>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['pre_ARM_SoaS']}</p>
+            </div>
+            <div class="col-sm-5 hidden-xs">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Images/armhfp/Fedora-SoaS-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+            <div class="col-xs-9 visible-xs">
+            <h3>${_('Sugar on a Stick')}</h3>
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Images/armhfp/Fedora-SoaS-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Images-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+         </div>
+
+        </div>
+       </div>
+
+
+    </div>
+  </div>
+
+  <!-- Feature: ARM -->
+  <div class="jumbotron product-feature bluebox">
+    <div class="container">
+      <div class="row">
+	    <div class="col-xs-12 caption">
+	      <h2 class="text-center">${_('What is ARM Technology?')}</h2>
+	      <p class="thin text-justify">${_('ARM microprocessors are the most widely-produced processor family in the world; they have historically been used in cell phones and embedded applications, and are increasingly used in tablet devices and low-power-consumption servers.')}</p>
+	      <p class="thin text-justify">${_('The Fedora ARM project is an initiative to bring Fedora to this processor family. The images provided here are versions of Fedora tailored for running in on ARM-based systems.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="jumbotron whitesupport">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Fedora ARM documentation and installation guides are available at the &lt;a href="%s"&gt;Fedora ARM wiki page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Architectures/ARM'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;arm@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/arm'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-arm&lt;/a&gt; irc channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-arm'))}</p>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

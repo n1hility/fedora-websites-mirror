@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+	<head>
+		<title>${_('Fedora Project - Start Page')}</title>
+	</head>
+	<body class="home">
+        <xi:include href="../templates/head.html" />
+        <xi:include href="../templates/docs-header.html" />
+        <div class="clear"></div>
+        <div class="container grey">
+            <div class="row grey feed-space">
+                <div class="col-xs-12 top-margin">
+                <h4>${_('Latest news from Fedora Magazine:')}</h4>
+                </div>
+                <div class="col-xs-12 col-md-11">
+                <xi:include href="../templates/magfeed.html" />
+                </div>
+            </div>
+            <div class="clear"></div>
+         </div>
+         <xi:include href="../templates/footer-resources.html" />
+	</body>
+
+</html>

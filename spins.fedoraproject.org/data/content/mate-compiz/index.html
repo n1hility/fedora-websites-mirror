@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Fedora MATE-Compiz Desktop')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/mate-compiz/header.html" />
+
+  <header id="head">
+    <div class="col-xs-12 text-center widewrapper">
+      <img src="${path}/static/images/screenshots/screenshot-matecompiz.jpg" class="img-responsive" alt="MATE-Compiz Screenshot" />
+    </div>
+    <div class="container product-feature">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-justify top-space bottom-space">
+          <p>${_('The MATE Compiz spin bundles MATE Desktop with Compiz Fusion. MATE Desktop is a lightweight, powerful desktop designed with productivity and performance in mind. The default windows manager is Marco which is usable for all machines and VMs. Compiz Fusion is a beautiful 3D windowing manager with Emerald and GTK+ theming.')}</p>
+          <p>${_('If you want a powerful, lightweight Fedora desktop with 3D eyecandy you should definitely try the MATE-Compiz spin.')}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature main-head">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/mate-compiz/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Going Online -->
+  <div class="jumbotron darkbluebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Going Online')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/mate/blueman.png" alt="Blueman" />
+          <h4>${_('Blueman')}</h4>
+          <p>${_('Blueman is designed to provide a simple yet effective means for controlling BlueZ API. It is lightweight, easy to use, Python based, and GPL licensed.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/mate/firefox.png" alt="Firefox" />
+          <h4>${_('Firefox')}</h4>
+          <p>${_('Explore the World Wide Web with Firefox, the full featured web browser.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/mate/hexchat.png" alt="Hexchat" />
+          <h4>${_('Hexchat')}</h4>
+          <p>${_('Stay connected with your friends and colleagues using Hexchat, an easy to use IRC client.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/mate/transmission.png" alt="Transmission" />
+          <h4>${_('Transmission')}</h4>
+          <p>${_('Are you a downloader? Use Transmission to get new versions of Fedora MATE-Compiz Desktop!')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Utilities and Office -->
+  <div class="jumbotron jumbotron-full">
+    <div class="container-full">
+        <div class="col-md-6 col-xs-12 text-center greybg recover-jumbo">
+          <h2>${Markup(_('Utilities &amp; Configuration'))}</h2>
+	        <div class="col-md-6 col-xs-12 text-center top-margin">
+	          <img src="${path}/static/images/mate/terminal.png" alt="MATE Terminal" />
+          	  <h4>${_('MATE Terminal')}</h4>
+          	  <p>${_('Fedora MATE-Compiz ships a terminal, the gateway to the real power of any UNIX/Linux machine, called MATE Terminal.')}</p>
+	        </div>
+	        <div class="col-md-6 col-xs-12 text-center top-margin">
+	          <img src="${path}/static/images/mate/dconf-editor.png" alt="DConf Editor" />
+          	  <h4>${_('DConf Editor')}</h4>
+          	  <p>${_('No need to know cryptic commands and config files. Click the options you like to change and choose the settings that make you happy.')}</p>
+	        </div>
+        </div>
+        <div class="col-md-6 col-xs-12 text-center darkgreybg recover-jumbo">
+          <h2>${Markup(_('Office &amp; Productivity Suite'))}</h2>
+          	<div class="col-md-6 col-xs-12 text-center top-margin">
+          	  <img src="${path}/static/images/mate/libreoffice.png" alt="LibreOffice" />
+          	  <h4>${_('LibreOffice')}</h4>
+          	  <p>${_('LibreOffice is an integrated office suite. It utilizes free and open standards for its document formats and components.')}</p>
+        	</div>
+	        <div class="col-md-6 col-xs-12 text-center top-margin">
+	          <img src="${path}/static/images/mate/claws-mail.png" alt="Claws Mail" />
+          	  <h4>${_('Claws Mail')}</h4>
+          	  <p>${_('Claws Mail is an easy to configure and full featured email application for the MATE-Compiz Desktop.')}</p>
+	        </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Multimedia -->
+  <div class="jumbotron whitebox">
+    <div class="container">
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Multimedia')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/mate/exaile.png" alt="Exaile" />
+          <h4>${_('Exaile')}</h4>
+          <p>${_('Simple interface. Powerful music management. Smart Playlists. Advanced track tagging. Automatic album art. Lyrics. Streaming Radio. Podcasts.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/mate/parole.png" alt="Parole" />
+          <h4>${_('Parole')}</h4>
+          <p>${_('A modern media player, using gtk3 and the gstreamer plugin framework.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/mate/eom.png" alt="Eye of MATE" />
+          <h4>${_('Eye of MATE')}</h4>
+          <p>${_('Eye of MATE is meant to be a fast and functional image viewer for the MATE-Compiz Desktop.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/mate/filezilla.png" alt="FileZilla" />
+          <h4>${_('FileZilla')}</h4>
+          <p>${_('FileZilla is a cross-platform free FTP solution with tons of intuitive tools, helping you to move files quickly between your computer and Web server.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/mate-compiz/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="jumbotron greybox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-mate&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-mate'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;users@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/users'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Specific documentation and tutorials are available at the &lt;a href="%s"&gt;MATE project upstream website&lt;/a&gt;.') % ('http://wiki.mate-desktop.org/'))}</p>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>

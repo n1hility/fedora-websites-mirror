@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Jam')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/jam/header.html" />
+
+  <header id="head">
+    <div class="col-xs-12 text-center widewrapper copr-jam">
+    </div>
+    <div class="container product-feature">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-justify top-space bottom-space">
+          <p>${_('Fedora Jam is for audio enthusiasts and musicians who want to create, edit and produce audio and music on Linux. It comes with JACK, ALSA and PulseAudio by default including a suite of programs to tailor your studio.')}</p>
+          <p>${_('Fedora Jam is a full-featured audio creation spin. It includes all the tools needed to help create the music you want, anything from classical to jazz to heavy metal. Included in Fedora Jam is full support for JACK and JACK to PulseAudio bridging, the newest release of Ardour, and a full set of LV2 plugins.')}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature main-head">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/jam/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Applications -->
+  <div class="jumbotron whitebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>${_('Featured Applications')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/jam/ardour.png" alt="Ardour" />
+          	<h4>${_('Ardour')}</h4>
+          	<p>${_('A powerful multi-channel digital audio workstation, provides everything you need for your audio projects.')}</p>
+          	<a href="http://ardour.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/jam/qtractor.png" alt="Qtractor" />
+          	<h4>${_('Qtractor')}</h4>
+          	<p>${_('A digital audio workstation with advanced midi sequencers geared for personal home use.')}</p>
+          	<a href="http://qtractor.sourceforge.net/qtractor-index.html">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/jam/hydrogen.png" alt="Hydrogen" />
+          	<h4>${_('Hydrogen')}</h4>
+          	<p>${_('An advanced drum machine that features professional yet simple and intuitive pattern-based drum programming.')}</p>
+          	<a href="http://www.hydrogen-music.org/hcms/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/jam/yoshimi.png" alt="Yoshimi" />
+          	<h4>${_('Yoshimi')}</h4>
+          	<p>${_('A powerful synthesizer cable of making a countless number of instrument sounds.')}</p>
+          	<a href="http://yoshimi.sourceforge.net/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/jam/musescore.png" alt="MuseScore" />
+          	<h4>${_('MuseScore')}</h4>
+          	<p>${_('An easy way to write music with an integrated sequencer.')}</p>
+          	<a href="https://musescore.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/jam/tuxguitar.png" alt="TuxGuitar" />
+          	<h4>${_('TuxGuitar')}</h4>
+          	<p>${_('Learn guitar with this guitar tablature editor with ability to display scores and multitrack tabs.')}</p>
+          	<a href="http://sourceforge.net/projects/tuxguitar/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/jam/guitarix.png" alt="Guitarix" />
+          	<h4>${_('Guitarix')}</h4>
+          	<p>${_('Everything you need to turn your computer into a full blown guitar rig. Get pro quality sounds and effects.')}</p>
+          	<a href="http://sourceforge.net/projects/guitarix/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/jam/sooperlooper.png" alt="SooperLooper" />
+          	<h4>${_('SooperLooper')}</h4>
+          	<p>${_('A realtime software looping sampler perfect for live performance.')}</p>
+          	<a href="http://essej.net/sooperlooper/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/jam/calf.png" alt="Calf" />
+          	<h4>${_('Calf')}</h4>
+          	<p>${_('Professional state-of-the-art audio plugins for musicians and multitrack software.')}</p>
+          	<a href="http://calf.sourceforge.net/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Download -->
+    <div class="container using product-feature">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/jam/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="jumbotron greybox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-audio&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-audio'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;music@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/music'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Specific documentation is available at the &lt;a href="%s"&gt;Jam wiki page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Fedora_jam'))}</p>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Fedora Xfce Desktop')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/xfce/header.html" />
+
+  <header id="head">
+    <div class="col-xs-12 text-center widewrapper">
+      <img src="${path}/static/images/screenshots/screenshot-xfce.jpg" class="img-responsive" alt="Xfce Screenshot" />
+    </div>
+    <div class="container product-feature">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-justify top-space bottom-space">
+          <p>${_('The Fedora Xfce spin showcases the Xfce desktop, which aims to be fast and lightweight, while still being visually appealing and user friendly.')}</p>
+          <p>${_('Fedora Xfce is a full-fledged desktop using the freedesktop.org standards.')}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature main-head">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/xfce/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Going Online -->
+  <div class="jumbotron darkbluebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Going Online')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="${path}/static/images/xfce/nm-xfce.png" alt="Network Manager" />
+          <h4>${_('Network Manager')}</h4>
+          <p>${_('Just a click and you\'re connected to your wireless LAN router, or online via many supported 3G mobile broadband cards.')}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="${path}/static/images/xfce/midori.png" alt="Midori" />
+          <h4>${_('Midori')}</h4>
+          <p>${_('A lightweight and full featured web browser using GTK+2 and WebKit. Surf the web with speed and simplicity.')}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="${path}/static/images/xfce/pidgin.png" alt="Pidgin" />
+          <h4>${_('Pidgin')}</h4>
+          <p>${_('Universal messaging client. Communicate with the world via IRC, AIM, MSN, Yahoo and other instant messaging systems.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Utilities and Office -->
+  <div class="jumbotron jumbotron-full">
+    <div class="container-full">
+        <div class="col-md-6 col-xs-12 text-center greybg recover-jumbo">
+          <h2>${Markup(_('Utilities &amp; Configuration'))}</h2>
+            <div class="col-md-6 col-xs-12 text-center top-margin">
+            <img src="${path}/static/images/xfce/gnumeric.png" alt="Gnumeric" />
+            <h4>${_('Gnumeric')}</h4>
+            <p>${_('Gnumeric is a lightweight application to create lightning fast spreadsheets.')}</p>
+          </div>
+          <div class="col-md-6 col-xs-12 text-center top-margin">
+            <img src="${path}/static/images/xfce/settings.png" alt="System Settings" />
+            <h4>${_('System Settings')}</h4>
+            <p>${_('No need to know cryptic commands and config files. Click the options you like to change and choose the settings that make you happy.')}</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12 text-center darkgreybg recover-jumbo">
+          <h2>${Markup(_('Office &amp; Productivity Suite'))}</h2>
+          <div class="col-md-6 col-xs-12 text-center top-margin">
+          <img src="${path}/static/images/xfce/abiword.png" alt="AbiWord" />
+          <h4>${_('AbiWord')}</h4>
+          <p>${_('Quick and full featured word processing made easy.')}</p>
+        </div>
+        <div class="col-md-6 col-xs-12 text-center top-margin">
+          <img src="${path}/static/images/xfce/claws-mail.png" alt="Claws Mail" />
+          <h4>${_('Claws Mail')}</h4>
+          <p>${_('Claws Mail is an easy to configure and full featured email application for the Xfce Desktop.')}</p>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Multimedia -->
+  <div class="jumbotron whitebox">
+    <div class="container">
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Multimedia')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="${path}/static/images/xfce/ristretto.png" alt="Ristretto" />
+          <h4>${_('Ristretto')}</h4>
+          <p>${_('A quick and easy to use image viewer.')}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="${path}/static/images/xfce/parole.png" alt="Parole" />
+          <h4>${_('Parole')}</h4>
+          <p>${_('A modern media player, using GTK+3 and the GStreamer plugin framework.')}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="${path}/static/images/xfce/pragha.png" alt="Pragha" />
+          <h4>${_('Pragha')}</h4>
+          <p>${_('Manage and play your music with ease.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/xfce/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="jumbotron greybox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#xfce&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=xfce'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;xfce@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/xfce'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Specific documentation and tutorials are available at the &lt;a href="%s"&gt;Xfce project upstream website&lt;/a&gt;.') % ('http://wiki.xfce.org/'))}</p>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>

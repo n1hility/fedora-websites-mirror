@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_("FAQs - boot.fedoraproject.org")}</title>
+    <style type="text/css">
+    </style>
+  </head>
+  <body>
+    <h2>${_("Frequently-Asked Questions")}</h2>
+    <h3 class="question">${_("How do I use it?")}</h3>
+    <p class="answer">${_("First download one of the available BFO specific images. You have a choice of ISO (DVD/CD), USB, Floppy and lkrn images. Then write that image to an appropriate medium.  Next boot from that medium.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode.")}</p>
+    <h3 class="question">${_("Can I use it with grub?")}</h3>
+        <p class="answer">${_("Yes!  Just run the following commands as root")}</p>
+        <pre>
+            wget -O/boot/bfo.lkrn http://dl.fedoraproject.org/pub/alt/bfo/bfo.lkrn
+            grubby --add-kernel=/boot/bfo.lkrn --title="Boot BFO"
+            reboot
+        </pre>
+    <h3 class="question">${_("How does it work?")}</h3>
+    <p class="answer">${_("BFO was started by boot.kernel.org (BKO) and combines a series of recent technologies to produce a new boot stack.  The glue that holds everything together is ipxe.  Users familiar with pxe will find ipxe very familiar.  Latest versions support several protocols beyond just tftp.  We are using http to transfer files around.  The basic steps are as follows:")}</p>
+    <ul>
+        <li>${_("Download the boot.fedoraproject.org media fitting your preferred boot method.")}
+            <ul>
+                <li>${_("burn ISO images to a CD-R or DVD-R")}</li>
+                <li>${_("write USB image for a USB stick")}</li>
+                <li>${_("write Floppy image to a 3.5 inch HD floppy")}</li>
+                <li>${Markup(_('lkrn image for PXE booting, grub booting and in conjunction with kexec (c.f.: &lt;a href="%s"&gt;pxkxc&lt;/a&gt;)') % 'http://myllynen.fedorapeople.org/')}</li>
+            </ul>
+        </li>
+        <li>${_("Boot from the medium you created.")}</li>
+        <li>${_("It will first configure network via DHCP.")}</li>
+        <li>${_("After network is configured, it will go out to our boot.fedoraproject.org website and download the menus and other prompts from us")}</li>
+        <li>${_("Those boot menus will then be displayed to the user for selection.  After a selection (like install Fedora 12) the regular boot process takes over just as it would had you booted from normal local media.")}</li>
+    </ul>
+    <h3 class="question">${_("Why should I use BFO?")}</h3>
+    <p class="answer">${_("The BFO downloads are very small and once you have them, you'll rarely have to download more.  Even as more versions of Fedora come out, you just boot from your image and they will appear.  Users with fast internet connections will have the best experience with BFO.  They basically replace having to regularly download large ISO images and burn them to disk.")}</p>
+    <h3 class="question">${_("What is required?")}</h3>
+    <p class="answer">${_("For all image types, you need a working DHCP in the network you use it from as well as HTTP internet access. To use the ISO, a CD/DVD burner. To use the USB image, a USB stick.  Floppy and lkrn images are also available.")}</p>
+    <h3 class="question">${_("Does BFO replace the installer or anaconda?")}</h3>
+    <p class="answer">${_("No.  BFO is also not part of Anaconda.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one ISO download can install all future versions of Fedora.")}</p>
+    <h3 class="question">${_("What about the Live CDs?")}</h3>
+    <p class="answer">${_("At this time booting Live CDs is experimental and not available.  We hope to have them available soon.")}</p>
+    <h3 class="question">${_("Why won't BFO boot?")}</h3>
+    <p class="answer">${_("BFO uses ipxe so it's not actually booting a Linux kernel at first.  As such, some drivers and devices may not be supported.  If this is the case for you please check upstream at http://etherboot.org/ for bug updates, etc.  If you feel a bug or device is supported but not working in BFO, contact: ")}<a href="mailto:admin@fedoraproject.org">admin@fedoraproject.org</a></p>
+    <h3 class="question">${_("Where can I find the BFO sources and configuration?")}</h3>
+    <p class="answer">${Markup(_('BFO source code is available on the &lt;a href="%s"&gt;fedora-infrastructure.git&lt;/a&gt; repository.' % 'http://git.fedorahosted.org/git/?p=fedora-infrastructure.git;a=tree;f=bfo;hb=HEAD'))}</p>
+    <h3 class="question">${_("Where do I report issues?")}</h3>
+    <ul class="answer">
+        <li>${Markup(_('Issue with using or implementing BFO? Contact the &lt;a href="%s"&gt;Infrastructure Team&lt;/a&gt;.' % 'http://fedoraproject.org/wiki/Infrastructure#Bugs_and_Requests'))}</li>
+        <li>${Markup(_('Issue with website, content or links? Contact the &lt;a href="%s"&gt;Websites Team&lt;/a&gt;.' % 'http://fedoraproject.org/wiki/Websites#Bugs'))}</li>
+    </ul>
+    <p class="question">${_("At this time booting Live CDs is experimental and not available. We hope to have them available soon.")}</p>
+  </body>
+</html>

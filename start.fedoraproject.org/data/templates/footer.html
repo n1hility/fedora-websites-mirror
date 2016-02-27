@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  py:strip="">
+    <footer id="footer">
+      <div class="col-xs-8 col-xs-offset-2 top-space">
+      <p class="text-center">
+      &copy; ${Markup(_('%(year)s Red Hat, Inc. and others. Please send any comments or corrections to the &lt;a href="%(mail_url)s"&gt;websites team&lt;/a&gt;.') % {'year':'2015', 'mail_url':'mailto:webmaster@fedoraproject.org'})}
+      </p>
+      </div>
+      <div class="col-xs-8 col-xs-offset-2">
+      <p class="text-center">
+      ${Markup(_('The Fedora Project is maintained and driven by the community and sponsored by Red Hat.'))}
+      <br />
+      ${Markup(_('This is a community maintained site. Red Hat is not responsible for content.'))}
+      </p>
+      </div>
+      <div class="col-xs-8 col-xs-offset-2 text-center">
+      <ul>
+        <li class="right"><a href="https://fedoraproject.org/wiki/Legal:Main">${Markup(_('Legal'))}</a></li>
+        <li class="left"><a href="https://fedoraproject.org/wiki/Legal:Trademark_guidelines">${Markup(_('Trademark Guidelines'))}</a></li>
+        <li class="left"><a href="https://fedoraproject.org/wiki/Legal:Licenses?rd=Legal/Licenses#This_Website">${Markup(_('Content License'))}</a></li>
+        <li class="left"><a href="https://getfedora.org/sponsors">${Markup(_('Sponsors'))}</a></li>
+      </ul>
+      </div>
+    </footer>
+</html>

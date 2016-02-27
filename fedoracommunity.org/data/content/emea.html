@@ -1,0 +1,71 @@
+<?python
+import math
+from operator import itemgetter
+# see http://en.wikipedia.org/wiki/List_of_countries_and_capitals_in_native_languages
+contries = [
+            {'name':'Česká republika', 'title':_('Fedora Czech Republic Community'),           'url':'http://www.mojefedora.cz'},
+            {'name':'France',          'title':_('Fedora French Community'),                   'url':'http://www.fedora-fr.org'},
+            {'name':'Deutschland',     'title':_('Fedora unofficial German Fedora Portal'),    'url':'http://www.fedorausers.de'},
+            {'name':'Ελλάδα',          'title':_('Fedora Greek Community Portal'),             'url':'http://el.fedoracommunity.org'},
+            {'name':'Italia',          'title':_('Fedora Italian Community'),                  'url':'http://www.fedoraonline.it'},
+            {'name':'Moldavia',        'title':_('Fedora Moldavia Community'),                 'url':'http://fedoramd.org'},
+            {'name':'Netherlands',     'title':_('Fedora Netherlands Community'),              'url':'http://www.fedora-linux.nl'},
+            {'name':'Polska',          'title':_('Fedora Poland Community'),                   'url':'http://www.fedora.pl'},
+            {'name':'România',         'title':_('Fedora Romania Community'),                  'url':'http://www.fedoraproject.ro'},
+            {'name':'Россия',          'title':_('Fedora Russian Community'),                  'url':'http://ru.fedoracommunity.org'},
+            {'name':'España',          'title':_('Fedora Spanish Community'),                  'url':'http://www.fedora-es.com'},
+            {'name':'Tunisie',         'title':_('Fedora Tunisia Community'),                  'url':'http://www.fedora-tunisia.org'}
+]
+region="emea"
+contries.sort(key=itemgetter('name'))
+index=math.ceil(len(contries)/float(2))
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Fedora Community | Europe (EMEA)')}</title>
+  </head>
+	<body id="fedoracommunity-org">
+				<div class="container_16 continent_details">
+					<!-- Europe, Middle East, and Africa -->
+					<div class="grid_2" id="large_graphic">
+						<img src="static/images/header_emea.png" />
+					</div>
+					<div class="grid_14 continent_header emea">
+						<h2 class="continent-section-name">${_('Europe, Middle East, &amp; Africa')}</h2>
+						<h3>${_('Region-Wide Resources')}</h3>
+						<div class="prefix_1">
+						${Markup(_('The EMEA region, including Europe, the Middle East, &amp; Africa, is served by the &lt;a href="http://fedoraproject.org/wiki/Ambassadors/EMEA"&gt;Fedora Ambassadors EMEA group&lt;/a&gt;.'))}
+
+						<table>
+							<tr>
+								<th>${_('Website')}</th>
+								<td><a href="http://fedoraproject.org/wiki/Ambassadors/EMEA">http://fedoraproject.org/wiki/Ambassadors/EMEA</a></td>
+							</tr><tr>
+								<th>${_('Email Address')}</th>
+								<td><a href="mailto:ambassadors@lists.fedoraproject.org">ambassadors@lists.fedoraproject.org</a></td>
+							</tr><tr>
+								<th>${_('Events')}</th>
+								<td>${Markup(_('&lt;a href="%s"&gt;EMEA events listing&lt;/a&gt; on the Fedora Project wiki' % 'https://fedoraproject.org/wiki/Events#Europe.2C_Middle_East.2C_and_Africa_.28EMEA.29'))}</td>
+							</tr>
+						</table>
+						</div>
+					</div>
+					<div class="clear">&nbsp;</div>
+					<!-- End Header -->
+
+					<div class="prefix_2 grid_15 emea">
+						<h3>${_('Community Sites in this Region')}</h3>
+					</div>
+
+          <!--  Now we includes the region specific websites-->
+          <xi:include href="../templates/regions-site.html" />
+
+
+          <xi:include href="../templates/content-fpolinkback.html" />
+				</div>
+	</body>
+</html>

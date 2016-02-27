@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  py:strip="">
+    <div class="col-sm-6 fedmag hidden-xs">
+      <div class="col-md-5 hidden-sm">
+        <a href="//fedoramagazine.org/" alt="Fedora Magazine"><img src="${path}/static/images/fmag-ribbon.png" class="img-responsive fedmag-img" alt="" /></a>
+      </div>
+      <div class="col-md-7 hidden-sm">
+        <h3><a href="//fedoramagazine.org/" alt="Fedora Magazine">${Markup(_('Read more at &lt;br /&gt;&lt;strong&gt;fedoramagazine.org&lt;/strong&gt;!'))}</a></h3>
+      </div>
+<!-- Tablet -->
+      <div class="col-sm-12 visible-sm text-center">
+        <h3><a href="//fedoramagazine.org/" alt="Fedora Magazine">${Markup(_('Read more at &lt;br /&gt;&lt;strong&gt;fedoramagazine.org&lt;/strong&gt;!'))}</a></h3>
+      </div>
+<!-- /Tablet -->
+    </div>
+<!-- Small screens -->
+    <div class="col-xs-12 fedmag visible-xs text-center">
+      <h3><a href="//fedoramagazine.org/" alt="Fedora Magazine">${Markup(_('Read more at &lt;br /&gt;&lt;strong&gt;fedoramagazine.org&lt;/strong&gt;!'))}</a></h3>
+    </div>
+<!-- /Small Screens -->
+    <div class="col-sm-6 community hidden-xs">
+      <div class="col-md-6 col-md-offset-1 hidden-sm">
+        <h3><a href="https://join.fedoraproject.org/" alt="Join Fedora">${Markup(_('Want to contribute &lt;br /&gt;to Fedora?'))}</a></h3>
+        <p><a href="https://join.fedoraproject.org/" alt="Join Fedora">${_('Join us.')}</a></p>
+      </div>
+<!-- Tablet -->
+      <div class="col-sm-12 visible-sm text-center">
+        <h3><a href="https://join.fedoraproject.org/" alt="Join Fedora">${Markup(_('Want to contribute &lt;br /&gt;to Fedora?'))}</a></h3>
+        <p><a href="https://join.fedoraproject.org/" alt="Join Fedora">${_('Join us.')}</a></p>
+      </div>
+<!-- /Tablet -->
+      <div class="col-md-5 hidden-sm">
+        <a href="https://join.fedoraproject.org/" alt="Join Fedora"><img src="${path}/static/images/community.png" class="img-responsive community-img" alt="" /></a>
+      </div>
+    </div>
+<!-- Small screens -->
+    <div class="col-xs-12 community visible-xs text-center">
+      <h3><a href="https://join.fedoraproject.org/" alt="Join Fedora">${Markup(_('Want to contribute &lt;br /&gt;to Fedora?'))}</a></h3>
+      <p><a href="https://join.fedoraproject.org/" alt="Join Fedora">${_('Join us.')}</a></p>
+    </div>
+<!-- /Small Screens -->
+</html>

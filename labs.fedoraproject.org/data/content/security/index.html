@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Security Lab')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/security/header.html" />
+
+  <header id="head">
+    <div class="col-xs-12 text-center widewrapper copr-security">
+    </div>
+    <div class="container product-feature">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-justify top-space bottom-space">
+          <p>${_('The Fedora Security Lab provides a safe test environment to work on security auditing, forensics, system rescue and teaching security testing methodologies in universities and other organizations.')}</p>
+          <p>${_('The spin is maintained by a community of security testers and developers. It comes with the clean and fast Xfce Desktop Environment and a customized menu that provides all the instruments needed to follow a proper test path for security testing or to rescue a broken system. The Live image has been crafted to make it possible to install software while running, and if you are running it from a USB stick created with LiveUSB Creator using the overlay feature, you can install and update software and save your test results permanently.')}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature main-head">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/security/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Applications -->
+  <div class="jumbotron whitebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>${_('Featured Applications')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/security/etherape.png" alt="Etherape" />
+          	<h4>${_('Etherape')}</h4>
+          	<p>${_('EtherApe is a graphical network monitor for UNIX modeled after etherman. It displays network activity graphically.')}</p>
+          	<a href="http://etherape.sourceforge.net/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/security/ettercap.png" alt="Ettercap" />
+          	<h4>${_('Ettercap')}</h4>
+          	<p>${_('Ettercap is a comprehensive suite for man in the middle attacks.')}</p>
+          	<a href="http://ettercap.github.io/ettercap/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/security/medusa.png" alt="Medusa" />
+          	<h4>${_('Medusa')}</h4>
+          	<p>${_('Medusa is intended to be a speedy, massively parallel, modular, login brute-forcer.')}</p>
+          	<a href="http://foofus.net/goons/jmk/medusa/medusa.html">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/security/nmap.png" alt="Nmap" />
+          	<h4>${_('Nmap')}</h4>
+          	<p>${_('Nmap is a free and open source utility for network discovery and security auditing.')}</p>
+          	<a href="http://nmap.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/security/scapworkbench.png" alt="Scap-workbench" />
+          	<h4>${_('Scap-workbench')}</h4>
+          	<p>${_('A GUI tool that serves as an SCAP scanner and provides tailoring functionality for ​SCAP content.')}</p>
+          	<a href="https://fedorahosted.org/scap-workbench/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/security/skipfish.png" alt="Skipfish" />
+          	<h4>${_('Skipfish')}</h4>
+          	<p>${_('Skipfish is an active web application security reconnaissance tool.')}</p>
+          	<a href="https://code.google.com/p/skipfish/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/security/sqlninja.png" alt="Sqlninja" />
+          	<h4>${_('Sqlninja')}</h4>
+          	<p>${_('A tool targeted to test SQL Injection vulnerabilities on a web application using Microsoft® SQL Server as its back-end.')}</p>
+          	<a href="http://sqlninja.sourceforge.net/index.html">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/security/wireshark.png" alt="Wireshark" />
+          	<h4>${_('Wireshark')}</h4>
+          	<p>${_('Wireshark is a network traffic analyzer for UNIX-ish operating systems.')}</p>
+          	<a href="https://www.wireshark.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/security/yersinia.png" alt="Yersinia" />
+          	<h4>${_('Yersinia')}</h4>
+          	<p>${_('Yersinia is a network tool designed to take advantage of some weakness in different network protocols')}</p>
+          	<a href="http://www.yersinia.net/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Download -->
+    <div class="container using product-feature">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/security/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="jumbotron greybox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;users@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/users'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Specific documentation is available at the &lt;a href="%s"&gt;Security Lab wiki page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Security_Lab'))}</p>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>

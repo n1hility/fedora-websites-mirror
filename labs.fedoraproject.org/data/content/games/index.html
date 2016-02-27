@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Games')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/games/header.html" />
+
+  <header id="head">
+    <div class="col-xs-12 text-center widewrapper copr-games">
+    </div>
+    <div class="container product-feature">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-justify top-space bottom-space">
+          <p>${_('The Fedora Games spin offers a perfect showcase of the best games available in Fedora. The included games span several genres, from first-person shooters to real-time and turn-based strategy games to puzzle games.')}</p>
+          <p>${_('Not all the games available in Fedora are included on this spin, but trying out this spin will give you a fair impression of Fedora\'s ability to run great games.')}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature main-head">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/games/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Applications -->
+  <div class="jumbotron whitebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>${_('Featured Applications')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/games/extremetuxracer.png" alt="Extreme Tux Racer" />
+          	<h4>${_('Extreme Tux Racer')}</h4>
+          	<p>${_('High speed arctic racing game based on Tux Racer.')}</p>
+          	<a href="http://sourceforge.net/projects/extremetuxracer/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/games/wesnoth.png" alt="Wesnoth" />
+          	<h4>${_('Wesnoth')}</h4>
+          	<p>${_('The Battle for Wesnoth is a free, turn-based tactical strategy game with a high fantasy theme.')}</p>
+          	<a href="http://www.wesnoth.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/games/hedgewars.png" alt="Hedgewars" />
+          	<h4>${_('Hedgewars')}</h4>
+          	<p>${_('Hedgewars is a turn based strategy, artillery, action and comedy game.')}</p>
+          	<a href="http://www.hedgewars.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/games/colossus.png" alt="Colossus" />
+          	<h4>${_('Colossus')}</h4>
+          	<p>${_('Colossus is a Java clone of Avalon Hill\'s Titan™ boardgame.')}</p>
+          	<a href="http://colossus.sourceforge.net/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/games/BZFlag.png" alt="BZFlag" />
+          	<h4>${_('BZFlag')}</h4>
+          	<p>${_('BZFlag is a free online multiplayer 3D tank battle game.')}</p>
+          	<a href="http://bzflag.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/games/freeciv.png" alt="Freeciv" />
+          	<h4>${_('Freeciv')}</h4>
+          	<p>${_('Freeciv is a Free and Open Source empire-building strategy game inspired by the history of human civilization.')}</p>
+          	<a href="https://play.freeciv.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/games/warzone2100.png" alt="Warzone 2100" />
+          	<h4>${_('Warzone 2100')}</h4>
+          	<p>${_('Command the forces in a battle to rebuild the world after mankind has almost been destroyed by nuclear missiles.')}</p>
+          	<a href="https://wz2100.net/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/games/megaglest.png" alt="MegaGlest" />
+          	<h4>${_('MegaGlest')}</h4>
+          	<p>${_('MegaGlest is an entertaining free and open source cross-platform 3D real-time strategy (RTS) game.')}</p>
+          	<a href="https://megaglest.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/games/fillets.png" alt="Fillets" />
+          	<h4>${_('Fillets')}</h4>
+          	<p>${_('Fish Fillets NG is a Linux port of the wonderful puzzle game Fish Fillets from ALTAR interactive.')}</p>
+          	<a href="http://fillets.sourceforge.net/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Download -->
+    <div class="container using product-feature">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/games/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="jumbotron greybox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;games@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/games'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Specific documentation is available at the &lt;a href="%s"&gt;Games wiki page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Games_Spin'))}</p>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>

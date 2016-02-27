@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Flock To Fedora: Location')}</title>
+  </head>
+
+  <body class="home">
+    <xi:include href="../../templates/head.html" />
+    <div class="main-head-index"></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>${_('Krakow, Poland - August 2-5, 2016')}</h1>
+          <p>${_('Flock lodging, as well as conference proceedings, will be held at the Best Western Premier Krakow. Room rate for a single or double (two twin beds) is approximately €65 per night. Wifi is freely available in public areas and guest rooms. Free breakfast is provided.')}</p>
+	  <p><strong>${_('Do you want to book a room?')}</strong> ${_('Download the hotel form, fill it in, and return to the hotel via the email or fax noted on the form itself.')} ${_('Unfortunately, an online booking code is not available currently for this hotel.')}</p>
+	  <p><a href="../../../static/images/hotel-form-2016.pdf">${_('Download now...')}</a></p>
+	  <p><strong>${_('Do you want to fill out the form on your Fedora system?')}</strong> ${_('Try the xournal package already available for current Fedora releases. You can insert text, and sign with a pointing device, touch display, or drawing tablet. Then export the result to another PDF file and return via email.')}</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <!-- This is temporary and just an idea I'm playing with. -->
+          <script
+             type="text/javascript"
+             src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js">
+          </script>
+          <link
+             rel="stylesheet"
+             type="text/css"
+             href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css"
+             />
+          <div id="map"></div>
+          <script type="text/javascript">
+            var map = L.map('map').setView([50.0910034, 19.912422], 13);
+
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+              attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            L.marker([50.0910034, 19.912422]).addTo(map)
+              .bindPopup("${_('Flock 2016 - Best Western Premier Hotel - Krakow')}")
+              .openPopup();
+          </script>
+        </div>
+      </div>
+
+  	  <div class="row top-margin high">
+  	  	<div class="col-xs-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-cloud"></i> ${_('Weather')}</h3>
+            </div>
+            <div class="panel-body">
+	      ${_('Krakow is located at roughly the same latitude as Prague, Czech Republic and Frankfurt, Germany. In August, the average high temperature is 24°C/75°F, and the average low 12°C/54°F.')}
+            </div>
+          </div>
+  	  	</div>
+
+  	  	<div class="col-xs-8">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-bus"></i> ${_('Transportation')}</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-6">
+		    ${_('Krakow is served by the John Paul II International Airport Kraków-Balice (IATA code KRK, ICAO code EPKK). Direct flights are available from some European airports, and overseas flights with one or two stops from many international airports.')}
+                </div>
+                <div class="col-xs-6">
+		    ${_('More information on transportation can be found on the Fedora wiki.')} <a href="https://fedoraproject.org/wiki/Flock2016-Krakow-proposal">${_('Read details here.')}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  	  	</div>
+      </div>
+
+  	  <div class="row high">
+  	  	<div class="col-xs-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-hotel"></i> ${_('About Kraków')}</h3>
+            </div>
+            <div class="panel-body">
+              <p>
+		${_('The city of Krakow is the second largest city of Poland and is the country\'s former capital. It is sometimes spelled as Cracow in English, although its correct English name is Krakow nowadays. Krakow is the top tourist destination in Poland. The city basks in the glory of its long history and greatly treasures its reputation as the culture capital of Poland.')}
+	      </p>
+	      <p>
+		${_('Krakow\'s seven universities, plus almost twenty other institutions of higher education, make it the country\'s leading center of science and education. The city\'s expanding service sector is the lifeblood of local economy, but varied industry and production still provide substantial proportions of jobs and wealth. Krakow is the metropolis of southern Poland and the capital city of the Malopolska Province. The city has about 755,000 permanent residents, and the Krakow conurbation totals some 1.5 million people. The cosmopolitan atmosphere of the city center may be somewhat misleading. Despite recent growth in the number of immigrants and expatriates, inhabitants of Krakow remain ethnically almost homogeneous and proudly declare their Polish nationality.')}
+              </p>
+<!--
+              <ul>
+                <li><a href="#">${_('Click here to book a room at the conference rate')}</a></li>
+		<li>${_('The conference rate will be available until July 16. Reservations made after this date will not be at the Flock rate.')}</li>
+                <li>${_('As with most hotels, you will need a credit card to make the reservation, but it will not be charged until after the stay.')}</li>
+                <li>${_('Remember that if you are receiving a hotel subsidy, you are expected to share a room.')}</li>
+              </ul>
+              <p><strong>${_('Do not wait until the last minute to book your room.')}</strong> ${_('If you plan to go to Flock, you should book your room now.')}</p>
+-->
+	      <p>
+		${_('Trains from the airport to the City Center depart every 30 minutes. From the City Center, take bus 130 from the Dworzec Glowny Zachod stop (or the Dworzec Glwny stop if late at night), at the galeria/train/bus station, toward Azory to the Rozyckiego stop. A 20 minute ticket is sufficient. From the bus stop, the hotel is a 10 minute walk.')}
+	      </p>
+            </div>
+          </div>
+  	  	</div>
+
+  	  	<div class="col-xs-6 bottom-margin">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-camera"></i> Sightseeing</h3>
+            </div>
+            <div class="panel-body">
+	      <p>
+		${_('Krakow and Poland in general are quite scenic and offer many possibilities for an extended sightseeing trip.')}
+	      </p>
+              <p>
+		${_('Zakopane is Poland\'s premier mountain resort, is one of the country\'s most popular holiday destinations, both in the winter for skiing and in the summer for hiking and camping.')}
+              </p>
+              <p>
+		${_('Private companies offer tours to Nowa Huta, to show what life was like under Communism. Many are done in historic cars and include guides. You can also visit the Nowa Huta neighborhood by public transportation easily from the main station on Tram 4. The PRL Museum in the Nowa Huta neighborhood is highly recommended.')}
+              </p>
+            </div>
+          </div>
+  	  	</div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

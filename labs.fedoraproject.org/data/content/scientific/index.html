@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Scientific')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/scientific/header.html" />
+
+  <header id="head">
+    <div class="col-xs-12 text-center widewrapper copr-scientific">
+    </div>
+    <div class="container product-feature">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-justify top-space bottom-space">
+          <p>${_('Wary of reinstalling all the essential tools for your scientific and numerical work? The answer is here. Fedora Scientific Spin brings together the most useful open source scientific and numerical tools atop the goodness of the KDE desktop environment.')}</p>
+          <p>${_('Fedora Scientific currently ships with numerous applications and libraries. These range from libraries such as the GNU Scientific library, the SciPy libraries, tools like Octave and xfig to typesetting tools like Kile and graphics programs such as Inkscape. The current set of packages include an IDE, tools and libraries for programming in C, C++, Python, Java and R. Also included along with are libraries for parallel computing such as the OpenMPI and OpenMP. Tools for typesetting, writing and publishing are included.')}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature main-head">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/scientific/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Applications -->
+  <div class="jumbotron whitebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>${_('Featured Applications')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/scientific/IPy.png" alt="IPython" />
+          	<h4>${_('IPython')}</h4>
+          	<p>${_('IPython is an enhanced interactive shell with various features to support rapid interactive computing.')}</p>
+          	<a href="http://fedora-scientific.readthedocs.org/en/latest/python_programming.html#ipython">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/scientific/pandas.png" alt="Pandas" />
+          	<h4>${_('Pandas')}</h4>
+          	<p>${_('Pandas is a Python library mostly useful for data analysis.')}</p>
+          	<a href="http://fedora-scientific.readthedocs.org/en/latest/python_programming.html#pandas">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/scientific/gnuplot.png" alt="Gnuplot" />
+          	<h4>${_('Gnuplot')}</h4>
+          	<p>${_('Gnuplot is a command line driven utility for creating 2D and 3D graphs.')}</p>
+          	<a href="http://fedora-scientific.readthedocs.org/en/latest/graphs_draw.html#gnuplot">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/scientific/matplot.png" alt="Matplotlib" />
+          	<h4>${_('Matplotlib')}</h4>
+          	<p>${_('Matplotlib is the most feature-rich Python library for creating publication ready graphs and figures.')}</p>
+          	<a href="http://fedora-scientific.readthedocs.org/en/latest/python_programming.html#plotting">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/scientific/r.png" alt="R" />
+          	<h4>${_('R')}</h4>
+          	<p>${_('R is a software environment for statistical computing.')}</p>
+          	<a href="http://fedora-scientific.readthedocs.org/en/latest/R_programming.html#r-programming">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/scientific/maxima.png" alt="Maxima" />
+          	<h4>${_('Maxima')}</h4>
+          	<p>${_('Maxima is a computer algebra system.')}</p>
+          	<a href="http://fedora-scientific.readthedocs.org/en/latest/tools.html#maxima">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/scientific/latex.png" alt="LaTeX" />
+          	<h4>${_('LaTeX')}</h4>
+          	<p>${_('Fedora Scientific includes the complete toolchain needed for creating documents using LaTeX.')}</p>
+          	<a href="http://fedora-scientific.readthedocs.org/en/latest/latex.html">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/scientific/octave.png" alt="GNU Octave" />
+          	<h4>${_('GNU Octave')}</h4>
+          	<p>${_('GNU Octave is a high level programming language and numerical computing environment, mostly compatible with MATLAB.')}</p>
+          	<a href="http://fedora-scientific.readthedocs.org/en/latest/tools.html#gnu-octave">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/scientific/gnu.png" alt="GNU Scientific Library" />
+          	<h4>${_('GNU Scientific Library')}</h4>
+          	<p>${_('The GNU Scientific Library is a C/C++ library providing a extensive collection of mathematical routines.')}</p>
+          	<a href="http://fedora-scientific.readthedocs.org/en/latest/c_programming.html#gnu-scientific-library">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Download -->
+    <div class="container using product-feature">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/scientific/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="jumbotron greybox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-science&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-science'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;scitech@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/scitech'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Specific documentation is available at the &lt;a href="%s"&gt;Fedora Scientific Guide&lt;/a&gt;.') % ('http://fedora-scientific.readthedocs.org/'))}</p>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>

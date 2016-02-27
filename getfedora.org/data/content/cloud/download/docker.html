@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../../templates/master.html" />
+  <head>
+    <script type="text/javascript" src="${path}/static/js/cloud_ec2.js"></script>
+
+    <title>${_('Download Fedora Cloud')}</title>
+  </head>
+  <body id="cloud">
+
+  <xi:include href="../../../templates/cloud/header.html" />
+  <xi:include href="../../../templates/regulations.html" />
+  <!--!<div class="mymenu cloudmenu">
+    <div class="container">
+     <div class="row col-md-8 col-md-offset-2 row col-xs-12">
+        <div class="collapse navbar-collapse">
+          <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li><a href="../">About</a></li>
+                <li><a href="#">Take the Tour</a></li>
+                <li class="active"><a href="#">Download</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+  <header class="downloadheader">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-md-offset-5 text-left recover-heading">
+          <h2>${Markup(_('Download Fedora %(rel)s Cloud')) % {'rel':global_variables.release['curr_id']}}</h2>
+            <p>${_('There are two main versions of Fedora Cloud available:')}
+              <ul>
+                <li>${Markup(_('&lt;a href="index.html"&gt;Base images&lt;/a&gt; suitable for creating VMs.'))}</li>
+                <li>${Markup(_('&lt;a href="atomic.html"&gt;Atomic Host images&lt;/a&gt; for creating hosts for container deployment.'))}</li>
+              </ul>
+            </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+      <!-- Menu -->
+  <div class="navbar-custom navbar-default">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+          <div class="collapse navbar-collapse navbar-center">
+              <ul class="nav navbar-nav">
+                  <li class=""><a href="index.html">${_('Base Images')}</a></li>
+                  <li class=""><a href="atomic.html">${_('Atomic Host Images')}</a></li>
+                  <li class=""><a href="docker.html" class="active">${_('Docker Image')}</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+  <div class="container download-container recover-heading top-margin">
+	<div class="row">
+    <div class="col-md-8 col-xs-12">
+      <div class="row top-margin">
+          <div class="col-xs-12">
+            <h2 class="cloudy">${_('Docker Image')}</h2>
+            <p>${_('The Fedora Docker Base Image is a minimal Fedora install which can be spawned as a Docker container. It contains basic tools which can be used as a foundation for building Docker Layered Images - bash, vi and dnf (and its dependencies).')}</p>
+            <h3>${_('Docker Base Image')}</h3>
+          </div>
+      </div>
+      <div class="row bottom-margin">
+          <div class="col-xs-12">
+            <p>${_('You can easily load this Docker image into your running Docker daemon using command:')}</p>
+            <pre>docker load -i Fedora-Docker-Base-${global_variables.release['curr_id']}-${global_variables.release['composedate']}.x86_64.tar.xz</pre>
+            <p>${_('Following command can be used to spawn a container running bash inside:')}</p>
+            <pre>docker run -it --rm Fedora-Docker-Base-${global_variables.release['curr_id']}-${global_variables.release['composedate']}.x86_64 bash</pre>
+            <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Docker/x86_64/Fedora-Docker-Base-${global_variables.release['curr_id']}-${global_variables.release['composedate']}.x86_64.tar.xz" role="button">${_('Download')}</a>
+              <p class="caption">${_('64-bit %sMB raw.xz Image') % global_variables.iso_size['x86_64_docker']}</p>
+          </div>
+      </div>
+
+      <hr />
+      <xi:include href="../../../templates/export-regulations.html" />
+    </div>
+
+    <div class="col-md-3 col-xs-12 col-md-offset-1 top-margin">
+          <div class="bottom-margin">
+          <py:choose>
+            <py:when test="global_variables.release['curr_state'] == 'Alpha'">
+              <h3>${Markup(_('Try Fedora %(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+              <a href="${path}/${lang}/cloud/prerelease"><img alt="Fedora ${global_variables.release['next_id']} Alpha is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}alpha.png" /></a>
+            </py:when>
+            <py:when test="global_variables.release['curr_state'] == 'Beta'">
+              <h3>${Markup(_('Try Fedora %(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+              <a href="${path}/${lang}/cloud/prerelease"><img alt="Fedora ${global_variables.release['next_id']} Beta is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}beta.png" /></a>
+            </py:when>
+          </py:choose>
+          </div>
+          <noscript>
+          <div class="bottom-margin">
+            <h3>${_('Verify')}</h3>
+              <ul>
+              <li>
+                  <p><a href="/verify">${_('Verify your Image')}</a></p>
+              </li>
+              </ul>
+          </div>
+          </noscript>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
+
+
+
+
+

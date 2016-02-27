@@ -1,0 +1,73 @@
+<?python
+import math
+from operator import itemgetter
+# see http://en.wikipedia.org/wiki/List_of_countries_and_capitals_in_native_languages
+contries = [
+            {'name':'Indonesia',	'title':_('Fedora Indonesia Community'),      'url':'http://id.fedoracommunity.org'},
+            {'name':'日本',		'title':_('Fedora Japan Community'),          'url':'http://fedorasrv.com'},
+            {'name':'Philippines',	'title':_('Fedora Philippines Community'),    'url':'http://ph.fedoracommunity.org'},
+            {'name':'Sri Lanka',	'title':_('Fedora Sri Lanka Community'),      'url':'http://lk.fedoracommunity.org'},
+            {'name':'Việt Nam',		'title':_('Fedora Vietnam Community'),        'url':'http://vn.fedoracommunity.org'},
+            {'name':'Myanmar',		'title':_('Fedora Myanmar Community'),        'url':'http://mm.fedoracommunity.org'}
+]
+region="apac"
+contries.sort(key=itemgetter('name'))
+index=math.ceil(len(contries)/float(2))
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Fedora Community | Asia Pacific (APAC)')}</title>
+  </head>
+	<body id="fedoracommunity-org">
+				<div class="container_16 continent_details">
+					<!-- Asia-Pacific -->
+
+					<div class="grid_2" id="large_graphic">
+						<img src="static/images/header_apac.png" />
+					</div>
+					<div class="grid_14 continent_header apac">
+						<h2 class="continent-section-name">${_('Asia-Pacific')}</h2>
+						<h3>${_('Region-Wide Resources')}</h3>
+						<div class="prefix_1">
+						${Markup(_('The Asia-Pacific region is served by the &lt;a href="%s"&gt;Fedora Ambassadors APAC group&lt;/a&gt;.' % 'http://fedoraproject.org/wiki/Ambassadors/APAC'))}
+
+						<table>
+
+							<tr>
+								<th>${_('Fedora Wiki Page')}</th>
+								<td><a href="http://fedoraproject.org/wiki/Ambassadors/APAC">http://fedoraproject.org/wiki/Ambassadors/APAC</a></td>
+							</tr><tr>
+								<th>${_('Mailing List')}</th>
+								<td><a href="mailto:ambassadors@lists.fedoraproject.org">ambassadors@lists.fedoraproject.org</a></td>
+							</tr><tr>
+
+								<th>${_('Events')}</th>
+								<td>${Markup(_('&lt;a href="%s"&gt;APAC events listing&lt;/a&gt; on the Fedora Project wiki' % 'http://fedoraproject.org/wiki/Events#India.2C_Asia.2C_and_Australia_.28India.2FAPAC.29'))}</td>
+							</tr>
+						</table>
+						</div>
+					</div>
+					<div class="clear">&nbsp;</div>
+
+					<!-- End Header -->
+
+					<div class="prefix_2 grid_15 apac">
+						<h3>${_('Community Sites in this Region')}</h3>
+					</div>
+
+          <!--  Now we includes the region specific websites-->
+          <xi:include href="../templates/regions-site.html" />
+
+
+          <xi:include href="../templates/content-fpolinkback.html" />
+
+				</div>
+
+
+	</body>
+</html>
+

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Fedora Spins')}</title>
+  </head>
+
+<body class="home">
+<xi:include href="../templates/head.html" />
+
+  <!-- Spins Screenshots -->
+  <header id="head" class="main-head">
+  	<div class="container">
+  	 <div id="fadescreen">
+       <div class="high kde">
+    	  <div class="row">
+    	  	<div class="col-xs-10 col-xs-offset-1 text-center top-space">
+    	  	  <a href="/${lang}/kde"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-kde.jpg" alt="KDE Screenshot" /></a>
+    	  	</div>
+    	  </div>
+    	  <div class="row">
+    	  	<div class="col-xs-10 col-xs-offset-1 text-center">
+    	  	  <p class="screenshot bottom-border"><a href="/${lang}/kde"><img class="spin-banner" src="${path}/static/images/kde-banner.png" alt="KDE banner" /></a><br />
+    	  	  <span class="grey">${_('A complete, modern desktop built using the KDE Plasma Desktop.')}</span></p>
+  	  	  </div>
+  	    </div>
+       </div>
+
+       <div class="high">
+    	  <div class="row">
+    	  	<div class="col-xs-10 col-xs-offset-1 text-center top-space">
+    	  	  <a href="/${lang}/xfce"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-xfce.jpg" alt="Xfce Screenshot" /></a>
+    	  	</div>
+    	  </div>
+    	  <div class="row">
+    	  	<div class="col-xs-10 col-xs-offset-1 text-center">
+    	  	  <p class="screenshot bottom-border"><a href="/${lang}/xfce"><img class="spin-banner" src="${path}/static/images/xfce-banner.png" alt="Xfce banner" /></a><br />
+    	  	  <span class="grey">${_('A complete, well-integrated Xfce Desktop.')}</span></p>
+  	  	  </div>
+  	    </div>
+       </div>
+
+       <div class="high">
+    	  <div class="row">
+    	  	<div class="col-xs-10 col-xs-offset-1 text-center top-space">
+    	  	  <a href="/${lang}/lxde"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-lxde.jpg" alt="LXDE Screenshot" /></a>
+    	  	</div>
+    	  </div>
+    	  <div class="row">
+    	  	<div class="col-xs-10 col-xs-offset-1 text-center">
+    	  	  <p class="screenshot bottom-border"><a href="/${lang}/lxde"><img class="spin-banner" src="${path}/static/images/lxde-banner.png" alt="LXDE banner" /></a><br />
+    	  	  <span class="grey">${_('A light, fast, less-resource hungry desktop environment.')}</span></p>
+  	  	  </div>
+  	    </div>
+       </div>
+
+       <div class="high">
+    	  <div class="row">
+    	  	<div class="col-xs-10 col-xs-offset-1 text-center top-space">
+    	  	  <a href="/${lang}/mate-compiz"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-matecompiz.jpg" alt="MATE-Compiz Screenshot" /></a>
+    	  	</div>
+    	  </div>
+    	  <div class="row">
+    	  	<div class="col-xs-10 col-xs-offset-1 text-center">
+    	  	  <p class="screenshot bottom-border"><a href="/${lang}/mate-compiz"><img class="spin-banner" src="${path}/static/images/mate-compiz-banner.png" alt="MATE-Compiz banner" /></a><br />
+    	  	  <span class="grey">${_('A classic Fedora Desktop with an additional 3D Windows Manager.')}</span></p>
+  	  	  </div>
+  	    </div>
+       </div>
+
+       <div class="high">
+    	  <div class="row">
+    	  	<div class="col-xs-10 col-xs-offset-1 text-center top-space">
+    	  	  <a href="/${lang}/cinnamon"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-cinnamon.jpg" alt="Cinnamon Screenshot" /></a>
+    	  	</div>
+    	  </div>
+    	  <div class="row">
+    	  	<div class="col-xs-10 col-xs-offset-1 text-center">
+    	  	  <p class="screenshot bottom-border"><a href="/${lang}/cinnamon"><img class="spin-banner" src="${path}/static/images/cinnamon-banner.png" alt="Cinnamon banner" /></a><br />
+    	  	  <span class="grey">${_('A modern desktop featuring traditional Gnome user experience.')}</span></p>
+  	  	  </div>
+  	    </div>
+       </div>
+
+       <div class="high">
+    	  <div class="row">
+    	  	<div class="col-xs-10 col-xs-offset-1 text-center top-space">
+    	  	  <a href="/${lang}/soas"><img class="screenshot" src="${path}/static/images/screenshots/screenshot-soas.jpg" alt="SoaS Screenshot" /></a>
+    	  	</div>
+    	  </div>
+    	  <div class="row">
+    	  	<div class="col-xs-10 col-xs-offset-1 text-center bottom-space">
+    	  	  <p class="screenshot bottom-border"><a href="/${lang}/soas"><img class="spin-banner" src="${path}/static/images/soas-banner.png" alt="SoaS banner" /></a><br />
+    	  	  <span class="grey">${_('Discover. Reflect. Share. Learn.')}</span></p>
+  	  	  </div>
+  	    </div>
+	     </div>
+     </div>
+  	</div>
+  </header>
+
+  <!-- More Spins -->
+  <div class="container labs">
+  	<div class="row">
+  	  <div class="col-xs-12 text-center">
+  	  	<p>${Markup(_('Looking for more Fedora options? Try &lt;a href="%s"&gt;Fedora Labs&lt;/a&gt;') % ('https://labs.fedoraproject.org/'))}</p>
+  	  </div>
+  	</div>
+  </div>
+
+  <!-- Feature: Spins -->
+  <div class="jumbotron product-feature bluebox">
+    <div class="container">
+      <div class="row">
+	    <div class="col-xs-12 caption">
+	      <h2 class="text-center">${_('What are Spins?')}</h2>
+	      <p class="thin text-justify">${_('The default desktop environment of Fedora is GNOME, but if you prefer an alternative desktop environment such as KDE Plasma Desktop or Xfce, you can download a spin for your preferred desktop environment and use that to install Fedora, pre-configured for the desktop environment of your choice.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container using">
+
+    <!-- Using Spins for mobile -->
+  	<div class="row bottom-space visible-xs">
+  	  <div class="col-xs-12 text-center">
+  	  	<h2>${_('Downloading')}</h2>
+	      <p class="text-justify">${_('Spin downloads are offered via direct download, but you can also get them via BitTorrent. In this case you will need to install a BitTorrent client in order to download a spin. If you cannot use Bittorrent, some spins offer alternative download methods.')}</p>
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-howto-download" role="button">${_('Learn more')}</a></p>
+  	  </div>
+  	  <div class="col-xs-12 text-center">
+  	  	<h2>${_('Using')}</h2>
+	      <p class="text-justify">${_('Spins are provided as ISO files. You may use the ISO file to create a new virtual machine, or you can burn the ISO in a special way to a USB stick or optical media to run the spin on hardware.')}</p>
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Burning_ISO_images_to_disc/" role="button">${_('Learn more')}</a></p>
+  	  </div>
+  	  <div class="col-xs-12 text-center">
+  	  	<h2>${_('Installing')}</h2>
+	      <p class="text-justify">${_('To install a spin, you run the spin on your computer and click the "Install to Hard Drive" link on the desktop. You\'ll be guided through the install process via a series of prompts.')}</p>
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/21/html/Installation_Guide/sect-installation-graphical-mode.html" role="button">${_('Learn more')}</a></p>
+  	  </div>
+  	</div>
+
+  <!-- Using Spins for desktop and tablet -->
+  	<div class="row hidden-xs">
+  	  <div class="col-sm-4 text-center">
+  	  	<h2>${_('Downloading')}</h2>
+	      <p class="text-justify">${_('Spin downloads are offered via direct download, but you can also get them via BitTorrent. In this case you will need to install a BitTorrent client in order to download a spin. If you cannot use Bittorrent, some spins offer alternative download methods.')}</p>
+  	  </div>
+  	  <div class="col-sm-4 text-center">
+  	  	<h2>${_('Using')}</h2>
+	      <p class="text-justify">${_('Spins are provided as ISO files. You may use the ISO file to create a new virtual machine, or you can burn the ISO in a special way to a USB stick or optical media to run the spin on hardware.')}</p>
+  	  </div>
+  	  <div class="col-sm-4 text-center">
+  	  	<h2>${_('Installing')}</h2>
+	      <p class="text-justify">${_('To install a spin, you run the spin on your computer and click the "Install to Hard Drive" link on the desktop. You\'ll be guided through the install process via a series of prompts.')}</p>
+  	  </div>
+  	</div>
+  	<div class="row bottom-space hidden-xs">
+  	  <div class="col-sm-4 text-center">
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-howto-download" role="button">${_('Learn more')}</a></p>
+  	  </div>
+  	  <div class="col-sm-4 text-center">
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Burning_ISO_images_to_disc/" role="button">${_('Learn more')}</a></p>
+  	  </div>
+  	  <div class="col-sm-4 text-center">
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/en-US/Fedora/21/html/Installation_Guide/sect-installation-graphical-mode.html" role="button">${_('Learn more')}</a></p>
+  	  </div>
+  	</div>
+
+  </div>
+
+<!-- News 
+      <py:choose>
+        <py:when test="global_variables.release['curr_state'] == 'Alpha'">
+          <div class="newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Fedora %(rel)s %(state)s released! &lt;a href="%(link)s"&gt;Try it now >&lt;/a&gt;')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state'], 'link':'prerelease.html'}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:when>
+        <py:when test="global_variables.release['curr_state'] == 'Beta'">
+          <div class="jumbotron newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Fedora %(rel)s %(state)s released! &lt;a href="%(link)s"&gt;Try it now >&lt;/a&gt;')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state'], 'link':'prerelease.html'}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:when>
+        <py:otherwise>
+        	<div class="jumbotron newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Fedora %(rel)s released! Check it out in the Download section.')) % {'rel':global_variables.release['curr_id']}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:otherwise>
+      </py:choose>
+-->
+</body>
+</html>

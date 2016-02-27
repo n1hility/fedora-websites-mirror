@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>FUDCon</title>
+<link href="${path}/static/css/fudcon.css" rel="stylesheet" type="text/css" />
+</head>
+<script type="text/javascript">
+  var rpxJsHost = (("https:" == document.location.protocol) ? "https://" : "http://static.");
+  document.write(unescape("%3Cscript src='" + rpxJsHost +
+"rpxnow.com/js/lib/rpx.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+  RPXNOW.overlay = true;
+  RPXNOW.language_preference = 'en';
+</script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="${path}/static/js/s3Slider.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#slider').s3Slider({
+            timeOut: 3000
+        });
+    });
+</script>
+
+
+<body>
+<div class="container">
+  <div class="header_bar">
+    <div class="header">
+      <div class="logo_top"><img src="${path}/static/images/logo.png" width="214" height="82" /></div>
+        <!-- Start Menu Section -->
+        <ul class="top_menu">
+          <li class="top_menu_element">
+            Home
+          </li>
+          <li class="top_menu_element">
+            <a href='APAC/'>APAC</a>
+          </li>
+          <li class="top_menu_element">
+            <a href="http://www.flocktofedora.org/">EMEA</a>
+            </li>
+          <li class="top_menu_element">
+            <a href='LATAM/'>LATAM</a>
+          </li>
+          <li class="top_menu_element">
+            <a href="http://www.flocktofedora.org/">NA</a>
+          </li>
+        </ul>
+        <!-- End Menu Section -->
+    </div>
+  </div>
+  <div class="flag_row_container">
+    <div class="flag_first_color"></div>
+    <div class="flag_second_color"></div>
+    <div class="flag_third_color"></div>
+  </div>
+  <div class="splash_container" id="index_splash">
+    <div class="splash_content">
+      <div class="splash_text">
+        <h1>FUDCon 2015</h1>
+        <h2>FUDCon is the Fedora Users and Developers Conference, a major free software event held in various regions around the world, usually annually per region.<br />
+        FUDCon is a combination of sessions, talks, workshops, and hackfests in which project participants can work on specific initiatives.<br />
+        FUDCon is always free to attend for anyone.</h2>
+      </div>
+      <div class="splash_img">
+        <!-- Start Slider -->
+        <div id="slider">
+            <ul id="sliderContent">
+                <li class="sliderImage">
+                    <a href=""><img src="${path}/static/images/5.jpg" alt="5" /></a>
+                    <span class="top"><strong>FUDCon Córdoba 2015</strong></span>
+                </li>
+                <li class="sliderImage">
+                    <a href=""><img src="${path}/static/images/2.jpg" alt="2" /></a>
+                    <span class="top"><strong>FUDCon Panamá 2011</strong></span>
+                </li>
+                <li class="sliderImage">
+                    <img src="${path}/static/images/3.jpg" alt="3" />
+                    <span class="top"><strong>FUDCon Tempe 2011</strong></span>
+                </li>
+                <li class="sliderImage">
+                    <img src="${path}/static/images/4.jpg" alt="4" />
+                    <span class="top"><strong>FUDCon Zurich 2010</strong></span>
+                </li>
+                <div class="clear sliderImage"></div>
+            </ul>
+        </div>
+        <!-- End Slider -->
+      </div>
+    </div>
+  </div>
+
+  <div class="central_container">
+    <div class="central_content" id="home">
+      <div class="one_column_division">
+        <div id="column_one">
+          <h4><a href="http://www.flocktofedora.org/">NA: Flock Rochester 2015</a></h4>
+          <h3 class="heading-title"><a href="http://www.flocktofedora.org/"> Rochester, NY - August 12 through 15, 2015</a></h3>
+				  <div id="imgbox"><a href="http://www.flocktofedora.org/"><img style="padding-top:60px" src="${path}/static/images/flockrochester_logo.png" width="495px" height="140px" class="center" /></a></div>
+          <p><a href="http://www.flocktofedora.org/"><strong>Learn more about Flock Rochester 2015 Here</strong></a></p>
+				</div>
+        <div id="column_two">
+          <h4><a href="LATAM/">LATAM: FUDCon Córdoba 2015</a></h4>
+          <h3><a href="LATAM/"> Córdoba, Argentina - September 10 through 12, 2015</a></h3>
+					<div id="imgbox"><a href="LATAM/"><img style="padding-top:60px" src="${path}/static/images/logo_cordoba_2015.jpg" width="260px" height="170px" class="center" /></a></div>
+          <p><a href="LATAM/"><strong>Learn more about FUDCon Argentina 2015 Here</strong></a></p>
+				</div>
+      </div>
+    </div>
+    <div class="central_content">
+        <p>Read the <a href="http://fedoraproject.org/wiki/FUDCon#Past_FUDCons"><strong>wiki</strong></a> to find the past FUDCons</p>
+    </div>
+  </div>
+  <div class="flag_row_container">
+    <div class="flag_first_color"></div>
+    <div class="flag_second_color"></div>
+    <div class="flag_third_color"></div>
+  </div>
+  <!-- Start Footer Section -->
+  <div class="footer_container">
+    <div class="footer_content">
+      <div class="footer_contact_item"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+      <div class="footer_contact_item"><iframe src="http://www.facebook.com/plugins/like.php?href&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=lucida+grande&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></div>
+      <div class="footer_contact_item"><script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script></div>
+      <!--<div class="button_container"><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share"></script></div>-->
+    </div>
+  </div>
+  <!-- End Footer Section -->
+</div>
+</body>
+
+</html>

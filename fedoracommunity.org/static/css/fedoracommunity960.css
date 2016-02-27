@@ -1,0 +1,372 @@
+/*
+Notes:
+Grid 960 relies on sized elements and margins to create a correctly sized row. If you apply padding or borders, the design breaks. If you do, you have to adjust the size of the div to reflect the changes. Be weary of this. Adjust the sizes of elements in two places will always lead to confusion and make the design harder to maintain. That being said. Lets finish the top section.
+*/
+
+body {
+	background: #E6E6E6;
+	color: #333;
+	font-size: .8em;
+	padding: 0 0 40px;
+	font-family: "CantarellRegular", "sans-serif";
+}
+
+
+/* anchors
+----------------------------------------------- */
+a {
+}
+
+a:hover {
+	color:#333;
+}
+
+
+/* 960 grid system container background
+----------------------------------------------- */
+.container_12,
+.container_16 {
+	background:#fff;
+}
+
+#header, #site-content {
+	background-color: #fff;
+}
+
+#bottom .container_16 {
+	background-color: #e6e6e6;
+}
+
+
+/* headings
+----------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {line-height:1.2em; margin-bottom:.3em;}
+h2 {margin-top:1em;}
+h5 {font-size:1.2em;}
+h6 {font-size:1em; text-transform:uppercase;}
+
+
+h1 a {
+	font-weight:normal;
+}
+
+
+/* site heading
+----------------------------------------------- */
+#site-heading {
+	padding: .5em 0;
+}
+
+#site-heading h1 span {
+	font-family: "ComfortaaRegular", "sans-serif";
+	font-weight: normal;
+        color: #888a85;
+	font-size: 27px !important;
+	float: left;
+	clear: left;
+}
+
+#site-heading h1 span#logo {
+	background:transparent url(../images/fedora-logo_for-sublogos.png) no-repeat scroll 0px 0px;
+	height: 43px;
+	width: 154px;
+	display: block;
+	text-indent: -9999px;
+	float: left;
+	margin-right: 2em;
+}
+
+#site-heading h2 { 
+	text-transform: uppercase; 
+	font-family: "ComfortaaRegular", "sans-serif";
+	font-weight: normal;
+	color: #3c6eb4;
+	font-size: 16px; 
+}
+
+/* paragraphs, quotes and lists
+----------------------------------------------- */
+p {
+	margin-bottom:1em;
+}
+blockquote {
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size:1.2em;
+	padding-left:1em;
+	border-left:4px solid #ccc;
+}
+blockquote cite {
+	font-size:.9em;
+}
+ul, ol {
+	padding-top:0;
+}
+
+/* bottom section */
+#bottom
+{
+	background:transparent url('../images/footer-trim.png') repeat-x 0 0; /* make this image smaller */
+	/*border-top: 5px #4B9EDE solid; // this is an alternative */
+	padding: 30px 0px 0px 0px;
+	/* may not be needed */
+	margin:0;
+	width:100%;
+}
+
+#footer
+{
+	background-color: #e6e6e6;
+	background-image: none;
+	color: #4d4d4d;
+	padding-bottom: 15px;
+	font-size: .85em;
+}
+
+#footer a
+{
+	color: #3771c8;
+}
+
+#footer .rh-logo
+{
+	float: left;
+	margin-right: 15px;
+}
+
+#footer p
+{
+	margin: 0px;
+}
+
+#footer .disclaimer
+{
+	font-style: italic;
+}
+
+#footer ul {
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin-bottom:0.8em;
+}
+
+#footer li.first {
+	border-left:medium none;
+    padding-left: 1px;
+}
+
+#footer li {
+	border-left:1px solid #AAAAAA;
+	display:inline;
+	margin-left:-1px;
+	padding:0 0.75ex;
+}
+
+.sitelinks
+{
+	line-height: 1.6;
+	color: #808080;
+}
+
+.sitelinks a
+{
+	color: #808080;
+	text-decoration: none;
+}
+
+.sitelinks dl
+{
+}
+
+.sitelinks dt
+{
+	font-weight: bold;
+}
+
+/* Effects 
+.website-screenshot {
+	padding: 10px 10px 0px 10px;
+	background-color: #f4f4f2;
+	max-width: 240px;
+	margin-bottom: 30px;
+}
+
+.website-screenshot:hover {
+	background-color: yellow;
+}
+
+.website-screenshot p, .website-screenshot.country-name { margin-bottom: 2px; }
+.country-name {
+	font-weight: bold;
+	font-size: large;
+}
+*/
+
+/* Globe */
+#header-globe { 
+	height: 215px;
+	background:transparent url(../images/blue-hatching.png) repeat scroll 0 0;
+}
+
+#header-globe img { float: left; }
+#header-globe p { 
+	color:white;
+	font-size:1.3em;
+	padding:10px;
+}
+
+
+
+/* Continent Header */
+/* the whole row */
+#continent-nav {
+	background-color: #ecedeb;
+	background: url('../images/tab_background.png') repeat-x;
+}
+
+#continent-nav h3 { padding-top: 18px; font-size: 12px; }
+
+/* each individual continent icon */
+.continent-icon { padding: 9px; float: left; }
+
+.asia-head { border-top: 6px #79db32 solid; background-color: inherit; margin-right: 0; padding-right: 13px; height: 69px; border-left: 1px #badbb6 solid; border-bottom: 1px #babdb6 solid;}
+.asia-head:hover { border-top: 6px #79db32 solid; background-color: #dfdfdf; height: 69px;}
+.asia-head.hover { border-top: 6px #79db32 solid; background-color: #dfdfdf; height: 69px;}
+
+.africa-head { border-top: 6px #a07cbc solid; background-color: inherit; margin: auto 0; padding: 0 7px; height: 69px; 	border-bottom: 1px #babdb6 solid;}
+.africa-head:hover { border-top: 6px #a07cbc solid; background-color: #dfdfdf; height:  69px; }
+.africa-head.hover { border-top: 6px #a07cbc solid; background-color: #dfdfdf; height:  69px; }
+
+.america-head { border-top: 6px #e5972b solid; background-color: inherit; margin: auto 0; padding: 0 7px; height: 69px; 	border-bottom: 1px #babdb6 solid;}
+.america-head:hover { border-top: 6px #e5972b solid; background-color: #dfdfdf; height: 69px; }
+.america-head.hover { border-top: 6px #e5972b solid; background-color: #dfdfdf; height: 69px; }
+
+.europe-head { border-top: 6px #db3279 solid; background-color: inherit; margin-left: 0; padding-left: 14px; height: 69px; border-bottom: 1px #babdb6 solid;}
+.europe-head:hover { border-top: 6px #db3279 solid; background-color: #dfdfdf; height: 69px; }
+.europe-head.hover { border-top: 6px #db3279 solid; background-color: #dfdfdf; height: 69px; }
+
+.asia-head, .africa-head, .america-head, .europe-head {
+	border-right: 1px #babdb6 solid;
+}
+
+.asia-head:hover, .africa-head:hover, .america-head:hover, .europe-head:hover,
+.asia-head.hover, .africa-head.hover, .america-head.hover, .europe-head.hover {
+	background: #babdb6 url('../images/tab_hover-background.png') repeat-x scroll top left;
+	border-right: 1px #badbb6 solid;
+}
+
+
+#continent-nav a { color: #294172 !important; }
+#continent-nav a:hover,
+#continent-nav a.hover { color: #ecedeb !important; }
+
+/* site navigation */
+#site-nav {
+	background: #e1e1df;
+	background: url(../images/nav-background.png) repeat-x !important;
+	border: 1px #babdb6 solid;
+	margin-top: 25px;
+	height: 28px;
+	font-size: 1.2em;
+	font-family: "ComfortaaRegular", sans-serif;
+	text-shadow: 1px 1px 1px white;  
+	-moz-border-radius: 10px;
+}
+
+#site-nav li {
+	#display: inline;
+	margin: 0px;
+	list-style-type: none;
+	margin-top: 2px;
+}
+#site-nav li:first-child { margin-left: 10%; }
+#site-nav li:last-child { margin-right: 10%; }
+
+#site-nav a {
+	color:#7F817D;
+	text-align:center;
+	text-transform:uppercase;
+	text-decoration: none;
+	float:left;
+	text-align:center;
+	border-right: 1px solid #ccc;
+
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#site-nav li:last-child a { border-right: none !important; }
+
+#site-nav a:hover {
+	color: #6a8ec1;
+	background: url(../images/nav_active-background.png) repeat-x;
+	margin-top: -2px;
+	padding-top: 2px;
+	padding-bottom: 4px;
+}
+
+/* content */
+.continent-section-name { display: inline-block; }
+
+.top-link {
+	color:#3C6EB4;
+	padding-left:1em;
+	text-decoration: none;
+}
+
+div.continent_header div {
+  padding-top: 10px;
+  margin-bottom: 24px;
+}
+
+.continent_details dt { font-weight: bold; } 
+
+.continent_header.apac div { background-color: #f0fbe5; }
+.continent_header.emea div { background-color: #f4eef4; }
+.continent_header.latam div { background-color: #fcf2e4; }
+.continent_header.northam div { background-color: #f3e5f2; }
+
+.continent_details h3 {
+  margin-top: 10px;
+  font-size: medium;
+}
+
+.continent_details .apac h3 { color: #79db32;}
+.continent_details .emea h3 { color: #ad7fa8;}
+.continent_details .latam h3 { color: #e59728;}
+.continent_details .northam h3 { color: #db3279;}
+
+.continent_header th {
+  text-align:right;
+  padding-right: 10px;
+}
+
+.continent_header table {
+  margin-top: 10px;
+}
+
+/* content-bottom */
+
+.official-fp-link {
+	padding-top: 20px;
+}
+
+.official-fp-link p { font-size: 1.2em; margin: 0px; }
+.official-fp-link a { text-decoration: none; font-size: 1.5em;}
+
+/* Contact Webmaster */
+.contact-webmaster { float: right; padding-top: 20px; }
+.contact-webmaster a { font-weight: bold; text-decoration: none; }
+
+.screenshot {
+    display: block;
+    float:left;
+    margin-right: 10px;
+    width:100px;
+    height:59px;
+}
+
+.screenshot.apac { background-color: #f0fbe5; }
+.screenshot.emea { background-color: #f4eef4; }
+.screenshot.latam { background-color: #fcf2e4; }
+.screenshot.northam  { background-color: #f3e5f2; }

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Fedora SoaS Desktop')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/soas/header.html" />
+
+  <header id="head">
+    <div class="col-xs-12 text-center widewrapper">
+      <img src="${path}/static/images/screenshots/screenshot-soas.jpg" class="img-responsive" alt="SoaS Screenshot" />
+    </div>
+    <div class="container product-feature">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-justify top-space bottom-space">
+          <p>${_('Sugar on a Stick is a Fedora-based operating system featuring the award-winning Sugar Learning Platform and designed to fit on an ordinary USB thumbdrive ("stick").')}</p>
+          <p>${_('Sugar sets aside the traditional “office-desktop” metaphor, presenting a child-friendly graphical environment. Sugar automatically saves your progress to a "Journal" on your stick, so teachers and parents can easily pull up "all collaborative web browsing sessions done in the past week" or "papers written with Daniel and Sarah in the last 24 hours" with a simple query rather than memorizing complex file/folder structures. Applications in Sugar are known as Activities, some of which are described below.')}</p>
+          <p>${_('It is now deployable for the cost of a stick rather than a laptop; students can take their Sugar on a Stick thumbdrive to any machine - at school, at home, at a library or community center - and boot their customized computing environment without touching the host machine’s hard disk or existing system at all.')}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature main-head">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/soas/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Exploring the wider world -->
+  <div class="jumbotron darkbluebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Exploring the wider world')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/soas/web.png" alt="Browse" />
+          <h4>${_('Browse')}</h4>
+          <p>${_('Access the internet with Browse Activity, bookmark sites to research with friends and save sessions to keep organized.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/soas/getbooks.png" alt="Get Books" />
+          <h4>${_('Get Books')}</h4>
+          <p>${_('Download electronic books from all over the web. Explore with ease the classics and modern books from the Internet Archive, Feedbooks, etc.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/soas/read.png" alt="Read" />
+          <h4>${_('Read')}</h4>
+          <p>${_('Explore reports, documents, books and comics with the Read Activity.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/soas/chat.png" alt="Chat" />
+          <h4>${_('Chat')}</h4>
+          <p>${_('Chat provides a simple interface for collaborative discussion between two individuals or among a group as large as an entire classroom.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reflect on what you\'ve learned -->
+  <div class="jumbotron jumbotron-full">
+    <div class="container-full">
+        <div class="col-md-6 col-xs-12 text-center greybg recover-jumbo">
+          <h2>${Markup(_('Reflect on what you\'ve learned'))}</h2>
+	        <div class="col-md-6 col-xs-12 text-center top-margin">
+	       	  <img src="${path}/static/images/soas/journal.png" alt="Journal" />
+          	  <h4>${_('Journal')}</h4>
+	          <p>${_('The Journal provides an interface into a datastore of everything you\'ve created in Sugar. Bookmarking and commenting tools integrate with the Journal to allow parents and teachers to review a child\'s learning progress.')}</p>
+	        </div>
+	        <div class="col-md-6 col-xs-12 text-center top-margin">
+	          <img src="${path}/static/images/soas/portfolio.png" alt="Portfolio" />
+          	  <h4>${_('Portfolio')}</h4>
+          	  <p>${_('Portfolio provides a means to create periodic snapshots in slideshow form of representative work that shows what the learner can do.')}</p>
+	        </div>
+        </div>
+        <div class="col-md-6 col-xs-12 text-center darkgreybg recover-jumbo">
+          <h2>${Markup(_('Getting technical'))}</h2>
+	        <div class="col-md-6 col-xs-12 text-center top-margin">
+	          <img src="${path}/static/images/soas/turtleart.png" alt="Turtle Blocks" />
+	          <h4>${_('Turtle Blocks')}</h4>
+	          <p>${_('Learn programming concepts with snap together blocks. Create art, animations and interactive programs in a graphics focused environment.')}</p>
+	        </div>
+	        <div class="col-md-6 col-xs-12 text-center top-margin">
+	          <img src="${path}/static/images/soas/icon.png" alt="Pippy" />
+	          <h4>${_('Pippy')}</h4>
+	          <p>${_('Program applications in a simple environment. The Python backend provides unlimited opportunities within a simple language.')}</p>
+	        </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Multimedia -->
+  <div class="jumbotron whitebox">
+    <div class="container">
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Multimedia')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/soas/jukebox.png" alt="Music" />
+          <h4>${_('Jukebox')}</h4>
+          <p>${_('Jukebox is a simple media player to consume different kinds of audio and video files as well as your own creations.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/soas/paint.png" alt="Paint" />
+          <h4>${_('Paint')}</h4>
+          <p>${_('Paint provides the tools to make artistic creations. Use brushes, stamps, shapes, text and images to create beautiful pictures.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/soas/record.png" alt="Record" />
+          <h4>${_('Record')}</h4>
+          <p>${_('Record is a basic rich-media capture Activity. It lets you capture still images, video, and/or audio.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/soas/imageviewer.png" alt="Imageviewer" />
+          <h4>${_('Imageviewer')}</h4>
+          <p>${_('A simple and fast image viewer tool for Sugar. It has standard features, like zoom and rotate.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Understanding and creating content -->
+  <div class="jumbotron darkbluebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Understanding and creating content')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-3 col-xs-12 text-center top-margin">
+          <img src="${path}/static/images/soas/write.png" alt="Write" />
+          <h4>${_('Write')}</h4>
+          <p>${_('Create a story, poem, report or anything with Write. Use formatting tools to add images or colors and work together with friends.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center top-margin">
+          <img src="${path}/static/images/soas/labyrinth.png" alt="Labyrinth" />
+          <h4>${_('Labyrinth')}</h4>
+          <p>${_('Put complex ideas on the computer. Use the Labyrinth Activity to mind map about new concepts, to explore new ideas or to reflect.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center top-margin">
+          <img src="${path}/static/images/soas/physics.png" alt="Physics" />
+          <h4>${_('Physics')}</h4>
+          <p>${_('Create real life simulations using shapes, motors, ropes and bolts to explore physics in the world.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center top-margin">
+          <img src="${path}/static/images/soas/fototoon.png" alt="FotoToon" />
+          <h4>${_('FotoToon')}</h4>
+          <p>${_('Use images and text to create comic strips. FotoToon provides many options to add motion, speech and thought to creations.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/soas/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="jumbotron greybox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#sugar&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=sugar'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;soas@lists.sugarlabs.org&lt;/a&gt;.') % ('http://lists.sugarlabs.org/listinfo/soas'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Specific documentation and tutorials are available at the &lt;a href="%s"&gt;SoaS project upstream website&lt;/a&gt;.') % ('http://www.sugarlabs.org/'))}</p>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>

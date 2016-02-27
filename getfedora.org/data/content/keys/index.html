@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Package Signing Keys')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/head.html" />
+  <xi:include href="../../templates/keys/key-button-and-modal.html" />
+
+  <header id="head" class="recover-heading bluebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-left">
+          <h1>${_('Package Signing Keys')}</h1>
+          <p>
+            ${_('This page lists the public GPG keys used for signing packages in Fedora.')}
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="jumbotron">
+    <div class="container text-center recover-heading">
+      <h2 class="thin">${_('Learn how Fedora protects you.')}</h2>
+      <p class="text-muted">${_('Fedora makes use of GPG package signing to ensure that package integrity has not been compromised.')}</p>
+      <p><a class="btn btn-default" href="faq" role="button">${Markup(_('Read the FAQ to learn more &raquo;'))}</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="thin">${_('Currently Used Keys')}</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container recover-heading">
+    <div class="row">
+      ${keys_for_release(
+      _('Fedora 24'),
+      [
+        KeyInfo(
+           _('Primary'),
+            '4096R/81B46521 2015-07-25',
+            '5048 BDBB A5E7 76E5 47B0  9CCC 73BD E983 81B4 6521',
+            ['Fedora (24) &lt;fedora-24-primary@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/81B46521.txt', 'Fedora Project')
+            ])
+      , KeyInfo(
+           _('Secondary'),
+            '4096R/030D5AED 2015-07-27',
+            '8C6E 5A80 A399 BABE 7919  85BA B863 5EEB 030D 5AED',
+            ['Fedora Secondary (24) &lt;fedora-24-secondary@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/030D5AED.txt', 'Fedora Project')
+            ])
+      ])}
+
+      ${keys_for_release(
+      _('Fedora 23'),
+      [
+        KeyInfo(
+           _('Primary'),
+            '4096R/34EC9CBA 2015-02-17',
+            'EF45 5106 80FB 0232 6B04  5AFB 3247 4CF8 34EC 9CBA',
+            ['Fedora (23) &lt;fedora-23-primary@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/34EC9CBA.txt', 'Fedora Project')
+            ])
+      , KeyInfo(
+           _('Secondary'),
+            '4096R/873529B8 2015-02-17',
+            '0108 4DD8 8A5E 6224 F7A6  7B76 B4BB 871C 8735 29B8',
+            ['Fedora Secondary (23) &lt;fedora-23-secondary@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/873529B8.txt', 'Fedora Project')
+            ])
+      ])}
+
+      ${keys_for_release(
+      _('Fedora 22'),
+      [
+        KeyInfo(
+            _('Primary'),
+            '4096R/8E1431D5 2014-07-09',
+            'C527 EA07 A934 9B58 9C35  E1BF 11AD C094 8E14 31D5',
+            ['Fedora (22) &lt;fedora@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/8E1431D5.txt', 'Fedora Project')
+            ])
+      , KeyInfo(
+            _('Secondary'),
+            '4096R/A29CB19C 2014-07-09',
+            'B467 FA46 E2CE 5FAC 3499  10C2 D8D1 FA8C A29C B19C',
+            ['Fedora Secondary (22) &lt;fedora@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/A29CB19C.txt', 'Fedora Project')
+            ])
+      ])}
+
+      ${keys_for_release(
+      _('Fedora 21'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '4096R/95A43F54 2013-11-14',
+              '6596 B8FB ABDA 5227 A9C5  B59E 89AD 4E87 95A4 3F54',
+              ['Fedora (21) &lt;fedora@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/95A43F54.txt', 'Fedora Project')
+              ])
+      ,   KeyInfo(
+              _('Secondary'),
+              '4096R/A0A7BADB 2013-11-14',
+              '9996 E55F A5D4 18C8 6CEF  F750 636D EA19 A0A7 BADB',
+              ['Fedora Secondary (21) &lt;fedora@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/A0A7BADB.txt', 'Fedora Project')
+              ])
+      ])}
+    </div>
+
+    <div class="row">
+      ${keys_for_release(
+      _('EPEL 7'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '4096R/352C64E5 2013-12-16',
+              '91E9 7D7C 4A5E 96F1 7F3E  888F 6A2F AEA2 352C 64E5',
+              ['Fedora EPEL (7) &lt;epel@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/352C64E5.txt', 'Fedora Project')
+              ])
+      ])}
+
+      ${keys_for_release(
+      _('EPEL 6'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '4096R/0608B895 2010-04-23',
+              '8C3B E96A F230 9184 DA5C  0DAE 3B49 DF2A 0608 B895',
+              ['EPEL (6) &lt;epel@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/0608B895.txt', 'Fedora Project')
+              ])
+      ])}
+
+      ${keys_for_release(
+      _('EPEL 5'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '1024D/217521F6 2007-03-02 [expires: 2017-02-27]',
+              'B940 BE07 7D71 0A28 7D7F  2DD1 119C C036 2175 21F6',
+              ['Fedora EPEL &lt;epel@fedoraproject.org&gt;'],
+              '2048g/B6610DAF 2007-03-02 [expires: 2017-02-27]',
+              [('https://getfedora.org/static/217521F6.txt', 'Fedora Project')
+              ])
+      ])}
+    </div>
+  </div>
+  <div class="container recover-heading">
+    <div class="row top-margin">
+      <p>${Markup(_('Looking for &lt;a href="%s"&gt;obsolete keys&lt;/a&gt;?') % ('obsolete.html'))}</p>
+    </div>
+  </div>
+  </body>
+</html>

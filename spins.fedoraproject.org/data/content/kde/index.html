@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Fedora KDE Plasma Desktop')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/kde/header.html" />
+
+  <header id="head">
+    <div class="col-xs-12 text-center widewrapper">
+      <img src="${path}/static/images/screenshots/screenshot-kde.jpg" class="img-responsive" alt="KDE Screenshot" />
+    </div>
+    <div class="container product-feature">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-justify top-space bottom-space">
+          <p>${_('The Fedora KDE Plasma Desktop Edition is a powerful Fedora-based operating system utilizing the KDE Plasma Desktop as the main user interface.')}</p>
+          <p>${_('Fedora KDE Plasma Desktop comes with many pre-selected top quality applications that suit all modern desktop use cases - from online communication like web browsing, instant messaging and electronic mail correspondence, through multimedia and entertainment, to an advanced productivity suite, including office applications and enterprise grade personal information management.')}</p>
+          <p>${_('All KDE applications are well integrated, with a similar look and feel and an easy to use interface, accompanied by an outstanding graphical appearance.')}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature main-head">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/kde/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Going Online -->
+  <div class="jumbotron darkbluebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Going Online')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/kde/network.png" alt="Network Manager" />
+          <h4>${_('Network Manager')}</h4>
+          <p>${_('Just a click and you\'re connected to your wireless LAN router, or online via many supported 3G mobile broadband cards.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/kde/konqueror.png" alt="Konqueror" />
+          <h4>${_('Konqueror')}</h4>
+          <p>${_('Explore the World Wide Web with Konqueror, the full featured KDE web browser.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/kde/telepathy.png" alt="Telepathy" />
+          <h4>${_('Telepathy')}</h4>
+          <p>${_('Stay connected with your friends and colleagues using Telepathy Instant Messaging client. It supports all common IM protocols.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/kde/ktorrent.png" alt="KTorrent and KGet" />
+          <h4>${Markup(_('KTorrent &amp; KGet'))}</h4>
+          <p>${_('Are you a downloader? Use KTorrent or KGet to get new versions of Fedora KDE Plasma Desktop Edition!')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Utilities and Office -->
+  <div class="jumbotron jumbotron-full">
+    <div class="container-full">
+        <div class="col-md-6 col-xs-12 text-center greybg recover-jumbo">
+          <h2>${Markup(_('Utilities &amp; Configuration'))}</h2>
+	          <div class="col-md-6 col-xs-12 text-center top-margin">
+	          <img src="${path}/static/images/kde/konsole.png" alt="Konsole" />
+	          <h4>${_('Konsole')}</h4>
+	          <p>${_('Fedora KDE Plasma Desktop ships a terminal, the gateway to the real power of any UNIX/linux machine, called Konsole.')}</p>
+	        </div>
+	        <div class="col-md-6 col-xs-12 text-center top-margin">
+	          <img src="${path}/static/images/kde/settings.png" alt="System Settings" />
+	          <h4>${_('System Settings')}</h4>
+	          <p>${_('No need to know cryptic commands and config files. Click the options you like to change and choose the settings that make you happy.')}</p>
+	        </div>
+        </div>
+        <div class="col-md-6 col-xs-12 text-center darkgreybg recover-jumbo">
+          <h2>${Markup(_('Office &amp; Productivity Suite'))}</h2>
+          <div class="col-md-6 col-xs-12 text-center top-margin">
+          <img src="${path}/static/images/kde/calligra.png" alt="Calligra" />
+          <h4>${_('Calligra')}</h4>
+          <p>${_('Calligra is an integrated office suite built on KDE Platform. It utilizes free and open standards like OpenDocument for its document formats and components.')}</p>
+        </div>
+        <div class="col-md-6 col-xs-12 text-center top-margin">
+          <img src="${path}/static/images/kde/kontact.png" alt="Kontact" />
+          <h4>${_('Kontact')}</h4>
+          <p>${_('Kontact is the integrated personal information manager of KDE Plasma Desktop. The Kontact suite unites mature and proven KDE PIM applications under one easy to use application.')}</p>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Multimedia -->
+  <div class="jumbotron whitebox">
+    <div class="container">
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Multimedia')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="${path}/static/images/kde/amarok.png" alt="Amarok" />
+          <h4>${_('Amarok')}</h4>
+          <p>${_('Amarok supports playlists, including dynamically generated ones, with cover art, lyrics and even info on the current track or band. Amarok also has integration with Last.fm and other music services.')}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="${path}/static/images/kde/dragonplayer.png" alt="Dragon Player" />
+          <h4>${_('Dragon Player')}</h4>
+          <p>${_('Dragon Player is a multimedia player where the focus is on simplicity, instead of features. Its simple interface is designed not to get in your way and instead empower you to simply play multimedia files.')}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="${path}/static/images/kde/k3b.png" alt="K3B" />
+          <h4>${_('K3B')}</h4>
+          <p>${_('K3B allows you to easily back up your multimedia files as it\'s a full featured CD/DVD writing software. K3B supports writing data CDs/DVDs, audio CDs, video CDs, DVDs, copying, CD ripping and more.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="jumbotron darkbluebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Education')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/kde/marble.png" alt="Marble" />
+          <h4>${_('Marble')}</h4>
+          <p>${_('Marble is a virtual globe and world atlas in your computer. You can learn a lot about Earth or you can just enjoy virtual trips around our planet.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/kde/parley.png" alt="Parley" />
+          <h4>${_('Parley')}</h4>
+          <p>${_('Parley is a vocabulary trainer that helps you memorize things via virtual flashcards. It provides a rich set of tools to manage your card sets.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/kde/kiten.png" alt="Kiten" />
+          <h4>${_('Kiten')}</h4>
+          <p>${_('Kiten is a Japanese dictionary application as well as a Japanese language reference. It includes a kanji lookup tool and browsing interface.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/kde/kalzium.png" alt="Kalzium" />
+          <h4>${_('Kalzium')}</h4>
+          <p>${_('Kalzium allows you to explore the periodic table of elements. It has a 3D molecule editor plus multiple simulators and calculators.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/kde/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="jumbotron greybox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-kde&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-kde'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;kde@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/kde'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Specific documentation and tutorials are available at the &lt;a href="%s"&gt;KDE project upstream website&lt;/a&gt;.') % ('https://userbase.kde.org/Welcome_to_KDE_UserBase'))}</p>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>

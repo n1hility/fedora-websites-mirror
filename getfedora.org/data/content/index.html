@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Fedora')}</title>
+  </head>
+
+  <body class="home">
+  <xi:include href="../templates/head.html" />
+  <div class="main-head-index">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 bottom-margin">
+            <h1 class="thin">${_('Choose Freedom. Choose Fedora.')}</h1>
+            <h4 class="thin">${_('Less setup, more innovation. Choose a flavor of Fedora streamlined for your needs, and get to work right away.')}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <header id="head">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-xs-12 highlight productitem workstation">
+          <a href="../${lang}/workstation">
+            <div class="productitem-logo">
+                <div class="h-caption color"></div>
+            </div></a>
+            <div class="h-body text-justify top-margin liveusb">
+              <p>${_('Fedora Workstation is a polished, easy to use operating system for laptop and desktop computers, with a complete set of tools for developers and makers of all kinds.')}</p>
+              <p class="visible-xs text-center uppercase"><a class="btn btn-edition" href="../${lang}/workstation/download" role="button">${_('Download now')}</a></p>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 highlight productitem server">
+          <a href="../${lang}/server">
+            <div class="productitem-logo">
+                <div class="h-caption color"></div>
+            </div></a>
+            <div class="h-body text-justify top-margin liveusb">
+              <p>${_('Fedora Server is a powerful, flexible operating system that includes the best and latest datacenter technologies. It puts you in control of all your infrastructure and services.')}</p>
+              <p class="visible-xs text-center uppercase"><a class="btn btn-edition" href="../${lang}/server/download" role="button">${_('Download now')}</a></p>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 highlight productitem cloud">
+          <a href="../${lang}/cloud">
+            <div class="productitem-logo">
+                <div class="h-caption color"></div>
+            </div></a>
+            <div class="h-body text-justify top-margin">
+              <p>${_('Fedora Cloud provides a minimal image of Fedora for use in public and private cloud environments. It includes just the bare essentials making it very light on resources, but you get enough to run your cloud application.')}</p>
+              <p class="visible-xs text-center uppercase bottom-space"><a class="btn btn-edition" href="../${lang}/cloud/download" role="button">${_('Download now')}</a></p>
+            </div>
+        </div>
+      </div>
+      <div class="row bottom-margin-edition hidden-xs">
+	  	  <div class="col-sm-4 text-center">
+		      <p class="uppercase"><a class="btn btn-edition" href="../${lang}/workstation/download" role="button">${_('Download now')}</a></p>
+	  	  </div>
+	  	  <div class="col-sm-4 text-center">
+		      <p class="uppercase"><a class="btn btn-edition" href="../${lang}/server/download" role="button">${_('Download now')}</a></p>
+	  	  </div>
+	  	  <div class="col-sm-4 text-center">
+		      <p class="uppercase"><a class="btn btn-edition" href="../${lang}/cloud/download" role="button">${_('Download now')}</a></p>
+	  	  </div>
+  	  </div>
+
+    </div>
+  </header>
+
+	<div class="col-xs-12 blue-pattern-box"></div>
+
+    <div class="text-center grey-pattern-box">
+      <div class="container">
+      	<div class="row">
+	        <div class="col-xs-12 col-sm-3">
+	            <img class="foundations" src="${path}/static/images/4freedom.png" alt="freedom" />
+	        </div>
+	        <div class="col-xs-12 col-sm-3">
+	            <img class="foundations" src="${path}/static/images/4friends.png" alt="friends" />
+	        </div>
+	        <div class="col-xs-12 col-sm-3">
+	            <img class="foundations" src="${path}/static/images/4features.png" alt="features" />
+	        </div>
+	        <div class="col-xs-12 col-sm-3">
+	            <img class="foundations" src="${path}/static/images/4first.png" alt="first" />
+	        </div>
+    	</div>
+    	<div class="row bottom-margin">
+	        <div class="col-xs-12 col-sm-10 col-sm-offset-1 bottom-margin">
+	            <div class="h-body text-justify">
+	              <h4 class="thin">${_('Fedora is always free for anyone to use, modify, and distribute. It is built and used by people across the globe who work together as a community: the Fedora Project.')}</h4>
+	            </div>
+	        </div>
+    	</div>
+      </div>
+    </div>
+
+  <div class="col-xs-12 blue-pattern-box"></div>
+
+  <div class="container">
+  <div class="col-xs-12 col-sm-6 text-center top-space">
+    <div class="row">
+      <div class="col-xs-12 bottom-margin text-center">
+        <h1 class="thin">${_('Want more Fedora options?')}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 bottom-margin">
+      	<a href="//spins.fedoraproject.org/kde"><img class="spinsbar" src="${path}/static/images/kde.png" alt="KDE" /></a>
+        <a href="//spins.fedoraproject.org/xfce"><img class="spinsbar" src="${path}/static/images/xfce.png" alt="Xfce" /></a>
+        <a href="//spins.fedoraproject.org/cinnamon"><img class="spinsbar" src="${path}/static/images/cinnamon.png" alt="Cinnamon" /></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 bottom-margin">
+	    <a href="//spins.fedoraproject.org/lxde"><img class="spinsbar" src="${path}/static/images/lxde.png" alt="LXDE" /></a>
+	    <a href="//spins.fedoraproject.org/mate-compiz"><img class="spinsbar" src="${path}/static/images/mate.png" alt="MATE-Compiz" /></a>
+	    <a href="//spins.fedoraproject.org/soas"><img class="spinsbar" src="${path}/static/images/soas.png" alt="SoaS" /></a>
+	  </div>
+	</div>
+	<div class="row">
+      <div class="col-xs-12 bottom-margin text-center">
+        <h4 class="thin">${Markup(_('The Fedora community also releases &lt;a href="https://arm.fedoraproject.org/"&gt;ARM images&lt;/a&gt;, alternate live Spins, and other variations of Fedora tailored to specific requirements. Browse them at the &lt;a href="https://spins.fedoraproject.org/"&gt;Fedora Spins&lt;/a&gt; or &lt;a href="https://labs.fedoraproject.org/"&gt;Fedora Labs&lt;/a&gt; website.'))}</h4>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-6 text-center top-space">
+    <div class="row">
+      <div class="col-xs-12 bottom-margin text-center">
+        <h1 class="thin">${_('Stay connected and informed.')}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-4 bottom-margin">
+        <a href="//fedoramagazine.org/"><img src="${path}/static/images/magazine.png" alt="Fedora Magazine" /></a>
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-xs-12 bottom-margin text-center">
+        <h4 class="thin">${Markup(_('Keep up-to-date with the Fedora Project and get all the latest news and reports in &lt;a href="%s"&gt;Fedora Magazine&lt;/a&gt;.') % ('//fedoramagazine.org/'))}</h4>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container bottom-margin">
+  <div class="col-xs-12 col-sm-6 text-center top-margin">
+    <div class="row">
+      <div class="col-xs-12 bottom-margin text-center">
+        <h1 class="thin">${_('Read the docs.')}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-4 bottom-margin">
+      	<a href="//docs.fedoraproject.org/"><img src="${path}/static/images/docs-book.png" alt="Fedora Docs" /></a>
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-xs-12 bottom-space text-center">
+        <h4 class="thin docslink">${Markup(_('Check out the Release Notes for detailed information on the current release. To learn more about using Fedora and details such as system requirements, see the &lt;a href="%s"&gt;&lt;strong&gt;official documentation&lt;/strong&gt;&lt;/a&gt;.') % ('https://docs.fedoraproject.org/'))}</h4>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-6 text-center top-margin">
+    <div class="row">
+      <div class="col-xs-12 bottom-margin text-center">
+        <h1 class="thin">${_('Get help.')}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 bottom-margin">
+      	<a href="//ask.fedoraproject.org/"><img src="${path}/static/images/askfedora.png" alt="Ask Fedora" /></a>
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-xs-12 bottom-space text-center">
+        <h4 class="thin">${Markup(_('Need some help with Fedora? Check out &lt;a href="%s"&gt;Ask Fedora&lt;/a&gt;, where you can read archives of questions from other users, or ask your own question.') % ('https://ask.fedoraproject.org/'))}</h4>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<!-- News
+      <py:choose>
+        <py:when test="global_variables.release['curr_state'] == 'Alpha'">
+          <div class="newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Fedora %(rel)s %(state)s released! Check it out in the Download section.')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:when>
+        <py:when test="global_variables.release['curr_state'] == 'Beta'">
+          <div class="jumbotron newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Fedora %(rel)s %(state)s released! Check it out in the Download section.')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:when>
+        <py:otherwise>
+        	<div class="jumbotron newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Fedora %(rel)s released! Check it out in the Download section.')) % {'rel':global_variables.release['curr_id']}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:otherwise>
+      </py:choose>
+-->
+</body>
+</html>
