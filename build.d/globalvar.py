@@ -129,6 +129,8 @@ iso_size={
     'pre_x86_64_Live_Robotics':'2.5',   # In GB
     'pre_i686_Live_Jam':       '1.7',   # In GB
     'pre_x86_64_Live_Jam':     '1.7',   # In GB
+    'pre_i686_Live_Astronomy': '1.7',   # In GB
+    'pre_x86_64_Live_Astronomy':'1.7',   # In GB
     # Server
     'x86_64_server_DVD':   '2.0',       # In GB
     'i386_server_DVD':     '2.1',       # In GB
