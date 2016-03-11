@@ -17,17 +17,17 @@
       <div class="row">
         <div class="col-xs-12">
             <!-- Test comment to confirm decause isn't going to hose all the websites -->
-        <h1>${Markup(_('Fedora Budget'))}</h1>
-        <p>${Markup(_('This page will serve as a public clearing house for all information regarding money allocated and spent by the Fedora Project. Budget numbers will be updated quarterly, and any changes to the process will be reflected here in this page.'))}</p>
+        <h1>${_('Fedora Budget')}</h1>
+        <p>${_('This page will serve as a public clearing house for all information regarding money allocated and spent by the Fedora Project. Budget numbers will be updated quarterly, and any changes to the process will be reflected here in this page.')}</p>
 
               <div class="well">
-                <h4>${Markup(_('Contents'))}</h4>
+                <h4>${_('Contents')}</h4>
                 <ul class="list-unstyled">
-                  <li><a href="#budgetnumbers">Fedora Budget Numbers</a></li>
+                    <li><a href="#budgetnumbers">${_('Fedora Budget Numbers')}</a></li>
                   <!--<li><a href="#background">Fedora.next Background</a></li>-->
-                  <li><a href="#process">The Fedora Budget Process</a></li>
-                  <li><a href="#delegates">Regional Delegates</a></li>
-                  <li><a href="#reimbursement">Reimbursement</a></li>
+                  <li><a href="#process">${_('The Fedora Budget Process')}</a></li>
+                  <li><a href="#delegates">${_('Regional Delegates')}</a></li>
+                  <li><a href="#reimbursement">${_('Reimbursement')}</a></li>
                   <!--<li><a href="#benefits">Delegate Benefits</a></li>-->
                 </ul>
               </div>
@@ -48,20 +48,20 @@
         </div>
         -->
 
-        <h2>${Markup(_('Budget Numbers'))}</h2>
+        <h2>${_('Budget Numbers')}</h2>
         <div id="budgetnumbers">
           <div class="table-responsive">
             <table class="table">
               <tr>
-                <th>Component</th>
-                <th>Total</th>
+                  <th>${_('Component')}</th>
+                  <th>${_('Total')}</th>
                 <th>Q1</th>
                 <th>Q2</th>
                 <th>Q3</th>
                 <th>Q4</th>
               </tr>
               <tr>
-                <td><a href="#overall">TOTAL BUDGET</a></td>
+                  <td><a href="#overall">${_('TOTAL BUDGET')}</a></td>
                 <td>$000</td>
                 <td>Q1</td>
                 <td>Q2</td>
@@ -69,7 +69,7 @@
                 <td>Q4</td>
               </tr>
               <tr>
-                <td><a href="#premierevents">PREMIER EVENTS</a></td>
+                  <td><a href="#premierevents">${_('PREMIER EVENTS')}</a></td>
                 <td>$000</td>
                 <td>Q1</td>
                 <td>Q2</td>
@@ -77,7 +77,7 @@
                 <td>Q4</td>
               </tr>
               <tr>
-                <td><a href="#council">COUNCIL</a></td>
+                  <td><a href="#council">${_('COUNCIL')}</a></td>
                 <td>$000</td>
                 <td>Q1</td>
                 <td>Q2</td>
@@ -122,32 +122,32 @@
 
         <!--
         <div id="background">
-        <h2><a href="#background">${Markup(_('Fedora.next Background'))}</a></h2>
+        <h2><a href="#background">${_('Fedora.next Background')}</a></h2>
 
-            <p>${Markup(_('Fedora.next has precipitated a number of other changes and improvements across the project, and up and down the organizational stack;from release engineering with Bodhi2 and other tools, (reducing the amount of time it takes to ship updates by HALF) to governance and strategy with Fedora Council Objectives.'))}</p>
+            <p>${_("Fedora.next has precipitated a number of other changes and improvements across the project, and up and down the organizational stack;from release engineering with Bodhi2 and other tools, (reducing the amount of time it takes to ship updates by HALF) to governance and strategy with Fedora Council Objectives.")}</p>
 
 
-            <p>${Markup(_('Another change that has been in the works is improving the budget process by which we allocate financial resources. FAMSco has effectively regionalized the process by which local community members request, spend, and report funds. This approach we think is an effective one, we agree that each region knows their own communities and their needs best, and should control their own budgets.'))}</p>
+            <p>${_('Another change that has been in the works is improving the budget process by which we allocate financial resources. FAMSco has effectively regionalized the process by which local community members request, spend, and report funds. This approach we think is an effective one, we agree that each region knows their own communities and their needs best, and should control their own budgets.')}</p>
 
-            <p>${Markup(_('Starting in FY17, there are going to be changes to the budgeting process. The new role of Fedora Community Action and Impact Lead (FCL) has a mandate to improve the transparency of the budgeting process. After some months of planning and discussion, we have come up with a process to move forward.'))}</p>
+            <p>${_('Starting in FY17, there are going to be changes to the budgeting process. The new role of Fedora Community Action and Impact Lead (FCL) has a mandate to improve the transparency of the budgeting process. After some months of planning and discussion, we have come up with a process to move forward.')}</p>
 
-            <p>${Markup(_('This process builds off of the work that FAMSCo and other ambassadors (particularly cwickert) did when proposing the idea of FOSCo, and also includes input from Fedora Council, the Fedora Project Lead, and other Fedora Leadership. '))}</p>
+            <p>${_('This process builds off of the work that FAMSCo and other ambassadors (particularly cwickert) did when proposing the idea of FOSCo, and also includes input from Fedora Council, the Fedora Project Lead, and other Fedora Leadership. ')}</p>
         </div>
         -->
 
 
         <div id="process">
-        <h2><a href="#process">${Markup(_('The Fedora Budget Process'))}</a></h2>
+        <h2><a href="#process">${_('The Fedora Budget Process')}</a></h2>
         <!--
-        <p>${Markup(_('The budget will be split into discreet chunks as follows (FY17 and Beyond):'))}</p>
+        <p>${_('The budget will be split into discreet chunks as follows (FY17 and Beyond):')}</p>
 
         <ul>
-          <li>${Markup(_('Fedora Premier Events (FLOCK/FUDCons)'))}</li>
-          <li>${Markup(_('Regional Budgets (APAC/EMEA/LATAM/NA)'))}</li>
-          <li>${Markup(_('Discretionary Council Budget (non-regional general funds)'))}</li>
+          <li>${_('Fedora Premier Events (FLOCK/FUDCons)')}</li>
+          <li>${_('Regional Budgets (APAC/EMEA/LATAM/NA)')}</li>
+          <li>${_('Discretionary Council Budget (non-regional general funds)')}</li>
         </ul>
 
-        <p>${Markup(_('The budget will be proposed and approved according to the timeline as follows:'))}</p>
+        <p>${_('The budget will be proposed and approved according to the timeline as follows:')}</p>
         -->
 
         <div id="timeline">
@@ -177,18 +177,18 @@ calendar, fiscal year (previous, current, future), topic, Responsible
 
         </div>
 
-        <p>${Markup(_('FCL = Fedora Community Action and Impact Lead (as of Fedora 22+, Remy DeCausemaker).'))}</p>
+        <p>${_('FCL = Fedora Community Action and Impact Lead (as of Fedora 22+, Remy DeCausemaker).')}</p>
 
 
-        <p>${Markup(_('Note that "→" in the chart above indicates that responsibility for that item feeds into a next step in responsibility; for example, regional treasurers are responsible for providing the FCL with the relevant information for their region, and the FCL is responsible for the general report to the community. Likewise, the Council is responsible for any top-level budget adjustment when the final budget comes in from our sponsor, and regions responsible to update accordingly if needed.'))}</p>
+        <p>${_('Note that "→" in the chart above indicates that responsibility for that item feeds into a next step in responsibility; for example, regional treasurers are responsible for providing the FCL with the relevant information for their region, and the FCL is responsible for the general report to the community. Likewise, the Council is responsible for any top-level budget adjustment when the final budget comes in from our sponsor, and regions responsible to update accordingly if needed.')}</p>
 
-        <p><strong>${Markup(_('Regional Ambassadors will manage their own budgets, and report back quarterly on action and impact.'))}</strong></p>
+        <p><strong>${_('Regional Ambassadors will manage their own budgets, and report back quarterly on action and impact.')}</strong></p>
 
-        <p>${Markup(_('If a region does not submit a budget proposal within the timeline above, their budget will be allocated as general discretionary funds. Budgeted money not spent as planned may also be reallocated on a quarterly basis; if a region or budgeted subproject does not provide a quarterly update, budget for that region or subproject for future quarters may also be reallocated. '))}</p>
+        <p>${_('If a region does not submit a budget proposal within the timeline above, their budget will be allocated as general discretionary funds. Budgeted money not spent as planned may also be reallocated on a quarterly basis; if a region or budgeted subproject does not provide a quarterly update, budget for that region or subproject for future quarters may also be reallocated. ')}</p>
         </div>
 
         <div id="delegates">
-        <h2><a href="#delegates">${Markup(_('Regional Delegates'))}</a></h2>
+        <h2><a href="#delegates">${_('Regional Delegates')}</a></h2>
 
           <div class="table-responsive">
             <table class="table">
@@ -199,7 +199,7 @@ calendar, fiscal year (previous, current, future), topic, Responsible
                 <th>Storyteller</th>
               </tr>
               <tr>
-                <td><a href="#council">COUNCIL</a></td>
+                  <td><a href="#council">COUNCIL</a></td>
                 <td><a href="mailto:fcl@fedoraproject.org">FCL</a></td>
                 <td><a href="mailto:fcl@fedoraproject.org">FCL</a></td>
                 <td><a href="mailto:fcl@fedoraproject.org">FCL</a></td>
@@ -231,58 +231,58 @@ calendar, fiscal year (previous, current, future), topic, Responsible
             </table>
           </div>
 
-        <p>${Markup(_('Each region will select three delegated roles:'))}</p>
+        <p>${_('Each region will select three delegated roles:')}</p>
 
         <ul>
-          <li>${Markup(_('Treasurer'))}</li>
-            <p>${Markup(_("The Regional Treasurer will be responsible for recording costs and disbursing funds. Cardholders don't necessarily have to serve this role, but it would reduce the number of hops between expense and report"))}</p>
-          <li>${Markup(_('Logistician'))}</li>
-            <p>${Markup(_('The Logistician Delegate will be accountable for shipping swag, banners, and other physical items that need to be shared regionally, as well as any other coordinating for event staffing and organization. This includes convening weekly ambassador IRC meetings. '))}</p>
-          <li>${Markup(_('Storyteller'))}</li>
-            <p>${Markup(_("The Storytelling Delegate will be accountable for Regional Reports. They don't necessarily have to write all the original content, they just need to be accountable for ensuring content makes it out onto our channels."))}</p>
+          <li>${_('Treasurer')}</li>
+            <p>${_("The Regional Treasurer will be responsible for recording costs and disbursing funds. Cardholders don't necessarily have to serve this role, but it would reduce the number of hops between expense and report")}</p>
+          <li>${_('Logistician')}</li>
+            <p>${_('The Logistician Delegate will be accountable for shipping swag, banners, and other physical items that need to be shared regionally, as well as any other coordinating for event staffing and organization. This includes convening weekly ambassador IRC meetings. ')}</p>
+          <li>${_('Storyteller')}</li>
+            <p>${_("The Storytelling Delegate will be accountable for Regional Reports. They don't necessarily have to write all the original content, they just need to be accountable for ensuring content makes it out onto our channels.")}</p>
         </ul>
 
-        <p>${Markup(_('One person may hold no more than (2) of these roles at the same time.'))}</p>
+        <p>${_('One person may hold no more than (2) of these roles at the same time.')}</p>
 
         </div>
 
         <div id="reimbursement">
-        <h2><a href="#reimbursement">${Markup(_('Reimbursement'))}</a></h2>
-        <p>${Markup(_('Holding with our current policies, reimbursement will depend on submission of an Event Report to the appropriate channels (mail lists, communityblog, and the planet/magazine when applicable) '))}</p>
-        <p>${Markup(_('Event reports going forward should also include a very short list of bullet points. These bullet points are the necessary ammunition we need to reinforce our proposals to increase funding for regional programs going forward. '))}</p>
-        <p>${Markup(_('Action is any typical or special activity that ambassadors lead regionally such as: '))}</p>
+        <h2><a href="#reimbursement">${_('Reimbursement')}</a></h2>
+        <p>${_('Holding with our current policies, reimbursement will depend on submission of an Event Report to the appropriate channels (mail lists, communityblog, and the planet/magazine when applicable) ')}</p>
+        <p>${_('Event reports going forward should also include a very short list of bullet points. These bullet points are the necessary ammunition we need to reinforce our proposals to increase funding for regional programs going forward. ')}</p>
+        <p>${_('Action is any typical or special activity that ambassadors lead regionally such as: ')}</p>
         <ul>
-          <li>${Markup(_(' Tabling at Conferences, Conventions, or other large events'))}</li>
-          <li>${Markup(_(' Presenting/Representing Fedora at Local Meetups '))}</li>
-          <li>${Markup(_(' Organizing FADS, Workshops, or other Fedora-specific Events '))}</li>
+          <li>${_(' Tabling at Conferences, Conventions, or other large events')}</li>
+          <li>${_(' Presenting/Representing Fedora at Local Meetups ')}</li>
+          <li>${_(' Organizing FADS, Workshops, or other Fedora-specific Events ')}</li>
         </ul>
 
-        <p>${Markup(_('Impact includes the outcomes from the activities as above. This includes things like:'))}</p>
+        <p>${_('Impact includes the outcomes from the activities as above. This includes things like:')}</p>
         <ul>
-          <li>${Markup(_('Attendees contacted or reached '))}</li>
-          <li>${Markup(_('Fedora Badges issued at or as a result of the event '))}</li>
-          <li>${Markup(_('Pull requests and patches submitted as a result of event '))}</li>
-          <li>${Markup(_('Bugs reported/Tickets Filed'))}</li>
-          <li>${Markup(_('Candidates sourced (i.e. Outreachy, GSoC, and/or other FOSS programs)'))}</li>
-          <li>${Markup(_('Articles/Videos/Photos/Content published by or about regional team'))}</li>
-          <li>${Markup(_('Social media mentions and interactions generated by event '))}</li>
-          <li>${Markup(_('Other supporting evidence data that shows the results of your effort '))}</li>
-          <li>${Markup(_('Links to and reach of posts on Fedora social media and publishing channels'))}</li>
+          <li>${_('Attendees contacted or reached ')}</li>
+          <li>${_('Fedora Badges issued at or as a result of the event ')}</li>
+          <li>${_('Pull requests and patches submitted as a result of event ')}</li>
+          <li>${_('Bugs reported/Tickets Filed')}</li>
+          <li>${_('Candidates sourced (i.e. Outreachy, GSoC, and/or other FOSS programs)')}</li>
+          <li>${_('Articles/Videos/Photos/Content published by or about regional team')}</li>
+          <li>${_('Social media mentions and interactions generated by event ')}</li>
+          <li>${_('Other supporting evidence data that shows the results of your effort ')}</li>
+          <li>${_('Links to and reach of posts on Fedora social media and publishing channels')}</li>
         </ul>
         </div>
 
         <!--
         <div id="benefits">
-        <h2><a href="#benefits">${Markup(_('Delegate Benefits'))}</a></h2>
-        <p>${Markup(_('Benefits for assuming the roles assigned above are as follows:'))}</p>
+        <h2><a href="#benefits">${_('Delegate Benefits')}</a></h2>
+        <p>${_('Benefits for assuming the roles assigned above are as follows:')}</p>
 
         <ol>
-          <li>${Markup(_('Budget allocation for your region'))}</li>
-          <li>${Markup(_("Each delegate will be awarded a special Fedora Badge"))}</li>
-          <li>${Markup(_("ONE delegate from each region will get travel/accommodations covered for their region's Fedora Premier Event (FLOCk or FUDCon)"))}</li>
+          <li>${_('Budget allocation for your region')}</li>
+          <li>${_("Each delegate will be awarded a special Fedora Badge")}</li>
+          <li>${_("ONE delegate from each region will get travel/accommodations covered for their region's Fedora Premier Event (FLOCk or FUDCon)")}</li>
         </ol>
 
-        <p>${Markup(_("This new budget and regional delegation model will become part of a larger Community wide body. This body will have broad participation across subprojects, websites, and teams, with Regional Ambassador Delegates having the largest number of members. This body will be the subject of future discussion once we've gotten our regional ambassador strategy back on track."))}</p>
+        <p>${_("This new budget and regional delegation model will become part of a larger Community wide body. This body will have broad participation across subprojects, websites, and teams, with Regional Ambassador Delegates having the largest number of members. This body will be the subject of future discussion once we've gotten our regional ambassador strategy back on track.")}</p>
         </div>
         -->
 
