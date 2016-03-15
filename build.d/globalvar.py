@@ -32,6 +32,7 @@ release={
     'atomic_composedate': '20151030',
     'pre_cloud_composedate': '20150915',
     'pre_cloud_AMI_composedate': '20150915',
+    'manual_pre_cloud_composedate': '20160101',
     # Note that atomic values here get overwritten by the twoweek script.
     'pre_cloud_atomic_composedate': '20150915',
     'pre_cloud_AMI_atomic_composedate': '20150915',
@@ -201,7 +202,12 @@ iso_size={
     'pre_atomic_libvag_cloud': '???',   # In MB
     'pre_x86_64_docker':        '49',   # In MB
     'pre_VBvag_cloud':         '257',   # In MB
-    'pre_libvag_cloud':        '248'    # In MB
+    'pre_libvag_cloud':        '248',   # In MB
+    # Manual atomic prerelease image sizes go here.
+    'manual_pre_atomic_raw_cloud':    '100',   # In MB
+    'manual_pre_atomic_qcow2_cloud':  '200',   # In MB
+    'manual_pre_atomic_VBvag_cloud':  '300',   # In MB
+    'manual_pre_atomic_libvag_cloud': '400'    # In MB
 }
 
 # Redirect EC2 images
