@@ -15,7 +15,7 @@
       <div class="row">
         <div class="col-md-7 col-md-offset-5 text-left">
           <h2>${Markup(_('Download Fedora %(rel)s %(state)s Workstation')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h2>
-            <p><a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Live-Workstation-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">${_('Download')}</a></p>
+            <p><a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">${_('Download')}</a></p>
             <h5>${Markup(_('64-bit %sGB Live Image')) % global_variables.iso_size['pre_x86_64_workstation']}</h5>
         </div>
       </div>
@@ -78,8 +78,8 @@
           <p>
           ${_('Netinstall Images:')}
           <ul>
-          <li><p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.iso">${Markup(_('64-bit %sMB image')) % global_variables.iso_size['pre_x86_64_workstation_net']}</a></p></li>
-          <li><p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/i386/iso/Fedora-Workstation-netinst-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.iso">${Markup(_('32-bit %sMB image')) % global_variables.iso_size['pre_i386_workstation_net']}</a></p></li>
+          <li><p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${Markup(_('64-bit %sMB image')) % global_variables.iso_size['pre_x86_64_workstation_net']}</a></p></li>
+          <li><p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/i386/iso/Fedora-Workstation-netinst-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${Markup(_('32-bit %sMB image')) % global_variables.iso_size['pre_i386_workstation_net']}</a></p></li>
           </ul>
           </p>
         </div>
