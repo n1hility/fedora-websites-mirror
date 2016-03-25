@@ -154,7 +154,7 @@ iso_size={
     'pre_x86_64_workstation':  '1.4',   # In GB
     'pre_i386_workstation':    '1.4',   # In GB
     'pre_x86_64_workstation_net': '454',# In MB
-    'pre_i386_workstation_net': '550',  # In MB
+    'pre_i386_workstation_net': '513',  # In MB
     # ARM
     'ARM_Workstation':     '1.1',       # In GB
     'ARM_Server':          '438',       # In MB
