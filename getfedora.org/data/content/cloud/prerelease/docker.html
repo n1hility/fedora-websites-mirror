@@ -31,12 +31,13 @@
       <div class="row">
         <div class="col-md-7 col-md-offset-5 text-left recover-heading">
           <h2>${Markup(_('Download Fedora %(rel)s %(state)s Cloud')) % {'rel':global_variables.release['next_id'], 'state': global_variables.release['curr_state']}}</h2>
-            <p>${_('There are two main versions of Fedora Cloud available:')}
+<!--            <p>${_('There are two main versions of Fedora Cloud available:')}
               <ul>
                 <li>${Markup(_('&lt;a href="index.html"&gt;Base images&lt;/a&gt; suitable for creating VMs.'))}</li>
                 <li>${Markup(_('&lt;a href="atomic.html"&gt;Atomic images&lt;/a&gt; for creating hosts for container deployment.'))}</li>
               </ul>
             </p>
+-->
         </div>
       </div>
     </div>
@@ -55,7 +56,7 @@
           <div class="collapse navbar-collapse navbar-center">
               <ul class="nav navbar-nav">
                   <li class=""><a href="index.html">${_('Base Images')}</a></li>
-                  <li class=""><a href="atomic.html">${_('Atomic Images')}</a></li>
+<!--                  <li class=""><a href="atomic.html">${_('Atomic Images')}</a></li>-->
                   <li class=""><a href="docker.html" class="active">${_('Docker Image')}</a></li>
               </ul>
           </div>
@@ -84,10 +85,10 @@
       <div class="row bottom-margin">
           <div class="col-xs-12">
             <p>${_('You can easily load this Docker image into your running Docker daemon using command:')}</p>
-            <pre>docker load -i Fedora-Docker-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['pre_cloud_composedate']}.x86_64.tar.xz</pre>
+            <pre>docker load -i Fedora-Docker-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.x86_64.tar.xz</pre>
             <p>${_('Following command can be used to spawn a container running bash inside:')}</p>
-            <pre>docker run -it --rm Fedora-Docker-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['pre_cloud_composedate']}.x86_64 bash</pre>
-            <a class="btn btn-success download-cloud" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Docker/x86_64/Fedora-Docker-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['pre_cloud_composedate']}.x86_64.tar.xz" role="button">${_('Download')}</a>
+            <pre>docker run -it --rm Fedora-Docker-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.x86_64 bash</pre>
+            <a class="btn btn-success download-cloud" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Docker/x86_64/Fedora-Docker-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.x86_64.tar.xz" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB raw.xz Image') % global_variables.iso_size['pre_x86_64_docker']}</p>
           </div>
       </div>

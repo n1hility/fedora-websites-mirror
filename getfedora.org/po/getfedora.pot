@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-02-23 22:00+0100\n"
+"POT-Creation-Date: 2016-03-13 23:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -938,7 +938,7 @@ msgstr ""
 #: data/content/cloud/download/index.html:439
 #: data/content/cloud/prerelease/atomic.html:298
 #: data/content/server/download/index.html:50
-#: data/content/server/prerelease/index.html:76
+#: data/content/server/prerelease/index.html:73
 #: data/content/workstation/download/index.html:57
 #: data/content/workstation/prerelease/index.html:75
 msgid "Other Downloads"
@@ -1041,7 +1041,6 @@ msgstr ""
 #: data/content/cloud/prerelease/docker.html:128
 #: data/content/cloud/prerelease/index.html:476
 #: data/content/server/download/server-download-splash.html:44
-#: data/content/server/prerelease/index.html:64
 #: data/content/workstation/download/ws-download-splash.html:49
 #: data/content/workstation/prerelease/index.html:64
 #, python-format
@@ -1054,6 +1053,7 @@ msgstr ""
 
 #: data/content/cloud/download/download-cloud-splash.html:52
 #: data/content/server/download/server-download-splash.html:47
+#: data/content/server/prerelease/index.html:67
 #: data/content/workstation/download/ws-download-splash.html:52
 msgid "Validate!"
 msgstr ""
@@ -1931,25 +1931,22 @@ msgid ""
 msgstr ""
 
 #: data/content/server/download/index.html:52
-#: data/content/server/prerelease/index.html:78
 msgid "Installation DVD:"
 msgstr ""
 
 #: data/content/server/download/index.html:54
-#: data/content/server/prerelease/index.html:80
 #, python-format
 msgid "32-bit %sGB image"
 msgstr ""
 
 #: data/content/server/download/index.html:58
-#: data/content/server/prerelease/index.html:84
 #: data/content/workstation/download/index.html:60
 #: data/content/workstation/prerelease/index.html:78
 msgid "Netinstall Images:"
 msgstr ""
 
 #: data/content/server/download/index.html:60
-#: data/content/server/prerelease/index.html:86
+#: data/content/server/prerelease/index.html:77
 #: data/content/workstation/download/index.html:62
 #: data/content/workstation/prerelease/index.html:80
 #, python-format
@@ -1957,7 +1954,6 @@ msgid "64-bit %sMB image"
 msgstr ""
 
 #: data/content/server/download/index.html:61
-#: data/content/server/prerelease/index.html:87
 #: data/content/workstation/download/index.html:63
 #: data/content/workstation/prerelease/index.html:81
 #, python-format
@@ -2027,14 +2023,17 @@ msgid ""
 "freenode."
 msgstr ""
 
-#: data/content/server/prerelease/index.html:67
-#: data/content/workstation/prerelease/index.html:67
-msgid "Validate 64-bit!"
+#: data/content/server/prerelease/index.html:64
+#, python-format
+msgid ""
+"Once you have downloaded an image, verify it for security and integrity. "
+"To verify your image, start by downloading the CHECKSUM file below into "
+"the same directory as the image you downloaded and follow <a "
+"href=\"%s/%s/verify\">these instructions</a>."
 msgstr ""
 
-#: data/content/server/prerelease/index.html:70
-#: data/content/workstation/prerelease/index.html:70
-msgid "Validate 32-bit!"
+#: data/content/server/prerelease/index.html:75
+msgid "Netinstall Image:"
 msgstr ""
 
 #: data/content/workstation/index.html:8
@@ -2176,6 +2175,14 @@ msgid ""
 "href=\"%(team_url)s\">Workstation Working Group</a>. Please direct "
 "questions to their <a href=\"%(team_list)s\">mailing list</a> or "
 "%(team_irc)s on freenode."
+msgstr ""
+
+#: data/content/workstation/prerelease/index.html:67
+msgid "Validate 64-bit!"
+msgstr ""
+
+#: data/content/workstation/prerelease/index.html:70
+msgid "Validate 32-bit!"
 msgstr ""
 
 #: data/templates/cloud-tab.html:9

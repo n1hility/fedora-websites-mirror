@@ -1,0 +1,45 @@
+This is the Fedora Websites GIT repo used to build the websites starting
+from the F24 release cycle.
+
+History of previous commits is still available at:
+https://git.fedorahosted.org/cgit/fedora-web.git/
+
+#########################################################################
+#                                                                       #
+#  For all information please read the wiki pages or alternatively:     #
+#  https://docs.pagure.org/fedora-websites/                             #
+#                                                                       #
+#########################################################################
+
+If you like to help the websites team but are not actually a member, you
+can easily file Pull Requests. Fork this repository, make your changes and
+submit them here.
+
+How to get started easily:
+==========================
+
+DO NOT execute the following steps as root, just use your normal user:
+
+1) Setup your system
+
+sudo dnf install git gettext python-genshi python-setuptools python-dateutil \
+python-dogpile-cache babel python-feedparser
+
+sudo dnf groups install 'Web Server'
+
+2) Clone the repo
+
+git clone https://pagure.io/fedora-websites.git
+cd fedora-websites/${website_dir}
+
+3) Launch a test instance
+
+make en test
+
+4) Stop the test instance
+
+make stoptest
+
+* if you have caching problems you can clean the instance even more:
+
+make veryclean
