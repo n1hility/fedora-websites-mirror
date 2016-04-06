@@ -88,7 +88,7 @@
             <pre>docker load -i Fedora-Docker-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.x86_64.tar.xz</pre>
             <p>${_('Following command can be used to spawn a container running bash inside:')}</p>
             <pre>docker run -it --rm Fedora-Docker-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.x86_64 bash</pre>
-            <a class="btn btn-success download-cloud" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Docker/x86_64/Fedora-Docker-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.x86_64.tar.xz" role="button">${_('Download')}</a>
+            <a class="btn btn-success download-cloud" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Docker/x86_64/images/Fedora-Docker-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.x86_64.tar.xz" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB raw.xz Image') % global_variables.iso_size['pre_x86_64_docker']}</p>
           </div>
       </div>
