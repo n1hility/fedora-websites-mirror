@@ -313,6 +313,27 @@
 
     <div class="row">
       ${keys_for_release(
+      _('Fedora 21'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '4096R/95A43F54 2013-11-14',
+              '6596 B8FB ABDA 5227 A9C5  B59E 89AD 4E87 95A4 3F54',
+              ['Fedora (21) &lt;fedora@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/95A43F54.txt', 'Fedora Project')
+              ])
+      ,   KeyInfo(
+              _('Secondary'),
+              '4096R/A0A7BADB 2013-11-14',
+              '9996 E55F A5D4 18C8 6CEF  F750 636D EA19 A0A7 BADB',
+              ['Fedora Secondary (21) &lt;fedora@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/A0A7BADB.txt', 'Fedora Project')
+              ])
+      ])}
+
+      ${keys_for_release(
       _('EPEL 4'),
       [
           KeyInfo(
