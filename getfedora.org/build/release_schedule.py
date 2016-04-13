@@ -50,13 +50,13 @@ def schedule(release):
     # We need to generate the cache!
     # Download the schedule
     try:
-        u = urllib2.urlopen('http://fedorapeople.org/groups/schedules/f-' + release + '/f-' + release + '-key-milestones.tjx')
+        u = urllib2.urlopen('http://fedorapeople.org/groups/schedule/f-' + release + '/f-' + release + '-key-milestones.tjx')
     except HTTPError:
-        date[release] = {'alpha':'2016-mar-29', 'beta':'2016-may-03', 'final':'2016-jun-07'}
+        date[release] = {'alpha':'2014-jan-01', 'beta':'2014-jan-01', 'final':'2014-jan-01'}
         return date
 
     except URLError:
-        date[release] = {'aalpha':'2016-mar-29', 'beta':'2016-may-03', 'final':'2016-jun-07'}
+        date[release] = {'alpha':'2014-jan-01', 'beta':'2014-jan-01', 'final':'2014-jan-01'}
         return date
 
     # Release is already present in date if we got HTTPError
