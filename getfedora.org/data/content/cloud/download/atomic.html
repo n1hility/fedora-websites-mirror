@@ -254,11 +254,11 @@
           <py:choose>
             <py:when test="global_variables.release['curr_state'] == 'Alpha'">
               <h3>${Markup(_('Try Fedora %(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
-              <a href="${path}/cloud/prerelease"><img alt="Fedora ${global_variables.release['next_id']} Alpha is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}alpha.png" /></a>
+              <a href="${path}/${lang}/cloud/prerelease"><img alt="Fedora ${global_variables.release['next_id']} Alpha is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}alpha.png" /></a>
             </py:when>
             <py:when test="global_variables.release['curr_state'] == 'Beta'">
               <h3>${Markup(_('Try Fedora %(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
-              <a href="${path}/cloud/prerelease"><img alt="Fedora ${global_variables.release['next_id']} Beta is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}beta.png" /></a>
+              <a href="${path}/${lang}/cloud/prerelease"><img alt="Fedora ${global_variables.release['next_id']} Beta is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}beta.png" /></a>
             </py:when>
           </py:choose>
           </div>

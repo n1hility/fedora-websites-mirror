@@ -24,29 +24,11 @@
                 <h4>${_('Contents')}</h4>
                 <ul class="list-unstyled">
                     <li><a href="#budgetnumbers">${_('Fedora Budget Numbers')}</a></li>
-                  <!--<li><a href="#background">Fedora.next Background</a></li>-->
-                  <li><a href="#process">${_('The Fedora Budget Process')}</a></li>
-                  <li><a href="#delegates">${_('Regional Delegates')}</a></li>
-                  <li><a href="#reimbursement">${_('Reimbursement')}</a></li>
-                  <!--<li><a href="#benefits">Delegate Benefits</a></li>-->
+                    <li><a href="#process">${_('The Fedora Budget Process')}</a></li>
+                    <li><a href="#delegates">${_('Regional Delegates')}</a></li>
+                    <li><a href="#reimbursement">${_('Reimbursement')}</a></li>
                 </ul>
               </div>
-
-        <!--
-        <div id="tableofcontents">
-          <div class="table-responsive">
-            <table class="table">
-              <tr><td><a href="#budgetnumbers">Fedora Budget Numbers</a></td></tr>
-              <tr><td><a href="#background">Fedora.next Background</a></td></tr>
-              <tr><td><a href="#process">The Fedora Budget Process</a></td></tr>
-              <tr><td><a href="#delegates">Regional Delegates</a></td></tr>
-              <tr><td><a href="#reimbursement">Reimbursement</a></td></tr>
-              <tr><td><a href="#benefits">Delegate Benefits</a></td></tr>
-              <tr><td><a href="#benefits">Questions</a></td></tr>
-            </table>
-          </div>
-        </div>
-        -->
 
         <div id="budgetnumbers">
         <h2><a href="#budgetnumbers">${_('Budget Numbers')}</a></h2>
@@ -62,14 +44,14 @@
               </tr>
               <tr>
                   <td><a href="#overall">${_('TOTAL BUDGET')}</a></td>
-                <td>$000</td>
+                <td>$195,000</td>
                 <td>Q1</td>
                 <td>Q2</td>
                 <td>Q3</td>
                 <td>Q4</td>
               </tr>
               <tr>
-                  <td><a href="#premierevents">${_('PREMIER EVENTS')}</a></td>
+                  <td><a href="#fedoraevents">${_('FEDORA EVENTS')}</a></td>
                 <td>$000</td>
                 <td>Q1</td>
                 <td>Q2</td>
@@ -120,61 +102,27 @@
           </div>
         </div>
 
-        <!--
-        <div id="background">
-        <h2><a href="#background">${_('Fedora.next Background')}</a></h2>
-
-            <p>${_("Fedora.next has precipitated a number of other changes and improvements across the project, and up and down the organizational stack;from release engineering with Bodhi2 and other tools, (reducing the amount of time it takes to ship updates by HALF) to governance and strategy with Fedora Council Objectives.")}</p>
-
-
-            <p>${_('Another change that has been in the works is improving the budget process by which we allocate financial resources. FAMSco has effectively regionalized the process by which local community members request, spend, and report funds. This approach we think is an effective one, we agree that each region knows their own communities and their needs best, and should control their own budgets.')}</p>
-
-            <p>${_('Starting in FY17, there are going to be changes to the budgeting process. The new role of Fedora Community Action and Impact Lead (FCL) has a mandate to improve the transparency of the budgeting process. After some months of planning and discussion, we have come up with a process to move forward.')}</p>
-
-            <p>${_('This process builds off of the work that FAMSCo and other ambassadors (particularly cwickert) did when proposing the idea of FOSCo, and also includes input from Fedora Council, the Fedora Project Lead, and other Fedora Leadership. ')}</p>
-        </div>
-        -->
-
-
         <div id="process">
         <h2><a href="#process">${_('The Fedora Budget Process')}</a></h2>
-        <!--
-        <p>${_('The budget will be split into discreet chunks as follows (FY17 and Beyond):')}</p>
 
-        <ul>
-          <li>${_('Fedora Premier Events (FLOCK/FUDCons)')}</li>
-          <li>${_('Regional Budgets (APAC/EMEA/LATAM/NA)')}</li>
-          <li>${_('Discretionary Council Budget (non-regional general funds)')}</li>
-        </ul>
-
-        <p>${_('The budget will be proposed and approved according to the timeline as follows:')}</p>
-        -->
-
-        <div id="timeline">
-        <pre>
-+----------+------------------+-------------------------------+-------------------------------+
-| Calendar | Fiscal Year      | Topic                         |        Responsible            |
-+----------+------------------+-------------------------------+--------------------------------
-| Feb '16  | FY16             | Final Quarter Budget Report   | Regional Treasurers → FCL     |
-| Mar '16  |     FY17         | Budget Adjustment/Allocation  | Council → Regions/Subprojects |
-| May '16  |     FY17         | First Quarter Budget Report   | Regional Treasurers → FCL     |
-| Jul '16  |         FY18     | Budget Proposal for Next Year | Regions and Subprojects, FCL  |
-| Aug '16  |     FY17         | Second Quarter Budget Report  | Regional Treasurers → FCL     |
-| Aug '16  |         FY18     | Budget Session at Flock       | FCL, Council                  |
-| Sep '16  |         FY18     | Ratification by Council       | Council (full consensus)      |
-| Oct '16  |         FY18     | Budget Submission             | FCL → Red Hat                 |
-| Nov '16  |     FY17         | Third Quarter Budget Report   | Regional Treasurers → FCL     |
-| Feb '17  |     FY17         | Final Quarter Budget Report   | Regional Treasurers → FCL     |
-| Mar '17  |         FY18     | Budget Adjustment/Allocation  | Council → Regions/Subprojects |
-| May '17  |         FY18     | First Quarter Budget Report   | Regional Treasurers → FCL     |
-| Jul '17  |             FY19 | Budget Proposal for Next Year | Regions and Subprojects, FCL  |
-|   ...    |       ...        |             ...               |            ...                |
-+----------+------------------+-------------------------------+-------------------------------+
-        </pre>
-<!--
-calendar, fiscal year (previous, current, future), topic, Responsible
--->
-
+        <div id="timeline2" class="table-responsive">
+            <table class="table table-condensed table-bordered">
+                <tr><th style="text-align:center">${_('Calendar')}</th><th style="text-align:center">${_('Fiscal Year')}</th><th style="text-align:center">${_('Topic')}</th><th style="text-align:center">${_('Responsible')}</th></tr>
+                <tr><td>Feb '16</td><td style="text-align:left">FY16...</td><td>${_('Final Quarter Budget Report')}</td><td>${_('Regional Treasurers → FCL')}</td></tr>
+                <tr><td>Mar '16</td><td style="text-align:center">FY17</td><td>${_('Budget Adjustment/Allocation')}</td><td>${_('Council → Regions/Subprojects')}</td></tr>
+                <tr><td>May '16</td><td style="text-align:center">FY17</td><td>${_('First Quarter Budget Report')}</td><td>${_('Regional Treasurers → FCL')}</td></tr>
+                <tr><td>Jul '16</td><td style="text-align:right">FY18</td><td>${_('Budget Proposal for Next Year')}</td><td>${_('Regions and Subprojects, FCL')}</td></tr>
+                <tr><td>Aug '16</td><td style="text-align:center">FY17</td><td>${_('Second Quarter Budget Report')} </td><td>${_('Regional Treasurers → FCL')}</td></tr>
+                <tr><td>Aug '16</td><td style="text-align:right">FY18</td><td>${_('Budget Session at Flock')}</td><td>${_('FCL, Council')}</td></tr>
+                <tr><td>Sep '16</td><td style="text-align:right">FY18</td><td>${_('Ratification by Council')}</td><td>${_('Council (full consensus)')}</td></tr>
+                <tr><td>Oct '16</td><td style="text-align:right">FY18</td><td>${_('Budget Submission')}</td><td>${_('FCL → Red Hat')}</td></tr>
+                <tr><td>Nov '16</td><td style="text-align:center">FY17</td><td>${_('Third Quarter Budget Report')}</td><td>${_('Regional Treasurers → FCL')}</td></tr>
+                <tr><td>Feb '17</td><td style="text-align:center">FY17</td><td>${_('Final Quarter Budget Report')}</td><td>${_('Regional Treasurers → FCL')}</td></tr>
+                <tr><td>Mar '17</td><td style="text-align:right">FY18</td><td>${_('Budget Adjustment/Allocation')}</td><td>${_('Council → Regions/Subprojects')}</td></tr>
+                <tr><td>May '17</td><td style="text-align:right">FY18</td><td>${_('First Quarter Budget Report')}</td><td>${_('Regional Treasurers → FCL')}</td></tr>
+                <tr><td>Jul '17</td><td style="text-align:right">...FY19</td><td>${_('Budget Proposal for Next Year')}</td><td>${_('Regions and Subprojects, FCL')}</td></tr>
+                <tr><td style="text-align:center">...</td><td style="text-align:center">...</td><td style="text-align:center">...</td><td style="text-align:center">...</td></tr>
+            </table>
         </div>
 
         <p>${_('FCL = Fedora Community Action and Impact Lead (as of Fedora 22+, Remy DeCausemaker).')}</p>
@@ -206,21 +154,21 @@ calendar, fiscal year (previous, current, future), topic, Responsible
               </tr>
               <tr>
                 <td><a href="#apac">APAC</a></td>
-                <td><a href="mailto:">TBD</a></td>
-                <td><a href="mailto:">TBD</a></td>
-                <td><a href="mailto:">TBD</a></td>
+                <td><a href="mailto:kagesenshi.87@gmail.com">Mohd Izhar Firdaus Ismail (izhar)</a></td>
+                <td><a href="mailto:pj.pandit@yahoo.co.in">PJ Pandit (Pjp)</a></td>
+                <td><a href="mailto:me+fedora@gbraad.nl">Gerard Braad - 吉拉德 (gbraad)</a></td>
               </tr>
               <tr>
                 <td><a href="#emea">EMEA</a></td>
-                <td><a href="mailto:">TBD</a></td>
-                <td><a href="mailto:">TBD</a></td>
-                <td><a href="mailto:">TBD</a></td>
+                <td><a href="mailto:mitzie@mitzelos.com">Zacharias Mitzelos (mitzie)</a></td>
+                <td><a href="mailto:eischmann@redhat.com">Jiri Eischmann (sesivany)</a></td>
+                <td><a href="mailto:pkwesihanson@yahoo.com">Elijah Hanson (edgates)</a></td>
               </tr>
               <tr>
                 <td><a href="#latam">LATAM</a></td>
-                <td><a href="mailto:">TBD</a></td>
-                <td><a href="mailto:">TBD</a></td>
-                <td><a href="mailto:">TBD</a></td>
+                <td><a href="mailto:abdel.g.martinez.l@gmail.com">Abdel G. Martinez L. (potty)</a></td>
+                <td><a href="mailto:echevemaster@gmail.com">Eduardo J. Echeverria A. (echevemaster)</a></td>
+                <td><a href="mailto:williamjmoernor@gmail.com">William Moreno Reyes (williamjmoreno)</a></td>
               </tr>
               <tr>
                 <td><a href="#na">NA</a></td>
@@ -270,22 +218,6 @@ calendar, fiscal year (previous, current, future), topic, Responsible
           <li>${_('Links to and reach of posts on Fedora social media and publishing channels')}</li>
         </ul>
         </div>
-
-        <!--
-        <div id="benefits">
-        <h2><a href="#benefits">${_('Delegate Benefits')}</a></h2>
-        <p>${_('Benefits for assuming the roles assigned above are as follows:')}</p>
-
-        <ol>
-          <li>${_('Budget allocation for your region')}</li>
-          <li>${_("Each delegate will be awarded a special Fedora Badge")}</li>
-          <li>${_("ONE delegate from each region will get travel/accommodations covered for their region's Fedora Premier Event (FLOCk or FUDCon)")}</li>
-        </ol>
-
-        <p>${_("This new budget and regional delegation model will become part of a larger Community wide body. This body will have broad participation across subprojects, websites, and teams, with Regional Ambassador Delegates having the largest number of members. This body will be the subject of future discussion once we've gotten our regional ambassador strategy back on track.")}</p>
-        </div>
-        -->
-
         </div>
       </div>
     </div>
