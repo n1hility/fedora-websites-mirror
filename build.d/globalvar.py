@@ -7,12 +7,12 @@ release={
     'next_id':     '24',
     'curr_name':   '',
     'next_name':   '',
-    'curr_state':  'Alpha',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  'Alpha',         # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_ppc64_state':  'Alpha',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_s390_state':  'Alpha',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  'Alpha',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_AMI_state':  'Alpha',   # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  'Beta',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_ppc64_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_s390_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_AMI_state':  'Beta',   # either 'Alpha', 'Beta' or '' (i.e empty)
     'prev_arm_id': '22',
     'prev_ppc64_id': '22',
     'prev_s390_id': '22',
@@ -31,7 +31,7 @@ release={
     # Note that atomic values here get overwritten by the twoweek script.
     'atomic_composedate': '20151030',
     'pre_cloud_composedate': '20150915',
-    'pre_cloud_AMI_composedate': '20150915',
+    'pre_cloud_AMI_composedate': '20160507',
     'manual_pre_cloud_composedate': '20160101',
     'manual_pre_cloud_atomic_composedate': '20160101',
     'manual_pre_cloud_AMI_atomic_composedate': '20160101',
@@ -39,8 +39,8 @@ release={
     'pre_cloud_atomic_composedate': '20150915',
     'pre_cloud_AMI_atomic_composedate': '20150915',
     'RC_gold': '10',              # insert the number of the RC version declared GOLD
-    'RC_pre_gold': '7',           # insert the number of the prerelease RC version declared GOLD
-    'RC_pre_build': '1.7',        # sometimes releng use the RC build
+    'RC_pre_gold': '1.6',         # insert the number of the prerelease RC version declared GOLD
+    'RC_pre_build': '1.6',        # sometimes releng use the RC build
 
     'atomic_freshness': False,
     'atomic_age': '???',
@@ -91,17 +91,17 @@ iso_size={
     'i686_Live_Cinnamon':   '1.2',       # In GB
     'x86_64_Live_Cinnamon': '1.2',       # In GB
     # Lives prerelease
-    'pre_i686_Live_KDE':    '1.2',       # In GB
+    'pre_i686_Live_KDE':    '1.6',       # In GB
     'pre_x86_64_Live_KDE':  '1.3',       # In GB
-    'pre_i686_Live_LXDE':   '947',       # In MB
-    'pre_x86_64_Live_LXDE': '925',       # In MB
+    'pre_i686_Live_LXDE':   '1.2',       # In GB
+    'pre_x86_64_Live_LXDE': '921',       # In MB
     'pre_i686_Live_Xfce':   '1.0',       # In GB
     'pre_x86_64_Live_Xfce': '1.0',       # In GB
-    'pre_i686_Live_Mate':   '1.3',       # In GB
+    'pre_i686_Live_Mate':   '1.7',       # In GB
     'pre_x86_64_Live_Mate': '1.4',       # In GB
     'pre_i686_Live_Soas':   '662',       # In MB
     'pre_x86_64_Live_Soas': '686',       # In MB
-    'pre_i686_Live_Cinnamon': '1.2',     # In GB
+    'pre_i686_Live_Cinnamon': '1.7',     # In GB
     'pre_x86_64_Live_Cinnamon': '1.3',   # In GB
     # Spins
     'i686_Live_Security':  '916',       # In MB
@@ -119,21 +119,21 @@ iso_size={
     'i686_Live_Jam':       '1.7',       # In GB
     'x86_64_Live_Jam':     '1.7',       # In GB
     # Spins prerelease
-    'pre_i686_Live_Security':  '919',   # In MB
-    'pre_x86_64_Live_Security':'943',   # In MB
+    'pre_i686_Live_Security':  '1.2',   # In GB
+    'pre_x86_64_Live_Security':'1.1',   # In GB
     'pre_i686_Live_Games':     '4.0',   # In GB
-    'pre_x86_64_Live_Games':   '4.0',   # In GB
+    'pre_x86_64_Live_Games':   '3.6',   # In GB
     'pre_i686_Live_Elab':      '2.5',   # In GB
     'pre_x86_64_Live_Elab':    '2.5',   # In GB
     'pre_i686_Live_Design':    '1.7',   # In GB
     'pre_x86_64_Live_Design':  '1.7',   # In GB
-    'pre_i686_Live_Sci-kde':   '2.7',   # In GB
+    'pre_i686_Live_Sci-kde':   '3.3',   # In GB
     'pre_x86_64_Live_Sci-kde': '2.8',   # In GB
-    'pre_i686_Live_Robotics':  '2.5',   # In GB
-    'pre_x86_64_Live_Robotics':'2.3',   # In GB
-    'pre_i686_Live_Jam':       '1.7',   # In GB
+    'pre_i686_Live_Robotics':  '2.8',   # In GB
+    'pre_x86_64_Live_Robotics':'2.4',   # In GB
+    'pre_i686_Live_Jam':       '2.3',   # In GB
     'pre_x86_64_Live_Jam':     '1.9',   # In GB
-    'pre_i686_Live_Astronomy': '1.7',   # In GB
+    'pre_i686_Live_Astronomy': '2.7',   # In GB
     'pre_x86_64_Live_Astronomy':'2.4',  # In GB
     # Server
     'x86_64_server_DVD':   '2.0',       # In GB
@@ -143,7 +143,7 @@ iso_size={
     # Server prerelease
     'pre_x86_64_server_DVD': '1.8',     # In GB
     'pre_i386_server_DVD':   '2.2',     # In GB
-    'pre_x86_64_server_net': '457',     # In MB
+    'pre_x86_64_server_net': '438',     # In MB
     'pre_i386_server_net':   '552',     # In MB
     # Workstation
     'x86_64_workstation':  '1.4',       # In GB
@@ -152,9 +152,9 @@ iso_size={
     'i386_workstation_net': '455',      # In MB
     # Workstation prerelease
     'pre_x86_64_workstation':  '1.4',   # In GB
-    'pre_i386_workstation':    '1.4',   # In GB
-    'pre_x86_64_workstation_net': '454',# In MB
-    'pre_i386_workstation_net': '513',  # In MB
+    'pre_i386_workstation':    '1.5',   # In GB
+    'pre_x86_64_workstation_net': '436',# In MB
+    'pre_i386_workstation_net': '486',  # In MB
     # ARM
     'ARM_Workstation':     '1.1',       # In GB
     'ARM_Server':          '438',       # In MB
@@ -166,14 +166,14 @@ iso_size={
     'ARM_SoaS':            '644',       # In MB
     # ARM prerelease
     'pre_ARM_Workstation': '1.2',       # In GB
-    'pre_ARM_Server':      '538',       # In MB
-    'pre_ARM_Minimal':     '422',       # In MB
+    'pre_ARM_Server':      '487',       # In MB
+    'pre_ARM_Minimal':     '433',       # In MB
     'pre_ARM_KDE':         '1.3',       # In GB
     'pre_ARM_Xfce':        '1.0',       # In GB
-    'pre_ARM_LXDE':        '905',       # In MB
+    'pre_ARM_LXDE':        '898',       # In MB
     'pre_ARM_Mate':        '1.3',       # In GB
     'pre_ARM_Cinnamon':    '780',       # In MB
-    'pre_ARM_SoaS':        '700',       # In MB
+    'pre_ARM_SoaS':        '710',       # In MB
     # Cloud
     'raw_x86_64_cloud':    '146',       # In MB
     'raw_i386_cloud':      '143',       # In MB
@@ -194,16 +194,16 @@ iso_size={
     'libvag_cloud':        '245',       # In MB
     'x86_64_docker':       '45',        # In MB
     # Cloud prerelease
-    'pre_raw_x86_64_cloud':    '135',   # In MB
+    'pre_raw_x86_64_cloud':    '129',   # In MB
     'pre_raw_i386_cloud':      '172',   # In MB
-    'pre_qcow2_x86_64_cloud':  '207',   # In MB
+    'pre_qcow2_x86_64_cloud':  '195',   # In MB
     'pre_qcow2_i386_cloud':    '268',   # In MB
     # Note that atomic values here get overwritten by the twoweek script.
     'pre_atomic_raw_cloud':    '???',   # In MB
     'pre_atomic_qcow2_cloud':  '???',   # In MB
     'pre_atomic_VBvag_cloud':  '???',   # In MB
     'pre_atomic_libvag_cloud': '???',   # In MB
-    'pre_x86_64_docker':        '49',   # In MB
+    'pre_x86_64_docker':        '43',   # In MB
     'pre_VBvag_cloud':         '257',   # In MB
     'pre_libvag_cloud':        '248',   # In MB
     # Manual atomic prerelease image sizes go here.
@@ -319,51 +319,51 @@ GP2_HVM_atomic_AMI={
 # TODO - replace the hand-typed IDs below with results harvested from fedimg
 
 pre_HVM_base_AMI={
-    'us-east-1':        'ami-a5303ccf',     # Virginia
-    'us-west-2':        'ami-364ca456',     # Oregon
-    'us-west-1':        'ami-78e59718',     # California
-    'eu-west-1':        'ami-b743c7c4',     # Ireland
-    'eu-central-1':     'ami-748b6d1b',     # Frankfurt
-    'ap-southeast-1':   'ami-43824820',     # Singapore
-    'ap-northeast-1':   'ami-132c397d',     # Tokyo
-    'ap-southeast-2':   'ami-e9dfff8a',     # Sydney
-    'sa-east-1':        'ami-1a901c76'      # Sao Paolo
+    'us-east-1':        'ami-cec321a3',     # Virginia
+    'us-west-2':        'ami-ab55a7cb',     # Oregon
+    'us-west-1':        'ami-8b4c35eb',     # California
+    'eu-west-1':        'ami-fb40cb88',     # Ireland
+    'eu-central-1':     'ami-b29974dd',     # Frankfurt
+    'ap-southeast-1':   'ami-6471a607',     # Singapore
+    'ap-northeast-1':   'ami-6b6a8f0a',     # Tokyo
+    'ap-southeast-2':   'ami-aae7cbc9',     # Sydney
+    'sa-east-1':        'ami-be1099d2'      # Sao Paolo
 }
 
 pre_GP2_HVM_base_AMI={
-    'us-east-1':        'ami-9c3438f6',     # Virginia
-    'us-west-2':        'ami-fb4aa29b',     # Oregon
+    'us-east-1':        'ami-70c2201d',     # Virginia
+    'us-west-2':        'ami-584a3338',     # Oregon
     'us-west-1':        'ami-0ee7956e',     # California
-    'eu-west-1':        'ami-7c43c70f',     # Ireland
-    'eu-central-1':     'ami-1f8a6c70',     # Frankfurt
-    'ap-southeast-1':   'ami-0d82486e',     # Singapore
-    'ap-northeast-1':   'ami-19223777',     # Tokyo
-    'ap-southeast-2':   'ami-c5a383a6',     # Sydney
-    'sa-east-1':        'ami-52911d3e'      # Sao Paolo
+    'eu-west-1':        'ami-315bd042',     # Ireland
+    'eu-central-1':     'ami-ab9974c4',     # Frankfurt
+    'ap-southeast-1':   'ami-3c72a55f',     # Singapore
+    'ap-northeast-1':   'ami-da698cbb',     # Tokyo
+    'ap-southeast-2':   'ami-56e0cc35',     # Sydney
+    'sa-east-1':        'ami-53179e3f'      # Sao Paolo
 }
 
 pre_PV_base_AMI={
-    'us-east-1':        'ami-40373b2a',     # Virginia
-    'us-west-2':        'ami-6740a807',     # Oregon
-    'us-west-1':        'ami-70e59710',     # California
-    'eu-west-1':        'ami-444dc937',     # Ireland
-    'eu-central-1':     'ami-b98a6cd6',     # Frankfurt
-    'ap-southeast-1':   'ami-f18e4492',     # Singapore
-    'ap-northeast-1':   'ami-352f3a5b',     # Tokyo
-    'ap-southeast-2':   'ami-ada585ce',     # Sydney
-    'sa-east-1':        'ami-41971b2d'      # Sao Paolo
+    'us-east-1':        'ami-97ff1dfa',     # Virginia
+    'us-west-2':        'ami-3657a556',     # Oregon
+    'us-west-1':        'ami-8a4039ea',     # California
+    'eu-west-1':        'ami-ef40cb9c',     # Ireland
+    'eu-central-1':     'ami-aa9974c5',     # Frankfurt
+    'ap-southeast-1':   'ami-d571a6b6',     # Singapore
+    'ap-northeast-1':   'ami-ff6a8f9e',     # Tokyo
+    'ap-southeast-2':   'ami-7de5c91e',     # Sydney
+    'sa-east-1':        'ami-bd1099d1'      # Sao Paolo
 }
 
 pre_GP2_PV_base_AMI={
-    'us-east-1':        'ami-4a343820',     # Virginia
-    'us-west-2':        'ami-c44ca4a4',     # Oregon
-    'us-west-1':        'ami-08e69468',     # California
-    'eu-west-1':        'ami-5e4dc92d',     # Ireland
-    'eu-central-1':     'ami-008b6d6f',     # Frankfurt
-    'ap-southeast-1':   'ami-1e83497d',     # Singapore
-    'ap-northeast-1':   'ami-ce2f3aa0',     # Tokyo
-    'ap-southeast-2':   'ami-73ddfd10',     # Sydney
-    'sa-east-1':        'ami-a89915c4'      # Sao Paolo
+    'us-east-1':        'ami-ccff1da1',     # Virginia
+    'us-west-2':        'ami-c357a5a3',     # Oregon
+    'us-west-1':        'ami-5f4a333f',     # California
+    'eu-west-1':        'ami-f840cb8b',     # Ireland
+    'eu-central-1':     'ami-1f987570',     # Frankfurt
+    'ap-southeast-1':   'ami-d071a6b3',     # Singapore
+    'ap-northeast-1':   'ami-ba6f8adb',     # Tokyo
+    'ap-southeast-2':   'ami-39e6ca5a',     # Sydney
+    'sa-east-1':        'ami-8b159ce7'      # Sao Paolo
 }
 
 pre_HVM_atomic_AMI={
