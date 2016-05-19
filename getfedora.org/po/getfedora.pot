@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-04-13 22:29+0200\n"
+"POT-Creation-Date: 2016-05-19 20:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -159,14 +159,16 @@ msgid ""
 msgstr ""
 
 #: data/content/index.html:133
-msgid "Stay connected and informed."
+msgid "Be connected & informed."
 msgstr ""
 
 #: data/content/index.html:143
-#, python-format
 msgid ""
-"Keep up-to-date with the Fedora Project and get all the latest news and "
-"reports in <a href=\"%s\">Fedora Magazine</a>."
+"Want to get <a href=\"http://whatcanidoforfedora.org/\">involved</a>? "
+"Find out what's happening in the <a "
+"href=\"http://communityblog.fedoraproject.org/\">community</a>? Read up "
+"on the latest news and cool stuff at <a "
+"href=\"http://fedoramagazine.org/\">Fedora Magazine</a>."
 msgstr ""
 
 #: data/content/index.html:153
@@ -1779,6 +1781,7 @@ msgstr ""
 
 #: data/content/server/download/index.html:61
 #: data/content/workstation/download/index.html:63
+#: data/content/workstation/prerelease/index.html:82
 #, python-format
 msgid "32-bit %sMB image"
 msgstr ""
@@ -1966,6 +1969,7 @@ msgid ""
 msgstr ""
 
 #: data/content/workstation/download/index.html:58
+#: data/content/workstation/prerelease/index.html:76
 #, python-format
 msgid "32-bit %sGB Live image"
 msgstr ""
@@ -2001,6 +2005,10 @@ msgstr ""
 
 #: data/content/workstation/prerelease/index.html:67
 msgid "Validate 64-bit!"
+msgstr ""
+
+#: data/content/workstation/prerelease/index.html:70
+msgid "Validate 32-bit!"
 msgstr ""
 
 #: data/templates/cloud-tab.html:9
