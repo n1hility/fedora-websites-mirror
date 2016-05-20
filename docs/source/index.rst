@@ -22,7 +22,7 @@ Contact Information
 ===================
 
 * IRC: ``#fedora-websites`` on irc.freenode.net
-* Mailing List: `websites@lists.fedoraproject.org <https://admin.fedoraproject.org/mailman/listinfo/websites>`_
+* Mailing List: `websites@lists.fedoraproject.org <https://lists.fedoraproject.org/archives/list/websites@lists.fedoraproject.org/>`_
 * Issue tracker: `Fedora Websites Trac Tickets <https://fedorahosted.org/fedora-websites/newticket>`_
 
 What does the Websites team do
