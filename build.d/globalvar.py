@@ -118,6 +118,8 @@ iso_size={
     'x86_64_Live_Robotics':'2.5',       # In GB
     'i686_Live_Jam':       '1.7',       # In GB
     'x86_64_Live_Jam':     '1.7',       # In GB
+    'i686_Live_Astronomy': '1.7',       # In GB
+    'x86_64_Live_Astronomy':'1.7',      # In GB
     # Spins prerelease
     'pre_i686_Live_Security':  '1.2',   # In GB
     'pre_x86_64_Live_Security':'1.1',   # In GB

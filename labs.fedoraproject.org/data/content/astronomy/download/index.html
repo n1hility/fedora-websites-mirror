@@ -5,20 +5,20 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../../../templates/master.html" />
   <head>
-    <title>${_('Download Fedora Security Lab')}</title>
+    <title>${_('Download Fedora Astronomy')}</title>
   </head>
 
 <body id="spins">
 <xi:include href="../../../templates/regulations.html" />
-<xi:include href="../../../templates/security/header.html" />
+<xi:include href="../../../templates/astronomy/header.html" />
 
 <header id="head" class="downloadheader">
     <div class="container">
       <div class="row">
         <div class="col-md-7 col-md-offset-5 text-left">
-          <h2>${Markup(_('Download Fedora %(rel)s Security Lab')) % {'rel':global_variables.release['curr_id']}}</h2>
-            <p class="gr"><a class="btn btn-success security-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/x86_64/Fedora-Live-Security-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p>
-            <h5>${Markup(_('%s MB ISO Image for 64-bit PC')) % global_variables.iso_size['x86_64_Live_Security']}</h5>
+          <h2>${Markup(_('Download Fedora %(rel)s Astronomy')) % {'rel':global_variables.release['curr_id']}}</h2>
+            <p class="gr"><a class="btn btn-success astronomy-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/x86_64/Fedora-Live-Astronomy_KDE-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p>
+            <h5>${Markup(_('%s MB ISO Image for 64-bit PC')) % global_variables.iso_size['x86_64_Live_Astronomy']}</h5>
         </div>
       </div>
     </div>
@@ -27,7 +27,7 @@
   <div class="row">
     <div class="col-md-8 text-left bottom-space">
         <h3>${_('What is a Live image?')}</h3>
-        <p>${_('Fedora Security Lab is shipped as a live operating system. It\'s everything you need to try out Fedora\'s Security Lab - you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop if you like.')}</p>
+        <p>${_('Fedora Astonomy is shipped as a live operating system. It\'s everything you need to try out Fedora\'s Astronomy - you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop if you like.')}</p>
 	    <p>${_('To use this image, you need a drive that can create or "burn" DVDs, or a USB flash drive at least as big as the image.')}</p>
     </div>
     <div class="col-md-3 text-left col-md-offset-1">
@@ -35,7 +35,7 @@
           <h4>${_('Direct Downloads')}</h4>
           <ul>
               <li>
-                  <p><a class="security-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/i386/Fedora-Live-Security-i686-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('32-bit %sMB Live image')) % global_variables.iso_size['i686_Live_Security']}</a></p>
+                  <p><a class="astronomy-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/i386/Fedora-Live-Astronomy_KDE-i686-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('32-bit %sMB Live image')) % global_variables.iso_size['i686_Live_Astronomy']}</a></p>
               </li>
           </ul>
           <h4>${_('Older Releases')}</h4>
@@ -132,15 +132,15 @@
       <div class="row top-margin">
         <div class="col-md-4 col-xs-12 text-center">
           <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
-          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora'))}</p>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-astronomy&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-astronomy'))}</p>
         </div>
         <div class="col-md-4 col-xs-12 text-center">
           <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
-          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;users@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/users'))}</p>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;astronomy@lists.fedoraproject.org&lt;/a&gt;.') % ('https://lists.fedoraproject.org/admin/lists/astronomy%40lists.fedoraproject.org/'))}</p>
         </div>
         <div class="col-md-4 col-xs-12 text-center">
           <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
-          <p>${Markup(_('Specific documentation is available at the &lt;a href="%s"&gt;Security Lab wiki page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Security_Lab'))}</p>
+          <p>${Markup(_('Specific documentation is available at the &lt;a href="%s"&gt;Astronomy wiki page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Astronomy_Spin'))}</p>
         </div>
       </div>
       <div class="row top-margin">
