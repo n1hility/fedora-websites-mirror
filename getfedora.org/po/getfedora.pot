@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-04-13 22:29+0200\n"
+"POT-Creation-Date: 2016-05-31 22:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -311,12 +311,11 @@ msgid "Workstation"
 msgstr ""
 
 #: data/content/verify.html:41 data/content/verify.html:53
-#: data/content/verify.html:65
+#: data/content/verify.html:62
 msgid "For 64-bit images"
 msgstr ""
 
-#: data/content/verify.html:44 data/content/verify.html:56
-#: data/content/verify.html:68
+#: data/content/verify.html:44 data/content/verify.html:65
 msgid "For 32-bit images"
 msgstr ""
 
@@ -324,86 +323,86 @@ msgstr ""
 msgid "Server"
 msgstr ""
 
-#: data/content/verify.html:63 data/templates/productselector-cloud.html:13
+#: data/content/verify.html:60 data/templates/productselector-cloud.html:13
 msgid "Cloud"
 msgstr ""
 
-#: data/content/verify.html:71
+#: data/content/verify.html:68
 msgid "For Atomic Installer"
 msgstr ""
 
-#: data/content/verify.html:74
+#: data/content/verify.html:71
 msgid "For Docker"
 msgstr ""
 
-#: data/content/verify.html:81
+#: data/content/verify.html:78
 msgid "Next, import Fedora's GPG key(s):"
 msgstr ""
 
-#: data/content/verify.html:83
+#: data/content/verify.html:80
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
 msgstr ""
 
-#: data/content/verify.html:84
+#: data/content/verify.html:81
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr ""
 
-#: data/content/verify.html:86
+#: data/content/verify.html:83
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr ""
 
-#: data/content/verify.html:88 data/content/keys/index.html:46
+#: data/content/verify.html:85 data/content/keys/index.html:46
 msgid "Fedora 25"
 msgstr ""
 
-#: data/content/verify.html:89
+#: data/content/verify.html:86
 msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
-#: data/content/verify.html:90 data/content/keys/index.html:67
+#: data/content/verify.html:87 data/content/keys/index.html:67
 msgid "Fedora 24"
 msgstr ""
 
-#: data/content/verify.html:91
+#: data/content/verify.html:88
 msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
-#: data/content/verify.html:92 data/content/keys/index.html:88
+#: data/content/verify.html:89 data/content/keys/index.html:88
 msgid "Fedora 23"
 msgstr ""
 
-#: data/content/verify.html:93
+#: data/content/verify.html:90
 msgid "Fedora 23 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
-#: data/content/verify.html:94 data/content/keys/index.html:109
+#: data/content/verify.html:91 data/content/keys/index.html:109
 msgid "Fedora 22"
 msgstr ""
 
-#: data/content/verify.html:95
+#: data/content/verify.html:92
 msgid "Fedora 22 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
-#: data/content/verify.html:97
+#: data/content/verify.html:94
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
 msgstr ""
 
-#: data/content/verify.html:99
+#: data/content/verify.html:96
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
 
-#: data/content/verify.html:100
+#: data/content/verify.html:97
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr ""
 
-#: data/content/verify.html:101
+#: data/content/verify.html:98
 msgid "Read these instructions to validate your image."
 msgstr ""
 
@@ -906,8 +905,8 @@ msgstr ""
 #: data/content/cloud/download/docker.html:99
 #: data/content/cloud/download/index.html:450
 #: data/content/cloud/download/index.html:454
-#: data/content/server/download/index.html:67
-#: data/content/server/download/index.html:71
+#: data/content/server/download/index.html:60
+#: data/content/server/download/index.html:64
 #: data/content/workstation/download/index.html:69
 #: data/content/workstation/download/index.html:73
 #, python-format
@@ -917,7 +916,7 @@ msgstr ""
 #: data/content/cloud/download/atomic.html:267
 #: data/content/cloud/download/docker.html:106
 #: data/content/cloud/download/index.html:461
-#: data/content/server/download/index.html:88
+#: data/content/server/download/index.html:81
 #: data/content/workstation/download/index.html:94
 msgid "Verify"
 msgstr ""
@@ -927,7 +926,7 @@ msgstr ""
 #: data/content/cloud/download/index.html:464
 #: data/content/cloud/prerelease/docker.html:128
 #: data/content/cloud/prerelease/index.html:474
-#: data/content/server/download/index.html:91
+#: data/content/server/download/index.html:84
 #: data/content/server/prerelease/index.html:63
 #: data/content/workstation/download/index.html:97
 #: data/content/workstation/prerelease/index.html:63
@@ -1755,21 +1754,11 @@ msgid ""
 msgstr ""
 
 #: data/content/server/download/index.html:52
-msgid "Installation DVD:"
+#: data/content/server/prerelease/index.html:75
+msgid "Netinstall Image:"
 msgstr ""
 
 #: data/content/server/download/index.html:54
-#, python-format
-msgid "32-bit %sGB image"
-msgstr ""
-
-#: data/content/server/download/index.html:58
-#: data/content/workstation/download/index.html:60
-#: data/content/workstation/prerelease/index.html:79
-msgid "Netinstall Images:"
-msgstr ""
-
-#: data/content/server/download/index.html:60
 #: data/content/server/prerelease/index.html:77
 #: data/content/workstation/download/index.html:62
 #: data/content/workstation/prerelease/index.html:81
@@ -1777,18 +1766,12 @@ msgstr ""
 msgid "64-bit %sMB image"
 msgstr ""
 
-#: data/content/server/download/index.html:61
-#: data/content/workstation/download/index.html:63
-#, python-format
-msgid "32-bit %sMB image"
-msgstr ""
-
-#: data/content/server/download/index.html:77
+#: data/content/server/download/index.html:70
 #: data/content/workstation/download/index.html:79
 msgid "Get more Fedora"
 msgstr ""
 
-#: data/content/server/download/index.html:81
+#: data/content/server/download/index.html:74
 #: data/content/workstation/download/index.html:88
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr ""
@@ -1853,10 +1836,6 @@ msgid ""
 "To verify your image, start by downloading the CHECKSUM file below into "
 "the same directory as the image you downloaded and follow <a "
 "href=\"%s/%s/verify\">these instructions</a>."
-msgstr ""
-
-#: data/content/server/prerelease/index.html:75
-msgid "Netinstall Image:"
 msgstr ""
 
 #: data/content/workstation/index.html:8
@@ -1966,8 +1945,20 @@ msgid ""
 msgstr ""
 
 #: data/content/workstation/download/index.html:58
+#: data/content/workstation/prerelease/index.html:76
 #, python-format
 msgid "32-bit %sGB Live image"
+msgstr ""
+
+#: data/content/workstation/download/index.html:60
+#: data/content/workstation/prerelease/index.html:79
+msgid "Netinstall Images:"
+msgstr ""
+
+#: data/content/workstation/download/index.html:63
+#: data/content/workstation/prerelease/index.html:82
+#, python-format
+msgid "32-bit %sMB image"
 msgstr ""
 
 #: data/content/workstation/download/index.html:82
@@ -2001,6 +1992,10 @@ msgstr ""
 
 #: data/content/workstation/prerelease/index.html:67
 msgid "Validate 64-bit!"
+msgstr ""
+
+#: data/content/workstation/prerelease/index.html:70
+msgid "Validate 32-bit!"
 msgstr ""
 
 #: data/templates/cloud-tab.html:9
