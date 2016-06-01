@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Fedora Alternative Downloads')}</title>
+  </head>
+
+<body class="home">
+<xi:include href="../templates/head.html" />
+
+  <!-- Servers -->
+  <div class="jumbotron main-head hidden-xs hidden-sm">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Network Installers')}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 product-feature">
+        <p>${_('These are very small images you can use to install Fedora over the network.')}</p>
+        </div>
+        <div class="col-md-9">
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/server.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Server')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ARM_Server']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/minimal.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Minimal')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ARM_Minimal']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Servers mobile phones-->
+  <div class="jumbotron main-head visible-xs">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; Servers'))}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('These images are geared towards ARM-based computers used as servers, typically in a headless environment.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/server.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Server')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/minimal.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Minimal')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Servers mobile tablets-->
+  <div class="jumbotron main-head visible-sm">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; Servers'))}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('These images are geared towards ARM-based computers used as servers, typically in a headless environment.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/server.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Server')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/minimal.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Minimal')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desktops -->
+  <div class="jumbotron main-head top-space desktop visible-lg hidden-xs hidden-sm hidden-md">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Desktop Computing')}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 product-feature">
+        <p>${_('These images are for ARM-based mediacenters, kiosks, laptops, and other ARM-powered devices where a graphical interface is desired.')}</p>
+        </div>
+        <div class="col-lg-9">
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/workstation.png" />
+            </div>
+            <div class="col-lg-4">
+            <h3>${_('Fedora Workstation')}</h3>
+            </div>
+            <div class="col-lg-3">
+            <p>${Markup(_('%sGB raw image')) % global_variables.iso_size['ARM_Workstation']}</p>
+            </div>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/armhfp/Images/Fedora-Workstation-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/kde.png" />
+            </div>
+            <div class="col-lg-4">
+            <h3>${_('KDE Plasma Desktop')}</h3>
+            </div>
+            <div class="col-lg-3">
+            <p>${Markup(_('%sGB raw image')) % global_variables.iso_size['ARM_KDE']}</p>
+            </div>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-KDE-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/xfce.png" />
+            </div>
+            <div class="col-lg-4">
+            <h3>${_('Xfce Desktop')}</h3>
+            </div>
+            <div class="col-lg-3">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ARM_Xfce']}</p>
+            </div>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Xfce-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/lxde.png" />
+            </div>
+            <div class="col-lg-4">
+            <h3>${_('LXDE Desktop')}</h3>
+            </div>
+            <div class="col-lg-3">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ARM_LXDE']}</p>
+            </div>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-LXDE-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/mate.png" />
+            </div>
+            <div class="col-lg-4">
+            <h3>${_('MATE-Compiz Desktop')}</h3>
+            </div>
+            <div class="col-lg-3">
+            <p>${Markup(_('%sGB raw image')) % global_variables.iso_size['ARM_Mate']}</p>
+            </div>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Mate-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/soas.png" />
+            </div>
+            <div class="col-lg-4">
+            <h3>${_('Sugar on a Stick')}</h3>
+            </div>
+            <div class="col-lg-3">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ARM_SoaS']}</p>
+            </div>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-SoaS-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desktops mobile phones-->
+  <div class="jumbotron main-head top-space desktop visible-xs">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Desktop Computing')}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('These images are for ARM-based mediacenters, kiosks, laptops, and other ARM-powered devices where a graphical interface is desired.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/workstation.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Workstation')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/armhfp/Images/Fedora-Workstation-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/kde.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('KDE Plasma Desktop')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-KDE-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/xfce.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Xfce Desktop')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Xfce-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/lxde.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('LXDE Desktop')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-LXDE-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/mate.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('MATE-Compiz Desktop')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Mate-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/soas.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Sugar on a Stick')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-SoaS-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desktops mobile tablets-->
+  <div class="jumbotron main-head top-space desktop visible-sm-md hidden-xs hidden-lg">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Desktop Computing')}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('These images are for ARM-based mediacenters, kiosks, laptops, and other ARM-powered devices where a graphical interface is desired.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/workstation.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Workstation')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/armhfp/Images/Fedora-Workstation-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/kde.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('KDE Plasma Desktop')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-KDE-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/xfce.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Xfce Desktop')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Xfce-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/lxde.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('LXDE Desktop')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-LXDE-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/mate.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('MATE-Compiz Desktop')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Mate-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/soas.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Sugar on a Stick')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-SoaS-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature: ARM -->
+  <div class="jumbotron product-feature bluebox">
+    <div class="container">
+      <div class="row">
+	    <div class="col-xs-12 caption">
+	      <h2 class="text-center">${_('What is ARM Technology?')}</h2>
+	      <p class="thin text-justify">${_('ARM microprocessors are the most widely-produced processor family in the world; they have historically been used in cell phones and embedded applications, and are increasingly used in tablet devices and low-power-consumption servers.')}</p>
+	      <p class="thin text-justify">${_('The Fedora ARM project is an initiative to bring Fedora to this processor family. The images provided here are versions of Fedora tailored for running in on ARM-based systems.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="jumbotron whitesupport">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Fedora ARM documentation and installation guides are available at the &lt;a href="%s"&gt;Fedora ARM wiki page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Architectures/ARM'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;arm@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/arm'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-arm&lt;/a&gt; irc channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-arm'))}</p>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <py:choose>
+        <py:when test="global_variables.release['curr_state'] == 'Alpha'">
+          <div class="newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Fedora %(rel)s %(state)s released! &lt;a href="%(link)s"&gt;Try it now >&lt;/a&gt;')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state'], 'link':'prerelease.html'}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:when>
+        <py:when test="global_variables.release['curr_state'] == 'Beta'">
+          <div class="jumbotron newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Fedora %(rel)s %(state)s released! &lt;a href="%(link)s"&gt;Try it now >&lt;/a&gt;')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state'], 'link':'prerelease.html'}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:when>
+        <py:otherwise>
+          <div class="jumbotron newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Fedora %(rel)s released! Try it now.')) % {'rel':global_variables.release['curr_id']}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:otherwise>
+      </py:choose>
+
+</body>
+</html>
