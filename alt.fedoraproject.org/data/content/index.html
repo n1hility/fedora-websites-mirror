@@ -221,100 +221,60 @@
   </div>
 
   <!-- Desktops -->
-  <div class="jumbotron main-head top-space desktop visible-lg hidden-xs hidden-sm hidden-md">
+  <div class="jumbotron main-head top-space visible-lg hidden-xs hidden-sm hidden-md">
     <div class="container using">
       <div class="row">
         <div class="col-xs-12">
-        <h2>${_('Desktop Computing')}</h2>
+        <h2>${_('Secondary Architectures')}</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-3 product-feature">
-        <p>${_('These images are for ARM-based mediacenters, kiosks, laptops, and other ARM-powered devices where a graphical interface is desired.')}</p>
+        <p>${_('These are additional architectures supported by Fedora beyond the standard set.')}</p>
         </div>
         <div class="col-lg-9">
           <div class="white">
             <div class="col-lg-1">
-            <img src="/static/images/workstation.png" />
+            <img src="/static/images/mips.png" />
             </div>
             <div class="col-lg-4">
-            <h3>${_('Fedora Workstation')}</h3>
+            <h3>${_('MIPS Architecture')}</h3>
             </div>
-            <div class="col-lg-3">
-            <p>${Markup(_('%sGB raw image')) % global_variables.iso_size['ARM_Workstation']}</p>
-            </div>
-            <div class="col-lg-4">
-            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/armhfp/Images/Fedora-Workstation-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            <div class="col-lg-4 col-lg-offset-3">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/armhfp/Images/Fedora-Workstation-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('View Images &gt;'))}</a></p>
             </div>
           </div>
           <div class="white">
             <div class="col-lg-1">
-            <img src="/static/images/kde.png" />
+            <img src="/static/images/ppc.png" />
             </div>
             <div class="col-lg-4">
-            <h3>${_('KDE Plasma Desktop')}</h3>
+            <h3>${_('PowerPC Architecture')}</h3>
             </div>
-            <div class="col-lg-3">
-            <p>${Markup(_('%sGB raw image')) % global_variables.iso_size['ARM_KDE']}</p>
-            </div>
-            <div class="col-lg-4">
-            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-KDE-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            <div class="col-lg-4 col-lg-offset-3">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/armhfp/Images/Fedora-Workstation-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('View Images &gt;'))}</a></p>
             </div>
           </div>
           <div class="white">
             <div class="col-lg-1">
-            <img src="/static/images/xfce.png" />
+            <img src="/static/images/s390x.png" />
             </div>
             <div class="col-lg-4">
-            <h3>${_('Xfce Desktop')}</h3>
+            <h3>${_('s390x Architecture')}</h3>
             </div>
-            <div class="col-lg-3">
-            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ARM_Xfce']}</p>
-            </div>
-            <div class="col-lg-4">
-            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Xfce-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            <div class="col-lg-4 col-lg-offset-3">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/armhfp/Images/Fedora-Workstation-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('View Images &gt;'))}</a></p>
             </div>
           </div>
           <div class="white">
             <div class="col-lg-1">
-            <img src="/static/images/lxde.png" />
+            <img src="/static/images/aarch64.png" />
             </div>
             <div class="col-lg-4">
-            <h3>${_('LXDE Desktop')}</h3>
+            <h3>${_('ARM AArch64 Architecture')}</h3>
             </div>
-            <div class="col-lg-3">
-            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ARM_LXDE']}</p>
-            </div>
-            <div class="col-lg-4">
-            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-LXDE-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
-            </div>
-          </div>
-          <div class="white">
-            <div class="col-lg-1">
-            <img src="/static/images/mate.png" />
-            </div>
-            <div class="col-lg-4">
-            <h3>${_('MATE-Compiz Desktop')}</h3>
-            </div>
-            <div class="col-lg-3">
-            <p>${Markup(_('%sGB raw image')) % global_variables.iso_size['ARM_Mate']}</p>
-            </div>
-            <div class="col-lg-4">
-            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Mate-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
-            </div>
-          </div>
-          <div class="white">
-            <div class="col-lg-1">
-            <img src="/static/images/soas.png" />
-            </div>
-            <div class="col-lg-4">
-            <h3>${_('Sugar on a Stick')}</h3>
-            </div>
-            <div class="col-lg-3">
-            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ARM_SoaS']}</p>
-            </div>
-            <div class="col-lg-4">
-            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-SoaS-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            <div class="col-lg-4 col-lg-offset-3">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/armhfp/Images/Fedora-Workstation-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('View Images &gt;'))}</a></p>
             </div>
           </div>
         </div>
