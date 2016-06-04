@@ -32,7 +32,7 @@
             <h3>${_('Fedora Server')}</h3>
             </div>
             <div class="col-md-3">
-            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ARM_Server']}</p>
+            <p>${Markup(_('64 bit %sMB ISO')) % global_variables.iso_size['ARM_Server']}</p>
             </div>
             <div class="col-md-4">
             <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
@@ -40,13 +40,41 @@
           </div>
           <div class="white">
             <div class="col-md-1">
-            <img src="/static/images/minimal.png" />
+            <img src="/static/images/server.png" />
             </div>
             <div class="col-md-4">
-            <h3>${_('Fedora Minimal')}</h3>
+            <h3>${_('Fedora Server')}</h3>
             </div>
             <div class="col-md-3">
-            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ARM_Minimal']}</p>
+            <p>${Markup(_('32 bit %sMB ISO')) % global_variables.iso_size['ARM_Server']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/workstation.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Workstation')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('64 bit %sMB ISO')) % global_variables.iso_size['ARM_Minimal']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/workstation.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Workstation')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('32 bit %sMB ISO')) % global_variables.iso_size['ARM_Minimal']}</p>
             </div>
             <div class="col-md-4">
             <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
@@ -77,16 +105,34 @@
           </div>
           <div class="col-xs-9">
           <h3>${_('Fedora Server')}</h3>
-          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download 64 bit')}</a> | <a href="verify.html">${_('Verify')}</a></p>
           </div>
         </div>
         <div class="white">
           <div class="col-xs-3">
-          <img src="/static/images/minimal.png" />
+          <img src="/static/images/server.png" />
           </div>
           <div class="col-xs-9">
-          <h3>${_('Fedora Minimal')}</h3>
-          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          <h3>${_('Fedora Server')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download 32 bit')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/workstation.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Workstation')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download 64 bit')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/workstation.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Workstation')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download 32 bit')}</a> | <a href="verify.html">${_('Verify')}</a></p>
           </div>
         </div>
       </div>
@@ -115,18 +161,40 @@
           <h3>${_('Fedora Server')}</h3>
           </div>
           <div class="col-sm-4">
-          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download 64 bit')}</a> | <a href="verify.html">${_('Verify')}</a></p>
           </div>
         </div>
         <div class="white">
           <div class="col-sm-3">
-          <img src="/static/images/minimal.png" />
+          <img src="/static/images/server.png" />
           </div>
           <div class="col-sm-5">
-          <h3>${_('Fedora Minimal')}</h3>
+          <h3>${_('Fedora Server')}</h3>
           </div>
           <div class="col-sm-4">
-          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download 32 bit')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/workstation.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Workstation')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download 64 bit')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/workstation.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Workstation')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download 32 bit')}</a> | <a href="verify.html">${_('Verify')}</a></p>
           </div>
         </div>
       </div>
