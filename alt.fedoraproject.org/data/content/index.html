@@ -90,12 +90,12 @@
     <div class="container using">
       <div class="row">
         <div class="col-xs-12">
-        <h2>${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; Servers'))}</h2>
+        <h2>${_('Network Installers')}</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12 product-feature">
-        <p>${_('These images are geared towards ARM-based computers used as servers, typically in a headless environment.')}</p>
+        <p>${_('These are very small images you can use to install Fedora over the network.')}</p>
         </div>
       </div>
       <div class="row">
@@ -144,12 +144,12 @@
     <div class="container using">
       <div class="row">
         <div class="col-xs-12">
-        <h2>${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; Servers'))}</h2>
+        <h2>${_('Network Installers')}</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12 product-feature">
-        <p>${_('These images are geared towards ARM-based computers used as servers, typically in a headless environment.')}</p>
+        <p>${_('These are very small images you can use to install Fedora over the network.')}</p>
         </div>
       </div>
       <div class="row">
@@ -283,7 +283,7 @@
   </div>
 
   <!-- Secondary Arches mobile phones-->
-  <div class="jumbotron main-head top-space desktop visible-xs">
+  <div class="jumbotron main-head top-space visible-xs">
     <div class="container using">
       <div class="row">
         <div class="col-xs-12">
@@ -337,7 +337,7 @@
   </div>
 
   <!-- Secondary Arches mobile tablets-->
-  <div class="jumbotron main-head top-space desktop visible-sm-md hidden-xs hidden-lg">
+  <div class="jumbotron main-head top-space visible-sm-md hidden-xs hidden-lg">
     <div class="container using">
       <div class="row">
         <div class="col-xs-12">
@@ -392,6 +392,122 @@
           </div>
           <div class="col-sm-4">
           <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Xfce-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Testing -->
+  <div class="jumbotron main-head top-space visible-lg hidden-xs hidden-sm hidden-md">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Testing Images')}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 product-feature">
+        <p>${_('These are unreleased development versions of Fedora made available for testing the next official Fedora release.')}</p>
+        </div>
+        <div class="col-lg-9">
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/night.png" />
+            </div>
+            <div class="col-lg-6">
+            <h3>${_('Nightly builds')}</h3>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('View Images &gt;'))}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/tc.png" />
+            </div>
+            <div class="col-lg-6">
+            <h3>${_('Other composes (Alpha / Beta / TCs / RCs)')}</h3>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('View Images &gt;'))}</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testing mobile phones-->
+  <div class="jumbotron main-head top-space visible-xs">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Testing Images')}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('These are unreleased development versions of Fedora made available for testing the next official Fedora release.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/night.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Nightly builds')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('View Images &gt;'))}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/tc.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Other test composes')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('View Images &gt;'))}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testing mobile tablets-->
+  <div class="jumbotron main-head top-space visible-sm-md hidden-xs hidden-lg">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Testing Images')}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('These are unreleased development versions of Fedora made available for testing the next official Fedora release.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/night.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Nightly builds')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('View Images &gt;'))}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/tc.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Other test composes')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('View Images &gt;'))}</a></p>
           </div>
         </div>
       </div>
