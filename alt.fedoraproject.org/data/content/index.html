@@ -398,7 +398,7 @@
     </div>
   </div>
 
-    <!-- Testing -->
+  <!-- Testing -->
   <div class="jumbotron main-head top-space visible-lg hidden-xs hidden-sm hidden-md">
     <div class="container using">
       <div class="row">
@@ -505,6 +505,179 @@
           </div>
           <div class="col-sm-5">
           <h3>${_('Other test composes')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('View Images &gt;'))}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Multi Boot -->
+  <div class="jumbotron main-head top-space visible-lg hidden-xs hidden-sm hidden-md">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Multi-Boot DVD Image')}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('A single, dual-layer DVD images that has both 32-bit and 64-bit versions of the live media for multiple desktops that Fedora ships. This includes GNOME, KDE, Xfce, and LXDE.')}</p>
+        </div>
+        <div class="col-lg-9 col-lg-offset-3">
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/mb.png" />
+            </div>
+            <div class="col-lg-4">
+            <h3>${_('Multi-Boot DVD')}</h3>
+            </div>
+            <div class="col-lg-3">
+            <p>${Markup(_('%sGB raw image')) % global_variables.iso_size['ARM_Workstation']}</p>
+            </div>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/armhfp/Images/Fedora-Workstation-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Multi Boot mobile phones-->
+  <div class="jumbotron main-head top-space visible-xs">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Multi-Boot DVD Image')}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('A single, dual-layer DVD images that has both 32-bit and 64-bit versions of the live media for multiple desktops that Fedora ships. This includes GNOME, KDE, Xfce, and LXDE.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/mb.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Multi-Boot DVD')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/armhfp/Images/Fedora-Workstation-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Multi Boot mobile tablets-->
+  <div class="jumbotron main-head top-space visible-sm-md hidden-xs hidden-lg">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Multi-Boot DVD Image')}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('A single, dual-layer DVD images that has both 32-bit and 64-bit versions of the live media for multiple desktops that Fedora ships. This includes GNOME, KDE, Xfce, and LXDE.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/mb.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Multi-Boot DVD')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/armhfp/Images/Fedora-Workstation-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Minimal -->
+  <div class="jumbotron main-head top-space visible-lg hidden-xs hidden-sm hidden-md">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Minimal Fedora')}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 product-feature">
+        <p>${_('A very minimal version of Fedora.')}</p>
+        </div>
+        <div class="col-lg-9">
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/min.png" />
+            </div>
+            <div class="col-lg-6">
+            <h3>${_('Minimal Fedora')}</h3>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('View Images &gt;'))}</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Minimal mobile phones-->
+  <div class="jumbotron main-head top-space visible-xs">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Minimal Fedora')}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('A very minimal version of Fedora.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/min.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Minimal Fedora')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('View Images &gt;'))}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Minimal mobile tablets-->
+  <div class="jumbotron main-head top-space visible-sm-md hidden-xs hidden-lg">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Minimal Fedora')}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('A very minimal version of Fedora.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/min.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Minimal Fedora')}</h3>
           </div>
           <div class="col-sm-4">
           <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('View Images &gt;'))}</a></p>
