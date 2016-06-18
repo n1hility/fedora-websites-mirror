@@ -27,9 +27,9 @@ release={
     'next_s390_id': '25',
     'next_cloud_id': '25',
     'next_cloud_AMI_id': '25',
-    'composedate': '20151030',
+    'composedate': '20160616',
     # Note that atomic values here get overwritten by the twoweek script.
-    'atomic_composedate': '20151030',
+    'atomic_composedate': '20160616',
     'pre_cloud_composedate': '20150915',
     'pre_cloud_AMI_composedate': '20160507',
     'manual_pre_cloud_composedate': '20160101',
@@ -39,6 +39,7 @@ release={
     'pre_cloud_atomic_composedate': '20150915',
     'pre_cloud_AMI_atomic_composedate': '20150915',
     'RC_gold': '10',              # insert the number of the RC version declared GOLD
+    'RC_build': '1.2',            # sometimes releng use the RC build
     'RC_pre_gold': '1.6',         # insert the number of the prerelease RC version declared GOLD
     'RC_pre_build': '1.6',        # sometimes releng use the RC build
 
