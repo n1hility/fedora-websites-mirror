@@ -40,7 +40,7 @@ release={
     # Note that atomic values here get overwritten by the twoweek script.
     'pre_cloud_atomic_composedate': '20150915',
     'pre_cloud_AMI_atomic_composedate': '20150915',
-    'RC_gold': '10',              # insert the number of the RC version declared GOLD
+    'RC_gold': '1.2',              # insert the number of the RC version declared GOLD
     'RC_build': '1.2',            # sometimes releng use the RC build
     'RC_pre_gold': '1.6',         # insert the number of the prerelease RC version declared GOLD
     'RC_pre_build': '1.6',        # sometimes releng use the RC build
