@@ -94,35 +94,35 @@ iso_size={
     'i686_Live_Cinnamon':   '1.2',       # In GB
     'x86_64_Live_Cinnamon': '1.2',       # In GB
     # Lives prerelease
-    'pre_i686_Live_KDE':    '1.6',       # In GB
+    'pre_i686_Live_KDE':    '1.5',       # In GB
     'pre_x86_64_Live_KDE':  '1.3',       # In GB
-    'pre_i686_Live_LXDE':   '1.2',       # In GB
-    'pre_x86_64_Live_LXDE': '921',       # In MB
-    'pre_i686_Live_Xfce':   '1.0',       # In GB
-    'pre_x86_64_Live_Xfce': '1.0',       # In GB
+    'pre_i686_Live_LXDE':   '1.0',       # In GB
+    'pre_x86_64_Live_LXDE': '906',       # In MB
+    'pre_i686_Live_Xfce':   '1.2',       # In GB
+    'pre_x86_64_Live_Xfce': '1.1',       # In GB
     'pre_i686_Live_Mate':   '1.7',       # In GB
     'pre_x86_64_Live_Mate': '1.4',       # In GB
     'pre_i686_Live_Soas':   '662',       # In MB
     'pre_x86_64_Live_Soas': '686',       # In MB
-    'pre_i686_Live_Cinnamon': '1.7',     # In GB
+    'pre_i686_Live_Cinnamon': '1.6',     # In GB
     'pre_x86_64_Live_Cinnamon': '1.3',   # In GB
     # Spins
-    'i686_Live_Security':  '916',       # In MB
-    'x86_64_Live_Security':'940',       # In MB
-    'i686_Live_Games':     '3.7',       # In GB
-    'x86_64_Live_Games':   '3.9',       # In GB
+    'i686_Live_Security':  '1.2',       # In GB
+    'x86_64_Live_Security':'1.1',       # In GB
+    'i686_Live_Games':     '3.8',       # In GB
+    'x86_64_Live_Games':   '3.6',       # In GB
     'i686_Live_Elab':      '2.5',       # In GB
     'x86_64_Live_Elab':    '2.5',       # In GB
     'i686_Live_Design':    '1.9',       # In GB
     'x86_64_Live_Design':  '1.8',       # In GB
-    'i686_Live_Sci-kde':   '2.6',       # In GB
-    'x86_64_Live_Sci-kde': '2.7',       # In GB
-    'i686_Live_Robotics':  '2.5',       # In GB
-    'x86_64_Live_Robotics':'2.5',       # In GB
+    'i686_Live_Sci-kde':   '3.2',       # In GB
+    'x86_64_Live_Sci-kde': '2.9',       # In GB
+    'i686_Live_Robotics':  '2.7',       # In GB
+    'x86_64_Live_Robotics':'2.4',       # In GB
     'i686_Live_Jam':       '1.7',       # In GB
     'x86_64_Live_Jam':     '1.7',       # In GB
-    'i686_Live_Astronomy': '1.7',       # In GB
-    'x86_64_Live_Astronomy':'1.7',      # In GB
+    'i686_Live_Astronomy': '2.5',       # In GB
+    'x86_64_Live_Astronomy':'2.3',      # In GB
     # Spins prerelease
     'pre_i686_Live_Security':  '1.2',   # In GB
     'pre_x86_64_Live_Security':'1.1',   # In GB
@@ -141,9 +141,9 @@ iso_size={
     'pre_i686_Live_Astronomy': '2.7',   # In GB
     'pre_x86_64_Live_Astronomy':'2.4',  # In GB
     # Server
-    'x86_64_server_DVD':   '2.0',       # In GB
+    'x86_64_server_DVD':   '1.7',       # In GB
     'i386_server_DVD':     '2.1',       # In GB
-    'x86_64_server_net':   '415',       # In MB
+    'x86_64_server_net':   '441',       # In MB
     'i386_server_net':     '458',       # In MB
     # Server prerelease
     'pre_x86_64_server_DVD': '1.8',     # In GB
@@ -152,23 +152,23 @@ iso_size={
     'pre_i386_server_net':   '552',     # In MB
     # Workstation
     'x86_64_workstation':  '1.4',       # In GB
-    'i386_workstation':    '1.3',       # In GB
-    'x86_64_workstation_net': '413',    # In MB
-    'i386_workstation_net': '455',      # In MB
+    'i386_workstation':    '1.6',       # In GB
+    'x86_64_workstation_net': '439',    # In MB
+    'i386_workstation_net': '490',      # In MB
     # Workstation prerelease
     'pre_x86_64_workstation':  '1.4',   # In GB
     'pre_i386_workstation':    '1.5',   # In GB
     'pre_x86_64_workstation_net': '436',# In MB
     'pre_i386_workstation_net': '486',  # In MB
     # ARM
-    'ARM_Workstation':     '1.1',       # In GB
-    'ARM_Server':          '438',       # In MB
-    'ARM_Minimal':         '346',       # In MB
-    'ARM_KDE':             '1.2',       # In GB
-    'ARM_Xfce':            '844',       # In MB
-    'ARM_LXDE':            '787',       # In MB
-    'ARM_Mate':            '1.1',       # In GB
-    'ARM_SoaS':            '644',       # In MB
+    'ARM_Workstation':     '1.2',       # In GB
+    'ARM_Server':          '487',       # In MB
+    'ARM_Minimal':         '441',       # In MB
+    'ARM_KDE':             '1.4',       # In GB
+    'ARM_Xfce':            '1.0',       # In MB
+    'ARM_LXDE':            '887',       # In MB
+    'ARM_Mate':            '1.3',       # In GB
+    'ARM_SoaS':            '722',       # In MB
     # ARM prerelease
     'pre_ARM_Workstation': '1.2',       # In GB
     'pre_ARM_Server':      '487',       # In MB
@@ -180,16 +180,14 @@ iso_size={
     'pre_ARM_Cinnamon':    '780',       # In MB
     'pre_ARM_SoaS':        '710',       # In MB
     # Cloud
-    'raw_x86_64_cloud':    '146',       # In MB
+    'raw_x86_64_cloud':    '128',       # In MB
     'raw_i386_cloud':      '143',       # In MB
-    'qcow2_x86_64_cloud':  '218',       # In MB
+    'qcow2_x86_64_cloud':  '195',       # In MB
     'qcow2_i386_cloud':    '216',       # In MB
-    'VBvag_cloud':         '209',       # In MB
-    'libvag_cloud':        '203',       # In MB
-    'x86_64_docker':       '41',        # In MB
+    'VBvag_cloud':         '210',       # In MB
+    'libvag_cloud':        '201',       # In MB
+    'x86_64_docker':       '42',        # In MB
     'raw_i386_cloud':      '144',       # In MB
-    'qcow2_x86_64_cloud':  '224',       # In MB
-    'qcow2_i386_cloud':    '222',       # In MB
     # Note that atomic values here get overwritten by the twoweek script.
     'atomic_raw_cloud':    '???',       # In MB
     'atomic_qcow2_cloud':  '???',       # In MB
