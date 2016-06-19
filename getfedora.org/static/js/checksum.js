@@ -4,10 +4,10 @@ var iso_path = 'https://dl.fedoraproject.org/pub/alt/atomic/stable/Cloud_Atomic/
 
 var checksums = [];
 // Generate dynamic checksum paths
-checksums['Fedora-Live-Workstation-x86_64-' + curr_id + '-' + RC_gold + '.iso'] = dir_path + 'Fedora-Workstation-' + curr_id + '-x86_64-CHECKSUM';
-checksums['Fedora-Workstation-netinst-x86_64-' + curr_id + '.iso'] = dir_path + 'Fedora-Workstation-' + curr_id + '-x86_64-CHECKSUM';
-checksums['Fedora-Live-Workstation-i686-' + curr_id + '-' + RC_gold + '.iso'] = dir_path + 'Fedora-Workstation-' + curr_id + '-i386-CHECKSUM';
-checksums['Fedora-Workstation-netinst-i386-' + curr_id + '.iso'] = dir_path + 'Fedora-Workstation-' + curr_id + '-i386-CHECKSUM';
+checksums['Fedora-Workstation-Live-x86_64-' + curr_id + '-' + RC_gold + '.iso'] = dir_path + 'Fedora-Workstation-' + curr_id + '-x86_64-CHECKSUM';
+checksums['Fedora-Workstation-netinst-x86_64-' + curr_id + '-' + RC_gold + '.iso'] = dir_path + 'Fedora-Workstation-' + curr_id + '-x86_64-CHECKSUM';
+checksums['Fedora-Workstation-Live-i386-' + curr_id + '-' + RC_gold + '.iso'] = dir_path + 'Fedora-Workstation-' + curr_id + '-i386-CHECKSUM';
+checksums['Fedora-Workstation-netinst-i386-' + curr_id + '-' + RC_gold + '.iso'] = dir_path + 'Fedora-Workstation-' + curr_id + '-i386-CHECKSUM';
 checksums['Fedora-Server-DVD-x86_64-' + curr_id + '.iso'] = dir_path + 'Fedora-Server-' + curr_id + '-x86_64-CHECKSUM';
 checksums['Fedora-Server-netinst-x86_64-' + curr_id + '.iso'] = dir_path + 'Fedora-Server-' + curr_id + '-x86_64-CHECKSUM';
 checksums['Fedora-Server-DVD-i386-' + curr_id + '.iso'] = dir_path + 'Fedora-Server-' + curr_id + '-i386-CHECKSUM';
