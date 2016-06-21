@@ -1,54 +1,44 @@
 # Yuri Chornoivan <yurchor@ukr.net>, 2015.
 # Yuri Chornoivan <yurchor@ukr.net>, 2015. #zanata
+# Yuri Chornoivan <yurchor@ukr.net>, 2016. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-10-12 13:26+0200\n"
-"PO-Revision-Date: 2015-09-23 08:02-0400\n"
+"POT-Creation-Date: 2016-06-19 23:32+0200\n"
+"PO-Revision-Date: 2016-06-01 01:45-0400\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 1.3\n"
 "Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
-"X-Generator: Zanata 3.7.3\n"
+"Generated-By: Babel 1.3\n"
+"X-Generator: Zanata 3.8.4\n"
 
 #: data/content/index.html:8 data/templates/footer.html:44
 msgid "Fedora Labs"
 msgstr "Fedora Labs"
 
-#: data/content/index.html:23 data/content/index.html:72
+#: data/content/index.html:23 data/content/index.html:68
 #: data/content/prerelease.html:45
-msgid "Open Creativity."
-msgstr "Вільна творчість."
+msgid "Explore the Outer Space."
+msgstr "Вивчіть зовнішній світ."
 
-#: data/content/index.html:24 data/content/index.html:73
+#: data/content/index.html:24 data/content/index.html:69
 msgid ""
-"Visual design, multimedia production, and publishing suite of free and open "
-"source creative tools."
+"Powerful completely open-source and free tool for amateurs and "
+"professionals."
 msgstr ""
-"Наочне конструювання, створення мультимедійних даних та комплект програм для"
-" приготування матеріалів для друку — усе це у наборі вільних інструментів "
-"для творчості з відкритим кодом."
+"Потужний і повністю відкритий та безкоштовний інструмент для аматорів і "
+"професіоналів."
 
-#: data/content/index.html:29 data/content/index.html:80
-#: data/content/prerelease.html:67
-msgid "Play with Fedora Today!"
-msgstr "Грайте з Fedora!"
-
-#: data/content/index.html:30 data/content/index.html:81
-msgid ""
-"A collection and perfect show-case of the best games available in Fedora."
-msgstr "Збірка найкращих ігор, якими можна погратися у Fedora."
-
-#: data/content/index.html:38 data/content/index.html:88
+#: data/content/index.html:29 data/content/prerelease.html:112
 msgid "Unleash your inner musician."
 msgstr "Звільніть у собі музиканта."
 
-#: data/content/index.html:39 data/content/index.html:89
+#: data/content/index.html:30
 msgid ""
 "For audio enthusiasts and musicians who want to create, edit and produce "
 "audio and music on Linux."
@@ -56,12 +46,12 @@ msgstr ""
 "Для звукорежисерів-аматорів та музикантів, які бажають створювати, "
 "редагувати та продюсувати звукові матеріали та музику у Linux."
 
-#: data/content/index.html:44 data/content/index.html:96
-#: data/content/prerelease.html:111
+#: data/content/index.html:38 data/content/index.html:84
+#: data/content/prerelease.html:134
 msgid "Dive into Robotics."
 msgstr "Заглиблення у робототехніку."
 
-#: data/content/index.html:45 data/content/index.html:97
+#: data/content/index.html:39 data/content/index.html:85
 msgid ""
 "A wide variety of free and open robotics software packages for beginners and"
 " experts in robotics."
@@ -69,22 +59,22 @@ msgstr ""
 "Широкий діапазон робототехнічних пакунків вільного програмного забезпечення "
 "з відкритим кодом для початківців та експертів у робототехніці."
 
-#: data/content/index.html:53 data/content/index.html:104
-#: data/content/prerelease.html:133
+#: data/content/index.html:44 data/content/index.html:92
+#: data/content/prerelease.html:156
 msgid "Open source scientific computing."
 msgstr "Наукова робота за допомогою вільних програм."
 
-#: data/content/index.html:54 data/content/index.html:105
+#: data/content/index.html:45 data/content/index.html:93
 msgid ""
 "A bundle of open source scientific and numerical tools used in research."
 msgstr "Набір наукових та обчислювальних дослідницьких інструментів."
 
-#: data/content/index.html:59 data/content/index.html:112
-#: data/content/prerelease.html:155
+#: data/content/index.html:54 data/content/index.html:100
+#: data/content/prerelease.html:178
 msgid "Thorough, safe and secure."
 msgstr "Досконалість, безпека і захист."
 
-#: data/content/index.html:60 data/content/index.html:113
+#: data/content/index.html:55 data/content/index.html:101
 msgid ""
 "A safe test environment to work on security auditing, forensics, system "
 "rescue and teaching security testing methodologies."
@@ -92,11 +82,20 @@ msgstr ""
 "Безпечне тестове середовище для вивчення питань захисту даних, судової "
 "експертизи, відновлення системи та навчання методології захисту даних."
 
-#: data/content/index.html:125 data/content/prerelease.html:195
+#: data/content/index.html:76 data/content/prerelease.html:90
+msgid "Play with Fedora Today!"
+msgstr "Грайте з Fedora!"
+
+#: data/content/index.html:77
+msgid ""
+"A collection and perfect show-case of the best games available in Fedora."
+msgstr "Збірка найкращих ігор, якими можна погратися у Fedora."
+
+#: data/content/index.html:113 data/content/prerelease.html:218
 msgid "What is Fedora Labs?"
 msgstr "Що ж таке Fedora Labs?"
 
-#: data/content/index.html:126 data/content/prerelease.html:196
+#: data/content/index.html:114 data/content/prerelease.html:219
 msgid ""
 "Fedora Labs is a selection of curated bundles of purpose-driven software and"
 " content as curated and maintained by members of the Fedora Community. These"
@@ -108,25 +107,27 @@ msgstr ""
 "набори можна встановити як окремі повні версії Fedora або як додатки до "
 "наявних встановлених систем Fedora."
 
-#: data/content/index.html:137 data/content/index.html:156
-#: data/content/prerelease.html:207 data/content/prerelease.html:226
-#: data/content/design-suite/download/index.html:69
-#: data/content/design-suite/download/index.html:88
-#: data/content/games/download/index.html:68
-#: data/content/games/download/index.html:87
-#: data/content/jam/download/index.html:68
-#: data/content/jam/download/index.html:87
-#: data/content/robotics/download/index.html:68
-#: data/content/robotics/download/index.html:87
-#: data/content/scientific/download/index.html:68
-#: data/content/scientific/download/index.html:87
-#: data/content/security/download/index.html:68
-#: data/content/security/download/index.html:87
+#: data/content/index.html:125 data/content/index.html:144
+#: data/content/prerelease.html:230 data/content/prerelease.html:249
+#: data/content/astronomy/download/index.html:78
+#: data/content/astronomy/download/index.html:97
+#: data/content/design-suite/download/index.html:79
+#: data/content/design-suite/download/index.html:98
+#: data/content/games/download/index.html:78
+#: data/content/games/download/index.html:97
+#: data/content/jam/download/index.html:78
+#: data/content/jam/download/index.html:97
+#: data/content/robotics/download/index.html:78
+#: data/content/robotics/download/index.html:97
+#: data/content/scientific/download/index.html:78
+#: data/content/scientific/download/index.html:97
+#: data/content/security/download/index.html:78
+#: data/content/security/download/index.html:97
 msgid "Downloading"
 msgstr "Отримання"
 
-#: data/content/index.html:138 data/content/index.html:157
-#: data/content/prerelease.html:208 data/content/prerelease.html:227
+#: data/content/index.html:126 data/content/index.html:145
+#: data/content/prerelease.html:231 data/content/prerelease.html:250
 msgid ""
 "You can download these tools as complete Fedora image, or you can install "
 "them using a software manager on an existing Fedora installation."
@@ -135,82 +136,92 @@ msgstr ""
 "встановити їх за допомогою програми для керування програмним забезпеченням у"
 " вже встановленій системі Fedora."
 
-#: data/content/index.html:139 data/content/index.html:144
-#: data/content/index.html:149 data/content/index.html:170
-#: data/content/index.html:173 data/content/index.html:176
-#: data/content/prerelease.html:209 data/content/prerelease.html:214
-#: data/content/prerelease.html:219 data/content/prerelease.html:240
-#: data/content/prerelease.html:243 data/content/prerelease.html:246
-#: data/content/design-suite/download/index.html:71
-#: data/content/design-suite/download/index.html:76
+#: data/content/index.html:127 data/content/index.html:132
+#: data/content/index.html:137 data/content/index.html:158
+#: data/content/index.html:161 data/content/index.html:164
+#: data/content/prerelease.html:232 data/content/prerelease.html:237
+#: data/content/prerelease.html:242 data/content/prerelease.html:263
+#: data/content/prerelease.html:266 data/content/prerelease.html:269
+#: data/content/astronomy/download/index.html:80
+#: data/content/astronomy/download/index.html:85
+#: data/content/astronomy/download/index.html:90
+#: data/content/astronomy/download/index.html:111
+#: data/content/astronomy/download/index.html:114
+#: data/content/astronomy/download/index.html:117
 #: data/content/design-suite/download/index.html:81
-#: data/content/design-suite/download/index.html:102
-#: data/content/design-suite/download/index.html:105
-#: data/content/design-suite/download/index.html:108
-#: data/content/games/download/index.html:70
-#: data/content/games/download/index.html:75
+#: data/content/design-suite/download/index.html:86
+#: data/content/design-suite/download/index.html:91
+#: data/content/design-suite/download/index.html:112
+#: data/content/design-suite/download/index.html:115
+#: data/content/design-suite/download/index.html:118
 #: data/content/games/download/index.html:80
-#: data/content/games/download/index.html:101
-#: data/content/games/download/index.html:104
-#: data/content/games/download/index.html:107
-#: data/content/jam/download/index.html:70
-#: data/content/jam/download/index.html:75
+#: data/content/games/download/index.html:85
+#: data/content/games/download/index.html:90
+#: data/content/games/download/index.html:111
+#: data/content/games/download/index.html:114
+#: data/content/games/download/index.html:117
 #: data/content/jam/download/index.html:80
-#: data/content/jam/download/index.html:101
-#: data/content/jam/download/index.html:104
-#: data/content/jam/download/index.html:107
-#: data/content/robotics/download/index.html:70
-#: data/content/robotics/download/index.html:75
+#: data/content/jam/download/index.html:85
+#: data/content/jam/download/index.html:90
+#: data/content/jam/download/index.html:111
+#: data/content/jam/download/index.html:114
+#: data/content/jam/download/index.html:117
 #: data/content/robotics/download/index.html:80
-#: data/content/robotics/download/index.html:101
-#: data/content/robotics/download/index.html:104
-#: data/content/robotics/download/index.html:107
-#: data/content/scientific/download/index.html:70
-#: data/content/scientific/download/index.html:75
+#: data/content/robotics/download/index.html:85
+#: data/content/robotics/download/index.html:90
+#: data/content/robotics/download/index.html:111
+#: data/content/robotics/download/index.html:114
+#: data/content/robotics/download/index.html:117
 #: data/content/scientific/download/index.html:80
-#: data/content/scientific/download/index.html:101
-#: data/content/scientific/download/index.html:104
-#: data/content/scientific/download/index.html:107
-#: data/content/security/download/index.html:70
-#: data/content/security/download/index.html:75
+#: data/content/scientific/download/index.html:85
+#: data/content/scientific/download/index.html:90
+#: data/content/scientific/download/index.html:111
+#: data/content/scientific/download/index.html:114
+#: data/content/scientific/download/index.html:117
 #: data/content/security/download/index.html:80
-#: data/content/security/download/index.html:101
-#: data/content/security/download/index.html:104
-#: data/content/security/download/index.html:107
+#: data/content/security/download/index.html:85
+#: data/content/security/download/index.html:90
+#: data/content/security/download/index.html:111
+#: data/content/security/download/index.html:114
+#: data/content/security/download/index.html:117
 msgid "Learn more"
 msgstr "Дізнатись більше"
 
-#: data/content/index.html:142 data/content/index.html:160
-#: data/content/prerelease.html:212 data/content/prerelease.html:230
-#: data/content/design-suite/download/index.html:74
-#: data/content/design-suite/download/index.html:92
-#: data/content/games/download/index.html:73
-#: data/content/games/download/index.html:91
-#: data/content/jam/download/index.html:73
-#: data/content/jam/download/index.html:91
-#: data/content/robotics/download/index.html:73
-#: data/content/robotics/download/index.html:91
-#: data/content/scientific/download/index.html:73
-#: data/content/scientific/download/index.html:91
-#: data/content/security/download/index.html:73
-#: data/content/security/download/index.html:91
+#: data/content/index.html:130 data/content/index.html:148
+#: data/content/prerelease.html:235 data/content/prerelease.html:253
+#: data/content/astronomy/download/index.html:83
+#: data/content/astronomy/download/index.html:101
+#: data/content/design-suite/download/index.html:84
+#: data/content/design-suite/download/index.html:102
+#: data/content/games/download/index.html:83
+#: data/content/games/download/index.html:101
+#: data/content/jam/download/index.html:83
+#: data/content/jam/download/index.html:101
+#: data/content/robotics/download/index.html:83
+#: data/content/robotics/download/index.html:101
+#: data/content/scientific/download/index.html:83
+#: data/content/scientific/download/index.html:101
+#: data/content/security/download/index.html:83
+#: data/content/security/download/index.html:101
 msgid "Installing"
 msgstr "Встановлення"
 
-#: data/content/index.html:143 data/content/index.html:161
-#: data/content/prerelease.html:213 data/content/prerelease.html:231
-#: data/content/design-suite/download/index.html:75
-#: data/content/design-suite/download/index.html:93
-#: data/content/games/download/index.html:74
-#: data/content/games/download/index.html:92
-#: data/content/jam/download/index.html:74
-#: data/content/jam/download/index.html:92
-#: data/content/robotics/download/index.html:74
-#: data/content/robotics/download/index.html:92
-#: data/content/scientific/download/index.html:74
-#: data/content/scientific/download/index.html:92
-#: data/content/security/download/index.html:74
-#: data/content/security/download/index.html:92
+#: data/content/index.html:131 data/content/index.html:149
+#: data/content/prerelease.html:236 data/content/prerelease.html:254
+#: data/content/astronomy/download/index.html:84
+#: data/content/astronomy/download/index.html:102
+#: data/content/design-suite/download/index.html:85
+#: data/content/design-suite/download/index.html:103
+#: data/content/games/download/index.html:84
+#: data/content/games/download/index.html:102
+#: data/content/jam/download/index.html:84
+#: data/content/jam/download/index.html:102
+#: data/content/robotics/download/index.html:84
+#: data/content/robotics/download/index.html:102
+#: data/content/scientific/download/index.html:84
+#: data/content/scientific/download/index.html:102
+#: data/content/security/download/index.html:84
+#: data/content/security/download/index.html:102
 msgid ""
 "To install a spin, you run the spin on your computer and click the \"Install"
 " to Hard Drive\" link on the desktop. You'll be guided through the install "
@@ -221,37 +232,41 @@ msgstr ""
 "стільниці. Програма-майстер допоможе вам у встановленні ставлячи відповідні "
 "питання."
 
-#: data/content/index.html:147 data/content/index.html:164
-#: data/content/prerelease.html:217 data/content/prerelease.html:234
-#: data/content/design-suite/download/index.html:79
-#: data/content/design-suite/download/index.html:96
-#: data/content/games/download/index.html:78
-#: data/content/games/download/index.html:95
-#: data/content/jam/download/index.html:78
-#: data/content/jam/download/index.html:95
-#: data/content/robotics/download/index.html:78
-#: data/content/robotics/download/index.html:95
-#: data/content/scientific/download/index.html:78
-#: data/content/scientific/download/index.html:95
-#: data/content/security/download/index.html:78
-#: data/content/security/download/index.html:95
+#: data/content/index.html:135 data/content/index.html:152
+#: data/content/prerelease.html:240 data/content/prerelease.html:257
+#: data/content/astronomy/download/index.html:88
+#: data/content/astronomy/download/index.html:105
+#: data/content/design-suite/download/index.html:89
+#: data/content/design-suite/download/index.html:106
+#: data/content/games/download/index.html:88
+#: data/content/games/download/index.html:105
+#: data/content/jam/download/index.html:88
+#: data/content/jam/download/index.html:105
+#: data/content/robotics/download/index.html:88
+#: data/content/robotics/download/index.html:105
+#: data/content/scientific/download/index.html:88
+#: data/content/scientific/download/index.html:105
+#: data/content/security/download/index.html:88
+#: data/content/security/download/index.html:105
 msgid "Using"
 msgstr "Використання"
 
-#: data/content/index.html:148 data/content/index.html:165
-#: data/content/prerelease.html:218 data/content/prerelease.html:235
-#: data/content/design-suite/download/index.html:80
-#: data/content/design-suite/download/index.html:97
-#: data/content/games/download/index.html:79
-#: data/content/games/download/index.html:96
-#: data/content/jam/download/index.html:79
-#: data/content/jam/download/index.html:96
-#: data/content/robotics/download/index.html:79
-#: data/content/robotics/download/index.html:96
-#: data/content/scientific/download/index.html:79
-#: data/content/scientific/download/index.html:96
-#: data/content/security/download/index.html:79
-#: data/content/security/download/index.html:96
+#: data/content/index.html:136 data/content/index.html:153
+#: data/content/prerelease.html:241 data/content/prerelease.html:258
+#: data/content/astronomy/download/index.html:89
+#: data/content/astronomy/download/index.html:106
+#: data/content/design-suite/download/index.html:90
+#: data/content/design-suite/download/index.html:107
+#: data/content/games/download/index.html:89
+#: data/content/games/download/index.html:106
+#: data/content/jam/download/index.html:89
+#: data/content/jam/download/index.html:106
+#: data/content/robotics/download/index.html:89
+#: data/content/robotics/download/index.html:106
+#: data/content/scientific/download/index.html:89
+#: data/content/scientific/download/index.html:106
+#: data/content/security/download/index.html:89
+#: data/content/security/download/index.html:106
 msgid ""
 "After installing either the software bundle or the complete Fedora version "
 "you can run these tools by launching the applications that correspond with "
@@ -260,11 +275,16 @@ msgstr ""
 "Після встановлення комплекту програмного забезпечення або повноцінної версії"
 " Fedora ви можете запустити ці інструменти за допомогою відповідних програм."
 
-#: data/content/index.html:189 data/content/index.html:200
+#: data/content/index.html:177 data/content/index.html:188
 #, python-format
 msgid "Fedora %(rel)s %(state)s released! <a href=\"%(link)s\">Try it now ></a>"
 msgstr ""
 "Випущено Fedora %(rel)s %(state)s! <a href=\"%(link)s\">Спробуйте її ></a>"
+
+#: data/content/index.html:199
+#, fuzzy, python-format
+msgid "Fedora %(rel)s released! Check it out in the Download section."
+msgstr "Випущено Fedora %(rel)s! Зверніться до розділу «Отримання»."
 
 #: data/content/prerelease.html:8
 msgid "Fedora Labs Prerelease Images"
@@ -276,7 +296,7 @@ msgid "Download Fedora %(rel)s %(state)s Labs"
 msgstr "Отримати Fedora %(rel)s %(state)s Labs"
 
 #: data/content/prerelease.html:25
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "This is pre-release software and is supported by the <a "
 "href=\"%(team_url)s\">QA Team</a>. Please direct questions to their <a "
@@ -288,7 +308,7 @@ msgstr ""
 "команди</a> або на каналі %(team_irc)s сервера freenode."
 
 #: data/content/prerelease.html:26
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "All issues or bugs should be reported via the <a href=\"%s\">Red Hat "
 "Bugzilla</a>. The Fedora Project makes no guarantees as to its suitability "
@@ -299,7 +319,7 @@ msgstr ""
 "можливості користування цим продуктом."
 
 #: data/content/prerelease.html:28 data/content/prerelease.html:30
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Read the <a href=\"%(relnotes_url)s\">Release Notes</a> for more information"
 " on changes and new features, and the <a href=\"%(commonbugs_url)s\">Common "
@@ -312,24 +332,21 @@ msgstr ""
 "недоліки та способи їхнього усування."
 
 #: data/content/prerelease.html:48 data/content/prerelease.html:52
-#: data/content/prerelease.html:70 data/content/prerelease.html:74
-#: data/content/prerelease.html:114 data/content/prerelease.html:118
-#: data/content/prerelease.html:136 data/content/prerelease.html:140
+#: data/content/prerelease.html:93 data/content/prerelease.html:97
+#: data/content/prerelease.html:115 data/content/prerelease.html:119
+#: data/content/prerelease.html:137 data/content/prerelease.html:141
+#: data/content/prerelease.html:159 data/content/prerelease.html:163
+#: data/content/prerelease.html:181 data/content/prerelease.html:185
 #, python-format
 msgid "%s GB ISO Image"
 msgstr "Образ ISO, %s ГБ"
 
-#: data/content/prerelease.html:158 data/content/prerelease.html:162
-#, python-format
-msgid "%s MB ISO Image"
-msgstr "Образ ISO, %s МБ"
-
-#: data/content/prerelease.html:176
+#: data/content/prerelease.html:199
 #: data/templates/generic/splash-checksum.html:8
 msgid "Verify your Download!"
 msgstr "Перевірте отримані дані!"
 
-#: data/content/prerelease.html:177
+#: data/content/prerelease.html:200
 #: data/templates/generic/splash-checksum.html:9
 #, python-format
 msgid ""
@@ -342,12 +359,12 @@ msgstr ""
 "скористайтеся файлом CHECKSUM з каталогу, де розташовано отриманий вами файл"
 " образу, і виконайте <a href=\"../../%s/verify\">ці настанови</a>."
 
-#: data/content/prerelease.html:180
+#: data/content/prerelease.html:203
 #: data/templates/generic/splash-checksum.html:12
 msgid "Validate 64bit!"
 msgstr "Перевірити 64-бітовий!"
 
-#: data/content/prerelease.html:183
+#: data/content/prerelease.html:206
 #: data/templates/generic/splash-checksum.html:15
 msgid "Validate 32bit!"
 msgstr "Перевірити 32-бітовий!"
@@ -406,40 +423,40 @@ msgid ""
 msgstr "Файл CHECKSUM повинен мати коректний підпис одним з цих ключів:"
 
 #: data/content/verify.html:52
+msgid "Fedora 25"
+msgstr "Fedora 25"
+
+#: data/content/verify.html:53
+msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgstr ""
+"Вторинні архітектури Fedora 25 (AArch64, PPC64, PPC64le, s390 і s390x)"
+
+#: data/content/verify.html:54
 msgid "Fedora 24"
 msgstr "Fedora 24"
 
-#: data/content/verify.html:53
+#: data/content/verify.html:55
 msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Вторинні архітектури Fedora 24 (AArch64, PPC64, PPC64le, s390 та s390x)"
 
-#: data/content/verify.html:54
+#: data/content/verify.html:56
 msgid "Fedora 23"
 msgstr "Fedora 23"
 
-#: data/content/verify.html:55
+#: data/content/verify.html:57
 msgid "Fedora 23 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Вторинні архітектури Fedora 23 (AArch64, PPC64, PPC64le, s390 та s390x)"
 
-#: data/content/verify.html:56
+#: data/content/verify.html:58
 msgid "Fedora 22"
 msgstr "Fedora 22"
 
-#: data/content/verify.html:57
+#: data/content/verify.html:59
 msgid "Fedora 22 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Вторинні архітектури Fedora 22 (AArch64, PPC64, PPC64le, s390 та s390x)"
-
-#: data/content/verify.html:58
-msgid "Fedora 21"
-msgstr "Fedora 21"
-
-#: data/content/verify.html:59
-msgid "Fedora 21 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
-"Вторинні архітектури Fedora 21 (AArch64, PPC64, PPC64le, s390 та s390x)"
 
 #: data/content/verify.html:61
 msgid ""
@@ -462,40 +479,38 @@ msgstr "Як перевірити отриманий образ у іншій о
 msgid "Read these instructions to validate your image."
 msgstr "Ознайомтеся із цими настановами, щоб перевірити образ."
 
-#: data/content/design-suite/index.html:8
-msgid "Design Suite"
-msgstr "Дизайнерський комплект програм"
+#: data/content/astronomy/index.html:8
+msgid "Astronomy"
+msgstr "Astronomy"
 
-#: data/content/design-suite/index.html:20
+#: data/content/astronomy/index.html:20
 msgid ""
-"Looking for a ready-to-go desktop environment brimming with free and open "
-"source multimedia production and publishing tools? Try the Design Suite, a "
-"Fedora Spin created by designers, for designers."
+"Fedora Astronomy brings a complete open source toolchain to both amateur and"
+" professional astronomers."
 msgstr ""
-"Шукаєте робоче середовище з вільними програмами з відкритим кодом для "
-"обробки і приготування до оприлюднення мультимедійних даних? Щоб все було "
-"готове для реалізації ваших творчих задумів? Спробуйте «Дизайнерський "
-"набір», варіант Fedora, створений дизайнерами для дизайнерів."
+"Fedora Astronomy — повністю відкритий набір інструментів для астрономів-"
+"аматорів та професіоналів."
 
-#: data/content/design-suite/index.html:21
+#: data/content/astronomy/index.html:21
 msgid ""
-"The Design Suite includes the favorite tools of the Fedora Design Team. "
-"These are the same programs we use to create all the artwork that you see "
-"within the Fedora Project, from desktop backgrounds to CD sleeves, web page "
-"designs, application interfaces, flyers, posters and more. From document "
-"publication to vector and bitmap editing or 3D modeling to photo management,"
-" the Design Suite has an application for you — and you can install thousands"
-" more from the Fedora universe of packages."
+"The Spin provides the Fedora KDE desktop enhanced with a complete scientific"
+" Python environment and the AstrOmatic software for data analysis. KStars "
+"was added to provide a full featured astrophotography tool. As KStars uses "
+"the INDI library to control equipment, various telescopes, cameras etc. are "
+"supported. Summarized, Fedora Astronomy provides a complete set of software,"
+" from the observation planning to the final results."
 msgstr ""
-"До дизайнерського комплекту (Design Suite) включено вибрані Командою "
-"дизайнерів Fedora інструменти. Це ті самі програми, якими ми користуємося "
-"для створення усіх художніх елементів Проекту Fedora, від фонових зображень "
-"стільниці до обкладинок компакт-дисків, графічних елементів вебсторінок, "
-"інтерфейсів програм, буклетів, плакатів тощо. Від друку документів до "
-"редагування векторних і растрових зображень або просторового моделювання та "
-"керування фотоальбомом, у Design Suite є усі потрібні програми. Ви також "
-"можете встановити тисячі інших програм зі всесвіту пакунків Fedora."
+"У цьому варіанті дистрибутива можливості середовища Fedora KDE розширено "
+"повноцінним науковим середовищем Python та програмним забезпеченням "
+"AstrOmatic, призначеним для аналізу даних. До набору пакунків додано KStars,"
+" програму, у якій реалізовано повноцінні інструменти астрографії. Оскільки у"
+" KStars використано бібліотеку INDI, ви зможете керувати різноманітним "
+"астрономічним обладнанням, зокрема телескопами і фотоапаратами, за допомогою"
+" комп’ютера. Загалом, Fedora Astronomy є повноцінним набором астрономічного "
+"програмного забезпечення, за допомогою якого можна виконувати повний спектр "
+"завдань, від планування спостереження до аналізу результатів."
 
+#: data/content/astronomy/index.html:32 data/content/astronomy/index.html:129
 #: data/content/design-suite/index.html:32
 #: data/content/design-suite/index.html:129 data/content/games/index.html:32
 #: data/content/games/index.html:129 data/content/jam/index.html:32
@@ -506,24 +521,30 @@ msgstr ""
 msgid "Download Now"
 msgstr "Отримати зараз"
 
+#: data/content/astronomy/index.html:43
 #: data/content/design-suite/index.html:43 data/content/games/index.html:43
 #: data/content/jam/index.html:43 data/content/robotics/index.html:43
 #: data/content/scientific/index.html:43 data/content/security/index.html:43
 msgid "Featured Applications"
 msgstr "Рекомендовані програми"
 
-#: data/content/design-suite/index.html:50
-msgid "GIMP"
-msgstr "GIMP"
+#: data/content/astronomy/index.html:50
+msgid "Astropy"
+msgstr "Astropy"
 
-#: data/content/design-suite/index.html:51
+#: data/content/astronomy/index.html:51
 msgid ""
-"A powerful image composition and graphic editing app, similar to Adobe® "
-"Photoshop™."
+"Astropy is a community python library for Astronomy to foster "
+"interoperability between astronomy packages."
 msgstr ""
-"Потужна програма для компонування та редагування графічних даних, подібна до"
-" Adobe® Photoshop™."
+"Astropy — бібліотека мовою python для Astronomy, підтримувана спільнотою та "
+"призначена для забезпечення обміну даними між астрономічними пакунками."
 
+#: data/content/astronomy/index.html:52 data/content/astronomy/index.html:60
+#: data/content/astronomy/index.html:68 data/content/astronomy/index.html:78
+#: data/content/astronomy/index.html:86 data/content/astronomy/index.html:94
+#: data/content/astronomy/index.html:104 data/content/astronomy/index.html:112
+#: data/content/astronomy/index.html:120
 #: data/content/design-suite/index.html:52
 #: data/content/design-suite/index.html:60
 #: data/content/design-suite/index.html:68
@@ -558,6 +579,433 @@ msgstr ""
 #: data/content/security/index.html:112 data/content/security/index.html:120
 msgid "Learn More >"
 msgstr "Докладніше >"
+
+#: data/content/astronomy/index.html:58
+msgid "Kstars"
+msgstr "Kstars"
+
+#: data/content/astronomy/index.html:59
+msgid ""
+"Kstars provides an accurate graphical simulation of the night sky, from any "
+"location on Earth, at any date and time."
+msgstr ""
+"Kstars — надає у ваше розпорядження точну графічну імітацію нічного неба з "
+"будь-якої точки на поверхні Землі, у будь-який час."
+
+#: data/content/astronomy/index.html:66
+msgid "Celestia"
+msgstr "Celestia"
+
+#: data/content/astronomy/index.html:67
+msgid ""
+"The free space simulation that lets you explore our universe in three "
+"dimensions."
+msgstr ""
+"Вільний імітатор космосу, який надасть вам змогу віртуально подорожувати "
+"всесвітом."
+
+#: data/content/astronomy/index.html:76
+msgid "Virtualplanet"
+msgstr "Virtualplanet"
+
+#: data/content/astronomy/index.html:77
+msgid ""
+"Allow you to visualize any planet aspect at any time. Include extended "
+"feature database and texture."
+msgstr ""
+"Надає вам змогу візуалізувати аспекти будь-якої планети у будь-який час. "
+"Містить розширену базу даних особливостей та текстур."
+
+#: data/content/astronomy/index.html:84
+msgid "Siril"
+msgstr "Siril"
+
+#: data/content/astronomy/index.html:85
+msgid "Siril, a free astronomical image processing software"
+msgstr ""
+"Siril — вільне програмне забезпечення для обробки астрономічних знімків."
+
+#: data/content/astronomy/index.html:92
+msgid "INDI"
+msgstr "INDI"
+
+#: data/content/astronomy/index.html:93
+msgid ""
+"The INDI Library is a cross-platform software designed for automation and "
+"control of astronomical instruments."
+msgstr ""
+"Бібліотека INDI — програмне забезпечення, яке може працювати на багатьох "
+"програмних платформах, і забезпечує автоматизацію керування астрономічними "
+"інструментами."
+
+#: data/content/astronomy/index.html:102
+#: data/content/design-suite/index.html:50
+msgid "GIMP"
+msgstr "GIMP"
+
+#: data/content/astronomy/index.html:103
+#: data/content/design-suite/index.html:51
+msgid ""
+"A powerful image composition and graphic editing app, similar to Adobe® "
+"Photoshop™."
+msgstr ""
+"Потужна програма для компонування та редагування графічних даних, подібна до"
+" Adobe® Photoshop™."
+
+#: data/content/astronomy/index.html:110
+msgid "Redshift"
+msgstr "Redshift"
+
+#: data/content/astronomy/index.html:111
+msgid ""
+"Redshift adjusts the color temperature of your screen according to your "
+"surroundings."
+msgstr ""
+"Redshift — коригування температури кольорів вашого екрана відповідно до "
+"освітленості навколишнього середовища."
+
+#: data/content/astronomy/index.html:118
+msgid "Astromatic"
+msgstr "Astromatic"
+
+#: data/content/astronomy/index.html:119
+msgid "AstrOmatic is a set of astronomical pipeline software."
+msgstr "AstrOmatic — набір інструментів астрономічного призначення."
+
+#: data/content/astronomy/index.html:140
+#: data/content/astronomy/download/index.html:129
+#: data/content/design-suite/index.html:140
+#: data/content/design-suite/download/index.html:130
+#: data/content/games/index.html:140
+#: data/content/games/download/index.html:129 data/content/jam/index.html:140
+#: data/content/jam/download/index.html:129
+#: data/content/robotics/index.html:140
+#: data/content/robotics/download/index.html:129
+#: data/content/scientific/index.html:140
+#: data/content/scientific/download/index.html:129
+#: data/content/security/index.html:140
+#: data/content/security/download/index.html:129
+msgid "Support Resources"
+msgstr "Ресурси підтримки"
+
+#: data/content/astronomy/index.html:145
+#: data/content/astronomy/download/index.html:134
+#: data/content/design-suite/index.html:145
+#: data/content/design-suite/download/index.html:135
+#: data/content/games/index.html:145
+#: data/content/games/download/index.html:134 data/content/jam/index.html:145
+#: data/content/jam/download/index.html:134
+#: data/content/robotics/index.html:145
+#: data/content/robotics/download/index.html:134
+#: data/content/scientific/index.html:145
+#: data/content/scientific/download/index.html:134
+#: data/content/security/index.html:145
+#: data/content/security/download/index.html:134
+msgid "Chat"
+msgstr "Спілкування"
+
+#: data/content/astronomy/index.html:146
+#: data/content/astronomy/download/index.html:135
+#, python-format
+msgid ""
+"Users and developers are available in the <a href=\"%s\">#fedora-"
+"astronomy</a> IRC channel on <strong>irc.freenode.org</strong> for real-time"
+" chat."
+msgstr ""
+"Із користувачами та розробниками цієї збірки можна спілкуватись у реальному "
+"часі на каналі IRC <a href=\"%s\">#fedora-astronomy</a> сервера "
+"<strong>irc.freenode.org</strong>."
+
+#: data/content/astronomy/index.html:149
+#: data/content/astronomy/download/index.html:138
+#: data/content/design-suite/index.html:149
+#: data/content/design-suite/download/index.html:139
+#: data/content/games/index.html:149
+#: data/content/games/download/index.html:138 data/content/jam/index.html:149
+#: data/content/jam/download/index.html:138
+#: data/content/robotics/index.html:149
+#: data/content/robotics/download/index.html:138
+#: data/content/scientific/index.html:149
+#: data/content/scientific/download/index.html:138
+#: data/content/security/index.html:149
+#: data/content/security/download/index.html:138
+msgid "Email"
+msgstr "Ел. пошта"
+
+#: data/content/astronomy/index.html:150
+#: data/content/astronomy/download/index.html:139
+#, python-format
+msgid ""
+"Users and developers are also available on the mailing list at <a "
+"href=\"%s\">astronomy@lists.fedoraproject.org</a>."
+msgstr ""
+"Для зв’язку з користувачами та розробниками можна також використовувати "
+"список листування <a href=\"%s\">astronomy@lists.fedoraproject.org</a>."
+
+#: data/content/astronomy/index.html:153
+#: data/content/astronomy/download/index.html:142
+#: data/content/design-suite/index.html:153
+#: data/content/design-suite/download/index.html:143
+#: data/content/games/index.html:153
+#: data/content/games/download/index.html:142 data/content/jam/index.html:153
+#: data/content/jam/download/index.html:142
+#: data/content/robotics/index.html:153
+#: data/content/robotics/download/index.html:142
+#: data/content/scientific/index.html:153
+#: data/content/scientific/download/index.html:142
+#: data/content/security/index.html:153
+#: data/content/security/download/index.html:142
+msgid "Documentation"
+msgstr "Документація"
+
+#: data/content/astronomy/index.html:154
+#: data/content/astronomy/download/index.html:143
+#, python-format
+msgid ""
+"Specific documentation is available at the <a href=\"%s\">Astronomy wiki "
+"page</a>."
+msgstr ""
+"Документацію розміщено на <a href=\"%s\">сторінці вікі збірки Astronomy</a>."
+
+#: data/content/astronomy/index.html:159
+#: data/content/astronomy/download/index.html:148
+#: data/content/design-suite/index.html:159
+#: data/content/design-suite/download/index.html:149
+#: data/content/games/index.html:159
+#: data/content/games/download/index.html:148 data/content/jam/index.html:159
+#: data/content/jam/download/index.html:148
+#: data/content/robotics/index.html:159
+#: data/content/robotics/download/index.html:148
+#: data/content/scientific/index.html:159
+#: data/content/scientific/download/index.html:148
+#: data/content/security/index.html:159
+#: data/content/security/download/index.html:148
+msgid "General Help Using Fedora"
+msgstr "Загальні питання щодо Fedora"
+
+#: data/content/astronomy/index.html:160
+#: data/content/astronomy/download/index.html:149
+#: data/content/design-suite/index.html:160
+#: data/content/design-suite/download/index.html:150
+#: data/content/games/index.html:160
+#: data/content/games/download/index.html:149 data/content/jam/index.html:160
+#: data/content/jam/download/index.html:149
+#: data/content/robotics/index.html:160
+#: data/content/robotics/download/index.html:149
+#: data/content/scientific/index.html:160
+#: data/content/scientific/download/index.html:149
+#: data/content/security/index.html:160
+#: data/content/security/download/index.html:149
+#, fuzzy, python-format
+msgid ""
+"Sometimes you may encounter an issue with this spin that you can get help "
+"with using general Fedora support resources. A list of resources is "
+"available at the <a href=\"%s\">Fedora “Get Help” page</a>."
+msgstr ""
+"Якщо у вас виникнуть проблеми з цією збіркою, ви можете попросити про "
+"допомогу на загальних ресурсах підтримки Fedora. Список таких ресурсів "
+"наведено на сторінці <a href=\"%s\">«Довідка» Fedora</a>."
+
+#: data/content/astronomy/download/astronomy-download-splash.html:8
+#: data/content/astronomy/download/index.html:8
+msgid "Download Fedora Astronomy"
+msgstr "Отримання Fedora Astronomy"
+
+#: data/content/astronomy/download/astronomy-download-splash.html:18
+#: data/content/design-suite/download/design-download-splash.html:18
+#: data/content/games/download/games-download-splash.html:18
+#: data/content/jam/download/jam-download-splash.html:18
+#: data/content/robotics/download/robotics-download-splash.html:18
+#: data/content/scientific/download/scientific-download-splash.html:18
+#: data/content/security/download/security-download-splash.html:18
+msgid "Thanks for Downloading Fedora!"
+msgstr "Дякуємо за те, що звантажили Fedora!"
+
+#: data/content/astronomy/download/astronomy-download-splash.html:19
+#: data/content/design-suite/download/design-download-splash.html:19
+#: data/content/games/download/games-download-splash.html:19
+#: data/content/jam/download/jam-download-splash.html:19
+#: data/content/robotics/download/robotics-download-splash.html:19
+#: data/content/scientific/download/scientific-download-splash.html:19
+#: data/content/security/download/security-download-splash.html:19
+msgid ""
+"Your download should begin in a few seconds. If not, click the link below:"
+msgstr ""
+"Отримання даних має розпочатись протягом кількох секунд. Якщо цього не "
+"відбулось, натисніть посилання нижче."
+
+#: data/content/astronomy/download/index.html:19
+#, python-format
+msgid "Download Fedora %(rel)s Astronomy"
+msgstr "Отримати Fedora %(rel)s Astronomy"
+
+#: data/content/astronomy/download/index.html:20
+#: data/content/design-suite/download/index.html:21
+#: data/content/games/download/index.html:20
+#: data/content/jam/download/index.html:20
+#: data/content/robotics/download/index.html:20
+#: data/content/scientific/download/index.html:20
+#: data/content/security/download/index.html:20 data/templates/footer.html:37
+msgid "Download"
+msgstr "Отримання"
+
+#: data/content/astronomy/download/index.html:21
+#, python-format
+msgid "%s MB ISO Image for 64-bit PC"
+msgstr "Образ ISO, %s МБ, для 64-бітових комп’ютерів"
+
+#: data/content/astronomy/download/index.html:29
+#: data/content/design-suite/download/index.html:30
+#: data/content/games/download/index.html:29
+#: data/content/jam/download/index.html:29
+#: data/content/robotics/download/index.html:29
+#: data/content/scientific/download/index.html:29
+#: data/content/security/download/index.html:29
+msgid "What is a Live image?"
+msgstr "Що таке образ портативної системи?"
+
+#: data/content/astronomy/download/index.html:30
+msgid ""
+"Fedora Astonomy is shipped as a live operating system. It's everything you "
+"need to try out Fedora's Astronomy - you don't have to erase anything on "
+"your current system to try it out, and it won't put your files at risk. Take"
+" Fedora for a test drive, and if you like it, you can install Fedora "
+"directly to your hard drive straight from the Live Media desktop if you "
+"like."
+msgstr ""
+"Fedora Astronomy постачається у форматі портативної операційної системи. Ця "
+"система містить усе, що потрібне для того, щоб спробувати Fedora Astronomy. "
+"Для цього не потрібно вилучати будь-що з поточної системи, ваші файли "
+"залишаться недоторканними. Спробуйте Fedora і, якщо вам сподобається, ви "
+"зможете встановити її прямо з завантажувального носія."
+
+#: data/content/astronomy/download/index.html:31
+#: data/content/design-suite/download/index.html:32
+#: data/content/games/download/index.html:31
+#: data/content/jam/download/index.html:31
+#: data/content/robotics/download/index.html:31
+#: data/content/scientific/download/index.html:31
+#: data/content/security/download/index.html:31
+msgid ""
+"To use this image, you need a drive that can create or \"burn\" DVDs, or a "
+"USB flash drive at least as big as the image."
+msgstr ""
+"Щоб скористатися цим образом, вам знадобиться пристрій, який може створювати"
+" або записувати диски DVD, або флеш-носій USB, розмір якого має перевищувати"
+" розмір образу."
+
+#: data/content/astronomy/download/index.html:34
+#: data/content/design-suite/download/index.html:35
+#: data/content/games/download/index.html:34
+#: data/content/jam/download/index.html:34
+#: data/content/robotics/download/index.html:34
+#: data/content/scientific/download/index.html:34
+#: data/content/security/download/index.html:34
+msgid "Other Downloads"
+msgstr "Інші варіанти отримання"
+
+#: data/content/astronomy/download/index.html:35
+#: data/content/design-suite/download/index.html:36
+#: data/content/games/download/index.html:35
+#: data/content/jam/download/index.html:35
+#: data/content/robotics/download/index.html:35
+#: data/content/scientific/download/index.html:35
+#: data/content/security/download/index.html:35
+msgid "Direct Downloads"
+msgstr "Безпосереднє отримання"
+
+#: data/content/astronomy/download/index.html:38
+#, python-format
+msgid "32-bit %sMB Live image"
+msgstr "32-бітовий образ портативної системи у %s МБ"
+
+#: data/content/astronomy/download/index.html:41
+#: data/content/design-suite/download/index.html:42
+#: data/content/games/download/index.html:41
+#: data/content/jam/download/index.html:41
+#: data/content/robotics/download/index.html:41
+#: data/content/scientific/download/index.html:41
+#: data/content/security/download/index.html:41
+msgid "Older Releases"
+msgstr "Застарілі випуски"
+
+#: data/content/astronomy/download/index.html:61
+#: data/content/design-suite/download/index.html:62
+#: data/content/games/download/index.html:61
+#: data/content/jam/download/index.html:61
+#: data/content/robotics/download/index.html:61
+#: data/content/scientific/download/index.html:61
+#: data/content/security/download/index.html:61
+msgid "Verify"
+msgstr "Перевірити"
+
+#: data/content/astronomy/download/index.html:64
+#: data/content/design-suite/download/index.html:65
+#: data/content/games/download/index.html:64
+#: data/content/jam/download/index.html:64
+#: data/content/robotics/download/index.html:64
+#: data/content/scientific/download/index.html:64
+#: data/content/security/download/index.html:64
+msgid "Verify your Image"
+msgstr "Перевірте образ"
+
+#: data/content/astronomy/download/index.html:79
+#: data/content/astronomy/download/index.html:98
+#: data/content/games/download/index.html:79
+#: data/content/games/download/index.html:98
+#: data/content/jam/download/index.html:79
+#: data/content/jam/download/index.html:98
+#: data/content/robotics/download/index.html:79
+#: data/content/robotics/download/index.html:98
+#: data/content/scientific/download/index.html:79
+#: data/content/scientific/download/index.html:98
+#: data/content/security/download/index.html:79
+#: data/content/security/download/index.html:98
+msgid ""
+"Spin downloads are offered via direct download, but you can also get them "
+"via BitTorrent. In this case you will need to install a BitTorrent client in"
+" order to download a spin. If you cannot use Bittorrent, some spins offer "
+"alternative download methods."
+msgstr ""
+"Отримати збірки можна безпосереднім завантаженням. Втім, ви також можете "
+"скористатися мережею BitTorrent. Для цього вам слід встановити клієнтську "
+"програму BitTorrent, щоб отримати образ системи. Якщо ви не можете "
+"скористатися Bittorrent, для деяких збірок передбачено альтернативні методи "
+"отримання образів."
+
+#: data/content/design-suite/index.html:8
+msgid "Design Suite"
+msgstr "Дизайнерський комплект програм"
+
+#: data/content/design-suite/index.html:20
+msgid ""
+"Looking for a ready-to-go desktop environment brimming with free and open "
+"source multimedia production and publishing tools? Try the Design Suite, a "
+"Fedora Spin created by designers, for designers."
+msgstr ""
+"Шукаєте робоче середовище з вільними програмами з відкритим кодом для "
+"обробки і приготування до оприлюднення мультимедійних даних? Щоб все було "
+"готове для реалізації ваших творчих задумів? Спробуйте «Дизайнерський "
+"набір», варіант Fedora, створений дизайнерами для дизайнерів."
+
+#: data/content/design-suite/index.html:21
+msgid ""
+"The Design Suite includes the favorite tools of the Fedora Design Team. "
+"These are the same programs we use to create all the artwork that you see "
+"within the Fedora Project, from desktop backgrounds to CD sleeves, web page "
+"designs, application interfaces, flyers, posters and more. From document "
+"publication to vector and bitmap editing or 3D modeling to photo management,"
+" the Design Suite has an application for you — and you can install thousands"
+" more from the Fedora universe of packages."
+msgstr ""
+"До дизайнерського комплекту (Design Suite) включено вибрані Командою "
+"дизайнерів Fedora інструменти. Це ті самі програми, якими ми користуємося "
+"для створення усіх художніх елементів Проекту Fedora, від фонових зображень "
+"стільниці до обкладинок компакт-дисків, графічних елементів вебсторінок, "
+"інтерфейсів програм, буклетів, плакатів тощо. Від друку документів до "
+"редагування векторних і растрових зображень або просторового моделювання та "
+"керування фотоальбомом, у Design Suite є усі потрібні програми. Ви також "
+"можете встановити тисячі інших програм зі всесвіту пакунків Fedora."
 
 #: data/content/design-suite/index.html:58
 msgid "Inkscape"
@@ -655,36 +1103,8 @@ msgstr ""
 "Програма для керування, встановлення та створення профілів кольорів для "
 "вашої робочої станції. Отримайте належний показ кольорів на вашому екрані!"
 
-#: data/content/design-suite/index.html:140
-#: data/content/design-suite/download/index.html:120
-#: data/content/games/index.html:140
-#: data/content/games/download/index.html:119 data/content/jam/index.html:140
-#: data/content/jam/download/index.html:119
-#: data/content/robotics/index.html:140
-#: data/content/robotics/download/index.html:119
-#: data/content/scientific/index.html:140
-#: data/content/scientific/download/index.html:119
-#: data/content/security/index.html:140
-#: data/content/security/download/index.html:119
-msgid "Support Resources"
-msgstr "Ресурси підтримки"
-
-#: data/content/design-suite/index.html:145
-#: data/content/design-suite/download/index.html:125
-#: data/content/games/index.html:145
-#: data/content/games/download/index.html:124 data/content/jam/index.html:145
-#: data/content/jam/download/index.html:124
-#: data/content/robotics/index.html:145
-#: data/content/robotics/download/index.html:124
-#: data/content/scientific/index.html:145
-#: data/content/scientific/download/index.html:124
-#: data/content/security/index.html:145
-#: data/content/security/download/index.html:124
-msgid "Chat"
-msgstr "Спілкування"
-
 #: data/content/design-suite/index.html:146
-#: data/content/design-suite/download/index.html:126
+#: data/content/design-suite/download/index.html:136
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-design</a> "
@@ -694,22 +1114,8 @@ msgstr ""
 "часі на каналі <a href=\"%s\">#fedora-design</a> сервера "
 "<strong>irc.freenode.org</strong>."
 
-#: data/content/design-suite/index.html:149
-#: data/content/design-suite/download/index.html:129
-#: data/content/games/index.html:149
-#: data/content/games/download/index.html:128 data/content/jam/index.html:149
-#: data/content/jam/download/index.html:128
-#: data/content/robotics/index.html:149
-#: data/content/robotics/download/index.html:128
-#: data/content/scientific/index.html:149
-#: data/content/scientific/download/index.html:128
-#: data/content/security/index.html:149
-#: data/content/security/download/index.html:128
-msgid "Email"
-msgstr "Ел. пошта"
-
 #: data/content/design-suite/index.html:150
-#: data/content/design-suite/download/index.html:130
+#: data/content/design-suite/download/index.html:140
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a href=\"%s"
@@ -718,22 +1124,8 @@ msgstr ""
 "Для зв’язку з користувачами та розробниками можна також використовувати "
 "список листування <a href=\"%s\">design-team@lists.fedoraproject.org</a>."
 
-#: data/content/design-suite/index.html:153
-#: data/content/design-suite/download/index.html:133
-#: data/content/games/index.html:153
-#: data/content/games/download/index.html:132 data/content/jam/index.html:153
-#: data/content/jam/download/index.html:132
-#: data/content/robotics/index.html:153
-#: data/content/robotics/download/index.html:132
-#: data/content/scientific/index.html:153
-#: data/content/scientific/download/index.html:132
-#: data/content/security/index.html:153
-#: data/content/security/download/index.html:132
-msgid "Documentation"
-msgstr "Документація"
-
 #: data/content/design-suite/index.html:154
-#: data/content/design-suite/download/index.html:134
+#: data/content/design-suite/download/index.html:144
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
@@ -742,98 +1134,25 @@ msgstr ""
 "Офіційні довідники та інша документація розміщені на <a href=\"%s\">сторінці"
 " підручників збірки Design Suite</a>."
 
-#: data/content/design-suite/index.html:159
-#: data/content/design-suite/download/index.html:139
-#: data/content/games/index.html:159
-#: data/content/games/download/index.html:138 data/content/jam/index.html:159
-#: data/content/jam/download/index.html:138
-#: data/content/robotics/index.html:159
-#: data/content/robotics/download/index.html:138
-#: data/content/scientific/index.html:159
-#: data/content/scientific/download/index.html:138
-#: data/content/security/index.html:159
-#: data/content/security/download/index.html:138
-msgid "General Help Using Fedora"
-msgstr "Загальні питання щодо Fedora"
-
-#: data/content/design-suite/index.html:160
-#: data/content/design-suite/download/index.html:140
-#: data/content/games/index.html:160
-#: data/content/games/download/index.html:139 data/content/jam/index.html:160
-#: data/content/jam/download/index.html:139
-#: data/content/robotics/index.html:160
-#: data/content/robotics/download/index.html:139
-#: data/content/scientific/index.html:160
-#: data/content/scientific/download/index.html:139
-#: data/content/security/index.html:160
-#: data/content/security/download/index.html:139
-#, python-format
-msgid ""
-"Sometimes you may encounter an issue with this spin that you can get help "
-"with using general Fedora support resources. A list of resources is "
-"available at the <a href=\"%s\">Fedora “Get Help” page</a>."
-msgstr ""
-"Якщо у вас виникнуть проблеми з цією збіркою, ви можете попросити про "
-"допомогу на загальних ресурсах підтримки Fedora. Список таких ресурсів "
-"наведено на сторінці <a href=\"%s\">«Довідка» Fedora</a>."
-
 #: data/content/design-suite/download/design-download-splash.html:8
 #: data/content/design-suite/download/index.html:8
 msgid "Download Fedora Design Suite"
 msgstr "Отримання Fedora Design Suite"
-
-#: data/content/design-suite/download/design-download-splash.html:18
-#: data/content/games/download/games-download-splash.html:18
-#: data/content/jam/download/jam-download-splash.html:18
-#: data/content/robotics/download/robotics-download-splash.html:18
-#: data/content/scientific/download/scientific-download-splash.html:18
-#: data/content/security/download/security-download-splash.html:18
-msgid "Thanks for Downloading Fedora!"
-msgstr "Дякуємо за те, що звантажили Fedora!"
-
-#: data/content/design-suite/download/design-download-splash.html:19
-#: data/content/games/download/games-download-splash.html:19
-#: data/content/jam/download/jam-download-splash.html:19
-#: data/content/robotics/download/robotics-download-splash.html:19
-#: data/content/scientific/download/scientific-download-splash.html:19
-#: data/content/security/download/security-download-splash.html:19
-msgid ""
-"Your download should begin in a few seconds. If not, click the link below:"
-msgstr ""
-"Отримання даних має розпочатись протягом кількох секунд. Якщо цього не "
-"відбулось, натисніть посилання нижче."
 
 #: data/content/design-suite/download/index.html:20
 #, python-format
 msgid "Download Fedora %(rel)s Design Suite"
 msgstr "Отримання Fedora %(rel)s Design Suite"
 
-#: data/content/design-suite/download/index.html:21
-#: data/content/games/download/index.html:20
-#: data/content/jam/download/index.html:20
-#: data/content/robotics/download/index.html:20
-#: data/content/scientific/download/index.html:20
-#: data/content/security/download/index.html:20 data/templates/footer.html:37
-msgid "Download"
-msgstr "Отримання"
-
 #: data/content/design-suite/download/index.html:22
 #: data/content/games/download/index.html:21
 #: data/content/jam/download/index.html:21
 #: data/content/robotics/download/index.html:21
 #: data/content/scientific/download/index.html:21
+#: data/content/security/download/index.html:21
 #, python-format
 msgid "%s GB ISO Image for 64-bit PC"
 msgstr "Образ ISO, %s ГБ, для 64-бітових комп’ютерів"
-
-#: data/content/design-suite/download/index.html:30
-#: data/content/games/download/index.html:29
-#: data/content/jam/download/index.html:29
-#: data/content/robotics/download/index.html:29
-#: data/content/scientific/download/index.html:29
-#: data/content/security/download/index.html:29
-msgid "What is a Live image?"
-msgstr "Що таке образ портативної системи?"
 
 #: data/content/design-suite/download/index.html:31
 msgid ""
@@ -850,71 +1169,17 @@ msgstr ""
 " залишаться недоторканними. Спробуйте Fedora і, якщо вам сподобається, ви "
 "зможете встановити її прямо з завантажувального носія."
 
-#: data/content/design-suite/download/index.html:32
-#: data/content/games/download/index.html:31
-#: data/content/jam/download/index.html:31
-#: data/content/robotics/download/index.html:31
-#: data/content/scientific/download/index.html:31
-#: data/content/security/download/index.html:31
-msgid ""
-"To use this image, you need a drive that can create or \"burn\" DVDs, or a "
-"USB flash drive at least as big as the image."
-msgstr ""
-"Щоб скористатися цим образом, вам знадобиться пристрій, який може створювати"
-" або записувати диски DVD, або флеш-носій USB, розмір якого має перевищувати"
-" розмір образу."
-
-#: data/content/design-suite/download/index.html:35
-#: data/content/games/download/index.html:34
-#: data/content/jam/download/index.html:34
-#: data/content/robotics/download/index.html:34
-#: data/content/scientific/download/index.html:34
-#: data/content/security/download/index.html:34
-msgid "Other Downloads"
-msgstr "Інші варіанти отримання"
-
-#: data/content/design-suite/download/index.html:36
-#: data/content/games/download/index.html:35
-#: data/content/jam/download/index.html:35
-#: data/content/robotics/download/index.html:35
-#: data/content/scientific/download/index.html:35
-#: data/content/security/download/index.html:35
-msgid "Direct Downloads"
-msgstr "Безпосереднє отримання"
-
 #: data/content/design-suite/download/index.html:39
 #: data/content/games/download/index.html:38
 #: data/content/jam/download/index.html:38
 #: data/content/robotics/download/index.html:38
 #: data/content/scientific/download/index.html:38
+#: data/content/security/download/index.html:38
 #, python-format
 msgid "32-bit %sGB Live image"
 msgstr "32-бітовий образ портативної системи у %s ГБ"
 
-#: data/content/design-suite/download/index.html:42
-#: data/content/games/download/index.html:41
-#: data/content/jam/download/index.html:41
-#: data/content/robotics/download/index.html:41
-#: data/content/scientific/download/index.html:41
-#: data/content/security/download/index.html:41
-msgid "Older Releases"
-msgstr "Застарілі випуски"
-
-#: data/content/design-suite/download/index.html:51
-#: data/content/design-suite/download/index.html:55
-#: data/content/games/download/index.html:50
-#: data/content/games/download/index.html:54
-#: data/content/robotics/download/index.html:50
-#: data/content/robotics/download/index.html:54
-#: data/content/scientific/download/index.html:50
-#: data/content/scientific/download/index.html:54
-#: data/content/security/download/index.html:50
-#: data/content/security/download/index.html:54
-#, python-format
-msgid "Try Fedora %(rel)s %(state)s"
-msgstr "Спробуйте Fedora %(rel)s %(state)s"
-
-#: data/content/design-suite/download/index.html:70
+#: data/content/design-suite/download/index.html:80
 msgid ""
 "Spin downloads are offered via direct download, but you can also get them "
 "via BitTorrent. In this case you will need to install a Bittorrent client in"
@@ -927,7 +1192,7 @@ msgstr ""
 "скористатися Bittorrent, для деяких збірок передбачено альтернативні методи "
 "отримання образів."
 
-#: data/content/design-suite/download/index.html:89
+#: data/content/design-suite/download/index.html:99
 msgid ""
 "Spin downloads are offered via direct download, but you can also get them "
 "via BitTorrent. In this case you will need to install a BitTorrent client in"
@@ -1105,9 +1370,9 @@ msgstr ""
 "від ALTAR interactive."
 
 #: data/content/games/index.html:146
-#: data/content/games/download/index.html:125
+#: data/content/games/download/index.html:135
 #: data/content/security/index.html:146
-#: data/content/security/download/index.html:125
+#: data/content/security/download/index.html:135
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora</a> IRC "
@@ -1118,7 +1383,7 @@ msgstr ""
 "<strong>irc.freenode.org</strong>."
 
 #: data/content/games/index.html:150
-#: data/content/games/download/index.html:129
+#: data/content/games/download/index.html:139
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -1128,7 +1393,7 @@ msgstr ""
 "список листування <a href=\"%s\">games@lists.fedoraproject.org</a>."
 
 #: data/content/games/index.html:154
-#: data/content/games/download/index.html:133
+#: data/content/games/download/index.html:143
 #, python-format
 msgid ""
 "Specific documentation is available at the <a href=\"%s\">Games wiki "
@@ -1158,28 +1423,6 @@ msgstr ""
 "цього не потрібно вилучати будь-що з поточної системи, ваші файли залишаться"
 " недоторканними. Спробуйте Fedora і, якщо вам сподобається, ви зможете "
 "встановити її прямо з завантажувального носія."
-
-#: data/content/games/download/index.html:69
-#: data/content/games/download/index.html:88
-#: data/content/jam/download/index.html:69
-#: data/content/jam/download/index.html:88
-#: data/content/robotics/download/index.html:69
-#: data/content/robotics/download/index.html:88
-#: data/content/scientific/download/index.html:69
-#: data/content/scientific/download/index.html:88
-#: data/content/security/download/index.html:69
-#: data/content/security/download/index.html:88
-msgid ""
-"Spin downloads are offered via direct download, but you can also get them "
-"via BitTorrent. In this case you will need to install a BitTorrent client in"
-" order to download a spin. If you cannot use Bittorrent, some spins offer "
-"alternative download methods."
-msgstr ""
-"Отримати збірки можна безпосереднім завантаженням. Втім, ви також можете "
-"скористатися мережею BitTorrent. Для цього вам слід встановити клієнтську "
-"програму BitTorrent, щоб отримати образ системи. Якщо ви не можете "
-"скористатися Bittorrent, для деяких збірок передбачено альтернативні методи "
-"отримання образів."
 
 #: data/content/jam/index.html:8
 msgid "Jam"
@@ -1309,7 +1552,7 @@ msgstr ""
 "Професійні сучасні звукові додатки для музикантів та багатоканального "
 "програмного забезпечення."
 
-#: data/content/jam/index.html:146 data/content/jam/download/index.html:125
+#: data/content/jam/index.html:146 data/content/jam/download/index.html:135
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-audio</a> "
@@ -1319,7 +1562,7 @@ msgstr ""
 "часі на каналі <a href=\"%s\">#fedora-audio</a> сервера "
 "<strong>irc.freenode.org</strong>."
 
-#: data/content/jam/index.html:150 data/content/jam/download/index.html:129
+#: data/content/jam/index.html:150 data/content/jam/download/index.html:139
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -1328,7 +1571,7 @@ msgstr ""
 "Для зв’язку з користувачами та розробниками можна також використовувати "
 "список листування <a href=\"%s\">music@lists.fedoraproject.org</a>."
 
-#: data/content/jam/index.html:154 data/content/jam/download/index.html:133
+#: data/content/jam/index.html:154 data/content/jam/download/index.html:143
 #, python-format
 msgid ""
 "Specific documentation is available at the <a href=\"%s\">Jam wiki page</a>."
@@ -1357,6 +1600,16 @@ msgstr ""
 "цього не потрібно вилучати будь-що з поточної системи, ваші файли залишаться"
 " недоторканними. Спробуйте Fedora і, якщо вам сподобається, ви зможете "
 "встановити її прямо з завантажувального носія."
+
+#: data/content/jam/download/index.html:50
+#: data/content/jam/download/index.html:54
+#: data/content/robotics/download/index.html:50
+#: data/content/robotics/download/index.html:54
+#: data/content/scientific/download/index.html:50
+#: data/content/scientific/download/index.html:54
+#, python-format
+msgid "Try Fedora %(rel)s %(state)s"
+msgstr "Спробуйте Fedora %(rel)s %(state)s"
 
 #: data/content/robotics/index.html:8
 msgid "Robotics Suite"
@@ -1482,7 +1735,7 @@ msgid "Libraries and applications for robotics system development."
 msgstr "Бібліотеки і програми для розробки робототехнічних систем."
 
 #: data/content/robotics/index.html:146
-#: data/content/robotics/download/index.html:125
+#: data/content/robotics/download/index.html:135
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-"
@@ -1494,7 +1747,7 @@ msgstr ""
 "<strong>irc.freenode.org</strong>."
 
 #: data/content/robotics/index.html:150
-#: data/content/robotics/download/index.html:129
+#: data/content/robotics/download/index.html:139
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -1504,7 +1757,7 @@ msgstr ""
 "список листування <a href=\"%s\">robotics@lists.fedoraproject.org</a>."
 
 #: data/content/robotics/index.html:154
-#: data/content/robotics/download/index.html:133
+#: data/content/robotics/download/index.html:143
 #, python-format
 msgid ""
 "Specific documentation is available at the <a href=\"%s\">Robotics Suite "
@@ -1673,7 +1926,7 @@ msgstr ""
 "математичних функцій."
 
 #: data/content/scientific/index.html:146
-#: data/content/scientific/download/index.html:125
+#: data/content/scientific/download/index.html:135
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-science</a>"
@@ -1684,7 +1937,7 @@ msgstr ""
 "<strong>irc.freenode.org</strong>."
 
 #: data/content/scientific/index.html:150
-#: data/content/scientific/download/index.html:129
+#: data/content/scientific/download/index.html:139
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -1727,7 +1980,7 @@ msgstr ""
 "файли залишаться недоторканними. Спробуйте Fedora і, якщо вам сподобається, "
 "ви зможете встановити її прямо з завантажувального носія."
 
-#: data/content/scientific/download/index.html:133
+#: data/content/scientific/download/index.html:143
 #, python-format
 msgid ""
 "Specific documentation is available at the <a href=\"%s\">Scientific wiki "
@@ -1875,7 +2128,7 @@ msgstr ""
 "вразливостей мережевих протоколів."
 
 #: data/content/security/index.html:150
-#: data/content/security/download/index.html:129
+#: data/content/security/download/index.html:139
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -1885,7 +2138,7 @@ msgstr ""
 "список листування <a href=\"%s\">users@lists.fedoraproject.org</a>."
 
 #: data/content/security/index.html:154
-#: data/content/security/download/index.html:133
+#: data/content/security/download/index.html:143
 #, python-format
 msgid ""
 "Specific documentation is available at the <a href=\"%s\">Security Lab wiki "
@@ -1904,11 +2157,6 @@ msgstr "Отримання Fedora Security Lab"
 msgid "Download Fedora %(rel)s Security Lab"
 msgstr "Отримання Fedora %(rel)s Security Lab"
 
-#: data/content/security/download/index.html:21
-#, python-format
-msgid "%s MB ISO Image for 64-bit PC"
-msgstr "Образ ISO, %s МБ, для 64-бітових комп’ютерів"
-
 #: data/content/security/download/index.html:30
 msgid ""
 "Fedora Security Lab is shipped as a live operating system. It's everything "
@@ -1923,11 +2171,6 @@ msgstr ""
 " Lab. Для цього не потрібно вилучати будь-що з поточної системи, ваші файли "
 "залишаться недоторканними. Спробуйте Fedora і, якщо вам сподобається, ви "
 "зможете встановити її прямо з завантажувального носія."
-
-#: data/content/security/download/index.html:38
-#, python-format
-msgid "32-bit %sMB Live image"
-msgstr "32-бітовий образ портативної системи у %s МБ"
 
 #: data/templates/export-regulations.html:12
 msgid ""
@@ -2006,51 +2249,64 @@ msgid "Common Bugs"
 msgstr "Типові вади"
 
 #: data/templates/footer.html:60
+msgid "Fedora Developer Portal"
+msgstr "Портал розробників Fedora"
+
+#: data/templates/footer.html:61
 msgid "Installation Guide"
 msgstr "Посібник зі встановлення"
 
-#: data/templates/footer.html:66
+#: data/templates/footer.html:67
 msgid "Join"
 msgstr "Долучення"
 
-#: data/templates/footer.html:69
+#: data/templates/footer.html:70
 msgid "Join Fedora"
 msgstr "Приєднатись до Fedora"
 
-#: data/templates/footer.html:70
+#: data/templates/footer.html:71
 msgid "Planet Fedora"
 msgstr "Планета Fedora"
 
-#: data/templates/footer.html:71
+#: data/templates/footer.html:72
 msgid "Fedora SIGs"
 msgstr "Групи за інтересами"
 
-#: data/templates/footer.html:72
+#: data/templates/footer.html:73
 msgid "Fedora Account System"
 msgstr "Облікові записи Fedora"
 
-#: data/templates/footer.html:73
+#: data/templates/footer.html:74
 msgid "Fedora Community"
 msgstr "Спільнота Fedora"
 
-#: data/templates/footer.html:87
+#: data/templates/footer.html:88
 msgid "Fedora is sponsored by Red Hat."
 msgstr "Спонсор Fedora — компанія Red Hat."
 
-#: data/templates/footer.html:88
+#: data/templates/footer.html:89
 msgid "Learn more about the relationship between Red Hat and Fedora »"
 msgstr "Докладніше про зв'язок проекту з компанією >"
 
-#: data/templates/footer.html:89
+#: data/templates/footer.html:90
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
 msgstr "© Red Hat, Inc. та інші, %(year)s."
 
-#: data/templates/footer.html:95
+#: data/templates/footer.html:90
+msgid ""
+"Please send any comments or corrections to the <a href=\"//fedorahosted.org"
+"/fedora-websites/\">websites team</a>."
+msgstr ""
+"Будь ласка, надсилайте ваші коментарі і виправлення <a "
+"href=\"//fedorahosted.org/fedora-websites/\">команді із супроводу "
+"сайтів</a>."
+
+#: data/templates/footer.html:96
 msgid "Change Language"
 msgstr "Змінити мову"
 
-#: data/templates/footer.html:99
+#: data/templates/footer.html:100
 msgid "OK"
 msgstr "Гаразд"
 
