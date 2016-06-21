@@ -79,13 +79,13 @@
       	  <div class="col-xs-12">
             <h5 class="bold">${_('qcow2 Image')}</h5>
             <p>${Markup(_('This is Fedora %(rel)s Cloud in a Qcow2-formatted image for use with OpenStack.')) % {'rel':global_variables.release['curr_id']}}</p>
-            <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Cloud/x86_64/images/Fedora-Cloud-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.qcow2" role="button">${_('Download')}</a>
+            <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.qcow2" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB Qcow2 Image') % global_variables.iso_size['qcow2_x86_64_cloud']}</p>
           </div>
           <div class="col-xs-12">
             <h5 class="bold">${_('Raw Image')}</h5>
             <p>${Markup(_('This is Fedora %(rel)s Cloud in a compressed raw image format. If you\'re not sure what to use, try this.')) % {'rel':global_variables.release['curr_id']}}</p>
-            <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Cloud/x86_64/images/Fedora-Cloud-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.raw.xz" role="button">${_('Download')}</a>
+            <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.raw.xz" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.iso_size['raw_x86_64_cloud']}</p>
           </div>
       </div>
@@ -103,11 +103,11 @@
       </div>
       <div class="row hidden-xs">
           <div class="col-sm-6">
-            <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Cloud/x86_64/images/Fedora-Cloud-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.qcow2" role="button">${_('Download')}</a>
+            <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.qcow2" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB Qcow2 Image') % global_variables.iso_size['qcow2_x86_64_cloud']}</p>
           </div>
           <div class="col-sm-6">
-            <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Cloud/x86_64/images/Fedora-Cloud-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.raw.xz" role="button">${_('Download')}</a>
+            <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.raw.xz" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.iso_size['raw_x86_64_cloud']}</p>
           </div>
       </div>
@@ -125,13 +125,13 @@
           <div class="col-xs-12">
             <h5 class="bold">${_('VirtualBox Image')}</h5>
             <p>${_('If you\'re using Vagrant on Mac OS X or Windows, this is likely the image you\'ll want to use.')}</p>
-            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Cloud/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box" role="button">${_('VirtualBox Image')}</a>
+            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box" role="button">${_('VirtualBox Image')}</a>
               <p class="caption">${_('64-bit %sMB VirtualBox Base Vagrant Image') % global_variables.iso_size['VBvag_cloud']}</p>
           </div>
           <div class="col-xs-12">
             <h5 class="bold">${_('libvirt/KVM Image')}</h5>
             <p>${_('If you\'re using Vagrant on Fedora, this is the image you\'ll want to use.')}</p>
-            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Cloud/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box" role="button">${_('libvirt/KVM Image')}</a>
+            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box" role="button">${_('libvirt/KVM Image')}</a>
               <p class="caption">${_('64-bit %sMB libvirt/KVM Base Vagrant Image') % global_variables.iso_size['libvag_cloud']}</p>
           </div>
         </div>
@@ -149,11 +149,11 @@
         </div>
         <div class="row hidden-xs">
           <div class="col-sm-6">
-            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Cloud/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_cloud_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box" role="button">${_('VirtualBox Image')}</a>
+            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_cloud_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box" role="button">${_('VirtualBox Image')}</a>
               <p class="caption">${_('64-bit %sMB VirtualBox Base Vagrant Image') % global_variables.iso_size['VBvag_cloud']}</p>
           </div>
           <div class="col-sm-6">
-            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Cloud/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_cloud_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box" role="button">${_('libvirt/KVM Image')}</a>
+            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_cloud_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box" role="button">${_('libvirt/KVM Image')}</a>
               <p class="caption">${_('64-bit %sMB libvirt/KVM Base Vagrant Image') % global_variables.iso_size['libvag_cloud']}</p>
           </div>
         </div>
