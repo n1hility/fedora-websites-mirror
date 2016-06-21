@@ -18,13 +18,24 @@
       <div class="row">
         <div class="col-md-7 col-md-offset-5 text-left">
           <h2>${Markup(_('Download Fedora %(rel)s Design Suite')) % {'rel':global_variables.release['curr_id']}}</h2>
-            <p class="gr"><a class="btn btn-success design-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/x86_64/Fedora-Design_suite-Live-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p>
+<!--            <p class="gr"><a class="btn btn-success design-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/x86_64/Fedora-Design_suite-Live-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p> -->
+            <p class="gr"><a class="btn btn-success" href="http://dl.fedoraproject.org/pub/alt/unofficial/releases/24/x86_64/Fedora-Design_suite-Live-x86_64-24-20160614.n.0.iso" role="button">${_('Download')}</a></p>
             <h5>${Markup(_('%s GB ISO Image for 64-bit PC')) % global_variables.iso_size['x86_64_Live_Design']}</h5>
         </div>
       </div>
     </div>
 </header>
 <div class="container download-container top-space">
+
+<!-- Blurb to show if the spin/lab fails the final build -->
+  		<div class="row">
+  	  	  	<div class="col-md-12 text-center">
+        	<p class="warning">${Markup(_('This Spin failed to compose for the final release, however the nightly test compose contains the same package set as release and should meet most users needs. You can verify the test compose image with a dedicated CHECKSUM file for &lt;a href="http://dl.fedoraproject.org/pub/alt/unofficial/releases/24/x86_64/Fedora-UNOFFICIAL-24-20160614.n.0-x86_64-CHECKSUM"&gt;64-bit&lt;/a&gt; and &lt;a href="http://dl.fedoraproject.org/pub/alt/unofficial/releases/24/i386/Fedora-UNOFFICIAL-24-20160614.n.0-i386-CHECKSUM"&gt;32-bit&lt;/a&gt; images.'))}
+            </p>
+        	</div>
+  	  	</div>
+<!-- end blurb -->
+
   <div class="row">
     <div class="col-md-8 text-left bottom-space">
         <h3>${_('What is a Live image?')}</h3>
@@ -36,7 +47,8 @@
           <h4>${_('Direct Downloads')}</h4>
           <ul>
               <li>
-                  <p><a class="design-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/i386/Fedora-Design_suite-Live-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('32-bit %sGB Live image')) % global_variables.iso_size['i686_Live_Design']}</a></p>
+<!--                  <p><a class="design-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/i386/Fedora-Design_suite-Live-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('32-bit %sGB Live image')) % global_variables.iso_size['i686_Live_Design']}</a></p> -->
+                  <p><a href="http://dl.fedoraproject.org/pub/alt/unofficial/releases/24/i386/Fedora-Design_suite-Live-i386-24-20160614.n.0.iso">${Markup(_('32-bit %sGB Live image')) % global_variables.iso_size['i686_Live_Design']}</a></p>
               </li>
           </ul>
           <h4>${_('Older Releases')}</h4>
