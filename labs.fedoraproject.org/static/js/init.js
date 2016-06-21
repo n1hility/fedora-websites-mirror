@@ -92,6 +92,15 @@ $(document).ready(function(){
         window.location = 'security-download-splash?file='+linkLocation;
     });
 
+    // redirect download links to the Astronomy splash page
+    $("a.astronomy-download-splash").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+
+        // this passes the URL path to the Astronomy splash page
+        window.location = 'astronomy-download-splash?file='+linkLocation;
+    });
+
     // splash download page stuff
     if (/.*splash.*/i.test(window.location.href)) {
         // get file path from URL, then display it

@@ -101,7 +101,7 @@ def make_templates(release):
     return [
         # As things stand now, we only do two-week-atomic stuff for the current
         # stable release.
-        (release['curr_id'], '', ''),
+        (release['prev_id'], '', ''),
 
         # If we ever move to doing pre-release versions as well, just uncomment
         # the following line and it should all work. We leave it commented out

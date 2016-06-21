@@ -2,43 +2,46 @@
 # -*- coding: utf-8 -*-
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
 release={
-    'prev_id':     '22',
-    'curr_id':     '23',
-    'next_id':     '24',
+    'prev_id':     '23',
+    'curr_id':     '24',
+    'next_id':     '25',
     'curr_name':   '',
     'next_name':   '',
-    'curr_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  'Beta',         # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_ppc64_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_s390_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_AMI_state':  'Beta',   # either 'Alpha', 'Beta' or '' (i.e empty)
-    'prev_arm_id': '22',
-    'prev_ppc64_id': '22',
-    'prev_s390_id': '22',
-    'prev_cloud_id': '22',
-    'curr_arm_id': '23',
-    'curr_ppc64_id': '23',
-    'curr_s390_id': '23',
-    'curr_cloud_id': '23',
-    'curr_cloud_AMI_id': '23',
-    'next_arm_id': '24',
-    'next_ppc64_id': '24',
-    'next_s390_id': '24',
-    'next_cloud_id': '24',
-    'next_cloud_AMI_id': '24',
-    'composedate': '20151030',
+    'curr_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_AMI_state':  '',   # either 'Alpha', 'Beta' or '' (i.e empty)
+    'prev_arm_id': '23',
+    'prev_ppc64_id': '23',
+    'prev_s390_id': '23',
+    'prev_cloud_id': '23',
+    'curr_arm_id': '24',
+    'curr_ppc64_id': '24',
+    'curr_s390_id': '24',
+    'curr_cloud_id': '24',
+    'curr_cloud_AMI_id': '24',
+    'next_arm_id': '25',
+    'next_ppc64_id': '25',
+    'next_s390_id': '25',
+    'next_cloud_id': '25',
+    'next_cloud_AMI_id': '25',
+    'composedate': '20160616',
     # Note that atomic values here get overwritten by the twoweek script.
-    'atomic_composedate': '20151030',
+    'atomic_composedate': '20160616',
     'pre_cloud_composedate': '20150915',
+    'cloud_AMI_composedate': '20160616',
     'pre_cloud_AMI_composedate': '20160507',
+    'manual_cloud_composedate': '20160616',
     'manual_pre_cloud_composedate': '20160101',
     'manual_pre_cloud_atomic_composedate': '20160101',
     'manual_pre_cloud_AMI_atomic_composedate': '20160101',
     # Note that atomic values here get overwritten by the twoweek script.
     'pre_cloud_atomic_composedate': '20150915',
     'pre_cloud_AMI_atomic_composedate': '20150915',
-    'RC_gold': '10',              # insert the number of the RC version declared GOLD
+    'RC_gold': '1.2',              # insert the number of the RC version declared GOLD
+    'RC_build': '1.2',            # sometimes releng use the RC build
     'RC_pre_gold': '1.6',         # insert the number of the prerelease RC version declared GOLD
     'RC_pre_build': '1.6',        # sometimes releng use the RC build
 
@@ -91,33 +94,35 @@ iso_size={
     'i686_Live_Cinnamon':   '1.2',       # In GB
     'x86_64_Live_Cinnamon': '1.2',       # In GB
     # Lives prerelease
-    'pre_i686_Live_KDE':    '1.6',       # In GB
+    'pre_i686_Live_KDE':    '1.5',       # In GB
     'pre_x86_64_Live_KDE':  '1.3',       # In GB
-    'pre_i686_Live_LXDE':   '1.2',       # In GB
-    'pre_x86_64_Live_LXDE': '921',       # In MB
-    'pre_i686_Live_Xfce':   '1.0',       # In GB
-    'pre_x86_64_Live_Xfce': '1.0',       # In GB
+    'pre_i686_Live_LXDE':   '1.0',       # In GB
+    'pre_x86_64_Live_LXDE': '906',       # In MB
+    'pre_i686_Live_Xfce':   '1.2',       # In GB
+    'pre_x86_64_Live_Xfce': '1.1',       # In GB
     'pre_i686_Live_Mate':   '1.7',       # In GB
     'pre_x86_64_Live_Mate': '1.4',       # In GB
     'pre_i686_Live_Soas':   '662',       # In MB
     'pre_x86_64_Live_Soas': '686',       # In MB
-    'pre_i686_Live_Cinnamon': '1.7',     # In GB
+    'pre_i686_Live_Cinnamon': '1.6',     # In GB
     'pre_x86_64_Live_Cinnamon': '1.3',   # In GB
     # Spins
-    'i686_Live_Security':  '916',       # In MB
-    'x86_64_Live_Security':'940',       # In MB
-    'i686_Live_Games':     '3.7',       # In GB
-    'x86_64_Live_Games':   '3.9',       # In GB
+    'i686_Live_Security':  '1.2',       # In GB
+    'x86_64_Live_Security':'1.1',       # In GB
+    'i686_Live_Games':     '3.8',       # In GB
+    'x86_64_Live_Games':   '3.6',       # In GB
     'i686_Live_Elab':      '2.5',       # In GB
     'x86_64_Live_Elab':    '2.5',       # In GB
     'i686_Live_Design':    '1.9',       # In GB
     'x86_64_Live_Design':  '1.8',       # In GB
-    'i686_Live_Sci-kde':   '2.6',       # In GB
-    'x86_64_Live_Sci-kde': '2.7',       # In GB
-    'i686_Live_Robotics':  '2.5',       # In GB
-    'x86_64_Live_Robotics':'2.5',       # In GB
+    'i686_Live_Sci-kde':   '3.2',       # In GB
+    'x86_64_Live_Sci-kde': '2.9',       # In GB
+    'i686_Live_Robotics':  '2.7',       # In GB
+    'x86_64_Live_Robotics':'2.4',       # In GB
     'i686_Live_Jam':       '1.7',       # In GB
     'x86_64_Live_Jam':     '1.7',       # In GB
+    'i686_Live_Astronomy': '2.5',       # In GB
+    'x86_64_Live_Astronomy':'2.3',      # In GB
     # Spins prerelease
     'pre_i686_Live_Security':  '1.2',   # In GB
     'pre_x86_64_Live_Security':'1.1',   # In GB
@@ -136,9 +141,9 @@ iso_size={
     'pre_i686_Live_Astronomy': '2.7',   # In GB
     'pre_x86_64_Live_Astronomy':'2.4',  # In GB
     # Server
-    'x86_64_server_DVD':   '2.0',       # In GB
+    'x86_64_server_DVD':   '1.7',       # In GB
     'i386_server_DVD':     '2.1',       # In GB
-    'x86_64_server_net':   '415',       # In MB
+    'x86_64_server_net':   '441',       # In MB
     'i386_server_net':     '458',       # In MB
     # Server prerelease
     'pre_x86_64_server_DVD': '1.8',     # In GB
@@ -147,23 +152,23 @@ iso_size={
     'pre_i386_server_net':   '552',     # In MB
     # Workstation
     'x86_64_workstation':  '1.4',       # In GB
-    'i386_workstation':    '1.3',       # In GB
-    'x86_64_workstation_net': '413',    # In MB
-    'i386_workstation_net': '455',      # In MB
+    'i386_workstation':    '1.6',       # In GB
+    'x86_64_workstation_net': '439',    # In MB
+    'i386_workstation_net': '490',      # In MB
     # Workstation prerelease
     'pre_x86_64_workstation':  '1.4',   # In GB
     'pre_i386_workstation':    '1.5',   # In GB
     'pre_x86_64_workstation_net': '436',# In MB
     'pre_i386_workstation_net': '486',  # In MB
     # ARM
-    'ARM_Workstation':     '1.1',       # In GB
-    'ARM_Server':          '438',       # In MB
-    'ARM_Minimal':         '346',       # In MB
-    'ARM_KDE':             '1.2',       # In GB
-    'ARM_Xfce':            '844',       # In MB
-    'ARM_LXDE':            '787',       # In MB
-    'ARM_Mate':            '1.1',       # In GB
-    'ARM_SoaS':            '644',       # In MB
+    'ARM_Workstation':     '1.2',       # In GB
+    'ARM_Server':          '487',       # In MB
+    'ARM_Minimal':         '441',       # In MB
+    'ARM_KDE':             '1.4',       # In GB
+    'ARM_Xfce':            '1.0',       # In MB
+    'ARM_LXDE':            '887',       # In MB
+    'ARM_Mate':            '1.3',       # In GB
+    'ARM_SoaS':            '722',       # In MB
     # ARM prerelease
     'pre_ARM_Workstation': '1.2',       # In GB
     'pre_ARM_Server':      '487',       # In MB
@@ -175,16 +180,14 @@ iso_size={
     'pre_ARM_Cinnamon':    '780',       # In MB
     'pre_ARM_SoaS':        '710',       # In MB
     # Cloud
-    'raw_x86_64_cloud':    '146',       # In MB
+    'raw_x86_64_cloud':    '128',       # In MB
     'raw_i386_cloud':      '143',       # In MB
-    'qcow2_x86_64_cloud':  '218',       # In MB
+    'qcow2_x86_64_cloud':  '195',       # In MB
     'qcow2_i386_cloud':    '216',       # In MB
-    'VBvag_cloud':         '209',       # In MB
-    'libvag_cloud':        '203',       # In MB
-    'x86_64_docker':       '41',        # In MB
+    'VBvag_cloud':         '210',       # In MB
+    'libvag_cloud':        '201',       # In MB
+    'x86_64_docker':       '42',        # In MB
     'raw_i386_cloud':      '144',       # In MB
-    'qcow2_x86_64_cloud':  '224',       # In MB
-    'qcow2_i386_cloud':    '222',       # In MB
     # Note that atomic values here get overwritten by the twoweek script.
     'atomic_raw_cloud':    '???',       # In MB
     'atomic_qcow2_cloud':  '???',       # In MB
@@ -243,51 +246,51 @@ for _, short, code in EC2_regions:
 # EC2 AMI IDs
 
 HVM_base_AMI={
-    'us-east-1':        'ami-7b8afa11',     # Virginia
-    'us-west-2':        'ami-20203441',     # Oregon
-    'us-west-1':        'ami-a6fc90c6',     # California
-    'eu-west-1':        'ami-080bd47b',     # Ireland
-    'eu-central-1':     'ami-084d5e64',     # Frankfurt
-    'ap-southeast-1':   'ami-9cba7dff',     # Singapore
-    'ap-northeast-1':   'ami-b4193cda',     # Tokyo
-    'ap-southeast-2':   'ami-90d887f3',     # Sydney
-    'sa-east-1':        'ami-e908b085'      # Sao Paolo
+    'us-east-1':        'ami-775c9b1a',     # Virginia
+    'us-west-2':        'ami-cf00c5af',     # Oregon
+    'us-west-1':        'ami-4e98dd2e',     # California
+    'eu-west-1':        'ami-19fa646a',     # Ireland
+    'eu-central-1':     'ami-62628b0d',     # Frankfurt
+    'ap-southeast-1':   'ami-fde0339e',     # Singapore
+    'ap-northeast-1':   'ami-0c0be16d',     # Tokyo
+    'ap-southeast-2':   'ami-90a38af3',     # Sydney
+    'sa-east-1':        'ami-3ebf3552'      # Sao Paolo
 }
 
 GP2_HVM_base_AMI={
-    'us-east-1':        'ami-518bfb3b',     # Virginia
-    'us-west-2':        'ami-ca2430ab',     # Oregon
-    'us-west-1':        'ami-ecff938c',     # California
-    'eu-west-1':        'ami-e00dd293',     # Ireland
-    'eu-central-1':     'ami-ac4d5ec0',     # Frankfurt
-    'ap-southeast-1':   'ami-4bb87f28',     # Singapore
-    'ap-northeast-1':   'ami-7d1c3913',     # Tokyo
-    'ap-southeast-2':   'ami-17d98674',     # Sydney
-    'sa-east-1':        'ami-9009b1fc'      # Sao Paolo
+    'us-east-1':        'ami-2a5d9a47',     # Virginia
+    'us-west-2':        'ami-dcfe3bbc',     # Oregon
+    'us-west-1':        'ami-aa9edbca',     # California
+    'eu-west-1':        'ami-16fd6365',     # Ireland
+    'eu-central-1':     'ami-a36188cc',     # Frankfurt
+    'ap-southeast-1':   'ami-1be73478',     # Singapore
+    'ap-northeast-1':   'ami-8a35dfeb',     # Tokyo
+    'ap-southeast-2':   'ami-93a38af0',     # Sydney
+    'sa-east-1':        'ami-0a46cc66'      # Sao Paolo
 }
 
 PV_base_AMI={
-    'us-east-1':        'ami-0187f76b',     # Virginia
-    'us-west-2':        'ami-f5263294',     # Oregon
-    'us-west-1':        'ami-efff938f',     # California
-    'eu-west-1':        'ami-c00cd3b3',     # Ireland
-    'eu-central-1':     'ami-1073607c',     # Frankfurt
-    'ap-southeast-1':   'ami-d0c700b3',     # Singapore
-    'ap-northeast-1':   'ami-fb1e3b95',     # Tokyo
-    'ap-southeast-2':   'ami-93d887f0',     # Sydney
-    'sa-east-1':        'ami-6a04bc06'      # Sao Paolo
+    'us-east-1':        'ami-015b9c6c',     # Virginia
+    'us-west-2':        'ami-3c05c05c',     # Oregon
+    'us-west-1':        'ami-189edb78',     # California
+    'eu-west-1':        'ami-2afd6359',     # Ireland
+    'eu-central-1':     'ami-f561889a',     # Frankfurt
+    'ap-southeast-1':   'ami-f7e13294',     # Singapore
+    'ap-northeast-1':   'ami-6a0ee40b',     # Tokyo
+    'ap-southeast-2':   'ami-28a38a4b',     # Sydney
+    'sa-east-1':        'ami-e34fc58f'      # Sao Paolo
 }
 
 GP2_PV_base_AMI={
-    'us-east-1':        'ami-8f88f8e5',     # Virginia
-    'us-west-2':        'ami-65263204',     # Oregon
-    'us-west-1':        'ami-92fe92f2',     # California
-    'eu-west-1':        'ami-cf0cd3bc',     # Ireland
-    'eu-central-1':     'ami-af4d5ec3',     # Frankfurt
-    'ap-southeast-1':   'ami-cfc700ac',     # Singapore
-    'ap-northeast-1':   'ami-451d382b',     # Tokyo
-    'ap-southeast-2':   'ami-37d48b54',     # Sydney
-    'sa-east-1':        'ami-cf09b1a3'      # Sao Paolo
+    'us-east-1':        'ami-095b9c64',     # Virginia
+    'us-west-2':        'ami-fa06c39a',     # Oregon
+    'us-west-1':        'ami-a99fdac9',     # California
+    'eu-west-1':        'ami-28ff615b',     # Ireland
+    'eu-central-1':     'ami-6e638a01',     # Frankfurt
+    'ap-southeast-1':   'ami-28e1324b',     # Singapore
+    'ap-northeast-1':   'ami-b30ae0d2',     # Tokyo
+    'ap-southeast-2':   'ami-f4a58c97',     # Sydney
+    'sa-east-1':        'ami-4346cc2f'      # Sao Paolo
 }
 
 HVM_atomic_AMI={

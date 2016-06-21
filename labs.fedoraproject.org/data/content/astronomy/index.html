@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Astronomy')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/astronomy/header.html" />
+
+  <header id="head">
+    <div class="col-xs-12 text-center widewrapper copr-astronomy">
+    </div>
+    <div class="container product-feature">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-justify top-space bottom-space">
+          <p>${_('Fedora Astronomy brings a complete open source toolchain to both amateur and professional astronomers.')}</p>
+          <p>${_('The Spin provides the Fedora KDE desktop enhanced with a complete scientific Python environment and the AstrOmatic software for data analysis. KStars was added to provide a full featured astrophotography tool. As KStars uses the INDI library to control equipment, various telescopes, cameras etc. are supported. Summarized, Fedora Astronomy provides a complete set of software, from the observation planning to the final results.')}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature main-head">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/astronomy/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Applications -->
+  <div class="jumbotron whitebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>${_('Featured Applications')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/astronomy/astropy.png" alt="Astropy" />
+          	<h4>${_('Astropy')}</h4>
+          	<p>${_('Astropy is a community python library for Astronomy to foster interoperability between astronomy packages.')}</p>
+          	<a href="http://www.astropy.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/astronomy/kstars.png" alt="Kstars" />
+          	<h4>${_('Kstars')}</h4>
+          	<p>${_('Kstars provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time.')}</p>
+          	<a href="https://edu.kde.org/kstars/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/astronomy/celestia.png" alt="Celestia" />
+          	<h4>${_('Celestia')}</h4>
+          	<p>${_('The free space simulation that lets you explore our universe in three dimensions.')}</p>
+          	<a href="http://www.shatters.net/celestia/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/astronomy/virtualplanet.png" alt="Virtualplanet" />
+          	<h4>${_('Virtualplanet')}</h4>
+          	<p>${_('Allow you to visualize any planet aspect at any time. Include extended feature database and texture.')}</p>
+          	<a href="http://www.ap-i.net/avp/en/start">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/astronomy/siril.png" alt="Siril" />
+          	<h4>${_('Siril')}</h4>
+          	<p>${_('Siril, a free astronomical image processing software')}</p>
+          	<a href="https://free-astro.org/index.php/Siril">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/astronomy/indi.png" alt="INDI" />
+          	<h4>${_('INDI')}</h4>
+          	<p>${_('The INDI Library is a cross-platform software designed for automation and control of astronomical instruments.')}</p>
+          	<a href="https://code.google.com/p/skipfish/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/design/gimp.png" alt="GIMP" />
+          	<h4>${_('GIMP')}</h4>
+          	<p>${_('A powerful image composition and graphic editing app, similar to Adobe® Photoshop™.')}</p>
+          	<a href="http://www.gimp.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/astronomy/redshift.png" alt="Redshift" />
+          	<h4>${_('Redshift')}</h4>
+          	<p>${_('Redshift adjusts the color temperature of your screen according to your surroundings.')}</p>
+          	<a href="http://jonls.dk/redshift//">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/astronomy/astromatic.png" alt="Astromatic" />
+          	<h4>${_('Astromatic')}</h4>
+          	<p>${_('AstrOmatic is a set of astronomical pipeline software.')}</p>
+          	<a href="http://www.astromatic.net/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Download -->
+    <div class="container using product-feature">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/astronomy/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="jumbotron greybox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-astronomy&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-astronomy'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;astronomy@lists.fedoraproject.org&lt;/a&gt;.') % ('https://lists.fedoraproject.org/admin/lists/astronomy%40lists.fedoraproject.org/'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Specific documentation is available at the &lt;a href="%s"&gt;Astronomy wiki page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Astronomy_Spin'))}</p>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>
