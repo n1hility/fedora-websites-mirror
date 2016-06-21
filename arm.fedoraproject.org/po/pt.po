@@ -3,17 +3,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-10-12 13:25+0200\n"
+"POT-Creation-Date: 2016-06-19 23:33+0200\n"
 "PO-Revision-Date: 2015-05-16 01:11-0400\n"
 "Last-Translator: Filipe Sarabando <sarabando@gmail.com>\n"
 "Language-Team: Portuguese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 1.3\n"
 "Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Zanata 3.7.3\n"
+"Generated-By: Babel 1.3\n"
+"X-Generator: Zanata 3.8.4\n"
 
 #: data/content/index.html:8
 msgid "Fedora ARM"
@@ -38,12 +38,9 @@ msgid "Fedora Server"
 msgstr "Servidor Fedora"
 
 #: data/content/index.html:35 data/content/index.html:49
-#: data/content/index.html:185 data/content/index.html:199
-#: data/content/index.html:227 data/content/prerelease.html:49
-#: data/content/prerelease.html:67 data/content/prerelease.html:85
-#: data/content/prerelease.html:103 data/content/prerelease.html:121
-#: data/content/prerelease.html:139 data/content/prerelease.html:157
-#: data/content/prerelease.html:194
+#: data/content/index.html:199 data/content/index.html:227
+#: data/content/prerelease.html:49 data/content/prerelease.html:67
+#: data/content/prerelease.html:139 data/content/prerelease.html:194
 #, python-format
 msgid "%sMB raw image"
 msgstr ""
@@ -120,7 +117,9 @@ msgid "Fedora Workstation"
 msgstr "Áreas de trabalho Fedora"
 
 #: data/content/index.html:157 data/content/index.html:171
-#: data/content/index.html:213
+#: data/content/index.html:185 data/content/index.html:213
+#: data/content/prerelease.html:85 data/content/prerelease.html:103
+#: data/content/prerelease.html:121 data/content/prerelease.html:157
 #, python-format
 msgid "%sGB raw image"
 msgstr ""
@@ -228,9 +227,14 @@ msgid ""
 "available at the <a href=\"%s\">Fedora “Get Help” page</a>."
 msgstr ""
 
-#: data/content/index.html:445 data/content/index.html:456
+#: data/content/index.html:444 data/content/index.html:455
 #, python-format
 msgid "Fedora %(rel)s %(state)s released! <a href=\"%(link)s\">Try it now ></a>"
+msgstr ""
+
+#: data/content/index.html:466
+#, python-format
+msgid "Fedora %(rel)s released! Try it now."
 msgstr ""
 
 #: data/content/prerelease.html:8
@@ -297,8 +301,8 @@ msgid "Validate Workstation!"
 msgstr "Validar a área de trabalho!"
 
 #: data/content/verify.html:42
-msgid "Validate Desktop!"
-msgstr "Validar desktop!"
+msgid "Validate Spins!"
+msgstr ""
 
 #: data/content/verify.html:48
 msgid "Next, import Fedora's GPG key(s):"
@@ -322,35 +326,35 @@ msgid ""
 msgstr ""
 
 #: data/content/verify.html:55
-msgid "Fedora 24"
+msgid "Fedora 25"
 msgstr ""
 
 #: data/content/verify.html:56
-msgid "Fedora 24 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)"
+msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
 #: data/content/verify.html:57
-msgid "Fedora 23"
-msgstr "Fedora 23"
+msgid "Fedora 24"
+msgstr ""
 
 #: data/content/verify.html:58
-msgid "Fedora 23 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)"
+msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
 #: data/content/verify.html:59
-msgid "Fedora 22"
-msgstr "Fedora 22"
+msgid "Fedora 23"
+msgstr "Fedora 23"
 
 #: data/content/verify.html:60
-msgid "Fedora 22 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)"
+msgid "Fedora 23 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
 #: data/content/verify.html:61
-msgid "Fedora 21"
-msgstr "Fedora 21"
+msgid "Fedora 22"
+msgstr "Fedora 22"
 
 #: data/content/verify.html:62
-msgid "Fedora 21 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)"
+msgid "Fedora 22 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
 #: data/content/verify.html:64
@@ -479,51 +483,61 @@ msgid "Common Bugs"
 msgstr "Erros Comuns"
 
 #: data/templates/footer.html:60
+msgid "Fedora Developer Portal"
+msgstr ""
+
+#: data/templates/footer.html:61
 msgid "Installation Guide"
 msgstr "Guia de Instalação"
 
-#: data/templates/footer.html:66
+#: data/templates/footer.html:67
 msgid "Join"
 msgstr "Junte-se"
 
-#: data/templates/footer.html:69
+#: data/templates/footer.html:70
 msgid "Join Fedora"
 msgstr "Junte-se ao Fedora"
 
-#: data/templates/footer.html:70
+#: data/templates/footer.html:71
 msgid "Planet Fedora"
 msgstr "Planeta Fedora"
 
-#: data/templates/footer.html:71
+#: data/templates/footer.html:72
 msgid "Fedora SIGs"
 msgstr "SIGs do Fedora"
 
-#: data/templates/footer.html:72
+#: data/templates/footer.html:73
 msgid "Fedora Account System"
 msgstr "Sistema de Contas do Fedora"
 
-#: data/templates/footer.html:73
+#: data/templates/footer.html:74
 msgid "Fedora Community"
 msgstr "Comunidade Fedora"
 
-#: data/templates/footer.html:87
+#: data/templates/footer.html:88
 msgid "Fedora is sponsored by Red Hat."
 msgstr "Fedora é patrocinado pela Red Hat"
 
-#: data/templates/footer.html:88
+#: data/templates/footer.html:89
 msgid "Learn more about the relationship between Red Hat and Fedora »"
 msgstr "Aprenda mais sobre a relação entre a Red Hat e o Fedora. »"
 
-#: data/templates/footer.html:89
+#: data/templates/footer.html:90
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
 msgstr "© %(year)s Red Hat, Inc. e outros."
 
-#: data/templates/footer.html:95
+#: data/templates/footer.html:90
+msgid ""
+"Please send any comments or corrections to the <a href=\"//fedorahosted.org"
+"/fedora-websites/\">websites team</a>."
+msgstr ""
+
+#: data/templates/footer.html:96
 msgid "Change Language"
 msgstr "Alterar Idioma"
 
-#: data/templates/footer.html:99
+#: data/templates/footer.html:100
 msgid "OK"
 msgstr "OK"
 

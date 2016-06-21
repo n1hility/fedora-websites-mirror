@@ -4,17 +4,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-10-12 13:25+0200\n"
+"POT-Creation-Date: 2016-06-19 23:33+0200\n"
 "PO-Revision-Date: 2015-08-04 11:58-0400\n"
 "Last-Translator: Pany <geekpany@gmail.com>\n"
 "Language-Team: Chinese (China)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 1.3\n"
 "Language: zh-CN\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: Zanata 3.7.3\n"
+"Generated-By: Babel 1.3\n"
+"X-Generator: Zanata 3.8.4\n"
 
 #: data/content/index.html:8
 msgid "Fedora ARM"
@@ -39,12 +39,9 @@ msgid "Fedora Server"
 msgstr "Fedora Server"
 
 #: data/content/index.html:35 data/content/index.html:49
-#: data/content/index.html:185 data/content/index.html:199
-#: data/content/index.html:227 data/content/prerelease.html:49
-#: data/content/prerelease.html:67 data/content/prerelease.html:85
-#: data/content/prerelease.html:103 data/content/prerelease.html:121
-#: data/content/prerelease.html:139 data/content/prerelease.html:157
-#: data/content/prerelease.html:194
+#: data/content/index.html:199 data/content/index.html:227
+#: data/content/prerelease.html:49 data/content/prerelease.html:67
+#: data/content/prerelease.html:139 data/content/prerelease.html:194
 #, python-format
 msgid "%sMB raw image"
 msgstr "%sMB raw 镜像"
@@ -121,7 +118,9 @@ msgid "Fedora Workstation"
 msgstr "Fedora Workstation"
 
 #: data/content/index.html:157 data/content/index.html:171
-#: data/content/index.html:213
+#: data/content/index.html:185 data/content/index.html:213
+#: data/content/prerelease.html:85 data/content/prerelease.html:103
+#: data/content/prerelease.html:121 data/content/prerelease.html:157
 #, python-format
 msgid "%sGB raw image"
 msgstr "%sGB raw 镜像"
@@ -229,10 +228,15 @@ msgstr ""
 "有时您遇到的定制版问题可以通过一般性的 Fedora 支持资源获得帮助。这些资源的列表可见于 <a href=\"%s\">Fedora “Get "
 "Help” page</a>。"
 
-#: data/content/index.html:445 data/content/index.html:456
+#: data/content/index.html:444 data/content/index.html:455
 #, python-format
 msgid "Fedora %(rel)s %(state)s released! <a href=\"%(link)s\">Try it now ></a>"
 msgstr "Fedora %(rel)s %(state)s 发布了！ <a href=\"%(link)s\">马上体验！</a>"
+
+#: data/content/index.html:466
+#, python-format
+msgid "Fedora %(rel)s released! Try it now."
+msgstr ""
 
 #: data/content/prerelease.html:8
 msgid "Fedora ARM Prerelease Images"
@@ -305,8 +309,8 @@ msgid "Validate Workstation!"
 msgstr "验证 Workstation!"
 
 #: data/content/verify.html:42
-msgid "Validate Desktop!"
-msgstr "验证 Desktop!"
+msgid "Validate Spins!"
+msgstr ""
 
 #: data/content/verify.html:48
 msgid "Next, import Fedora's GPG key(s):"
@@ -330,36 +334,36 @@ msgid ""
 msgstr "CHECKSUM 文件应有来自以下公钥之一的签名："
 
 #: data/content/verify.html:55
-msgid "Fedora 24"
+msgid "Fedora 25"
 msgstr ""
 
 #: data/content/verify.html:56
-msgid "Fedora 24 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)"
+msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
 #: data/content/verify.html:57
+msgid "Fedora 24"
+msgstr ""
+
+#: data/content/verify.html:58
+msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgstr ""
+
+#: data/content/verify.html:59
 msgid "Fedora 23"
 msgstr "Fedora 23"
 
-#: data/content/verify.html:58
-msgid "Fedora 23 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)"
-msgstr "Fedora 23 次级架构 (aarch64、PPC64、PPC64le、s390 和 s390x)"
+#: data/content/verify.html:60
+msgid "Fedora 23 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgstr ""
 
-#: data/content/verify.html:59
+#: data/content/verify.html:61
 msgid "Fedora 22"
 msgstr "Fedora 22"
 
-#: data/content/verify.html:60
-msgid "Fedora 22 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)"
-msgstr "Fedora 22 次级架构 (aarch64、PPC64、PPC64le、s390 和 s390x)"
-
-#: data/content/verify.html:61
-msgid "Fedora 21"
-msgstr "Fedora 21"
-
 #: data/content/verify.html:62
-msgid "Fedora 21 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)"
-msgstr "Fedora 21 次级架构 (aarch64、PPC64、PPC64le、s390 和 s390x)"
+msgid "Fedora 22 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgstr ""
 
 #: data/content/verify.html:64
 msgid ""
@@ -483,51 +487,61 @@ msgid "Common Bugs"
 msgstr "常见错误"
 
 #: data/templates/footer.html:60
+msgid "Fedora Developer Portal"
+msgstr ""
+
+#: data/templates/footer.html:61
 msgid "Installation Guide"
 msgstr "安装指南"
 
-#: data/templates/footer.html:66
+#: data/templates/footer.html:67
 msgid "Join"
 msgstr "加入"
 
-#: data/templates/footer.html:69
+#: data/templates/footer.html:70
 msgid "Join Fedora"
 msgstr "加入 Fedora"
 
-#: data/templates/footer.html:70
+#: data/templates/footer.html:71
 msgid "Planet Fedora"
 msgstr "Planet Fedora"
 
-#: data/templates/footer.html:71
+#: data/templates/footer.html:72
 msgid "Fedora SIGs"
 msgstr "Fedora 特别兴趣组"
 
-#: data/templates/footer.html:72
+#: data/templates/footer.html:73
 msgid "Fedora Account System"
 msgstr "Fedora 账户系统"
 
-#: data/templates/footer.html:73
+#: data/templates/footer.html:74
 msgid "Fedora Community"
 msgstr "Fedora 社区"
 
-#: data/templates/footer.html:87
+#: data/templates/footer.html:88
 msgid "Fedora is sponsored by Red Hat."
 msgstr "Fedora 由红帽赞助。"
 
-#: data/templates/footer.html:88
+#: data/templates/footer.html:89
 msgid "Learn more about the relationship between Red Hat and Fedora »"
 msgstr "了解更多红帽与 Fedora 关系的信息 »"
 
-#: data/templates/footer.html:89
+#: data/templates/footer.html:90
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
 msgstr "© %(year)s 红帽公司及其他。"
 
-#: data/templates/footer.html:95
+#: data/templates/footer.html:90
+msgid ""
+"Please send any comments or corrections to the <a href=\"//fedorahosted.org"
+"/fedora-websites/\">websites team</a>."
+msgstr ""
+
+#: data/templates/footer.html:96
 msgid "Change Language"
 msgstr "更改语言"
 
-#: data/templates/footer.html:99
+#: data/templates/footer.html:100
 msgid "OK"
 msgstr "确定"
 

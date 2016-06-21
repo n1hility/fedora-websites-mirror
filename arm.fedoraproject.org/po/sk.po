@@ -1,32 +1,28 @@
-# Translations template for PROJECT.
-# Copyright (C) 2015 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
-# 
+# feonsu <feonsu@gmail.com>, 2016. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-10-12 13:25+0200\n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2016-06-19 23:33+0200\n"
+"PO-Revision-Date: 2016-06-21 03:20-0400\n"
+"Last-Translator: feonsu <feonsu@gmail.com>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 1.3\n"
 "Language: sk\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
-"X-Generator: Zanata 3.7.3\n"
+"Generated-By: Babel 1.3\n"
+"X-Generator: Zanata 3.8.4\n"
 
 #: data/content/index.html:8
 msgid "Fedora ARM"
-msgstr ""
+msgstr "Fedora ARM"
 
 #: data/content/index.html:19 data/content/index.html:65
 #: data/content/index.html:101
 msgid "ARM<span class=\"sup\">®</span> Servers"
-msgstr ""
+msgstr "Servery ARM<span class=\"sup\">®</span>"
 
 #: data/content/index.html:24 data/content/index.html:70
 #: data/content/index.html:106
@@ -34,23 +30,22 @@ msgid ""
 "These images are geared towards ARM-based computers used as servers, "
 "typically in a headless environment."
 msgstr ""
+"Tieto obrazy sú prispôsobené serverom založených na ARM, ktoré sú obyčajne "
+"spravované na diaľku bez grafického rozhrania."
 
 #: data/content/index.html:32 data/content/index.html:79
 #: data/content/index.html:115 data/content/prerelease.html:46
 #: data/content/prerelease.html:55
 msgid "Fedora Server"
-msgstr ""
+msgstr "Fedora Server"
 
 #: data/content/index.html:35 data/content/index.html:49
-#: data/content/index.html:185 data/content/index.html:199
-#: data/content/index.html:227 data/content/prerelease.html:49
-#: data/content/prerelease.html:67 data/content/prerelease.html:85
-#: data/content/prerelease.html:103 data/content/prerelease.html:121
-#: data/content/prerelease.html:139 data/content/prerelease.html:157
-#: data/content/prerelease.html:194
+#: data/content/index.html:199 data/content/index.html:227
+#: data/content/prerelease.html:49 data/content/prerelease.html:67
+#: data/content/prerelease.html:139 data/content/prerelease.html:194
 #, python-format
 msgid "%sMB raw image"
-msgstr ""
+msgstr "Surový obraz (%sMB)"
 
 #: data/content/index.html:38 data/content/index.html:52
 #: data/content/index.html:80 data/content/index.html:89
@@ -74,7 +69,7 @@ msgstr ""
 #: data/content/prerelease.html:197 data/content/prerelease.html:201
 #: data/templates/footer.html:37
 msgid "Download"
-msgstr ""
+msgstr "Stiahnuť"
 
 #: data/content/index.html:38 data/content/index.html:52
 #: data/content/index.html:80 data/content/index.html:89
@@ -97,18 +92,18 @@ msgstr ""
 #: data/content/prerelease.html:160 data/content/prerelease.html:164
 #: data/content/prerelease.html:197 data/content/prerelease.html:201
 msgid "Verify"
-msgstr ""
+msgstr "Overiť"
 
 #: data/content/index.html:46 data/content/index.html:88
 #: data/content/index.html:126 data/content/prerelease.html:64
 #: data/content/prerelease.html:73
 msgid "Fedora Minimal"
-msgstr ""
+msgstr "Fedora Minimal"
 
 #: data/content/index.html:141 data/content/index.html:243
 #: data/content/index.html:315
 msgid "Desktop Computing"
-msgstr ""
+msgstr "Stolné počítače"
 
 #: data/content/index.html:146 data/content/index.html:248
 #: data/content/index.html:320
@@ -116,52 +111,56 @@ msgid ""
 "These images are for ARM-based mediacenters, kiosks, laptops, and other ARM-"
 "powered devices where a graphical interface is desired."
 msgstr ""
+"Tieto obrazy sú vhodné pre multimediálne centrá, kiosky, notebooky a ďalšie "
+"zariadenia založené na ARM ktoré vyžadujú grafické rozhranie."
 
 #: data/content/index.html:154 data/content/index.html:257
 #: data/content/index.html:329 data/content/prerelease.html:82
 #: data/content/prerelease.html:91
 msgid "Fedora Workstation"
-msgstr ""
+msgstr "Fedora Workstation"
 
 #: data/content/index.html:157 data/content/index.html:171
-#: data/content/index.html:213
+#: data/content/index.html:185 data/content/index.html:213
+#: data/content/prerelease.html:85 data/content/prerelease.html:103
+#: data/content/prerelease.html:121 data/content/prerelease.html:157
 #, python-format
 msgid "%sGB raw image"
-msgstr ""
+msgstr "Surový obraz (%sGB)"
 
 #: data/content/index.html:168 data/content/index.html:266
 #: data/content/index.html:340 data/content/prerelease.html:100
 #: data/content/prerelease.html:109
 msgid "KDE Plasma Desktop"
-msgstr ""
+msgstr "Pracovné prostredie KDE"
 
 #: data/content/index.html:182 data/content/index.html:275
 #: data/content/index.html:351 data/content/prerelease.html:118
 #: data/content/prerelease.html:127
 msgid "Xfce Desktop"
-msgstr ""
+msgstr "Pracovné prostredie Xfce"
 
 #: data/content/index.html:196 data/content/index.html:284
 #: data/content/index.html:362 data/content/prerelease.html:136
 #: data/content/prerelease.html:145
 msgid "LXDE Desktop"
-msgstr ""
+msgstr "Pracovné prostredie LXDE"
 
 #: data/content/index.html:210 data/content/index.html:293
 #: data/content/index.html:373 data/content/prerelease.html:154
 #: data/content/prerelease.html:163
 msgid "MATE-Compiz Desktop"
-msgstr ""
+msgstr "Pracovné prostredie MATE"
 
 #: data/content/index.html:224 data/content/index.html:302
 #: data/content/index.html:384 data/content/prerelease.html:191
 #: data/content/prerelease.html:200
 msgid "Sugar on a Stick"
-msgstr ""
+msgstr "Pracovné prostredie Sugar"
 
 #: data/content/index.html:399 data/content/prerelease.html:217
 msgid "What is ARM Technology?"
-msgstr ""
+msgstr "Čo je to technológia ARM?"
 
 #: data/content/index.html:400 data/content/prerelease.html:218
 msgid ""
@@ -170,6 +169,9 @@ msgid ""
 "applications, and are increasingly used in tablet devices and low-power-"
 "consumption servers."
 msgstr ""
+"Mikroprocesory ARM sú najviac vyrábané procesory na svete. V minulosti boli "
+"používané v mobilných telefónoch a embedded zariadeniach, a stále viac sa "
+"používajú v tabletoch a serveroch s nízkou spotrebou."
 
 #: data/content/index.html:401 data/content/prerelease.html:219
 msgid ""
@@ -177,14 +179,17 @@ msgid ""
 "family. The images provided here are versions of Fedora tailored for running"
 " in on ARM-based systems."
 msgstr ""
+"Projekt Fedora ARM je iniciatívou, ktorá chce priniesť Fedoru na tieto "
+"procesory. Obrazy dostupné na tejto stránke sú verziou Fedory prispôsobené "
+"pre beh systémov založených na ARM."
 
 #: data/content/index.html:412 data/content/prerelease.html:230
 msgid "Support Resources"
-msgstr ""
+msgstr "Zdroje podpory"
 
 #: data/content/index.html:417 data/content/prerelease.html:235
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentácia"
 
 #: data/content/index.html:418 data/content/prerelease.html:236
 #, python-format
@@ -192,10 +197,12 @@ msgid ""
 "Fedora ARM documentation and installation guides are available at the <a "
 "href=\"%s\">Fedora ARM wiki page</a>."
 msgstr ""
+"Dokumentácia Fedory ARM a inštalačná príručka sú dostupné vo <a "
+"href=\"%s\">wiki stránkach Fedora ARM</a>."
 
 #: data/content/index.html:421 data/content/prerelease.html:239
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 #: data/content/index.html:422 data/content/prerelease.html:240
 #, python-format
@@ -203,10 +210,12 @@ msgid ""
 "Users and developers are also available on the mailing list at <a "
 "href=\"%s\">arm@lists.fedoraproject.org</a>."
 msgstr ""
+"Používatelia a vývojári sú k dispozícii aj v diskusnej skupine <a "
+"href=\"%s\">arm@lists.fedoraproject.org</a>."
 
 #: data/content/index.html:425 data/content/prerelease.html:243
 msgid "Chat"
-msgstr ""
+msgstr "Chat"
 
 #: data/content/index.html:426 data/content/prerelease.html:244
 #, python-format
@@ -214,10 +223,13 @@ msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-arm</a> irc"
 " channel on <strong>irc.freenode.org</strong> for real-time chat."
 msgstr ""
+"Používatelia a vývojári sú k dispozícii pre komunikáciu v reálnom čase na "
+"irc kanáli <a href=\"%s\">#fedora-arm</a> na "
+"<strong>irc.freenode.org</strong>."
 
 #: data/content/index.html:431 data/content/prerelease.html:249
 msgid "General Help Using Fedora"
-msgstr ""
+msgstr "Všeobecná pomoc s používaním Fedory"
 
 #: data/content/index.html:432 data/content/prerelease.html:250
 #, python-format
@@ -226,15 +238,25 @@ msgid ""
 "with using general Fedora support resources. A list of resources is "
 "available at the <a href=\"%s\">Fedora “Get Help” page</a>."
 msgstr ""
+"Ak narazíte na nejaké problémy s týmto spinom, pomoc môžete získať vo "
+"všeobecných zdrojoch podpory Fedory. Zoznam zdrojov je dostupný na <a "
+"href=\"%s\">stránke Fedory “Získajte pomoc”</a>."
 
-#: data/content/index.html:445 data/content/index.html:456
+#: data/content/index.html:444 data/content/index.html:455
 #, python-format
 msgid "Fedora %(rel)s %(state)s released! <a href=\"%(link)s\">Try it now ></a>"
 msgstr ""
+"Bola vydaná Fedora %(rel)s %(state)s! <a href=\"%(link)s\">Vyskúšajte ju "
+"teraz ></a>."
+
+#: data/content/index.html:466
+#, python-format
+msgid "Fedora %(rel)s released! Try it now."
+msgstr "Bola vydaná Fedora %(rel)s ! Vyskúšajte ju teraz."
 
 #: data/content/prerelease.html:8
 msgid "Fedora ARM Prerelease Images"
-msgstr ""
+msgstr "Obrazy s predčasným vydaním Fedory ARM"
 
 #: data/content/prerelease.html:21
 #, python-format
@@ -242,6 +264,8 @@ msgid ""
 "Download Fedora %(rel)s %(state)s for ARM<span class=\"sup\">®</span>-based "
 "Computers"
 msgstr ""
+"Stiahnuť Fedoru %(rel)s %(state)s pre počítače založené na ARM<span "
+"class=\"sup\">®</span>"
 
 #: data/content/prerelease.html:26
 #, python-format
@@ -250,6 +274,9 @@ msgid ""
 "href=\"%(team_url)s\">ARM Team</a>. Please direct questions to their <a "
 "href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on freenode."
 msgstr ""
+"Toto je predčasné vydanie, ktoré podporuje <a href=\"%(team_url)s\">pracovná"
+" skupina ARM</a>. Svoje dotazy smerujte na ich <a "
+"href=\"%(team_list)s\">diskusnú skupinu</a> alebo %(team_irc)s na freenode."
 
 #: data/content/prerelease.html:27
 #, python-format
@@ -258,6 +285,9 @@ msgid ""
 "Bugzilla</a>. The Fedora Project makes no guarantees as to its suitability "
 "or usefulness."
 msgstr ""
+"Všetky problémy alebo chyby by ste mali nahlasovať cez <a href=\"%s\">Red "
+"Hat Bugzillu</a>. Projekt Fedora neposkytuje žiadne záruky pokiaľ ide o "
+"vhodnosť alebo užitočnosť."
 
 #: data/content/prerelease.html:29 data/content/prerelease.html:31
 #, python-format
@@ -267,18 +297,22 @@ msgid ""
 "Bugs</a> page for information on commonly-encountered bugs and how to avoid "
 "them."
 msgstr ""
+"Prečítajte si <a href=\"%(relnotes_url)s\">Poznámky k vydaniu</a> pre viac "
+"informácií o zmenách a nových vlastnostiach, a stránku <a "
+"href=\"%(commonbugs_url)s\">Bežné chyby</a> pre informácie o bežne sa "
+"vyskytujúcich chybách a ako sa im vyhnúť."
 
 #: data/content/verify.html:8 data/content/verify.html:18
 msgid "Verify your Downloaded Image"
-msgstr ""
+msgstr "Overte si stiahnutý obraz"
 
 #: data/content/verify.html:20
 msgid "CHECKSUM and Verify Instructions"
-msgstr ""
+msgstr "Inštrukcie ku kontrolnému medzisúčtu a overeniu"
 
 #: data/content/verify.html:30
 msgid "How do I verify my image?"
-msgstr ""
+msgstr "Ako overím svoj obraz?"
 
 #: data/content/verify.html:31
 msgid ""
@@ -286,22 +320,25 @@ msgid ""
 "verify your image, start by downloading the proper CHECKSUM file into the "
 "same directory as the image you downloaded."
 msgstr ""
+"Po stiahnutí obrazu si ho overte kvôli bezpečnosti a integrite. Aby ste "
+"stiahnutý obraz overili, najskôr si stiahnite správny súbor CHECKSUM do toho"
+" istého adresára, kde ste stiahli obraz."
 
 #: data/content/verify.html:36
 msgid "Validate Server!"
-msgstr ""
+msgstr "Overiť Server!"
 
 #: data/content/verify.html:39
 msgid "Validate Workstation!"
-msgstr ""
+msgstr "Overiť Workstation!"
 
 #: data/content/verify.html:42
-msgid "Validate Desktop!"
-msgstr ""
+msgid "Validate Spins!"
+msgstr "Overiť Spiny!"
 
 #: data/content/verify.html:48
 msgid "Next, import Fedora's GPG key(s):"
-msgstr ""
+msgstr "Ďalej naimportujte GPG kľúč Fedory:"
 
 #: data/content/verify.html:50
 #, python-format
@@ -309,87 +346,96 @@ msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
 msgstr ""
+"<a href=\"%s/%s/keys\">Na tomto mieste</a> si môžete overiť detaily GPG "
+"kľúčov."
 
 #: data/content/verify.html:51
 msgid "Now, verify that the CHECKSUM file is valid:"
-msgstr ""
+msgstr "Teraz overte, či je súbor CHECKSUM platný:"
 
 #: data/content/verify.html:53
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr ""
+"Súbor CHECKSUM by mal mať v poriadku signatúru z jedného z nasledujúcich "
+"kľúčov:"
 
 #: data/content/verify.html:55
-msgid "Fedora 24"
-msgstr ""
+msgid "Fedora 25"
+msgstr "Fedora 25"
 
 #: data/content/verify.html:56
-msgid "Fedora 24 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
+msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgstr "Fedora 25 ďalšie architektúry (AArch64, PPC64, PPC64le, s390 a s390x)"
 
 #: data/content/verify.html:57
-msgid "Fedora 23"
-msgstr ""
+msgid "Fedora 24"
+msgstr "Fedora 24"
 
 #: data/content/verify.html:58
-msgid "Fedora 23 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
+msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgstr "Fedora 24 ďalšie architektúry (AArch64, PPC64, PPC64le, s390 a s390x)"
 
 #: data/content/verify.html:59
-msgid "Fedora 22"
-msgstr ""
+msgid "Fedora 23"
+msgstr "Fedora 23"
 
 #: data/content/verify.html:60
-msgid "Fedora 22 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
+msgid "Fedora 23 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgstr "Fedora 23 ďalšie architektúry (AArch64, PPC64, PPC64le, s390 a s390x)"
 
 #: data/content/verify.html:61
-msgid "Fedora 21"
-msgstr ""
+msgid "Fedora 22"
+msgstr "Fedora 22"
 
 #: data/content/verify.html:62
-msgid "Fedora 21 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
+msgid "Fedora 22 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgstr "Fedora 22 ďalšie architektúry (AArch64, PPC64, PPC64le, s390 a s390x)"
 
 #: data/content/verify.html:64
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
 msgstr ""
+"A nakoniec po kontrole súboru CHECKSUM sa presvedčte, že kontrolný súčet "
+"obrazu sedí:"
 
 #: data/content/verify.html:66
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
+"Ak výstup uvádza, že je súbor platný, potom je obraz pripravený na použitie."
 
 #: data/content/verify.html:67
 msgid "How do I verify my downloaded image on another operating system?"
-msgstr ""
+msgstr "Ako overím stiahnutý obraz v inom operačnom systéme?"
 
 #: data/content/verify.html:68
 msgid "Read these instructions to validate your image."
-msgstr ""
+msgstr "Prečítajte si tieto inštrukcie ako overíte váš obraz."
 
 #: data/content/e/404.html:7
 msgid "Fedora Project - Page Not Found"
-msgstr ""
+msgstr "Projekt Fedora - Stránka nenájdená"
 
 #: data/content/e/404.html:16
 msgid "404: Page Not Found"
-msgstr ""
+msgstr "404: Stránka nenájdená"
 
 #: data/content/e/404.html:18
 msgid "We apologize, but the file or page you requested could not be found."
 msgstr ""
+"Ospravedlňujeme sa, ale súbor alebo stránku o ktorú ste žiadali nebolo možné"
+" nájsť."
 
 #: data/content/e/404.html:25
 msgid "Troubleshooting Ideas"
-msgstr ""
+msgstr "Nápady na riešenie problémov"
 
 #: data/content/e/404.html:29
 msgid ""
 "Double-check the URL if you entered it manually. Did you copy it correctly?"
-msgstr ""
+msgstr "Prekontrolujte URL, ak ste ju písali ručne. Opísali ste ju správne?"
 
 #: data/content/e/404.html:32
 #, python-format
@@ -397,6 +443,8 @@ msgid ""
 "Bad Link? Contact <a href=\"%s\">the webmaster</a> and explain which link "
 "brought you here."
 msgstr ""
+"Chybný odkaz? Kontaktujte <a href=\"%s\">správcu webových stránok</a> a "
+"vysvetlite mu, pomocou ktorého odkazu ste sa sem dostali."
 
 #: data/content/e/404.html:35
 #, python-format
@@ -404,131 +452,145 @@ msgid ""
 "The page or file may have moved. Check the <a href=\"%(fpo)s\">main site</a>"
 " or search our <a href=\"%(wiki)s\">wiki</a>."
 msgstr ""
+"Stránka alebo súbor bol presunutý. Skontrolujte <a href=\"%(fpo)s\">hlavnú "
+"stránku</a> alebo prehľadajte <a href=\"%(wiki)s\">wiki</a>."
 
 #: data/templates/footer.html:14
 msgid "About"
-msgstr ""
+msgstr "Informácie o"
 
 #: data/templates/footer.html:17
 msgid "About Fedora"
-msgstr ""
+msgstr "O Fedore"
 
 #: data/templates/footer.html:18
 msgid "Sponsors"
-msgstr ""
+msgstr "Sponzori"
 
 #: data/templates/footer.html:19
 msgid "Fedora Magazine"
-msgstr ""
+msgstr "Časopis Fedora"
 
 #: data/templates/footer.html:20
 msgid "Legal"
-msgstr ""
+msgstr "Právne poznámky"
 
 #: data/templates/footer.html:40
 msgid "Get Fedora Workstation"
-msgstr ""
+msgstr "Stiahnuť Fedoru Workstation"
 
 #: data/templates/footer.html:41
 msgid "Get Fedora Server"
-msgstr ""
+msgstr "Stiahnuť Fedoru Server"
 
 #: data/templates/footer.html:42
 msgid "Get Fedora Cloud"
-msgstr ""
+msgstr "Stiahnuť Fedoru Cloud"
 
 #: data/templates/footer.html:43
 msgid "Fedora Spins"
-msgstr ""
+msgstr "Fedora spiny"
 
 #: data/templates/footer.html:44
 msgid "Fedora Labs"
-msgstr ""
+msgstr "Laboratóriá Fedora"
 
 #: data/templates/footer.html:45
 msgid "Fedora ARM<span class=\"sup\">®</span>"
-msgstr ""
+msgstr "Fedora ARM<span class=\"sup\">®</span>"
 
 #: data/templates/footer.html:46
 msgid "Torrent Downloads"
-msgstr ""
+msgstr "Stiahnuť cez Torrent"
 
 #: data/templates/footer.html:53
 msgid "Support"
-msgstr ""
+msgstr "Podpora"
 
 #: data/templates/footer.html:56
 msgid "Get Help"
-msgstr ""
+msgstr "Získajte pomoc"
 
 #: data/templates/footer.html:57
 msgid "Ask Fedora"
-msgstr ""
+msgstr "Spýtajte sa Fedory"
 
 #: data/templates/footer.html:58
 msgid "Forums"
-msgstr ""
+msgstr "Fóra"
 
 #: data/templates/footer.html:59
 msgid "Common Bugs"
-msgstr ""
+msgstr "Bežné chyby"
 
 #: data/templates/footer.html:60
+msgid "Fedora Developer Portal"
+msgstr "Portál pre vývojárov Fedory"
+
+#: data/templates/footer.html:61
 msgid "Installation Guide"
-msgstr ""
+msgstr "Inštalačná príručka"
 
-#: data/templates/footer.html:66
+#: data/templates/footer.html:67
 msgid "Join"
-msgstr ""
-
-#: data/templates/footer.html:69
-msgid "Join Fedora"
-msgstr ""
+msgstr "Pridajte sa"
 
 #: data/templates/footer.html:70
-msgid "Planet Fedora"
-msgstr ""
+msgid "Join Fedora"
+msgstr "Pridajte sa k Fedore"
 
 #: data/templates/footer.html:71
-msgid "Fedora SIGs"
-msgstr ""
+msgid "Planet Fedora"
+msgstr "Planéta Fedora"
 
 #: data/templates/footer.html:72
-msgid "Fedora Account System"
-msgstr ""
+msgid "Fedora SIGs"
+msgstr "Fedora SIG"
 
 #: data/templates/footer.html:73
-msgid "Fedora Community"
-msgstr ""
+msgid "Fedora Account System"
+msgstr "Systém účtov Fedory"
 
-#: data/templates/footer.html:87
-msgid "Fedora is sponsored by Red Hat."
-msgstr ""
+#: data/templates/footer.html:74
+msgid "Fedora Community"
+msgstr "Komunita Fedory"
 
 #: data/templates/footer.html:88
-msgid "Learn more about the relationship between Red Hat and Fedora »"
-msgstr ""
+msgid "Fedora is sponsored by Red Hat."
+msgstr "Fedora je sponzorovaná firmou Red Hat."
 
 #: data/templates/footer.html:89
+msgid "Learn more about the relationship between Red Hat and Fedora »"
+msgstr "Zistite viac o vzťahu medzi firmou Red Hat a Fedorou »"
+
+#: data/templates/footer.html:90
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
-msgstr ""
+msgstr "© %(year)s Red Hat, Inc. a ďalší."
 
-#: data/templates/footer.html:95
+#: data/templates/footer.html:90
+msgid ""
+"Please send any comments or corrections to the <a href=\"//fedorahosted.org"
+"/fedora-websites/\">websites team</a>."
+msgstr ""
+"Akékoľvek pripomienky a opravy pošlite <a href=\"//fedorahosted.org/fedora-"
+"websites/\">tímu webových stránok</a>."
+
+#: data/templates/footer.html:96
 msgid "Change Language"
-msgstr ""
+msgstr "Zmeniť jazyk"
 
-#: data/templates/footer.html:99
+#: data/templates/footer.html:100
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: data/templates/head.html:13
 msgid "Fedora Images for ARM<sup>®</sup>-based Computers"
-msgstr ""
+msgstr "Obrazy Fedory pre počítače založené na ARM<sup>®</sup>"
 
 #: data/templates/generic/docs-links.html:8
 msgid "Documentation and other resources"
-msgstr ""
+msgstr "Dokumentácia a ďalšie zdroje"
 
 #: data/templates/generic/docs-links.html:9
 #, python-format
@@ -537,6 +599,9 @@ msgid ""
 "requirements for Fedora. Consult <a href=\"%s\">the online release notes</a>"
 " to see minimum requirements and recommendations."
 msgstr ""
+"Pred inštaláciou Fedory by ste sa mali uistiť, či vás systém spĺňa minimálne"
+" požiadavky. Minimálne požiadavky a odporúčania nájdete v <a "
+"href=\"%s\">poznámkach k vydaniu</a>."
 
 #: data/templates/generic/docs-links.html:10
 #, python-format
@@ -545,10 +610,13 @@ msgid ""
 " recommend you look through it before installing to your system, since it "
 "answers many common questions."
 msgstr ""
+"K dispozícii je tiež <a href=\"%s\">kompletná inštalačná príručka</a>. Pred "
+"inštaláciou odporúčame, aby ste si ju prezreli, pretože obsahuje odpovede na"
+" veľa bežných otázok."
 
 #: data/templates/generic/other-media-sources.html:8
 msgid "Other ways of obtaining media"
-msgstr ""
+msgstr "Ďalšie spôsoby získania médií"
 
 #: data/templates/generic/other-media-sources.html:9
 #, python-format
@@ -556,6 +624,9 @@ msgid ""
 "You may purchase installation media for Fedora from <a href=\"%s\">online "
 "vendors</a> or a <a href=\"%s\">local vendor</a> in your area."
 msgstr ""
+"Inštalačné médiá Fedory si môžete zakúpiť od <a href=\"%s\">online "
+"predajcov</a> alebo <a href=\"%s\">lokálnych predajcov</a> vo svojej "
+"oblasti."
 
 #: data/templates/generic/other-media-sources.html:10
 #, python-format
@@ -563,3 +634,5 @@ msgid ""
 "Can't afford the price of installation media? Request Fedora installation "
 "media from the <a href=\"%s\">Fedora Free Media Program</a>."
 msgstr ""
+"Nemôžete si dovoliť inštalačné médium? Požiadajte o to <a "
+"href=\"%s\">program Fedora médium zadarmo</a>."
