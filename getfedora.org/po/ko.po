@@ -1,24 +1,25 @@
 # Translations template for PROJECT.
 # Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# 
+#
 # Translators:
 # MinWoo Joh <igtzhsou@naver.com>, 2015. #zanata
+# MinWoo Joh <igtzhsou@naver.com>, 2016. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-11-13 22:39+0100\n"
-"PO-Revision-Date: 2015-11-05 05:52-0500\n"
+"POT-Creation-Date: 2016-06-21 11:07+0200\n"
+"PO-Revision-Date: 2016-03-01 01:11-0500\n"
 "Last-Translator: MinWoo Joh <igtzhsou@naver.com>\n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/fedora-web/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 1.3\n"
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Zanata 3.7.3\n"
+"Generated-By: Babel 1.3\n"
+"X-Generator: Zanata 3.8.4\n"
 
 #: data/content/code-of-conduct.html:8
 msgid "Fedora Code of Conduct"
@@ -46,7 +47,7 @@ msgid ""
 "project resources."
 msgstr ""
 "Fedora 커뮤니티는 전세계의 전문가와 자원자들의 모임이며, 프로그래밍부터 마케팅까지 Fedora의 모든 배포과정에 참여하고 있습니다."
-" 다양성은 우리의 가장 강력한 힘 중 하나지만,  이는 소통문제와 서로 간의 불화로 이어질 수 있습니다. 그것을 막기 위해,  여기에서 "
+" 다양성은 우리의 가장 강력한 힘 중 하나지만,  이는 소통문제와 서로 간의 불화로 이어질 수 있습니다. 이를 막기 위해,  여기에서 "
 "프로젝트 자원을 사용하는 모든 사람들에게 몇가지 규칙을  당부하려 합니다."
 
 #: data/content/code-of-conduct.html:39
@@ -110,7 +111,7 @@ msgstr ""
 msgid ""
 "Less setup, more innovation. Choose a flavor of Fedora streamlined for your "
 "needs, and get to work right away."
-msgstr "설정은 조금만, 혁신은 더 많이. 당신을 위해 개발된 페도라를 고르고, 바로 업무에 몰입하세요."
+msgstr "설정은 적게, 보다 새롭게. 당신을 위해 개발된 페도라를 고르고, 바로 업무에 몰입하세요."
 
 #: data/content/index.html:33
 msgid ""
@@ -138,8 +139,8 @@ msgid ""
 "best and latest datacenter technologies. It puts you in control of all your "
 "infrastructure and services."
 msgstr ""
-"페도라 서버는 최고의 그리고 최신의 데이터 센터 기술들을 포함한 강력하고 유연한 운영체제입니다. 사용자가 모든 인프라시스템과 서비스를 "
-"실시간으로 통제할 수 있도록 설계되어 있습니다."
+"페도라 서버는 최고, 최신의 데이터 센터 기술들을 포함한 강력하고 유연한 운영체제입니다. 사용자가 모든 인프라시스템과 서비스를 실시간으로"
+" 통제할 수 있도록 설계되어 있습니다."
 
 #: data/content/index.html:53
 msgid ""
@@ -147,8 +148,8 @@ msgid ""
 "private cloud environments. It includes just the bare essentials making it "
 "very light on resources, but you get enough to run your cloud application."
 msgstr ""
-"페도라 클라우드는 공동 또는 개인 클라우드 환경에서 사용할 수 있는 최소의 이미지입니다. 핵심요소만을 포함하여 자원의 소모가 적지만, "
-"어플리케이션을 작동하기는 충분합니다."
+"페도라 클라우드는 공동 또는 개인 클라우드 환경에서 사용할 수 있는 최소의 이미지입니다.  클라우드 어플리케이션을 작동하기는 충분할 "
+"만큼의 핵심요소만을 포함하여 자원소모가 매우 적습니다."
 
 #: data/content/index.html:94
 msgid ""
@@ -170,17 +171,23 @@ msgid ""
 "Spins</a> or <a href=\"https://labs.fedoraproject.org/\">Fedora Labs</a> "
 "website."
 msgstr ""
+"Fedora 커뮤니티는 이외에도 <a href=\"https://arm.fedoraproject.org/\">ARM 이미지</a>, "
+"라이브 스핀, 그리고 특정 수요에 맞춘 다양한 Fedora를 배포합니다. <a "
+"href=\"https://spins.fedoraproject.org/\">Fedora Spins</a> 또는 <a "
+"href=\"https://labs.fedoraproject.org/\">Fedora Labs</a> 웹사이트에서 찾아보세요."
 
 #: data/content/index.html:133
-msgid "Stay connected and informed."
-msgstr "저희와 함께하세요."
+msgid "Be connected & informed."
+msgstr ""
 
 #: data/content/index.html:143
-#, python-format
 msgid ""
-"Keep up-to-date with the Fedora Project and get all the latest news and "
-"reports in <a href=\"%s\">Fedora Magazine</a>."
-msgstr "<a href=\"%s\">Fedora Magazine</a>에서 페도라 프로젝트의 최신 뉴스와 보고를 확인하세요."
+"Want to get <a href=\"http://whatcanidoforfedora.org/\">involved</a>? Find "
+"out what's happening in the <a "
+"href=\"http://communityblog.fedoraproject.org/\">community</a>? Read up on "
+"the latest news and cool stuff at <a "
+"href=\"http://fedoramagazine.org/\">Fedora Magazine</a>."
+msgstr ""
 
 #: data/content/index.html:153
 msgid "Read the docs."
@@ -334,12 +341,11 @@ msgid "Workstation"
 msgstr "워크스테이션"
 
 #: data/content/verify.html:41 data/content/verify.html:53
-#: data/content/verify.html:65
+#: data/content/verify.html:62
 msgid "For 64-bit images"
 msgstr "64비트 이미지"
 
-#: data/content/verify.html:44 data/content/verify.html:56
-#: data/content/verify.html:68
+#: data/content/verify.html:44
 msgid "For 32-bit images"
 msgstr "32비트 이미지"
 
@@ -347,40 +353,44 @@ msgstr "32비트 이미지"
 msgid "Server"
 msgstr "서버"
 
-#: data/content/verify.html:63 data/templates/productselector-cloud.html:13
+#: data/content/verify.html:60 data/templates/productselector-cloud.html:13
 msgid "Cloud"
 msgstr "클라우드"
 
-#: data/content/verify.html:71
-msgid "For Atomic Installer"
-msgstr "Atomic Installer"
-
-#: data/content/verify.html:74
+#: data/content/verify.html:72
 msgid "For Docker"
 msgstr "Docker"
 
-#: data/content/verify.html:81
+#: data/content/verify.html:79
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "다음으로 Fedora의 GPG 키를 가져옵니다:  "
 
-#: data/content/verify.html:83
+#: data/content/verify.html:81
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
 msgstr "GPG 키의 상세 부분은 <a href=\"%s/%s/keys\">여기</a>에서 검증할 수 있습니다."
 
-#: data/content/verify.html:84
+#: data/content/verify.html:82
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "이제 CHECKSUM 파일이 유효한지 확인합니다:  "
 
-#: data/content/verify.html:86
+#: data/content/verify.html:84
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr "CHECKSUM 파일은 다음 키 중 하나에서 적절한 서명을 갖고 있어야 합니다:  "
 
-#: data/content/verify.html:88 data/content/keys/index.html:46
+#: data/content/verify.html:86 data/content/keys/index.html:46
+msgid "Fedora 25"
+msgstr ""
+
+#: data/content/verify.html:87
+msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgstr ""
+
+#: data/content/verify.html:88 data/content/keys/index.html:67
 msgid "Fedora 24"
 msgstr "Fedora 24"
 
@@ -388,7 +398,7 @@ msgstr "Fedora 24"
 msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr "Fedora 24에서 제공하는 보조 아키텍쳐들(AArch64, PPC64, PPC64le, s390 and s390x)"
 
-#: data/content/verify.html:90 data/content/keys/index.html:67
+#: data/content/verify.html:90 data/content/keys/index.html:88
 msgid "Fedora 23"
 msgstr "Fedora 23"
 
@@ -396,7 +406,7 @@ msgstr "Fedora 23"
 msgid "Fedora 23 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr "Fedora 23에서 제공하는 보조 아키텍쳐들(AArch64, PPC64, PPC64le, s390 and s390x)"
 
-#: data/content/verify.html:92 data/content/keys/index.html:88
+#: data/content/verify.html:92 data/content/keys/index.html:109
 msgid "Fedora 22"
 msgstr "Fedora 22"
 
@@ -404,29 +414,21 @@ msgstr "Fedora 22"
 msgid "Fedora 22 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr "Fedora 22에서 제공하는 보조 아키텍쳐들(AArch64, PPC64, PPC64le, s390 and s390x)"
 
-#: data/content/verify.html:94 data/content/keys/index.html:109
-msgid "Fedora 21"
-msgstr "Fedora 21"
-
 #: data/content/verify.html:95
-msgid "Fedora 21 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr "Fedora 21에서 제공하는 보조 아키텍쳐들(AArch64, PPC64, PPC64le, s390 and s390x)"
-
-#: data/content/verify.html:97
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
 msgstr "이제 CHECKSUM 파일이 검증되었으니, 이미지의 체크섬과 일치하는지 확인하세요:"
 
-#: data/content/verify.html:99
+#: data/content/verify.html:97
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr "파일이 유효하다고 출력된다면, 사용하실 수 있습니다!"
 
-#: data/content/verify.html:100
+#: data/content/verify.html:98
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr "다른 운영체제에 다운로드한 ISO파일을 어떻게 검증하나요?"
 
-#: data/content/verify.html:101
+#: data/content/verify.html:99
 msgid "Read these instructions to validate your image."
 msgstr "검증을 위해서는 다음 설명서를 참조하세요."
 
@@ -496,6 +498,8 @@ msgid ""
 "out a handful of containers, or scaling up to meet incredible demand, you "
 "can do it with Fedora Atomic Host."
 msgstr ""
+"쉽고 유연한 어플리케이션 사용을 원하시나요? Fedora Atomic Host는 창의적인 Docker 컨테이너 실행에 최적화되어있습니다."
+" 다수의 컨테이너의 실행 또는 엄청난 수요를 감당하기 위한 확장도 Fedora Atomic Host 를 통해 이루어질 수 있습니다."
 
 #: data/content/cloud/index.html:97
 msgid "Project Atomic inside"
@@ -507,8 +511,8 @@ msgid ""
 "system. Now you can update and roll back with confidence and minimal "
 "downtime."
 msgstr ""
-"새로운 Project Atomic 업데이트 시스템은 운영체제에 git과 같이 작동합니다. 이제  당당하게 최소한의 소요시간으로 업데이트 "
-"또는  롤백할 수 있습니다."
+"새로운 Project Atomic 업데이트 시스템은 운영체제에 git과 같이 작동합니다. 이제  최소한의 소요시간으로 업데이트 또는  "
+"롤백할 수 있습니다."
 
 #: data/content/cloud/index.html:120 data/content/cloud/index.html:125
 msgid "Ready to give Fedora Cloud a try?"
@@ -531,73 +535,73 @@ msgstr "Fedora %(rel)s 클라우드를 다운로드"
 #: data/content/cloud/download/atomic.html:35
 #: data/content/cloud/download/docker.html:35
 #: data/content/cloud/download/index.html:35
-#: data/content/cloud/prerelease/atomic.html:34
-#: data/content/cloud/prerelease/docker.html:34
-#: data/content/cloud/prerelease/index.html:34
 msgid "There are two main versions of Fedora Cloud available:"
 msgstr "Fedora 클라우드는 두가지의 버전이 있습니다:"
 
 #: data/content/cloud/download/atomic.html:37
 #: data/content/cloud/download/docker.html:37
 #: data/content/cloud/download/index.html:37
-#: data/content/cloud/prerelease/atomic.html:36
-#: data/content/cloud/prerelease/docker.html:36
-#: data/content/cloud/prerelease/index.html:36
 msgid "<a href=\"index.html\">Base images</a> suitable for creating VMs."
 msgstr "<a href=\"index.html\">Base images</a>은 VM제작에 적합합니다."
 
-#: data/content/cloud/download/atomic.html:38
-#: data/content/cloud/download/docker.html:38
-#: data/content/cloud/download/index.html:38
-#: data/content/cloud/prerelease/atomic.html:37
-#: data/content/cloud/prerelease/docker.html:37
-#: data/content/cloud/prerelease/index.html:37
-msgid ""
-"<a href=\"atomic.html\">Atomic images</a> for creating hosts for container "
-"deployment."
-msgstr "<a href=\"atomic.html\">Atomic images</a>로 컨테이너를 위한 호스트를 제작할 수 있습니다."
-
-#: data/content/cloud/download/atomic.html:58
-#: data/content/cloud/download/docker.html:58
-#: data/content/cloud/download/index.html:58
-#: data/content/cloud/prerelease/atomic.html:57
-#: data/content/cloud/prerelease/docker.html:57
-#: data/content/cloud/prerelease/index.html:57
+#: data/content/cloud/download/atomic.html:59
+#: data/content/cloud/download/docker.html:59
+#: data/content/cloud/download/index.html:59
+#: data/content/cloud/prerelease/docker.html:58
+#: data/content/cloud/prerelease/index.html:58
 msgid "Base Images"
 msgstr "베이스 이미지"
 
-#: data/content/cloud/download/atomic.html:59
-#: data/content/cloud/download/atomic.html:71
-#: data/content/cloud/download/docker.html:59
-#: data/content/cloud/download/index.html:59
-#: data/content/cloud/prerelease/atomic.html:58
-#: data/content/cloud/prerelease/docker.html:58
-#: data/content/cloud/prerelease/index.html:58
-msgid "Atomic Images"
-msgstr "Atomic 이미지"
-
-#: data/content/cloud/download/atomic.html:60
-#: data/content/cloud/download/docker.html:60
-#: data/content/cloud/download/docker.html:71
-#: data/content/cloud/download/index.html:60
-#: data/content/cloud/prerelease/atomic.html:59
-#: data/content/cloud/prerelease/docker.html:59
-#: data/content/cloud/prerelease/index.html:59
+#: data/content/cloud/download/atomic.html:61
+#: data/content/cloud/download/docker.html:61
+#: data/content/cloud/download/docker.html:72
+#: data/content/cloud/download/index.html:61
+#: data/content/cloud/prerelease/docker.html:60
+#: data/content/cloud/prerelease/index.html:60
 msgid "Docker Image"
 msgstr "Docker 이미지"
 
 #: data/content/cloud/download/atomic.html:72
-#: data/content/cloud/prerelease/atomic.html:80
-msgid ""
-"The images on this page are Fedora Atomic Host images. These are "
-"specifically tailored for use with containers only. Use these images to "
-"deploy containers."
-msgstr ""
-"이 페이지의 이미지는 Fedora Atomic Host 이미지들입니다. 이 이미지들은 컨터이너 사용만을 위해 세밀히 조정되어 있습니다. "
-"컨테이너를 사용하기 위해 이 이미지들을 사용하세요."
+msgid "Atomic Host Images"
+msgstr "Atomic Host 이미지"
 
 #: data/content/cloud/download/atomic.html:73
-#: data/content/cloud/prerelease/atomic.html:81
+msgid ""
+"Fedora Atomic Host is a leading edge base operating system following the "
+"Project Atomic model.  It is designed around Kubernetes and Docker "
+"containers.  The images published here showcase that work. Note that the "
+"images have passed several levels of automated testing, but are not always "
+"subjected to manual testing by the QA team."
+msgstr ""
+"Fedora Atomic Host는  Kubernetes와 Docker 컨테이너를 위해 설계된 Project Atomic모델에 부합하는 "
+"최고의 엣지 기반 운영체제 이며 여기에 배포된 이미지들은 그 노력을 반증합니다. 본 이미지들은 여러 자동화된 시험을 통과했지만, 항상 "
+"QA팀에 의한 수동 검증이 이루어 지지 않는다는 점을 유의해주세요."
+
+#: data/content/cloud/download/atomic.html:74
+#, python-format
+msgid ""
+"Please test before using new versions in production. If you do discover a "
+"problem, the Atomic Host tools make it easy to flip back to an earlier "
+"release — and if that happens, please also help us by <a href=\"%s\">filing "
+"bugs</a> or <a href=\"%s\">submitting fixes</a>."
+msgstr ""
+
+#: data/content/cloud/download/atomic.html:75
+msgid ""
+"Fedora Atomic Host images are updated roughly every two weeks, rather than "
+"on the main six-month Fedora cadence. Because development is moving quickly,"
+" only the latest major Fedora release is supported."
+msgstr ""
+
+#: data/content/cloud/download/atomic.html:76
+#, python-format
+msgid ""
+"Note that different Fedora Atomic Host media are subject to different levels"
+" of automatic testing. We are making continuous improvements to these tests;"
+" <a href=\"%s\">click here</a> to see the current test status."
+msgstr ""
+
+#: data/content/cloud/download/atomic.html:77
 #, python-format
 msgid ""
 "You can learn more about the Atomic project at <a "
@@ -605,25 +609,37 @@ msgid ""
 msgstr ""
 "Atomic 프로젝트에 대한 자세한 사항은 <a href=\"%s\">projectatomic.io</a>에서 확인하실 수 있습니다."
 
-#: data/content/cloud/download/atomic.html:74
-#: data/content/cloud/prerelease/atomic.html:82
-msgid "Atomic Image"
-msgstr "Atomic 이미지"
+#: data/content/cloud/download/atomic.html:78
+#, python-format
+msgid ""
+"The latest two week build did not meet our testing criteria. The images "
+"available are from over %(atomic_age)s days ago. Check the Project Atomic "
+"blog for updates and information about Atomic blocker bugs."
+msgstr ""
+
+#: data/content/cloud/download/atomic.html:79
+#, python-format
+msgid ""
+"These are the latest official Fedora Atomic Host images, produced "
+"%(atomic_age)s days ago."
+msgstr ""
 
 #: data/content/cloud/download/atomic.html:80
-#: data/content/cloud/download/atomic.html:96
-#: data/content/cloud/download/index.html:79
-#: data/content/cloud/download/index.html:95
-#: data/content/cloud/prerelease/atomic.html:88
-#: data/content/cloud/prerelease/atomic.html:104
-#: data/content/cloud/prerelease/index.html:87
-#: data/content/cloud/prerelease/index.html:103
+msgid "Atomic Host Image"
+msgstr ""
+
+#: data/content/cloud/download/atomic.html:86
+#: data/content/cloud/download/atomic.html:102
+#: data/content/cloud/download/index.html:80
+#: data/content/cloud/download/index.html:96
+#: data/content/cloud/prerelease/index.html:88
+#: data/content/cloud/prerelease/index.html:104
 msgid "qcow2 Image"
 msgstr "qcow2 이미지"
 
-#: data/content/cloud/download/atomic.html:81
-#: data/content/cloud/download/atomic.html:97
-#, fuzzy, python-format
+#: data/content/cloud/download/atomic.html:87
+#: data/content/cloud/download/atomic.html:103
+#, python-format
 msgid ""
 "This is Fedora %(rel)s Cloud Atomic Host in a Qcow2-formatted image for use "
 "with OpenStack."
@@ -631,24 +647,20 @@ msgstr ""
 "This is Fedora %(rel)s Cloud Atomic Host in a Qcow2-formatted image for use "
 "with OpenStack."
 
-#: data/content/cloud/download/atomic.html:82
 #: data/content/cloud/download/atomic.html:88
-#: data/content/cloud/download/atomic.html:106
-#: data/content/cloud/download/atomic.html:110
-#: data/content/cloud/download/docker.html:82
-#: data/content/cloud/download/index.html:81
-#: data/content/cloud/download/index.html:87
-#: data/content/cloud/download/index.html:105
-#: data/content/cloud/download/index.html:109
-#: data/content/cloud/prerelease/atomic.html:90
-#: data/content/cloud/prerelease/atomic.html:96
-#: data/content/cloud/prerelease/atomic.html:114
-#: data/content/cloud/prerelease/atomic.html:118
-#: data/content/cloud/prerelease/docker.html:90
-#: data/content/cloud/prerelease/index.html:89
-#: data/content/cloud/prerelease/index.html:95
-#: data/content/cloud/prerelease/index.html:113
-#: data/content/cloud/prerelease/index.html:117
+#: data/content/cloud/download/atomic.html:94
+#: data/content/cloud/download/atomic.html:112
+#: data/content/cloud/download/atomic.html:116
+#: data/content/cloud/download/docker.html:83
+#: data/content/cloud/download/index.html:82
+#: data/content/cloud/download/index.html:88
+#: data/content/cloud/download/index.html:106
+#: data/content/cloud/download/index.html:110
+#: data/content/cloud/prerelease/docker.html:91
+#: data/content/cloud/prerelease/index.html:90
+#: data/content/cloud/prerelease/index.html:96
+#: data/content/cloud/prerelease/index.html:114
+#: data/content/cloud/prerelease/index.html:118
 #: data/content/server/download/index.html:33
 #: data/content/server/prerelease/index.html:18
 #: data/content/workstation/download/index.html:39
@@ -657,32 +669,28 @@ msgstr ""
 msgid "Download"
 msgstr "다운로드"
 
-#: data/content/cloud/download/atomic.html:83
-#: data/content/cloud/download/atomic.html:107
-#: data/content/cloud/download/index.html:82
-#: data/content/cloud/download/index.html:106
-#: data/content/cloud/prerelease/atomic.html:91
-#: data/content/cloud/prerelease/atomic.html:115
-#: data/content/cloud/prerelease/index.html:90
-#: data/content/cloud/prerelease/index.html:114
+#: data/content/cloud/download/atomic.html:89
+#: data/content/cloud/download/atomic.html:113
+#: data/content/cloud/download/index.html:83
+#: data/content/cloud/download/index.html:107
+#: data/content/cloud/prerelease/index.html:91
+#: data/content/cloud/prerelease/index.html:115
 #, python-format
 msgid "64-bit %sMB Qcow2 Image"
 msgstr "64비트 %sMB Qcow2 이미지"
 
-#: data/content/cloud/download/atomic.html:86
-#: data/content/cloud/download/atomic.html:100
-#: data/content/cloud/download/index.html:85
-#: data/content/cloud/download/index.html:99
-#: data/content/cloud/prerelease/atomic.html:94
-#: data/content/cloud/prerelease/atomic.html:108
-#: data/content/cloud/prerelease/index.html:93
-#: data/content/cloud/prerelease/index.html:107
+#: data/content/cloud/download/atomic.html:92
+#: data/content/cloud/download/atomic.html:106
+#: data/content/cloud/download/index.html:86
+#: data/content/cloud/download/index.html:100
+#: data/content/cloud/prerelease/index.html:94
+#: data/content/cloud/prerelease/index.html:108
 msgid "Raw Image"
 msgstr "RAW 이미지"
 
-#: data/content/cloud/download/atomic.html:87
-#: data/content/cloud/download/atomic.html:101
-#, fuzzy, python-format
+#: data/content/cloud/download/atomic.html:93
+#: data/content/cloud/download/atomic.html:107
+#, python-format
 msgid ""
 "This is Fedora %(rel)s Cloud Atomic Host in a compressed raw image format. "
 "If you're not sure what to use, try this."
@@ -690,172 +698,132 @@ msgstr ""
 "Fedora %(rel)s 클라우드 Atomic 호스트가 raw 이미지 형식으로 압축되어 있습니다. 무엇을 사용할지 모르겠다면, 이것을 "
 "사용하세요."
 
-#: data/content/cloud/download/atomic.html:89
-#: data/content/cloud/download/atomic.html:111
-#: data/content/cloud/download/index.html:88
-#: data/content/cloud/download/index.html:110
-#: data/content/cloud/prerelease/atomic.html:97
-#: data/content/cloud/prerelease/atomic.html:119
-#: data/content/cloud/prerelease/index.html:96
-#: data/content/cloud/prerelease/index.html:118
+#: data/content/cloud/download/atomic.html:95
+#: data/content/cloud/download/atomic.html:117
+#: data/content/cloud/download/index.html:89
+#: data/content/cloud/download/index.html:111
+#: data/content/cloud/prerelease/index.html:97
+#: data/content/cloud/prerelease/index.html:119
 #, python-format
 msgid "64-bit %sMB xz-Compressed Raw Image"
 msgstr "압축된 64비트 %sMB Qcow2 RAW 이미지"
 
-#: data/content/cloud/download/atomic.html:119
-#: data/content/cloud/prerelease/atomic.html:127
-msgid "Atomic Images for Vagrant"
-msgstr "Vagrant용 Atomic"
+#: data/content/cloud/download/atomic.html:125
+msgid "Atomic Host Images for Vagrant"
+msgstr ""
 
-#: data/content/cloud/download/atomic.html:120
-#: data/content/cloud/download/index.html:119
-#: data/content/cloud/prerelease/atomic.html:128
-#: data/content/cloud/prerelease/index.html:127
+#: data/content/cloud/download/atomic.html:126
+#: data/content/cloud/download/index.html:120
 msgid "These images are Vagrant Boxes images for deployment using Vagrant."
 msgstr "이 이미지들은 Vagrant사용을 위한 Vagrant Boxes 이미지들 입니다."
 
-#: data/content/cloud/download/atomic.html:126
-#: data/content/cloud/download/atomic.html:128
-#: data/content/cloud/download/atomic.html:142
-#: data/content/cloud/download/atomic.html:152
-#: data/content/cloud/download/index.html:125
-#: data/content/cloud/download/index.html:127
-#: data/content/cloud/download/index.html:141
-#: data/content/cloud/download/index.html:151
-#: data/content/cloud/prerelease/atomic.html:134
-#: data/content/cloud/prerelease/atomic.html:136
-#: data/content/cloud/prerelease/atomic.html:150
-#: data/content/cloud/prerelease/atomic.html:160
-#: data/content/cloud/prerelease/index.html:133
-#: data/content/cloud/prerelease/index.html:135
-#: data/content/cloud/prerelease/index.html:149
-#: data/content/cloud/prerelease/index.html:159
+#: data/content/cloud/download/atomic.html:132
+#: data/content/cloud/download/atomic.html:134
+#: data/content/cloud/download/atomic.html:148
+#: data/content/cloud/download/atomic.html:158
+#: data/content/cloud/download/index.html:126
+#: data/content/cloud/download/index.html:128
+#: data/content/cloud/download/index.html:142
+#: data/content/cloud/download/index.html:152
 msgid "VirtualBox Image"
 msgstr "가상머신 이미지"
 
-#: data/content/cloud/download/atomic.html:127
-#: data/content/cloud/download/atomic.html:143
-#: data/content/cloud/download/index.html:126
-#: data/content/cloud/download/index.html:142
-#: data/content/cloud/prerelease/atomic.html:135
-#: data/content/cloud/prerelease/atomic.html:151
-#: data/content/cloud/prerelease/index.html:134
-#: data/content/cloud/prerelease/index.html:150
+#: data/content/cloud/download/atomic.html:133
+#: data/content/cloud/download/atomic.html:149
+#: data/content/cloud/download/index.html:127
+#: data/content/cloud/download/index.html:143
 msgid ""
 "If you're using Vagrant on Mac OS X or Windows, this is likely the image "
 "you'll want to use."
 msgstr "Mac OS X 또는 Windows에서 Vagrant를 사용하고 계시다면, 이 이미지를 사용하세요."
 
-#: data/content/cloud/download/atomic.html:129
-#: data/content/cloud/download/atomic.html:153
-#: data/content/cloud/prerelease/atomic.html:137
-#: data/content/cloud/prerelease/atomic.html:161
+#: data/content/cloud/download/atomic.html:135
+#: data/content/cloud/download/atomic.html:159
 #, python-format
-msgid "64-bit %sMB VirtualBox Atomic Vagrant Image"
-msgstr "64-bit %sMB VirtualBox Atomic Vagrant 이미지"
+msgid "64-bit %sMB VirtualBox Atomic Host Vagrant Image"
+msgstr ""
 
-#: data/content/cloud/download/atomic.html:132
-#: data/content/cloud/download/atomic.html:134
-#: data/content/cloud/download/atomic.html:146
-#: data/content/cloud/download/atomic.html:156
-#: data/content/cloud/download/index.html:131
-#: data/content/cloud/download/index.html:133
-#: data/content/cloud/download/index.html:145
-#: data/content/cloud/download/index.html:155
-#: data/content/cloud/prerelease/atomic.html:140
-#: data/content/cloud/prerelease/atomic.html:142
-#: data/content/cloud/prerelease/atomic.html:154
-#: data/content/cloud/prerelease/atomic.html:164
-#: data/content/cloud/prerelease/index.html:139
-#: data/content/cloud/prerelease/index.html:141
-#: data/content/cloud/prerelease/index.html:153
-#: data/content/cloud/prerelease/index.html:163
+#: data/content/cloud/download/atomic.html:138
+#: data/content/cloud/download/atomic.html:140
+#: data/content/cloud/download/atomic.html:152
+#: data/content/cloud/download/atomic.html:162
+#: data/content/cloud/download/index.html:132
+#: data/content/cloud/download/index.html:134
+#: data/content/cloud/download/index.html:146
+#: data/content/cloud/download/index.html:156
 msgid "libvirt/KVM Image"
 msgstr "libvirt/KVM 이미지"
 
-#: data/content/cloud/download/atomic.html:133
-#: data/content/cloud/download/atomic.html:147
-#: data/content/cloud/download/index.html:132
-#: data/content/cloud/download/index.html:146
-#: data/content/cloud/prerelease/atomic.html:141
-#: data/content/cloud/prerelease/atomic.html:155
-#: data/content/cloud/prerelease/index.html:140
-#: data/content/cloud/prerelease/index.html:154
+#: data/content/cloud/download/atomic.html:139
+#: data/content/cloud/download/atomic.html:153
+#: data/content/cloud/download/index.html:133
+#: data/content/cloud/download/index.html:147
 msgid ""
 "If you're using Vagrant on Fedora, this is the image you'll want to use."
 msgstr "Fedora에서 Vagrant를 사용하고 계시다면, 이 이미지를 사용하세요."
 
-#: data/content/cloud/download/atomic.html:135
-#: data/content/cloud/download/atomic.html:157
-#: data/content/cloud/prerelease/atomic.html:143
-#: data/content/cloud/prerelease/atomic.html:165
+#: data/content/cloud/download/atomic.html:141
+#: data/content/cloud/download/atomic.html:163
 #, python-format
-msgid "64-bit %sMB libvirt/KVM Atomic Vagrant Image"
-msgstr "64-bit %sMB libvirt/KVM Atomic Vagrant 이미지"
+msgid "64-bit %sMB libvirt/KVM Atomic Host Vagrant Image"
+msgstr ""
 
-#: data/content/cloud/download/atomic.html:166
-#: data/content/cloud/prerelease/atomic.html:174
-msgid "Atomic Cloud Images for Amazon Public Cloud EC2"
-msgstr "Amazon Public Cloud EC2용 Atomic Cloud 이미지"
+#: data/content/cloud/download/atomic.html:172
+msgid "Atomic Host Cloud Images for Amazon Public Cloud EC2"
+msgstr ""
 
-#: data/content/cloud/download/atomic.html:167
-#: data/content/cloud/download/index.html:166
-#: data/content/cloud/prerelease/atomic.html:175
-#: data/content/cloud/prerelease/index.html:174
+#: data/content/cloud/download/atomic.html:173
+#: data/content/cloud/download/index.html:167
+#: data/content/cloud/prerelease/index.html:173
 msgid ""
 "The links below will provide you listings of available AMIs by region with "
 "buttons to launch them in your Amazon Web Services account. AMI IDs for "
 "usage with the AWS Console or command-line tools are also provided."
 msgstr ""
 
-#: data/content/cloud/download/atomic.html:168
-#: data/content/cloud/download/index.html:167
-#: data/content/cloud/prerelease/atomic.html:176
-#: data/content/cloud/prerelease/index.html:175
+#: data/content/cloud/download/atomic.html:174
+#: data/content/cloud/download/index.html:168
+#: data/content/cloud/prerelease/index.html:174
 msgid ""
 "All images are available in two formats: a GP2 format which uses faster SSD "
 "storage, and a standard format which is more suitable if you have "
 "infrequently accessed data and you want to keep storage cost low."
 msgstr ""
 
-#: data/content/cloud/download/atomic.html:173
-#: data/content/cloud/download/index.html:173
-#: data/content/cloud/download/index.html:302
-#: data/content/cloud/prerelease/atomic.html:181
-#: data/content/cloud/prerelease/index.html:181
-#: data/content/cloud/prerelease/index.html:310
+#: data/content/cloud/download/atomic.html:179
+#: data/content/cloud/download/index.html:174
+#: data/content/cloud/download/index.html:303
+#: data/content/cloud/prerelease/index.html:180
+#: data/content/cloud/prerelease/index.html:309
 msgid "Hardware Virtual Machine (HVM)"
 msgstr "하드웨어 가상 머신 (HVM)"
 
-#: data/content/cloud/download/atomic.html:176
-#: data/content/cloud/download/index.html:176
-#: data/content/cloud/download/index.html:313
-#: data/content/cloud/prerelease/atomic.html:184
-#: data/content/cloud/prerelease/index.html:184
-#: data/content/cloud/prerelease/index.html:321
+#: data/content/cloud/download/atomic.html:182
+#: data/content/cloud/download/index.html:177
+#: data/content/cloud/download/index.html:314
+#: data/content/cloud/prerelease/index.html:183
+#: data/content/cloud/prerelease/index.html:320
 msgid "GP2 HVM AMIs"
 msgstr "GP2 HVM AMIs"
 
-#: data/content/cloud/download/atomic.html:181
-#: data/content/cloud/download/atomic.html:209
-#: data/content/cloud/download/index.html:181
-#: data/content/cloud/download/index.html:211
-#: data/content/cloud/download/index.html:244
-#: data/content/cloud/download/index.html:274
-#: data/content/cloud/download/index.html:318
-#: data/content/cloud/download/index.html:346
-#: data/content/cloud/download/index.html:378
-#: data/content/cloud/download/index.html:406
-#: data/content/cloud/prerelease/atomic.html:189
-#: data/content/cloud/prerelease/atomic.html:217
-#: data/content/cloud/prerelease/index.html:189
-#: data/content/cloud/prerelease/index.html:219
-#: data/content/cloud/prerelease/index.html:252
-#: data/content/cloud/prerelease/index.html:282
-#: data/content/cloud/prerelease/index.html:326
-#: data/content/cloud/prerelease/index.html:354
-#: data/content/cloud/prerelease/index.html:386
-#: data/content/cloud/prerelease/index.html:414
+#: data/content/cloud/download/atomic.html:187
+#: data/content/cloud/download/atomic.html:215
+#: data/content/cloud/download/index.html:182
+#: data/content/cloud/download/index.html:212
+#: data/content/cloud/download/index.html:245
+#: data/content/cloud/download/index.html:275
+#: data/content/cloud/download/index.html:319
+#: data/content/cloud/download/index.html:347
+#: data/content/cloud/download/index.html:379
+#: data/content/cloud/download/index.html:407
+#: data/content/cloud/prerelease/index.html:188
+#: data/content/cloud/prerelease/index.html:218
+#: data/content/cloud/prerelease/index.html:251
+#: data/content/cloud/prerelease/index.html:281
+#: data/content/cloud/prerelease/index.html:325
+#: data/content/cloud/prerelease/index.html:353
+#: data/content/cloud/prerelease/index.html:385
+#: data/content/cloud/prerelease/index.html:413
 #: data/templates/keys/key-button-and-modal-obsolete.html:37
 #: data/templates/keys/key-button-and-modal-obsolete.html:88
 #: data/templates/keys/key-button-and-modal.html:37
@@ -863,37 +831,13 @@ msgstr "GP2 HVM AMIs"
 msgid "Close"
 msgstr "닫기"
 
-#: data/content/cloud/download/atomic.html:182
-#, python-format
-msgid "Fedora %(rel)s GP2 Atomic Cloud HVM AMIs"
-msgstr "Fedora %(rel)s GP2 Atomic Cloud HVM AMIs"
-
-#: data/content/cloud/download/atomic.html:187
-#: data/content/cloud/download/atomic.html:215
-#: data/content/cloud/download/index.html:187
-#: data/content/cloud/download/index.html:217
-#: data/content/cloud/download/index.html:250
-#: data/content/cloud/download/index.html:280
-#: data/content/cloud/download/index.html:324
-#: data/content/cloud/download/index.html:352
-#: data/content/cloud/download/index.html:384
-#: data/content/cloud/download/index.html:412
-#: data/content/cloud/prerelease/atomic.html:195
-#: data/content/cloud/prerelease/atomic.html:223
-#: data/content/cloud/prerelease/index.html:195
-#: data/content/cloud/prerelease/index.html:225
-#: data/content/cloud/prerelease/index.html:258
-#: data/content/cloud/prerelease/index.html:288
-#: data/content/cloud/prerelease/index.html:332
-#: data/content/cloud/prerelease/index.html:360
-#: data/content/cloud/prerelease/index.html:392
-#: data/content/cloud/prerelease/index.html:420
-#: data/templates/cloud-tab.html:13
-msgid "Region"
-msgstr "지역"
-
 #: data/content/cloud/download/atomic.html:188
-#: data/content/cloud/download/atomic.html:216
+#, python-format
+msgid "Fedora %(rel)s GP2 Atomic Host Cloud HVM AMIs"
+msgstr ""
+
+#: data/content/cloud/download/atomic.html:193
+#: data/content/cloud/download/atomic.html:221
 #: data/content/cloud/download/index.html:188
 #: data/content/cloud/download/index.html:218
 #: data/content/cloud/download/index.html:251
@@ -902,22 +846,20 @@ msgstr "지역"
 #: data/content/cloud/download/index.html:353
 #: data/content/cloud/download/index.html:385
 #: data/content/cloud/download/index.html:413
-#: data/content/cloud/prerelease/atomic.html:196
-#: data/content/cloud/prerelease/atomic.html:224
-#: data/content/cloud/prerelease/index.html:196
-#: data/content/cloud/prerelease/index.html:226
-#: data/content/cloud/prerelease/index.html:259
-#: data/content/cloud/prerelease/index.html:289
-#: data/content/cloud/prerelease/index.html:333
-#: data/content/cloud/prerelease/index.html:361
-#: data/content/cloud/prerelease/index.html:393
-#: data/content/cloud/prerelease/index.html:421
-#: data/templates/cloud-tab.html:16
-msgid "AMI ID"
-msgstr "AMI ID"
+#: data/content/cloud/prerelease/index.html:194
+#: data/content/cloud/prerelease/index.html:224
+#: data/content/cloud/prerelease/index.html:257
+#: data/content/cloud/prerelease/index.html:287
+#: data/content/cloud/prerelease/index.html:331
+#: data/content/cloud/prerelease/index.html:359
+#: data/content/cloud/prerelease/index.html:391
+#: data/content/cloud/prerelease/index.html:419
+#: data/templates/cloud-tab.html:13
+msgid "Region"
+msgstr "지역"
 
-#: data/content/cloud/download/atomic.html:189
-#: data/content/cloud/download/atomic.html:217
+#: data/content/cloud/download/atomic.html:194
+#: data/content/cloud/download/atomic.html:222
 #: data/content/cloud/download/index.html:189
 #: data/content/cloud/download/index.html:219
 #: data/content/cloud/download/index.html:252
@@ -926,69 +868,104 @@ msgstr "AMI ID"
 #: data/content/cloud/download/index.html:354
 #: data/content/cloud/download/index.html:386
 #: data/content/cloud/download/index.html:414
-#: data/content/cloud/prerelease/atomic.html:197
-#: data/content/cloud/prerelease/atomic.html:225
-#: data/content/cloud/prerelease/index.html:197
-#: data/content/cloud/prerelease/index.html:227
-#: data/content/cloud/prerelease/index.html:260
-#: data/content/cloud/prerelease/index.html:290
-#: data/content/cloud/prerelease/index.html:334
-#: data/content/cloud/prerelease/index.html:362
-#: data/content/cloud/prerelease/index.html:394
-#: data/content/cloud/prerelease/index.html:422
+#: data/content/cloud/prerelease/index.html:195
+#: data/content/cloud/prerelease/index.html:225
+#: data/content/cloud/prerelease/index.html:258
+#: data/content/cloud/prerelease/index.html:288
+#: data/content/cloud/prerelease/index.html:332
+#: data/content/cloud/prerelease/index.html:360
+#: data/content/cloud/prerelease/index.html:392
+#: data/content/cloud/prerelease/index.html:420
+#: data/templates/cloud-tab.html:16
+msgid "AMI ID"
+msgstr "AMI ID"
+
+#: data/content/cloud/download/atomic.html:195
+#: data/content/cloud/download/atomic.html:223
+#: data/content/cloud/download/index.html:190
+#: data/content/cloud/download/index.html:220
+#: data/content/cloud/download/index.html:253
+#: data/content/cloud/download/index.html:283
+#: data/content/cloud/download/index.html:327
+#: data/content/cloud/download/index.html:355
+#: data/content/cloud/download/index.html:387
+#: data/content/cloud/download/index.html:415
+#: data/content/cloud/prerelease/index.html:196
+#: data/content/cloud/prerelease/index.html:226
+#: data/content/cloud/prerelease/index.html:259
+#: data/content/cloud/prerelease/index.html:289
+#: data/content/cloud/prerelease/index.html:333
+#: data/content/cloud/prerelease/index.html:361
+#: data/content/cloud/prerelease/index.html:393
+#: data/content/cloud/prerelease/index.html:421
 #: data/templates/cloud-tab.html:17
 msgid "Launch"
 msgstr "실행"
 
-#: data/content/cloud/download/atomic.html:204
-#: data/content/cloud/download/index.html:206
-#: data/content/cloud/download/index.html:341
-#: data/content/cloud/prerelease/atomic.html:212
-#: data/content/cloud/prerelease/index.html:214
-#: data/content/cloud/prerelease/index.html:349
+#: data/content/cloud/download/atomic.html:210
+#: data/content/cloud/download/index.html:207
+#: data/content/cloud/download/index.html:342
+#: data/content/cloud/prerelease/index.html:213
+#: data/content/cloud/prerelease/index.html:348
 msgid "Standard HVM AMIs"
 msgstr "표준 HVM AMI"
 
-#: data/content/cloud/download/atomic.html:210
+#: data/content/cloud/download/atomic.html:216
 #, python-format
-msgid "Fedora %(rel)s Standard Atomic Cloud HVM AMIs"
-msgstr "Fedora %(rel)s 표준 Atomic 클라우드 HVM AMI"
+msgid "Fedora %(rel)s Standard Atomic Host Cloud HVM AMIs"
+msgstr ""
 
-#: data/content/cloud/download/atomic.html:241
-#: data/content/cloud/download/index.html:439
-#: data/content/cloud/prerelease/atomic.html:293
+#: data/content/cloud/download/atomic.html:247
 #: data/content/server/download/index.html:50
-#: data/content/server/prerelease/index.html:76
+#: data/content/server/prerelease/index.html:73
 #: data/content/workstation/download/index.html:57
 #: data/content/workstation/prerelease/index.html:75
 msgid "Other Downloads"
 msgstr "다른 다운로드"
 
-#: data/content/cloud/download/atomic.html:243
-#: data/content/cloud/prerelease/atomic.html:295
-msgid "Atomic Image:"
-msgstr "Atomic 이미지:"
-
-#: data/content/cloud/download/atomic.html:245
-#: data/content/cloud/prerelease/atomic.html:297
-msgid "64-bit Atomic ISO image"
-msgstr "64-비트 Atomic ISO 이미지 "
+#: data/content/cloud/download/atomic.html:249
+msgid "Atomic Host Image:"
+msgstr ""
 
 #: data/content/cloud/download/atomic.html:251
-#: data/content/cloud/download/atomic.html:255
-#: data/content/cloud/download/docker.html:95
-#: data/content/cloud/download/docker.html:99
-#: data/content/cloud/download/index.html:450
-#: data/content/cloud/download/index.html:454
-#: data/content/server/download/index.html:67
-#: data/content/server/download/index.html:71
+msgid "64-bit Atomic Host ISO image"
+msgstr ""
+
+#: data/content/cloud/download/atomic.html:257
+#: data/content/cloud/download/atomic.html:261
+#: data/content/cloud/download/docker.html:96
+#: data/content/cloud/download/docker.html:100
+#: data/content/cloud/download/index.html:452
+#: data/content/cloud/download/index.html:456
+#: data/content/server/download/index.html:60
+#: data/content/server/download/index.html:64
 #: data/content/workstation/download/index.html:69
 #: data/content/workstation/download/index.html:73
 #, python-format
 msgid "Try Fedora %(rel)s %(state)s"
 msgstr "Fedora %(rel)s %(state)s 를 사용해보세요"
 
-#: data/content/cloud/download/docker.html:72
+#: data/content/cloud/download/atomic.html:268
+#: data/content/cloud/download/docker.html:107
+#: data/content/cloud/download/index.html:463
+#: data/content/server/download/index.html:81
+#: data/content/workstation/download/index.html:94
+msgid "Verify"
+msgstr ""
+
+#: data/content/cloud/download/atomic.html:271
+#: data/content/cloud/download/docker.html:110
+#: data/content/cloud/download/index.html:466
+#: data/content/cloud/prerelease/docker.html:128
+#: data/content/cloud/prerelease/index.html:474
+#: data/content/server/download/index.html:84
+#: data/content/server/prerelease/index.html:63
+#: data/content/workstation/download/index.html:97
+#: data/content/workstation/prerelease/index.html:63
+msgid "Verify your Image"
+msgstr "이미지를 검증하세요"
+
+#: data/content/cloud/download/docker.html:73
 msgid ""
 "The Fedora Docker Base Image is a minimal Fedora install which can be "
 "spawned as a Docker container. It contains basic tools which can be used as "
@@ -998,26 +975,26 @@ msgstr ""
 " Fedora Docker Base 이미지는 Docker 컨테이너로써 스폰될 수 있는 최소한의 Fedora 설치 이미지입니다. "
 "Docker 레이어 이미지 빌드를 위한 bash,vi 그리고 dnf(와 종속 패키지들)와 같은 기본적인 도구들을 포함합니다."
 
-#: data/content/cloud/download/docker.html:73
-#: data/content/cloud/prerelease/docker.html:81
+#: data/content/cloud/download/docker.html:74
+#: data/content/cloud/prerelease/docker.html:82
 msgid "Docker Base Image"
 msgstr "Docker 기반 이미지"
 
-#: data/content/cloud/download/docker.html:78
-#: data/content/cloud/prerelease/docker.html:86
+#: data/content/cloud/download/docker.html:79
+#: data/content/cloud/prerelease/docker.html:87
 msgid ""
 "You can easily load this Docker image into your running Docker daemon using "
 "command:"
 msgstr "다음 명령어를 사용하여 실행중인 Docker 데몬에 이 Docker 이미지를 쉽게 로드하실 수 있습니다:"
 
-#: data/content/cloud/download/docker.html:80
-#: data/content/cloud/prerelease/docker.html:88
+#: data/content/cloud/download/docker.html:81
+#: data/content/cloud/prerelease/docker.html:89
 msgid ""
 "Following command can be used to spawn a container running bash inside:"
 msgstr "다음 명령을 통하여 bash가 실행되는 컨테이너를 생성할 수 있습니다."
 
-#: data/content/cloud/download/docker.html:83
-#: data/content/cloud/prerelease/docker.html:91
+#: data/content/cloud/download/docker.html:84
+#: data/content/cloud/prerelease/docker.html:92
 #, python-format
 msgid "64-bit %sMB raw.xz Image"
 msgstr "64-bit %sMB raw.xz 이미지"
@@ -1042,11 +1019,9 @@ msgid "Verify your Download!"
 msgstr "다운로드를 검증하세요!"
 
 #: data/content/cloud/download/download-cloud-splash.html:49
-#: data/content/cloud/prerelease/atomic.html:278
-#: data/content/cloud/prerelease/docker.html:128
-#: data/content/cloud/prerelease/index.html:476
+#: data/content/cloud/prerelease/docker.html:129
+#: data/content/cloud/prerelease/index.html:475
 #: data/content/server/download/server-download-splash.html:44
-#: data/content/server/prerelease/index.html:64
 #: data/content/workstation/download/ws-download-splash.html:49
 #: data/content/workstation/prerelease/index.html:64
 #, python-format
@@ -1059,159 +1034,140 @@ msgstr ""
 
 #: data/content/cloud/download/download-cloud-splash.html:52
 #: data/content/server/download/server-download-splash.html:47
+#: data/content/server/prerelease/index.html:67
 #: data/content/workstation/download/ws-download-splash.html:52
 msgid "Validate!"
 msgstr "검증!"
 
-#: data/content/cloud/download/index.html:71
+#: data/content/cloud/download/index.html:72
 msgid "Base Cloud Images"
 msgstr "베이스 클라우드 이미지"
 
-#: data/content/cloud/download/index.html:72
-#: data/content/cloud/prerelease/index.html:80
+#: data/content/cloud/download/index.html:73
+#: data/content/cloud/prerelease/index.html:81
 msgid ""
 "The images on this page are Fedora Cloud images for creating general purpose"
 " virtual machines (VMs)."
 msgstr "이 페이지에 있는 이미지들은 다용도 가상머신(VM)제작을 위한 Fedora 클라우드 이미지들입니다. "
 
-#: data/content/cloud/download/index.html:73
-#: data/content/cloud/prerelease/index.html:81
+#: data/content/cloud/download/index.html:74
+#: data/content/cloud/prerelease/index.html:82
 msgid "Base Cloud Image"
 msgstr "베이스 클라우드 이미지"
 
-#: data/content/cloud/download/index.html:80
-#: data/content/cloud/download/index.html:96
+#: data/content/cloud/download/index.html:81
+#: data/content/cloud/download/index.html:97
 #, python-format
 msgid ""
 "This is Fedora %(rel)s Cloud in a Qcow2-formatted image for use with "
 "OpenStack."
 msgstr ""
 
-#: data/content/cloud/download/index.html:86
-#: data/content/cloud/download/index.html:100
-#, fuzzy, python-format
+#: data/content/cloud/download/index.html:87
+#: data/content/cloud/download/index.html:101
+#, python-format
 msgid ""
 "This is Fedora %(rel)s Cloud in a compressed raw image format. If you're not"
 " sure what to use, try this."
 msgstr ""
 
-#: data/content/cloud/download/index.html:118
-#: data/content/cloud/prerelease/index.html:126
+#: data/content/cloud/download/index.html:119
 msgid "Base Cloud Images for Vagrant"
 msgstr ""
 
-#: data/content/cloud/download/index.html:128
-#: data/content/cloud/download/index.html:152
-#: data/content/cloud/prerelease/index.html:136
-#: data/content/cloud/prerelease/index.html:160
+#: data/content/cloud/download/index.html:129
+#: data/content/cloud/download/index.html:153
 #, python-format
 msgid "64-bit %sMB VirtualBox Base Vagrant Image"
 msgstr ""
 
-#: data/content/cloud/download/index.html:134
-#: data/content/cloud/download/index.html:156
-#: data/content/cloud/prerelease/index.html:142
-#: data/content/cloud/prerelease/index.html:164
+#: data/content/cloud/download/index.html:135
+#: data/content/cloud/download/index.html:157
 #, python-format
 msgid "64-bit %sMB libvirt/KVM Base Vagrant Image"
 msgstr ""
 
-#: data/content/cloud/download/index.html:165
-#: data/content/cloud/prerelease/index.html:173
+#: data/content/cloud/download/index.html:166
+#: data/content/cloud/prerelease/index.html:172
 msgid "Base Cloud Images for Amazon Public Cloud EC2"
 msgstr ""
 
-#: data/content/cloud/download/index.html:174
-#: data/content/cloud/download/index.html:303
-#: data/content/cloud/prerelease/index.html:182
-#: data/content/cloud/prerelease/index.html:311
+#: data/content/cloud/download/index.html:175
+#: data/content/cloud/download/index.html:304
+#: data/content/cloud/prerelease/index.html:181
+#: data/content/cloud/prerelease/index.html:310
 msgid ""
 "If you're unsure which image to choose, use this format. It can provide the "
 "same or better performance than PV images."
 msgstr ""
 
-#: data/content/cloud/download/index.html:182
-#: data/content/cloud/download/index.html:319
+#: data/content/cloud/download/index.html:183
+#: data/content/cloud/download/index.html:320
 #, python-format
 msgid "Fedora %(rel)s GP2 Base Cloud HVM AMIs"
 msgstr "Fedora %(rel)s GP2 베이스 클라우드 HVM AMIs"
 
-#: data/content/cloud/download/index.html:212
-#: data/content/cloud/download/index.html:347
+#: data/content/cloud/download/index.html:213
+#: data/content/cloud/download/index.html:348
 #, python-format
 msgid "Fedora %(rel)s Standard Base Cloud HVM AMIs"
 msgstr ""
 
-#: data/content/cloud/download/index.html:236
-#: data/content/cloud/download/index.html:306
-#: data/content/cloud/prerelease/index.html:244
-#: data/content/cloud/prerelease/index.html:314
+#: data/content/cloud/download/index.html:237
+#: data/content/cloud/download/index.html:307
+#: data/content/cloud/prerelease/index.html:243
+#: data/content/cloud/prerelease/index.html:313
 msgid "Paravirtual (PV)"
 msgstr "Paravirtual (PV)"
 
-#: data/content/cloud/download/index.html:237
-#: data/content/cloud/download/index.html:307
-#: data/content/cloud/prerelease/index.html:245
-#: data/content/cloud/prerelease/index.html:315
+#: data/content/cloud/download/index.html:238
+#: data/content/cloud/download/index.html:308
+#: data/content/cloud/prerelease/index.html:244
+#: data/content/cloud/prerelease/index.html:314
 msgid ""
 "If you know you need a paravirtual format image for EC2, use this format."
 msgstr ""
 
-#: data/content/cloud/download/index.html:239
-#: data/content/cloud/download/index.html:373
-#: data/content/cloud/prerelease/index.html:247
-#: data/content/cloud/prerelease/index.html:381
+#: data/content/cloud/download/index.html:240
+#: data/content/cloud/download/index.html:374
+#: data/content/cloud/prerelease/index.html:246
+#: data/content/cloud/prerelease/index.html:380
 msgid "GP2 PV AMIs"
 msgstr "GP2 PV AMIs"
 
-#: data/content/cloud/download/index.html:245
-#: data/content/cloud/download/index.html:379
-#, fuzzy, python-format
+#: data/content/cloud/download/index.html:246
+#: data/content/cloud/download/index.html:380
+#, python-format
 msgid "Fedora %(rel)s GP2 Base Cloud PV AMIs"
 msgstr "Fedora %(rel)s GP2 베이스 클라우드 PV AMIs"
 
-#: data/content/cloud/download/index.html:269
-#: data/content/cloud/download/index.html:401
-#: data/content/cloud/prerelease/index.html:277
-#: data/content/cloud/prerelease/index.html:409
+#: data/content/cloud/download/index.html:270
+#: data/content/cloud/download/index.html:402
+#: data/content/cloud/prerelease/index.html:276
+#: data/content/cloud/prerelease/index.html:408
 msgid "Standard PV AMIs"
 msgstr ""
 
-#: data/content/cloud/download/index.html:275
-#: data/content/cloud/download/index.html:407
+#: data/content/cloud/download/index.html:276
+#: data/content/cloud/download/index.html:408
 #, python-format
 msgid "Fedora %(rel)s Standard Base Cloud PV AMIs"
 msgstr ""
 
-#: data/content/cloud/download/index.html:441
-msgid "Base Images:"
-msgstr "베이스 이미지:"
-
-#: data/content/cloud/download/index.html:443
-msgid "32-bit qcow2 image for OpenStack"
-msgstr ""
-
-#: data/content/cloud/download/index.html:444
-msgid "32-bit raw image"
-msgstr "32-bit raw 이미지"
-
-#: data/content/cloud/prerelease/atomic.html:10
 #: data/content/cloud/prerelease/docker.html:10
 #: data/content/cloud/prerelease/index.html:10
 #, python-format
 msgid "Download Fedora Cloud %s"
 msgstr "Fedora Cloud %s 다운로드"
 
-#: data/content/cloud/prerelease/atomic.html:33
 #: data/content/cloud/prerelease/docker.html:33
 #: data/content/cloud/prerelease/index.html:33
 #, python-format
 msgid "Download Fedora %(rel)s %(state)s Cloud"
 msgstr "Fedora %(rel)s %(state)s 클라우드 다운로드"
 
-#: data/content/cloud/prerelease/atomic.html:70
-#: data/content/cloud/prerelease/docker.html:70
-#: data/content/cloud/prerelease/index.html:70
+#: data/content/cloud/prerelease/docker.html:71
+#: data/content/cloud/prerelease/index.html:71
 #, python-format
 msgid ""
 "This is pre-release software and is supported by the <a "
@@ -1220,9 +1176,8 @@ msgid ""
 "freenode."
 msgstr ""
 
-#: data/content/cloud/prerelease/atomic.html:71
-#: data/content/cloud/prerelease/docker.html:71
-#: data/content/cloud/prerelease/index.html:71
+#: data/content/cloud/prerelease/docker.html:72
+#: data/content/cloud/prerelease/index.html:72
 #: data/content/server/prerelease/index.html:29
 #: data/content/workstation/prerelease/index.html:29
 #, python-format
@@ -1232,12 +1187,10 @@ msgid ""
 "or usefulness."
 msgstr ""
 
-#: data/content/cloud/prerelease/atomic.html:73
-#: data/content/cloud/prerelease/atomic.html:75
-#: data/content/cloud/prerelease/docker.html:73
-#: data/content/cloud/prerelease/docker.html:75
-#: data/content/cloud/prerelease/index.html:73
-#: data/content/cloud/prerelease/index.html:75
+#: data/content/cloud/prerelease/docker.html:74
+#: data/content/cloud/prerelease/docker.html:76
+#: data/content/cloud/prerelease/index.html:74
+#: data/content/cloud/prerelease/index.html:76
 #: data/content/server/prerelease/index.html:31
 #: data/content/server/prerelease/index.html:33
 #: data/content/workstation/prerelease/index.html:31
@@ -1250,116 +1203,12 @@ msgid ""
 "them."
 msgstr ""
 
-#: data/content/cloud/prerelease/atomic.html:79
-#, python-format
-msgid "Atomic %(state)s Images"
-msgstr "Atomic %(state)s 이미지"
-
-#: data/content/cloud/prerelease/atomic.html:89
-#: data/content/cloud/prerelease/atomic.html:105
-#, python-format
-msgid ""
-"This is Fedora %(rel)s %(state)s Cloud Atomic Host in a Qcow2-formatted "
-"image for use with OpenStack."
-msgstr ""
-
-#: data/content/cloud/prerelease/atomic.html:95
-#: data/content/cloud/prerelease/atomic.html:109
-#, python-format
-msgid ""
-"This is Fedora %(rel)s %(state)s Cloud Atomic Host in a compressed raw image"
-" format. If you're not sure what to use, try this."
-msgstr ""
-
-#: data/content/cloud/prerelease/atomic.html:190
-#, python-format
-msgid "Fedora %(rel)s %(state)s GP2 Atomic Cloud HVM AMIs"
-msgstr ""
-
-#: data/content/cloud/prerelease/atomic.html:218
-#, python-format
-msgid "Fedora %(rel)s %(state)s Standard Atomic Cloud HVM AMIs"
-msgstr ""
-
-#: data/content/cloud/prerelease/atomic.html:247
-#: data/content/cloud/prerelease/docker.html:97
-#: data/content/cloud/prerelease/index.html:445
-#: data/content/server/prerelease/index.html:38
-#: data/content/workstation/prerelease/index.html:38
-#, python-format
-msgid "When is Fedora %s going to be released?"
-msgstr "Fedora %s 는 언제 배포되나요?"
-
-#: data/content/cloud/prerelease/atomic.html:251
-#: data/content/cloud/prerelease/docker.html:101
-#: data/content/cloud/prerelease/index.html:449
-#: data/content/server/prerelease/index.html:42
-#: data/content/workstation/prerelease/index.html:42
-msgid "Release State"
-msgstr "배포 상태"
-
-#: data/content/cloud/prerelease/atomic.html:252
-#: data/content/cloud/prerelease/docker.html:102
-#: data/content/cloud/prerelease/index.html:450
-#: data/content/server/prerelease/index.html:43
-#: data/content/workstation/prerelease/index.html:43
-msgid "Release Date"
-msgstr "배포 일자"
-
-#: data/content/cloud/prerelease/atomic.html:257
-#: data/content/cloud/prerelease/docker.html:107
-#: data/content/cloud/prerelease/index.html:455
-#: data/content/server/prerelease/index.html:48
-#: data/content/workstation/prerelease/index.html:48
-msgid "Alpha Release Public Availability"
-msgstr "알파 릴리즈 공개 가용성"
-
-#: data/content/cloud/prerelease/atomic.html:261
-#: data/content/cloud/prerelease/docker.html:111
-#: data/content/cloud/prerelease/index.html:459
-#: data/content/server/prerelease/index.html:52
-#: data/content/workstation/prerelease/index.html:52
-msgid "Beta Release Public Availability"
-msgstr "베타 릴리즈 공개 가용성"
-
-#: data/content/cloud/prerelease/atomic.html:265
-#: data/content/cloud/prerelease/docker.html:115
-#: data/content/cloud/prerelease/index.html:463
-#: data/content/server/prerelease/index.html:56
-#: data/content/workstation/prerelease/index.html:56
-msgid "Final Release Public Availability (GA)"
-msgstr "최종 릴리즈 공개 가용성 (GA)"
-
-#: data/content/cloud/prerelease/atomic.html:270
-#: data/content/cloud/prerelease/docker.html:120
-#: data/content/cloud/prerelease/index.html:468
-#: data/content/server/prerelease/index.html:61
-#: data/content/workstation/prerelease/index.html:61
-msgid "Read all the key milestones of the release schedule..."
-msgstr ""
-
-#: data/content/cloud/prerelease/atomic.html:277
-#: data/content/cloud/prerelease/docker.html:127
-#: data/content/cloud/prerelease/index.html:475
-#: data/content/server/prerelease/index.html:63
-#: data/content/workstation/prerelease/index.html:63
-msgid "Verify your Image"
-msgstr "이미지를 검증하세요"
-
-#: data/content/cloud/prerelease/atomic.html:281
-msgid "Atomic 64bit!"
-msgstr "Atomic 64비트!"
-
-#: data/content/cloud/prerelease/atomic.html:284
-msgid "Atomic ISO!"
-msgstr "Atomic ISO!"
-
-#: data/content/cloud/prerelease/docker.html:79
+#: data/content/cloud/prerelease/docker.html:80
 #, python-format
 msgid "Docker %(state)s Image"
 msgstr "Docker %(state)s 이미지"
 
-#: data/content/cloud/prerelease/docker.html:80
+#: data/content/cloud/prerelease/docker.html:81
 msgid ""
 "The Fedora Docker Base Image is a minimal Fedora install which can be "
 "spawned as a Docker container. It contains basic tools which can be used as "
@@ -1367,60 +1216,110 @@ msgid ""
 "dependencies)."
 msgstr ""
 
-#: data/content/cloud/prerelease/docker.html:131
+#: data/content/cloud/prerelease/docker.html:98
+#: data/content/cloud/prerelease/index.html:444
+#: data/content/server/prerelease/index.html:38
+#: data/content/workstation/prerelease/index.html:38
+#, python-format
+msgid "When is Fedora %s going to be released?"
+msgstr "Fedora %s 는 언제 배포되나요?"
+
+#: data/content/cloud/prerelease/docker.html:102
+#: data/content/cloud/prerelease/index.html:448
+#: data/content/server/prerelease/index.html:42
+#: data/content/workstation/prerelease/index.html:42
+msgid "Release State"
+msgstr "배포 상태"
+
+#: data/content/cloud/prerelease/docker.html:103
+#: data/content/cloud/prerelease/index.html:449
+#: data/content/server/prerelease/index.html:43
+#: data/content/workstation/prerelease/index.html:43
+msgid "Release Date"
+msgstr "배포 일자"
+
+#: data/content/cloud/prerelease/docker.html:108
+#: data/content/cloud/prerelease/index.html:454
+#: data/content/server/prerelease/index.html:48
+#: data/content/workstation/prerelease/index.html:48
+msgid "Alpha Release Public Availability"
+msgstr "알파 릴리즈 공개 가용성"
+
+#: data/content/cloud/prerelease/docker.html:112
+#: data/content/cloud/prerelease/index.html:458
+#: data/content/server/prerelease/index.html:52
+#: data/content/workstation/prerelease/index.html:52
+msgid "Beta Release Public Availability"
+msgstr "베타 릴리즈 공개 가용성"
+
+#: data/content/cloud/prerelease/docker.html:116
+#: data/content/cloud/prerelease/index.html:462
+#: data/content/server/prerelease/index.html:56
+#: data/content/workstation/prerelease/index.html:56
+msgid "Final Release Public Availability (GA)"
+msgstr "최종 릴리즈 공개 가용성 (GA)"
+
+#: data/content/cloud/prerelease/docker.html:121
+#: data/content/cloud/prerelease/index.html:467
+#: data/content/server/prerelease/index.html:61
+#: data/content/workstation/prerelease/index.html:61
+msgid "Read all the key milestones of the release schedule..."
+msgstr ""
+
+#: data/content/cloud/prerelease/docker.html:132
 msgid "Docker 64bit!"
 msgstr "Docker 64비트!"
 
-#: data/content/cloud/prerelease/index.html:79
+#: data/content/cloud/prerelease/index.html:80
 #, python-format
 msgid "Base Cloud %(state)s Images"
 msgstr ""
 
-#: data/content/cloud/prerelease/index.html:88
-#: data/content/cloud/prerelease/index.html:104
+#: data/content/cloud/prerelease/index.html:89
+#: data/content/cloud/prerelease/index.html:105
 #, python-format
 msgid ""
 "This is Fedora %(rel)s %(state)s Cloud in a Qcow2-formatted image for use "
 "with OpenStack."
 msgstr ""
 
-#: data/content/cloud/prerelease/index.html:94
-#: data/content/cloud/prerelease/index.html:108
+#: data/content/cloud/prerelease/index.html:95
+#: data/content/cloud/prerelease/index.html:109
 #, python-format
 msgid ""
 "This is Fedora %(rel)s %(state)s Cloud in a compressed raw image format. If "
 "you're not sure what to use, try this."
 msgstr ""
 
-#: data/content/cloud/prerelease/index.html:190
-#: data/content/cloud/prerelease/index.html:327
+#: data/content/cloud/prerelease/index.html:189
+#: data/content/cloud/prerelease/index.html:326
 #, python-format
 msgid "Fedora %(rel)s %(state)s GP2 Base Cloud HVM AMIs"
 msgstr "Fedora %(rel)s %(state)s GP2 베이스 클라우드 HVM AMI"
 
-#: data/content/cloud/prerelease/index.html:220
+#: data/content/cloud/prerelease/index.html:219
 #, python-format
 msgid "Fedora %(rel)s %(state)s standard Base Cloud HVM AMIs"
 msgstr "Fedora %(rel)s %(state)s 표준 베이스 클라우드 HVM AMI"
 
-#: data/content/cloud/prerelease/index.html:253
-#: data/content/cloud/prerelease/index.html:387
+#: data/content/cloud/prerelease/index.html:252
+#: data/content/cloud/prerelease/index.html:386
 #, python-format
 msgid "Fedora %(rel)s %(state)s GP2 Base Cloud PV AMIs"
 msgstr "Fedora %(rel)s %(state)s GP2 베이스 클라우드 PV AMI"
 
-#: data/content/cloud/prerelease/index.html:283
-#: data/content/cloud/prerelease/index.html:415
+#: data/content/cloud/prerelease/index.html:282
+#: data/content/cloud/prerelease/index.html:414
 #, python-format
 msgid "Fedora %(rel)s %(state)s Standard Base Cloud PV AMIs"
 msgstr "Fedora %(rel)s %(state)s 표준 베이스 클라우드 PV AMI"
 
-#: data/content/cloud/prerelease/index.html:355
+#: data/content/cloud/prerelease/index.html:354
 #, python-format
 msgid "Fedora %(rel)s %(state)s Standard Base Cloud HVM AMIs"
 msgstr "Fedora %(rel)s %(state)s 표준 베이스 클라우드 HVM AMI"
 
-#: data/content/cloud/prerelease/index.html:479
+#: data/content/cloud/prerelease/index.html:478
 msgid "Validate 64bit!"
 msgstr "64비트 검증!"
 
@@ -1498,7 +1397,7 @@ msgstr "현재 사용하는 키"
 #: data/content/keys/obsolete.html:167 data/content/keys/obsolete.html:188
 #: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
 #: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
-#: data/content/keys/obsolete.html:292
+#: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
 msgid "Primary"
 msgstr "주"
 
@@ -1506,7 +1405,7 @@ msgstr "주"
 #: data/content/keys/index.html:88 data/content/keys/index.html:109
 #: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
 #: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
-#: data/content/keys/obsolete.html:292
+#: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
 msgid "Secondary"
 msgstr "부"
 
@@ -1640,19 +1539,23 @@ msgstr "Fedora 19"
 msgid "Fedora 20"
 msgstr "Fedora 20"
 
-#: data/content/keys/obsolete.html:315
+#: data/content/keys/obsolete.html:316
+msgid "Fedora 21"
+msgstr "Fedora 21"
+
+#: data/content/keys/obsolete.html:337
 msgid "EPEL 4"
 msgstr "EPEL 4"
 
-#: data/content/keys/obsolete.html:315
+#: data/content/keys/obsolete.html:337
 msgid "RPM-GPG-KEY-EPEL"
 msgstr "RPM-GPG-KEY-EPEL"
 
-#: data/content/keys/obsolete.html:328
+#: data/content/keys/obsolete.html:350
 msgid "Fedora Extras"
 msgstr "Fedora Extras"
 
-#: data/content/keys/obsolete.html:328
+#: data/content/keys/obsolete.html:350
 msgid ""
 "If you are using Fedora Extras with Fedora Core 6, use this package from "
 "<strong>extras</strong> repository.  This key will no longer be used after "
@@ -1661,11 +1564,11 @@ msgid ""
 "later releases."
 msgstr ""
 
-#: data/content/keys/obsolete.html:346
+#: data/content/keys/obsolete.html:368
 msgid "Legacy"
 msgstr "종속성"
 
-#: data/content/keys/obsolete.html:346
+#: data/content/keys/obsolete.html:368
 msgid ""
 "This key was used for packages that were released by Fedora Legacy project "
 "to update releases that reached their official EOL. The Fedora Legacy "
@@ -1885,45 +1788,24 @@ msgid ""
 msgstr "이미지를 사용하시려면, DVD를 만들거나 구울 수 있는 드라이브 또는 이미지 크기보다 큰 용량의 USB가 필요합니다."
 
 #: data/content/server/download/index.html:52
-#: data/content/server/prerelease/index.html:78
-msgid "Installation DVD:"
-msgstr "설치 DVD:"
+#: data/content/server/prerelease/index.html:75
+msgid "Netinstall Image:"
+msgstr ""
 
 #: data/content/server/download/index.html:54
-#: data/content/server/prerelease/index.html:80
-#, python-format
-msgid "32-bit %sGB image"
-msgstr "32-bit %sGB 이미지"
-
-#: data/content/server/download/index.html:58
-#: data/content/server/prerelease/index.html:84
-#: data/content/workstation/download/index.html:60
-#: data/content/workstation/prerelease/index.html:78
-msgid "Netinstall Images:"
-msgstr "Netinstall 이미지:"
-
-#: data/content/server/download/index.html:60
-#: data/content/server/prerelease/index.html:86
+#: data/content/server/prerelease/index.html:77
 #: data/content/workstation/download/index.html:62
-#: data/content/workstation/prerelease/index.html:80
+#: data/content/workstation/prerelease/index.html:81
 #, python-format
 msgid "64-bit %sMB image"
 msgstr "64-bit %sMB 이미지"
 
-#: data/content/server/download/index.html:61
-#: data/content/server/prerelease/index.html:87
-#: data/content/workstation/download/index.html:63
-#: data/content/workstation/prerelease/index.html:81
-#, python-format
-msgid "32-bit %sMB image"
-msgstr "32-bit %sMB 이미지"
-
-#: data/content/server/download/index.html:77
+#: data/content/server/download/index.html:70
 #: data/content/workstation/download/index.html:79
 msgid "Get more Fedora"
 msgstr "다양한 Fedora 찾기"
 
-#: data/content/server/download/index.html:81
+#: data/content/server/download/index.html:74
 #: data/content/workstation/download/index.html:88
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr "ARM<span class=\"sup\">®</span>  기술"
@@ -1986,15 +1868,14 @@ msgstr ""
 "  <a href=\"%(team_list)s\">메일링 리스트</a> 또는  freenode 서버의 %(team_irc)s 에서 직접 "
 "문의해주세요."
 
-#: data/content/server/prerelease/index.html:67
-#: data/content/workstation/prerelease/index.html:67
-msgid "Validate 64-bit!"
-msgstr "64비트 이미지 검증!"
-
-#: data/content/server/prerelease/index.html:70
-#: data/content/workstation/prerelease/index.html:70
-msgid "Validate 32-bit!"
-msgstr "32비트 이미지 검증!"
+#: data/content/server/prerelease/index.html:64
+#, python-format
+msgid ""
+"Once you have downloaded an image, verify it for security and integrity. To "
+"verify your image, start by downloading the CHECKSUM file below into the "
+"same directory as the image you downloaded and follow <a "
+"href=\"%s/%s/verify\">these instructions</a>."
+msgstr ""
 
 #: data/content/workstation/index.html:8
 msgid "Fedora Workstation"
@@ -2116,6 +1997,17 @@ msgstr ""
 msgid "32-bit %sGB Live image"
 msgstr "32-bit %sGB 라이브 이미지"
 
+#: data/content/workstation/download/index.html:60
+#: data/content/workstation/prerelease/index.html:79
+msgid "Netinstall Images:"
+msgstr "Netinstall 이미지:"
+
+#: data/content/workstation/download/index.html:63
+#: data/content/workstation/prerelease/index.html:82
+#, python-format
+msgid "32-bit %sMB image"
+msgstr "32-bit %sMB 이미지"
+
 #: data/content/workstation/download/index.html:82
 #: data/templates/footer.html:43
 msgid "Fedora Spins"
@@ -2147,6 +2039,14 @@ msgstr ""
 "이는 시험판 소프트웨어이며 <a href=\"%(team_url)s\">Workstation Working Group</a>에 의해 "
 "지원됩니다.  <a href=\"%(team_list)s\">메일링 리스트</a> 또는  freenode 서버의 %(team_irc)s "
 "에서 직접 문의해주세요."
+
+#: data/content/workstation/prerelease/index.html:67
+msgid "Validate 64-bit!"
+msgstr "64비트 이미지 검증!"
+
+#: data/content/workstation/prerelease/index.html:70
+msgid "Validate 32-bit!"
+msgstr "32비트 이미지 검증!"
 
 #: data/templates/cloud-tab.html:9
 #, python-format
@@ -2321,8 +2221,9 @@ msgid "OK"
 msgstr "확인"
 
 #: data/templates/moretofedora.html:12
-msgid "There's more to"
-msgstr "기타"
+#, python-format
+msgid "There's more to <img class=\"inlinelogo\" src=\"%s\" alt=\"Fedora Logo\">"
+msgstr ""
 
 #: data/templates/generic/docs-links.html:8
 msgid "Documentation and other resources"
