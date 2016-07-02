@@ -28,6 +28,7 @@ release={
     'next_cloud_id': '25',
     'next_cloud_AMI_id': '25',
     'composedate': '20160616',
+    'unofficial_compose': '20160614',
     # Note that atomic values here get overwritten by the twoweek script.
     'atomic_composedate': '20160616',
     'pre_cloud_composedate': '20150915',
@@ -61,7 +62,9 @@ path={
     'download_arch':   'https://download.fedoraproject.org/pub/fedora-secondary/releases',
     'mirrors':         'https://mirrors.fedoraproject.org/metalink?path=pub/fedora/linux/releases',
     'checksums':       './static/checksums',
-    'doc':             'https://docs.fedoraproject.org/en-US/Fedora'
+    'doc':             'https://docs.fedoraproject.org/en-US/Fedora',
+    'doc':             'https://docs.fedoraproject.org/en-US/Fedora',
+    'unofficial':      'https://dl.fedoraproject.org/pub/alt/unofficial/releases',
 }
 
 iso_size={
