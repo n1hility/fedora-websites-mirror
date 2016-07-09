@@ -1,7 +1,7 @@
 This is the Fedora Websites GIT repo used to build the websites starting
 from the F24 release cycle.
 
-History of previous commits is still available in the [old repo on Fedora Hosted](https://git.fedorahosted.org/cgit/fedora-web.git/). **For more information please read the [documentation](https://docs.pagure.org/fedora-websites/) and the [Fedora Websites pages on the Fedora Wiki](https://fedoraproject.org/wiki/Websites)**    
+History of previous commits is still available in the [old repo on Fedora Hosted](https://git.fedorahosted.org/cgit/fedora-web.git/). **For more information please read the [documentation](https://docs.pagure.org/fedora-websites/) and the [Fedora Websites pages on the Fedora Wiki](https://fedoraproject.org/wiki/Websites)**
 
 ### Contributing
 If you like to help the websites team but are not actually a member, you
@@ -33,7 +33,7 @@ This repository contains the sources for the following Fedora Websites:
 
 #### 1. Setup your system
 
-    sudo dnf install git gettext python-genshi python-setuptools python-dateutil \
+    sudo dnf install git gettext python-genshi python-lxml python-setuptools python-dateutil \
     python-dogpile-cache babel python-feedparser
 
     sudo dnf groups install 'Web Server'
