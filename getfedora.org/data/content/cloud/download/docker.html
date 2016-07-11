@@ -79,7 +79,7 @@
             <p>${_('You can easily load this Docker image into your running Docker daemon using command:')}</p>
             <pre>docker load -i Fedora-Docker-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_build']}.x86_64.tar.xz</pre>
             <p>${_('Following command can be used to spawn a container running bash inside:')}</p>
-            <pre>docker run -it --rm Fedora-Docker-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_build']}.x86_64 bash</pre>
+            <pre>docker run -it --rm fedora-docker-base-${global_variables.release['curr_id']}-${global_variables.release['RC_build']}.x86_64 bash</pre>
             <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Docker/x86_64/images/Fedora-Docker-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.tar.xz" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB raw.xz Image') % global_variables.iso_size['x86_64_docker']}</p>
           </div>
