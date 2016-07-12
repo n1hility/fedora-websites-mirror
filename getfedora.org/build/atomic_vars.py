@@ -122,7 +122,7 @@ def collect(release):
 
         log.info("Looking for latest atomic release for %s" % idx)
         # Get the *latest* atomic release information.
-        messages = get_messages('"%s"' % idx)
+        messages = get_messages('-%s-' % idx)
         try:
             message = messages.next()
         except StopIteration:
