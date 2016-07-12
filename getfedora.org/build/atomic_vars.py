@@ -62,6 +62,8 @@ def get_page(page, pages):
         rows_per_page=1,
     )
     response = session.get(base_url, params=params)
+    if not bool(response):
+        raise IOError("Failed to talk to %r %r" % (response.url, response))
     return response.json()
 
 
