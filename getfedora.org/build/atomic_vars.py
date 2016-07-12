@@ -131,7 +131,7 @@ def collect(release):
 
         # Parse the composedate out of the image_name
         image_name = message['msg']['atomic_qcow2']['image_name']
-        composedate = '.'.join(image_name.split('-')[4].split('.')[:-2])
+        composedate = '.'.join(image_name.split('-')[-1].split('.')[:-2])
         log.info("    Found composedate: %s" % composedate)
         results['release'][composedate_prefix + 'atomic_composedate'] = composedate
 
