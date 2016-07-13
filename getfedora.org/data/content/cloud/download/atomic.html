@@ -90,7 +90,7 @@
           <div class="col-xs-12">
             <h5 class="bold">${_('Raw Image')}</h5>
             <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a compressed raw image format. If you\'re not sure what to use, try this.')) % {'rel':global_variables.release['curr_id']}}</p>
-            <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/CloudImages/x86_64/images/Fedora-Atomic-${global_variables.release['curr_id']}-${global_variables.release['atomic_composedate']}.x86_64.raw.xz" role="button">${_('Download')}</a>
+            <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/CloudImages/x86_64/images/Fedora-Atomic-${global_variables.release['curr_id']}-${global_variables.release['atomic_composedate']}.86_64.raw.xz" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.iso_size['atomic_raw_cloud']}</p>
           </div>
       </div>
@@ -247,7 +247,7 @@
         <p>
           ${_('Atomic Host Image:')}
           <ul>
-            <li><p><a class="download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/Cloud_Atomic/x86_64/iso/Fedora-Cloud_Atomic-x86_64-${global_variables.release['curr_id']}-${global_variables.release['atomic_composedate']}.iso">${_('64-bit Atomic Host ISO image')}</a></p></li>
+            <li><p><a class="download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/Atomic/x86_64/iso/Fedora-Atomic-dvd-x86_64-${global_variables.release['curr_id']}-${global_variables.release['atomic_composedate']}.iso">${_('64-bit Atomic Host ISO image')}</a></p></li>
           </ul>
         </p>
           <div class="bottom-margin">
