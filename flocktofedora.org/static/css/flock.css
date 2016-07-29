@@ -1,6 +1,6 @@
 body{
   position:relative;
-  margin-top:70px;
+  margin-top:55px;
 }
 
 .flock-groupimg {
@@ -15,11 +15,19 @@ body{
 }
 
 .flock-navbar ul.nav {
-    margin-top:0.4em;
+    margin-top:0.6em;
 }
 
 .navbar {
   margin-bottom: 0 !important;
+}
+
+.nav > li > a {
+  padding: 5px 10px;
+}
+
+.navbar-brand{
+  padding: 10px 15px;
 }
 
 .flock-info-item {
