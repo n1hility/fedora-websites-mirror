@@ -3,10 +3,10 @@
 fpp = feedparse('http://fedoraplanet.org/rss20.xml')
 
 # Announce List
-fda = feedparse('http://rss.gmane.org/messages/excerpts/gmane.linux.redhat.fedora.core.announce')
+# fda = feedparse('http://rss.gmane.org/messages/excerpts/gmane.linux.redhat.fedora.core.announce')
 
 # Devel List
-fdd = feedparse('http://rss.gmane.org/messages/excerpts/gmane.linux.redhat.fedora.devel.announce')
+# fdd = feedparse('http://rss.gmane.org/messages/excerpts/gmane.linux.redhat.fedora.devel.announce')
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -88,7 +88,7 @@ fdd = feedparse('http://rss.gmane.org/messages/excerpts/gmane.linux.redhat.fedor
                     <img src="${path}/static/images/join-people.png" alt="people_person" /></a>
                     <h5><a href="https://fedoraproject.org/wiki/Join#People_Person">${_('People Person')}</a></h5>
                     <p><a href="https://fedoraproject.org/wiki/Join#People_Person">${_('Outgoing and persuasive, these folks thrive interacting with folks at events and online!')}</a></p>
-		    
+
                     <a href="https://fedoraproject.org/wiki/Join#People_Person">${_('Learn more &gt;')}</a>
                 </div>
                 <div class="grid_2">
@@ -96,7 +96,7 @@ fdd = feedparse('http://rss.gmane.org/messages/excerpts/gmane.linux.redhat.fedor
                     <img src="${path}/static/images/join-osdevel.png" alt="os_dev"/></a>
                     <h5><a href="https://fedoraproject.org/wiki/Join#OS_Developer">${_('OS Developer')}</a></h5>
                     <p><a href="https://fedoraproject.org/wiki/Join#OS_Developer">${_('These technically-talented developers write new features, track down bugs, and help package software.')}</a></p>
-                    
+
                     <a href="https://fedoraproject.org/wiki/Join#OS_Developer">${_('Learn more &gt;')}</a>
                 </div>
                 <div class="grid_2">
@@ -104,7 +104,7 @@ fdd = feedparse('http://rss.gmane.org/messages/excerpts/gmane.linux.redhat.fedor
                     <img src="${path}/static/images/join-translator.png" alt="translator" /></a>
                     <h5><a href="https://fedoraproject.org/wiki/Join#OS_Developer">${_('Translator')}</a></h5>
                     <p><a href="https://fedoraproject.org/wiki/Join#OS_Developer">${_('Multi-lingual and gifted writers, these folks help maintain &amp; expand Fedora\'s supported languages.')}</a></p>
-                    
+
                     <a href="https://fedoraproject.org/wiki/Join#Translator">${_('Learn more &gt;')}</a>
                 </div>
                 <div class="grid_2">
@@ -112,7 +112,7 @@ fdd = feedparse('http://rss.gmane.org/messages/excerpts/gmane.linux.redhat.fedor
                     <img src="${path}/static/images/join-webdevel.png" alt="web-dev" /></a>
                     <h5><a href="https://fedoraproject.org/wiki/Join#Web_Developer_or_Administrator">${_('Web Developer or Administrator')}</a></h5>
                     <p><a href="https://fedoraproject.org/wiki/Join#Web_Developer_or_Administrator">${_('These system administrators and web-savvy developers build the infrastructure that runs Fedora.')}</a></p>
-		    
+
                     <a href="https://fedoraproject.org/wiki/Join#Web_Developer_or_Administrator">${_('Learn more &gt;')}</a>
                 </div>
             </div>
@@ -141,14 +141,7 @@ fdd = feedparse('http://rss.gmane.org/messages/excerpts/gmane.linux.redhat.fedor
             </div>
             <div class="grid_5">
                 <h4>${_('Latest Announcements')}</h4>
-                <ul>
-                    <li py:for="entry in fda[:2]" py:if="'title' in entry">
-                        <h5><a href="${entry['link']}">${entry['title']}</a></h5>
-                    </li>
-                    <li py:for="entry in fdd[:2]" py:if="'title' in entry">
-                        <h5><a href="${entry['link']}">${entry['title']}</a></h5>
-                    </li>
-                </ul>
+
             </div>
             <div class="grid_6">
                 <h4>${_('Latest Fedora Planet posts')}</h4>
