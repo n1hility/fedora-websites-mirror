@@ -7,12 +7,12 @@ release={
     'next_id':     '25',
     'curr_name':   '',
     'next_name':   '',
-    'curr_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_AMI_state':  '',   # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_state':  'Alpha',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  'Alpha',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_ppc64_state':  'Alpha',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_s390_state':  'Alpha',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  'Alpha',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_AMI_state':  'Alpha',   # either 'Alpha', 'Beta' or '' (i.e empty)
     'prev_arm_id': '23',
     'prev_ppc64_id': '23',
     'prev_s390_id': '23',
