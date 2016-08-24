@@ -44,18 +44,30 @@
                   <p><a href="http://archive.fedoraproject.org/">archive.fedoraproject.org</a></p>
               </li>
           </ul>
-<!--          <div class="bottom-margin">
-          <py:choose>
+          <div class="top-space bottom-margin">
+            <py:choose>
             <py:when test="global_variables.release['curr_state'] == 'Alpha'">
-              <h3>${Markup(_('Try Fedora %(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
-              <a href="${path}/prerelease"><img alt="Fedora ${global_variables.release['next_id']} Alpha is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}alpha.png" /></a>
+              <div class="prerelease-box">
+                <h5>${Markup(_('F%(rel)s Alpha')) % {'rel':global_variables.release['next_id']}}</h5>
+                <h4>${_('Try a pre-release')}</h4>
+                <p>${_('We\'re working on our next release.')}<br />
+                    ${Markup(_('Help us get F%(rel)s ready!')) % {'rel':global_variables.release['next_id']}}</p>
+                <p><i class="fa fa-fw fa-sm header-icon fa-download"></i><a href="../../prerelease">${Markup(_('Download F%(rel)s Alpha images')) % {'rel':global_variables.release['next_id']}}</a></p>
+                <p><i class="fa fa-fw fa-sm header-icon fa-book"></i><a href="//fedoraproject.org/wiki/QA/Join#release-validation">${_('How to test pre-releases')}</a></p>
+              </div>
             </py:when>
             <py:when test="global_variables.release['curr_state'] == 'Beta'">
-                <h3>${Markup(_('Try Fedora %(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
-                <a href="${path}/prerelease"><img alt="Fedora ${global_variables.release['next_id']} Beta is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}beta.png" /></a>
+              <div class="prerelease-box">
+                <h5>${Markup(_('F%(rel)s Beta')) % {'rel':global_variables.release['next_id']}}</h5>
+                <h4>${_('Try a pre-release')}</h4>
+                <p>${_('We\'re working on our next release.')}<br />
+                    ${Markup(_('Help us get F%(rel)s ready!')) % {'rel':global_variables.release['next_id']}}</p>
+                <p><i class="fa fa-fw fa-sm header-icon fa-download"></i><a href="../../prerelease">${Markup(_('Download F%(rel)s Beta images')) % {'rel':global_variables.release['next_id']}}</a></p>
+                <p><i class="fa fa-fw fa-sm header-icon fa-book"></i><a href="//fedoraproject.org/wiki/QA/Join#release-validation">${_('How to test pre-releases')}</a></p>
+              </div>
             </py:when>
           </py:choose>
-          </div>-->
+          </div>
           <noscript>
           <div class="bottom-margin">
             <h3>${_('Verify')}</h3>
