@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-07-13 23:32+0200\n"
+"POT-Creation-Date: 2016-08-24 23:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -855,36 +855,111 @@ msgstr ""
 msgid "64-bit Atomic Host ISO image"
 msgstr ""
 
-#: data/content/cloud/download/atomic.html:256
-#: data/content/cloud/download/atomic.html:260
-#: data/content/cloud/download/docker.html:95
-#: data/content/cloud/download/docker.html:99
-#: data/content/cloud/download/index.html:451
-#: data/content/cloud/download/index.html:455
-#: data/content/server/download/index.html:60
-#: data/content/server/download/index.html:64
-#: data/content/workstation/download/index.html:69
-#: data/content/workstation/download/index.html:73
+#: data/content/cloud/download/atomic.html:257
+#: data/content/cloud/download/docker.html:96
+#: data/content/cloud/download/index.html:452
+#: data/content/server/download/index.html:61
+#: data/content/workstation/download/index.html:70
 #, python-format
-msgid "Try Fedora %(rel)s %(state)s"
+msgid "F%(rel)s Alpha"
+msgstr ""
+
+#: data/content/cloud/download/atomic.html:258
+#: data/content/cloud/download/atomic.html:268
+#: data/content/cloud/download/docker.html:97
+#: data/content/cloud/download/docker.html:107
+#: data/content/cloud/download/index.html:453
+#: data/content/cloud/download/index.html:463
+#: data/content/server/download/index.html:62
+#: data/content/server/download/index.html:72
+#: data/content/workstation/download/index.html:71
+#: data/content/workstation/download/index.html:81
+msgid "Try a pre-release"
+msgstr ""
+
+#: data/content/cloud/download/atomic.html:259
+#: data/content/cloud/download/atomic.html:269
+#: data/content/cloud/download/docker.html:98
+#: data/content/cloud/download/docker.html:108
+#: data/content/cloud/download/index.html:454
+#: data/content/cloud/download/index.html:464
+#: data/content/server/download/index.html:63
+#: data/content/server/download/index.html:73
+#: data/content/workstation/download/index.html:72
+#: data/content/workstation/download/index.html:82
+msgid "We're working on our next release."
+msgstr ""
+
+#: data/content/cloud/download/atomic.html:260
+#: data/content/cloud/download/atomic.html:270
+#: data/content/cloud/download/docker.html:99
+#: data/content/cloud/download/docker.html:109
+#: data/content/cloud/download/index.html:455
+#: data/content/cloud/download/index.html:465
+#: data/content/server/download/index.html:64
+#: data/content/server/download/index.html:74
+#: data/content/workstation/download/index.html:73
+#: data/content/workstation/download/index.html:83
+#, python-format
+msgid "Help us get F%(rel)s ready!"
+msgstr ""
+
+#: data/content/cloud/download/atomic.html:261
+#: data/content/cloud/download/docker.html:100
+#: data/content/cloud/download/index.html:456
+#: data/content/server/download/index.html:65
+#: data/content/workstation/download/index.html:74
+#, python-format
+msgid "Download F%(rel)s Alpha images"
+msgstr ""
+
+#: data/content/cloud/download/atomic.html:262
+#: data/content/cloud/download/atomic.html:272
+#: data/content/cloud/download/docker.html:101
+#: data/content/cloud/download/docker.html:111
+#: data/content/cloud/download/index.html:457
+#: data/content/cloud/download/index.html:467
+#: data/content/server/download/index.html:66
+#: data/content/server/download/index.html:76
+#: data/content/workstation/download/index.html:75
+#: data/content/workstation/download/index.html:85
+msgid "How to test pre-releases"
 msgstr ""
 
 #: data/content/cloud/download/atomic.html:267
 #: data/content/cloud/download/docker.html:106
 #: data/content/cloud/download/index.html:462
-#: data/content/server/download/index.html:81
-#: data/content/workstation/download/index.html:94
+#: data/content/server/download/index.html:71
+#: data/content/workstation/download/index.html:80
+#, python-format
+msgid "F%(rel)s Beta"
+msgstr ""
+
+#: data/content/cloud/download/atomic.html:271
+#: data/content/cloud/download/docker.html:110
+#: data/content/cloud/download/index.html:466
+#: data/content/server/download/index.html:75
+#: data/content/workstation/download/index.html:84
+#, python-format
+msgid "Download F%(rel)s Beta images"
+msgstr ""
+
+#: data/content/cloud/download/atomic.html:279
+#: data/content/cloud/download/docker.html:118
+#: data/content/cloud/download/index.html:474
+#: data/content/server/download/index.html:93
+#: data/content/workstation/download/index.html:106
 msgid "Verify"
 msgstr ""
 
-#: data/content/cloud/download/atomic.html:270
-#: data/content/cloud/download/docker.html:109
-#: data/content/cloud/download/index.html:465
+#: data/content/cloud/download/atomic.html:282
+#: data/content/cloud/download/docker.html:121
+#: data/content/cloud/download/index.html:477
 #: data/content/cloud/prerelease/docker.html:128
 #: data/content/cloud/prerelease/index.html:474
-#: data/content/server/download/index.html:84
+#: data/content/server/download/index.html:96
 #: data/content/server/prerelease/index.html:63
-#: data/content/workstation/download/index.html:97
+#: data/content/workstation/download/index.html:109
 #: data/content/workstation/prerelease/index.html:63
 msgid "Verify your Image"
 msgstr ""
@@ -1710,13 +1785,13 @@ msgstr ""
 msgid "64-bit %sMB image"
 msgstr ""
 
-#: data/content/server/download/index.html:70
-#: data/content/workstation/download/index.html:79
+#: data/content/server/download/index.html:82
+#: data/content/workstation/download/index.html:91
 msgid "Get more Fedora"
 msgstr ""
 
-#: data/content/server/download/index.html:74
-#: data/content/workstation/download/index.html:88
+#: data/content/server/download/index.html:86
+#: data/content/workstation/download/index.html:100
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr ""
 
@@ -1905,12 +1980,12 @@ msgstr ""
 msgid "32-bit %sMB image"
 msgstr ""
 
-#: data/content/workstation/download/index.html:82
+#: data/content/workstation/download/index.html:94
 #: data/templates/footer.html:43
 msgid "Fedora Spins"
 msgstr ""
 
-#: data/content/workstation/download/index.html:85
+#: data/content/workstation/download/index.html:97
 #: data/templates/footer.html:44
 msgid "Fedora Labs"
 msgstr ""
