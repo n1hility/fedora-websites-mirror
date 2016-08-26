@@ -179,10 +179,10 @@
     	<p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="../../%s/verify"&gt;these instructions&lt;/a&gt;.') % (lang))}</p>
           <div class="row bottom-margin">
             <div class="col-sm-4 col-xs-12">
-              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Spins-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-CHECKSUM">${_('Validate 64bit!')}</a>
+              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Spins-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Validate 64bit!')}</a>
             </div>
             <div class="col-sm-4 col-xs-12">
-              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Spins-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-CHECKSUM">${_('Validate 32bit!')}</a>
+              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Spins-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-i386-CHECKSUM">${_('Validate 32bit!')}</a>
             </div>
           </div>
   	  </div>
