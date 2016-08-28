@@ -85,10 +85,10 @@
       <div class="row bottom-margin">
           <div class="col-xs-12">
             <p>${_('You can easily load this Docker image into your running Docker daemon using command:')}</p>
-            <pre>docker load -i Fedora-Docker-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.x86_64.tar.xz</pre>
+            <pre>docker load -i Fedora-Docker-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.x86_64.tar.xz</pre>
             <p>${_('Following command can be used to spawn a container running bash inside:')}</p>
-            <pre>docker run -it --rm Fedora-Docker-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.x86_64 bash</pre>
-            <a class="btn btn-success download-cloud" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Docker/x86_64/images/Fedora-Docker-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.x86_64.tar.xz" role="button">${_('Download')}</a>
+            <pre>docker run -it --rm Fedora-Docker-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.x86_64 bash</pre>
+            <a class="btn btn-success download-cloud" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Docker/x86_64/images/Fedora-Docker-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.x86_64.tar.xz" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB raw.xz Image') % global_variables.iso_size['pre_x86_64_docker']}</p>
           </div>
       </div>
@@ -129,7 +129,7 @@
             <p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="%s/%s/verify"&gt;these instructions&lt;/a&gt;.') % (path, lang))}</p>
             <div class="row bottom-margin">
               <div class="col-sm-6 col-xs-12">
-                <a class="btn btn-default btn-topmargin validate" href="${path}/static/checksums/Fedora-Docker-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-CHECKSUM">${_('Docker 64bit!')}</a>
+                <a class="btn btn-default btn-topmargin validate" href="${path}/static/checksums/Fedora-Docker-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Docker 64bit!')}</a>
               </div>
             </div>
           </div>
