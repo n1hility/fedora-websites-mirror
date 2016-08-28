@@ -323,7 +323,7 @@ GP2_HVM_atomic_AMI={
 # EC2 AMI IDs PRERELEASE!!!
 
 pre_HVM_base_AMI={
-    #'us-east-1':        'ami-cec321a3',     # Virginia
+    #'us-east-1':        'ami-307a1927',     # Virginia
     #'us-west-2':        'ami-ab55a7cb',     # Oregon
     #'us-west-1':        'ami-8b4c35eb',     # California
     #'eu-west-1':        'ami-fb40cb88',     # Ireland
@@ -335,19 +335,19 @@ pre_HVM_base_AMI={
 }
 
 pre_GP2_HVM_base_AMI={
-    #'us-east-1':        'ami-70c2201d',     # Virginia
-    #'us-west-2':        'ami-584a3338',     # Oregon
-    #'us-west-1':        'ami-0ee7956e',     # California
-    #'eu-west-1':        'ami-315bd042',     # Ireland
-    #'eu-central-1':     'ami-ab9974c4',     # Frankfurt
-    #'ap-southeast-1':   'ami-3c72a55f',     # Singapore
-    #'ap-northeast-1':   'ami-da698cbb',     # Tokyo
-    #'ap-southeast-2':   'ami-56e0cc35',     # Sydney
-    #'sa-east-1':        'ami-53179e3f'      # Sao Paolo
+    #'us-east-1':        'ami-76701361',     # Virginia
+    #'us-west-2':        'ami-80895ee0',     # Oregon
+    #'us-west-1':        'ami-0e08456e',     # California
+    #'eu-west-1':        'ami-8c2253ff',     # Ireland
+    #'eu-central-1':     'ami-7189791e',     # Frankfurt
+    #'ap-southeast-1':   'ami-0efa226d',     # Singapore
+    #'ap-northeast-1':   'ami-a5d01ec4',     # Tokyo
+    #'ap-southeast-2':   'ami-6d9fa80e',     # Sydney
+    #'sa-east-1':        'ami-3c8c1d50'      # Sao Paolo
 }
 
 pre_PV_base_AMI={
-    #'us-east-1':        'ami-97ff1dfa',     # Virginia
+    #'us-east-1':        'ami-55791a42',     # Virginia
     #'us-west-2':        'ami-3657a556',     # Oregon
     #'us-west-1':        'ami-8a4039ea',     # California
     #'eu-west-1':        'ami-ef40cb9c',     # Ireland
@@ -359,7 +359,7 @@ pre_PV_base_AMI={
 }
 
 pre_GP2_PV_base_AMI={
-    #'us-east-1':        'ami-ccff1da1',     # Virginia
+    #'us-east-1':        'ami-2f751638',     # Virginia
     #'us-west-2':        'ami-c357a5a3',     # Oregon
     #'us-west-1':        'ami-5f4a333f',     # California
     #'eu-west-1':        'ami-f840cb8b',     # Ireland
