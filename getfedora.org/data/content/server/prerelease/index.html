@@ -15,7 +15,7 @@
       <div class="row">
         <div class="col-md-7 col-md-offset-5 text-left">
           <h2>${Markup(_('Download Fedora %(rel)s %(state)s Server')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h2>
-            <p><a class="btn btn-warning" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Server/x86_64/iso/Fedora-Server-dvd-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.iso" role="button">${_('Download')}</a></p>
+            <p><a class="btn btn-warning" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Server/x86_64/iso/Fedora-Server-dvd-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">${_('Download')}</a></p>
             <h5>${Markup(_('64-bit %sGB Installation Image')) % global_variables.iso_size['pre_x86_64_server_DVD']}</h5>
         </div>
       </div>
@@ -64,7 +64,7 @@
           	<p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the CHECKSUM file below into the same directory as the image you downloaded and follow &lt;a href="%s/%s/verify"&gt;these instructions&lt;/a&gt;.') % (path, lang))}</p>
             <div class="row bottom-margin">
               <div class="col-sm-6 col-xs-12">
-              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Server-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-x86_64-CHECKSUM">${_('Validate!')}</a>
+              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Server-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Validate!')}</a>
               </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
           <p>
           ${_('Netinstall Image:')}
           <ul>
-          <li><p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.iso">${Markup(_('64-bit %sMB image')) % global_variables.iso_size['pre_x86_64_server_net']}</a></p></li>
+          <li><p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${Markup(_('64-bit %sMB image')) % global_variables.iso_size['pre_x86_64_server_net']}</a></p></li>
           </ul>
           </p>
         </div>
