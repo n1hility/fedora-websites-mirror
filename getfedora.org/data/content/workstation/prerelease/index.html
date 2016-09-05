@@ -15,8 +15,7 @@
       <div class="row">
         <div class="col-md-7 col-md-offset-5 text-left">
           <h2>${Markup(_('Download Fedora %(rel)s %(state)s Workstation')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h2>
-            <p><a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.iso" role="button">${_('Download')}</a></p>
-            <h5>${Markup(_('64-bit %sGB Live Image')) % global_variables.iso_size['pre_x86_64_workstation']}</h5>
+            <p><a class="btn btn-success" href="#fmw" role="button">${_('Download')}</a></p>
         </div>
       </div>
     </div>
@@ -34,6 +33,58 @@
                   </py:when>
                 </py:choose>
             </p>
+
+<!-- FMW -->
+            <div id="fmw">
+            <h3>${Markup(_('Get Fedora %(rel)s %(state)s through FMW!')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+            <p>Fedora Media Writer (FMW) has become the primary download option and will help users to download and write the Fedora image easily on any operating system. Moreover FMW will check the image automatically for integrity and report any issues.</p>
+            <div class="row">
+              <div class="col-xs-12">
+                      <button type="button" class="btn btn-default text-center" data-toggle="modal" data-target="#myModal">Learn more</button>
+            <!-- Modal -->
+                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            </div>
+                            <div class="modal-body">
+                              <h2 class="text-danger">Linux FWM</h2>
+                              <p>Here goes some text and instructions about how to use FWM, either specific for this binary or generic for all binaries. Probably it would be the best to write a separate modal for each FWM binary</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            <!-- Modal End -->
+
+              </div>
+            </div>
+
+            <div class="row top-margin">
+              <div class="col-xs-12 col-md-4 text-center">
+                <div class="jumbotron">
+                  <h3>Linux</h3>
+                      <div class="text-info bottom-margin">Download FMW binary for Linux based machines.</div>
+                      <a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.iso" role="button">${_('Download')}</a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4 text-center">
+                <div class="jumbotron">
+                  <h3>Windows</h3>
+                      <div class="text-info bottom-margin">Download FMW binary for Windows based machines.</div>
+                      <a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.iso" role="button">${_('Download')}</a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4 text-center">
+                <div class="jumbotron">
+                  <h3>MacOS</h3>
+                      <div class="text-info bottom-margin">Download FMW binary for MacOS based machines.</div>
+                      <a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.iso" role="button">${_('Download')}</a>
+                </div>
+              </div>
+            </div>
+            </div>
+<!-- FMW End -->
 
             <h3>${_('When is Fedora %s going to be released?') % global_variables.release['next_id']}</h3>
             <table class="table table-bordered table-responsive">
