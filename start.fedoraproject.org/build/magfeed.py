@@ -44,7 +44,7 @@ for feed in map(feedparser.parse, FedMag):
         		</div>
         	</div>
 		</div>
-        """ % (item.updated.split()[2], item.updated.split()[1], item.enclosures[0].href, item.links[0]['href'], item.title,
+        """ % (item.updated.split()[2], item.updated.split()[1], item.enclosures[0].href.replace("&", "&#38;"), item.links[0]['href'], item.title,
 			item.slash_comments, summary, item.links[0]['href'])
 #print item.content
 #break
