@@ -85,31 +85,35 @@
             <p>${_('Fedora Media Writer supports the following platforms:')}</p>
 
             <div class="row top-margin">
-              <div class="col-xs-12 col-md-4 text-center">
+              <div class="col-xs-12 col-sm-4 text-center">
                 <div class="jumbotron">
                   <h3>Mac OS X</h3>
                       <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Mac OS X&lt;/strong&gt;')) % global_variables.iso_size['macosx']}</p>
+                </div>
+                <div class="jumbotron download">
                       <a class="btn btn-success" href="https://ausil.fedorapeople.org/mediawriter.dmg" role="button">${_('Download')}</a>
                 </div>
               </div>
-              <div class="col-xs-12 col-md-4 text-center">
+              <div class="col-xs-12 col-sm-4 text-center">
                 <div class="jumbotron">
                   <h3>Windows</h3>
                       <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Windows&lt;/strong&gt;')) % global_variables.iso_size['windows']}</p>
+                </div>
+                <div class="jumbotron download">
                       <a class="btn btn-success" href="https://ausil.fedorapeople.org/FMW-setup.exe" role="button">${_('Download')}</a>
                 </div>
               </div>
-              <div class="col-xs-12 col-md-4 text-center">
-                <div class="jumbotron">
+              <div class="col-xs-12 col-sm-4 text-center">
+                <div class="jumbotron fedora">
                   <h3>Linux</h3>
-                      <p>${Markup(_('Available via DNF for &lt;strong&gt;Fedora&lt;/strong&gt;'))}</p>
-                      <a href="#" role="button">(${_('More details')})</a>
+                      <p>${Markup(_('Available via DNF for &lt;strong&gt;Fedora&lt;/strong&gt;'))}<br />
+                      <a href="#" role="button">(${_('More details')})</a></p>
                 </div>
-                <div class="jumbotron top-margin">
-                      <p>${Markup(_('64-bit 1.3 GB ISO for &lt;strong&gt;Linux&lt;/strong&gt;'))}</p>
-                      <a href="#">(${_('How to use this ISO?')})</a>
+                <div class="jumbotron linux">
+                      <p>${Markup(_('64-bit 1.3 GB ISO for &lt;strong&gt;Linux&lt;/strong&gt;'))}<br />
+                      <a href="#">(${_('How to use this ISO?')})</a></p>
                       <a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.iso" role="button">${_('Download')}</a>
-                      <a href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">(${_('Verify this image')})</a>
+                      <p><a href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">(${_('Verify this image')})</a></p>
                 </div>
               </div>
             </div>
