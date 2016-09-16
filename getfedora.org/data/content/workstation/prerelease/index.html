@@ -143,6 +143,12 @@
           <li><p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/i386/iso/Fedora-Workstation-netinst-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${Markup(_('32-bit %sMB image')) % global_variables.iso_size['pre_i386_workstation_net']}</a></p></li>
           </ul>
           </p>
+
+          <div class="top-space bottom-margin"><h4>${_('Resources')}</h4></div>
+          <p><i class="fa fa-fw fa-sm header-icon fa-globe"></i>${Markup(_('&lt;a href="%(commonbugs_url)s"&gt;&lt;strong&gt;Common Bugs&lt;/strong&gt;&lt;/a&gt;') % {'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}</p>
+          <div class="pull-right bottom-step"><p>${_('An excellent resource to consult in case you run into any issues installing or running Fedora.')}</p></div>
+          <p><i class="fa fa-fw fa-sm header-icon fa-book"></i>${Markup(_('&lt;a href="#"&gt;&lt;strong&gt;How to test pre-releases&lt;/strong&gt;&lt;/a&gt;'))}</p>
+          <div class="pull-right"><p>${_('Fedora wiki guide on how to help test pre-release versions of Fedora.')}</p></div>
         </div>
       </div>
     </div>
