@@ -68,9 +68,10 @@
             	<li>${Markup(_('A USB Flash drive with at least %sGB space available')) % global_variables.iso_size['x86_64_workstation']}</li>
             	<li>${Markup(_('&lt;a href="%s"&gt;A live image ISO of the pre-release version of Fedora&lt;/a&gt; you wish to run') % ('#iso'))}</li>
             </ul>
-            <p>${_('First, download the pre-release ISO for Fedora Workstation.')}</p>
+						<p><strong>WARNING: This procedure destroys all data on your USB media. Make sure to back up any important files from your USB media before you do this.</strong></p>
+						<p>${_('First, download the pre-release ISO for Fedora Workstation.')}</p>
             <p>${Markup(_('Then, download and install Fedora Media Writer. Run it on your system and select the "Custom OS" option, and select the pre-release ISO that you downloaded. Follow the prompts to generate a live version &#40;see "What does \'Live\' mean?" to the right&#41; of pre-release Fedora Workstation on a USB flash drive. You may then run the live version of Fedora Workstation from your USB flash drive.'))}</p>
-            <p>${_('Optionally, you may install Fedora Workstation to a laptop or desktop computer that has at least 1 GHz processor, 1 GB RAM, and 10 GB space available. To do this, run the live version of Fedora Workstation from your USB flash drive on the computer you\'d like to install to, run the FEDORA MEDIA WRITER application, and follow the on-screen prompts to complete installation.')}</p>
+            <p>${_('Optionally, you may install Fedora Workstation to a laptop or desktop computer that has at least 1 GHz processor, 1 GB RAM, and 10 GB space available. To do this, run the live version of Fedora Workstation from your USB flash drive on the computer you\'d like to install to, run the Fedora Media Writer application, and follow the on-screen prompts to complete installation.')}</p>
 
             <h3>${_('Supported Platforms')}</h3>
             <p>${_('Fedora Media Writer supports the following platforms:')}</p>
