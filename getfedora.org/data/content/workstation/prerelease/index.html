@@ -69,8 +69,16 @@
             	<li>${Markup(_('&lt;a href="%s"&gt;A live image ISO of the pre-release version of Fedora&lt;/a&gt; you wish to run') % ('#iso'))}</li>
             </ul>
 						<p><strong>WARNING: This procedure destroys all data on your USB media. Make sure to back up any important files from your USB media before you do this.</strong></p>
-						<p>${_('First, download the pre-release ISO for Fedora Workstation.')}</p>
-            <p>${Markup(_('Then, download and install Fedora Media Writer. Run it on your system and select the "Custom OS" option, and select the pre-release ISO that you downloaded. Follow the prompts to generate a live version &#40;see "What does \'Live\' mean?" to the right&#41; of pre-release Fedora Workstation on a USB flash drive. You may then run the live version of Fedora Workstation from your USB flash drive.'))}</p>
+						<ol>
+							<li>${_('Download the Fedora Media Writer app below.')}</li>
+							<li>${_('Download the desired ISO image.')}</li>
+							<li>${_('Open the Fedora Media Writer app. You may need to provide a password to give the app the right permissions.')}</li>
+							<li>${_('Select "Custom OS..." from the list.')}</li>
+							<li>${_('On the Custom OS page, select the "Select Live ISO" button.')}</li>
+							<li>${_('In the file selection window, locate and select the ISO image you downloaded.')}</li>
+							<li>${_('Insert your USB stick in the computer. If you used your USB stick previously to create live media, you may need to restore it to factory settings.  The app will ask you whether to do so in this case.')}</li>
+							<li>${_('Select "Create Live USB" to write the image. Wait until the process is finished before you remove the media and close the app.')}</li>
+						</ol>
             <p>${_('Optionally, you may install Fedora Workstation to a laptop or desktop computer that has at least 1 GHz processor, 1 GB RAM, and 10 GB space available. To do this, run the live version of Fedora Workstation from your USB flash drive on the computer you\'d like to install to, run the Fedora Media Writer application, and follow the on-screen prompts to complete installation.')}</p>
 
             <h3>${_('Supported Platforms')}</h3>
