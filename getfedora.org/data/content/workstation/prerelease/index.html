@@ -34,58 +34,6 @@
                 </py:choose>
             </p>
 
-<!-- FMW -->
-            <div id="fmw">
-            <h3>${Markup(_('Get Fedora %(rel)s %(state)s through FMW!')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
-            <p>Fedora Media Writer (FMW) has become the primary download option and will help users to download and write the Fedora image easily on any operating system. Moreover FMW will check the image automatically for integrity and report any issues.</p>
-            <div class="row">
-              <div class="col-xs-12">
-                      <button type="button" class="btn btn-default text-center" data-toggle="modal" data-target="#myModal">Learn more</button>
-            <!-- Modal -->
-                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            </div>
-                            <div class="modal-body">
-                              <h2 class="text-danger">Linux FWM</h2>
-                              <p>Here goes some text and instructions about how to use FWM, either specific for this binary or generic for all binaries. Probably it would be the best to write a separate modal for each FWM binary</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-            <!-- Modal End -->
-
-              </div>
-            </div>
-
-            <div class="row top-margin">
-              <div class="col-xs-12 col-md-4 text-center">
-                <div class="jumbotron">
-                  <h3>Linux</h3>
-                      <div class="text-info bottom-margin">Download FMW binary for Linux based machines.</div>
-                      <a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.iso" role="button">${_('Download')}</a>
-                </div>
-              </div>
-              <div class="col-xs-12 col-md-4 text-center">
-                <div class="jumbotron">
-                  <h3>Windows</h3>
-                      <div class="text-info bottom-margin">Download FMW binary for Windows based machines.</div>
-                      <a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.iso" role="button">${_('Download')}</a>
-                </div>
-              </div>
-              <div class="col-xs-12 col-md-4 text-center">
-                <div class="jumbotron">
-                  <h3>MacOS</h3>
-                      <div class="text-info bottom-margin">Download FMW binary for MacOS based machines.</div>
-                      <a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.iso" role="button">${_('Download')}</a>
-                </div>
-              </div>
-            </div>
-            </div>
-<!-- FMW End -->
-
             <h3>${_('When is Fedora %s going to be released?') % global_variables.release['next_id']}</h3>
             <table class="table table-bordered table-responsive">
               <thead>
@@ -111,6 +59,54 @@
             </table>
             <a href="http://fedoraproject.org/wiki/Releases/${global_variables.release['next_id']}/Schedule">${_('Read all the key milestones of the release schedule...')}</a>
 
+<!-- FMW -->
+            <div id="fmw">
+            <h3>${_('Running Pre-Release Versions of Fedora Workstation')}</h3>
+            <p>${_('To run a prerelease version of Fedora Workstation, you will need:')}</p>
+            <ul>
+            	<li>${_('Fedora Media Writer (Download available below)')}</li>
+            	<li>${Markup(_('A USB Flash drive with at least %sGB space available')) % global_variables.iso_size['x86_64_workstation']}</li>
+            	<li>${Markup(_('&lt;a href="%s"&gt;A live image ISO of the pre-release version of Fedora&lt;/a&gt; you wish to run') % ('#iso'))}</li>
+            </ul>
+            <p>${_('First, download the pre-release ISO for Fedora Workstation.')}</p>
+            <p>${Markup(_('Then, download and install Fedora Media Writer. Run it on your system and select the "Custom OS" option, and select the pre-release ISO that you downloaded. Follow the prompts to generate a live version &#40;see "What does \'Live\' mean?" to the right&#41; of pre-release Fedora Workstation on a USB flash drive. You may then run the live version of Fedora Workstation from your USB flash drive.'))}</p>
+            <p>${_('Optionally, you may install Fedora Workstation to a laptop or desktop computer that has at least 1 GHz processor, 1 GB RAM, and 10 GB space available. To do this, run the live version of Fedora Workstation from your USB flash drive on the computer you\'d like to install to, run the FEDORA MEDIA WRITER application, and follow the on-screen prompts to complete installation.')}</p>
+
+            <h3>${_('Supported Platforms')}</h3>
+            <p>${_('Fedora Media Writer supports the following platforms:')}</p>
+
+            <div class="row top-margin">
+              <div class="col-xs-12 col-md-4 text-center">
+                <div class="jumbotron">
+                  <h3>Mac OS X</h3>
+                      <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Mac OS X&lt;/strong&gt;')) % global_variables.iso_size['macosx']}</p>
+                      <a class="btn btn-success" href="https://ausil.fedorapeople.org/mediawriter.dmg" role="button">${_('Download')}</a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4 text-center">
+                <div class="jumbotron">
+                  <h3>Windows</h3>
+                      <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Windows&lt;/strong&gt;')) % global_variables.iso_size['windows']}</p>
+                      <a class="btn btn-success" href="https://ausil.fedorapeople.org/FMW-setup.exe" role="button">${_('Download')}</a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4 text-center">
+                <div class="jumbotron">
+                  <h3>Linux</h3>
+                      <p>${Markup(_('Available via DNF for &lt;strong&gt;Fedora&lt;/strong&gt;'))}</p>
+                      <a href="#" role="button">(${_('More details')})</a>
+                </div>
+                <div class="jumbotron top-margin">
+                      <p>${Markup(_('64-bit 1.3 GB ISO for &lt;strong&gt;Linux&lt;/strong&gt;'))}</p>
+                      <a href="#">(${_('How to use this ISO?')})</a>
+                      <a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.iso" role="button">${_('Download')}</a>
+                      <a href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">(${_('Verify this image')})</a>
+                </div>
+              </div>
+            </div>
+            </div>
+<!-- FMW End -->
+
             <h3>${_('Verify your Image')}</h3>
           	<p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="%s/%s/verify"&gt;these instructions&lt;/a&gt;.') % (path, lang))}</p>
             <div class="row bottom-margin">
@@ -122,7 +118,7 @@
               </div>
             </div>
         </div>
-        <div class="col-md-3 text-left col-md-offset-1">
+        <div class="col-md-3 text-left col-md-offset-1" id="iso">
           <h3>${_('Other Downloads')}</h3>
           <p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/i386/iso/Fedora-Workstation-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.iso">${Markup(_('32-bit %sGB Live image')) % global_variables.iso_size['pre_i386_workstation']}</a></p>
 
