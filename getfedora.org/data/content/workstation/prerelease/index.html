@@ -166,7 +166,12 @@
           <p><i class="fa fa-fw fa-sm header-icon fa-globe"></i>${Markup(_('&lt;a href="%(commonbugs_url)s"&gt;&lt;strong&gt;Common Bugs&lt;/strong&gt;&lt;/a&gt;') % {'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}</p>
           <div class="pull-right bottom-step"><p>${_('An excellent resource to consult in case you run into any issues installing or running Fedora.')}</p></div>
           <p><i class="fa fa-fw fa-sm header-icon fa-book"></i>${Markup(_('&lt;a href="#"&gt;&lt;strong&gt;How to test pre-releases&lt;/strong&gt;&lt;/a&gt;'))}</p>
-          <div class="pull-right"><p>${_('Fedora wiki guide on how to help test pre-release versions of Fedora.')}</p></div>
+          <div class="pull-right bottom-space"><p>${_('Fedora wiki guide on how to help test pre-release versions of Fedora.')}</p></div>
+
+          <div class="bottom-margin"><h4>${_('What does "Live" mean?')}</h4></div>
+          <div class="bottom-step"><p>${_('Fedora Media Writer will create a complete, running Fedora Workstation you can run right away off of a USB drive. You can use the Live image to test and play with Fedora without making changes to your hard disk.')}</p></div>
+          <p>${_('When you are ready, you can install Fedora to your hard disk from within this "live" version of Fedora Workstation.')}</p>
+
         </div>
       </div>
     </div>
