@@ -163,6 +163,10 @@ def collect(release):
 
             length = int(response.headers['content-length']) / 1000000
 
+            # Provide the download URL
+            url_key = mapping[key] + "_url"
+            results['release'][url_key] = url
+
             # Figure out which of our vars we're going to set, and set it
             iso_size_key = iso_size_prefix + mapping[key]
             results['iso_size'][iso_size_key] = str(length)

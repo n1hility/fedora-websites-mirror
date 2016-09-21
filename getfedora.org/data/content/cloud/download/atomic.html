@@ -84,13 +84,13 @@
           <div class="col-xs-12">
             <h5 class="bold">${_('qcow2 Image')}</h5>
             <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a Qcow2-formatted image for use with OpenStack.')) % {'rel':global_variables.release['curr_id']}}</p>
-            <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/CloudImages/x86_64/images/Fedora-Atomic-${global_variables.release['curr_id']}-${global_variables.release['atomic_composedate']}.x86_64.qcow2" role="button">${_('Download')}</a>
+            <a class="btn btn-success download-cloud-splash" href="${global_variables.release['atomic_qcow2_cloud_url']}" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB Qcow2 Image') % global_variables.iso_size['atomic_qcow2_cloud']}</p>
           </div>
           <div class="col-xs-12">
             <h5 class="bold">${_('Raw Image')}</h5>
             <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a compressed raw image format. If you\'re not sure what to use, try this.')) % {'rel':global_variables.release['curr_id']}}</p>
-            <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/CloudImages/x86_64/images/Fedora-Atomic-${global_variables.release['curr_id']}-${global_variables.release['atomic_composedate']}.86_64.raw.xz" role="button">${_('Download')}</a>
+            <a class="btn btn-success download-cloud-splash" href="${global_variables.release['atomic_raw_cloud_url']}" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.iso_size['atomic_raw_cloud']}</p>
           </div>
       </div>
@@ -108,11 +108,11 @@
       </div>
       <div class="row hidden-xs">
           <div class="col-sm-6">
-            <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/CloudImages/x86_64/images/Fedora-Atomic-${global_variables.release['curr_id']}-${global_variables.release['atomic_composedate']}.x86_64.qcow2" role="button">${_('Download')}</a>
+            <a class="btn btn-success download-cloud-splash" href="${global_variables.release['atomic_qcow2_cloud_url']}" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB Qcow2 Image') % global_variables.iso_size['atomic_qcow2_cloud']}</p>
           </div>
           <div class="col-sm-6">
-            <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/CloudImages/x86_64/images/Fedora-Atomic-${global_variables.release['curr_id']}-${global_variables.release['atomic_composedate']}.x86_64.raw.xz" role="button">${_('Download')}</a>
+            <a class="btn btn-success download-cloud-splash" href="${global_variables.release['atomic_raw_cloud_url']}" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.iso_size['atomic_raw_cloud']}</p>
           </div>
       </div>
@@ -130,13 +130,13 @@
           <div class="col-xs-12">
             <h5 class="bold">${_('VirtualBox Image')}</h5>
             <p>${_('If you\'re using Vagrant on Mac OS X or Windows, this is likely the image you\'ll want to use.')}</p>
-            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/CloudImages/x86_64/images/Fedora-Atomic-Vagrant-${global_variables.release['curr_cloud_id']}-${global_variables.release['atomic_composedate']}.x86_64.vagrant-virtualbox.box" role="button">${_('VirtualBox Image')}</a>
+            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.release['atomic_VBvag_cloud_url']}" role="button">${_('VirtualBox Image')}</a>
               <p class="caption">${_('64-bit %sMB VirtualBox Atomic Host Vagrant Image') % global_variables.iso_size['atomic_VBvag_cloud']}</p>
           </div>
           <div class="col-xs-12">
             <h5 class="bold">${_('libvirt/KVM Image')}</h5>
             <p>${_('If you\'re using Vagrant on Fedora, this is the image you\'ll want to use.')}</p>
-            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/CloudImages/x86_64/images/Fedora-Atomic-Vagrant-${global_variables.release['curr_cloud_id']}-${global_variables.release['atomic_composedate']}.x86_64.vagrant-libvirt.box" role="button">${_('libvirt/KVM Image')}</a>
+            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.release['atomic_libvag_cloud_url']}" role="button">${_('libvirt/KVM Image')}</a>
               <p class="caption">${_('64-bit %sMB libvirt/KVM Atomic Host Vagrant Image') % global_variables.iso_size['atomic_libvag_cloud']}</p>
           </div>
         </div>
@@ -154,11 +154,11 @@
         </div>
         <div class="row hidden-xs">
           <div class="col-sm-6">
-            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/CloudImages/x86_64/images/Fedora-Atomic-Vagrant-${global_variables.release['curr_cloud_id']}-${global_variables.release['atomic_composedate']}.x86_64.vagrant-virtualbox.box" role="button">${_('VirtualBox Image')}</a>
+            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.release['atomic_VBvag_cloud_url']}" role="button">${_('VirtualBox Image')}</a>
               <p class="caption">${_('64-bit %sMB VirtualBox Atomic Host Vagrant Image') % global_variables.iso_size['atomic_VBvag_cloud']}</p>
           </div>
           <div class="col-sm-6">
-            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/CloudImages/x86_64/images/Fedora-Atomic-Vagrant-${global_variables.release['curr_cloud_id']}-${global_variables.release['atomic_composedate']}.x86_64.vagrant-libvirt.box" role="button">${_('libvirt/KVM Image')}</a>
+            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.release['atomic_libvag_cloud_url']}" role="button">${_('libvirt/KVM Image')}</a>
               <p class="caption">${_('64-bit %sMB libvirt/KVM Atomic Host Vagrant Image') % global_variables.iso_size['atomic_libvag_cloud']}</p>
           </div>
         </div>
@@ -247,7 +247,7 @@
         <p>
           ${_('Atomic Host Image:')}
           <ul>
-            <li><p><a class="download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/Atomic/x86_64/iso/Fedora-Atomic-dvd-x86_64-${global_variables.release['curr_id']}-${global_variables.release['atomic_composedate']}.iso">${_('64-bit Atomic Host ISO image')}</a></p></li>
+            <li><p><a class="download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/Fedora-Atomic-${global_variables.release['curr_id']}-${global_variables.release['atomic_composedate']}/Atomic/x86_64/iso/Fedora-Atomic-dvd-x86_64-${global_variables.release['curr_id']}-${global_variables.release['atomic_composedate']}.iso">${_('64-bit Atomic Host ISO image')}</a></p></li>
           </ul>
         </p>
           <div class="top-space bottom-margin">
