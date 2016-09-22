@@ -51,7 +51,7 @@ if '.phx2.fedoraproject.org' in hostname:
 else:
     DL_URL_PREFIX = 'https://dl.fedoraproject.org'
 
-download_fpo = 'https://dl.fedoraproject.org'
+download_fpo = 'https://download.fedoraproject.org'
 
 
 def get_page(page, pages):
