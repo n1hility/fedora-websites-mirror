@@ -51,6 +51,8 @@ if '.phx2.fedoraproject.org' in hostname:
 else:
     DL_URL_PREFIX = 'https://dl.fedoraproject.org'
 
+download_fpo = 'https://dl.fedoraproject.org'
+
 
 def get_page(page, pages):
     """ Retrieve the JSON for a particular page of datagrepper results """
@@ -154,8 +156,10 @@ def collect(release):
 
             # Do an HTTP HEAD to find the size of the file in megabytes
             url = entry['image_url']
+            download_url = entry['image_url']
             if not url.startswith('http'):
                 url = DL_URL_PREFIX + url
+                download_url = download_fpo + entry['image_url']
             response = requests.head(url)
             if not bool(response):
                 log.error("Failed to HEAD %s for size.  %r" % (url, response))
@@ -165,7 +169,7 @@ def collect(release):
 
             # Provide the download URL
             url_key = mapping[key] + "_url"
-            results['release'][url_key] = url
+            results['release'][url_key] = download_url
 
             # Figure out which of our vars we're going to set, and set it
             iso_size_key = iso_size_prefix + mapping[key]
