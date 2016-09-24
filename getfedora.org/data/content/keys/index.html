@@ -44,6 +44,27 @@
   <div class="container recover-heading">
     <div class="row">
       ${keys_for_release(
+      _('Fedora 26'),
+      [
+        KeyInfo(
+            _('Primary'),
+            '4096R/64DAB85D 2016-09-09',
+            'E641 850B 77DF 4353 78D1  D7E2 812A 6B4B 64DA B85D',
+            ['Fedora 26 Primary (26) &lt;fedora-26-primary@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/64DAB85D.txt', 'Fedora Project')
+            ])
+      , KeyInfo(
+            _('Secondary'),
+            '4096R/3B921D09 2016-08-08',
+            '19AA 0442 2491 9109 8B3D  8035 4560 FD4D 3B92 1D09',
+            ['Fedora 26 Secondary (26) &lt;fedora-26-secondary@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/3B921D09.txt', 'Fedora Project')
+            ])
+      ])}
+
+      ${keys_for_release(
       _('Fedora 25'),
       [
         KeyInfo(
@@ -103,27 +124,6 @@
             ['Fedora Secondary (23) &lt;fedora-23-secondary@fedoraproject.org&gt;'],
             None,
             [('https://getfedora.org/static/873529B8.txt', 'Fedora Project')
-            ])
-      ])}
-
-      ${keys_for_release(
-      _('Fedora 22'),
-      [
-        KeyInfo(
-            _('Primary'),
-            '4096R/8E1431D5 2014-07-09',
-            'C527 EA07 A934 9B58 9C35  E1BF 11AD C094 8E14 31D5',
-            ['Fedora (22) &lt;fedora@fedoraproject.org&gt;'],
-            None,
-            [('https://getfedora.org/static/8E1431D5.txt', 'Fedora Project')
-            ])
-      , KeyInfo(
-            _('Secondary'),
-            '4096R/A29CB19C 2014-07-09',
-            'B467 FA46 E2CE 5FAC 3499  10C2 D8D1 FA8C A29C B19C',
-            ['Fedora Secondary (22) &lt;fedora@fedoraproject.org&gt;'],
-            None,
-            [('https://getfedora.org/static/A29CB19C.txt', 'Fedora Project')
             ])
       ])}
     </div>

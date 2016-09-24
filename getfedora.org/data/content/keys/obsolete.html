@@ -334,6 +334,27 @@
       ])}
 
       ${keys_for_release(
+      _('Fedora 22'),
+      [
+        KeyInfo(
+            _('Primary'),
+            '4096R/8E1431D5 2014-07-09',
+            'C527 EA07 A934 9B58 9C35  E1BF 11AD C094 8E14 31D5',
+            ['Fedora (22) &lt;fedora@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/8E1431D5.txt', 'Fedora Project')
+            ])
+      , KeyInfo(
+            _('Secondary'),
+            '4096R/A29CB19C 2014-07-09',
+            'B467 FA46 E2CE 5FAC 3499  10C2 D8D1 FA8C A29C B19C',
+            ['Fedora Secondary (22) &lt;fedora@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/A29CB19C.txt', 'Fedora Project')
+            ])
+      ])}
+
+      ${keys_for_release(
       _('EPEL 4'),
       [
           KeyInfo(
@@ -363,7 +384,9 @@
               [],
               Markup(_('If you are using Fedora Extras with Fedora Core 6, use this package from &lt;strong&gt;extras&lt;/strong&gt; repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007). This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.')))
       ])}
+    </div>
 
+    <div class="row">
       ${keys_for_release(
       _('Legacy'),
       [

@@ -49,14 +49,14 @@
             <pre class="command">$ gpg --verify-files *-CHECKSUM</pre>
             <p>${Markup(_('The CHECKSUM file should have a good signature from one of the following keys:'))}</p>
             <ul>
+                <li><code>64DAB85D</code> - ${_('Fedora 26')}</li>
+                <li><code>3B921D09</code> - ${_('Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)')}</li>
                 <li><code>FDB19C98</code> - ${_('Fedora 25')}</li>
                 <li><code>E372E838</code> - ${_('Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)')}</li>
                 <li><code>81B46521</code> - ${_('Fedora 24')}</li>
                 <li><code>030D5AED</code> - ${_('Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)')}</li>
                 <li><code>34EC9CBA</code> - ${_('Fedora 23')}</li>
                 <li><code>873529B8</code> - ${_('Fedora 23 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)')}</li>
-                <li><code>8E1431D5</code> - ${_('Fedora 22')}</li>
-                <li><code>A29CB19C</code> - ${_('Fedora 22 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)')}</li>
             </ul>
             <p>${Markup(_('Finally, now that the CHECKSUM file has been verified, check that the image\'s checksum matches:'))}</p>
             <pre class="command">$ sha256sum -c *-CHECKSUM</pre>
