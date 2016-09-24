@@ -193,6 +193,20 @@ def process_dir(dirpath, filenames):
                 for key2, value in entry.items():
                     getattr(globalvar, key1)[key2] = value
 
+            # Write htaccess rewrite and informational files for 'latest'
+            with open(os.path.join(options.output, ".htaccess"), 'w') as htaccess_f:
+                for artifact in collected_atomic_vars['release']['redir_map']:
+                    htaccess_f.write('Redirect 302 "/{}_latest" "{}"\n'.format(
+                        artifact,
+                        collected_atomic_vars['release']['redir_map'][artifact]['redirect']
+                        )
+                    )
+            #for artifact in collected_atomic_vars['release']['redir_map']:
+            #    with open(os.path.join(options.output, "{}_latest".format(artifact))) as artifact_f:
+            #        artifact_f.write(
+            #            collected_atomic_vars['release']['redir_map'][artifact]['filename']
+            #        )
+
         # This is *not* cached
         if update_atomic_age is not None:
             # Go get two-week-atomic release info from datagrepper
@@ -280,6 +294,8 @@ def main():
         options.input = options.input.rstrip('/') + '/'
     if options.output is not None:
         options.output = options.output.rstrip('/') + '/'
+    #FIXME
+    print options
     process(args)
 
 if __name__ == "__main__":

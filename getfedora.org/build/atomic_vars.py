@@ -120,6 +120,10 @@ def make_templates(release):
 def collect(release):
     results = collections.defaultdict(dict)
 
+    # This is the information needed to provide "latest" download targets that
+    # redirect to the actual mirrormanager url via htpasswd file
+    results['release']['redir_map'] = collections.defaultdict(dict)
+
     for idx, composedate_prefix, iso_size_prefix in make_templates(release):
 
         log.info("Looking for latest atomic release for %s" % idx)
@@ -170,6 +174,12 @@ def collect(release):
             # Provide the download URL
             url_key = mapping[key] + "_url"
             results['release'][url_key] = download_url
+
+            # Provide the redirect rule mapping
+            img_filename = download_url.split('/')[-1]
+            results['release']['redir_map'][key] = {}
+            results['release']['redir_map'][key]['redirect'] = download_url
+            results['release']['redir_map'][key]['filename'] = img_filename
 
             # Figure out which of our vars we're going to set, and set it
             iso_size_key = iso_size_prefix + mapping[key]
