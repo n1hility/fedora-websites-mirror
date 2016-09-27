@@ -296,8 +296,6 @@ def main():
         options.input = options.input.rstrip('/') + '/'
     if options.output is not None:
         options.output = options.output.rstrip('/') + '/'
-    #FIXME
-    print options
     process(args)
 
 if __name__ == "__main__":
