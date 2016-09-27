@@ -2,13 +2,13 @@
 # This is the main Apache HTTP server configuration file.  It contains the
 # configuration directives that give the server its instructions.
 # See <URL:http://httpd.apache.org/docs/2.4/> for detailed information.
-# In particular, see 
+# In particular, see
 # <URL:http://httpd.apache.org/docs/2.4/mod/directives.html>
 # for a discussion of each configuration directive.
 #
 # Do NOT simply read the instructions in here without understanding
 # what they do.  They're here only as hints or reminders.  If you are unsure
-# consult the online docs. You have been warned.  
+# consult the online docs. You have been warned.
 #
 # Configuration and logfile names: If the filenames you specify for many
 # of the server's control files begin with "/" (or "drive:/" for Win32), the
@@ -37,7 +37,7 @@ PidFile run/httpd.pid
 # ports, instead of the default. See also the <VirtualHost>
 # directive.
 #
-# Change this to Listen on specific IP addresses as shown below to 
+# Change this to Listen on specific IP addresses as shown below to
 # prevent Apache from glomming onto all bound IP addresses.
 #
 #Listen 12.34.56.78:80
@@ -108,7 +108,7 @@ LoadModule cgi_module /etc/httpd/modules/mod_cgi.so
 
 #
 # If you wish httpd to run as a different user or group, you must run
-# httpd as root initially and it will switch.  
+# httpd as root initially and it will switch.
 #
 # User/Group: The name (or #number) of the user/group to run httpd as.
 # It is usually good practice to create a dedicated user and group for
@@ -149,7 +149,7 @@ ServerName localhost:80
 
 #
 # Deny access to the entirety of your server's filesystem. You must
-# explicitly permit access to web content directories in other 
+# explicitly permit access to web content directories in other
 # <Directory> blocks below.
 #
 <Directory />
@@ -204,7 +204,7 @@ DocumentRoot "@DOCUMENTROOT@"
     # It can be "All", "None", or any combination of the keywords:
     #   Options FileInfo AuthConfig Limit
     #
-    AllowOverride None
+    AllowOverride All
 
     #
     # Controls who can get stuff from this server.
@@ -222,8 +222,8 @@ DirectoryIndex index.html index.html.var
 </IfModule>
 
 #
-# The following lines prevent .htaccess and .htpasswd files from being 
-# viewed by Web clients. 
+# The following lines prevent .htaccess and .htpasswd files from being
+# viewed by Web clients.
 #
 <Files ".ht*">
     Require all denied
@@ -277,8 +277,8 @@ LogLevel warn
 
 <IfModule alias_module>
     #
-    # Redirect: Allows you to tell clients about documents that used to 
-    # exist in your server's namespace, but do not anymore. The client 
+    # Redirect: Allows you to tell clients about documents that used to
+    # exist in your server's namespace, but do not anymore. The client
     # will make a new request for the document at its new location.
     # Example:
     # Redirect permanent /foo http://www.example.com/bar
@@ -295,7 +295,7 @@ LogLevel warn
     # the filesystem path.
 
     #
-    # ScriptAlias: This controls which directories contain server scripts. 
+    # ScriptAlias: This controls which directories contain server scripts.
     # ScriptAliases are essentially the same as Aliases, except that
     # documents in the target directory are treated as applications and
     # run by the server when requested rather than as documents sent to the
@@ -366,7 +366,7 @@ LogLevel warn
 
 #
 # Specify a default charset for all content served; this enables
-# interpretation of all content as UTF-8 by default.  To use the 
+# interpretation of all content as UTF-8 by default.  To use the
 # default browser choice (ISO-8859-1), or to allow the META tags
 # in HTML content to override this choice, comment out this
 # directive:
@@ -394,10 +394,10 @@ MIMEMagicFile /etc/httpd/conf/magic
 #
 
 #
-# EnableMMAP and EnableSendfile: On systems that support it, 
+# EnableMMAP and EnableSendfile: On systems that support it,
 # memory-mapping or the sendfile syscall may be used to deliver
 # files.  This usually improves server performance, but must
-# be turned off when serving from networked-mounted 
+# be turned off when serving from networked-mounted
 # filesystems or if support for these functions is otherwise
 # broken on your system.
 # Defaults if commented: EnableMMAP On, EnableSendfile Off
@@ -435,21 +435,21 @@ MaxRequestsPerChild  4000
 StartServers         2
 MaxClients         150
 MinSpareThreads     25
-MaxSpareThreads     75 
+MaxSpareThreads     75
 ThreadsPerChild     25
 MaxRequestsPerChild  0
 </IfModule>
 
-# DefaultLanguage and AddLanguage allows you to specify the language of 
-# a document. You can then use content negotiation to give a browser a 
+# DefaultLanguage and AddLanguage allows you to specify the language of
+# a document. You can then use content negotiation to give a browser a
 # file in a language the user can understand.
 #
 # Specify a default language. This means that all data
-# going out without a specific language tag (see below) will 
+# going out without a specific language tag (see below) will
 # be marked with this one. You probably do NOT want to set
 # this unless you are sure it is correct for all cases.
 #
-# * It is generally better to not mark a page as 
+# * It is generally better to not mark a page as
 # * being a certain language than marking it with the wrong
 # * language!
 #
@@ -460,8 +460,8 @@ MaxRequestsPerChild  0
 # language code is pl) may wish to use "AddLanguage pl .po" to
 # avoid the ambiguity with the common suffix for perl scripts.
 #
-# Note 2: The example entries below illustrate that in some cases 
-# the two character 'Language' abbreviation is not identical to 
+# Note 2: The example entries below illustrate that in some cases
+# the two character 'Language' abbreviation is not identical to
 # the two character 'Country' code for its country,
 # E.g. 'Danmark/dk' versus 'Danish/da'.
 #
@@ -485,7 +485,7 @@ MaxRequestsPerChild  0
 # Just list the languages in decreasing order of preference. We have
 # more or less alphabetized them here. You probably want to change this.
 #
-#LanguagePriority en 
+#LanguagePriority en
 
 #
 # ForceLanguagePriority allows you to serve a result page rather than
@@ -496,7 +496,7 @@ ForceLanguagePriority Prefer Fallback
 
 #
 # Specify a default charset for all content served; this enables
-# interpretation of all content as UTF-8 by default.  To use the 
+# interpretation of all content as UTF-8 by default.  To use the
 # default browser choice (ISO-8859-1), or to allow the META tags
 # in HTML content to override this choice, comment out this
 # directive:

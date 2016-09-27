@@ -201,11 +201,13 @@ def process_dir(dirpath, filenames):
                         collected_atomic_vars['release']['redir_map'][artifact]['redirect']
                         )
                     )
-            #for artifact in collected_atomic_vars['release']['redir_map']:
-            #    with open(os.path.join(options.output, "{}_latest".format(artifact))) as artifact_f:
-            #        artifact_f.write(
-            #            collected_atomic_vars['release']['redir_map'][artifact]['filename']
-            #        )
+            # Write a file that returns the artifact name that corresponds to
+            # the current 'latest' (for scripting purposes).
+            for artifact in collected_atomic_vars['release']['redir_map']:
+                with open(os.path.join(options.output, "{}_latest_filename".format(artifact)), 'w') as artifact_f:
+                    artifact_f.write(
+                        collected_atomic_vars['release']['redir_map'][artifact]['filename']
+                    )
 
         # This is *not* cached
         if update_atomic_age is not None:
