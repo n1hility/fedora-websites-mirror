@@ -28,12 +28,12 @@
               <p><a class="btn btn-success" href="https://github.com/MartinBriza/MediaWriter/releases/download/3.96.0/FedoraMediaWriter-win-3.96.0.exe" role="button">${_('Download')}</a></p>
               <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Windows&lt;/strong&gt;')) % global_variables.iso_size['windows']}</p>
             </div>
-            <p class="fmw-generic hidden">Download Fedora Media Writer for your operating system.</p>
-            <p class="fmw-all hidden"><a href="#fmw">Need a different version?</a></p>
+            <p class="fmw-generic hidden">${_('Download Fedora Media Writer for your operating system.')}</p>
+            <p class="fmw-all hidden"><a href="#fmw">${_('Need a different version?')}</a></p>
             <!-- Having the <noscript> one be separate from generic means we can unhide one of the
                  above without worrying about jumping/changing text after the DOM finishes loading.
                  Otherwise we load a default then change it which looks tacky. -->
-            <noscript><p>Download Fedora Media Writer for your operating system.</p></noscript>
+            <noscript><p>${_('Download Fedora Media Writer for your operating system.')}</p></noscript>
         </div>
       </div>
     </div>
@@ -86,7 +86,7 @@
             	<li>${Markup(_('A USB Flash drive with at least %sGB space available')) % global_variables.iso_size['x86_64_workstation']}</li>
             	<li>${Markup(_('&lt;a href="%s"&gt;A live image ISO of the pre-release version of Fedora&lt;/a&gt; you wish to run') % ('#iso'))}</li>
             </ul>
-						<p><strong>WARNING: This procedure destroys all data on your USB media. Make sure to back up any important files from your USB media before you do this.</strong></p>
+						<p><strong>${_('WARNING: This procedure destroys all data on your USB media. Make sure to back up any important files from your USB media before you do this.')}</strong></p>
 						<ol>
 							<li>${_('Download the Fedora Media Writer app below.')}</li>
 							<li>${_('Download the desired ISO image.')}</li>
@@ -105,7 +105,7 @@
             <div class="row top-margin">
               <div class="col-xs-12 col-sm-4 text-center">
                 <div class="jumbotron">
-                  <h3>Mac OS X</h3>
+                  <h3>${_('Mac OS X')}</h3>
                       <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Mac OS X&lt;/strong&gt;')) % global_variables.iso_size['macosx']}</p>
                 </div>
                 <div class="jumbotron download">
@@ -114,7 +114,7 @@
               </div>
               <div class="col-xs-12 col-sm-4 text-center">
                 <div class="jumbotron">
-                  <h3>Windows</h3>
+                  <h3>${_('Windows')}</h3>
                       <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Windows&lt;/strong&gt;')) % global_variables.iso_size['windows']}</p>
                 </div>
                 <div class="jumbotron download">
@@ -123,7 +123,7 @@
               </div>
               <div class="col-xs-12 col-sm-4 text-center">
                 <div class="jumbotron fedora">
-                  <h3>Linux</h3>
+                  <h3>${_('Linux')}</h3>
                       <p>${Markup(_('Available via DNF for &lt;strong&gt;Fedora&lt;/strong&gt;'))}<br />
                       <a href="#" role="button">(${_('More details')})</a></p>
                 </div>
