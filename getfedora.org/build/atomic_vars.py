@@ -16,6 +16,7 @@ import functools
 import json
 import logging
 import os
+import sys
 import socket
 
 from datetime import datetime, timedelta
@@ -26,6 +27,14 @@ import dogpile.cache
 import requests
 
 log = logging.getLogger("atomic_vars")
+
+try:
+    sys.path.append('../build.d')
+
+    import globalvar
+except ImportError:
+    log.error("Unable to import globalvar")
+    sys.exit(1)
 
 base_url = 'https://apps.fedoraproject.org/datagrepper/raw'
 topic = "org.fedoraproject.prod.releng.atomic.twoweek.complete"
@@ -184,6 +193,20 @@ def collect(curr_id, next_id):
             # Figure out which of our vars we're going to set, and set it
             iso_size_key = iso_size_prefix + mapping[key]
             results['iso_size'][iso_size_key] = str(length)
+
+    # Special case for Atomic ISO latest redirect rule mapping because it's
+    # not included in fedmsg data
+    atomic_iso_filename = "Fedora-Atomic-dvd-x86_64-{}-{}.iso".format(
+        globalvar.release['curr_id'],
+        results['release'][composedate_prefix + 'atomic_composedate']
+    )
+    results['release']['redir_map']['atomic_iso'] = {}
+    results['release']['redir_map']['atomic_iso']['redirect'] = \
+        globalvar.path['download_atomic'] + "/stable/Fedora-Atomic-" + \
+        globalvar.release['curr_id'] + '-' + \
+        results['release'][composedate_prefix + 'atomic_composedate'] + \
+        "/Atomic/x86_64/iso/{}".format(atomic_iso_filename)
+    results['release']['redir_map']['atomic_iso']['filename'] = atomic_iso_filename
 
     return results
 
