@@ -7,12 +7,12 @@ release={
     'next_id':     '25',
     'curr_name':   '',
     'next_name':   '',
-    'curr_state':  'Alpha',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  'Alpha',         # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_ppc64_state':  'Alpha',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_s390_state':  'Alpha',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  'Alpha',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_AMI_state':  'Alpha',   # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  'Beta',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_ppc64_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_s390_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_AMI_state':  'Beta',   # either 'Alpha', 'Beta' or '' (i.e empty)
     'prev_arm_id': '23',
     'prev_ppc64_id': '23',
     'prev_s390_id': '23',
@@ -68,6 +68,11 @@ path={
 }
 
 iso_size={
+
+    #Media
+    'macosx':             '20.7',       # In MB
+    'windows':            '14.2',       # In MB
+
     # Legacy
     'x86_64_DVD':          '4.3',       # In GB
     'i386_DVD':            '4.4',       # In GB

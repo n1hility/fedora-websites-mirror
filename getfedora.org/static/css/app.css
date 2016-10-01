@@ -996,10 +996,12 @@ ul.list-spaces li{ margin-bottom:10px; }
 .top-margin { margin-top:20px; }
 .bottom-space { margin-bottom: 60px; }
 .bottom-margin { margin-bottom:20px; }
+.bottom-step { margin-bottom:10px; }
 .bottom-margin-edition { margin-bottom:40px; }
 .recover-heading { padding-bottom: 30px; } /* Recover the margin added by h1-h3 for even-ness. */
 .uppercase {text-transform: uppercase;}
 .liveusb {}
+.pull-right {margin-left: 10px;}
 
 img { max-width:100%; }
 img.pull-right { margin-left: 10px; }
@@ -1070,3 +1072,55 @@ img.pull-left { margin-right: 10px; }
 }
 /* end small screens classes */
 
+/* FMW */
+
+#fmw .jumbotron h3 {
+  margin-top: 5px;
+}
+
+#fmw .download {
+  height: 125px;
+}
+
+#fmw .download .btn {
+  margin-top: 35px;
+  background-color: #7BCF3E;
+}
+
+#fmw .linux .btn {
+  background-color: #7BCF3E;
+}
+
+#fmw .jumbotron {
+  padding-top: 10px;
+}
+
+#fmw .fedora {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+#fmw .linux {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+@media (max-width:530px)
+{
+    #fmw .jumbotron {
+      padding-top: 10px;
+      margin-top: 20px;
+  }
+    #fmw .download {
+      margin-top: 0px;
+  }
+    #fmw .linux {
+      margin-top: 5px;
+  }
+}
+
+/* Utility classes */
+.hidden { display: none; }
