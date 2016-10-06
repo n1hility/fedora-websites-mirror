@@ -24,6 +24,9 @@ import locale, time
 import logging
 logging.basicConfig(level=logging.INFO)
 
+# Silence this one spammy logger.
+logging.getLogger('requests.packages.urllib3.connectionpool').setLevel(logging.WARNING)
+
 
 # Main import
 try:
