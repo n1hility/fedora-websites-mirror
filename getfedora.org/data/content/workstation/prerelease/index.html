@@ -20,7 +20,7 @@
               <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Mac OS X&lt;/strong&gt;')) % global_variables.iso_size['macosx']}</p>
             </div>
             <div class="fmw-linux hidden">
-              <p><a class="btn btn-success" href="https://download.fedoraproject.org/pub/fedora/linux/releases/test/25_Alpha/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-25_Alpha-2.iso" role="button">${_('Download')}</a></p>
+              <p><a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">${_('Download')}</a></p>
               <p>${Markup(_('64-bit %s GB ISO for &lt;strong&gt;Linux&lt;/strong&gt;.')) % global_variables.iso_size['pre_x86_64_workstation']}
               ${Markup(_('&lt;a href="%s"&gt;Install via DNF&lt;/a&gt; if you are already on Fedora.') % ('#dnf'))}</p>
             </div>
@@ -130,7 +130,7 @@
                 <div class="jumbotron linux">
                       <p>${Markup(_('64-bit %s GB ISO for &lt;strong&gt;Linux&lt;/strong&gt;.')) % global_variables.iso_size['pre_x86_64_workstation']}<br />
                       <a href="#">(${_('How to use this ISO?')})</a></p>
-                      <a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.iso" role="button">${_('Download')}</a>
+                      <a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">${_('Download')}</a>
                       <p><a href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">(${_('Verify this image')})</a></p>
                 </div>
               </div>
@@ -151,8 +151,8 @@
         </div>
         <div class="col-md-3 text-left col-md-offset-1" id="iso">
           <h3>${_('Other Downloads')}</h3>
-          <p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.iso">${Markup(_('64-bit %sGB Live image')) % global_variables.iso_size['pre_x86_64_workstation']}</a></p>
-          <p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/i386/iso/Fedora-Workstation-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_build']}.iso">${Markup(_('32-bit %sGB Live image')) % global_variables.iso_size['pre_i386_workstation']}</a></p>
+          <p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${Markup(_('64-bit %sGB Live image')) % global_variables.iso_size['pre_x86_64_workstation']}</a></p>
+          <p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/i386/iso/Fedora-Workstation-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${Markup(_('32-bit %sGB Live image')) % global_variables.iso_size['pre_i386_workstation']}</a></p>
 
           <p>
           ${_('Netinstall Images:')}
