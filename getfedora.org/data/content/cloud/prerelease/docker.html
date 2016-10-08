@@ -129,7 +129,7 @@
             <p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="%s/%s/verify"&gt;these instructions&lt;/a&gt;.') % (path, lang))}</p>
             <div class="row bottom-margin">
               <div class="col-sm-6 col-xs-12">
-                <a class="btn btn-default btn-topmargin validate" href="${path}/static/checksums/Fedora-Docker-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Docker 64bit!')}</a>
+                <a class="btn btn-default btn-topmargin validate" href="${path}/static/checksums/Fedora-Docker-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Docker 64bit!')}</a>
               </div>
             </div>
           </div>

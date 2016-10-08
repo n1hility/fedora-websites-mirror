@@ -131,7 +131,7 @@
                       <p>${Markup(_('64-bit %s GB ISO for &lt;strong&gt;Linux&lt;/strong&gt;.')) % global_variables.iso_size['pre_x86_64_workstation']}<br />
                       <a href="#">(${_('How to use this ISO?')})</a></p>
                       <a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">${_('Download')}</a>
-                      <p><a href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">(${_('Verify this image')})</a></p>
+                      <p><a href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">(${_('Verify this image')})</a></p>
                 </div>
               </div>
             </div>
@@ -142,10 +142,10 @@
           	<p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="%s/%s/verify"&gt;these instructions&lt;/a&gt;.') % (path, lang))}</p>
             <div class="row bottom-margin">
               <div class="col-sm-6 col-xs-12">
-              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Validate 64-bit!')}</a>
+              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Validate 64-bit!')}</a>
               </div>
               <div class="col-sm-6 col-xs-12">
-              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-i386-CHECKSUM">${_('Validate 32-bit!')}</a>
+              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-i386-CHECKSUM">${_('Validate 32-bit!')}</a>
               </div>
             </div>
         </div>

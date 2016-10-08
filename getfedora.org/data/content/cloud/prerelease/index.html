@@ -475,7 +475,7 @@ End Vagrant -->
             <p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="%s/%s/verify"&gt;these instructions&lt;/a&gt;.') % (path, lang))}</p>
             <div class="row">
               <div class="col-sm-6 col-xs-12">
-                <a class="btn btn-default btn-topmargin validate" href="${path}/static/checksums/Fedora-CloudImages-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Validate 64bit!')}</a>
+                <a class="btn btn-default btn-topmargin validate" href="${path}/static/checksums/Fedora-CloudImages-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Validate 64bit!')}</a>
               </div>
 <!--              <div class="col-sm-6 col-xs-12">
                 <a class="btn btn-default btn-topmargin validate" href="${path}/static/checksums/Fedora-Cloud_Images-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-CHECKSUM">${_('Validate 32bit!')}</a>
