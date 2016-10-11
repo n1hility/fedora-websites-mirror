@@ -87,13 +87,13 @@
       	  <div class="col-xs-12">
             <h5 class="bold">${_('qcow2 Image')}</h5>
             <p>${Markup(_('This is Fedora %(rel)s %(state)s Cloud in a Qcow2-formatted image for use with OpenStack.')) % {'rel':global_variables.release['next_id'], 'state': global_variables.release['curr_state']}}</p>
-            <a class="btn btn-success download-cloud" href="${global_variables.path['download']}/test/${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}-${global_variables.release['RC_pre_build']}.x86_64.qcow2" role="button">${_('Download')}</a>
+            <a class="btn btn-success download-cloud" href="${global_variables.path['download']}/test/${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}-${global_variables.release['RC_pre_gold']}.x86_64.qcow2" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB Qcow2 Image') % global_variables.iso_size['pre_qcow2_x86_64_cloud']}</p>
           </div>
           <div class="col-xs-12">
             <h5 class="bold">${_('Raw Image')}</h5>
             <p>${Markup(_('This is Fedora %(rel)s %(state)s Cloud in a compressed raw image format. If you\'re not sure what to use, try this.')) % {'rel':global_variables.release['next_id'], 'state': global_variables.release['curr_state']}}</p>
-            <a class="btn btn-success download-cloud" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}-${global_variables.release['RC_pre_build']}.x86_64.raw.xz" role="button">${_('Download')}</a>
+            <a class="btn btn-success download-cloud" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}-${global_variables.release['RC_pre_gold']}.x86_64.raw.xz" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.iso_size['pre_raw_x86_64_cloud']}</p>
           </div>
       </div>
@@ -111,11 +111,11 @@
       </div>
       <div class="row hidden-xs">
           <div class="col-sm-6">
-            <a class="btn btn-success download-cloud" href="${global_variables.path['download']}/test/${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}-${global_variables.release['RC_pre_build']}.x86_64.qcow2" role="button">${_('Download')}</a>
+            <a class="btn btn-success download-cloud" href="${global_variables.path['download']}/test/${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}-${global_variables.release['RC_pre_gold']}.x86_64.qcow2" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB Qcow2 Image') % global_variables.iso_size['pre_qcow2_x86_64_cloud']}</p>
           </div>
           <div class="col-sm-6">
-            <a class="btn btn-success download-cloud" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}-${global_variables.release['RC_pre_build']}.x86_64.raw.xz" role="button">${_('Download')}</a>
+            <a class="btn btn-success download-cloud" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}-${global_variables.release['RC_pre_gold']}.x86_64.raw.xz" role="button">${_('Download')}</a>
               <p class="caption">${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.iso_size['pre_raw_x86_64_cloud']}</p>
           </div>
       </div>
@@ -475,7 +475,7 @@ End Vagrant -->
             <p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="%s/%s/verify"&gt;these instructions&lt;/a&gt;.') % (path, lang))}</p>
             <div class="row">
               <div class="col-sm-6 col-xs-12">
-                <a class="btn btn-default btn-topmargin validate" href="${path}/static/checksums/Fedora-CloudImages-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Validate 64bit!')}</a>
+                <a class="btn btn-default btn-topmargin validate" href="${path}/static/checksums/Fedora-CloudImages-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Validate 64bit!')}</a>
               </div>
 <!--              <div class="col-sm-6 col-xs-12">
                 <a class="btn btn-default btn-topmargin validate" href="${path}/static/checksums/Fedora-Cloud_Images-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-CHECKSUM">${_('Validate 32bit!')}</a>
