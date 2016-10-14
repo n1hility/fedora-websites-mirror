@@ -36,8 +36,25 @@
       <div class="row">
         <div class="col-md-7 col-md-offset-5 text-left">
           <h2>${Markup(_('Download Fedora %(rel)s Workstation')) % {'rel':global_variables.release['curr_id']}}</h2>
-            <p><a class="btn btn-success ws-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p>
-            <h5>${Markup(_('64-bit %sGB Live Image')) % global_variables.iso_size['x86_64_workstation']}</h5>
+            <div class="fmw-macos hidden">
+              <p><a class="btn btn-success" href="${path}/fmw/FedoraMediaWriter-osx-3.97.1-17-g480c143.dmg" role="button">${_('Download')}</a></p>
+              <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Mac OS X&lt;/strong&gt;')) % global_variables.iso_size['macosx']}</p>
+            </div>
+            <div class="fmw-linux hidden">
+              <p><a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">${_('Download')}</a></p>
+              <p>${Markup(_('64-bit %s GB ISO for &lt;strong&gt;Linux&lt;/strong&gt;.')) % global_variables.iso_size['pre_x86_64_workstation']}
+              ${Markup(_('&lt;a href="%s"&gt;Install via DNF&lt;/a&gt; if you are already on Fedora.') % ('https://fedoraproject.org/wiki/DNF_system_upgrade'))}</p>
+            </div>
+            <div class="fmw-windows hidden">
+              <p><a class="btn btn-success" href="${path}/fmw/FedoraMediaWriter-win32-3.97.1-13-g10ee195.exe" role="button">${_('Download')}</a></p>
+              <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Windows&lt;/strong&gt;')) % global_variables.iso_size['windows']}</p>
+            </div>
+            <p class="fmw-generic hidden">${_('Download Fedora Media Writer for your operating system.')}</p>
+            <p class="fmw-all hidden"><a href="#fmw">${_('Need instructions? Or a different version?')}</a></p>
+            <!-- Having the <noscript> one be separate from generic means we can unhide one of the
+                 above without worrying about jumping/changing text after the DOM finishes loading.
+                 Otherwise we load a default then change it which looks tacky. -->
+            <noscript><p>${_('Download Fedora Media Writer for your operating system.')}</p></noscript>
         </div>
       </div>
     </div>
