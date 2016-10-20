@@ -62,9 +62,14 @@
     <div class="container download-container top-space">
       <div class="row">
         <div class="col-md-8 text-left bottom-space">
-          <h3>${_('What is a Live image?')}</h3>
-          <p>${_('The Fedora Workstation Live image allows you to make media for your computer that provides a complete, running Fedora Workstation you can run right away. You can use the Live image to test and play with Fedora without making changes to your hard disk. When you are ready, you can install Fedora to your hard disk from the Live image.')}</p>
-          <p>${_('To use this image, you need a drive that can create or "burn" DVDs, or a USB flash drive at least as big as the image.')}</p>
+          <h3>${_('Running Fedora Workstation')}</h3>
+          <p>${_('To run Fedora Workstation, you will need:')}</p>
+          <ul>
+              <li>${_('Fedora Media Writer (download above)')}</li>
+              <li>${Markup(_('A USB Flash drive with at least %s GB space available')) % global_variables.iso_size['x86_64_workstation']}</li>
+            </ul>
+          <p>${_('Fedora Workstation is provided via Fedora Media Writer. Download this program via the download link above and run it on your system, following the prompts to generate a live version (see \'What does "Live" mean?\' to the right) of Fedora Workstation on a USB flash drive. You may then run the live version of Fedora Workstation from your USB flash drive.')}</p>
+          <p>${_('Optionally, you may install Fedora Workstation to a laptop or desktop computer that has at least 1 GHz processor, 1 GB RAM, and 10 GB space available. To do this, run the live version of Fedora Workstation from your USB flash drive on the computer you\'d like to install to, run the Fedora Media Writer application, and follow the on-screen prompts to complete installation.')}</p>
           <xi:include href="../../../templates/generic/docs-links.html" />
           <xi:include href="../../../templates/generic/other-media-sources.html" />
           <hr />
