@@ -87,6 +87,50 @@
           <div class="fmw-windows hidden">
               <p>${_('We have auto-detected that you are running Windows and have offered that version for download. If we have detected your operating system incorrectly or you would like to download a different version, please click the "View all platform downloads" button below.')}</p>
           </div>
+
+          <div id="fmw">
+          <a href="#" id="openstack-base-click" class="btn btn-success" role="button">${_('View all platform downloads')}</a>
+          <div id="openstack-base-link" class="reveal" style="display: none;">
+            <div class="row top-margin">
+              <div class="col-xs-12 col-sm-4 text-center">
+                <div class="jumbotron">
+                  <h3>${_('Mac OS X')}</h3>
+                      <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Mac OS X&lt;/strong&gt;')) % global_variables.iso_size['macosx']}</p>
+                </div>
+                <div class="jumbotron download">
+                      <a class="btn btn-success" href="${path}/fmw/FedoraMediaWriter-osx-3.97.1-17-g480c143.dmg" role="button">${_('Download')}</a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4 text-center">
+                <div class="jumbotron">
+                  <h3>${_('Windows')}</h3>
+                      <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Windows&lt;/strong&gt;')) % global_variables.iso_size['windows']}</p>
+                </div>
+                <div class="jumbotron download">
+                      <a class="btn btn-success" href="${path}/fmw/FedoraMediaWriter-win32-3.97.1-13-g10ee195.exe" role="button">${_('Download')}</a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4 text-center">
+                <div class="jumbotron fedora">
+                  <h3>${_('Linux')}</h3>
+                      <p>${Markup(_('Available via DNF for &lt;strong&gt;Fedora&lt;/strong&gt;'))}<br />
+                      <a href="https://fedoraproject.org/wiki/How_to_create_and_use_Live_USB" role="button">(${_('More details')})</a></p>
+                </div>
+                <div class="jumbotron linux">
+                      <p>${Markup(_('64-bit %s GB ISO for &lt;strong&gt;Linux&lt;/strong&gt;.')) % global_variables.iso_size['pre_x86_64_workstation']}<br />
+                      <a href="https://fedoraproject.org/wiki/How_to_create_and_use_Live_USB">(${_('How to use this ISO?')})</a></p>
+                      <a class="btn btn-success" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">${_('Download')}</a>
+                      <p><a href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">(${_('Verify this image')})</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+
+
+
           <xi:include href="../../../templates/generic/other-media-sources.html" />
           <hr />
           <xi:include href="../../../templates/export-regulations.html" />
