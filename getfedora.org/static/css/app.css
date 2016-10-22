@@ -631,9 +631,6 @@ text-align:center;
  background-image:url(../images/cloud-logo-main.png);
 }
 
-
-
-
 .productitem.workstation .greyscale
 {
  background-image:url(../images/logo-grey-workstation.png);
@@ -649,6 +646,75 @@ text-align:center;
  background-image:url(../images/logo-grey-server.png);
    opacity:1;
 }
+
+/* Editions logo and download button in main index */
+
+.product-logo-row {
+  background: red;
+}
+
+.edition-logo {
+  width: 200px;
+  position: absolute;
+  height: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.edition-logo a + a {
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
+  display: none;
+}
+
+.productitem {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 5em;
+  min-height: 290px;
+}
+
+.productitem img {
+  height: 150px !important;
+  width: 150px !important;
+  position: relative;
+}
+
+.productitem h3 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.productitem a {
+  display: block;
+  font-weight: bolder;
+}
+
+.productitem.workstation {
+  background-image: url("../images/ws-main.png")
+}
+
+.productitem.server {
+  background-image: url("../images/server-main.png")
+}
+
+.productitem.atomic {
+  background-image: url("../images/atomic-main.png")
+}
+
+.productdesc {
+  background-color: none !important;
+  padding: 1em 3em;
+  text-align: left;
+}
+
+/* end */
 
 @media
 (-webkit-min-device-pixel-ratio: 2),
