@@ -696,6 +696,10 @@ text-align:center;
   font-weight: bolder;
 }
 
+.productitem a, .productitem a:hover {
+  text-decoration: none;
+}
+
 .productitem.workstation {
   background-image: url("../images/ws-main.png")
 }
