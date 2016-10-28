@@ -495,19 +495,29 @@ margin-top:4px;
 
 .main-head-index
 {
-    background: url(../images/blue-pattern.png) no-repeat right 0px center;
+    background-color: #294172;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.05) inset;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 90px;
+    padding-bottom: 100px;
 }
 
 .main-head-index h1
 {
-    margin-bottom: 0px!important;
+    font-family:'Montserrat';
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-head-index h4
+{
+    font-family:'Open Sans';
+    font-size: 22px;
+    text-align: center;
 }
 
 .main-head-index h1, .main-head-index h4
