@@ -46,6 +46,10 @@ release={
     'RC_pre_gold': '1.1',         # insert the number of the prerelease RC version declared GOLD
     'RC_pre_build': '1',          # sometimes releng use the RC build
 
+    'atomic_qcow2_cloud_url': 'FIXME',
+    'atomic_raw_cloud_url': 'FIXME',
+    'atomic_VBvag_cloud_url': 'FIXME',
+    'atomic_libvag_cloud_url': 'FIXME',
     'atomic_freshness': False,
     'atomic_age': '???',
     'pre_cloud_atomic_freshness': False,
