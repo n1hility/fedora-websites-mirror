@@ -45,9 +45,13 @@
     <div class="col-md-8 col-xs-12">
       <div class="row top-margin">
           <div class="col-xs-12">
-            <h2 class="cloudy">${_('Base Cloud Images')}</h2>
-            <p>${_('The images on this page are Fedora Cloud images for creating general purpose virtual machines (VMs).')}</p>
-            <h3>${_('Base Cloud Image')}</h3>
+              <h2 class="cloudy">${_('Atomic Host Images')}</h2>
+              <p>${_('Fedora Atomic Host is a leading edge base operating system following the Project Atomic model. It is designed around Kubernetes and Docker containers. The images published here showcase that work. Note that the images have passed several levels of automated testing, but are not always subjected to.')}</p>
+              <ul>
+              <li>${Markup(_('&lt;strong&gt;Please test before using new versions in production.&lt;/strong&gt; If you do discover a problem, the Atomic Host tools make it easy to flip back to an earlier release — and if that happens, please also help us by filing bugs or submitting fixes.'))}</li>
+              <li>${Markup(_('&lt;strong&gt;Fedora Atomic Host images are updated roughly every two weeks,&lt;/strong&gt; rather than on the main six-month Fedora cadence. Because development is moving quickly, only the latest major Fedora release is supported.'))}</li>
+              <li>${Markup(_('&lt;strong&gt;Note that different Fedora Atomic Host media are subject to different levels of automatic testing.&lt;/strong&gt; You can learn more about the Atomic project at &lt;a href="%s"&gt;projectatomic.io&lt;/a&gt;, &lt;a href="%s"&gt;click here&lt;/a&gt; to see the current test status.') % ('//projectatomic.io/', '//status/'))}</li>
+            </ul>
           </div>
       </div>
       <!-- Mobile -->
