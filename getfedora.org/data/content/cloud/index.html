@@ -48,7 +48,7 @@
   <div class="jumbotron atomic-host">
     <div class="container">
       <div class="row bottom-margin">
-      <div class="col-sm-6 col-sm-offset-1 caption">
+      <div class="col-sm-6 caption">
         <h2>${_('Atomic Host')}</h2>
         <p>${_('Atomic Host from Project Atomic is a lightweight, immutable platform, designed with the sole purpose of running containerized applications.')}</p>
         <p>${_('Fedora\'s version of Atomic Host uses the same package repositories as Fedora Server, and provides the latest versions of the Atomic.')}</p>
@@ -61,13 +61,13 @@
   <div class="jumbotron jumbotron-full">
     <div class="container-full">
         <div class="col-md-6 col-xs-12 atomic-ostree">
-          <div class="col-md-5 col-md-offset-2 col-xs-12 top-margin bottom-margin">
+          <div class="col-md-5 col-md-offset-3 col-xs-12 top-margin bottom-margin">
             <h2>${_('OStree Updates')}</h2>
             <p>${_('Atomically update your system from the latest upstream OStree. Make your servers identical, and easily roll back if there\'s an upgrade problem.')}</p>
           </div>
         </div>
         <div class="col-md-6 col-xs-12 atomic-cli">
-          <div class="col-md-5 col-md-offset-2 col-xs-12 top-margin bottom-margin">
+          <div class="col-md-5 col-md-offset-3 col-xs-12 top-margin bottom-margin">
             <h2>${_('Atomic CLI')}</h2>
             <p>${_('Manage Docker containers, system containers, Atomic Apps, and more using one convenient command-line tool.')}</p>
           </div>
@@ -79,12 +79,28 @@
   <div class="jumbotron product-feature stdtools" style="background-color: #ffffff;">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 screenshot">
-	      <img src="/static/images/cloud/openstack.png" />
-	    </div>
-	    <div class="col-sm-6 caption">
-	      <h2>${_('Public or private')}</h2>
-	      <p>${_('Deploy and run Fedora Cloud in public or private cloud infrastructure, using the industry standard tools cloud-init and OpenStack Heat. Wherever you run your cloud, Fedora is ready to go.')}</p>
+        <div class="col-xs-12 col-sm-6 caption top-margin">
+          <h2>${_('Optimized for Kubernetes and OpenShift')}</h2>
+          <p>${_('Building a Kubernetes or Origin cluster to run your containerized applications? Run it on Fedora Atomic, which provides you the platform you need on a smaller, leaner OS.')}</p>
+        </div>
+      </div>
+
+  <!-- Desktop images -->
+      <div class="row top-space bottom-space hidden-xs">
+        <div class="col-sm-4 col-sm-offset-2 screenshot">
+	        <img src="/static/images/cloud/kubernetes.png" />
+        </div>
+        <div class="col-sm-4 col-sm-offset-2 screenshot top-margin">
+          <img src="/static/images/cloud/openshift.png" />
+        </div>
+      </div>
+  <!-- Mobile images -->
+      <div class="row top-space bottom-space text-center  visible-xs">
+        <div class="col-xs-12 screenshot">
+          <img src="/static/images/cloud/kubernetes.png" />
+        </div>
+        <div class="col-xs-12 screenshot top-space">
+          <img src="/static/images/cloud/openshift.png" />
         </div>
       </div>
     </div>
@@ -106,7 +122,7 @@
 
   <!-- Download jumbo -->
   <div class="jumbotron download-lower hidden-xs">
-	<h3>${_('Ready to give Fedora Cloud a try?')} <a class="btn" href="./download/" role="button">${_('Download now')}</a></h3>
+	<h3>${_('Ready to give Fedora Atomic a try?')} <a class="btn" href="./download/" role="button">${_('Download now')}</a></h3>
   </div>
 
   <!-- Download jumbo for mobile -->
