@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-11-01 22:17+0100\n"
+"POT-Creation-Date: 2016-11-06 10:03+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -355,8 +355,8 @@ msgid ""
 " (LDK) application stack."
 msgstr ""
 
-#: data/content/cloud/index.html:24 data/content/cloud/index.html:120
-#: data/content/cloud/index.html:126 data/content/server/index.html:20
+#: data/content/cloud/index.html:24 data/content/cloud/index.html:125
+#: data/content/cloud/index.html:131 data/content/server/index.html:20
 #: data/content/server/index.html:125 data/content/server/index.html:131
 #: data/content/workstation/index.html:20
 #: data/content/workstation/index.html:185
@@ -377,51 +377,57 @@ msgid "Chief Architect, Navops by Univa"
 msgstr ""
 
 #: data/content/cloud/index.html:52
-msgid "Minimal, fast, flexible"
+msgid "Atomic Host"
 msgstr ""
 
 #: data/content/cloud/index.html:53
 msgid ""
-"Everything you need, and nothing you don't. The Fedora Cloud Base image "
-"is smaller, so you can deploy faster. Then use the universe of services "
-"and tools in Fedora to customize, so your cloud is right for you."
+"Atomic Host from Project Atomic is a lightweight, immutable platform, "
+"designed with the sole purpose of running containerized applications."
 msgstr ""
 
-#: data/content/cloud/index.html:70
-msgid "Public or private"
+#: data/content/cloud/index.html:54
+msgid ""
+"Fedora's version of Atomic Host uses the same package repositories as "
+"Fedora Server, and provides the latest versions of the Atomic."
+msgstr ""
+
+#: data/content/cloud/index.html:65
+msgid "OStree Updates"
+msgstr ""
+
+#: data/content/cloud/index.html:66
+msgid ""
+"Atomically update your system from the latest upstream OStree. Make your "
+"servers identical, and easily roll back if there's an upgrade problem."
 msgstr ""
 
 #: data/content/cloud/index.html:71
-msgid ""
-"Deploy and run Fedora Cloud in public or private cloud infrastructure, "
-"using the industry standard tools cloud-init and OpenStack Heat. Wherever"
-" you run your cloud, Fedora is ready to go."
+msgid "Atomic CLI"
 msgstr ""
 
-#: data/content/cloud/index.html:82
-msgid "Designed for containers"
+#: data/content/cloud/index.html:72
+msgid ""
+"Manage Docker containers, system containers, Atomic Apps, and more using "
+"one convenient command-line tool."
 msgstr ""
 
 #: data/content/cloud/index.html:83
+msgid "Optimized for Kubernetes and OpenShift"
+msgstr ""
+
+#: data/content/cloud/index.html:84
 msgid ""
-"Want easy, scalable app deployment? Fedora Atomic Host is optimized and "
-"streamlined to run Docker containers out of the box. Whether you're "
-"rolling out a handful of containers, or scaling up to meet incredible "
-"demand, you can do it with Fedora Atomic Host."
+"Building a Kubernetes or Origin cluster to run your containerized "
+"applications? Run it on Fedora Atomic, which provides you the platform "
+"you need on a smaller, leaner OS."
 msgstr ""
 
-#: data/content/cloud/index.html:97
-msgid "Project Atomic inside"
+#: data/content/cloud/index.html:125
+msgid "Ready to give Fedora Atomic a try?"
 msgstr ""
 
-#: data/content/cloud/index.html:98
-msgid ""
-"The new Project Atomic update system works like git for your operating "
-"system. Now you can update and roll back with confidence and minimal "
-"downtime."
-msgstr ""
-
-#: data/content/cloud/index.html:120 data/content/cloud/index.html:125
+#: data/content/cloud/index.html:130
 msgid "Ready to give Fedora Cloud a try?"
 msgstr ""
 
@@ -434,26 +440,22 @@ msgstr ""
 
 #: data/content/cloud/download/atomic.html:34
 #: data/content/cloud/download/docker.html:34
-#: data/content/cloud/download/index.html:34
 #, python-format
 msgid "Download Fedora %(rel)s Cloud"
 msgstr ""
 
 #: data/content/cloud/download/atomic.html:35
 #: data/content/cloud/download/docker.html:35
-#: data/content/cloud/download/index.html:35
 msgid "There are two main versions of Fedora Cloud available:"
 msgstr ""
 
 #: data/content/cloud/download/atomic.html:37
 #: data/content/cloud/download/docker.html:37
-#: data/content/cloud/download/index.html:37
 msgid "<a href=\"index.html\">Base images</a> suitable for creating VMs."
 msgstr ""
 
 #: data/content/cloud/download/atomic.html:38
 #: data/content/cloud/download/docker.html:38
-#: data/content/cloud/download/index.html:38
 msgid ""
 "<a href=\"atomic.html\">Atomic Host images</a> for creating hosts for "
 "container deployment."
@@ -461,7 +463,7 @@ msgstr ""
 
 #: data/content/cloud/download/atomic.html:58
 #: data/content/cloud/download/docker.html:58
-#: data/content/cloud/download/index.html:58
+#: data/content/cloud/download/index.html:55
 #: data/content/cloud/prerelease/docker.html:58
 #: data/content/cloud/prerelease/index.html:58
 msgid "Base Images"
@@ -470,14 +472,14 @@ msgstr ""
 #: data/content/cloud/download/atomic.html:59
 #: data/content/cloud/download/atomic.html:71
 #: data/content/cloud/download/docker.html:59
-#: data/content/cloud/download/index.html:59
+#: data/content/cloud/download/index.html:56
 msgid "Atomic Host Images"
 msgstr ""
 
 #: data/content/cloud/download/atomic.html:60
 #: data/content/cloud/download/docker.html:60
 #: data/content/cloud/download/docker.html:71
-#: data/content/cloud/download/index.html:60
+#: data/content/cloud/download/index.html:57
 #: data/content/cloud/prerelease/docker.html:60
 #: data/content/cloud/prerelease/index.html:60
 msgid "Docker Image"
@@ -525,6 +527,7 @@ msgid ""
 msgstr ""
 
 #: data/content/cloud/download/atomic.html:77
+#: data/content/cloud/download/index.html:36
 #, python-format
 msgid ""
 "The latest two week build did not meet our testing criteria. The images "
@@ -533,6 +536,7 @@ msgid ""
 msgstr ""
 
 #: data/content/cloud/download/atomic.html:78
+#: data/content/cloud/download/index.html:37
 #, python-format
 msgid ""
 "These are the latest official Fedora Atomic Host images, produced "
@@ -545,8 +549,8 @@ msgstr ""
 
 #: data/content/cloud/download/atomic.html:85
 #: data/content/cloud/download/atomic.html:101
-#: data/content/cloud/download/index.html:79
-#: data/content/cloud/download/index.html:95
+#: data/content/cloud/download/index.html:76
+#: data/content/cloud/download/index.html:92
 #: data/content/cloud/prerelease/index.html:88
 #: data/content/cloud/prerelease/index.html:104
 msgid "qcow2 Image"
@@ -565,10 +569,10 @@ msgstr ""
 #: data/content/cloud/download/atomic.html:111
 #: data/content/cloud/download/atomic.html:115
 #: data/content/cloud/download/docker.html:82
-#: data/content/cloud/download/index.html:81
-#: data/content/cloud/download/index.html:87
-#: data/content/cloud/download/index.html:105
-#: data/content/cloud/download/index.html:109
+#: data/content/cloud/download/index.html:78
+#: data/content/cloud/download/index.html:84
+#: data/content/cloud/download/index.html:102
+#: data/content/cloud/download/index.html:106
 #: data/content/cloud/prerelease/docker.html:91
 #: data/content/cloud/prerelease/index.html:90
 #: data/content/cloud/prerelease/index.html:96
@@ -594,8 +598,8 @@ msgstr ""
 
 #: data/content/cloud/download/atomic.html:88
 #: data/content/cloud/download/atomic.html:112
-#: data/content/cloud/download/index.html:82
-#: data/content/cloud/download/index.html:106
+#: data/content/cloud/download/index.html:79
+#: data/content/cloud/download/index.html:103
 #: data/content/cloud/prerelease/index.html:91
 #: data/content/cloud/prerelease/index.html:115
 #, python-format
@@ -604,8 +608,8 @@ msgstr ""
 
 #: data/content/cloud/download/atomic.html:91
 #: data/content/cloud/download/atomic.html:105
-#: data/content/cloud/download/index.html:85
-#: data/content/cloud/download/index.html:99
+#: data/content/cloud/download/index.html:82
+#: data/content/cloud/download/index.html:96
 #: data/content/cloud/prerelease/index.html:94
 #: data/content/cloud/prerelease/index.html:108
 msgid "Raw Image"
@@ -621,8 +625,8 @@ msgstr ""
 
 #: data/content/cloud/download/atomic.html:94
 #: data/content/cloud/download/atomic.html:116
-#: data/content/cloud/download/index.html:88
-#: data/content/cloud/download/index.html:110
+#: data/content/cloud/download/index.html:85
+#: data/content/cloud/download/index.html:107
 #: data/content/cloud/prerelease/index.html:97
 #: data/content/cloud/prerelease/index.html:119
 #, python-format
@@ -634,7 +638,7 @@ msgid "Atomic Host Images for Vagrant"
 msgstr ""
 
 #: data/content/cloud/download/atomic.html:125
-#: data/content/cloud/download/index.html:119
+#: data/content/cloud/download/index.html:116
 msgid "These images are Vagrant Boxes images for deployment using Vagrant."
 msgstr ""
 
@@ -642,17 +646,17 @@ msgstr ""
 #: data/content/cloud/download/atomic.html:133
 #: data/content/cloud/download/atomic.html:147
 #: data/content/cloud/download/atomic.html:157
-#: data/content/cloud/download/index.html:125
-#: data/content/cloud/download/index.html:127
-#: data/content/cloud/download/index.html:141
-#: data/content/cloud/download/index.html:151
+#: data/content/cloud/download/index.html:122
+#: data/content/cloud/download/index.html:124
+#: data/content/cloud/download/index.html:138
+#: data/content/cloud/download/index.html:148
 msgid "VirtualBox Image"
 msgstr ""
 
 #: data/content/cloud/download/atomic.html:132
 #: data/content/cloud/download/atomic.html:148
-#: data/content/cloud/download/index.html:126
-#: data/content/cloud/download/index.html:142
+#: data/content/cloud/download/index.html:123
+#: data/content/cloud/download/index.html:139
 msgid ""
 "If you're using Vagrant on Mac OS X or Windows, this is likely the image "
 "you'll want to use."
@@ -668,17 +672,17 @@ msgstr ""
 #: data/content/cloud/download/atomic.html:139
 #: data/content/cloud/download/atomic.html:151
 #: data/content/cloud/download/atomic.html:161
-#: data/content/cloud/download/index.html:131
-#: data/content/cloud/download/index.html:133
-#: data/content/cloud/download/index.html:145
-#: data/content/cloud/download/index.html:155
+#: data/content/cloud/download/index.html:128
+#: data/content/cloud/download/index.html:130
+#: data/content/cloud/download/index.html:142
+#: data/content/cloud/download/index.html:152
 msgid "libvirt/KVM Image"
 msgstr ""
 
 #: data/content/cloud/download/atomic.html:138
 #: data/content/cloud/download/atomic.html:152
-#: data/content/cloud/download/index.html:132
-#: data/content/cloud/download/index.html:146
+#: data/content/cloud/download/index.html:129
+#: data/content/cloud/download/index.html:143
 msgid "If you're using Vagrant on Fedora, this is the image you'll want to use."
 msgstr ""
 
@@ -693,7 +697,7 @@ msgid "Atomic Host Cloud Images for Amazon Public Cloud EC2"
 msgstr ""
 
 #: data/content/cloud/download/atomic.html:172
-#: data/content/cloud/download/index.html:166
+#: data/content/cloud/download/index.html:163
 #: data/content/cloud/prerelease/index.html:173
 msgid ""
 "The links below will provide you listings of available AMIs by region "
@@ -702,7 +706,7 @@ msgid ""
 msgstr ""
 
 #: data/content/cloud/download/atomic.html:173
-#: data/content/cloud/download/index.html:167
+#: data/content/cloud/download/index.html:164
 #: data/content/cloud/prerelease/index.html:174
 msgid ""
 "All images are available in two formats: a GP2 format which uses faster "
@@ -711,16 +715,16 @@ msgid ""
 msgstr ""
 
 #: data/content/cloud/download/atomic.html:178
-#: data/content/cloud/download/index.html:173
-#: data/content/cloud/download/index.html:302
+#: data/content/cloud/download/index.html:170
+#: data/content/cloud/download/index.html:299
 #: data/content/cloud/prerelease/index.html:180
 #: data/content/cloud/prerelease/index.html:309
 msgid "Hardware Virtual Machine (HVM)"
 msgstr ""
 
 #: data/content/cloud/download/atomic.html:181
-#: data/content/cloud/download/index.html:176
-#: data/content/cloud/download/index.html:313
+#: data/content/cloud/download/index.html:173
+#: data/content/cloud/download/index.html:310
 #: data/content/cloud/prerelease/index.html:183
 #: data/content/cloud/prerelease/index.html:320
 msgid "GP2 HVM AMIs"
@@ -728,14 +732,14 @@ msgstr ""
 
 #: data/content/cloud/download/atomic.html:186
 #: data/content/cloud/download/atomic.html:214
-#: data/content/cloud/download/index.html:181
-#: data/content/cloud/download/index.html:211
-#: data/content/cloud/download/index.html:244
-#: data/content/cloud/download/index.html:274
-#: data/content/cloud/download/index.html:318
-#: data/content/cloud/download/index.html:346
-#: data/content/cloud/download/index.html:378
-#: data/content/cloud/download/index.html:406
+#: data/content/cloud/download/index.html:178
+#: data/content/cloud/download/index.html:208
+#: data/content/cloud/download/index.html:241
+#: data/content/cloud/download/index.html:271
+#: data/content/cloud/download/index.html:315
+#: data/content/cloud/download/index.html:343
+#: data/content/cloud/download/index.html:375
+#: data/content/cloud/download/index.html:403
 #: data/content/cloud/prerelease/index.html:188
 #: data/content/cloud/prerelease/index.html:218
 #: data/content/cloud/prerelease/index.html:251
@@ -758,14 +762,14 @@ msgstr ""
 
 #: data/content/cloud/download/atomic.html:192
 #: data/content/cloud/download/atomic.html:220
-#: data/content/cloud/download/index.html:187
-#: data/content/cloud/download/index.html:217
-#: data/content/cloud/download/index.html:250
-#: data/content/cloud/download/index.html:280
-#: data/content/cloud/download/index.html:324
-#: data/content/cloud/download/index.html:352
-#: data/content/cloud/download/index.html:384
-#: data/content/cloud/download/index.html:412
+#: data/content/cloud/download/index.html:184
+#: data/content/cloud/download/index.html:214
+#: data/content/cloud/download/index.html:247
+#: data/content/cloud/download/index.html:277
+#: data/content/cloud/download/index.html:321
+#: data/content/cloud/download/index.html:349
+#: data/content/cloud/download/index.html:381
+#: data/content/cloud/download/index.html:409
 #: data/content/cloud/prerelease/index.html:194
 #: data/content/cloud/prerelease/index.html:224
 #: data/content/cloud/prerelease/index.html:257
@@ -780,14 +784,14 @@ msgstr ""
 
 #: data/content/cloud/download/atomic.html:193
 #: data/content/cloud/download/atomic.html:221
-#: data/content/cloud/download/index.html:188
-#: data/content/cloud/download/index.html:218
-#: data/content/cloud/download/index.html:251
-#: data/content/cloud/download/index.html:281
-#: data/content/cloud/download/index.html:325
-#: data/content/cloud/download/index.html:353
-#: data/content/cloud/download/index.html:385
-#: data/content/cloud/download/index.html:413
+#: data/content/cloud/download/index.html:185
+#: data/content/cloud/download/index.html:215
+#: data/content/cloud/download/index.html:248
+#: data/content/cloud/download/index.html:278
+#: data/content/cloud/download/index.html:322
+#: data/content/cloud/download/index.html:350
+#: data/content/cloud/download/index.html:382
+#: data/content/cloud/download/index.html:410
 #: data/content/cloud/prerelease/index.html:195
 #: data/content/cloud/prerelease/index.html:225
 #: data/content/cloud/prerelease/index.html:258
@@ -802,14 +806,14 @@ msgstr ""
 
 #: data/content/cloud/download/atomic.html:194
 #: data/content/cloud/download/atomic.html:222
-#: data/content/cloud/download/index.html:189
-#: data/content/cloud/download/index.html:219
-#: data/content/cloud/download/index.html:252
-#: data/content/cloud/download/index.html:282
-#: data/content/cloud/download/index.html:326
-#: data/content/cloud/download/index.html:354
-#: data/content/cloud/download/index.html:386
-#: data/content/cloud/download/index.html:414
+#: data/content/cloud/download/index.html:186
+#: data/content/cloud/download/index.html:216
+#: data/content/cloud/download/index.html:249
+#: data/content/cloud/download/index.html:279
+#: data/content/cloud/download/index.html:323
+#: data/content/cloud/download/index.html:351
+#: data/content/cloud/download/index.html:383
+#: data/content/cloud/download/index.html:411
 #: data/content/cloud/prerelease/index.html:196
 #: data/content/cloud/prerelease/index.html:226
 #: data/content/cloud/prerelease/index.html:259
@@ -823,8 +827,8 @@ msgid "Launch"
 msgstr ""
 
 #: data/content/cloud/download/atomic.html:209
-#: data/content/cloud/download/index.html:206
-#: data/content/cloud/download/index.html:341
+#: data/content/cloud/download/index.html:203
+#: data/content/cloud/download/index.html:338
 #: data/content/cloud/prerelease/index.html:213
 #: data/content/cloud/prerelease/index.html:348
 msgid "Standard HVM AMIs"
@@ -853,7 +857,7 @@ msgstr ""
 
 #: data/content/cloud/download/atomic.html:257
 #: data/content/cloud/download/docker.html:96
-#: data/content/cloud/download/index.html:452
+#: data/content/cloud/download/index.html:449
 #: data/content/server/download/index.html:61
 #: data/content/workstation/download/index.html:153
 #, python-format
@@ -864,8 +868,8 @@ msgstr ""
 #: data/content/cloud/download/atomic.html:268
 #: data/content/cloud/download/docker.html:97
 #: data/content/cloud/download/docker.html:107
-#: data/content/cloud/download/index.html:453
-#: data/content/cloud/download/index.html:463
+#: data/content/cloud/download/index.html:450
+#: data/content/cloud/download/index.html:460
 #: data/content/server/download/index.html:62
 #: data/content/server/download/index.html:72
 #: data/content/workstation/download/index.html:154
@@ -877,8 +881,8 @@ msgstr ""
 #: data/content/cloud/download/atomic.html:269
 #: data/content/cloud/download/docker.html:98
 #: data/content/cloud/download/docker.html:108
-#: data/content/cloud/download/index.html:454
-#: data/content/cloud/download/index.html:464
+#: data/content/cloud/download/index.html:451
+#: data/content/cloud/download/index.html:461
 #: data/content/server/download/index.html:63
 #: data/content/server/download/index.html:73
 #: data/content/workstation/download/index.html:155
@@ -890,8 +894,8 @@ msgstr ""
 #: data/content/cloud/download/atomic.html:270
 #: data/content/cloud/download/docker.html:99
 #: data/content/cloud/download/docker.html:109
-#: data/content/cloud/download/index.html:455
-#: data/content/cloud/download/index.html:465
+#: data/content/cloud/download/index.html:452
+#: data/content/cloud/download/index.html:462
 #: data/content/server/download/index.html:64
 #: data/content/server/download/index.html:74
 #: data/content/workstation/download/index.html:156
@@ -902,7 +906,7 @@ msgstr ""
 
 #: data/content/cloud/download/atomic.html:261
 #: data/content/cloud/download/docker.html:100
-#: data/content/cloud/download/index.html:456
+#: data/content/cloud/download/index.html:453
 #: data/content/server/download/index.html:65
 #: data/content/workstation/download/index.html:157
 #, python-format
@@ -913,8 +917,8 @@ msgstr ""
 #: data/content/cloud/download/atomic.html:272
 #: data/content/cloud/download/docker.html:101
 #: data/content/cloud/download/docker.html:111
-#: data/content/cloud/download/index.html:457
-#: data/content/cloud/download/index.html:467
+#: data/content/cloud/download/index.html:454
+#: data/content/cloud/download/index.html:464
 #: data/content/server/download/index.html:66
 #: data/content/server/download/index.html:76
 #: data/content/workstation/download/index.html:158
@@ -924,7 +928,7 @@ msgstr ""
 
 #: data/content/cloud/download/atomic.html:267
 #: data/content/cloud/download/docker.html:106
-#: data/content/cloud/download/index.html:462
+#: data/content/cloud/download/index.html:459
 #: data/content/server/download/index.html:71
 #: data/content/workstation/download/index.html:163
 #, python-format
@@ -933,7 +937,7 @@ msgstr ""
 
 #: data/content/cloud/download/atomic.html:271
 #: data/content/cloud/download/docker.html:110
-#: data/content/cloud/download/index.html:466
+#: data/content/cloud/download/index.html:463
 #: data/content/server/download/index.html:75
 #: data/content/workstation/download/index.html:167
 #, python-format
@@ -942,7 +946,7 @@ msgstr ""
 
 #: data/content/cloud/download/atomic.html:279
 #: data/content/cloud/download/docker.html:118
-#: data/content/cloud/download/index.html:474
+#: data/content/cloud/download/index.html:471
 #: data/content/server/download/index.html:93
 #: data/content/workstation/download/index.html:200
 msgid "Verify"
@@ -950,7 +954,7 @@ msgstr ""
 
 #: data/content/cloud/download/atomic.html:282
 #: data/content/cloud/download/docker.html:121
-#: data/content/cloud/download/index.html:477
+#: data/content/cloud/download/index.html:474
 #: data/content/cloud/prerelease/docker.html:128
 #: data/content/cloud/prerelease/index.html:474
 #: data/content/server/download/index.html:96
@@ -1030,61 +1034,70 @@ msgstr ""
 msgid "Validate!"
 msgstr ""
 
-#: data/content/cloud/download/index.html:71
+#: data/content/cloud/download/index.html:34
+#, python-format
+msgid "Download Fedora %(rel)s Atomic Host"
+msgstr ""
+
+#: data/content/cloud/download/index.html:35
+msgid "Atomic Host is built every 2 weeks or so."
+msgstr ""
+
+#: data/content/cloud/download/index.html:68
 msgid "Base Cloud Images"
 msgstr ""
 
-#: data/content/cloud/download/index.html:72
+#: data/content/cloud/download/index.html:69
 #: data/content/cloud/prerelease/index.html:81
 msgid ""
 "The images on this page are Fedora Cloud images for creating general "
 "purpose virtual machines (VMs)."
 msgstr ""
 
-#: data/content/cloud/download/index.html:73
+#: data/content/cloud/download/index.html:70
 #: data/content/cloud/prerelease/index.html:82
 msgid "Base Cloud Image"
 msgstr ""
 
-#: data/content/cloud/download/index.html:80
-#: data/content/cloud/download/index.html:96
+#: data/content/cloud/download/index.html:77
+#: data/content/cloud/download/index.html:93
 #, python-format
 msgid ""
 "This is Fedora %(rel)s Cloud in a Qcow2-formatted image for use with "
 "OpenStack."
 msgstr ""
 
-#: data/content/cloud/download/index.html:86
-#: data/content/cloud/download/index.html:100
+#: data/content/cloud/download/index.html:83
+#: data/content/cloud/download/index.html:97
 #, python-format
 msgid ""
 "This is Fedora %(rel)s Cloud in a compressed raw image format. If you're "
 "not sure what to use, try this."
 msgstr ""
 
-#: data/content/cloud/download/index.html:118
+#: data/content/cloud/download/index.html:115
 msgid "Base Cloud Images for Vagrant"
 msgstr ""
 
-#: data/content/cloud/download/index.html:128
-#: data/content/cloud/download/index.html:152
+#: data/content/cloud/download/index.html:125
+#: data/content/cloud/download/index.html:149
 #, python-format
 msgid "64-bit %sMB VirtualBox Base Vagrant Image"
 msgstr ""
 
-#: data/content/cloud/download/index.html:134
-#: data/content/cloud/download/index.html:156
+#: data/content/cloud/download/index.html:131
+#: data/content/cloud/download/index.html:153
 #, python-format
 msgid "64-bit %sMB libvirt/KVM Base Vagrant Image"
 msgstr ""
 
-#: data/content/cloud/download/index.html:165
+#: data/content/cloud/download/index.html:162
 #: data/content/cloud/prerelease/index.html:172
 msgid "Base Cloud Images for Amazon Public Cloud EC2"
 msgstr ""
 
-#: data/content/cloud/download/index.html:174
-#: data/content/cloud/download/index.html:303
+#: data/content/cloud/download/index.html:171
+#: data/content/cloud/download/index.html:300
 #: data/content/cloud/prerelease/index.html:181
 #: data/content/cloud/prerelease/index.html:310
 msgid ""
@@ -1092,54 +1105,54 @@ msgid ""
 "the same or better performance than PV images."
 msgstr ""
 
-#: data/content/cloud/download/index.html:182
-#: data/content/cloud/download/index.html:319
+#: data/content/cloud/download/index.html:179
+#: data/content/cloud/download/index.html:316
 #, python-format
 msgid "Fedora %(rel)s GP2 Base Cloud HVM AMIs"
 msgstr ""
 
-#: data/content/cloud/download/index.html:212
-#: data/content/cloud/download/index.html:347
+#: data/content/cloud/download/index.html:209
+#: data/content/cloud/download/index.html:344
 #, python-format
 msgid "Fedora %(rel)s Standard Base Cloud HVM AMIs"
 msgstr ""
 
-#: data/content/cloud/download/index.html:236
-#: data/content/cloud/download/index.html:306
+#: data/content/cloud/download/index.html:233
+#: data/content/cloud/download/index.html:303
 #: data/content/cloud/prerelease/index.html:243
 #: data/content/cloud/prerelease/index.html:313
 msgid "Paravirtual (PV)"
 msgstr ""
 
-#: data/content/cloud/download/index.html:237
-#: data/content/cloud/download/index.html:307
+#: data/content/cloud/download/index.html:234
+#: data/content/cloud/download/index.html:304
 #: data/content/cloud/prerelease/index.html:244
 #: data/content/cloud/prerelease/index.html:314
 msgid "If you know you need a paravirtual format image for EC2, use this format."
 msgstr ""
 
-#: data/content/cloud/download/index.html:239
-#: data/content/cloud/download/index.html:373
+#: data/content/cloud/download/index.html:236
+#: data/content/cloud/download/index.html:370
 #: data/content/cloud/prerelease/index.html:246
 #: data/content/cloud/prerelease/index.html:380
 msgid "GP2 PV AMIs"
 msgstr ""
 
-#: data/content/cloud/download/index.html:245
-#: data/content/cloud/download/index.html:379
+#: data/content/cloud/download/index.html:242
+#: data/content/cloud/download/index.html:376
 #, python-format
 msgid "Fedora %(rel)s GP2 Base Cloud PV AMIs"
 msgstr ""
 
-#: data/content/cloud/download/index.html:269
-#: data/content/cloud/download/index.html:401
+#: data/content/cloud/download/index.html:266
+#: data/content/cloud/download/index.html:398
 #: data/content/cloud/prerelease/index.html:276
 #: data/content/cloud/prerelease/index.html:408
 msgid "Standard PV AMIs"
 msgstr ""
 
-#: data/content/cloud/download/index.html:275
-#: data/content/cloud/download/index.html:407
+#: data/content/cloud/download/index.html:272
+#: data/content/cloud/download/index.html:404
 #, python-format
 msgid "Fedora %(rel)s Standard Base Cloud PV AMIs"
 msgstr ""

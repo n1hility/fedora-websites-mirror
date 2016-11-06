@@ -31,13 +31,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-7 col-md-offset-5 text-left recover-heading">
-          <h2>${Markup(_('Download Fedora %(rel)s Cloud')) % {'rel':global_variables.release['curr_id']}}</h2>
-            <p>${_('There are two main versions of Fedora Cloud available:')}
-              <ul>
-                <li>${Markup(_('&lt;a href="index.html"&gt;Base images&lt;/a&gt; suitable for creating VMs.'))}</li>
-                <li>${Markup(_('&lt;a href="atomic.html"&gt;Atomic Host images&lt;/a&gt; for creating hosts for container deployment.'))}</li>
-              </ul>
-            </p>
+          <h2>${Markup(_('Download Fedora %(rel)s Atomic Host')) % {'rel':global_variables.release['curr_id']}}</h2>
+            <p>${_('Atomic Host is built every 2 weeks or so.')}</p>
+            <p py:if="not global_variables.release['atomic_freshness']">${Markup(_('The latest two week build did not meet our testing criteria. The images available are from over %(atomic_age)s days ago. Check the Project Atomic blog for updates and information about Atomic blocker bugs.') % global_variables.release)}</p>
+            <p py:if="global_variables.release['atomic_freshness']">${Markup(_('These are the latest official Fedora Atomic Host images, produced %(atomic_age)s days ago.') % global_variables.release)}</p>
         </div>
       </div>
     </div>
