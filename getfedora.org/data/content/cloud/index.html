@@ -45,7 +45,7 @@
   </div>
 
    <!-- Feature: Atomic Host -->
-  <div class="jumbotron product-feature atomic-host">
+  <div class="jumbotron atomic-host">
     <div class="container">
       <div class="row bottom-margin">
       <div class="col-sm-6 col-sm-offset-1 caption">
@@ -57,22 +57,25 @@
     </div>
   </div>
 
-  <!-- Feature: Base -->
-  <div class="jumbotron product-feature base minimalfastflexible" style="background-color: #7bcf3e;">
-    <div class="container">
-      <div class="row">
-	    <div class="col-md-5 col-md-offset-2 col-sm-6  caption">
-	      <h2>${_('Minimal, fast, flexible')}</h2>
-	      <p>${_('Everything you need, and nothing you don\'t. The Fedora Cloud Base image is smaller, so you can deploy faster. Then use the universe of services and tools in Fedora to customize, so your cloud is right for you.')}</p>
+<!-- Ostree and CLI -->
+  <div class="jumbotron jumbotron-full">
+    <div class="container-full">
+        <div class="col-md-6 col-xs-12 atomic-ostree">
+          <div class="col-md-5 col-md-offset-2 col-xs-12 top-margin bottom-margin">
+            <h2>${_('OStree Updates')}</h2>
+            <p>${_('Atomically update your system from the latest upstream OStree. Make your servers identical, and easily roll back if there\'s an upgrade problem.')}</p>
+          </div>
         </div>
-        <div class="col-md-5 col-sm-6 screenshot">
-	      <img src="/static/images/cloud/minimize-vice.png" />
-	    </div>
-      </div>
+        <div class="col-md-6 col-xs-12 atomic-cli">
+          <div class="col-md-5 col-md-offset-2 col-xs-12 top-margin bottom-margin">
+            <h2>${_('Atomic CLI')}</h2>
+            <p>${_('Manage Docker containers, system containers, Atomic Apps, and more using one convenient command-line tool.')}</p>
+          </div>
+        </div>
     </div>
   </div>
 
-  <!-- Feature: Industry-standard tools -->
+  <!-- Feature: Kubernetes and Openshift -->
   <div class="jumbotron product-feature stdtools" style="background-color: #ffffff;">
     <div class="container">
       <div class="row">
@@ -82,33 +85,6 @@
 	    <div class="col-sm-6 caption">
 	      <h2>${_('Public or private')}</h2>
 	      <p>${_('Deploy and run Fedora Cloud in public or private cloud infrastructure, using the industry standard tools cloud-init and OpenStack Heat. Wherever you run your cloud, Fedora is ready to go.')}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-   <!-- Feature: Atomic Host -->
-  <div class="jumbotron product-feature atomic-host">
-    <div class="container">
-      <div class="row top-margin bottom-margin">
-	    <div class="col-sm-6 col-sm-offset-3 text-center caption">
-	      <h2>${_('Designed for containers')}</h2>
-	      <p>${_('Want easy, scalable app deployment? Fedora Atomic Host is optimized and streamlined to run Docker containers out of the box. Whether you\'re rolling out a handful of containers, or scaling up to meet incredible demand, you can do it with Fedora Atomic Host.')}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <!-- Feature: ostree -->
-  <div class="jumbotron product-feature ostree">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 screenshot">
-	      <img src="/static/images/atomicgraphic.png" />
-	    </div>
-	    <div class="col-sm-6 caption">
-	      <h2>${_('Project Atomic inside')}</h2>
-	      <p>${_('The new Project Atomic update system works like git for your operating system. Now you can update and roll back with confidence and minimal downtime.')}</p>
         </div>
       </div>
     </div>

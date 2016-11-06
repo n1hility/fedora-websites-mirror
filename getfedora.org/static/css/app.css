@@ -906,6 +906,18 @@ background-color:#A07CBC;
 margin-top:20px;
 }
 
+#cloud .atomic-ostree {
+  background-image: url(../images/cloud/atomic-ostree.png);
+  background-position: center center;
+  min-height: 350px;
+}
+
+#cloud .atomic-cli {
+  background-image: url(../images/cloud/atomic-cli.png);
+  background-position: center center;
+  min-height: 350px;
+}
+
 #cloud .download-lower .btn
 {
   background-color:#A07CBC;
@@ -933,12 +945,6 @@ margin-top:20px;
 #cloud .btn-tab-active:hover {
   background-color: #A07CBC;
   color: #fff;
-}
-
-#cloud .ostree.product-feature
-{
-  background-image:url(../images/darktriangles.png);
-  color:#eee;
 }
 
 #cloud .product-testimonial {
@@ -1095,6 +1101,7 @@ ul.list-spaces li{ margin-bottom:10px; }
 
 /* Helpers */
 .container-full { margin: 0 auto; width: 100%; }
+.jumbotron-full { padding: 0;}
 .top-space { margin-top: 60px; }
 .top-margin { margin-top:20px; }
 .bottom-space { margin-bottom: 60px; }
