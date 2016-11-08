@@ -57,7 +57,7 @@
 
       <!-- Start Amazon -->
         <div class="row">
-            <div class="col-xs-12 top-margin">
+            <div class="col-xs-12">
               <h3>${_('Atomic Host Images for Amazon Public Cloud EC2')}</h3>
               <p>${_('The links below will provide you listings of available Atomic Host Hardware Virtual Machine (HVM) AMIs by region with buttons to launch them in your Amazon Web Services account. AMI IDs for usage with the AWS Console or command-line tools are also provided.')}</p>
             </div>
@@ -141,7 +141,7 @@
             <p>${_('Standard format AMIs are more suitable if you have infrequently accessed data and want to keep storage cost low.')}</p>
           </div>
         </div>
-        <div class="row hidden-xs bottom-space">
+        <div class="row hidden-xs">
           <div class="col-sm-6">
             <!-- Modal for EC2 GP2 Cloud Base HVM Instances -->
             <button type="button" class="btn btn-success btn-fix download-cloud-splash" data-toggle="modal" data-target=".GP2-base-EC2">${_('GP2 HVM AMIs')}</button>
@@ -217,53 +217,51 @@
             </div>
         </div>
 
+          <a href="#" id="openstack-base-click" class="btn btn-success download-cloud" role="button">${_('View Vagrant Downloads')}</a>
+          <div id="openstack-base-link" class="reveal" style="display: none;">
+            <div class="row">
+              <h4 class="bold">${_('Vagrant Image Downloads')}</h4>
+              <p>${_('These images are Vagrant Boxes images for deployment using Vagrant.')}</p>
+            </div>
+            <!-- Mobile -->
+            <div class="row visible-xs">
+              <div class="col-xs-12">
+                <h5 class="bold">${_('VirtualBox Image')}</h5>
+                <p>${_('If you\'re using Vagrant on Mac OS X or Windows, this is likely the image you\'ll want to use.')}</p>
+                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box" role="button">${_('Download')}</a>
+                  <p class="caption">${_('64-bit %sMB VirtualBox Base Vagrant Image') % global_variables.iso_size['VBvag_cloud']}</p>
+              </div>
+              <div class="col-xs-12">
+                <h5 class="bold">${_('libvirt/KVM Image')}</h5>
+                <p>${_('If you\'re using Vagrant on Fedora, this is the image you\'ll want to use.')}</p>
+                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box" role="button">${_('Download')}</a>
+                  <p class="caption">${_('64-bit %sMB libvirt/KVM Base Vagrant Image') % global_variables.iso_size['libvag_cloud']}</p>
+              </div>
+            </div>
 
-
-
-
-
-
-
-
-        <!-- Mobile -->
-        <div class="row visible-xs">
-          <div class="col-xs-12">
-            <h5 class="bold">${_('VirtualBox Image')}</h5>
-            <p>${_('If you\'re using Vagrant on Mac OS X or Windows, this is likely the image you\'ll want to use.')}</p>
-            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box" role="button">${_('VirtualBox Image')}</a>
-              <p class="caption">${_('64-bit %sMB VirtualBox Base Vagrant Image') % global_variables.iso_size['VBvag_cloud']}</p>
+              <!-- Desktop -->
+            <div class="row hidden-xs">
+              <div class="col-sm-6">
+                <h5 class="bold">${_('VirtualBox Image')}</h5>
+                <p>${_('If you\'re using Vagrant on Mac OS X or Windows, this is likely the image you\'ll want to use.')}</p>
+              </div>
+              <div class="col-sm-6">
+                <h5 class="bold">${_('libvirt/KVM Image')}</h5>
+                <p>${_('If you\'re using Vagrant on Fedora, this is the image you\'ll want to use.')}</p>
+              </div>
+            </div>
+            <div class="row hidden-xs">
+              <div class="col-sm-6">
+                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_cloud_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box" role="button">${_('Download')}</a>
+                  <p class="caption">${_('64-bit %sMB VirtualBox Base Vagrant Image') % global_variables.iso_size['VBvag_cloud']}</p>
+              </div>
+              <div class="col-sm-6">
+                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_cloud_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box" role="button">${_('Download')}</a>
+                  <p class="caption">${_('64-bit %sMB libvirt/KVM Base Vagrant Image') % global_variables.iso_size['libvag_cloud']}</p>
+              </div>
+            </div>
           </div>
-          <div class="col-xs-12">
-            <h5 class="bold">${_('libvirt/KVM Image')}</h5>
-            <p>${_('If you\'re using Vagrant on Fedora, this is the image you\'ll want to use.')}</p>
-            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box" role="button">${_('libvirt/KVM Image')}</a>
-              <p class="caption">${_('64-bit %sMB libvirt/KVM Base Vagrant Image') % global_variables.iso_size['libvag_cloud']}</p>
-          </div>
-        </div>
-
-          <!-- Desktop -->
-        <div class="row hidden-xs">
-          <div class="col-sm-6">
-            <h5 class="bold">${_('VirtualBox Image')}</h5>
-            <p>${_('If you\'re using Vagrant on Mac OS X or Windows, this is likely the image you\'ll want to use.')}</p>
-          </div>
-          <div class="col-sm-6">
-            <h5 class="bold">${_('libvirt/KVM Image')}</h5>
-            <p>${_('If you\'re using Vagrant on Fedora, this is the image you\'ll want to use.')}</p>
-          </div>
-        </div>
-        <div class="row hidden-xs">
-          <div class="col-sm-6">
-            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_cloud_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box" role="button">${_('VirtualBox Image')}</a>
-              <p class="caption">${_('64-bit %sMB VirtualBox Base Vagrant Image') % global_variables.iso_size['VBvag_cloud']}</p>
-          </div>
-          <div class="col-sm-6">
-            <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_cloud_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box" role="button">${_('libvirt/KVM Image')}</a>
-              <p class="caption">${_('64-bit %sMB libvirt/KVM Base Vagrant Image') % global_variables.iso_size['libvag_cloud']}</p>
-          </div>
-        </div>
-      <!-- End Vagrant -->
-
+        <!-- End Vagrant -->
 
     <hr />
     <xi:include href="../../../templates/export-regulations.html" />
