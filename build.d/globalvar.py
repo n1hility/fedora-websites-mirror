@@ -2,30 +2,33 @@
 # -*- coding: utf-8 -*-
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
 release={
-    'prev_id':     '23',
-    'curr_id':     '24',
-    'next_id':     '25',
+    'prev_id':     '24',
+    'curr_id':     '25',
+    'next_id':     '26',
     'curr_name':   '',
     'next_name':   '',
-    'curr_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  'Beta',         # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_ppc64_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_s390_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_AMI_state':  'Beta',   # either 'Alpha', 'Beta' or '' (i.e empty)
-    'prev_arm_id': '23',
-    'prev_ppc64_id': '23',
-    'prev_s390_id': '23',
-    'prev_cloud_id': '23',
-    'curr_arm_id': '24',
-    'curr_ppc64_id': '24',
-    'curr_s390_id': '24',
-    'curr_cloud_id': '24',
+    'curr_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_AMI_state':  '',   # either 'Alpha', 'Beta' or '' (i.e empty)
+    'prev_arm_id': '24',
+    'prev_ppc64_id': '24',
+    'prev_s390_id': '24',
+    'prev_cloud_id': '24',
+    'prev_atomic_id': '23',
+    'curr_arm_id': '25',
+    'curr_ppc64_id': '25',
+    'curr_s390_id': '25',
+    'curr_cloud_id': '25',
+    'curr_atomic_id': '24',
     'curr_cloud_AMI_id': '24',
-    'next_arm_id': '25',
-    'next_ppc64_id': '25',
-    'next_s390_id': '25',
-    'next_cloud_id': '25',
+    'next_arm_id': '26',
+    'next_ppc64_id': '26',
+    'next_s390_id': '26',
+    'next_cloud_id': '26',
+    'next_atomic_id': '25',
     'next_cloud_AMI_id': '25',
     'composedate': '20160616',
     'unofficial_compose': '20160614',

@@ -191,8 +191,8 @@ def process_dir(dirpath, filenames):
         if collect_atomic_vars is not None:
             # Go get two-week-atomic release info from datagrepper
             collected_atomic_vars = collect_atomic_vars(
-                globalvar.release['curr_id'],
-                globalvar.release['next_id'],
+                globalvar.release['curr_atomic_id'],
+                globalvar.release['next_atomic_id'],
             )
             # Overwrite the handwritten vars with ones from datagrepper
             for key1, entry in collected_atomic_vars.items():
