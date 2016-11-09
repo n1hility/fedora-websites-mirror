@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-11-06 10:03+0100\n"
+"POT-Creation-Date: 2016-11-09 13:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -340,7 +340,7 @@ msgid "Read these instructions to validate your image."
 msgstr ""
 
 #: data/content/cloud/index.html:8
-msgid "Fedora Cloud"
+msgid "Fedora Atomic"
 msgstr ""
 
 #: data/content/cloud/index.html:18
@@ -431,568 +431,9 @@ msgstr ""
 msgid "Ready to give Fedora Cloud a try?"
 msgstr ""
 
-#: data/content/cloud/download/atomic.html:10
-#: data/content/cloud/download/docker.html:10
 #: data/content/cloud/download/download-cloud-splash.html:8
 #: data/content/cloud/download/index.html:10
 msgid "Download Fedora Cloud"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:34
-#: data/content/cloud/download/docker.html:34
-#, python-format
-msgid "Download Fedora %(rel)s Cloud"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:35
-#: data/content/cloud/download/docker.html:35
-msgid "There are two main versions of Fedora Cloud available:"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:37
-#: data/content/cloud/download/docker.html:37
-msgid "<a href=\"index.html\">Base images</a> suitable for creating VMs."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:38
-#: data/content/cloud/download/docker.html:38
-msgid ""
-"<a href=\"atomic.html\">Atomic Host images</a> for creating hosts for "
-"container deployment."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:58
-#: data/content/cloud/download/docker.html:58
-#: data/content/cloud/download/index.html:55
-#: data/content/cloud/prerelease/docker.html:58
-#: data/content/cloud/prerelease/index.html:58
-msgid "Base Images"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:59
-#: data/content/cloud/download/atomic.html:71
-#: data/content/cloud/download/docker.html:59
-#: data/content/cloud/download/index.html:56
-msgid "Atomic Host Images"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:60
-#: data/content/cloud/download/docker.html:60
-#: data/content/cloud/download/docker.html:71
-#: data/content/cloud/download/index.html:57
-#: data/content/cloud/prerelease/docker.html:60
-#: data/content/cloud/prerelease/index.html:60
-msgid "Docker Image"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:72
-msgid ""
-"Fedora Atomic Host is a leading edge base operating system following the "
-"Project Atomic model.  It is designed around Kubernetes and Docker "
-"containers.  The images published here showcase that work. Note that the "
-"images have passed several levels of automated testing, but are not "
-"always subjected to manual testing by the QA team."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:73
-#, python-format
-msgid ""
-"Please test before using new versions in production. If you do discover a"
-" problem, the Atomic Host tools make it easy to flip back to an earlier "
-"release — and if that happens, please also help us by <a "
-"href=\"%s\">filing bugs</a> or <a href=\"%s\">submitting fixes</a>."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:74
-msgid ""
-"Fedora Atomic Host images are updated roughly every two weeks, rather "
-"than on the main six-month Fedora cadence. Because development is moving "
-"quickly, only the latest major Fedora release is supported."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:75
-#, python-format
-msgid ""
-"Note that different Fedora Atomic Host media are subject to different "
-"levels of automatic testing. We are making continuous improvements to "
-"these tests; <a href=\"%s\">click here</a> to see the current test "
-"status."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:76
-#, python-format
-msgid ""
-"You can learn more about the Atomic project at <a "
-"href=\"%s\">projectatomic.io</a>."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:77
-#: data/content/cloud/download/index.html:36
-#, python-format
-msgid ""
-"The latest two week build did not meet our testing criteria. The images "
-"available are from over %(atomic_age)s days ago. Check the Project Atomic"
-" blog for updates and information about Atomic blocker bugs."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:78
-#: data/content/cloud/download/index.html:37
-#, python-format
-msgid ""
-"These are the latest official Fedora Atomic Host images, produced "
-"%(atomic_age)s days ago."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:79
-msgid "Atomic Host Image"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:85
-#: data/content/cloud/download/atomic.html:101
-#: data/content/cloud/download/index.html:76
-#: data/content/cloud/download/index.html:92
-#: data/content/cloud/prerelease/index.html:88
-#: data/content/cloud/prerelease/index.html:104
-msgid "qcow2 Image"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:86
-#: data/content/cloud/download/atomic.html:102
-#, python-format
-msgid ""
-"This is Fedora %(rel)s Cloud Atomic Host in a Qcow2-formatted image for "
-"use with OpenStack."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:87
-#: data/content/cloud/download/atomic.html:93
-#: data/content/cloud/download/atomic.html:111
-#: data/content/cloud/download/atomic.html:115
-#: data/content/cloud/download/docker.html:82
-#: data/content/cloud/download/index.html:78
-#: data/content/cloud/download/index.html:84
-#: data/content/cloud/download/index.html:102
-#: data/content/cloud/download/index.html:106
-#: data/content/cloud/prerelease/docker.html:91
-#: data/content/cloud/prerelease/index.html:90
-#: data/content/cloud/prerelease/index.html:96
-#: data/content/cloud/prerelease/index.html:114
-#: data/content/cloud/prerelease/index.html:118
-#: data/content/server/download/index.html:33
-#: data/content/server/prerelease/index.html:18
-#: data/content/workstation/download/index.html:40
-#: data/content/workstation/download/index.html:44
-#: data/content/workstation/download/index.html:49
-#: data/content/workstation/download/index.html:101
-#: data/content/workstation/download/index.html:110
-#: data/content/workstation/download/index.html:122
-#: data/content/workstation/prerelease/index.html:19
-#: data/content/workstation/prerelease/index.html:23
-#: data/content/workstation/prerelease/index.html:28
-#: data/content/workstation/prerelease/index.html:112
-#: data/content/workstation/prerelease/index.html:121
-#: data/content/workstation/prerelease/index.html:133
-#: data/templates/footer.html:37
-msgid "Download"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:88
-#: data/content/cloud/download/atomic.html:112
-#: data/content/cloud/download/index.html:79
-#: data/content/cloud/download/index.html:103
-#: data/content/cloud/prerelease/index.html:91
-#: data/content/cloud/prerelease/index.html:115
-#, python-format
-msgid "64-bit %sMB Qcow2 Image"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:91
-#: data/content/cloud/download/atomic.html:105
-#: data/content/cloud/download/index.html:82
-#: data/content/cloud/download/index.html:96
-#: data/content/cloud/prerelease/index.html:94
-#: data/content/cloud/prerelease/index.html:108
-msgid "Raw Image"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:92
-#: data/content/cloud/download/atomic.html:106
-#, python-format
-msgid ""
-"This is Fedora %(rel)s Cloud Atomic Host in a compressed raw image "
-"format. If you're not sure what to use, try this."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:94
-#: data/content/cloud/download/atomic.html:116
-#: data/content/cloud/download/index.html:85
-#: data/content/cloud/download/index.html:107
-#: data/content/cloud/prerelease/index.html:97
-#: data/content/cloud/prerelease/index.html:119
-#, python-format
-msgid "64-bit %sMB xz-Compressed Raw Image"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:124
-msgid "Atomic Host Images for Vagrant"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:125
-#: data/content/cloud/download/index.html:116
-msgid "These images are Vagrant Boxes images for deployment using Vagrant."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:131
-#: data/content/cloud/download/atomic.html:133
-#: data/content/cloud/download/atomic.html:147
-#: data/content/cloud/download/atomic.html:157
-#: data/content/cloud/download/index.html:122
-#: data/content/cloud/download/index.html:124
-#: data/content/cloud/download/index.html:138
-#: data/content/cloud/download/index.html:148
-msgid "VirtualBox Image"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:132
-#: data/content/cloud/download/atomic.html:148
-#: data/content/cloud/download/index.html:123
-#: data/content/cloud/download/index.html:139
-msgid ""
-"If you're using Vagrant on Mac OS X or Windows, this is likely the image "
-"you'll want to use."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:134
-#: data/content/cloud/download/atomic.html:158
-#, python-format
-msgid "64-bit %sMB VirtualBox Atomic Host Vagrant Image"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:137
-#: data/content/cloud/download/atomic.html:139
-#: data/content/cloud/download/atomic.html:151
-#: data/content/cloud/download/atomic.html:161
-#: data/content/cloud/download/index.html:128
-#: data/content/cloud/download/index.html:130
-#: data/content/cloud/download/index.html:142
-#: data/content/cloud/download/index.html:152
-msgid "libvirt/KVM Image"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:138
-#: data/content/cloud/download/atomic.html:152
-#: data/content/cloud/download/index.html:129
-#: data/content/cloud/download/index.html:143
-msgid "If you're using Vagrant on Fedora, this is the image you'll want to use."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:140
-#: data/content/cloud/download/atomic.html:162
-#, python-format
-msgid "64-bit %sMB libvirt/KVM Atomic Host Vagrant Image"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:171
-msgid "Atomic Host Cloud Images for Amazon Public Cloud EC2"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:172
-#: data/content/cloud/download/index.html:163
-#: data/content/cloud/prerelease/index.html:173
-msgid ""
-"The links below will provide you listings of available AMIs by region "
-"with buttons to launch them in your Amazon Web Services account. AMI IDs "
-"for usage with the AWS Console or command-line tools are also provided."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:173
-#: data/content/cloud/download/index.html:164
-#: data/content/cloud/prerelease/index.html:174
-msgid ""
-"All images are available in two formats: a GP2 format which uses faster "
-"SSD storage, and a standard format which is more suitable if you have "
-"infrequently accessed data and you want to keep storage cost low."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:178
-#: data/content/cloud/download/index.html:170
-#: data/content/cloud/download/index.html:299
-#: data/content/cloud/prerelease/index.html:180
-#: data/content/cloud/prerelease/index.html:309
-msgid "Hardware Virtual Machine (HVM)"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:181
-#: data/content/cloud/download/index.html:173
-#: data/content/cloud/download/index.html:310
-#: data/content/cloud/prerelease/index.html:183
-#: data/content/cloud/prerelease/index.html:320
-msgid "GP2 HVM AMIs"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:186
-#: data/content/cloud/download/atomic.html:214
-#: data/content/cloud/download/index.html:178
-#: data/content/cloud/download/index.html:208
-#: data/content/cloud/download/index.html:241
-#: data/content/cloud/download/index.html:271
-#: data/content/cloud/download/index.html:315
-#: data/content/cloud/download/index.html:343
-#: data/content/cloud/download/index.html:375
-#: data/content/cloud/download/index.html:403
-#: data/content/cloud/prerelease/index.html:188
-#: data/content/cloud/prerelease/index.html:218
-#: data/content/cloud/prerelease/index.html:251
-#: data/content/cloud/prerelease/index.html:281
-#: data/content/cloud/prerelease/index.html:325
-#: data/content/cloud/prerelease/index.html:353
-#: data/content/cloud/prerelease/index.html:385
-#: data/content/cloud/prerelease/index.html:413
-#: data/templates/keys/key-button-and-modal-obsolete.html:37
-#: data/templates/keys/key-button-and-modal-obsolete.html:88
-#: data/templates/keys/key-button-and-modal.html:37
-#: data/templates/keys/key-button-and-modal.html:88
-msgid "Close"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:187
-#, python-format
-msgid "Fedora %(rel)s GP2 Atomic Host Cloud HVM AMIs"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:192
-#: data/content/cloud/download/atomic.html:220
-#: data/content/cloud/download/index.html:184
-#: data/content/cloud/download/index.html:214
-#: data/content/cloud/download/index.html:247
-#: data/content/cloud/download/index.html:277
-#: data/content/cloud/download/index.html:321
-#: data/content/cloud/download/index.html:349
-#: data/content/cloud/download/index.html:381
-#: data/content/cloud/download/index.html:409
-#: data/content/cloud/prerelease/index.html:194
-#: data/content/cloud/prerelease/index.html:224
-#: data/content/cloud/prerelease/index.html:257
-#: data/content/cloud/prerelease/index.html:287
-#: data/content/cloud/prerelease/index.html:331
-#: data/content/cloud/prerelease/index.html:359
-#: data/content/cloud/prerelease/index.html:391
-#: data/content/cloud/prerelease/index.html:419
-#: data/templates/cloud-tab.html:13
-msgid "Region"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:193
-#: data/content/cloud/download/atomic.html:221
-#: data/content/cloud/download/index.html:185
-#: data/content/cloud/download/index.html:215
-#: data/content/cloud/download/index.html:248
-#: data/content/cloud/download/index.html:278
-#: data/content/cloud/download/index.html:322
-#: data/content/cloud/download/index.html:350
-#: data/content/cloud/download/index.html:382
-#: data/content/cloud/download/index.html:410
-#: data/content/cloud/prerelease/index.html:195
-#: data/content/cloud/prerelease/index.html:225
-#: data/content/cloud/prerelease/index.html:258
-#: data/content/cloud/prerelease/index.html:288
-#: data/content/cloud/prerelease/index.html:332
-#: data/content/cloud/prerelease/index.html:360
-#: data/content/cloud/prerelease/index.html:392
-#: data/content/cloud/prerelease/index.html:420
-#: data/templates/cloud-tab.html:16
-msgid "AMI ID"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:194
-#: data/content/cloud/download/atomic.html:222
-#: data/content/cloud/download/index.html:186
-#: data/content/cloud/download/index.html:216
-#: data/content/cloud/download/index.html:249
-#: data/content/cloud/download/index.html:279
-#: data/content/cloud/download/index.html:323
-#: data/content/cloud/download/index.html:351
-#: data/content/cloud/download/index.html:383
-#: data/content/cloud/download/index.html:411
-#: data/content/cloud/prerelease/index.html:196
-#: data/content/cloud/prerelease/index.html:226
-#: data/content/cloud/prerelease/index.html:259
-#: data/content/cloud/prerelease/index.html:289
-#: data/content/cloud/prerelease/index.html:333
-#: data/content/cloud/prerelease/index.html:361
-#: data/content/cloud/prerelease/index.html:393
-#: data/content/cloud/prerelease/index.html:421
-#: data/templates/cloud-tab.html:17
-msgid "Launch"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:209
-#: data/content/cloud/download/index.html:203
-#: data/content/cloud/download/index.html:338
-#: data/content/cloud/prerelease/index.html:213
-#: data/content/cloud/prerelease/index.html:348
-msgid "Standard HVM AMIs"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:215
-#, python-format
-msgid "Fedora %(rel)s Standard Atomic Host Cloud HVM AMIs"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:246
-#: data/content/server/download/index.html:50
-#: data/content/server/prerelease/index.html:73
-#: data/content/workstation/download/index.html:139
-#: data/content/workstation/prerelease/index.html:153
-msgid "Other Downloads"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:248
-msgid "Atomic Host Image:"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:250
-msgid "64-bit Atomic Host ISO image"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:257
-#: data/content/cloud/download/docker.html:96
-#: data/content/cloud/download/index.html:449
-#: data/content/server/download/index.html:61
-#: data/content/workstation/download/index.html:153
-#, python-format
-msgid "F%(rel)s Alpha"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:258
-#: data/content/cloud/download/atomic.html:268
-#: data/content/cloud/download/docker.html:97
-#: data/content/cloud/download/docker.html:107
-#: data/content/cloud/download/index.html:450
-#: data/content/cloud/download/index.html:460
-#: data/content/server/download/index.html:62
-#: data/content/server/download/index.html:72
-#: data/content/workstation/download/index.html:154
-#: data/content/workstation/download/index.html:164
-msgid "Try a pre-release"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:259
-#: data/content/cloud/download/atomic.html:269
-#: data/content/cloud/download/docker.html:98
-#: data/content/cloud/download/docker.html:108
-#: data/content/cloud/download/index.html:451
-#: data/content/cloud/download/index.html:461
-#: data/content/server/download/index.html:63
-#: data/content/server/download/index.html:73
-#: data/content/workstation/download/index.html:155
-#: data/content/workstation/download/index.html:165
-msgid "We're working on our next release."
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:260
-#: data/content/cloud/download/atomic.html:270
-#: data/content/cloud/download/docker.html:99
-#: data/content/cloud/download/docker.html:109
-#: data/content/cloud/download/index.html:452
-#: data/content/cloud/download/index.html:462
-#: data/content/server/download/index.html:64
-#: data/content/server/download/index.html:74
-#: data/content/workstation/download/index.html:156
-#: data/content/workstation/download/index.html:166
-#, python-format
-msgid "Help us get F%(rel)s ready!"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:261
-#: data/content/cloud/download/docker.html:100
-#: data/content/cloud/download/index.html:453
-#: data/content/server/download/index.html:65
-#: data/content/workstation/download/index.html:157
-#, python-format
-msgid "Download F%(rel)s Alpha images"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:262
-#: data/content/cloud/download/atomic.html:272
-#: data/content/cloud/download/docker.html:101
-#: data/content/cloud/download/docker.html:111
-#: data/content/cloud/download/index.html:454
-#: data/content/cloud/download/index.html:464
-#: data/content/server/download/index.html:66
-#: data/content/server/download/index.html:76
-#: data/content/workstation/download/index.html:158
-#: data/content/workstation/download/index.html:168
-msgid "How to test pre-releases"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:267
-#: data/content/cloud/download/docker.html:106
-#: data/content/cloud/download/index.html:459
-#: data/content/server/download/index.html:71
-#: data/content/workstation/download/index.html:163
-#, python-format
-msgid "F%(rel)s Beta"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:271
-#: data/content/cloud/download/docker.html:110
-#: data/content/cloud/download/index.html:463
-#: data/content/server/download/index.html:75
-#: data/content/workstation/download/index.html:167
-#, python-format
-msgid "Download F%(rel)s Beta images"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:279
-#: data/content/cloud/download/docker.html:118
-#: data/content/cloud/download/index.html:471
-#: data/content/server/download/index.html:93
-#: data/content/workstation/download/index.html:200
-msgid "Verify"
-msgstr ""
-
-#: data/content/cloud/download/atomic.html:282
-#: data/content/cloud/download/docker.html:121
-#: data/content/cloud/download/index.html:474
-#: data/content/cloud/prerelease/docker.html:128
-#: data/content/cloud/prerelease/index.html:474
-#: data/content/server/download/index.html:96
-#: data/content/server/prerelease/index.html:63
-#: data/content/workstation/download/index.html:203
-#: data/content/workstation/prerelease/index.html:141
-msgid "Verify your Image"
-msgstr ""
-
-#: data/content/cloud/download/docker.html:72
-msgid ""
-"The Fedora Docker Base Image is a minimal Fedora install which can be "
-"spawned as a Docker container. It contains basic tools which can be used "
-"as a foundation for building Docker Layered Images - bash, vi and dnf "
-"(and its dependencies)."
-msgstr ""
-
-#: data/content/cloud/download/docker.html:73
-#: data/content/cloud/prerelease/docker.html:82
-msgid "Docker Base Image"
-msgstr ""
-
-#: data/content/cloud/download/docker.html:78
-#: data/content/cloud/prerelease/docker.html:87
-msgid ""
-"You can easily load this Docker image into your running Docker daemon "
-"using command:"
-msgstr ""
-
-#: data/content/cloud/download/docker.html:80
-#: data/content/cloud/prerelease/docker.html:89
-msgid "Following command can be used to spawn a container running bash inside:"
-msgstr ""
-
-#: data/content/cloud/download/docker.html:83
-#: data/content/cloud/prerelease/docker.html:92
-#, python-format
-msgid "64-bit %sMB raw.xz Image"
 msgstr ""
 
 #: data/content/cloud/download/download-cloud-splash.html:37
@@ -1043,118 +484,444 @@ msgstr ""
 msgid "Atomic Host is built every 2 weeks or so."
 msgstr ""
 
+#: data/content/cloud/download/index.html:36
+#, python-format
+msgid ""
+"The latest two week build did not meet our testing criteria. The images "
+"available are from over %(atomic_age)s days ago. Check the Project Atomic"
+" blog for updates and information about Atomic blocker bugs."
+msgstr ""
+
+#: data/content/cloud/download/index.html:37
+#, python-format
+msgid ""
+"These are the latest official Fedora Atomic Host images, produced "
+"%(atomic_age)s days ago."
+msgstr ""
+
+#: data/content/cloud/download/index.html:48
+msgid "Atomic Host Images"
+msgstr ""
+
+#: data/content/cloud/download/index.html:49
+msgid ""
+"Fedora Atomic Host is a leading edge base operating system following the "
+"Project Atomic model. It is designed around Kubernetes and Docker "
+"containers. The images published here showcase that work. Note that the "
+"images have passed several levels of automated testing, but are not "
+"always subjected to."
+msgstr ""
+
+#: data/content/cloud/download/index.html:51
+msgid ""
+"<strong>Please test before using new versions in production.</strong> If "
+"you do discover a problem, the Atomic Host tools make it easy to flip "
+"back to an earlier release — and if that happens, please also help us by "
+"filing bugs or submitting fixes."
+msgstr ""
+
+#: data/content/cloud/download/index.html:52
+msgid ""
+"<strong>Fedora Atomic Host images are updated roughly every two "
+"weeks,</strong> rather than on the main six-month Fedora cadence. Because"
+" development is moving quickly, only the latest major Fedora release is "
+"supported."
+msgstr ""
+
+#: data/content/cloud/download/index.html:53
+#, python-format
+msgid ""
+"<strong>Note that different Fedora Atomic Host media are subject to "
+"different levels of automatic testing.</strong> You can learn more about "
+"the Atomic project at <a href=\"%s\">projectatomic.io</a>, <a "
+"href=\"%s\">click here</a> to see the current test status."
+msgstr ""
+
+#: data/content/cloud/download/index.html:61
+msgid "Atomic Host Images for Amazon Public Cloud EC2"
+msgstr ""
+
+#: data/content/cloud/download/index.html:62
+msgid ""
+"The links below will provide you listings of available Atomic Host "
+"Hardware Virtual Machine (HVM) AMIs by region with buttons to launch them"
+" in your Amazon Web Services account. AMI IDs for usage with the AWS "
+"Console or command-line tools are also provided."
+msgstr ""
+
 #: data/content/cloud/download/index.html:68
-msgid "Base Cloud Images"
+#: data/content/cloud/download/index.html:136
+msgid "GP2 Format"
 msgstr ""
 
 #: data/content/cloud/download/index.html:69
-#: data/content/cloud/prerelease/index.html:81
+#: data/content/cloud/download/index.html:137
 msgid ""
-"The images on this page are Fedora Cloud images for creating general "
-"purpose virtual machines (VMs)."
+"GP2 format AMIs use faster SSD storage; use these AMIs for speed, "
+"although note your storage costs will be more than standard."
 msgstr ""
 
-#: data/content/cloud/download/index.html:70
-#: data/content/cloud/prerelease/index.html:82
-msgid "Base Cloud Image"
+#: data/content/cloud/download/index.html:71
+#: data/content/cloud/download/index.html:147
+#: data/content/cloud/prerelease/index.html:183
+#: data/content/cloud/prerelease/index.html:320
+msgid "GP2 HVM AMIs"
+msgstr ""
+
+#: data/content/cloud/download/index.html:76
+#: data/content/cloud/download/index.html:108
+#: data/content/cloud/download/index.html:152
+#: data/content/cloud/download/index.html:182
+#: data/content/cloud/prerelease/index.html:188
+#: data/content/cloud/prerelease/index.html:218
+#: data/content/cloud/prerelease/index.html:251
+#: data/content/cloud/prerelease/index.html:281
+#: data/content/cloud/prerelease/index.html:325
+#: data/content/cloud/prerelease/index.html:353
+#: data/content/cloud/prerelease/index.html:385
+#: data/content/cloud/prerelease/index.html:413
+#: data/templates/keys/key-button-and-modal-obsolete.html:37
+#: data/templates/keys/key-button-and-modal-obsolete.html:88
+#: data/templates/keys/key-button-and-modal.html:37
+#: data/templates/keys/key-button-and-modal.html:88
+msgid "Close"
 msgstr ""
 
 #: data/content/cloud/download/index.html:77
-#: data/content/cloud/download/index.html:93
+#: data/content/cloud/download/index.html:153
 #, python-format
-msgid ""
-"This is Fedora %(rel)s Cloud in a Qcow2-formatted image for use with "
-"OpenStack."
+msgid "Fedora %(rel)s GP2 Atomic Host HVM AMIs"
+msgstr ""
+
+#: data/content/cloud/download/index.html:82
+#: data/content/cloud/download/index.html:114
+#: data/content/cloud/download/index.html:158
+#: data/content/cloud/download/index.html:188
+#: data/content/cloud/prerelease/index.html:194
+#: data/content/cloud/prerelease/index.html:224
+#: data/content/cloud/prerelease/index.html:257
+#: data/content/cloud/prerelease/index.html:287
+#: data/content/cloud/prerelease/index.html:331
+#: data/content/cloud/prerelease/index.html:359
+#: data/content/cloud/prerelease/index.html:391
+#: data/content/cloud/prerelease/index.html:419
+#: data/templates/cloud-tab.html:13
+msgid "Region"
 msgstr ""
 
 #: data/content/cloud/download/index.html:83
-#: data/content/cloud/download/index.html:97
-#, python-format
-msgid ""
-"This is Fedora %(rel)s Cloud in a compressed raw image format. If you're "
-"not sure what to use, try this."
-msgstr ""
-
 #: data/content/cloud/download/index.html:115
-msgid "Base Cloud Images for Vagrant"
+#: data/content/cloud/download/index.html:159
+#: data/content/cloud/download/index.html:189
+#: data/content/cloud/prerelease/index.html:195
+#: data/content/cloud/prerelease/index.html:225
+#: data/content/cloud/prerelease/index.html:258
+#: data/content/cloud/prerelease/index.html:288
+#: data/content/cloud/prerelease/index.html:332
+#: data/content/cloud/prerelease/index.html:360
+#: data/content/cloud/prerelease/index.html:392
+#: data/content/cloud/prerelease/index.html:420
+#: data/templates/cloud-tab.html:16
+msgid "AMI ID"
 msgstr ""
 
-#: data/content/cloud/download/index.html:125
-#: data/content/cloud/download/index.html:149
+#: data/content/cloud/download/index.html:84
+#: data/content/cloud/download/index.html:116
+#: data/content/cloud/download/index.html:160
+#: data/content/cloud/download/index.html:190
+#: data/content/cloud/prerelease/index.html:196
+#: data/content/cloud/prerelease/index.html:226
+#: data/content/cloud/prerelease/index.html:259
+#: data/content/cloud/prerelease/index.html:289
+#: data/content/cloud/prerelease/index.html:333
+#: data/content/cloud/prerelease/index.html:361
+#: data/content/cloud/prerelease/index.html:393
+#: data/content/cloud/prerelease/index.html:421
+#: data/templates/cloud-tab.html:17
+msgid "Launch"
+msgstr ""
+
+#: data/content/cloud/download/index.html:100
+#: data/content/cloud/download/index.html:140
+msgid "Standard Format)"
+msgstr ""
+
+#: data/content/cloud/download/index.html:101
+#: data/content/cloud/download/index.html:141
+msgid ""
+"Standard format AMIs are more suitable if you have infrequently accessed "
+"data and want to keep storage cost low."
+msgstr ""
+
+#: data/content/cloud/download/index.html:103
+#: data/content/cloud/download/index.html:177
+#: data/content/cloud/prerelease/index.html:213
+#: data/content/cloud/prerelease/index.html:348
+msgid "Standard HVM AMIs"
+msgstr ""
+
+#: data/content/cloud/download/index.html:109
+#: data/content/cloud/download/index.html:183
+#, python-format
+msgid "Fedora %(rel)s Standard Atomic Host HVM AMIs"
+msgstr ""
+
+#: data/content/cloud/download/index.html:211
+msgid "Atomic Host Images for Vagrant"
+msgstr ""
+
+#: data/content/cloud/download/index.html:212
+msgid ""
+"Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and"
+" Libvirt providers. You can bring up Fedora Atomic Host in a vagrant box "
+"by running:"
+msgstr ""
+
+#: data/content/cloud/download/index.html:214
+msgid ""
+"If you\\’ve previously used vagrant to run a Fedora Atomic 24 VM, first "
+"ensure that you have the latest version by running:"
+msgstr ""
+
+#: data/content/cloud/download/index.html:216
+msgid ""
+"If you need to download images for Vagrant, you may click the button "
+"below to reveal the image download links."
+msgstr ""
+
+#: data/content/cloud/download/index.html:220
+msgid "View Vagrant Downloads"
+msgstr ""
+
+#: data/content/cloud/download/index.html:223
+msgid "Vagrant Image Downloads"
+msgstr ""
+
+#: data/content/cloud/download/index.html:224
+msgid "These images are Vagrant Boxes images for deployment using Vagrant."
+msgstr ""
+
+#: data/content/cloud/download/index.html:229
+#: data/content/cloud/download/index.html:245
+msgid "VirtualBox Image"
+msgstr ""
+
+#: data/content/cloud/download/index.html:230
+#: data/content/cloud/download/index.html:246
+msgid ""
+"If you're using Vagrant on Mac OS X or Windows, this is likely the image "
+"you'll want to use."
+msgstr ""
+
+#: data/content/cloud/download/index.html:231
+#: data/content/cloud/download/index.html:237
+#: data/content/cloud/download/index.html:255
+#: data/content/cloud/download/index.html:259
+#: data/content/cloud/prerelease/docker.html:91
+#: data/content/cloud/prerelease/index.html:90
+#: data/content/cloud/prerelease/index.html:96
+#: data/content/cloud/prerelease/index.html:114
+#: data/content/cloud/prerelease/index.html:118
+#: data/content/server/download/index.html:33
+#: data/content/server/prerelease/index.html:18
+#: data/content/workstation/download/index.html:40
+#: data/content/workstation/download/index.html:44
+#: data/content/workstation/download/index.html:49
+#: data/content/workstation/download/index.html:101
+#: data/content/workstation/download/index.html:110
+#: data/content/workstation/download/index.html:122
+#: data/content/workstation/prerelease/index.html:19
+#: data/content/workstation/prerelease/index.html:23
+#: data/content/workstation/prerelease/index.html:28
+#: data/content/workstation/prerelease/index.html:112
+#: data/content/workstation/prerelease/index.html:121
+#: data/content/workstation/prerelease/index.html:133
+#: data/templates/footer.html:37
+msgid "Download"
+msgstr ""
+
+#: data/content/cloud/download/index.html:232
+#: data/content/cloud/download/index.html:256
 #, python-format
 msgid "64-bit %sMB VirtualBox Base Vagrant Image"
 msgstr ""
 
-#: data/content/cloud/download/index.html:131
-#: data/content/cloud/download/index.html:153
+#: data/content/cloud/download/index.html:235
+#: data/content/cloud/download/index.html:249
+msgid "libvirt/KVM Image"
+msgstr ""
+
+#: data/content/cloud/download/index.html:236
+#: data/content/cloud/download/index.html:250
+msgid "If you're using Vagrant on Fedora, this is the image you'll want to use."
+msgstr ""
+
+#: data/content/cloud/download/index.html:238
+#: data/content/cloud/download/index.html:260
 #, python-format
 msgid "64-bit %sMB libvirt/KVM Base Vagrant Image"
 msgstr ""
 
-#: data/content/cloud/download/index.html:162
-#: data/content/cloud/prerelease/index.html:172
-msgid "Base Cloud Images for Amazon Public Cloud EC2"
-msgstr ""
-
-#: data/content/cloud/download/index.html:171
-#: data/content/cloud/download/index.html:300
-#: data/content/cloud/prerelease/index.html:181
-#: data/content/cloud/prerelease/index.html:310
+#: data/content/cloud/download/index.html:267
+#, python-format
 msgid ""
-"If you're unsure which image to choose, use this format. It can provide "
-"the same or better performance than PV images."
+"For more information about running Vagrant on Fedora Workstation, see <a "
+"href=\"%s\">our wiki page</a>."
 msgstr ""
 
-#: data/content/cloud/download/index.html:179
-#: data/content/cloud/download/index.html:316
+#: data/content/cloud/download/index.html:277
+#: data/content/server/download/index.html:50
+#: data/content/server/prerelease/index.html:73
+#: data/content/workstation/download/index.html:139
+#: data/content/workstation/prerelease/index.html:153
+msgid "Other Downloads"
+msgstr ""
+
+#: data/content/cloud/download/index.html:278
+msgid "Atomic Host ISO image (${SIZE})"
+msgstr ""
+
+#: data/content/cloud/download/index.html:280
+msgid "Base Images:"
+msgstr ""
+
+#: data/content/cloud/download/index.html:282
+msgid "Qcow2 Image (${SIZE})"
+msgstr ""
+
+#: data/content/cloud/download/index.html:283
+msgid "Raw Image (${SIZE})"
+msgstr ""
+
+#: data/content/cloud/download/index.html:287
+msgid "Docker:"
+msgstr ""
+
+#: data/content/cloud/download/index.html:289
+msgid "Docker Image (${SIZE})"
+msgstr ""
+
+#: data/content/cloud/download/index.html:292
+#: data/content/workstation/download/index.html:173
+#: data/content/workstation/prerelease/index.html:165
+msgid "Resources"
+msgstr ""
+
+#: data/content/cloud/download/index.html:293
+msgid ""
+"<a href=\"//docs.fedoraproject.org/release-notes\"><strong>Project "
+"Atomic: Getting Started</strong></a>"
+msgstr ""
+
+#: data/content/cloud/download/index.html:294
+msgid "Documentation on getting started using Project Atomic / Atomic Host."
+msgstr ""
+
+#: data/content/cloud/download/index.html:295
+msgid ""
+"<a href=\"//docs.fedoraproject.org/install-guide\"><strong>Project "
+"Atomic: Mailing List</strong></a>"
+msgstr ""
+
+#: data/content/cloud/download/index.html:296
 #, python-format
-msgid "Fedora %(rel)s GP2 Base Cloud HVM AMIs"
+msgid ""
+"Join the upstream mailing list at <a "
+"href=\"%s\">atomic@projectatomic.io</a>."
 msgstr ""
 
-#: data/content/cloud/download/index.html:209
-#: data/content/cloud/download/index.html:344
+#: data/content/cloud/download/index.html:297
 #, python-format
-msgid "Fedora %(rel)s Standard Base Cloud HVM AMIs"
+msgid ""
+"<a href=\"%(commonbugs_url)s\"><strong>Project Atomic: IRC "
+"Chat</strong></a>"
 msgstr ""
 
-#: data/content/cloud/download/index.html:233
+#: data/content/cloud/download/index.html:298
+msgid ""
+"Join the Project Atomic chat on <strong>#atomic</strong></a> on "
+"<strong>irc.freenode.org</strong></a>."
+msgstr ""
+
 #: data/content/cloud/download/index.html:303
-#: data/content/cloud/prerelease/index.html:243
-#: data/content/cloud/prerelease/index.html:313
-msgid "Paravirtual (PV)"
+#: data/content/server/download/index.html:61
+#: data/content/workstation/download/index.html:153
+#, python-format
+msgid "F%(rel)s Alpha"
 msgstr ""
 
-#: data/content/cloud/download/index.html:234
 #: data/content/cloud/download/index.html:304
-#: data/content/cloud/prerelease/index.html:244
-#: data/content/cloud/prerelease/index.html:314
-msgid "If you know you need a paravirtual format image for EC2, use this format."
+#: data/content/cloud/download/index.html:314
+#: data/content/server/download/index.html:62
+#: data/content/server/download/index.html:72
+#: data/content/workstation/download/index.html:154
+#: data/content/workstation/download/index.html:164
+msgid "Try a pre-release"
 msgstr ""
 
-#: data/content/cloud/download/index.html:236
-#: data/content/cloud/download/index.html:370
-#: data/content/cloud/prerelease/index.html:246
-#: data/content/cloud/prerelease/index.html:380
-msgid "GP2 PV AMIs"
+#: data/content/cloud/download/index.html:305
+#: data/content/cloud/download/index.html:315
+#: data/content/server/download/index.html:63
+#: data/content/server/download/index.html:73
+#: data/content/workstation/download/index.html:155
+#: data/content/workstation/download/index.html:165
+msgid "We're working on our next release."
 msgstr ""
 
-#: data/content/cloud/download/index.html:242
-#: data/content/cloud/download/index.html:376
+#: data/content/cloud/download/index.html:306
+#: data/content/cloud/download/index.html:316
+#: data/content/server/download/index.html:64
+#: data/content/server/download/index.html:74
+#: data/content/workstation/download/index.html:156
+#: data/content/workstation/download/index.html:166
 #, python-format
-msgid "Fedora %(rel)s GP2 Base Cloud PV AMIs"
+msgid "Help us get F%(rel)s ready!"
 msgstr ""
 
-#: data/content/cloud/download/index.html:266
-#: data/content/cloud/download/index.html:398
-#: data/content/cloud/prerelease/index.html:276
-#: data/content/cloud/prerelease/index.html:408
-msgid "Standard PV AMIs"
-msgstr ""
-
-#: data/content/cloud/download/index.html:272
-#: data/content/cloud/download/index.html:404
+#: data/content/cloud/download/index.html:307
+#: data/content/server/download/index.html:65
+#: data/content/workstation/download/index.html:157
 #, python-format
-msgid "Fedora %(rel)s Standard Base Cloud PV AMIs"
+msgid "Download F%(rel)s Alpha images"
+msgstr ""
+
+#: data/content/cloud/download/index.html:308
+#: data/content/cloud/download/index.html:318
+#: data/content/server/download/index.html:66
+#: data/content/server/download/index.html:76
+#: data/content/workstation/download/index.html:158
+#: data/content/workstation/download/index.html:168
+msgid "How to test pre-releases"
+msgstr ""
+
+#: data/content/cloud/download/index.html:313
+#: data/content/server/download/index.html:71
+#: data/content/workstation/download/index.html:163
+#, python-format
+msgid "F%(rel)s Beta"
+msgstr ""
+
+#: data/content/cloud/download/index.html:317
+#: data/content/server/download/index.html:75
+#: data/content/workstation/download/index.html:167
+#, python-format
+msgid "Download F%(rel)s Beta images"
+msgstr ""
+
+#: data/content/cloud/download/index.html:325
+#: data/content/server/download/index.html:93
+#: data/content/workstation/download/index.html:200
+msgid "Verify"
+msgstr ""
+
+#: data/content/cloud/download/index.html:328
+#: data/content/cloud/prerelease/docker.html:128
+#: data/content/cloud/prerelease/index.html:474
+#: data/content/server/download/index.html:96
+#: data/content/server/prerelease/index.html:63
+#: data/content/workstation/download/index.html:203
+#: data/content/workstation/prerelease/index.html:141
+msgid "Verify your Image"
 msgstr ""
 
 #: data/content/cloud/prerelease/docker.html:10
@@ -1167,6 +934,16 @@ msgstr ""
 #: data/content/cloud/prerelease/index.html:33
 #, python-format
 msgid "Download Fedora %(rel)s %(state)s Cloud"
+msgstr ""
+
+#: data/content/cloud/prerelease/docker.html:58
+#: data/content/cloud/prerelease/index.html:58
+msgid "Base Images"
+msgstr ""
+
+#: data/content/cloud/prerelease/docker.html:60
+#: data/content/cloud/prerelease/index.html:60
+msgid "Docker Image"
 msgstr ""
 
 #: data/content/cloud/prerelease/docker.html:71
@@ -1217,6 +994,25 @@ msgid ""
 "spawned as a Docker container. It contains basic tools which can be used "
 "as a foundation for building Docker Layered Images - bash, vi and yum "
 "(and its dependencies)."
+msgstr ""
+
+#: data/content/cloud/prerelease/docker.html:82
+msgid "Docker Base Image"
+msgstr ""
+
+#: data/content/cloud/prerelease/docker.html:87
+msgid ""
+"You can easily load this Docker image into your running Docker daemon "
+"using command:"
+msgstr ""
+
+#: data/content/cloud/prerelease/docker.html:89
+msgid "Following command can be used to spawn a container running bash inside:"
+msgstr ""
+
+#: data/content/cloud/prerelease/docker.html:92
+#, python-format
+msgid "64-bit %sMB raw.xz Image"
 msgstr ""
 
 #: data/content/cloud/prerelease/docker.html:98
@@ -1278,6 +1074,21 @@ msgstr ""
 msgid "Base Cloud %(state)s Images"
 msgstr ""
 
+#: data/content/cloud/prerelease/index.html:81
+msgid ""
+"The images on this page are Fedora Cloud images for creating general "
+"purpose virtual machines (VMs)."
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:82
+msgid "Base Cloud Image"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:88
+#: data/content/cloud/prerelease/index.html:104
+msgid "qcow2 Image"
+msgstr ""
+
 #: data/content/cloud/prerelease/index.html:89
 #: data/content/cloud/prerelease/index.html:105
 #, python-format
@@ -1286,12 +1097,59 @@ msgid ""
 " with OpenStack."
 msgstr ""
 
+#: data/content/cloud/prerelease/index.html:91
+#: data/content/cloud/prerelease/index.html:115
+#, python-format
+msgid "64-bit %sMB Qcow2 Image"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:94
+#: data/content/cloud/prerelease/index.html:108
+msgid "Raw Image"
+msgstr ""
+
 #: data/content/cloud/prerelease/index.html:95
 #: data/content/cloud/prerelease/index.html:109
 #, python-format
 msgid ""
 "This is Fedora %(rel)s %(state)s Cloud in a compressed raw image format. "
 "If you're not sure what to use, try this."
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:97
+#: data/content/cloud/prerelease/index.html:119
+#, python-format
+msgid "64-bit %sMB xz-Compressed Raw Image"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:172
+msgid "Base Cloud Images for Amazon Public Cloud EC2"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:173
+msgid ""
+"The links below will provide you listings of available AMIs by region "
+"with buttons to launch them in your Amazon Web Services account. AMI IDs "
+"for usage with the AWS Console or command-line tools are also provided."
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:174
+msgid ""
+"All images are available in two formats: a GP2 format which uses faster "
+"SSD storage, and a standard format which is more suitable if you have "
+"infrequently accessed data and you want to keep storage cost low."
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:180
+#: data/content/cloud/prerelease/index.html:309
+msgid "Hardware Virtual Machine (HVM)"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:181
+#: data/content/cloud/prerelease/index.html:310
+msgid ""
+"If you're unsure which image to choose, use this format. It can provide "
+"the same or better performance than PV images."
 msgstr ""
 
 #: data/content/cloud/prerelease/index.html:189
@@ -1305,10 +1163,30 @@ msgstr ""
 msgid "Fedora %(rel)s %(state)s standard Base Cloud HVM AMIs"
 msgstr ""
 
+#: data/content/cloud/prerelease/index.html:243
+#: data/content/cloud/prerelease/index.html:313
+msgid "Paravirtual (PV)"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:244
+#: data/content/cloud/prerelease/index.html:314
+msgid "If you know you need a paravirtual format image for EC2, use this format."
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:246
+#: data/content/cloud/prerelease/index.html:380
+msgid "GP2 PV AMIs"
+msgstr ""
+
 #: data/content/cloud/prerelease/index.html:252
 #: data/content/cloud/prerelease/index.html:386
 #, python-format
 msgid "Fedora %(rel)s %(state)s GP2 Base Cloud PV AMIs"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:276
+#: data/content/cloud/prerelease/index.html:408
+msgid "Standard PV AMIs"
 msgstr ""
 
 #: data/content/cloud/prerelease/index.html:282
@@ -2135,11 +2013,6 @@ msgstr ""
 #: data/content/workstation/prerelease/index.html:161
 #, python-format
 msgid "32-bit %sMB image"
-msgstr ""
-
-#: data/content/workstation/download/index.html:173
-#: data/content/workstation/prerelease/index.html:165
-msgid "Resources"
 msgstr ""
 
 #: data/content/workstation/download/index.html:174
