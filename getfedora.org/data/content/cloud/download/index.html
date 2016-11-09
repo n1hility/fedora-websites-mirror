@@ -274,15 +274,21 @@
   </div>
 
     <div class="col-md-3 col-xs-12 col-md-offset-1 top-margin">
-<!--        <h3>${_('Other Downloads')}</h3>
+        <h3>${_('Other Downloads')}</h3>
+        <p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/Cloud/x86_64/images/Fedora-Cloud-Base-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.i386.qcow2">${_('Atomic Host ISO image (${SIZE})')}</a></p>
         <p>
           ${_('Base Images:')}
           <ul>
-            <li><p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/Cloud/i386/images/Fedora-Cloud-Base-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.i386.qcow2">${_('32-bit qcow2 image for OpenStack')}</a></p></li>
-            <li><p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/Cloud/i386/images/Fedora-Cloud-Base-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.i386.raw.xz">${_('32-bit raw image')}</a></p></li>
+            <li><p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/Cloud/i386/images/Fedora-Cloud-Base-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.i386.qcow2">${_('Qcow2 Image (${SIZE})')}</a></p></li>
+            <li><p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/Cloud/i386/images/Fedora-Cloud-Base-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.i386.raw.xz">${_('Raw Image (${SIZE})')}</a></p></li>
           </ul>
         </p>
--->
+        <p>
+          ${_('Docker:')}
+          <ul>
+            <li><p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/Cloud/i386/images/Fedora-Cloud-Base-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.i386.qcow2">${_('Docker Image (${SIZE})')}</a></p></li>
+          </ul>
+        </p>
           <div class="top-space bottom-margin">
             <py:choose>
             <py:when test="global_variables.release['curr_state'] == 'Alpha'">
