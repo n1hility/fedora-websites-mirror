@@ -252,15 +252,21 @@
             </div>
             <div class="row hidden-xs">
               <div class="col-sm-6">
-                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_cloud_atomic_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box" role="button">${_('Download')}</a>
+                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box" role="button">${_('Download')}</a>
                   <p class="caption">${_('64-bit %sMB VirtualBox Base Vagrant Image') % global_variables.iso_size['VBvag_cloud']}</p>
               </div>
               <div class="col-sm-6">
-                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_cloud_atomic_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box" role="button">${_('Download')}</a>
+                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box" role="button">${_('Download')}</a>
                   <p class="caption">${_('64-bit %sMB libvirt/KVM Base Vagrant Image') % global_variables.iso_size['libvag_cloud']}</p>
               </div>
             </div>
           </div>
+
+        <div class="row">
+            <div class="col-xs-12 top-margin">
+              <p>${Markup(_('For more information about running Vagrant on Fedora Workstation, see &lt;a href="%s"&gt;our wiki page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Vagrant'))}</p>
+            </div>
+        </div>
         <!-- End Vagrant -->
 
     <hr />
