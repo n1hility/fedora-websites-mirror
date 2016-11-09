@@ -298,7 +298,7 @@
           <div class="pull-right bottom-margin"><p>${Markup(_('Join the Project Atomic chat on &lt;strong&gt;#atomic&lt;/strong&gt;&lt;/a&gt; on &lt;strong&gt;irc.freenode.org&lt;/strong&gt;&lt;/a&gt;.'))}</p></div>
           <div class="top-space bottom-margin">
             <py:choose>
-            <py:when test="global_variables.release['curr_state'] == 'Alpha'">
+            <py:when test="global_variables.release['curr_atomic_state'] == 'Alpha'">
               <div class="prerelease-box">
                 <h5>${Markup(_('F%(rel)s Alpha')) % {'rel':global_variables.release['next_atomic_id']}}</h5>
                 <h4>${_('Try a pre-release')}</h4>
@@ -308,7 +308,7 @@
                 <p><i class="fa fa-fw fa-sm header-icon fa-book"></i><a href="//fedoraproject.org/wiki/QA/Join#release-validation">${_('How to test pre-releases')}</a></p>
               </div>
             </py:when>
-            <py:when test="global_variables.release['curr_state'] == 'Beta'">
+            <py:when test="global_variables.release['curr_atomic_state'] == 'Beta'">
               <div class="prerelease-box">
                 <h5>${Markup(_('F%(rel)s Beta')) % {'rel':global_variables.release['next_atomic_id']}}</h5>
                 <h4>${_('Try a pre-release')}</h4>

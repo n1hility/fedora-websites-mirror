@@ -13,6 +13,7 @@ release={
     'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_cloud_AMI_state':  '',   # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_atomic_state':  '',   # either 'Alpha', 'Beta' or '' (i.e empty)
     'prev_arm_id': '24',
     'prev_ppc64_id': '24',
     'prev_s390_id': '24',
