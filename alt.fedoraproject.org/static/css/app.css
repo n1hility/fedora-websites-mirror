@@ -190,6 +190,38 @@ a.btn-lg {
   text-align: left;
 }
 
+#head .darkbluebox {
+  background-color: #294172;
+  color: #fff;
+}
+
+#head .darkbluebox h2 {
+  color: #fff;
+  margin-top: 10px;
+}
+
+#head .darkbluebox p {
+  color: #fff;
+  margin-top: 15px;
+  padding: 0 20px;
+  font-size: 100%;
+  text-align: center;
+}
+
+#head .darkbluebox a {
+  color: #fff;
+}
+
+#head .darkbluebox a:hover {
+  color: #fff;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.border {
+  border-right: 2px solid #ccc;
+}
+
 .whitebox {
   background-color: #fff;
   color: #60605b;
@@ -909,6 +941,8 @@ img.pull-left { margin-right: 10px; }
   .white h3 { color: #60605b; margin: 4px 0px 2px; font-size: 18px; }
   .white p, .prewhite p { color: #a7a9ac; margin: 2px 0px 2px; font-weight: 400; text-align: left; padding: 2px 0px 2px; }
   .white p.download { font-size: 14px; margin-top: 2px; text-align: left; padding: 2px 0px 2px; }
+  .border { border: none;
+}
 }
 
 @media (max-width: 991px) {
