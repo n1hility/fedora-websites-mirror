@@ -11,6 +11,20 @@
 <body class="home">
 <xi:include href="../templates/head.html" />
 
+  <header id="head">
+    <div class="jumbotron product-feature bluebox">
+      <div class="container">
+        <div class="row">
+        <div class="col-xs-12 caption no-pad bottom-space">
+          <h1 class="text-center">${_('Alternative Downloads')}</h1>
+          <p class="thin text-justify">${_('These Fedora downloads are either special-purpose - for testing, for specific architectures - or are more standard versions of Fedora in alternative formats such network installer format or formatted for bittorrent download.')}</p>
+          <p class="thin text-justify">${_('This page is meant to serve as a single central resource for locating alternative versions of Fedora.')}</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
   <!-- Servers -->
   <div class="jumbotron main-head hidden-xs hidden-sm">
     <div class="container using">
@@ -554,19 +568,6 @@
           <div class="col-sm-4">
           <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/armhfp/Images/Fedora-Workstation-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Feature: ARM -->
-  <div class="jumbotron product-feature bluebox">
-    <div class="container">
-      <div class="row">
-	    <div class="col-xs-12 caption">
-	      <h2 class="text-center">${_('Alternative Downloads')}</h2>
-	      <p class="thin text-justify">${_('These Fedora downloads are either special-purpose - for testing, for specific secondary architectures - or are more standard versions of Fedora in alternative formats such network installer format or formatted for bittorrent download.')}</p>
-	      <p class="thin text-justify">${_('This page is meant to serve as a single central resource for locating alternative versions of Fedora.')}</p>
         </div>
       </div>
     </div>
