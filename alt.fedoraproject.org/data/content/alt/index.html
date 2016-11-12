@@ -19,7 +19,7 @@
     <div class="col-xs-12 text-center product-feature darkbluebox">
     	<div class="col-xs-12 col-sm-4 col-lg-2 col-lg-offset-3">
 	      <div class="text-center border">
-	        <p><a href="#aarch64">${_('ARM aarch64 Architecture')}</a></p>
+	        <p><a href="#aarch64">${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; aarch64 Architecture'))}</a></p>
 	      </div>
     	</div>
 	    <div class="col-xs-12 col-sm-4 col-lg-2">
@@ -35,123 +35,165 @@
     </div>
   </header>
 
-  <!-- Download -->
-  <div class="jumbotron product-feature main-head">
+  <!-- aarch64 -->
+    <!-- Desktop -->
+  <div class="jumbotron main-head hidden-xs hidden-sm">
     <div class="container using">
       <div class="row">
-        <div class="col-xs-12 text-center spin-download">
-        <p><a class="btn btn-lg btn-primary" href="/cinnamon/download/index.html" role="button">${_('Download Now')}</a></p>
+        <div class="col-xs-12 top-margin">
+        <h2>${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; aarch64 Architecture'))}</h2>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- Going Online -->
-  <div class="jumbotron darkbluebox">
-    <div class="container">
       <div class="row">
-        <div class="col-xs-12 text-center">
-          <h2>${_('Going Online')}</h2>
+        <div class="col-md-3 product-feature">
+        <p>${_('These images bla bla bla.')}</p>
         </div>
-      </div>
-      <div class="row top-margin bottom-margin">
-        <div class="col-md-3 col-xs-12 text-center">
-          <img src="${path}/static/images/cinnamon/firefox.png" alt="Firefox" />
-          <h4>${_('Firefox')}</h4>
-          <p>${_('Explore the World Wide Web with Firefox, the full featured web browser.')}</p>
-        </div>
-        <div class="col-md-3 col-xs-12 text-center">
-          <img src="${path}/static/images/cinnamon/hexchat.png" alt="Hexchat" />
-          <h4>${_('Hexchat')}</h4>
-          <p>${_('Stay connected with your friends and colleagues using Hexchat, an easy to use IRC client.')}</p>
-        </div>
-        <div class="col-md-3 col-xs-12 text-center">
-          <img src="${path}/static/images/cinnamon/pidgin.png" alt="Pidgin" />
-          <h4>${_('Pidgin')}</h4>
-          <p>${_('Universal messaging client. Communicate with the world via IRC, AIM, MSN, Yahoo and other instant messaging systems.')}</p>
-        </div>
-        <div class="col-md-3 col-xs-12 text-center">
-          <img src="${path}/static/images/cinnamon/transmission.png" alt="Transmission" />
-          <h4>${_('Transmission')}</h4>
-          <p>${_('Are you a downloader? Use Transmission to get new versions of Fedora Cinnamon Desktop!')}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Utilities and Office -->
-  <div class="jumbotron jumbotron-full">
-    <div class="container-full">
-        <div class="col-md-6 col-xs-12 text-center greybg recover-jumbo">
-          <h2>${Markup(_('Utilities &amp; Configuration'))}</h2>
-	        <div class="col-md-6 col-xs-12 text-center top-margin">
-	          <img src="${path}/static/images/cinnamon/gnome-terminal.png" alt="Gnome Terminal" />
-          	  <h4>${_('GNOME Terminal')}</h4>
-          	  <p>${_('Fedora Cinnamon ships Gnome Terminal, the gateway to the real power of any UNIX/Linux machine.')}</p>
-	        </div>
-	        <div class="col-md-6 col-xs-12 text-center top-margin">
-	          <img src="${path}/static/images/cinnamon/preferences-system.png" alt="Cinnamon Settings" />
-          	  <h4>${_('Cinnamon Settings')}</h4>
-          	  <p>${_('No need to know cryptic commands and config files. Click the options you like to change and choose the settings that make you happy.')}</p>
-	        </div>
-        </div>
-        <div class="col-md-6 col-xs-12 text-center darkgreybg recover-jumbo">
-          <h2>${Markup(_('Office &amp; Productivity Suite'))}</h2>
-          	<div class="col-md-6 col-xs-12 text-center top-margin">
-          	  <img src="${path}/static/images/cinnamon/libreoffice.png" alt="LibreOffice" />
-          	  <h4>${_('LibreOffice')}</h4>
-          	  <p>${_('LibreOffice is an integrated office suite. It utilizes free and open standards for its document formats and components.')}</p>
-        	</div>
-	        <div class="col-md-6 col-xs-12 text-center top-margin">
-	          <img src="${path}/static/images/cinnamon/thunderbird.png" alt="Thunderbird" />
-          	  <h4>${_('Thunderbird')}</h4>
-          	  <p>${_('Mozilla Thunderbird is a standalone mail and newsgroup client. Organize your schedule with the included Lightning calendar application.')}</p>
-	        </div>
-        </div>
-    </div>
-  </div>
-
-  <!-- Multimedia -->
-  <div class="jumbotron whitebox">
-    <div class="container">
-      <div class="row top-margin">
-        <div class="col-xs-12 text-center">
-          <h2>${_('Multimedia')}</h2>
-        </div>
-      </div>
-      <div class="row top-margin bottom-margin">
-        <div class="col-md-4 col-xs-12 text-center">
-          <img src="${path}/static/images/cinnamon/parole.png" alt="Parole" />
-          <h4>${_('Parole')}</h4>
-          <p>${_('A modern media player, using gtk3 and the gstreamer plugin framework.')}</p>
-        </div>
-        <div class="col-md-4 col-xs-12 text-center">
-          <img src="${path}/static/images/cinnamon/shotwell.png" alt="Shotwell" />
-          <h4>${_('Shotwell')}</h4>
-          <p>${_('Shotwell is an easy-to-use, fast photo organizer, viewer, and editor.')}</p>
-        </div>
-        <div class="col-md-4 col-xs-12 text-center">
-          <img src="${path}/static/images/cinnamon/brasero.png" alt="Brasero" />
-          <h4>${_('Brasero')}</h4>
-          <p>${_('Brasero is a simple and easy to use CD/DVD burning application.')}</p>
+        <div class="col-md-9">
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/server.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Server')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ARM_Server']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Cloud')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ARM_Minimal']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/docker.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Docker')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ARM_Minimal']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Download -->
-  <div class="jumbotron product-feature">
+  <!-- Mobile phones-->
+  <div class="jumbotron main-head visible-xs">
     <div class="container using">
       <div class="row">
-        <div class="col-xs-12 text-center spin-download">
-        <p><a class="btn btn-lg btn-primary" href="/cinnamon/download/index.html" role="button">${_('Download Now')}</a></p>
+        <div class="col-xs-12">
+        <h2>${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; aarch64 Architecture'))}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('These images bla bla bla.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/server.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Server')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Cloud')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/docker.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Docker')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tablets-->
+  <div class="jumbotron main-head visible-sm">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; aarch64 Architecture'))}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('These images bla bla bla.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/server.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Server')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Cloud')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/docker.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Docker')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Resources -->
-  <div class="jumbotron greybox">
+  <div class="jumbotron main-head">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 text-center">
@@ -159,27 +201,31 @@
         </div>
       </div>
       <div class="row top-margin">
-        <div class="col-md-4 col-xs-12 text-center">
-          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
-          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-cinnamon&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-cinnamon'))}</p>
-        </div>
-        <div class="col-md-4 col-xs-12 text-center">
-          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
-          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;users@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/users'))}</p>
-        </div>
-        <div class="col-md-4 col-xs-12 text-center">
+        <div class="col-md-4 col-xs-12">
+        <div class="col-xs-12 text-center whitebox">
           <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
-          <p>${Markup(_('Specific documentation and tutorials are available at the &lt;a href="%s"&gt;Cinnamon project upstream website&lt;/a&gt;.') % ('http://cinnamon.linuxmint.com/'))}</p>
+          <p>${Markup(_('A guide for Fedora on AArch64, including a list of supported hardware platforms and installation instructions is available at the &lt;a href="%s"&gt;Fedora Documentation Site&lt;/a&gt;.') % ('https://docs.fedoraproject.org/'))}</p>
         </div>
-      </div>
-      <div class="row top-margin">
-        <div class="col-xs-12 text-center">
-          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
-          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+      	</div>
+        <div class="col-md-4 col-xs-12">
+        <div class="col-xs-12 text-center whitebox">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;arm@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/arm'))}</p>
+        </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+        <div class="col-xs-12 text-center whitebox">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-arm&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-arm'))}</p>
+        </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="white-hr"></div>
+  <!-- end aarch64 -->
+
+
 
   </body>
 </html>

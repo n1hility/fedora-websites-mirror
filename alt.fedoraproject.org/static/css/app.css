@@ -225,6 +225,7 @@ a.btn-lg {
 .whitebox {
   background-color: #fff;
   color: #60605b;
+  min-height: 200px;
 }
 
 .whitebox h2 {
@@ -256,6 +257,11 @@ a.btn-lg {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%)
+}
+
+.white-hr {
+  background-color: #fff;
+  height: 50px;
 }
 
 .newsbox {
