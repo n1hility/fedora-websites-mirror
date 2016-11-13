@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-11-12 23:19+0100\n"
+"POT-Creation-Date: 2016-11-13 15:41+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,8 +51,11 @@ msgid ""
 "network."
 msgstr ""
 
-#: data/content/alt/index.html:57 data/content/alt/index.html:118
-#: data/content/alt/index.html:163 data/content/index.html:46
+#: data/content/alt/index.html:58 data/content/alt/index.html:119
+#: data/content/alt/index.html:164 data/content/alt/index.html:250
+#: data/content/alt/index.html:311 data/content/alt/index.html:356
+#: data/content/alt/index.html:442 data/content/alt/index.html:475
+#: data/content/alt/index.html:502 data/content/index.html:46
 #: data/content/index.html:60 data/content/index.html:121
 #: data/content/index.html:130 data/content/index.html:175
 #: data/content/index.html:186
@@ -64,11 +67,17 @@ msgstr ""
 msgid "64 bit %sMB ISO"
 msgstr ""
 
-#: data/content/alt/index.html:63 data/content/alt/index.html:77
-#: data/content/alt/index.html:91 data/content/alt/index.html:119
-#: data/content/alt/index.html:128 data/content/alt/index.html:137
-#: data/content/alt/index.html:166 data/content/alt/index.html:177
-#: data/content/alt/index.html:188 data/content/index.html:52
+#: data/content/alt/index.html:64 data/content/alt/index.html:78
+#: data/content/alt/index.html:92 data/content/alt/index.html:120
+#: data/content/alt/index.html:129 data/content/alt/index.html:138
+#: data/content/alt/index.html:167 data/content/alt/index.html:178
+#: data/content/alt/index.html:189 data/content/alt/index.html:256
+#: data/content/alt/index.html:270 data/content/alt/index.html:284
+#: data/content/alt/index.html:312 data/content/alt/index.html:321
+#: data/content/alt/index.html:330 data/content/alt/index.html:359
+#: data/content/alt/index.html:370 data/content/alt/index.html:381
+#: data/content/alt/index.html:448 data/content/alt/index.html:476
+#: data/content/alt/index.html:505 data/content/index.html:52
 #: data/content/index.html:66 data/content/index.html:80
 #: data/content/index.html:94 data/content/index.html:250
 #: data/content/index.html:332 data/content/index.html:343
@@ -78,11 +87,17 @@ msgstr ""
 msgid "Download"
 msgstr ""
 
-#: data/content/alt/index.html:63 data/content/alt/index.html:77
-#: data/content/alt/index.html:91 data/content/alt/index.html:119
-#: data/content/alt/index.html:128 data/content/alt/index.html:137
-#: data/content/alt/index.html:166 data/content/alt/index.html:177
-#: data/content/alt/index.html:188 data/content/index.html:52
+#: data/content/alt/index.html:64 data/content/alt/index.html:78
+#: data/content/alt/index.html:92 data/content/alt/index.html:120
+#: data/content/alt/index.html:129 data/content/alt/index.html:138
+#: data/content/alt/index.html:167 data/content/alt/index.html:178
+#: data/content/alt/index.html:189 data/content/alt/index.html:256
+#: data/content/alt/index.html:270 data/content/alt/index.html:284
+#: data/content/alt/index.html:312 data/content/alt/index.html:321
+#: data/content/alt/index.html:330 data/content/alt/index.html:359
+#: data/content/alt/index.html:370 data/content/alt/index.html:381
+#: data/content/alt/index.html:448 data/content/alt/index.html:476
+#: data/content/alt/index.html:505 data/content/index.html:52
 #: data/content/index.html:66 data/content/index.html:80
 #: data/content/index.html:94 data/content/index.html:122
 #: data/content/index.html:131 data/content/index.html:140
@@ -162,13 +177,13 @@ msgstr ""
 msgid "View Images >"
 msgstr ""
 
-#: data/content/alt/index.html:27 data/content/index.html:284
-#: data/content/index.html:340
+#: data/content/index.html:284 data/content/index.html:340
 msgid "PowerPC Architecture"
 msgstr ""
 
-#: data/content/alt/index.html:32 data/content/index.html:293
-#: data/content/index.html:351
+#: data/content/alt/index.html:32 data/content/alt/index.html:429
+#: data/content/alt/index.html:461 data/content/alt/index.html:488
+#: data/content/index.html:293 data/content/index.html:351
 msgid "s390x Architecture"
 msgstr ""
 
@@ -224,7 +239,8 @@ msgstr ""
 msgid "%sGB raw image"
 msgstr ""
 
-#: data/content/alt/index.html:200 data/content/index.html:581
+#: data/content/alt/index.html:202 data/content/alt/index.html:394
+#: data/content/alt/index.html:518 data/content/index.html:581
 msgid "Support Resources"
 msgstr ""
 
@@ -356,39 +372,49 @@ msgstr ""
 msgid "Additional architectures supported by Fedora"
 msgstr ""
 
-#: data/content/alt/index.html:22 data/content/alt/index.html:44
-#: data/content/alt/index.html:104 data/content/alt/index.html:149
+#: data/content/alt/index.html:22 data/content/alt/index.html:45
+#: data/content/alt/index.html:105 data/content/alt/index.html:150
 msgid "ARM<span class=\"sup\">®</span> aarch64 Architecture"
 msgstr ""
 
-#: data/content/alt/index.html:49 data/content/alt/index.html:109
-#: data/content/alt/index.html:154
+#: data/content/alt/index.html:27 data/content/alt/index.html:237
+#: data/content/alt/index.html:297 data/content/alt/index.html:342
+msgid "Power Architecture"
+msgstr ""
+
+#: data/content/alt/index.html:50 data/content/alt/index.html:110
+#: data/content/alt/index.html:155
 msgid ""
 "These images are for the new 64-bit ARM architecture, also known as ARMv8"
 " or ARM64."
 msgstr ""
 
-#: data/content/alt/index.html:60 data/content/alt/index.html:74
-#: data/content/alt/index.html:88
+#: data/content/alt/index.html:61 data/content/alt/index.html:75
+#: data/content/alt/index.html:89 data/content/alt/index.html:253
+#: data/content/alt/index.html:267 data/content/alt/index.html:281
+#: data/content/alt/index.html:445
 #, python-format
 msgid "%sMB raw image"
 msgstr ""
 
-#: data/content/alt/index.html:71 data/content/alt/index.html:127
-#: data/content/alt/index.html:174
+#: data/content/alt/index.html:72 data/content/alt/index.html:128
+#: data/content/alt/index.html:175 data/content/alt/index.html:264
+#: data/content/alt/index.html:320 data/content/alt/index.html:367
 msgid "Fedora Cloud"
 msgstr ""
 
-#: data/content/alt/index.html:85 data/content/alt/index.html:136
-#: data/content/alt/index.html:185
+#: data/content/alt/index.html:86 data/content/alt/index.html:137
+#: data/content/alt/index.html:186 data/content/alt/index.html:278
+#: data/content/alt/index.html:329 data/content/alt/index.html:378
 msgid "Fedora Docker"
 msgstr ""
 
-#: data/content/alt/index.html:206
+#: data/content/alt/index.html:208 data/content/alt/index.html:400
+#: data/content/alt/index.html:524
 msgid "Documentation"
 msgstr ""
 
-#: data/content/alt/index.html:207
+#: data/content/alt/index.html:209
 #, python-format
 msgid ""
 "A guide for Fedora on AArch64, including a list of supported hardware "
@@ -396,26 +422,78 @@ msgid ""
 "href=\"%s\">Fedora Documentation Site</a>."
 msgstr ""
 
-#: data/content/alt/index.html:212
+#: data/content/alt/index.html:214 data/content/alt/index.html:406
+#: data/content/alt/index.html:530
 msgid "Email"
 msgstr ""
 
-#: data/content/alt/index.html:213
+#: data/content/alt/index.html:215
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
 "href=\"%s\">arm@lists.fedoraproject.org</a>."
 msgstr ""
 
-#: data/content/alt/index.html:218
+#: data/content/alt/index.html:220 data/content/alt/index.html:412
+#: data/content/alt/index.html:536
 msgid "Chat"
 msgstr ""
 
-#: data/content/alt/index.html:219
+#: data/content/alt/index.html:221
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-arm</a> "
 "IRC channel on <strong>irc.freenode.org</strong> for real-time chat."
+msgstr ""
+
+#: data/content/alt/index.html:242 data/content/alt/index.html:302
+#: data/content/alt/index.html:347
+msgid ""
+"These images are for installation on IBM Power systems or OpenPOWER "
+"systems."
+msgstr ""
+
+#: data/content/alt/index.html:401 data/content/alt/index.html:525
+#, python-format
+msgid ""
+"A wiki page with information about Power Architecture on Fedora is "
+"available on the <a href=\"%s\">Fedora Project Wiki</a>."
+msgstr ""
+
+#: data/content/alt/index.html:407
+#, python-format
+msgid ""
+"Users and developers are also available on the mailing list at <a "
+"href=\"%s\">ppc@lists.fedoraproject.org</a>."
+msgstr ""
+
+#: data/content/alt/index.html:413
+#, python-format
+msgid ""
+"Users and developers are available in the <a href=\"%s\">#fedora-ppc</a> "
+"IRC channel on <strong>irc.freenode.org</strong> for real-time chat."
+msgstr ""
+
+#: data/content/alt/index.html:434 data/content/alt/index.html:466
+#: data/content/alt/index.html:493
+msgid ""
+"If you want to install Fedora on IBM z systems, then you are looking for "
+"this architecture."
+msgstr ""
+
+#: data/content/alt/index.html:531
+#, python-format
+msgid ""
+"Users and developers are also available on the mailing list at <a "
+"href=\"%s\">s390x@lists.fedoraproject.org</a>."
+msgstr ""
+
+#: data/content/alt/index.html:537
+#, python-format
+msgid ""
+"Users and developers are available in the <a href=\"%s\">#fedora-"
+"s390x</a> IRC channel on <strong>irc.freenode.org</strong> for real-time "
+"chat."
 msgstr ""
 
 #: data/templates/content-export-regulations.html:25
