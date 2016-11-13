@@ -219,7 +219,8 @@ a.btn-lg {
   color: #fff;
 }
 
-#head .darkbluebox a:hover {
+#head .darkbluebox a:hover,
+#head .darkbluebox a:focus {
   color: #fff;
   font-weight: bolder;
   text-decoration: none;
