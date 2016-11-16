@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-11-09 13:59+0100\n"
+"POT-Creation-Date: 2016-11-16 23:08+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -248,8 +248,8 @@ msgstr ""
 msgid "Server"
 msgstr ""
 
-#: data/content/verify.html:60 data/templates/productselector-cloud.html:13
-msgid "Cloud"
+#: data/content/verify.html:60
+msgid "Atomic"
 msgstr ""
 
 #: data/content/verify.html:62
@@ -819,8 +819,9 @@ msgstr ""
 
 #: data/content/cloud/download/index.html:295
 msgid ""
-"<a href=\"//docs.fedoraproject.org/install-guide\"><strong>Project "
-"Atomic: Mailing List</strong></a>"
+"<a "
+"href=\"https://lists.projectatomic.io/mailman/listinfo/atomic\"><strong>Project"
+" Atomic: Mailing List</strong></a>"
 msgstr ""
 
 #: data/content/cloud/download/index.html:296
@@ -832,9 +833,7 @@ msgstr ""
 
 #: data/content/cloud/download/index.html:297
 #, python-format
-msgid ""
-"<a href=\"%(commonbugs_url)s\"><strong>Project Atomic: IRC "
-"Chat</strong></a>"
+msgid "<a href=\"%s\"><strong>Project Atomic: IRC Chat</strong></a>"
 msgstr ""
 
 #: data/content/cloud/download/index.html:298
@@ -2358,6 +2357,10 @@ msgstr ""
 #: data/templates/moretofedora.html:12
 #, python-format
 msgid "There's more to <img class=\"inlinelogo\" src=\"%s\" alt=\"Fedora Logo\">"
+msgstr ""
+
+#: data/templates/productselector-cloud.html:13
+msgid "Cloud"
 msgstr ""
 
 #: data/templates/productselector-cloud.html:14
