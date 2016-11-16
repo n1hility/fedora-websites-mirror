@@ -966,4 +966,10 @@ img.pull-left { margin-right: 10px; }
     margin: 0 auto;
   }
 }
+
+@media (max-width: 1380px) {
+  #head .bluebox h1 {
+    font-size: 44px;
+}
+}
 /* end small screens classes */
