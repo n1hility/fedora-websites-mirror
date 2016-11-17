@@ -173,6 +173,23 @@
 
   </div>
 
+  <!-- Resources -->
+  <div class="jumbotron whitesupport">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center help">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <h4><p>${Markup(_('Need some help with Fedora? Check out &lt;a href="%s"&gt;Ask Fedora&lt;/a&gt;, where you can read archives of questions from other users, or ask your own question.') % ('https://ask.fedoraproject.org/'))}</p></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <!-- News -->
       <py:choose>
         <py:when test="global_variables.release['curr_state'] == 'Alpha'">
