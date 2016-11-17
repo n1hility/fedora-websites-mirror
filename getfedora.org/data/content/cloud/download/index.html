@@ -209,59 +209,69 @@
         <div class="row">
             <div class="col-xs-12 top-margin">
               <h3>${_('Atomic Host Images for Vagrant')}</h3>
-                <p>${_('Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and Libvirt providers. You can bring up Fedora Atomic Host in a vagrant box by running:')}</p>
-                <pre>docker load -i Fedora-Docker-Base-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_build']}.x86_64.tar.xz</pre>
-                <p>${_('If you\’ve previously used vagrant to run a Fedora Atomic 24 VM, first ensure that you have the latest version by running:')}</p>
-                <pre>vagrant box update --box=fedora/${global_variables.release['curr_atomic_id']}-atomic-host</pre>
-                <p>${_('If you need to download images for Vagrant, you may click the button below to reveal the image download links.')}</p>
-            </div>
-        </div>
+                <p>${Markup(_('Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and Libvirt providers. You can bring up Fedora Atomic Host in a vagrant box by downloading the images from Fedora or using the vagrant tools to pull the images from &lt;a href="%s"&gt;HashiCorp\'s Atlas&lt;/a&gt;.') % ('https://atlas.hashicorp.com/fedora'))}</p>
+          	  <a href="#" id="openstack-base-click" class="btn btn-success download-cloud" role="button">${_('View Vagrant Downloads')}</a>
+	          <div id="openstack-base-link" class="reveal" style="display: none;">
+	            <div class="row">
+	              <h4 class="bold">${_('Vagrant Image Downloads')}</h4>
+	              <p>${Markup(_('These images are Vagrant Boxes images for deployment using &lt;a href="%s"&gt;Vagrant&lt;/a&gt;.') % ('https://www.vagrantup.com/'))}</p>
+	            </div>
+	            <!-- Mobile -->
+	            <div class="row visible-xs">
+	              <div class="col-xs-12">
+	                <h5 class="bold">${_('VirtualBox Image')}</h5>
+	                <p>${_('If you\'re using Vagrant on Mac OS X or Windows, this is likely the image you\'ll want to use.')}</p>
+	                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box" role="button">${_('Download')}</a>
+	                  <p class="caption">${_('64-bit %sMB VirtualBox Base Vagrant Image') % global_variables.iso_size['VBvag_cloud']}</p>
+	              </div>
+	              <div class="col-xs-12">
+	                <h5 class="bold">${_('libvirt/KVM Image')}</h5>
+	                <p>${_('If you\'re using Vagrant on Fedora, this is the image you\'ll want to use.')}</p>
+	                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box" role="button">${_('Download')}</a>
+	                  <p class="caption">${_('64-bit %sMB libvirt/KVM Base Vagrant Image') % global_variables.iso_size['libvag_cloud']}</p>
+	              </div>
+	            </div>
 
-          <a href="#" id="openstack-base-click" class="btn btn-success download-cloud" role="button">${_('View Vagrant Downloads')}</a>
-          <div id="openstack-base-link" class="reveal" style="display: none;">
-            <div class="row">
-              <h4 class="bold">${_('Vagrant Image Downloads')}</h4>
-              <p>${_('These images are Vagrant Boxes images for deployment using Vagrant.')}</p>
-            </div>
-            <!-- Mobile -->
-            <div class="row visible-xs">
-              <div class="col-xs-12">
-                <h5 class="bold">${_('VirtualBox Image')}</h5>
-                <p>${_('If you\'re using Vagrant on Mac OS X or Windows, this is likely the image you\'ll want to use.')}</p>
-                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box" role="button">${_('Download')}</a>
-                  <p class="caption">${_('64-bit %sMB VirtualBox Base Vagrant Image') % global_variables.iso_size['VBvag_cloud']}</p>
-              </div>
-              <div class="col-xs-12">
-                <h5 class="bold">${_('libvirt/KVM Image')}</h5>
-                <p>${_('If you\'re using Vagrant on Fedora, this is the image you\'ll want to use.')}</p>
-                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box" role="button">${_('Download')}</a>
-                  <p class="caption">${_('64-bit %sMB libvirt/KVM Base Vagrant Image') % global_variables.iso_size['libvag_cloud']}</p>
-              </div>
-            </div>
-
-              <!-- Desktop -->
-            <div class="row hidden-xs">
-              <div class="col-sm-6">
-                <h5 class="bold">${_('VirtualBox Image')}</h5>
-                <p>${_('If you\'re using Vagrant on Mac OS X or Windows, this is likely the image you\'ll want to use.')}</p>
-              </div>
-              <div class="col-sm-6">
-                <h5 class="bold">${_('libvirt/KVM Image')}</h5>
-                <p>${_('If you\'re using Vagrant on Fedora, this is the image you\'ll want to use.')}</p>
-              </div>
-            </div>
-            <div class="row hidden-xs">
-              <div class="col-sm-6">
-                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box" role="button">${_('Download')}</a>
-                  <p class="caption">${_('64-bit %sMB VirtualBox Base Vagrant Image') % global_variables.iso_size['VBvag_cloud']}</p>
-              </div>
-              <div class="col-sm-6">
-                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box" role="button">${_('Download')}</a>
-                  <p class="caption">${_('64-bit %sMB libvirt/KVM Base Vagrant Image') % global_variables.iso_size['libvag_cloud']}</p>
-              </div>
-            </div>
-          </div>
-
+	              <!-- Desktop -->
+	            <div class="row hidden-xs">
+	              <div class="col-sm-6">
+	                <h5 class="bold">${_('VirtualBox Image')}</h5>
+	                <p>${_('If you\'re using Vagrant on Mac OS X or Windows, this is likely the image you\'ll want to use.')}</p>
+	              </div>
+	              <div class="col-sm-6">
+	                <h5 class="bold">${_('libvirt/KVM Image')}</h5>
+	                <p>${_('If you\'re using Vagrant on Fedora, this is the image you\'ll want to use.')}</p>
+	              </div>
+	            </div>
+	            <div class="row hidden-xs">
+	              <div class="col-sm-6">
+	                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box" role="button">${_('Download')}</a>
+	                  <p class="caption">${_('64-bit %sMB VirtualBox Base Vagrant Image') % global_variables.iso_size['VBvag_cloud']}</p>
+	              </div>
+	              <div class="col-sm-6">
+	                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box" role="button">${_('Download')}</a>
+	                  <p class="caption">${_('64-bit %sMB libvirt/KVM Base Vagrant Image') % global_variables.iso_size['libvag_cloud']}</p>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	    </div>
+	    <div class="row">
+	    	<div class="col-xs-12">
+	          <a href="#" id="openstack-cont-click" class="btn btn-success download-cloud" role="button">${_('View Downloads using Vagrant tools')}</a>
+	          <div id="openstack-cont-link" class="reveal" style="display: none;">
+	            <div class="row">
+	              <div class="col-xs-12">
+	              	<h4 class="bold">${_('Vagrant Downloads using Vagrant tools')}</h4>
+	              	<p>${Markup(_('You can use the following command to grab the Vagrant Box images from &lt;a href="%s"&gt;HashiCorp\'s Atlas&lt;/a&gt;.') % ('https://atlas.hashicorp.com/fedora'))}</p>
+	                <pre>vagrant box add fedora/${global_variables.release['curr_atomic_id']}</pre>
+	                <p>${Markup(_('If you\'ve previously run Fedora %s Atomic Host in Vagrant on your machine then you can get the latest version by running:')) % {'rel':global_variables.release['curr_atomic_id']}}</p>
+	                <pre>vagrant box update --box=fedora/${global_variables.release['curr_atomic_id']}-atomic-host</pre>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	    </div>
         <div class="row">
             <div class="col-xs-12 top-margin">
               <p>${Markup(_('For more information about running Vagrant on Fedora Workstation, see &lt;a href="%s"&gt;our wiki page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Vagrant'))}</p>
