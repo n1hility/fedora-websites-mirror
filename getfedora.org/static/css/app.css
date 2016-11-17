@@ -906,6 +906,11 @@ background-color:#A07CBC;
 margin-top:20px;
 }
 
+.caption, .atomic-cli, .atomic-ostree {
+  font-size: 125%;
+  text-shadow: 1px 1px 5px #fff;
+}
+
 #cloud .atomic-ostree {
   background-image: url(../images/cloud/atomic-ostree.png);
   background-position: center center;
@@ -914,8 +919,12 @@ margin-top:20px;
 
 #cloud .atomic-cli {
   background-image: url(../images/cloud/atomic-cli.png);
-  background-position: center center;
   min-height: 350px;
+  background-color: #9e8eac;
+  background-repeat: no-repeat !important;
+  background-position: left !important;
+  color: white;
+  text-shadow: 1px 1px 1px #555;
 }
 
 #cloud .download-lower .btn
