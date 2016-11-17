@@ -279,6 +279,50 @@
         </div>
         <!-- End Vagrant -->
 
+        <!-- Start Base images -->
+		      <div class="row">
+		          <div class="col-xs-12">
+		            <h3>${_('Atomic Host images for Cloud Environments')}</h3>
+		          </div>
+		      </div>
+		      <!-- Mobile -->
+		      <div class="row visible-xs">
+		          <div class="col-xs-12">
+		            <h5 class="bold">${_('qcow2 Image')}</h5>
+		            <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a Qcow2-formatted image for use with OpenStack.')) % {'rel':global_variables.release['curr_id']}}</p>
+		            <a class="btn btn-success download-cloud-splash" href="${global_variables.release['atomic_qcow2_cloud_url']}" role="button">${_('Download')}</a>
+		              <p class="caption">${_('64-bit %sMB Qcow2 Image') % global_variables.iso_size['atomic_qcow2_cloud']}</p>
+		          </div>
+		          <div class="col-xs-12">
+		            <h5 class="bold">${_('Raw Image')}</h5>
+		            <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a compressed raw image format. If you\'re not sure what to use, try this.')) % {'rel':global_variables.release['curr_id']}}</p>
+		            <a class="btn btn-success download-cloud-splash" href="${global_variables.release['atomic_raw_cloud_url']}" role="button">${_('Download')}</a>
+		              <p class="caption">${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.iso_size['atomic_raw_cloud']}</p>
+		          </div>
+		      </div>
+		      <!-- Desktop -->
+		      <div class="row hidden-xs">
+		          <div class="col-sm-6">
+		            <h5 class="bold">${_('qcow2 Image')}</h5>
+		            <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a Qcow2-formatted image for use with OpenStack.')) % {'rel':global_variables.release['curr_id']}}</p>
+		          </div>
+		          <div class="col-sm-6">
+		            <h5 class="bold">${_('Raw Image')}</h5>
+		            <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a compressed raw image format. If you\'re not sure what to use, try this.')) % {'rel':global_variables.release['curr_id']}}</p>
+		          </div>
+		      </div>
+		      <div class="row hidden-xs">
+		          <div class="col-sm-6">
+		            <a class="btn btn-success download-cloud-splash" href="${global_variables.release['atomic_qcow2_cloud_url']}" role="button">${_('Download')}</a>
+		              <p class="caption">${_('64-bit %sMB Qcow2 Image') % global_variables.iso_size['atomic_qcow2_cloud']}</p>
+		          </div>
+		          <div class="col-sm-6">
+		            <a class="btn btn-success download-cloud-splash" href="${global_variables.release['atomic_raw_cloud_url']}" role="button">${_('Download')}</a>
+		              <p class="caption">${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.iso_size['atomic_raw_cloud']}</p>
+		          </div>
+		      </div>
+      <!-- end Base images -->
+
     <hr />
     <xi:include href="../../../templates/export-regulations.html" />
   </div>
@@ -286,13 +330,6 @@
     <div class="col-md-3 col-xs-12 col-md-offset-1 top-margin">
         <h3>${_('Other Downloads')}</h3>
           <p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/Cloud/x86_64/images/Fedora-Cloud-Base-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.i386.qcow2">${_('Atomic Host ISO image (${SIZE})')}</a></p>
-          <p>
-            ${_('Base Images:')}
-            <ul>
-              <li><p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/Cloud/i386/images/Fedora-Cloud-Base-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.i386.qcow2">${_('Qcow2 Image (${SIZE})')}</a></p></li>
-              <li><p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_atomic_id']}/Cloud/i386/images/Fedora-Cloud-Base-${global_variables.release['curr_atomic_id']}-${global_variables.release['RC_gold']}.i386.raw.xz">${_('Raw Image (${SIZE})')}</a></p></li>
-            </ul>
-          </p>
           <p>
             ${_('Docker:')}
             <ul>
