@@ -68,8 +68,8 @@
             <h5 class="bold">${_('GP2 Format')}</h5>
             <p>${_('GP2 format AMIs use faster SSD storage; use these AMIs for speed, although note your storage costs will be more than standard.')}</p>
             <!-- Modal for EC2 Cloud GP2 Base HVM Instances -->
-            <button type="button" class="btn btn-success btn-fix download-cloud-splash" data-toggle="modal" data-target=".GP2-base-EC2-mobile">${_('GP2 HVM AMIs')}</button>
-            <div class="modal fade GP2-base-EC2-mobile" tabindex="-1" role="dialog" aria-hidden="true">
+            <button type="button" class="btn btn-success btn-fix download-cloud-splash" data-toggle="modal" data-target=".GP2-atomic-mobile-EC2">${_('GP2 HVM AMIs')}</button>
+            <div class="modal fade GP2-atomic-mobile-EC2" tabindex="-1" role="dialog" aria-hidden="true">
               <div class="modal-dialog modal-cloud">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -81,14 +81,14 @@
                       <tr>
                         <th>${_('Region')}</th>
                         <th class="hidden-xs">${_('AMI ID')}</th>
-                        <th class="text-center">${_('Launch')}</th>
+                        <th>${_('Launch')}</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr py:for="r in global_variables.EC2_regions">
-                        <td py:if="r.code in global_variables.GP2_HVM_base_AMI">${_(r.long)}</td>
-                        <td py:if="r.code in global_variables.GP2_HVM_base_AMI" class="hidden-xs">${global_variables.GP2_HVM_base_AMI[r.code]}</td>
-                        <td py:if="r.code in global_variables.GP2_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.GP2_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                        <td py:if="r.code in global_variables.GP2_HVM_atomic_AMI">${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.GP2_HVM_atomic_AMI" class="hidden-xs">${global_variables.GP2_HVM_atomic_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.GP2_HVM_atomic_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.GP2_HVM_atomic_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -100,8 +100,8 @@
             <h5 class="bold">${_('Standard Format)')}</h5>
             <p>${_('Standard format AMIs are more suitable if you have infrequently accessed data and want to keep storage cost low.')}</p>
             <!-- Modal for EC2 Cloud standard Base HVM Instances -->
-            <button type="button" class="btn btn-success btn-fix download-cloud-splash" data-toggle="modal" data-target=".base-EC2-mobile">${_('Standard HVM AMIs')}</button>
-            <div class="modal fade base-EC2-mobile" tabindex="-1" role="dialog" aria-hidden="true">
+            <button type="button" class="btn btn-success btn-fix download-cloud-splash" data-toggle="modal" data-target=".atomic-mobile-EC2">${_('Standard HVM AMIs')}</button>
+            <div class="modal fade atomic-mobile-EC2" tabindex="-1" role="dialog" aria-hidden="true">
               <div class="modal-dialog modal-cloud">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -113,14 +113,14 @@
                       <tr>
                         <th>${_('Region')}</th>
                         <th class="hidden-xs">${_('AMI ID')}</th>
-                        <th class="text-center">${_('Launch')}</th>
+                        <th>${_('Launch')}</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr py:for="r in global_variables.EC2_regions">
-                        <td py:if="r.code in global_variables.HVM_base_AMI">${_(r.long)}</td>
-                        <td py:if="r.code in global_variables.HVM_base_AMI" class="hidden-xs">${global_variables.HVM_base_AMI[r.code]}</td>
-                        <td py:if="r.code in global_variables.HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                        <td py:if="r.code in global_variables.HVM_atomic_AMI">${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.HVM_atomic_AMI" class="hidden-xs">${global_variables.HVM_atomic_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.HVM_atomic_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.HVM_atomic_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -144,8 +144,8 @@
         <div class="row hidden-xs">
           <div class="col-sm-6">
             <!-- Modal for EC2 GP2 Cloud Base HVM Instances -->
-            <button type="button" class="btn btn-success btn-fix download-cloud-splash" data-toggle="modal" data-target=".GP2-base-EC2">${_('GP2 HVM AMIs')}</button>
-            <div class="modal fade GP2-base-EC2" tabindex="-1" role="dialog" aria-hidden="true">
+            <button type="button" class="btn btn-success btn-fix download-cloud-splash" data-toggle="modal" data-target=".GP2-atomic-EC2">${_('GP2 HVM AMIs')}</button>
+            <div class="modal fade GP2-atomic-EC2" tabindex="-1" role="dialog" aria-hidden="true">
               <div class="modal-dialog modal-cloud">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -157,14 +157,14 @@
                       <tr>
                         <th>${_('Region')}</th>
                         <th class="hidden-xs">${_('AMI ID')}</th>
-                        <th class="text-center">${_('Launch')}</th>
+                        <th>${_('Launch')}</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr py:for="r in global_variables.EC2_regions">
-                        <td>${_(r.long)}</td>
-                        <td py:if="r.code in global_variables.GP2_HVM_base_AMI" class="hidden-xs">${global_variables.GP2_HVM_base_AMI[r.code]}</td>
-                        <td py:if="r.code in global_variables.GP2_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.GP2_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                        <td py:if="r.code in global_variables.GP2_HVM_atomic_AMI">${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.GP2_HVM_atomic_AMI" class="hidden-xs">${global_variables.GP2_HVM_atomic_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.GP2_HVM_atomic_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.GP2_HVM_atomic_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -174,8 +174,8 @@
           </div>
           <div class="col-sm-6">
             <!-- Modal for EC2 Standard Cloud Base HVM Instances -->
-            <button type="button" class="btn btn-success btn-fix download-cloud-splash" data-toggle="modal" data-target=".base-EC2">${_('Standard HVM AMIs')}</button>
-            <div class="modal fade base-EC2" tabindex="-1" role="dialog" aria-hidden="true">
+            <button type="button" class="btn btn-success btn-fix download-cloud-splash" data-toggle="modal" data-target=".atomic-EC2">${_('Standard HVM AMIs')}</button>
+            <div class="modal fade atomic-EC2" tabindex="-1" role="dialog" aria-hidden="true">
               <div class="modal-dialog modal-cloud">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -187,14 +187,14 @@
                       <tr>
                         <th>${_('Region')}</th>
                         <th class="hidden-xs">${_('AMI ID')}</th>
-                        <th class="text-center">${_('Launch')}</th>
+                        <th>${_('Launch')}</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr py:for="r in global_variables.EC2_regions">
-                        <td>${_(r.long)}</td>
-                        <td py:if="r.code in global_variables.HVM_base_AMI" class="hidden-xs">${global_variables.HVM_base_AMI[r.code]}</td>
-                        <td py:if="r.code in global_variables.HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                        <td py:if="r.code in global_variables.HVM_atomic_AMI">${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.HVM_atomic_AMI" class="hidden-xs">${global_variables.HVM_atomic_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.HVM_atomic_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.HVM_atomic_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
                       </tr>
                     </tbody>
                   </table>
