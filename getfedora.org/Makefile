@@ -3,7 +3,7 @@ include ../Makefile.in
 $(LANGUAGES): % : | static rss-cache po/%.mo data/templates/translations.html
 	$(PYTHON) $(BUILDDIR)/build.py -o out -i data/content -l $@ -p po -b $(BASEPATH)
 
-json-releases:
+all::
 # FIXME: This is being provided statically for F25 GA,
 # but must be fixed by F26 Alpha
 # q.v.:
