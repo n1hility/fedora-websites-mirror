@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-11-16 23:08+0100\n"
+"POT-Creation-Date: 2016-11-19 17:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -642,7 +642,6 @@ msgid "Launch"
 msgstr ""
 
 #: data/content/cloud/download/index.html:100
-#: data/content/cloud/download/index.html:140
 msgid "Standard Format)"
 msgstr ""
 
@@ -666,57 +665,58 @@ msgstr ""
 msgid "Fedora %(rel)s Standard Atomic Host HVM AMIs"
 msgstr ""
 
+#: data/content/cloud/download/index.html:140
+msgid "Standard Format"
+msgstr ""
+
 #: data/content/cloud/download/index.html:211
 msgid "Atomic Host Images for Vagrant"
 msgstr ""
 
 #: data/content/cloud/download/index.html:212
+#, python-format
 msgid ""
 "Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and"
 " Libvirt providers. You can bring up Fedora Atomic Host in a vagrant box "
-"by running:"
+"by downloading the images from Fedora or using the vagrant tools to pull "
+"the images from <a href=\"%s\">HashiCorp's Atlas</a>."
 msgstr ""
 
-#: data/content/cloud/download/index.html:214
-msgid ""
-"If you\\’ve previously used vagrant to run a Fedora Atomic 24 VM, first "
-"ensure that you have the latest version by running:"
-msgstr ""
-
-#: data/content/cloud/download/index.html:216
-msgid ""
-"If you need to download images for Vagrant, you may click the button "
-"below to reveal the image download links."
-msgstr ""
-
-#: data/content/cloud/download/index.html:220
+#: data/content/cloud/download/index.html:213
 msgid "View Vagrant Downloads"
 msgstr ""
 
-#: data/content/cloud/download/index.html:223
+#: data/content/cloud/download/index.html:216
 msgid "Vagrant Image Downloads"
 msgstr ""
 
-#: data/content/cloud/download/index.html:224
-msgid "These images are Vagrant Boxes images for deployment using Vagrant."
+#: data/content/cloud/download/index.html:217
+#, python-format
+msgid ""
+"These images are Vagrant Boxes images for deployment using <a "
+"href=\"%s\">Vagrant</a>."
 msgstr ""
 
-#: data/content/cloud/download/index.html:229
-#: data/content/cloud/download/index.html:245
+#: data/content/cloud/download/index.html:222
+#: data/content/cloud/download/index.html:238
 msgid "VirtualBox Image"
 msgstr ""
 
-#: data/content/cloud/download/index.html:230
-#: data/content/cloud/download/index.html:246
+#: data/content/cloud/download/index.html:223
+#: data/content/cloud/download/index.html:239
 msgid ""
 "If you're using Vagrant on Mac OS X or Windows, this is likely the image "
 "you'll want to use."
 msgstr ""
 
-#: data/content/cloud/download/index.html:231
-#: data/content/cloud/download/index.html:237
-#: data/content/cloud/download/index.html:255
-#: data/content/cloud/download/index.html:259
+#: data/content/cloud/download/index.html:224
+#: data/content/cloud/download/index.html:230
+#: data/content/cloud/download/index.html:248
+#: data/content/cloud/download/index.html:252
+#: data/content/cloud/download/index.html:293
+#: data/content/cloud/download/index.html:299
+#: data/content/cloud/download/index.html:316
+#: data/content/cloud/download/index.html:320
 #: data/content/cloud/prerelease/docker.html:91
 #: data/content/cloud/prerelease/index.html:90
 #: data/content/cloud/prerelease/index.html:96
@@ -740,36 +740,108 @@ msgstr ""
 msgid "Download"
 msgstr ""
 
-#: data/content/cloud/download/index.html:232
-#: data/content/cloud/download/index.html:256
+#: data/content/cloud/download/index.html:225
+#: data/content/cloud/download/index.html:249
 #, python-format
 msgid "64-bit %sMB VirtualBox Base Vagrant Image"
 msgstr ""
 
-#: data/content/cloud/download/index.html:235
-#: data/content/cloud/download/index.html:249
+#: data/content/cloud/download/index.html:228
+#: data/content/cloud/download/index.html:242
 msgid "libvirt/KVM Image"
 msgstr ""
 
-#: data/content/cloud/download/index.html:236
-#: data/content/cloud/download/index.html:250
+#: data/content/cloud/download/index.html:229
+#: data/content/cloud/download/index.html:243
 msgid "If you're using Vagrant on Fedora, this is the image you'll want to use."
 msgstr ""
 
-#: data/content/cloud/download/index.html:238
-#: data/content/cloud/download/index.html:260
+#: data/content/cloud/download/index.html:231
+#: data/content/cloud/download/index.html:253
 #, python-format
 msgid "64-bit %sMB libvirt/KVM Base Vagrant Image"
 msgstr ""
 
-#: data/content/cloud/download/index.html:267
+#: data/content/cloud/download/index.html:261
+msgid "View Downloads using Vagrant tools"
+msgstr ""
+
+#: data/content/cloud/download/index.html:265
+msgid "Vagrant Downloads using Vagrant tools"
+msgstr ""
+
+#: data/content/cloud/download/index.html:266
+#, python-format
+msgid ""
+"You can use the following command to grab the Vagrant Box images from <a "
+"href=\"%s\">HashiCorp's Atlas</a>."
+msgstr ""
+
+#: data/content/cloud/download/index.html:268
+#, python-format
+msgid ""
+"If you've previously run Fedora %s Atomic Host in Vagrant on your machine"
+" then you can get the latest version by running:"
+msgstr ""
+
+#: data/content/cloud/download/index.html:277
 #, python-format
 msgid ""
 "For more information about running Vagrant on Fedora Workstation, see <a "
 "href=\"%s\">our wiki page</a>."
 msgstr ""
 
-#: data/content/cloud/download/index.html:277
+#: data/content/cloud/download/index.html:285
+msgid "Atomic Host Images for Cloud Environments"
+msgstr ""
+
+#: data/content/cloud/download/index.html:291
+#: data/content/cloud/download/index.html:306
+#: data/content/cloud/prerelease/index.html:88
+#: data/content/cloud/prerelease/index.html:104
+msgid "qcow2 Image"
+msgstr ""
+
+#: data/content/cloud/download/index.html:292
+#: data/content/cloud/download/index.html:307
+#, python-format
+msgid ""
+"This is Fedora %(rel)s Cloud Atomic Host in a Qcow2-formatted image for "
+"use with OpenStack."
+msgstr ""
+
+#: data/content/cloud/download/index.html:294
+#: data/content/cloud/download/index.html:317
+#: data/content/cloud/prerelease/index.html:91
+#: data/content/cloud/prerelease/index.html:115
+#, python-format
+msgid "64-bit %sMB Qcow2 Image"
+msgstr ""
+
+#: data/content/cloud/download/index.html:297
+#: data/content/cloud/download/index.html:310
+#: data/content/cloud/prerelease/index.html:94
+#: data/content/cloud/prerelease/index.html:108
+msgid "Raw Image"
+msgstr ""
+
+#: data/content/cloud/download/index.html:298
+#: data/content/cloud/download/index.html:311
+#, python-format
+msgid ""
+"This is Fedora %(rel)s Cloud Atomic Host in a compressed raw image "
+"format. If you're not sure what to use, try this."
+msgstr ""
+
+#: data/content/cloud/download/index.html:300
+#: data/content/cloud/download/index.html:321
+#: data/content/cloud/prerelease/index.html:97
+#: data/content/cloud/prerelease/index.html:119
+#, python-format
+msgid "64-bit %sMB xz-Compressed Raw Image"
+msgstr ""
+
+#: data/content/cloud/download/index.html:331
 #: data/content/server/download/index.html:50
 #: data/content/server/prerelease/index.html:73
 #: data/content/workstation/download/index.html:139
@@ -777,80 +849,69 @@ msgstr ""
 msgid "Other Downloads"
 msgstr ""
 
-#: data/content/cloud/download/index.html:278
+#: data/content/cloud/download/index.html:332
 msgid "Atomic Host ISO image (${SIZE})"
 msgstr ""
 
-#: data/content/cloud/download/index.html:280
-msgid "Base Images:"
-msgstr ""
-
-#: data/content/cloud/download/index.html:282
-msgid "Qcow2 Image (${SIZE})"
-msgstr ""
-
-#: data/content/cloud/download/index.html:283
-msgid "Raw Image (${SIZE})"
-msgstr ""
-
-#: data/content/cloud/download/index.html:287
+#: data/content/cloud/download/index.html:334
 msgid "Docker:"
 msgstr ""
 
-#: data/content/cloud/download/index.html:289
-msgid "Docker Image (${SIZE})"
+#: data/content/cloud/download/index.html:336
+#, python-format
+msgid "Docker Image (%sMB)"
 msgstr ""
 
-#: data/content/cloud/download/index.html:292
+#: data/content/cloud/download/index.html:339
 #: data/content/workstation/download/index.html:173
 #: data/content/workstation/prerelease/index.html:165
 msgid "Resources"
 msgstr ""
 
-#: data/content/cloud/download/index.html:293
+#: data/content/cloud/download/index.html:340
 msgid ""
 "<a href=\"//docs.fedoraproject.org/release-notes\"><strong>Project "
 "Atomic: Getting Started</strong></a>"
 msgstr ""
 
-#: data/content/cloud/download/index.html:294
+#: data/content/cloud/download/index.html:341
 msgid "Documentation on getting started using Project Atomic / Atomic Host."
 msgstr ""
 
-#: data/content/cloud/download/index.html:295
+#: data/content/cloud/download/index.html:342
 msgid ""
 "<a "
 "href=\"https://lists.projectatomic.io/mailman/listinfo/atomic\"><strong>Project"
 " Atomic: Mailing List</strong></a>"
 msgstr ""
 
-#: data/content/cloud/download/index.html:296
+#: data/content/cloud/download/index.html:343
 #, python-format
 msgid ""
 "Join the upstream mailing list at <a "
 "href=\"%s\">atomic@projectatomic.io</a>."
 msgstr ""
 
-#: data/content/cloud/download/index.html:297
+#: data/content/cloud/download/index.html:344
 #, python-format
 msgid "<a href=\"%s\"><strong>Project Atomic: IRC Chat</strong></a>"
 msgstr ""
 
-#: data/content/cloud/download/index.html:298
+#: data/content/cloud/download/index.html:345
 msgid ""
 "Join the Project Atomic chat on <strong>#atomic</strong></a> on "
 "<strong>irc.freenode.org</strong></a>."
 msgstr ""
 
-#: data/content/cloud/download/index.html:303
+#: data/content/cloud/download/index.html:350
 #: data/content/server/download/index.html:61
 #: data/content/workstation/download/index.html:153
 #, python-format
 msgid "F%(rel)s Alpha"
 msgstr ""
 
-#: data/content/cloud/download/index.html:304
-#: data/content/cloud/download/index.html:314
+#: data/content/cloud/download/index.html:351
+#: data/content/cloud/download/index.html:361
 #: data/content/server/download/index.html:62
 #: data/content/server/download/index.html:72
 #: data/content/workstation/download/index.html:154
@@ -858,8 +919,8 @@ msgstr ""
 msgid "Try a pre-release"
 msgstr ""
 
-#: data/content/cloud/download/index.html:305
-#: data/content/cloud/download/index.html:315
+#: data/content/cloud/download/index.html:352
+#: data/content/cloud/download/index.html:362
 #: data/content/server/download/index.html:63
 #: data/content/server/download/index.html:73
 #: data/content/workstation/download/index.html:155
@@ -867,8 +928,8 @@ msgstr ""
 msgid "We're working on our next release."
 msgstr ""
 
-#: data/content/cloud/download/index.html:306
-#: data/content/cloud/download/index.html:316
+#: data/content/cloud/download/index.html:353
+#: data/content/cloud/download/index.html:363
 #: data/content/server/download/index.html:64
 #: data/content/server/download/index.html:74
 #: data/content/workstation/download/index.html:156
@@ -877,15 +938,15 @@ msgstr ""
 msgid "Help us get F%(rel)s ready!"
 msgstr ""
 
-#: data/content/cloud/download/index.html:307
+#: data/content/cloud/download/index.html:354
 #: data/content/server/download/index.html:65
 #: data/content/workstation/download/index.html:157
 #, python-format
 msgid "Download F%(rel)s Alpha images"
 msgstr ""
 
-#: data/content/cloud/download/index.html:308
-#: data/content/cloud/download/index.html:318
+#: data/content/cloud/download/index.html:355
+#: data/content/cloud/download/index.html:365
 #: data/content/server/download/index.html:66
 #: data/content/server/download/index.html:76
 #: data/content/workstation/download/index.html:158
@@ -893,27 +954,27 @@ msgstr ""
 msgid "How to test pre-releases"
 msgstr ""
 
-#: data/content/cloud/download/index.html:313
+#: data/content/cloud/download/index.html:360
 #: data/content/server/download/index.html:71
 #: data/content/workstation/download/index.html:163
 #, python-format
 msgid "F%(rel)s Beta"
 msgstr ""
 
-#: data/content/cloud/download/index.html:317
+#: data/content/cloud/download/index.html:364
 #: data/content/server/download/index.html:75
 #: data/content/workstation/download/index.html:167
 #, python-format
 msgid "Download F%(rel)s Beta images"
 msgstr ""
 
-#: data/content/cloud/download/index.html:325
+#: data/content/cloud/download/index.html:372
 #: data/content/server/download/index.html:93
 #: data/content/workstation/download/index.html:200
 msgid "Verify"
 msgstr ""
 
-#: data/content/cloud/download/index.html:328
+#: data/content/cloud/download/index.html:375
 #: data/content/cloud/prerelease/docker.html:128
 #: data/content/cloud/prerelease/index.html:474
 #: data/content/server/download/index.html:96
@@ -1083,11 +1144,6 @@ msgstr ""
 msgid "Base Cloud Image"
 msgstr ""
 
-#: data/content/cloud/prerelease/index.html:88
-#: data/content/cloud/prerelease/index.html:104
-msgid "qcow2 Image"
-msgstr ""
-
 #: data/content/cloud/prerelease/index.html:89
 #: data/content/cloud/prerelease/index.html:105
 #, python-format
@@ -1096,29 +1152,12 @@ msgid ""
 " with OpenStack."
 msgstr ""
 
-#: data/content/cloud/prerelease/index.html:91
-#: data/content/cloud/prerelease/index.html:115
-#, python-format
-msgid "64-bit %sMB Qcow2 Image"
-msgstr ""
-
-#: data/content/cloud/prerelease/index.html:94
-#: data/content/cloud/prerelease/index.html:108
-msgid "Raw Image"
-msgstr ""
-
 #: data/content/cloud/prerelease/index.html:95
 #: data/content/cloud/prerelease/index.html:109
 #, python-format
 msgid ""
 "This is Fedora %(rel)s %(state)s Cloud in a compressed raw image format. "
 "If you're not sure what to use, try this."
-msgstr ""
-
-#: data/content/cloud/prerelease/index.html:97
-#: data/content/cloud/prerelease/index.html:119
-#, python-format
-msgid "64-bit %sMB xz-Compressed Raw Image"
 msgstr ""
 
 #: data/content/cloud/prerelease/index.html:172
