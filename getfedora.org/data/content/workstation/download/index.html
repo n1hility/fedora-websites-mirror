@@ -41,7 +41,7 @@
               <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Mac OS X&lt;/strong&gt;')) % global_variables.iso_size['macosx']}</p>
             </div>
             <div class="fmw-linux hidden">
-              <p><a class="btn btn-success" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p>
+              <p><a class="btn btn-success ws-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p>
               <p>${Markup(_('64-bit %s GB ISO for &lt;strong&gt;Linux&lt;/strong&gt;.')) % global_variables.iso_size['x86_64_workstation']}
               ${Markup(_('&lt;a href="%s"&gt;Install via DNF&lt;/a&gt; if you are already on Fedora.') % ('https://fedoraproject.org/wiki/DNF_system_upgrade'))}</p>
             </div>
@@ -119,7 +119,7 @@
                 <div class="jumbotron linux">
                       <p>${Markup(_('64-bit %s GB ISO for &lt;strong&gt;Linux&lt;/strong&gt;.')) % global_variables.iso_size['x86_64_workstation']}<br />
                       <a href="https://fedoraproject.org/wiki/How_to_create_and_use_Live_USB">(${_('How to use this ISO?')})</a></p>
-                      <a class="btn btn-success" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a>
+                      <a class="btn btn-success ws-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a>
                       <p><a href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-x86_64-CHECKSUM">(${_('Verify this image')})</a></p>
                 </div>
               </div>
