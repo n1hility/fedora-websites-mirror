@@ -518,6 +518,7 @@ margin-top:4px;
     font-family:'Open Sans';
     font-size: 22px;
     text-align: center;
+    line-height: .8;
 }
 
 .main-head-index h1, .main-head-index h4
@@ -592,6 +593,7 @@ margin-top:4px;
 	.h-caption img { display:block; font-size: 54px; color:#382526; margin-bottom:36px; }
 	.h-caption h4 { color:#382526; font-size: 16px; font-weight: bold; margin-bottom:20px; }
 	.h-body { margin-left: 50px; margin-right: 50px; margin-bottom: 20px; }
+  .h-body h4 { line-height: 1.5; }
 
 .productitem h4
 {
@@ -734,6 +736,7 @@ text-align:center;
   padding: 0 60px;
   margin-top: 0;
   margin-bottom: 30px;
+  line-height: 1.5;
 }
 
 .productdesc-spacer hr {
@@ -906,7 +909,7 @@ background-color:#A07CBC;
 margin-top:20px;
 }
 
-.caption, .atomic-cli, .atomic-ostree {
+#cloud .caption, .atomic-cli, .atomic-ostree {
   font-size: 125%;
   text-shadow: 1px 1px 5px #fff;
 }
@@ -1117,6 +1120,7 @@ ul.list-spaces li{ margin-bottom:10px; }
 .top-margin { margin-top:20px; }
 .bottom-space { margin-bottom: 60px; }
 .bottom-margin { margin-bottom:20px; }
+.bottom-margin h4 { line-height: 1.5; }
 .bottom-step { margin-bottom:10px; }
 .bottom-margin-edition { margin-bottom:40px; }
 .recover-heading { padding-bottom: 30px; } /* Recover the margin added by h1-h3 for even-ness. */
