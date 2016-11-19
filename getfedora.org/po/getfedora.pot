@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-11-19 17:24+0100\n"
+"POT-Creation-Date: 2016-11-19 23:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -850,7 +850,8 @@ msgid "Other Downloads"
 msgstr ""
 
 #: data/content/cloud/download/index.html:332
-msgid "Atomic Host ISO image (${SIZE})"
+#, python-format
+msgid "Atomic Host ISO image (%sMB)"
 msgstr ""
 
 #: data/content/cloud/download/index.html:334
