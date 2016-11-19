@@ -212,6 +212,7 @@ iso_size={
     'VBvag_cloud':         '254',       # In MB
     'libvag_cloud':        '245',       # In MB
     'x86_64_docker':       '40',        # In MB
+    'atomic_iso':          '927',       # In MB
     # Cloud prerelease
     'pre_raw_x86_64_cloud':    '226',   # In MB
     'pre_raw_i386_cloud':      '172',   # In MB
