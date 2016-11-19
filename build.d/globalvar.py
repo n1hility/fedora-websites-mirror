@@ -129,8 +129,8 @@ iso_size={
     'x86_64_Live_Games':   '3.6',       # In GB
     'i686_Live_Elab':      '2.5',       # In GB
     'x86_64_Live_Elab':    '2.5',       # In GB
-    'i686_Live_Design':    '1.9',       # In GB
-    'x86_64_Live_Design':  '1.8',       # In GB
+    'i686_Live_Design':    '2.1',       # In GB
+    'x86_64_Live_Design':  '2.1',       # In GB
     'i686_Live_Sci-kde':   '3.2',       # In GB
     'x86_64_Live_Sci-kde': '2.9',       # In GB
     'i686_Live_Robotics':  '2.7',       # In GB
