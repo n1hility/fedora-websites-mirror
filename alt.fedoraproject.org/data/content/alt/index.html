@@ -321,7 +321,7 @@
       </div>
       <div class="row">
         <div class="col-md-3 product-feature">
-        <p>${_('These images are for installation on IBM Power systems or OpenPOWER systems.')}</p>
+        <p>${_('PPC64 images are for installation on IBM Power systems or OpenPOWER systems.')}</p>
         </div>
         <div class="col-md-9">
           <div class="white">
@@ -332,10 +332,24 @@
             <h3>${_('Fedora Server')}</h3>
             </div>
             <div class="col-md-3">
-            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ARM_Server']}</p>
+            <p>${Markup(_('%sGB dvd iso')) % global_variables.iso_size['ppc64_Server_DVD']}</p>
             </div>
             <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64/iso/Fedora-Server-dvd-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/server.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Server')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB netinstall iso')) % global_variables.iso_size['ppc64_Server_net']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64/iso/Fedora-Server-netinst-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
             </div>
           </div>
           <div class="white">
@@ -346,10 +360,38 @@
             <h3>${_('Fedora Cloud')}</h3>
             </div>
             <div class="col-md-3">
-            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ARM_Minimal']}</p>
+            <p>${Markup(_('%sMB netinstall iso')) % global_variables.iso_size['ppc64_Cloud_net']}</p>
             </div>
             <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/ppc64/iso/Fedora-Cloud-netinst-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Cloud')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB qcow2 image')) % global_variables.iso_size['ppc64_qcow2']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Cloud')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ppc64_raw']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
             </div>
           </div>
           <div class="white">
@@ -360,10 +402,101 @@
             <h3>${_('Fedora Docker')}</h3>
             </div>
             <div class="col-md-3">
-            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ARM_Minimal']}</p>
+            <p>${Markup(_('%sMB Docker image')) % global_variables.iso_size['ppc64_docker']}</p>
             </div>
             <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Docker/ppc64/images/Fedora-Docker-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row top-space">
+        <div class="col-md-3 product-feature">
+        <p>${_('PPC64LE images are for installation on IBM Power systems or OpenPOWER systems.')}</p>
+        </div>
+        <div class="col-md-9">
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/server.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Server')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sGB dvd iso')) % global_variables.iso_size['ppc64le_Server_DVD']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64le/iso/Fedora-Server-dvd-ppc64le-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/server.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Server')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB netinstall iso')) % global_variables.iso_size['ppc64le_Server_net']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64le/iso/Fedora-Server-netinst-ppc64le-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Cloud')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB netinstall iso')) % global_variables.iso_size['ppc64le_Cloud_net']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/ppc64le/iso/Fedora-Cloud-netinst-ppc64le-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Cloud')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB qcow2 image')) % global_variables.iso_size['ppc64le_qcow2']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64le.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Cloud')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ppc64le_raw']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64le.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/docker.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Docker')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB Docker image')) % global_variables.iso_size['ppc64le_docker']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Docker/ppc64le/images/Fedora-Docker-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64le.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
             </div>
           </div>
         </div>
@@ -381,7 +514,7 @@
       </div>
       <div class="row">
         <div class="col-xs-12 product-feature">
-        <p>${_('These images are for installation on IBM Power systems or OpenPOWER systems.')}</p>
+        <p>${_('PPC64 images are for installation on IBM Power systems or OpenPOWER systems.')}</p>
         </div>
       </div>
       <div class="row">
@@ -391,7 +524,16 @@
           </div>
           <div class="col-xs-9">
           <h3>${_('Fedora Server')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64/iso/Fedora-Server-dvd-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/server.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Server')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64/iso/Fedora-Server-netinst-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
           </div>
         </div>
         <div class="white">
@@ -400,7 +542,25 @@
           </div>
           <div class="col-xs-9">
           <h3>${_('Fedora Cloud')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/ppc64/iso/Fedora-Cloud-netinst-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Cloud')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Cloud')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
           </div>
         </div>
         <div class="white">
@@ -409,7 +569,68 @@
           </div>
           <div class="col-xs-9">
           <h3>${_('Fedora Docker')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Docker/ppc64/images/Fedora-Docker-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row top-space">
+        <div class="col-xs-12 product-feature">
+        <p>${_('PPC64LE images are for installation on IBM Power systems or OpenPOWER systems.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/server.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Server')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64le/iso/Fedora-Server-dvd-ppc64le-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/server.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Server')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64le/iso/Fedora-Server-netinst-ppc64le-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Cloud')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/ppc64le/iso/Fedora-Cloud-netinst-ppc64le-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Cloud')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64le.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Cloud')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64le.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/docker.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Docker')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Docker/ppc64le/images/Fedora-Docker-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64le.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
           </div>
         </div>
       </div>
@@ -438,7 +659,18 @@
           <h3>${_('Fedora Server')}</h3>
           </div>
           <div class="col-sm-4">
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/armhfp/Images/Fedora-Server-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64/iso/Fedora-Server-dvd-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/server.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Server')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64/iso/Fedora-Server-netinst-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
           </div>
         </div>
         <div class="white">
@@ -449,7 +681,29 @@
           <h3>${_('Fedora Cloud')}</h3>
           </div>
           <div class="col-sm-4">
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/ppc64/iso/Fedora-Cloud-netinst-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Cloud')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Cloud')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
           </div>
         </div>
         <div class="white">
@@ -460,7 +714,80 @@
           <h3>${_('Fedora Docker')}</h3>
           </div>
           <div class="col-sm-4">
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Docker/ppc64/images/Fedora-Docker-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 product-feature">
+        <p>${_('PPC64LE images are for installation on IBM Power systems or OpenPOWER systems.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/server.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Server')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64le/iso/Fedora-Server-dvd-ppc64le-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/server.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Server')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64le/iso/Fedora-Server-netinst-ppc64le-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Cloud')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/ppc64le/iso/Fedora-Cloud-netinst-ppc64le-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Cloud')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64le.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Cloud')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64le.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/docker.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Docker')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Docker/ppc64le/images/Fedora-Docker-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['alt_composedate']}.n.0.ppc64le.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
           </div>
         </div>
       </div>
