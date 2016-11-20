@@ -9,30 +9,27 @@ release={
     'next_name':   '',
     'curr_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_alt_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_cloud_AMI_state':  '',   # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_atomic_state':  '',   # either 'Alpha', 'Beta' or '' (i.e empty)
     'prev_arm_id': '24',
-    'prev_ppc64_id': '24',
-    'prev_s390_id': '24',
+    'prev_alt_id': '24',
     'prev_cloud_id': '24',
     'prev_atomic_id': '23',
     'curr_arm_id': '25',
-    'curr_ppc64_id': '25',
-    'curr_s390_id': '25',
+    'curr_alt_id': '25',
     'curr_cloud_id': '25',
     'curr_atomic_id': '24',
     'curr_cloud_AMI_id': '24',
     'next_arm_id': '26',
-    'next_ppc64_id': '26',
-    'next_s390_id': '26',
+    'next_alt_id': '26',
     'next_cloud_id': '26',
     'next_atomic_id': '25',
     'next_cloud_AMI_id': '25',
     'composedate': '20160616',
     'unofficial_compose': '20160614',
+    'alt_composedate': '20161118',
     # Note that atomic values here get overwritten by the twoweek script.
     'atomic_composedate': '20160616',
     'pre_cloud_composedate': '20150915',
@@ -91,6 +88,12 @@ iso_size={
     'x86_64_Netinstall':   '321',       # In MB
     'PPC64_DVD':           '4.3',       # In GB
     'PPC64_Netinstall':    '340',       # In MB
+    'aarch64_Server_DVD':  '1.7',       # In GB
+    'aarch64_Server_net':  '414',       # In MB
+    'aarch64_Cloud_net':   '363',       # In MB
+    'aarch64_qcow2':       '233',       # In MB
+    'aarch64_raw':         '143',       # In MB
+    'aarch64_docker':      '53',        # In MB
     's390_DVD':            '4.6',       # In GB
     'i686_sda.qcow2':      '212',       # In MB
     'x86_64_sda.qcow2':    '207',       # In MB
