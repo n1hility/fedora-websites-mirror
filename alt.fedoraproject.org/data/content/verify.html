@@ -31,12 +31,54 @@
             <p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded.'))}</p>
         </div>
     </div>
-    <div class="row bottom-margin">
-        <div class="col-sm-4 col-xs-12">
-          <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Live-x86_64-${global_variables.release['curr_id']}-CHECKSUM">${_('Validate 64-bit!')}</a>
+    <div class="row bottom-space">
+        <div class="col-sm-4 col-xs-12 highlight productitem">
+            <div class="productitem-logo">
+                <img src="${path}/static/images/logo-color-workstation.png" />
+            </div>
+            <h4 class="uppercase">${_('Workstation')}</h4>
+            <div class="h-body text-center">
+              <a class="btn btn-default btn-topmargin btn-verify btn-checksum" href="./static/checksums/Fedora-Workstation-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-x86_64-CHECKSUM">${_('For aarch64')}</a>
+            </div>
+            <div class="h-body text-center">
+              <a class="btn btn-default btn-topmargin btn-verify btn-checksum" href="./static/checksums/Fedora-Workstation-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-i386-CHECKSUM">${_('For ppc64')}</a>
+            </div>
+            <div class="h-body text-center">
+              <a class="btn btn-default btn-topmargin btn-verify btn-checksum" href="./static/checksums/Fedora-Workstation-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-i386-CHECKSUM">${_('For ppc64le')}</a>
+            </div>
         </div>
-        <div class="col-sm-4 col-xs-12">
-          <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Live-i386-${global_variables.release['curr_id']}-CHECKSUM">${_('Validate 32-bit!')}</a>
+        <div class="col-sm-4 col-xs-12 highlight productitem">
+            <div class="productitem-logo">
+                <img src="${path}/static/images/logo-color-server.png" />
+            </div>
+            <h4 class="uppercase">${_('Server')}</h4>
+            <div class="h-body text-center">
+              <a class="btn btn-default btn-topmargin btn-verify btn-checksum" href="./static/checksums/Fedora-Server-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-x86_64-CHECKSUM">${_('For aarch64')}</a>
+            </div>
+            <div class="h-body text-center">
+              <a class="btn btn-default btn-topmargin btn-verify btn-checksum" href="./static/checksums/Fedora-Server-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-x86_64-CHECKSUM">${_('For ppc64')}</a>
+            </div>
+            <div class="h-body text-center">
+              <a class="btn btn-default btn-topmargin btn-verify btn-checksum" href="./static/checksums/Fedora-Server-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-x86_64-CHECKSUM">${_('For ppc64le')}</a>
+            </div>
+            <div class="h-body text-center">
+              <a class="btn btn-default btn-topmargin btn-verify btn-checksum" href="./static/checksums/Fedora-Server-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-x86_64-CHECKSUM">${_('For s390x')}</a>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 highlight productitem cloud">
+            <div class="productitem-logo">
+                <img src="${path}/static/images/docker-big.png" />
+            </div>
+            <h4 class="uppercase">${_('Docker')}</h4>
+            <div class="h-body text-center">
+              <a class="btn btn-default btn-topmargin btn-verify btn-checksum" href="${global_variables.path['download_atomic']}/stable/Fedora-Atomic-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}/Atomic/x86_64/iso/Fedora-Atomic-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}-x86_64-CHECKSUM">${_('For aarch64')}</a>
+            </div>
+            <div class="h-body text-center">
+              <a class="btn btn-default btn-topmargin btn-verify btn-checksum" href="${global_variables.path['download_atomic']}/stable/Fedora-Atomic-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}/CloudImages/x86_64/images/Fedora-CloudImages-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}-x86_64-CHECKSUM">${_('For ppc64')}</a>
+            </div>
+            <div class="h-body text-center">
+              <a class="btn btn-default btn-topmargin btn-verify btn-checksum" href="${global_variables.path['download_atomic']}/stable/Fedora-Atomic-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}/Docker/x86_64/images/Fedora-Docker-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}-x86_64-CHECKSUM">${_('For ppc64le')}</a>
+            </div>
         </div>
     </div>
 
