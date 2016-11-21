@@ -220,7 +220,7 @@ iso_size={
     'qcow2_i386_cloud':    '216',       # In MB
     'VBvag_cloud':         '210',       # In MB
     'libvag_cloud':        '201',       # In MB
-    'x86_64_docker':       '42',        # In MB
+    'x86_64_docker':       '40',        # In MB
     'raw_i386_cloud':      '144',       # In MB
     # Note that atomic values here get overwritten by the twoweek script.
     'atomic_raw_cloud':    '???',       # In MB
@@ -230,7 +230,7 @@ iso_size={
     'VBvag_cloud':         '254',       # In MB
     'libvag_cloud':        '245',       # In MB
     'x86_64_docker':       '40',        # In MB
-    'atomic_iso':          '927',       # In MB
+    'atomic_iso':          '918',       # In MB
     # Cloud prerelease
     'pre_raw_x86_64_cloud':    '226',   # In MB
     'pre_raw_i386_cloud':      '172',   # In MB

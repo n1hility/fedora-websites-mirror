@@ -329,11 +329,11 @@
 
     <div class="col-md-3 col-xs-12 col-md-offset-1 top-margin">
         <h3>${_('Other Downloads')}</h3>
-          <p><a class="download-cloud-splash" href="http://download.fedoraproject.org/pub/alt/atomic/stable/Fedora-Atomic-24-20160921.0/Atomic/x86_64/iso/Fedora-Atomic-dvd-x86_64-24-20160921.0.iso">${_('Atomic Host ISO image (%sMB)') % global_variables.iso_size['atomic_iso']}</a></p>
+          <p><a class="download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/Fedora-Atomic-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}/Atomic/x86_64/iso/Fedora-Atomic-ostree-x86_64-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}.iso">${_('Atomic Host ISO image (%sMB)') % global_variables.iso_size['atomic_iso']}</a></p>
           <p>
             ${_('Docker:')}
             <ul>
-              <li><p><a class="download-cloud-splash" href="http://download.fedoraproject.org/pub/alt/atomic/stable/Fedora-Atomic-24-20160921.0/Docker/x86_64/images/Fedora-Docker-Base-24-20160921.0.x86_64.tar.xz">${_('Docker Image (%sMB)') % global_variables.iso_size['x86_64_docker']}</a></p></li>
+              <li><p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Docker/x86_64/images/Fedora-Docker-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.tar.xz">${_('Docker Image (%sMB)') % global_variables.iso_size['x86_64_docker']}</a></p></li>
             </ul>
           </p>
         <div class="top-space bottom-margin"><h4>${_('Resources')}</h4></div>
