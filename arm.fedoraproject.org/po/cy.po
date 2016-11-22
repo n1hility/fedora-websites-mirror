@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-06-19 23:33+0200\n"
+"POT-Creation-Date: 2016-11-22 12:46+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Welsh\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Language: cy\n"
 "Plural-Forms: nplurals=4; plural= (n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != 11) ? 2 : 3\n"
 "Generated-By: Babel 1.3\n"
-"X-Generator: Zanata 3.8.4\n"
+"X-Generator: Zanata 3.9.6\n"
 
 #: data/content/index.html:8
 msgid "Fedora ARM"
@@ -43,8 +43,8 @@ msgstr ""
 
 #: data/content/index.html:35 data/content/index.html:49
 #: data/content/index.html:199 data/content/index.html:227
-#: data/content/prerelease.html:49 data/content/prerelease.html:67
-#: data/content/prerelease.html:139 data/content/prerelease.html:194
+#: data/content/prerelease.html:67 data/content/prerelease.html:139
+#: data/content/prerelease.html:194
 #, python-format
 msgid "%sMB raw image"
 msgstr ""
@@ -122,8 +122,9 @@ msgstr ""
 
 #: data/content/index.html:157 data/content/index.html:171
 #: data/content/index.html:185 data/content/index.html:213
-#: data/content/prerelease.html:85 data/content/prerelease.html:103
-#: data/content/prerelease.html:121 data/content/prerelease.html:157
+#: data/content/prerelease.html:49 data/content/prerelease.html:85
+#: data/content/prerelease.html:103 data/content/prerelease.html:121
+#: data/content/prerelease.html:157
 #, python-format
 msgid "%sGB raw image"
 msgstr ""
@@ -226,12 +227,12 @@ msgid ""
 "available at the <a href=\"%s\">Fedora “Get Help” page</a>."
 msgstr ""
 
-#: data/content/index.html:444 data/content/index.html:455
+#: data/content/index.html:445 data/content/index.html:456
 #, python-format
 msgid "Fedora %(rel)s %(state)s released! <a href=\"%(link)s\">Try it now ></a>"
 msgstr ""
 
-#: data/content/index.html:466
+#: data/content/index.html:467
 #, python-format
 msgid "Fedora %(rel)s released! Try it now."
 msgstr ""
@@ -325,35 +326,35 @@ msgid ""
 msgstr ""
 
 #: data/content/verify.html:55
-msgid "Fedora 25"
+msgid "Fedora 26"
 msgstr ""
 
 #: data/content/verify.html:56
-msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
 #: data/content/verify.html:57
-msgid "Fedora 24"
+msgid "Fedora 25"
 msgstr ""
 
 #: data/content/verify.html:58
-msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
 #: data/content/verify.html:59
-msgid "Fedora 23"
+msgid "Fedora 24"
 msgstr ""
 
 #: data/content/verify.html:60
-msgid "Fedora 23 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
 #: data/content/verify.html:61
-msgid "Fedora 22"
+msgid "Fedora 23"
 msgstr ""
 
 #: data/content/verify.html:62
-msgid "Fedora 22 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgid "Fedora 23 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
 #: data/content/verify.html:64
@@ -438,7 +439,7 @@ msgid "Get Fedora Server"
 msgstr ""
 
 #: data/templates/footer.html:42
-msgid "Get Fedora Cloud"
+msgid "Get Fedora Atomic"
 msgstr ""
 
 #: data/templates/footer.html:43
@@ -454,7 +455,7 @@ msgid "Fedora ARM<span class=\"sup\">®</span>"
 msgstr ""
 
 #: data/templates/footer.html:46
-msgid "Torrent Downloads"
+msgid "Alternative Downloads"
 msgstr ""
 
 #: data/templates/footer.html:53

@@ -1,11 +1,12 @@
 # Yuri Chornoivan <yurchor@ukr.net>, 2015.
 # Yuri Chornoivan <yurchor@ukr.net>, 2015. #zanata
+# Yuri Chornoivan <yurchor@ukr.net>, 2016. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-06-19 23:33+0200\n"
-"PO-Revision-Date: 2015-11-04 04:00-0500\n"
+"POT-Creation-Date: 2016-11-22 12:46+0100\n"
+"PO-Revision-Date: 2016-11-02 12:30-0400\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +15,7 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 "Generated-By: Babel 1.3\n"
-"X-Generator: Zanata 3.8.4\n"
+"X-Generator: Zanata 3.9.6\n"
 
 #: data/content/index.html:8
 msgid "Fedora ARM"
@@ -42,8 +43,8 @@ msgstr "Сервер Fedora"
 
 #: data/content/index.html:35 data/content/index.html:49
 #: data/content/index.html:199 data/content/index.html:227
-#: data/content/prerelease.html:49 data/content/prerelease.html:67
-#: data/content/prerelease.html:139 data/content/prerelease.html:194
+#: data/content/prerelease.html:67 data/content/prerelease.html:139
+#: data/content/prerelease.html:194
 #, python-format
 msgid "%sMB raw image"
 msgstr "%s МБ, простий образ"
@@ -123,8 +124,9 @@ msgstr "Робоча станція Fedora"
 
 #: data/content/index.html:157 data/content/index.html:171
 #: data/content/index.html:185 data/content/index.html:213
-#: data/content/prerelease.html:85 data/content/prerelease.html:103
-#: data/content/prerelease.html:121 data/content/prerelease.html:157
+#: data/content/prerelease.html:49 data/content/prerelease.html:85
+#: data/content/prerelease.html:103 data/content/prerelease.html:121
+#: data/content/prerelease.html:157
 #, python-format
 msgid "%sGB raw image"
 msgstr "%s ГБ, простий образ"
@@ -244,13 +246,13 @@ msgstr ""
 "допомогу на загальних ресурсах підтримки Fedora. Список таких ресурсів "
 "наведено на сторінці <a href=\"%s\">«Довідка» Fedora</a>."
 
-#: data/content/index.html:444 data/content/index.html:455
+#: data/content/index.html:445 data/content/index.html:456
 #, python-format
 msgid "Fedora %(rel)s %(state)s released! <a href=\"%(link)s\">Try it now ></a>"
 msgstr ""
 "Випущено Fedora %(rel)s %(state)s! <a href=\"%(link)s\">Спробуйте її ></a>"
 
-#: data/content/index.html:466
+#: data/content/index.html:467
 #, python-format
 msgid "Fedora %(rel)s released! Try it now."
 msgstr "Випущено Fedora %(rel)s! Спробуйте нову версію."
@@ -336,7 +338,7 @@ msgstr "Перевірте Workstation!"
 
 #: data/content/verify.html:42
 msgid "Validate Spins!"
-msgstr ""
+msgstr "Перевірте образи!"
 
 #: data/content/verify.html:48
 msgid "Next, import Fedora's GPG key(s):"
@@ -362,36 +364,40 @@ msgid ""
 msgstr "Файл CHECKSUM повинен мати коректний підпис одним з цих ключів:"
 
 #: data/content/verify.html:55
-msgid "Fedora 25"
-msgstr ""
+msgid "Fedora 26"
+msgstr "Fedora 26"
 
 #: data/content/verify.html:56
-msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
+"Вторинні архітектури Fedora 26 (AArch64, PPC64, PPC64le, s390 і s390x)"
 
 #: data/content/verify.html:57
+msgid "Fedora 25"
+msgstr "Fedora 25"
+
+#: data/content/verify.html:58
+msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgstr ""
+"Вторинні архітектури Fedora 25 (AArch64, PPC64, PPC64le, s390 і s390x)"
+
+#: data/content/verify.html:59
 msgid "Fedora 24"
 msgstr "Fedora 24"
 
-#: data/content/verify.html:58
+#: data/content/verify.html:60
 msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
+"Вторинні архітектури Fedora 24 (AArch64, PPC64, PPC64le, s390 та s390x)"
 
-#: data/content/verify.html:59
+#: data/content/verify.html:61
 msgid "Fedora 23"
 msgstr "Fedora 23"
 
-#: data/content/verify.html:60
+#: data/content/verify.html:62
 msgid "Fedora 23 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
-
-#: data/content/verify.html:61
-msgid "Fedora 22"
-msgstr "Fedora 22"
-
-#: data/content/verify.html:62
-msgid "Fedora 22 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
+"Вторинні архітектури Fedora 23 (AArch64, PPC64, PPC64le, s390 та s390x)"
 
 #: data/content/verify.html:64
 msgid ""
@@ -486,8 +492,8 @@ msgid "Get Fedora Server"
 msgstr "Отримання Fedora Server"
 
 #: data/templates/footer.html:42
-msgid "Get Fedora Cloud"
-msgstr "Отримання Fedora Cloud"
+msgid "Get Fedora Atomic"
+msgstr ""
 
 #: data/templates/footer.html:43
 msgid "Fedora Spins"
@@ -502,8 +508,8 @@ msgid "Fedora ARM<span class=\"sup\">®</span>"
 msgstr "Fedora ARM<span class=\"sup\">®</span>"
 
 #: data/templates/footer.html:46
-msgid "Torrent Downloads"
-msgstr "Отримання торентів"
+msgid "Alternative Downloads"
+msgstr ""
 
 #: data/templates/footer.html:53
 msgid "Support"

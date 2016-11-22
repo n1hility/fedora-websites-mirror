@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-06-21 11:07+0200\n"
-"PO-Revision-Date: 2016-06-21 03:14-0400\n"
+"POT-Creation-Date: 2016-11-22 12:42+0100\n"
+"PO-Revision-Date: 2016-11-14 06:04-0500\n"
 "Last-Translator: feonsu <feonsu@gmail.com>\n"
 "Language-Team: Slovak (http://www.transifex.com/projects/p/fedora-web/language/sk/)\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Language: sk\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "Generated-By: Babel 1.3\n"
-"X-Generator: Zanata 3.8.4\n"
+"X-Generator: Zanata 3.9.6\n"
 
 #: data/content/code-of-conduct.html:8
 msgid "Fedora Code of Conduct"
@@ -132,13 +132,23 @@ msgstr "Zvoľte slobodu. Zvoľte Fedoru."
 
 #: data/content/index.html:18
 msgid ""
-"Less setup, more innovation. Choose a flavor of Fedora streamlined for your "
-"needs, and get to work right away."
+"Less setup, more innovation. Choose a flavor of Fedora<br /><br /> "
+"streamlined for your needs, and get to work right away."
 msgstr ""
-"Menej nastavovania, viac inovácií. Zvoľte si druh Fedory vyhovujúci vašim "
-"potrebám a dajte sa do práce tou správnou cestou."
+"Menej nastavovania, viac inovácií. Zvoľte si druh Fedory<br /><br />  "
+"vyhovujúci vašim potrebám a dajte sa do práce tou správnou cestou."
 
-#: data/content/index.html:33
+#: data/content/index.html:30 data/content/verify.html:39
+#: data/templates/productselector-workstation.html:12
+msgid "Workstation"
+msgstr "Workstation"
+
+#: data/content/index.html:32 data/content/index.html:48
+#: data/content/index.html:63
+msgid "Download Now"
+msgstr ""
+
+#: data/content/index.html:37 data/content/index.html:90
 msgid ""
 "Fedora Workstation is a polished, easy to use operating system for laptop "
 "and desktop computers, with a complete set of tools for developers and "
@@ -148,19 +158,22 @@ msgstr ""
 "stolové počítače s kompletnou sadou nástrojov pre vývojárov a tvorcov "
 "každého druhu."
 
-#: data/content/index.html:34 data/content/index.html:44
-#: data/content/index.html:54 data/content/index.html:60
-#: data/content/index.html:63 data/content/index.html:66
-#: data/content/cloud/index.html:24 data/content/cloud/index.html:120
-#: data/content/cloud/index.html:126 data/content/server/index.html:20
-#: data/content/server/index.html:125 data/content/server/index.html:131
-#: data/content/workstation/index.html:20
+#: data/content/index.html:39 data/content/index.html:54
+#: data/content/index.html:69 data/content/atomic/index.html:24
+#: data/content/atomic/index.html:125 data/content/atomic/index.html:131
+#: data/content/server/index.html:20 data/content/server/index.html:125
+#: data/content/server/index.html:131 data/content/workstation/index.html:20
 #: data/content/workstation/index.html:185
 #: data/content/workstation/index.html:191
 msgid "Download now"
 msgstr "Stiahnuť teraz"
 
-#: data/content/index.html:43
+#: data/content/index.html:46 data/content/verify.html:51
+#: data/templates/productselector-server.html:13
+msgid "Server"
+msgstr "Server"
+
+#: data/content/index.html:52 data/content/index.html:95
 msgid ""
 "Fedora Server is a powerful, flexible operating system that includes the "
 "best and latest datacenter technologies. It puts you in control of all your "
@@ -170,7 +183,12 @@ msgstr ""
 "najlepšie a najnovšie technológie z oblasti datacentier. Umožní vám ovládať "
 "celú vašu infraštruktúru a služby."
 
-#: data/content/index.html:53
+#: data/content/index.html:61 data/content/verify.html:60
+#: data/templates/productselector-cloud.html:13
+msgid "Atomic"
+msgstr ""
+
+#: data/content/index.html:67 data/content/index.html:100
 msgid ""
 "Fedora Cloud provides a minimal image of Fedora for use in public and "
 "private cloud environments. It includes just the bare essentials making it "
@@ -181,21 +199,21 @@ msgstr ""
 "robí veľmi odľahčenou a nenáročnou na prostriedky, ale získate dosť na "
 "spustenie vašich cloudových aplikácií."
 
-#: data/content/index.html:94
+#: data/content/index.html:126
 msgid ""
 "Fedora is always free for anyone to use, modify, and distribute. It is built"
 " and used by people across the globe who work together as a community: the "
 "Fedora Project."
 msgstr ""
-"Fedoru môže každý vždy slobodne používať, upravovať a šíriť. Fedora je "
-"tvorená a používaná ľuďmi z celého sveta, ktorí pracujú spolu ako komunita: "
-"Projekt Fedora."
+"Fedoru môže každý vždy slobodne používať, upravovať a šíriť. Fedoru tvoria a"
+" používajú ľudia z celého sveta, ktorí pracujú spolu ako komunita: Projekt "
+"Fedora."
 
-#: data/content/index.html:107
+#: data/content/index.html:139
 msgid "Want more Fedora options?"
 msgstr "Hľadáte viac volieb systému Fedora?"
 
-#: data/content/index.html:126
+#: data/content/index.html:158
 msgid ""
 "The Fedora community also releases <a "
 "href=\"https://arm.fedoraproject.org/\">ARM images</a>, alternate live "
@@ -207,15 +225,14 @@ msgstr ""
 "Komunita Fedora tiež vydáva <a "
 "href=\"https://arm.fedoraproject.org/\">obrazy ARM</a>, alternatívne live "
 "spiny, a iné varianty Fedory prispôsobené špecifickým požiadavkám. Nájdete "
-"ich na webovej stránke <a href=\"https://spins.fedoraproject.org/\">Spiny "
-"Fedory</a> alebo <a href=\"https://labs.fedoraproject.org/\">Laboratóriá "
-"Fedora</a>."
+"ich na webovej stránke <a href=\"https://spins.fedoraproject.org/\">Fedora "
+"spiny</a> alebo <a href=\"https://labs.fedoraproject.org/\">Fedora Labs</a>."
 
-#: data/content/index.html:133
+#: data/content/index.html:165
 msgid "Be connected & informed."
-msgstr ""
+msgstr "Buďte v spojení a informovaný."
 
-#: data/content/index.html:143
+#: data/content/index.html:175
 msgid ""
 "Want to get <a href=\"http://whatcanidoforfedora.org/\">involved</a>? Find "
 "out what's happening in the <a "
@@ -223,12 +240,16 @@ msgid ""
 "the latest news and cool stuff at <a "
 "href=\"http://fedoramagazine.org/\">Fedora Magazine</a>."
 msgstr ""
+"Chcete sa <a href=\"http://whatcanidoforfedora.org/\">zapojiť</a>? Zistiť čo"
+" sa deje v <a href=\"http://communityblog.fedoraproject.org/\">komunite</a>?"
+" Prečítajte si najnovšie novinky a skvelé veci v <a "
+"href=\"http://fedoramagazine.org/\">časopise Fedora</a>."
 
-#: data/content/index.html:153
+#: data/content/index.html:185
 msgid "Read the docs."
 msgstr "Prečítajte si dokumentáciu."
 
-#: data/content/index.html:163
+#: data/content/index.html:195
 #, python-format
 msgid ""
 "Check out the Release Notes for detailed information on the current release."
@@ -240,11 +261,11 @@ msgstr ""
 "systémové požiadavky, pozrite si <a href=\"%s\"><strong>oficiálnu "
 "dokumentáciu</strong></a>."
 
-#: data/content/index.html:170
+#: data/content/index.html:202
 msgid "Get help."
 msgstr "Získajte pomoc."
 
-#: data/content/index.html:180
+#: data/content/index.html:212
 #, python-format
 msgid ""
 "Need some help with Fedora? Check out <a href=\"%s\">Ask Fedora</a>, where "
@@ -255,7 +276,7 @@ msgstr ""
 "sa Fedory</a>, kde si môžete prečítať archívy otázok od ostatných "
 "používateľov, alebo položiť svoju vlastnú otázku."
 
-#: data/content/index.html:193 data/content/index.html:204
+#: data/content/index.html:225 data/content/index.html:236
 #, python-format
 msgid ""
 "Fedora %(rel)s %(state)s released! Check it out in the Download section."
@@ -263,7 +284,7 @@ msgstr ""
 "Bola vydaná Fedora %(rel)s %(state)s! Viac podrobností nájdete v sekcii s "
 "prevzatiami."
 
-#: data/content/index.html:215
+#: data/content/index.html:247
 #, python-format
 msgid "Fedora %(rel)s released! Check it out in the Download section."
 msgstr ""
@@ -307,54 +328,10 @@ msgstr ""
 "významnej podpory:"
 
 #: data/content/sponsors.html:91
-msgid ""
-"Fedora Infrastructure would like to thank the following open-source projects"
-" for their software (alphabetically ordered):"
-msgstr ""
-"Infraštruktúra Fedory by rada poďakovala nasledujúcim open-source projektom "
-"za ich softvér (abecedne zoradené):"
-
-#: data/content/sponsors.html:93
-msgid "Askbot"
-msgstr "Askbot"
-
-#: data/content/sponsors.html:94
-msgid "Ansible"
-msgstr "Ansible"
-
-#: data/content/sponsors.html:95
-msgid "Git"
-msgstr "Git"
-
-#: data/content/sponsors.html:96
-msgid "Nagios"
-msgstr "Nagios"
-
-#: data/content/sponsors.html:97
-msgid "GNU Mailman"
-msgstr "GNU Mailman"
-
-#: data/content/sponsors.html:98
-msgid "MediaWiki"
-msgstr "MediaWiki"
-
-#: data/content/sponsors.html:99
-msgid "Python"
-msgstr "Python"
-
-#: data/content/sponsors.html:100
-msgid "Trac"
-msgstr "Trac"
-
-#: data/content/sponsors.html:101
-msgid "TurboGears"
-msgstr "TurboGears"
-
-#: data/content/sponsors.html:110
 msgid "Interested in sponsoring something for Fedora?"
 msgstr "Zaujíma vás sponzorovanie Fedory?"
 
-#: data/content/sponsors.html:111
+#: data/content/sponsors.html:92
 #, python-format
 msgid ""
 "Contact <a href=\"%(mail_url)s\">admin@fedoraproject.org</a> or stop by "
@@ -386,13 +363,7 @@ msgstr ""
 "stiahnutý obraz overili, najskôr si stiahnite správny súbor CHECKSUM do toho"
 " istého adresára, kde ste stiahli obraz."
 
-#: data/content/verify.html:39
-#: data/templates/productselector-workstation.html:12
-msgid "Workstation"
-msgstr "Workstation"
-
 #: data/content/verify.html:41 data/content/verify.html:53
-#: data/content/verify.html:62
 msgid "For 64-bit images"
 msgstr "Pre 64-bitové obrazy"
 
@@ -400,23 +371,23 @@ msgstr "Pre 64-bitové obrazy"
 msgid "For 32-bit images"
 msgstr "Pre 32-bitové obrazy"
 
-#: data/content/verify.html:51 data/templates/productselector-server.html:13
-msgid "Server"
-msgstr "Server"
+#: data/content/verify.html:62
+msgid "For Atomic Host Iso"
+msgstr ""
 
-#: data/content/verify.html:60 data/templates/productselector-cloud.html:13
-msgid "Cloud"
-msgstr "Cloud"
+#: data/content/verify.html:65
+msgid "For Atomic Host images"
+msgstr ""
 
-#: data/content/verify.html:72
+#: data/content/verify.html:68
 msgid "For Docker"
 msgstr "Pre Docker"
 
-#: data/content/verify.html:79
+#: data/content/verify.html:75
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Ďalej naimportujte GPG kľúč Fedory:"
 
-#: data/content/verify.html:81
+#: data/content/verify.html:77
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
@@ -425,11 +396,11 @@ msgstr ""
 "<a href=\"%s/%s/keys\">Na tomto mieste</a> si môžete overiť detaily GPG "
 "kľúčov."
 
-#: data/content/verify.html:82
+#: data/content/verify.html:78
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Teraz overte, či je súbor CHECKSUM platný:"
 
-#: data/content/verify.html:84
+#: data/content/verify.html:80
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
@@ -437,39 +408,39 @@ msgstr ""
 "Súbor CHECKSUM by mal mať v poriadku signatúru z jedného z nasledujúcich "
 "kľúčov:"
 
-#: data/content/verify.html:86 data/content/keys/index.html:46
+#: data/content/verify.html:82 data/content/keys/index.html:46
+msgid "Fedora 26"
+msgstr "Fedora 26"
+
+#: data/content/verify.html:83
+msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgstr "Fedora 26 ďalšie architektúry (AArch64, PPC64, PPC64le, s390 a s390x)"
+
+#: data/content/verify.html:84 data/content/keys/index.html:67
 msgid "Fedora 25"
 msgstr "Fedora 25"
 
-#: data/content/verify.html:87
+#: data/content/verify.html:85
 msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr "Fedora 25 ďalšie architektúry (AArch64, PPC64, PPC64le, s390 a s390x)"
 
-#: data/content/verify.html:88 data/content/keys/index.html:67
+#: data/content/verify.html:86 data/content/keys/index.html:88
 msgid "Fedora 24"
 msgstr "Fedora 24"
 
-#: data/content/verify.html:89
+#: data/content/verify.html:87
 msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr "Fedora 24 ďalšie architektúry (AArch64, PPC64, PPC64le, s390 a s390x)"
 
-#: data/content/verify.html:90 data/content/keys/index.html:88
+#: data/content/verify.html:88 data/content/keys/index.html:109
 msgid "Fedora 23"
 msgstr "Fedora 23"
 
-#: data/content/verify.html:91
+#: data/content/verify.html:89
 msgid "Fedora 23 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr "Fedora 23 ďalšie architektúry (AArch64, PPC64, PPC64le, s390 a s390x)"
 
-#: data/content/verify.html:92 data/content/keys/index.html:109
-msgid "Fedora 22"
-msgstr "Fedora 22"
-
-#: data/content/verify.html:93
-msgid "Fedora 22 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr "Fedora 22 ďalšie architektúry (AArch64, PPC64, PPC64le, s390 a s390x)"
-
-#: data/content/verify.html:95
+#: data/content/verify.html:91
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
@@ -477,636 +448,132 @@ msgstr ""
 "A nakoniec po kontrole súboru CHECKSUM sa presvedčte, že kontrolný súčet "
 "obrazu sedí:"
 
-#: data/content/verify.html:97
+#: data/content/verify.html:93
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
 "Ak výstup uvádza, že je súbor platný, potom je obraz pripravený na použitie."
 
-#: data/content/verify.html:98
+#: data/content/verify.html:94
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr "Ako overím stiahnutý obraz v inom operačnom systéme?"
 
-#: data/content/verify.html:99
+#: data/content/verify.html:95
 msgid "Read these instructions to validate your image."
 msgstr "Prečítajte si tieto inštrukcie ako overíte váš obraz."
 
-#: data/content/cloud/index.html:8
-msgid "Fedora Cloud"
-msgstr "Fedora Cloud"
+#: data/content/atomic/index.html:8
+msgid "Fedora Atomic"
+msgstr "Fedora Atomic"
 
-#: data/content/cloud/index.html:18
-#: data/templates/productselector-cloud.html:14
-msgid "Lean. Powerful. Everycloud ready."
-msgstr "Zoštíhlená. Výkonná.  Pripravená pre každý cloud."
-
-#: data/content/cloud/index.html:19
+#: data/content/atomic/index.html:18
 msgid ""
-"Build scale-out computing and utilize the next generation of container "
-"deployment with Fedora Cloud"
+"Deploy and scale your containerized applications with immutable "
+"infrastructure."
 msgstr ""
-"Vytvorte škálovateľný výpočtový výkon a nasaďte kontajnery novej generácie "
-"pomocou Fedory Cloud"
+"Nasaďte a škálujte svoje kontajnerové aplikácie v nemennej infraštruktúre."
 
-#: data/content/cloud/index.html:39
-#, python-format
+#: data/content/atomic/index.html:19
 msgid ""
-"“Fedora %(rel)s gives me the balance I'm looking for — a leading edge "
-"operating system with enterprise-level tools for fast provisioning and "
-"configuration.”"
+"Fedora Atomic provides the best platform for your Linux-Docker-Kubernetes "
+"(LDK) application stack."
 msgstr ""
-"“Fedora %(rel)s mi ponúka rovnováhu, ktorú hľadám — najnovší operačný systém"
-" s podnikovými nástrojmi pre rýchle nasadenie a nastavenie."
+"Fedora Atomic poskytuje najlepšiu platformu pre balík aplikácií Linux-"
+"Docker-Kubernetes (LDK)."
 
-#: data/content/cloud/index.html:40
-msgid "Principal Architect at Rackspace"
-msgstr "hlavný architekt v Rackspace"
-
-#: data/content/cloud/index.html:52
-msgid "Minimal, fast, flexible"
-msgstr "Minimálna, rýchla, flexibilná"
-
-#: data/content/cloud/index.html:53
+#: data/content/atomic/index.html:39
 msgid ""
-"Everything you need, and nothing you don't. The Fedora Cloud Base image is "
-"smaller, so you can deploy faster. Then use the universe of services and "
-"tools in Fedora to customize, so your cloud is right for you."
+"“We chose to use Fedora Atomic as the base for our Navops Launch — "
+"Kubernetes cluster provisioning solution because our customers trust and "
+"already run Red Hat operating systems. We love the immutable aspect of "
+"Fedora Atomic which is perfect for containerized environments.”"
 msgstr ""
-"Všetko čo potrebuje, a nič naviac. Základný obraz Fedory Cloud je menší, "
-"takže ho môžete rýchlejšie nasadiť. Potom svoj cloud prispôsobte podľa "
-"svojich predstáv pomocou nástrojov vo Fedore."
+"“Fedoru Atomic sme si vybrali ako základ pre našu aplikáciu Navops Launch — "
+"riešenie pre nasadenie klustera Kubernetes, pretože naši zákazníci veria a "
+"už používajú operačné systémy od Red Hat.  Máme radi vlastnosť nemennosti "
+"Fedory Atomic, čo je vynikajúce pre prostredie s kontajnermi.”"
 
-#: data/content/cloud/index.html:70
-msgid "Public or private"
-msgstr "Verejný alebo súkromný"
+#: data/content/atomic/index.html:40
+msgid "Chief Architect, Navops by Univa"
+msgstr "hlavný architekt v Navops, Univa"
 
-#: data/content/cloud/index.html:71
+#: data/content/atomic/index.html:52
+msgid "Atomic Host"
+msgstr "Atomic Host"
+
+#: data/content/atomic/index.html:53
 msgid ""
-"Deploy and run Fedora Cloud in public or private cloud infrastructure, using"
-" the industry standard tools cloud-init and OpenStack Heat. Wherever you run"
-" your cloud, Fedora is ready to go."
+"Atomic Host from Project Atomic is a lightweight, immutable platform, "
+"designed with the sole purpose of running containerized applications."
 msgstr ""
-"Nasaďte a prevádzkujte Fedoru Cloud vo verejnej alebo súkromnej cloudovej "
-"infraštruktúre pomocou štandardných priemyselných nástrojov cloud-init a "
-"OpenStack Heat. Kdekoľvek prevádzkujete svoj cloud, Fedora je na to "
-"pripravená."
+"Atomic Host z Projektu Atomic je odľahčená, nemenná platforma, navrhnutá "
+"výhradne pre beh aplikácií v kontajneroch."
 
-#: data/content/cloud/index.html:82
-msgid "Designed for containers"
-msgstr "Navrhnutá pre kontajnery"
-
-#: data/content/cloud/index.html:83
+#: data/content/atomic/index.html:54
 msgid ""
-"Want easy, scalable app deployment? Fedora Atomic Host is optimized and "
-"streamlined to run Docker containers out of the box. Whether you're rolling "
-"out a handful of containers, or scaling up to meet incredible demand, you "
-"can do it with Fedora Atomic Host."
+"Fedora's version of Atomic Host uses the same package repositories as Fedora"
+" Server, and provides the latest versions of the Atomic."
 msgstr ""
-"Požadujete jednoduché a škálovateľné nasadenie aplikácií? Fedora Atomic je "
-"optimalizovaná, zoštíhlená a ihneď pripravená na prevádzku kontajnerov "
-"Docker. Či nasadzuje niekoľko kontajnerov, alebo škálujete kvôli "
-"neočakávaným požiadavkám, s Fedora Atomic to dokážete."
+"Verzia Atomic Host vo Fedore používa rovnaké repozitáre balíčkov ako Fedora "
+"Server a poskytuje najnovšie verzie Atomic."
 
-#: data/content/cloud/index.html:97
-msgid "Project Atomic inside"
-msgstr "Projekt Atomic vo vnútri"
+#: data/content/atomic/index.html:65
+msgid "OStree Updates"
+msgstr "Aktualizácie OStree"
 
-#: data/content/cloud/index.html:98
+#: data/content/atomic/index.html:66
 msgid ""
-"The new Project Atomic update system works like git for your operating "
-"system. Now you can update and roll back with confidence and minimal "
-"downtime."
+"Atomically update your system from the latest upstream OStree. Make your "
+"servers identical, and easily roll back if there's an upgrade problem."
 msgstr ""
-"Nový systém aktualizácií Projektu Atomic funguje z pohľadu operačného "
-"systému ako git. Teraz môžete aktualizovať systém a spoľahlivo sa vrátiť "
-"späť s minimálnym výpadkom."
+"Automaticky aktualizujte svoj systém z najnovšieho OStree. Zabezpečte, aby "
+"vaše servery boli identické a jednoducho sa vráťte späť v prípade problému s"
+" aktualizáciou."
 
-#: data/content/cloud/index.html:120 data/content/cloud/index.html:125
+#: data/content/atomic/index.html:71
+msgid "Atomic CLI"
+msgstr "Atomic CLI"
+
+#: data/content/atomic/index.html:72
+msgid ""
+"Manage Docker containers, system containers, Atomic Apps, and more using one"
+" convenient command-line tool."
+msgstr ""
+"Spravujte kontajnery Docker, systémové kontajnery, Atomic App a iné pomocou "
+"jedného pohodlného nástroja pre príkazový riadok."
+
+#: data/content/atomic/index.html:83
+msgid "Optimized for Kubernetes and OpenShift"
+msgstr "Optimalizovaný pre Kubernetes a OpenShift"
+
+#: data/content/atomic/index.html:84
+msgid ""
+"Building a Kubernetes or Origin cluster to run your containerized "
+"applications? Run it on Fedora Atomic, which provides you the platform you "
+"need on a smaller, leaner OS."
+msgstr ""
+"Budujete klaster Kubernetes alebo Origin pre beh svojich aplikácií v "
+"kontajneroch? Spustite ho na Fedore Atomic, ktorá vám poskytne potrebnú "
+"platformu na menšom, štíhlejšom OS."
+
+#: data/content/atomic/index.html:125
+msgid "Ready to give Fedora Atomic a try?"
+msgstr "Pripravený vyskúšať Fedoru Atomic?"
+
+#: data/content/atomic/index.html:130
 msgid "Ready to give Fedora Cloud a try?"
 msgstr "Pripravený vyskúšať Fedoru Cloud?"
 
-#: data/content/cloud/download/atomic.html:10
-#: data/content/cloud/download/docker.html:10
-#: data/content/cloud/download/download-cloud-splash.html:8
-#: data/content/cloud/download/index.html:10
+#: data/content/atomic/download/download-cloud-splash.html:8
 msgid "Download Fedora Cloud"
 msgstr "Stiahnuť Fedoru Cloud"
 
-#: data/content/cloud/download/atomic.html:34
-#: data/content/cloud/download/docker.html:34
-#: data/content/cloud/download/index.html:34
-#, python-format
-msgid "Download Fedora %(rel)s Cloud"
-msgstr "Stiahnuť Fedoru %(rel)s Cloud"
-
-#: data/content/cloud/download/atomic.html:35
-#: data/content/cloud/download/docker.html:35
-#: data/content/cloud/download/index.html:35
-msgid "There are two main versions of Fedora Cloud available:"
-msgstr "K dispozícii sú dve hlavné verzie Fedory Cloud: "
-
-#: data/content/cloud/download/atomic.html:37
-#: data/content/cloud/download/docker.html:37
-#: data/content/cloud/download/index.html:37
-msgid "<a href=\"index.html\">Base images</a> suitable for creating VMs."
-msgstr ""
-"<a href=\"index.html\">Základné obrazy</a> vhodné pre vytváranie virtuálnych"
-" počítačov."
-
-#: data/content/cloud/download/atomic.html:59
-#: data/content/cloud/download/docker.html:59
-#: data/content/cloud/download/index.html:59
-#: data/content/cloud/prerelease/docker.html:58
-#: data/content/cloud/prerelease/index.html:58
-msgid "Base Images"
-msgstr "Základné obrazy"
-
-#: data/content/cloud/download/atomic.html:61
-#: data/content/cloud/download/docker.html:61
-#: data/content/cloud/download/docker.html:72
-#: data/content/cloud/download/index.html:61
-#: data/content/cloud/prerelease/docker.html:60
-#: data/content/cloud/prerelease/index.html:60
-msgid "Docker Image"
-msgstr "Obrazy Docker"
-
-#: data/content/cloud/download/atomic.html:72
-msgid "Atomic Host Images"
-msgstr "Obrazy Atomic"
-
-#: data/content/cloud/download/atomic.html:73
-msgid ""
-"Fedora Atomic Host is a leading edge base operating system following the "
-"Project Atomic model.  It is designed around Kubernetes and Docker "
-"containers.  The images published here showcase that work. Note that the "
-"images have passed several levels of automated testing, but are not always "
-"subjected to manual testing by the QA team."
-msgstr ""
-"Fedora Atomic Host je najnovší základný operačný systém, ktorý používa model"
-" Projektu Atomic. Je založený na Kubernetes a kontajneroch Docker. Obrazy, "
-"ktoré sú tu publikované, prezentujú tento model. Uvedomte si, že aj keď "
-"obrazy prešli niekoľkými úrovňami automatických testov, nie sú vždy "
-"podrobené ručným testom tímu kontroly kvality (QA)."
-
-#: data/content/cloud/download/atomic.html:74
-#, python-format
-msgid ""
-"Please test before using new versions in production. If you do discover a "
-"problem, the Atomic Host tools make it easy to flip back to an earlier "
-"release — and if that happens, please also help us by <a href=\"%s\">filing "
-"bugs</a> or <a href=\"%s\">submitting fixes</a>."
-msgstr ""
-"Pred použitím nových verzií v produkcii si ich otestujte. Ak objavíte "
-"problém, nástroje Atomic Host vám uľahčia návrat spať na staršie vydanie - "
-"ak sa tak stane, pomôžte nám <a href=\"%s\">nahlásením chyby</a> alebo <a "
-"href=\"%s\">odoslaním opravy</a>."
-
-#: data/content/cloud/download/atomic.html:75
-msgid ""
-"Fedora Atomic Host images are updated roughly every two weeks, rather than "
-"on the main six-month Fedora cadence. Because development is moving quickly,"
-" only the latest major Fedora release is supported."
-msgstr ""
-"Obrazy Fedory Atomic Host sú aktualizované približne každé dva týždne oproti"
-" polročnej frekvencii vydávania Fedory. Pretože vývoj prebieha veľmi rýchlo,"
-" podporované je iba posledné hlavné vydanie Fedory."
-
-#: data/content/cloud/download/atomic.html:76
-#, python-format
-msgid ""
-"Note that different Fedora Atomic Host media are subject to different levels"
-" of automatic testing. We are making continuous improvements to these tests;"
-" <a href=\"%s\">click here</a> to see the current test status."
-msgstr ""
-"Uvedomte si, že rôzne médiá Fedory Atomic Host sú podrobené rôznym úrovniam "
-"automatických testov. Tieto testy sa snažíme nepretržite vylepšovať. Ak si "
-"chcete pozrieť aktuálny stav testov, <a href=\"%s\">kliknite sem</a>."
-
-#: data/content/cloud/download/atomic.html:77
-#, python-format
-msgid ""
-"You can learn more about the Atomic project at <a "
-"href=\"%s\">projectatomic.io</a>."
-msgstr ""
-"Viac informácií o projekte Atomic môžete nájsť na <a "
-"href=\"%s\">projectatomic.io</a>."
-
-#: data/content/cloud/download/atomic.html:78
-#, python-format
-msgid ""
-"The latest two week build did not meet our testing criteria. The images "
-"available are from over %(atomic_age)s days ago. Check the Project Atomic "
-"blog for updates and information about Atomic blocker bugs."
-msgstr ""
-"Najnovšia dvojtýždenná verzia nesplnila naše testovacie kritériá. Dostupné "
-"obrazy sú z pred %(atomic_age)s dní. Viac informácií o aktualizáciách a "
-"blokujúcich chybách nájdete na blogu projektu Atomic."
-
-#: data/content/cloud/download/atomic.html:79
-#, python-format
-msgid ""
-"These are the latest official Fedora Atomic Host images, produced "
-"%(atomic_age)s days ago."
-msgstr ""
-"Toto sú najnovšie oficiálne obrazy Atomic Host Fedory vytvorené pred "
-"%(atomic_age)s dňami."
-
-#: data/content/cloud/download/atomic.html:80
-msgid "Atomic Host Image"
-msgstr "Obraz Atomic Host"
-
-#: data/content/cloud/download/atomic.html:86
-#: data/content/cloud/download/atomic.html:102
-#: data/content/cloud/download/index.html:80
-#: data/content/cloud/download/index.html:96
-#: data/content/cloud/prerelease/index.html:88
-#: data/content/cloud/prerelease/index.html:104
-msgid "qcow2 Image"
-msgstr "Obraz qcow2"
-
-#: data/content/cloud/download/atomic.html:87
-#: data/content/cloud/download/atomic.html:103
-#, python-format
-msgid ""
-"This is Fedora %(rel)s Cloud Atomic Host in a Qcow2-formatted image for use "
-"with OpenStack."
-msgstr ""
-"Toto je obraz Fedory %(rel)s Cloud Atomic Host vo formáte Qcow2 vhodný pre "
-"OpenStack."
-
-#: data/content/cloud/download/atomic.html:88
-#: data/content/cloud/download/atomic.html:94
-#: data/content/cloud/download/atomic.html:112
-#: data/content/cloud/download/atomic.html:116
-#: data/content/cloud/download/docker.html:83
-#: data/content/cloud/download/index.html:82
-#: data/content/cloud/download/index.html:88
-#: data/content/cloud/download/index.html:106
-#: data/content/cloud/download/index.html:110
-#: data/content/cloud/prerelease/docker.html:91
-#: data/content/cloud/prerelease/index.html:90
-#: data/content/cloud/prerelease/index.html:96
-#: data/content/cloud/prerelease/index.html:114
-#: data/content/cloud/prerelease/index.html:118
-#: data/content/server/download/index.html:33
-#: data/content/server/prerelease/index.html:18
-#: data/content/workstation/download/index.html:39
-#: data/content/workstation/prerelease/index.html:18
-#: data/templates/footer.html:37
-msgid "Download"
-msgstr "Stiahnuť"
-
-#: data/content/cloud/download/atomic.html:89
-#: data/content/cloud/download/atomic.html:113
-#: data/content/cloud/download/index.html:83
-#: data/content/cloud/download/index.html:107
-#: data/content/cloud/prerelease/index.html:91
-#: data/content/cloud/prerelease/index.html:115
-#, python-format
-msgid "64-bit %sMB Qcow2 Image"
-msgstr "64-bitový obraz Qcow2 (%sMB)"
-
-#: data/content/cloud/download/atomic.html:92
-#: data/content/cloud/download/atomic.html:106
-#: data/content/cloud/download/index.html:86
-#: data/content/cloud/download/index.html:100
-#: data/content/cloud/prerelease/index.html:94
-#: data/content/cloud/prerelease/index.html:108
-msgid "Raw Image"
-msgstr "Surový obraz"
-
-#: data/content/cloud/download/atomic.html:93
-#: data/content/cloud/download/atomic.html:107
-#, python-format
-msgid ""
-"This is Fedora %(rel)s Cloud Atomic Host in a compressed raw image format. "
-"If you're not sure what to use, try this."
-msgstr ""
-"Toto je obraz Fedory %(rel)s Cloud Atomic Host vo formáte komprimovaného "
-"surového obrazu. Ak si nie ste istí, ktorý obraz použiť, skúste tento."
-
-#: data/content/cloud/download/atomic.html:95
-#: data/content/cloud/download/atomic.html:117
-#: data/content/cloud/download/index.html:89
-#: data/content/cloud/download/index.html:111
-#: data/content/cloud/prerelease/index.html:97
-#: data/content/cloud/prerelease/index.html:119
-#, python-format
-msgid "64-bit %sMB xz-Compressed Raw Image"
-msgstr "64-bitový surový obraz komprimovaný xz (%sMB)"
-
-#: data/content/cloud/download/atomic.html:125
-msgid "Atomic Host Images for Vagrant"
-msgstr "Obrazy Atomic Host pre Vagrant"
-
-#: data/content/cloud/download/atomic.html:126
-#: data/content/cloud/download/index.html:120
-msgid "These images are Vagrant Boxes images for deployment using Vagrant."
-msgstr "Toto sú obrazy Vagrant Box pre nasadenie pomocou Vagrantu."
-
-#: data/content/cloud/download/atomic.html:132
-#: data/content/cloud/download/atomic.html:134
-#: data/content/cloud/download/atomic.html:148
-#: data/content/cloud/download/atomic.html:158
-#: data/content/cloud/download/index.html:126
-#: data/content/cloud/download/index.html:128
-#: data/content/cloud/download/index.html:142
-#: data/content/cloud/download/index.html:152
-msgid "VirtualBox Image"
-msgstr "Obraz VirtualBox"
-
-#: data/content/cloud/download/atomic.html:133
-#: data/content/cloud/download/atomic.html:149
-#: data/content/cloud/download/index.html:127
-#: data/content/cloud/download/index.html:143
-msgid ""
-"If you're using Vagrant on Mac OS X or Windows, this is likely the image "
-"you'll want to use."
-msgstr ""
-"Ak používate Vagrant na Mac OS X alebo Windows, toto je pravdepodobne vhodný"
-" obraz pre vás."
-
-#: data/content/cloud/download/atomic.html:135
-#: data/content/cloud/download/atomic.html:159
-#, python-format
-msgid "64-bit %sMB VirtualBox Atomic Host Vagrant Image"
-msgstr "64-bitový VirtualBox Atomic Host Vagrant obraz (%sMB)"
-
-#: data/content/cloud/download/atomic.html:138
-#: data/content/cloud/download/atomic.html:140
-#: data/content/cloud/download/atomic.html:152
-#: data/content/cloud/download/atomic.html:162
-#: data/content/cloud/download/index.html:132
-#: data/content/cloud/download/index.html:134
-#: data/content/cloud/download/index.html:146
-#: data/content/cloud/download/index.html:156
-msgid "libvirt/KVM Image"
-msgstr "Obraz libvirt/KVM"
-
-#: data/content/cloud/download/atomic.html:139
-#: data/content/cloud/download/atomic.html:153
-#: data/content/cloud/download/index.html:133
-#: data/content/cloud/download/index.html:147
-msgid ""
-"If you're using Vagrant on Fedora, this is the image you'll want to use."
-msgstr "Ak používate Vagrant vo Fedore, toto je vhodný obraz pre vás."
-
-#: data/content/cloud/download/atomic.html:141
-#: data/content/cloud/download/atomic.html:163
-#, python-format
-msgid "64-bit %sMB libvirt/KVM Atomic Host Vagrant Image"
-msgstr "64-bit libvirt/KVM Atomic Host Vagrant obraz (%sMB)"
-
-#: data/content/cloud/download/atomic.html:172
-msgid "Atomic Host Cloud Images for Amazon Public Cloud EC2"
-msgstr "Cloudové obrazy Atomic Host pre verejný cloud Amazon EC2"
-
-#: data/content/cloud/download/atomic.html:173
-#: data/content/cloud/download/index.html:167
-#: data/content/cloud/prerelease/index.html:173
-msgid ""
-"The links below will provide you listings of available AMIs by region with "
-"buttons to launch them in your Amazon Web Services account. AMI IDs for "
-"usage with the AWS Console or command-line tools are also provided."
-msgstr ""
-"Nižšie uvedené odkazy obsahujú zoznam dostupných AMI podľa regiónov a "
-"tlačidlá na ich spustenie po prihlásení do účtu webových služieb Amazonu "
-"(AWS). Dostupné sú taktiež AMI ID pre použitie v konzole AWS alebo "
-"nástrojoch príkazového riadka."
-
-#: data/content/cloud/download/atomic.html:174
-#: data/content/cloud/download/index.html:168
-#: data/content/cloud/prerelease/index.html:174
-msgid ""
-"All images are available in two formats: a GP2 format which uses faster SSD "
-"storage, and a standard format which is more suitable if you have "
-"infrequently accessed data and you want to keep storage cost low."
-msgstr ""
-"Všetky obrazy sú dostupné v dvoch formátoch: GP2 formát používa rýchlejšie "
-"SSD úložisko. Štandardný formát je vhodnejší pre dáta, ku ktorým sa "
-"pristupuje menej často, alebo ak chcete udržať nízke náklady na úložisko."
-
-#: data/content/cloud/download/atomic.html:179
-#: data/content/cloud/download/index.html:174
-#: data/content/cloud/download/index.html:303
-#: data/content/cloud/prerelease/index.html:180
-#: data/content/cloud/prerelease/index.html:309
-msgid "Hardware Virtual Machine (HVM)"
-msgstr "Hardware Virtual Machine (HVM)"
-
-#: data/content/cloud/download/atomic.html:182
-#: data/content/cloud/download/index.html:177
-#: data/content/cloud/download/index.html:314
-#: data/content/cloud/prerelease/index.html:183
-#: data/content/cloud/prerelease/index.html:320
-msgid "GP2 HVM AMIs"
-msgstr "GP2 HVM AMI"
-
-#: data/content/cloud/download/atomic.html:187
-#: data/content/cloud/download/atomic.html:215
-#: data/content/cloud/download/index.html:182
-#: data/content/cloud/download/index.html:212
-#: data/content/cloud/download/index.html:245
-#: data/content/cloud/download/index.html:275
-#: data/content/cloud/download/index.html:319
-#: data/content/cloud/download/index.html:347
-#: data/content/cloud/download/index.html:379
-#: data/content/cloud/download/index.html:407
-#: data/content/cloud/prerelease/index.html:188
-#: data/content/cloud/prerelease/index.html:218
-#: data/content/cloud/prerelease/index.html:251
-#: data/content/cloud/prerelease/index.html:281
-#: data/content/cloud/prerelease/index.html:325
-#: data/content/cloud/prerelease/index.html:353
-#: data/content/cloud/prerelease/index.html:385
-#: data/content/cloud/prerelease/index.html:413
-#: data/templates/keys/key-button-and-modal-obsolete.html:37
-#: data/templates/keys/key-button-and-modal-obsolete.html:88
-#: data/templates/keys/key-button-and-modal.html:37
-#: data/templates/keys/key-button-and-modal.html:88
-msgid "Close"
-msgstr "Zavrieť"
-
-#: data/content/cloud/download/atomic.html:188
-#, python-format
-msgid "Fedora %(rel)s GP2 Atomic Host Cloud HVM AMIs"
-msgstr "Fedora %(rel)s GP2 Atomic Host Cloud HVM AMI"
-
-#: data/content/cloud/download/atomic.html:193
-#: data/content/cloud/download/atomic.html:221
-#: data/content/cloud/download/index.html:188
-#: data/content/cloud/download/index.html:218
-#: data/content/cloud/download/index.html:251
-#: data/content/cloud/download/index.html:281
-#: data/content/cloud/download/index.html:325
-#: data/content/cloud/download/index.html:353
-#: data/content/cloud/download/index.html:385
-#: data/content/cloud/download/index.html:413
-#: data/content/cloud/prerelease/index.html:194
-#: data/content/cloud/prerelease/index.html:224
-#: data/content/cloud/prerelease/index.html:257
-#: data/content/cloud/prerelease/index.html:287
-#: data/content/cloud/prerelease/index.html:331
-#: data/content/cloud/prerelease/index.html:359
-#: data/content/cloud/prerelease/index.html:391
-#: data/content/cloud/prerelease/index.html:419
-#: data/templates/cloud-tab.html:13
-msgid "Region"
-msgstr "Región"
-
-#: data/content/cloud/download/atomic.html:194
-#: data/content/cloud/download/atomic.html:222
-#: data/content/cloud/download/index.html:189
-#: data/content/cloud/download/index.html:219
-#: data/content/cloud/download/index.html:252
-#: data/content/cloud/download/index.html:282
-#: data/content/cloud/download/index.html:326
-#: data/content/cloud/download/index.html:354
-#: data/content/cloud/download/index.html:386
-#: data/content/cloud/download/index.html:414
-#: data/content/cloud/prerelease/index.html:195
-#: data/content/cloud/prerelease/index.html:225
-#: data/content/cloud/prerelease/index.html:258
-#: data/content/cloud/prerelease/index.html:288
-#: data/content/cloud/prerelease/index.html:332
-#: data/content/cloud/prerelease/index.html:360
-#: data/content/cloud/prerelease/index.html:392
-#: data/content/cloud/prerelease/index.html:420
-#: data/templates/cloud-tab.html:16
-msgid "AMI ID"
-msgstr "AMI ID"
-
-#: data/content/cloud/download/atomic.html:195
-#: data/content/cloud/download/atomic.html:223
-#: data/content/cloud/download/index.html:190
-#: data/content/cloud/download/index.html:220
-#: data/content/cloud/download/index.html:253
-#: data/content/cloud/download/index.html:283
-#: data/content/cloud/download/index.html:327
-#: data/content/cloud/download/index.html:355
-#: data/content/cloud/download/index.html:387
-#: data/content/cloud/download/index.html:415
-#: data/content/cloud/prerelease/index.html:196
-#: data/content/cloud/prerelease/index.html:226
-#: data/content/cloud/prerelease/index.html:259
-#: data/content/cloud/prerelease/index.html:289
-#: data/content/cloud/prerelease/index.html:333
-#: data/content/cloud/prerelease/index.html:361
-#: data/content/cloud/prerelease/index.html:393
-#: data/content/cloud/prerelease/index.html:421
-#: data/templates/cloud-tab.html:17
-msgid "Launch"
-msgstr "Spustiť"
-
-#: data/content/cloud/download/atomic.html:210
-#: data/content/cloud/download/index.html:207
-#: data/content/cloud/download/index.html:342
-#: data/content/cloud/prerelease/index.html:213
-#: data/content/cloud/prerelease/index.html:348
-msgid "Standard HVM AMIs"
-msgstr "Štandardný HVM AMI"
-
-#: data/content/cloud/download/atomic.html:216
-#, python-format
-msgid "Fedora %(rel)s Standard Atomic Host Cloud HVM AMIs"
-msgstr "Fedora %(rel)s štandardný Atomic Host Cloud HVM AMIs"
-
-#: data/content/cloud/download/atomic.html:247
-#: data/content/server/download/index.html:50
-#: data/content/server/prerelease/index.html:73
-#: data/content/workstation/download/index.html:57
-#: data/content/workstation/prerelease/index.html:75
-msgid "Other Downloads"
-msgstr "Ďalšie stiahnutia"
-
-#: data/content/cloud/download/atomic.html:249
-msgid "Atomic Host Image:"
-msgstr "Obraz Atomic Host:"
-
-#: data/content/cloud/download/atomic.html:251
-msgid "64-bit Atomic Host ISO image"
-msgstr "64-bitový Atomic Host obraz ISO"
-
-#: data/content/cloud/download/atomic.html:257
-#: data/content/cloud/download/atomic.html:261
-#: data/content/cloud/download/docker.html:96
-#: data/content/cloud/download/docker.html:100
-#: data/content/cloud/download/index.html:452
-#: data/content/cloud/download/index.html:456
-#: data/content/server/download/index.html:60
-#: data/content/server/download/index.html:64
-#: data/content/workstation/download/index.html:69
-#: data/content/workstation/download/index.html:73
-#, python-format
-msgid "Try Fedora %(rel)s %(state)s"
-msgstr "Vyskúšajte Fedoru %(rel)s %(state)s"
-
-#: data/content/cloud/download/atomic.html:268
-#: data/content/cloud/download/docker.html:107
-#: data/content/cloud/download/index.html:463
-#: data/content/server/download/index.html:81
-#: data/content/workstation/download/index.html:94
-msgid "Verify"
-msgstr "Overiť"
-
-#: data/content/cloud/download/atomic.html:271
-#: data/content/cloud/download/docker.html:110
-#: data/content/cloud/download/index.html:466
-#: data/content/cloud/prerelease/docker.html:128
-#: data/content/cloud/prerelease/index.html:474
-#: data/content/server/download/index.html:84
-#: data/content/server/prerelease/index.html:63
-#: data/content/workstation/download/index.html:97
-#: data/content/workstation/prerelease/index.html:63
-msgid "Verify your Image"
-msgstr "Overte si stiahnutý obraz"
-
-#: data/content/cloud/download/docker.html:73
-msgid ""
-"The Fedora Docker Base Image is a minimal Fedora install which can be "
-"spawned as a Docker container. It contains basic tools which can be used as "
-"a foundation for building Docker Layered Images - bash, vi and dnf (and its "
-"dependencies)."
-msgstr ""
-"Základný obraz Fedory pre Docker obsahuje minimálnu inštaláciu Fedory, ktorú"
-" môžete nasadiť ako kontajner Docker. Obsahuje základné nástroje tvoriace "
-"základ pre vytvorenie vrstvených obrazov Docker - bash, vi a dnf (a jeho "
-"závislosti)."
-
-#: data/content/cloud/download/docker.html:74
-#: data/content/cloud/prerelease/docker.html:82
-msgid "Docker Base Image"
-msgstr "Základný obraz pre Docker"
-
-#: data/content/cloud/download/docker.html:79
-#: data/content/cloud/prerelease/docker.html:87
-msgid ""
-"You can easily load this Docker image into your running Docker daemon using "
-"command:"
-msgstr ""
-"Tento obraz pre Docker môžete jednoducho načítať do bežiaceho démona Docker "
-"týmto príkazom:"
-
-#: data/content/cloud/download/docker.html:81
-#: data/content/cloud/prerelease/docker.html:89
-msgid ""
-"Following command can be used to spawn a container running bash inside:"
-msgstr ""
-"Nasledujúci príkaz môžete použiť na nasadenie kontajnera, v ktorom beží "
-"bash:"
-
-#: data/content/cloud/download/docker.html:84
-#: data/content/cloud/prerelease/docker.html:92
-#, python-format
-msgid "64-bit %sMB raw.xz Image"
-msgstr "64-bitový obraz raw.xz (%sMB)"
-
-#: data/content/cloud/download/download-cloud-splash.html:37
+#: data/content/atomic/download/download-cloud-splash.html:37
 #: data/content/server/download/server-download-splash.html:31
 #: data/content/workstation/download/ws-download-splash.html:37
 msgid "Thanks for Downloading Fedora!"
 msgstr "Ďakujeme za stiahnutie Fedory!"
 
-#: data/content/cloud/download/download-cloud-splash.html:38
+#: data/content/atomic/download/download-cloud-splash.html:38
 #: data/content/server/download/server-download-splash.html:32
 #: data/content/workstation/download/ws-download-splash.html:38
 msgid ""
@@ -1114,18 +581,18 @@ msgid ""
 msgstr ""
 "Sťahovanie by malo začať o pár sekúnd. Ak nie, kliknite na odkaz nižšie:"
 
-#: data/content/cloud/download/download-cloud-splash.html:48
+#: data/content/atomic/download/download-cloud-splash.html:48
 #: data/content/server/download/server-download-splash.html:43
 #: data/content/workstation/download/ws-download-splash.html:48
 msgid "Verify your Download!"
 msgstr "Overte si stiahnutý súbor!"
 
-#: data/content/cloud/download/download-cloud-splash.html:49
-#: data/content/cloud/prerelease/docker.html:129
-#: data/content/cloud/prerelease/index.html:475
+#: data/content/atomic/download/download-cloud-splash.html:49
+#: data/content/atomic/prerelease/docker.html:129
+#: data/content/atomic/prerelease/index.html:475
 #: data/content/server/download/server-download-splash.html:44
 #: data/content/workstation/download/ws-download-splash.html:49
-#: data/content/workstation/prerelease/index.html:64
+#: data/content/workstation/prerelease/index.html:142
 #, python-format
 msgid ""
 "Once you have downloaded an image, verify it for security and integrity. To "
@@ -1138,150 +605,592 @@ msgstr ""
 " istého adresára, kde ste stiahli obraz a riaďte sa <a "
 "href=\"%s/%s/verify\">týmito inštrukciami</a>."
 
-#: data/content/cloud/download/download-cloud-splash.html:52
+#: data/content/atomic/download/download-cloud-splash.html:52
 #: data/content/server/download/server-download-splash.html:47
 #: data/content/server/prerelease/index.html:67
 #: data/content/workstation/download/ws-download-splash.html:52
 msgid "Validate!"
 msgstr "Overiť!"
 
-#: data/content/cloud/download/index.html:72
-msgid "Base Cloud Images"
-msgstr "Základné cloudové obrazy"
-
-#: data/content/cloud/download/index.html:73
-#: data/content/cloud/prerelease/index.html:81
-msgid ""
-"The images on this page are Fedora Cloud images for creating general purpose"
-" virtual machines (VMs)."
+#: data/content/atomic/download/index.html:10
+msgid "Download Fedora Atomic"
 msgstr ""
-"Na tejto stránke sa nachádzajú obrazy Fedory Cloud vhodné pre vytváranie "
-"viacúčelových virtuálnych počítačov (VM)."
 
-#: data/content/cloud/download/index.html:74
-#: data/content/cloud/prerelease/index.html:82
-msgid "Base Cloud Image"
-msgstr "Základný cloudový obraz"
+#: data/content/atomic/download/index.html:34
+#, python-format
+msgid "Download Fedora %(rel)s Atomic Host"
+msgstr "Stiahnuť Fedoru %(rel)s Atomic Host"
 
-#: data/content/cloud/download/index.html:81
-#: data/content/cloud/download/index.html:97
+#: data/content/atomic/download/index.html:35
+msgid "Atomic Host is built every 2 weeks or so."
+msgstr "Atomic Host sa vytvára približne každé 2 týždne."
+
+#: data/content/atomic/download/index.html:36
 #, python-format
 msgid ""
-"This is Fedora %(rel)s Cloud in a Qcow2-formatted image for use with "
-"OpenStack."
+"The latest two week build did not meet our testing criteria. The images "
+"available are from over %(atomic_age)s days ago. Check the Project Atomic "
+"blog for updates and information about Atomic blocker bugs."
 msgstr ""
-"Toto je obraz Fedory %(rel)s Cloud vo formáte Qcow2 vhodný pre OpenStack."
+"Najnovšia dvojtýždenná verzia nesplnila naše testovacie kritériá. Dostupné "
+"obrazy sú z pred %(atomic_age)s dní. Viac informácií o aktualizáciách a "
+"blokujúcich chybách nájdete na blogu projektu Atomic."
 
-#: data/content/cloud/download/index.html:87
-#: data/content/cloud/download/index.html:101
+#: data/content/atomic/download/index.html:37
 #, python-format
 msgid ""
-"This is Fedora %(rel)s Cloud in a compressed raw image format. If you're not"
-" sure what to use, try this."
+"These are the latest official Fedora Atomic Host images, produced "
+"%(atomic_age)s days ago."
 msgstr ""
-"Toto je obraz Fedory %(rel)s Cloud vo formáte komprimovaného surového "
-"obrazu. Ak si nie ste istí, ktorý obraz použiť, skúste tento."
+"Toto sú najnovšie oficiálne obrazy Atomic Host Fedory vytvorené pred "
+"%(atomic_age)s dňami."
 
-#: data/content/cloud/download/index.html:119
-msgid "Base Cloud Images for Vagrant"
-msgstr "Základný cloudový obraz pre Vagrant"
+#: data/content/atomic/download/index.html:48
+msgid "Atomic Host Images"
+msgstr "Obrazy Atomic"
 
-#: data/content/cloud/download/index.html:129
-#: data/content/cloud/download/index.html:153
+#: data/content/atomic/download/index.html:49
+msgid ""
+"Fedora Atomic Host is a leading edge base operating system following the "
+"Project Atomic model. It is designed around Kubernetes and Docker "
+"containers. The images published here showcase that work. Note that the "
+"images have passed several levels of automated testing, but are not always "
+"subjected to."
+msgstr ""
+"Fedora Atomic Host je najnovší základný operačný systém, ktorý používa model"
+" Projektu Atomic. Je založený na Kubernetes a kontajneroch Docker. Obrazy, "
+"ktoré sú tu publikované, prezentujú tento model. Uvedomte si, že aj keď "
+"obrazy prešli niekoľkými úrovňami automatických testov, nie je to vždy tak."
+
+#: data/content/atomic/download/index.html:51
+msgid ""
+"<strong>Please test before using new versions in production.</strong> If you"
+" do discover a problem, the Atomic Host tools make it easy to flip back to "
+"an earlier release — and if that happens, please also help us by filing bugs"
+" or submitting fixes."
+msgstr ""
+"<strong>Pred použitím nových verzií v produkcii si ich otestujte.</strong> "
+"Ak objavíte problém, nástroje Atomic Host vám uľahčia návrat spať na staršie"
+" vydanie - ak sa tak stane, pomôžte nám nahlásením chyby alebo odoslaním "
+"opravy."
+
+#: data/content/atomic/download/index.html:52
+msgid ""
+"<strong>Fedora Atomic Host images are updated roughly every two "
+"weeks,</strong> rather than on the main six-month Fedora cadence. Because "
+"development is moving quickly, only the latest major Fedora release is "
+"supported."
+msgstr ""
+"<strong>Obrazy Fedory Atomic Host sú aktualizované približne každé dva "
+"týždne</strong> oproti polročnej frekvencii vydávania Fedory. Pretože vývoj "
+"prebieha veľmi rýchlo, podporované je iba posledné hlavné vydanie Fedory."
+
+#: data/content/atomic/download/index.html:53
+#, python-format
+msgid ""
+"<strong>Note that different Fedora Atomic Host media are subject to "
+"different levels of automatic testing.</strong> You can learn more about the"
+" Atomic project at <a href=\"%s\">projectatomic.io</a>, <a href=\"%s\">click"
+" here</a> to see the current test status."
+msgstr ""
+"<strong>Uvedomte si, že rôzne médiá Fedory Atomic Host sú podrobené rôznym "
+"úrovniam automatických testov.</strong> Viac informácií o projekte Atomic "
+"môžete nájsť na <a href=\"%s\">projectatomic.io</a>. Ak si chcete pozrieť "
+"aktuálny stav testov, <a href=\"%s\">kliknite sem</a>."
+
+#: data/content/atomic/download/index.html:61
+msgid "Atomic Host Images for Amazon Public Cloud EC2"
+msgstr "Obrazy Atomic Host pre verejný cloud Amazon EC2"
+
+#: data/content/atomic/download/index.html:62
+msgid ""
+"The links below will provide you listings of available Atomic Host Hardware "
+"Virtual Machine (HVM) AMIs by region with buttons to launch them in your "
+"Amazon Web Services account. AMI IDs for usage with the AWS Console or "
+"command-line tools are also provided."
+msgstr ""
+"Nižšie uvedené odkazy obsahujú zoznam dostupných Atomic Host Hardware "
+"Virtual Machine (HVM) AMI podľa regiónov a tlačidlá na ich spustenie po "
+"prihlásení do účtu webových služieb Amazonu (AWS). Dostupné sú taktiež AMI "
+"ID pre použitie v konzole AWS alebo nástrojoch príkazového riadka."
+
+#: data/content/atomic/download/index.html:68
+#: data/content/atomic/download/index.html:136
+msgid "GP2 Format"
+msgstr "GP2 formát"
+
+#: data/content/atomic/download/index.html:69
+#: data/content/atomic/download/index.html:137
+msgid ""
+"GP2 format AMIs use faster SSD storage; use these AMIs for speed, although "
+"note your storage costs will be more than standard."
+msgstr ""
+"GP2 formát AMI používa rýchlejšie SSD úložisko. Použite ho ak požadujete "
+"rýchlosť, hoci náklady na úložisko budú vyššie ako pri štandardnom formáte."
+
+#: data/content/atomic/download/index.html:71
+#: data/content/atomic/download/index.html:147
+#: data/content/atomic/prerelease/index.html:183
+#: data/content/atomic/prerelease/index.html:320
+msgid "GP2 HVM AMIs"
+msgstr "GP2 HVM AMI"
+
+#: data/content/atomic/download/index.html:76
+#: data/content/atomic/download/index.html:108
+#: data/content/atomic/download/index.html:152
+#: data/content/atomic/download/index.html:182
+#: data/content/atomic/prerelease/index.html:188
+#: data/content/atomic/prerelease/index.html:218
+#: data/content/atomic/prerelease/index.html:251
+#: data/content/atomic/prerelease/index.html:281
+#: data/content/atomic/prerelease/index.html:325
+#: data/content/atomic/prerelease/index.html:353
+#: data/content/atomic/prerelease/index.html:385
+#: data/content/atomic/prerelease/index.html:413
+#: data/templates/keys/key-button-and-modal-obsolete.html:37
+#: data/templates/keys/key-button-and-modal-obsolete.html:88
+#: data/templates/keys/key-button-and-modal.html:37
+#: data/templates/keys/key-button-and-modal.html:88
+msgid "Close"
+msgstr "Zavrieť"
+
+#: data/content/atomic/download/index.html:77
+#: data/content/atomic/download/index.html:153
+#, python-format
+msgid "Fedora %(rel)s GP2 Atomic Host HVM AMIs"
+msgstr "Fedora %(rel)s GP2 Atomic Host HVM AMIs"
+
+#: data/content/atomic/download/index.html:82
+#: data/content/atomic/download/index.html:114
+#: data/content/atomic/download/index.html:158
+#: data/content/atomic/download/index.html:188
+#: data/content/atomic/prerelease/index.html:194
+#: data/content/atomic/prerelease/index.html:224
+#: data/content/atomic/prerelease/index.html:257
+#: data/content/atomic/prerelease/index.html:287
+#: data/content/atomic/prerelease/index.html:331
+#: data/content/atomic/prerelease/index.html:359
+#: data/content/atomic/prerelease/index.html:391
+#: data/content/atomic/prerelease/index.html:419
+#: data/templates/cloud-tab.html:13
+msgid "Region"
+msgstr "Región"
+
+#: data/content/atomic/download/index.html:83
+#: data/content/atomic/download/index.html:115
+#: data/content/atomic/download/index.html:159
+#: data/content/atomic/download/index.html:189
+#: data/content/atomic/prerelease/index.html:195
+#: data/content/atomic/prerelease/index.html:225
+#: data/content/atomic/prerelease/index.html:258
+#: data/content/atomic/prerelease/index.html:288
+#: data/content/atomic/prerelease/index.html:332
+#: data/content/atomic/prerelease/index.html:360
+#: data/content/atomic/prerelease/index.html:392
+#: data/content/atomic/prerelease/index.html:420
+#: data/templates/cloud-tab.html:16
+msgid "AMI ID"
+msgstr "AMI ID"
+
+#: data/content/atomic/download/index.html:84
+#: data/content/atomic/download/index.html:116
+#: data/content/atomic/download/index.html:160
+#: data/content/atomic/download/index.html:190
+#: data/content/atomic/prerelease/index.html:196
+#: data/content/atomic/prerelease/index.html:226
+#: data/content/atomic/prerelease/index.html:259
+#: data/content/atomic/prerelease/index.html:289
+#: data/content/atomic/prerelease/index.html:333
+#: data/content/atomic/prerelease/index.html:361
+#: data/content/atomic/prerelease/index.html:393
+#: data/content/atomic/prerelease/index.html:421
+#: data/templates/cloud-tab.html:17
+msgid "Launch"
+msgstr "Spustiť"
+
+#: data/content/atomic/download/index.html:100
+msgid "Standard Format)"
+msgstr "Štandardný formát"
+
+#: data/content/atomic/download/index.html:101
+#: data/content/atomic/download/index.html:141
+msgid ""
+"Standard format AMIs are more suitable if you have infrequently accessed "
+"data and want to keep storage cost low."
+msgstr ""
+"Štandardný formát AMI je vhodnejší pre dáta, ku ktorým sa pristupuje menej "
+"často, alebo ak chcete udržať nízke náklady na úložisko."
+
+#: data/content/atomic/download/index.html:103
+#: data/content/atomic/download/index.html:177
+#: data/content/atomic/prerelease/index.html:213
+#: data/content/atomic/prerelease/index.html:348
+msgid "Standard HVM AMIs"
+msgstr "Štandardný HVM AMI"
+
+#: data/content/atomic/download/index.html:109
+#: data/content/atomic/download/index.html:183
+#, python-format
+msgid "Fedora %(rel)s Standard Atomic Host HVM AMIs"
+msgstr "Fedora %(rel)s štandardný Atomic Host HVM AMIs"
+
+#: data/content/atomic/download/index.html:140
+msgid "Standard Format"
+msgstr ""
+
+#: data/content/atomic/download/index.html:211
+msgid "Atomic Host Images for Vagrant"
+msgstr "Obrazy Atomic Host pre Vagrant"
+
+#: data/content/atomic/download/index.html:212
+#, python-format
+msgid ""
+"Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and "
+"Libvirt providers. You can bring up Fedora Atomic Host in a vagrant box by "
+"downloading the images from Fedora or using the vagrant tools to pull the "
+"images from <a href=\"%s\">HashiCorp's Atlas</a>."
+msgstr ""
+
+#: data/content/atomic/download/index.html:213
+msgid "View Vagrant Downloads"
+msgstr "Zobraziť stiahnutia pre Vagrant"
+
+#: data/content/atomic/download/index.html:216
+msgid "Vagrant Image Downloads"
+msgstr "Stiahnuť obraz Vagrant"
+
+#: data/content/atomic/download/index.html:217
+#, python-format
+msgid ""
+"These images are Vagrant Boxes images for deployment using <a "
+"href=\"%s\">Vagrant</a>."
+msgstr ""
+
+#: data/content/atomic/download/index.html:222
+#: data/content/atomic/download/index.html:238
+msgid "VirtualBox Image"
+msgstr "Obraz VirtualBox"
+
+#: data/content/atomic/download/index.html:223
+#: data/content/atomic/download/index.html:239
+msgid ""
+"If you're using Vagrant on Mac OS X or Windows, this is likely the image "
+"you'll want to use."
+msgstr ""
+"Ak používate Vagrant na Mac OS X alebo Windows, toto je pravdepodobne vhodný"
+" obraz pre vás."
+
+#: data/content/atomic/download/index.html:224
+#: data/content/atomic/download/index.html:230
+#: data/content/atomic/download/index.html:248
+#: data/content/atomic/download/index.html:252
+#: data/content/atomic/download/index.html:293
+#: data/content/atomic/download/index.html:299
+#: data/content/atomic/download/index.html:316
+#: data/content/atomic/download/index.html:320
+#: data/content/atomic/prerelease/docker.html:91
+#: data/content/atomic/prerelease/index.html:90
+#: data/content/atomic/prerelease/index.html:96
+#: data/content/atomic/prerelease/index.html:114
+#: data/content/atomic/prerelease/index.html:118
+#: data/content/server/download/index.html:33
+#: data/content/server/prerelease/index.html:18
+#: data/content/workstation/download/index.html:40
+#: data/content/workstation/download/index.html:44
+#: data/content/workstation/download/index.html:49
+#: data/content/workstation/download/index.html:101
+#: data/content/workstation/download/index.html:110
+#: data/content/workstation/download/index.html:122
+#: data/content/workstation/prerelease/index.html:19
+#: data/content/workstation/prerelease/index.html:23
+#: data/content/workstation/prerelease/index.html:28
+#: data/content/workstation/prerelease/index.html:112
+#: data/content/workstation/prerelease/index.html:121
+#: data/content/workstation/prerelease/index.html:133
+#: data/templates/footer.html:37
+msgid "Download"
+msgstr "Stiahnuť"
+
+#: data/content/atomic/download/index.html:225
+#: data/content/atomic/download/index.html:249
 #, python-format
 msgid "64-bit %sMB VirtualBox Base Vagrant Image"
 msgstr "64-bitový VirtualBox základný obraz pre Vagrant (%sMB)"
 
-#: data/content/cloud/download/index.html:135
-#: data/content/cloud/download/index.html:157
+#: data/content/atomic/download/index.html:228
+#: data/content/atomic/download/index.html:242
+msgid "libvirt/KVM Image"
+msgstr "Obraz libvirt/KVM"
+
+#: data/content/atomic/download/index.html:229
+#: data/content/atomic/download/index.html:243
+msgid ""
+"If you're using Vagrant on Fedora, this is the image you'll want to use."
+msgstr "Ak používate Vagrant vo Fedore, toto je vhodný obraz pre vás."
+
+#: data/content/atomic/download/index.html:231
+#: data/content/atomic/download/index.html:253
 #, python-format
 msgid "64-bit %sMB libvirt/KVM Base Vagrant Image"
 msgstr "64-bitový libvirt/KVM základný obraz pre Vagrant (%sMB)"
 
-#: data/content/cloud/download/index.html:166
-#: data/content/cloud/prerelease/index.html:172
-msgid "Base Cloud Images for Amazon Public Cloud EC2"
-msgstr "Základné cloudové obrazy pre verejný cloud Amazon EC2"
-
-#: data/content/cloud/download/index.html:175
-#: data/content/cloud/download/index.html:304
-#: data/content/cloud/prerelease/index.html:181
-#: data/content/cloud/prerelease/index.html:310
-msgid ""
-"If you're unsure which image to choose, use this format. It can provide the "
-"same or better performance than PV images."
+#: data/content/atomic/download/index.html:261
+msgid "View Downloads using Vagrant tools"
 msgstr ""
-"Ak si nie ste istí, ktorý obraz vybrať, použite tento formát. Dokáže "
-"poskytnúť rovnaký alebo vyšší výkon ako obrazy PV."
 
-#: data/content/cloud/download/index.html:183
-#: data/content/cloud/download/index.html:320
-#, python-format
-msgid "Fedora %(rel)s GP2 Base Cloud HVM AMIs"
-msgstr "Fedora %(rel)s GP2 základný cloud HVM AMI"
-
-#: data/content/cloud/download/index.html:213
-#: data/content/cloud/download/index.html:348
-#, python-format
-msgid "Fedora %(rel)s Standard Base Cloud HVM AMIs"
-msgstr "Fedora %(rel)s štandardný základný cloud HVM AMI"
-
-#: data/content/cloud/download/index.html:237
-#: data/content/cloud/download/index.html:307
-#: data/content/cloud/prerelease/index.html:243
-#: data/content/cloud/prerelease/index.html:313
-msgid "Paravirtual (PV)"
-msgstr "Paravirtuálny (PV)"
-
-#: data/content/cloud/download/index.html:238
-#: data/content/cloud/download/index.html:308
-#: data/content/cloud/prerelease/index.html:244
-#: data/content/cloud/prerelease/index.html:314
-msgid ""
-"If you know you need a paravirtual format image for EC2, use this format."
+#: data/content/atomic/download/index.html:265
+msgid "Vagrant Downloads using Vagrant tools"
 msgstr ""
-"Ak potrebujete obraz pre EC2 vo formáte paravirtuál, použite tento formát."
 
-#: data/content/cloud/download/index.html:240
-#: data/content/cloud/download/index.html:374
-#: data/content/cloud/prerelease/index.html:246
-#: data/content/cloud/prerelease/index.html:380
-msgid "GP2 PV AMIs"
-msgstr "GP2 PV AMI"
-
-#: data/content/cloud/download/index.html:246
-#: data/content/cloud/download/index.html:380
+#: data/content/atomic/download/index.html:266
 #, python-format
-msgid "Fedora %(rel)s GP2 Base Cloud PV AMIs"
-msgstr "Fedora %(rel)s GP2 základný cloud PV AMI"
+msgid ""
+"You can use the following command to grab the Vagrant Box images from <a "
+"href=\"%s\">HashiCorp's Atlas</a>."
+msgstr ""
 
-#: data/content/cloud/download/index.html:270
-#: data/content/cloud/download/index.html:402
-#: data/content/cloud/prerelease/index.html:276
-#: data/content/cloud/prerelease/index.html:408
-msgid "Standard PV AMIs"
-msgstr "Štandardný PV AMI"
-
-#: data/content/cloud/download/index.html:276
-#: data/content/cloud/download/index.html:408
+#: data/content/atomic/download/index.html:268
 #, python-format
-msgid "Fedora %(rel)s Standard Base Cloud PV AMIs"
-msgstr "Fedora %(rel)s štandardný základný cloud PV AMI"
+msgid ""
+"If you've previously run Fedora %s Atomic Host in Vagrant on your machine "
+"then you can get the latest version by running:"
+msgstr ""
 
-#: data/content/cloud/prerelease/docker.html:10
-#: data/content/cloud/prerelease/index.html:10
+#: data/content/atomic/download/index.html:277
+#, python-format
+msgid ""
+"For more information about running Vagrant on Fedora Workstation, see <a "
+"href=\"%s\">our wiki page</a>."
+msgstr ""
+"Viac informácií o spustení Vagrantu na Fedore Workstation nájdete na <a "
+"href=\"%s\">wiki stránke</a>."
+
+#: data/content/atomic/download/index.html:285
+msgid "Atomic Host Images for Cloud Environments"
+msgstr ""
+
+#: data/content/atomic/download/index.html:291
+#: data/content/atomic/download/index.html:306
+#: data/content/atomic/prerelease/index.html:88
+#: data/content/atomic/prerelease/index.html:104
+msgid "qcow2 Image"
+msgstr "Obraz qcow2"
+
+#: data/content/atomic/download/index.html:292
+#: data/content/atomic/download/index.html:307
+#, python-format
+msgid ""
+"This is Fedora %(rel)s Cloud Atomic Host in a Qcow2-formatted image for use "
+"with OpenStack."
+msgstr ""
+"Toto je obraz Fedory %(rel)s Cloud Atomic Host vo formáte Qcow2 vhodný pre "
+"OpenStack."
+
+#: data/content/atomic/download/index.html:294
+#: data/content/atomic/download/index.html:317
+#: data/content/atomic/prerelease/index.html:91
+#: data/content/atomic/prerelease/index.html:115
+#, python-format
+msgid "64-bit %sMB Qcow2 Image"
+msgstr "64-bitový obraz Qcow2 (%sMB)"
+
+#: data/content/atomic/download/index.html:297
+#: data/content/atomic/download/index.html:310
+#: data/content/atomic/prerelease/index.html:94
+#: data/content/atomic/prerelease/index.html:108
+msgid "Raw Image"
+msgstr "Surový obraz"
+
+#: data/content/atomic/download/index.html:298
+#: data/content/atomic/download/index.html:311
+#, python-format
+msgid ""
+"This is Fedora %(rel)s Cloud Atomic Host in a compressed raw image format. "
+"If you're not sure what to use, try this."
+msgstr ""
+"Toto je obraz Fedory %(rel)s Cloud Atomic Host vo formáte komprimovaného "
+"surového obrazu. Ak si nie ste istí, ktorý obraz použiť, skúste tento."
+
+#: data/content/atomic/download/index.html:300
+#: data/content/atomic/download/index.html:321
+#: data/content/atomic/prerelease/index.html:97
+#: data/content/atomic/prerelease/index.html:119
+#, python-format
+msgid "64-bit %sMB xz-Compressed Raw Image"
+msgstr "64-bitový surový obraz komprimovaný xz (%sMB)"
+
+#: data/content/atomic/download/index.html:331
+#: data/content/server/download/index.html:50
+#: data/content/server/prerelease/index.html:73
+#: data/content/workstation/download/index.html:139
+#: data/content/workstation/prerelease/index.html:153
+msgid "Other Downloads"
+msgstr "Ďalšie stiahnutia"
+
+#: data/content/atomic/download/index.html:332
+#, python-format
+msgid "Atomic Host ISO image (%sMB)"
+msgstr ""
+
+#: data/content/atomic/download/index.html:334
+msgid "Docker:"
+msgstr "Docker:"
+
+#: data/content/atomic/download/index.html:336
+#, python-format
+msgid "Docker Image (%sMB)"
+msgstr ""
+
+#: data/content/atomic/download/index.html:339
+#: data/content/workstation/download/index.html:173
+#: data/content/workstation/prerelease/index.html:165
+msgid "Resources"
+msgstr "Zdroje"
+
+#: data/content/atomic/download/index.html:340
+msgid ""
+"<a href=\"//docs.fedoraproject.org/release-notes\"><strong>Project Atomic: "
+"Getting Started</strong></a>"
+msgstr ""
+"<a href=\"//docs.fedoraproject.org/release-notes\"><strong>Project Atomic: "
+"Začíname</strong></a>"
+
+#: data/content/atomic/download/index.html:341
+msgid "Documentation on getting started using Project Atomic / Atomic Host."
+msgstr "Dokumentácia k Začíname používať Projekt Atomic / Atomic Host."
+
+#: data/content/atomic/download/index.html:342
+msgid ""
+"<a "
+"href=\"https://lists.projectatomic.io/mailman/listinfo/atomic\"><strong>Project"
+" Atomic: Mailing List</strong></a>"
+msgstr ""
+
+#: data/content/atomic/download/index.html:343
+#, python-format
+msgid ""
+"Join the upstream mailing list at <a "
+"href=\"%s\">atomic@projectatomic.io</a>."
+msgstr ""
+"Pripojte sa do diskusnej skupina na <a "
+"href=\"%s\">atomic@projectatomic.io</a>."
+
+#: data/content/atomic/download/index.html:344
+#, python-format
+msgid "<a href=\"%s\"><strong>Project Atomic: IRC Chat</strong></a>"
+msgstr ""
+
+#: data/content/atomic/download/index.html:345
+msgid ""
+"Join the Project Atomic channel <strong>#atomic</strong></a> on "
+"<strong>irc.freenode.org</strong></a>."
+msgstr ""
+
+#: data/content/atomic/download/index.html:350
+#: data/content/server/download/index.html:61
+#: data/content/workstation/download/index.html:153
+#, python-format
+msgid "F%(rel)s Alpha"
+msgstr "F%(rel)s Alfa"
+
+#: data/content/atomic/download/index.html:351
+#: data/content/atomic/download/index.html:361
+#: data/content/server/download/index.html:62
+#: data/content/server/download/index.html:72
+#: data/content/workstation/download/index.html:154
+#: data/content/workstation/download/index.html:164
+msgid "Try a pre-release"
+msgstr "Vyskúšajte predčasnú verziu"
+
+#: data/content/atomic/download/index.html:352
+#: data/content/atomic/download/index.html:362
+#: data/content/server/download/index.html:63
+#: data/content/server/download/index.html:73
+#: data/content/workstation/download/index.html:155
+#: data/content/workstation/download/index.html:165
+msgid "We're working on our next release."
+msgstr "Pracujeme na novom vydaní."
+
+#: data/content/atomic/download/index.html:353
+#: data/content/atomic/download/index.html:363
+#: data/content/server/download/index.html:64
+#: data/content/server/download/index.html:74
+#: data/content/workstation/download/index.html:156
+#: data/content/workstation/download/index.html:166
+#, python-format
+msgid "Help us get F%(rel)s ready!"
+msgstr "Pomôžte nám pripraviť  F%(rel)s!"
+
+#: data/content/atomic/download/index.html:354
+#: data/content/server/download/index.html:65
+#: data/content/workstation/download/index.html:157
+#, python-format
+msgid "Download F%(rel)s Alpha images"
+msgstr "Stiahnuť obrazy F%(rel)s Alfa"
+
+#: data/content/atomic/download/index.html:355
+#: data/content/atomic/download/index.html:365
+#: data/content/server/download/index.html:66
+#: data/content/server/download/index.html:76
+#: data/content/workstation/download/index.html:158
+#: data/content/workstation/download/index.html:168
+msgid "How to test pre-releases"
+msgstr "Ako testovať predčasné verzie"
+
+#: data/content/atomic/download/index.html:360
+#: data/content/server/download/index.html:71
+#: data/content/workstation/download/index.html:163
+#, python-format
+msgid "F%(rel)s Beta"
+msgstr "F%(rel)s Beta"
+
+#: data/content/atomic/download/index.html:364
+#: data/content/server/download/index.html:75
+#: data/content/workstation/download/index.html:167
+#, python-format
+msgid "Download F%(rel)s Beta images"
+msgstr "Stiahnuť obrazy F%(rel)s Beta"
+
+#: data/content/atomic/download/index.html:372
+#: data/content/server/download/index.html:93
+#: data/content/workstation/download/index.html:200
+msgid "Verify"
+msgstr "Overiť"
+
+#: data/content/atomic/download/index.html:375
+#: data/content/atomic/prerelease/docker.html:128
+#: data/content/atomic/prerelease/index.html:474
+#: data/content/server/download/index.html:96
+#: data/content/server/prerelease/index.html:63
+#: data/content/workstation/download/index.html:203
+#: data/content/workstation/prerelease/index.html:141
+msgid "Verify your Image"
+msgstr "Overte si stiahnutý obraz"
+
+#: data/content/atomic/prerelease/docker.html:10
+#: data/content/atomic/prerelease/index.html:10
 #, python-format
 msgid "Download Fedora Cloud %s"
 msgstr "Stiahnuť Fedoru Cloud %s"
 
-#: data/content/cloud/prerelease/docker.html:33
-#: data/content/cloud/prerelease/index.html:33
+#: data/content/atomic/prerelease/docker.html:33
+#: data/content/atomic/prerelease/index.html:33
 #, python-format
 msgid "Download Fedora %(rel)s %(state)s Cloud"
 msgstr "Stiahnuť Fedoru %(rel)s %(state)s Cloud"
 
-#: data/content/cloud/prerelease/docker.html:71
-#: data/content/cloud/prerelease/index.html:71
+#: data/content/atomic/prerelease/docker.html:58
+#: data/content/atomic/prerelease/index.html:58
+msgid "Base Images"
+msgstr "Základné obrazy"
+
+#: data/content/atomic/prerelease/docker.html:60
+#: data/content/atomic/prerelease/index.html:60
+msgid "Docker Image"
+msgstr "Obrazy Docker"
+
+#: data/content/atomic/prerelease/docker.html:71
+#: data/content/atomic/prerelease/index.html:71
 #, python-format
 msgid ""
 "This is pre-release software and is supported by the <a "
@@ -1293,10 +1202,10 @@ msgstr ""
 " skupina Cloud</a>. Svoje dotazy smerujte na ich <a "
 "href=\"%(team_list)s\">diskusnú skupinu</a> alebo %(team_irc)s na freenode."
 
-#: data/content/cloud/prerelease/docker.html:72
-#: data/content/cloud/prerelease/index.html:72
+#: data/content/atomic/prerelease/docker.html:72
+#: data/content/atomic/prerelease/index.html:72
 #: data/content/server/prerelease/index.html:29
-#: data/content/workstation/prerelease/index.html:29
+#: data/content/workstation/prerelease/index.html:46
 #, python-format
 msgid ""
 "All issues or bugs should be reported via the <a href=\"%s\">Red Hat "
@@ -1307,14 +1216,14 @@ msgstr ""
 "Hat Bugzillu</a>. Projekt Fedora neposkytuje žiadne záruky pokiaľ ide o "
 "vhodnosť alebo užitočnosť."
 
-#: data/content/cloud/prerelease/docker.html:74
-#: data/content/cloud/prerelease/docker.html:76
-#: data/content/cloud/prerelease/index.html:74
-#: data/content/cloud/prerelease/index.html:76
+#: data/content/atomic/prerelease/docker.html:74
+#: data/content/atomic/prerelease/docker.html:76
+#: data/content/atomic/prerelease/index.html:74
+#: data/content/atomic/prerelease/index.html:76
 #: data/content/server/prerelease/index.html:31
 #: data/content/server/prerelease/index.html:33
-#: data/content/workstation/prerelease/index.html:31
-#: data/content/workstation/prerelease/index.html:33
+#: data/content/workstation/prerelease/index.html:48
+#: data/content/workstation/prerelease/index.html:50
 #, python-format
 msgid ""
 "Read the <a href=\"%(relnotes_url)s\">Release Notes</a> for more information"
@@ -1327,12 +1236,12 @@ msgstr ""
 "href=\"%(commonbugs_url)s\">Bežné chyby</a> pre informácie o bežne sa "
 "vyskytujúcich chybách a ako sa im vyhnúť."
 
-#: data/content/cloud/prerelease/docker.html:80
+#: data/content/atomic/prerelease/docker.html:80
 #, python-format
 msgid "Docker %(state)s Image"
 msgstr "Obraz Docker %(state)s"
 
-#: data/content/cloud/prerelease/docker.html:81
+#: data/content/atomic/prerelease/docker.html:81
 msgid ""
 "The Fedora Docker Base Image is a minimal Fedora install which can be "
 "spawned as a Docker container. It contains basic tools which can be used as "
@@ -1344,67 +1253,103 @@ msgstr ""
 "základ pre vytvorenie vrstvených obrazov Docker - bash, vi a yum (a jeho "
 "závislosti)."
 
-#: data/content/cloud/prerelease/docker.html:98
-#: data/content/cloud/prerelease/index.html:444
+#: data/content/atomic/prerelease/docker.html:82
+msgid "Docker Base Image"
+msgstr "Základný obraz pre Docker"
+
+#: data/content/atomic/prerelease/docker.html:87
+msgid ""
+"You can easily load this Docker image into your running Docker daemon using "
+"command:"
+msgstr ""
+"Tento obraz pre Docker môžete jednoducho načítať do bežiaceho démona Docker "
+"týmto príkazom:"
+
+#: data/content/atomic/prerelease/docker.html:89
+msgid ""
+"Following command can be used to spawn a container running bash inside:"
+msgstr ""
+"Nasledujúci príkaz môžete použiť na nasadenie kontajnera, v ktorom beží "
+"bash:"
+
+#: data/content/atomic/prerelease/docker.html:92
+#, python-format
+msgid "64-bit %sMB raw.xz Image"
+msgstr "64-bitový obraz raw.xz (%sMB)"
+
+#: data/content/atomic/prerelease/docker.html:98
+#: data/content/atomic/prerelease/index.html:444
 #: data/content/server/prerelease/index.html:38
-#: data/content/workstation/prerelease/index.html:38
+#: data/content/workstation/prerelease/index.html:55
 #, python-format
 msgid "When is Fedora %s going to be released?"
 msgstr "Kedy bude vydaná Fedora %s?"
 
-#: data/content/cloud/prerelease/docker.html:102
-#: data/content/cloud/prerelease/index.html:448
+#: data/content/atomic/prerelease/docker.html:102
+#: data/content/atomic/prerelease/index.html:448
 #: data/content/server/prerelease/index.html:42
-#: data/content/workstation/prerelease/index.html:42
+#: data/content/workstation/prerelease/index.html:59
 msgid "Release State"
 msgstr "Stav vydania"
 
-#: data/content/cloud/prerelease/docker.html:103
-#: data/content/cloud/prerelease/index.html:449
+#: data/content/atomic/prerelease/docker.html:103
+#: data/content/atomic/prerelease/index.html:449
 #: data/content/server/prerelease/index.html:43
-#: data/content/workstation/prerelease/index.html:43
+#: data/content/workstation/prerelease/index.html:60
 msgid "Release Date"
 msgstr "Dátum vydania"
 
-#: data/content/cloud/prerelease/docker.html:108
-#: data/content/cloud/prerelease/index.html:454
+#: data/content/atomic/prerelease/docker.html:108
+#: data/content/atomic/prerelease/index.html:454
 #: data/content/server/prerelease/index.html:48
-#: data/content/workstation/prerelease/index.html:48
+#: data/content/workstation/prerelease/index.html:65
 msgid "Alpha Release Public Availability"
 msgstr "Verejná dostupnosť alfa vydania"
 
-#: data/content/cloud/prerelease/docker.html:112
-#: data/content/cloud/prerelease/index.html:458
+#: data/content/atomic/prerelease/docker.html:112
+#: data/content/atomic/prerelease/index.html:458
 #: data/content/server/prerelease/index.html:52
-#: data/content/workstation/prerelease/index.html:52
+#: data/content/workstation/prerelease/index.html:69
 msgid "Beta Release Public Availability"
 msgstr "Verejná dostupnosť beta vydania"
 
-#: data/content/cloud/prerelease/docker.html:116
-#: data/content/cloud/prerelease/index.html:462
+#: data/content/atomic/prerelease/docker.html:116
+#: data/content/atomic/prerelease/index.html:462
 #: data/content/server/prerelease/index.html:56
-#: data/content/workstation/prerelease/index.html:56
+#: data/content/workstation/prerelease/index.html:73
 msgid "Final Release Public Availability (GA)"
 msgstr "Verejná dostupnosť konečného vydania (GA)"
 
-#: data/content/cloud/prerelease/docker.html:121
-#: data/content/cloud/prerelease/index.html:467
+#: data/content/atomic/prerelease/docker.html:121
+#: data/content/atomic/prerelease/index.html:467
 #: data/content/server/prerelease/index.html:61
-#: data/content/workstation/prerelease/index.html:61
+#: data/content/workstation/prerelease/index.html:78
 msgid "Read all the key milestones of the release schedule..."
 msgstr "Prečítať všetky kľúčové míľniky plánu vydania..."
 
-#: data/content/cloud/prerelease/docker.html:132
+#: data/content/atomic/prerelease/docker.html:132
 msgid "Docker 64bit!"
 msgstr "Docker 64-bitový obraz!"
 
-#: data/content/cloud/prerelease/index.html:80
+#: data/content/atomic/prerelease/index.html:80
 #, python-format
 msgid "Base Cloud %(state)s Images"
 msgstr "Základné %(state)s cloudové obrazy"
 
-#: data/content/cloud/prerelease/index.html:89
-#: data/content/cloud/prerelease/index.html:105
+#: data/content/atomic/prerelease/index.html:81
+msgid ""
+"The images on this page are Fedora Cloud images for creating general purpose"
+" virtual machines (VMs)."
+msgstr ""
+"Na tejto stránke sa nachádzajú obrazy Fedory Cloud vhodné pre vytváranie "
+"viacúčelových virtuálnych počítačov (VM)."
+
+#: data/content/atomic/prerelease/index.html:82
+msgid "Base Cloud Image"
+msgstr "Základný cloudový obraz"
+
+#: data/content/atomic/prerelease/index.html:89
+#: data/content/atomic/prerelease/index.html:105
 #, python-format
 msgid ""
 "This is Fedora %(rel)s %(state)s Cloud in a Qcow2-formatted image for use "
@@ -1413,8 +1358,8 @@ msgstr ""
 "Toto je obraz Fedory %(rel)s %(state)s Cloud vo formáte Qcow2 vhodný pre "
 "OpenStack."
 
-#: data/content/cloud/prerelease/index.html:95
-#: data/content/cloud/prerelease/index.html:109
+#: data/content/atomic/prerelease/index.html:95
+#: data/content/atomic/prerelease/index.html:109
 #, python-format
 msgid ""
 "This is Fedora %(rel)s %(state)s Cloud in a compressed raw image format. If "
@@ -1423,35 +1368,96 @@ msgstr ""
 "Toto je obraz Fedory %(rel)s %(state)s Cloud vo formáte komprimovaného "
 "surového obrazu. Ak si nie ste istí, ktorý obraz použiť, skúste tento."
 
-#: data/content/cloud/prerelease/index.html:189
-#: data/content/cloud/prerelease/index.html:326
+#: data/content/atomic/prerelease/index.html:172
+msgid "Base Cloud Images for Amazon Public Cloud EC2"
+msgstr "Základné cloudové obrazy pre verejný cloud Amazon EC2"
+
+#: data/content/atomic/prerelease/index.html:173
+msgid ""
+"The links below will provide you listings of available AMIs by region with "
+"buttons to launch them in your Amazon Web Services account. AMI IDs for "
+"usage with the AWS Console or command-line tools are also provided."
+msgstr ""
+"Nižšie uvedené odkazy obsahujú zoznam dostupných AMI podľa regiónov a "
+"tlačidlá na ich spustenie po prihlásení do účtu webových služieb Amazonu "
+"(AWS). Dostupné sú taktiež AMI ID pre použitie v konzole AWS alebo "
+"nástrojoch príkazového riadka."
+
+#: data/content/atomic/prerelease/index.html:174
+msgid ""
+"All images are available in two formats: a GP2 format which uses faster SSD "
+"storage, and a standard format which is more suitable if you have "
+"infrequently accessed data and you want to keep storage cost low."
+msgstr ""
+"Všetky obrazy sú dostupné v dvoch formátoch: GP2 formát používa rýchlejšie "
+"SSD úložisko. Štandardný formát je vhodnejší pre dáta, ku ktorým sa "
+"pristupuje menej často, alebo ak chcete udržať nízke náklady na úložisko."
+
+#: data/content/atomic/prerelease/index.html:180
+#: data/content/atomic/prerelease/index.html:309
+msgid "Hardware Virtual Machine (HVM)"
+msgstr "Hardware Virtual Machine (HVM)"
+
+#: data/content/atomic/prerelease/index.html:181
+#: data/content/atomic/prerelease/index.html:310
+msgid ""
+"If you're unsure which image to choose, use this format. It can provide the "
+"same or better performance than PV images."
+msgstr ""
+"Ak si nie ste istí, ktorý obraz vybrať, použite tento formát. Dokáže "
+"poskytnúť rovnaký alebo vyšší výkon ako obrazy PV."
+
+#: data/content/atomic/prerelease/index.html:189
+#: data/content/atomic/prerelease/index.html:326
 #, python-format
 msgid "Fedora %(rel)s %(state)s GP2 Base Cloud HVM AMIs"
 msgstr "Fedora %(rel)s %(state)s GP2 základný cloud HVM AMI"
 
-#: data/content/cloud/prerelease/index.html:219
+#: data/content/atomic/prerelease/index.html:219
 #, python-format
 msgid "Fedora %(rel)s %(state)s standard Base Cloud HVM AMIs"
 msgstr "Fedora %(rel)s %(state)s štandardný základný cloud HVM AMI"
 
-#: data/content/cloud/prerelease/index.html:252
-#: data/content/cloud/prerelease/index.html:386
+#: data/content/atomic/prerelease/index.html:243
+#: data/content/atomic/prerelease/index.html:313
+msgid "Paravirtual (PV)"
+msgstr "Paravirtuálny (PV)"
+
+#: data/content/atomic/prerelease/index.html:244
+#: data/content/atomic/prerelease/index.html:314
+msgid ""
+"If you know you need a paravirtual format image for EC2, use this format."
+msgstr ""
+"Ak potrebujete obraz pre EC2 vo formáte paravirtuál, použite tento formát."
+
+#: data/content/atomic/prerelease/index.html:246
+#: data/content/atomic/prerelease/index.html:380
+msgid "GP2 PV AMIs"
+msgstr "GP2 PV AMI"
+
+#: data/content/atomic/prerelease/index.html:252
+#: data/content/atomic/prerelease/index.html:386
 #, python-format
 msgid "Fedora %(rel)s %(state)s GP2 Base Cloud PV AMIs"
 msgstr "Fedora %(rel)s %(state)s GP2 základný cloud PV AMI"
 
-#: data/content/cloud/prerelease/index.html:282
-#: data/content/cloud/prerelease/index.html:414
+#: data/content/atomic/prerelease/index.html:276
+#: data/content/atomic/prerelease/index.html:408
+msgid "Standard PV AMIs"
+msgstr "Štandardný PV AMI"
+
+#: data/content/atomic/prerelease/index.html:282
+#: data/content/atomic/prerelease/index.html:414
 #, python-format
 msgid "Fedora %(rel)s %(state)s Standard Base Cloud PV AMIs"
 msgstr "Fedora %(rel)s %(state)s štandardný základný cloud PV AMI"
 
-#: data/content/cloud/prerelease/index.html:354
+#: data/content/atomic/prerelease/index.html:354
 #, python-format
 msgid "Fedora %(rel)s %(state)s Standard Base Cloud HVM AMIs"
 msgstr "Fedora %(rel)s %(state)s štandardný základný cloud HVM AMI"
 
-#: data/content/cloud/prerelease/index.html:478
+#: data/content/atomic/prerelease/index.html:478
 msgid "Validate 64bit!"
 msgstr "Overiť 64-bitový obraz!"
 
@@ -1538,6 +1544,7 @@ msgstr "Kľúče používané v súčasnosti"
 #: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
 #: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
 #: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
+#: data/content/keys/obsolete.html:337
 msgid "Primary"
 msgstr "Primárny"
 
@@ -1546,6 +1553,7 @@ msgstr "Primárny"
 #: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
 #: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
 #: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
+#: data/content/keys/obsolete.html:337
 msgid "Secondary"
 msgstr "Sekundárny"
 
@@ -1701,18 +1709,22 @@ msgid "Fedora 21"
 msgstr "Fedora 21"
 
 #: data/content/keys/obsolete.html:337
+msgid "Fedora 22"
+msgstr "Fedora 22"
+
+#: data/content/keys/obsolete.html:358
 msgid "EPEL 4"
 msgstr "EPEL 4"
 
-#: data/content/keys/obsolete.html:337
+#: data/content/keys/obsolete.html:358
 msgid "RPM-GPG-KEY-EPEL"
 msgstr "RPM-GPG-KEY-EPEL"
 
-#: data/content/keys/obsolete.html:350
+#: data/content/keys/obsolete.html:371
 msgid "Fedora Extras"
 msgstr "Fedora Extras"
 
-#: data/content/keys/obsolete.html:350
+#: data/content/keys/obsolete.html:371
 msgid ""
 "If you are using Fedora Extras with Fedora Core 6, use this package from "
 "<strong>extras</strong> repository.  This key will no longer be used after "
@@ -1725,11 +1737,11 @@ msgstr ""
 "podpory Fedora Core 6 a Extras (7. decembra 2007). Tento kľúč nie je v "
 "balíku <strong>fedora-release</strong> vo Fedora 7 a neskorších vydaniach."
 
-#: data/content/keys/obsolete.html:368
+#: data/content/keys/obsolete.html:390
 msgid "Legacy"
 msgstr "Legacy"
 
-#: data/content/keys/obsolete.html:368
+#: data/content/keys/obsolete.html:390
 msgid ""
 "This key was used for packages that were released by Fedora Legacy project "
 "to update releases that reached their official EOL. The Fedora Legacy "
@@ -2001,7 +2013,6 @@ msgstr ""
 "disk."
 
 #: data/content/server/download/index.html:43
-#: data/content/workstation/download/index.html:50
 msgid ""
 "To use this image, you need a drive that can create or \"burn\" DVDs, or a "
 "USB flash drive at least as big as the image."
@@ -2017,19 +2028,19 @@ msgstr "Obraz pre sieťovú inštaláciu:"
 
 #: data/content/server/download/index.html:54
 #: data/content/server/prerelease/index.html:77
-#: data/content/workstation/download/index.html:62
-#: data/content/workstation/prerelease/index.html:81
+#: data/content/workstation/download/index.html:145
+#: data/content/workstation/prerelease/index.html:160
 #, python-format
 msgid "64-bit %sMB image"
 msgstr "64-bitový obraz (%sMB)"
 
-#: data/content/server/download/index.html:70
-#: data/content/workstation/download/index.html:79
+#: data/content/server/download/index.html:82
+#: data/content/workstation/download/index.html:185
 msgid "Get more Fedora"
 msgstr "Získajte viac možností Fedory"
 
-#: data/content/server/download/index.html:74
-#: data/content/workstation/download/index.html:88
+#: data/content/server/download/index.html:86
+#: data/content/workstation/download/index.html:194
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr "ARM<span class=\"sup\">®</span> technológie"
 
@@ -2214,56 +2225,291 @@ msgstr "Stiahnuť Fedoru Workstation"
 msgid "Download Fedora %(rel)s Workstation"
 msgstr "Stiahnuť Fedoru %(rel)s Workstation"
 
-#: data/content/workstation/download/index.html:40
-#: data/content/workstation/prerelease/index.html:19
+#: data/content/workstation/download/index.html:41
+#: data/content/workstation/download/index.html:98
+#: data/content/workstation/prerelease/index.html:20
+#: data/content/workstation/prerelease/index.html:109
 #, python-format
-msgid "64-bit %sGB Live Image"
+msgid "%s MB Fedora Media Writer for <strong>Mac OS X</strong>"
+msgstr "Fedora Media Writer pre <strong>Mac OS X</strong> (%s MB)"
+
+#: data/content/workstation/download/index.html:45
+#: data/content/workstation/download/index.html:120
+#: data/content/workstation/prerelease/index.html:24
+#: data/content/workstation/prerelease/index.html:131
+#, python-format
+msgid "64-bit %s GB ISO for <strong>Linux</strong>."
+msgstr "64-bitový obraz ISO pre <strong>Linux</strong> (%s GB)."
+
+#: data/content/workstation/download/index.html:46
+#: data/content/workstation/prerelease/index.html:25
+#, python-format
+msgid "<a href=\"%s\">Install via DNF</a> if you are already on Fedora."
+msgstr ""
+"Ak už používate Fedoru, môžete na ňu <a href=\"%s\">aktualizovať pomocou "
+"DNF</a>."
+
+#: data/content/workstation/download/index.html:50
+#: data/content/workstation/download/index.html:107
+#: data/content/workstation/prerelease/index.html:29
+#: data/content/workstation/prerelease/index.html:118
+#, python-format
+msgid "%s MB Fedora Media Writer for <strong>Windows</strong>"
+msgstr "Fedora Media Writer pre <strong>Windows</strong> (%s MB)"
+
+#: data/content/workstation/download/index.html:52
+#: data/content/workstation/download/index.html:57
+#: data/content/workstation/prerelease/index.html:31
+#: data/content/workstation/prerelease/index.html:36
+msgid "Download Fedora Media Writer for your operating system."
+msgstr "Stiahnite si Fedora Media Writer pre svoj operačný systém."
+
+#: data/content/workstation/download/index.html:53
+#: data/content/workstation/prerelease/index.html:32
+msgid "Need instructions? Or a different version?"
+msgstr "Potrebujete inštrukcie? Alebo inú verziu?"
+
+#: data/content/workstation/download/index.html:65
+msgid "Running Fedora Workstation"
+msgstr "Spustenie Fedory Workstation"
+
+#: data/content/workstation/download/index.html:66
+msgid "To run Fedora Workstation, you will need:"
+msgstr "Pre spustenie Fedory Workstation budete potrebovať:"
+
+#: data/content/workstation/download/index.html:68
+msgid "Fedora Media Writer (download above)"
+msgstr "Fedora Media Writer (stiahnuť môžete nižšie)"
+
+#: data/content/workstation/download/index.html:69
+#: data/content/workstation/prerelease/index.html:86
+#, python-format
+msgid "A USB Flash drive with at least %s GB space available"
+msgstr "USB kľúč alebo disk s dostupným miestom najmenej %s GB"
+
+#: data/content/workstation/download/index.html:71
+msgid ""
+"Fedora Workstation is provided via Fedora Media Writer. Download this "
+"program via the download link above and run it on your system, following the"
+" prompts to generate a live version (see 'What does \"Live\" mean?' to the "
+"right) of Fedora Workstation on a USB flash drive. You may then run the live"
+" version of Fedora Workstation from your USB flash drive."
+msgstr ""
+"Fedora Workstation je dostupná pomocou programu Fedora Media Writer. "
+"Stiahnite si tento program pomocou odkazu nižšie, spustite ho na svojom "
+"počítači, a podľa pokynov si vytvorte live verziu (pozrite vpravo 'Čo "
+"znamená \"Live\"?') Fedory Workstation na USB disk. Live verziu Fedory "
+"Workstation potom môžete spustiť z tohto USB disku."
+
+#: data/content/workstation/download/index.html:72
+#: data/content/workstation/prerelease/index.html:100
+msgid ""
+"Optionally, you may install Fedora Workstation to a laptop or desktop "
+"computer that has at least 1 GHz processor, 1 GB RAM, and 10 GB space "
+"available. To do this, run the live version of Fedora Workstation from your "
+"USB flash drive on the computer you'd like to install to, run the Fedora "
+"Media Writer application, and follow the on-screen prompts to complete "
+"installation."
+msgstr ""
+"Fedoru Workstation môžete nainštalovať na notebook alebo počítač, ktorý má "
+"aspoň 1 GHz procesor, 1 GB RAM a 10 GB dostupného priestoru. Ak tak chcete "
+"urobiť, spustite live verziu Fedory Workstation zo svojho USB disku na "
+"počítači, na ktorý ju chcete nainštalovať. Potom spustite aplikáciu Fedora "
+"Media Writer a na dokončenie inštalácie postupujte podľa pokynov na "
+"obrazovke."
+
+#: data/content/workstation/download/index.html:74
+#: data/content/workstation/prerelease/index.html:102
+msgid "Supported Platforms"
+msgstr "Podporované platformy"
+
+#: data/content/workstation/download/index.html:75
+#: data/content/workstation/prerelease/index.html:103
+msgid "Fedora Media Writer supports the following platforms:"
+msgstr "Fedora Media Writer podporuje nasledujúce platformy:"
+
+#: data/content/workstation/download/index.html:77
+#: data/content/workstation/download/index.html:97
+#: data/content/workstation/prerelease/index.html:108
+msgid "Mac OS X"
+msgstr "Mac OS X"
+
+#: data/content/workstation/download/index.html:78
+#: data/content/workstation/download/index.html:106
+#: data/content/workstation/prerelease/index.html:117
+msgid "Windows"
+msgstr "Windows"
+
+#: data/content/workstation/download/index.html:79
+#: data/content/workstation/download/index.html:115
+#: data/content/workstation/prerelease/index.html:126
+msgid "Linux"
+msgstr "Linux"
+
+#: data/content/workstation/download/index.html:82
+msgid ""
+"We have auto-detected that you are running <strong>Mac OS X</strong> and "
+"have offered that version for download. If we have detected your operating "
+"system incorrectly or you would like to download a different version, please"
+" click the \"View all platform downloads\" button below."
+msgstr ""
+"Automaticky sme zistili, že používate <strong>Mac OS X</strong> a vybrali "
+"sme túto verziu na stiahnutie. Ak sme vás operačný systém zistili nesprávne,"
+" alebo chcete stiahnuť inú verziu, kliknite na odkaz \"Zobraziť stiahnutia "
+"pre všetky platformy\"."
+
+#: data/content/workstation/download/index.html:85
+msgid ""
+"We have auto-detected that you are running <strong>Linux</strong> and have "
+"offered that version for download. If we have detected your operating system"
+" incorrectly or you would like to download a different version, please click"
+" the \"View all platform downloads\" button below."
+msgstr ""
+"Automaticky sme zistili, že používate <strong>Linux</strong> a vybrali sme "
+"túto verziu na stiahnutie. Ak sme vás operačný systém zistili nesprávne, "
+"alebo chcete stiahnuť inú verziu, kliknite na odkaz \"Zobraziť stiahnutia "
+"pre všetky platformy\"."
+
+#: data/content/workstation/download/index.html:88
+msgid ""
+"We have auto-detected that you are running <strong>Windows</strong> and have"
+" offered that version for download. If we have detected your operating "
+"system incorrectly or you would like to download a different version, please"
+" click the \"View all platform downloads\" button below."
+msgstr ""
+"Automaticky sme zistili, že používate <strong>Windows</strong> a vybrali sme"
+" túto verziu na stiahnutie. Ak sme vás operačný systém zistili nesprávne, "
+"alebo chcete stiahnuť inú verziu, kliknite na odkaz \"Zobraziť stiahnutia "
+"pre všetky platformy\"."
+
+#: data/content/workstation/download/index.html:92
+msgid "View all platform downloads"
+msgstr "Zobraziť stiahnutia pre všetky platformy"
+
+#: data/content/workstation/download/index.html:116
+#: data/content/workstation/prerelease/index.html:127
+msgid "Available via DNF for <strong>Fedora</strong>"
+msgstr "Pre <strong>Fedoru</strong> dostupný pomocou DNF"
+
+#: data/content/workstation/download/index.html:117
+#: data/content/workstation/prerelease/index.html:128
+msgid "More details"
+msgstr "Ďalšie detaily"
+
+#: data/content/workstation/download/index.html:121
+#: data/content/workstation/prerelease/index.html:132
+msgid "How to use this ISO?"
+msgstr "Ako použiť toto ISO?"
+
+#: data/content/workstation/download/index.html:123
+#: data/content/workstation/prerelease/index.html:134
+msgid "Verify this image"
+msgstr "Overte si stiahnutý obraz"
+
+#: data/content/workstation/download/index.html:140
+#: data/content/workstation/prerelease/index.html:154
+#, python-format
+msgid "64-bit %sGB Live image"
 msgstr "64-bitový Live obraz (%sGB)"
 
-#: data/content/workstation/download/index.html:48
-msgid "What is a Live image?"
-msgstr "Čo je Live obraz?"
-
-#: data/content/workstation/download/index.html:49
-msgid ""
-"The Fedora Workstation Live image allows you to make media for your computer"
-" that provides a complete, running Fedora Workstation you can run right "
-"away. You can use the Live image to test and play with Fedora without making"
-" changes to your hard disk. When you are ready, you can install Fedora to "
-"your hard disk from the Live image."
-msgstr ""
-"Live obraz Fedory Workstation umožňuje vytvoriť pre váš počítač médium, "
-"ktoré môžete ihneď spustiť a poskytuje kompletnú, bežiacu verziu Fedory "
-"Workstation. Live obraz môžete použiť na testovanie a hranie sa s Fedorou "
-"bez vykonania zmien na vašom pevnom disku. Ak budete pripravený, môžete "
-"nainštalovať Fedoru na svoj pevný disk priamo z tohto Live obrazu."
-
-#: data/content/workstation/download/index.html:58
-#: data/content/workstation/prerelease/index.html:76
+#: data/content/workstation/download/index.html:141
+#: data/content/workstation/prerelease/index.html:155
 #, python-format
 msgid "32-bit %sGB Live image"
 msgstr "32-bitový Live obraz (%sGB)"
 
-#: data/content/workstation/download/index.html:60
-#: data/content/workstation/prerelease/index.html:79
+#: data/content/workstation/download/index.html:143
+#: data/content/workstation/prerelease/index.html:158
 msgid "Netinstall Images:"
 msgstr "Obrazy pre sieťovú inštaláciu:"
 
-#: data/content/workstation/download/index.html:63
-#: data/content/workstation/prerelease/index.html:82
+#: data/content/workstation/download/index.html:146
+#: data/content/workstation/prerelease/index.html:161
 #, python-format
 msgid "32-bit %sMB image"
 msgstr "32-bitový obraz (%sMB)"
 
-#: data/content/workstation/download/index.html:82
+#: data/content/workstation/download/index.html:174
+msgid ""
+"<a href=\"//docs.fedoraproject.org/release-notes\"><strong>Release "
+"Notes</strong></a>"
+msgstr ""
+"<a href=\"//docs.fedoraproject.org/release-notes\"><strong>Poznámky k "
+"vydaniu</strong></a>"
+
+#: data/content/workstation/download/index.html:175
+msgid ""
+"Learn about changes since the last version of Fedora as well as minimum "
+"requirements and recommendations for running Fedora."
+msgstr ""
+"Zistite viac o zmenách od poslednej verzie Fedory ako aj minimálnych "
+"požiadavkách a odporúčaniach pre spustenie Fedory."
+
+#: data/content/workstation/download/index.html:176
+msgid ""
+"<a href=\"//docs.fedoraproject.org/install-guide\"><strong>Installation "
+"Guide</strong></a>"
+msgstr ""
+"<a href=\"//docs.fedoraproject.org/install-guide\"><strong>Inštalačná "
+"príručka</strong></a>"
+
+#: data/content/workstation/download/index.html:177
+msgid ""
+"We recommend you look through this before installing to your system, since "
+"it answers many common questions."
+msgstr ""
+"Pred inštaláciou odporúčame, aby ste si ju prezreli, pretože obsahuje "
+"odpovede na veľa bežných otázok."
+
+#: data/content/workstation/download/index.html:178
+#: data/content/workstation/prerelease/index.html:166
+#, python-format
+msgid "<a href=\"%(commonbugs_url)s\"><strong>Common Bugs</strong></a>"
+msgstr "<a href=\"%(commonbugs_url)s\"><strong>Bežné chyby</strong></a>"
+
+#: data/content/workstation/download/index.html:179
+#: data/content/workstation/prerelease/index.html:167
+msgid ""
+"An excellent resource to consult in case you run into any issues installing "
+"or running Fedora."
+msgstr ""
+"Vynikajúci zdroj informácii v prípade akýchkoľvek problémov s inštaláciou "
+"alebo spustením Fedory."
+
+#: data/content/workstation/download/index.html:181
+#: data/content/workstation/prerelease/index.html:171
+msgid "What does \"Live\" mean?"
+msgstr "Čo znamená \"Live\"?"
+
+#: data/content/workstation/download/index.html:182
+#: data/content/workstation/prerelease/index.html:172
+msgid ""
+"Fedora Media Writer will create a complete, running Fedora Workstation you "
+"can run right away off of a USB drive. You can use the Live image to test "
+"and play with Fedora without making changes to your hard disk."
+msgstr ""
+"Fedora Media Writer vytvorí kompletnú, bežiacu verziu Fedory Workstation, "
+"ktorú môžete spustiť priamo z USB disku. Live obraz môžete použiť na "
+"testovanie a hranie sa s Fedorou bez vykonania zmien na vašom pevnom disku."
+
+#: data/content/workstation/download/index.html:183
+#: data/content/workstation/prerelease/index.html:173
+msgid ""
+"When you are ready, you can install Fedora to your hard disk from within "
+"this \"live\" version of Fedora Workstation."
+msgstr ""
+"Ak budete pripravený, môžete nainštalovať Fedoru na svoj pevný disk priamo z"
+" tejto \"live\" verzie Fedory Workstation."
+
+#: data/content/workstation/download/index.html:188
 #: data/templates/footer.html:43
 msgid "Fedora Spins"
 msgstr "Fedora spiny"
 
-#: data/content/workstation/download/index.html:85
+#: data/content/workstation/download/index.html:191
 #: data/templates/footer.html:44
 msgid "Fedora Labs"
-msgstr "Laboratóriá Fedora"
+msgstr "Fedora Labs"
 
 #: data/content/workstation/prerelease/index.html:8
 #, python-format
@@ -2275,7 +2521,7 @@ msgstr "Stiahnuť Fedoru Workstation %s"
 msgid "Download Fedora %(rel)s %(state)s Workstation"
 msgstr "Stiahnuť Fedoru %(rel)s %(state)s Workstation"
 
-#: data/content/workstation/prerelease/index.html:28
+#: data/content/workstation/prerelease/index.html:45
 #, python-format
 msgid ""
 "This is pre-release software and is supported by the <a "
@@ -2287,13 +2533,105 @@ msgstr ""
 " skupina Workstation</a>. Svoje dotazy smerujte na ich <a "
 "href=\"%(team_list)s\">diskusnú skupinu</a> alebo %(team_irc)s na freenode."
 
-#: data/content/workstation/prerelease/index.html:67
+#: data/content/workstation/prerelease/index.html:82
+msgid "Running Pre-Release Versions of Fedora Workstation"
+msgstr "Spustenie predčasnej verzie Fedory Workstation"
+
+#: data/content/workstation/prerelease/index.html:83
+msgid "To run a prerelease version of Fedora Workstation, you will need:"
+msgstr "Pre spustenie predčasnej verzie Fedory Workstation budete potrebovať:"
+
+#: data/content/workstation/prerelease/index.html:85
+msgid "Fedora Media Writer (Download available below)"
+msgstr "Fedora Media Writer (Stiahnuť môžete nižšie)"
+
+#: data/content/workstation/prerelease/index.html:87
+#, python-format
+msgid ""
+"<a href=\"%s\">A live image ISO of the pre-release version of Fedora</a> you"
+" wish to run"
+msgstr ""
+"<a href=\"%s\">Live obraz ISO predčasnej verzie Fedory</a>, ktorú chcete "
+"spustiť"
+
+#: data/content/workstation/prerelease/index.html:89
+msgid ""
+"WARNING: This procedure destroys all data on your USB media. Make sure to "
+"back up any important files from your USB media before you do this."
+msgstr ""
+"VAROVANIE: Táto procedúra vymaže všetky údaje na vašom USB disku. Uistite "
+"sa, že ste si odzálohovali všetky dôležité súbory zo svojho USB disku "
+"predtým, ako budete pokračovať."
+
+#: data/content/workstation/prerelease/index.html:91
+msgid "Download the Fedora Media Writer app below."
+msgstr "Stiahnite si aplikáciu Fedora Media Writer."
+
+#: data/content/workstation/prerelease/index.html:92
+msgid "Download the desired ISO image."
+msgstr "Stiahnite si požadovaný obraz ISO."
+
+#: data/content/workstation/prerelease/index.html:93
+msgid ""
+"Open the Fedora Media Writer app. You may need to provide a password to give"
+" the app the right permissions."
+msgstr ""
+"Otvorte aplikáciu Fedore Media Writer. Možno budete musieť zadať heslo, aby "
+"aplikácia získala potrebné oprávnenia."
+
+#: data/content/workstation/prerelease/index.html:94
+msgid "Select \"Custom OS...\" from the list."
+msgstr "Zo zoznamu vyberte \"Vlastný obraz\"."
+
+#: data/content/workstation/prerelease/index.html:95
+msgid "On the Custom OS page, select the \"Select Live ISO\" button."
+msgstr "Na stránke Vlastný obraz kliknite na tlačidlo \"Vybrať Live ISO\""
+
+#: data/content/workstation/prerelease/index.html:96
+msgid ""
+"In the file selection window, locate and select the ISO image you "
+"downloaded."
+msgstr "V okne pre výber súborov vyhľadajte a vyberte stiahnutý obraz ISO."
+
+#: data/content/workstation/prerelease/index.html:97
+msgid ""
+"Insert your USB stick in the computer. If you used your USB stick previously"
+" to create live media, you may need to restore it to factory settings.  The "
+"app will ask you whether to do so in this case."
+msgstr ""
+"Do počítača vložte svoj USB kľúč. Ak ste predtým svoj USB kľúč použili na "
+"vytvorenie live média, bude ho možno potrebné obnoviť do výrobných "
+"nastavení. V takomto prípade sa vás aplikácia opýta, či tak chcete urobiť."
+
+#: data/content/workstation/prerelease/index.html:98
+msgid ""
+"Select \"Create Live USB\" to write the image. Wait until the process is "
+"finished before you remove the media and close the app."
+msgstr ""
+"Pre zapísanie obrazu vyberte \"Vytvoriť Live USB\". Pred odpojením média "
+"počkajte na dokončenie procesu a zavrite aplikáciu."
+
+#: data/content/workstation/prerelease/index.html:145
 msgid "Validate 64-bit!"
 msgstr "Overiť 64-bitový obraz!"
 
-#: data/content/workstation/prerelease/index.html:70
+#: data/content/workstation/prerelease/index.html:148
 msgid "Validate 32-bit!"
 msgstr "Overiť 32-bitový obraz!"
+
+#: data/content/workstation/prerelease/index.html:168
+msgid ""
+"<a href=\"https://fedoraproject.org/wiki/QA/Join#release-"
+"validation\"><strong>How to test pre-releases</strong></a>"
+msgstr ""
+"<a href=\"https://fedoraproject.org/wiki/QA/Join#release-"
+"validation\"><strong>Ako testovať predčasné verzie</strong></a>"
+
+#: data/content/workstation/prerelease/index.html:169
+msgid "Fedora wiki guide on how to help test pre-release versions of Fedora."
+msgstr ""
+"Wiki príručka Fedory o tom, ako pomôcť s testovaním predčasných verzií "
+"Fedory."
 
 #: data/templates/cloud-tab.html:9
 #, python-format
@@ -2377,16 +2715,16 @@ msgid "Get Fedora Server"
 msgstr "Stiahnuť Fedoru Server"
 
 #: data/templates/footer.html:42
-msgid "Get Fedora Cloud"
-msgstr "Stiahnuť Fedoru Cloud"
+msgid "Get Fedora Atomic"
+msgstr ""
 
 #: data/templates/footer.html:45
 msgid "Fedora ARM<span class=\"sup\">®</span>"
 msgstr "Fedora ARM<span class=\"sup\">®</span>"
 
 #: data/templates/footer.html:46
-msgid "Torrent Downloads"
-msgstr "Stiahnuť cez Torrent"
+msgid "Alternative Downloads"
+msgstr ""
 
 #: data/templates/footer.html:53
 msgid "Support"
@@ -2470,9 +2808,13 @@ msgid "OK"
 msgstr "Ok"
 
 #: data/templates/moretofedora.html:12
-#, python-format
+#, fuzzy, python-format
 msgid "There's more to <img class=\"inlinelogo\" src=\"%s\" alt=\"Fedora Logo\">"
 msgstr "Viac možností <img class=\"inlinelogo\" src=\"%s\" alt=\"Fedora Logo\">"
+
+#: data/templates/productselector-cloud.html:14
+msgid "Lean. Powerful. Everycloud ready."
+msgstr "Zoštíhlená. Výkonná.  Pripravená pre každý cloud."
 
 #: data/templates/generic/docs-links.html:8
 msgid "Documentation and other resources"

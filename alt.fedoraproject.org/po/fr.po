@@ -1,15 +1,11 @@
-# Translations template for PROJECT.
-# Copyright (C) 2016 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
-#
+# Jean-Baptiste Holcroft <jean-baptiste@holcroft.fr>, 2016. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-06-05 23:41+0200\n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2016-11-22 12:44+0100\n"
+"PO-Revision-Date: 2016-11-20 05:17-0500\n"
+"Last-Translator: Jean-Baptiste Holcroft <jean-baptiste@holcroft.fr>\n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,254 +13,260 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 1.3\n"
-"X-Generator: Zanata 3.8.4\n"
+"X-Generator: Zanata 3.9.6\n"
 
 #: data/content/index.html:8
 msgid "Fedora Alternative Downloads"
-msgstr ""
+msgstr "Téléchargements alternatifs de Fedora"
 
-#: data/content/index.html:19 data/content/index.html:93
-#: data/content/index.html:147
-msgid "Network Installers"
-msgstr ""
-
-#: data/content/index.html:24 data/content/index.html:98
-#: data/content/index.html:152
-msgid ""
-"These are very small images you can use to install Fedora over the network."
-msgstr ""
-
-#: data/content/index.html:32 data/content/index.html:46
-#: data/content/index.html:107 data/content/index.html:116
-#: data/content/index.html:161 data/content/index.html:172
-msgid "Fedora Server"
-msgstr ""
-
-#: data/content/index.html:35 data/content/index.html:63
-#, python-format
-msgid "64 bit %sMB ISO"
-msgstr ""
-
-#: data/content/index.html:38 data/content/index.html:52
-#: data/content/index.html:66 data/content/index.html:80
-#: data/content/index.html:361 data/content/index.html:372
-#: data/content/index.html:383 data/content/index.html:394
-#: data/content/index.html:541 data/content/index.html:569
-#: data/content/index.html:598 data/templates/footer.html:37
-msgid "Download"
-msgstr ""
-
-#: data/content/index.html:38 data/content/index.html:52
-#: data/content/index.html:66 data/content/index.html:80
-#: data/content/index.html:108 data/content/index.html:117
-#: data/content/index.html:126 data/content/index.html:135
-#: data/content/index.html:164 data/content/index.html:175
-#: data/content/index.html:186 data/content/index.html:197
-#: data/content/index.html:361 data/content/index.html:372
-#: data/content/index.html:383 data/content/index.html:394
-#: data/content/index.html:541 data/content/index.html:569
-#: data/content/index.html:598
-msgid "Verify"
-msgstr ""
-
-#: data/content/index.html:49 data/content/index.html:77
-#, python-format
-msgid "32 bit %sMB ISO"
-msgstr ""
-
-#: data/content/index.html:60 data/content/index.html:74
-#: data/content/index.html:125 data/content/index.html:134
-#: data/content/index.html:183 data/content/index.html:194
-msgid "Fedora Workstation"
-msgstr ""
-
-#: data/content/index.html:108 data/content/index.html:126
-#: data/content/index.html:164 data/content/index.html:186
-msgid "Download 64 bit"
-msgstr ""
-
-#: data/content/index.html:117 data/content/index.html:135
-#: data/content/index.html:175 data/content/index.html:197
-msgid "Download 32 bit"
-msgstr ""
-
-#: data/content/index.html:209
-msgid "Bittorrent Downloads"
-msgstr ""
-
-#: data/content/index.html:214
-msgid ""
-"Fedora offers many bittorrent downloads. Access our directory of torrents "
-"below:"
-msgstr ""
-
-#: data/content/index.html:217
-msgid "torrent.fedoraproject.org"
-msgstr ""
-
-#: data/content/index.html:228 data/content/index.html:290
-#: data/content/index.html:344
-msgid "Secondary Architectures"
-msgstr ""
-
-#: data/content/index.html:233
-msgid ""
-"These are additional architectures supported by Fedora beyond the standard "
-"set."
-msgstr ""
-
-#: data/content/index.html:241 data/content/index.html:304
-#: data/content/index.html:358
-msgid "MIPS Architecture"
-msgstr ""
-
-#: data/content/index.html:244 data/content/index.html:255
-#: data/content/index.html:266 data/content/index.html:277
-#: data/content/index.html:305 data/content/index.html:314
-#: data/content/index.html:323 data/content/index.html:332
-#: data/content/index.html:422 data/content/index.html:433
-#: data/content/index.html:461 data/content/index.html:470
-#: data/content/index.html:499 data/content/index.html:510
-#: data/content/index.html:626 data/content/index.html:654
-#: data/content/index.html:683
-msgid "View Images >"
-msgstr ""
-
-#: data/content/index.html:252 data/content/index.html:313
-#: data/content/index.html:369
-msgid "PowerPC Architecture"
-msgstr ""
-
-#: data/content/index.html:263 data/content/index.html:322
-#: data/content/index.html:380
-msgid "s390x Architecture"
-msgstr ""
-
-#: data/content/index.html:274 data/content/index.html:331
-#: data/content/index.html:391
-msgid "ARM AArch64 Architecture"
-msgstr ""
-
-#: data/content/index.html:295 data/content/index.html:349
-msgid ""
-"These images are for ARM-based mediacenters, kiosks, laptops, and other ARM-"
-"powered devices where a graphical interface is desired."
-msgstr ""
-
-#: data/content/index.html:406 data/content/index.html:446
-#: data/content/index.html:482
-msgid "Testing Images"
-msgstr ""
-
-#: data/content/index.html:411 data/content/index.html:451
-#: data/content/index.html:487
-msgid ""
-"These are unreleased development versions of Fedora made available for "
-"testing the next official Fedora release."
-msgstr ""
-
-#: data/content/index.html:419 data/content/index.html:460
-#: data/content/index.html:496
-msgid "Nightly builds"
-msgstr ""
-
-#: data/content/index.html:430
-msgid "Other composes (Alpha / Beta / TCs / RCs)"
-msgstr ""
-
-#: data/content/index.html:469 data/content/index.html:507
-msgid "Other test composes"
-msgstr ""
-
-#: data/content/index.html:522 data/content/index.html:554
-#: data/content/index.html:581
-msgid "Multi-Boot DVD Image"
-msgstr ""
-
-#: data/content/index.html:527 data/content/index.html:559
-#: data/content/index.html:586
-msgid ""
-"A single, dual-layer DVD images that has both 32-bit and 64-bit versions of "
-"the live media for multiple desktops that Fedora ships. This includes GNOME,"
-" KDE, Xfce, and LXDE."
-msgstr ""
-
-#: data/content/index.html:535 data/content/index.html:568
-#: data/content/index.html:595
-msgid "Multi-Boot DVD"
-msgstr ""
-
-#: data/content/index.html:538
-#, python-format
-msgid "%sGB raw image"
-msgstr ""
-
-#: data/content/index.html:610 data/content/index.html:623
-#: data/content/index.html:639 data/content/index.html:653
-#: data/content/index.html:666 data/content/index.html:680
-msgid "Minimal Fedora"
-msgstr ""
-
-#: data/content/index.html:615 data/content/index.html:644
-#: data/content/index.html:671
-msgid "A very minimal version of Fedora."
-msgstr ""
-
-#: data/content/index.html:695
+#: data/content/index.html:19 data/templates/footer.html:46
 msgid "Alternative Downloads"
-msgstr ""
+msgstr "Téléchargements alternatifs"
 
-#: data/content/index.html:696
+#: data/content/index.html:20
 msgid ""
 "These Fedora downloads are either special-purpose - for testing, for "
-"specific secondary architectures - or are more standard versions of Fedora "
-"in alternative formats such network installer format or formatted for "
+"specific architectures - or are more standard versions of Fedora in "
+"alternative formats such network installer format or formatted for "
 "bittorrent download."
 msgstr ""
+"Ces téléchargements de Fedora sont soit dédiés à un usage dédié – le test, "
+"les architectures spécifiques – ou sont des versions plus standard de Fedora"
+" dans des formats alternatifs, tel le format d’installation réseau ou "
+"formatés pour le téléchargement BitTorrent."
 
-#: data/content/index.html:697
+#: data/content/index.html:21
 msgid ""
 "This page is meant to serve as a single central resource for locating "
 "alternative versions of Fedora."
 msgstr ""
+"Cette page vise à servir de ressource centrale unique pour trouver les "
+"versions alternatives de Fedora."
 
-#: data/content/index.html:708
+#: data/content/index.html:33 data/content/index.html:93
+#: data/content/index.html:138
+msgid "Network Installers"
+msgstr "Installateurs réseau"
+
+#: data/content/index.html:38 data/content/index.html:98
+#: data/content/index.html:143
+msgid ""
+"These are very small images you can use to install Fedora over the network."
+msgstr ""
+"Ce sont de très petites images que vous pouvez utiliser pour installer "
+"Fedora à travers le réseau."
+
+#: data/content/index.html:46 data/content/index.html:107
+#: data/content/index.html:152 data/content/alt/index.html:40
+#: data/content/alt/index.html:54 data/content/alt/index.html:143
+#: data/content/alt/index.html:152 data/content/alt/index.html:215
+#: data/content/alt/index.html:226 data/content/alt/index.html:332
+#: data/content/alt/index.html:346 data/content/alt/index.html:423
+#: data/content/alt/index.html:437 data/content/alt/index.html:526
+#: data/content/alt/index.html:535 data/content/alt/index.html:587
+#: data/content/alt/index.html:596 data/content/alt/index.html:659
+#: data/content/alt/index.html:670 data/content/alt/index.html:732
+#: data/content/alt/index.html:743 data/content/alt/index.html:849
+#: data/content/alt/index.html:882 data/content/alt/index.html:909
+msgid "Fedora Server"
+msgstr "Fedora Server"
+
+#: data/content/index.html:49 data/content/index.html:63
+#, python-format
+msgid "64 bit %sMB ISO"
+msgstr "image 64 bits %s Mio"
+
+#: data/content/index.html:52 data/content/index.html:66
+#: data/content/index.html:80 data/content/index.html:108
+#: data/content/index.html:117 data/content/index.html:126
+#: data/content/index.html:155 data/content/index.html:166
+#: data/content/index.html:177 data/content/index.html:216
+#: data/content/alt/index.html:46 data/content/alt/index.html:60
+#: data/content/alt/index.html:74 data/content/alt/index.html:88
+#: data/content/alt/index.html:102 data/content/alt/index.html:116
+#: data/content/alt/index.html:144 data/content/alt/index.html:153
+#: data/content/alt/index.html:162 data/content/alt/index.html:171
+#: data/content/alt/index.html:180 data/content/alt/index.html:189
+#: data/content/alt/index.html:218 data/content/alt/index.html:229
+#: data/content/alt/index.html:240 data/content/alt/index.html:251
+#: data/content/alt/index.html:262 data/content/alt/index.html:273
+#: data/content/alt/index.html:338 data/content/alt/index.html:352
+#: data/content/alt/index.html:366 data/content/alt/index.html:380
+#: data/content/alt/index.html:394 data/content/alt/index.html:408
+#: data/content/alt/index.html:429 data/content/alt/index.html:443
+#: data/content/alt/index.html:457 data/content/alt/index.html:471
+#: data/content/alt/index.html:485 data/content/alt/index.html:499
+#: data/content/alt/index.html:527 data/content/alt/index.html:536
+#: data/content/alt/index.html:545 data/content/alt/index.html:554
+#: data/content/alt/index.html:563 data/content/alt/index.html:572
+#: data/content/alt/index.html:588 data/content/alt/index.html:597
+#: data/content/alt/index.html:606 data/content/alt/index.html:615
+#: data/content/alt/index.html:624 data/content/alt/index.html:633
+#: data/content/alt/index.html:662 data/content/alt/index.html:673
+#: data/content/alt/index.html:684 data/content/alt/index.html:695
+#: data/content/alt/index.html:706 data/content/alt/index.html:717
+#: data/content/alt/index.html:735 data/content/alt/index.html:746
+#: data/content/alt/index.html:757 data/content/alt/index.html:768
+#: data/content/alt/index.html:779 data/content/alt/index.html:790
+#: data/content/alt/index.html:855 data/content/alt/index.html:883
+#: data/content/alt/index.html:912 data/templates/footer.html:37
+msgid "Download"
+msgstr "Téléchargement"
+
+#: data/content/index.html:52 data/content/index.html:66
+#: data/content/index.html:80 data/content/index.html:108
+#: data/content/index.html:117 data/content/index.html:126
+#: data/content/index.html:155 data/content/index.html:166
+#: data/content/index.html:177 data/content/alt/index.html:46
+#: data/content/alt/index.html:60 data/content/alt/index.html:74
+#: data/content/alt/index.html:88 data/content/alt/index.html:102
+#: data/content/alt/index.html:116 data/content/alt/index.html:144
+#: data/content/alt/index.html:153 data/content/alt/index.html:162
+#: data/content/alt/index.html:171 data/content/alt/index.html:180
+#: data/content/alt/index.html:189 data/content/alt/index.html:218
+#: data/content/alt/index.html:229 data/content/alt/index.html:240
+#: data/content/alt/index.html:251 data/content/alt/index.html:262
+#: data/content/alt/index.html:273 data/content/alt/index.html:338
+#: data/content/alt/index.html:352 data/content/alt/index.html:366
+#: data/content/alt/index.html:380 data/content/alt/index.html:394
+#: data/content/alt/index.html:408 data/content/alt/index.html:429
+#: data/content/alt/index.html:443 data/content/alt/index.html:457
+#: data/content/alt/index.html:471 data/content/alt/index.html:485
+#: data/content/alt/index.html:499 data/content/alt/index.html:527
+#: data/content/alt/index.html:536 data/content/alt/index.html:545
+#: data/content/alt/index.html:554 data/content/alt/index.html:563
+#: data/content/alt/index.html:572 data/content/alt/index.html:588
+#: data/content/alt/index.html:597 data/content/alt/index.html:606
+#: data/content/alt/index.html:615 data/content/alt/index.html:624
+#: data/content/alt/index.html:633 data/content/alt/index.html:662
+#: data/content/alt/index.html:673 data/content/alt/index.html:684
+#: data/content/alt/index.html:695 data/content/alt/index.html:706
+#: data/content/alt/index.html:717 data/content/alt/index.html:735
+#: data/content/alt/index.html:746 data/content/alt/index.html:757
+#: data/content/alt/index.html:768 data/content/alt/index.html:779
+#: data/content/alt/index.html:790 data/content/alt/index.html:855
+#: data/content/alt/index.html:883 data/content/alt/index.html:912
+msgid "Verify"
+msgstr "Vérifier"
+
+#: data/content/index.html:60 data/content/index.html:74
+#: data/content/index.html:163 data/content/index.html:174
+msgid "Fedora Workstation"
+msgstr "Fedora Workstation"
+
+#: data/content/index.html:77
+#, python-format
+msgid "32 bit %sMB ISO"
+msgstr "image 32 bits %s Mio"
+
+#: data/content/index.html:116 data/content/index.html:125
+msgid "Workstation"
+msgstr "Workstation"
+
+#: data/content/index.html:189
+msgid "Bittorrent Downloads"
+msgstr "Téléchargements BitTorrent"
+
+#: data/content/index.html:194
+msgid ""
+"Fedora offers many bittorrent downloads. Access our directory of torrents "
+"below:"
+msgstr ""
+"Fedora propose de nombreux téléchargements BitTorrent. Accédez à notre "
+"répertoire de torrents ci-dessous :"
+
+#: data/content/index.html:197
+msgid "torrent.fedoraproject.org"
+msgstr "torrent.fedoraproject.org"
+
+#: data/content/index.html:208 data/content/alt/index.html:16
+msgid "Alternate Architectures"
+msgstr "Les architectures alternatives"
+
+#: data/content/index.html:213
+msgid ""
+"These are additional architectures supported by Fedora beyond the standard "
+"set."
+msgstr ""
+"Ce sont les architectures additionnelles supportées par Fedora au delà du "
+"périmètre de base."
+
+#: data/content/index.html:227 data/content/index.html:267
+#: data/content/index.html:303
+msgid "Testing Images"
+msgstr "Les images de tests"
+
+#: data/content/index.html:232 data/content/index.html:272
+#: data/content/index.html:308
+msgid ""
+"These are unreleased development versions of Fedora made available for "
+"testing the next official Fedora release."
+msgstr ""
+"Ce sont les versions de développement de Fedora non publiées, mises à "
+"disposition pour tester la prochaine parution de Fedora."
+
+#: data/content/index.html:240 data/content/index.html:281
+#: data/content/index.html:317
+msgid "Nightly builds"
+msgstr "Les constructions quotidiennes"
+
+#: data/content/index.html:243 data/content/index.html:254
+#: data/content/index.html:282 data/content/index.html:291
+#: data/content/index.html:320 data/content/index.html:331
+msgid "View Images >"
+msgstr "Afficher les images >"
+
+#: data/content/index.html:251
+msgid "Other composes (Alpha / Beta / TCs / RCs)"
+msgstr "Autres compositions (Alpha / Beta / TC / RC)"
+
+#: data/content/index.html:290 data/content/index.html:328
+msgid "Other test composes"
+msgstr "Autres compositions de test"
+
+#: data/content/index.html:431 data/content/alt/index.html:285
+#: data/content/alt/index.html:802 data/content/alt/index.html:924
 msgid "Support Resources"
-msgstr ""
+msgstr "Ressources d'assistance"
 
-#: data/content/index.html:713
+#: data/content/index.html:436
 msgid "General Help Using Fedora"
-msgstr ""
+msgstr "Aide générale aux utilisateurs de Fedora"
 
-#: data/content/index.html:714
+#: data/content/index.html:437
 #, python-format
 msgid ""
-"Sometimes you may encounter an issue with this spin that you can get help "
-"with using general Fedora support resources. A list of resources is "
-"available at the <a href=\"%s\">Fedora “Get Help” page</a>."
+"Need some help with Fedora? Check out <a href=\"%s\">Ask Fedora</a>, where "
+"you can read archives of questions from other users, or ask your own "
+"question."
 msgstr ""
+"Vous avez besoin d'aide avec Fedora ? Passez sur <a href=\"%s\">Ask "
+"Fedora</a>, un endroit où vous pouvez lire les questions posées par d'autres"
+" utilisateurs, ou y poser la votre."
 
-#: data/content/index.html:726 data/content/index.html:737
+#: data/content/index.html:449 data/content/index.html:460
 #, python-format
 msgid "Fedora %(rel)s %(state)s released! <a href=\"%(link)s\">Try it now ></a>"
 msgstr ""
+"Fedora %(rel)s %(state)s est disponible ! <a href=\"%(link)s\">Essayez le "
+"maintenant ></a>"
 
-#: data/content/index.html:748
+#: data/content/index.html:471
 #, python-format
 msgid "Fedora %(rel)s released! Try it now."
-msgstr ""
+msgstr "Fedora %(rel)s est disponible ! Essayez-le maintenant."
 
 #: data/content/verify.html:8 data/content/verify.html:18
 msgid "Verify your Downloaded Image"
-msgstr ""
+msgstr "Vérifiez votre image téléchargée"
 
 #: data/content/verify.html:20
 msgid "CHECKSUM and Verify Instructions"
-msgstr ""
+msgstr "CHECKSUM et instructions de vérification"
 
 #: data/content/verify.html:30
 msgid "How do I verify my image?"
-msgstr ""
+msgstr "Comment puis-je vérifier mon image ?"
 
 #: data/content/verify.html:31
 msgid ""
@@ -272,238 +274,515 @@ msgid ""
 "verify your image, start by downloading the proper CHECKSUM file into the "
 "same directory as the image you downloaded."
 msgstr ""
-
-#: data/content/verify.html:36
-msgid "Validate 64-bit!"
-msgstr ""
+"Une fois que vous avez téléchargé une image, vérifiez son intégrité par "
+"sécurité. Pour vérifier une image, commencez par télécharger le fichier "
+"CHECKSUM dans le répertoire d'où vous avez téléchargé l'image."
 
 #: data/content/verify.html:39
-msgid "Validate 32-bit!"
-msgstr ""
+msgid "Server"
+msgstr "Server"
 
-#: data/content/verify.html:45
+#: data/content/verify.html:41 data/content/verify.html:83
+msgid "For aarch64"
+msgstr "Pour AArch64"
+
+#: data/content/verify.html:44 data/content/verify.html:86
+msgid "For ppc64"
+msgstr "Pour ppc64"
+
+#: data/content/verify.html:47 data/content/verify.html:89
+msgid "For ppc64le"
+msgstr "Pour ppc64le"
+
+#: data/content/verify.html:50
+msgid "For s390x"
+msgstr "Pour s390x"
+
+#: data/content/verify.html:57
+msgid "Cloud"
+msgstr "Cloud"
+
+#: data/content/verify.html:59
+msgid "For aarch64 iso"
+msgstr "Pour l’ISO AArch64"
+
+#: data/content/verify.html:62
+msgid "For aarch64 images"
+msgstr "Pour les images AArch64"
+
+#: data/content/verify.html:65
+msgid "For ppc64 iso"
+msgstr "Pour l’ISO ppc64"
+
+#: data/content/verify.html:68
+msgid "For ppc64 images"
+msgstr "Pour les images ppc64"
+
+#: data/content/verify.html:71
+msgid "For ppc64le iso"
+msgstr "Pour l’ISO ppc64le"
+
+#: data/content/verify.html:74
+msgid "For ppc64le images"
+msgstr "Pour les images ppc64le"
+
+#: data/content/verify.html:81
+msgid "Docker"
+msgstr "Docker"
+
+#: data/content/verify.html:96
 msgid "Next, import Fedora's GPG key(s):"
-msgstr ""
+msgstr "Ensuite, importez votre ou vos clés GPG Fedora :"
 
-#: data/content/verify.html:47
+#: data/content/verify.html:98
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
 msgstr ""
+"Vous pouvez vérifier les informations des clés GPG <a "
+"href=\"%s/%s/keys\">ici</a>."
 
-#: data/content/verify.html:48
+#: data/content/verify.html:99
 msgid "Now, verify that the CHECKSUM file is valid:"
-msgstr ""
+msgstr "Maintenant, vérifiez que le fichier CHECKSUM est valide :"
 
-#: data/content/verify.html:50
+#: data/content/verify.html:101
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr ""
+"Le fichier CHECKSUM devrait avoir une signature correcte depuis l'une des "
+"clés suivantes :"
 
-#: data/content/verify.html:52
-msgid "Fedora 25"
+#: data/content/verify.html:103
+msgid "Fedora 26"
+msgstr "Fedora 26"
+
+#: data/content/verify.html:104
+msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
+"Architectures secondaires de Fedora 26 (AArch64, PPC64, PPC64le, s390 et "
+"s390x)"
 
-#: data/content/verify.html:53
+#: data/content/verify.html:105
+msgid "Fedora 25"
+msgstr "Fedora 25"
+
+#: data/content/verify.html:106
 msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
+"Architectures secondaires Fedora 25  (AArch64, PPC64, PPC64le, s390 et "
+"s390x)"
 
-#: data/content/verify.html:54
+#: data/content/verify.html:107
 msgid "Fedora 24"
-msgstr ""
+msgstr "Fedora 24"
 
-#: data/content/verify.html:55
+#: data/content/verify.html:108
 msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
+"Architectures secondaires Fedora 24 (AArch64, PPC64, PPC64le, s390 et s390x)"
 
-#: data/content/verify.html:56
+#: data/content/verify.html:109
 msgid "Fedora 23"
-msgstr ""
+msgstr "Fedora 23"
 
-#: data/content/verify.html:57
+#: data/content/verify.html:110
 msgid "Fedora 23 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
+"Architectures secondaires Fedora 23 (AArch64, PPC64, PPC64le, s390 et s390x)"
 
-#: data/content/verify.html:58
-msgid "Fedora 22"
-msgstr ""
-
-#: data/content/verify.html:59
-msgid "Fedora 22 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
-
-#: data/content/verify.html:61
+#: data/content/verify.html:112
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
 msgstr ""
+"Maintenant que le fichier CHECKSUM a été vérifié, assurez-vous que la somme "
+"de contrôle de l'image ISO corresponde : "
 
-#: data/content/verify.html:63
+#: data/content/verify.html:114
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
+"Si la sortie vous assure que le fichier est valide, vous pouvez y "
+"l'utiliser."
 
-#: data/content/verify.html:64
+#: data/content/verify.html:115
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr ""
+"Comment vérifier l'image téléchargée sur un autre système d'exploitation ?"
 
-#: data/content/verify.html:65
+#: data/content/verify.html:116
 msgid "Read these instructions to validate your image."
+msgstr "Lisez ces instructions afin de vérifier votre image."
+
+#: data/content/alt/index.html:8
+msgid "Fedora Alternate Architectures"
+msgstr "Architectures secondaires de Fedora"
+
+#: data/content/alt/index.html:17
+msgid "Additional architectures supported by Fedora"
 msgstr ""
+"Ce sont les architectures additionnelles supportées par Fedora au delà du "
+"périmètre de base."
+
+#: data/content/alt/index.html:27 data/content/alt/index.html:129
+#: data/content/alt/index.html:201
+msgid "ARM<span class=\"sup\">®</span> aarch64 Architecture"
+msgstr "Technologie ARM<span class=\"sup\">®</span>"
+
+#: data/content/alt/index.html:32 data/content/alt/index.html:134
+#: data/content/alt/index.html:206
+msgid ""
+"These images are for use with AArch64 “Server Base System Architecture” "
+"(SBSA) compliant systems or Single Board Computers."
+msgstr ""
+"Ces images sont à utiliser avec les systèmes ou ordinateurs mono-carte "
+"AArch64  compatible « Server Base System Architecture » (SBSA)."
+
+#: data/content/alt/index.html:43 data/content/alt/index.html:335
+#: data/content/alt/index.html:426 data/content/alt/index.html:852
+#, python-format
+msgid "%sGB dvd iso"
+msgstr "DVD image ISO %s Mio"
+
+#: data/content/alt/index.html:57 data/content/alt/index.html:71
+#: data/content/alt/index.html:349 data/content/alt/index.html:363
+#: data/content/alt/index.html:440 data/content/alt/index.html:454
+#, python-format
+msgid "%sMB netinstall iso"
+msgstr "Image ISO d'installation réseau %s Mio"
+
+#: data/content/alt/index.html:68 data/content/alt/index.html:82
+#: data/content/alt/index.html:96 data/content/alt/index.html:161
+#: data/content/alt/index.html:170 data/content/alt/index.html:179
+#: data/content/alt/index.html:237 data/content/alt/index.html:248
+#: data/content/alt/index.html:259 data/content/alt/index.html:360
+#: data/content/alt/index.html:374 data/content/alt/index.html:388
+#: data/content/alt/index.html:451 data/content/alt/index.html:465
+#: data/content/alt/index.html:479 data/content/alt/index.html:544
+#: data/content/alt/index.html:553 data/content/alt/index.html:562
+#: data/content/alt/index.html:605 data/content/alt/index.html:614
+#: data/content/alt/index.html:623 data/content/alt/index.html:681
+#: data/content/alt/index.html:692 data/content/alt/index.html:703
+#: data/content/alt/index.html:754 data/content/alt/index.html:765
+#: data/content/alt/index.html:776
+msgid "Fedora Cloud"
+msgstr "Fedora Cloud"
+
+#: data/content/alt/index.html:85 data/content/alt/index.html:377
+#: data/content/alt/index.html:468
+#, python-format
+msgid "%sMB qcow2 image"
+msgstr "Image Qcow2 %s Mio"
+
+#: data/content/alt/index.html:99 data/content/alt/index.html:391
+#: data/content/alt/index.html:482
+#, python-format
+msgid "%sMB raw image"
+msgstr "Image brute de %s Mio"
+
+#: data/content/alt/index.html:110 data/content/alt/index.html:188
+#: data/content/alt/index.html:270 data/content/alt/index.html:402
+#: data/content/alt/index.html:493 data/content/alt/index.html:571
+#: data/content/alt/index.html:632 data/content/alt/index.html:714
+#: data/content/alt/index.html:787
+msgid "Fedora Docker"
+msgstr "Fedora pour Docker"
+
+#: data/content/alt/index.html:113 data/content/alt/index.html:405
+#: data/content/alt/index.html:496
+#, python-format
+msgid "%sMB Docker image"
+msgstr "Image Docker de %s Mio"
+
+#: data/content/alt/index.html:291 data/content/alt/index.html:808
+#: data/content/alt/index.html:930
+msgid "Documentation"
+msgstr "Documentation"
+
+#: data/content/alt/index.html:292
+#, python-format
+msgid ""
+"A guide for Fedora on AArch64, including a list of supported hardware "
+"platforms and installation instructions is available at the <a "
+"href=\"%s\">Fedora Documentation Site</a>."
+msgstr ""
+"Un guide pour fedora sur AArch64, incluant une liste des plateformes "
+"matérielles supportées et instructions d'installation est disponible sur le "
+"<a href=\"%s\">site de la documentation Fedora</a>."
+
+#: data/content/alt/index.html:297 data/content/alt/index.html:814
+#: data/content/alt/index.html:936
+msgid "Email"
+msgstr "Courriel"
+
+#: data/content/alt/index.html:298
+#, python-format
+msgid ""
+"Users and developers are also available on the mailing list at <a "
+"href=\"%s\">arm@lists.fedoraproject.org</a>."
+msgstr ""
+"Les utilisateurs et les développeurs sont également joignables sur la liste "
+"de diffusion <a href=\"%s\">arm@lists.fedoraproject.org</a>."
+
+#: data/content/alt/index.html:303 data/content/alt/index.html:820
+#: data/content/alt/index.html:942
+msgid "Chat"
+msgstr "Conversation"
+
+#: data/content/alt/index.html:304
+#, python-format
+msgid ""
+"Users and developers are available in the <a href=\"%s\">#fedora-arm</a> IRC"
+" channel on <strong>irc.freenode.org</strong> for real-time chat."
+msgstr ""
+"Les utilisateurs et les développeurs sont disponibles sur le canal IRC <a "
+"href=\"%s\">#fedora-arm</a> sur <strong>irc.freenode.org</strong> pour des "
+"conversations en temps réel."
+
+#: data/content/alt/index.html:319 data/content/alt/index.html:512
+#: data/content/alt/index.html:645
+msgid "Power Architecture"
+msgstr "Architecture POWER"
+
+#: data/content/alt/index.html:324 data/content/alt/index.html:517
+msgid ""
+"PPC64 images are for installation on IBM Power systems or OpenPOWER systems."
+msgstr ""
+"Les images PPC64 sont destinées à l'installation sur les systèmes IBM Power "
+"ou les systèmes OpenPower."
+
+#: data/content/alt/index.html:415 data/content/alt/index.html:578
+#: data/content/alt/index.html:723
+msgid ""
+"PPC64LE images are for installation on IBM Power systems or OpenPOWER "
+"systems."
+msgstr ""
+"Les images PPC64LE sont destinées à l'installation sur les systèmes IBM "
+"Power ou les systèmes OpenPower."
+
+#: data/content/alt/index.html:650
+msgid ""
+"These images are for installation on IBM Power systems or OpenPOWER systems."
+msgstr ""
+"Ces images sont destinées à l'installation sur les systèmes IBM Power ou les"
+" systèmes OpenPower."
+
+#: data/content/alt/index.html:809 data/content/alt/index.html:931
+#, python-format
+msgid ""
+"A wiki page with information about Power Architecture on Fedora is available"
+" on the <a href=\"%s\">Fedora Project Wiki</a>."
+msgstr ""
+"Un page wiki avec des informations sur l'architecture POWER sur Fedora est "
+"disponible sur le <a href=\"%s\">Wiki du projet Fedora</a>."
+
+#: data/content/alt/index.html:815
+#, python-format
+msgid ""
+"Users and developers are also available on the mailing list at <a "
+"href=\"%s\">ppc@lists.fedoraproject.org</a>."
+msgstr ""
+"Les utilisateurs et les développeurs sont également joignables sur la liste "
+"de diffusion <a href=\"%s\">ppc@lists.fedoraproject.org</a>."
+
+#: data/content/alt/index.html:821
+#, python-format
+msgid ""
+"Users and developers are available in the <a href=\"%s\">#fedora-ppc</a> IRC"
+" channel on <strong>irc.freenode.org</strong> for real-time chat."
+msgstr ""
+"Utilisateurs et développeurs sont disponibles sur <a href=\"%s\">#fedora-"
+"ppc</a>, un canal IRC sur <strong>irc.freenode.net</strong> pour les "
+"discussions en temps réel."
+
+#: data/content/alt/index.html:836 data/content/alt/index.html:868
+#: data/content/alt/index.html:895
+msgid "s390x Architecture"
+msgstr "Architecture s390x"
+
+#: data/content/alt/index.html:841 data/content/alt/index.html:873
+#: data/content/alt/index.html:900
+msgid ""
+"If you want to install Fedora on IBM z systems, then you are looking for "
+"this architecture."
+msgstr ""
+"Si vous voulez installer Fedora sur les systèmes IBM z, alors vous cherchez "
+"cette architecture."
+
+#: data/content/alt/index.html:937
+#, python-format
+msgid ""
+"Users and developers are also available on the mailing list at <a "
+"href=\"%s\">s390x@lists.fedoraproject.org</a>."
+msgstr ""
+"Les utilisateurs et les développeurs sont également joignables sur la liste "
+"de diffusion <a href=\"%s\">s390x@lists.fedoraproject.org</a>."
+
+#: data/content/alt/index.html:943
+#, python-format
+msgid ""
+"Users and developers are available in the <a href=\"%s\">#fedora-s390x</a> "
+"IRC channel on <strong>irc.freenode.org</strong> for real-time chat."
+msgstr ""
+"Utilisateurs et développeurs sont disponibles sur <a href=\"%s\">#fedora-"
+"s390x</a>, un canal IRC sur <strong>irc.freenode.net</strong> pour les "
+"discussions en temps réel."
 
 #: data/templates/content-export-regulations.html:25
 msgid "Read full export regulations"
-msgstr ""
+msgstr "Lisez l'intégralité de la réglementation relative à l'exportation."
 
 #: data/templates/content-export-regulations.html:26
 msgid "Hide full export regulations"
 msgstr ""
+"Masquer les informations complètes de régulations relatives à l'export"
 
 #: data/templates/export-regulations.html:12
 msgid ""
 "By clicking on and downloading Fedora, you agree to comply with the "
 "following terms and conditions."
 msgstr ""
+"En cliquant et en téléchargeant Fedora, vous accepter de respecter les "
+"termes et conditions suivants."
 
 #: data/templates/export-regulations.html:13
 msgid "Read more >"
-msgstr ""
+msgstr "En savoir plus >"
 
 #: data/templates/footer.html:14
 msgid "About"
-msgstr ""
+msgstr "À propos"
 
 #: data/templates/footer.html:17
 msgid "About Fedora"
-msgstr ""
+msgstr "À propos de Fedora"
 
 #: data/templates/footer.html:18
 msgid "Sponsors"
-msgstr ""
+msgstr "Sponsors"
 
 #: data/templates/footer.html:19
 msgid "Fedora Magazine"
-msgstr ""
+msgstr "Magazine Fedora"
 
 #: data/templates/footer.html:20
 msgid "Legal"
-msgstr ""
+msgstr "Mentions légales"
 
 #: data/templates/footer.html:40
 msgid "Get Fedora Workstation"
-msgstr ""
+msgstr "Télécharger Fedora Workstation"
 
 #: data/templates/footer.html:41
 msgid "Get Fedora Server"
-msgstr ""
+msgstr "Télécharger Fedora Server"
 
 #: data/templates/footer.html:42
-msgid "Get Fedora Cloud"
+msgid "Get Fedora Atomic"
 msgstr ""
 
 #: data/templates/footer.html:43
 msgid "Fedora Spins"
-msgstr ""
+msgstr "Variantes de Fedora"
 
 #: data/templates/footer.html:44
 msgid "Fedora Labs"
-msgstr ""
+msgstr "Fedora Labs"
 
 #: data/templates/footer.html:45
 msgid "Fedora ARM<span class=\"sup\">®</span>"
-msgstr ""
-
-#: data/templates/footer.html:46
-msgid "Torrent Downloads"
-msgstr ""
+msgstr "Fedora ARM<span class=\"sup\">®</span>"
 
 #: data/templates/footer.html:52
 msgid "Support"
-msgstr ""
+msgstr "Assistance"
 
 #: data/templates/footer.html:55
 msgid "Get Help"
-msgstr ""
+msgstr "Obtenir de l'aide"
 
 #: data/templates/footer.html:56
 msgid "Ask Fedora"
-msgstr ""
+msgstr "Ask Fedora"
 
 #: data/templates/footer.html:57
 msgid "Forums"
-msgstr ""
+msgstr "Forums"
 
 #: data/templates/footer.html:58
 msgid "Common Bugs"
-msgstr ""
+msgstr "Anomalies connues"
 
 #: data/templates/footer.html:59
 msgid "Fedora Developer Portal"
-msgstr ""
+msgstr "Portail développeur de Fedora"
 
 #: data/templates/footer.html:60
 msgid "Installation Guide"
-msgstr ""
+msgstr "Guide d'installation"
 
 #: data/templates/footer.html:66
 msgid "Join"
-msgstr ""
+msgstr "Rejoindre"
 
 #: data/templates/footer.html:69
 msgid "Join Fedora"
-msgstr ""
+msgstr "Rejoindre Fedora"
 
 #: data/templates/footer.html:70
 msgid "Planet Fedora"
-msgstr ""
+msgstr "Planète Fedora"
 
 #: data/templates/footer.html:71
 msgid "Fedora SIGs"
-msgstr ""
+msgstr "Groupes d'intérêts spéciaux de Fedora"
 
 #: data/templates/footer.html:72
 msgid "Fedora Account System"
-msgstr ""
+msgstr "Compte infrastructure Fedora (FAS)"
 
 #: data/templates/footer.html:73
 msgid "Fedora Community"
-msgstr ""
+msgstr "Communauté Fedora"
 
 #: data/templates/footer.html:87
 msgid "Fedora is sponsored by Red Hat."
-msgstr ""
+msgstr "Fedora est sponsorisé par Red Hat."
 
 #: data/templates/footer.html:88
 msgid "Learn more about the relationship between Red Hat and Fedora »"
-msgstr ""
+msgstr "En savoir plus sur la relation entre Red Hat et Fedora »"
 
 #: data/templates/footer.html:89
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
-msgstr ""
+msgstr "© %(year)s Red Hat, Inc. et autres."
 
 #: data/templates/footer.html:89
 msgid ""
 "Please send any comments or corrections to the <a href=\"//fedorahosted.org"
 "/fedora-websites/\">websites team</a>."
 msgstr ""
+"Veuillez transmettre tout commentaire ou correction à <a "
+"href=\"//fedorahosted.org/fedora-websites/\">l'équipe sites internet</a>."
 
 #: data/templates/footer.html:95
 msgid "Change Language"
-msgstr ""
+msgstr "Changer de langue"
 
 #: data/templates/footer.html:99
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: data/templates/head.html:13
 msgid "Alternative versions and formats of Fedora for download"
-msgstr ""
+msgstr "Versions et formats alternatifs de Fedora pour téléchargement"
 
 #: data/templates/generic/docs-links.html:8
 msgid "Documentation and other resources"
-msgstr ""
+msgstr "Documentation et autres ressources"
 
 #: data/templates/generic/docs-links.html:9
 #, python-format
@@ -512,6 +791,10 @@ msgid ""
 "requirements for Fedora. Consult <a href=\"%s\">the online release notes</a>"
 " to see minimum requirements and recommendations."
 msgstr ""
+"Si vous voulez vous assurer que votre système respecte les prérequis "
+"minimums avant d'installer Fedora, consultez <a href=\"%s\">les notes de "
+"version en ligne</a> pour connaître ces pré-requis  et pour obtenir des "
+"recommandations."
 
 #: data/templates/generic/docs-links.html:10
 #, python-format
@@ -520,10 +803,13 @@ msgid ""
 " recommend you look through it before installing to your system, since it "
 "answers many common questions."
 msgstr ""
+"Un <a href=\"%s\">guide d'installation complet</a> est également disponible."
+" Nous vous recommandons de le consulter avant d'installer sur votre système "
+"car il apporte une réponse à  de nombreuses questions classiques."
 
 #: data/templates/generic/splash-checksum.html:8
 msgid "Verify your Download!"
-msgstr ""
+msgstr "Vérifier votre téléchargement !"
 
 #: data/templates/generic/splash-checksum.html:9
 #, python-format
@@ -533,11 +819,15 @@ msgid ""
 "same directory as the image you downloaded and follow <a "
 "href=\"../../%s/verify\">these instructions</a>."
 msgstr ""
+"Une fois que vous avez téléchargé une image, vérifiez sa sécurité et son "
+"intégrité. Pour la vérifier, commencez par télécharger le bon fichier de "
+"CHECKSUM dans le  répertoire où vous avez téléchargé l'image  et suivez <a "
+"href=\"../../%s/verify\">ces instructions</a>."
 
 #: data/templates/generic/splash-checksum.html:12
 msgid "Validate 64bit!"
-msgstr ""
+msgstr "Valider 64 bits !"
 
 #: data/templates/generic/splash-checksum.html:15
 msgid "Validate 32bit!"
-msgstr ""
+msgstr "Valider 32bit !"
