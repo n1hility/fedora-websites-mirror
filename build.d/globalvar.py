@@ -30,6 +30,10 @@ release={
     'composedate': '20160616',
     'unofficial_compose': '20160614',
     'alt_composedate': '20161118',
+    # These variables are only necessary to keep fedoraproject.org working
+    'curr_ppc64_id': '25',
+    'prev_ppc64_id': '24',
+    'curr_s390_id': '25',
     # Note that atomic values here get overwritten by the twoweek script.
     'atomic_composedate': '20160616',
     'pre_cloud_composedate': '20150915',
@@ -114,6 +118,8 @@ iso_size={
     'x86_64_sda.qcow2':    '207',       # In MB
     'i686_raw':            '122',       # In MB
     'x86_64_raw':          '117',       # In MB
+    # These variables are only necessary to keep fedoraproject.org working
+    's390_DVD':            '1.5',
     # Lives
     'i686_Live_KDE':       '1.4',       # In GB
     'x86_64_Live_KDE':     '1.3',       # In GB
