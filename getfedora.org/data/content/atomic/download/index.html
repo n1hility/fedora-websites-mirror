@@ -265,7 +265,7 @@
 	              	<h4 class="bold">${_('Vagrant Downloads using Vagrant tools')}</h4>
 	              	<p>${Markup(_('You can use the following command to grab the Vagrant Box images from &lt;a href="%s"&gt;HashiCorp\'s Atlas&lt;/a&gt;.') % ('https://atlas.hashicorp.com/fedora'))}</p>
 	                <pre>vagrant box add fedora/${global_variables.release['curr_atomic_id']}-atomic-host</pre>
-	                <p>${Markup(_('If you\'ve previously run Fedora %s Atomic Host in Vagrant on your machine then you can get the latest version by running:')) % {'rel':global_variables.release['curr_atomic_id']}}</p>
+	                <p>${Markup(_('If you\'ve previously run Fedora %(rel)s Atomic Host in Vagrant on your machine then you can get the latest version by running:')) % {'rel':global_variables.release['curr_atomic_id']}}</p>
 	                <pre>vagrant box update --box=fedora/${global_variables.release['curr_atomic_id']}-atomic-host</pre>
 	              </div>
 	            </div>
