@@ -196,7 +196,7 @@ def collect(curr_atomic_id, next_atomic_id):
 
     # Special case for Atomic ISO latest redirect rule mapping because it's
     # not included in fedmsg data
-    atomic_iso_filename = "Fedora-Atomic-dvd-x86_64-{}-{}.iso".format(
+    atomic_iso_filename = "Fedora-Atomic-ostree-x86_64-{}-{}.iso".format(
         globalvar.release['curr_id'],
         results['release'][composedate_prefix + 'atomic_composedate']
     )
