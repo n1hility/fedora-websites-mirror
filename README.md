@@ -12,6 +12,7 @@ become a member of the websites team
 ### Websites
 This repository contains the sources for the following Fedora Websites:
 
+* http://alt.fedoraproject.org
 * http://arm.fedoraproject.org
 * http://boot.fedoraproject.org
 * http://budget.fedoraproject.org
