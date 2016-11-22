@@ -8,20 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-11-20 17:03+0100\n"
+"POT-Creation-Date: 2016-11-22 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 1.3\n"
 
 #: data/content/index.html:8
 msgid "Fedora Alternative Downloads"
 msgstr ""
 
-#: data/content/index.html:19
+#: data/content/index.html:19 data/templates/footer.html:46
 msgid "Alternative Downloads"
 msgstr ""
 
@@ -51,18 +51,18 @@ msgid ""
 "network."
 msgstr ""
 
-#: data/content/alt/index.html:40 data/content/alt/index.html:54
-#: data/content/alt/index.html:143 data/content/alt/index.html:152
-#: data/content/alt/index.html:215 data/content/alt/index.html:226
-#: data/content/alt/index.html:332 data/content/alt/index.html:346
-#: data/content/alt/index.html:423 data/content/alt/index.html:437
-#: data/content/alt/index.html:526 data/content/alt/index.html:535
-#: data/content/alt/index.html:587 data/content/alt/index.html:596
-#: data/content/alt/index.html:659 data/content/alt/index.html:670
-#: data/content/alt/index.html:732 data/content/alt/index.html:743
-#: data/content/alt/index.html:849 data/content/alt/index.html:882
-#: data/content/alt/index.html:909 data/content/index.html:46
-#: data/content/index.html:107 data/content/index.html:152
+#: data/content/index.html:46 data/content/index.html:107
+#: data/content/index.html:152 data/content/alt/index.html:40
+#: data/content/alt/index.html:54 data/content/alt/index.html:143
+#: data/content/alt/index.html:152 data/content/alt/index.html:215
+#: data/content/alt/index.html:226 data/content/alt/index.html:332
+#: data/content/alt/index.html:346 data/content/alt/index.html:423
+#: data/content/alt/index.html:437 data/content/alt/index.html:526
+#: data/content/alt/index.html:535 data/content/alt/index.html:587
+#: data/content/alt/index.html:596 data/content/alt/index.html:659
+#: data/content/alt/index.html:670 data/content/alt/index.html:732
+#: data/content/alt/index.html:743 data/content/alt/index.html:849
+#: data/content/alt/index.html:882 data/content/alt/index.html:909
 msgid "Fedora Server"
 msgstr ""
 
@@ -71,6 +71,11 @@ msgstr ""
 msgid "64 bit %sMB ISO"
 msgstr ""
 
+#: data/content/index.html:52 data/content/index.html:66
+#: data/content/index.html:80 data/content/index.html:108
+#: data/content/index.html:117 data/content/index.html:126
+#: data/content/index.html:155 data/content/index.html:166
+#: data/content/index.html:177 data/content/index.html:216
 #: data/content/alt/index.html:46 data/content/alt/index.html:60
 #: data/content/alt/index.html:74 data/content/alt/index.html:88
 #: data/content/alt/index.html:102 data/content/alt/index.html:116
@@ -99,52 +104,43 @@ msgstr ""
 #: data/content/alt/index.html:757 data/content/alt/index.html:768
 #: data/content/alt/index.html:779 data/content/alt/index.html:790
 #: data/content/alt/index.html:855 data/content/alt/index.html:883
-#: data/content/alt/index.html:912 data/content/index.html:52
-#: data/content/index.html:66 data/content/index.html:80
-#: data/content/index.html:108 data/content/index.html:117
-#: data/content/index.html:126 data/content/index.html:155
-#: data/content/index.html:166 data/content/index.html:177
-#: data/content/index.html:216 data/content/index.html:362
-#: data/content/index.html:390 data/content/index.html:419
-#: data/templates/footer.html:37
+#: data/content/alt/index.html:912 data/templates/footer.html:37
 msgid "Download"
 msgstr ""
 
-#: data/content/alt/index.html:46 data/content/alt/index.html:60
-#: data/content/alt/index.html:74 data/content/alt/index.html:88
-#: data/content/alt/index.html:102 data/content/alt/index.html:116
-#: data/content/alt/index.html:144 data/content/alt/index.html:153
-#: data/content/alt/index.html:162 data/content/alt/index.html:171
-#: data/content/alt/index.html:180 data/content/alt/index.html:189
-#: data/content/alt/index.html:218 data/content/alt/index.html:229
-#: data/content/alt/index.html:240 data/content/alt/index.html:251
-#: data/content/alt/index.html:262 data/content/alt/index.html:273
-#: data/content/alt/index.html:338 data/content/alt/index.html:352
-#: data/content/alt/index.html:366 data/content/alt/index.html:380
-#: data/content/alt/index.html:394 data/content/alt/index.html:408
-#: data/content/alt/index.html:429 data/content/alt/index.html:443
-#: data/content/alt/index.html:457 data/content/alt/index.html:471
-#: data/content/alt/index.html:485 data/content/alt/index.html:499
-#: data/content/alt/index.html:527 data/content/alt/index.html:536
-#: data/content/alt/index.html:545 data/content/alt/index.html:554
-#: data/content/alt/index.html:563 data/content/alt/index.html:572
-#: data/content/alt/index.html:588 data/content/alt/index.html:597
-#: data/content/alt/index.html:606 data/content/alt/index.html:615
-#: data/content/alt/index.html:624 data/content/alt/index.html:633
-#: data/content/alt/index.html:662 data/content/alt/index.html:673
-#: data/content/alt/index.html:684 data/content/alt/index.html:695
-#: data/content/alt/index.html:706 data/content/alt/index.html:717
-#: data/content/alt/index.html:735 data/content/alt/index.html:746
-#: data/content/alt/index.html:757 data/content/alt/index.html:768
-#: data/content/alt/index.html:779 data/content/alt/index.html:790
-#: data/content/alt/index.html:855 data/content/alt/index.html:883
-#: data/content/alt/index.html:912 data/content/index.html:52
-#: data/content/index.html:66 data/content/index.html:80
-#: data/content/index.html:108 data/content/index.html:117
-#: data/content/index.html:126 data/content/index.html:155
-#: data/content/index.html:166 data/content/index.html:177
-#: data/content/index.html:362 data/content/index.html:390
-#: data/content/index.html:419
+#: data/content/index.html:52 data/content/index.html:66
+#: data/content/index.html:80 data/content/index.html:108
+#: data/content/index.html:117 data/content/index.html:126
+#: data/content/index.html:155 data/content/index.html:166
+#: data/content/index.html:177 data/content/alt/index.html:46
+#: data/content/alt/index.html:60 data/content/alt/index.html:74
+#: data/content/alt/index.html:88 data/content/alt/index.html:102
+#: data/content/alt/index.html:116 data/content/alt/index.html:144
+#: data/content/alt/index.html:153 data/content/alt/index.html:162
+#: data/content/alt/index.html:171 data/content/alt/index.html:180
+#: data/content/alt/index.html:189 data/content/alt/index.html:218
+#: data/content/alt/index.html:229 data/content/alt/index.html:240
+#: data/content/alt/index.html:251 data/content/alt/index.html:262
+#: data/content/alt/index.html:273 data/content/alt/index.html:338
+#: data/content/alt/index.html:352 data/content/alt/index.html:366
+#: data/content/alt/index.html:380 data/content/alt/index.html:394
+#: data/content/alt/index.html:408 data/content/alt/index.html:429
+#: data/content/alt/index.html:443 data/content/alt/index.html:457
+#: data/content/alt/index.html:471 data/content/alt/index.html:485
+#: data/content/alt/index.html:499 data/content/alt/index.html:527
+#: data/content/alt/index.html:536 data/content/alt/index.html:545
+#: data/content/alt/index.html:554 data/content/alt/index.html:563
+#: data/content/alt/index.html:572 data/content/alt/index.html:588
+#: data/content/alt/index.html:597 data/content/alt/index.html:606
+#: data/content/alt/index.html:615 data/content/alt/index.html:624
+#: data/content/alt/index.html:633 data/content/alt/index.html:662
+#: data/content/alt/index.html:673 data/content/alt/index.html:684
+#: data/content/alt/index.html:695 data/content/alt/index.html:706
+#: data/content/alt/index.html:717 data/content/alt/index.html:735
+#: data/content/alt/index.html:746 data/content/alt/index.html:757
+#: data/content/alt/index.html:768 data/content/alt/index.html:779
+#: data/content/alt/index.html:790 data/content/alt/index.html:855
+#: data/content/alt/index.html:883 data/content/alt/index.html:912
 msgid "Verify"
 msgstr ""
 
@@ -176,7 +172,7 @@ msgstr ""
 msgid "torrent.fedoraproject.org"
 msgstr ""
 
-#: data/content/alt/index.html:16 data/content/index.html:208
+#: data/content/index.html:208 data/content/alt/index.html:16
 msgid "Alternate Architectures"
 msgstr ""
 
@@ -217,31 +213,8 @@ msgstr ""
 msgid "Other test composes"
 msgstr ""
 
-#: data/content/index.html:343 data/content/index.html:375
-#: data/content/index.html:402
-msgid "Multi-Boot DVD Image"
-msgstr ""
-
-#: data/content/index.html:348 data/content/index.html:380
-#: data/content/index.html:407
-msgid ""
-"A single, dual-layer DVD images that has both 32-bit and 64-bit versions "
-"of the live media for multiple desktops that Fedora ships. This includes "
-"GNOME, KDE, Xfce, and LXDE."
-msgstr ""
-
-#: data/content/index.html:356 data/content/index.html:389
-#: data/content/index.html:416
-msgid "Multi-Boot DVD"
-msgstr ""
-
-#: data/content/index.html:359
-#, python-format
-msgid "%sGB raw image"
-msgstr ""
-
-#: data/content/alt/index.html:285 data/content/alt/index.html:802
-#: data/content/alt/index.html:924 data/content/index.html:431
+#: data/content/index.html:431 data/content/alt/index.html:285
+#: data/content/alt/index.html:802 data/content/alt/index.html:924
 msgid "Support Resources"
 msgstr ""
 
@@ -641,7 +614,7 @@ msgid "Get Fedora Server"
 msgstr ""
 
 #: data/templates/footer.html:42
-msgid "Get Fedora Cloud"
+msgid "Get Fedora Atomic"
 msgstr ""
 
 #: data/templates/footer.html:43
@@ -654,10 +627,6 @@ msgstr ""
 
 #: data/templates/footer.html:45
 msgid "Fedora ARM<span class=\"sup\">®</span>"
-msgstr ""
-
-#: data/templates/footer.html:46
-msgid "Torrent Downloads"
 msgstr ""
 
 #: data/templates/footer.html:52
