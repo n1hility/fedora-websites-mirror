@@ -16,7 +16,7 @@ checksums['Fedora-Atomic-' + curr_atomic_id + '-' + atomic_composedate + '.0.x86
 checksums['Fedora-Atomic-' + curr_atomic_id + '-' + atomic_composedate + '.0.x86_64.raw.xz'] = atom_path + 'Fedora-CloudImages-' + curr_atomic_id + '-' + atomic_composedate + '.0-x86_64-CHECKSUM';
 checksums['Fedora-Atomic-Vagrant-' + curr_atomic_id + '-' + atomic_composedate + '.0.x86_64.vagrant-libvirt.box'] = atom_path + 'Fedora-CloudImages-' + curr_atomic_id + '-' + atomic_composedate + '.0-x86_64-CHECKSUM';
 checksums['Fedora-Atomic-Vagrant-' + curr_atomic_id + '-' + atomic_composedate + '.0.x86_64.vagrant-virtualbox.box'] = atom_path + 'Fedora-CloudImages-' + curr_atomic_id + '-' + atomic_composedate + '.0-x86_64-CHECKSUM';
-checksums['Fedora-Atomic-dvd-x86_64-' + curr_atomic_id + '-' + atomic_composedate + '.0.iso'] = iso_path + 'Fedora-Atomic-' + curr_atomic_id + '-' + atomic_composedate + '.0-x86_64-CHECKSUM';
+checksums['Fedora-Atomic-ostree-x86_64-' + curr_atomic_id + '-' + atomic_composedate + '.0.iso'] = iso_path + 'Fedora-Atomic-' + curr_atomic_id + '-' + atomic_composedate + '.0-x86_64-CHECKSUM';
 
 var fallback = '../../verify.html';
 
