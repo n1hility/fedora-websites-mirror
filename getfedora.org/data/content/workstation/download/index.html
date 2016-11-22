@@ -36,8 +36,25 @@
       <div class="row">
         <div class="col-md-7 col-md-offset-5 text-left">
           <h2>${Markup(_('Download Fedora %(rel)s Workstation')) % {'rel':global_variables.release['curr_id']}}</h2>
-            <p><a class="btn btn-success ws-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p>
-            <h5>${Markup(_('64-bit %sGB Live Image')) % global_variables.iso_size['x86_64_workstation']}</h5>
+            <div class="fmw-macos hidden">
+              <p><a class="btn btn-success" href="${path}/fmw/FedoraMediaWriter-osx-4.0.4.dmg" role="button">${_('Download')}</a></p>
+              <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Mac OS X&lt;/strong&gt;')) % global_variables.iso_size['macosx']}</p>
+            </div>
+            <div class="fmw-linux hidden">
+              <p><a class="btn btn-success ws-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p>
+              <p>${Markup(_('64-bit %s GB ISO for &lt;strong&gt;Linux&lt;/strong&gt;.')) % global_variables.iso_size['x86_64_workstation']}
+              ${Markup(_('&lt;a href="%s"&gt;Install via DNF&lt;/a&gt; if you are already on Fedora.') % ('https://fedoraproject.org/wiki/DNF_system_upgrade'))}</p>
+            </div>
+            <div class="fmw-windows hidden">
+              <p><a class="btn btn-success" href="${path}/fmw/FedoraMediaWriter-win32-4.0.4.exe" role="button">${_('Download')}</a></p>
+              <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Windows&lt;/strong&gt;')) % global_variables.iso_size['windows']}</p>
+            </div>
+            <p class="fmw-generic hidden">${_('Download Fedora Media Writer for your operating system.')}</p>
+            <p class="fmw-all hidden"><a href="#fmw">${_('Need instructions? Or a different version?')}</a></p>
+            <!-- Having the <noscript> one be separate from generic means we can unhide one of the
+                 above without worrying about jumping/changing text after the DOM finishes loading.
+                 Otherwise we load a default then change it which looks tacky. -->
+            <noscript><p>${_('Download Fedora Media Writer for your operating system.')}</p></noscript>
         </div>
       </div>
     </div>
@@ -45,16 +62,82 @@
     <div class="container download-container top-space">
       <div class="row">
         <div class="col-md-8 text-left bottom-space">
-          <h3>${_('What is a Live image?')}</h3>
-          <p>${_('The Fedora Workstation Live image allows you to make media for your computer that provides a complete, running Fedora Workstation you can run right away. You can use the Live image to test and play with Fedora without making changes to your hard disk. When you are ready, you can install Fedora to your hard disk from the Live image.')}</p>
-          <p>${_('To use this image, you need a drive that can create or "burn" DVDs, or a USB flash drive at least as big as the image.')}</p>
-          <xi:include href="../../../templates/generic/docs-links.html" />
+          <h3>${_('Running Fedora Workstation')}</h3>
+          <p>${_('To run Fedora Workstation, you will need:')}</p>
+          <ul>
+              <li>${_('Fedora Media Writer (download above)')}</li>
+              <li>${Markup(_('A USB Flash drive with at least %s GB space available')) % global_variables.iso_size['x86_64_workstation']}</li>
+            </ul>
+          <p>${_('Fedora Workstation is provided via Fedora Media Writer. Download this program via the download link above and run it on your system, following the prompts to generate a live version (see \'What does "Live" mean?\' to the right) of Fedora Workstation on a USB flash drive. You may then run the live version of Fedora Workstation from your USB flash drive.')}</p>
+          <p>${_('Optionally, you may install Fedora Workstation to a laptop or desktop computer that has at least 1 GHz processor, 1 GB RAM, and 10 GB space available. To do this, run the live version of Fedora Workstation from your USB flash drive on the computer you\'d like to install to, run the Fedora Media Writer application, and follow the on-screen prompts to complete installation.')}</p>
+
+          <h3>${_('Supported Platforms')}</h3>
+          <p>${_('Fedora Media Writer supports the following platforms:')}</p>
+          <ul>
+              <li>${_('Mac OS X')}</li>
+              <li>${_('Windows')}</li>
+              <li>${_('Linux')}</li>
+          </ul>
+          <div class="fmw-macos hidden">
+              <p>${Markup(_('We have auto-detected that you are running &lt;strong&gt;Mac OS X&lt;/strong&gt; and have offered that version for download. If we have detected your operating system incorrectly or you would like to download a different version, please click the "View all platform downloads" button below.'))}</p>
+          </div>
+          <div class="fmw-linux hidden">
+              <p>${Markup(_('We have auto-detected that you are running &lt;strong&gt;Linux&lt;/strong&gt; and have offered that version for download. If we have detected your operating system incorrectly or you would like to download a different version, please click the "View all platform downloads" button below.'))}</p>
+          </div>
+          <div class="fmw-windows hidden">
+              <p>${Markup(_('We have auto-detected that you are running &lt;strong&gt;Windows&lt;/strong&gt; and have offered that version for download. If we have detected your operating system incorrectly or you would like to download a different version, please click the "View all platform downloads" button below.'))}</p>
+          </div>
+
+          <div id="fmw">
+          <a href="#" id="openstack-base-click" class="btn btn-success" role="button">${_('View all platform downloads')}</a>
+          <div id="openstack-base-link" class="reveal" style="display: none;">
+            <div class="row top-margin">
+              <div class="col-xs-12 col-sm-4 text-center">
+                <div class="jumbotron">
+                  <h3>${_('Mac OS X')}</h3>
+                      <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Mac OS X&lt;/strong&gt;')) % global_variables.iso_size['macosx']}</p>
+                </div>
+                <div class="jumbotron download">
+                      <a class="btn btn-success" href="${path}/fmw/FedoraMediaWriter-osx-4.0.4.dmg" role="button">${_('Download')}</a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4 text-center">
+                <div class="jumbotron">
+                  <h3>${_('Windows')}</h3>
+                      <p>${Markup(_('%s MB Fedora Media Writer for &lt;strong&gt;Windows&lt;/strong&gt;')) % global_variables.iso_size['windows']}</p>
+                </div>
+                <div class="jumbotron download">
+                      <a class="btn btn-success" href="${path}/fmw/FedoraMediaWriter-win32-4.0.4.exe" role="button">${_('Download')}</a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4 text-center">
+                <div class="jumbotron fedora">
+                  <h3>${_('Linux')}</h3>
+                      <p>${Markup(_('Available via DNF for &lt;strong&gt;Fedora&lt;/strong&gt;'))}<br />
+                      <a href="https://fedoraproject.org/wiki/How_to_create_and_use_Live_USB" role="button">(${_('More details')})</a></p>
+                </div>
+                <div class="jumbotron linux">
+                      <p>${Markup(_('64-bit %s GB ISO for &lt;strong&gt;Linux&lt;/strong&gt;.')) % global_variables.iso_size['x86_64_workstation']}<br />
+                      <a href="https://fedoraproject.org/wiki/How_to_create_and_use_Live_USB">(${_('How to use this ISO?')})</a></p>
+                      <a class="btn btn-success ws-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a>
+                      <p><a href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-x86_64-CHECKSUM">(${_('Verify this image')})</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+
+
+
           <xi:include href="../../../templates/generic/other-media-sources.html" />
           <hr />
           <xi:include href="../../../templates/export-regulations.html" />
         </div>
         <div class="col-md-3 text-left col-md-offset-1">
           <h3>${_('Other Downloads')}</h3>
+          <p><a class="ws-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('64-bit %sGB Live image')) % global_variables.iso_size['x86_64_workstation']}</a></p>
           <p><a class="ws-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/i386/iso/Fedora-Workstation-Live-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('32-bit %sGB Live image')) % global_variables.iso_size['i386_workstation']}</a></p>
           <p>
           ${_('Netinstall Images:')}
@@ -87,6 +170,17 @@
             </py:when>
           </py:choose>
           </div>
+          <div class="top-margin bottom-margin"><h4>${_('Resources')}</h4></div>
+          <p><i class="fa fa-fw fa-sm header-icon fa-book"></i>${Markup(_('&lt;a href="//docs.fedoraproject.org/release-notes"&gt;&lt;strong&gt;Release Notes&lt;/strong&gt;&lt;/a&gt;'))}</p>
+          <div class="pull-right bottom-step"><p>${_('Learn about changes since the last version of Fedora as well as minimum requirements and recommendations for running Fedora.')}</p></div>
+          <p><i class="fa fa-fw fa-sm header-icon fa-book"></i>${Markup(_('&lt;a href="//docs.fedoraproject.org/install-guide"&gt;&lt;strong&gt;Installation Guide&lt;/strong&gt;&lt;/a&gt;'))}</p>
+          <div class="pull-right bottom-step"><p>${_('We recommend you look through this before installing to your system, since it answers many common questions.')}</p></div>
+          <p><i class="fa fa-fw fa-sm header-icon fa-globe"></i>${Markup(_('&lt;a href="%(commonbugs_url)s"&gt;&lt;strong&gt;Common Bugs&lt;/strong&gt;&lt;/a&gt;') % {'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}</p>
+          <div class="pull-right bottom-margin"><p>${_('An excellent resource to consult in case you run into any issues installing or running Fedora.')}</p></div>
+
+          <div class="bottom-margin"><h4>${_('What does "Live" mean?')}</h4></div>
+          <div class="bottom-step"><p>${_('Fedora Media Writer will create a complete, running Fedora Workstation you can run right away off of a USB drive. You can use the Live image to test and play with Fedora without making changes to your hard disk.')}</p></div>
+          <p>${_('When you are ready, you can install Fedora to your hard disk from within this "live" version of Fedora Workstation.')}</p>
           <div class="bottom-margin">
             <h3>${_('Get more Fedora')}</h3>
               <ul>

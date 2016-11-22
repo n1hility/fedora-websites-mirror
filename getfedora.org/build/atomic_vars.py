@@ -110,30 +110,30 @@ def get_messages(target):
                 yield message
 
 
-def make_templates(curr_id, next_id):
+def make_templates(curr_atomic_id, next_atomic_id):
     return [
         # As things stand now, we only do two-week-atomic stuff for the current
         # stable release.
-        (curr_id, '', ''),
+        (curr_atomic_id, '', ''),
 
         # If we ever move to doing pre-release versions as well, just uncomment
         # the following line and it should all work. We leave it commented out
         # now because querying datagrepper for pre-release results that are not
         # there is much more slow than querying for something that exists.
-        #(next_id, 'pre_cloud_', 'pre_'),
+        #(next_atomic_id, 'pre_atomic_', 'pre_'),
     ]
 
 
 # We cache this guy on disk so we don't hit datagrepper over and over.
 @cache.cache_on_arguments()
-def collect(curr_id, next_id):
+def collect(curr_atomic_id, next_atomic_id):
     results = collections.defaultdict(dict)
 
     # This is the information needed to provide "latest" download targets that
     # redirect to the actual mirrormanager url via htpasswd file
     results['release']['redir_map'] = collections.defaultdict(dict)
 
-    for idx, composedate_prefix, iso_size_prefix in make_templates(curr_id, next_id):
+    for idx, composedate_prefix, iso_size_prefix in make_templates(curr_atomic_id, next_atomic_id):
 
         log.info("Looking for latest atomic release for %s" % idx)
         # Get the *latest* atomic release information.
@@ -224,7 +224,7 @@ def update_age(release):
     """
 
     results = collections.defaultdict(dict)
-    templates = make_templates(release['curr_id'], release['next_id'])
+    templates = make_templates(release['curr_atomic_id'], release['next_atomic_id'])
     for idx, composedate_prefix, iso_size_prefix in templates:
         two_weeks_ago = datetime.now(UTC) - timedelta(days=14)
         timestamp = release[composedate_prefix + 'atomic_ts']

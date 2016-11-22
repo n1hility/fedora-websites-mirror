@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Fedora Atomic')}</title>
+  </head>
+  <body id="cloud">
+
+  <xi:include href="../../templates/cloud/header.html" />
+
+  <header id="head">
+    <div class="container cloud">
+      <div class="row">
+        <div class="col-sm-8 col-md-offset-1 text-left">
+          <h1>${_('Deploy and scale your containerized applications with immutable infrastructure.')}</h1>
+          <h4>${_('Fedora Atomic provides the best platform for your Linux-Docker-Kubernetes (LDK) application stack.')}</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1 text-center">
+            <p><a class="btn btn-success" href="./download/" role="button">${_('Download now')}</a></p>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="jumbotron product-testimonial majorhayden">
+    <div class="container text-center">
+	  <div class="row">
+		 <div class="col-sm-4">
+          <img src="/static/images/cloud/cameron-headershot.jpg" class="img-circle" />
+        </div>
+        <div class="col-sm-8">
+          <blockquote>
+            <p>${Markup(_('&ldquo;We chose to use Fedora Atomic as the base for our Navops Launch &mdash; Kubernetes cluster provisioning solution because our customers trust and already run Red Hat operating systems. We love the immutable aspect of Fedora Atomic which is perfect for containerized environments.&rdquo;'))}</p>
+            <footer><cite>Cameron Brunner, ${_('Chief Architect, Navops by Univa')}</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Feature: Atomic Host -->
+  <div class="jumbotron atomic-host">
+    <div class="container">
+      <div class="row bottom-margin">
+      <div class="col-sm-6 caption">
+        <h2>${_('Atomic Host')}</h2>
+        <p>${_('Atomic Host from Project Atomic is a lightweight, immutable platform, designed with the sole purpose of running containerized applications.')}</p>
+        <p>${_('Fedora\'s version of Atomic Host uses the same package repositories as Fedora Server, and provides the latest versions of the Atomic.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Ostree and CLI -->
+  <div class="jumbotron jumbotron-full">
+    <div class="container-full">
+        <div class="col-md-6 col-xs-12 atomic-ostree">
+          <div class="col-md-5 col-md-offset-5 col-xs-12 top-margin bottom-margin">
+            <h2>${_('OStree Updates')}</h2>
+            <p>${_('Atomically update your system from the latest upstream OStree. Make your servers identical, and easily roll back if there\'s an upgrade problem.')}</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12 atomic-cli">
+          <div class="col-md-5 col-md-offset-2 col-xs-12 top-margin bottom-margin">
+            <h2>${_('Atomic CLI')}</h2>
+            <p>${_('Manage Docker containers, system containers, Atomic Apps, and more using one convenient command-line tool.')}</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Feature: Kubernetes and Openshift -->
+  <div class="jumbotron product-feature stdtools" style="background-color: #ffffff;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 caption top-margin">
+          <h2>${_('Optimized for Kubernetes and OpenShift')}</h2>
+          <p>${_('Building a Kubernetes or Origin cluster to run your containerized applications? Run it on Fedora Atomic, which provides you the platform you need on a smaller, leaner OS.')}</p>
+        </div>
+      </div>
+
+  <!-- Desktop images -->
+      <div class="row top-space bottom-space hidden-xs">
+        <div class="col-sm-4 col-sm-offset-2 screenshot">
+	        <img src="/static/images/cloud/kubernetes.png" />
+        </div>
+        <div class="col-sm-4 col-sm-offset-1 screenshot top-margin">
+          <img src="/static/images/cloud/openshift.png" />
+        </div>
+      </div>
+  <!-- Mobile images -->
+      <div class="row top-space bottom-space text-center  visible-xs">
+        <div class="col-xs-12 screenshot">
+          <img src="/static/images/cloud/kubernetes.png" />
+        </div>
+        <div class="col-xs-12 screenshot top-space">
+          <img src="/static/images/cloud/openshift.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+  <div class="jumbotron bluebox">
+    <div class="container text-center ">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h3>Fedora Cloud images provide leading edge software for development and deployment in public cloud environments.</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+
+
+
+  <!-- Download jumbo -->
+  <div class="jumbotron download-lower hidden-xs">
+	<h3>${_('Ready to give Fedora Atomic a try?')} <a class="btn" href="./download/" role="button">${_('Download now')}</a></h3>
+  </div>
+
+  <!-- Download jumbo for mobile -->
+  <div class="jumbotron download-lower visible-xs">
+    <h3>${_('Ready to give Fedora Cloud a try?')}</h3>
+    <p><a class="btn btn-visible-xs" href="./download/" role="button">${_('Download now')}</a></p>
+  </div>
+
+  <!-- Links to other products -->
+  <xi:include href="../../templates/moretofedora.html" />
+  <div class="bottom-products text-center clearfix">
+	<div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-2 col-xs-12 product-selector">
+            <xi:include href="../../templates/productselector-workstation.html" />
+        </div>
+        <div class="col-sm-4 col-xs-12 product-selector bottom-space">
+            <xi:include href="../../templates/productselector-server.html" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Links to other products-->
+
+  </body>
+</html>

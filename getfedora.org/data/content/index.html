@@ -13,66 +13,98 @@
   <div class="main-head-index">
     <div class="container">
       <div class="row">
-        <div class="col-xs-8 col-xs-offset-2 bottom-margin">
-            <h1 class="thin">${_('Choose Freedom. Choose Fedora.')}</h1>
-            <h4 class="thin">${_('Less setup, more innovation. Choose a flavor of Fedora streamlined for your needs, and get to work right away.')}</h4>
+        <div class="col-xs-12">
+            <h1>${_('Choose Freedom. Choose Fedora.')}</h1>
+            <p><h4>${Markup(_('Less setup, more innovation. Choose a flavor of Fedora&lt;br /&gt;&lt;br /&gt; streamlined for your needs, and get to work right away.'))}</h4></p>
         </div>
       </div>
     </div>
   </div>
 
    <header id="head">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4 col-xs-12 highlight productitem workstation">
+      <div id="product-logo-row">
+        <div class="col-sm-4 col-xs-12 productitem workstation">
+          <div class="edition-logo">
           <a href="../${lang}/workstation">
-            <div class="productitem-logo">
-                <div class="h-caption color"></div>
-            </div></a>
-            <div class="h-body text-justify top-margin liveusb">
-              <p>${_('Fedora Workstation is a polished, easy to use operating system for laptop and desktop computers, with a complete set of tools for developers and makers of all kinds.')}</p>
-              <p class="visible-xs text-center uppercase"><a class="btn btn-edition" href="../${lang}/workstation/download" role="button">${_('Download now')}</a></p>
-            </div>
+            <img src="${path}/static/images/ws-logo.png" />
+            <h3>${_('Workstation')}</h3>
+          </a>
+          <a href="../${lang}/workstation/download">${_('Download Now')}</a>
+
+          </div>
         </div>
-        <div class="col-sm-4 col-xs-12 highlight productitem server">
+        <div class="col-xs-12 h-caption top-margin liveusb productdesc workstation visible-xs">
+            <h4>${_('Fedora Workstation is a polished, easy to use operating system for laptop and desktop computers, with a complete set of tools for developers and makers of all kinds.')}</h4>
+            <p class="text-center uppercase">
+              <a role="button" href="../${lang}/workstation/download" class="btn btn-edition">${_('Download now')}</a>
+            </p>
+        </div>
+        <div class="col-sm-4 col-xs-12 productitem server">
+          <div class="edition-logo">
           <a href="../${lang}/server">
-            <div class="productitem-logo">
-                <div class="h-caption color"></div>
-            </div></a>
-            <div class="h-body text-justify top-margin liveusb">
-              <p>${_('Fedora Server is a powerful, flexible operating system that includes the best and latest datacenter technologies. It puts you in control of all your infrastructure and services.')}</p>
-              <p class="visible-xs text-center uppercase"><a class="btn btn-edition" href="../${lang}/server/download" role="button">${_('Download now')}</a></p>
-            </div>
+            <img src="${path}/static/images/server-logo-next.png" />
+            <h3>${_('Server')}</h3>
+          </a>
+          <a href="../${lang}/server/download">${_('Download Now')}</a>
+          </div>
         </div>
-        <div class="col-sm-4 col-xs-12 highlight productitem cloud">
-          <a href="../${lang}/cloud">
-            <div class="productitem-logo">
-                <div class="h-caption color"></div>
-            </div></a>
-            <div class="h-body text-justify top-margin">
-              <p>${_('Fedora Cloud provides a minimal image of Fedora for use in public and private cloud environments. It includes just the bare essentials making it very light on resources, but you get enough to run your cloud application.')}</p>
-              <p class="visible-xs text-center uppercase bottom-space"><a class="btn btn-edition" href="../${lang}/cloud/download" role="button">${_('Download now')}</a></p>
-            </div>
+        <div class="col-xs-12 h-caption top-margin liveusb productdesc server visible-xs">
+            <h4>${_('Fedora Server is a powerful, flexible operating system that includes the best and latest datacenter technologies. It puts you in control of all your infrastructure and services.')}</h4>
+            <p class="text-center uppercase">
+              <a role="button" href="../${lang}/server/download" class="btn btn-edition">${_('Download now')}</a>
+            </p>
+        </div>
+        <div class="col-sm-4 col-xs-12 productitem atomic">
+          <div class="edition-logo">
+          <a href="../${lang}/atomic">
+            <img src="${path}/static/images/atomic-logo.png" />
+            <h3>${_('Atomic')}</h3>
+          </a>
+          <a href="../${lang}/atomic/download">${_('Download Now')}</a>
+          </div>
+        </div>
+        <div class="col-xs-12 h-caption top-margin productdesc cloud visible-xs">
+            <h4>${_('Fedora Cloud provides a minimal image of Fedora for use in public and private cloud environments. It includes just the bare essentials making it very light on resources, but you get enough to run your cloud application.')}</h4>
+            <p class="text-center uppercase bottom-space">
+              <a role="button" href="../${lang}/atomic/download" class="btn btn-edition">${_('Download now')}</a>
+            </p>
         </div>
       </div>
-      <div class="row bottom-margin-edition hidden-xs">
-	  	  <div class="col-sm-4 text-center">
-		      <p class="uppercase"><a class="btn btn-edition" href="../${lang}/workstation/download" role="button">${_('Download now')}</a></p>
-	  	  </div>
-	  	  <div class="col-sm-4 text-center">
-		      <p class="uppercase"><a class="btn btn-edition" href="../${lang}/server/download" role="button">${_('Download now')}</a></p>
-	  	  </div>
-	  	  <div class="col-sm-4 text-center">
-		      <p class="uppercase"><a class="btn btn-edition" href="../${lang}/cloud/download" role="button">${_('Download now')}</a></p>
-	  	  </div>
-  	  </div>
 
-    </div>
-  </header>
+      <div class="visible-xs col-xs-12 blue-pattern-box"></div>
 
-	<div class="col-xs-12 blue-pattern-box"></div>
+      <div class="row hidden-xs">
+	    <div class="col-xs-12 col-sm-4 productdesc-spacer">
+	       <hr />
+	    </div>
+	    <div class="col-xs-12 col-sm-4 productdesc-spacer">
+		   <hr />
+	    </div>
+	    <div class="col-xs-12 col-sm-4 productdesc-spacer">
+		   <hr />
+	    </div>
+      </div>
+      <div class="row hidden-xs">
+        <div class="col-sm-4 col-xs-12 productdesc workstation">
+          <div class="h-body liveusb">
+            <h4>${_('Fedora Workstation is a polished, easy to use operating system for laptop and desktop computers, with a complete set of tools for developers and makers of all kinds.')}</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 productdesc server">
+          <div class="h-body liveusb">
+            <h4>${_('Fedora Server is a powerful, flexible operating system that includes the best and latest datacenter technologies. It puts you in control of all your infrastructure and services.')}</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 productdesc cloud">
+          <div class="h-body">
+            <h4>${_('Fedora Cloud provides a minimal image of Fedora for use in public and private cloud environments. It includes just the bare essentials making it very light on resources, but you get enough to run your cloud application.')}</h4>
+          </div>
+        </div>
+      </div>
 
-    <div class="text-center grey-pattern-box">
+    </header>
+
+    <div class="text-center grey-pattern-box top-margin">
       <div class="container">
       	<div class="row">
 	        <div class="col-xs-12 col-sm-3">

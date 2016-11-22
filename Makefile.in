@@ -25,7 +25,7 @@ sync = \
 		fi   \
 	fi
 
-all: $(LANGUAGES)
+all:: $(LANGUAGES)
 	cp static/robots.txt out/
 
 static:

@@ -2,33 +2,34 @@
 # -*- coding: utf-8 -*-
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
 release={
-    'prev_id':     '23',
-    'curr_id':     '24',
-    'next_id':     '25',
+    'prev_id':     '24',
+    'curr_id':     '25',
+    'next_id':     '26',
     'curr_name':   '',
     'next_name':   '',
-    'curr_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  'Beta',         # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_ppc64_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_s390_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_AMI_state':  'Beta',   # either 'Alpha', 'Beta' or '' (i.e empty)
-    'prev_arm_id': '23',
-    'prev_ppc64_id': '23',
-    'prev_s390_id': '23',
-    'prev_cloud_id': '23',
-    'curr_arm_id': '24',
-    'curr_ppc64_id': '24',
-    'curr_s390_id': '24',
-    'curr_cloud_id': '24',
-    'curr_cloud_AMI_id': '24',
-    'next_arm_id': '25',
-    'next_ppc64_id': '25',
-    'next_s390_id': '25',
-    'next_cloud_id': '25',
-    'next_cloud_AMI_id': '25',
+    'curr_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_alt_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_AMI_state':  '',   # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_atomic_state':  '',   # either 'Alpha', 'Beta' or '' (i.e empty)
+    'prev_arm_id': '24',
+    'prev_alt_id': '24',
+    'prev_cloud_id': '24',
+    'prev_atomic_id': '24',
+    'curr_arm_id': '25',
+    'curr_alt_id': '25',
+    'curr_cloud_id': '25',
+    'curr_atomic_id': '25',
+    'curr_cloud_AMI_id': '25',
+    'next_arm_id': '26',
+    'next_alt_id': '26',
+    'next_cloud_id': '26',
+    'next_atomic_id': '26',
+    'next_cloud_AMI_id': '26',
     'composedate': '20160616',
     'unofficial_compose': '20160614',
+    'alt_composedate': '20161118',
     # Note that atomic values here get overwritten by the twoweek script.
     'atomic_composedate': '20160616',
     'pre_cloud_composedate': '20150915',
@@ -41,11 +42,18 @@ release={
     # Note that atomic values here get overwritten by the twoweek script.
     'pre_cloud_atomic_composedate': '20150915',
     'pre_cloud_AMI_atomic_composedate': '20150915',
-    'RC_gold': '1.2',             # insert the number of the RC version declared GOLD
-    'RC_build': '1.2',            # sometimes releng use the RC build
+    'RC_gold': '1.3',             # insert the number of the RC version declared GOLD
+    'RC_build': '1.3',            # sometimes releng use the RC build
+    'RC_gold_aarch64': '1.3',     # RC Gold for aarch64
+    'RC_gold_ppc64': '1.2',       # RC Gold for ppc64
+    'RC_gold_s390x': '1.3',       # RC Gold for s390x
     'RC_pre_gold': '1.1',         # insert the number of the prerelease RC version declared GOLD
     'RC_pre_build': '1',          # sometimes releng use the RC build
 
+    'atomic_qcow2_cloud_url': 'FIXME',
+    'atomic_raw_cloud_url': 'FIXME',
+    'atomic_VBvag_cloud_url': 'FIXME',
+    'atomic_libvag_cloud_url': 'FIXME',
     'atomic_freshness': False,
     'atomic_age': '???',
     'pre_cloud_atomic_freshness': False,
@@ -83,24 +91,42 @@ iso_size={
     'x86_64_Netinstall':   '321',       # In MB
     'PPC64_DVD':           '4.3',       # In GB
     'PPC64_Netinstall':    '340',       # In MB
-    's390_DVD':            '4.6',       # In GB
+    'aarch64_Server_DVD':  '1.7',       # In GB
+    'aarch64_Server_net':  '414',       # In MB
+    'aarch64_Cloud_net':   '363',       # In MB
+    'aarch64_qcow2':       '233',       # In MB
+    'aarch64_raw':         '143',       # In MB
+    'aarch64_docker':      '53',        # In MB
+    'ppc64_Server_DVD':    '1.8',       # In GB
+    'ppc64_Server_net':    '447',       # In MB
+    'ppc64_Cloud_net':     '495',       # In MB
+    'ppc64_qcow2':         '286',       # In MB
+    'ppc64_raw':           '186',       # In MB
+    'ppc64_docker':        '61',        # In MB
+    'ppc64le_Server_DVD':  '1.8',       # In GB
+    'ppc64le_Server_net':  '406',       # In MB
+    'ppc64le_Cloud_net':   '405',       # In MB
+    'ppc64le_qcow2':       '272',       # In MB
+    'ppc64le_raw':         '164',       # In MB
+    'ppc64le_docker':      '59',        # In MB
+    's390x_Server_DVD':    '1.6',       # In GB
     'i686_sda.qcow2':      '212',       # In MB
     'x86_64_sda.qcow2':    '207',       # In MB
     'i686_raw':            '122',       # In MB
     'x86_64_raw':          '117',       # In MB
     # Lives
-    'i686_Live_KDE':       '1.2',       # In GB
-    'x86_64_Live_KDE':     '1.2',       # In GB
-    'i686_Live_LXDE':      '964',       # In MB
-    'x86_64_Live_LXDE':    '837',       # In MB
-    'i686_Live_Xfce':      '891',       # In MB
-    'x86_64_Live_Xfce':    '916',       # In MB
-    'i686_Live_Mate':      '1.2',       # In GB
-    'x86_64_Live_Mate':    '1.3',       # In GB
-    'i686_Live_Soas':      '676',       # In MB
-    'x86_64_Live_Soas':    '699',       # In MB
-    'i686_Live_Cinnamon':   '1.2',       # In GB
-    'x86_64_Live_Cinnamon': '1.2',       # In GB
+    'i686_Live_KDE':       '1.4',       # In GB
+    'x86_64_Live_KDE':     '1.3',       # In GB
+    'i686_Live_LXDE':      '999',       # In MB
+    'x86_64_Live_LXDE':    '911',       # In MB
+    'i686_Live_Xfce':      '1.1',       # In GB
+    'x86_64_Live_Xfce':    '1.0',       # In GB
+    'i686_Live_Mate':      '1.4',       # In GB
+    'x86_64_Live_Mate':    '1.4',       # In GB
+    'i686_Live_Soas':      '779',       # In MB
+    'x86_64_Live_Soas':    '700',       # In MB
+    'i686_Live_Cinnamon':   '1.4',       # In GB
+    'x86_64_Live_Cinnamon': '1.3',       # In GB
     # Lives prerelease
     'pre_i686_Live_KDE':    '1.4',       # In GB
     'pre_x86_64_Live_KDE':  '1.3',       # In GB
@@ -118,19 +144,19 @@ iso_size={
     'i686_Live_Security':  '1.2',       # In GB
     'x86_64_Live_Security':'1.1',       # In GB
     'i686_Live_Games':     '3.8',       # In GB
-    'x86_64_Live_Games':   '3.6',       # In GB
+    'x86_64_Live_Games':   '3.8',       # In GB
     'i686_Live_Elab':      '2.5',       # In GB
     'x86_64_Live_Elab':    '2.5',       # In GB
-    'i686_Live_Design':    '1.9',       # In GB
-    'x86_64_Live_Design':  '1.8',       # In GB
-    'i686_Live_Sci-kde':   '3.2',       # In GB
+    'i686_Live_Design':    '2.1',       # In GB
+    'x86_64_Live_Design':  '2.1',       # In GB
+    'i686_Live_Sci-kde':   '2.9',       # In GB
     'x86_64_Live_Sci-kde': '2.9',       # In GB
-    'i686_Live_Robotics':  '2.7',       # In GB
-    'x86_64_Live_Robotics':'2.4',       # In GB
-    'i686_Live_Jam':       '1.7',       # In GB
-    'x86_64_Live_Jam':     '1.7',       # In GB
+    'i686_Live_Robotics':  '2.3',       # In GB
+    'x86_64_Live_Robotics':'2.2',       # In GB
+    'i686_Live_Jam':       '2.0',       # In GB
+    'x86_64_Live_Jam':     '1.9',       # In GB
     'i686_Live_Astronomy': '2.5',       # In GB
-    'x86_64_Live_Astronomy':'2.3',      # In GB
+    'x86_64_Live_Astronomy':'2.4',      # In GB
     # Spins prerelease
     'pre_i686_Live_Security':  '1.1',   # In GB
     'pre_x86_64_Live_Security':'1.1',   # In GB
@@ -151,7 +177,7 @@ iso_size={
     # Server
     'x86_64_server_DVD':   '1.9',       # In GB
     'i386_server_DVD':     '2.0',       # In GB
-    'x86_64_server_net':   '470',       # In MB
+    'x86_64_server_net':   '484',       # In MB
     'i386_server_net':     '464',       # In MB
     # Server prerelease
     'pre_x86_64_server_DVD': '1.7',     # In GB
@@ -159,10 +185,10 @@ iso_size={
     'pre_x86_64_server_net': '422',     # In MB
     'pre_i386_server_net':   '552',     # In MB
     # Workstation
-    'x86_64_workstation':  '1.4',       # In GB
-    'i386_workstation':    '1.6',       # In GB
-    'x86_64_workstation_net': '439',    # In MB
-    'i386_workstation_net': '490',      # In MB
+    'x86_64_workstation':  '1.3',       # In GB
+    'i386_workstation':    '1.4',       # In GB
+    'x86_64_workstation_net': '464',    # In MB
+    'i386_workstation_net': '520',      # In MB
     # Workstation prerelease
     'pre_x86_64_workstation':  '1.3',   # In GB
     'pre_i386_workstation':    '1.4',   # In GB
@@ -170,13 +196,13 @@ iso_size={
     'pre_i386_workstation_net': '530',  # In MB
     # ARM
     'ARM_Workstation':     '1.2',       # In GB
-    'ARM_Server':          '487',       # In MB
+    'ARM_Server':          '562',       # In MB
     'ARM_Minimal':         '441',       # In MB
-    'ARM_KDE':             '1.4',       # In GB
+    'ARM_KDE':             '1.5',       # In GB
     'ARM_Xfce':            '1.0',       # In MB
-    'ARM_LXDE':            '887',       # In MB
+    'ARM_LXDE':            '943',       # In MB
     'ARM_Mate':            '1.3',       # In GB
-    'ARM_SoaS':            '722',       # In MB
+    'ARM_SoaS':            '743',       # In MB
     # ARM prerelease
     'pre_ARM_Workstation': '1.2',       # In GB
     'pre_ARM_Server':      '1.7',       # In GB
@@ -188,22 +214,23 @@ iso_size={
     'pre_ARM_Cinnamon':    '780',       # In MB
     'pre_ARM_SoaS':        '693',       # In MB
     # Cloud
-    'raw_x86_64_cloud':    '128',       # In MB
+    'raw_x86_64_cloud':    '123',       # In MB
     'raw_i386_cloud':      '143',       # In MB
-    'qcow2_x86_64_cloud':  '195',       # In MB
+    'qcow2_x86_64_cloud':  '188',       # In MB
     'qcow2_i386_cloud':    '216',       # In MB
-    'VBvag_cloud':         '210',       # In MB
-    'libvag_cloud':        '201',       # In MB
-    'x86_64_docker':       '42',        # In MB
+    'VBvag_cloud':         '208',       # In MB
+    'libvag_cloud':        '199',       # In MB
+    'x86_64_docker':       '40',        # In MB
     'raw_i386_cloud':      '144',       # In MB
     # Note that atomic values here get overwritten by the twoweek script.
     'atomic_raw_cloud':    '???',       # In MB
     'atomic_qcow2_cloud':  '???',       # In MB
     'atomic_VBvag_cloud':  '???',       # In MB
     'atomic_libvag_cloud': '???',       # In MB
-    'VBvag_cloud':         '254',       # In MB
-    'libvag_cloud':        '245',       # In MB
+    'VBvag_cloud':         '208',       # In MB
+    'libvag_cloud':        '199',       # In MB
     'x86_64_docker':       '40',        # In MB
+    'atomic_iso':          '918',       # In MB
     # Cloud prerelease
     'pre_raw_x86_64_cloud':    '226',   # In MB
     'pre_raw_i386_cloud':      '172',   # In MB

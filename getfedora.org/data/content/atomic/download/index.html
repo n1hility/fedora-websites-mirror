@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../../templates/master.html" />
+  <head>
+    <script type="text/javascript" src="${path}/static/js/cloud_ec2.js"></script>
+
+    <title>${_('Download Fedora Atomic')}</title>
+  </head>
+  <body id="cloud">
+
+  <xi:include href="../../../templates/cloud/header.html" />
+  <xi:include href="../../../templates/regulations.html" />
+  <!--!<div class="mymenu cloudmenu">
+    <div class="container">
+     <div class="row col-md-8 col-md-offset-2 row col-xs-12">
+        <div class="collapse navbar-collapse">
+          <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li><a href="../">About</a></li>
+                <li><a href="#">Take the Tour</a></li>
+                <li class="active"><a href="#">Download</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+  <header class="downloadheader">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-md-offset-5 text-left recover-heading">
+          <h2>${Markup(_('Download Fedora %(rel)s Atomic Host')) % {'rel':global_variables.release['curr_atomic_id']}}</h2>
+            <p>${_('Atomic Host is built every 2 weeks or so.')}</p>
+            <p py:if="not global_variables.release['atomic_freshness']">${Markup(_('The latest two week build did not meet our testing criteria. The images available are from over %(atomic_age)s days ago. Check the Project Atomic blog for updates and information about Atomic blocker bugs.') % global_variables.release)}</p>
+            <p py:if="global_variables.release['atomic_freshness']">${Markup(_('These are the latest official Fedora Atomic Host images, produced %(atomic_age)s days ago.') % global_variables.release)}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container download-container recover-heading top-margin">
+	<div class="row">
+    <div class="col-md-8 col-xs-12">
+      <div class="row top-margin">
+          <div class="col-xs-12">
+              <h2 class="cloudy">${_('Atomic Host Images')}</h2>
+              <p>${_('Fedora Atomic Host is a leading edge base operating system following the Project Atomic model. It is designed around Kubernetes and Docker containers. The images published here showcase that work. Note that the images have passed several levels of automated testing, but are not always subjected to.')}</p>
+              <ul>
+              <li>${Markup(_('&lt;strong&gt;Please test before using new versions in production.&lt;/strong&gt; If you do discover a problem, the Atomic Host tools make it easy to flip back to an earlier release — and if that happens, please also help us by filing bugs or submitting fixes.'))}</li>
+              <li>${Markup(_('&lt;strong&gt;Fedora Atomic Host images are updated roughly every two weeks,&lt;/strong&gt; rather than on the main six-month Fedora cadence. Because development is moving quickly, only the latest major Fedora release is supported.'))}</li>
+              <li>${Markup(_('&lt;strong&gt;Note that different Fedora Atomic Host media are subject to different levels of automatic testing.&lt;/strong&gt; You can learn more about the Atomic project at &lt;a href="%s"&gt;projectatomic.io&lt;/a&gt;, &lt;a href="%s"&gt;click here&lt;/a&gt; to see the current test status.') % ('//projectatomic.io/', '//status/'))}</li>
+            </ul>
+          </div>
+      </div>
+
+      <!-- Start Amazon -->
+        <div class="row">
+            <div class="col-xs-12">
+              <h3>${_('Atomic Host Images for Amazon Public Cloud EC2')}</h3>
+              <p>${_('The links below will provide you listings of available Atomic Host Hardware Virtual Machine (HVM) AMIs by region with buttons to launch them in your Amazon Web Services account. AMI IDs for usage with the AWS Console or command-line tools are also provided.')}</p>
+            </div>
+        </div>
+        <!-- Mobile -->
+        <div class="row visible-xs">
+          <div class="col-xs-12">
+            <h5 class="bold">${_('GP2 Format')}</h5>
+            <p>${_('GP2 format AMIs use faster SSD storage; use these AMIs for speed, although note your storage costs will be more than standard.')}</p>
+            <!-- Modal for EC2 Cloud GP2 Base HVM Instances -->
+            <button type="button" class="btn btn-success btn-fix download-cloud-splash" data-toggle="modal" data-target=".GP2-atomic-mobile-EC2">${_('GP2 HVM AMIs')}</button>
+            <div class="modal fade GP2-atomic-mobile-EC2" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-cloud">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                    <h4 class="modal-title">${Markup(_('Fedora %(rel)s GP2 Atomic Host HVM AMIs')) % {'rel':global_variables.release['curr_atomic_id']}}</h4>
+                  </div>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>${_('Region')}</th>
+                        <th class="hidden-xs">${_('AMI ID')}</th>
+                        <th>${_('Launch')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr py:for="r in global_variables.EC2_regions">
+                        <td py:if="r.code in global_variables.GP2_HVM_atomic_AMI">${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.GP2_HVM_atomic_AMI" class="hidden-xs">${global_variables.GP2_HVM_atomic_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.GP2_HVM_atomic_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.GP2_HVM_atomic_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 top-margin">
+            <h5 class="bold">${_('Standard Format)')}</h5>
+            <p>${_('Standard format AMIs are more suitable if you have infrequently accessed data and want to keep storage cost low.')}</p>
+            <!-- Modal for EC2 Cloud standard Base HVM Instances -->
+            <button type="button" class="btn btn-success btn-fix download-cloud-splash" data-toggle="modal" data-target=".atomic-mobile-EC2">${_('Standard HVM AMIs')}</button>
+            <div class="modal fade atomic-mobile-EC2" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-cloud">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                    <h4 class="modal-title">${Markup(_('Fedora %(rel)s Standard Atomic Host HVM AMIs')) % {'rel':global_variables.release['curr_atomic_id']}}</h4>
+                  </div>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>${_('Region')}</th>
+                        <th class="hidden-xs">${_('AMI ID')}</th>
+                        <th>${_('Launch')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr py:for="r in global_variables.EC2_regions">
+                        <td py:if="r.code in global_variables.HVM_atomic_AMI">${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.HVM_atomic_AMI" class="hidden-xs">${global_variables.HVM_atomic_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.HVM_atomic_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.HVM_atomic_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <!-- Desktop -->
+        <div class="row hidden-xs">
+          <div class="col-sm-6">
+            <h5 class="bold">${_('GP2 Format')}</h5>
+            <p>${_('GP2 format AMIs use faster SSD storage; use these AMIs for speed, although note your storage costs will be more than standard.')}</p>
+          </div>
+          <div class="col-sm-6">
+            <h5 class="bold">${_('Standard Format')}</h5>
+            <p>${_('Standard format AMIs are more suitable if you have infrequently accessed data and want to keep storage cost low.')}</p>
+          </div>
+        </div>
+        <div class="row hidden-xs">
+          <div class="col-sm-6">
+            <!-- Modal for EC2 GP2 Cloud Base HVM Instances -->
+            <button type="button" class="btn btn-success btn-fix download-cloud-splash" data-toggle="modal" data-target=".GP2-atomic-EC2">${_('GP2 HVM AMIs')}</button>
+            <div class="modal fade GP2-atomic-EC2" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-cloud">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                    <h4 class="modal-title">${Markup(_('Fedora %(rel)s GP2 Atomic Host HVM AMIs')) % {'rel':global_variables.release['curr_atomic_id']}}</h4>
+                  </div>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>${_('Region')}</th>
+                        <th class="hidden-xs">${_('AMI ID')}</th>
+                        <th>${_('Launch')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr py:for="r in global_variables.EC2_regions">
+                        <td py:if="r.code in global_variables.GP2_HVM_atomic_AMI">${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.GP2_HVM_atomic_AMI" class="hidden-xs">${global_variables.GP2_HVM_atomic_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.GP2_HVM_atomic_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.GP2_HVM_atomic_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <!-- Modal for EC2 Standard Cloud Base HVM Instances -->
+            <button type="button" class="btn btn-success btn-fix download-cloud-splash" data-toggle="modal" data-target=".atomic-EC2">${_('Standard HVM AMIs')}</button>
+            <div class="modal fade atomic-EC2" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-cloud">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                    <h4 class="modal-title">${Markup(_('Fedora %(rel)s Standard Atomic Host HVM AMIs')) % {'rel':global_variables.release['curr_atomic_id']}}</h4>
+                  </div>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>${_('Region')}</th>
+                        <th class="hidden-xs">${_('AMI ID')}</th>
+                        <th>${_('Launch')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr py:for="r in global_variables.EC2_regions">
+                        <td py:if="r.code in global_variables.HVM_atomic_AMI">${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.HVM_atomic_AMI" class="hidden-xs">${global_variables.HVM_atomic_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.HVM_atomic_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.HVM_atomic_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- End Amazon -->
+
+      <!-- Start Vagrant -->
+        <div class="row">
+            <div class="col-xs-12 top-margin">
+              <h3>${_('Atomic Host Images for Vagrant')}</h3>
+                <p>${Markup(_('Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and Libvirt providers. You can bring up Fedora Atomic Host in a vagrant box by downloading the images from Fedora or using the vagrant tools to pull the images from &lt;a href="%s"&gt;HashiCorp\'s Atlas&lt;/a&gt;.') % ('https://atlas.hashicorp.com/fedora'))}</p>
+          	  <a href="#" id="openstack-base-click" class="btn btn-success download-cloud" role="button">${_('View Vagrant Downloads')}</a>
+	          <div id="openstack-base-link" class="reveal" style="display: none;">
+	            <div class="row">
+	              <h4 class="bold">${_('Vagrant Image Downloads')}</h4>
+	              <p>${Markup(_('These images are Vagrant Boxes images for deployment using &lt;a href="%s"&gt;Vagrant&lt;/a&gt;.') % ('https://www.vagrantup.com/'))}</p>
+	            </div>
+	            <!-- Mobile -->
+	            <div class="row visible-xs">
+	              <div class="col-xs-12">
+	                <h5 class="bold">${_('VirtualBox Image')}</h5>
+	                <p>${_('If you\'re using Vagrant on Mac OS X or Windows, this is likely the image you\'ll want to use.')}</p>
+	                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.release['atomic_VBvag_cloud_url']}" role="button">${_('Download')}</a>
+	                  <p class="caption">${_('64-bit %sMB VirtualBox Base Vagrant Image') % global_variables.iso_size['atomic_VBvag_cloud']}</p>
+	              </div>
+	              <div class="col-xs-12">
+	                <h5 class="bold">${_('libvirt/KVM Image')}</h5>
+	                <p>${_('If you\'re using Vagrant on Fedora, this is the image you\'ll want to use.')}</p>
+	                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.release['atomic_libvag_cloud_url']}" role="button">${_('Download')}</a>
+	                  <p class="caption">${_('64-bit %sMB libvirt/KVM Base Vagrant Image') % global_variables.iso_size['atomic_libvag_cloud']}</p>
+	              </div>
+	            </div>
+
+	              <!-- Desktop -->
+	            <div class="row hidden-xs">
+	              <div class="col-sm-6">
+	                <h5 class="bold">${_('VirtualBox Image')}</h5>
+	                <p>${_('If you\'re using Vagrant on Mac OS X or Windows, this is likely the image you\'ll want to use.')}</p>
+	              </div>
+	              <div class="col-sm-6">
+	                <h5 class="bold">${_('libvirt/KVM Image')}</h5>
+	                <p>${_('If you\'re using Vagrant on Fedora, this is the image you\'ll want to use.')}</p>
+	              </div>
+	            </div>
+	            <div class="row hidden-xs">
+	              <div class="col-sm-6">
+	                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.release['atomic_VBvag_cloud_url']}" role="button">${_('Download')}</a>
+	                  <p class="caption">${_('64-bit %sMB VirtualBox Base Vagrant Image') % global_variables.iso_size['atomic_VBvag_cloud']}</p>
+	              </div>
+	              <div class="col-sm-6">
+	                <a class="btn btn-success btn-fix download-cloud download-cloud-splash" href="${global_variables.release['atomic_libvag_cloud_url']}" role="button">${_('Download')}</a>
+	                  <p class="caption">${_('64-bit %sMB libvirt/KVM Base Vagrant Image') % global_variables.iso_size['atomic_libvag_cloud']}</p>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	    </div>
+	    <div class="row">
+	    	<div class="col-xs-12">
+	          <a href="#" id="openstack-cont-click" class="btn btn-success download-cloud" role="button">${_('View Downloads using Vagrant tools')}</a>
+	          <div id="openstack-cont-link" class="reveal" style="display: none;">
+	            <div class="row">
+	              <div class="col-xs-12">
+	              	<h4 class="bold">${_('Vagrant Downloads using Vagrant tools')}</h4>
+	              	<p>${Markup(_('You can use the following command to grab the Vagrant Box images from &lt;a href="%s"&gt;HashiCorp\'s Atlas&lt;/a&gt;.') % ('https://atlas.hashicorp.com/fedora'))}</p>
+	                <pre>vagrant box add fedora/${global_variables.release['curr_atomic_id']}</pre>
+	                <p>${Markup(_('If you\'ve previously run Fedora %s Atomic Host in Vagrant on your machine then you can get the latest version by running:')) % {'rel':global_variables.release['curr_atomic_id']}}</p>
+	                <pre>vagrant box update --box=fedora/${global_variables.release['curr_atomic_id']}-atomic-host</pre>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	    </div>
+        <div class="row">
+            <div class="col-xs-12 top-margin">
+              <p>${Markup(_('For more information about running Vagrant on Fedora Workstation, see &lt;a href="%s"&gt;our wiki page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Vagrant'))}</p>
+            </div>
+        </div>
+        <!-- End Vagrant -->
+
+        <!-- Start Base images -->
+		      <div class="row">
+		          <div class="col-xs-12">
+		            <h3>${_('Atomic Host Images for Cloud Environments')}</h3>
+		          </div>
+		      </div>
+		      <!-- Mobile -->
+		      <div class="row visible-xs">
+		          <div class="col-xs-12">
+		            <h5 class="bold">${_('qcow2 Image')}</h5>
+		            <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a Qcow2-formatted image for use with OpenStack.')) % {'rel':global_variables.release['curr_id']}}</p>
+		            <a class="btn btn-success download-cloud-splash" href="${global_variables.release['atomic_qcow2_cloud_url']}" role="button">${_('Download')}</a>
+		              <p class="caption">${_('64-bit %sMB Qcow2 Image') % global_variables.iso_size['atomic_qcow2_cloud']}</p>
+		          </div>
+		          <div class="col-xs-12">
+		            <h5 class="bold">${_('Raw Image')}</h5>
+		            <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a compressed raw image format. If you\'re not sure what to use, try this.')) % {'rel':global_variables.release['curr_id']}}</p>
+		            <a class="btn btn-success download-cloud-splash" href="${global_variables.release['atomic_raw_cloud_url']}" role="button">${_('Download')}</a>
+		              <p class="caption">${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.iso_size['atomic_raw_cloud']}</p>
+		          </div>
+		      </div>
+		      <!-- Desktop -->
+		      <div class="row hidden-xs">
+		          <div class="col-sm-6">
+		            <h5 class="bold">${_('qcow2 Image')}</h5>
+		            <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a Qcow2-formatted image for use with OpenStack.')) % {'rel':global_variables.release['curr_id']}}</p>
+		          </div>
+		          <div class="col-sm-6">
+		            <h5 class="bold">${_('Raw Image')}</h5>
+		            <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a compressed raw image format. If you\'re not sure what to use, try this.')) % {'rel':global_variables.release['curr_id']}}</p>
+		          </div>
+		      </div>
+		      <div class="row hidden-xs">
+		          <div class="col-sm-6">
+		            <a class="btn btn-success download-cloud-splash" href="${global_variables.release['atomic_qcow2_cloud_url']}" role="button">${_('Download')}</a>
+		              <p class="caption">${_('64-bit %sMB Qcow2 Image') % global_variables.iso_size['atomic_qcow2_cloud']}</p>
+		          </div>
+		          <div class="col-sm-6">
+		            <a class="btn btn-success download-cloud-splash" href="${global_variables.release['atomic_raw_cloud_url']}" role="button">${_('Download')}</a>
+		              <p class="caption">${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.iso_size['atomic_raw_cloud']}</p>
+		          </div>
+		      </div>
+      <!-- end Base images -->
+
+    <hr />
+    <xi:include href="../../../templates/export-regulations.html" />
+  </div>
+
+    <div class="col-md-3 col-xs-12 col-md-offset-1 top-margin">
+        <h3>${_('Other Downloads')}</h3>
+          <p><a class="download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/Fedora-Atomic-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}/Atomic/x86_64/iso/Fedora-Atomic-ostree-x86_64-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}.iso">${_('Atomic Host ISO image (%sMB)') % global_variables.iso_size['atomic_iso']}</a></p>
+          <p>
+            ${_('Docker:')}
+            <ul>
+              <li><p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Docker/x86_64/images/Fedora-Docker-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.tar.xz">${_('Docker Image (%sMB)') % global_variables.iso_size['x86_64_docker']}</a></p></li>
+            </ul>
+          </p>
+        <div class="top-space bottom-margin"><h4>${_('Resources')}</h4></div>
+          <p><i class="fa fa-fw fa-sm header-icon fa-globe"></i>${Markup(_('&lt;a href="//docs.fedoraproject.org/release-notes"&gt;&lt;strong&gt;Project Atomic: Getting Started&lt;/strong&gt;&lt;/a&gt;'))}</p>
+          <div class="pull-right bottom-step"><p>${_('Documentation on getting started using Project Atomic / Atomic Host.')}</p></div>
+          <p><i class="fa fa-fw fa-sm header-icon fa-envelope-o"></i>${Markup(_('&lt;a href="https://lists.projectatomic.io/mailman/listinfo/atomic"&gt;&lt;strong&gt;Project Atomic: Mailing List&lt;/strong&gt;&lt;/a&gt;'))}</p>
+          <div class="pull-right bottom-step"><p>${Markup(_('Join the upstream mailing list at &lt;a href="%s"&gt;atomic@projectatomic.io&lt;/a&gt;.') % ('mailto:atomic@projectatomic.io'))}</p></div>
+          <p><i class="fa fa-fw fa-sm header-icon fa-comments-o"></i>${Markup(_('&lt;a href="%s"&gt;&lt;strong&gt;Project Atomic: IRC Chat&lt;/strong&gt;&lt;/a&gt;') % ('https://kiwiirc.com/client/irc.freenode.net'))}</p>
+          <div class="pull-right bottom-margin"><p>${Markup(_('Join the Project Atomic channel &lt;strong&gt;#atomic&lt;/strong&gt;&lt;/a&gt; on &lt;strong&gt;irc.freenode.org&lt;/strong&gt;&lt;/a&gt;.'))}</p></div>
+          <div class="top-space bottom-margin">
+            <py:choose>
+            <py:when test="global_variables.release['curr_atomic_state'] == 'Alpha'">
+              <div class="prerelease-box">
+                <h5>${Markup(_('F%(rel)s Alpha')) % {'rel':global_variables.release['next_atomic_id']}}</h5>
+                <h4>${_('Try a pre-release')}</h4>
+                <p>${_('We\'re working on our next release.')}<br />
+                    ${Markup(_('Help us get F%(rel)s ready!')) % {'rel':global_variables.release['next_atomic_id']}}</p>
+                <p><i class="fa fa-fw fa-sm header-icon fa-download"></i><a href="../prerelease">${Markup(_('Download F%(rel)s Alpha images')) % {'rel':global_variables.release['next_atomic_id']}}</a></p>
+                <p><i class="fa fa-fw fa-sm header-icon fa-book"></i><a href="//fedoraproject.org/wiki/QA/Join#release-validation">${_('How to test pre-releases')}</a></p>
+              </div>
+            </py:when>
+            <py:when test="global_variables.release['curr_atomic_state'] == 'Beta'">
+              <div class="prerelease-box">
+                <h5>${Markup(_('F%(rel)s Beta')) % {'rel':global_variables.release['next_atomic_id']}}</h5>
+                <h4>${_('Try a pre-release')}</h4>
+                <p>${_('We\'re working on our next release.')}<br />
+                    ${Markup(_('Help us get F%(rel)s ready!')) % {'rel':global_variables.release['next_atomic_id']}}</p>
+                <p><i class="fa fa-fw fa-sm header-icon fa-download"></i><a href="../prerelease">${Markup(_('Download F%(rel)s Beta images')) % {'rel':global_variables.release['next_atomic_id']}}</a></p>
+                <p><i class="fa fa-fw fa-sm header-icon fa-book"></i><a href="//fedoraproject.org/wiki/QA/Join#release-validation">${_('How to test pre-releases')}</a></p>
+              </div>
+            </py:when>
+          </py:choose>
+          </div>
+          <noscript>
+          <div class="bottom-margin">
+            <h3>${_('Verify')}</h3>
+              <ul>
+              <li>
+                  <p><a href="/verify">${_('Verify your Image')}</a></p>
+              </li>
+              </ul>
+          </div>
+          </noscript>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

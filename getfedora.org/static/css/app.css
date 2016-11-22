@@ -306,7 +306,7 @@ margin-top:4px;
 
 .product-box .product-server,
 .product-box .product-workstation,
-.product-box .product-cloud
+.product-box .product-atomic
 {
   margin: 20px auto;
   display: block;
@@ -336,22 +336,22 @@ margin-top:4px;
  background-image:url(../images/smalllogo-color-workstation.png);
 }
 
-.product-box .product-cloud .greyscale
+.product-box .product-atomic .greyscale
 {
- background-image:url(../images/smalllogo-grey-cloud.png);
+ background-image:url(../images/smalllogo-grey-atomic.png);
 }
 
-.product-box .product-cloud .color
+.product-box .product-atomic .color
 {
- background-image:url(../images/smalllogo-color-cloud.png);
+ background-image:url(../images/smalllogo-color-atomic.png);
 }
 
 .product-box .product-server .greyscale,
 .product-box .product-server:hover .color,
 .product-box .product-workstation .greyscale,
 .product-box .product-workstation:hover .color,
-.product-box .product-cloud .greyscale,
-.product-box .product-cloud:hover .color
+.product-box .product-atomic .greyscale,
+.product-box .product-atomic:hover .color
 {
   opacity:1;
  transition: opacity 0.3s ease;
@@ -359,7 +359,7 @@ margin-top:4px;
 
 .product-box .product-server .color,
 .product-box .product-workstation .color,
-.product-box .product-cloud .color
+.product-box .product-atomic .color
 {
   opacity:0;
   transition: opacity 0.3s ease;
@@ -367,7 +367,7 @@ margin-top:4px;
 
 .product-box .product-server:hover .greyscale,
 .product-box .product-workstation:hover .greyscale,
-.product-box .product-cloud:hover .greyscale
+.product-box .product-atomic:hover .greyscale
 {
  opacity:0;
 }
@@ -495,19 +495,30 @@ margin-top:4px;
 
 .main-head-index
 {
-    background: url(../images/blue-pattern.png) no-repeat right 0px center;
+    background-color: #294172;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.05) inset;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 90px;
+    padding-bottom: 100px;
 }
 
 .main-head-index h1
 {
-    margin-bottom: 0px!important;
+    font-family:'Montserrat';
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-head-index h4
+{
+    font-family:'Open Sans';
+    font-size: 22px;
+    text-align: center;
+    line-height: .8;
 }
 
 .main-head-index h1, .main-head-index h4
@@ -582,6 +593,7 @@ margin-top:4px;
 	.h-caption img { display:block; font-size: 54px; color:#382526; margin-bottom:36px; }
 	.h-caption h4 { color:#382526; font-size: 16px; font-weight: bold; margin-bottom:20px; }
 	.h-body { margin-left: 50px; margin-right: 50px; margin-bottom: 20px; }
+  .h-body h4 { line-height: 1.5; }
 
 .productitem h4
 {
@@ -631,9 +643,6 @@ text-align:center;
  background-image:url(../images/cloud-logo-main.png);
 }
 
-
-
-
 .productitem.workstation .greyscale
 {
  background-image:url(../images/logo-grey-workstation.png);
@@ -649,6 +658,99 @@ text-align:center;
  background-image:url(../images/logo-grey-server.png);
    opacity:1;
 }
+
+/* Editions logo and download button in main index */
+
+.product-logo-row {
+  background: red;
+}
+
+.edition-logo {
+  width: 200px;
+  position: absolute;
+  height: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.edition-logo a + a {
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
+  display: none;
+}
+
+.productitem {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 5em;
+  min-height: 290px;
+}
+
+.productitem img {
+  height: 150px !important;
+  width: 150px !important;
+  position: relative;
+}
+
+.productitem h3 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.productitem a {
+  display: block;
+  font-weight: bolder;
+}
+
+.productitem a, .productitem a:hover {
+  text-decoration: none;
+}
+
+.productitem.workstation {
+  background-image: url("../images/ws-main.png")
+}
+
+.productitem.server {
+  background-image: url("../images/server-main.png")
+}
+
+.productitem.atomic {
+  background-image: url("../images/atomic-main.png")
+}
+
+.productdesc {
+  background-color: none !important;
+  padding: 0;
+  text-align: center;
+}
+
+.productdesc h4 {
+  font-weight: bolder;
+  color: #60605b;
+  padding: 0 60px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.productdesc-spacer hr {
+  color: #3c6eb4;
+  background-color: #3c6eb4;
+  width: 80px;
+  height: 4px !important;
+  text-align: center;
+  border: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* end */
 
 @media
 (-webkit-min-device-pixel-ratio: 2),
@@ -788,7 +890,7 @@ readable*/
 
 #cloud #head
 {
-  background-image: url(../images/cloud/cloud-splash.jpg);
+  background-image: url(../images/cloud/atomic-splash.jpg);
   background-repeat: repeat-x;
   background-position: 50% auto;
   padding-top:40px;
@@ -805,6 +907,27 @@ readable*/
 {
 background-color:#A07CBC;
 margin-top:20px;
+}
+
+#cloud .caption, .atomic-cli, .atomic-ostree {
+  font-size: 125%;
+  text-shadow: 1px 1px 5px #fff;
+}
+
+#cloud .atomic-ostree {
+  background-image: url(../images/cloud/atomic-ostree.png);
+  background-position: center center;
+  min-height: 350px;
+}
+
+#cloud .atomic-cli {
+  background-image: url(../images/cloud/atomic-cli.png);
+  min-height: 350px;
+  background-color: #9e8eac;
+  background-repeat: no-repeat !important;
+  background-position: left !important;
+  color: white;
+  text-shadow: 1px 1px 1px #555;
 }
 
 #cloud .download-lower .btn
@@ -836,12 +959,6 @@ margin-top:20px;
   color: #fff;
 }
 
-#cloud .ostree.product-feature
-{
-  background-image:url(../images/darktriangles.png);
-  color:#eee;
-}
-
 #cloud .product-testimonial {
   background-size: cover;
   border-bottom: 15px solid #A07CBC;
@@ -863,7 +980,9 @@ margin-top:20px;
 
 #cloud .downloadheader a,
 #cloud h5.bold,
+#cloud h4.bold,
 #cloud p.bold a {
+
   font-weight: bold;
 }
 
@@ -890,6 +1009,10 @@ margin-top:20px;
   margin: 1.5em;
   padding: 1em 1.5em;
   background: #eee;
+}
+
+#cloud .img-circle {
+  margin-top: 40px;
 }
 
 /*Pre-release page */
@@ -992,10 +1115,12 @@ ul.list-spaces li{ margin-bottom:10px; }
 
 /* Helpers */
 .container-full { margin: 0 auto; width: 100%; }
+.jumbotron-full { padding: 0;}
 .top-space { margin-top: 60px; }
 .top-margin { margin-top:20px; }
 .bottom-space { margin-bottom: 60px; }
 .bottom-margin { margin-bottom:20px; }
+.bottom-margin h4 { line-height: 1.5; }
 .bottom-step { margin-bottom:10px; }
 .bottom-margin-edition { margin-bottom:40px; }
 .recover-heading { padding-bottom: 30px; } /* Recover the margin added by h1-h3 for even-ness. */
@@ -1087,6 +1212,10 @@ img.pull-left { margin-right: 10px; }
   background-color: #7BCF3E;
 }
 
+#fmw .btn-success {
+  background-color: #7BCF3E;
+}
+
 #fmw .linux .btn {
   background-color: #7BCF3E;
 }
@@ -1119,6 +1248,12 @@ img.pull-left { margin-right: 10px; }
   }
     #fmw .linux {
       margin-top: 5px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .main-head-index h1 {
+    font-size: 44px;
   }
 }
 
