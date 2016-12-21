@@ -124,6 +124,41 @@ a.btn-lg {
   font-size: 120%;
 }
 
+#head .cloudbox {
+  background-image: url("../images/cloud-pattern_blue.png");
+  color: #777;
+  background-repeat: repeat-x;
+  height: 469px;
+}
+
+#head .cloudbox h2 {
+  color: #fff;
+  margin-top: 20px;
+}
+
+#head .cloudbox h1 {
+  color: #fff;
+  margin-top: 50px;
+  padding-top: 30px;
+  font-family: "Montserrat";
+  font-weight: bolder;
+  font-size: 52px;
+}
+
+#head .cloudbox p {
+  color: #fff;
+  text-align: center;
+  padding: 0 0 70px;
+  font-size: 22px;
+}
+
+#head .bluebox .no-pad p {
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  font-size: 22px;
+}
+
 .bluebox {
   background-color: #3c6eb4;
   color: #777;
