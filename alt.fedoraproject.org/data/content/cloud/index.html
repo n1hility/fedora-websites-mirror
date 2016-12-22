@@ -141,197 +141,49 @@
 
   <div class="white-hr"></div>
 
-
-  <!-- Power -->
+  <!-- Vagrant -->
     <!-- Desktop -->
-  <div class="jumbotron main-head hidden-xs hidden-sm">
+  <div class="jumbotron main-head hidden-xs hidden-sm hidden-md">
     <div class="container using">
       <div class="row">
-        <div class="col-xs-12 top-margin">
-        <h2>${_('Power Architecture')}</h2>
+        <div class="col-lg-12 top-margin">
+        <h2>${Markup(_('Fedora %(rel)s Base Cloud Images for Vagrant')) % {'rel':global_variables.release['curr_id']}}</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-3 product-feature">
-        <p>${_('PPC64 images are for installation on IBM Power systems or OpenPOWER systems.')}</p>
-        </div>
-        <div class="col-md-9">
-          <div class="white">
-            <div class="col-md-1">
-            <img src="/static/images/server.png" />
-            </div>
-            <div class="col-md-4">
-            <h3>${_('Fedora Server')}</h3>
-            </div>
-            <div class="col-md-3">
-            <p>${Markup(_('%sGB dvd iso')) % global_variables.iso_size['ppc64_Server_DVD']}</p>
-            </div>
-            <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64/iso/Fedora-Server-dvd-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-            </div>
-          </div>
-          <div class="white">
-            <div class="col-md-1">
-            <img src="/static/images/server.png" />
-            </div>
-            <div class="col-md-4">
-            <h3>${_('Fedora Server')}</h3>
-            </div>
-            <div class="col-md-3">
-            <p>${Markup(_('%sMB netinstall iso')) % global_variables.iso_size['ppc64_Server_net']}</p>
-            </div>
-            <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64/iso/Fedora-Server-netinst-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-            </div>
-          </div>
-          <div class="white">
-            <div class="col-md-1">
-            <img src="/static/images/cloud.png" />
-            </div>
-            <div class="col-md-4">
-            <h3>${_('Fedora Cloud')}</h3>
-            </div>
-            <div class="col-md-3">
-            <p>${Markup(_('%sMB netinstall iso')) % global_variables.iso_size['ppc64_Cloud_net']}</p>
-            </div>
-            <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/ppc64/iso/Fedora-Cloud-netinst-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-            </div>
-          </div>
-          <div class="white">
-            <div class="col-md-1">
-            <img src="/static/images/cloud.png" />
-            </div>
-            <div class="col-md-4">
-            <h3>${_('Fedora Cloud')}</h3>
-            </div>
-            <div class="col-md-3">
-            <p>${Markup(_('%sMB qcow2 image')) % global_variables.iso_size['ppc64_qcow2']}</p>
-            </div>
-            <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.ppc64.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-            </div>
-          </div>
-          <div class="white">
-            <div class="col-md-1">
-            <img src="/static/images/cloud.png" />
-            </div>
-            <div class="col-md-4">
-            <h3>${_('Fedora Cloud')}</h3>
-            </div>
-            <div class="col-md-3">
-            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ppc64_raw']}</p>
-            </div>
-            <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.ppc64.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-            </div>
-          </div>
-          <div class="white">
-            <div class="col-md-1">
-            <img src="/static/images/docker.png" />
-            </div>
-            <div class="col-md-4">
-            <h3>${_('Fedora Docker')}</h3>
-            </div>
-            <div class="col-md-3">
-            <p>${Markup(_('%sMB Docker image')) % global_variables.iso_size['ppc64_docker']}</p>
-            </div>
-            <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Docker/ppc64/images/Fedora-Docker-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.ppc64.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-            </div>
-          </div>
+        <div class="col-lg-12 product-feature">
+        <p>${_('These images are Vagrant Boxes images for deployment using Vagrant. If you\'re using Vagrant on Mac OS X or Windows, the VirtualBox image is likely the image you\'ll want to use. If you\'re using Vagrant on Fedora, use the libvirt/KVM image.')}</p>
         </div>
       </div>
-      <div class="row top-space">
-        <div class="col-md-3 product-feature">
-        <p>${_('PPC64LE images are for installation on IBM Power systems or OpenPOWER systems.')}</p>
-        </div>
-        <div class="col-md-9">
+      <div class="row">
           <div class="white">
-            <div class="col-md-1">
-            <img src="/static/images/server.png" />
-            </div>
-            <div class="col-md-4">
-            <h3>${_('Fedora Server')}</h3>
-            </div>
-            <div class="col-md-3">
-            <p>${Markup(_('%sGB dvd iso')) % global_variables.iso_size['ppc64le_Server_DVD']}</p>
-            </div>
-            <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64le/iso/Fedora-Server-dvd-ppc64le-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-            </div>
-          </div>
-          <div class="white">
-            <div class="col-md-1">
-            <img src="/static/images/server.png" />
-            </div>
-            <div class="col-md-4">
-            <h3>${_('Fedora Server')}</h3>
-            </div>
-            <div class="col-md-3">
-            <p>${Markup(_('%sMB netinstall iso')) % global_variables.iso_size['ppc64le_Server_net']}</p>
-            </div>
-            <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64le/iso/Fedora-Server-netinst-ppc64le-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-            </div>
-          </div>
-          <div class="white">
-            <div class="col-md-1">
+            <div class="col-lg-1">
             <img src="/static/images/cloud.png" />
             </div>
-            <div class="col-md-4">
-            <h3>${_('Fedora Cloud')}</h3>
+            <div class="col-lg-5">
+            <h3>${_('VirtualBox image')}</h3>
             </div>
-            <div class="col-md-3">
-            <p>${Markup(_('%sMB netinstall iso')) % global_variables.iso_size['ppc64le_Cloud_net']}</p>
+            <div class="col-lg-2">
+            <p>${Markup(_('%sMB vbox image')) % global_variables.iso_size['aarch64_Server_DVD']}</p>
             </div>
-            <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/ppc64le/iso/Fedora-Cloud-netinst-ppc64le-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
             </div>
           </div>
           <div class="white">
-            <div class="col-md-1">
+            <div class="col-lg-1">
             <img src="/static/images/cloud.png" />
             </div>
-            <div class="col-md-4">
-            <h3>${_('Fedora Cloud')}</h3>
+            <div class="col-lg-5">
+            <h3>${_('libvirt/KVM image')}</h3>
             </div>
-            <div class="col-md-3">
-            <p>${Markup(_('%sMB qcow2 image')) % global_variables.iso_size['ppc64le_qcow2']}</p>
+            <div class="col-lg-2">
+            <p>${Markup(_('%sMB libvirt image')) % global_variables.iso_size['aarch64_Server_DVD']}</p>
             </div>
-            <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.ppc64le.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-            </div>
-          </div>
-          <div class="white">
-            <div class="col-md-1">
-            <img src="/static/images/cloud.png" />
-            </div>
-            <div class="col-md-4">
-            <h3>${_('Fedora Cloud')}</h3>
-            </div>
-            <div class="col-md-3">
-            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['ppc64le_raw']}</p>
-            </div>
-            <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.ppc64le.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
             </div>
           </div>
-          <div class="white">
-            <div class="col-md-1">
-            <img src="/static/images/docker.png" />
-            </div>
-            <div class="col-md-4">
-            <h3>${_('Fedora Docker')}</h3>
-            </div>
-            <div class="col-md-3">
-            <p>${Markup(_('%sMB Docker image')) % global_variables.iso_size['ppc64le_docker']}</p>
-            </div>
-            <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Docker/ppc64le/images/Fedora-Docker-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.ppc64le.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -341,31 +193,22 @@
     <div class="container using">
       <div class="row">
         <div class="col-xs-12">
-        <h2>${_('Power Architecture')}</h2>
+        <h2>${Markup(_('Fedora %(rel)s Base Cloud Images for Vagrant')) % {'rel':global_variables.release['curr_id']}}</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12 product-feature">
-        <p>${_('PPC64 images are for installation on IBM Power systems or OpenPOWER systems.')}</p>
+        <p>${_('These images are Vagrant Boxes images for deployment using Vagrant. If you\'re using Vagrant on Mac OS X or Windows, the VirtualBox image is likely the image you\'ll want to use. If you\'re using Vagrant on Fedora, use the libvirt/KVM image.')}</p>
         </div>
       </div>
       <div class="row">
         <div class="white">
           <div class="col-xs-3">
-          <img src="/static/images/server.png" />
+          <img src="/static/images/cloud.png" />
           </div>
           <div class="col-xs-9">
-          <h3>${_('Fedora Server')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64/iso/Fedora-Server-dvd-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-          </div>
-        </div>
-        <div class="white">
-          <div class="col-xs-3">
-          <img src="/static/images/server.png" />
-          </div>
-          <div class="col-xs-9">
-          <h3>${_('Fedora Server')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64/iso/Fedora-Server-netinst-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          <h3>${_('VirtualBox image')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
           </div>
         </div>
         <div class="white">
@@ -373,96 +216,8 @@
           <img src="/static/images/cloud.png" />
           </div>
           <div class="col-xs-9">
-          <h3>${_('Fedora Cloud')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/ppc64/iso/Fedora-Cloud-netinst-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-          </div>
-        </div>
-        <div class="white">
-          <div class="col-xs-3">
-          <img src="/static/images/cloud.png" />
-          </div>
-          <div class="col-xs-9">
-          <h3>${_('Fedora Cloud')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.ppc64.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-          </div>
-        </div>
-        <div class="white">
-          <div class="col-xs-3">
-          <img src="/static/images/cloud.png" />
-          </div>
-          <div class="col-xs-9">
-          <h3>${_('Fedora Cloud')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.ppc64.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-          </div>
-        </div>
-        <div class="white">
-          <div class="col-xs-3">
-          <img src="/static/images/docker.png" />
-          </div>
-          <div class="col-xs-9">
-          <h3>${_('Fedora Docker')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Docker/ppc64/images/Fedora-Docker-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.ppc64.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="row top-space">
-        <div class="col-xs-12 product-feature">
-        <p>${_('PPC64LE images are for installation on IBM Power systems or OpenPOWER systems.')}</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="white">
-          <div class="col-xs-3">
-          <img src="/static/images/server.png" />
-          </div>
-          <div class="col-xs-9">
-          <h3>${_('Fedora Server')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64le/iso/Fedora-Server-dvd-ppc64le-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-          </div>
-        </div>
-        <div class="white">
-          <div class="col-xs-3">
-          <img src="/static/images/server.png" />
-          </div>
-          <div class="col-xs-9">
-          <h3>${_('Fedora Server')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64le/iso/Fedora-Server-netinst-ppc64le-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-          </div>
-        </div>
-        <div class="white">
-          <div class="col-xs-3">
-          <img src="/static/images/cloud.png" />
-          </div>
-          <div class="col-xs-9">
-          <h3>${_('Fedora Cloud')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/ppc64le/iso/Fedora-Cloud-netinst-ppc64le-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-          </div>
-        </div>
-        <div class="white">
-          <div class="col-xs-3">
-          <img src="/static/images/cloud.png" />
-          </div>
-          <div class="col-xs-9">
-          <h3>${_('Fedora Cloud')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.ppc64le.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-          </div>
-        </div>
-        <div class="white">
-          <div class="col-xs-3">
-          <img src="/static/images/cloud.png" />
-          </div>
-          <div class="col-xs-9">
-          <h3>${_('Fedora Cloud')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.ppc64le.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-          </div>
-        </div>
-        <div class="white">
-          <div class="col-xs-3">
-          <img src="/static/images/docker.png" />
-          </div>
-          <div class="col-xs-9">
-          <h3>${_('Fedora Docker')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Docker/ppc64le/images/Fedora-Docker-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.ppc64le.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          <h3>${_('libvirt/KVM image')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
           </div>
         </div>
       </div>
@@ -470,25 +225,25 @@
   </div>
 
   <!-- Tablets-->
-  <div class="jumbotron main-head visible-sm">
+  <div class="jumbotron main-head hidden-xs hidden-lg">
     <div class="container using">
       <div class="row">
-        <div class="col-xs-12">
-        <h2>${_('Power Architecture')}</h2>
+        <div class="col-sm-12">
+        <h2>${Markup(_('Fedora %(rel)s Base Cloud Images for Vagrant')) % {'rel':global_variables.release['curr_id']}}</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 product-feature">
-        <p>${_('These images are for installation on IBM Power systems or OpenPOWER systems.')}</p>
+        <div class="col-sm-12 product-feature">
+        <p>${_('These images are Vagrant Boxes images for deployment using Vagrant. If you\'re using Vagrant on Mac OS X or Windows, the VirtualBox image is likely the image you\'ll want to use. If you\'re using Vagrant on Fedora, use the libvirt/KVM image.')}</p>
         </div>
       </div>
       <div class="row">
         <div class="white">
           <div class="col-sm-3">
-          <img src="/static/images/server.png" />
+          <img src="/static/images/cloud.png" />
           </div>
           <div class="col-sm-5">
-          <h3>${_('Fedora Server')}</h3>
+          <h3>${_('VirtualBox image')}</h3>
           </div>
           <div class="col-sm-4">
           <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64/iso/Fedora-Server-dvd-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
@@ -496,10 +251,10 @@
         </div>
         <div class="white">
           <div class="col-sm-3">
-          <img src="/static/images/server.png" />
+          <img src="/static/images/cloud.png" />
           </div>
           <div class="col-sm-5">
-          <h3>${_('Fedora Server')}</h3>
+          <h3>${_('libvirt/KVM image')}</h3>
           </div>
           <div class="col-sm-4">
           <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/ppc64/iso/Fedora-Server-netinst-ppc64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
@@ -509,127 +264,22 @@
     </div>
   </div>
 
-  <!-- Resources -->
-  <div class="jumbotron main-head">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <h2>${_('Support Resources')}</h2>
-        </div>
-      </div>
-      <div class="row top-margin">
-        <div class="col-md-4 col-xs-12">
-        <div class="col-xs-12 text-center">
-          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
-          <p>${Markup(_('A wiki page with information about Power Architecture on Fedora is available on the &lt;a href="%s"&gt;Fedora Project Wiki&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Architectures/PowerPC'))}</p>
-        </div>
-        </div>
-        <div class="col-md-4 col-xs-12">
-        <div class="col-xs-12 text-center">
-          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
-          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;ppc@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/ppc'))}</p>
-        </div>
-        </div>
-        <div class="col-md-4 col-xs-12">
-        <div class="col-xs-12 text-center">
-          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
-          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-ppc&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-ppc'))}</p>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="white-hr"></div>
-  <!-- end PowerPC -->
+<!-- Resources -->
 
-  <!-- s390x -->
-    <!-- Desktop -->
-  <div class="jumbotron main-head hidden-xs hidden-sm">
-    <div class="container using">
-      <div class="row">
-        <div class="col-xs-12 top-margin">
-        <h2>${_('s390x Architecture')}</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 product-feature">
-        <p>${_('If you want to install Fedora on IBM z Systems, then you are looking for this architecture.')}</p>
-        </div>
-        <div class="col-md-9">
-          <div class="white">
-            <div class="col-md-1">
-            <img src="/static/images/server.png" />
-            </div>
-            <div class="col-md-4">
-            <h3>${_('Fedora Server')}</h3>
-            </div>
-            <div class="col-md-3">
-            <p>${Markup(_('%sGB dvd iso')) % global_variables.iso_size['s390x_Server_DVD']}</p>
-            </div>
-            <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/s390x/iso/Fedora-Server-dvd-s390x-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Mobile phones-->
-  <div class="jumbotron main-head visible-xs">
-    <div class="container using">
-      <div class="row">
-        <div class="col-xs-12">
-        <h2>${_('s390x Architecture')}</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 product-feature">
-        <p>${_('If you want to install Fedora on IBM z Systems, then you are looking for this architecture.')}</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="white">
-          <div class="col-xs-3">
-          <img src="/static/images/server.png" />
-          </div>
-          <div class="col-xs-9">
-          <h3>${_('Fedora Server')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/s390x/iso/Fedora-Server-dvd-s390x-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Tablets-->
-  <div class="jumbotron main-head visible-sm">
-    <div class="container using">
-      <div class="row">
-        <div class="col-xs-12">
-        <h2>${_('s390x Architecture')}</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 product-feature">
-        <p>${_('If you want to install Fedora on IBM z Systems, then you are looking for this architecture.')}</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="white">
-          <div class="col-sm-3">
-          <img src="/static/images/server.png" />
-          </div>
-          <div class="col-sm-5">
-          <h3>${_('Fedora Server')}</h3>
-          </div>
-          <div class="col-sm-4">
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/s390x/iso/Fedora-Server-dvd-s390x-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- Resources -->
   <div class="jumbotron main-head">
