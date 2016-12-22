@@ -265,6 +265,203 @@
   </div>
 
   <div class="white-hr"></div>
+  <!-- end Vagrant -->
+
+  <!-- EC2 AMI IDs -->
+    <!-- Desktop -->
+  <div class="jumbotron main-head hidden-xs hidden-sm hidden-md">
+    <div class="container using">
+      <div class="row">
+        <div class="col-lg-12 top-margin">
+        <h2>${Markup(_('Fedora %(rel)s Base Cloud Images for Amazon Public Cloud')) % {'rel':global_variables.release['curr_id']}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 product-feature">
+        <p>${_('The links below will provide you listings of available AMIs by region with buttons to launch them in your Amazon Web Services account. AMI IDs for usage with the AWS Console or command-line tools are also provided.')}</p>
+        <p>${_('All images are available in two formats: a GP2 format which uses faster SSD storage, and a standard format which is more suitable if you have infrequently accessed data and you want to keep storage cost low.')}</p>
+        <p>${_('If you know you need a paravirtual format image for EC2, use the Paravirtual (PV) format. If you\'re unsure which image to choose, use the Hardware Virtual Machine (HVM) format. It can provide the same or better performance than PV images.')}</p>
+        </div>
+      </div>
+      <div class="row">
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-lg-7">
+            <h3>${_('GP2 HVM AMIs')}</h3>
+            </div>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Click and launch')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-lg-7">
+            <h3>${_('Standard HVM AMIs')}</h3>
+            </div>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Click and launch')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-lg-7">
+            <h3>${_('GP2 Paravirtual AMIs')}</h3>
+            </div>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Click and launch')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-lg-7">
+            <h3>${_('Standard Paravirtual AMIs')}</h3>
+            </div>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Click and launch')}</a></p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile phones-->
+  <div class="jumbotron main-head visible-xs">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${Markup(_('Fedora %(rel)s Base Cloud Images for Amazon Public Cloud')) % {'rel':global_variables.release['curr_id']}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('The links below will provide you listings of available AMIs by region with buttons to launch them in your Amazon Web Services account. AMI IDs for usage with the AWS Console or command-line tools are also provided.')}</p>
+        <p>${_('All images are available in two formats: a GP2 format which uses faster SSD storage, and a standard format which is more suitable if you have infrequently accessed data and you want to keep storage cost low.')}</p>
+        <p>${_('If you know you need a paravirtual format image for EC2, use the Paravirtual (PV) format. If you\'re unsure which image to choose, use the Hardware Virtual Machine (HVM) format. It can provide the same or better performance than PV images.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('GP2 HVM AMIs')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Click and launch')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Standard HVM AMIs')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Click and launch')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('GP2 PV AMIs')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Click and launch')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Standard PV AMIs')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Click and launch')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tablets-->
+  <div class="jumbotron main-head hidden-xs hidden-lg">
+    <div class="container using">
+      <div class="row">
+        <div class="col-sm-12">
+        <h2>${Markup(_('Fedora %(rel)s Base Cloud Images for Amazon Public Cloud')) % {'rel':global_variables.release['curr_id']}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 product-feature">
+        <p>${_('The links below will provide you listings of available AMIs by region with buttons to launch them in your Amazon Web Services account. AMI IDs for usage with the AWS Console or command-line tools are also provided.')}</p>
+        <p>${_('All images are available in two formats: a GP2 format which uses faster SSD storage, and a standard format which is more suitable if you have infrequently accessed data and you want to keep storage cost low.')}</p>
+        <p>${_('If you know you need a paravirtual format image for EC2, use the Paravirtual (PV) format. If you\'re unsure which image to choose, use the Hardware Virtual Machine (HVM) format. It can provide the same or better performance than PV images.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('GP2 HVM AMIs')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Click and launch')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Standard HVM AMIs')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Click and launch')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('GP2 Paravirtual AMIs')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Click and launch')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Standard Paravirtual AMIs')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Click and launch')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-hr"></div>
+  <!-- end EC2 AMI IDs -->
+
+
+
+
+
+
+
+
 <!-- Resources -->
 
 
