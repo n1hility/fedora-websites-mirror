@@ -292,7 +292,33 @@
             <h3>${_('GP2 HVM AMIs')}</h3>
             </div>
             <div class="col-lg-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Click to launch')}</a></p>
+            <p class="download" data-toggle="modal" data-target=".GP2-base-EC2-mobile">${_('Click to launch')}</p>
+            <div class="modal fade GP2-base-EC2-mobile" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-cloud">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                    <h4 class="modal-title">${Markup(_('Fedora %(rel)s GP2 Base Cloud HVM AMIs')) % {'rel':global_variables.release['curr_id']}}</h4>
+                  </div>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>${_('Region')}</th>
+                        <th class="hidden-xs">${_('AMI ID')}</th>
+                        <th class="text-center">${_('Launch')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr py:for="r in global_variables.EC2_regions">
+                        <td py:if="r.code in global_variables.GP2_HVM_base_AMI">${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.GP2_HVM_base_AMI" class="hidden-xs">${global_variables.GP2_HVM_base_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.GP2_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.GP2_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
             </div>
           </div>
           <div class="white">
