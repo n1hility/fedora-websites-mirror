@@ -6,10 +6,10 @@
 }
 
 .grey {
-	background-color: #58595b;
+	background-color: #f0f0f0;
 	margin: 0 auto;
 	width: 100%;
-	color: #fff;
+	color: #555;
 }
 
 .product-header {
@@ -36,22 +36,18 @@
 
 /* Header doc */
 
-.border {
-  border-right: 2px solid #ccc;
-}
-
 .bluebox h3 {
   color: #ccc;
   margin-top: 28px;
 }
 
 .bluebox a {
-	color: #ccc;
+	color: #fff;
 	text-decoration: none;
 }
 
 .bluebox a:hover {
-	color: #fff;
+	color: #eee;
 	text-decoration: none;
 }
 
@@ -100,7 +96,7 @@ a:focus.title {
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  margin-right: 60px;
+  margin-right: 30px;
   margin-bottom: -15px;
   padding: 5px 10px;
 }
@@ -130,12 +126,14 @@ p.month {
 }
 
 .comments {
-  background-color: #294172;
-  color: #fff;
-  padding: 5px 10px;
+  color: #555;
+  padding: 5px;
   width: 60px;
   float: right;
   font-size: 16px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  moz-border-radius: 5px;
 }
 
 .comment-icon {
@@ -225,10 +223,6 @@ li.right {
 /* special classes for small screens */
 
 @media (max-width: 767px) {
-  .border {
-  	border-bottom: 2px solid #ccc;
-    border-right: none;
-  }
 
   .white img {
 	width: 700px;
@@ -256,4 +250,3 @@ li.right {
   }
 }
 /* end small screens classes */
-
