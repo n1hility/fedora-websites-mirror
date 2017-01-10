@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Fedora Cloud')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/cloud/header.html" />
+
+  <header id="head">
+    <div class="col-xs-12 text-center widewrapper cloudbox">
+      <h1>${_('Fedora Cloud')}</h1>
+      <p>${_('Cloud Base Images')}</p>
+    </div>
+  </header>
+
+  <div class="jumbotron main-head hidden-xs hidden-sm hidden-md">
+    <div class="container using">
+      <div class="row">
+        <div class="col-lg-12 top-margin">
+        <h2>${Markup(_('Fedora %(rel)s Cloud Base Images')) % {'rel':global_variables.release['curr_id']}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 product-feature">
+        <p>${_('Fedora Cloud Base images are for creating general purpose virtual machines (VMs). You can use the Qcow 2 image for use with Openstack or the compressed raw image. If you are not sure what to use, try the raw image.')}</p>
+        </div>
+      </div>
+      <div class="row">
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-lg-5">
+            <h3>${_('Cloud Base compressed raw image')}</h3>
+            </div>
+            <div class="col-lg-2">
+            <p>${Markup(_('%sMB raw.xz image')) % global_variables.iso_size['raw_x86_64_cloud']}</p>
+            </div>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-lg-5">
+            <h3>${_('Cloud Base image for Openstack')}</h3>
+            </div>
+            <div class="col-lg-2">
+            <p>${Markup(_('%sMB qcow2 image')) % global_variables.iso_size['qcow2_x86_64_cloud']}</p>
+            </div>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile phones-->
+  <div class="jumbotron main-head visible-xs">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${Markup(_('Fedora %(rel)s Cloud Base images')) % {'rel':global_variables.release['curr_id']}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('Fedora Cloud Base images are for creating general purpose virtual machines (VMs). You can use the Qcow 2 image for use with Openstack or the compressed raw image. If you are not sure what to use, try the raw image.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Cloud Base raw')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Cloud Base qcow2')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tablets-->
+  <div class="jumbotron main-head hidden-xs hidden-lg">
+    <div class="container using">
+      <div class="row">
+        <div class="col-sm-12">
+        <h2>${Markup(_('Fedora %(rel)s Cloud Base images')) % {'rel':global_variables.release['curr_id']}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 product-feature">
+        <p>${_('Fedora Cloud Base images are for creating general purpose virtual machines (VMs). You can use the Qcow 2 image for use with Openstack or the compressed raw image. If you are not sure what to use, try the raw image.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Cloud Base raw image')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Cloud Base qcow2 image')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-hr"></div>
+
+  <!-- Vagrant -->
+    <!-- Desktop -->
+  <div class="jumbotron main-head hidden-xs hidden-sm hidden-md">
+    <div class="container using">
+      <div class="row">
+        <div class="col-lg-12 top-margin">
+        <h2>${Markup(_('Fedora %(rel)s Cloud Base Images for Vagrant')) % {'rel':global_variables.release['curr_id']}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 product-feature">
+        <p>${_('These images are Vagrant Boxes images for deployment using Vagrant. If you\'re using Vagrant on Mac OS X or Windows, the VirtualBox image is likely the image you\'ll want to use. If you\'re using Vagrant on Fedora, use the libvirt/KVM image.')}</p>
+        </div>
+      </div>
+      <div class="row">
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-lg-5">
+            <h3>${_('VirtualBox image')}</h3>
+            </div>
+            <div class="col-lg-2">
+            <p>${Markup(_('%sMB vbox image')) % global_variables.iso_size['VBvag_cloud']}</p>
+            </div>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-lg-5">
+            <h3>${_('libvirt/KVM image')}</h3>
+            </div>
+            <div class="col-lg-2">
+            <p>${Markup(_('%sMB libvirt image')) % global_variables.iso_size['libvag_cloud']}</p>
+            </div>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile phones-->
+  <div class="jumbotron main-head visible-xs">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${Markup(_('Fedora %(rel)s Cloud Base Images for Vagrant')) % {'rel':global_variables.release['curr_id']}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('These images are Vagrant Boxes images for deployment using Vagrant. If you\'re using Vagrant on Mac OS X or Windows, the VirtualBox image is likely the image you\'ll want to use. If you\'re using Vagrant on Fedora, use the libvirt/KVM image.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('VirtualBox image')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('libvirt/KVM image')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tablets-->
+  <div class="jumbotron main-head hidden-xs hidden-lg">
+    <div class="container using">
+      <div class="row">
+        <div class="col-sm-12">
+        <h2>${Markup(_('Fedora %(rel)s Cloud Base Images for Vagrant')) % {'rel':global_variables.release['curr_id']}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 product-feature">
+        <p>${_('These images are Vagrant Boxes images for deployment using Vagrant. If you\'re using Vagrant on Mac OS X or Windows, the VirtualBox image is likely the image you\'ll want to use. If you\'re using Vagrant on Fedora, use the libvirt/KVM image.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('VirtualBox image')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('libvirt/KVM image')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-hr"></div>
+  <!-- end Vagrant -->
+
+  <!-- EC2 AMI IDs -->
+    <!-- Desktop -->
+  <div class="jumbotron main-head hidden-xs">
+    <div class="container using">
+      <div class="row">
+        <div class="col-sm-12 top-margin">
+        <h2>${Markup(_('Fedora %(rel)s Cloud Base Images for Amazon Public Cloud')) % {'rel':global_variables.release['curr_id']}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 product-feature">
+        <p>${_('The links below will provide you listings of available AMIs by region with buttons to launch them in your Amazon Web Services account. AMI IDs for usage with the AWS Console or command-line tools are also provided.')}</p>
+        <p>${_('All images are available in two formats: a GP2 format which uses faster SSD storage, and a standard format which is more suitable if you have infrequently accessed data and you want to keep storage cost low.')}</p>
+        <p>${_('If you know you need a paravirtual format image for EC2, use the Paravirtual (PV) format. If you\'re unsure which image to choose, use the Hardware Virtual Machine (HVM) format. It can provide the same or better performance than PV images.')}</p>
+        </div>
+      </div>
+      <div class="row">
+          <div class="white">
+            <div class="col-sm-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-sm-7">
+            <h3>${_('GP2 HVM AMIs')}</h3>
+            </div>
+            <div class="col-sm-4">
+            <p class="download ec2" data-toggle="modal" data-target=".GP2-base-EC2-desktop">${_('Click to launch')}</p>
+            <div class="modal fade GP2-base-EC2-desktop" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-cloud">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                    <h4 class="modal-title">${Markup(_('Fedora %(rel)s GP2 Base Cloud HVM AMIs')) % {'rel':global_variables.release['curr_id']}}</h4>
+                  </div>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>${_('Region')}</th>
+                        <th class="hidden-xs">${_('AMI ID')}</th>
+                        <th class="text-center">${_('Launch')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr py:for="r in global_variables.EC2_regions">
+                        <td py:if="r.code in global_variables.GP2_HVM_base_AMI">${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.GP2_HVM_base_AMI" class="hidden-xs">${global_variables.GP2_HVM_base_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.GP2_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.GP2_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-sm-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-sm-7">
+            <h3>${_('Standard HVM AMIs')}</h3>
+            </div>
+            <div class="col-sm-4">
+            <p class="download ec2" data-toggle="modal" data-target=".base-EC2-desktop">${_('Click to launch')}</p>
+            <div class="modal fade base-EC2-desktop" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-cloud">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                    <h4 class="modal-title">${Markup(_('Fedora %(rel)s Standard Base Cloud HVM AMIs')) % {'rel':global_variables.release['curr_id']}}</h4>
+                  </div>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>${_('Region')}</th>
+                        <th class="hidden-xs">${_('AMI ID')}</th>
+                        <th class="text-center">${_('Launch')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr py:for="r in global_variables.EC2_regions">
+                        <td py:if="r.code in global_variables.HVM_base_AMI">${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.HVM_base_AMI" class="hidden-xs">${global_variables.HVM_base_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-sm-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-sm-7">
+            <h3>${_('GP2 PV AMIs')}</h3>
+            </div>
+            <div class="col-sm-4">
+            <p class="download ec2" data-toggle="modal" data-target=".GP2-base-EC2-PV-desktop">${_('Click to launch')}</p>
+            <div class="modal fade GP2-base-EC2-PV-desktop" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-cloud">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                    <h4 class="modal-title">${Markup(_('Fedora %(rel)s GP2 Base Cloud PV AMIs')) % {'rel':global_variables.release['curr_id']}}</h4>
+                  </div>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>${_('Region')}</th>
+                        <th class="hidden-xs">${_('AMI ID')}</th>
+                        <th class="text-center">${_('Launch')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr py:for="r in global_variables.EC2_regions">
+                        <td>${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.GP2_PV_base_AMI" class="hidden-xs">${global_variables.GP2_PV_base_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.GP2_PV_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.GP2_PV_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-sm-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-sm-7">
+            <h3>${_('Standard PV AMIs')}</h3>
+            </div>
+            <div class="col-sm-4">
+            <p class="download ec2" data-toggle="modal" data-target=".base-EC2-PV-desktop">${_('Click to launch')}</p>
+            <div class="modal fade base-EC2-PV-desktop" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-cloud">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                    <h4 class="modal-title">${Markup(_('Fedora %(rel)s Standard Base Cloud PV AMIs')) % {'rel':global_variables.release['curr_id']}}</h4>
+                  </div>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>${_('Region')}</th>
+                        <th class="hidden-xs">${_('AMI ID')}</th>
+                        <th class="text-center">${_('Launch')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr py:for="r in global_variables.EC2_regions">
+                        <td>${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.PV_base_AMI" class="hidden-xs">${global_variables.PV_base_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.PV_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.PV_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile phones-->
+  <div class="jumbotron main-head visible-xs">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${Markup(_('Fedora %(rel)s Cloud Base Images for Amazon Public Cloud')) % {'rel':global_variables.release['curr_id']}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('The links below will provide you listings of available AMIs by region with buttons to launch them in your Amazon Web Services account. AMI IDs for usage with the AWS Console or command-line tools are also provided.')}</p>
+        <p>${_('All images are available in two formats: a GP2 format which uses faster SSD storage, and a standard format which is more suitable if you have infrequently accessed data and you want to keep storage cost low.')}</p>
+        <p>${_('If you know you need a paravirtual format image for EC2, use the Paravirtual (PV) format. If you\'re unsure which image to choose, use the Hardware Virtual Machine (HVM) format. It can provide the same or better performance than PV images.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+            <div class="col-xs-3">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-xs-9">
+            <h3>${_('GP2 HVM AMIs')}</h3>
+            <p class="download ec2" data-toggle="modal" data-target=".GP2-base-EC2-mobile">${_('Click to launch')}</p>
+            <div class="modal fade GP2-base-EC2-mobile" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-cloud">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                    <h4 class="modal-title">${Markup(_('Fedora %(rel)s GP2 Base Cloud HVM AMIs')) % {'rel':global_variables.release['curr_id']}}</h4>
+                  </div>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>${_('Region')}</th>
+                        <th class="hidden-xs">${_('AMI ID')}</th>
+                        <th class="text-center">${_('Launch')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr py:for="r in global_variables.EC2_regions">
+                        <td py:if="r.code in global_variables.GP2_HVM_base_AMI">${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.GP2_HVM_base_AMI" class="hidden-xs">${global_variables.GP2_HVM_base_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.GP2_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.GP2_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="white">
+            <div class="col-xs-3">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-xs-9">
+            <h3>${_('Standard HVM AMIs')}</h3>
+            <p class="download ec2" data-toggle="modal" data-target=".base-EC2-mobile">${_('Click to launch')}</p>
+            <div class="modal fade base-EC2-mobile" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-cloud">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                    <h4 class="modal-title">${Markup(_('Fedora %(rel)s Standard Base Cloud HVM AMIs')) % {'rel':global_variables.release['curr_id']}}</h4>
+                  </div>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>${_('Region')}</th>
+                        <th class="hidden-xs">${_('AMI ID')}</th>
+                        <th class="text-center">${_('Launch')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr py:for="r in global_variables.EC2_regions">
+                        <td py:if="r.code in global_variables.HVM_base_AMI">${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.HVM_base_AMI" class="hidden-xs">${global_variables.HVM_base_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-xs-3">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-xs-9">
+            <h3>${_('GP2 PV AMIs')}</h3>
+            <p class="download ec2" data-toggle="modal" data-target=".GP2-base-EC2-PV-mobile">${_('Click to launch')}</p>
+            <div class="modal fade GP2-base-EC2-PV-mobile" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-cloud">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                    <h4 class="modal-title">${Markup(_('Fedora %(rel)s GP2 Base Cloud PV AMIs')) % {'rel':global_variables.release['curr_id']}}</h4>
+                  </div>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>${_('Region')}</th>
+                        <th class="hidden-xs">${_('AMI ID')}</th>
+                        <th class="text-center">${_('Launch')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr py:for="r in global_variables.EC2_regions">
+                        <td>${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.GP2_PV_base_AMI" class="hidden-xs">${global_variables.GP2_PV_base_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.GP2_PV_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.GP2_PV_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-xs-3">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-xs-9">
+            <h3>${_('Standard PV AMIs')}</h3>
+            <p class="download ec2" data-toggle="modal" data-target=".base-EC2-PV-mobile">${_('Click to launch')}</p>
+            <div class="modal fade base-EC2-PV-mobile" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-cloud">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                    <h4 class="modal-title">${Markup(_('Fedora %(rel)s Standard Base Cloud PV AMIs')) % {'rel':global_variables.release['curr_id']}}</h4>
+                  </div>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>${_('Region')}</th>
+                        <th class="hidden-xs">${_('AMI ID')}</th>
+                        <th class="text-center">${_('Launch')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr py:for="r in global_variables.EC2_regions">
+                        <td>${_(r.long)}</td>
+                        <td py:if="r.code in global_variables.PV_base_AMI" class="hidden-xs">${global_variables.PV_base_AMI[r.code]}</td>
+                        <td py:if="r.code in global_variables.PV_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.PV_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-hr"></div>
+  <!-- end EC2 AMI IDs -->
+
+  <!-- Links to other products -->
+  <xi:include href="../../templates/morecloud.html" />
+  <div class="bottom-products text-center clearfix">
+  <div class="container">
+      <div class="row">
+        <div class="col-xs-12 product-selector bottom-space">
+            <xi:include href="../../templates/productselector-atomic.html" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Links to other products-->
+
+  <!-- Resources -->
+  <div class="jumbotron main-head">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12">
+        <div class="col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('A wiki page with information about Fedora Cloud and its images is available &lt;a href="%s"&gt;here&lt;/a&gt;.') % ('https://fedoracloud.readthedocs.io/en/latest/whatis.html'))}</p>
+        </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+        <div class="col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;cloud@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/cloud'))}</p>
+        </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+        <div class="col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-cloud&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-cloud'))}</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="white-hr"></div>
+  <!-- end s390x -->
+
+
+
+  </body>
+</html>
