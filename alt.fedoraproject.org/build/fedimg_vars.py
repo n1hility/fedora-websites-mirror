@@ -81,20 +81,6 @@ def collect(release):
             'PV_base_AMI':      lambda e: e.get('virt_type') == 'paravirtual' and e.get('vol_type') == 'standard',
             'GP2_PV_base_AMI':  lambda e: e.get('virt_type') == 'paravirtual' and e.get('vol_type') == 'gp2',
         }),
-        #("Fedora-Atomic-{curr_cloud_AMI_id}-{atomic_composedate}.x86_64", {
-        #   'HVM_atomic_AMI':     lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') == 'standard',
-        #   'GP2_HVM_atomic_AMI': lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') == 'gp2',
-        #}),
-        #("Fedora-Cloud-Base-{next_cloud_AMI_id}_{curr_cloud_AMI_state}-{RC_pre_gold}.x86_64", {
-        #    'pre_HVM_base_AMI':     lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') == 'standard',
-        #   'pre_GP2_HVM_base_AMI': lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') == 'gp2',
-        #    'pre_PV_base_AMI':      lambda e: e.get('virt_type') == 'paravirtual' and e.get('vol_type') == 'standard',
-        #    'pre_GP2_PV_base_AMI':  lambda e: e.get('virt_type') == 'paravirtual' and e.get('vol_type') == 'gp2',
-        #}),
-        #("Fedora-Cloud-Atomic-{next_cloud_AMI_id}_{curr_cloud_AMI_state}-{manual_pre_cloud_AMI_atomic_composedate}.x86_64", {
-        #    'pre_HVM_atomic_AMI':     lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') == 'standard',
-        #    'pre_GP2_HVM_atomic_AMI': lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') == 'gp2',
-        #}),
     ]
 
     for template, buckets in templates:
