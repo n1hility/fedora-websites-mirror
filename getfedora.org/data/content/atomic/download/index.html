@@ -329,17 +329,11 @@
 
     <div class="col-md-3 col-xs-12 col-md-offset-1 top-margin">
         <h3>${_('Other Downloads')}</h3>
-          <p><a class="download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/Fedora-Atomic-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}/Atomic/x86_64/iso/Fedora-Atomic-ostree-x86_64-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}.iso">${_('Atomic Host ISO image (%sMB)') % global_variables.iso_size['atomic_iso']}</a></p>
-          <p>
-            ${_('Docker:')}
-            <ul>
-              <li><p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Docker/x86_64/images/Fedora-Docker-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.tar.xz">${_('Docker Image (%sMB)') % global_variables.iso_size['x86_64_docker']}</a></p></li>
-            </ul>
-            ${_('Cloud Base Images:')}
-            <ul>
-              <li><p><a href="https://cloud.fedoraproject.org/">https://cloud.fedoraproject.org</a></p></li>
-            </ul>
-          </p>
+          <ul>
+            <li><p><a class="download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/Fedora-Atomic-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}/Atomic/x86_64/iso/Fedora-Atomic-ostree-x86_64-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}.iso">${_('Atomic Host ISO image (%sMB)') % global_variables.iso_size['atomic_iso']}</a></p></li>
+            <li><p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Docker/x86_64/images/Fedora-Docker-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.tar.xz">${_('Docker Image (%sMB)') % global_variables.iso_size['x86_64_docker']}</a></p></li>
+            <li><p><a href="https://cloud.fedoraproject.org/">Fedora Cloud Base images</a></p></li>
+          </ul>
         <div class="top-space bottom-margin"><h4>${_('Resources')}</h4></div>
           <p><i class="fa fa-fw fa-sm header-icon fa-globe"></i>${Markup(_('&lt;a href="https://www.projectatomic.io/docs/quickstart/"&gt;&lt;strong&gt;Project Atomic: Getting Started&lt;/strong&gt;&lt;/a&gt;'))}</p>
           <div class="pull-right bottom-step"><p>${_('Documentation on getting started using Project Atomic / Atomic Host.')}</p></div>
