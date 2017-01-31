@@ -25,7 +25,7 @@
     </div>
   </header>
 
-  <!-- Servers -->
+  <!-- Network Installers -->
   <div class="jumbotron main-head hidden-xs hidden-sm">
     <div class="container using">
       <div class="row">
@@ -85,7 +85,7 @@
     </div>
   </div>
 
-  <!-- Servers mobile phones-->
+  <!-- Network Installers mobile phones-->
   <div class="jumbotron main-head visible-xs">
     <div class="container using">
       <div class="row">
@@ -130,7 +130,7 @@
     </div>
   </div>
 
-  <!-- Servers mobile tablets-->
+  <!-- Network Installers mobile tablets-->
   <div class="jumbotron main-head visible-sm">
     <div class="container using">
       <div class="row">
@@ -238,28 +238,45 @@
     </div>
   </div>
 
-    <!-- Everything -->
+<!-- Everything -->
   <div class="jumbotron main-head top-space visible-lg hidden-xs hidden-sm hidden-md">
     <div class="container using">
       <div class="row">
         <div class="col-xs-12">
-        <h2>${_('Everything Images')}</h2>
+        <h2>${_('Everything')}</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-3 product-feature">
-        <p>${_('Everything.')}</p>
+        <div class="col-md-3 product-feature">
+        <p>${_(' ')}</p>
         </div>
-        <div class="col-lg-9">
-            <div class="white">
-            <div class="col-lg-1">
+        <div class="col-md-9">
+          <div class="white">
+            <div class="col-md-1">
             <img src="/static/images/ev.png" />
             </div>
-            <div class="col-lg-6">
+            <div class="col-md-4">
             <h3>${_('Everything')}</h3>
             </div>
-            <div class="col-lg-4 col-lg-offset-1">
-            <p class="download"><a href="https://dl.fedoraproject.org/pub/fedora/linux/releases/25/Everything/">${Markup(_('View Images &gt;'))}</a></p>
+            <div class="col-md-3">
+            <p>${Markup(_('64 bit %sMB ISO')) % global_variables.iso_size['x86_64_ev']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${_('Download')}</a> | <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Everything/x86_64/iso/Fedora-Everything-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/ev.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Everything')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('32 bit %sMB ISO')) % global_variables.iso_size['i386_ev']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Everything/i386/iso/Fedora-Everything-netinst-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${_('Download')}</a> | <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Everything/i386/iso/Fedora-Everything-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-i386-CHECKSUM">${_('Verify')}</a></p>
             </div>
           </div>
         </div>
@@ -272,22 +289,31 @@
     <div class="container using">
       <div class="row">
         <div class="col-xs-12">
-        <h2>${_('Everything Images')}</h2>
+        <h2>${_('Everything')}</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12 product-feature">
-        <p>${_('Everything.')}</p>
+        <p>${_(' ')}</p>
         </div>
       </div>
       <div class="row">
-          <div class="white">
+        <div class="white">
           <div class="col-xs-3">
           <img src="/static/images/ev.png" />
           </div>
           <div class="col-xs-9">
           <h3>${_('Everything')}</h3>
-          <p class="download"><a href="https://dl.fedoraproject.org/pub/fedora/linux/releases/25/Everything/">${Markup(_('View Images &gt;'))}</a></p>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${_('Download')}</a> | <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Everything/x86_64/iso/Fedora-Everything-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/ev.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Everything')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Everything/i386/iso/Fedora-Everything-netinst-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${_('Download')}</a> | <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Everything/i386/iso/Fedora-Everything-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-i386-CHECKSUM">${_('Verify')}</a></p>
           </div>
         </div>
       </div>
@@ -299,16 +325,16 @@
     <div class="container using">
       <div class="row">
         <div class="col-xs-12">
-        <h2>${_('Everything Images')}</h2>
+        <h2>${_('Everything')}</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12 product-feature">
-        <p>${_('Everything.')}</p>
+        <p>${_(' ')}</p>
         </div>
       </div>
       <div class="row">
-          <div class="white">
+        <div class="white">
           <div class="col-sm-3">
           <img src="/static/images/ev.png" />
           </div>
@@ -316,7 +342,18 @@
           <h3>${_('Everything')}</h3>
           </div>
           <div class="col-sm-4">
-          <p class="download"><a href="https://dl.fedoraproject.org/pub/fedora/linux/releases/25/Everything/">${Markup(_('View Images &gt;'))}</a></p>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${_('Download')}</a> | <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Everything/x86_64/iso/Fedora-Everything-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/ev.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Everything')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Everything/i386/iso/Fedora-Everything-netinst-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${_('Download')}</a> | <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Everything/i386/iso/Fedora-Everything-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-i386-CHECKSUM">${_('Verify')}</a></p>
           </div>
         </div>
       </div>

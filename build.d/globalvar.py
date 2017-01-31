@@ -254,7 +254,10 @@ iso_size={
     'manual_pre_atomic_raw_cloud':    '100',   # In MB
     'manual_pre_atomic_qcow2_cloud':  '200',   # In MB
     'manual_pre_atomic_VBvag_cloud':  '300',   # In MB
-    'manual_pre_atomic_libvag_cloud': '400'    # In MB
+    'manual_pre_atomic_libvag_cloud': '400',   # In MB
+    # Everything release
+    'x86_64_ev':        '477',   #In MB
+    'i386_ev':          '465'   #In MB
 }
 
 # Redirect EC2 images
