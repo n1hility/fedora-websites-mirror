@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-01-08 23:09+0100\n"
+"POT-Creation-Date: 2017-02-07 17:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,6 +67,7 @@ msgid "Fedora Server"
 msgstr ""
 
 #: data/content/index.html:49 data/content/index.html:63
+#: data/content/index.html:265
 #, python-format
 msgid "64 bit %sMB ISO"
 msgstr ""
@@ -99,9 +100,7 @@ msgstr ""
 #: data/content/alt/index.html:757 data/content/alt/index.html:768
 #: data/content/alt/index.html:779 data/content/alt/index.html:790
 #: data/content/alt/index.html:855 data/content/alt/index.html:883
-#: data/content/alt/index.html:912 data/content/cloud/index-old.html:82
-#: data/content/cloud/index-old.html:88 data/content/cloud/index-old.html:106
-#: data/content/cloud/index-old.html:110 data/content/cloud/index.html:45
+#: data/content/alt/index.html:912 data/content/cloud/index.html:45
 #: data/content/cloud/index.html:59 data/content/cloud/index.html:86
 #: data/content/cloud/index.html:95 data/content/cloud/index.html:124
 #: data/content/cloud/index.html:135 data/content/cloud/index.html:170
@@ -112,7 +111,11 @@ msgstr ""
 #: data/content/index.html:108 data/content/index.html:117
 #: data/content/index.html:126 data/content/index.html:155
 #: data/content/index.html:166 data/content/index.html:177
-#: data/content/index.html:216 data/templates/footer.html:37
+#: data/content/index.html:216 data/content/index.html:235
+#: data/content/index.html:268 data/content/index.html:282
+#: data/content/index.html:313 data/content/index.html:322
+#: data/content/index.html:354 data/content/index.html:365
+#: data/templates/footer.html:37
 msgid "Download"
 msgstr ""
 
@@ -144,18 +147,20 @@ msgstr ""
 #: data/content/alt/index.html:757 data/content/alt/index.html:768
 #: data/content/alt/index.html:779 data/content/alt/index.html:790
 #: data/content/alt/index.html:855 data/content/alt/index.html:883
-#: data/content/alt/index.html:912 data/content/cloud/index-old.html:463
-#: data/content/cloud/index.html:45 data/content/cloud/index.html:59
-#: data/content/cloud/index.html:86 data/content/cloud/index.html:95
-#: data/content/cloud/index.html:124 data/content/cloud/index.html:135
-#: data/content/cloud/index.html:170 data/content/cloud/index.html:184
-#: data/content/cloud/index.html:211 data/content/cloud/index.html:220
-#: data/content/cloud/index.html:249 data/content/cloud/index.html:260
-#: data/content/index.html:52 data/content/index.html:66
-#: data/content/index.html:80 data/content/index.html:108
-#: data/content/index.html:117 data/content/index.html:126
-#: data/content/index.html:155 data/content/index.html:166
-#: data/content/index.html:177
+#: data/content/alt/index.html:912 data/content/cloud/index.html:45
+#: data/content/cloud/index.html:59 data/content/cloud/index.html:86
+#: data/content/cloud/index.html:95 data/content/cloud/index.html:124
+#: data/content/cloud/index.html:135 data/content/cloud/index.html:170
+#: data/content/cloud/index.html:184 data/content/cloud/index.html:211
+#: data/content/cloud/index.html:220 data/content/cloud/index.html:249
+#: data/content/cloud/index.html:260 data/content/index.html:52
+#: data/content/index.html:66 data/content/index.html:80
+#: data/content/index.html:108 data/content/index.html:117
+#: data/content/index.html:126 data/content/index.html:155
+#: data/content/index.html:166 data/content/index.html:177
+#: data/content/index.html:268 data/content/index.html:282
+#: data/content/index.html:313 data/content/index.html:322
+#: data/content/index.html:354 data/content/index.html:365
 msgid "Verify"
 msgstr ""
 
@@ -164,7 +169,7 @@ msgstr ""
 msgid "Fedora Workstation"
 msgstr ""
 
-#: data/content/index.html:77
+#: data/content/index.html:77 data/content/index.html:279
 #, python-format
 msgid "32 bit %sMB ISO"
 msgstr ""
@@ -197,48 +202,76 @@ msgid ""
 "standard set."
 msgstr ""
 
-#: data/content/index.html:227 data/content/index.html:267
-#: data/content/index.html:303
+#: data/content/cloud/index.html:17 data/content/index.html:227
+msgid "Cloud Base Images"
+msgstr ""
+
+#: data/content/index.html:232
+msgid "These are standard Cloud Base images."
+msgstr ""
+
+#: data/content/index.html:246 data/content/index.html:262
+#: data/content/index.html:276 data/content/index.html:295
+#: data/content/index.html:312 data/content/index.html:321
+#: data/content/index.html:334 data/content/index.html:351
+#: data/content/index.html:362
+msgid "Everything"
+msgstr ""
+
+#: data/content/index.html:249 data/content/index.html:298
+#: data/content/index.html:337
+msgid "Experts only!"
+msgstr ""
+
+#: data/content/index.html:254 data/content/index.html:303
+#: data/content/index.html:342
+msgid ""
+"Choose from thousands of packages to customize your installation; "
+"requires a fast network connection."
+msgstr ""
+
+#: data/content/index.html:377 data/content/index.html:417
+#: data/content/index.html:453
 msgid "Testing Images"
 msgstr ""
 
-#: data/content/index.html:232 data/content/index.html:272
-#: data/content/index.html:308
+#: data/content/index.html:382 data/content/index.html:422
+#: data/content/index.html:458
 msgid ""
 "These are unreleased development versions of Fedora made available for "
 "testing the next official Fedora release."
 msgstr ""
 
-#: data/content/index.html:240 data/content/index.html:281
-#: data/content/index.html:317
+#: data/content/index.html:390 data/content/index.html:431
+#: data/content/index.html:467
 msgid "Nightly builds"
 msgstr ""
 
-#: data/content/index.html:243 data/content/index.html:254
-#: data/content/index.html:282 data/content/index.html:291
-#: data/content/index.html:320 data/content/index.html:331
+#: data/content/index.html:393 data/content/index.html:404
+#: data/content/index.html:432 data/content/index.html:441
+#: data/content/index.html:470 data/content/index.html:481
 msgid "View Images >"
 msgstr ""
 
-#: data/content/index.html:251
+#: data/content/index.html:401
 msgid "Other composes (Alpha / Beta / TCs / RCs)"
 msgstr ""
 
-#: data/content/index.html:290 data/content/index.html:328
+#: data/content/index.html:440 data/content/index.html:478
 msgid "Other test composes"
 msgstr ""
 
 #: data/content/alt/index.html:285 data/content/alt/index.html:802
-#: data/content/alt/index.html:924 data/content/cloud/index.html:607
-#: data/content/index.html:431
+#: data/content/alt/index.html:924 data/content/cloud/index.html:620
+#: data/content/index.html:581
 msgid "Support Resources"
 msgstr ""
 
-#: data/content/index.html:436
+#: data/content/index.html:586
 msgid "General Help Using Fedora"
 msgstr ""
 
-#: data/content/index.html:437
+#: data/content/index.html:587
 #, python-format
 msgid ""
 "Need some help with Fedora? Check out <a href=\"%s\">Ask Fedora</a>, "
@@ -246,12 +279,12 @@ msgid ""
 "own question."
 msgstr ""
 
-#: data/content/index.html:449 data/content/index.html:460
+#: data/content/index.html:599 data/content/index.html:610
 #, python-format
 msgid "Fedora %(rel)s %(state)s released! <a href=\"%(link)s\">Try it now ></a>"
 msgstr ""
 
-#: data/content/index.html:471
+#: data/content/index.html:621
 #, python-format
 msgid "Fedora %(rel)s released! Try it now."
 msgstr ""
@@ -480,7 +513,7 @@ msgid "%sMB Docker image"
 msgstr ""
 
 #: data/content/alt/index.html:291 data/content/alt/index.html:808
-#: data/content/alt/index.html:930 data/content/cloud/index.html:613
+#: data/content/alt/index.html:930 data/content/cloud/index.html:626
 msgid "Documentation"
 msgstr ""
 
@@ -493,7 +526,7 @@ msgid ""
 msgstr ""
 
 #: data/content/alt/index.html:297 data/content/alt/index.html:814
-#: data/content/alt/index.html:936 data/content/cloud/index.html:619
+#: data/content/alt/index.html:936 data/content/cloud/index.html:632
 msgid "Email"
 msgstr ""
 
@@ -505,7 +538,7 @@ msgid ""
 msgstr ""
 
 #: data/content/alt/index.html:303 data/content/alt/index.html:820
-#: data/content/alt/index.html:942 data/content/cloud/index.html:625
+#: data/content/alt/index.html:942 data/content/cloud/index.html:638
 msgid "Chat"
 msgstr ""
 
@@ -586,254 +619,6 @@ msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-"
 "s390x</a> IRC channel on <strong>irc.freenode.org</strong> for real-time "
 "chat."
-msgstr ""
-
-#: data/content/cloud/index-old.html:10
-msgid "Download Fedora Cloud"
-msgstr ""
-
-#: data/content/cloud/index-old.html:34
-#, python-format
-msgid "Download Fedora %(rel)s Cloud"
-msgstr ""
-
-#: data/content/cloud/index-old.html:35
-msgid "There are two main versions of Fedora Cloud available:"
-msgstr ""
-
-#: data/content/cloud/index-old.html:37
-msgid "<a href=\"index.html\">Base images</a> suitable for creating VMs."
-msgstr ""
-
-#: data/content/cloud/index-old.html:59
-msgid "Base Images"
-msgstr ""
-
-#: data/content/cloud/index-old.html:61
-msgid "Docker Image"
-msgstr ""
-
-#: data/content/cloud/index-old.html:72
-msgid "Base Cloud Images"
-msgstr ""
-
-#: data/content/cloud/index-old.html:73
-msgid ""
-"The images on this page are Fedora Cloud images for creating general "
-"purpose virtual machines (VMs)."
-msgstr ""
-
-#: data/content/cloud/index-old.html:74
-msgid "Base Cloud Image"
-msgstr ""
-
-#: data/content/cloud/index-old.html:80 data/content/cloud/index-old.html:96
-msgid "qcow2 Image"
-msgstr ""
-
-#: data/content/cloud/index-old.html:81 data/content/cloud/index-old.html:97
-#, python-format
-msgid ""
-"This is Fedora %(rel)s Cloud in a Qcow2-formatted image for use with "
-"OpenStack."
-msgstr ""
-
-#: data/content/cloud/index-old.html:83 data/content/cloud/index-old.html:107
-#, python-format
-msgid "64-bit %sMB Qcow2 Image"
-msgstr ""
-
-#: data/content/cloud/index-old.html:86 data/content/cloud/index-old.html:100
-msgid "Raw Image"
-msgstr ""
-
-#: data/content/cloud/index-old.html:87 data/content/cloud/index-old.html:101
-#, python-format
-msgid ""
-"This is Fedora %(rel)s Cloud in a compressed raw image format. If you're "
-"not sure what to use, try this."
-msgstr ""
-
-#: data/content/cloud/index-old.html:89 data/content/cloud/index-old.html:111
-#, python-format
-msgid "64-bit %sMB xz-Compressed Raw Image"
-msgstr ""
-
-#: data/content/cloud/index-old.html:119
-msgid "Base Cloud Images for Vagrant"
-msgstr ""
-
-#: data/content/cloud/index-old.html:120
-msgid "These images are Vagrant Boxes images for deployment using Vagrant."
-msgstr ""
-
-#: data/content/cloud/index-old.html:126 data/content/cloud/index-old.html:128
-#: data/content/cloud/index-old.html:142 data/content/cloud/index-old.html:152
-msgid "VirtualBox Image"
-msgstr ""
-
-#: data/content/cloud/index-old.html:127 data/content/cloud/index-old.html:143
-msgid ""
-"If you're using Vagrant on Mac OS X or Windows, this is likely the image "
-"you'll want to use."
-msgstr ""
-
-#: data/content/cloud/index-old.html:129 data/content/cloud/index-old.html:153
-#, python-format
-msgid "64-bit %sMB VirtualBox Base Vagrant Image"
-msgstr ""
-
-#: data/content/cloud/index-old.html:132 data/content/cloud/index-old.html:134
-#: data/content/cloud/index-old.html:146 data/content/cloud/index-old.html:156
-msgid "libvirt/KVM Image"
-msgstr ""
-
-#: data/content/cloud/index-old.html:133 data/content/cloud/index-old.html:147
-msgid "If you're using Vagrant on Fedora, this is the image you'll want to use."
-msgstr ""
-
-#: data/content/cloud/index-old.html:135 data/content/cloud/index-old.html:157
-#, python-format
-msgid "64-bit %sMB libvirt/KVM Base Vagrant Image"
-msgstr ""
-
-#: data/content/cloud/index-old.html:166
-msgid "Base Cloud Images for Amazon Public Cloud EC2"
-msgstr ""
-
-#: data/content/cloud/index-old.html:167 data/content/cloud/index.html:281
-#: data/content/cloud/index.html:449
-msgid ""
-"The links below will provide you listings of available AMIs by region "
-"with buttons to launch them in your Amazon Web Services account. AMI IDs "
-"for usage with the AWS Console or command-line tools are also provided."
-msgstr ""
-
-#: data/content/cloud/index-old.html:168 data/content/cloud/index.html:282
-#: data/content/cloud/index.html:450
-msgid ""
-"All images are available in two formats: a GP2 format which uses faster "
-"SSD storage, and a standard format which is more suitable if you have "
-"infrequently accessed data and you want to keep storage cost low."
-msgstr ""
-
-#: data/content/cloud/index-old.html:174 data/content/cloud/index-old.html:303
-msgid "Hardware Virtual Machine (HVM)"
-msgstr ""
-
-#: data/content/cloud/index-old.html:175 data/content/cloud/index-old.html:304
-msgid ""
-"If you're unsure which image to choose, use this format. It can provide "
-"the same or better performance than PV images."
-msgstr ""
-
-#: data/content/cloud/index-old.html:177 data/content/cloud/index-old.html:314
-#: data/content/cloud/index.html:292 data/content/cloud/index.html:460
-msgid "GP2 HVM AMIs"
-msgstr ""
-
-#: data/content/cloud/index-old.html:182 data/content/cloud/index-old.html:212
-#: data/content/cloud/index-old.html:245 data/content/cloud/index-old.html:275
-#: data/content/cloud/index-old.html:319 data/content/cloud/index-old.html:347
-#: data/content/cloud/index-old.html:379 data/content/cloud/index-old.html:407
-#: data/content/cloud/index.html:300 data/content/cloud/index.html:337
-#: data/content/cloud/index.html:374 data/content/cloud/index.html:411
-#: data/content/cloud/index.html:466 data/content/cloud/index.html:501
-#: data/content/cloud/index.html:536 data/content/cloud/index.html:571
-msgid "Close"
-msgstr ""
-
-#: data/content/cloud/index-old.html:183 data/content/cloud/index-old.html:320
-#: data/content/cloud/index.html:301 data/content/cloud/index.html:467
-#, python-format
-msgid "Fedora %(rel)s GP2 Base Cloud HVM AMIs"
-msgstr ""
-
-#: data/content/cloud/index-old.html:188 data/content/cloud/index-old.html:218
-#: data/content/cloud/index-old.html:251 data/content/cloud/index-old.html:281
-#: data/content/cloud/index-old.html:325 data/content/cloud/index-old.html:353
-#: data/content/cloud/index-old.html:385 data/content/cloud/index-old.html:413
-#: data/content/cloud/index.html:306 data/content/cloud/index.html:343
-#: data/content/cloud/index.html:380 data/content/cloud/index.html:417
-#: data/content/cloud/index.html:472 data/content/cloud/index.html:507
-#: data/content/cloud/index.html:542 data/content/cloud/index.html:577
-msgid "Region"
-msgstr ""
-
-#: data/content/cloud/index-old.html:189 data/content/cloud/index-old.html:219
-#: data/content/cloud/index-old.html:252 data/content/cloud/index-old.html:282
-#: data/content/cloud/index-old.html:326 data/content/cloud/index-old.html:354
-#: data/content/cloud/index-old.html:386 data/content/cloud/index-old.html:414
-#: data/content/cloud/index.html:307 data/content/cloud/index.html:344
-#: data/content/cloud/index.html:381 data/content/cloud/index.html:418
-#: data/content/cloud/index.html:473 data/content/cloud/index.html:508
-#: data/content/cloud/index.html:543 data/content/cloud/index.html:578
-msgid "AMI ID"
-msgstr ""
-
-#: data/content/cloud/index-old.html:190 data/content/cloud/index-old.html:220
-#: data/content/cloud/index-old.html:253 data/content/cloud/index-old.html:283
-#: data/content/cloud/index-old.html:327 data/content/cloud/index-old.html:355
-#: data/content/cloud/index-old.html:387 data/content/cloud/index-old.html:415
-#: data/content/cloud/index.html:308 data/content/cloud/index.html:345
-#: data/content/cloud/index.html:382 data/content/cloud/index.html:419
-#: data/content/cloud/index.html:474 data/content/cloud/index.html:509
-#: data/content/cloud/index.html:544 data/content/cloud/index.html:579
-msgid "Launch"
-msgstr ""
-
-#: data/content/cloud/index-old.html:207 data/content/cloud/index-old.html:342
-#: data/content/cloud/index.html:329 data/content/cloud/index.html:495
-msgid "Standard HVM AMIs"
-msgstr ""
-
-#: data/content/cloud/index-old.html:213 data/content/cloud/index-old.html:348
-#: data/content/cloud/index.html:338 data/content/cloud/index.html:502
-#, python-format
-msgid "Fedora %(rel)s Standard Base Cloud HVM AMIs"
-msgstr ""
-
-#: data/content/cloud/index-old.html:237 data/content/cloud/index-old.html:307
-msgid "Paravirtual (PV)"
-msgstr ""
-
-#: data/content/cloud/index-old.html:238 data/content/cloud/index-old.html:308
-msgid "If you know you need a paravirtual format image for EC2, use this format."
-msgstr ""
-
-#: data/content/cloud/index-old.html:240 data/content/cloud/index-old.html:374
-#: data/content/cloud/index.html:366 data/content/cloud/index.html:530
-msgid "GP2 PV AMIs"
-msgstr ""
-
-#: data/content/cloud/index-old.html:246 data/content/cloud/index-old.html:380
-#: data/content/cloud/index.html:375 data/content/cloud/index.html:537
-#, python-format
-msgid "Fedora %(rel)s GP2 Base Cloud PV AMIs"
-msgstr ""
-
-#: data/content/cloud/index-old.html:270 data/content/cloud/index-old.html:402
-#: data/content/cloud/index.html:403 data/content/cloud/index.html:565
-msgid "Standard PV AMIs"
-msgstr ""
-
-#: data/content/cloud/index-old.html:276 data/content/cloud/index-old.html:408
-#: data/content/cloud/index.html:412 data/content/cloud/index.html:572
-#, python-format
-msgid "Fedora %(rel)s Standard Base Cloud PV AMIs"
-msgstr ""
-
-#: data/content/cloud/index-old.html:452 data/content/cloud/index-old.html:456
-#, python-format
-msgid "Try Fedora %(rel)s %(state)s"
-msgstr ""
-
-#: data/content/cloud/index-old.html:466
-msgid "Verify your Image"
-msgstr ""
-
-#: data/content/cloud/index.html:17
-msgid "Cloud Base Images"
 msgstr ""
 
 #: data/content/cloud/index.html:25
@@ -924,12 +709,30 @@ msgstr ""
 msgid "Fedora %(rel)s Cloud Base Images for Amazon Public Cloud"
 msgstr ""
 
+#: data/content/cloud/index.html:281 data/content/cloud/index.html:449
+msgid ""
+"The links below will provide you listings of available AMIs by region "
+"with buttons to launch them in your Amazon Web Services account. AMI IDs "
+"for usage with the AWS Console or command-line tools are also provided."
+msgstr ""
+
+#: data/content/cloud/index.html:282 data/content/cloud/index.html:450
+msgid ""
+"All images are available in two formats: a GP2 format which uses faster "
+"SSD storage, and a standard format which is more suitable if you have "
+"infrequently accessed data and you want to keep storage cost low."
+msgstr ""
+
 #: data/content/cloud/index.html:283 data/content/cloud/index.html:451
 msgid ""
 "If you know you need a paravirtual format image for EC2, use the "
 "Paravirtual (PV) format. If you're unsure which image to choose, use the "
 "Hardware Virtual Machine (HVM) format. It can provide the same or better "
 "performance than PV images."
+msgstr ""
+
+#: data/content/cloud/index.html:292 data/content/cloud/index.html:460
+msgid "GP2 HVM AMIs"
 msgstr ""
 
 #: data/content/cloud/index.html:295 data/content/cloud/index.html:332
@@ -939,21 +742,81 @@ msgstr ""
 msgid "Click to launch"
 msgstr ""
 
-#: data/content/cloud/index.html:614
+#: data/content/cloud/index.html:300 data/content/cloud/index.html:337
+#: data/content/cloud/index.html:374 data/content/cloud/index.html:411
+#: data/content/cloud/index.html:466 data/content/cloud/index.html:501
+#: data/content/cloud/index.html:536 data/content/cloud/index.html:571
+msgid "Close"
+msgstr ""
+
+#: data/content/cloud/index.html:301 data/content/cloud/index.html:467
+#, python-format
+msgid "Fedora %(rel)s GP2 Base Cloud HVM AMIs"
+msgstr ""
+
+#: data/content/cloud/index.html:306 data/content/cloud/index.html:343
+#: data/content/cloud/index.html:380 data/content/cloud/index.html:417
+#: data/content/cloud/index.html:472 data/content/cloud/index.html:507
+#: data/content/cloud/index.html:542 data/content/cloud/index.html:577
+msgid "Region"
+msgstr ""
+
+#: data/content/cloud/index.html:307 data/content/cloud/index.html:344
+#: data/content/cloud/index.html:381 data/content/cloud/index.html:418
+#: data/content/cloud/index.html:473 data/content/cloud/index.html:508
+#: data/content/cloud/index.html:543 data/content/cloud/index.html:578
+msgid "AMI ID"
+msgstr ""
+
+#: data/content/cloud/index.html:308 data/content/cloud/index.html:345
+#: data/content/cloud/index.html:382 data/content/cloud/index.html:419
+#: data/content/cloud/index.html:474 data/content/cloud/index.html:509
+#: data/content/cloud/index.html:544 data/content/cloud/index.html:579
+msgid "Launch"
+msgstr ""
+
+#: data/content/cloud/index.html:329 data/content/cloud/index.html:495
+msgid "Standard HVM AMIs"
+msgstr ""
+
+#: data/content/cloud/index.html:338 data/content/cloud/index.html:502
+#, python-format
+msgid "Fedora %(rel)s Standard Base Cloud HVM AMIs"
+msgstr ""
+
+#: data/content/cloud/index.html:366 data/content/cloud/index.html:530
+msgid "GP2 PV AMIs"
+msgstr ""
+
+#: data/content/cloud/index.html:375 data/content/cloud/index.html:537
+#, python-format
+msgid "Fedora %(rel)s GP2 Base Cloud PV AMIs"
+msgstr ""
+
+#: data/content/cloud/index.html:403 data/content/cloud/index.html:565
+msgid "Standard PV AMIs"
+msgstr ""
+
+#: data/content/cloud/index.html:412 data/content/cloud/index.html:572
+#, python-format
+msgid "Fedora %(rel)s Standard Base Cloud PV AMIs"
+msgstr ""
+
+#: data/content/cloud/index.html:627
 #, python-format
 msgid ""
 "A wiki page with information about Fedora Cloud and its images is "
 "available <a href=\"%s\">here</a>."
 msgstr ""
 
-#: data/content/cloud/index.html:620
+#: data/content/cloud/index.html:633
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
 "href=\"%s\">cloud@lists.fedoraproject.org</a>."
 msgstr ""
 
-#: data/content/cloud/index.html:626
+#: data/content/cloud/index.html:639
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-"
@@ -1104,6 +967,14 @@ msgstr ""
 
 #: data/templates/head.html:13
 msgid "Alternative versions and formats of Fedora for download"
+msgstr ""
+
+#: data/templates/morecloud.html:12
+msgid "Want to try something new?"
+msgstr ""
+
+#: data/templates/productselector-atomic.html:13
+msgid "Atomic"
 msgstr ""
 
 #: data/templates/generic/docs-links.html:8
