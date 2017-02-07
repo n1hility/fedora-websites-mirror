@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-01-31 22:33+0100\n"
+"POT-Creation-Date: 2017-02-07 23:03+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,6 +67,7 @@ msgid "Fedora Server"
 msgstr ""
 
 #: data/content/index.html:49 data/content/index.html:63
+#: data/content/index.html:265
 #, python-format
 msgid "64 bit %sMB ISO"
 msgstr ""
@@ -111,6 +112,9 @@ msgstr ""
 #: data/content/index.html:126 data/content/index.html:155
 #: data/content/index.html:166 data/content/index.html:177
 #: data/content/index.html:216 data/content/index.html:235
+#: data/content/index.html:268 data/content/index.html:282
+#: data/content/index.html:313 data/content/index.html:322
+#: data/content/index.html:354 data/content/index.html:365
 #: data/templates/footer.html:37
 msgid "Download"
 msgstr ""
@@ -154,6 +158,9 @@ msgstr ""
 #: data/content/index.html:108 data/content/index.html:117
 #: data/content/index.html:126 data/content/index.html:155
 #: data/content/index.html:166 data/content/index.html:177
+#: data/content/index.html:268 data/content/index.html:282
+#: data/content/index.html:313 data/content/index.html:322
+#: data/content/index.html:354 data/content/index.html:365
 msgid "Verify"
 msgstr ""
 
@@ -162,7 +169,7 @@ msgstr ""
 msgid "Fedora Workstation"
 msgstr ""
 
-#: data/content/index.html:77
+#: data/content/index.html:77 data/content/index.html:279
 #, python-format
 msgid "32 bit %sMB ISO"
 msgstr ""
@@ -203,48 +210,68 @@ msgstr ""
 msgid "These are standard Cloud Base images."
 msgstr ""
 
-#: data/content/index.html:246 data/content/index.html:286
-#: data/content/index.html:322
+#: data/content/index.html:246 data/content/index.html:262
+#: data/content/index.html:276 data/content/index.html:295
+#: data/content/index.html:312 data/content/index.html:321
+#: data/content/index.html:334 data/content/index.html:351
+#: data/content/index.html:362
+msgid "Everything"
+msgstr ""
+
+#: data/content/index.html:249 data/content/index.html:298
+#: data/content/index.html:337
+msgid "Experts only!"
+msgstr ""
+
+#: data/content/index.html:254 data/content/index.html:303
+#: data/content/index.html:342
+msgid ""
+"Choose from thousands of packages to customize your installation; "
+"requires a fast network connection."
+msgstr ""
+
+#: data/content/index.html:377 data/content/index.html:417
+#: data/content/index.html:453
 msgid "Testing Images"
 msgstr ""
 
-#: data/content/index.html:251 data/content/index.html:291
-#: data/content/index.html:327
+#: data/content/index.html:382 data/content/index.html:422
+#: data/content/index.html:458
 msgid ""
 "These are unreleased development versions of Fedora made available for "
 "testing the next official Fedora release."
 msgstr ""
 
-#: data/content/index.html:259 data/content/index.html:300
-#: data/content/index.html:336
+#: data/content/index.html:390 data/content/index.html:431
+#: data/content/index.html:467
 msgid "Nightly builds"
 msgstr ""
 
-#: data/content/index.html:262 data/content/index.html:273
-#: data/content/index.html:301 data/content/index.html:310
-#: data/content/index.html:339 data/content/index.html:350
+#: data/content/index.html:393 data/content/index.html:404
+#: data/content/index.html:432 data/content/index.html:441
+#: data/content/index.html:470 data/content/index.html:481
 msgid "View Images >"
 msgstr ""
 
-#: data/content/index.html:270
+#: data/content/index.html:401
 msgid "Other composes (Alpha / Beta / TCs / RCs)"
 msgstr ""
 
-#: data/content/index.html:309 data/content/index.html:347
+#: data/content/index.html:440 data/content/index.html:478
 msgid "Other test composes"
 msgstr ""
 
 #: data/content/alt/index.html:285 data/content/alt/index.html:802
 #: data/content/alt/index.html:924 data/content/cloud/index.html:620
-#: data/content/index.html:450
+#: data/content/index.html:581
 msgid "Support Resources"
 msgstr ""
 
-#: data/content/index.html:455
+#: data/content/index.html:586
 msgid "General Help Using Fedora"
 msgstr ""
 
-#: data/content/index.html:456
+#: data/content/index.html:587
 #, python-format
 msgid ""
 "Need some help with Fedora? Check out <a href=\"%s\">Ask Fedora</a>, "
@@ -252,12 +279,12 @@ msgid ""
 "own question."
 msgstr ""
 
-#: data/content/index.html:468 data/content/index.html:479
+#: data/content/index.html:599 data/content/index.html:610
 #, python-format
 msgid "Fedora %(rel)s %(state)s released! <a href=\"%(link)s\">Try it now ></a>"
 msgstr ""
 
-#: data/content/index.html:490
+#: data/content/index.html:621
 #, python-format
 msgid "Fedora %(rel)s released! Try it now."
 msgstr ""
