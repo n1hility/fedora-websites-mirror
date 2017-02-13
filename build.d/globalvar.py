@@ -120,7 +120,7 @@ iso_size={
     'x86_64_raw':          '117',       # In MB
     # These variables are only necessary to keep fedoraproject.org working
     's390_DVD':            '1.5',
-    # Lives
+    # Spins
     'i686_Live_KDE':       '1.4',       # In GB
     'x86_64_Live_KDE':     '1.3',       # In GB
     'i686_Live_LXDE':      '999',       # In MB
@@ -133,7 +133,7 @@ iso_size={
     'x86_64_Live_Soas':    '700',       # In MB
     'i686_Live_Cinnamon':   '1.4',       # In GB
     'x86_64_Live_Cinnamon': '1.3',       # In GB
-    # Lives prerelease
+    # Spins prerelease
     'pre_i686_Live_KDE':    '1.4',       # In GB
     'pre_x86_64_Live_KDE':  '1.3',       # In GB
     'pre_i686_Live_LXDE':   '1.0',       # In GB
@@ -146,7 +146,9 @@ iso_size={
     'pre_x86_64_Live_Soas': '684',       # In MB
     'pre_i686_Live_Cinnamon': '1.4',     # In GB
     'pre_x86_64_Live_Cinnamon': '1.3',   # In GB
-    # Spins
+    'pre_i686_Live_LXQt':       'nd',    # ND
+    'pre_x86_64_Live_LXQt':     'nd',    # ND
+    # Labs
     'i686_Live_Security':  '1.2',       # In GB
     'x86_64_Live_Security':'1.1',       # In GB
     'i686_Live_Games':     '3.8',       # In GB
@@ -163,7 +165,7 @@ iso_size={
     'x86_64_Live_Jam':     '1.9',       # In GB
     'i686_Live_Astronomy': '2.5',       # In GB
     'x86_64_Live_Astronomy':'2.4',      # In GB
-    # Spins prerelease
+    # Labs prerelease
     'pre_i686_Live_Security':  '1.1',   # In GB
     'pre_x86_64_Live_Security':'1.1',   # In GB
     'pre_i686_Live_Games':     '3.8',   # In GB
