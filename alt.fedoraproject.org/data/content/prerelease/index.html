@@ -5,18 +5,55 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../../templates/master.html" />
   <head>
-    <title>${_('Fedora Alternate Architectures')}</title>
+    <title>${_('Fedora Alternate Architectures Prerelease Images')}</title>
   </head>
   <body>
 
   <xi:include href="../../templates/alt/header.html" />
 
   <header id="head">
-    <div class="col-xs-12 text-center widewrapper bluebox">
-      <h1>${_('Alternate Architectures')}</h1>
-      <p>${_('Additional architectures supported by Fedora')}</p>
+    <div class="col-xs-12 text-center widewrapper bluebox prerelease">
+      <h1>${_('Pre-releases')}</h1>
+      <p>${_('Official pre-releases of Fedora alternative downloads.')}</p>
     </div>
   </header>
+
+<!-- News -->
+      <py:choose>
+        <py:when test="global_variables.release['curr_state'] == 'Alpha'">
+          <div class="newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Currently offering &lt;strong&gt;Fedora %(rel)s %(state)s&lt;/strong&gt;.')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:when>
+        <py:when test="global_variables.release['curr_state'] == 'Beta'">
+          <div class="jumbotron newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Currently offering &lt;strong&gt;Fedora %(rel)s %(state)s&lt;/strong&gt;.')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:when>
+        <py:otherwise>
+        	<div class="jumbotron newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Currently offering &lt;strong&gt;Fedora %(rel)s %(state)s&lt;/strong&gt;.')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:otherwise>
+      </py:choose>
 
   <!-- aarch64 -->
     <!-- Desktop -->
