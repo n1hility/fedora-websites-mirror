@@ -44,18 +44,18 @@
         </py:when>
       </py:choose>
 
-  <!-- aarch64 -->
+  <!-- Network Installers -->
     <!-- Desktop -->
   <div class="jumbotron main-head hidden-xs hidden-sm">
     <div class="container using">
       <div class="row">
         <div class="col-xs-12 top-margin">
-        <h2>${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; aarch64 Architecture'))}</h2>
+        <h2>${_('Network Installers')}<span class="prerelease-offer">${Markup(_('F%(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</span></h2>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3 product-feature">
-        <p>${Markup(_('These images are for use with AArch64 &ldquo;Server Base System Architecture&rdquo; (SBSA) compliant systems or Single Board Computers.'))}</p>
+        <p>${_('These are very small images you can use to install Fedora over the network.')}</p>
         </div>
         <div class="col-md-9">
           <div class="white">
@@ -66,80 +66,38 @@
             <h3>${_('Fedora Server')}</h3>
             </div>
             <div class="col-md-3">
-            <p>${Markup(_('%sGB dvd iso')) % global_variables.iso_size['aarch64_Server_DVD']}</p>
+            <p>${Markup(_('64 bit %sMB ISO')) % global_variables.iso_size['x86_64_server_net']}</p>
             </div>
             <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${_('Download')}</a> | <a href="https://getfedora.org/verify">${_('Verify')}</a></p>
             </div>
           </div>
           <div class="white">
             <div class="col-md-1">
-            <img src="/static/images/server.png" />
+            <img src="/static/images/workstation.png" />
             </div>
             <div class="col-md-4">
-            <h3>${_('Fedora Server')}</h3>
+            <h3>${_('Fedora Workstation')}</h3>
             </div>
             <div class="col-md-3">
-            <p>${Markup(_('%sMB netinstall iso')) % global_variables.iso_size['aarch64_Server_net']}</p>
+            <p>${Markup(_('64 bit %sMB ISO')) % global_variables.iso_size['x86_64_workstation_net']}</p>
             </div>
             <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/aarch64/iso/Fedora-Server-netinst-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/x86_64/iso/Fedora-Workstation-netinst-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${_('Download')}</a> | <a href="https://getfedora.org/verify">${_('Verify')}</a></p>
             </div>
           </div>
           <div class="white">
             <div class="col-md-1">
-            <img src="/static/images/cloud.png" />
+            <img src="/static/images/workstation.png" />
             </div>
             <div class="col-md-4">
-            <h3>${_('Fedora Cloud')}</h3>
+            <h3>${_('Fedora Workstation')}</h3>
             </div>
             <div class="col-md-3">
-            <p>${Markup(_('%sMB netinstall iso')) % global_variables.iso_size['aarch64_Cloud_net']}</p>
+            <p>${Markup(_('32 bit %sMB ISO')) % global_variables.iso_size['i386_workstation_net']}</p>
             </div>
             <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/aarch64/iso/Fedora-Cloud-netinst-aarch64-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-            </div>
-          </div>
-          <div class="white">
-            <div class="col-md-1">
-            <img src="/static/images/cloud.png" />
-            </div>
-            <div class="col-md-4">
-            <h3>${_('Fedora Cloud')}</h3>
-            </div>
-            <div class="col-md-3">
-            <p>${Markup(_('%sMB qcow2 image')) % global_variables.iso_size['aarch64_qcow2']}</p>
-            </div>
-            <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/aarch64/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.aarch64.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-            </div>
-          </div>
-          <div class="white">
-            <div class="col-md-1">
-            <img src="/static/images/cloud.png" />
-            </div>
-            <div class="col-md-4">
-            <h3>${_('Fedora Cloud')}</h3>
-            </div>
-            <div class="col-md-3">
-            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['aarch64_raw']}</p>
-            </div>
-            <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/CloudImages/aarch64/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.aarch64.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
-            </div>
-          </div>
-          <div class="white">
-            <div class="col-md-1">
-            <img src="/static/images/docker.png" />
-            </div>
-            <div class="col-md-4">
-            <h3>${_('Fedora Docker')}</h3>
-            </div>
-            <div class="col-md-3">
-            <p>${Markup(_('%sMB Docker image')) % global_variables.iso_size['aarch64_docker']}</p>
-            </div>
-            <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Docker/aarch64/images/Fedora-Docker-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_aarch64']}.aarch64.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/i386/iso/Fedora-Workstation-netinst-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${_('Download')}</a> | <a href="https://getfedora.org/verify">${_('Verify')}</a></p>
             </div>
           </div>
         </div>
@@ -303,38 +261,8 @@
     </div>
   </div>
 
-  <!-- Resources -->
-  <div class="jumbotron main-head">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <h2>${_('Support Resources')}</h2>
-        </div>
-      </div>
-      <div class="row top-margin">
-        <div class="col-md-4 col-xs-12">
-        <div class="col-xs-12 text-center">
-          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
-          <p>${Markup(_('A guide for Fedora on AArch64, including a list of supported hardware platforms and installation instructions is available at the &lt;a href="%s"&gt;Fedora Documentation Site&lt;/a&gt;.') % ('https://docs.fedoraproject.org/'))}</p>
-        </div>
-      	</div>
-        <div class="col-md-4 col-xs-12">
-        <div class="col-xs-12 text-center">
-          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
-          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;arm@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/arm'))}</p>
-        </div>
-        </div>
-        <div class="col-md-4 col-xs-12">
-        <div class="col-xs-12 text-center">
-          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
-          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-arm&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-arm'))}</p>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="white-hr"></div>
-  <!-- end aarch64 -->
+  <!-- end Network Installers -->
 
   <!-- Power -->
     <!-- Desktop -->
