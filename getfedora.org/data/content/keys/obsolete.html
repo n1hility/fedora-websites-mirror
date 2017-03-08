@@ -355,6 +355,27 @@
       ])}
 
       ${keys_for_release(
+      _('Fedora 23'),
+      [
+        KeyInfo(
+           _('Primary'),
+            '4096R/34EC9CBA 2015-02-17',
+            'EF45 5106 80FB 0232 6B04  5AFB 3247 4CF8 34EC 9CBA',
+            ['Fedora (23) &lt;fedora-23-primary@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/34EC9CBA.txt', 'Fedora Project')
+            ])
+      , KeyInfo(
+           _('Secondary'),
+            '4096R/873529B8 2015-02-17',
+            '0108 4DD8 8A5E 6224 F7A6  7B76 B4BB 871C 8735 29B8',
+            ['Fedora Secondary (23) &lt;fedora-23-secondary@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/873529B8.txt', 'Fedora Project')
+            ])
+      ])}
+
+      ${keys_for_release(
       _('EPEL 4'),
       [
           KeyInfo(
@@ -366,7 +387,9 @@
               [('https://getfedora.org/static/217521F6.txt', 'Fedora Project')
               ])
       ])}
+    </div>
 
+    <div class="row">
       ${keys_for_release(
       _('Fedora Extras'),
       [
@@ -384,9 +407,7 @@
               [],
               Markup(_('If you are using Fedora Extras with Fedora Core 6, use this package from &lt;strong&gt;extras&lt;/strong&gt; repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007). This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.')))
       ])}
-    </div>
 
-    <div class="row">
       ${keys_for_release(
       _('Legacy'),
       [
