@@ -920,6 +920,36 @@ p.warning a {
   font-weight: 600;
 }
 
+.panel-heading {
+  padding: 0 !important;
+}
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    content: "\f077";
+    float: right;
+    color: grey;
+    padding: 15px 15px;
+    vertical-align: middle;
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f078";
+}
+
+.panel-heading img {
+  padding-right: 25px;
+}
+
+.panel-heading h3,
+.panel-heading a:hover,
+.panel-heading a:active,
+.panel-heading a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
 /*bootstrap xs*/
 @media max-width:767px
 {
