@@ -612,32 +612,46 @@
   <div class="white-hr"></div>
   <!-- end Alternate Architectures -->
 
-  <!-- s390x -->
+  <!-- Everything -->
     <!-- Desktop -->
   <div class="jumbotron main-head hidden-xs hidden-sm">
     <div class="container using">
       <div class="row">
         <div class="col-xs-12 top-margin">
-        <h2>${_('s390x Architecture')}</h2>
+        <h2>${_('Everything')}<span class="prerelease-offer">${Markup(_('F%(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</span></h2>
         </div>
       </div>
       <div class="row">
         <div class="col-md-3 product-feature">
-        <p>${_('If you want to install Fedora on IBM z Systems, then you are looking for this architecture.')}</p>
+        <p>${_('Choose from thousands of packages to customize your installation; requires a fast network connection.')}</p>
         </div>
         <div class="col-md-9">
           <div class="white">
             <div class="col-md-1">
-            <img src="/static/images/server.png" />
+            <img src="/static/images/ev.png" />
             </div>
             <div class="col-md-4">
             <h3>${_('Fedora Server')}</h3>
             </div>
             <div class="col-md-3">
-            <p>${Markup(_('%sGB dvd iso')) % global_variables.iso_size['s390x_Server_DVD']}</p>
+            <p>${Markup(_('64 bit %sMB ISO')) % global_variables.iso_size['pre_x86_64_ev']}</p>
             </div>
             <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/s390x/iso/Fedora-Server-dvd-s390x-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="https://getfedora.org/verify">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/ev.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Workstation')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('64 bit %sMB ISO')) % global_variables.iso_size['pre_i386_ev']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Everything/i386/iso/Fedora-Everything-netinst-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="https://getfedora.org/verify">${_('Verify')}</a></p>
             </div>
           </div>
         </div>
@@ -645,88 +659,117 @@
     </div>
   </div>
 
-  <!-- Mobile phones-->
+  <!-- Network Installers mobile phones-->
   <div class="jumbotron main-head visible-xs">
     <div class="container using">
       <div class="row">
         <div class="col-xs-12">
-        <h2>${_('s390x Architecture')}</h2>
+        <h2>${_('Network Installers')}<span class="prerelease-offer">${Markup(_('F%(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</span></h2>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12 product-feature">
-        <p>${_('If you want to install Fedora on IBM z Systems, then you are looking for this architecture.')}</p>
+        <p>${_('Choose from thousands of packages to customize your installation; requires a fast network connection.')}</p>
         </div>
       </div>
       <div class="row">
         <div class="white">
           <div class="col-xs-3">
-          <img src="/static/images/server.png" />
+          <img src="/static/images/ev.png" />
           </div>
           <div class="col-xs-9">
           <h3>${_('Fedora Server')}</h3>
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/s390x/iso/Fedora-Server-dvd-s390x-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="https://getfedora.org/verify">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/ev.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Workstation')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Everything/i386/iso/Fedora-Everything-netinst-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="https://getfedora.org/verify">${_('Verify')}</a></p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Tablets-->
+  <!-- Network Installers mobile tablets-->
   <div class="jumbotron main-head visible-sm">
     <div class="container using">
       <div class="row">
         <div class="col-xs-12">
-        <h2>${_('s390x Architecture')}</h2>
+        <h2>${_('Network Installers')}<span class="prerelease-offer">${Markup(_('F%(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</span></h2>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12 product-feature">
-        <p>${_('If you want to install Fedora on IBM z Systems, then you are looking for this architecture.')}</p>
+        <p>${_('Choose from thousands of packages to customize your installation; requires a fast network connection.')}</p>
         </div>
       </div>
       <div class="row">
         <div class="white">
           <div class="col-sm-3">
-          <img src="/static/images/server.png" />
+          <img src="/static/images/ev.png" />
           </div>
           <div class="col-sm-5">
           <h3>${_('Fedora Server')}</h3>
           </div>
           <div class="col-sm-4">
-          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/s390x/iso/Fedora-Server-dvd-s390x-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="https://getfedora.org/verify">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/ev.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Workstation')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Everything/i386/iso/Fedora-Everything-netinst-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="https://getfedora.org/verify">${_('Verify')}</a></p>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="white-hr"></div>
+  <!-- end Everything -->
 
   <!-- Resources -->
   <div class="jumbotron main-head">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 text-center">
-          <h2>${_('Support Resources')}</h2>
+          <h2>${_('Testing Resources')}</h2>
         </div>
       </div>
       <div class="row top-margin">
         <div class="col-md-4 col-xs-12">
         <div class="col-xs-12 text-center">
           <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
-          <p>${Markup(_('A wiki page with information about Power Architecture on Fedora is available on the &lt;a href="%s"&gt;Fedora Project Wiki&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Architectures/s390x'))}</p>
+          <p>${Markup(_('Some basic information about getting involved in Fedora\'s testing efforts is available on &lt;a href="%s"&gt;the Fedora QA wiki&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/QA'))}</p>
         </div>
         </div>
         <div class="col-md-4 col-xs-12">
         <div class="col-xs-12 text-center">
           <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
-          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;s390x@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/s390x'))}</p>
+          <p>${Markup(_('Email discussion of Fedora testing is available on the mailing list at &lt;a href="%s"&gt;test@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/test'))}</p>
         </div>
         </div>
         <div class="col-md-4 col-xs-12">
         <div class="col-xs-12 text-center">
           <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
-          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-s390x&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-s390x'))}</p>
+          <p>${Markup(_('Discussion of Feora testing takes place in the &lt;a href="%s"&gt;#fedora-qa&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org.&lt;/strong&gt;') % ('http://webchat.freenode.net/?channels=fedora-qa'))}</p>
         </div>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
         </div>
       </div>
     </div>

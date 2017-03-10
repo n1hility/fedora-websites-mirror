@@ -260,7 +260,10 @@ iso_size={
     'manual_pre_atomic_libvag_cloud': '400',   # In MB
     # Everything release
     'x86_64_ev':        '477',   #In MB
-    'i386_ev':          '465'   #In MB
+    'i386_ev':          '465',   #In MB
+    # Everything prerelease
+    'pre_x86_64_ev':        '477',   #In MB
+    'pre_i386_ev':          '465',   #In MB
 }
 
 # Redirect EC2 images
