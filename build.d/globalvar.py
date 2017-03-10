@@ -54,6 +54,7 @@ release={
     'RC_pre_gold': '1.1',         # insert the number of the prerelease RC version declared GOLD
     'RC_pre_build': '1',          # sometimes releng use the RC build
     'RC_pre_gold_aarch64': '1.3', # Pre RC Gold for aarch64
+    'RC_pre_gold_ppc64': '1.3',   # Pre RC Gold for ppc64
 
     'atomic_qcow2_cloud_url': 'FIXME',
     'atomic_raw_cloud_url': 'FIXME',
