@@ -55,7 +55,8 @@ release={
     'RC_pre_build': '1',          # sometimes releng use the RC build
     'RC_pre_gold_aarch64': '1.3', # Pre RC Gold for aarch64
     'RC_pre_gold_ppc64': '1.3',   # Pre RC Gold for ppc64
-    'RC_pre_gold_ppc64le': '1.3',   # Pre RC Gold for ppc64le
+    'RC_pre_gold_ppc64le': '1.3', # Pre RC Gold for ppc64le
+    'RC_pre_gold_s390x': '1.3',   # Pre RC Gold for s390x
 
     'atomic_qcow2_cloud_url': 'FIXME',
     'atomic_raw_cloud_url': 'FIXME',

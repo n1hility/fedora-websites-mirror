@@ -368,16 +368,21 @@
           </div>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4 class="panel-title">
+              <h3 class="panel-title">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                <img src="/static/images/s390x.png" />
+                <img src="/static/images/ppc.png" />
                 ${Markup(_('s390x Architecture'))}
                 </a>
-              </h4>
+              </h3>
             </div>
             <div id="collapseFour" class="panel-collapse collapse">
-              <div class="panel-body">
-                This is just a test
+              <div class="panel-body panel-heading">
+                <h3 class="panel-title accordion-title">
+                  <img src="/static/images/server.png" />
+                  ${_('Fedora Server')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/s390x/iso/Fedora-Server-dvd-s390x-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
               </div>
             </div>
           </div>
