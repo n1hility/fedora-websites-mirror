@@ -319,16 +319,50 @@
           </div>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4 class="panel-title">
+              <h3 class="panel-title">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
                 <img src="/static/images/ppc.png" />
                 ${Markup(_('PowerPC Architecture (PPC64LE)'))}
                 </a>
-              </h4>
+              </h3>
             </div>
             <div id="collapseThree" class="panel-collapse collapse">
-              <div class="panel-body">
-                This is just a test
+              <div class="panel-body panel-heading">
+                <h3 class="panel-title accordion-title">
+                  <img src="/static/images/server.png" />
+                  ${_('Fedora Server DVD')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/ppc64le/iso/Fedora-Server-dvd-ppc64le-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title">
+                  <img src="/static/images/server.png" />
+                  ${_('Fedora Server Netinstall')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/ppc64le/iso/Fedora-Server-netinst-ppc64le-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title">
+                  <img src="/static/images/cloud.png" />
+                  ${_('Fedora Cloud Netinstall')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/ppc64le/iso/Fedora-Cloud-netinst-ppc64le-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title">
+                  <img src="/static/images/cloud.png" />
+                  ${_('Fedora Cloud qcow2')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/CloudImages/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.ppc64le.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title">
+                  <img src="/static/images/cloud.png" />
+                  ${_('Fedora Cloud raw')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/CloudImages/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.ppc64le.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title">
+                  <img src="/static/images/docker.png" />
+                  ${_('Fedora Docker')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Docker/ppc64le/images/Fedora-Docker-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.ppc64le.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></span>
+                </h3>
               </div>
             </div>
           </div>
