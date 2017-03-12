@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-02-07 23:03+0100\n"
+"POT-Creation-Date: 2017-03-12 23:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,13 +39,31 @@ msgid ""
 "alternative versions of Fedora."
 msgstr ""
 
-#: data/content/index.html:33 data/content/index.html:93
-#: data/content/index.html:138
+#: data/content/index.html:35 data/content/index.html:46
+#, python-format
+msgid ""
+"<strong>Fedora %(rel)s %(state)s</strong> released! <a "
+"href=\"%(link)s\">Test it now ></a>"
+msgstr ""
+
+#: data/content/index.html:57
+#, python-format
+msgid "Fedora %(rel)s released! Get it now."
+msgstr ""
+
+#: data/content/index.html:70 data/content/index.html:130
+#: data/content/index.html:175 data/content/prerelease/index.html:53
+#: data/content/prerelease/index.html:113
+#: data/content/prerelease/index.html:158
+#: data/content/prerelease/index.html:858
+#: data/content/prerelease/index.html:894
 msgid "Network Installers"
 msgstr ""
 
-#: data/content/index.html:38 data/content/index.html:98
-#: data/content/index.html:143
+#: data/content/index.html:75 data/content/index.html:135
+#: data/content/index.html:180 data/content/prerelease/index.html:58
+#: data/content/prerelease/index.html:118
+#: data/content/prerelease/index.html:163
 msgid ""
 "These are very small images you can use to install Fedora over the "
 "network."
@@ -61,13 +79,29 @@ msgstr ""
 #: data/content/alt/index.html:659 data/content/alt/index.html:670
 #: data/content/alt/index.html:732 data/content/alt/index.html:743
 #: data/content/alt/index.html:849 data/content/alt/index.html:882
-#: data/content/alt/index.html:909 data/content/index.html:46
-#: data/content/index.html:107 data/content/index.html:152
+#: data/content/alt/index.html:909 data/content/index.html:83
+#: data/content/index.html:144 data/content/index.html:189
+#: data/content/prerelease/index.html:66 data/content/prerelease/index.html:127
+#: data/content/prerelease/index.html:172
+#: data/content/prerelease/index.html:496
+#: data/content/prerelease/index.html:532
+#: data/content/prerelease/index.html:541
+#: data/content/prerelease/index.html:593
+#: data/content/prerelease/index.html:602
+#: data/content/prerelease/index.html:665
+#: data/content/prerelease/index.html:676
+#: data/content/prerelease/index.html:738
+#: data/content/prerelease/index.html:749
+#: data/content/prerelease/index.html:825
+#: data/content/prerelease/index.html:872
+#: data/content/prerelease/index.html:908
 msgid "Fedora Server"
 msgstr ""
 
-#: data/content/index.html:49 data/content/index.html:63
-#: data/content/index.html:265
+#: data/content/index.html:86 data/content/index.html:100
+#: data/content/index.html:302 data/content/prerelease/index.html:69
+#: data/content/prerelease/index.html:83 data/content/prerelease/index.html:828
+#: data/content/prerelease/index.html:842
 #, python-format
 msgid "64 bit %sMB ISO"
 msgstr ""
@@ -106,16 +140,91 @@ msgstr ""
 #: data/content/cloud/index.html:135 data/content/cloud/index.html:170
 #: data/content/cloud/index.html:184 data/content/cloud/index.html:211
 #: data/content/cloud/index.html:220 data/content/cloud/index.html:249
-#: data/content/cloud/index.html:260 data/content/index.html:52
-#: data/content/index.html:66 data/content/index.html:80
-#: data/content/index.html:108 data/content/index.html:117
-#: data/content/index.html:126 data/content/index.html:155
-#: data/content/index.html:166 data/content/index.html:177
-#: data/content/index.html:216 data/content/index.html:235
-#: data/content/index.html:268 data/content/index.html:282
-#: data/content/index.html:313 data/content/index.html:322
-#: data/content/index.html:354 data/content/index.html:365
-#: data/templates/footer.html:37
+#: data/content/cloud/index.html:260 data/content/index.html:89
+#: data/content/index.html:103 data/content/index.html:117
+#: data/content/index.html:145 data/content/index.html:154
+#: data/content/index.html:163 data/content/index.html:192
+#: data/content/index.html:203 data/content/index.html:214
+#: data/content/index.html:253 data/content/index.html:272
+#: data/content/index.html:305 data/content/index.html:319
+#: data/content/index.html:350 data/content/index.html:359
+#: data/content/index.html:391 data/content/index.html:402
+#: data/content/prerelease/index.html:72 data/content/prerelease/index.html:86
+#: data/content/prerelease/index.html:100
+#: data/content/prerelease/index.html:128
+#: data/content/prerelease/index.html:137
+#: data/content/prerelease/index.html:146
+#: data/content/prerelease/index.html:175
+#: data/content/prerelease/index.html:186
+#: data/content/prerelease/index.html:197
+#: data/content/prerelease/index.html:242
+#: data/content/prerelease/index.html:247
+#: data/content/prerelease/index.html:253
+#: data/content/prerelease/index.html:258
+#: data/content/prerelease/index.html:264
+#: data/content/prerelease/index.html:269
+#: data/content/prerelease/index.html:275
+#: data/content/prerelease/index.html:280
+#: data/content/prerelease/index.html:286
+#: data/content/prerelease/index.html:291
+#: data/content/prerelease/index.html:297
+#: data/content/prerelease/index.html:302
+#: data/content/prerelease/index.html:327
+#: data/content/prerelease/index.html:332
+#: data/content/prerelease/index.html:338
+#: data/content/prerelease/index.html:343
+#: data/content/prerelease/index.html:349
+#: data/content/prerelease/index.html:354
+#: data/content/prerelease/index.html:360
+#: data/content/prerelease/index.html:365
+#: data/content/prerelease/index.html:371
+#: data/content/prerelease/index.html:376
+#: data/content/prerelease/index.html:382
+#: data/content/prerelease/index.html:387
+#: data/content/prerelease/index.html:412
+#: data/content/prerelease/index.html:417
+#: data/content/prerelease/index.html:423
+#: data/content/prerelease/index.html:428
+#: data/content/prerelease/index.html:434
+#: data/content/prerelease/index.html:439
+#: data/content/prerelease/index.html:445
+#: data/content/prerelease/index.html:450
+#: data/content/prerelease/index.html:456
+#: data/content/prerelease/index.html:461
+#: data/content/prerelease/index.html:467
+#: data/content/prerelease/index.html:472
+#: data/content/prerelease/index.html:497
+#: data/content/prerelease/index.html:502
+#: data/content/prerelease/index.html:533
+#: data/content/prerelease/index.html:542
+#: data/content/prerelease/index.html:551
+#: data/content/prerelease/index.html:560
+#: data/content/prerelease/index.html:569
+#: data/content/prerelease/index.html:578
+#: data/content/prerelease/index.html:594
+#: data/content/prerelease/index.html:603
+#: data/content/prerelease/index.html:612
+#: data/content/prerelease/index.html:621
+#: data/content/prerelease/index.html:630
+#: data/content/prerelease/index.html:639
+#: data/content/prerelease/index.html:668
+#: data/content/prerelease/index.html:679
+#: data/content/prerelease/index.html:690
+#: data/content/prerelease/index.html:701
+#: data/content/prerelease/index.html:712
+#: data/content/prerelease/index.html:723
+#: data/content/prerelease/index.html:741
+#: data/content/prerelease/index.html:752
+#: data/content/prerelease/index.html:763
+#: data/content/prerelease/index.html:774
+#: data/content/prerelease/index.html:785
+#: data/content/prerelease/index.html:796
+#: data/content/prerelease/index.html:831
+#: data/content/prerelease/index.html:845
+#: data/content/prerelease/index.html:873
+#: data/content/prerelease/index.html:882
+#: data/content/prerelease/index.html:911
+#: data/content/prerelease/index.html:922 data/templates/footer.html:37
 msgid "Download"
 msgstr ""
 
@@ -153,140 +262,218 @@ msgstr ""
 #: data/content/cloud/index.html:135 data/content/cloud/index.html:170
 #: data/content/cloud/index.html:184 data/content/cloud/index.html:211
 #: data/content/cloud/index.html:220 data/content/cloud/index.html:249
-#: data/content/cloud/index.html:260 data/content/index.html:52
-#: data/content/index.html:66 data/content/index.html:80
-#: data/content/index.html:108 data/content/index.html:117
-#: data/content/index.html:126 data/content/index.html:155
-#: data/content/index.html:166 data/content/index.html:177
-#: data/content/index.html:268 data/content/index.html:282
-#: data/content/index.html:313 data/content/index.html:322
-#: data/content/index.html:354 data/content/index.html:365
+#: data/content/cloud/index.html:260 data/content/index.html:89
+#: data/content/index.html:103 data/content/index.html:117
+#: data/content/index.html:145 data/content/index.html:154
+#: data/content/index.html:163 data/content/index.html:192
+#: data/content/index.html:203 data/content/index.html:214
+#: data/content/index.html:305 data/content/index.html:319
+#: data/content/index.html:350 data/content/index.html:359
+#: data/content/index.html:391 data/content/index.html:402
+#: data/content/prerelease/index.html:72 data/content/prerelease/index.html:86
+#: data/content/prerelease/index.html:100
+#: data/content/prerelease/index.html:128
+#: data/content/prerelease/index.html:137
+#: data/content/prerelease/index.html:146
+#: data/content/prerelease/index.html:175
+#: data/content/prerelease/index.html:186
+#: data/content/prerelease/index.html:197
+#: data/content/prerelease/index.html:242
+#: data/content/prerelease/index.html:247
+#: data/content/prerelease/index.html:253
+#: data/content/prerelease/index.html:258
+#: data/content/prerelease/index.html:264
+#: data/content/prerelease/index.html:269
+#: data/content/prerelease/index.html:275
+#: data/content/prerelease/index.html:280
+#: data/content/prerelease/index.html:286
+#: data/content/prerelease/index.html:291
+#: data/content/prerelease/index.html:297
+#: data/content/prerelease/index.html:302
+#: data/content/prerelease/index.html:327
+#: data/content/prerelease/index.html:332
+#: data/content/prerelease/index.html:338
+#: data/content/prerelease/index.html:343
+#: data/content/prerelease/index.html:349
+#: data/content/prerelease/index.html:354
+#: data/content/prerelease/index.html:360
+#: data/content/prerelease/index.html:365
+#: data/content/prerelease/index.html:371
+#: data/content/prerelease/index.html:376
+#: data/content/prerelease/index.html:382
+#: data/content/prerelease/index.html:387
+#: data/content/prerelease/index.html:412
+#: data/content/prerelease/index.html:417
+#: data/content/prerelease/index.html:423
+#: data/content/prerelease/index.html:428
+#: data/content/prerelease/index.html:434
+#: data/content/prerelease/index.html:439
+#: data/content/prerelease/index.html:445
+#: data/content/prerelease/index.html:450
+#: data/content/prerelease/index.html:456
+#: data/content/prerelease/index.html:461
+#: data/content/prerelease/index.html:467
+#: data/content/prerelease/index.html:472
+#: data/content/prerelease/index.html:497
+#: data/content/prerelease/index.html:502
+#: data/content/prerelease/index.html:533
+#: data/content/prerelease/index.html:542
+#: data/content/prerelease/index.html:551
+#: data/content/prerelease/index.html:560
+#: data/content/prerelease/index.html:569
+#: data/content/prerelease/index.html:578
+#: data/content/prerelease/index.html:594
+#: data/content/prerelease/index.html:603
+#: data/content/prerelease/index.html:612
+#: data/content/prerelease/index.html:621
+#: data/content/prerelease/index.html:630
+#: data/content/prerelease/index.html:639
+#: data/content/prerelease/index.html:668
+#: data/content/prerelease/index.html:679
+#: data/content/prerelease/index.html:690
+#: data/content/prerelease/index.html:701
+#: data/content/prerelease/index.html:712
+#: data/content/prerelease/index.html:723
+#: data/content/prerelease/index.html:741
+#: data/content/prerelease/index.html:752
+#: data/content/prerelease/index.html:763
+#: data/content/prerelease/index.html:774
+#: data/content/prerelease/index.html:785
+#: data/content/prerelease/index.html:796
+#: data/content/prerelease/index.html:831
+#: data/content/prerelease/index.html:845
+#: data/content/prerelease/index.html:873
+#: data/content/prerelease/index.html:882
+#: data/content/prerelease/index.html:911
+#: data/content/prerelease/index.html:922
 msgid "Verify"
 msgstr ""
 
-#: data/content/index.html:60 data/content/index.html:74
-#: data/content/index.html:163 data/content/index.html:174
+#: data/content/index.html:97 data/content/index.html:111
+#: data/content/index.html:200 data/content/index.html:211
+#: data/content/prerelease/index.html:80 data/content/prerelease/index.html:94
+#: data/content/prerelease/index.html:183
+#: data/content/prerelease/index.html:194
+#: data/content/prerelease/index.html:839
+#: data/content/prerelease/index.html:919
 msgid "Fedora Workstation"
 msgstr ""
 
-#: data/content/index.html:77 data/content/index.html:279
+#: data/content/index.html:114 data/content/index.html:316
+#: data/content/prerelease/index.html:97
 #, python-format
 msgid "32 bit %sMB ISO"
 msgstr ""
 
-#: data/content/index.html:116 data/content/index.html:125
+#: data/content/index.html:153 data/content/index.html:162
+#: data/content/prerelease/index.html:136
+#: data/content/prerelease/index.html:145
+#: data/content/prerelease/index.html:881
 msgid "Workstation"
 msgstr ""
 
-#: data/content/index.html:189
+#: data/content/index.html:226
 msgid "Bittorrent Downloads"
 msgstr ""
 
-#: data/content/index.html:194
+#: data/content/index.html:231
 msgid ""
 "Fedora offers many bittorrent downloads. Access our directory of torrents"
 " below:"
 msgstr ""
 
-#: data/content/index.html:197
+#: data/content/index.html:234
 msgid "torrent.fedoraproject.org"
 msgstr ""
 
-#: data/content/alt/index.html:16 data/content/index.html:208
+#: data/content/alt/index.html:16 data/content/index.html:245
+#: data/content/prerelease/index.html:213
 msgid "Alternate Architectures"
 msgstr ""
 
-#: data/content/index.html:213
+#: data/content/index.html:250
 msgid ""
 "These are additional architectures supported by Fedora beyond the "
 "standard set."
 msgstr ""
 
-#: data/content/cloud/index.html:17 data/content/index.html:227
+#: data/content/cloud/index.html:17 data/content/index.html:264
 msgid "Cloud Base Images"
 msgstr ""
 
-#: data/content/index.html:232
+#: data/content/index.html:269
 msgid "These are standard Cloud Base images."
 msgstr ""
 
-#: data/content/index.html:246 data/content/index.html:262
-#: data/content/index.html:276 data/content/index.html:295
-#: data/content/index.html:312 data/content/index.html:321
-#: data/content/index.html:334 data/content/index.html:351
-#: data/content/index.html:362
+#: data/content/index.html:283 data/content/index.html:299
+#: data/content/index.html:313 data/content/index.html:332
+#: data/content/index.html:349 data/content/index.html:358
+#: data/content/index.html:371 data/content/index.html:388
+#: data/content/index.html:399 data/content/prerelease/index.html:812
 msgid "Everything"
 msgstr ""
 
-#: data/content/index.html:249 data/content/index.html:298
-#: data/content/index.html:337
+#: data/content/index.html:286 data/content/index.html:335
+#: data/content/index.html:374
 msgid "Experts only!"
 msgstr ""
 
-#: data/content/index.html:254 data/content/index.html:303
-#: data/content/index.html:342
+#: data/content/index.html:291 data/content/index.html:340
+#: data/content/index.html:379 data/content/prerelease/index.html:817
+#: data/content/prerelease/index.html:863
+#: data/content/prerelease/index.html:899
 msgid ""
 "Choose from thousands of packages to customize your installation; "
 "requires a fast network connection."
 msgstr ""
 
-#: data/content/index.html:377 data/content/index.html:417
-#: data/content/index.html:453
+#: data/content/index.html:414 data/content/index.html:454
+#: data/content/index.html:490
 msgid "Testing Images"
 msgstr ""
 
-#: data/content/index.html:382 data/content/index.html:422
-#: data/content/index.html:458
+#: data/content/index.html:419 data/content/index.html:459
+#: data/content/index.html:495
 msgid ""
 "These are unreleased development versions of Fedora made available for "
 "testing the next official Fedora release."
 msgstr ""
 
-#: data/content/index.html:390 data/content/index.html:431
-#: data/content/index.html:467
+#: data/content/index.html:427 data/content/index.html:468
+#: data/content/index.html:504
 msgid "Nightly builds"
 msgstr ""
 
-#: data/content/index.html:393 data/content/index.html:404
-#: data/content/index.html:432 data/content/index.html:441
-#: data/content/index.html:470 data/content/index.html:481
+#: data/content/index.html:430 data/content/index.html:441
+#: data/content/index.html:469 data/content/index.html:478
+#: data/content/index.html:507 data/content/index.html:518
 msgid "View Images >"
 msgstr ""
 
-#: data/content/index.html:401
+#: data/content/index.html:438
 msgid "Other composes (Alpha / Beta / TCs / RCs)"
 msgstr ""
 
-#: data/content/index.html:440 data/content/index.html:478
+#: data/content/index.html:477 data/content/index.html:515
 msgid "Other test composes"
 msgstr ""
 
 #: data/content/alt/index.html:285 data/content/alt/index.html:802
 #: data/content/alt/index.html:924 data/content/cloud/index.html:620
-#: data/content/index.html:581
+#: data/content/index.html:618
 msgid "Support Resources"
 msgstr ""
 
-#: data/content/index.html:586
+#: data/content/index.html:623 data/content/prerelease/index.html:962
 msgid "General Help Using Fedora"
 msgstr ""
 
-#: data/content/index.html:587
+#: data/content/index.html:624
 #, python-format
 msgid ""
 "Need some help with Fedora? Check out <a href=\"%s\">Ask Fedora</a>, "
 "where you can read archives of questions from other users, or ask your "
 "own question."
-msgstr ""
-
-#: data/content/index.html:599 data/content/index.html:610
-#, python-format
-msgid "Fedora %(rel)s %(state)s released! <a href=\"%(link)s\">Try it now ></a>"
-msgstr ""
-
-#: data/content/index.html:621
-#, python-format
-msgid "Fedora %(rel)s released! Try it now."
 msgstr ""
 
 #: data/content/verify.html:8 data/content/verify.html:18
@@ -308,7 +495,7 @@ msgid ""
 "the same directory as the image you downloaded."
 msgstr ""
 
-#: data/content/verify.html:39
+#: data/content/prerelease/index.html:501 data/content/verify.html:39
 msgid "Server"
 msgstr ""
 
@@ -360,7 +547,9 @@ msgstr ""
 msgid "For Cloud Base images"
 msgstr ""
 
-#: data/content/verify.html:84
+#: data/content/prerelease/index.html:301
+#: data/content/prerelease/index.html:386
+#: data/content/prerelease/index.html:471 data/content/verify.html:84
 msgid "Docker"
 msgstr ""
 
@@ -444,7 +633,7 @@ msgid "Additional architectures supported by Fedora"
 msgstr ""
 
 #: data/content/alt/index.html:27 data/content/alt/index.html:129
-#: data/content/alt/index.html:201
+#: data/content/alt/index.html:201 data/content/prerelease/index.html:227
 msgid "ARM<span class=\"sup\">®</span> aarch64 Architecture"
 msgstr ""
 
@@ -482,7 +671,18 @@ msgstr ""
 #: data/content/alt/index.html:692 data/content/alt/index.html:703
 #: data/content/alt/index.html:754 data/content/alt/index.html:765
 #: data/content/alt/index.html:776 data/content/cloud/index.html:8
-#: data/content/cloud/index.html:16
+#: data/content/cloud/index.html:16 data/content/prerelease/index.html:550
+#: data/content/prerelease/index.html:559
+#: data/content/prerelease/index.html:568
+#: data/content/prerelease/index.html:611
+#: data/content/prerelease/index.html:620
+#: data/content/prerelease/index.html:629
+#: data/content/prerelease/index.html:687
+#: data/content/prerelease/index.html:698
+#: data/content/prerelease/index.html:709
+#: data/content/prerelease/index.html:760
+#: data/content/prerelease/index.html:771
+#: data/content/prerelease/index.html:782
 msgid "Fedora Cloud"
 msgstr ""
 
@@ -502,7 +702,13 @@ msgstr ""
 #: data/content/alt/index.html:270 data/content/alt/index.html:402
 #: data/content/alt/index.html:493 data/content/alt/index.html:571
 #: data/content/alt/index.html:632 data/content/alt/index.html:714
-#: data/content/alt/index.html:787
+#: data/content/alt/index.html:787 data/content/prerelease/index.html:296
+#: data/content/prerelease/index.html:381
+#: data/content/prerelease/index.html:466
+#: data/content/prerelease/index.html:577
+#: data/content/prerelease/index.html:638
+#: data/content/prerelease/index.html:720
+#: data/content/prerelease/index.html:793
 msgid "Fedora Docker"
 msgstr ""
 
@@ -514,6 +720,7 @@ msgstr ""
 
 #: data/content/alt/index.html:291 data/content/alt/index.html:808
 #: data/content/alt/index.html:930 data/content/cloud/index.html:626
+#: data/content/prerelease/index.html:943
 msgid "Documentation"
 msgstr ""
 
@@ -527,6 +734,7 @@ msgstr ""
 
 #: data/content/alt/index.html:297 data/content/alt/index.html:814
 #: data/content/alt/index.html:936 data/content/cloud/index.html:632
+#: data/content/prerelease/index.html:949
 msgid "Email"
 msgstr ""
 
@@ -539,6 +747,7 @@ msgstr ""
 
 #: data/content/alt/index.html:303 data/content/alt/index.html:820
 #: data/content/alt/index.html:942 data/content/cloud/index.html:638
+#: data/content/prerelease/index.html:955
 msgid "Chat"
 msgstr ""
 
@@ -550,24 +759,27 @@ msgid ""
 msgstr ""
 
 #: data/content/alt/index.html:319 data/content/alt/index.html:512
-#: data/content/alt/index.html:645
+#: data/content/alt/index.html:645 data/content/prerelease/index.html:518
+#: data/content/prerelease/index.html:651
 msgid "Power Architecture"
 msgstr ""
 
 #: data/content/alt/index.html:324 data/content/alt/index.html:517
+#: data/content/prerelease/index.html:523
 msgid ""
 "PPC64 images are for installation on IBM Power systems or OpenPOWER "
 "systems."
 msgstr ""
 
 #: data/content/alt/index.html:415 data/content/alt/index.html:578
-#: data/content/alt/index.html:723
+#: data/content/alt/index.html:723 data/content/prerelease/index.html:584
+#: data/content/prerelease/index.html:729
 msgid ""
 "PPC64LE images are for installation on IBM Power systems or OpenPOWER "
 "systems."
 msgstr ""
 
-#: data/content/alt/index.html:650
+#: data/content/alt/index.html:650 data/content/prerelease/index.html:656
 msgid ""
 "These images are for installation on IBM Power systems or OpenPOWER "
 "systems."
@@ -595,7 +807,7 @@ msgid ""
 msgstr ""
 
 #: data/content/alt/index.html:836 data/content/alt/index.html:868
-#: data/content/alt/index.html:895
+#: data/content/alt/index.html:895 data/content/prerelease/index.html:482
 msgid "s390x Architecture"
 msgstr ""
 
@@ -822,6 +1034,157 @@ msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-"
 "cloud</a> IRC channel on <strong>irc.freenode.org</strong> for real-time "
 "chat."
+msgstr ""
+
+#: data/content/prerelease/index.html:8
+msgid "Fedora Alternate Architectures Prerelease Images"
+msgstr ""
+
+#: data/content/prerelease/index.html:16
+msgid "Pre-releases"
+msgstr ""
+
+#: data/content/prerelease/index.html:17
+msgid "Official pre-releases of Fedora alternative downloads."
+msgstr ""
+
+#: data/content/prerelease/index.html:28 data/content/prerelease/index.html:39
+#, python-format
+msgid "Currently offering <strong>Fedora %(rel)s %(state)s</strong>."
+msgstr ""
+
+#: data/content/prerelease/index.html:28
+msgid "Released 21 march 2017."
+msgstr ""
+
+#: data/content/prerelease/index.html:53 data/content/prerelease/index.html:113
+#: data/content/prerelease/index.html:158
+#: data/content/prerelease/index.html:213
+#: data/content/prerelease/index.html:812
+#: data/content/prerelease/index.html:858
+#: data/content/prerelease/index.html:894
+#, python-format
+msgid "F%(rel)s %(state)s"
+msgstr ""
+
+#: data/content/prerelease/index.html:218
+msgid ""
+"These are additional architectures supported by Fedora beyond the "
+"standard set"
+msgstr ""
+
+#: data/content/prerelease/index.html:233
+msgid "ARM<span class=\"sup\">®</span>"
+msgstr ""
+
+#: data/content/prerelease/index.html:241
+#: data/content/prerelease/index.html:326
+#: data/content/prerelease/index.html:411
+msgid "Fedora Server DVD"
+msgstr ""
+
+#: data/content/prerelease/index.html:246
+#: data/content/prerelease/index.html:331
+#: data/content/prerelease/index.html:416
+msgid "DVD"
+msgstr ""
+
+#: data/content/prerelease/index.html:252
+#: data/content/prerelease/index.html:337
+#: data/content/prerelease/index.html:422
+msgid "Fedora Server Netinstall"
+msgstr ""
+
+#: data/content/prerelease/index.html:257
+#: data/content/prerelease/index.html:268
+#: data/content/prerelease/index.html:342
+#: data/content/prerelease/index.html:353
+#: data/content/prerelease/index.html:427
+#: data/content/prerelease/index.html:438
+msgid "Net"
+msgstr ""
+
+#: data/content/prerelease/index.html:263
+#: data/content/prerelease/index.html:348
+#: data/content/prerelease/index.html:433
+msgid "Fedora Cloud Netinstall"
+msgstr ""
+
+#: data/content/prerelease/index.html:274
+#: data/content/prerelease/index.html:359
+#: data/content/prerelease/index.html:444
+msgid "Fedora Cloud qcow2"
+msgstr ""
+
+#: data/content/prerelease/index.html:279
+#: data/content/prerelease/index.html:364
+#: data/content/prerelease/index.html:449
+msgid "qcow2"
+msgstr ""
+
+#: data/content/prerelease/index.html:285
+#: data/content/prerelease/index.html:370
+#: data/content/prerelease/index.html:455
+msgid "Fedora Cloud raw"
+msgstr ""
+
+#: data/content/prerelease/index.html:290
+#: data/content/prerelease/index.html:375
+#: data/content/prerelease/index.html:460
+msgid "raw"
+msgstr ""
+
+#: data/content/prerelease/index.html:312
+msgid "PowerPC Architecture (PPC64)"
+msgstr ""
+
+#: data/content/prerelease/index.html:318
+msgid "PPC64"
+msgstr ""
+
+#: data/content/prerelease/index.html:397
+msgid "PowerPC Architecture (PPC64LE)"
+msgstr ""
+
+#: data/content/prerelease/index.html:403
+msgid "PPC64LE"
+msgstr ""
+
+#: data/content/prerelease/index.html:488
+msgid "s390x"
+msgstr ""
+
+#: data/content/prerelease/index.html:937
+msgid "Testing Resources"
+msgstr ""
+
+#: data/content/prerelease/index.html:944
+#, python-format
+msgid ""
+"Some basic information about getting involved in Fedora's testing efforts"
+" is available on <a href=\"%s\">the Fedora QA wiki</a>."
+msgstr ""
+
+#: data/content/prerelease/index.html:950
+#, python-format
+msgid ""
+"Email discussion of Fedora testing is available on the mailing list at <a"
+" href=\"%s\">test@lists.fedoraproject.org</a>."
+msgstr ""
+
+#: data/content/prerelease/index.html:956
+#, python-format
+msgid ""
+"Discussion of Feora testing takes place in the <a href=\"%s\">#fedora-"
+"qa</a> IRC channel on <strong>irc.freenode.org.</strong>"
+msgstr ""
+
+#: data/content/prerelease/index.html:963
+#, python-format
+msgid ""
+"Sometimes you may encounter an issue with this spin that you can get help"
+" with using general Fedora support resources. A list of resources is "
+"available at the <a href=\"%s\">Fedora “Get Help” page</a>."
 msgstr ""
 
 #: data/templates/content-export-regulations.html:25
