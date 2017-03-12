@@ -12,7 +12,7 @@ release={
     'curr_alt_state':  'Alpha',        # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_cloud_state':  'Alpha',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_cloud_AMI_state':  'Alpha',   # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_atomic_state':  '',   # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_atomic_state':  'Alpha',   # either 'Alpha', 'Beta' or '' (i.e empty)
     'prev_arm_id': '24',
     'prev_alt_id': '24',
     'prev_cloud_id': '24',
@@ -253,6 +253,7 @@ iso_size={
     'pre_atomic_qcow2_cloud':  '???',   # In MB
     'pre_atomic_VBvag_cloud':  '???',   # In MB
     'pre_atomic_libvag_cloud': '???',   # In MB
+    'pre_atomic_iso':          '918',   # In MB
     'pre_x86_64_docker':        '40',   # In MB
     'pre_VBvag_cloud':         '237',   # In MB
     'pre_libvag_cloud':        '227',   # In MB
