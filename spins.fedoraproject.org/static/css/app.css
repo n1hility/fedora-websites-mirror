@@ -222,15 +222,27 @@ a.btn-lg {
 }
 
 .newsbox {
-  background-color: #ebb05d;
-  color: #000;
+  background-color: #a07cbc;
+  color: #fff;
   padding: 20px;
 }
 
 .newsbox h2,
 .newsbox h3 {
+  margin-top: 22px;
+  color: #fff;
+}
+
+.newsbox .index h3 {
   margin-top: 10px;
-  color: #000;
+  color: #fff;
+}
+
+.newsbox a,
+.newsbox a:hover,
+.newsbox a:active {
+  text-decoration: none;
+  color: #fff;
 }
 
 .widewrapper {
