@@ -235,42 +235,5 @@
 
   </div>
 
-<!-- News -->
-      <py:choose>
-        <py:when test="global_variables.release['curr_state'] == 'Alpha'">
-          <div class="newsbox">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-12 text-center">
-                  <h3>${Markup(_('Fedora %(rel)s %(state)s released! &lt;a href="%(link)s"&gt;Try it now >&lt;/a&gt;')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state'], 'link':'prerelease.html'}}</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </py:when>
-        <py:when test="global_variables.release['curr_state'] == 'Beta'">
-          <div class="jumbotron newsbox">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-12 text-center">
-                  <h3>${Markup(_('Fedora %(rel)s %(state)s released! &lt;a href="%(link)s"&gt;Try it now >&lt;/a&gt;')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state'], 'link':'prerelease.html'}}</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </py:when>
-        <py:otherwise>
-          <div class="jumbotron newsbox">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-12 text-center">
-                  <h3>${Markup(_('Fedora %(rel)s released! Check it out in the Download section.')) % {'rel':global_variables.release['curr_id']}}</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </py:otherwise>
-      </py:choose>
-
 </body>
 </html>
