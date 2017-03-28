@@ -1,17 +1,20 @@
 body{
   position:relative;
-  margin-top:55px;
+  margin-top:50px;
 }
 
 .flock-groupimg {
-  background: url('/static/images/index/flower-background.png') repeat;
+  background-color: #cceaec;
+  background-image: url('/static/images/capecod-landscape.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-bottom:15em!important;
 }
 
 
 .flock-navbar {
     font-family: "Montserrat";
-    background-color: #ffffff;
-    border-bottom: 1px solid #ccc;
+    background-color: #cceaec;
 }
 
 .flock-navbar ul.nav {
@@ -24,6 +27,14 @@ body{
 
 .nav > li > a {
   padding: 5px 10px;
+  color:#326b63;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active  {
+  background-color: #326b63;
+  color:white;
 }
 
 .navbar-brand{
@@ -50,7 +61,7 @@ h1, h2, h3, h4, h5, h6
 
 .large-icon{
   color: white;
-background: #428bca none repeat scroll 0% 0%;
+background: #326b63 none repeat scroll 0% 0%;
 width: 100px;
 margin-left: auto;
 margin-right: auto;
@@ -71,16 +82,16 @@ font-size: 50px;
 
 
 .non-jumbo.blue{
-  background-color: #428bca;
-  color:white;
+  background-color: #cceaec;
+  color:#326b63;
 }
 
 .non-jumbo.blue a
 {color: #444;}
 
 .non-jumbo.blue .large-icon{
-  background: white none repeat scroll 0% 0%;
-  color: #428bca;
+  background: #326b63 none repeat scroll 0% 0%;
+  color: white;
 }
 
 hr
