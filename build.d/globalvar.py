@@ -52,7 +52,7 @@ release={
     'RC_gold_ppc64': '1.2',       # RC Gold for ppc64
     'RC_gold_s390x': '1.3',       # RC Gold for s390x
     'RC_pre_gold': '1.7',         # insert the number of the prerelease RC version declared GOLD
-    'RC_pre_build': '1.7',        # sometimes releng use the RC build
+    'RC_pre_build': '7',        # sometimes releng use the RC build
     'RC_pre_gold_aarch64': '1.7', # Pre RC Gold for aarch64
     'RC_pre_gold_ppc64': '1.7',   # Pre RC Gold for ppc64
     'RC_pre_gold_ppc64le': '1.7', # Pre RC Gold for ppc64le
