@@ -222,6 +222,7 @@ iso_size={
     'pre_ARM_KDE':         '1.4',       # In GB
     'pre_ARM_Xfce':        '1.0',       # In GB
     'pre_ARM_LXDE':        '934',       # In MB
+    'pre_ARM_LXQt':        '933',       # In MB
     'pre_ARM_Mate':        '1.3',       # In GB
     'pre_ARM_Cinnamon':    '780',       # In MB
     'pre_ARM_SoaS':        '693',       # In MB
