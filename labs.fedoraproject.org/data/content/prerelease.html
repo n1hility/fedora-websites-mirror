@@ -56,6 +56,7 @@
           </div>
        </div>
 
+<!--
        <div class="high">
     	  <div class="row top-margin">
     	   <div class="col-xs-12 pre-box">
@@ -77,8 +78,9 @@
   	  	   </div>
   	  	  </div>
        </div>
+-->
 
-<!--    	  <div class="row top-margin">
+       <div class="row top-margin">
     	   <div class="col-xs-12 pre-box">
     	  	<div class="col-xs-12 col-sm-4 text-center no-leftpadding">
     	  	  <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-games.jpg" alt="Games Screenshot" />
@@ -94,11 +96,11 @@
     	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/i386/iso/Fedora-Games-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a>
     	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Games']}</h5>
   	  	  		</div>
-  	  	  	</div>
-  	  	   </div>
   	  	  </div>
-       </div>
--->
+  	  	 </div>
+  	   </div>
+
+<!--
        <div class="high">
     	  <div class="row top-margin">
     	   <div class="col-xs-12 pre-box">
@@ -120,6 +122,7 @@
   	  	   </div>
   	  	  </div>
        </div>
+-->
 
        <div class="high">
         <div class="row top-margin">
@@ -143,6 +146,7 @@
           </div>
        </div>
 
+<!--
        <div class="high">
     	  <div class="row top-margin">
     	   <div class="col-xs-12 pre-box">
@@ -186,6 +190,7 @@
   	  	   </div>
   	  	  </div>
        </div>
+-->
 
        <div class="high">
     	  <div class="row top-margin bottom-space">
@@ -207,6 +212,96 @@
   	  	  	</div>
   	  	   </div>
   	  	  </div>
+       </div>
+
+<xi:include href="../templates/generic/devel.html" />
+
+       <div class="high">
+        <div class="row top-margin">
+         <div class="col-xs-12 pre-box">
+          <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+            <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-design.jpg" alt="Design Suite Screenshot" />
+          </div>
+          <div class="col-xs-12 col-sm-8 text-left">
+            <p class="screenshot"><img src="${path}/static/images/design-suite-pre-banner.png" alt="Design Suite banner" /><br />
+            <span class="grey">${_('Open Creativity.')}</span></p>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_labs']}/${global_variables.release['next_id']}/Labs/x86_64/iso" role="button">64-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Design']}</h5>
+              </div>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_alt']}/${global_variables.release['next_id']}/Labs/i386/iso" role="button">32-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Design']}</h5>
+              </div>
+            </div>
+           </div>
+          </div>
+       </div>
+
+       <div class="high">
+        <div class="row top-margin">
+         <div class="col-xs-12 pre-box">
+          <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+            <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-jam.jpg" alt="Jam Screenshot" />
+          </div>
+          <div class="col-xs-12 col-sm-8 text-left">
+            <p class="screenshot"><img src="${path}/static/images/jam-pre-banner.png" alt="Jam banner" /><br />
+            <span class="grey">${_('Unleash your inner musician.')}</span></p>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_labs']}/${global_variables.release['next_id']}/Labs/x86_64/iso" role="button">64-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Jam']}</h5>
+              </div>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_alt']}/${global_variables.release['next_id']}/Labs/i386/iso" role="button">32-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Jam']}</h5>
+              </div>
+            </div>
+           </div>
+          </div>
+       </div>
+
+       <div class="high">
+        <div class="row top-margin">
+         <div class="col-xs-12 pre-box">
+          <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+            <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-robotics.jpg" alt="Robotics Suite Screenshot" />
+          </div>
+          <div class="col-xs-12 col-sm-8 text-left">
+            <p class="screenshot"><img src="${path}/static/images/robotics-suite-pre-banner.png" alt="Robotics Suite banner" /><br />
+            <span class="grey">${_('Dive into Robotics.')}</span></p>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_labs']}/${global_variables.release['next_id']}/Labs/x86_64/iso" role="button">64-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Robotics']}</h5>
+              </div>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_alt']}/${global_variables.release['next_id']}/Labs/i386/iso" role="button">32-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Robotics']}</h5>
+              </div>
+            </div>
+           </div>
+          </div>
+       </div>
+
+       <div class="high">
+        <div class="row top-margin bottom-space">
+         <div class="col-xs-12 pre-box">
+          <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+            <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-scientific.jpg" alt="Scientific Screenshot" />
+          </div>
+          <div class="col-xs-12 col-sm-8 text-left">
+            <p class="screenshot"><img src="${path}/static/images/scientific-pre-banner.png" alt="Scientific banner" /><br />
+            <span class="grey">${_('Open source scientific computing.')}</span></p>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_labs']}/${global_variables.release['next_id']}/Labs/x86_64/iso" role="button">64-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Sci-kde']}</h5>
+              </div>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_alt']}/${global_variables.release['next_id']}/Labs/i386/iso" role="button">32-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Sci-kde']}</h5>
+              </div>
+            </div>
+           </div>
+          </div>
        </div>
 
   	</div>
