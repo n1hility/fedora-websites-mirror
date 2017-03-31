@@ -81,6 +81,8 @@ path={
     'doc':             'https://docs.fedoraproject.org/en-US/Fedora',
     'doc':             'https://docs.fedoraproject.org/en-US/Fedora',
     'unofficial':      'https://dl.fedoraproject.org/pub/alt/unofficial/releases',
+    'devel':      	   'https://download.fedoraproject.org/pub/fedora/linux/development',
+    'devel_alt':  	   'https://download.fedoraproject.org/pub/fedora-secondary/development',
 }
 
 iso_size={

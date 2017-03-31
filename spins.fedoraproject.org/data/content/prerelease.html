@@ -124,6 +124,7 @@
           </div>
        </div>
 
+<!--
        <div class="high">
     	  <div class="row top-margin">
     	   <div class="col-xs-12 pre-box">
@@ -167,6 +168,7 @@
   	  	   </div>
   	  	  </div>
        </div>
+-->
 
        <div class="high">
     	  <div class="row top-margin bottom-space">
@@ -188,6 +190,52 @@
   	  	  	</div>
   	  	   </div>
   	  	  </div>
+       </div>
+
+<xi:include href="../templates/devel.html" />
+
+       <div class="high">
+        <div class="row top-margin">
+         <div class="col-xs-12 pre-box">
+          <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+            <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-matecompiz.jpg" alt="MATE-Compiz Screenshot" />
+          </div>
+          <div class="col-xs-12 col-sm-8 text-left">
+            <p class="screenshot"><img src="${path}/static/images/mate-compiz-pre-banner.png" alt="MATE-Compiz banner" /><br />
+            <span class="grey">${_('A classic Fedora Desktop. With wobbly Windows.')}</span></p>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['devel']}/${global_variables.release['next_id']}/Spins/x86_64/iso" role="button">64-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Mate']}</h5>
+              </div>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_alt']}/${global_variables.release['next_id']}/Spins/i386/iso" role="button">32-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Mate']}</h5>
+              </div>
+            </div>
+           </div>
+          </div>
+       </div>
+
+       <div class="high">
+        <div class="row top-margin bottom-space">
+         <div class="col-xs-12 pre-box">
+          <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+            <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-cinnamon.jpg" alt="Cinnamon Screenshot" />
+          </div>
+          <div class="col-xs-12 col-sm-8 text-left">
+            <p class="screenshot"><img src="${path}/static/images/cinnamon-pre-banner.png" alt="Cinnamon banner" /><br />
+            <span class="grey">${_('Traditional layout, advanced features, easy to use.')}</span></p>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['devel']}/${global_variables.release['next_id']}/Spins/x86_64/iso" role="button">64-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Cinnamon']}</h5>
+              </div>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_alt']}/${global_variables.release['next_id']}/Spins/i386/iso" role="button">32-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Cinnamon']}</h5>
+              </div>
+            </div>
+           </div>
+          </div>
        </div>
 
   	</div>
