@@ -432,25 +432,25 @@ pre_GP2_PV_base_AMI={
 }
 
 pre_HVM_atomic_AMI={
-    #'us-east-1':        'ami-7d1a6c18',     # Virginia
-    #'us-west-2':        'ami-c5f5eaf5',     # Oregon
-    #'us-west-1':        'ami-2945806d',     # California
-    #'eu-west-1':        'ami-b5b895c2',     # Ireland
-    #'eu-central-1':     'ami-b28eb0af',     # Frankfurt
-    #'ap-southeast-1':   'ami-9e9683cc',     # Singapore
-    #'ap-northeast-1':   'ami-28d04628',     # Tokyo
-    #'ap-southeast-2':   'ami-2f165815',     # Sydney
-    #'sa-east-1':        'ami-9b0c9986'      # Sao Paolo
+    'us-east-1':        'ami-0fff7a19',     # Virginia
+    'us-west-2':        'ami-f12abe91',     # Oregon
+    'us-west-1':        'ami-2f0e544f',     # California
+    'eu-west-1':        'ami-8dbe81eb',     # Ireland
+    'eu-central-1':     'ami-ddc515b2',     # Frankfurt
+    'ap-southeast-1':   'ami-9ffd42fc',     # Singapore
+    'ap-northeast-1':   'ami-15785c72',     # Tokyo
+    'ap-southeast-2':   'ami-afd7d8cc',     # Sydney
+    'sa-east-1':        'ami-c81370a4'      # Sao Paolo
 }
 
 pre_GP2_HVM_atomic_AMI={
-    #'us-east-1':        'ami-bf1d6bda',     # Virginia
-    #'us-west-2':        'ami-e9f5ead9',     # Oregon
-    #'us-west-1':        'ami-23458067',     # California
-    #'eu-west-1':        'ami-c7b895b0',     # Ireland
-    #'eu-central-1':     'ami-ac8eb0b1',     # Frankfurt
-    #'ap-southeast-1':   'ami-909683c2',     # Singapore
-    #'ap-northeast-1':   'ami-12d54312',     # Tokyo
-    #'ap-southeast-2':   'ami-3716580d',     # Sydney
-    #'sa-east-1':        'ami-9d0c9980'      # Sao Paolo
+    'us-east-1':        'ami-1efe7b08',     # Virginia
+    'us-west-2':        'ami-832abee3',     # Oregon
+    'us-west-1':        'ami-a40e54c4',     # California
+    'eu-west-1':        'ami-2fbb8449',     # Ireland
+    'eu-central-1':     'ami-0bc61664',     # Frankfurt
+    'ap-southeast-1':   'ami-b7fa45d4',     # Singapore
+    'ap-northeast-1':   'ami-f3795d94',     # Tokyo
+    'ap-southeast-2':   'ami-17d5da74',     # Sydney
+    'sa-east-1':        'ami-881370e4'      # Sao Paolo
 }
