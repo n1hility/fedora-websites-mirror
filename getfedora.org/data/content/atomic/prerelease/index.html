@@ -326,7 +326,7 @@
     <div class="col-md-3 col-xs-12 col-md-offset-1 top-margin">
         <h3>${_('Other Downloads')}</h3>
           <ul>
-            <li><p><a class="download-cloud-splash" href="${global_variables.release['manual_pre_atomic_iso_url']}">${_('Atomic Host ISO image (%sMB)') % global_variables.iso_size['manual_pre_atomic_iso']}</a></p></li>
+            <li><p><a href="${global_variables.release['manual_pre_atomic_iso_url']}">${_('Atomic Host ISO image (%sMB)') % global_variables.iso_size['manual_pre_atomic_iso']}</a></p></li>
             <li><p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Docker/x86_64/images/Fedora-Docker-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.tar.xz">${_('Docker Image (%sMB)') % global_variables.iso_size['pre_x86_64_docker']}</a></p></li>
             <li><p><a href="https://cloud.fedoraproject.org/">Fedora Cloud Base images</a></p></li>
           </ul>
