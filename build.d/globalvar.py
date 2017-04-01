@@ -12,7 +12,7 @@ release={
     'curr_alt_state':  'Alpha',        # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_cloud_state':  'Alpha',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_cloud_AMI_state':  'Alpha',   # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_atomic_state':  'Alpha',   # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_atomic_state':  'Pre-Release',   # No Alpha/Beta for Atomic Host
     'prev_arm_id': '24',
     'prev_alt_id': '24',
     'prev_cloud_id': '24',
@@ -71,6 +71,7 @@ release={
     'manual_pre_atomic_raw_cloud_url': 'https://kojipkgs.fedoraproject.org/compose/branched/Fedora-26-20170331.n.0/compose/CloudImages/x86_64/images/Fedora-Atomic-26-20170331.n.0.x86_64.raw.xz',
     'manual_pre_atomic_VBvag_cloud_url': 'https://kojipkgs.fedoraproject.org/compose/branched/Fedora-26-20170331.n.0/compose/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-26-20170331.n.0.x86_64.vagrant-virtualbox.box',
     'manual_pre_atomic_libvag_cloud_url': 'https://kojipkgs.fedoraproject.org/compose/branched/Fedora-26-20170331.n.0/compose/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-26-20170331.n.0.x86_64.vagrant-libvirt.box',
+    'manual_pre_atomic_date': '20170331',
 }
 
 path={
