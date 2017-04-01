@@ -66,6 +66,11 @@ release={
     'atomic_age': '???',
     'pre_cloud_atomic_freshness': False,
     'pre_cloud_atomic_age': '???',
+    'manual_pre_atomic_iso_url': 'https://kojipkgs.fedoraproject.org/compose/branched/Fedora-26-20170331.n.0/compose/Atomic/x86_64/iso/Fedora-Atomic-ostree-x86_64-26-20170331.n.0.iso',
+    'manual_pre_atomic_qcow2_cloud_url': 'https://kojipkgs.fedoraproject.org/compose/branched/Fedora-26-20170331.n.0/compose/CloudImages/x86_64/images/Fedora-Atomic-26-20170331.n.0.x86_64.qcow2',
+    'manual_pre_atomic_raw_cloud_url': 'https://kojipkgs.fedoraproject.org/compose/branched/Fedora-26-20170331.n.0/compose/CloudImages/x86_64/images/Fedora-Atomic-26-20170331.n.0.x86_64.raw.xz',
+    'manual_pre_atomic_VBvag_cloud_url': 'https://kojipkgs.fedoraproject.org/compose/branched/Fedora-26-20170331.n.0/compose/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-26-20170331.n.0.x86_64.vagrant-virtualbox.box',
+    'manual_pre_atomic_libvag_cloud_url': 'https://kojipkgs.fedoraproject.org/compose/branched/Fedora-26-20170331.n.0/compose/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-26-20170331.n.0.x86_64.vagrant-libvirt.box',
 }
 
 path={
@@ -262,10 +267,11 @@ iso_size={
     'pre_VBvag_cloud':         '237',   # In MB
     'pre_libvag_cloud':        '227',   # In MB
     # Manual atomic prerelease image sizes go here.
-    'manual_pre_atomic_raw_cloud':    '100',   # In MB
-    'manual_pre_atomic_qcow2_cloud':  '200',   # In MB
-    'manual_pre_atomic_VBvag_cloud':  '300',   # In MB
-    'manual_pre_atomic_libvag_cloud': '400',   # In MB
+    'manual_pre_atomic_raw_cloud':    '446',   # In MB
+    'manual_pre_atomic_qcow2_cloud':  '551',   # In MB
+    'manual_pre_atomic_VBvag_cloud':  '539',   # In MB
+    'manual_pre_atomic_libvag_cloud': '529',   # In MB
+    'manual_pre_atomic_iso':          '854',   # In MB
     # Everything release
     'x86_64_ev':        '477',   #In MB
     'i386_ev':          '465',   #In MB
