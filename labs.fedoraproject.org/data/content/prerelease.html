@@ -214,6 +214,30 @@
   	  	  </div>
        </div>
 
+    </div>
+  </header>
+
+  <!-- Verify -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-left bottom-margin">
+        <h3>${Markup(_('Verify your Download!'))}</h3>
+      <p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="../../%s/verify"&gt;these instructions&lt;/a&gt;.') % (lang))}</p>
+          <div class="row bottom-margin">
+            <div class="col-sm-4 col-xs-12">
+              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Labs-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Validate 64bit!')}</a>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Labs-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-i386-CHECKSUM">${_('Validate 32bit!')}</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <header id="head" class="main-head">
+    <div class="container recover-head">
+
 <xi:include href="../templates/generic/devel.html" />
 
        <div class="high">
@@ -306,24 +330,6 @@
 
   	</div>
   </header>
-
-  <!-- Verify -->
-  <div class="container">
-  	<div class="row">
-  	  <div class="col-xs-12 text-left bottom-margin">
-  	  	<h3>${Markup(_('Verify your Download!'))}</h3>
-    	<p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="../../%s/verify"&gt;these instructions&lt;/a&gt;.') % (lang))}</p>
-          <div class="row bottom-margin">
-            <div class="col-sm-4 col-xs-12">
-              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Labs-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Validate 64bit!')}</a>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Labs-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-i386-CHECKSUM">${_('Validate 32bit!')}</a>
-            </div>
-          </div>
-  	  </div>
-  	</div>
-  </div>
 
   <!-- Feature: Labs -->
   <div class="jumbotron product-feature bluebox">
