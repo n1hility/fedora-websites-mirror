@@ -40,7 +40,7 @@ release={
     'cloud_AMI_composedate': '20160616',
     'pre_cloud_AMI_composedate': '20160507',
     'manual_cloud_composedate': '20160616',
-    'manual_pre_cloud_composedate': '20160101',
+    'manual_pre_cloud_composedate': '20170330',
     'manual_pre_cloud_atomic_composedate': '20160101',
     'manual_pre_cloud_AMI_atomic_composedate': '20160101',
     # Note that atomic values here get overwritten by the twoweek script.
