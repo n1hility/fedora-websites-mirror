@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-03-14 15:39+0100\n"
+"POT-Creation-Date: 2017-04-02 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -518,7 +518,6 @@ msgid ""
 msgstr ""
 
 #: data/content/atomic/download/index.html:37
-#: data/content/atomic/prerelease/index.html:37
 #, python-format
 msgid ""
 "These are the latest official Fedora Atomic Host images, produced "
@@ -564,12 +563,12 @@ msgid ""
 msgstr ""
 
 #: data/content/atomic/download/index.html:61
-#: data/content/atomic/prerelease/index.html:63
+#: data/content/atomic/prerelease/index.html:57
 msgid "Atomic Host Images for Amazon Public Cloud EC2"
 msgstr ""
 
 #: data/content/atomic/download/index.html:62
-#: data/content/atomic/prerelease/index.html:64
+#: data/content/atomic/prerelease/index.html:58
 msgid ""
 "The links below will provide you listings of available Atomic Host "
 "Hardware Virtual Machine (HVM) AMIs by region with buttons to launch them"
@@ -579,15 +578,15 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:68
 #: data/content/atomic/download/index.html:136
-#: data/content/atomic/prerelease/index.html:70
-#: data/content/atomic/prerelease/index.html:138
+#: data/content/atomic/prerelease/index.html:64
+#: data/content/atomic/prerelease/index.html:132
 msgid "GP2 Format"
 msgstr ""
 
 #: data/content/atomic/download/index.html:69
 #: data/content/atomic/download/index.html:137
-#: data/content/atomic/prerelease/index.html:71
-#: data/content/atomic/prerelease/index.html:139
+#: data/content/atomic/prerelease/index.html:65
+#: data/content/atomic/prerelease/index.html:133
 msgid ""
 "GP2 format AMIs use faster SSD storage; use these AMIs for speed, "
 "although note your storage costs will be more than standard."
@@ -595,8 +594,8 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:71
 #: data/content/atomic/download/index.html:147
-#: data/content/atomic/prerelease/index.html:73
-#: data/content/atomic/prerelease/index.html:149
+#: data/content/atomic/prerelease/index.html:67
+#: data/content/atomic/prerelease/index.html:143
 msgid "GP2 HVM AMIs"
 msgstr ""
 
@@ -604,10 +603,10 @@ msgstr ""
 #: data/content/atomic/download/index.html:108
 #: data/content/atomic/download/index.html:152
 #: data/content/atomic/download/index.html:182
-#: data/content/atomic/prerelease/index.html:78
-#: data/content/atomic/prerelease/index.html:110
-#: data/content/atomic/prerelease/index.html:154
-#: data/content/atomic/prerelease/index.html:184
+#: data/content/atomic/prerelease/index.html:72
+#: data/content/atomic/prerelease/index.html:104
+#: data/content/atomic/prerelease/index.html:148
+#: data/content/atomic/prerelease/index.html:178
 #: data/templates/keys/key-button-and-modal-obsolete.html:37
 #: data/templates/keys/key-button-and-modal-obsolete.html:88
 #: data/templates/keys/key-button-and-modal.html:37
@@ -625,10 +624,10 @@ msgstr ""
 #: data/content/atomic/download/index.html:114
 #: data/content/atomic/download/index.html:158
 #: data/content/atomic/download/index.html:188
-#: data/content/atomic/prerelease/index.html:84
-#: data/content/atomic/prerelease/index.html:116
-#: data/content/atomic/prerelease/index.html:160
-#: data/content/atomic/prerelease/index.html:190
+#: data/content/atomic/prerelease/index.html:78
+#: data/content/atomic/prerelease/index.html:110
+#: data/content/atomic/prerelease/index.html:154
+#: data/content/atomic/prerelease/index.html:184
 #: data/templates/cloud-tab.html:13
 msgid "Region"
 msgstr ""
@@ -637,10 +636,10 @@ msgstr ""
 #: data/content/atomic/download/index.html:115
 #: data/content/atomic/download/index.html:159
 #: data/content/atomic/download/index.html:189
-#: data/content/atomic/prerelease/index.html:85
-#: data/content/atomic/prerelease/index.html:117
-#: data/content/atomic/prerelease/index.html:161
-#: data/content/atomic/prerelease/index.html:191
+#: data/content/atomic/prerelease/index.html:79
+#: data/content/atomic/prerelease/index.html:111
+#: data/content/atomic/prerelease/index.html:155
+#: data/content/atomic/prerelease/index.html:185
 #: data/templates/cloud-tab.html:16
 msgid "AMI ID"
 msgstr ""
@@ -649,23 +648,23 @@ msgstr ""
 #: data/content/atomic/download/index.html:116
 #: data/content/atomic/download/index.html:160
 #: data/content/atomic/download/index.html:190
-#: data/content/atomic/prerelease/index.html:86
-#: data/content/atomic/prerelease/index.html:118
-#: data/content/atomic/prerelease/index.html:162
-#: data/content/atomic/prerelease/index.html:192
+#: data/content/atomic/prerelease/index.html:80
+#: data/content/atomic/prerelease/index.html:112
+#: data/content/atomic/prerelease/index.html:156
+#: data/content/atomic/prerelease/index.html:186
 #: data/templates/cloud-tab.html:17
 msgid "Launch"
 msgstr ""
 
 #: data/content/atomic/download/index.html:100
-#: data/content/atomic/prerelease/index.html:102
+#: data/content/atomic/prerelease/index.html:96
 msgid "Standard Format)"
 msgstr ""
 
 #: data/content/atomic/download/index.html:101
 #: data/content/atomic/download/index.html:141
-#: data/content/atomic/prerelease/index.html:103
-#: data/content/atomic/prerelease/index.html:143
+#: data/content/atomic/prerelease/index.html:97
+#: data/content/atomic/prerelease/index.html:137
 msgid ""
 "Standard format AMIs are more suitable if you have infrequently accessed "
 "data and want to keep storage cost low."
@@ -673,8 +672,8 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:103
 #: data/content/atomic/download/index.html:177
-#: data/content/atomic/prerelease/index.html:105
-#: data/content/atomic/prerelease/index.html:179
+#: data/content/atomic/prerelease/index.html:99
+#: data/content/atomic/prerelease/index.html:173
 msgid "Standard HVM AMIs"
 msgstr ""
 
@@ -685,17 +684,17 @@ msgid "Fedora %(rel)s Standard Atomic Host HVM AMIs"
 msgstr ""
 
 #: data/content/atomic/download/index.html:140
-#: data/content/atomic/prerelease/index.html:142
+#: data/content/atomic/prerelease/index.html:136
 msgid "Standard Format"
 msgstr ""
 
 #: data/content/atomic/download/index.html:211
-#: data/content/atomic/prerelease/index.html:213
+#: data/content/atomic/prerelease/index.html:207
 msgid "Atomic Host Images for Vagrant"
 msgstr ""
 
 #: data/content/atomic/download/index.html:212
-#: data/content/atomic/prerelease/index.html:214
+#: data/content/atomic/prerelease/index.html:208
 #, python-format
 msgid ""
 "Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and"
@@ -705,17 +704,17 @@ msgid ""
 msgstr ""
 
 #: data/content/atomic/download/index.html:213
-#: data/content/atomic/prerelease/index.html:215
+#: data/content/atomic/prerelease/index.html:209
 msgid "View Vagrant Downloads"
 msgstr ""
 
 #: data/content/atomic/download/index.html:216
-#: data/content/atomic/prerelease/index.html:218
+#: data/content/atomic/prerelease/index.html:212
 msgid "Vagrant Image Downloads"
 msgstr ""
 
 #: data/content/atomic/download/index.html:217
-#: data/content/atomic/prerelease/index.html:219
+#: data/content/atomic/prerelease/index.html:213
 #, python-format
 msgid ""
 "These images are Vagrant Boxes images for deployment using <a "
@@ -724,15 +723,15 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:222
 #: data/content/atomic/download/index.html:238
-#: data/content/atomic/prerelease/index.html:224
-#: data/content/atomic/prerelease/index.html:240
+#: data/content/atomic/prerelease/index.html:218
+#: data/content/atomic/prerelease/index.html:234
 msgid "VirtualBox Image"
 msgstr ""
 
 #: data/content/atomic/download/index.html:223
 #: data/content/atomic/download/index.html:239
-#: data/content/atomic/prerelease/index.html:225
-#: data/content/atomic/prerelease/index.html:241
+#: data/content/atomic/prerelease/index.html:219
+#: data/content/atomic/prerelease/index.html:235
 msgid ""
 "If you're using Vagrant on Mac OS X or Windows, this is likely the image "
 "you'll want to use."
@@ -746,14 +745,14 @@ msgstr ""
 #: data/content/atomic/download/index.html:299
 #: data/content/atomic/download/index.html:316
 #: data/content/atomic/download/index.html:320
+#: data/content/atomic/prerelease/index.html:220
 #: data/content/atomic/prerelease/index.html:226
-#: data/content/atomic/prerelease/index.html:232
-#: data/content/atomic/prerelease/index.html:250
-#: data/content/atomic/prerelease/index.html:254
+#: data/content/atomic/prerelease/index.html:244
+#: data/content/atomic/prerelease/index.html:248
+#: data/content/atomic/prerelease/index.html:289
 #: data/content/atomic/prerelease/index.html:295
-#: data/content/atomic/prerelease/index.html:301
-#: data/content/atomic/prerelease/index.html:318
-#: data/content/atomic/prerelease/index.html:322
+#: data/content/atomic/prerelease/index.html:312
+#: data/content/atomic/prerelease/index.html:316
 #: data/content/server/download/index.html:33
 #: data/content/server/prerelease/index.html:18
 #: data/content/workstation/download/index.html:40
@@ -774,46 +773,46 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:225
 #: data/content/atomic/download/index.html:249
-#: data/content/atomic/prerelease/index.html:227
-#: data/content/atomic/prerelease/index.html:251
+#: data/content/atomic/prerelease/index.html:221
+#: data/content/atomic/prerelease/index.html:245
 #, python-format
 msgid "64-bit %sMB VirtualBox Base Vagrant Image"
 msgstr ""
 
 #: data/content/atomic/download/index.html:228
 #: data/content/atomic/download/index.html:242
-#: data/content/atomic/prerelease/index.html:230
-#: data/content/atomic/prerelease/index.html:244
+#: data/content/atomic/prerelease/index.html:224
+#: data/content/atomic/prerelease/index.html:238
 msgid "libvirt/KVM Image"
 msgstr ""
 
 #: data/content/atomic/download/index.html:229
 #: data/content/atomic/download/index.html:243
-#: data/content/atomic/prerelease/index.html:231
-#: data/content/atomic/prerelease/index.html:245
+#: data/content/atomic/prerelease/index.html:225
+#: data/content/atomic/prerelease/index.html:239
 msgid "If you're using Vagrant on Fedora, this is the image you'll want to use."
 msgstr ""
 
 #: data/content/atomic/download/index.html:231
 #: data/content/atomic/download/index.html:253
-#: data/content/atomic/prerelease/index.html:233
-#: data/content/atomic/prerelease/index.html:255
+#: data/content/atomic/prerelease/index.html:227
+#: data/content/atomic/prerelease/index.html:249
 #, python-format
 msgid "64-bit %sMB libvirt/KVM Base Vagrant Image"
 msgstr ""
 
 #: data/content/atomic/download/index.html:261
-#: data/content/atomic/prerelease/index.html:263
+#: data/content/atomic/prerelease/index.html:257
 msgid "View Downloads using Vagrant tools"
 msgstr ""
 
 #: data/content/atomic/download/index.html:265
-#: data/content/atomic/prerelease/index.html:267
+#: data/content/atomic/prerelease/index.html:261
 msgid "Vagrant Downloads using Vagrant tools"
 msgstr ""
 
 #: data/content/atomic/download/index.html:266
-#: data/content/atomic/prerelease/index.html:268
+#: data/content/atomic/prerelease/index.html:262
 #, python-format
 msgid ""
 "You can use the following command to grab the Vagrant Box images from <a "
@@ -821,7 +820,7 @@ msgid ""
 msgstr ""
 
 #: data/content/atomic/download/index.html:268
-#: data/content/atomic/prerelease/index.html:270
+#: data/content/atomic/prerelease/index.html:264
 #, python-format
 msgid ""
 "If you've previously run Fedora %(rel)s Atomic Host in Vagrant on your "
@@ -829,7 +828,7 @@ msgid ""
 msgstr ""
 
 #: data/content/atomic/download/index.html:277
-#: data/content/atomic/prerelease/index.html:279
+#: data/content/atomic/prerelease/index.html:273
 #, python-format
 msgid ""
 "For more information about running Vagrant on Fedora Workstation, see <a "
@@ -837,14 +836,14 @@ msgid ""
 msgstr ""
 
 #: data/content/atomic/download/index.html:285
-#: data/content/atomic/prerelease/index.html:287
+#: data/content/atomic/prerelease/index.html:281
 msgid "Atomic Host Images for Cloud Environments"
 msgstr ""
 
 #: data/content/atomic/download/index.html:291
 #: data/content/atomic/download/index.html:306
-#: data/content/atomic/prerelease/index.html:293
-#: data/content/atomic/prerelease/index.html:308
+#: data/content/atomic/prerelease/index.html:287
+#: data/content/atomic/prerelease/index.html:302
 msgid "qcow2 Image"
 msgstr ""
 
@@ -858,16 +857,16 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:294
 #: data/content/atomic/download/index.html:317
-#: data/content/atomic/prerelease/index.html:296
-#: data/content/atomic/prerelease/index.html:319
+#: data/content/atomic/prerelease/index.html:290
+#: data/content/atomic/prerelease/index.html:313
 #, python-format
 msgid "64-bit %sMB Qcow2 Image"
 msgstr ""
 
 #: data/content/atomic/download/index.html:297
 #: data/content/atomic/download/index.html:310
-#: data/content/atomic/prerelease/index.html:299
-#: data/content/atomic/prerelease/index.html:312
+#: data/content/atomic/prerelease/index.html:293
+#: data/content/atomic/prerelease/index.html:306
 msgid "Raw Image"
 msgstr ""
 
@@ -881,14 +880,14 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:300
 #: data/content/atomic/download/index.html:321
-#: data/content/atomic/prerelease/index.html:302
-#: data/content/atomic/prerelease/index.html:323
+#: data/content/atomic/prerelease/index.html:296
+#: data/content/atomic/prerelease/index.html:317
 #, python-format
 msgid "64-bit %sMB xz-Compressed Raw Image"
 msgstr ""
 
 #: data/content/atomic/download/index.html:331
-#: data/content/atomic/prerelease/index.html:333
+#: data/content/atomic/prerelease/index.html:327
 #: data/content/server/download/index.html:50
 #: data/content/server/prerelease/index.html:73
 #: data/content/workstation/download/index.html:145
@@ -897,38 +896,38 @@ msgid "Other Downloads"
 msgstr ""
 
 #: data/content/atomic/download/index.html:333
-#: data/content/atomic/prerelease/index.html:335
+#: data/content/atomic/prerelease/index.html:329
 #, python-format
 msgid "Atomic Host ISO image (%sMB)"
 msgstr ""
 
 #: data/content/atomic/download/index.html:334
-#: data/content/atomic/prerelease/index.html:336
+#: data/content/atomic/prerelease/index.html:330
 #, python-format
 msgid "Docker Image (%sMB)"
 msgstr ""
 
 #: data/content/atomic/download/index.html:337
-#: data/content/atomic/prerelease/index.html:339
+#: data/content/atomic/prerelease/index.html:333
 #: data/content/workstation/download/index.html:179
 #: data/content/workstation/prerelease/index.html:165
 msgid "Resources"
 msgstr ""
 
 #: data/content/atomic/download/index.html:338
-#: data/content/atomic/prerelease/index.html:340
+#: data/content/atomic/prerelease/index.html:334
 msgid ""
 "<a href=\"https://www.projectatomic.io/docs/quickstart/\"><strong>Project"
 " Atomic: Getting Started</strong></a>"
 msgstr ""
 
 #: data/content/atomic/download/index.html:339
-#: data/content/atomic/prerelease/index.html:341
+#: data/content/atomic/prerelease/index.html:335
 msgid "Documentation on getting started using Project Atomic / Atomic Host."
 msgstr ""
 
 #: data/content/atomic/download/index.html:340
-#: data/content/atomic/prerelease/index.html:342
+#: data/content/atomic/prerelease/index.html:336
 msgid ""
 "<a "
 "href=\"https://lists.projectatomic.io/mailman/listinfo/atomic\"><strong>Project"
@@ -936,7 +935,7 @@ msgid ""
 msgstr ""
 
 #: data/content/atomic/download/index.html:341
-#: data/content/atomic/prerelease/index.html:343
+#: data/content/atomic/prerelease/index.html:337
 #, python-format
 msgid ""
 "Join the upstream mailing list at <a "
@@ -944,27 +943,24 @@ msgid ""
 msgstr ""
 
 #: data/content/atomic/download/index.html:342
-#: data/content/atomic/prerelease/index.html:344
+#: data/content/atomic/prerelease/index.html:338
 #, python-format
 msgid "<a href=\"%s\"><strong>Project Atomic: IRC Chat</strong></a>"
 msgstr ""
 
 #: data/content/atomic/download/index.html:343
-#: data/content/atomic/prerelease/index.html:345
+#: data/content/atomic/prerelease/index.html:339
 msgid ""
 "Join the Project Atomic channel <strong>#atomic</strong></a> on "
 "<strong>irc.freenode.org</strong></a>."
 msgstr ""
 
 #: data/content/atomic/download/index.html:348
-#: data/content/server/download/index.html:61
-#: data/content/workstation/download/index.html:159
 #, python-format
-msgid "F%(rel)s Alpha"
+msgid "F%(rel)s %(state)s"
 msgstr ""
 
 #: data/content/atomic/download/index.html:349
-#: data/content/atomic/download/index.html:359
 #: data/content/server/download/index.html:62
 #: data/content/server/download/index.html:72
 #: data/content/workstation/download/index.html:160
@@ -973,7 +969,6 @@ msgid "Try a pre-release"
 msgstr ""
 
 #: data/content/atomic/download/index.html:350
-#: data/content/atomic/download/index.html:360
 #: data/content/server/download/index.html:63
 #: data/content/server/download/index.html:73
 #: data/content/workstation/download/index.html:161
@@ -982,7 +977,6 @@ msgid "We're working on our next release."
 msgstr ""
 
 #: data/content/atomic/download/index.html:351
-#: data/content/atomic/download/index.html:361
 #: data/content/server/download/index.html:64
 #: data/content/server/download/index.html:74
 #: data/content/workstation/download/index.html:162
@@ -992,14 +986,11 @@ msgid "Help us get F%(rel)s ready!"
 msgstr ""
 
 #: data/content/atomic/download/index.html:352
-#: data/content/server/download/index.html:65
-#: data/content/workstation/download/index.html:163
 #, python-format
-msgid "Download F%(rel)s Alpha images"
+msgid "Download F%(rel)s %(state)s images"
 msgstr ""
 
 #: data/content/atomic/download/index.html:353
-#: data/content/atomic/download/index.html:363
 #: data/content/server/download/index.html:66
 #: data/content/server/download/index.html:76
 #: data/content/workstation/download/index.html:164
@@ -1007,29 +998,15 @@ msgstr ""
 msgid "How to test pre-releases"
 msgstr ""
 
-#: data/content/atomic/download/index.html:358
-#: data/content/server/download/index.html:71
-#: data/content/workstation/download/index.html:169
-#, python-format
-msgid "F%(rel)s Beta"
-msgstr ""
-
-#: data/content/atomic/download/index.html:362
-#: data/content/server/download/index.html:75
-#: data/content/workstation/download/index.html:173
-#, python-format
-msgid "Download F%(rel)s Beta images"
-msgstr ""
-
-#: data/content/atomic/download/index.html:370
-#: data/content/atomic/prerelease/index.html:348
+#: data/content/atomic/download/index.html:360
+#: data/content/atomic/prerelease/index.html:342
 #: data/content/server/download/index.html:93
 #: data/content/workstation/download/index.html:206
 msgid "Verify"
 msgstr ""
 
-#: data/content/atomic/download/index.html:373
-#: data/content/atomic/prerelease/index.html:351
+#: data/content/atomic/download/index.html:363
+#: data/content/atomic/prerelease/index.html:345
 #: data/content/server/download/index.html:96
 #: data/content/server/prerelease/index.html:63
 #: data/content/workstation/download/index.html:209
@@ -1040,6 +1017,13 @@ msgstr ""
 #: data/content/atomic/prerelease/index.html:34
 #, python-format
 msgid "Download Fedora %(rel)s %(state)s Atomic Host"
+msgstr ""
+
+#: data/content/atomic/prerelease/index.html:37
+#, python-format
+msgid ""
+"These are the latest Fedora Atomic Host images, produced on "
+"%(manual_pre_atomic_date)s."
 msgstr ""
 
 #: data/content/atomic/prerelease/index.html:48
@@ -1061,42 +1045,28 @@ msgid ""
 "suitability or usefulness."
 msgstr ""
 
-#: data/content/atomic/prerelease/index.html:51
-#: data/content/atomic/prerelease/index.html:53
-#: data/content/server/prerelease/index.html:31
-#: data/content/server/prerelease/index.html:33
-#: data/content/workstation/prerelease/index.html:48
-#: data/content/workstation/prerelease/index.html:50
-#, python-format
-msgid ""
-"Read the <a href=\"%(relnotes_url)s\">Release Notes</a> for more "
-"information on changes and new features, and the <a "
-"href=\"%(commonbugs_url)s\">Common Bugs</a> page for information on "
-"commonly-encountered bugs and how to avoid them."
-msgstr ""
-
-#: data/content/atomic/prerelease/index.html:79
-#: data/content/atomic/prerelease/index.html:155
+#: data/content/atomic/prerelease/index.html:73
+#: data/content/atomic/prerelease/index.html:149
 #, python-format
 msgid "Fedora %(rel)s %(state)s GP2 Atomic Host HVM AMIs"
 msgstr ""
 
-#: data/content/atomic/prerelease/index.html:111
-#: data/content/atomic/prerelease/index.html:185
+#: data/content/atomic/prerelease/index.html:105
+#: data/content/atomic/prerelease/index.html:179
 #, python-format
 msgid "Fedora %(rel)s %(state)s Standard Atomic Host HVM AMIs"
 msgstr ""
 
-#: data/content/atomic/prerelease/index.html:294
-#: data/content/atomic/prerelease/index.html:309
+#: data/content/atomic/prerelease/index.html:288
+#: data/content/atomic/prerelease/index.html:303
 #, python-format
 msgid ""
 "This is Fedora %(rel)s %(state)s Cloud Atomic Host in a Qcow2-formatted "
 "image for use with OpenStack."
 msgstr ""
 
-#: data/content/atomic/prerelease/index.html:300
-#: data/content/atomic/prerelease/index.html:313
+#: data/content/atomic/prerelease/index.html:294
+#: data/content/atomic/prerelease/index.html:307
 #, python-format
 msgid ""
 "This is Fedora %(rel)s %(state)s Cloud Atomic Host in a compressed raw "
@@ -1576,6 +1546,30 @@ msgstr ""
 msgid "64-bit %sMB image"
 msgstr ""
 
+#: data/content/server/download/index.html:61
+#: data/content/workstation/download/index.html:159
+#, python-format
+msgid "F%(rel)s Alpha"
+msgstr ""
+
+#: data/content/server/download/index.html:65
+#: data/content/workstation/download/index.html:163
+#, python-format
+msgid "Download F%(rel)s Alpha images"
+msgstr ""
+
+#: data/content/server/download/index.html:71
+#: data/content/workstation/download/index.html:169
+#, python-format
+msgid "F%(rel)s Beta"
+msgstr ""
+
+#: data/content/server/download/index.html:75
+#: data/content/workstation/download/index.html:173
+#, python-format
+msgid "Download F%(rel)s Beta images"
+msgstr ""
+
 #: data/content/server/download/index.html:82
 #: data/content/workstation/download/index.html:191
 msgid "Get more Fedora"
@@ -1637,6 +1631,18 @@ msgid ""
 "href=\"%(team_url)s\">Server Working Group</a>. Please direct questions "
 "to their <a href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on "
 "freenode."
+msgstr ""
+
+#: data/content/server/prerelease/index.html:31
+#: data/content/server/prerelease/index.html:33
+#: data/content/workstation/prerelease/index.html:48
+#: data/content/workstation/prerelease/index.html:50
+#, python-format
+msgid ""
+"Read the <a href=\"%(relnotes_url)s\">Release Notes</a> for more "
+"information on changes and new features, and the <a "
+"href=\"%(commonbugs_url)s\">Common Bugs</a> page for information on "
+"commonly-encountered bugs and how to avoid them."
 msgstr ""
 
 #: data/content/server/prerelease/index.html:38
