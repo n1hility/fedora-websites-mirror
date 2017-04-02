@@ -142,10 +142,10 @@
           	<p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="%s/%s/verify"&gt;these instructions&lt;/a&gt;.') % (path, lang))}</p>
             <div class="row bottom-margin">
               <div class="col-sm-6 col-xs-12">
-              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Validate 64-bit!')}</a>
+              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Validate 64-bit!')}</a>
               </div>
               <div class="col-sm-6 col-xs-12">
-              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-i386-CHECKSUM">${_('Validate 32-bit!')}</a>
+              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-i386-CHECKSUM">${_('Validate 32-bit!')}</a>
               </div>
             </div>
         </div>
@@ -157,8 +157,8 @@
           <p>
           ${_('Netinstall Images:')}
           <ul>
-          <li><p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${Markup(_('64-bit %sMB image')) % global_variables.iso_size['pre_x86_64_workstation_net']}</a></p></li>
-          <li><p><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/i386/iso/Fedora-Workstation-netinst-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${Markup(_('32-bit %sMB image')) % global_variables.iso_size['pre_i386_workstation_net']}</a></p></li>
+          <li><p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-netinst-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${Markup(_('64-bit %sMB image')) % global_variables.iso_size['pre_x86_64_workstation_net']}</a></p></li>
+          <li><p><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/i386/iso/Fedora-Workstation-netinst-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${Markup(_('32-bit %sMB image')) % global_variables.iso_size['pre_i386_workstation_net']}</a></p></li>
           </ul>
           </p>
 
