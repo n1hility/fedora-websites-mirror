@@ -258,6 +258,8 @@ iso_size={
     'pre_raw_i386_cloud':      '172',   # In MB
     'pre_qcow2_x86_64_cloud':  '330',   # In MB
     'pre_qcow2_i386_cloud':    '268',   # In MB
+    'pre_VBvag_cloud':         '208',   # In MB
+    'pre_libvag_cloud':        '199',   # In MB
     # Note that atomic values here get overwritten by the twoweek script.
     'pre_atomic_raw_cloud':    '???',   # In MB
     'pre_atomic_qcow2_cloud':  '???',   # In MB
