@@ -195,6 +195,8 @@ iso_size={
     'pre_x86_64_Live_Jam':     '1.9',   # In GB
     'pre_i686_Live_Astronomy': '2.4',   # In GB
     'pre_x86_64_Live_Astronomy':'2.3',  # In GB
+    'pre_i686_Live_Python':    '2.4',   # In GB
+    'pre_x86_64_Live_Python':  '2.3',   # In GB
     # Server
     'x86_64_server_DVD':   '1.9',       # In GB
     'i386_server_DVD':     '2.0',       # In GB
