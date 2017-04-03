@@ -46,7 +46,7 @@
             <h3>${_('Fedora Server')}</h3>
             </div>
             <div class="col-sm-3 hidden-xs">
-            <p>${Markup(_('%sGB raw image')) % global_variables.iso_size['pre_ARM_Server']}</p>
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['pre_ARM_Server']}</p>
             </div>
             <div class="col-sm-5 hidden-xs">
             <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Server/armhfp/images/Fedora-Server-armhfp-${global_variables.release['next_arm_id']}_${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="${path}/static/checksums/Fedora-Server-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_pre_gold']}-armhfp-CHECKSUM">${_('Verify')}</a></p>
