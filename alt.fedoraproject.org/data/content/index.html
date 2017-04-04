@@ -25,6 +25,43 @@
     </div>
   </header>
 
+  <!-- News -->
+  <py:choose>
+    <py:when test="global_variables.release['curr_state'] == 'Alpha'">
+      <div class="newsbox">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text-center index">
+              <h3>${Markup(_('&lt;strong&gt;Fedora %(rel)s %(state)s&lt;/strong&gt; released! &lt;a href="%(link)s"&gt;Test it now >&lt;/a&gt;')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state'], 'link':'prerelease/index.html'}}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </py:when>
+    <py:when test="global_variables.release['curr_state'] == 'Beta'">
+      <div class="jumbotron newsbox">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text-center index">
+              <h3>${Markup(_('&lt;strong&gt;Fedora %(rel)s %(state)s&lt;/strong&gt; released! &lt;a href="%(link)s"&gt;Test it now >&lt;/a&gt;')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state'], 'link':'prerelease/index.html'}}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </py:when>
+    <py:otherwise>
+      <div class="jumbotron newsbox">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text-center index">
+              <h3>${Markup(_('Fedora %(rel)s released! Get it now.')) % {'rel':global_variables.release['curr_id']}}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </py:otherwise>
+  </py:choose>
+
   <!-- Network Installers -->
   <div class="jumbotron main-head hidden-xs hidden-sm">
     <div class="container using">
@@ -77,7 +114,7 @@
             <p>${Markup(_('32 bit %sMB ISO')) % global_variables.iso_size['i386_workstation_net']}</p>
             </div>
             <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/i386/iso/Fedora-Workstation-netinst-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${_('Download')}</a> | <a href="https://getfedora.org/verify">${_('Verify')}</a></p>
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_id']}/Workstation/i386/iso/Fedora-Workstation-netinst-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${_('Download')}</a> | <a href="https://getfedora.org/verify">${_('Verify')}</a></p>
             </div>
           </div>
         </div>
@@ -279,7 +316,7 @@
             <p>${Markup(_('32 bit %sMB ISO')) % global_variables.iso_size['i386_ev']}</p>
             </div>
             <div class="col-md-4">
-            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Everything/i386/iso/Fedora-Everything-netinst-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${_('Download')}</a> | <a href="${global_variables.path['checksums']}/Fedora-Everything-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-i386-CHECKSUM">${_('Verify')}</a></p>
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_id']}/Everything/i386/iso/Fedora-Everything-netinst-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${_('Download')}</a> | <a href="${global_variables.path['checksums']}/Fedora-Everything-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-i386-CHECKSUM">${_('Verify')}</a></p>
             </div>
           </div>
         </div>
@@ -589,42 +626,6 @@
       </div>
     </div>
   </div>
-<!-- News
-      <py:choose>
-        <py:when test="global_variables.release['curr_state'] == 'Alpha'">
-          <div class="newsbox">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-12 text-center">
-                  <h3>${Markup(_('Fedora %(rel)s %(state)s released! &lt;a href="%(link)s"&gt;Try it now >&lt;/a&gt;')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state'], 'link':'prerelease.html'}}</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </py:when>
-        <py:when test="global_variables.release['curr_state'] == 'Beta'">
-          <div class="jumbotron newsbox">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-12 text-center">
-                  <h3>${Markup(_('Fedora %(rel)s %(state)s released! &lt;a href="%(link)s"&gt;Try it now >&lt;/a&gt;')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state'], 'link':'prerelease.html'}}</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </py:when>
-        <py:otherwise>
-          <div class="jumbotron newsbox">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-12 text-center">
-                  <h3>${Markup(_('Fedora %(rel)s released! Try it now.')) % {'rel':global_variables.release['curr_id']}}</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </py:otherwise>
-      </py:choose>
--->
+
 </body>
 </html>

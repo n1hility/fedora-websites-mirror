@@ -222,15 +222,27 @@ a.btn-lg {
 }
 
 .newsbox {
-  background-color: #ebb05d;
-  color: #000;
+  background-color: #a07cbc;
+  color: #fff;
   padding: 20px;
 }
 
 .newsbox h2,
 .newsbox h3 {
+  margin-top: 22px;
+  color: #fff;
+}
+
+.newsbox .index h3 {
   margin-top: 10px;
-  color: #000;
+  color: #fff;
+}
+
+.newsbox a,
+.newsbox a:hover,
+.newsbox a:active {
+  text-decoration: none;
+  color: #fff;
 }
 
 .widewrapper {
@@ -816,6 +828,7 @@ ul.list-spaces li{ margin-bottom:10px; }
 .uppercase {text-transform: uppercase;}
 .spin-download { padding: 40px 0px;}
 .recover-jumbo { padding: 30px 30px 20px;}
+.recover-head { padding-top: 60px; }
 
 img { max-width:100%; }
 img.pull-right { margin-left: 10px; }

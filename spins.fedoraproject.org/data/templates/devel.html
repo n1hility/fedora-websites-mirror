@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  py:strip="">
+
+<!-- Blurb to show if the spin/lab fails the final build -->
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <p class="warning">${Markup(_('Although the MATE-Compiz and the Cinnamon spins failed to compose for the actual prerelease, the nightly test compose contains the same package set, and should meet most users\' needs. You can download and verify the test compose images for &lt;a href="%(x86_64)s"&gt;64-bit&lt;/a&gt; and &lt;a href="%(i386)s"&gt;32-bit&lt;/a&gt; architectures.') % {'x86_64':global_variables.path['devel'] + '/' + global_variables.release['next_id'] + '/Spins/x86_64/iso', 'i386':global_variables.path['devel_alt'] + '/' + global_variables.release['next_id'] + '/Spins/i386/iso'})}
+      </p>
+    </div>
+  </div>
+<!-- end blurb -->
+
+
+</html>

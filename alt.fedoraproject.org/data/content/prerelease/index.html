@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Fedora Alternate Architectures Prerelease Images')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/alt/header.html" />
+
+  <header id="head">
+    <div class="col-xs-12 text-center widewrapper bluebox prerelease">
+      <h1>${_('Pre-releases')}</h1>
+      <p>${_('Official pre-releases of Fedora alternative downloads.')}</p>
+    </div>
+  </header>
+
+<!-- News -->
+      <py:choose>
+        <py:when test="global_variables.release['curr_state'] == 'Alpha'">
+          <div class="newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Currently offering &lt;strong&gt;Fedora %(rel)s %(state)s&lt;/strong&gt;.')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}<span class="alt-thin">${_('Released 4 april 2017.')}</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:when>
+        <py:when test="global_variables.release['curr_state'] == 'Beta'">
+          <div class="jumbotron newsbox">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <h3>${Markup(_('Currently offering &lt;strong&gt;Fedora %(rel)s %(state)s&lt;/strong&gt;.')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </py:when>
+      </py:choose>
+
+  <!-- Network Installers -->
+    <!-- Desktop -->
+  <div class="jumbotron main-head hidden-xs hidden-sm">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 top-margin">
+        <h2>${_('Network Installers')}<span class="prerelease-offer">${Markup(_('F%(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 product-feature">
+        <p>${_('These are very small images you can use to install Fedora over the network.')}</p>
+        </div>
+        <div class="col-md-9">
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/server.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Server')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('64 bit %sMB ISO')) % global_variables.iso_size['pre_x86_64_server_net']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="/static/checksums/Fedora-Server-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/workstation.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Workstation')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('64 bit %sMB ISO')) % global_variables.iso_size['pre_x86_64_workstation_net']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/workstation.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Workstation')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('32 bit %sMB ISO')) % global_variables.iso_size['pre_i386_workstation_net']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/i386/iso/Fedora-Workstation-netinst-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-i386-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Network Installers mobile phones-->
+  <div class="jumbotron main-head visible-xs">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Network Installers')}<span class="prerelease-offer">${Markup(_('F%(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('These are very small images you can use to install Fedora over the network.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/server.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Server')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="/static/checksums/Fedora-Server-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/workstation.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Workstation')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/workstation.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Workstation')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/i386/iso/Fedora-Workstation-netinst-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-i386-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Network Installers mobile tablets-->
+  <div class="jumbotron main-head visible-sm">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Network Installers')}<span class="prerelease-offer">${Markup(_('F%(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('These are very small images you can use to install Fedora over the network.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/server.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Server')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="/static/checksums/Fedora-Server-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/workstation.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Workstation')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Workstation-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/workstation.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Workstation')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Workstation/i386/iso/Fedora-Workstation-netinst-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="/static/checksums/Fedora-Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-i386-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-hr"></div>
+  <!-- end Network Installers -->
+
+  <!-- Alternate Architectures -->
+    <!-- Desktop -->
+  <div class="jumbotron main-head">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 top-margin">
+        <h2>${_('Alternate Architectures')}<span class="prerelease-offer">${Markup(_('F%(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 product-feature">
+        <p>${_('These are additional architectures supported by Fedora beyond the standard set')}</p>
+        </div>
+        <div class="col-md-9">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title hidden-xs">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                <img src="/static/images/aarch64.png" />
+                ${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; aarch64 Architecture'))}
+                </a>
+              </h3>
+              <h3 class="panel-title visible-xs">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                <img src="/static/images/aarch64.png" />
+                ${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt;'))}
+                </a>
+              </h3>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+              <div class="panel-body panel-heading">
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/server.png" />
+                  ${_('Fedora Server DVD')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/server.png" />
+                  ${_('DVD')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/server.png" />
+                  ${_('Fedora Server Netinstall')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/aarch64/iso/Fedora-Server-netinst-aarch64-${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/server.png" />
+                  ${_('Net')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}/Server/aarch64/iso/Fedora-Server-netinst-aarch64-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('Fedora Cloud Netinstall')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}/Cloud/aarch64/iso/Fedora-Cloud-netinst-aarch64-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('Net')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/aarch64/iso/Fedora-Cloud-netinst-aarch64-${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('Fedora Cloud qcow2')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/CloudImages/aarch64/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.aarch64.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('qcow2')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/CloudImages/aarch64/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.aarch64.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('Fedora Cloud raw')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/CloudImages/aarch64/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.aarch64.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('raw')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/CloudImages/aarch64/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.aarch64.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/docker.png" />
+                  ${_('Fedora Docker')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Docker/aarch64/images/Fedora-Docker-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.aarch64.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/docker.png" />
+                  ${_('Docker')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Docker/aarch64/images/Fedora-Docker-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.aarch64.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title hidden-xs">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                <img src="/static/images/ppc64.png" />
+                ${Markup(_('PowerPC Architecture (PPC64)'))}
+                </a>
+              </h3>
+              <h3 class="panel-title visible-xs">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                <img src="/static/images/ppc64.png" />
+                ${Markup(_('PPC64'))}
+                </a>
+              </h3>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body panel-heading">
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/server.png" />
+                  ${_('Fedora Server DVD')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}/Server/ppc64/iso/Fedora-Server-dvd-ppc64-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/server.png" />
+                  ${_('DVD')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/ppc64/iso/Fedora-Server-dvd-ppc64-${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/server.png" />
+                  ${_('Fedora Server Netinstall')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}/Server/ppc64/iso/Fedora-Server-netinst-ppc64-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/server.png" />
+                  ${_('Net')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/ppc64/iso/Fedora-Server-netinst-ppc64-${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('Fedora Cloud Netinstall')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}/Cloud/ppc64/iso/Fedora-Cloud-netinst-ppc64-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('Net')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/ppc64/iso/Fedora-Cloud-netinst-ppc64-${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+<!--                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('Fedora Cloud qcow2')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/CloudImages/ppc64/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64']}.ppc64.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('qcow2')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/CloudImages/ppc64/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64']}.ppc64.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('Fedora Cloud raw')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/CloudImages/ppc64/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64']}.ppc64.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('raw')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/CloudImages/ppc64/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64']}.ppc64.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/docker.png" />
+                  ${_('Fedora Docker')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Docker/ppc64/images/Fedora-Docker-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64']}.ppc64.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/docker.png" />
+                  ${_('Docker')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Docker/ppc64/images/Fedora-Docker-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64']}.ppc64.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+-->
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title hidden-xs">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                <img src="/static/images/ppc64le.png" />
+                ${Markup(_('PowerPC Architecture (PPC64LE)'))}
+                </a>
+              </h3>
+              <h3 class="panel-title visible-xs">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                <img src="/static/images/ppc64le.png" />
+                ${Markup(_('PPC64LE'))}
+                </a>
+              </h3>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body panel-heading">
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/server.png" />
+                  ${_('Fedora Server DVD')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}/Server/ppc64le/iso/Fedora-Server-dvd-ppc64le-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/server.png" />
+                  ${_('DVD')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/ppc64le/iso/Fedora-Server-dvd-ppc64le-${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/server.png" />
+                  ${_('Fedora Server Netinstall')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/ppc64le/iso/Fedora-Server-netinst-ppc64le-${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/server.png" />
+                  ${_('Net')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/ppc64le/iso/Fedora-Server-netinst-ppc64le-${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('Fedora Cloud Netinstall')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/ppc64le/iso/Fedora-Cloud-netinst-ppc64le-${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('Net')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/ppc64le/iso/Fedora-Cloud-netinst-ppc64le-${global_variables.release['next_alt_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+<!--                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('Fedora Cloud qcow2')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/CloudImages/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.ppc64le.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('qcow2')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/CloudImages/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.ppc64le.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('Fedora Cloud raw')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/CloudImages/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.ppc64le.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/cloud.png" />
+                  ${_('raw')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/CloudImages/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.ppc64le.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <div class="grey-hr"></div>
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/docker.png" />
+                  ${_('Fedora Docker')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Docker/ppc64le/images/Fedora-Docker-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.ppc64le.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/docker.png" />
+                  ${_('Docker')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Docker/ppc64le/images/Fedora-Docker-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.ppc64le.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+-->
+              </div>
+            </div>
+          </div>
+<!--          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title hidden-xs">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                <img src="/static/images/s390x.png" />
+                ${Markup(_('s390x Architecture'))}
+                </a>
+              </h3>
+              <h3 class="panel-title visible-xs">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                <img src="/static/images/s390x.png" />
+                ${Markup(_('s390x'))}
+                </a>
+              </h3>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+              <div class="panel-body panel-heading">
+                <h3 class="panel-title accordion-title hidden-xs">
+                  <img src="/static/images/server.png" />
+                  ${_('Fedora Server')}
+                  <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/s390x/iso/Fedora-Server-dvd-s390x-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+                <h3 class="panel-title accordion-title visible-xs">
+                  <img src="/static/images/server.png" />
+                  ${_('Server')}
+                  <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/s390x/iso/Fedora-Server-dvd-s390x-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
+                </h3>
+              </div>
+            </div>
+          </div>
+-->
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-hr"></div>
+  <!-- end Alternate Architectures -->
+
+  <!-- Cloud images -->
+    <!-- Desktop -->
+  <div class="jumbotron main-head hidden-xs hidden-sm">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 top-margin">
+        <h2>${_('Cloud Base Images')}<span class="prerelease-offer">${Markup(_('F%(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 product-feature">
+        <p>${_('These are the Cloud Base Images you can use as qcow2 for Openstack or as a compressed raw image. You can use them also for deployment on Vagrant, as VirtualBox image or as libvirt/KVM image. Cloud Base images can be launched even in your Amazon Web Services account, just choose the format fitting your needs.')}</p>
+        </div>
+        <div class="col-md-9">
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('raw image')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB raw.xz')) % global_variables.iso_size['pre_raw_x86_64_cloud']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.x86_64.raw.xz">${_('Download')}</a> | <a href="/static/checksums/Fedora-CloudImages-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('qcow2 image')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB qcow2')) % global_variables.iso_size['pre_qcow2_x86_64_cloud']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.x86_64.qcow2">${_('Download')}</a> | <a href="/static/checksums/Fedora-CloudImages-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('VirtualBox image')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB vbox')) % global_variables.iso_size['pre_VBvag_cloud']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box">${_('Download')}</a> | <a href="/static/checksums/Fedora-CloudImages-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('libvirt/KVM image')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB libvirt')) % global_variables.iso_size['pre_libvag_cloud']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box">${_('Download')}</a> | <a href="/static/checksums/Fedora-CloudImages-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <!-- EC2 images Desktop -->
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('GP2 HVM AMIs')}</h3>
+            </div>
+            <div class="col-md-4 col-md-offset-3">
+              <p class="download ec2" data-toggle="modal" data-target=".pre-GP2-base-EC2-desktop">${_('Click to launch')}</p>
+                <div class="modal fade pre-GP2-base-EC2-desktop" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-cloud">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s GP2 Base Cloud HVM AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                      </div>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>${_('Region')}</th>
+                            <th class="hidden-xs">${_('AMI ID')}</th>
+                            <th class="text-center">${_('Launch')}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr py:for="r in global_variables.EC2_regions">
+                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI">${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI" class="hidden-xs">${global_variables.pre_GP2_HVM_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_GP2_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Standard HVM AMIs')}</h3>
+            </div>
+            <div class="col-md-4 col-md-offset-3">
+              <p class="download ec2" data-toggle="modal" data-target=".pre_base-EC2-desktop">${_('Click to launch')}</p>
+                <div class="modal fade pre_base-EC2-desktop" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-cloud">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s Standard Base Cloud HVM AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                      </div>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>${_('Region')}</th>
+                            <th class="hidden-xs">${_('AMI ID')}</th>
+                            <th class="text-center">${_('Launch')}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr py:for="r in global_variables.EC2_regions">
+                            <td py:if="r.code in global_variables.pre_HVM_base_AMI">${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_HVM_base_AMI" class="hidden-xs">${global_variables.pre_HVM_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('GP2 PV AMIs')}</h3>
+            </div>
+            <div class="col-md-4 col-md-offset-3">
+              <p class="download ec2" data-toggle="modal" data-target=".pre_GP2-base-EC2-PV-desktop">${_('Click to launch')}</p>
+                <div class="modal fade pre_GP2-base-EC2-PV-desktop" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-cloud">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s GP2 Base Cloud PV AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                      </div>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>${_('Region')}</th>
+                            <th class="hidden-xs">${_('AMI ID')}</th>
+                            <th class="text-center">${_('Launch')}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr py:for="r in global_variables.EC2_regions">
+                            <td>${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_GP2_PV_base_AMI" class="hidden-xs">${global_variables.pre_GP2_PV_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_GP2_PV_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_GP2_PV_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Standard PV AMIs')}</h3>
+            </div>
+            <div class="col-md-4 col-md-offset-3">
+              <p class="download ec2" data-toggle="modal" data-target=".pre_base-EC2-PV-desktop">${_('Click to launch')}</p>
+                <div class="modal fade pre_base-EC2-PV-desktop" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-cloud">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s Standard Base Cloud PV AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                      </div>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>${_('Region')}</th>
+                            <th class="hidden-xs">${_('AMI ID')}</th>
+                            <th class="text-center">${_('Launch')}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr py:for="r in global_variables.EC2_regions">
+                            <td>${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_PV_base_AMI" class="hidden-xs">${global_variables.pre_PV_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_PV_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_PV_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!-- end EC2 images Desktop -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cloud images mobile phones-->
+  <div class="jumbotron main-head visible-xs">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Cloud Base Images')}<span class="prerelease-offer">${Markup(_('F%(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('These are the Cloud Base Images you can use as qcow2 for Openstack or as a compressed raw image. You can use them also for deployment on Vagrant, as VirtualBox image or as libvirt/KVM image. Cloud Base images can be launched even in your Amazon Web Services account, just choose the format fitting your needs.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('raw image')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.x86_64.raw.xz">${_('Download')}</a> | <a href="/static/checksums/Fedora-CloudImages-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('qcow2 image')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.x86_64.qcow2">${_('Download')}</a> | <a href="/static/checksums/Fedora-CloudImages-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('VirtualBox image')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box">${_('Download')}</a> | <a href="/static/checksums/Fedora-CloudImages-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('libvirt image')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box">${_('Download')}</a> | <a href="/static/checksums/Fedora-CloudImages-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <!-- EC2 images Phone -->
+        <div class="white">
+            <div class="col-xs-3">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-xs-9">
+            <h3>${_('GP2 HVM AMIs')}</h3>
+              <p class="download ec2" data-toggle="modal" data-target=".pre-GP2-base-EC2-mobile">${_('Click to launch')}</p>
+                <div class="modal fade pre-GP2-base-EC2-mobile" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-cloud">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s GP2 Base Cloud HVM AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                      </div>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>${_('Region')}</th>
+                            <th class="hidden-xs">${_('AMI ID')}</th>
+                            <th class="text-center">${_('Launch')}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr py:for="r in global_variables.EC2_regions">
+                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI">${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI" class="hidden-xs">${global_variables.pre_GP2_HVM_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_GP2_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="white">
+            <div class="col-xs-3">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-xs-9">
+            <h3>${_('Standard HVM AMIs')}</h3>
+              <p class="download ec2" data-toggle="modal" data-target=".pre_base-EC2-mobile">${_('Click to launch')}</p>
+                <div class="modal fade pre_base-EC2-mobile" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-cloud">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s Standard Base Cloud HVM AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                      </div>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>${_('Region')}</th>
+                            <th class="hidden-xs">${_('AMI ID')}</th>
+                            <th class="text-center">${_('Launch')}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr py:for="r in global_variables.EC2_regions">
+                            <td py:if="r.code in global_variables.pre_HVM_base_AMI">${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_HVM_base_AMI" class="hidden-xs">${global_variables.pre_HVM_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-xs-3">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-xs-9">
+            <h3>${_('GP2 PV AMIs')}</h3>
+              <p class="download ec2" data-toggle="modal" data-target=".pre_GP2-base-EC2-PV-mobile">${_('Click to launch')}</p>
+                <div class="modal fade pre_GP2-base-EC2-PV-mobile" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-cloud">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s GP2 Base Cloud PV AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                      </div>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>${_('Region')}</th>
+                            <th class="hidden-xs">${_('AMI ID')}</th>
+                            <th class="text-center">${_('Launch')}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr py:for="r in global_variables.EC2_regions">
+                            <td>${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_GP2_PV_base_AMI" class="hidden-xs">${global_variables.pre_GP2_PV_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_GP2_PV_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_GP2_PV_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-xs-3">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-xs-9">
+            <h3>${_('Standard PV AMIs')}</h3>
+              <p class="download ec2" data-toggle="modal" data-target=".pre_base-EC2-PV-mobile">${_('Click to launch')}</p>
+                <div class="modal fade pre_base-EC2-PV-mobile" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-cloud">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s Standard Base Cloud PV AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                      </div>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>${_('Region')}</th>
+                            <th class="hidden-xs">${_('AMI ID')}</th>
+                            <th class="text-center">${_('Launch')}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr py:for="r in global_variables.EC2_regions">
+                            <td>${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_PV_base_AMI" class="hidden-xs">${global_variables.pre_PV_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_PV_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_PV_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!-- end EC2 images Phone -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Cloud images mobile tablets-->
+  <div class="jumbotron main-head visible-sm">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Cloud Base Images')}<span class="prerelease-offer">${Markup(_('F%(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('These are the Cloud Base Images you can use as qcow2 for Openstack or as a compressed raw image. You can use them also for deployment on Vagrant, as VirtualBox image or as libvirt/KVM image. Cloud Base images can be launched even in your Amazon Web Services account, just choose the format fitting your needs.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('raw image')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.x86_64.raw.xz">${_('Download')}</a> | <a href="/static/checksums/Fedora-CloudImages-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('qcow2 image')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.x86_64.qcow2">${_('Download')}</a> | <a href="/static/checksums/Fedora-CloudImages-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('VirtualBox image')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box">${_('Download')}</a> | <a href="/static/checksums/Fedora-CloudImages-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('libvirt image')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box">${_('Download')}</a> | <a href="/static/checksums/Fedora-CloudImages-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <!-- EC2 images Tablet -->
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('GP2 HVM AMIs')}</h3>
+          </div>
+          <div class="col-sm-4">
+            <p class="download ec2" data-toggle="modal" data-target=".pre-GP2-base-EC2-tablet">${_('Click to launch')}</p>
+                <div class="modal fade pre-GP2-base-EC2-tablet" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-cloud">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s GP2 Base Cloud HVM AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                      </div>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>${_('Region')}</th>
+                            <th class="hidden-xs">${_('AMI ID')}</th>
+                            <th class="text-center">${_('Launch')}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr py:for="r in global_variables.EC2_regions">
+                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI">${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI" class="hidden-xs">${global_variables.pre_GP2_HVM_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_GP2_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Standard HVM AMIs')}</h3>
+          </div>
+          <div class="col-sm-4">
+            <p class="download ec2" data-toggle="modal" data-target=".pre_base-EC2-tablet">${_('Click to launch')}</p>
+                <div class="modal fade pre_base-EC2-tablet" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-cloud">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s Standard Base Cloud HVM AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                      </div>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>${_('Region')}</th>
+                            <th class="hidden-xs">${_('AMI ID')}</th>
+                            <th class="text-center">${_('Launch')}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr py:for="r in global_variables.EC2_regions">
+                            <td py:if="r.code in global_variables.pre_HVM_base_AMI">${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_HVM_base_AMI" class="hidden-xs">${global_variables.pre_HVM_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('GP2 PV AMIs')}</h3>
+          </div>
+          <div class="col-sm-4">
+            <p class="download ec2" data-toggle="modal" data-target=".pre_GP2-base-EC2-PV-tablet">${_('Click to launch')}</p>
+                <div class="modal fade pre_GP2-base-EC2-PV-tablet" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-cloud">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s GP2 Base Cloud PV AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                      </div>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>${_('Region')}</th>
+                            <th class="hidden-xs">${_('AMI ID')}</th>
+                            <th class="text-center">${_('Launch')}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr py:for="r in global_variables.EC2_regions">
+                            <td>${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_GP2_PV_base_AMI" class="hidden-xs">${global_variables.pre_GP2_PV_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_GP2_PV_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_GP2_PV_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Standard PV AMIs')}</h3>
+          </div>
+          <div class="col-sm-4">
+            <p class="download ec2" data-toggle="modal" data-target=".pre_base-EC2-PV-tablet">${_('Click to launch')}</p>
+                <div class="modal fade pre_base-EC2-PV-tablet" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-cloud">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s Standard Base Cloud PV AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                      </div>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>${_('Region')}</th>
+                            <th class="hidden-xs">${_('AMI ID')}</th>
+                            <th class="text-center">${_('Launch')}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr py:for="r in global_variables.EC2_regions">
+                            <td>${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_PV_base_AMI" class="hidden-xs">${global_variables.pre_PV_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_PV_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_PV_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <!-- end EC2 images Phone -->
+      </div>
+    </div>
+  </div>
+
+  <div class="white-hr"></div>
+  <!-- end Cloud images -->
+
+  <!-- Everything -->
+    <!-- Desktop -->
+  <div class="jumbotron main-head hidden-xs hidden-sm">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 top-margin">
+        <h2>${_('Everything')}<span class="prerelease-offer">${Markup(_('F%(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 product-feature">
+        <p>${_('Choose from thousands of packages to customize your installation; requires a fast network connection.')}</p>
+        </div>
+        <div class="col-md-9">
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/ev.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Everything 64-bit')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('64 bit %sMB ISO')) % global_variables.iso_size['pre_x86_64_ev']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="/static/checksums/Fedora-Everything-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/ev.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Everything 32-bit')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('64 bit %sMB ISO')) % global_variables.iso_size['pre_i386_ev']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Everything/i386/iso/Fedora-Everything-netinst-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="/static/checksums/Fedora-Everything-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-i386-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Everything mobile phones-->
+  <div class="jumbotron main-head visible-xs">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Everything')}<span class="prerelease-offer">${Markup(_('F%(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('Choose from thousands of packages to customize your installation; requires a fast network connection.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/ev.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Everything 64-bit')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="/static/checksums/Fedora-Everything-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/ev.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Everything 32-bit')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Everything/i386/iso/Fedora-Everything-netinst-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="/static/checksums/Fedora-Everything-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-i386-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Everything mobile tablets-->
+  <div class="jumbotron main-head visible-sm">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${_('Everything')}<span class="prerelease-offer">${Markup(_('F%(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('Choose from thousands of packages to customize your installation; requires a fast network connection.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/ev.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Everything 64-bit')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="/static/checksums/Fedora-Everything-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/ev.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Everything 32-bit')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Everything/i386/iso/Fedora-Everything-netinst-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso">${_('Download')}</a> | <a href="/static/checksums/Fedora-Everything-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-i386-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-hr"></div>
+  <!-- end Everything -->
+
+  <!-- Resources -->
+  <div class="jumbotron main-head">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Testing Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12">
+        <div class="col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Some basic information about getting involved in Fedora\'s testing efforts is available on &lt;a href="%s"&gt;the Fedora QA wiki&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/QA'))}</p>
+        </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+        <div class="col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Email discussion of Fedora testing is available on the mailing list at &lt;a href="%s"&gt;test@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/test'))}</p>
+        </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+        <div class="col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Discussion of Fedora testing takes place in the &lt;a href="%s"&gt;#fedora-qa&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org.&lt;/strong&gt;') % ('http://webchat.freenode.net/?channels=fedora-qa'))}</p>
+        </div>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="white-hr"></div>
+  <!-- end Resources -->
+
+
+
+  </body>
+</html>

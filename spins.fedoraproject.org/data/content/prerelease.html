@@ -50,7 +50,7 @@
     	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_KDE']}</h5>
   	  	  		</div>
   	  	  		<div class="col-xs-6 text-center">
-    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Spins/i386/iso/Fedora-KDE-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a>
+    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Spins/i386/iso/Fedora-KDE-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a>
     	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_KDE']}</h5>
   	  	  		</div>
   	  	  	</div>
@@ -72,7 +72,7 @@
     	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Xfce']}</h5>
   	  	  		</div>
   	  	  		<div class="col-xs-6 text-center">
-    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Spins/i386/iso/Fedora-Xfce-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a>
+    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Spins/i386/iso/Fedora-Xfce-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a>
     	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Xfce']}</h5>
   	  	  		</div>
   	  	  	</div>
@@ -94,7 +94,7 @@
     	  	  		<h5>${Markup(_('%s MB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_LXDE']}</h5>
   	  	  		</div>
   	  	  		<div class="col-xs-6 text-center">
-    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Spins/i386/iso/Fedora-LXDE-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a>
+    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Spins/i386/iso/Fedora-LXDE-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a>
     	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_LXDE']}</h5>
   	  	  		</div>
   	  	  	</div>
@@ -102,6 +102,29 @@
   	  	  </div>
        </div>
 
+       <div class="high">
+        <div class="row top-margin">
+         <div class="col-xs-12 pre-box">
+          <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+            <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-lxqt.jpg" alt="LXQt Screenshot" />
+          </div>
+          <div class="col-xs-12 col-sm-8 text-left">
+            <p class="screenshot"><img src="${path}/static/images/lxqt-pre-banner.png" alt="LXQt banner" /><br />
+            <span class="grey">${_('A complete and lightweight Qt-based desktop experience.')}</span></p>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Spins/x86_64/iso/Fedora-LXQt-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
+                <h5>${Markup(_('%s MB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_LXQt']}</h5>
+              </div>
+              <div class="col-xs-6 text-center">
+              <a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Spins/i386/iso/Fedora-LXQt-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_LXQt']}</h5>
+              </div>
+            </div>
+           </div>
+          </div>
+       </div>
+
+<!--
        <div class="high">
     	  <div class="row top-margin">
     	   <div class="col-xs-12 pre-box">
@@ -116,7 +139,7 @@
     	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Mate']}</h5>
   	  	  		</div>
   	  	  		<div class="col-xs-6 text-center">
-    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Spins/i386/iso/Fedora-MATE_Compiz-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a>
+    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Spins/i386/iso/Fedora-MATE_Compiz-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a>
     	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Mate']}</h5>
   	  	  		</div>
   	  	  	</div>
@@ -138,13 +161,14 @@
     	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Cinnamon']}</h5>
   	  	  		</div>
   	  	  		<div class="col-xs-6 text-center">
-    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Spins/i386/iso/Fedora-Cinnamon-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a>
+    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Spins/i386/iso/Fedora-Cinnamon-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a>
     	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Cinnamon']}</h5>
   	  	  		</div>
   	  	  	</div>
   	  	   </div>
   	  	  </div>
        </div>
+-->
 
        <div class="high">
     	  <div class="row top-margin bottom-space">
@@ -160,7 +184,7 @@
     	  	  		<h5>${Markup(_('%s MB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Soas']}</h5>
   	  	  		</div>
   	  	  		<div class="col-xs-6 text-center">
-   	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Spins/i386/iso/Fedora-SoaS-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a>
+   	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Spins/i386/iso/Fedora-SoaS-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a>
     	  	  		<h5>${Markup(_('%s MB ISO Image')) % global_variables.iso_size['pre_i686_Live_Soas']}</h5>
   	  	  		</div>
   	  	  	</div>
@@ -168,26 +192,78 @@
   	  	  </div>
        </div>
 
-  	</div>
+    </div>
   </header>
 
   <!-- Verify -->
   <div class="container">
-  	<div class="row">
-  	  <div class="col-xs-12 text-left bottom-margin">
-  	  	<h3>${Markup(_('Verify your Download!'))}</h3>
-    	<p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="../../%s/verify"&gt;these instructions&lt;/a&gt;.') % (lang))}</p>
+    <div class="row">
+      <div class="col-xs-12 text-left bottom-margin">
+        <h3>${Markup(_('Verify your Download!'))}</h3>
+      <p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="../../%s/verify"&gt;these instructions&lt;/a&gt;.') % (lang))}</p>
           <div class="row bottom-margin">
             <div class="col-sm-4 col-xs-12">
-              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Spins-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Validate 64bit!')}</a>
+              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Spins-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Validate 64bit!')}</a>
             </div>
             <div class="col-sm-4 col-xs-12">
-              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Spins-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-i386-CHECKSUM">${_('Validate 32bit!')}</a>
+              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Spins-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-i386-CHECKSUM">${_('Validate 32bit!')}</a>
             </div>
           </div>
-  	  </div>
-  	</div>
+      </div>
+    </div>
   </div>
+
+  <header id="head" class="main-head">
+    <div class="container recover-head">
+
+<xi:include href="../templates/devel.html" />
+
+       <div class="high">
+        <div class="row top-margin">
+         <div class="col-xs-12 pre-box">
+          <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+            <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-matecompiz.jpg" alt="MATE-Compiz Screenshot" />
+          </div>
+          <div class="col-xs-12 col-sm-8 text-left">
+            <p class="screenshot"><img src="${path}/static/images/mate-compiz-pre-banner.png" alt="MATE-Compiz banner" /><br />
+            <span class="grey">${_('A classic Fedora Desktop. With wobbly Windows.')}</span></p>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['devel']}/${global_variables.release['next_id']}/Spins/x86_64/iso" role="button">64-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Mate']}</h5>
+              </div>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_alt']}/${global_variables.release['next_id']}/Spins/i386/iso" role="button">32-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Mate']}</h5>
+              </div>
+            </div>
+           </div>
+          </div>
+       </div>
+
+       <div class="high">
+        <div class="row top-margin bottom-space">
+         <div class="col-xs-12 pre-box">
+          <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+            <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-cinnamon.jpg" alt="Cinnamon Screenshot" />
+          </div>
+          <div class="col-xs-12 col-sm-8 text-left">
+            <p class="screenshot"><img src="${path}/static/images/cinnamon-pre-banner.png" alt="Cinnamon banner" /><br />
+            <span class="grey">${_('Traditional layout, advanced features, easy to use.')}</span></p>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['devel']}/${global_variables.release['next_id']}/Spins/x86_64/iso" role="button">64-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Cinnamon']}</h5>
+              </div>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_alt']}/${global_variables.release['next_id']}/Spins/i386/iso" role="button">32-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Cinnamon']}</h5>
+              </div>
+            </div>
+           </div>
+          </div>
+       </div>
+
+  	</div>
+  </header>
 
   <!-- Feature: Spins -->
   <div class="jumbotron product-feature bluebox">
