@@ -66,11 +66,11 @@ release={
     'atomic_age': '???',
     'pre_cloud_atomic_freshness': False,
     'pre_cloud_atomic_age': '???',
-    'manual_pre_atomic_iso_url': 'https://kojipkgs.fedoraproject.org/compose/branched/Fedora-26-20170331.n.0/compose/Atomic/x86_64/iso/Fedora-Atomic-ostree-x86_64-26-20170331.n.0.iso',
-    'manual_pre_atomic_qcow2_cloud_url': 'https://kojipkgs.fedoraproject.org/compose/branched/Fedora-26-20170331.n.0/compose/CloudImages/x86_64/images/Fedora-Atomic-26-20170331.n.0.x86_64.qcow2',
-    'manual_pre_atomic_raw_cloud_url': 'https://kojipkgs.fedoraproject.org/compose/branched/Fedora-26-20170331.n.0/compose/CloudImages/x86_64/images/Fedora-Atomic-26-20170331.n.0.x86_64.raw.xz',
-    'manual_pre_atomic_VBvag_cloud_url': 'https://kojipkgs.fedoraproject.org/compose/branched/Fedora-26-20170331.n.0/compose/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-26-20170331.n.0.x86_64.vagrant-virtualbox.box',
-    'manual_pre_atomic_libvag_cloud_url': 'https://kojipkgs.fedoraproject.org/compose/branched/Fedora-26-20170331.n.0/compose/CloudImages/x86_64/images/Fedora-Cloud-Base-Vagrant-26-20170331.n.0.x86_64.vagrant-libvirt.box',
+    'manual_pre_atomic_iso_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170331.n.0/Fedora-Atomic-ostree-x86_64-26-20170331.n.0.iso',
+    'manual_pre_atomic_qcow2_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170331.n.0/Fedora-Atomic-26-20170331.n.0.x86_64.qcow2',
+    'manual_pre_atomic_raw_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170331.n.0/Fedora-Atomic-26-20170331.n.0.x86_64.raw.xz',
+    'manual_pre_atomic_VBvag_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170331.n.0/Fedora-Atomic-Vagrant-26-20170331.n.0.x86_64.vagrant-virtualbox.box',
+    'manual_pre_atomic_libvag_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170331.n.0/Fedora-Atomic-Vagrant-26-20170331.n.0.x86_64.vagrant-libvirt.box',
     'manual_pre_atomic_date': '20170331',
 }
 
