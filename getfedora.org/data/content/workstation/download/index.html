@@ -177,6 +177,8 @@
           </py:choose>
           </div>
           <div class="top-margin bottom-margin"><h4>${_('Resources')}</h4></div>
+          <p><i class="fa fa-fw fa-sm header-icon fa-globe"></i>${Markup(_('&lt;a href="%(fmagazine_url)s"&gt;&lt;strong&gt;Release Announcement&lt;/strong&gt;&lt;/a&gt;') % {'fmagazine_url': 'https://fedoramagazine.org/fedora-%s-released' % (global_variables.release['curr_id'])})}</p>
+          <div class="pull-right bottom-step"><p>${_('Read the full release announcement on Fedora Magazine.')}</p></div>
           <p><i class="fa fa-fw fa-sm header-icon fa-book"></i>${Markup(_('&lt;a href="//docs.fedoraproject.org/release-notes"&gt;&lt;strong&gt;Release Notes&lt;/strong&gt;&lt;/a&gt;'))}</p>
           <div class="pull-right bottom-step"><p>${_('Learn about changes since the last version of Fedora as well as minimum requirements and recommendations for running Fedora.')}</p></div>
           <p><i class="fa fa-fw fa-sm header-icon fa-book"></i>${Markup(_('&lt;a href="//docs.fedoraproject.org/install-guide"&gt;&lt;strong&gt;Installation Guide&lt;/strong&gt;&lt;/a&gt;'))}</p>
