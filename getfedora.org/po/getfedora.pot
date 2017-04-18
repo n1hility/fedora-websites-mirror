@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-04-10 17:29+0200\n"
+"POT-Creation-Date: 2017-04-18 22:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1001,7 +1001,7 @@ msgstr ""
 #: data/content/atomic/download/index.html:360
 #: data/content/atomic/prerelease/index.html:342
 #: data/content/server/download/index.html:93
-#: data/content/workstation/download/index.html:206
+#: data/content/workstation/download/index.html:208
 msgid "Verify"
 msgstr ""
 
@@ -1009,7 +1009,7 @@ msgstr ""
 #: data/content/atomic/prerelease/index.html:345
 #: data/content/server/download/index.html:96
 #: data/content/server/prerelease/index.html:63
-#: data/content/workstation/download/index.html:209
+#: data/content/workstation/download/index.html:211
 #: data/content/workstation/prerelease/index.html:141
 msgid "Verify your Image"
 msgstr ""
@@ -1575,12 +1575,12 @@ msgid "Download F%(rel)s Beta images"
 msgstr ""
 
 #: data/content/server/download/index.html:82
-#: data/content/workstation/download/index.html:191
+#: data/content/workstation/download/index.html:193
 msgid "Get more Fedora"
 msgstr ""
 
 #: data/content/server/download/index.html:86
-#: data/content/workstation/download/index.html:200
+#: data/content/workstation/download/index.html:202
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr ""
 
@@ -1961,48 +1961,57 @@ msgid "32-bit %sMB image"
 msgstr ""
 
 #: data/content/workstation/download/index.html:180
+#, python-format
+msgid "<a href=\"%(fmagazine_url)s\"><strong>Release Announcement</strong></a>"
+msgstr ""
+
+#: data/content/workstation/download/index.html:181
+msgid "Read the full Release Announcement on Fedora Magazine."
+msgstr ""
+
+#: data/content/workstation/download/index.html:182
 msgid ""
 "<a href=\"//docs.fedoraproject.org/release-notes\"><strong>Release "
 "Notes</strong></a>"
 msgstr ""
 
-#: data/content/workstation/download/index.html:181
+#: data/content/workstation/download/index.html:183
 msgid ""
 "Learn about changes since the last version of Fedora as well as minimum "
 "requirements and recommendations for running Fedora."
 msgstr ""
 
-#: data/content/workstation/download/index.html:182
+#: data/content/workstation/download/index.html:184
 msgid ""
 "<a href=\"//docs.fedoraproject.org/install-guide\"><strong>Installation "
 "Guide</strong></a>"
 msgstr ""
 
-#: data/content/workstation/download/index.html:183
+#: data/content/workstation/download/index.html:185
 msgid ""
 "We recommend you look through this before installing to your system, "
 "since it answers many common questions."
 msgstr ""
 
-#: data/content/workstation/download/index.html:184
+#: data/content/workstation/download/index.html:186
 #: data/content/workstation/prerelease/index.html:166
 #, python-format
 msgid "<a href=\"%(commonbugs_url)s\"><strong>Common Bugs</strong></a>"
 msgstr ""
 
-#: data/content/workstation/download/index.html:185
+#: data/content/workstation/download/index.html:187
 #: data/content/workstation/prerelease/index.html:167
 msgid ""
 "An excellent resource to consult in case you run into any issues "
 "installing or running Fedora."
 msgstr ""
 
-#: data/content/workstation/download/index.html:187
+#: data/content/workstation/download/index.html:189
 #: data/content/workstation/prerelease/index.html:171
 msgid "What does \"Live\" mean?"
 msgstr ""
 
-#: data/content/workstation/download/index.html:188
+#: data/content/workstation/download/index.html:190
 #: data/content/workstation/prerelease/index.html:172
 msgid ""
 "Fedora Media Writer will create a complete, running Fedora Workstation "
@@ -2010,19 +2019,19 @@ msgid ""
 "test and play with Fedora without making changes to your hard disk."
 msgstr ""
 
-#: data/content/workstation/download/index.html:189
+#: data/content/workstation/download/index.html:191
 #: data/content/workstation/prerelease/index.html:173
 msgid ""
 "When you are ready, you can install Fedora to your hard disk from within "
 "this \"live\" version of Fedora Workstation."
 msgstr ""
 
-#: data/content/workstation/download/index.html:194
+#: data/content/workstation/download/index.html:196
 #: data/templates/footer.html:43
 msgid "Fedora Spins"
 msgstr ""
 
-#: data/content/workstation/download/index.html:197
+#: data/content/workstation/download/index.html:199
 #: data/templates/footer.html:44
 msgid "Fedora Labs"
 msgstr ""
