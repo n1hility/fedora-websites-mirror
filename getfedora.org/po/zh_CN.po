@@ -14,13 +14,16 @@
 # Qi Fan <fun224@gmail.com>, 2016. #zanata
 # Tommy He <lovenemesis@fedoraproject.org>, 2016. #zanata
 # Tong Hui <tonghuix@fedoraproject.org>, 2016. #zanata
+# Jerry Lee <lchopn@gmail.com>, 2017. #zanata
+# Tong Hui <tonghuix@fedoraproject.org>, 2017. #zanata
+# lexuge <LEXUGEyky@outlook.com>, 2017. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-11-22 12:42+0100\n"
-"PO-Revision-Date: 2016-11-21 01:42-0500\n"
-"Last-Translator: Tommy He <lovenemesis@fedoraproject.org>\n"
+"POT-Creation-Date: 2017-04-18 22:10+0200\n"
+"PO-Revision-Date: 2017-04-11 05:46-0400\n"
+"Last-Translator: Jerry Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/fedora-web/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -121,69 +124,81 @@ msgid ""
 "streamlined for your needs, and get to work right away."
 msgstr "更少的配置，更多的创新。<br /><br />只需选择一个满足您需求的 Fedora 产品，便可立即开始使用。"
 
-#: data/content/index.html:30 data/content/verify.html:39
+#: data/content/index.html:31 data/content/index.html:42
+#, python-format
+msgid ""
+"<strong>Fedora %(rel)s %(state)s</strong> released! Test it in the Download "
+"section."
+msgstr "<strong>Fedora %(rel)s %(state)s</strong> 现已发布！ 在下载部分获取并测试。"
+
+#: data/content/index.html:53
+#, python-format
+msgid "Fedora %(rel)s released! Get it now."
+msgstr "Fedora %(rel)s 现已发布！现在获取。"
+
+#: data/content/index.html:67 data/content/verify.html:39
 #: data/templates/productselector-workstation.html:12
 msgid "Workstation"
 msgstr "Workstation"
 
-#: data/content/index.html:32 data/content/index.html:48
-#: data/content/index.html:63
+#: data/content/index.html:69 data/content/index.html:85
+#: data/content/index.html:100
 msgid "Download Now"
 msgstr "现在下载"
 
-#: data/content/index.html:37 data/content/index.html:90
+#: data/content/index.html:74 data/content/index.html:127
 msgid ""
 "Fedora Workstation is a polished, easy to use operating system for laptop "
 "and desktop computers, with a complete set of tools for developers and "
 "makers of all kinds."
 msgstr "Fedora Workstation 为笔记本和台式机提供优雅易用的操作系统，包含各类开发者和创客所需的整套工具。"
 
-#: data/content/index.html:39 data/content/index.html:54
-#: data/content/index.html:69 data/content/atomic/index.html:24
 #: data/content/atomic/index.html:125 data/content/atomic/index.html:131
-#: data/content/server/index.html:20 data/content/server/index.html:125
-#: data/content/server/index.html:131 data/content/workstation/index.html:20
+#: data/content/index.html:76 data/content/index.html:91
+#: data/content/index.html:106 data/content/server/index.html:20
+#: data/content/server/index.html:125 data/content/server/index.html:131
+#: data/content/workstation/index.html:20
 #: data/content/workstation/index.html:185
 #: data/content/workstation/index.html:191
 msgid "Download now"
 msgstr "马上下载"
 
-#: data/content/index.html:46 data/content/verify.html:51
+#: data/content/index.html:83 data/content/verify.html:51
 #: data/templates/productselector-server.html:13
 msgid "Server"
 msgstr "Server"
 
-#: data/content/index.html:52 data/content/index.html:95
+#: data/content/index.html:89 data/content/index.html:132
 msgid ""
 "Fedora Server is a powerful, flexible operating system that includes the "
 "best and latest datacenter technologies. It puts you in control of all your "
 "infrastructure and services."
 msgstr "Fedora Server 是一款强大而灵活的操作系统，包括了最好最新的数据中心技术。它可以让您操控全部基础架构和服务。"
 
-#: data/content/index.html:61 data/content/verify.html:60
+#: data/content/index.html:98 data/content/verify.html:60
 #: data/templates/productselector-cloud.html:13
 msgid "Atomic"
 msgstr "Atomic"
 
-#: data/content/index.html:67 data/content/index.html:100
+#: data/content/atomic/index.html:19 data/content/index.html:104
+#: data/content/index.html:137
 msgid ""
-"Fedora Cloud provides a minimal image of Fedora for use in public and "
-"private cloud environments. It includes just the bare essentials making it "
-"very light on resources, but you get enough to run your cloud application."
-msgstr "Fedora Cloud 为公有云和私有云环境提供最小化的 Fedora 镜像。它只包含必备组件，资源占用非常轻量，但足以运行您的云应用。"
+"Fedora Atomic provides the best platform for your Linux-Docker-Kubernetes "
+"(LDK) application stack."
+msgstr "Fedora Atomic 将是您运行 Linux-Docker-Kubernetes(LDK) 应用的最佳平台。"
 
-#: data/content/index.html:126
+#: data/content/index.html:163
 msgid ""
 "Fedora is always free for anyone to use, modify, and distribute. It is built"
 " and used by people across the globe who work together as a community: the "
 "Fedora Project."
 msgstr "Fedora 始终允许任何人自由使用，修改和发布。它由来自世界各地的人们在 Fedora 项目这一社区中协作打造。"
 
-#: data/content/index.html:139
+#: data/content/index.html:176
 msgid "Want more Fedora options?"
 msgstr "想要更多 Fedora 选项？"
 
-#: data/content/index.html:158
+#: data/content/index.html:195
 msgid ""
 "The Fedora community also releases <a "
 "href=\"https://arm.fedoraproject.org/\">ARM images</a>, alternate live "
@@ -197,11 +212,11 @@ msgstr ""
 "href=\"https://spins.fedoraproject.org/\">Fedora Spins</a> 或 <a "
 "href=\"https://labs.fedoraproject.org/\">Fedora Labs</a> 网站了解详情。"
 
-#: data/content/index.html:165
+#: data/content/index.html:202
 msgid "Be connected & informed."
 msgstr "保持联系并获得通知。"
 
-#: data/content/index.html:175
+#: data/content/index.html:212
 msgid ""
 "Want to get <a href=\"http://whatcanidoforfedora.org/\">involved</a>? Find "
 "out what's happening in the <a "
@@ -213,11 +228,11 @@ msgstr ""
 "href=\"http://communityblog.fedoraproject.org/\">社区</a>发生的事情？请前往<a "
 "href=\"http://fedoramagazine.org/\">Fedora Magazine</a>阅读最新咨询及有趣的故事。"
 
-#: data/content/index.html:185
+#: data/content/index.html:222
 msgid "Read the docs."
 msgstr "读此文档。"
 
-#: data/content/index.html:195
+#: data/content/index.html:232
 #, python-format
 msgid ""
 "Check out the Release Notes for detailed information on the current release."
@@ -227,28 +242,17 @@ msgstr ""
 "查阅发行日志获得关于当前版本的详细信息。要了解更多关于使用 Fedora 及诸如系统需求的信息，请查阅 <a "
 "href=\"%s\"><strong>官方文档</strong></a>。"
 
-#: data/content/index.html:202
+#: data/content/index.html:239
 msgid "Get help."
 msgstr "获得帮助。"
 
-#: data/content/index.html:212
+#: data/content/index.html:249
 #, python-format
 msgid ""
 "Need some help with Fedora? Check out <a href=\"%s\">Ask Fedora</a>, where "
 "you can read archives of questions from other users, or ask your own "
 "question."
 msgstr "需要 Fedora 相关帮助？通过 <a href=\"%s\">Ask Fedora</a>，您可以查看已有提问，也可以自己发问。"
-
-#: data/content/index.html:225 data/content/index.html:236
-#, python-format
-msgid ""
-"Fedora %(rel)s %(state)s released! Check it out in the Download section."
-msgstr "Fedora %(rel)s %(state)s 发布了！在下载部分获取。"
-
-#: data/content/index.html:247
-#, python-format
-msgid "Fedora %(rel)s released! Check it out in the Download section."
-msgstr "Fedora %(rel)s 发布了！请查看下载部分。"
 
 #: data/content/sponsors.html:8 data/content/sponsors.html:18
 msgid "Fedora Sponsors"
@@ -281,11 +285,11 @@ msgid ""
 "substantial support:"
 msgstr "Fedora 项目同时对下列赞助商的大力支持表示感谢："
 
-#: data/content/sponsors.html:91
+#: data/content/sponsors.html:98
 msgid "Interested in sponsoring something for Fedora?"
 msgstr "有兴趣来赞助 Fedora 吗？"
 
-#: data/content/sponsors.html:92
+#: data/content/sponsors.html:99
 #, python-format
 msgid ""
 "Contact <a href=\"%(mail_url)s\">admin@fedoraproject.org</a> or stop by "
@@ -354,53 +358,49 @@ msgid ""
 "keys:"
 msgstr "CHECKSUM 文件应有来自以下公钥之一的签名："
 
-#: data/content/verify.html:82 data/content/keys/index.html:46
+#: data/content/keys/index.html:46 data/content/verify.html:82
+msgid "Fedora 27"
+msgstr "Fedora 27"
+
+#: data/content/keys/index.html:60 data/content/verify.html:83
 msgid "Fedora 26"
 msgstr "Fedora 26"
 
-#: data/content/verify.html:83
+#: data/content/verify.html:84
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr "Fedora 26 次级架构 (AArch64、PPC64、PPC64le、s390 和 s390x)"
 
-#: data/content/verify.html:84 data/content/keys/index.html:67
+#: data/content/keys/index.html:81 data/content/verify.html:85
 msgid "Fedora 25"
 msgstr "Fedora 25"
 
-#: data/content/verify.html:85
+#: data/content/verify.html:86
 msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr "Fedora 25 次级架构 (AArch64、PPC64、PPC64le、s390 和 s390x)"
 
-#: data/content/verify.html:86 data/content/keys/index.html:88
+#: data/content/keys/index.html:102 data/content/verify.html:87
 msgid "Fedora 24"
 msgstr "Fedora 24"
 
-#: data/content/verify.html:87
+#: data/content/verify.html:88
 msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr "Fedora 24 次级架构 (AArch64、PPC64、PPC64le、s390 和 s390x)"
 
-#: data/content/verify.html:88 data/content/keys/index.html:109
-msgid "Fedora 23"
-msgstr "Fedora 23"
-
-#: data/content/verify.html:89
-msgid "Fedora 23 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr "Fedora 23 次级架构 (AArch64、PPC64、PPC64le、s390 和 s390x)"
-
-#: data/content/verify.html:91
+#: data/content/verify.html:90
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
 msgstr "当 CHECKSUM 文件校验文成后，检查镜像文件的校验和值是否与其匹配："
 
-#: data/content/verify.html:93
+#: data/content/verify.html:92
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr "如果输出结果显示文件有效，则镜像文件可以使用！"
 
-#: data/content/verify.html:94
+#: data/content/verify.html:93
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr "如何在其他操作系统上校验下载镜像？"
 
-#: data/content/verify.html:95
+#: data/content/verify.html:94
 msgid "Read these instructions to validate your image."
 msgstr "请阅读这些说明以了解如何校验镜像。"
 
@@ -414,11 +414,9 @@ msgid ""
 "infrastructure."
 msgstr "使用具备不可变特性基础架构部署并扩展您的容器化应用程序"
 
-#: data/content/atomic/index.html:19
-msgid ""
-"Fedora Atomic provides the best platform for your Linux-Docker-Kubernetes "
-"(LDK) application stack."
-msgstr "Fedora Atomic 将是您运行 Linux-Docker-Kubernetes(LDK) 应用的最佳平台。"
+#: data/content/atomic/index.html:24
+msgid "Download or Launch in Public Cloud"
+msgstr "在公有云上下载或启动"
 
 #: data/content/atomic/index.html:39
 msgid ""
@@ -448,9 +446,7 @@ msgstr "Atomic Host 源自 Project Atomic，它是一个轻量级的不可变平
 msgid ""
 "Fedora's version of Atomic Host uses the same package repositories as Fedora"
 " Server, and provides the latest versions of the Atomic."
-msgstr ""
-"Fedora 版本的 Atomic Host 使用与 Fedora Server 相同, and provides the latest "
-"versions of the Atomic."
+msgstr "Fedora 版本的 Atomic Host 使用与 Fedora Server 相同软件包仓库，并且提供最新版本的 Atomic。"
 
 #: data/content/atomic/index.html:65
 msgid "OStree Updates"
@@ -517,8 +513,6 @@ msgid "Verify your Download!"
 msgstr "校验您所下载的文件！"
 
 #: data/content/atomic/download/download-cloud-splash.html:49
-#: data/content/atomic/prerelease/docker.html:129
-#: data/content/atomic/prerelease/index.html:475
 #: data/content/server/download/server-download-splash.html:44
 #: data/content/workstation/download/ws-download-splash.html:49
 #: data/content/workstation/prerelease/index.html:142
@@ -540,6 +534,7 @@ msgid "Validate!"
 msgstr "校验！"
 
 #: data/content/atomic/download/index.html:10
+#: data/content/atomic/prerelease/index.html:10
 msgid "Download Fedora Atomic"
 msgstr "下载 Fedora Atomic"
 
@@ -549,10 +544,12 @@ msgid "Download Fedora %(rel)s Atomic Host"
 msgstr "下载 Fedora %(rel)s Atomic Host"
 
 #: data/content/atomic/download/index.html:35
+#: data/content/atomic/prerelease/index.html:35
 msgid "Atomic Host is built every 2 weeks or so."
 msgstr "Atomic Host 每两周左右构建一次。"
 
 #: data/content/atomic/download/index.html:36
+#: data/content/atomic/prerelease/index.html:36
 #, python-format
 msgid ""
 "The latest two week build did not meet our testing criteria. The images "
@@ -567,7 +564,7 @@ msgstr ""
 msgid ""
 "These are the latest official Fedora Atomic Host images, produced "
 "%(atomic_age)s days ago."
-msgstr "这些最新的 Fedora Atomic Host 镜像，是 %(atomic_age)s 天前生产出来的。"
+msgstr "这些最新的 Fedora Atomic Host 镜像，发布于 %(atomic_age)s 。"
 
 #: data/content/atomic/download/index.html:48
 msgid "Atomic Host Images"
@@ -609,17 +606,20 @@ msgstr ""
 msgid ""
 "<strong>Note that different Fedora Atomic Host media are subject to "
 "different levels of automatic testing.</strong> You can learn more about the"
-" Atomic project at <a href=\"%s\">projectatomic.io</a>, <a href=\"%s\">click"
+" Atomic project at <a href=\"%s\">projectatomic.io</a>. <a href=\"%s\">Click"
 " here</a> to see the current test status."
 msgstr ""
-"<strong>注意不同的 Fedora Atomic Host 介质通过的自动化测试水平不同。</strong> 您可以通过 <a "
-"href=\"%s\">projectatomic.io</a>, <a href=\"%s\">点击此处</a> 来了解当前测试状态的信息。"
+"<strong>注意不同介质的 Fedora Atomic Host 适用于不同级别的自动化测试。</strong> 您可以通过 <a "
+"href=\"%s\">projectatomic.io</a> 了解更多关于 Atomic 项目。 <a "
+"href=\"%s\">点击这里</a>查看当前测试状态。"
 
 #: data/content/atomic/download/index.html:61
+#: data/content/atomic/prerelease/index.html:57
 msgid "Atomic Host Images for Amazon Public Cloud EC2"
 msgstr "适用于 Amazon Public Cloud EC2 的 Atomic Host 镜像"
 
 #: data/content/atomic/download/index.html:62
+#: data/content/atomic/prerelease/index.html:58
 msgid ""
 "The links below will provide you listings of available Atomic Host Hardware "
 "Virtual Machine (HVM) AMIs by region with buttons to launch them in your "
@@ -631,11 +631,15 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:68
 #: data/content/atomic/download/index.html:136
+#: data/content/atomic/prerelease/index.html:64
+#: data/content/atomic/prerelease/index.html:132
 msgid "GP2 Format"
 msgstr "GP2 格式"
 
 #: data/content/atomic/download/index.html:69
 #: data/content/atomic/download/index.html:137
+#: data/content/atomic/prerelease/index.html:65
+#: data/content/atomic/prerelease/index.html:133
 msgid ""
 "GP2 format AMIs use faster SSD storage; use these AMIs for speed, although "
 "note your storage costs will be more than standard."
@@ -643,8 +647,8 @@ msgstr "GP2 格式 AMIs 使用较快的 SSD 存储；可以通过这些 AMIs 获
 
 #: data/content/atomic/download/index.html:71
 #: data/content/atomic/download/index.html:147
-#: data/content/atomic/prerelease/index.html:183
-#: data/content/atomic/prerelease/index.html:320
+#: data/content/atomic/prerelease/index.html:67
+#: data/content/atomic/prerelease/index.html:143
 msgid "GP2 HVM AMIs"
 msgstr "GP2 HVM AMIs"
 
@@ -652,14 +656,10 @@ msgstr "GP2 HVM AMIs"
 #: data/content/atomic/download/index.html:108
 #: data/content/atomic/download/index.html:152
 #: data/content/atomic/download/index.html:182
-#: data/content/atomic/prerelease/index.html:188
-#: data/content/atomic/prerelease/index.html:218
-#: data/content/atomic/prerelease/index.html:251
-#: data/content/atomic/prerelease/index.html:281
-#: data/content/atomic/prerelease/index.html:325
-#: data/content/atomic/prerelease/index.html:353
-#: data/content/atomic/prerelease/index.html:385
-#: data/content/atomic/prerelease/index.html:413
+#: data/content/atomic/prerelease/index.html:72
+#: data/content/atomic/prerelease/index.html:104
+#: data/content/atomic/prerelease/index.html:148
+#: data/content/atomic/prerelease/index.html:178
 #: data/templates/keys/key-button-and-modal-obsolete.html:37
 #: data/templates/keys/key-button-and-modal-obsolete.html:88
 #: data/templates/keys/key-button-and-modal.html:37
@@ -677,14 +677,10 @@ msgstr "Fedora %(rel)s GP2 Atomic Host HVM AMIs"
 #: data/content/atomic/download/index.html:114
 #: data/content/atomic/download/index.html:158
 #: data/content/atomic/download/index.html:188
-#: data/content/atomic/prerelease/index.html:194
-#: data/content/atomic/prerelease/index.html:224
-#: data/content/atomic/prerelease/index.html:257
-#: data/content/atomic/prerelease/index.html:287
-#: data/content/atomic/prerelease/index.html:331
-#: data/content/atomic/prerelease/index.html:359
-#: data/content/atomic/prerelease/index.html:391
-#: data/content/atomic/prerelease/index.html:419
+#: data/content/atomic/prerelease/index.html:78
+#: data/content/atomic/prerelease/index.html:110
+#: data/content/atomic/prerelease/index.html:154
+#: data/content/atomic/prerelease/index.html:184
 #: data/templates/cloud-tab.html:13
 msgid "Region"
 msgstr "区域"
@@ -693,14 +689,10 @@ msgstr "区域"
 #: data/content/atomic/download/index.html:115
 #: data/content/atomic/download/index.html:159
 #: data/content/atomic/download/index.html:189
-#: data/content/atomic/prerelease/index.html:195
-#: data/content/atomic/prerelease/index.html:225
-#: data/content/atomic/prerelease/index.html:258
-#: data/content/atomic/prerelease/index.html:288
-#: data/content/atomic/prerelease/index.html:332
-#: data/content/atomic/prerelease/index.html:360
-#: data/content/atomic/prerelease/index.html:392
-#: data/content/atomic/prerelease/index.html:420
+#: data/content/atomic/prerelease/index.html:79
+#: data/content/atomic/prerelease/index.html:111
+#: data/content/atomic/prerelease/index.html:155
+#: data/content/atomic/prerelease/index.html:185
 #: data/templates/cloud-tab.html:16
 msgid "AMI ID"
 msgstr "AMI ID"
@@ -709,24 +701,23 @@ msgstr "AMI ID"
 #: data/content/atomic/download/index.html:116
 #: data/content/atomic/download/index.html:160
 #: data/content/atomic/download/index.html:190
-#: data/content/atomic/prerelease/index.html:196
-#: data/content/atomic/prerelease/index.html:226
-#: data/content/atomic/prerelease/index.html:259
-#: data/content/atomic/prerelease/index.html:289
-#: data/content/atomic/prerelease/index.html:333
-#: data/content/atomic/prerelease/index.html:361
-#: data/content/atomic/prerelease/index.html:393
-#: data/content/atomic/prerelease/index.html:421
+#: data/content/atomic/prerelease/index.html:80
+#: data/content/atomic/prerelease/index.html:112
+#: data/content/atomic/prerelease/index.html:156
+#: data/content/atomic/prerelease/index.html:186
 #: data/templates/cloud-tab.html:17
 msgid "Launch"
 msgstr "启动"
 
 #: data/content/atomic/download/index.html:100
+#: data/content/atomic/prerelease/index.html:96
 msgid "Standard Format)"
 msgstr "标准格式)"
 
 #: data/content/atomic/download/index.html:101
 #: data/content/atomic/download/index.html:141
+#: data/content/atomic/prerelease/index.html:97
+#: data/content/atomic/prerelease/index.html:137
 msgid ""
 "Standard format AMIs are more suitable if you have infrequently accessed "
 "data and want to keep storage cost low."
@@ -734,8 +725,8 @@ msgstr "标准格式 AMI 更适合您并不频繁访问的数据且想要保持�
 
 #: data/content/atomic/download/index.html:103
 #: data/content/atomic/download/index.html:177
-#: data/content/atomic/prerelease/index.html:213
-#: data/content/atomic/prerelease/index.html:348
+#: data/content/atomic/prerelease/index.html:99
+#: data/content/atomic/prerelease/index.html:173
 msgid "Standard HVM AMIs"
 msgstr "基础 HVM AMIs"
 
@@ -746,14 +737,17 @@ msgid "Fedora %(rel)s Standard Atomic Host HVM AMIs"
 msgstr "Fedora %(rel)s 标准 Atomic Host HVM AMIs"
 
 #: data/content/atomic/download/index.html:140
+#: data/content/atomic/prerelease/index.html:136
 msgid "Standard Format"
 msgstr "标准格式"
 
 #: data/content/atomic/download/index.html:211
+#: data/content/atomic/prerelease/index.html:207
 msgid "Atomic Host Images for Vagrant"
 msgstr "针对 Vagrant 的 Atomic Host 镜像"
 
 #: data/content/atomic/download/index.html:212
+#: data/content/atomic/prerelease/index.html:208
 #, python-format
 msgid ""
 "Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and "
@@ -766,14 +760,17 @@ msgstr ""
 "Box 中运行 Fedora Atomic Host。"
 
 #: data/content/atomic/download/index.html:213
+#: data/content/atomic/prerelease/index.html:209
 msgid "View Vagrant Downloads"
 msgstr "查看 Vagrant 下载"
 
 #: data/content/atomic/download/index.html:216
+#: data/content/atomic/prerelease/index.html:212
 msgid "Vagrant Image Downloads"
 msgstr "Vagrant 镜像下载"
 
 #: data/content/atomic/download/index.html:217
+#: data/content/atomic/prerelease/index.html:213
 #, python-format
 msgid ""
 "These images are Vagrant Boxes images for deployment using <a "
@@ -782,11 +779,15 @@ msgstr "这些为适用于 <a href=\"%s\">Vagrant</a> 开发的 Vagrant Boxes �
 
 #: data/content/atomic/download/index.html:222
 #: data/content/atomic/download/index.html:238
+#: data/content/atomic/prerelease/index.html:218
+#: data/content/atomic/prerelease/index.html:234
 msgid "VirtualBox Image"
 msgstr "VirtualBox 镜像"
 
 #: data/content/atomic/download/index.html:223
 #: data/content/atomic/download/index.html:239
+#: data/content/atomic/prerelease/index.html:219
+#: data/content/atomic/prerelease/index.html:235
 msgid ""
 "If you're using Vagrant on Mac OS X or Windows, this is likely the image "
 "you'll want to use."
@@ -800,19 +801,22 @@ msgstr "如果您在使用 Mac OS X 或 Windows 上的 Vagrant，那么这可能
 #: data/content/atomic/download/index.html:299
 #: data/content/atomic/download/index.html:316
 #: data/content/atomic/download/index.html:320
-#: data/content/atomic/prerelease/docker.html:91
-#: data/content/atomic/prerelease/index.html:90
-#: data/content/atomic/prerelease/index.html:96
-#: data/content/atomic/prerelease/index.html:114
-#: data/content/atomic/prerelease/index.html:118
+#: data/content/atomic/prerelease/index.html:220
+#: data/content/atomic/prerelease/index.html:226
+#: data/content/atomic/prerelease/index.html:244
+#: data/content/atomic/prerelease/index.html:248
+#: data/content/atomic/prerelease/index.html:289
+#: data/content/atomic/prerelease/index.html:295
+#: data/content/atomic/prerelease/index.html:312
+#: data/content/atomic/prerelease/index.html:316
 #: data/content/server/download/index.html:33
 #: data/content/server/prerelease/index.html:18
 #: data/content/workstation/download/index.html:40
 #: data/content/workstation/download/index.html:44
 #: data/content/workstation/download/index.html:49
 #: data/content/workstation/download/index.html:101
-#: data/content/workstation/download/index.html:110
-#: data/content/workstation/download/index.html:122
+#: data/content/workstation/download/index.html:113
+#: data/content/workstation/download/index.html:128
 #: data/content/workstation/prerelease/index.html:19
 #: data/content/workstation/prerelease/index.html:23
 #: data/content/workstation/prerelease/index.html:28
@@ -825,36 +829,47 @@ msgstr "下载"
 
 #: data/content/atomic/download/index.html:225
 #: data/content/atomic/download/index.html:249
+#: data/content/atomic/prerelease/index.html:221
+#: data/content/atomic/prerelease/index.html:245
 #, python-format
 msgid "64-bit %sMB VirtualBox Base Vagrant Image"
 msgstr "64位 %sMB VirtualBox Base Vagrant 镜像"
 
 #: data/content/atomic/download/index.html:228
 #: data/content/atomic/download/index.html:242
+#: data/content/atomic/prerelease/index.html:224
+#: data/content/atomic/prerelease/index.html:238
 msgid "libvirt/KVM Image"
 msgstr "libvirt/KVM 镜像"
 
 #: data/content/atomic/download/index.html:229
 #: data/content/atomic/download/index.html:243
+#: data/content/atomic/prerelease/index.html:225
+#: data/content/atomic/prerelease/index.html:239
 msgid ""
 "If you're using Vagrant on Fedora, this is the image you'll want to use."
 msgstr "如果您在使用 Fedora 上的 Vagrant，那么这可能是您想要使用的系统镜像。"
 
 #: data/content/atomic/download/index.html:231
 #: data/content/atomic/download/index.html:253
+#: data/content/atomic/prerelease/index.html:227
+#: data/content/atomic/prerelease/index.html:249
 #, python-format
 msgid "64-bit %sMB libvirt/KVM Base Vagrant Image"
 msgstr "64 位 %sMB libvirt/KVM Base Vagrant 镜像"
 
 #: data/content/atomic/download/index.html:261
+#: data/content/atomic/prerelease/index.html:257
 msgid "View Downloads using Vagrant tools"
 msgstr "使用 Vagrant 工具查看下载"
 
 #: data/content/atomic/download/index.html:265
+#: data/content/atomic/prerelease/index.html:261
 msgid "Vagrant Downloads using Vagrant tools"
 msgstr "使用 Vagrant 工具下载"
 
 #: data/content/atomic/download/index.html:266
+#: data/content/atomic/prerelease/index.html:262
 #, python-format
 msgid ""
 "You can use the following command to grab the Vagrant Box images from <a "
@@ -862,13 +877,15 @@ msgid ""
 msgstr "您可以使用如下命令从 <a href=\"%s\">HashiCorp's Atlas</a> 获取 Vagrant Box 镜像。"
 
 #: data/content/atomic/download/index.html:268
+#: data/content/atomic/prerelease/index.html:264
 #, python-format
 msgid ""
-"If you've previously run Fedora %s Atomic Host in Vagrant on your machine "
-"then you can get the latest version by running:"
-msgstr "如果您先前在您的机器上以 Vagrant 运行 Fedora %s Atomic Host 那么可以通过运行以下命令获取最新版本："
+"If you've previously run Fedora %(rel)s Atomic Host in Vagrant on your "
+"machine then you can get the latest version by running:"
+msgstr "如果您之前以 Vagrant 在您的设备上运行Fedora %(rel)s Atomic Host,那么您可以通过一下方式获取最新版本"
 
 #: data/content/atomic/download/index.html:277
+#: data/content/atomic/prerelease/index.html:273
 #, python-format
 msgid ""
 "For more information about running Vagrant on Fedora Workstation, see <a "
@@ -877,13 +894,14 @@ msgstr ""
 "了解更多在 Fedora Workstation 上运行 Vagrant 的信息，请参考 <a href=\"%s\">我们的 Wiki 页面</a>。"
 
 #: data/content/atomic/download/index.html:285
+#: data/content/atomic/prerelease/index.html:281
 msgid "Atomic Host Images for Cloud Environments"
 msgstr "适用于云计算环境的 Atomic Host 镜像"
 
 #: data/content/atomic/download/index.html:291
 #: data/content/atomic/download/index.html:306
-#: data/content/atomic/prerelease/index.html:88
-#: data/content/atomic/prerelease/index.html:104
+#: data/content/atomic/prerelease/index.html:287
+#: data/content/atomic/prerelease/index.html:302
 msgid "qcow2 Image"
 msgstr "qcow2 格式镜像"
 
@@ -897,16 +915,16 @@ msgstr "这是用于 OpenStack 的 Qcow2 格式的 Fedora %(rel)s Cloud Atomic H
 
 #: data/content/atomic/download/index.html:294
 #: data/content/atomic/download/index.html:317
-#: data/content/atomic/prerelease/index.html:91
-#: data/content/atomic/prerelease/index.html:115
+#: data/content/atomic/prerelease/index.html:290
+#: data/content/atomic/prerelease/index.html:313
 #, python-format
 msgid "64-bit %sMB Qcow2 Image"
 msgstr "64 位 %sMB Qcow2 镜像"
 
 #: data/content/atomic/download/index.html:297
 #: data/content/atomic/download/index.html:310
-#: data/content/atomic/prerelease/index.html:94
-#: data/content/atomic/prerelease/index.html:108
+#: data/content/atomic/prerelease/index.html:293
+#: data/content/atomic/prerelease/index.html:306
 msgid "Raw Image"
 msgstr "原始镜像"
 
@@ -920,53 +938,56 @@ msgstr "这是 Fedora %(rel)s Cloud Atomic Host 的 Raw 压缩格式镜像。如
 
 #: data/content/atomic/download/index.html:300
 #: data/content/atomic/download/index.html:321
-#: data/content/atomic/prerelease/index.html:97
-#: data/content/atomic/prerelease/index.html:119
+#: data/content/atomic/prerelease/index.html:296
+#: data/content/atomic/prerelease/index.html:317
 #, python-format
 msgid "64-bit %sMB xz-Compressed Raw Image"
 msgstr "64 位 %sMB xz 压缩 Raw 镜像"
 
 #: data/content/atomic/download/index.html:331
+#: data/content/atomic/prerelease/index.html:327
 #: data/content/server/download/index.html:50
 #: data/content/server/prerelease/index.html:73
-#: data/content/workstation/download/index.html:139
+#: data/content/workstation/download/index.html:145
 #: data/content/workstation/prerelease/index.html:153
 msgid "Other Downloads"
 msgstr "其他下载"
 
-#: data/content/atomic/download/index.html:332
+#: data/content/atomic/download/index.html:333
+#: data/content/atomic/prerelease/index.html:329
 #, python-format
 msgid "Atomic Host ISO image (%sMB)"
 msgstr "Atomic Host ISO 镜像 (%sMB)"
 
 #: data/content/atomic/download/index.html:334
-msgid "Docker:"
-msgstr "Docker："
-
-#: data/content/atomic/download/index.html:336
+#: data/content/atomic/prerelease/index.html:330
 #, python-format
 msgid "Docker Image (%sMB)"
 msgstr "Docker 镜像 (%sMB)"
 
-#: data/content/atomic/download/index.html:339
-#: data/content/workstation/download/index.html:173
+#: data/content/atomic/download/index.html:337
+#: data/content/atomic/prerelease/index.html:333
+#: data/content/workstation/download/index.html:179
 #: data/content/workstation/prerelease/index.html:165
 msgid "Resources"
 msgstr "资源"
 
-#: data/content/atomic/download/index.html:340
+#: data/content/atomic/download/index.html:338
+#: data/content/atomic/prerelease/index.html:334
 msgid ""
-"<a href=\"//docs.fedoraproject.org/release-notes\"><strong>Project Atomic: "
-"Getting Started</strong></a>"
+"<a href=\"https://www.projectatomic.io/docs/quickstart/\"><strong>Project "
+"Atomic: Getting Started</strong></a>"
 msgstr ""
-"<a href=\"//docs.fedoraproject.org/release-notes\"><strong>Project Atomic: "
-"上手指南</strong></a>"
+"<a href=\"https://www.projectatomic.io/docs/quickstart/\"><strong>Project "
+"Atomic: 入门指南</strong></a>"
 
-#: data/content/atomic/download/index.html:341
+#: data/content/atomic/download/index.html:339
+#: data/content/atomic/prerelease/index.html:335
 msgid "Documentation on getting started using Project Atomic / Atomic Host."
 msgstr "关于如何开始使用 Project Atomic / Atomic Host 的文档。"
 
-#: data/content/atomic/download/index.html:342
+#: data/content/atomic/download/index.html:340
+#: data/content/atomic/prerelease/index.html:336
 msgid ""
 "<a "
 "href=\"https://lists.projectatomic.io/mailman/listinfo/atomic\"><strong>Project"
@@ -976,19 +997,22 @@ msgstr ""
 "href=\"https://lists.projectatomic.io/mailman/listinfo/atomic\"><strong>Project"
 " Atomic: 邮件列表</strong></a>"
 
-#: data/content/atomic/download/index.html:343
+#: data/content/atomic/download/index.html:341
+#: data/content/atomic/prerelease/index.html:337
 #, python-format
 msgid ""
 "Join the upstream mailing list at <a "
 "href=\"%s\">atomic@projectatomic.io</a>."
 msgstr "加入上游邮件列表位于 <a href=\"%s\">atomic@projectatomic.io</a>。"
 
-#: data/content/atomic/download/index.html:344
+#: data/content/atomic/download/index.html:342
+#: data/content/atomic/prerelease/index.html:338
 #, python-format
 msgid "<a href=\"%s\"><strong>Project Atomic: IRC Chat</strong></a>"
 msgstr "<a href=\"%s\"><strong>Project Atomic: IRC Chat</strong></a>"
 
-#: data/content/atomic/download/index.html:345
+#: data/content/atomic/download/index.html:343
+#: data/content/atomic/prerelease/index.html:339
 msgid ""
 "Join the Project Atomic channel <strong>#atomic</strong></a> on "
 "<strong>irc.freenode.org</strong></a>."
@@ -996,111 +1020,78 @@ msgstr ""
 "加入 Project Atomic 频道 <strong>#atomic</strong></a> 位于 "
 "<strong>irc.freenode.org</strong></a>。"
 
-#: data/content/atomic/download/index.html:350
-#: data/content/server/download/index.html:61
-#: data/content/workstation/download/index.html:153
+#: data/content/atomic/download/index.html:348
 #, python-format
-msgid "F%(rel)s Alpha"
-msgstr "F%(rel)s Alpha"
+msgid "F%(rel)s %(state)s"
+msgstr "F%(rel)s %(state)s"
 
-#: data/content/atomic/download/index.html:351
-#: data/content/atomic/download/index.html:361
+#: data/content/atomic/download/index.html:349
 #: data/content/server/download/index.html:62
 #: data/content/server/download/index.html:72
-#: data/content/workstation/download/index.html:154
-#: data/content/workstation/download/index.html:164
+#: data/content/workstation/download/index.html:160
+#: data/content/workstation/download/index.html:170
 msgid "Try a pre-release"
 msgstr "尝试一下预先发布版"
 
-#: data/content/atomic/download/index.html:352
-#: data/content/atomic/download/index.html:362
+#: data/content/atomic/download/index.html:350
 #: data/content/server/download/index.html:63
 #: data/content/server/download/index.html:73
-#: data/content/workstation/download/index.html:155
-#: data/content/workstation/download/index.html:165
+#: data/content/workstation/download/index.html:161
+#: data/content/workstation/download/index.html:171
 msgid "We're working on our next release."
 msgstr "我们正在开发下一个发布版"
 
-#: data/content/atomic/download/index.html:353
-#: data/content/atomic/download/index.html:363
+#: data/content/atomic/download/index.html:351
 #: data/content/server/download/index.html:64
 #: data/content/server/download/index.html:74
-#: data/content/workstation/download/index.html:156
-#: data/content/workstation/download/index.html:166
+#: data/content/workstation/download/index.html:162
+#: data/content/workstation/download/index.html:172
 #, python-format
 msgid "Help us get F%(rel)s ready!"
 msgstr "帮助我们让 F%(rel)s 做好准备！"
 
-#: data/content/atomic/download/index.html:354
-#: data/content/server/download/index.html:65
-#: data/content/workstation/download/index.html:157
+#: data/content/atomic/download/index.html:352
 #, python-format
-msgid "Download F%(rel)s Alpha images"
-msgstr "下载 F%(rel)s Alpha 镜像"
+msgid "Download F%(rel)s %(state)s images"
+msgstr "下载 F%(rel)s %(state)s 镜像"
 
-#: data/content/atomic/download/index.html:355
-#: data/content/atomic/download/index.html:365
+#: data/content/atomic/download/index.html:353
 #: data/content/server/download/index.html:66
 #: data/content/server/download/index.html:76
-#: data/content/workstation/download/index.html:158
-#: data/content/workstation/download/index.html:168
+#: data/content/workstation/download/index.html:164
+#: data/content/workstation/download/index.html:174
 msgid "How to test pre-releases"
 msgstr "如何测试预先发布版"
 
 #: data/content/atomic/download/index.html:360
-#: data/content/server/download/index.html:71
-#: data/content/workstation/download/index.html:163
-#, python-format
-msgid "F%(rel)s Beta"
-msgstr "F%(rel)s Beta"
-
-#: data/content/atomic/download/index.html:364
-#: data/content/server/download/index.html:75
-#: data/content/workstation/download/index.html:167
-#, python-format
-msgid "Download F%(rel)s Beta images"
-msgstr "下载 F%(rel)s Beta 镜像"
-
-#: data/content/atomic/download/index.html:372
+#: data/content/atomic/prerelease/index.html:342
 #: data/content/server/download/index.html:93
-#: data/content/workstation/download/index.html:200
+#: data/content/workstation/download/index.html:208
 msgid "Verify"
 msgstr "验证"
 
-#: data/content/atomic/download/index.html:375
-#: data/content/atomic/prerelease/docker.html:128
-#: data/content/atomic/prerelease/index.html:474
+#: data/content/atomic/download/index.html:363
+#: data/content/atomic/prerelease/index.html:345
 #: data/content/server/download/index.html:96
 #: data/content/server/prerelease/index.html:63
-#: data/content/workstation/download/index.html:203
+#: data/content/workstation/download/index.html:211
 #: data/content/workstation/prerelease/index.html:141
 msgid "Verify your Image"
 msgstr "校验您的镜像"
 
-#: data/content/atomic/prerelease/docker.html:10
-#: data/content/atomic/prerelease/index.html:10
+#: data/content/atomic/prerelease/index.html:34
 #, python-format
-msgid "Download Fedora Cloud %s"
-msgstr "下载 Fedora Cloud %s"
+msgid "Download Fedora %(rel)s %(state)s Atomic Host"
+msgstr "下载 Fedora %(rel)s %(state)s Atomic Host"
 
-#: data/content/atomic/prerelease/docker.html:33
-#: data/content/atomic/prerelease/index.html:33
+#: data/content/atomic/prerelease/index.html:37
 #, python-format
-msgid "Download Fedora %(rel)s %(state)s Cloud"
-msgstr "下载 Fedora %(rel)s %(state)s Cloud"
+msgid ""
+"These are the latest Fedora Atomic Host images, produced on "
+"%(manual_pre_atomic_date)s."
+msgstr "这些是最新的 Fedora Atomic Host 镜像，发布于%(manual_pre_atomic_date)s。"
 
-#: data/content/atomic/prerelease/docker.html:58
-#: data/content/atomic/prerelease/index.html:58
-msgid "Base Images"
-msgstr "Base 镜像"
-
-#: data/content/atomic/prerelease/docker.html:60
-#: data/content/atomic/prerelease/index.html:60
-msgid "Docker Image"
-msgstr "Docker 镜像"
-
-#: data/content/atomic/prerelease/docker.html:71
-#: data/content/atomic/prerelease/index.html:71
+#: data/content/atomic/prerelease/index.html:48
 #, python-format
 msgid ""
 "This is pre-release software and is supported by the <a "
@@ -1111,8 +1102,7 @@ msgstr ""
 "这是预发布软件，由 <a href=\"%(team_url)s\">云计算组</a>支持。请将问题发送至该团队的<a "
 "href=\"%(team_list)s\">邮件列表</a>或 freenode 上的 %(team_irc)s。"
 
-#: data/content/atomic/prerelease/docker.html:72
-#: data/content/atomic/prerelease/index.html:72
+#: data/content/atomic/prerelease/index.html:49
 #: data/content/server/prerelease/index.html:29
 #: data/content/workstation/prerelease/index.html:46
 #, python-format
@@ -1124,228 +1114,36 @@ msgstr ""
 "所有问题和 bug 都应通过 <a href=\"%s\">Red Hat Bugzilla</a> 进行报告。Fedora "
 "项目对其适用性和可使用性不做任何保证。"
 
-#: data/content/atomic/prerelease/docker.html:74
-#: data/content/atomic/prerelease/docker.html:76
-#: data/content/atomic/prerelease/index.html:74
-#: data/content/atomic/prerelease/index.html:76
-#: data/content/server/prerelease/index.html:31
-#: data/content/server/prerelease/index.html:33
-#: data/content/workstation/prerelease/index.html:48
-#: data/content/workstation/prerelease/index.html:50
+#: data/content/atomic/prerelease/index.html:73
+#: data/content/atomic/prerelease/index.html:149
 #, python-format
-msgid ""
-"Read the <a href=\"%(relnotes_url)s\">Release Notes</a> for more information"
-" on changes and new features, and the <a href=\"%(commonbugs_url)s\">Common "
-"Bugs</a> page for information on commonly-encountered bugs and how to avoid "
-"them."
-msgstr ""
-"阅读<a href=\"%(relnotes_url)s\">发行注记</a>以了解有关变化和新特性的说明。您还可以访问<a "
-"href=\"%(commonbugs_url)s\">常见 Bug</a> 页面来了解容易遇到的常见问题以及避免它们的方法。"
+msgid "Fedora %(rel)s %(state)s GP2 Atomic Host HVM AMIs"
+msgstr "Fedora %(rel)s %(state)s GP2 Atomic Host HVM AMIs"
 
-#: data/content/atomic/prerelease/docker.html:80
-#, python-format
-msgid "Docker %(state)s Image"
-msgstr "Docker %(state)s 镜像"
-
-#: data/content/atomic/prerelease/docker.html:81
-msgid ""
-"The Fedora Docker Base Image is a minimal Fedora install which can be "
-"spawned as a Docker container. It contains basic tools which can be used as "
-"a foundation for building Docker Layered Images - bash, vi and yum (and its "
-"dependencies)."
-msgstr ""
-"Fedora Docker 基础镜像包含可用于生成 Docker 容器的最简 Fedora 安装。它包含可用于构建 Docker "
-"分层镜像基础的基本工具—— bash， vi 和 yum （及其依赖）。"
-
-#: data/content/atomic/prerelease/docker.html:82
-msgid "Docker Base Image"
-msgstr "Docker 基础镜像"
-
-#: data/content/atomic/prerelease/docker.html:87
-msgid ""
-"You can easily load this Docker image into your running Docker daemon using "
-"command:"
-msgstr "您可以使用以下命令轻松地载入 Docker 镜像到正在运行的 Docker 守护进程中："
-
-#: data/content/atomic/prerelease/docker.html:89
-msgid ""
-"Following command can be used to spawn a container running bash inside:"
-msgstr "以下命令可用于在正在运行的 bash 中生成新的容器："
-
-#: data/content/atomic/prerelease/docker.html:92
-#, python-format
-msgid "64-bit %sMB raw.xz Image"
-msgstr "64 位 %sMB raw.xz 镜像"
-
-#: data/content/atomic/prerelease/docker.html:98
-#: data/content/atomic/prerelease/index.html:444
-#: data/content/server/prerelease/index.html:38
-#: data/content/workstation/prerelease/index.html:55
-#, python-format
-msgid "When is Fedora %s going to be released?"
-msgstr "Fedora %s 何时发布？"
-
-#: data/content/atomic/prerelease/docker.html:102
-#: data/content/atomic/prerelease/index.html:448
-#: data/content/server/prerelease/index.html:42
-#: data/content/workstation/prerelease/index.html:59
-msgid "Release State"
-msgstr "发行状态"
-
-#: data/content/atomic/prerelease/docker.html:103
-#: data/content/atomic/prerelease/index.html:449
-#: data/content/server/prerelease/index.html:43
-#: data/content/workstation/prerelease/index.html:60
-msgid "Release Date"
-msgstr "发布日期"
-
-#: data/content/atomic/prerelease/docker.html:108
-#: data/content/atomic/prerelease/index.html:454
-#: data/content/server/prerelease/index.html:48
-#: data/content/workstation/prerelease/index.html:65
-msgid "Alpha Release Public Availability"
-msgstr "Alpha 版本对公众发布"
-
-#: data/content/atomic/prerelease/docker.html:112
-#: data/content/atomic/prerelease/index.html:458
-#: data/content/server/prerelease/index.html:52
-#: data/content/workstation/prerelease/index.html:69
-msgid "Beta Release Public Availability"
-msgstr "Beta 版本对公众发布"
-
-#: data/content/atomic/prerelease/docker.html:116
-#: data/content/atomic/prerelease/index.html:462
-#: data/content/server/prerelease/index.html:56
-#: data/content/workstation/prerelease/index.html:73
-msgid "Final Release Public Availability (GA)"
-msgstr "最终版本对公众发布（GA）"
-
-#: data/content/atomic/prerelease/docker.html:121
-#: data/content/atomic/prerelease/index.html:467
-#: data/content/server/prerelease/index.html:61
-#: data/content/workstation/prerelease/index.html:78
-msgid "Read all the key milestones of the release schedule..."
-msgstr "阅读发布计划中的所有关键日程..."
-
-#: data/content/atomic/prerelease/docker.html:132
-msgid "Docker 64bit!"
-msgstr "Docker 64 位！"
-
-#: data/content/atomic/prerelease/index.html:80
-#, python-format
-msgid "Base Cloud %(state)s Images"
-msgstr "Base Cloud %(state)s 镜像"
-
-#: data/content/atomic/prerelease/index.html:81
-msgid ""
-"The images on this page are Fedora Cloud images for creating general purpose"
-" virtual machines (VMs)."
-msgstr "本页面上的 Fedora Cloud 镜像适合于创建通用目的的虚拟机。"
-
-#: data/content/atomic/prerelease/index.html:82
-msgid "Base Cloud Image"
-msgstr "基础云镜像"
-
-#: data/content/atomic/prerelease/index.html:89
 #: data/content/atomic/prerelease/index.html:105
+#: data/content/atomic/prerelease/index.html:179
+#, python-format
+msgid "Fedora %(rel)s %(state)s Standard Atomic Host HVM AMIs"
+msgstr "Fedora %(rel)s %(state)s 标准 Atomic Host HVM AMIs"
+
+#: data/content/atomic/prerelease/index.html:288
+#: data/content/atomic/prerelease/index.html:303
 #, python-format
 msgid ""
-"This is Fedora %(rel)s %(state)s Cloud in a Qcow2-formatted image for use "
-"with OpenStack."
-msgstr "这是用于 OpenStack 的 Qcow2 格式的 Fedora %(rel)s %(state)s Cloud。"
-
-#: data/content/atomic/prerelease/index.html:95
-#: data/content/atomic/prerelease/index.html:109
-#, python-format
-msgid ""
-"This is Fedora %(rel)s %(state)s Cloud in a compressed raw image format. If "
-"you're not sure what to use, try this."
-msgstr "这是 Fedora %(rel)s %(state)s Cloud 的 Raw 压缩格式镜像。如果你不清楚该用哪个镜像，可以试试这个。"
-
-#: data/content/atomic/prerelease/index.html:172
-msgid "Base Cloud Images for Amazon Public Cloud EC2"
-msgstr "针对 Amazon Public Cloud EC2 的 Base Cloud 镜像"
-
-#: data/content/atomic/prerelease/index.html:173
-msgid ""
-"The links below will provide you listings of available AMIs by region with "
-"buttons to launch them in your Amazon Web Services account. AMI IDs for "
-"usage with the AWS Console or command-line tools are also provided."
+"This is Fedora %(rel)s %(state)s Cloud Atomic Host in a Qcow2-formatted "
+"image for use with OpenStack."
 msgstr ""
-"下面的链接可以按区域提供可选的 AMI 列表以供您在 Amazon Web Services 帐户中启用。 AMI ID 也同样可用于 AWS "
-"控制台或命令行工具中。"
+"这是用于 OpenStack 的 Qcow2 格式的 Fedora %(rel)s %(state)s Cloud Atomic Host。"
 
-#: data/content/atomic/prerelease/index.html:174
+#: data/content/atomic/prerelease/index.html:294
+#: data/content/atomic/prerelease/index.html:307
+#, python-format
 msgid ""
-"All images are available in two formats: a GP2 format which uses faster SSD "
-"storage, and a standard format which is more suitable if you have "
-"infrequently accessed data and you want to keep storage cost low."
-msgstr "所有镜像都有两种可选格式： GP2 格式适用于更快的 SSD 存储，而基础格式更适用于当你有不常访问的数据并想降低存储成本的情况。"
-
-#: data/content/atomic/prerelease/index.html:180
-#: data/content/atomic/prerelease/index.html:309
-msgid "Hardware Virtual Machine (HVM)"
-msgstr "硬件虚拟机（HVM）"
-
-#: data/content/atomic/prerelease/index.html:181
-#: data/content/atomic/prerelease/index.html:310
-msgid ""
-"If you're unsure which image to choose, use this format. It can provide the "
-"same or better performance than PV images."
-msgstr "如果你不清楚该用哪个镜像，可以试试这个格式。它可以表现出与半虚拟化镜像相同甚至更好的性能。"
-
-#: data/content/atomic/prerelease/index.html:189
-#: data/content/atomic/prerelease/index.html:326
-#, python-format
-msgid "Fedora %(rel)s %(state)s GP2 Base Cloud HVM AMIs"
-msgstr "Fedora %(rel)s %(state)s GP2 Base Cloud HVM AMIs"
-
-#: data/content/atomic/prerelease/index.html:219
-#, python-format
-msgid "Fedora %(rel)s %(state)s standard Base Cloud HVM AMIs"
-msgstr "Fedora %(rel)s %(state)s 基础 Base Cloud HVM AMIs"
-
-#: data/content/atomic/prerelease/index.html:243
-#: data/content/atomic/prerelease/index.html:313
-msgid "Paravirtual (PV)"
-msgstr "半虚拟化 (PV)"
-
-#: data/content/atomic/prerelease/index.html:244
-#: data/content/atomic/prerelease/index.html:314
-msgid ""
-"If you know you need a paravirtual format image for EC2, use this format."
-msgstr "如果您很明确需要用于 EC2 的半虚拟化镜像，请使用这一格式。"
-
-#: data/content/atomic/prerelease/index.html:246
-#: data/content/atomic/prerelease/index.html:380
-msgid "GP2 PV AMIs"
-msgstr "GP2 PV AMIs"
-
-#: data/content/atomic/prerelease/index.html:252
-#: data/content/atomic/prerelease/index.html:386
-#, python-format
-msgid "Fedora %(rel)s %(state)s GP2 Base Cloud PV AMIs"
-msgstr "Fedora %(rel)s %(state)s GP2 Base Cloud PV AMIs"
-
-#: data/content/atomic/prerelease/index.html:276
-#: data/content/atomic/prerelease/index.html:408
-msgid "Standard PV AMIs"
-msgstr "基础半虚拟化 AMIs"
-
-#: data/content/atomic/prerelease/index.html:282
-#: data/content/atomic/prerelease/index.html:414
-#, python-format
-msgid "Fedora %(rel)s %(state)s Standard Base Cloud PV AMIs"
-msgstr "Fedora %(rel)s %(state)s 基础 Base Cloud 半虚拟化 AMIs"
-
-#: data/content/atomic/prerelease/index.html:354
-#, python-format
-msgid "Fedora %(rel)s %(state)s Standard Base Cloud HVM AMIs"
-msgstr "Fedora %(rel)s %(state)s 基础 Base Cloud HVM AMIs"
-
-#: data/content/atomic/prerelease/index.html:478
-msgid "Validate 64bit!"
-msgstr "验证 64 位！"
+"This is Fedora %(rel)s %(state)s Cloud Atomic Host in a compressed raw image"
+" format. If you're not sure what to use, try this."
+msgstr ""
+"这是 Fedora %(rel)s %(state)s Cloud Atomic Host 的 Raw "
+"压缩格式镜像。如果你不清楚该用哪个镜像，可以试试这个。"
 
 #: data/content/e/404.html:7
 msgid "Fedora Project - Page Not Found"
@@ -1409,10 +1207,10 @@ msgstr "阅读常见问题了解更多内容 »"
 msgid "Currently Used Keys"
 msgstr "当前使用的公钥"
 
-#: data/content/keys/index.html:46 data/content/keys/index.html:67
-#: data/content/keys/index.html:88 data/content/keys/index.html:109
-#: data/content/keys/index.html:132 data/content/keys/index.html:145
-#: data/content/keys/index.html:158 data/content/keys/obsolete.html:72
+#: data/content/keys/index.html:46 data/content/keys/index.html:60
+#: data/content/keys/index.html:81 data/content/keys/index.html:102
+#: data/content/keys/index.html:125 data/content/keys/index.html:138
+#: data/content/keys/index.html:151 data/content/keys/obsolete.html:72
 #: data/content/keys/obsolete.html:85 data/content/keys/obsolete.html:100
 #: data/content/keys/obsolete.html:113 data/content/keys/obsolete.html:126
 #: data/content/keys/obsolete.html:139 data/content/keys/obsolete.html:154
@@ -1420,32 +1218,32 @@ msgstr "当前使用的公钥"
 #: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
 #: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
 #: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
-#: data/content/keys/obsolete.html:337
+#: data/content/keys/obsolete.html:337 data/content/keys/obsolete.html:358
 msgid "Primary"
 msgstr "主要"
 
-#: data/content/keys/index.html:46 data/content/keys/index.html:67
-#: data/content/keys/index.html:88 data/content/keys/index.html:109
-#: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
-#: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
-#: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
-#: data/content/keys/obsolete.html:337
+#: data/content/keys/index.html:60 data/content/keys/index.html:81
+#: data/content/keys/index.html:102 data/content/keys/obsolete.html:201
+#: data/content/keys/obsolete.html:225 data/content/keys/obsolete.html:247
+#: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
+#: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
+#: data/content/keys/obsolete.html:358
 msgid "Secondary"
 msgstr "次要"
 
-#: data/content/keys/index.html:132
+#: data/content/keys/index.html:125
 msgid "EPEL 7"
 msgstr "EPEL 7"
 
-#: data/content/keys/index.html:145
+#: data/content/keys/index.html:138
 msgid "EPEL 6"
 msgstr "EPEL 6"
 
-#: data/content/keys/index.html:158
+#: data/content/keys/index.html:151
 msgid "EPEL 5"
 msgstr "EPEL 5"
 
-#: data/content/keys/index.html:174
+#: data/content/keys/index.html:167
 #, python-format
 msgid "Looking for <a href=\"%s\">obsolete keys</a>?"
 msgstr "想查找 <a href=\"%s\">已失效公钥</a>吗？"
@@ -1582,18 +1380,22 @@ msgid "Fedora 22"
 msgstr "Fedora 22"
 
 #: data/content/keys/obsolete.html:358
+msgid "Fedora 23"
+msgstr "Fedora 23"
+
+#: data/content/keys/obsolete.html:379
 msgid "EPEL 4"
 msgstr "EPEL 4"
 
-#: data/content/keys/obsolete.html:358
+#: data/content/keys/obsolete.html:379
 msgid "RPM-GPG-KEY-EPEL"
 msgstr "RPM-GPG-KEY-EPEL"
 
-#: data/content/keys/obsolete.html:371
+#: data/content/keys/obsolete.html:393
 msgid "Fedora Extras"
 msgstr "Fedora Extras"
 
-#: data/content/keys/obsolete.html:371
+#: data/content/keys/obsolete.html:393
 msgid ""
 "If you are using Fedora Extras with Fedora Core 6, use this package from "
 "<strong>extras</strong> repository.  This key will no longer be used after "
@@ -1605,11 +1407,11 @@ msgstr ""
 "的软件包。该公钥在 Fedora Core 6 及 Extras 停止维护(2007年12月7日)后就不再使用。该公钥未包含在 Fedora 7 "
 "及以后发布的 <strong>fedora-release</strong> 软件包中。"
 
-#: data/content/keys/obsolete.html:390
+#: data/content/keys/obsolete.html:411
 msgid "Legacy"
 msgstr "遗留"
 
-#: data/content/keys/obsolete.html:390
+#: data/content/keys/obsolete.html:411
 msgid ""
 "This key was used for packages that were released by Fedora Legacy project "
 "to update releases that reached their official EOL. The Fedora Legacy "
@@ -1851,19 +1653,43 @@ msgstr "网络安装镜像："
 
 #: data/content/server/download/index.html:54
 #: data/content/server/prerelease/index.html:77
-#: data/content/workstation/download/index.html:145
+#: data/content/workstation/download/index.html:151
 #: data/content/workstation/prerelease/index.html:160
 #, python-format
 msgid "64-bit %sMB image"
 msgstr "64 位 %sMB 镜像"
 
+#: data/content/server/download/index.html:61
+#: data/content/workstation/download/index.html:159
+#, python-format
+msgid "F%(rel)s Alpha"
+msgstr "F%(rel)s Alpha"
+
+#: data/content/server/download/index.html:65
+#: data/content/workstation/download/index.html:163
+#, python-format
+msgid "Download F%(rel)s Alpha images"
+msgstr "下载 F%(rel)s Alpha 镜像"
+
+#: data/content/server/download/index.html:71
+#: data/content/workstation/download/index.html:169
+#, python-format
+msgid "F%(rel)s Beta"
+msgstr "F%(rel)s Beta"
+
+#: data/content/server/download/index.html:75
+#: data/content/workstation/download/index.html:173
+#, python-format
+msgid "Download F%(rel)s Beta images"
+msgstr "下载 F%(rel)s Beta 镜像"
+
 #: data/content/server/download/index.html:82
-#: data/content/workstation/download/index.html:185
+#: data/content/workstation/download/index.html:193
 msgid "Get more Fedora"
 msgstr "获取更多 Fedora"
 
 #: data/content/server/download/index.html:86
-#: data/content/workstation/download/index.html:194
+#: data/content/workstation/download/index.html:202
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr "ARM<span class=\"sup\">®</span> 技术"
 
@@ -1925,6 +1751,56 @@ msgid ""
 msgstr ""
 "这是预发布软件，由<a href=\"%(team_url)s\">服务器组</a>支持。请将问题发送至该团队的<a "
 "href=\"%(team_list)s\">邮件列表</a>或 freenode 上的 %(team_irc)s。"
+
+#: data/content/server/prerelease/index.html:31
+#: data/content/server/prerelease/index.html:33
+#: data/content/workstation/prerelease/index.html:48
+#: data/content/workstation/prerelease/index.html:50
+#, python-format
+msgid ""
+"Read the <a href=\"%(relnotes_url)s\">Release Notes</a> for more information"
+" on changes and new features, and the <a href=\"%(commonbugs_url)s\">Common "
+"Bugs</a> page for information on commonly-encountered bugs and how to avoid "
+"them."
+msgstr ""
+"阅读<a href=\"%(relnotes_url)s\">发行注记</a>以了解有关变化和新特性的说明。您还可以访问<a "
+"href=\"%(commonbugs_url)s\">常见 Bug</a> 页面来了解容易遇到的常见问题以及避免它们的方法。"
+
+#: data/content/server/prerelease/index.html:38
+#: data/content/workstation/prerelease/index.html:55
+#, python-format
+msgid "When is Fedora %s going to be released?"
+msgstr "Fedora %s 何时发布？"
+
+#: data/content/server/prerelease/index.html:42
+#: data/content/workstation/prerelease/index.html:59
+msgid "Release State"
+msgstr "发行状态"
+
+#: data/content/server/prerelease/index.html:43
+#: data/content/workstation/prerelease/index.html:60
+msgid "Release Date"
+msgstr "发布日期"
+
+#: data/content/server/prerelease/index.html:48
+#: data/content/workstation/prerelease/index.html:65
+msgid "Alpha Release Public Availability"
+msgstr "Alpha 版本对公众发布"
+
+#: data/content/server/prerelease/index.html:52
+#: data/content/workstation/prerelease/index.html:69
+msgid "Beta Release Public Availability"
+msgstr "Beta 版本对公众发布"
+
+#: data/content/server/prerelease/index.html:56
+#: data/content/workstation/prerelease/index.html:73
+msgid "Final Release Public Availability (GA)"
+msgstr "最终版本对公众发布（GA）"
+
+#: data/content/server/prerelease/index.html:61
+#: data/content/workstation/prerelease/index.html:78
+msgid "Read all the key milestones of the release schedule..."
+msgstr "阅读发布计划中的所有关键日程..."
 
 #: data/content/server/prerelease/index.html:64
 #, python-format
@@ -2036,7 +1912,7 @@ msgid "%s MB Fedora Media Writer for <strong>Mac OS X</strong>"
 msgstr "%s MB <strong>Mac OS X</strong>系统的 Fedora Media Writer"
 
 #: data/content/workstation/download/index.html:45
-#: data/content/workstation/download/index.html:120
+#: data/content/workstation/download/index.html:126
 #: data/content/workstation/prerelease/index.html:24
 #: data/content/workstation/prerelease/index.html:131
 #, python-format
@@ -2050,7 +1926,7 @@ msgid "<a href=\"%s\">Install via DNF</a> if you are already on Fedora."
 msgstr "如果你已经在 Fedora 下，可以<a href=\"%s\">通过 DNF 安装</a> 。"
 
 #: data/content/workstation/download/index.html:50
-#: data/content/workstation/download/index.html:107
+#: data/content/workstation/download/index.html:110
 #: data/content/workstation/prerelease/index.html:29
 #: data/content/workstation/prerelease/index.html:118
 #, python-format
@@ -2129,13 +2005,13 @@ msgid "Mac OS X"
 msgstr "Mac OS X"
 
 #: data/content/workstation/download/index.html:78
-#: data/content/workstation/download/index.html:106
+#: data/content/workstation/download/index.html:109
 #: data/content/workstation/prerelease/index.html:117
 msgid "Windows"
 msgstr "Windows"
 
 #: data/content/workstation/download/index.html:79
-#: data/content/workstation/download/index.html:115
+#: data/content/workstation/download/index.html:121
 #: data/content/workstation/prerelease/index.html:126
 msgid "Linux"
 msgstr "Linux"
@@ -2174,94 +2050,103 @@ msgstr ""
 msgid "View all platform downloads"
 msgstr "查看所有平台下载"
 
-#: data/content/workstation/download/index.html:116
+#: data/content/workstation/download/index.html:122
 #: data/content/workstation/prerelease/index.html:127
 msgid "Available via DNF for <strong>Fedora</strong>"
-msgstr "可在<strong>Fedora</strong>下通过 DNA 安装"
+msgstr "可在<strong>Fedora</strong>下通过 DNF 安装"
 
-#: data/content/workstation/download/index.html:117
+#: data/content/workstation/download/index.html:123
 #: data/content/workstation/prerelease/index.html:128
 msgid "More details"
 msgstr "更多详情"
 
-#: data/content/workstation/download/index.html:121
+#: data/content/workstation/download/index.html:127
 #: data/content/workstation/prerelease/index.html:132
 msgid "How to use this ISO?"
 msgstr "如何使用此 ISO？"
 
-#: data/content/workstation/download/index.html:123
+#: data/content/workstation/download/index.html:129
 #: data/content/workstation/prerelease/index.html:134
 msgid "Verify this image"
 msgstr "校验此镜像"
 
-#: data/content/workstation/download/index.html:140
+#: data/content/workstation/download/index.html:146
 #: data/content/workstation/prerelease/index.html:154
 #, python-format
 msgid "64-bit %sGB Live image"
 msgstr "64 位 %sGB Live 镜像"
 
-#: data/content/workstation/download/index.html:141
+#: data/content/workstation/download/index.html:147
 #: data/content/workstation/prerelease/index.html:155
 #, python-format
 msgid "32-bit %sGB Live image"
-msgstr "64 位 %sGB Live 镜像"
+msgstr "32 位 %sGB Live 镜像"
 
-#: data/content/workstation/download/index.html:143
+#: data/content/workstation/download/index.html:149
 #: data/content/workstation/prerelease/index.html:158
 msgid "Netinstall Images:"
 msgstr "网络安装镜像："
 
-#: data/content/workstation/download/index.html:146
+#: data/content/workstation/download/index.html:152
 #: data/content/workstation/prerelease/index.html:161
 #, python-format
 msgid "32-bit %sMB image"
 msgstr "32 位 %sMB 镜像"
 
-#: data/content/workstation/download/index.html:174
+#: data/content/workstation/download/index.html:180
+#, python-format
+msgid "<a href=\"%(fmagazine_url)s\"><strong>Release Announcement</strong></a>"
+msgstr ""
+
+#: data/content/workstation/download/index.html:181
+msgid "Read the full Release Announcement on Fedora Magazine."
+msgstr ""
+
+#: data/content/workstation/download/index.html:182
 msgid ""
 "<a href=\"//docs.fedoraproject.org/release-notes\"><strong>Release "
 "Notes</strong></a>"
 msgstr ""
 "<a href=\"//docs.fedoraproject.org/release-notes\"><strong>发行公告</strong></a>"
 
-#: data/content/workstation/download/index.html:175
+#: data/content/workstation/download/index.html:183
 msgid ""
 "Learn about changes since the last version of Fedora as well as minimum "
 "requirements and recommendations for running Fedora."
 msgstr "了解最新版 Fedora 的改动以及最低系统要求和运行 Fedora 的最佳配置。"
 
-#: data/content/workstation/download/index.html:176
+#: data/content/workstation/download/index.html:184
 msgid ""
 "<a href=\"//docs.fedoraproject.org/install-guide\"><strong>Installation "
 "Guide</strong></a>"
 msgstr ""
 "<a href=\"//docs.fedoraproject.org/install-guide\"><strong>安装指导</strong></a>"
 
-#: data/content/workstation/download/index.html:177
+#: data/content/workstation/download/index.html:185
 msgid ""
 "We recommend you look through this before installing to your system, since "
 "it answers many common questions."
 msgstr "我们建议您安装系统前通读此文档，因为里面回答了很多常见问题。"
 
-#: data/content/workstation/download/index.html:178
+#: data/content/workstation/download/index.html:186
 #: data/content/workstation/prerelease/index.html:166
 #, python-format
 msgid "<a href=\"%(commonbugs_url)s\"><strong>Common Bugs</strong></a>"
 msgstr "<a href=\"%(commonbugs_url)s\"><strong>常见 Bug</strong></a>"
 
-#: data/content/workstation/download/index.html:179
+#: data/content/workstation/download/index.html:187
 #: data/content/workstation/prerelease/index.html:167
 msgid ""
 "An excellent resource to consult in case you run into any issues installing "
 "or running Fedora."
 msgstr "在安装或运行 Fedora 遇到任何问题时参考的优秀资源。"
 
-#: data/content/workstation/download/index.html:181
+#: data/content/workstation/download/index.html:189
 #: data/content/workstation/prerelease/index.html:171
 msgid "What does \"Live\" mean?"
 msgstr "“Live”是什么意思？"
 
-#: data/content/workstation/download/index.html:182
+#: data/content/workstation/download/index.html:190
 #: data/content/workstation/prerelease/index.html:172
 msgid ""
 "Fedora Media Writer will create a complete, running Fedora Workstation you "
@@ -2271,19 +2156,19 @@ msgstr ""
 "Fedora Media Writer 将会在 USB 闪存盘上创建一个完整的可立即运行的 Fedora Workstation。你可以使用 Live "
 "镜像来测试并运行 Fedora 而不需要改动任何硬盘数据。"
 
-#: data/content/workstation/download/index.html:183
+#: data/content/workstation/download/index.html:191
 #: data/content/workstation/prerelease/index.html:173
 msgid ""
 "When you are ready, you can install Fedora to your hard disk from within "
 "this \"live\" version of Fedora Workstation."
 msgstr "当您准备好，可以从 Live 版本的 Fedora Workstation 镜像安装 Fedora 到您的硬盘。"
 
-#: data/content/workstation/download/index.html:188
+#: data/content/workstation/download/index.html:196
 #: data/templates/footer.html:43
 msgid "Fedora Spins"
 msgstr "Fedora 定制版"
 
-#: data/content/workstation/download/index.html:191
+#: data/content/workstation/download/index.html:199
 #: data/templates/footer.html:44
 msgid "Fedora Labs"
 msgstr "Fedora 实验室"
@@ -2478,7 +2363,7 @@ msgstr "获得 Fedora Server"
 
 #: data/templates/footer.html:42
 msgid "Get Fedora Atomic"
-msgstr ""
+msgstr "获得 Fedora Atomic"
 
 #: data/templates/footer.html:45
 msgid "Fedora ARM<span class=\"sup\">®</span>"
@@ -2486,7 +2371,7 @@ msgstr "Fedora ARM<span class=\"sup\">®</span>"
 
 #: data/templates/footer.html:46
 msgid "Alternative Downloads"
-msgstr ""
+msgstr "其它下载"
 
 #: data/templates/footer.html:53
 msgid "Support"
@@ -2501,69 +2386,65 @@ msgid "Ask Fedora"
 msgstr "Fedora 知识库"
 
 #: data/templates/footer.html:58
-msgid "Forums"
-msgstr "论坛"
-
-#: data/templates/footer.html:59
 msgid "Common Bugs"
 msgstr "常见错误"
 
-#: data/templates/footer.html:60
+#: data/templates/footer.html:59
 msgid "Fedora Developer Portal"
 msgstr "Fedora 开发者中心"
 
-#: data/templates/footer.html:61
+#: data/templates/footer.html:60
 msgid "Installation Guide"
 msgstr "安装指南"
 
-#: data/templates/footer.html:67
+#: data/templates/footer.html:66
 msgid "Join"
 msgstr "加入"
 
-#: data/templates/footer.html:70
+#: data/templates/footer.html:69
 msgid "Join Fedora"
 msgstr "加入 Fedora"
 
-#: data/templates/footer.html:71
+#: data/templates/footer.html:70
 msgid "Planet Fedora"
 msgstr "Planet Fedora"
 
-#: data/templates/footer.html:72
+#: data/templates/footer.html:71
 msgid "Fedora SIGs"
 msgstr "Fedora 特别兴趣组"
 
-#: data/templates/footer.html:73
+#: data/templates/footer.html:72
 msgid "Fedora Account System"
 msgstr "Fedora 账户系统"
 
-#: data/templates/footer.html:74
+#: data/templates/footer.html:73
 msgid "Fedora Community"
 msgstr "Fedora 社区"
 
-#: data/templates/footer.html:88
+#: data/templates/footer.html:87
 msgid "Fedora is sponsored by Red Hat."
 msgstr "Fedora 由红帽赞助。"
 
-#: data/templates/footer.html:89
+#: data/templates/footer.html:88
 msgid "Learn more about the relationship between Red Hat and Fedora »"
 msgstr "了解更多红帽与 Fedora 关系的信息 »"
 
-#: data/templates/footer.html:90
+#: data/templates/footer.html:89
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
 msgstr "© %(year)s 红帽公司及其他。"
 
-#: data/templates/footer.html:90
+#: data/templates/footer.html:89
 msgid ""
-"Please send any comments or corrections to the <a href=\"//fedorahosted.org"
-"/fedora-websites/\">websites team</a>."
-msgstr "请发送建议或者修订至 <a href=\"//fedorahosted.org/fedora-websites/\">网站团队</a>。"
+"Please send any comments or corrections to the <a href=\"//pagure.io/fedora-"
+"websites\">websites team</a>."
+msgstr "请将任何评论或者更正发送至 <a href=\"//pagure.io/fedora-websites\">网站团队</a>."
 
-#: data/templates/footer.html:96
+#: data/templates/footer.html:95
 msgid "Change Language"
 msgstr "更改语言"
 
-#: data/templates/footer.html:100
+#: data/templates/footer.html:99
 msgid "OK"
 msgstr "确定"
 
