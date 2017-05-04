@@ -53,6 +53,11 @@ pushpot:
 pullpos:
 	zanata pull --no-copytrans
 
+# Use fedfind to grep all releases for the releases.json file, used by FMW
+# Use this instruction only for getfedora.org
+releases:
+	$(PYTHON) $(PWD)/build/releases-json.py > $(PWD)/static/releases.json
+
 # The next call get the Zanata resource from the config file,
 # and if it exists rsync the POs
 syncpos:
