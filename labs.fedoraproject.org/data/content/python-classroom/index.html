@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Robotics Suite')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/python-classroom/header.html" />
+
+  <header id="head">
+    <div class="col-xs-12 text-center widewrapper copr-python-classroom">
+    </div>
+    <div class="container product-feature">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-justify top-space bottom-space">
+          <p>${_('One of the benefits of Fedora for Python developers is the ease of setting up Python development. The Fedora Python Classroom Lab makes it even easier for teachers and instructors to use Fedora in their classrooms or workshops. Ready to use operating system with important stuff pre-installed - either with GNOME or as a headless environment for Docker or Vagrant. Teach Python on Fedora, with Fedora, using the stuff you love: IPython, Jupyter Notebook, multiple Pythons, virtualenvs, tox, git and more')}</p>
+          <p>${_('The Fedora Python Classroom Lab comes in 3 variants. Either you can run it in graphical mode with GNOME, or you can virtualize it with Vagrant or run it in a Docker container. You choose what fits your teaching environment the best.')}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature main-head">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/python-classroom/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Applications -->
+  <div class="jumbotron whitebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>${_('Featured Applications')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/robotics/player.png" alt="Player" />
+          	<h4>${_('Player')}</h4>
+          	<p>${_('Robot server and framework for advanced robotic systems.')}</p>
+          	<a href="http://playerstage.sourceforge.net/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/robotics/simspark.png" alt="SimSpark" />
+          	<h4>${_('SimSpark')}</h4>
+          	<p>${_('Physical simulator for multi-agent robotics research.')}</p>
+          	<a href="http://simspark.sourceforge.net/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/robotics/fawkes.png" alt="Fawkes" />
+          	<h4>${_('Fawkes')}</h4>
+          	<p>${_('Modular framework for high performance robotic systems.')}</p>
+          	<a href="http://fawkesrobotics.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/robotics/gazebo.png" alt="Gazebo" />
+          	<h4>${_('Gazebo')}</h4>
+          	<p>${_('A versatile and powerful 3D robotics simulator with realistic physics.')}</p>
+          	<a href="http://gazebosim.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/robotics/stage.png" alt="Stage" />
+          	<h4>${_('Stage')}</h4>
+          	<p>${_('A flexible 2.5D simulator for robotic sensors and movement.')}</p>
+          	<a href="http://rtv.github.io/Stage">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/robotics/pcl.png" alt="PCL" />
+          	<h4>${_('PCL')}</h4>
+          	<p>${_('The Point Cloud Library (PCL) is a standalone, large scale, open project for 2D/3D image and point cloud processing.')}</p>
+          	<a href="http://pointclouds.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/robotics/arduino.png" alt="Arduino" />
+          	<h4>${_('Arduino')}</h4>
+          	<p>${_('Development environment for the Arduino open source hardware platform.')}</p>
+          	<a href="http://www.arduino.cc/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/robotics/eclipse.png" alt="Eclipse" />
+          	<h4>${_('Eclipse')}</h4>
+          	<p>${_('Powerful and extensible multi-language integrated development environment.')}</p>
+          	<a href="http://eclipse.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/robotics/mrpt.png" alt="MRPT" />
+          	<h4>${_('MRPT')}</h4>
+          	<p>${_('Libraries and applications for robotics system development.')}</p>
+          	<a href="http://www.mrpt.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Download -->
+    <div class="container using product-feature">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/robotics/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <xi:include href="../../templates/python-classroom/supportresources.html" />
+
+  </body>
+</html>
