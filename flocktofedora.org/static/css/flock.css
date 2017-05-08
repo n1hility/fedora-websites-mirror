@@ -3,18 +3,22 @@ body{
   margin-top:50px;
 }
 
-.flock-groupimg {
-  background-color: #cceaec;
+#welcome2 {
   background-image: url('/static/images/capecod-landscape.png');
   background-position: center bottom;
   background-repeat: no-repeat;
-  padding-bottom:15em!important;
+  padding-bottom: 15em !important;
 }
 
+#welcome {
+  background: linear-gradient(to bottom, #3c6eb4 0%,#e2faf5 100%);
+  padding-bottom: 0px;
+}
 
 .flock-navbar {
     font-family: "Montserrat";
-    background-color: #cceaec;
+    text-transform: uppercase;
+    background-color: white;
 }
 
 .flock-navbar ul.nav {
@@ -27,14 +31,15 @@ body{
 
 .nav > li > a {
   padding: 5px 10px;
-  color:#326b63;
+  color: #294172;
+  font-weight: 100;
 }
 
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active  {
-  background-color: #326b63;
-  color:white;
+  background-color: #ccc; */
+  color: #3c6eb4;
 }
 
 .navbar-brand{
