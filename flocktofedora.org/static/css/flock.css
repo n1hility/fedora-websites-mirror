@@ -53,9 +53,22 @@ body{
   font-size: 40px;
 }
 
+a {
+  color: #3c6eb4 !important;
+  font-weight: bold;
+}
+
+h2 {
+  color: #294172;
+}
+
 h1, h2, h3, h4, h5, h6
 {
   font-family: Montserrat;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
 }
 
 .jumbotron
@@ -86,13 +99,24 @@ font-size: 50px;
 }
 
 
-.non-jumbo.blue{
+.non-jumbo.light-blue{
   background-color: #cceaec;
-  color:#326b63;
+  color:#3c6eb4;
 }
 
-.non-jumbo.blue a
-{color: #444;}
+.non-jumbo.blue{
+  background-color: #3c6eb4;
+  color: white;
+}
+
+.non-jumbo.blue a {
+  color: white !important;
+  text-decoration: underline !important;
+}
+
+.non-jumbo.blue h2 {
+  color: #cceaec;
+}
 
 .non-jumbo.blue .large-icon{
   background: #326b63 none repeat scroll 0% 0%;
@@ -131,6 +155,7 @@ hr
    background-color: #3c6eb4;
    color: white;
    font-weight: 700;
+   font-size: xx-small;
 }
 .calendar tr + tr + tr td {
   padding: 2px 12px;
@@ -152,3 +177,8 @@ hr
 
 }
 .calendar { text-transform: uppercase; }
+
+table.calendar {
+  margin-left: auto;
+  margin-right: auto;
+}
