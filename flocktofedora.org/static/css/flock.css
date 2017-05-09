@@ -1,17 +1,24 @@
 body{
   position:relative;
-  margin-top:55px;
+  margin-top:50px;
 }
 
-.flock-groupimg {
-  background: url('/static/images/index/flower-background.png') repeat;
+#welcome2 {
+  background-image: url('/static/images/capecod-landscape.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 15em !important;
 }
 
+#welcome {
+  background: linear-gradient(to bottom, #3c6eb4 0%,#e2faf5 100%);
+  padding-bottom: 0px;
+}
 
 .flock-navbar {
     font-family: "Montserrat";
-    background-color: #ffffff;
-    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+    background-color: white;
 }
 
 .flock-navbar ul.nav {
@@ -24,10 +31,27 @@ body{
 
 .nav > li > a {
   padding: 5px 10px;
+  color: #294172;
+  font-weight: 100;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active  {
+  background-color: #ccc; */
+  color: #3c6eb4;
 }
 
 .navbar-brand{
   padding: 10px 15px;
+}
+
+#comms, #transport, #venue {
+  text-align: left;
+}
+#telegram {
+  padding-top: 2em;
+  text-align: center;
 }
 
 .flock-info-item {
@@ -37,9 +61,22 @@ body{
   font-size: 40px;
 }
 
+a {
+  color: #3c6eb4 !important;
+  font-weight: bold;
+}
+
+h2 {
+  color: #294172;
+}
+
 h1, h2, h3, h4, h5, h6
 {
   font-family: Montserrat;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
 }
 
 .jumbotron
@@ -50,7 +87,7 @@ h1, h2, h3, h4, h5, h6
 
 .large-icon{
   color: white;
-background: #428bca none repeat scroll 0% 0%;
+background: #326b63 none repeat scroll 0% 0%;
 width: 100px;
 margin-left: auto;
 margin-right: auto;
@@ -70,17 +107,28 @@ font-size: 50px;
 }
 
 
-.non-jumbo.blue{
-  background-color: #428bca;
-  color:white;
+.non-jumbo.light-blue{
+  background-color: #cceaec;
+  color:#3c6eb4;
 }
 
-.non-jumbo.blue a
-{color: #444;}
+.non-jumbo.blue{
+  background-color: #3c6eb4;
+  color: white;
+}
+
+.non-jumbo.blue a {
+  color: white !important;
+  text-decoration: underline !important;
+}
+
+.non-jumbo.blue h2 {
+  color: #cceaec;
+}
 
 .non-jumbo.blue .large-icon{
-  background: white none repeat scroll 0% 0%;
-  color: #428bca;
+  background: #326b63 none repeat scroll 0% 0%;
+  color: white;
 }
 
 hr
@@ -98,4 +146,47 @@ hr
 #welcome
 {
   padding-top: 1em;
+}
+
+/* calendar for schedule area */
+.calendar th,
+.calendar td {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.calendar tr.flock td { 
+   border-bottom: 1px solid white;
+}
+.calendar tr.flock td.flock { 
+   border-bottom: 1px solid black; 
+   background-color: #3c6eb4;
+   color: white;
+   font-weight: 700;
+   font-size: xx-small;
+}
+.calendar tr + tr + tr td {
+  padding: 2px 12px;
+}
+.calendar tr + tr + tr td.flock {
+  background-color: #cceaec;
+}
+.calendar span {
+  font-size: x-large;
+  font-weight: 700;
+  display: block;
+  margin-top: -.3em;
+}
+.calendar th { 
+  text-align: center; 
+  background-color: #c2c2c2;
+  color: white;
+  font-weight: 700;
+
+}
+.calendar { text-transform: uppercase; }
+
+table.calendar {
+  margin-left: auto;
+  margin-right: auto;
 }
