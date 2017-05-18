@@ -38,7 +38,7 @@ body{
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active  {
-  background-color: #ccc; */
+  background-color: #eee; */
   color: #3c6eb4;
 }
 
@@ -77,6 +77,10 @@ h1, h2, h3, h4, h5, h6
 
 h1, h2, h3 {
   text-transform: uppercase;
+}
+
+h3 {
+  color: #8bbcbf;
 }
 
 .jumbotron
@@ -122,26 +126,18 @@ font-size: 50px;
   text-decoration: underline !important;
 }
 
-.non-jumbo.blue h2 {
-  color: #cceaec;
-}
+.non-jumbo.blue h2 { color: #cceaec; }
+.non-jumbo.blue h3 { color: white; }
+.non-jumbo.light-blue h3 { color: #5483be; }
 
 .non-jumbo.blue .large-icon{
   background: #326b63 none repeat scroll 0% 0%;
   color: white;
 }
 
-hr
-{
-  margin: 3em;
-  border-top: 2px solid #428bca;
-}
+hr { margin: 3em; border-top: 3px #dee1dd solid; }
+.blue hr, .light-blue hr { border-top: 3px white solid; }
 
-.blue hr
-{
-  border-top: 2px solid white;
-
-}
 
 #welcome
 {
