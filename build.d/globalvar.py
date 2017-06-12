@@ -66,12 +66,12 @@ release={
     'atomic_age': '???',
     'pre_cloud_atomic_freshness': False,
     'pre_cloud_atomic_age': '???',
-    'manual_pre_atomic_iso_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170331.n.0/Fedora-Atomic-ostree-x86_64-26-20170331.n.0.iso',
-    'manual_pre_atomic_qcow2_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170331.n.0/Fedora-Atomic-26-20170331.n.0.x86_64.qcow2',
-    'manual_pre_atomic_raw_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170331.n.0/Fedora-Atomic-26-20170331.n.0.x86_64.raw.xz',
-    'manual_pre_atomic_VBvag_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170331.n.0/Fedora-Atomic-Vagrant-26-20170331.n.0.x86_64.vagrant-virtualbox.box',
-    'manual_pre_atomic_libvag_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170331.n.0/Fedora-Atomic-Vagrant-26-20170331.n.0.x86_64.vagrant-libvirt.box',
-    'manual_pre_atomic_date': '20170331',
+    'manual_pre_atomic_iso_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170611.n.1/Fedora-Atomic-ostree-x86_64-26-20170611.n.1.iso',
+    'manual_pre_atomic_qcow2_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170611.n.1/Fedora-Atomic-26-20170611.n.1.x86_64.qcow2',
+    'manual_pre_atomic_raw_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170611.n.1/Fedora-Atomic-26-20170611.n.1.x86_64.raw.xz',
+    'manual_pre_atomic_VBvag_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170611.n.1/Fedora-Atomic-Vagrant-26-20170611.n.1.x86_64.vagrant-virtualbox.box',
+    'manual_pre_atomic_libvag_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170611.n.1/Fedora-Atomic-Vagrant-26-20170611.n.1.x86_64.vagrant-libvirt.box',
+    'manual_pre_atomic_date': '20170611',
 }
 
 path={
@@ -272,11 +272,12 @@ iso_size={
     'pre_VBvag_cloud':         '192',   # In MB
     'pre_libvag_cloud':        '184',   # In MB
     # Manual atomic prerelease image sizes go here.
-    'manual_pre_atomic_raw_cloud':    '446',   # In MB
-    'manual_pre_atomic_qcow2_cloud':  '551',   # In MB
-    'manual_pre_atomic_VBvag_cloud':  '539',   # In MB
-    'manual_pre_atomic_libvag_cloud': '529',   # In MB
-    'manual_pre_atomic_iso':          '854',   # In MB
+    'manual_pre_atomic_raw_cloud':    '499',   # In MB
+    'manual_pre_atomic_qcow2_cloud':  '649',   # In MB
+    'manual_pre_atomic_VBvag_cloud':  '629',   # In MB
+    'manual_pre_atomic_libvag_cloud': '614',   # In MB
+    'manual_pre_atomic_iso':          '923',   # In MB
+
     # Everything release
     'x86_64_ev':        '477',   #In MB
     'i386_ev':          '465',   #In MB
@@ -437,25 +438,25 @@ pre_GP2_PV_base_AMI={
 }
 
 pre_HVM_atomic_AMI={
-    'us-east-1':        'ami-0fff7a19',     # Virginia
-    'us-west-2':        'ami-f12abe91',     # Oregon
-    'us-west-1':        'ami-2f0e544f',     # California
-    'eu-west-1':        'ami-8dbe81eb',     # Ireland
-    'eu-central-1':     'ami-ddc515b2',     # Frankfurt
-    'ap-southeast-1':   'ami-9ffd42fc',     # Singapore
-    'ap-northeast-1':   'ami-15785c72',     # Tokyo
-    'ap-southeast-2':   'ami-afd7d8cc',     # Sydney
-    'sa-east-1':        'ami-c81370a4'      # Sao Paolo
+    'us-east-1':        'ami-0991cb1f',     # Virginia
+    'us-west-2':        'ami-32b1b84b',     # Oregon
+    'us-west-1':        'ami-17fddf77',     # California
+    'eu-west-1':        'ami-e2d7cb84',     # Ireland
+    'eu-central-1':     'ami-78d17517',     # Frankfurt
+    'ap-southeast-1':   'ami-981596fb',     # Singapore
+    'ap-northeast-1':   'ami-a36b65c4',     # Tokyo
+    'ap-southeast-2':   'ami-cca4b2af',     # Sydney
+    'sa-east-1':        'ami-b591f9d9'      # Sao Paolo
 }
 
 pre_GP2_HVM_atomic_AMI={
-    'us-east-1':        'ami-1efe7b08',     # Virginia
-    'us-west-2':        'ami-832abee3',     # Oregon
-    'us-west-1':        'ami-a40e54c4',     # California
-    'eu-west-1':        'ami-2fbb8449',     # Ireland
-    'eu-central-1':     'ami-0bc61664',     # Frankfurt
-    'ap-southeast-1':   'ami-b7fa45d4',     # Singapore
-    'ap-northeast-1':   'ami-f3795d94',     # Tokyo
-    'ap-southeast-2':   'ami-17d5da74',     # Sydney
-    'sa-east-1':        'ami-881370e4'      # Sao Paolo
+    'us-east-1':        'ami-b091cba6',     # Virginia
+    'us-west-2':        'ami-a1b2bbd8',     # Oregon
+    'us-west-1':        'ami-deffddbe',     # California
+    'eu-west-1':        'ami-6bdac60d',     # Ireland
+    'eu-central-1':     'ami-9dd571f2',     # Frankfurt
+    'ap-southeast-1':   'ami-411a9922',     # Singapore
+    'ap-northeast-1':   'ami-6d6c620a',     # Tokyo
+    'ap-southeast-2':   'ami-39a4b25a',     # Sydney
+    'sa-east-1':        'ami-079ff76b'      # Sao Paolo
 }
