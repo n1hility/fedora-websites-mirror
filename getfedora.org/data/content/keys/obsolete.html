@@ -376,6 +376,21 @@
       ])}
 
       ${keys_for_release(
+      _('EPEL 5'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '1024D/217521F6 2007-03-02 [expires: 2017-02-27]',
+              'B940 BE07 7D71 0A28 7D7F  2DD1 119C C036 2175 21F6',
+              ['Fedora EPEL &lt;epel@fedoraproject.org&gt;'],
+              '2048g/B6610DAF 2007-03-02 [expires: 2017-02-27]',
+              [('https://getfedora.org/static/217521F6.txt', 'Fedora Project')
+              ])
+      ])}
+    </div>
+
+    <div class="row">
+      ${keys_for_release(
       _('EPEL 4'),
       [
           KeyInfo(
@@ -387,9 +402,7 @@
               [('https://getfedora.org/static/217521F6.txt', 'Fedora Project')
               ])
       ])}
-    </div>
 
-    <div class="row">
       ${keys_for_release(
       _('Fedora Extras'),
       [
