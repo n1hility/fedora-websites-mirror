@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../../templates/master.html" />
+  <head>
+    <title>${_('Download Fedora Robotics Suite')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../../templates/robotics/header.html" />
+
+  <header class="splashheader main-head recover-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>${_('Thanks for Downloading Fedora!')}</h2>
+          <p>${_('Your download should begin in a few seconds. If not, click the link below:')}
+            <p class="download-path"></p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row bottom-space">
+        <div class="col-xs-12">
+          <xi:include href="../../../templates/generic/splash-checksum.html" />
+        </div>
+
+	      <div class="col-xs-12">
+      	  <xi:include href="../../../templates/generic/docs-links.html" />
+        </div>
+    </div>
+  </div>
+  </body>
+</html>
