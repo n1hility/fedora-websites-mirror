@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Fedora LXQT Desktop')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/lxqt/header.html" />
+
+  <header id="head">
+    <div class="col-xs-12 text-center widewrapper">
+      <img src="${path}/static/images/screenshots/screenshot-lxqt.jpg" class="img-responsive" alt="LXDE Screenshot" />
+    </div>
+    <div class="container product-feature">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-justify top-space bottom-space">
+          <p>${_('Fedora LXQt provides a lightweight, well-integrated LXQt desktop environment. In addition to LXQt itself it provides a small, well selected collection of applications like the QupZilla browser, which combines Chromium s rendering engine with a nice Qt experience. Other applications include the Trojita mail client, the qBittorrent client, the Yarock music player and a set of some more commonly used applications. As all applications use the same Qt5 toolkit and the Breeze theme known from KDE, the desktop provides a unified and well-integrated style and theming. In addition breeze-gtk is provided to allow the user to integrate GTK applications too.')}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature main-head">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/lxqt/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Going Online -->
+  <div class="jumbotron darkbluebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Going Online')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/lxde/sylpheed.png" alt="Sylpheed" />
+          <h4>${_('Sylpheed')}</h4>
+          <p>${_('Sylpheed is a simple, lightweight but featureful, and easy-to-use e-mail client.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/lxde/midori.png" alt="Midori" />
+          <h4>${_('Midori')}</h4>
+          <p>${_('A lightweight and full featured web browser using GTK+2 and WebKit. Surf the web with speed and simplicity.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/lxde/pidgin.png" alt="Pidgin" />
+          <h4>${_('Pidgin')}</h4>
+          <p>${_('Universal messaging client. Communicate with the world via IRC, AIM, MSN, Yahoo and other instant messaging systems.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/lxde/transmission.png" alt="Transmission" />
+          <h4>${Markup(_('Transmission'))}</h4>
+          <p>${_('Are you a downloader? Use Transmission to get new versions of Fedora LXDE Desktop!')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Utilities and Office -->
+  <div class="jumbotron jumbotron-full">
+    <div class="container-full">
+        <div class="col-md-6 col-xs-12 text-center greybg recover-jumbo">
+          <h2>${Markup(_('Utilities &amp; Configuration'))}</h2>
+	          <div class="col-md-6 col-xs-12 text-center top-margin">
+	          <img src="${path}/static/images/lxde/lxterminal.png" alt="LXTerminal" />
+          	  <h4>${_('LXTerminal')}</h4>
+          	  <p>${_('Fedora LXDE Desktop ships a terminal, the gateway to the real power of any UNIX/linux machine, called LXTerminal.')}</p>
+	        </div>
+	        <div class="col-md-6 col-xs-12 text-center top-margin">
+	          <img src="${path}/static/images/lxde/obconf.png" alt="ObConf" />
+          	  <h4>${_('ObConf')}</h4>
+          	  <p>${_('ObConf easily installs new themes which use the .obt Openbox theme archive format for distribution.')}</p>
+	        </div>
+        </div>
+        <div class="col-md-6 col-xs-12 text-center darkgreybg recover-jumbo">
+          <h2>${Markup(_('Office &amp; Productivity Suite'))}</h2>
+          <div class="col-md-6 col-xs-12 text-center top-margin">
+          <img src="${path}/static/images/lxde/abiword.png" alt="AbiWord" />
+          <h4>${_('AbiWord')}</h4>
+          <p>${_('Quick and full featured word processing made easy.')}</p>
+        </div>
+        <div class="col-md-6 col-xs-12 text-center top-margin">
+          <img src="${path}/static/images/lxde/osmo.png" alt="Osmo" />
+          <h4>${_('Osmo')}</h4>
+          <p>${_('Osmo is a handy personal organizer, which includes calendar, tasks manager, address book and notes modules.')}</p>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Multimedia -->
+  <div class="jumbotron whitebox">
+    <div class="container">
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Multimedia')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="${path}/static/images/lxde/xmms2.png" alt="LXMusic" />
+          <h4>${_('LXMusic')}</h4>
+          <p>${_('LXMusic is the minimalist music player for LXDE. This is based on XMMS2, which is lightweight and has server/client design. ')}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="${path}/static/images/lxde/gpicview.png" alt="GPicView" />
+          <h4>${_('GPicView')}</h4>
+          <p>${_('GPicView is the standard picture viewer of LXDE. GPicView features lightning fast startup and an intuitive interface.')}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="${path}/static/images/lxde/asunder.png" alt="ASunder" />
+          <h4>${_('ASunder')}</h4>
+          <p>${_('ASunder is a graphical Audio CD ripper and encoder. You can use it to save tracks from an Audio CD as any of WAV, MP3, OGG, FLAC, Opus, WavPack, Musepack, AAC, and Monkey\'s Audio files.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/lxqt/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="jumbotron greybox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#lxde&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=lxde'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;lxde@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/lxde'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Specific documentation and tutorials are available at the &lt;a href="%s"&gt;LXDE project upstream website&lt;/a&gt;.') % ('http://wiki.lxde.org/en/Fedora/'))}</p>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>
