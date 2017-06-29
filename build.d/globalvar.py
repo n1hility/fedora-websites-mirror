@@ -4,7 +4,7 @@
 release={
     'prev_id':     '25',
     'curr_id':     '26',
-    'next_id':     '27',
+    'next_id':     '26',
     'curr_name':   '',
     'next_name':   '',
     'curr_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
@@ -20,12 +20,12 @@ release={
     'curr_arm_id': '26',
     'curr_alt_id': '26',
     'curr_cloud_id': '26',
-    'curr_atomic_id': '26',
+    'curr_atomic_id': '25',
     'curr_cloud_AMI_id': '26',
     'next_arm_id': '27',
     'next_alt_id': '27',
     'next_cloud_id': '27',
-    'next_atomic_id': '27',
+    'next_atomic_id': '26',
     'next_cloud_AMI_id': '27',
     'composedate': '20160616',
     'unofficial_compose': '20160614',
