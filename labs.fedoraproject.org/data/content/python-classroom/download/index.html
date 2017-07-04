@@ -26,6 +26,15 @@
 <div class="container download-container top-space">
   <div class="row">
     <div class="col-md-8 text-left bottom-space">
+        <p>${Markup(_('The Python Classroom labs comes in 3 variants. A Live Image with GNOME, that can be downloaded on the top of this page, a Docker image and a Vagrant box for headless environments. Learn more about &lt;a href="%s"&gt;Docker&lt;/a&gt; and &lt;a href="%s"&gt;Vagrant&lt;/a&gt; in their documentation.') % ('https://docs.docker.com/get-started/', 'https://www.vagrantup.com/intro/getting-started/'))}</p>
+        <h3>${_('Getting and running the Docker image')}</h3>
+        <pre>sudo docker pull registry.fedoraproject.org/f${global_variables.release['curr_id']}/python-classroom <br />sudo docker run -ti registry.fedoraproject.org/f${global_variables.release['curr_id']}/python-classroom</pre>
+        <h3>${_('Running the Vagrant box')}</h3>
+        <p>${_('First, download the box from the right side of this page.')}</p>
+        <p>${_('For libvirt:')}</p>
+        <pre>vagrant box add fedora/${global_variables.release['curr_id']}-python-classroom ./Fedora-Python-Classroom-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box  <br />vagrant init fedora/${global_variables.release['curr_id']}-python-classroom <br />vagrant up --provider libvirt <br />vagrant ssh</pre>
+        <p>${_('For VirtualBox:')}</p>
+        <pre>vagrant box add fedora/${global_variables.release['curr_id']}-python-classroom ./Fedora-Python-Classroom-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box <br />vagrant init fedora/${global_variables.release['curr_id']}-python-classroom <br />vagrant up --provider virtualbox <br />vagrant ssh</pre>
         <h3>${_('What is a Live image?')}</h3>
         <p>${_('The Python Classroom lab is shipped as a live operating system. It\'s everything you need to try out Fedora\'s Python Classroom - you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop if you like.')}</p>
 	    <p>${_('To use this image, you need a drive that can create or "burn" DVDs, or a USB flash drive at least as big as the image.')}</p>
