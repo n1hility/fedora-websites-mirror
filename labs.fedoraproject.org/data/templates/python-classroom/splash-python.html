@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  py:strip="">
+
+<div class="row bottom-margin">
+  <div class="col-sm-4 col-xs-12">
+    <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Labs-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-x86_64-CHECKSUM">${_('Validate Vagrant!')}</a>
+  </div>
+  <div class="col-sm-4 col-xs-12">
+    <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Labs-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-armhfp-CHECKSUM">${_('Validate ARM!')}</a>
+  </div>
+</div>
+
+</html>
