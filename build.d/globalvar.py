@@ -140,6 +140,8 @@ iso_size={
     'x86_64_Live_KDE':     '1.3',       # In GB
     'i686_Live_LXDE':      '999',       # In MB
     'x86_64_Live_LXDE':    '911',       # In MB
+    'i686_Live_LXQt':      '1.0',       # In GB
+    'x86_64_Live_LXQt':    '958',       # In MB
     'i686_Live_Xfce':      '1.1',       # In GB
     'x86_64_Live_Xfce':    '1.0',       # In GB
     'i686_Live_Mate':      '1.4',       # In GB
