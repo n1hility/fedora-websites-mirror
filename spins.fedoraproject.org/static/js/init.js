@@ -75,6 +75,15 @@ $(document).ready(function(){
         window.location = 'lxde-download-splash?file='+linkLocation;
     });
 
+    // redirect download links to LXQt splash page
+    $("a.lxqt-download-splash").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+
+        // this passes the URL path to the LXQt splash page
+        window.location = 'lxqt-download-splash?file='+linkLocation;
+    });
+
     // redirect download links to MATE-Compiz splash page
     $("a.mate-compiz-download-splash").click(function(event){
         event.preventDefault();
