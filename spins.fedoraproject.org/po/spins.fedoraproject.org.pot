@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-07-03 22:19+0200\n"
+"POT-Creation-Date: 2017-07-09 17:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,8 +41,8 @@ msgstr ""
 msgid "A complete, well-integrated Xfce Desktop."
 msgstr ""
 
-#: data/content/index.html:92 data/content/prerelease.html:91
-msgid "A light, fast, less-resource hungry desktop environment."
+#: data/content/index.html:92
+msgid "A lightweight, well-integrated LXQt desktop environment."
 msgstr ""
 
 #: data/content/index.html:106
@@ -53,8 +53,8 @@ msgstr ""
 msgid "A modern desktop featuring traditional Gnome user experience."
 msgstr ""
 
-#: data/content/index.html:134
-msgid "A lightweight, well-integrated LXQt desktop environment."
+#: data/content/index.html:134 data/content/prerelease.html:91
+msgid "A light, fast, less-resource hungry desktop environment."
 msgstr ""
 
 #: data/content/index.html:148 data/content/prerelease.html:179
@@ -802,6 +802,7 @@ msgstr ""
 
 #: data/content/cinnamon/download/index.html:38
 #: data/content/kde/download/index.html:38
+#: data/content/lxqt/download/index.html:38
 #: data/content/mate-compiz/download/index.html:38
 #: data/content/xfce/download/index.html:38
 #, python-format
@@ -1076,11 +1077,11 @@ msgid ""
 " has integration with Last.fm and other music services."
 msgstr ""
 
-#: data/content/kde/index.html:121
+#: data/content/kde/index.html:121 data/content/lxqt/index.html:114
 msgid "Dragon Player"
 msgstr ""
 
-#: data/content/kde/index.html:122
+#: data/content/kde/index.html:122 data/content/lxqt/index.html:115
 msgid ""
 "Dragon Player is a multimedia player where the focus is on simplicity, "
 "instead of features. Its simple interface is designed not to get in your "
@@ -1230,71 +1231,69 @@ msgid ""
 " Desktop!"
 msgstr ""
 
-#: data/content/lxde/index.html:79 data/content/lxqt/index.html:78
+#: data/content/lxde/index.html:79
 msgid "LXTerminal"
 msgstr ""
 
-#: data/content/lxde/index.html:80 data/content/lxqt/index.html:79
+#: data/content/lxde/index.html:80
 msgid ""
 "Fedora LXDE Desktop ships a terminal, the gateway to the real power of "
 "any UNIX/linux machine, called LXTerminal."
 msgstr ""
 
-#: data/content/lxde/index.html:84 data/content/lxqt/index.html:83
+#: data/content/lxde/index.html:84
 msgid "ObConf"
 msgstr ""
 
-#: data/content/lxde/index.html:85 data/content/lxqt/index.html:84
+#: data/content/lxde/index.html:85
 msgid ""
 "ObConf easily installs new themes which use the .obt Openbox theme "
 "archive format for distribution."
 msgstr ""
 
-#: data/content/lxde/index.html:92 data/content/lxqt/index.html:91
-#: data/content/xfce/index.html:87
+#: data/content/lxde/index.html:92 data/content/xfce/index.html:87
 msgid "AbiWord"
 msgstr ""
 
-#: data/content/lxde/index.html:93 data/content/lxqt/index.html:92
-#: data/content/xfce/index.html:88
+#: data/content/lxde/index.html:93 data/content/xfce/index.html:88
 msgid "Quick and full featured word processing made easy."
 msgstr ""
 
-#: data/content/lxde/index.html:97 data/content/lxqt/index.html:96
+#: data/content/lxde/index.html:97
 msgid "Osmo"
 msgstr ""
 
-#: data/content/lxde/index.html:98 data/content/lxqt/index.html:97
+#: data/content/lxde/index.html:98
 msgid ""
 "Osmo is a handy personal organizer, which includes calendar, tasks "
 "manager, address book and notes modules."
 msgstr ""
 
-#: data/content/lxde/index.html:115 data/content/lxqt/index.html:114
+#: data/content/lxde/index.html:115
 msgid "LXMusic"
 msgstr ""
 
-#: data/content/lxde/index.html:116 data/content/lxqt/index.html:115
+#: data/content/lxde/index.html:116
 msgid ""
 "LXMusic is the minimalist music player for LXDE. This is based on XMMS2, "
 "which is lightweight and has server/client design. "
 msgstr ""
 
-#: data/content/lxde/index.html:120 data/content/lxqt/index.html:119
+#: data/content/lxde/index.html:120
 msgid "GPicView"
 msgstr ""
 
-#: data/content/lxde/index.html:121 data/content/lxqt/index.html:120
+#: data/content/lxde/index.html:121
 msgid ""
 "GPicView is the standard picture viewer of LXDE. GPicView features "
 "lightning fast startup and an intuitive interface."
 msgstr ""
 
-#: data/content/lxde/index.html:125 data/content/lxqt/index.html:124
+#: data/content/lxde/index.html:125
 msgid "ASunder"
 msgstr ""
 
-#: data/content/lxde/index.html:126 data/content/lxqt/index.html:125
+#: data/content/lxde/index.html:126
 msgid ""
 "ASunder is a graphical Audio CD ripper and encoder. You can use it to "
 "save tracks from an Audio CD as any of WAV, MP3, OGG, FLAC, Opus, "
@@ -1316,7 +1315,6 @@ msgid ""
 msgstr ""
 
 #: data/content/lxde/download/index.html:160 data/content/lxde/index.html:162
-#: data/content/lxqt/download/index.html:160 data/content/lxqt/index.html:161
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
@@ -1351,7 +1349,6 @@ msgid ""
 msgstr ""
 
 #: data/content/lxde/download/index.html:38
-#: data/content/lxqt/download/index.html:38
 #: data/content/soas/download/index.html:42
 #, python-format
 msgid "32-bit %sMB Live image"
@@ -1394,13 +1391,13 @@ msgid ""
 msgstr ""
 
 #: data/content/lxqt/index.html:59
-msgid "Yarock"
+msgid "Quassel"
 msgstr ""
 
 #: data/content/lxqt/index.html:60
 msgid ""
-"Yarock is Qt4/Qt5 Modern Music Player designed to provide an easy and "
-"pretty music collection browser based on cover art."
+"Quassel IRC is a modern, cross-platform, distributed IRC client, meaning "
+"that one clients can attach to and detach from a central core"
 msgstr ""
 
 #: data/content/lxqt/index.html:64
@@ -1411,6 +1408,62 @@ msgstr ""
 msgid ""
 "The qBittorrent project aims to provide an open-source software "
 "alternative to µTorrent."
+msgstr ""
+
+#: data/content/lxqt/index.html:78
+msgid "QTerminal"
+msgstr ""
+
+#: data/content/lxqt/index.html:79
+msgid "QTerminal is a lightweight Qt terminal emulator based on QTermWidget."
+msgstr ""
+
+#: data/content/lxqt/index.html:83
+msgid "dnfdragora"
+msgstr ""
+
+#: data/content/lxqt/index.html:84
+msgid ""
+"dnfdragora is a DNF frontend, based on rpmdragora, written in Python 3 "
+"and uses libYui."
+msgstr ""
+
+#: data/content/lxqt/index.html:91
+msgid "FeatherPad"
+msgstr ""
+
+#: data/content/lxqt/index.html:92
+msgid ""
+"FeatherPad is a desktop indipendent and lightweight Qt5 plain-text editor"
+" for Linux."
+msgstr ""
+
+#: data/content/lxqt/index.html:96
+msgid "qpdfview"
+msgstr ""
+
+#: data/content/lxqt/index.html:97
+msgid "qpdfview is a tabbed document viewer."
+msgstr ""
+
+#: data/content/lxqt/index.html:119
+msgid "LXImage-Qt"
+msgstr ""
+
+#: data/content/lxqt/index.html:120
+msgid ""
+"LXImage-Qt is the Qt port of LXImage, a simple and fast image viewer you "
+"can also take screenshots with."
+msgstr ""
+
+#: data/content/lxqt/index.html:124
+msgid "Yarock"
+msgstr ""
+
+#: data/content/lxqt/index.html:125
+msgid ""
+"Yarock is Qt4/Qt5 Modern Music Player designed to provide an easy and "
+"pretty music collection browser based on cover art."
 msgstr ""
 
 #: data/content/lxqt/download/index.html:152 data/content/lxqt/index.html:153
@@ -1425,6 +1478,13 @@ msgstr ""
 msgid ""
 "Users and developers are also available on the mailing list at <a "
 "href=\"%s\">lxqt@lists.fedoraproject.org</a>."
+msgstr ""
+
+#: data/content/lxqt/download/index.html:160 data/content/lxqt/index.html:161
+#, python-format
+msgid ""
+"Specific documentation and tutorials are available at the <a "
+"href=\"%s\">LXQt project upstream website</a>."
 msgstr ""
 
 #: data/content/lxqt/download/index.html:8
