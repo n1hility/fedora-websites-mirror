@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-04-18 22:10+0200\n"
+"POT-Creation-Date: 2017-07-09 17:08+0200\n"
 "PO-Revision-Date: 2017-04-11 05:46-0400\n"
 "Last-Translator: Jerry Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/fedora-web/language/zh_CN/)\n"
@@ -481,13 +481,9 @@ msgstr ""
 "正在搭建 Kubernetes 或 Origin 集群来运行您的容器化应用程序？不妨尝试 Fedora Atomic "
 "吧，它即是您所需的轻量、精简操作系统。"
 
-#: data/content/atomic/index.html:125
+#: data/content/atomic/index.html:125 data/content/atomic/index.html:130
 msgid "Ready to give Fedora Atomic a try?"
 msgstr "准备好体验 Fedora Atomic 了吗？"
-
-#: data/content/atomic/index.html:130
-msgid "Ready to give Fedora Cloud a try?"
-msgstr "打算试用 Fedora Cloud 吗？"
 
 #: data/content/atomic/download/download-cloud-splash.html:8
 msgid "Download Fedora Cloud"
@@ -573,13 +569,10 @@ msgstr "Atomic Host 镜像"
 #: data/content/atomic/download/index.html:49
 msgid ""
 "Fedora Atomic Host is a leading edge base operating system following the "
-"Project Atomic model. It is designed around Kubernetes and Docker "
-"containers. The images published here showcase that work. Note that the "
-"images have passed several levels of automated testing, but are not always "
-"subjected to."
+"Project Atomic model. It is designed around Kubernetes and containers. The "
+"images published here showcase that work. Note that the images have passed "
+"several levels of automated testing."
 msgstr ""
-"Fedora Atomic Host 是一个基于 Project Atomic 模式的前沿的操作系统。它围绕 Kubernetes 和 Docker "
-"容器设计。发布在这里的镜像展示了此项工作。请注意这些镜像通过了各种级别的自动化测试，但并不是总是全部。"
 
 #: data/content/atomic/download/index.html:51
 msgid ""
@@ -1210,15 +1203,15 @@ msgstr "当前使用的公钥"
 #: data/content/keys/index.html:46 data/content/keys/index.html:60
 #: data/content/keys/index.html:81 data/content/keys/index.html:102
 #: data/content/keys/index.html:125 data/content/keys/index.html:138
-#: data/content/keys/index.html:151 data/content/keys/obsolete.html:72
-#: data/content/keys/obsolete.html:85 data/content/keys/obsolete.html:100
-#: data/content/keys/obsolete.html:113 data/content/keys/obsolete.html:126
-#: data/content/keys/obsolete.html:139 data/content/keys/obsolete.html:154
-#: data/content/keys/obsolete.html:167 data/content/keys/obsolete.html:188
-#: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
-#: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
-#: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
-#: data/content/keys/obsolete.html:337 data/content/keys/obsolete.html:358
+#: data/content/keys/obsolete.html:72 data/content/keys/obsolete.html:85
+#: data/content/keys/obsolete.html:100 data/content/keys/obsolete.html:113
+#: data/content/keys/obsolete.html:126 data/content/keys/obsolete.html:139
+#: data/content/keys/obsolete.html:154 data/content/keys/obsolete.html:167
+#: data/content/keys/obsolete.html:188 data/content/keys/obsolete.html:201
+#: data/content/keys/obsolete.html:225 data/content/keys/obsolete.html:247
+#: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
+#: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
+#: data/content/keys/obsolete.html:358 data/content/keys/obsolete.html:379
 msgid "Primary"
 msgstr "主要"
 
@@ -1239,11 +1232,7 @@ msgstr "EPEL 7"
 msgid "EPEL 6"
 msgstr "EPEL 6"
 
-#: data/content/keys/index.html:151
-msgid "EPEL 5"
-msgstr "EPEL 5"
-
-#: data/content/keys/index.html:167
+#: data/content/keys/index.html:154
 #, python-format
 msgid "Looking for <a href=\"%s\">obsolete keys</a>?"
 msgstr "想查找 <a href=\"%s\">已失效公钥</a>吗？"
@@ -1384,18 +1373,22 @@ msgid "Fedora 23"
 msgstr "Fedora 23"
 
 #: data/content/keys/obsolete.html:379
+msgid "EPEL 5"
+msgstr "EPEL 5"
+
+#: data/content/keys/obsolete.html:393
 msgid "EPEL 4"
 msgstr "EPEL 4"
 
-#: data/content/keys/obsolete.html:379
+#: data/content/keys/obsolete.html:393
 msgid "RPM-GPG-KEY-EPEL"
 msgstr "RPM-GPG-KEY-EPEL"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:406
 msgid "Fedora Extras"
 msgstr "Fedora Extras"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:406
 msgid ""
 "If you are using Fedora Extras with Fedora Core 6, use this package from "
 "<strong>extras</strong> repository.  This key will no longer be used after "
@@ -1407,11 +1400,11 @@ msgstr ""
 "的软件包。该公钥在 Fedora Core 6 及 Extras 停止维护(2007年12月7日)后就不再使用。该公钥未包含在 Fedora 7 "
 "及以后发布的 <strong>fedora-release</strong> 软件包中。"
 
-#: data/content/keys/obsolete.html:411
+#: data/content/keys/obsolete.html:423
 msgid "Legacy"
 msgstr "遗留"
 
-#: data/content/keys/obsolete.html:411
+#: data/content/keys/obsolete.html:423
 msgid ""
 "This key was used for packages that were released by Fedora Legacy project "
 "to update releases that reached their official EOL. The Fedora Legacy "

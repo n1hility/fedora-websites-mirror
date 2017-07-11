@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-04-18 22:10+0200\n"
-"PO-Revision-Date: 2017-04-12 03:40-0400\n"
+"POT-Creation-Date: 2017-07-09 17:08+0200\n"
+"PO-Revision-Date: 2017-07-09 07:52-0400\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/projects/p/fedora-web/language/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -560,13 +560,9 @@ msgstr ""
 " contenidors? Executeu-ho a Fedora Atomic, el qual us proporciona la "
 "plataforma que necessiteu en un sistema operatiu més petit i lleuger."
 
-#: data/content/atomic/index.html:125
+#: data/content/atomic/index.html:125 data/content/atomic/index.html:130
 msgid "Ready to give Fedora Atomic a try?"
 msgstr "Esteu preparat per donar una oportunitat a Fedora Atomic?"
-
-#: data/content/atomic/index.html:130
-msgid "Ready to give Fedora Cloud a try?"
-msgstr "Esteu preparat per donar una oportunitat a Fedora Cloud?"
 
 #: data/content/atomic/download/download-cloud-splash.html:8
 msgid "Download Fedora Cloud"
@@ -660,16 +656,15 @@ msgstr "Imatges d'Atomic Host"
 #: data/content/atomic/download/index.html:49
 msgid ""
 "Fedora Atomic Host is a leading edge base operating system following the "
-"Project Atomic model. It is designed around Kubernetes and Docker "
-"containers. The images published here showcase that work. Note that the "
-"images have passed several levels of automated testing, but are not always "
-"subjected to."
+"Project Atomic model. It is designed around Kubernetes and containers. The "
+"images published here showcase that work. Note that the images have passed "
+"several levels of automated testing."
 msgstr ""
 "Fedora Atomic Host és un sistema operatiu base capdavanter que segueix el "
 "model del projecte Atomic. Està dissenyat al voltant dels contenidors de "
 "Kubernetes i dels contenidors de Docker. Les imatges aquí publicades mostren"
 " aquest treball. Recordeu que les imatges han passat diversos nivells de "
-"proves automatitzades, però no sempre."
+"proves automatitzades."
 
 #: data/content/atomic/download/index.html:51
 msgid ""
@@ -868,7 +863,7 @@ msgstr ""
 #: data/content/atomic/download/index.html:213
 #: data/content/atomic/prerelease/index.html:209
 msgid "View Vagrant Downloads"
-msgstr "Visualitza les baixades de Vagrant"
+msgstr "Mostra les baixades de Vagrant"
 
 #: data/content/atomic/download/index.html:216
 #: data/content/atomic/prerelease/index.html:212
@@ -973,7 +968,7 @@ msgstr "Imatge Base Vagrant de libvirt/KVM de 64 bits de %s MB"
 #: data/content/atomic/download/index.html:261
 #: data/content/atomic/prerelease/index.html:257
 msgid "View Downloads using Vagrant tools"
-msgstr "Visualització de les baixades mitjançant les eines de Vagrant"
+msgstr "Mostra les baixades mitjançant les eines de Vagrant"
 
 #: data/content/atomic/download/index.html:265
 #: data/content/atomic/prerelease/index.html:261
@@ -1355,15 +1350,15 @@ msgstr "Claus utilitzades actualment"
 #: data/content/keys/index.html:46 data/content/keys/index.html:60
 #: data/content/keys/index.html:81 data/content/keys/index.html:102
 #: data/content/keys/index.html:125 data/content/keys/index.html:138
-#: data/content/keys/index.html:151 data/content/keys/obsolete.html:72
-#: data/content/keys/obsolete.html:85 data/content/keys/obsolete.html:100
-#: data/content/keys/obsolete.html:113 data/content/keys/obsolete.html:126
-#: data/content/keys/obsolete.html:139 data/content/keys/obsolete.html:154
-#: data/content/keys/obsolete.html:167 data/content/keys/obsolete.html:188
-#: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
-#: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
-#: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
-#: data/content/keys/obsolete.html:337 data/content/keys/obsolete.html:358
+#: data/content/keys/obsolete.html:72 data/content/keys/obsolete.html:85
+#: data/content/keys/obsolete.html:100 data/content/keys/obsolete.html:113
+#: data/content/keys/obsolete.html:126 data/content/keys/obsolete.html:139
+#: data/content/keys/obsolete.html:154 data/content/keys/obsolete.html:167
+#: data/content/keys/obsolete.html:188 data/content/keys/obsolete.html:201
+#: data/content/keys/obsolete.html:225 data/content/keys/obsolete.html:247
+#: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
+#: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
+#: data/content/keys/obsolete.html:358 data/content/keys/obsolete.html:379
 msgid "Primary"
 msgstr "Principal"
 
@@ -1384,11 +1379,7 @@ msgstr "EPEL 7"
 msgid "EPEL 6"
 msgstr "EPEL 6"
 
-#: data/content/keys/index.html:151
-msgid "EPEL 5"
-msgstr "EPEL 5"
-
-#: data/content/keys/index.html:167
+#: data/content/keys/index.html:154
 #, python-format
 msgid "Looking for <a href=\"%s\">obsolete keys</a>?"
 msgstr "Esteu buscant <a href=\"%s\">claus obsoletes</a>?"
@@ -1536,18 +1527,22 @@ msgid "Fedora 23"
 msgstr "Fedora 23"
 
 #: data/content/keys/obsolete.html:379
+msgid "EPEL 5"
+msgstr "EPEL 5"
+
+#: data/content/keys/obsolete.html:393
 msgid "EPEL 4"
 msgstr "EPEL 4"
 
-#: data/content/keys/obsolete.html:379
+#: data/content/keys/obsolete.html:393
 msgid "RPM-GPG-KEY-EPEL"
 msgstr "RPM-GPG-KEY-EPEL"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:406
 msgid "Fedora Extras"
 msgstr "Fedora Extras"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:406
 msgid ""
 "If you are using Fedora Extras with Fedora Core 6, use this package from "
 "<strong>extras</strong> repository.  This key will no longer be used after "
@@ -1561,11 +1556,11 @@ msgstr ""
 "(7 de desembre del 2007). Aquesta clau no està inclosa en el paquet <strong"
 ">fedora-release</strong> a partir de Fedora 7."
 
-#: data/content/keys/obsolete.html:411
+#: data/content/keys/obsolete.html:423
 msgid "Legacy"
 msgstr "Llegat"
 
-#: data/content/keys/obsolete.html:411
+#: data/content/keys/obsolete.html:423
 msgid ""
 "This key was used for packages that were released by Fedora Legacy project "
 "to update releases that reached their official EOL. The Fedora Legacy "
@@ -2264,8 +2259,7 @@ msgstr ""
 "Hem detectat automàticament que esteu executant <strong>Mac OS X</strong> i "
 "us hem ofert aquesta versió per a baixar. Si hem detectat el vostre sistema "
 "operatiu de forma incorrecta o voleu baixar una versió diferent, si us plau,"
-" feu clic al botó «Veure totes les baixades de les plataformes» de més "
-"endavant."
+" feu clic al botó «Mostra les baixades de totes les plataformes» de sota."
 
 #: data/content/workstation/download/index.html:85
 msgid ""
@@ -2277,8 +2271,7 @@ msgstr ""
 "Hem detectat automàticament que esteu executant <strong>Linux</strong> i us "
 "hem ofert aquesta versió per a baixar. Si hem detectat el vostre sistema "
 "operatiu de forma incorrecta o voleu baixar una versió diferent, si us plau,"
-" feu clic al botó «Veure totes les baixades de les plataformes» de més "
-"endavant."
+" feu clic al botó «Mostra les baixades de totes les plataformes» de sota."
 
 #: data/content/workstation/download/index.html:88
 msgid ""
@@ -2290,12 +2283,12 @@ msgstr ""
 "Hem detectat automàticament que esteu executant <strong> Windows </strong> i"
 " us hem ofert aquesta versió per a baixar. Si hem detectat el vostre sistema"
 " operatiu de forma incorrecta o voleu baixar una versió diferent, si us "
-"plau, feu clic al botó «Veure totes les baixades de les plataformes» de més "
-"endavant."
+"plau, feu clic al botó «Mostra les baixades de totes les plataformes» de "
+"sota."
 
 #: data/content/workstation/download/index.html:92
 msgid "View all platform downloads"
-msgstr "Visualitza totes les baixades de plataformes"
+msgstr "Mostra les baixades de totes les plataformes"
 
 #: data/content/workstation/download/index.html:122
 #: data/content/workstation/prerelease/index.html:127
@@ -2343,11 +2336,11 @@ msgstr "Imatge de 32 bits de %s MB"
 #: data/content/workstation/download/index.html:180
 #, python-format
 msgid "<a href=\"%(fmagazine_url)s\"><strong>Release Announcement</strong></a>"
-msgstr ""
+msgstr "<a href=\"%(fmagazine_url)s\"><strong>Anunci del llançament</strong></a>"
 
 #: data/content/workstation/download/index.html:181
 msgid "Read the full Release Announcement on Fedora Magazine."
-msgstr ""
+msgstr "Llegiu tot l'anunci del llançament a Fedora Magazine."
 
 #: data/content/workstation/download/index.html:182
 msgid ""

@@ -7,14 +7,15 @@
 # Bagus Aji Santoso <baguzzzaji@gmail.com>, 2015. #zanata
 # ekoikhyar <ekoikhyar@fedoraproject.org>, 2015. #zanata
 # ekoikhyar <ekoikhyar@fedoraproject.org>, 2016. #zanata
+# Andika Triwidada <andika@gmail.com>, 2017. #zanata
 # ekoikhyar <ekoikhyar@fedoraproject.org>, 2017. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-04-18 22:10+0200\n"
-"PO-Revision-Date: 2017-03-25 01:30-0400\n"
-"Last-Translator: ekoikhyar <ekoikhyar@fedoraproject.org>\n"
+"POT-Creation-Date: 2017-07-09 17:08+0200\n"
+"PO-Revision-Date: 2017-06-15 09:30-0400\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/fedora-web/language/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -409,7 +410,7 @@ msgstr ""
 
 #: data/content/keys/index.html:46 data/content/verify.html:82
 msgid "Fedora 27"
-msgstr ""
+msgstr "Fedora 27"
 
 #: data/content/keys/index.html:60 data/content/verify.html:83
 msgid "Fedora 26"
@@ -459,17 +460,19 @@ msgstr "Baca instruksi berikut untuk memvalidasi image Anda."
 
 #: data/content/atomic/index.html:8
 msgid "Fedora Atomic"
-msgstr ""
+msgstr "Fedora Atomic"
 
 #: data/content/atomic/index.html:18
 msgid ""
 "Deploy and scale your containerized applications with immutable "
 "infrastructure."
 msgstr ""
+"Terapkan dan skala aplikasi kontainer Anda dengan infrastruktur yang tidak "
+"berubah"
 
 #: data/content/atomic/index.html:24
 msgid "Download or Launch in Public Cloud"
-msgstr ""
+msgstr "Unduh atau Tampilkan di Cloud Publik"
 
 #: data/content/atomic/index.html:39
 msgid ""
@@ -485,7 +488,7 @@ msgstr ""
 
 #: data/content/atomic/index.html:52
 msgid "Atomic Host"
-msgstr ""
+msgstr "Atomic Host"
 
 #: data/content/atomic/index.html:53
 msgid ""
@@ -511,7 +514,7 @@ msgstr ""
 
 #: data/content/atomic/index.html:71
 msgid "Atomic CLI"
-msgstr ""
+msgstr "Atomic CLI"
 
 #: data/content/atomic/index.html:72
 msgid ""
@@ -530,12 +533,8 @@ msgid ""
 "need on a smaller, leaner OS."
 msgstr ""
 
-#: data/content/atomic/index.html:125
+#: data/content/atomic/index.html:125 data/content/atomic/index.html:130
 msgid "Ready to give Fedora Atomic a try?"
-msgstr ""
-
-#: data/content/atomic/index.html:130
-msgid "Ready to give Fedora Cloud a try?"
 msgstr ""
 
 #: data/content/atomic/download/download-cloud-splash.html:8
@@ -618,10 +617,9 @@ msgstr ""
 #: data/content/atomic/download/index.html:49
 msgid ""
 "Fedora Atomic Host is a leading edge base operating system following the "
-"Project Atomic model. It is designed around Kubernetes and Docker "
-"containers. The images published here showcase that work. Note that the "
-"images have passed several levels of automated testing, but are not always "
-"subjected to."
+"Project Atomic model. It is designed around Kubernetes and containers. The "
+"images published here showcase that work. Note that the images have passed "
+"several levels of automated testing."
 msgstr ""
 
 #: data/content/atomic/download/index.html:51
@@ -1232,15 +1230,15 @@ msgstr "Kunci Yang Sekarang Dipakai"
 #: data/content/keys/index.html:46 data/content/keys/index.html:60
 #: data/content/keys/index.html:81 data/content/keys/index.html:102
 #: data/content/keys/index.html:125 data/content/keys/index.html:138
-#: data/content/keys/index.html:151 data/content/keys/obsolete.html:72
-#: data/content/keys/obsolete.html:85 data/content/keys/obsolete.html:100
-#: data/content/keys/obsolete.html:113 data/content/keys/obsolete.html:126
-#: data/content/keys/obsolete.html:139 data/content/keys/obsolete.html:154
-#: data/content/keys/obsolete.html:167 data/content/keys/obsolete.html:188
-#: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
-#: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
-#: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
-#: data/content/keys/obsolete.html:337 data/content/keys/obsolete.html:358
+#: data/content/keys/obsolete.html:72 data/content/keys/obsolete.html:85
+#: data/content/keys/obsolete.html:100 data/content/keys/obsolete.html:113
+#: data/content/keys/obsolete.html:126 data/content/keys/obsolete.html:139
+#: data/content/keys/obsolete.html:154 data/content/keys/obsolete.html:167
+#: data/content/keys/obsolete.html:188 data/content/keys/obsolete.html:201
+#: data/content/keys/obsolete.html:225 data/content/keys/obsolete.html:247
+#: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
+#: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
+#: data/content/keys/obsolete.html:358 data/content/keys/obsolete.html:379
 msgid "Primary"
 msgstr "Primer"
 
@@ -1261,11 +1259,7 @@ msgstr "EPEL 7"
 msgid "EPEL 6"
 msgstr "EPEL 6"
 
-#: data/content/keys/index.html:151
-msgid "EPEL 5"
-msgstr ""
-
-#: data/content/keys/index.html:167
+#: data/content/keys/index.html:154
 #, python-format
 msgid "Looking for <a href=\"%s\">obsolete keys</a>?"
 msgstr ""
@@ -1396,18 +1390,22 @@ msgid "Fedora 23"
 msgstr "Fedora 23"
 
 #: data/content/keys/obsolete.html:379
+msgid "EPEL 5"
+msgstr ""
+
+#: data/content/keys/obsolete.html:393
 msgid "EPEL 4"
 msgstr ""
 
-#: data/content/keys/obsolete.html:379
+#: data/content/keys/obsolete.html:393
 msgid "RPM-GPG-KEY-EPEL"
 msgstr "RPM-GPG-KEY-EPEL"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:406
 msgid "Fedora Extras"
 msgstr ""
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:406
 msgid ""
 "If you are using Fedora Extras with Fedora Core 6, use this package from "
 "<strong>extras</strong> repository.  This key will no longer be used after "
@@ -1416,11 +1414,11 @@ msgid ""
 "later releases."
 msgstr ""
 
-#: data/content/keys/obsolete.html:411
+#: data/content/keys/obsolete.html:423
 msgid "Legacy"
 msgstr ""
 
-#: data/content/keys/obsolete.html:411
+#: data/content/keys/obsolete.html:423
 msgid ""
 "This key was used for packages that were released by Fedora Legacy project "
 "to update releases that reached their official EOL. The Fedora Legacy "

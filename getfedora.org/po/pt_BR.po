@@ -9,13 +9,14 @@
 # Frederico Henrique Gonçalves Lima <fred@fredericolima.com.br>, 2016. #zanata
 # Marco Aurélio Krause <ouesten@me.com>, 2016. #zanata
 # Frederico Henrique Gonçalves Lima <fred@fredericolima.com.br>, 2017. #zanata
+# Mateus de Melo Santos <mateusms@tutanota.com>, 2017. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-04-18 22:10+0200\n"
-"PO-Revision-Date: 2017-04-05 12:23-0400\n"
-"Last-Translator: Frederico Henrique Gonçalves Lima <fred@fredericolima.com.br>\n"
+"POT-Creation-Date: 2017-07-09 17:08+0200\n"
+"PO-Revision-Date: 2017-06-08 11:23-0400\n"
+"Last-Translator: Mateus de Melo Santos <mateusms@tutanota.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/fedora-web/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -150,12 +151,12 @@ msgid ""
 "section."
 msgstr ""
 "<strong>Fedora %(rel)s %(state)s</strong> lançado! Teste-o na seção de "
-"Download."
+"Downloads."
 
 #: data/content/index.html:53
 #, python-format
 msgid "Fedora %(rel)s released! Get it now."
-msgstr "Fedora %(rel)s lançado! Obtenha agora."
+msgstr "Fedora %(rel)s lançado! Obtenha-o agora."
 
 #: data/content/index.html:67 data/content/verify.html:39
 #: data/templates/productselector-workstation.html:12
@@ -413,7 +414,7 @@ msgstr ""
 
 #: data/content/keys/index.html:46 data/content/verify.html:82
 msgid "Fedora 27"
-msgstr ""
+msgstr "Fedora 27"
 
 #: data/content/keys/index.html:60 data/content/verify.html:83
 msgid "Fedora 26"
@@ -482,7 +483,7 @@ msgstr ""
 
 #: data/content/atomic/index.html:24
 msgid "Download or Launch in Public Cloud"
-msgstr ""
+msgstr "Download ou Inicie em uma Nuvem Pública"
 
 #: data/content/atomic/index.html:39
 msgid ""
@@ -560,13 +561,9 @@ msgstr ""
 "em contêineres? Execute-o no Fedora Atomic, que fornece a plataforma que "
 "precisa em um sistema operacional menor e mais enxuto."
 
-#: data/content/atomic/index.html:125
+#: data/content/atomic/index.html:125 data/content/atomic/index.html:130
 msgid "Ready to give Fedora Atomic a try?"
 msgstr "Pronto para experimentar o Fedora Atomic?"
-
-#: data/content/atomic/index.html:130
-msgid "Ready to give Fedora Cloud a try?"
-msgstr "Pronto para experimentar o Fedora Cloud?"
 
 #: data/content/atomic/download/download-cloud-splash.html:8
 msgid "Download Fedora Cloud"
@@ -659,16 +656,10 @@ msgstr "Imagens Atomic Host"
 #: data/content/atomic/download/index.html:49
 msgid ""
 "Fedora Atomic Host is a leading edge base operating system following the "
-"Project Atomic model. It is designed around Kubernetes and Docker "
-"containers. The images published here showcase that work. Note that the "
-"images have passed several levels of automated testing, but are not always "
-"subjected to."
+"Project Atomic model. It is designed around Kubernetes and containers. The "
+"images published here showcase that work. Note that the images have passed "
+"several levels of automated testing."
 msgstr ""
-"Fedora Atomic Host é um sistema operacional base de ponta seguindo o modelo "
-"do Projeto Atomic. Eles é projetado em torno de contêineres Kubernetes e "
-"Docker. As imagens publicadas aqui demonstram esse trabalho. Repare que as "
-"imagens passaram por diversos níveis de testes automatizados, mas nem sempre"
-" foram sujeitas a testes."
 
 #: data/content/atomic/download/index.html:51
 msgid ""
@@ -849,7 +840,7 @@ msgstr "Imagens Atomic Host para Vagrant"
 
 #: data/content/atomic/download/index.html:212
 #: data/content/atomic/prerelease/index.html:208
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and "
 "Libvirt providers. You can bring up Fedora Atomic Host in a vagrant box by "
@@ -1351,15 +1342,15 @@ msgstr "Chaves utilizadas atualmente"
 #: data/content/keys/index.html:46 data/content/keys/index.html:60
 #: data/content/keys/index.html:81 data/content/keys/index.html:102
 #: data/content/keys/index.html:125 data/content/keys/index.html:138
-#: data/content/keys/index.html:151 data/content/keys/obsolete.html:72
-#: data/content/keys/obsolete.html:85 data/content/keys/obsolete.html:100
-#: data/content/keys/obsolete.html:113 data/content/keys/obsolete.html:126
-#: data/content/keys/obsolete.html:139 data/content/keys/obsolete.html:154
-#: data/content/keys/obsolete.html:167 data/content/keys/obsolete.html:188
-#: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
-#: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
-#: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
-#: data/content/keys/obsolete.html:337 data/content/keys/obsolete.html:358
+#: data/content/keys/obsolete.html:72 data/content/keys/obsolete.html:85
+#: data/content/keys/obsolete.html:100 data/content/keys/obsolete.html:113
+#: data/content/keys/obsolete.html:126 data/content/keys/obsolete.html:139
+#: data/content/keys/obsolete.html:154 data/content/keys/obsolete.html:167
+#: data/content/keys/obsolete.html:188 data/content/keys/obsolete.html:201
+#: data/content/keys/obsolete.html:225 data/content/keys/obsolete.html:247
+#: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
+#: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
+#: data/content/keys/obsolete.html:358 data/content/keys/obsolete.html:379
 msgid "Primary"
 msgstr "Primário"
 
@@ -1380,11 +1371,7 @@ msgstr "EPEL 7"
 msgid "EPEL 6"
 msgstr "EPEL 6"
 
-#: data/content/keys/index.html:151
-msgid "EPEL 5"
-msgstr "EPEL 5"
-
-#: data/content/keys/index.html:167
+#: data/content/keys/index.html:154
 #, python-format
 msgid "Looking for <a href=\"%s\">obsolete keys</a>?"
 msgstr "Procurando por <a href=\"%s\">chaves obsoletas</a>?"
@@ -1532,18 +1519,22 @@ msgid "Fedora 23"
 msgstr "Fedora 23"
 
 #: data/content/keys/obsolete.html:379
+msgid "EPEL 5"
+msgstr "EPEL 5"
+
+#: data/content/keys/obsolete.html:393
 msgid "EPEL 4"
 msgstr "EPEL 4"
 
-#: data/content/keys/obsolete.html:379
+#: data/content/keys/obsolete.html:393
 msgid "RPM-GPG-KEY-EPEL"
 msgstr "RPM-GPG-KEY-EPEL"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:406
 msgid "Fedora Extras"
 msgstr "Fedora Extras"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:406
 msgid ""
 "If you are using Fedora Extras with Fedora Core 6, use this package from "
 "<strong>extras</strong> repository.  This key will no longer be used after "
@@ -1557,11 +1548,11 @@ msgstr ""
 "Dezembro de 2007). Esta chave não está incluída no pacote <strong>fedora-"
 "release</strong> no Fedora 7 e versões posteriores."
 
-#: data/content/keys/obsolete.html:411
+#: data/content/keys/obsolete.html:423
 msgid "Legacy"
 msgstr "Legado"
 
-#: data/content/keys/obsolete.html:411
+#: data/content/keys/obsolete.html:423
 msgid ""
 "This key was used for packages that were released by Fedora Legacy project "
 "to update releases that reached their official EOL. The Fedora Legacy "
@@ -2333,10 +2324,11 @@ msgstr "Imagem 32-bit %sMB"
 #, python-format
 msgid "<a href=\"%(fmagazine_url)s\"><strong>Release Announcement</strong></a>"
 msgstr ""
+"<a href=\"%(fmagazine_url)s\"><strong>Comunicado de lançamento</strong></a>"
 
 #: data/content/workstation/download/index.html:181
 msgid "Read the full Release Announcement on Fedora Magazine."
-msgstr ""
+msgstr "Leia o anúncio de lançamento completo na Revista Fedora."
 
 #: data/content/workstation/download/index.html:182
 msgid ""
@@ -2708,6 +2700,8 @@ msgid ""
 "Please send any comments or corrections to the <a href=\"//pagure.io/fedora-"
 "websites\">websites team</a>."
 msgstr ""
+"Por favor, envie quaisquer comentários ou correções para o <a "
+"href=\"//pagure.io/fedora-websites\">time de websites</a>."
 
 #: data/templates/footer.html:95
 msgid "Change Language"

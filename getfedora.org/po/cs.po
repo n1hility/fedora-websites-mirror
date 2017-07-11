@@ -9,6 +9,7 @@
 # Josef Hruška <hrusjos@gmail.com>, 2016. #zanata
 # Marek Suchánek <m.suchanek.2@gmail.com>, 2016. #zanata
 # Zdenek <chmelarz@gmail.com>, 2016. #zanata
+# Adam Přibyl <pribyl@lowlevel.cz>, 2017. #zanata
 # Josef Hruška <hrusjos@gmail.com>, 2017. #zanata
 # Marek Suchánek <m.suchanek.2@gmail.com>, 2017. #zanata
 # Zdenek <chmelarz@gmail.com>, 2017. #zanata
@@ -16,8 +17,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-04-18 22:10+0200\n"
-"PO-Revision-Date: 2017-04-11 02:03-0400\n"
+"POT-Creation-Date: 2017-07-09 17:08+0200\n"
+"PO-Revision-Date: 2017-07-10 08:25-0400\n"
 "Last-Translator: Josef Hruška <hrusjos@gmail.com>\n"
 "Language-Team: Czech (http://www.transifex.com/projects/p/fedora-web/language/cs/)\n"
 "MIME-Version: 1.0\n"
@@ -548,13 +549,9 @@ msgstr ""
 "umístěné v kontejnerech? Provozujte ho na Fedoře Atomic, která poskytuje "
 "potřebnou platformu na menším, zeštíhleném OS."
 
-#: data/content/atomic/index.html:125
+#: data/content/atomic/index.html:125 data/content/atomic/index.html:130
 msgid "Ready to give Fedora Atomic a try?"
 msgstr "Připraveni zkusit Fedoru Atomic?"
-
-#: data/content/atomic/index.html:130
-msgid "Ready to give Fedora Cloud a try?"
-msgstr "Připraveni zkusit Fedoru Cloud?"
 
 #: data/content/atomic/download/download-cloud-splash.html:8
 msgid "Download Fedora Cloud"
@@ -647,16 +644,14 @@ msgstr "Obrazy Atomic Host"
 #: data/content/atomic/download/index.html:49
 msgid ""
 "Fedora Atomic Host is a leading edge base operating system following the "
-"Project Atomic model. It is designed around Kubernetes and Docker "
-"containers. The images published here showcase that work. Note that the "
-"images have passed several levels of automated testing, but are not always "
-"subjected to."
+"Project Atomic model. It is designed around Kubernetes and containers. The "
+"images published here showcase that work. Note that the images have passed "
+"several levels of automated testing."
 msgstr ""
 "Fedora Atomic Host představuje špičkový základní operační systém, který "
 "vychází z modelu Projektu Atomic. Je založen na Kubernetes a kontejnerech "
 "Docker. Zde zveřejněné obrazy jsou ukázkou těchto děl. Vezměte v potaz, že "
-"obrazy prošly několika úrovněmi automatických testů, avšak ne vždy jsou "
-"předmětem testů ručních."
+"obrazy prošly několika úrovněmi automatických testů."
 
 #: data/content/atomic/download/index.html:51
 msgid ""
@@ -1333,15 +1328,15 @@ msgstr "Klíče používané v současnosti"
 #: data/content/keys/index.html:46 data/content/keys/index.html:60
 #: data/content/keys/index.html:81 data/content/keys/index.html:102
 #: data/content/keys/index.html:125 data/content/keys/index.html:138
-#: data/content/keys/index.html:151 data/content/keys/obsolete.html:72
-#: data/content/keys/obsolete.html:85 data/content/keys/obsolete.html:100
-#: data/content/keys/obsolete.html:113 data/content/keys/obsolete.html:126
-#: data/content/keys/obsolete.html:139 data/content/keys/obsolete.html:154
-#: data/content/keys/obsolete.html:167 data/content/keys/obsolete.html:188
-#: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
-#: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
-#: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
-#: data/content/keys/obsolete.html:337 data/content/keys/obsolete.html:358
+#: data/content/keys/obsolete.html:72 data/content/keys/obsolete.html:85
+#: data/content/keys/obsolete.html:100 data/content/keys/obsolete.html:113
+#: data/content/keys/obsolete.html:126 data/content/keys/obsolete.html:139
+#: data/content/keys/obsolete.html:154 data/content/keys/obsolete.html:167
+#: data/content/keys/obsolete.html:188 data/content/keys/obsolete.html:201
+#: data/content/keys/obsolete.html:225 data/content/keys/obsolete.html:247
+#: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
+#: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
+#: data/content/keys/obsolete.html:358 data/content/keys/obsolete.html:379
 msgid "Primary"
 msgstr "Primární"
 
@@ -1362,11 +1357,7 @@ msgstr "EPEL 7"
 msgid "EPEL 6"
 msgstr "EPEL 6"
 
-#: data/content/keys/index.html:151
-msgid "EPEL 5"
-msgstr "EPEL 5"
-
-#: data/content/keys/index.html:167
+#: data/content/keys/index.html:154
 #, python-format
 msgid "Looking for <a href=\"%s\">obsolete keys</a>?"
 msgstr "Hledáte <a href=\"%s\">zastaralé klíče</a>?"
@@ -1512,18 +1503,22 @@ msgid "Fedora 23"
 msgstr "Fedora 23"
 
 #: data/content/keys/obsolete.html:379
+msgid "EPEL 5"
+msgstr "EPEL 5"
+
+#: data/content/keys/obsolete.html:393
 msgid "EPEL 4"
 msgstr "EPEL 4"
 
-#: data/content/keys/obsolete.html:379
+#: data/content/keys/obsolete.html:393
 msgid "RPM-GPG-KEY-EPEL"
 msgstr "RPM-GPG-KEY-EPEL"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:406
 msgid "Fedora Extras"
 msgstr "Fedora Extras"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:406
 msgid ""
 "If you are using Fedora Extras with Fedora Core 6, use this package from "
 "<strong>extras</strong> repository.  This key will no longer be used after "
@@ -1537,11 +1532,11 @@ msgstr ""
 "Tento klíč není součástí balíčku <strong>fedora-release</strong> ve Fedoře 7"
 " a pozdějších vydáních."
 
-#: data/content/keys/obsolete.html:411
+#: data/content/keys/obsolete.html:423
 msgid "Legacy"
 msgstr "Legacy"
 
-#: data/content/keys/obsolete.html:411
+#: data/content/keys/obsolete.html:423
 msgid ""
 "This key was used for packages that were released by Fedora Legacy project "
 "to update releases that reached their official EOL. The Fedora Legacy "
@@ -1689,9 +1684,9 @@ msgid ""
 "deployments a breeze. What took me a few days on other operating systems "
 "took less than an hour with Fedora %(rel)s Server. It just works.”"
 msgstr ""
-"\"Snadnost představená nástroji rolekit a cockpit učinila z nasazování "
-"serverů pohodu. Co mi na jiných operačních systémech zabralo několik dní, mi"
-" s Fedorou %(rel)s Server trvá méně než hodinu. Prostě to funguje.\""
+"\"Se snadno použitelnými nástroji Rolekit a Cockpit je z nasazování serverů "
+"pohoda. Co mi na jiných operačních systémech zabralo několik dní, mi s "
+"Fedorou %(rel)s Server trvá méně než hodinu. Prostě to funguje.\""
 
 #: data/content/server/index.html:39
 msgid "Systems Engineer"
@@ -1704,7 +1699,7 @@ msgid ""
 "to make use of the very latest server-based technologies available in the "
 "open source community."
 msgstr ""
-"Fedora Server je operační systém pro server, který je založen na krátkém "
+"Fedora Server je operační systém pro servery, který je založen na krátkém "
 "životním cyklu a podporován komunitou. Umožňuje zkušeným systémovým "
 "správcům, kteří mají zkušenosti s kterýmkoliv OS, používat nejaktuálnější "
 "serverové technologie dostupné v open-source komunitě."
@@ -1774,10 +1769,10 @@ msgid ""
 " experts with docker so that they can develop their applications on the "
 "fly.”"
 msgstr ""
-"\"Role Docker u Fedory Server se snadno a rychle instaluje, takže lze "
-"spouštět své obrazy Docker. Vytváří to výborné zkušební prostředí pro "
-"začátečníky i odborníky na docker, kteří mohou vyvíjet své aplikace opravdu "
-"za běhu.\""
+"\"Role Docker ve Fedora Serveru se snadno a rychle instaluje, takže lze "
+"jednodušše spouštět obrazy pro Docker. Vytváří tím výborné zkušební "
+"prostředí pro začátečníky i odborníky na Docker, kteří mohou vyvíjet své "
+"aplikace opravdu za běhu.\""
 
 #: data/content/server/index.html:111
 msgid "Information Systems Student"
@@ -2053,10 +2048,10 @@ msgid ""
 "like COPR to make your code and builds available quickly to the community."
 msgstr ""
 "Vyhněte se zátěži, kterou představuje snaha nalézt nebo vyvinout potřebné "
-"nástroje. S kompletní sadou open-source jazyků, nástrojů a pomocných "
-"programů Fedory je vše v dosahu klepnutí myší nebo příkazové řádky. Existuje"
-" dokonce i hosting projektů a repozitáře, jako např. COPR, které vám pomohou"
-" rychle zpřístupnit váš kód a sestavení komunitě."
+"nástroje. S kompletní sadou open-source programovacích jazyků, nástrojů a "
+"pomocných programů Fedory je vše v dosahu klepnutí myší nebo příkazové "
+"řádky. Existuje dokonce i hosting projektů a repozitáře, jako např. COPR, "
+"které vám pomohou rychle zpřístupnit váš kód a sestavení komunitě."
 
 #: data/content/workstation/index.html:86
 msgid "GNOME Boxes & other virt tools"
@@ -2172,10 +2167,9 @@ msgid ""
 msgstr ""
 "Fedora Workstation je k dispozici pomocí programu Fedora Media Writer. "
 "Stáhněte si tento program z výše uvedeného odkazu a spusťte ho na svém "
-"systému, postupujte dle pokynů a vytvořte si tak spustitelnou (též "
-"\"živou\", angl. \"live\")(viz vpravo 'Co znamená \"živá\"?') verzi Fedory "
-"Workstation na disku USB flash. Poté lze spustit spustitelnou verzi Fedory "
-"Workstation z tohoto disku USB flash."
+"systému, postupujte dle pokynů a vytvořte si tak živou verzi (viz vpravo 'Co"
+" znamená \"živá\"?') verzi Fedory Workstation na USB flash disku. Poté lze "
+"spustit spustitelnou verzi Fedory Workstation z tohoto USB disku."
 
 #: data/content/workstation/download/index.html:72
 #: data/content/workstation/prerelease/index.html:100
@@ -2189,10 +2183,10 @@ msgid ""
 msgstr ""
 "Případně můžete nainstalovat Fedoru Workstation na laptop nebo stolní "
 "počítač, který má k dispozici alespoň 1 GHz procesor, 1 GB RAM a 10 GB "
-"prostoru. Chcete-li to provést, spusťte spustitelnou verzi Fedory "
-"Workstation z USB flash disku na počítači, na němž chcete instalaci provést,"
-" spusťte aplikaci Fedora Media Writer a pro dokončení instalace postupujte "
-"podle pokynů na obrazovce."
+"prostoru. Chcete-li to provést, spusťte živou verzi Fedory Workstation z USB"
+" flash disku na počítači, na němž chcete instalaci provést, spusťte aplikaci"
+" Fedora Media Writer a pro dokončení instalace postupujte podle pokynů na "
+"obrazovce."
 
 #: data/content/workstation/download/index.html:74
 #: data/content/workstation/prerelease/index.html:102
@@ -2294,7 +2288,7 @@ msgstr "64bitový živý obraz %sGB"
 #: data/content/workstation/prerelease/index.html:155
 #, python-format
 msgid "32-bit %sGB Live image"
-msgstr "32bitový spustitelný obraz %s GB"
+msgstr "32bitový živý obraz %s GB"
 
 #: data/content/workstation/download/index.html:149
 #: data/content/workstation/prerelease/index.html:158
@@ -2310,11 +2304,11 @@ msgstr "32bitový obraz %s MB"
 #: data/content/workstation/download/index.html:180
 #, python-format
 msgid "<a href=\"%(fmagazine_url)s\"><strong>Release Announcement</strong></a>"
-msgstr ""
+msgstr "<a href=\"%(fmagazine_url)s\"><strong>Oznámení o vydání</strong></a>"
 
 #: data/content/workstation/download/index.html:181
 msgid "Read the full Release Announcement on Fedora Magazine."
-msgstr ""
+msgstr "Přečtěte si úplné oznámení o vydání v magazínu Fedory."
 
 #: data/content/workstation/download/index.html:182
 msgid ""
@@ -2345,8 +2339,8 @@ msgid ""
 "We recommend you look through this before installing to your system, since "
 "it answers many common questions."
 msgstr ""
-"Doporučujeme, abyste se s ní před instalací na svůj systém seznámili, neboť "
-"obsahuje odpovědi na mnoho obvyklých dotazů."
+"Doporučujeme, abyste se s příručkou před instalací na svůj počítač "
+"seznámili, neboť obsahuje odpovědi na mnoho obvyklých dotazů."
 
 #: data/content/workstation/download/index.html:186
 #: data/content/workstation/prerelease/index.html:166
@@ -2569,7 +2563,7 @@ msgid ""
 "By clicking on and downloading Fedora, you agree to comply with the "
 "following terms and conditions."
 msgstr ""
-"Klepnutím zde a stažením Fedory vyjadřujete souhlas s následujícími "
+"Klepnutím na odkaz a stažením Fedory vyjadřujete souhlas s následujícími "
 "ustanoveními a podmínkami."
 
 #: data/templates/export-regulations.html:11
@@ -2713,9 +2707,9 @@ msgid ""
 "requirements for Fedora. Consult <a href=\"%s\">the online release notes</a>"
 " to see minimum requirements and recommendations."
 msgstr ""
-"Před instalací Fedory byste se možná měli ujistit, že váš systém splňuje "
-"její minimální požadavky. Minimální požadavky a další doporučení si pročtěte"
-" v <a href=\"%s\">online poznámkách k vydání</a>."
+"Před instalací Fedory byste se měli ujistit, že váš systém splňuje její "
+"minimální požadavky. Minimální požadavky a další doporučení si pročtěte v <a"
+" href=\"%s\">online poznámkách k vydání</a>."
 
 #: data/templates/generic/docs-links.html:10
 #, python-format
@@ -2739,7 +2733,7 @@ msgid ""
 "vendors</a> or a <a href=\"%s\">local vendor</a> in your area."
 msgstr ""
 "Instalační nosiče Fedory si lze objednat za úplatu u <a href=\"%s\">on-line "
-"prodejců</a> nebo <a href=\"%s\">místního prodejce</a> ve své oblasti."
+"prodejců</a> nebo <a href=\"%s\">místního prodejce</a> ve vaší oblasti."
 
 #: data/templates/generic/other-media-sources.html:10
 #, python-format

@@ -7,12 +7,13 @@
 # Igor Gorbounov <igor.gorbounov@gmail.com>, 2015. #zanata
 # yuliya <ypoyarko@redhat.com>, 2015. #zanata
 # Igor Gorbounov <igor.gorbounov@gmail.com>, 2016. #zanata
+# Igor Gorbounov <igor.gorbounov@gmail.com>, 2017. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-04-18 22:10+0200\n"
-"PO-Revision-Date: 2016-11-07 03:56-0500\n"
+"POT-Creation-Date: 2017-07-09 17:08+0200\n"
+"PO-Revision-Date: 2017-06-04 04:32-0400\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/fedora-web/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -145,11 +146,13 @@ msgid ""
 "<strong>Fedora %(rel)s %(state)s</strong> released! Test it in the Download "
 "section."
 msgstr ""
+"<strong>Вышла Fedora %(rel)s %(state)s</strong>! Заходите в раздел загрузок "
+"и проверяйте."
 
 #: data/content/index.html:53
 #, python-format
 msgid "Fedora %(rel)s released! Get it now."
-msgstr ""
+msgstr "Выпуск Fedora %(rel)s! Получите сейчас."
 
 #: data/content/index.html:67 data/content/verify.html:39
 #: data/templates/productselector-workstation.html:12
@@ -159,7 +162,7 @@ msgstr "Рабочая станция"
 #: data/content/index.html:69 data/content/index.html:85
 #: data/content/index.html:100
 msgid "Download Now"
-msgstr ""
+msgstr "Загрузить сейчас"
 
 #: data/content/index.html:74 data/content/index.html:127
 msgid ""
@@ -199,7 +202,7 @@ msgstr ""
 #: data/content/index.html:98 data/content/verify.html:60
 #: data/templates/productselector-cloud.html:13
 msgid "Atomic"
-msgstr ""
+msgstr "Atomic"
 
 #: data/content/atomic/index.html:19 data/content/index.html:104
 #: data/content/index.html:137
@@ -372,11 +375,11 @@ msgstr "Для 32-разрядных образов"
 
 #: data/content/verify.html:62
 msgid "For Atomic Host Iso"
-msgstr ""
+msgstr "Для ISO-файлов Atomic Host"
 
 #: data/content/verify.html:65
 msgid "For Atomic Host images"
-msgstr ""
+msgstr "Для образов Atomic Host"
 
 #: data/content/verify.html:68
 msgid "For Docker"
@@ -406,7 +409,7 @@ msgstr "Файл CHECKSUM должен иметь верную подпись о
 
 #: data/content/keys/index.html:46 data/content/verify.html:82
 msgid "Fedora 27"
-msgstr ""
+msgstr "Fedora 27"
 
 #: data/content/keys/index.html:60 data/content/verify.html:83
 msgid "Fedora 26"
@@ -458,7 +461,7 @@ msgstr "Прочитайте эти инструкции для проверки
 
 #: data/content/atomic/index.html:8
 msgid "Fedora Atomic"
-msgstr ""
+msgstr "Fedora Atomic"
 
 #: data/content/atomic/index.html:18
 msgid ""
@@ -470,7 +473,7 @@ msgstr ""
 
 #: data/content/atomic/index.html:24
 msgid "Download or Launch in Public Cloud"
-msgstr ""
+msgstr "Загрузить или запустить в общедоступном облаке"
 
 #: data/content/atomic/index.html:39
 msgid ""
@@ -548,13 +551,9 @@ msgstr ""
 "контейнерах? Запустите его на Fedora Atomic, которая предоставит вам "
 "требуемую платформу на ОС с меньшими ресурсами."
 
-#: data/content/atomic/index.html:125
+#: data/content/atomic/index.html:125 data/content/atomic/index.html:130
 msgid "Ready to give Fedora Atomic a try?"
 msgstr "Готовы попробовать Fedora Atomic?"
-
-#: data/content/atomic/index.html:130
-msgid "Ready to give Fedora Cloud a try?"
-msgstr "Готовы попробовать Fedora Cloud?"
 
 #: data/content/atomic/download/download-cloud-splash.html:8
 msgid "Download Fedora Cloud"
@@ -606,7 +605,7 @@ msgstr "Проверьте!"
 #: data/content/atomic/download/index.html:10
 #: data/content/atomic/prerelease/index.html:10
 msgid "Download Fedora Atomic"
-msgstr ""
+msgstr "Загрузить Fedora Atomic"
 
 #: data/content/atomic/download/index.html:34
 #, python-format
@@ -646,10 +645,9 @@ msgstr "Образы Atomic Host"
 #: data/content/atomic/download/index.html:49
 msgid ""
 "Fedora Atomic Host is a leading edge base operating system following the "
-"Project Atomic model. It is designed around Kubernetes and Docker "
-"containers. The images published here showcase that work. Note that the "
-"images have passed several levels of automated testing, but are not always "
-"subjected to."
+"Project Atomic model. It is designed around Kubernetes and containers. The "
+"images published here showcase that work. Note that the images have passed "
+"several levels of automated testing."
 msgstr ""
 
 #: data/content/atomic/download/index.html:51
@@ -659,6 +657,10 @@ msgid ""
 "an earlier release — and if that happens, please also help us by filing bugs"
 " or submitting fixes."
 msgstr ""
+"<strong>Тестируйте новые версии, прежде чем использовать в работе.</strong> "
+"Если обнаружится проблема, инструменты Atomic Host дадут возможность легко "
+"вернуться к предыдущей версии — и если это случится, помогите нам "
+"заполнением отчетов об ошибках или отправкой исправлений."
 
 #: data/content/atomic/download/index.html:52
 msgid ""
@@ -667,6 +669,10 @@ msgid ""
 "development is moving quickly, only the latest major Fedora release is "
 "supported."
 msgstr ""
+"<strong>Образы Fedora Atomic Host обновляются примерно каждые две "
+"недели,</strong> а не в соответствии с основным шестимесячным ритмом Fedora."
+" Поскольку разработка ведется быстро, поддерживается только последняя "
+"основная версия Fedora."
 
 #: data/content/atomic/download/index.html:53
 #, python-format
@@ -676,11 +682,15 @@ msgid ""
 " Atomic project at <a href=\"%s\">projectatomic.io</a>. <a href=\"%s\">Click"
 " here</a> to see the current test status."
 msgstr ""
+"<strong>Обратите внимание, что разные носители Fedora Atomic Host "
+"подвергаются различным уровням автоматического тестирования.</strong> Узнать"
+" больше о Проекте Atomic можно на <a href=\"%s\">projectatomic.io</a>. Чтобы"
+" увидеть текущий статус тестирования, <a href=\"%s\">нажмите здесь</a>."
 
 #: data/content/atomic/download/index.html:61
 #: data/content/atomic/prerelease/index.html:57
 msgid "Atomic Host Images for Amazon Public Cloud EC2"
-msgstr ""
+msgstr "Образы Atomic Host для Amazon Public Cloud EC2"
 
 #: data/content/atomic/download/index.html:62
 #: data/content/atomic/prerelease/index.html:58
@@ -690,13 +700,17 @@ msgid ""
 "Amazon Web Services account. AMI IDs for usage with the AWS Console or "
 "command-line tools are also provided."
 msgstr ""
+"На ссылках ниже даны списки доступных виртуальных машин Hardware Virtual "
+"Machine (HVM) AMI с Atomic Host по регионам с кнопками для их запуска в "
+"вашей учетной записи Amazon Web Services. Также предоставляются AMI ID для "
+"использования с консолью AWS или инструментами командной строки."
 
 #: data/content/atomic/download/index.html:68
 #: data/content/atomic/download/index.html:136
 #: data/content/atomic/prerelease/index.html:64
 #: data/content/atomic/prerelease/index.html:132
 msgid "GP2 Format"
-msgstr ""
+msgstr "Формат GP2"
 
 #: data/content/atomic/download/index.html:69
 #: data/content/atomic/download/index.html:137
@@ -706,6 +720,9 @@ msgid ""
 "GP2 format AMIs use faster SSD storage; use these AMIs for speed, although "
 "note your storage costs will be more than standard."
 msgstr ""
+"AMI-образы в формате GP2 используют быстрые устройства хранения SSD; "
+"используйте эти AMI для получения большего быстродействия, хотя имейте в "
+"виду, что ваши затраты на устройства хранения будут выше стандартных."
 
 #: data/content/atomic/download/index.html:71
 #: data/content/atomic/download/index.html:147
@@ -1283,15 +1300,15 @@ msgstr "Используемые ключи"
 #: data/content/keys/index.html:46 data/content/keys/index.html:60
 #: data/content/keys/index.html:81 data/content/keys/index.html:102
 #: data/content/keys/index.html:125 data/content/keys/index.html:138
-#: data/content/keys/index.html:151 data/content/keys/obsolete.html:72
-#: data/content/keys/obsolete.html:85 data/content/keys/obsolete.html:100
-#: data/content/keys/obsolete.html:113 data/content/keys/obsolete.html:126
-#: data/content/keys/obsolete.html:139 data/content/keys/obsolete.html:154
-#: data/content/keys/obsolete.html:167 data/content/keys/obsolete.html:188
-#: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
-#: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
-#: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
-#: data/content/keys/obsolete.html:337 data/content/keys/obsolete.html:358
+#: data/content/keys/obsolete.html:72 data/content/keys/obsolete.html:85
+#: data/content/keys/obsolete.html:100 data/content/keys/obsolete.html:113
+#: data/content/keys/obsolete.html:126 data/content/keys/obsolete.html:139
+#: data/content/keys/obsolete.html:154 data/content/keys/obsolete.html:167
+#: data/content/keys/obsolete.html:188 data/content/keys/obsolete.html:201
+#: data/content/keys/obsolete.html:225 data/content/keys/obsolete.html:247
+#: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
+#: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
+#: data/content/keys/obsolete.html:358 data/content/keys/obsolete.html:379
 msgid "Primary"
 msgstr "Первичный"
 
@@ -1312,11 +1329,7 @@ msgstr "EPEL 7"
 msgid "EPEL 6"
 msgstr "EPEL 6"
 
-#: data/content/keys/index.html:151
-msgid "EPEL 5"
-msgstr "EPEL 5"
-
-#: data/content/keys/index.html:167
+#: data/content/keys/index.html:154
 #, python-format
 msgid "Looking for <a href=\"%s\">obsolete keys</a>?"
 msgstr "Ищете <a href=\"%s\">устаревшие ключи</a>?"
@@ -1464,18 +1477,22 @@ msgid "Fedora 23"
 msgstr "Fedora 23"
 
 #: data/content/keys/obsolete.html:379
+msgid "EPEL 5"
+msgstr "EPEL 5"
+
+#: data/content/keys/obsolete.html:393
 msgid "EPEL 4"
 msgstr "EPEL 4"
 
-#: data/content/keys/obsolete.html:379
+#: data/content/keys/obsolete.html:393
 msgid "RPM-GPG-KEY-EPEL"
 msgstr "RPM-GPG-KEY-EPEL"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:406
 msgid "Fedora Extras"
 msgstr "Fedora Extras"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:406
 msgid ""
 "If you are using Fedora Extras with Fedora Core 6, use this package from "
 "<strong>extras</strong> repository.  This key will no longer be used after "
@@ -1489,11 +1506,11 @@ msgstr ""
 "декабря 2007). Этот ключ не входит в состав пакета <strong>fedora-"
 "release</strong> в Fedora 7 и последующих выпусках."
 
-#: data/content/keys/obsolete.html:411
+#: data/content/keys/obsolete.html:423
 msgid "Legacy"
 msgstr "Legacy"
 
-#: data/content/keys/obsolete.html:411
+#: data/content/keys/obsolete.html:423
 msgid ""
 "This key was used for packages that were released by Fedora Legacy project "
 "to update releases that reached their official EOL. The Fedora Legacy "

@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-04-18 22:10+0200\n"
-"PO-Revision-Date: 2017-04-19 11:08-0400\n"
+"POT-Creation-Date: 2017-07-09 17:08+0200\n"
+"PO-Revision-Date: 2017-07-10 10:32-0400\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish (http://www.transifex.com/projects/p/fedora-web/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -548,13 +548,9 @@ msgstr ""
 "kontenerach? Uruchamiaj je na Fedorze Atomic, dostarczającej platformę na "
 "mniejszym systemie operacyjnym."
 
-#: data/content/atomic/index.html:125
+#: data/content/atomic/index.html:125 data/content/atomic/index.html:130
 msgid "Ready to give Fedora Atomic a try?"
 msgstr "Chcesz wypróbować Fedorę Atomic?"
-
-#: data/content/atomic/index.html:130
-msgid "Ready to give Fedora Cloud a try?"
-msgstr "Chcesz wypróbować Fedorę Cloud?"
 
 #: data/content/atomic/download/download-cloud-splash.html:8
 msgid "Download Fedora Cloud"
@@ -647,16 +643,13 @@ msgstr "Obrazy Atomic Host"
 #: data/content/atomic/download/index.html:49
 msgid ""
 "Fedora Atomic Host is a leading edge base operating system following the "
-"Project Atomic model. It is designed around Kubernetes and Docker "
-"containers. The images published here showcase that work. Note that the "
-"images have passed several levels of automated testing, but are not always "
-"subjected to."
+"Project Atomic model. It is designed around Kubernetes and containers. The "
+"images published here showcase that work. Note that the images have passed "
+"several levels of automated testing."
 msgstr ""
 "Fedora Atomic Host to najnowocześniejszy system operacyjny oparty na modelu "
-"Projektu Atomic, zaprojektowany wokół technologii Kubernetes i kontenerów "
-"Docker. Proszę zauważyć, że przeszły one kilka poziomów automatycznego "
-"testowania, ale nie zawsze były poddawane ręcznym testom przez zespół ds. "
-"jakości."
+"Projektu Atomic, zaprojektowany wokół technologii Kubernetes i kontenerów. "
+"Proszę zauważyć, że przeszły one kilka poziomów automatycznego testowania."
 
 #: data/content/atomic/download/index.html:51
 msgid ""
@@ -693,7 +686,7 @@ msgstr ""
 "<strong>Proszę zauważyć, że różne nośniki Fedory Atomic Host są poddawane "
 "automatycznemu testowaniu w różnym stopniu.</strong> Więcej informacji o "
 "Projekcie Atomic można znaleźć na stronie <a "
-"href=\"%s\">projectatomic.io</a>, a obecny stan testowania można znaleźć <a "
+"href=\"%s\">projectatomic.io</a>, a obecny stan testów można znaleźć <a "
 "href=\"%s\">tutaj</a>."
 
 #: data/content/atomic/download/index.html:61
@@ -927,7 +920,7 @@ msgstr "Pobierz"
 #: data/content/atomic/prerelease/index.html:245
 #, python-format
 msgid "64-bit %sMB VirtualBox Base Vagrant Image"
-msgstr "64-bitowy podstawowy obraz Vagrant dla VirtualBox o rozmiarze %s MB"
+msgstr "64-bitowy podstawowy obraz Vagrant dla VirtualBox (%s MB)"
 
 #: data/content/atomic/download/index.html:228
 #: data/content/atomic/download/index.html:242
@@ -952,7 +945,7 @@ msgstr ""
 #: data/content/atomic/prerelease/index.html:249
 #, python-format
 msgid "64-bit %sMB libvirt/KVM Base Vagrant Image"
-msgstr "64-bitowy podstawowy obraz Vagrant dla libvirt/KVM o rozmiarze %s MB"
+msgstr "64-bitowy podstawowy obraz Vagrant dla libvirt/KVM (%s MB)"
 
 #: data/content/atomic/download/index.html:261
 #: data/content/atomic/prerelease/index.html:257
@@ -1022,7 +1015,7 @@ msgstr ""
 #: data/content/atomic/prerelease/index.html:313
 #, python-format
 msgid "64-bit %sMB Qcow2 Image"
-msgstr "64-bitowy obraz Qcow2 o rozmiarze %s MB"
+msgstr "64-bitowy obraz Qcow2 (%s MB)"
 
 #: data/content/atomic/download/index.html:297
 #: data/content/atomic/download/index.html:310
@@ -1047,7 +1040,7 @@ msgstr ""
 #: data/content/atomic/prerelease/index.html:317
 #, python-format
 msgid "64-bit %sMB xz-Compressed Raw Image"
-msgstr "64-bitowy surowy obraz skompresowany za pomocą xz o rozmiarze %s MB"
+msgstr "64-bitowy surowy obraz skompresowany za pomocą xz (%s MB)"
 
 #: data/content/atomic/download/index.html:331
 #: data/content/atomic/prerelease/index.html:327
@@ -1334,15 +1327,15 @@ msgstr "Obecnie używane klucze"
 #: data/content/keys/index.html:46 data/content/keys/index.html:60
 #: data/content/keys/index.html:81 data/content/keys/index.html:102
 #: data/content/keys/index.html:125 data/content/keys/index.html:138
-#: data/content/keys/index.html:151 data/content/keys/obsolete.html:72
-#: data/content/keys/obsolete.html:85 data/content/keys/obsolete.html:100
-#: data/content/keys/obsolete.html:113 data/content/keys/obsolete.html:126
-#: data/content/keys/obsolete.html:139 data/content/keys/obsolete.html:154
-#: data/content/keys/obsolete.html:167 data/content/keys/obsolete.html:188
-#: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
-#: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
-#: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
-#: data/content/keys/obsolete.html:337 data/content/keys/obsolete.html:358
+#: data/content/keys/obsolete.html:72 data/content/keys/obsolete.html:85
+#: data/content/keys/obsolete.html:100 data/content/keys/obsolete.html:113
+#: data/content/keys/obsolete.html:126 data/content/keys/obsolete.html:139
+#: data/content/keys/obsolete.html:154 data/content/keys/obsolete.html:167
+#: data/content/keys/obsolete.html:188 data/content/keys/obsolete.html:201
+#: data/content/keys/obsolete.html:225 data/content/keys/obsolete.html:247
+#: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
+#: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
+#: data/content/keys/obsolete.html:358 data/content/keys/obsolete.html:379
 msgid "Primary"
 msgstr "Główny"
 
@@ -1363,11 +1356,7 @@ msgstr "EPEL 7"
 msgid "EPEL 6"
 msgstr "EPEL 6"
 
-#: data/content/keys/index.html:151
-msgid "EPEL 5"
-msgstr "EPEL 5"
-
-#: data/content/keys/index.html:167
+#: data/content/keys/index.html:154
 #, python-format
 msgid "Looking for <a href=\"%s\">obsolete keys</a>?"
 msgstr "<a href=\"%s\">Przestarzałe klucze</a>."
@@ -1515,18 +1504,22 @@ msgid "Fedora 23"
 msgstr "Fedora 23"
 
 #: data/content/keys/obsolete.html:379
+msgid "EPEL 5"
+msgstr "EPEL 5"
+
+#: data/content/keys/obsolete.html:393
 msgid "EPEL 4"
 msgstr "EPEL 4"
 
-#: data/content/keys/obsolete.html:379
+#: data/content/keys/obsolete.html:393
 msgid "RPM-GPG-KEY-EPEL"
 msgstr "RPM-GPG-KEY-EPEL"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:406
 msgid "Fedora Extras"
 msgstr "Fedora Extras"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:406
 msgid ""
 "If you are using Fedora Extras with Fedora Core 6, use this package from "
 "<strong>extras</strong> repository.  This key will no longer be used after "
@@ -1540,11 +1533,11 @@ msgstr ""
 "klucz nie jest zawarty w pakiecie <strong>fedora-release</strong> w Fedorze "
 "7 i późniejszych wydaniach."
 
-#: data/content/keys/obsolete.html:411
+#: data/content/keys/obsolete.html:423
 msgid "Legacy"
 msgstr "Przestarzałe"
 
-#: data/content/keys/obsolete.html:411
+#: data/content/keys/obsolete.html:423
 msgid ""
 "This key was used for packages that were released by Fedora Legacy project "
 "to update releases that reached their official EOL. The Fedora Legacy "
@@ -1803,7 +1796,7 @@ msgstr "Pobieranie Fedory %(rel)s Server"
 #: data/content/server/download/index.html:34
 #, python-format
 msgid "64-bit %sGB installation image"
-msgstr "64-bitowy obraz instalacyjny o rozmiarze %s GB"
+msgstr "64-bitowy obraz instalacyjny (%s GB)"
 
 #: data/content/server/download/index.html:42
 msgid ""
@@ -1820,7 +1813,7 @@ msgid ""
 "USB flash drive at least as big as the image."
 msgstr ""
 "Aby użyć tego obrazu, wymagany jest napęd, który może nagrywać płyty DVD lub"
-" napęd USB co najmniej o rozmiarze obrazu."
+" dysk USB co najmniej o rozmiarze obrazu."
 
 #: data/content/server/download/index.html:52
 #: data/content/server/prerelease/index.html:75
@@ -1833,7 +1826,7 @@ msgstr "Obraz instalacji sieciowej:"
 #: data/content/workstation/prerelease/index.html:160
 #, python-format
 msgid "64-bit %sMB image"
-msgstr "64-bitowy obraz o rozmiarze %s MB"
+msgstr "64-bitowy obraz (%s MB)"
 
 #: data/content/server/download/index.html:61
 #: data/content/workstation/download/index.html:159
@@ -1884,7 +1877,7 @@ msgid ""
 msgstr ""
 "Po pobraniu obrazu należy utworzyć z niego uruchamialny nośnik. Należy <a "
 "href=\"%s\">nagrać obraz na pustą płytę DVD</a> lub <a href=\"%s\">zapisać "
-"go na nośniku USB</a>."
+"go na dysku USB</a>."
 
 #: data/content/server/download/server-download-splash.html:52
 #: data/content/workstation/download/ws-download-splash.html:57
@@ -1918,7 +1911,7 @@ msgstr "Pobieranie Fedory %(rel)s %(state)s Server"
 #: data/content/server/prerelease/index.html:19
 #, python-format
 msgid "64-bit %sGB Installation Image"
-msgstr "64-bitowy obraz instalacyjny o rozmiarze %s GB"
+msgstr "64-bitowy obraz instalacyjny (%s GB)"
 
 #: data/content/server/prerelease/index.html:28
 #, python-format
@@ -2108,8 +2101,7 @@ msgstr "Pobieranie Fedory %(rel)s Workstation"
 #: data/content/workstation/prerelease/index.html:109
 #, python-format
 msgid "%s MB Fedora Media Writer for <strong>Mac OS X</strong>"
-msgstr ""
-"Fedora Media Writer o rozmiarze %s MB dla systemu <strong>Mac OS X</strong>"
+msgstr "Fedora Media Writer (%s MB) dla systemu <strong>Mac OS X</strong>"
 
 #: data/content/workstation/download/index.html:45
 #: data/content/workstation/download/index.html:126
@@ -2117,8 +2109,7 @@ msgstr ""
 #: data/content/workstation/prerelease/index.html:131
 #, python-format
 msgid "64-bit %s GB ISO for <strong>Linux</strong>."
-msgstr ""
-"64-bitowy obraz ISO o rozmiarze %s GB dla systemu <strong>Linux</strong>."
+msgstr "64-bitowy obraz ISO (%s GB) dla systemu <strong>Linux</strong>."
 
 #: data/content/workstation/download/index.html:46
 #: data/content/workstation/prerelease/index.html:25
@@ -2132,8 +2123,7 @@ msgstr "<a href=\"%s\">Zainstaluj za pomocą DNF</a> w systemie Fedora."
 #: data/content/workstation/prerelease/index.html:118
 #, python-format
 msgid "%s MB Fedora Media Writer for <strong>Windows</strong>"
-msgstr ""
-"Fedora Media Writer o rozmiarze %s MB dla systemu <strong>Windows</strong>"
+msgstr "Fedora Media Writer (%s MB) dla systemu <strong>Windows</strong>"
 
 #: data/content/workstation/download/index.html:52
 #: data/content/workstation/download/index.html:57
@@ -2163,7 +2153,7 @@ msgstr "Fedora Media Writer (do pobrania powyżej)"
 #: data/content/workstation/prerelease/index.html:86
 #, python-format
 msgid "A USB Flash drive with at least %s GB space available"
-msgstr "Nośnik USB z co najmniej %s GB wolnego miejsca"
+msgstr "Dysk USB z co najmniej %s GB wolnego miejsca"
 
 #: data/content/workstation/download/index.html:71
 msgid ""
@@ -2177,7 +2167,7 @@ msgstr ""
 " Pobierz ten program za pomocą odnośnika powyżej i uruchom go w swoim "
 "systemie, postępując zgodnie ze wskazówkami na ekranie, aby utworzyć wersję "
 "Live (po prawej znajduje się wyjaśnienie, co to znaczy) Fedory Workstation "
-"na nośniku USB."
+"na dysku USB."
 
 #: data/content/workstation/download/index.html:72
 #: data/content/workstation/prerelease/index.html:100
@@ -2192,7 +2182,7 @@ msgstr ""
 "Można też zainstalować Fedorę Workstation na laptopie lub komputerze "
 "stacjonarnym mającym co najmniej procesor o prędkości 1 GHz, 1 GB pamięci "
 "RAM i 10 GB miejsca na dysku. Aby to zrobić, należy uruchomić wersję Live "
-"Fedory Workstation z nośnika USB, włączyć aplikację Fedora Media Writer i "
+"Fedory Workstation z dysku USB, włączyć aplikację Fedora Media Writer i "
 "postępować zgodnie z instrukcjami na ekranie."
 
 #: data/content/workstation/download/index.html:74
@@ -2284,13 +2274,13 @@ msgstr "Sprawdzanie poprawności"
 #: data/content/workstation/prerelease/index.html:154
 #, python-format
 msgid "64-bit %sGB Live image"
-msgstr "64-bitowy obraz Live o rozmiarze %s GB"
+msgstr "64-bitowy obraz Live (%s GB)"
 
 #: data/content/workstation/download/index.html:147
 #: data/content/workstation/prerelease/index.html:155
 #, python-format
 msgid "32-bit %sGB Live image"
-msgstr "32-bitowy obraz Live o rozmiarze %s GB"
+msgstr "32-bitowy obraz Live (%s GB)"
 
 #: data/content/workstation/download/index.html:149
 #: data/content/workstation/prerelease/index.html:158
@@ -2301,7 +2291,7 @@ msgstr "Obrazy instalacji sieciowej:"
 #: data/content/workstation/prerelease/index.html:161
 #, python-format
 msgid "32-bit %sMB image"
-msgstr "32-bitowy obraz o rozmiarze %s MB"
+msgstr "32-bitowy obraz (%s MB)"
 
 #: data/content/workstation/download/index.html:180
 #, python-format
@@ -2372,8 +2362,8 @@ msgid ""
 "and play with Fedora without making changes to your hard disk."
 msgstr ""
 "Fedora Media Writer utworzy pełny system Fedora Workstation działający z "
-"nośnika USB. Można używać obrazu Live do wypróbowania Fedory bez "
-"wprowadzania zmian na dysku twardym."
+"dysku USB. Można używać obrazu Live do wypróbowania Fedory bez wprowadzania "
+"zmian na dysku twardym."
 
 #: data/content/workstation/download/index.html:191
 #: data/content/workstation/prerelease/index.html:173
@@ -2441,8 +2431,8 @@ msgid ""
 "WARNING: This procedure destroys all data on your USB media. Make sure to "
 "back up any important files from your USB media before you do this."
 msgstr ""
-"OSTRZEŻENIE: spowoduje to usunięcie wszystkich danych na nośniku USB. Należy"
-" się upewnić, że skopiowano z niego wszystkie ważne pliki."
+"OSTRZEŻENIE: spowoduje to usunięcie wszystkich danych na dysku USB. Należy "
+"się upewnić, że skopiowano z niego wszystkie ważne pliki."
 
 #: data/content/workstation/prerelease/index.html:91
 msgid "Download the Fedora Media Writer app below."
@@ -2481,9 +2471,9 @@ msgid ""
 " to create live media, you may need to restore it to factory settings.  The "
 "app will ask you whether to do so in this case."
 msgstr ""
-"Włóż napęd do portu USB. Jeśli był on wcześniej używany do tworzenia nośnika"
-" Live, to należy go przywrócić do ustawień fabrycznych. Aplikacja zapyta, "
-"czy to zrobić."
+"Włóż dysk do portu USB. Jeśli był on wcześniej używany do tworzenia nośnika "
+"Live, to należy go przywrócić do ustawień fabrycznych. Aplikacja zapyta, czy"
+" to zrobić."
 
 #: data/content/workstation/prerelease/index.html:98
 msgid ""

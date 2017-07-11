@@ -4,18 +4,15 @@
 #
 # Translators:
 # Zoltan Hoppár <zoltanh721@fedoraproject.org>, 2014
-# Bendegúz Gyönki <gyonkibendeguz@gmail.com>, 2016. #zanata
 # Meskó Balázs <meskobalazs@gmail.com>, 2016. #zanata
-# Teknős Ferenc <teferenc@t-online.hu>, 2016. #zanata
-# Bendegúz Gyönki <gyonkibendeguz@gmail.com>, 2017. #zanata
-# TheWanderer <sz.kornelgeza@gmail.com>, 2017. #zanata
+# Meskó Balázs <meskobalazs@gmail.com>, 2017. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-04-18 22:10+0200\n"
-"PO-Revision-Date: 2017-03-29 08:31-0400\n"
-"Last-Translator: TheWanderer <sz.kornelgeza@gmail.com>\n"
+"POT-Creation-Date: 2017-07-09 17:08+0200\n"
+"PO-Revision-Date: 2017-07-10 03:44-0400\n"
+"Last-Translator: Meskó Balázs <meskobalazs@gmail.com>\n"
 "Language-Team: Hungarian (http://www.transifex.com/projects/p/fedora-web/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -153,7 +150,7 @@ msgstr ""
 #: data/content/index.html:53
 #, python-format
 msgid "Fedora %(rel)s released! Get it now."
-msgstr "A Fedora %(rel)s elérhető! Szerezze meg most."
+msgstr "A Fedora %(rel)s elérhető! Szerezze be most."
 
 #: data/content/index.html:67 data/content/verify.html:39
 #: data/templates/productselector-workstation.html:12
@@ -212,7 +209,7 @@ msgid ""
 "(LDK) application stack."
 msgstr ""
 "A Fedora Atomic biztosítja a legjobb platformot a Linux-Docker-Kubernetes "
-"(LDK) szoftvercsomaghoz."
+"(LDK) alkalmazáscsomaghoz."
 
 #: data/content/index.html:163
 msgid ""
@@ -409,7 +406,7 @@ msgstr ""
 
 #: data/content/keys/index.html:46 data/content/verify.html:82
 msgid "Fedora 27"
-msgstr ""
+msgstr "Fedora 27"
 
 #: data/content/keys/index.html:60 data/content/verify.html:83
 msgid "Fedora 26"
@@ -469,12 +466,12 @@ msgid ""
 "Deploy and scale your containerized applications with immutable "
 "infrastructure."
 msgstr ""
-"Konténeres alkalmazások telepítése és méretezése egy megválzotathatlan  "
+"Konténeres alkalmazások telepítése és méretezése egy megváltoztathatatlan "
 "infrastruktúrán."
 
 #: data/content/atomic/index.html:24
 msgid "Download or Launch in Public Cloud"
-msgstr ""
+msgstr "Letöltés vagy indítás nyilvános felhőben"
 
 #: data/content/atomic/index.html:39
 msgid ""
@@ -483,6 +480,10 @@ msgid ""
 "already run Red Hat operating systems. We love the immutable aspect of "
 "Fedora Atomic which is perfect for containerized environments.”"
 msgstr ""
+"„A Fedora Atomicot választottuk alapként a Navops Launch-hoz – a Kubernetes "
+"klasztermenedzsment megoldásunkhoz, mert az ügyfeleink megbíznak a Red Hat "
+"operációs rendszereiben, és azokat is futtatják. Imádjuk a Fedora Atomic "
+"módosíthatatlanságát, amely tökéletes a konténerizált környezetekhez.”"
 
 #: data/content/atomic/index.html:40
 msgid "Chief Architect, Navops by Univa"
@@ -497,24 +498,30 @@ msgid ""
 "Atomic Host from Project Atomic is a lightweight, immutable platform, "
 "designed with the sole purpose of running containerized applications."
 msgstr ""
+"Az Atomic Projekt által készített Atomic Host egy pehelysúlyú, "
+"módosíthatatlan platform, amelynek egyetlen tervezett célja a konténerizált "
+"alkalmazások futtatása."
 
 #: data/content/atomic/index.html:54
 msgid ""
 "Fedora's version of Atomic Host uses the same package repositories as Fedora"
 " Server, and provides the latest versions of the Atomic."
 msgstr ""
-"A Fedora Atomic Host verziója, ugyanazokat a tárolókat használja, mint a "
+"A Fedora Atomic Host verziója ugyanazokat a tárolókat használja, mint a "
 "Fedora Server, és az Atomic legfrissebb kiadását biztosítja."
 
 #: data/content/atomic/index.html:65
 msgid "OStree Updates"
-msgstr "OStree Frissítések"
+msgstr "OStree frissítések"
 
 #: data/content/atomic/index.html:66
 msgid ""
 "Atomically update your system from the latest upstream OStree. Make your "
 "servers identical, and easily roll back if there's an upgrade problem."
 msgstr ""
+"Frissítse atomilag a rendszerét a legfrissebb OStree alapján. Tegye a "
+"kiszolgálóit egyformává, és görgessen vissza könnyedén, ha frissítési "
+"probléma van."
 
 #: data/content/atomic/index.html:71
 msgid "Atomic CLI"
@@ -525,10 +532,12 @@ msgid ""
 "Manage Docker containers, system containers, Atomic Apps, and more using one"
 " convenient command-line tool."
 msgstr ""
+"Kezeljen Docker konténereket, rendszer konténereket, Atomic appokat, és "
+"másokat, egyetlen kényelmes parancssoros eszközzel."
 
 #: data/content/atomic/index.html:83
 msgid "Optimized for Kubernetes and OpenShift"
-msgstr ""
+msgstr "Kubernetesre és OpenShiftre optimalizálva"
 
 #: data/content/atomic/index.html:84
 msgid ""
@@ -536,14 +545,13 @@ msgid ""
 "applications? Run it on Fedora Atomic, which provides you the platform you "
 "need on a smaller, leaner OS."
 msgstr ""
+"Kubernetes vagy Origin klasztert épít, hogy konténerizált alkalmazásokat "
+"futtasson? Futtassa Fedora Atomicon, amely azt a platformot nyújtja, amire "
+"szüksége van, egy kisebb, vékonyabb OS-en."
 
-#: data/content/atomic/index.html:125
+#: data/content/atomic/index.html:125 data/content/atomic/index.html:130
 msgid "Ready to give Fedora Atomic a try?"
-msgstr "Készen áll, hogy adjon egy lehetőséget a Fedora Atomic számára?"
-
-#: data/content/atomic/index.html:130
-msgid "Ready to give Fedora Cloud a try?"
-msgstr "Készen áll, hogy kipróbálja a Fedora Cloudot?"
+msgstr "Készen áll a Fedora Atomic kipróbálására?"
 
 #: data/content/atomic/download/download-cloud-splash.html:8
 msgid "Download Fedora Cloud"
@@ -606,7 +614,7 @@ msgstr "Fedora %(rel)s Atomic Host letöltése"
 #: data/content/atomic/download/index.html:35
 #: data/content/atomic/prerelease/index.html:35
 msgid "Atomic Host is built every 2 weeks or so."
-msgstr ""
+msgstr "Az Atomic Host nagyjából kéthetente készül."
 
 #: data/content/atomic/download/index.html:36
 #: data/content/atomic/prerelease/index.html:36
@@ -616,6 +624,9 @@ msgid ""
 "available are from over %(atomic_age)s days ago. Check the Project Atomic "
 "blog for updates and information about Atomic blocker bugs."
 msgstr ""
+"A legutóbbi két hétben nem teljesültek a tesztelési feltételek. Az elérhető "
+"lemezképek %(atomic_age)s nappal ezelőttiek. További információkért és "
+"hírekért az Atomic blokkoló hibáiról, nézze meg a Project Atomic blogot."
 
 #: data/content/atomic/download/index.html:37
 #, python-format
@@ -633,11 +644,14 @@ msgstr "Atomic Host lemezképek"
 #: data/content/atomic/download/index.html:49
 msgid ""
 "Fedora Atomic Host is a leading edge base operating system following the "
-"Project Atomic model. It is designed around Kubernetes and Docker "
-"containers. The images published here showcase that work. Note that the "
-"images have passed several levels of automated testing, but are not always "
-"subjected to."
+"Project Atomic model. It is designed around Kubernetes and containers. The "
+"images published here showcase that work. Note that the images have passed "
+"several levels of automated testing."
 msgstr ""
+"A Fedora Atomic Host egy élenjáró alap operációs rendszer, amely a Project "
+"Atomic modelljét követi. A Kubernetes és a konténerek köré lett tervezve. Az"
+" itt közzétett lemezképek ezt a munkát mutatják. Megjegyezzük, hogy az itt "
+"lévő lemezképek néhány szintű automatizált tesztelésen estek át."
 
 #: data/content/atomic/download/index.html:51
 msgid ""
@@ -646,6 +660,10 @@ msgid ""
 "an earlier release — and if that happens, please also help us by filing bugs"
 " or submitting fixes."
 msgstr ""
+" <strong>Teszteljen mielőtt élesben használja az új verziókat.</strong> Ha "
+"problémát fedez fel, akkor az Atomic Host eszközei könnyűvé teszik a "
+"visszaváltás egy régebbi kiadásra – és ha ez történik, akkor segítsen nekünk"
+" a hibák jelentésével vagy javítások küldésével."
 
 #: data/content/atomic/download/index.html:52
 msgid ""
@@ -654,6 +672,10 @@ msgid ""
 "development is moving quickly, only the latest major Fedora release is "
 "supported."
 msgstr ""
+"<strong>A Fedora Atomic Host lemezképek durván kéthetente "
+"frissülnek,</strong> a fő Fedora jellemző hat hónap helyett. Mivel a "
+"fejlesztés gyorsan halad, ezért csak a legfrissebb fő Fedora kiadás "
+"támogatott."
 
 #: data/content/atomic/download/index.html:53
 #, python-format
@@ -663,6 +685,11 @@ msgid ""
 " Atomic project at <a href=\"%s\">projectatomic.io</a>. <a href=\"%s\">Click"
 " here</a> to see the current test status."
 msgstr ""
+"<strong>Megjegyezzük, hogy a különböző Fedora Atomic Host mediák különböző "
+"szintű automatizált tesztelést kaptak.</strong> Többet tudhat meg az Atomic "
+"projekről a <a href=\"%s\">projectatomic.io</a> oldalon. <a "
+"href=\"%s\">Kattintson ide</a> a jelenlegi tesztelési állapot "
+"megtekintéséhez."
 
 #: data/content/atomic/download/index.html:61
 #: data/content/atomic/prerelease/index.html:57
@@ -677,13 +704,17 @@ msgid ""
 "Amazon Web Services account. AMI IDs for usage with the AWS Console or "
 "command-line tools are also provided."
 msgstr ""
+"A lenti hivatkozások régiónként listázzák az elérhető Atomic Host hardveres "
+"virtuális gép (HVM) AMI-kat, olyan gombokkal, amelyek elindítják őket az "
+"Amazon Web Services fiókjában. Az AWS konzolban vagy parancssoros "
+"eszközökben is használható AMI azonosítók is meg vannak adva."
 
 #: data/content/atomic/download/index.html:68
 #: data/content/atomic/download/index.html:136
 #: data/content/atomic/prerelease/index.html:64
 #: data/content/atomic/prerelease/index.html:132
 msgid "GP2 Format"
-msgstr "GP2 Formátum"
+msgstr "GP2 formátum"
 
 #: data/content/atomic/download/index.html:69
 #: data/content/atomic/download/index.html:137
@@ -693,6 +724,9 @@ msgid ""
 "GP2 format AMIs use faster SSD storage; use these AMIs for speed, although "
 "note your storage costs will be more than standard."
 msgstr ""
+"A GP2-es formátumú AMI gyorsabb SSD tárolót használ; akkor használja ezt, ha"
+" nagyobb sebességre van szüksége, viszont a tárolási költségei így "
+"magasabbak lesznek."
 
 #: data/content/atomic/download/index.html:71
 #: data/content/atomic/download/index.html:147
@@ -720,7 +754,7 @@ msgstr "Bezárás"
 #: data/content/atomic/download/index.html:153
 #, python-format
 msgid "Fedora %(rel)s GP2 Atomic Host HVM AMIs"
-msgstr "Fedora %(rel)s GP2 Atomic felhős HVM AMI-k"
+msgstr "Fedora %(rel)s GP2 Atomic Host HVM AMI-k"
 
 #: data/content/atomic/download/index.html:82
 #: data/content/atomic/download/index.html:114
@@ -761,7 +795,7 @@ msgstr "Indítás"
 #: data/content/atomic/download/index.html:100
 #: data/content/atomic/prerelease/index.html:96
 msgid "Standard Format)"
-msgstr "Normál Formátum)"
+msgstr "szabványos formátum)"
 
 #: data/content/atomic/download/index.html:101
 #: data/content/atomic/download/index.html:141
@@ -771,6 +805,8 @@ msgid ""
 "Standard format AMIs are more suitable if you have infrequently accessed "
 "data and want to keep storage cost low."
 msgstr ""
+"A szabványos formátumú AMI megfelelőbb, ha ritkán hozzáfért adatai vannak, "
+"és szeretné a tárolási költségeket alacsonyan tartani."
 
 #: data/content/atomic/download/index.html:103
 #: data/content/atomic/download/index.html:177
@@ -783,12 +819,12 @@ msgstr "Szabványos HVM AMI-k"
 #: data/content/atomic/download/index.html:183
 #, python-format
 msgid "Fedora %(rel)s Standard Atomic Host HVM AMIs"
-msgstr ""
+msgstr "Fedora %(rel)s szabványos Atomic Host HVM AMI-k"
 
 #: data/content/atomic/download/index.html:140
 #: data/content/atomic/prerelease/index.html:136
 msgid "Standard Format"
-msgstr ""
+msgstr "Szabványos formátum"
 
 #: data/content/atomic/download/index.html:211
 #: data/content/atomic/prerelease/index.html:207
@@ -797,23 +833,27 @@ msgstr "Atomic Host lemezképek a Vagranthoz"
 
 #: data/content/atomic/download/index.html:212
 #: data/content/atomic/prerelease/index.html:208
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and "
 "Libvirt providers. You can bring up Fedora Atomic Host in a vagrant box by "
 "downloading the images from Fedora or using the vagrant tools to pull the "
 "images from <a href=\"%s\">HashiCorp's Atlas</a>."
 msgstr ""
+"A Fedora Atomic Host Vagrant gépek VirtualBox és Libvirt szolgáltatókhoz "
+"érhetőek el. Egy Fedora Atomic Host gépet elindíthat a lemezképek "
+"letöltésével a Fedorától, vagy a vagrant eszközök használatával lehúzhatja a"
+" lemezképeket a <a href=\"%s\">HashiCorp Atlas</a> szolgáltatásából."
 
 #: data/content/atomic/download/index.html:213
 #: data/content/atomic/prerelease/index.html:209
 msgid "View Vagrant Downloads"
-msgstr ""
+msgstr "Vagrant letöltések megtekintése"
 
 #: data/content/atomic/download/index.html:216
 #: data/content/atomic/prerelease/index.html:212
 msgid "Vagrant Image Downloads"
-msgstr ""
+msgstr "Vagrant lemezkép letöltések"
 
 #: data/content/atomic/download/index.html:217
 #: data/content/atomic/prerelease/index.html:213
@@ -822,6 +862,8 @@ msgid ""
 "These images are Vagrant Boxes images for deployment using <a "
 "href=\"%s\">Vagrant</a>."
 msgstr ""
+"Ezek a lemezképek Vagrant gépek, <a href=\"%s\">Vagranttal</a> történő "
+"használathoz."
 
 #: data/content/atomic/download/index.html:222
 #: data/content/atomic/download/index.html:238
@@ -909,12 +951,12 @@ msgstr "64 bites, %s MB-os libvirt/KVM alap Vagrant lemezkép"
 #: data/content/atomic/download/index.html:261
 #: data/content/atomic/prerelease/index.html:257
 msgid "View Downloads using Vagrant tools"
-msgstr ""
+msgstr "Letöltések megtekintése a Vagrant eszközeivel"
 
 #: data/content/atomic/download/index.html:265
 #: data/content/atomic/prerelease/index.html:261
 msgid "Vagrant Downloads using Vagrant tools"
-msgstr ""
+msgstr "Vagrant letöltések a Vagrant eszközeivel"
 
 #: data/content/atomic/download/index.html:266
 #: data/content/atomic/prerelease/index.html:262
@@ -923,6 +965,8 @@ msgid ""
 "You can use the following command to grab the Vagrant Box images from <a "
 "href=\"%s\">HashiCorp's Atlas</a>."
 msgstr ""
+"A következő parancsok egyikét használhatja a Vagrant gép lemezképek "
+"letöltésére a <a href=\"%s\">HashiCorp Atlas</a> szolgáltatásából."
 
 #: data/content/atomic/download/index.html:268
 #: data/content/atomic/prerelease/index.html:264
@@ -931,6 +975,8 @@ msgid ""
 "If you've previously run Fedora %(rel)s Atomic Host in Vagrant on your "
 "machine then you can get the latest version by running:"
 msgstr ""
+"Ha már előzőleg futtata a Fedora %(rel)s Atomic Hostot a Vagrantban a "
+"számítógépén, akkor ezt futtatva megkaphatja a legfrissebb verziót:"
 
 #: data/content/atomic/download/index.html:277
 #: data/content/atomic/prerelease/index.html:273
@@ -939,11 +985,13 @@ msgid ""
 "For more information about running Vagrant on Fedora Workstation, see <a "
 "href=\"%s\">our wiki page</a>."
 msgstr ""
+"További információkért a Vagrant futtatásáról Fedora Workstationön, lásd a "
+"<a href=\"%s\">wiki oldalunkat</a>."
 
 #: data/content/atomic/download/index.html:285
 #: data/content/atomic/prerelease/index.html:281
 msgid "Atomic Host Images for Cloud Environments"
-msgstr ""
+msgstr "Atomic Host lemezképek felhős környezetekhez"
 
 #: data/content/atomic/download/index.html:291
 #: data/content/atomic/download/index.html:306
@@ -1008,13 +1056,13 @@ msgstr "Egyéb letöltések"
 #: data/content/atomic/prerelease/index.html:329
 #, python-format
 msgid "Atomic Host ISO image (%sMB)"
-msgstr ""
+msgstr "Atomic Host ISO lemezkép (%s MB)"
 
 #: data/content/atomic/download/index.html:334
 #: data/content/atomic/prerelease/index.html:330
 #, python-format
 msgid "Docker Image (%sMB)"
-msgstr ""
+msgstr "Docker lemezkép (%s MB)"
 
 #: data/content/atomic/download/index.html:337
 #: data/content/atomic/prerelease/index.html:333
@@ -1029,11 +1077,13 @@ msgid ""
 "<a href=\"https://www.projectatomic.io/docs/quickstart/\"><strong>Project "
 "Atomic: Getting Started</strong></a>"
 msgstr ""
+"<a href=\"https://www.projectatomic.io/docs/quickstart/\"><strong>Project "
+"Atomic: Első lépések</strong></a>"
 
 #: data/content/atomic/download/index.html:339
 #: data/content/atomic/prerelease/index.html:335
 msgid "Documentation on getting started using Project Atomic / Atomic Host."
-msgstr ""
+msgstr " Dokumentáció az Project Atomic / Atomic Host első használatához."
 
 #: data/content/atomic/download/index.html:340
 #: data/content/atomic/prerelease/index.html:336
@@ -1042,6 +1092,9 @@ msgid ""
 "href=\"https://lists.projectatomic.io/mailman/listinfo/atomic\"><strong>Project"
 " Atomic: Mailing List</strong></a>"
 msgstr ""
+"<a "
+"href=\"https://lists.projectatomic.io/mailman/listinfo/atomic\"><strong>Project"
+" Atomic: Levelezőlista</strong></a>"
 
 #: data/content/atomic/download/index.html:341
 #: data/content/atomic/prerelease/index.html:337
@@ -1050,12 +1103,14 @@ msgid ""
 "Join the upstream mailing list at <a "
 "href=\"%s\">atomic@projectatomic.io</a>."
 msgstr ""
+"Csatlakozzon az upstream levelezőlistához itt: <a "
+"href=\"%s\">atomic@projectatomic.io</a>."
 
 #: data/content/atomic/download/index.html:342
 #: data/content/atomic/prerelease/index.html:338
 #, python-format
 msgid "<a href=\"%s\"><strong>Project Atomic: IRC Chat</strong></a>"
-msgstr ""
+msgstr "<a href=\"%s\"><strong>Project Atomic: IRC csevegés</strong></a>"
 
 #: data/content/atomic/download/index.html:343
 #: data/content/atomic/prerelease/index.html:339
@@ -1063,11 +1118,13 @@ msgid ""
 "Join the Project Atomic channel <strong>#atomic</strong></a> on "
 "<strong>irc.freenode.org</strong></a>."
 msgstr ""
+"Csatlakozzon a Project Atomic IRC csatornához: <strong>#atomic</strong></a> "
+"az <strong>irc.freenode.org</strong></a> oldalon."
 
 #: data/content/atomic/download/index.html:348
 #, python-format
 msgid "F%(rel)s %(state)s"
-msgstr ""
+msgstr "F%(rel)s %(state)s"
 
 #: data/content/atomic/download/index.html:349
 #: data/content/server/download/index.html:62
@@ -1097,7 +1154,7 @@ msgstr "Segítsen befejezni az F%(rel)s kiadást!"
 #: data/content/atomic/download/index.html:352
 #, python-format
 msgid "Download F%(rel)s %(state)s images"
-msgstr ""
+msgstr "F%(rel)s %(state)s lemezképek letöltése"
 
 #: data/content/atomic/download/index.html:353
 #: data/content/server/download/index.html:66
@@ -1126,7 +1183,7 @@ msgstr "Lemezkép ellenőrzése"
 #: data/content/atomic/prerelease/index.html:34
 #, python-format
 msgid "Download Fedora %(rel)s %(state)s Atomic Host"
-msgstr ""
+msgstr "Fedora %(rel)s %(state)s Atomic Host letöltése"
 
 #: data/content/atomic/prerelease/index.html:37
 #, python-format
@@ -1134,6 +1191,8 @@ msgid ""
 "These are the latest Fedora Atomic Host images, produced on "
 "%(manual_pre_atomic_date)s."
 msgstr ""
+"Ezek a legutóbbi Fedora Atomic Host lemezképek, amelyek ekkor készültek: "
+"%(manual_pre_atomic_date)s."
 
 #: data/content/atomic/prerelease/index.html:48
 #, python-format
@@ -1165,13 +1224,13 @@ msgstr ""
 #: data/content/atomic/prerelease/index.html:149
 #, python-format
 msgid "Fedora %(rel)s %(state)s GP2 Atomic Host HVM AMIs"
-msgstr ""
+msgstr "Fedora %(rel)s %(state)s GP2 Atomic Host HVM AMI-k"
 
 #: data/content/atomic/prerelease/index.html:105
 #: data/content/atomic/prerelease/index.html:179
 #, python-format
 msgid "Fedora %(rel)s %(state)s Standard Atomic Host HVM AMIs"
-msgstr ""
+msgstr "Fedora %(rel)s %(state)s szabványos Atomic Host HVM AMI-k"
 
 #: data/content/atomic/prerelease/index.html:288
 #: data/content/atomic/prerelease/index.html:303
@@ -1180,6 +1239,8 @@ msgid ""
 "This is Fedora %(rel)s %(state)s Cloud Atomic Host in a Qcow2-formatted "
 "image for use with OpenStack."
 msgstr ""
+"Ez a Fedora %(rel)s %(state)s Cloud Atomic Host Qcow2-típusúra formázott "
+"lemezképe, OpenStackkel való használathoz."
 
 #: data/content/atomic/prerelease/index.html:294
 #: data/content/atomic/prerelease/index.html:307
@@ -1188,6 +1249,8 @@ msgid ""
 "This is Fedora %(rel)s %(state)s Cloud Atomic Host in a compressed raw image"
 " format. If you're not sure what to use, try this."
 msgstr ""
+"Ez a Fedora %(rel)s %(state)s Cloud Atomic Host tömörített nyers "
+"lemezképformátumban. Ha bizonytalan, hogy mit használjon, próbálja ki ezt."
 
 #: data/content/e/404.html:7
 msgid "Fedora Project - Page Not Found"
@@ -1263,15 +1326,15 @@ msgstr "Jelenleg használt kulcsok"
 #: data/content/keys/index.html:46 data/content/keys/index.html:60
 #: data/content/keys/index.html:81 data/content/keys/index.html:102
 #: data/content/keys/index.html:125 data/content/keys/index.html:138
-#: data/content/keys/index.html:151 data/content/keys/obsolete.html:72
-#: data/content/keys/obsolete.html:85 data/content/keys/obsolete.html:100
-#: data/content/keys/obsolete.html:113 data/content/keys/obsolete.html:126
-#: data/content/keys/obsolete.html:139 data/content/keys/obsolete.html:154
-#: data/content/keys/obsolete.html:167 data/content/keys/obsolete.html:188
-#: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
-#: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
-#: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
-#: data/content/keys/obsolete.html:337 data/content/keys/obsolete.html:358
+#: data/content/keys/obsolete.html:72 data/content/keys/obsolete.html:85
+#: data/content/keys/obsolete.html:100 data/content/keys/obsolete.html:113
+#: data/content/keys/obsolete.html:126 data/content/keys/obsolete.html:139
+#: data/content/keys/obsolete.html:154 data/content/keys/obsolete.html:167
+#: data/content/keys/obsolete.html:188 data/content/keys/obsolete.html:201
+#: data/content/keys/obsolete.html:225 data/content/keys/obsolete.html:247
+#: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
+#: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
+#: data/content/keys/obsolete.html:358 data/content/keys/obsolete.html:379
 msgid "Primary"
 msgstr "Elsődleges"
 
@@ -1292,11 +1355,7 @@ msgstr "EPEL 7"
 msgid "EPEL 6"
 msgstr "EPEL 6"
 
-#: data/content/keys/index.html:151
-msgid "EPEL 5"
-msgstr "EPEL 5"
-
-#: data/content/keys/index.html:167
+#: data/content/keys/index.html:154
 #, python-format
 msgid "Looking for <a href=\"%s\">obsolete keys</a>?"
 msgstr "<a href=\"%s\">Elavult kulcsokat</a> keres?"
@@ -1336,6 +1395,14 @@ msgid ""
 "announce-list/2008-August/msg00012.html</a> for information on why this key "
 "is obsolete."
 msgstr ""
+"A csomagok ezen a médián ezzel a kulccsal vannak aláírva. A releváns dnf "
+"tárolók a következők: <strong>fedora</strong>, <strong>fedora-"
+"updates</strong> Fedora 7-9 verzióihoz, és <strong>core</strong> valamint "
+"<strong>core-updates</strong> a Fedora Core (6-os és korábbiaknál). Tekintse"
+" meg <a href=\"http://www.redhat.com/archives/fedora-announce-"
+"list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-"
+"announce-list/2008-August/msg00012.html</a> ezt az oldalt a további "
+"információkért, hogy ezek a kulcsok miért elavultak."
 
 #: data/content/keys/obsolete.html:59
 msgid "Fedora >= 7 testing"
@@ -1436,18 +1503,22 @@ msgid "Fedora 23"
 msgstr "Fedora 23"
 
 #: data/content/keys/obsolete.html:379
+msgid "EPEL 5"
+msgstr "EPEL 5"
+
+#: data/content/keys/obsolete.html:393
 msgid "EPEL 4"
 msgstr "EPEL 4"
 
-#: data/content/keys/obsolete.html:379
+#: data/content/keys/obsolete.html:393
 msgid "RPM-GPG-KEY-EPEL"
 msgstr "RPM-GPG-KEY-EPEL"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:406
 msgid "Fedora Extras"
 msgstr "Fedora extrák"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:406
 msgid ""
 "If you are using Fedora Extras with Fedora Core 6, use this package from "
 "<strong>extras</strong> repository.  This key will no longer be used after "
@@ -1461,11 +1532,11 @@ msgstr ""
 " a kulcsot nem fogják tartalmazni a <strong>fedora-release</strong> csomagok"
 " a Fedora 7 és későbbi változataiban."
 
-#: data/content/keys/obsolete.html:411
+#: data/content/keys/obsolete.html:423
 msgid "Legacy"
 msgstr "Legacy (örökölt)"
 
-#: data/content/keys/obsolete.html:411
+#: data/content/keys/obsolete.html:423
 msgid ""
 "This key was used for packages that were released by Fedora Legacy project "
 "to update releases that reached their official EOL. The Fedora Legacy "
@@ -1540,6 +1611,15 @@ msgid ""
 "Fedora are enabled in the dnf repository configuration, so you generally "
 "don't need to manually import them into the rpm database."
 msgstr ""
+"A kulcsokat a <strong>fedora-release</strong> csomag tartalmazza, illetve a "
+"<strong>/etc/pki/rpm-gpg</strong> mappában találhatók.  Kérjük vegye észre, "
+"hogy ebben a mappában nem minden kulcsot a Fedora Projekt használ – néhányat"
+" Red Hat Enterprise Linux csomagok aláírásaihoz használhatnak, vagy "
+"egyáltalán nem használják már. Ha Red Hat Enterprise Linux csomagokat "
+"használ, nézze meg a <a "
+"href=\"%s\">https://www.redhat.com/security/team/key</a> mappát.  A Fedora "
+"által használt kulcsokat engedélyezték a dnf tároló beállításában, tehát "
+"általában nem kell kézzel beimportálni őket az rpm adatbázisba."
 
 #: data/content/keys/faq/index.html:43
 #, python-format
@@ -1559,6 +1639,9 @@ msgid ""
 " for the repository and asks the user for confirmation before importing the "
 "key if the key is not already imported into the rpm database."
 msgstr ""
+"Néhány tárolóhoz, mint a stabil és teszt csomagok tárolói alapértelmezésben,"
+" a <strong>dnf</strong> meg tudja találni a megfelelő kulcsot, és rákérdez "
+"hogy importálja-e, ha az még nincs benne az rpm adatbázisban."
 
 #: data/content/keys/faq/index.html:45
 msgid ""
@@ -1663,8 +1746,8 @@ msgid ""
 "Fedora Server brings with it an enterprise-class, scalable database server "
 "powered by the open-source PostgreSQL project."
 msgstr ""
-"A Fedora Server tartalmaz egy vállalati szintű, skálázható, a nyílt forrású "
-"PostgreSQL projektre épülő adatbázis-kiszolgálót."
+"A Fedora Server egy vállalati szintű, skálázható, a nyílt forrású PostgreSQL"
+" projektre épülő adatbázis-kiszolgálóval érkezik."
 
 #: data/content/server/index.html:96
 msgid "Complete Enterprise Domain Solution"
@@ -1677,6 +1760,10 @@ msgid ""
 "environment with FreeIPA, the engine that drives Fedora Server's Domain "
 "Controller role."
 msgstr ""
+"Lépjen szintet a linuxos hálózata a fejlett identitás kezeléssel, DNS-sel, "
+"tanúsítványkiszolgálókkal, Windows(TM) domain integrációval az egész "
+"környezetében, a FreeIPA-val, azzal a motorral, ami a Fedora Server Domain "
+"Controller szerepkörét is hajtja."
 
 #: data/content/server/index.html:110
 msgid ""
@@ -1685,14 +1772,14 @@ msgid ""
 " experts with docker so that they can develop their applications on the "
 "fly.”"
 msgstr ""
-"\"A Fedora Serverhez készült Docker Role-t egyszerű és gyors volt telepíteni"
-" ahhoz, hogy futtathatóak legyenek a Docker lemezképek. Ezzel pedig "
-"nagyszerű tesztplatform lehet kezdők és profik számára is, így mindkét tábor"
-" igen gyorsan tud alkalmazásokat fejleszteni.\""
+"„A Fedora Serverhez készült docker szerepkört egyszerű és gyors volt "
+"telepíteni ahhoz, hogy futtathatóak legyenek a Docker lemezképek. Ez teszi "
+"nagyszerű tesztplatformmá kezdők és profik számára egyaránt, így mindkét "
+"tábor igen gyorsan tud alkalmazásokat fejleszteni.”"
 
 #: data/content/server/index.html:111
 msgid "Information Systems Student"
-msgstr "IT Egyetemi hallgató"
+msgstr "IT-s egyetemi hallgató"
 
 #: data/content/server/index.html:125 data/content/server/index.html:130
 msgid "Ready to give Fedora Server a try?"
@@ -1720,8 +1807,8 @@ msgid ""
 " your hard drive"
 msgstr ""
 "A Fedora Server telepítő lemezkép lehetővé teszi, hogy olyan médiát "
-"készítsen a gépe számára ami azonnal indítja a telepítőt, hogy közvetlenül "
-"telepíthesse a Fedora Server-t merevlemezére. "
+"készítsen a gépe számára, ami azonnal indítja a telepítőt, és így "
+"közvetlenül telepítheti a Fedora Servert a merevlemezére"
 
 #: data/content/server/download/index.html:43
 msgid ""
@@ -1729,7 +1816,7 @@ msgid ""
 "USB flash drive at least as big as the image."
 msgstr ""
 "A lemezkép használatához szüksége lesz egy olyan meghajtóra, amivel DVD-t "
-"tud írni, vagy egy USB pendrive-ra ami legalább akkora mint a lemezkép maga."
+"tud írni, vagy egy USB meghajtóra, ami legalább akkora mint a lemezkép maga."
 
 #: data/content/server/download/index.html:52
 #: data/content/server/prerelease/index.html:75
@@ -1791,6 +1878,9 @@ msgid ""
 "<a href=\"%s\">burn the image to a blank DVD disc</a>, or <a "
 "href=\"%s\">write the image to a USB flash drive</a>."
 msgstr ""
+"Miután letöltötte a lemezképet, készíteni fog egy indítható médiát belőle. "
+"Vagy <a href=\"%s\">írja ki egy üres DVD-lemezre</a>, vagy <a "
+"href=\"%s\">írja ki a lemezképet egy USB flash meghajtóra</a>."
 
 #: data/content/server/download/server-download-splash.html:52
 #: data/content/workstation/download/ws-download-splash.html:57
@@ -1806,6 +1896,10 @@ msgid ""
 " manufacturer and model of your computer. You may find <a href='%s'>these "
 "common tips</a> useful."
 msgstr ""
+"Kövesse a számítógépének dokumentációját a beépített merevlemeztől eltérő "
+"eszközről történő indításáról. A folyamat eltérő lehet a számítógép "
+"gyártójának és modelljének függvényében. Lehet, hogy hasznosnak találhatja "
+"<a href='%s'>ezeket a gyakori tippeket</a>."
 
 #: data/content/server/prerelease/index.html:8
 #, python-format
@@ -1830,8 +1924,8 @@ msgid ""
 "their <a href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on "
 "freenode."
 msgstr ""
-"Ez egy kiadás előtti szoftver, ami a <a href=\"%(team_url)s\">Server "
-"munkacsoport</a> által támogatott. Kérjük, hogy kérdéseit a <a "
+"Ez egy kiadás előtti szoftver, amit a <a href=\"%(team_url)s\">Server "
+"munkacsoport</a> támogat. Kérdéseit a <a "
 "href=\"%(team_list)s\">levezelőlistájukon</a> vagy a freenode-on lévő "
 "%(team_irc)s IRC csatornán tegye fel."
 
@@ -1896,6 +1990,10 @@ msgid ""
 "same directory as the image you downloaded and follow <a "
 "href=\"%s/%s/verify\">these instructions</a>."
 msgstr ""
+"Ha letöltött egy lemezképet, akkor érdemes azt az épsége és biztonsága miatt"
+" ellenőriznie. Az ellenőrzéshez töltse le a CHECKSUM fájlt ugyanabba a "
+"mappába, ahová a lemezképet letöltötte, és kövesse <a "
+"href=\"%s/%s/verify\">ezeket az utasításokat</a>."
 
 #: data/content/workstation/index.html:8
 msgid "Fedora Workstation"
@@ -1992,7 +2090,7 @@ msgstr ""
 #: data/content/workstation/index.html:185
 #: data/content/workstation/index.html:190
 msgid "Ready to give Fedora Workstation a try?"
-msgstr "Készen áll, hogy adjon egy lehetőséget a Fedora Workstation számára?"
+msgstr "Készen áll a Fedora Workstation kipróbálására?"
 
 #: data/content/workstation/download/index.html:8
 #: data/content/workstation/download/ws-download-splash.html:8
@@ -2010,7 +2108,7 @@ msgstr "Fedora %(rel)s Workstation letöltése"
 #: data/content/workstation/prerelease/index.html:109
 #, python-format
 msgid "%s MB Fedora Media Writer for <strong>Mac OS X</strong>"
-msgstr "%s MB méretű Fedora médiaíró <strong>Mac OS X</strong>-hez"
+msgstr "%s MB méretű Fedora médiaíró <strong>Mac OS X-re</strong>"
 
 #: data/content/workstation/download/index.html:45
 #: data/content/workstation/download/index.html:126
@@ -2018,13 +2116,13 @@ msgstr "%s MB méretű Fedora médiaíró <strong>Mac OS X</strong>-hez"
 #: data/content/workstation/prerelease/index.html:131
 #, python-format
 msgid "64-bit %s GB ISO for <strong>Linux</strong>."
-msgstr "64 bites, %s GB méretű ISO <strong>Linux</strong>hoz"
+msgstr "64 bites, %s GB méretű ISO <strong>Linuxhoz</strong>"
 
 #: data/content/workstation/download/index.html:46
 #: data/content/workstation/prerelease/index.html:25
 #, python-format
 msgid "<a href=\"%s\">Install via DNF</a> if you are already on Fedora."
-msgstr "<a href=\"%s\">Telepítés a DNF révén</a>, ha már Fedorát használ."
+msgstr "<a href=\"%s\">Telepítés DNF-fel</a>, ha már Fedorát használ."
 
 #: data/content/workstation/download/index.html:50
 #: data/content/workstation/download/index.html:110
@@ -2032,7 +2130,7 @@ msgstr "<a href=\"%s\">Telepítés a DNF révén</a>, ha már Fedorát használ.
 #: data/content/workstation/prerelease/index.html:118
 #, python-format
 msgid "%s MB Fedora Media Writer for <strong>Windows</strong>"
-msgstr "%s MB méretű Fedora médiaíró <strong>Windows</strong>-hoz"
+msgstr "%s MB méretű Fedora médiaíró <strong>Windowsra</strong>"
 
 #: data/content/workstation/download/index.html:52
 #: data/content/workstation/download/index.html:57
@@ -2072,6 +2170,11 @@ msgid ""
 "right) of Fedora Workstation on a USB flash drive. You may then run the live"
 " version of Fedora Workstation from your USB flash drive."
 msgstr ""
+"A Fedora Workstationt a Fedora médiaíró biztosítja. Töltse le a programot a "
+"fenti letöltési hivatkozással, és futtassa a rendszerén, követve a "
+"kérdéseket készítsen egy Live verziót (lásd jobbra: „Mit jelent az hogy "
+"Live?”) a Fedora Workstationből egy USB flash meghajtóra. Aztán futtathatja "
+"a Fedora Workstationt az USB meghajtóról."
 
 #: data/content/workstation/download/index.html:72
 #: data/content/workstation/prerelease/index.html:100
@@ -2083,6 +2186,11 @@ msgid ""
 "Media Writer application, and follow the on-screen prompts to complete "
 "installation."
 msgstr ""
+"Ha szeretné, akkor telepítheti a Fedora Workstation a laptopra vagy asztali "
+"számítógépre, ha legalább 1 GHz-es processzora, 1 GB RAM-ja, és 10 GB szabad"
+" tárhelye van. Ehhez futtassa a Fedora Workstation Live verzióját az USB "
+"meghajtójáról azon a gépen, amelyre telepíteni szeretné, és futtassa a "
+"Fedora telepítőjét az asztalról."
 
 #: data/content/workstation/download/index.html:74
 #: data/content/workstation/prerelease/index.html:102
@@ -2119,6 +2227,10 @@ msgid ""
 "system incorrectly or you would like to download a different version, please"
 " click the \"View all platform downloads\" button below."
 msgstr ""
+"Azt észleltük, hogy <strong>Max OS X-t</strong> futtat, és ezt a verziót "
+"kínáltuk letöltésre. Ha rosszul észleltük az operációs rendszerét, vagy egy "
+"másik verziók kíván letölteni, akkor kattintson alább az „Összes platform "
+"letöltéseinek megjelenítése” gombra."
 
 #: data/content/workstation/download/index.html:85
 msgid ""
@@ -2127,6 +2239,10 @@ msgid ""
 " incorrectly or you would like to download a different version, please click"
 " the \"View all platform downloads\" button below."
 msgstr ""
+"Azt észleltük, hogy <strong>Linuxot</strong> futtat, és ezt a verziót "
+"kínáltuk letöltésre. Ha rosszul észleltük az operációs rendszerét, vagy egy "
+"másik verziók kíván letölteni, akkor kattintson alább az „Összes platform "
+"letöltéseinek megjelenítése” gombra."
 
 #: data/content/workstation/download/index.html:88
 msgid ""
@@ -2135,6 +2251,10 @@ msgid ""
 "system incorrectly or you would like to download a different version, please"
 " click the \"View all platform downloads\" button below."
 msgstr ""
+"Azt észleltük, hogy <strong>Windowst</strong> futtat, és ezt a verziót "
+"kínáltuk letöltésre. Ha rosszul észleltük az operációs rendszerét, vagy egy "
+"másik verziók kíván letölteni, akkor kattintson alább az „Összes platform "
+"letöltéseinek megjelenítése” gombra."
 
 #: data/content/workstation/download/index.html:92
 msgid "View all platform downloads"
@@ -2143,7 +2263,7 @@ msgstr "Minden platform letöltéseinek megtekintése"
 #: data/content/workstation/download/index.html:122
 #: data/content/workstation/prerelease/index.html:127
 msgid "Available via DNF for <strong>Fedora</strong>"
-msgstr "Elérhető a DNF révén a <strong>Fedorához</strong>"
+msgstr "Elérhető a DNF-fel a <strong>Fedorához</strong>"
 
 #: data/content/workstation/download/index.html:123
 #: data/content/workstation/prerelease/index.html:128
@@ -2186,11 +2306,11 @@ msgstr "32 bites, %s MB-os lemezkép"
 #: data/content/workstation/download/index.html:180
 #, python-format
 msgid "<a href=\"%(fmagazine_url)s\"><strong>Release Announcement</strong></a>"
-msgstr ""
+msgstr "<a href=\"%(fmagazine_url)s\"><strong>Kiadási bejelentés</strong></a>"
 
 #: data/content/workstation/download/index.html:181
 msgid "Read the full Release Announcement on Fedora Magazine."
-msgstr ""
+msgstr "Olvassa el a teljes Kiadási bejelentést a Fedora Magazine-ban."
 
 #: data/content/workstation/download/index.html:182
 msgid ""
@@ -2205,18 +2325,24 @@ msgid ""
 "Learn about changes since the last version of Fedora as well as minimum "
 "requirements and recommendations for running Fedora."
 msgstr ""
+"Ismerje meg a változásokat a legutóbbi Fedora kiadás óta, valamint a "
+"minimális követelményeket és ajánlásokat a Fedora futtatásához."
 
 #: data/content/workstation/download/index.html:184
 msgid ""
 "<a href=\"//docs.fedoraproject.org/install-guide\"><strong>Installation "
 "Guide</strong></a>"
 msgstr ""
+"<a href=\"//docs.fedoraproject.org/install-guide\"><strong>Telepítési "
+"útmutató</strong></a>"
 
 #: data/content/workstation/download/index.html:185
 msgid ""
 "We recommend you look through this before installing to your system, since "
 "it answers many common questions."
 msgstr ""
+"Javasoljuk, hogy nézze át ezt a rendszer telepítése előtt, mivel számos "
+"gyakori kérdésre választ ad."
 
 #: data/content/workstation/download/index.html:186
 #: data/content/workstation/prerelease/index.html:166
@@ -2236,7 +2362,7 @@ msgstr ""
 #: data/content/workstation/download/index.html:189
 #: data/content/workstation/prerelease/index.html:171
 msgid "What does \"Live\" mean?"
-msgstr ""
+msgstr "Mit jelent az, hogy „Live”?"
 
 #: data/content/workstation/download/index.html:190
 #: data/content/workstation/prerelease/index.html:172
@@ -2245,6 +2371,9 @@ msgid ""
 "can run right away off of a USB drive. You can use the Live image to test "
 "and play with Fedora without making changes to your hard disk."
 msgstr ""
+"A Fedora médaíró egy teljes, futó Fedora Workstationt fog készíteni, amit "
+"azonnal futtathat az USB meghajtóról. Használhatja a Live lemezképet hogy "
+"kipróbálja a Fedorát, mielőtt módosításokat végezne a merevlemezén."
 
 #: data/content/workstation/download/index.html:191
 #: data/content/workstation/prerelease/index.html:173
@@ -2252,6 +2381,8 @@ msgid ""
 "When you are ready, you can install Fedora to your hard disk from within "
 "this \"live\" version of Fedora Workstation."
 msgstr ""
+"Ha készen áll, akkor telepítheti a Fedorát a merevlemezése a Fedora "
+"Workstation „Live” verziójából."
 
 #: data/content/workstation/download/index.html:196
 #: data/templates/footer.html:43
@@ -2293,6 +2424,8 @@ msgstr "A Fedora Workstation előzetes kiadásainak futtatása"
 #: data/content/workstation/prerelease/index.html:83
 msgid "To run a prerelease version of Fedora Workstation, you will need:"
 msgstr ""
+"A Fedora Workstation kiadás előtti verziójának futtatásához ezekre lesz "
+"szüksége:"
 
 #: data/content/workstation/prerelease/index.html:85
 msgid "Fedora Media Writer (Download available below)"
@@ -2304,20 +2437,25 @@ msgid ""
 "<a href=\"%s\">A live image ISO of the pre-release version of Fedora</a> you"
 " wish to run"
 msgstr ""
+"<a href=\"%s\">Egy Live ISO lemezkép a Fedora kiadás előtti "
+"változatához</a>, amelyet futtatni szeretne"
 
 #: data/content/workstation/prerelease/index.html:89
 msgid ""
 "WARNING: This procedure destroys all data on your USB media. Make sure to "
 "back up any important files from your USB media before you do this."
 msgstr ""
+"FIGYELMEZTETÉS: Ez a folyamat elpusztít minden adatot az USB médián. "
+"Készítsen másolatot minden fontos fájlról az USB médiáról, mielőtt ezt "
+"megteszi."
 
 #: data/content/workstation/prerelease/index.html:91
 msgid "Download the Fedora Media Writer app below."
-msgstr ""
+msgstr "Töltse le a Fedora médiaírót lent."
 
 #: data/content/workstation/prerelease/index.html:92
 msgid "Download the desired ISO image."
-msgstr ""
+msgstr "Töltse le a kívánt ISO lemezképet."
 
 #: data/content/workstation/prerelease/index.html:93
 msgid ""
@@ -2349,12 +2487,18 @@ msgid ""
 " to create live media, you may need to restore it to factory settings.  The "
 "app will ask you whether to do so in this case."
 msgstr ""
+"Helyezze be az USB meghajtót a számítógépbe. Ha már előzőleg egy Live média "
+"létrehozására használta, akkor lehet hogy vissza kell állítania a gyári "
+"beállításokat. Az app meg fogja kérdezni, hogy ezt szeretné-e."
 
 #: data/content/workstation/prerelease/index.html:98
 msgid ""
 "Select \"Create Live USB\" to write the image. Wait until the process is "
 "finished before you remove the media and close the app."
 msgstr ""
+"Válassza a „Live USB készítése” lehetőséget a lemezkép kiírásához. Várjon "
+"amíg a folyamat befejeződik, mielőtt eltávolítja a médiát, és bezárja az "
+"alkalmazást."
 
 #: data/content/workstation/prerelease/index.html:145
 msgid "Validate 64-bit!"
@@ -2461,7 +2605,7 @@ msgstr "Fedora Server beszerzése"
 
 #: data/templates/footer.html:42
 msgid "Get Fedora Atomic"
-msgstr ""
+msgstr "Fedora Atomic beszerzése"
 
 #: data/templates/footer.html:45
 msgid "Fedora ARM<span class=\"sup\">®</span>"
@@ -2469,7 +2613,7 @@ msgstr "Fedora ARM<span class=\"sup\">®</span>"
 
 #: data/templates/footer.html:46
 msgid "Alternative Downloads"
-msgstr ""
+msgstr "Alternatív letöltési lehetőségek"
 
 #: data/templates/footer.html:53
 msgid "Support"
@@ -2537,6 +2681,8 @@ msgid ""
 "Please send any comments or corrections to the <a href=\"//pagure.io/fedora-"
 "websites\">websites team</a>."
 msgstr ""
+"A megjegyzéseit és javításait a <a href=\"//pagure.io/fedora-"
+"websites\">weboldalakért felelős csapatnak</a> küldje el."
 
 #: data/templates/footer.html:95
 msgid "Change Language"
