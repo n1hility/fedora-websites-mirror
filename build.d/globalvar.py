@@ -2,40 +2,40 @@
 # -*- coding: utf-8 -*-
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
 release={
-    'prev_id':     '24',
-    'curr_id':     '25',
+    'prev_id':     '25',
+    'curr_id':     '26',
     'next_id':     '26',
     'curr_name':   '',
     'next_name':   '',
-    'curr_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  'Beta',         # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_alt_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_AMI_state':  'Beta',   # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_atomic_state':  'Pre-Release',   # No Alpha/Beta for Atomic Host
-    'prev_arm_id': '24',
-    'prev_alt_id': '24',
-    'prev_cloud_id': '24',
-    'prev_atomic_id': '24',
-    'curr_arm_id': '25',
-    'curr_alt_id': '25',
-    'curr_cloud_id': '25',
+    'curr_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_alt_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_AMI_state':  '',   # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_atomic_state':  '',   # No Alpha/Beta for Atomic Host
+    'prev_arm_id': '25',
+    'prev_alt_id': '25',
+    'prev_cloud_id': '25',
+    'prev_atomic_id': '25',
+    'curr_arm_id': '26',
+    'curr_alt_id': '26',
+    'curr_cloud_id': '26',
     'curr_atomic_id': '25',
-    'curr_cloud_AMI_id': '25',
-    'next_arm_id': '26',
-    'next_alt_id': '26',
-    'next_cloud_id': '26',
+    'curr_cloud_AMI_id': '26',
+    'next_arm_id': '27',
+    'next_alt_id': '27',
+    'next_cloud_id': '27',
     'next_atomic_id': '26',
-    'next_cloud_AMI_id': '26',
+    'next_cloud_AMI_id': '27',
     'composedate': '20160616',
     'unofficial_compose': '20160614',
     'alt_composedate': '20161118',
     # Fedora Media Writer
     'fmw': '4.1.0',
     # These variables are only necessary to keep fedoraproject.org working
-    'curr_ppc64_id': '25',
-    'prev_ppc64_id': '24',
-    'curr_s390_id': '25',
+    'curr_ppc64_id': '26',
+    'prev_ppc64_id': '25',
+    'curr_s390_id': '26',
     # Note that atomic values here get overwritten by the twoweek script.
     'atomic_composedate': '20160616',
     'pre_cloud_composedate': '20150915',
@@ -48,11 +48,11 @@ release={
     # Note that atomic values here get overwritten by the twoweek script.
     'pre_cloud_atomic_composedate': '20150915',
     'pre_cloud_AMI_atomic_composedate': '20150915',
-    'RC_gold': '1.3',             # insert the number of the RC version declared GOLD
-    'RC_build': '1.3',            # sometimes releng use the RC build
-    'RC_gold_aarch64': '1.3',     # RC Gold for aarch64
-    'RC_gold_ppc64': '1.2',       # RC Gold for ppc64
-    'RC_gold_s390x': '1.3',       # RC Gold for s390x
+    'RC_gold': '1.5',             # insert the number of the RC version declared GOLD
+    'RC_build': '1.5',            # sometimes releng use the RC build
+    'RC_gold_aarch64': '1.5',     # RC Gold for aarch64
+    'RC_gold_ppc64': '1.5',       # RC Gold for ppc64
+    'RC_gold_s390x': '1.5',       # RC Gold for s390x
     'RC_pre_gold': '1.4',         # insert the number of the prerelease RC version declared GOLD
     'RC_pre_build': '4',        # sometimes releng use the RC build
     'RC_pre_gold_aarch64': '1.4', # Pre RC Gold for aarch64
@@ -136,18 +136,20 @@ iso_size={
     # These variables are only necessary to keep fedoraproject.org working
     's390_DVD':            '1.5',
     # Spins
-    'i686_Live_KDE':       '1.4',       # In GB
-    'x86_64_Live_KDE':     '1.3',       # In GB
-    'i686_Live_LXDE':      '999',       # In MB
-    'x86_64_Live_LXDE':    '911',       # In MB
-    'i686_Live_Xfce':      '1.1',       # In GB
-    'x86_64_Live_Xfce':    '1.0',       # In GB
-    'i686_Live_Mate':      '1.4',       # In GB
-    'x86_64_Live_Mate':    '1.4',       # In GB
-    'i686_Live_Soas':      '779',       # In MB
-    'x86_64_Live_Soas':    '700',       # In MB
-    'i686_Live_Cinnamon':   '1.4',       # In GB
-    'x86_64_Live_Cinnamon': '1.3',       # In GB
+    'i686_Live_KDE':       '1.5',       # In GB
+    'x86_64_Live_KDE':     '1.4',       # In GB
+    'i686_Live_LXDE':      '1.0',       # In GB
+    'x86_64_Live_LXDE':    '936',       # In MB
+    'i686_Live_LXQt':      '1.0',       # In GB
+    'x86_64_Live_LXQt':    '958',       # In MB
+    'i686_Live_Xfce':      '1.2',       # In GB
+    'x86_64_Live_Xfce':    '1.1',       # In GB
+    'i686_Live_Mate':      '1.6',       # In GB
+    'x86_64_Live_Mate':    '1.5',       # In GB
+    'i686_Live_Soas':      '854',       # In MB
+    'x86_64_Live_Soas':    '768',       # In MB
+    'i686_Live_Cinnamon':   '1.5',       # In GB
+    'x86_64_Live_Cinnamon': '1.4',       # In GB
     # Spins prerelease
     'pre_i686_Live_KDE':    '1.5',       # In GB
     'pre_x86_64_Live_KDE':  '1.4',       # In GB
@@ -165,21 +167,26 @@ iso_size={
     'pre_x86_64_Live_LXQt':  '952',      # In MB
     # Labs
     'i686_Live_Security':  '1.2',       # In GB
-    'x86_64_Live_Security':'1.1',       # In GB
-    'i686_Live_Games':     '3.8',       # In GB
+    'x86_64_Live_Security':'1.2',       # In GB
+    'i686_Live_Games':     '3.9',       # In GB
     'x86_64_Live_Games':   '3.8',       # In GB
     'i686_Live_Elab':      '2.5',       # In GB
     'x86_64_Live_Elab':    '2.5',       # In GB
     'i686_Live_Design':    '2.1',       # In GB
-    'x86_64_Live_Design':  '2.1',       # In GB
+    'x86_64_Live_Design':  '2.0',       # In GB
     'i686_Live_Sci-kde':   '2.9',       # In GB
     'x86_64_Live_Sci-kde': '2.9',       # In GB
-    'i686_Live_Robotics':  '2.3',       # In GB
-    'x86_64_Live_Robotics':'2.2',       # In GB
+    'i686_Live_Robotics':  '2.5',       # In GB
+    'x86_64_Live_Robotics':'2.4',       # In GB
     'i686_Live_Jam':       '2.0',       # In GB
     'x86_64_Live_Jam':     '1.9',       # In GB
-    'i686_Live_Astronomy': '2.5',       # In GB
-    'x86_64_Live_Astronomy':'2.4',      # In GB
+    'i686_Live_Astronomy': '2.6',       # In GB
+    'x86_64_Live_Astronomy':'2.5',      # In GB
+    'i686_Live_Py_Class':  '1.5',       # In GB
+    'x86_64_Live_Py_Class':'1.4',       # In GB
+    'libvirt_Py_Class':    '1.5',     	# In MB
+    'virtualbox_Py_Class': '1.4',   	# In MB
+    'ARM_Py_Class':		   '1.0',   	# In GB
     # Labs prerelease
     'pre_i686_Live_Security':  '1.2',   # In GB
     'pre_x86_64_Live_Security':'1.1',   # In GB
@@ -200,20 +207,20 @@ iso_size={
     'pre_i686_Live_Python':    '1.5',   # In GB
     'pre_x86_64_Live_Python':  '1.4',   # In GB
     # Server
-    'x86_64_server_DVD':   '1.9',       # In GB
-    'i386_server_DVD':     '2.0',       # In GB
+    'x86_64_server_DVD':   '2.2',       # In GB
+    'i386_server_DVD':     '2.3',       # In GB
     'x86_64_server_net':   '484',       # In MB
-    'i386_server_net':     '464',       # In MB
+    'i386_server_net':     '540',       # In MB
     # Server prerelease
     'pre_x86_64_server_DVD': '2.8',     # In GB
     'pre_i386_server_DVD':   '2.9',     # In GB
     'pre_x86_64_server_net': '473',     # In MB
     'pre_i386_server_net':   '525',     # In MB
     # Workstation
-    'x86_64_workstation':  '1.3',       # In GB
-    'i386_workstation':    '1.4',       # In GB
-    'x86_64_workstation_net': '464',    # In MB
-    'i386_workstation_net': '520',      # In MB
+    'x86_64_workstation':  '1.5',       # In GB
+    'i386_workstation':    '1.6',       # In GB
+    'x86_64_workstation_net': '482',    # In MB
+    'i386_workstation_net': '537',      # In MB
     # Workstation prerelease
     'pre_x86_64_workstation':  '1.4',   # In GB
     'pre_i386_workstation':    '1.5',   # In GB
@@ -221,13 +228,13 @@ iso_size={
     'pre_i386_workstation_net': '525',  # In MB
     # ARM
     'ARM_Workstation':     '1.2',       # In GB
-    'ARM_Server':          '562',       # In MB
+    'ARM_Server':          '2.1',       # In GB
     'ARM_Minimal':         '441',       # In MB
-    'ARM_KDE':             '1.5',       # In GB
-    'ARM_Xfce':            '1.0',       # In MB
+    'ARM_KDE':             '1.2',       # In GB
+    'ARM_Xfce':            '1.1',       # In MB
     'ARM_LXDE':            '943',       # In MB
     'ARM_Mate':            '1.3',       # In GB
-    'ARM_SoaS':            '743',       # In MB
+    'ARM_SoaS':            '725',       # In MB
     # ARM prerelease
     'pre_ARM_Workstation': '1.2',       # In GB
     'pre_ARM_Server':      '594',       # In MB
@@ -240,12 +247,12 @@ iso_size={
     'pre_ARM_Cinnamon':    '780',       # In MB
     'pre_ARM_SoaS':        '771',       # In MB
     # Cloud
-    'raw_x86_64_cloud':    '123',       # In MB
+    'raw_x86_64_cloud':    '148',       # In MB
     'raw_i386_cloud':      '143',       # In MB
-    'qcow2_x86_64_cloud':  '188',       # In MB
+    'qcow2_x86_64_cloud':  '239',       # In MB
     'qcow2_i386_cloud':    '216',       # In MB
-    'VBvag_cloud':         '208',       # In MB
-    'libvag_cloud':        '199',       # In MB
+    'VBvag_cloud':         '228',       # In MB
+    'libvag_cloud':        '219',       # In MB
     'x86_64_docker':       '40',        # In MB
     'raw_i386_cloud':      '144',       # In MB
     # Note that atomic values here get overwritten by the twoweek script.
@@ -281,8 +288,8 @@ iso_size={
     'manual_pre_atomic_iso':          '923',   # In MB
 
     # Everything release
-    'x86_64_ev':        '477',   #In MB
-    'i386_ev':          '465',   #In MB
+    'x86_64_ev':        '482',   #In MB
+    'i386_ev':          '538',   #In MB
     # Everything prerelease
     'pre_x86_64_ev':        '471',   #In MB
     'pre_i386_ev':          '507',   #In MB

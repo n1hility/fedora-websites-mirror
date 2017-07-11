@@ -65,6 +65,15 @@ $(document).ready(function(){
         window.location = 'jam-download-splash?file='+linkLocation;
     });
 
+    // redirect download links to the Python Classroom splash page
+    $("a.python-classroom-download-splash").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+
+        // this passes the URL path to the Robotics splash page
+        window.location = 'python-classroom-download-splash?file='+linkLocation;
+    });
+
     // redirect download links to the Robotics splash page
     $("a.robotics-download-splash").click(function(event){
         event.preventDefault();

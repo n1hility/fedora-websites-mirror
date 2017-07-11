@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Python Classroom')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/python-classroom/header.html" />
+
+  <header id="head">
+    <div class="col-xs-12 text-center widewrapper copr-python-classroom">
+    </div>
+    <div class="container product-feature">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-justify top-space bottom-space">
+          <p>${_('One of the benefits of Fedora for Python developers is the ease of setting up Python development. The Fedora Python Classroom Lab makes it even easier for teachers and instructors to use Fedora in their classrooms or workshops. Ready to use operating system with important stuff pre-installed - either with GNOME or as a headless environment for Docker or Vagrant. Teach Python on Fedora, with Fedora, using the stuff you love: IPython, Jupyter Notebook, multiple Pythons, virtualenvs, tox, git and more')}</p>
+          <p>${_('The Fedora Python Classroom Lab comes in 3 variants. Either you can run it in graphical mode with GNOME, or you can virtualize it with Vagrant or run it in a Docker container. You choose what fits your teaching environment the best.')}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature main-head">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/python-classroom/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Applications -->
+  <div class="jumbotron whitebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>${_('Screenshots')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <a href="${path}/static/images/python-classroom/screenshot1.png">
+            <img src="${path}/static/images/python-classroom/screenshot1.png" alt="Screenshot of Python Classroom" />
+          </a>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <a href="${path}/static/images/python-classroom/screenshot2.png">
+            <img src="${path}/static/images/python-classroom/screenshot2.png" alt="Screenshot of Python Classroom" />
+          </a>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <a href="${path}/static/images/python-classroom/screenshot3.png">
+            <img src="${path}/static/images/python-classroom/screenshot3.png" alt="Screenshot of Python Classroom" />
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>${_('Featured Applications')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+            <img src="${path}/static/images/python-classroom/pypy.png" alt="PyPy Logo" />
+            <h4>${Markup(_('Multiple Pythons'))}</h4>
+            <p>${_('Multiple implementations of the Python programming language, including CPython 3.6, 2.7 and PyPy 3.3')}</p>
+            <a href="https://developer.fedoraproject.org/tech/languages/python/multiple-pythons.html">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          <img src="${path}/static/images/python-classroom/sympy.png" alt="Scientific Python" />
+            <h4>${_('Scientific Python stack')}</h4>
+            <p>${_('All you need to learn or teach science in Python including SciPy')}</p>
+            <a href="https://developer.fedoraproject.org/tech/languages/python/scipy.html">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/python-classroom/ipython.png" alt="ipython" />
+          	<h4>${_('IPython')}</h4>
+          	<p>${_('An enhanced interactive Python shell')}</p>
+          	<a href="https://ipython.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/python-classroom/jupyter-notebook.png" alt="Jupyter Notebook" />
+          	<h4>${_('Jupyter Notebook')}</h4>
+          	<p>${_('A web-based notebook environment for interactive computing and visualizations')}</p>
+          	<a href="http://jupyter.org">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/python-classroom/git.png" alt="git" />
+          	<h4>${_('git')}</h4>
+          	<p>${_('Popular version control system')}</p>
+          	<a href="https://git-scm.com/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/python-classroom/python.png" alt="Python Logo" />
+          	<h4>${_('tox')}</h4>
+          	<p>${_('virtualenv management and test command line tool')}</p>
+          	<a href="http://tox.readthedocs.io/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/python-classroom/python.png" alt="Python Logo" />
+          	<h4>${_('virtual environments')}</h4>
+          	<p>${_('Create isolated python environments')}</p>
+          	<a href="https://developer.fedoraproject.org/tech/languages/python/python-installation.html">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+          	<img src="${path}/static/images/python-classroom/ninja-ide.png" alt="Ninja IDE" />
+          	<h4>${_('Ninja IDE')}</h4>
+          	<p>${_('Integrated Development Environment for Python')}</p>
+          	<a href="http://ninja-ide.org/">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <div class="border">
+	      	<img src="${path}/static/images/python-classroom/idle.png" alt="Python 3 IDLE" />
+          	<h4>${_('Python 3 IDLE')}</h4>
+          	<p>${_('Python’s Integrated Development and Learning Environment')}</p>
+          	<a href="https://docs.python.org/3/library/idle.html">${Markup(_('Learn More &gt;'))}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Download -->
+    <div class="container using product-feature">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/python-classroom/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <xi:include href="../../templates/python-classroom/supportresources.html" />
+
+  </body>
+</html>
