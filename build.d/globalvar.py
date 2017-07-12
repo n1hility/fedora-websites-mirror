@@ -233,6 +233,7 @@ iso_size={
     'ARM_KDE':             '1.2',       # In GB
     'ARM_Xfce':            '1.1',       # In MB
     'ARM_LXDE':            '943',       # In MB
+    'ARM_LXQt':            '902',       # In MB
     'ARM_Mate':            '1.3',       # In GB
     'ARM_SoaS':            '725',       # In MB
     # ARM prerelease
