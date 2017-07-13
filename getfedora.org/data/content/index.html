@@ -50,7 +50,9 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 text-center index">
-              <h3>${Markup(_('Fedora %(rel)s released! Get it now.')) % {'rel':global_variables.release['curr_id']}}</h3>
+              <h3>
+                <a href="https://fedoramagazine.org/fedora-26-is-here/">${Markup(_('Fedora %(rel)s released!')) % {'rel':global_variables.release['curr_id']}}</a> ${_('Get it now.')}
+              </h3>
             </div>
           </div>
         </div>

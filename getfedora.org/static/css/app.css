@@ -282,7 +282,7 @@ margin-top:4px;
 .newsbox h2,
 .newsbox h3 {
   margin-top: 22px;
-  color: #fff;
+  color: rgba(255,255,255,0.7);
 }
 
 .newsbox .index h3 {
@@ -290,11 +290,15 @@ margin-top:4px;
   color: #fff;
 }
 
-.newsbox a,
+.newsbox a{
+  color: rgba(255,255,255,1);
+  border-bottom: 1px dotted rgba(255,255,255,0.4);
+}
+
 .newsbox a:hover,
 .newsbox a:active {
   text-decoration: none;
-  color: #fff;
+  color: rgba(255,255,255,0.7);
 }
 
 .product-box {
