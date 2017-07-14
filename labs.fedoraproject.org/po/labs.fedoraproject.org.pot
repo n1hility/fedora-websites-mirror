@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-07-09 17:08+0200\n"
+"POT-Creation-Date: 2017-07-14 16:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -722,24 +722,17 @@ msgstr ""
 msgid "General Help Using Fedora"
 msgstr ""
 
-#: data/content/astronomy/download/index.html:161
 #: data/content/astronomy/index.html:160
-#: data/content/design-suite/download/index.html:167
-#: data/content/design-suite/index.html:160
-#: data/content/games/download/index.html:161 data/content/games/index.html:160
-#: data/content/jam/download/index.html:161 data/content/jam/index.html:160
-#: data/content/robotics/download/index.html:161
-#: data/content/robotics/index.html:160
-#: data/content/scientific/download/index.html:161
-#: data/content/scientific/index.html:160
-#: data/content/security/download/index.html:161
-#: data/content/security/index.html:160
+#: data/content/design-suite/index.html:160 data/content/games/index.html:160
+#: data/content/jam/index.html:160 data/content/robotics/index.html:160
+#: data/content/scientific/index.html:160 data/content/security/index.html:160
 #: data/templates/python-classroom/supportresources.html:33
 #, python-format
 msgid ""
 "Sometimes you may encounter an issue with this spin that you can get help"
 " with using general Fedora support resources. A list of resources is "
-"available at the <a href=\"%s\">Fedora “Get Help” page</a>."
+"available at the <a href=\"%s\">Fedora <strong>Get Help</strong> "
+"page</a>."
 msgstr ""
 
 #: data/content/astronomy/download/astronomy-download-splash.html:8
@@ -1040,6 +1033,20 @@ msgid ""
 " via BitTorrent. In this case you will need to install a BitTorrent "
 "client in order to download a spin. If you cannot use Bittorrent, some "
 "spins offer alternative download methods."
+msgstr ""
+
+#: data/content/astronomy/download/index.html:161
+#: data/content/design-suite/download/index.html:167
+#: data/content/games/download/index.html:161
+#: data/content/jam/download/index.html:161
+#: data/content/robotics/download/index.html:161
+#: data/content/scientific/download/index.html:161
+#: data/content/security/download/index.html:161
+#, python-format
+msgid ""
+"Sometimes you may encounter an issue with this spin that you can get help"
+" with using general Fedora support resources. A list of resources is "
+"available at the <a href=\"%s\">Fedora “Get Help” page</a>."
 msgstr ""
 
 #: data/content/design-suite/index.html:8
