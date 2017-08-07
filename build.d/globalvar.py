@@ -184,8 +184,8 @@ iso_size={
     'x86_64_Live_Astronomy':'2.5',      # In GB
     'i686_Live_Py_Class':  '1.5',       # In GB
     'x86_64_Live_Py_Class':'1.4',       # In GB
-    'libvirt_Py_Class':    '1.5',     	# In MB
-    'virtualbox_Py_Class': '1.4',   	# In MB
+    'libvirt_Py_Class':    '754',     	# In MB
+    'virtualbox_Py_Class': '794',   	# In MB
     'ARM_Py_Class':		   '1.0',   	# In GB
     # Labs prerelease
     'pre_i686_Live_Security':  '1.2',   # In GB
