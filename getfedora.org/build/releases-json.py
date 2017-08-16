@@ -24,7 +24,7 @@ releases_to_report = [
 
 for rel in releases_to_report:
     for img in rel.all_images:
-        location = "/".join((rel.location, img['url']))
+        location = "/".join((rel.location, img['path']))
         h = hashify(
                 rel.version,
                 rel.milestone,
