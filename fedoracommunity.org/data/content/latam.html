@@ -2,15 +2,9 @@
 import math
 from operator import itemgetter
 contries = [
-            {'name':'Argentina',     'title':_('Fedora Argentina Community'),      'url':'http://proyectofedora.org/argentina'},
             {'name':'Brasil',        'title':_('Fedora Brazil Portal'),            'url':'http://www.projetofedora.org'},
             {'name':'Chile',         'title':_('Fedora Chile Community'),          'url':'http://www.proyectofedora.cl'},
-            {'name':'Colombia',      'title':_('Fedora Colombia Community'),       'url':'http://www.proyectofedora.org/colombia'},
-            {'name':'Latin America', 'title':_('Fedora Latin America Community'),  'url':'http://proyectofedora.org'},
-            {'name':'México',        'title':_('Fedora Mexico Community'),         'url':'http://www.proyectofedora.org/mexico'},
             {'name':'Nicaragua',     'title':_('Fedora Nicaragua Community'),      'url':'http://fedora.org.ni'},
-            {'name':'Panamá',        'title':_('Fedora Panama Community'),         'url':'http://www.proyectofedora.org/panama'},
-            {'name':'Perú',          'title':_('Fedora Peru Community'),           'url':'http://proyectofedora.org/peru'},
             {'name':'Venezuela',     'title':_('Fedora Venezuela Community'),      'url':'http://www.fedora-ve.org'}
 ]
 region="latam"
@@ -37,13 +31,8 @@ index=math.ceil(len(contries)/float(2))
 						<h3>${_('Region-Wide Resources')}</h3>
 						<div class="prefix_1">
 						${Markup(_('The Latin America region, including Central &amp; South America, is served by the &lt;a href="%s"&gt;Fedora Ambassadors LATAM group&lt;/a&gt;.' % 'http://fedoraproject.org/wiki/Ambassadors/LATAM'))}
-
 						<table>
-
 							<tr>
-								<th>${_('Website')}</th>
-								<td><a href="http://www.proyectofedora.org">http://www.proyectofedora.org</a></td>
-							</tr><tr>
 								<th>${_('Mailing List')}</th>
 								<td><a href="#">embajadores-fedora-latam@lists.fedoraproject.org</a></td>
 							</tr><tr>
