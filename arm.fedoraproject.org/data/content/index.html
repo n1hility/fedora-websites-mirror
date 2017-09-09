@@ -428,12 +428,100 @@
     </div>
   </div>
 
+  <!-- ARM Labs -->
+  <div class="jumbotron main-head top-space visible-lg hidden-xs hidden-sm hidden-md">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; Labs'))}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 product-feature">
+        <p>${_('These images are for ARM-based devices where a bundle of purpose-drive software is needed.')}</p>
+        </div>
+        <div class="col-lg-9">
+          <div class="white">
+            <div class="col-lg-1">
+            <img src="/static/images/python.png" />
+            </div>
+            <div class="col-lg-4">
+            <h3>${_('Fedora Python-Classroom')}</h3>
+            </div>
+            <div class="col-lg-3">
+            <p>${Markup(_('%sGB raw image')) % global_variables.iso_size['ARM_Python']}</p>
+            </div>
+            <div class="col-lg-4">
+            <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Labs/armhfp/images/Fedora-Python-Classroom-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARM Labs mobile phone -->
+  <div class="jumbotron main-head top-space visible-xs">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; Labs'))}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('These images are for ARM-based devices where a bundle of purpose-drive software is needed.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/python.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Python-Classroom')}</h3>
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Labs/armhfp/images/Fedora-Python-Classroom-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARM Labs mobile tablets -->
+  <div class="jumbotron main-head top-space visible-sm-md hidden-xs hidden-lg">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+        <h2>${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; Labs'))}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+        <p>${_('These images are for ARM-based devices where a bundle of purpose-drive software is needed.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/python.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Python-Classroom')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Labs/armhfp/images/Fedora-Python-Classroom-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Feature: ARM -->
   <div class="jumbotron product-feature bluebox">
     <div class="container">
       <div class="row">
 	    <div class="col-xs-12 caption">
-	      <h2 class="text-center">${_('What is ARM Technology?')}</h2>
+	      <h2 class="text-center">${Markup(_('What is ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; Technology?'))}</h2>
 	      <p class="thin text-justify">${_('ARM microprocessors are the most widely-produced processor family in the world; they have historically been used in cell phones and embedded applications, and are increasingly used in tablet devices and low-power-consumption servers.')}</p>
 	      <p class="thin text-justify">${_('The Fedora ARM project is an initiative to bring Fedora to this processor family. The images provided here are versions of Fedora tailored for running in on ARM-based systems.')}</p>
         </div>

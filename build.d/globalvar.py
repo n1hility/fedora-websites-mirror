@@ -236,6 +236,7 @@ iso_size={
     'ARM_LXQt':            '902',       # In MB
     'ARM_Mate':            '1.3',       # In GB
     'ARM_SoaS':            '725',       # In MB
+    'ARM_Python':          '000',       # In MB
     # ARM prerelease
     'pre_ARM_Workstation': '1.2',       # In GB
     'pre_ARM_Server':      '594',       # In MB
