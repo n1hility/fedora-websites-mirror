@@ -376,6 +376,29 @@
       ])}
 
       ${keys_for_release(
+      _('Fedora 24'),
+      [
+        KeyInfo(
+           _('Primary'),
+            '4096R/81B46521 2015-07-25',
+            '5048 BDBB A5E7 76E5 47B0  9CCC 73BD E983 81B4 6521',
+            ['Fedora (24) &lt;fedora-24-primary@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/81B46521.txt', 'Fedora Project')
+            ])
+      , KeyInfo(
+           _('Secondary'),
+            '4096R/030D5AED 2015-07-27',
+            '8C6E 5A80 A399 BABE 7919  85BA B863 5EEB 030D 5AED',
+            ['Fedora Secondary (24) &lt;fedora-24-secondary@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/030D5AED.txt', 'Fedora Project')
+            ])
+      ])}
+    </div>
+
+    <div class="row">
+      ${keys_for_release(
       _('EPEL 5'),
       [
           KeyInfo(
@@ -387,9 +410,7 @@
               [('https://getfedora.org/static/217521F6.txt', 'Fedora Project')
               ])
       ])}
-    </div>
 
-    <div class="row">
       ${keys_for_release(
       _('EPEL 4'),
       [

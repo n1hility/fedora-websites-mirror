@@ -75,7 +75,6 @@ def main():
 		        ['%(uid_escaped)s'],
 		        None,
 		        [('https://getfedora.org/static/%(kid)s.txt', 'Fedora Project')
-		        ,('http://keys.gnupg.net:11371/pks/lookup?search=0x%(kid)s&amp;op=get', 'keys.gnupg.net')
 		        ])
 """ % locals()
 
