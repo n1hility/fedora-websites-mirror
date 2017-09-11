@@ -97,8 +97,8 @@ path={
 iso_size={
 
     #Media
-    'macosx':             '26.9',       # In MB
-    'windows':            '16.6',       # In MB
+    'macosx':             '24.6',       # In MB
+    'windows':            '23.8',       # In MB
 
     # Legacy
     'x86_64_DVD':          '4.3',       # In GB
