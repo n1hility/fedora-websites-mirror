@@ -148,40 +148,6 @@ def process_dir(dirpath, filenames):
                     feedparse(feedurl[0])
             continue;
         release_date = None
-        if schedule is not None:
-            release_date = schedule(globalvar.release['next_id'])
-
-            # We need to localize the date format. First, set locale to the original format
-            locale.setlocale(locale.LC_ALL, 'en_US')
-
-            # Then convert to time_struct
-            alpha =  time.strptime(release_date[globalvar.release['next_id']]['alpha'], "%Y-%b-%d")
-            beta =  time.strptime(release_date[globalvar.release['next_id']]['beta'], "%Y-%b-%d")
-            final =  time.strptime(release_date[globalvar.release['next_id']]['final'], "%Y-%b-%d")
-
-            # Stort the US format for further processing
-            alpha_us = time.strftime("%Y-%b-%d", alpha)
-            beta_us = time.strftime("%Y-%b-%d", beta)
-            final_us = time.strftime("%Y-%b-%d", final)
-
-            # Let's slice the US date for the calendar png
-
-            beta_cal = beta_us[-2:]
-            final_cal = final_us[-2:]
-
-            # Move to the right locale (if known)
-            try:
-                locale.setlocale(locale.LC_ALL, locale.locale_alias[options.lang.lower()])
-            except:
-                pass
-
-            # Convert back!
-            alpha = convert_date(alpha)
-            beta = convert_date(beta)
-            final = convert_date(final)
-
-            locale.setlocale(locale.LC_ALL, 'en_US')
-            release_date = {'alpha':alpha, 'beta':beta, 'final':final, 'alpha_us':alpha_us, 'beta_us':beta_us, 'final_us':final_us, 'beta_cal':beta_cal, 'final_cal':final_cal}
 
         ec2 = None
         if get_amis is not None:
