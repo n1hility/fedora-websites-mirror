@@ -12,7 +12,7 @@ release={
     'curr_alt_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_cloud_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_cloud_AMI_state':  'Beta',   # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_atomic_state':  'Beta',   # No Alpha/Beta for Atomic Host
+    'curr_atomic_state':  'Pre-Release',   # No Alpha/Beta for Atomic Host
     'prev_arm_id': '25',
     'prev_alt_id': '25',
     'prev_cloud_id': '25',
@@ -68,12 +68,12 @@ release={
     'atomic_age': '???',
     'pre_cloud_atomic_freshness': False,
     'pre_cloud_atomic_age': '???',
-    'manual_pre_atomic_iso_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170611.n.1/Fedora-Atomic-ostree-x86_64-26-20170611.n.1.iso',
-    'manual_pre_atomic_qcow2_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170611.n.1/Fedora-Atomic-26-20170611.n.1.x86_64.qcow2',
-    'manual_pre_atomic_raw_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170611.n.1/Fedora-Atomic-26-20170611.n.1.x86_64.raw.xz',
-    'manual_pre_atomic_VBvag_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170611.n.1/Fedora-Atomic-Vagrant-26-20170611.n.1.x86_64.vagrant-virtualbox.box',
-    'manual_pre_atomic_libvag_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Fedora-26-20170611.n.1/Fedora-Atomic-Vagrant-26-20170611.n.1.x86_64.vagrant-libvirt.box',
-    'manual_pre_atomic_date': '20170611',
+    'manual_pre_atomic_iso_url': 'https://s3.amazonaws.com/fedora-atomic-s3/Atomic/x86_64/iso/Fedora-Atomic-ostree-x86_64-27-20170929.n.0.iso',
+    'manual_pre_atomic_qcow2_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/CloudImages/x86_64/images/Fedora-Atomic-27-20170929.n.0.x86_64.qcow2',
+    'manual_pre_atomic_raw_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/CloudImages/x86_64/images/Fedora-Atomic-27-20170929.n.0.x86_64.raw.xz',
+    'manual_pre_atomic_VBvag_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/CloudImages/x86_64/images/Fedora-Atomic-Vagrant-27-20170929.n.0.x86_64.vagrant-virtualbox.box',
+    'manual_pre_atomic_libvag_cloud_url': 'https://s3.amazonaws.com/fedora-atomic-s3/CloudImages/x86_64/images/Fedora-Atomic-Vagrant-27-20170929.n.0.x86_64.vagrant-libvirt.box',
+    'manual_pre_atomic_date': '20170929',
 }
 
 path={
@@ -283,11 +283,11 @@ iso_size={
     'pre_VBvag_cloud':         '192',   # In MB
     'pre_libvag_cloud':        '184',   # In MB
     # Manual atomic prerelease image sizes go here.
-    'manual_pre_atomic_raw_cloud':    '499',   # In MB
-    'manual_pre_atomic_qcow2_cloud':  '649',   # In MB
-    'manual_pre_atomic_VBvag_cloud':  '629',   # In MB
-    'manual_pre_atomic_libvag_cloud': '614',   # In MB
-    'manual_pre_atomic_iso':          '923',   # In MB
+    'manual_pre_atomic_raw_cloud':    '445',   # In MB
+    'manual_pre_atomic_qcow2_cloud':  '589',   # In MB
+    'manual_pre_atomic_VBvag_cloud':  '574',   # In MB
+    'manual_pre_atomic_libvag_cloud': '561',   # In MB
+    'manual_pre_atomic_iso':          '916',   # In MB
 
     # Everything release
     'x86_64_ev':        '482',   #In MB
@@ -449,25 +449,25 @@ pre_GP2_PV_base_AMI={
 }
 
 pre_HVM_atomic_AMI={
-    'us-east-1':        'ami-0991cb1f',     # Virginia
-    'us-west-2':        'ami-32b1b84b',     # Oregon
-    'us-west-1':        'ami-17fddf77',     # California
-    'eu-west-1':        'ami-e2d7cb84',     # Ireland
-    'eu-central-1':     'ami-78d17517',     # Frankfurt
-    'ap-southeast-1':   'ami-981596fb',     # Singapore
-    'ap-northeast-1':   'ami-a36b65c4',     # Tokyo
-    'ap-southeast-2':   'ami-cca4b2af',     # Sydney
-    'sa-east-1':        'ami-b591f9d9'      # Sao Paolo
+    'us-east-1':        'ami-19b54963',     # Virginia
+    'us-west-2':        'ami-e5d62e9d',     # Oregon
+    'us-west-1':        'ami-9a1121fa',     # California
+    'eu-west-1':        'ami-dec10ba7',     # Ireland
+    'eu-central-1':     'ami-c650e3a9',     # Frankfurt
+    'ap-southeast-1':   'ami-9dee9cfe',     # Singapore
+    'ap-northeast-1':   'ami-e564b083',     # Tokyo
+    'ap-southeast-2':   'ami-59f6163b',     # Sydney
+    'sa-east-1':        'ami-aeea96c2'      # Sao Paolo
 }
 
 pre_GP2_HVM_atomic_AMI={
-    'us-east-1':        'ami-b091cba6',     # Virginia
-    'us-west-2':        'ami-a1b2bbd8',     # Oregon
-    'us-west-1':        'ami-deffddbe',     # California
-    'eu-west-1':        'ami-6bdac60d',     # Ireland
-    'eu-central-1':     'ami-9dd571f2',     # Frankfurt
-    'ap-southeast-1':   'ami-411a9922',     # Singapore
-    'ap-northeast-1':   'ami-6d6c620a',     # Tokyo
-    'ap-southeast-2':   'ami-39a4b25a',     # Sydney
-    'sa-east-1':        'ami-079ff76b'      # Sao Paolo
+    'us-east-1':        'ami-92bb47e8',     # Virginia
+    'us-west-2':        'ami-2bd42c53',     # Oregon
+    'us-west-1':        'ami-51102031',     # California
+    'eu-west-1':        'ami-12c50f6b',     # Ireland
+    'eu-central-1':     'ami-2e56e541',     # Frankfurt
+    'ap-southeast-1':   'ami-d1ec9eb2',     # Singapore
+    'ap-northeast-1':   'ami-f365b195',     # Tokyo
+    'ap-southeast-2':   'ami-98f414fa',     # Sydney
+    'sa-east-1':        'ami-32ea965e'      # Sao Paolo
 }
