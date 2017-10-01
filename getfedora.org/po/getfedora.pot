@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-01 16:08+0200\n"
+"POT-Creation-Date: 2017-10-01 23:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -463,6 +463,7 @@ msgid "Verify your Download!"
 msgstr ""
 
 #: data/content/atomic/download/download-cloud-splash.html:49
+#: data/content/atomic/prerelease/index.html:323
 #: data/content/server/download/server-download-splash.html:44
 #: data/content/workstation/download/ws-download-splash.html:49
 #: data/content/workstation/prerelease/index.html:122
@@ -475,6 +476,7 @@ msgid ""
 msgstr ""
 
 #: data/content/atomic/download/download-cloud-splash.html:52
+#: data/content/atomic/prerelease/index.html:326
 #: data/content/server/download/server-download-splash.html:47
 #: data/content/server/prerelease/index.html:45
 #: data/content/workstation/download/ws-download-splash.html:52
@@ -874,7 +876,7 @@ msgid "64-bit %sMB xz-Compressed Raw Image"
 msgstr ""
 
 #: data/content/atomic/download/index.html:331
-#: data/content/atomic/prerelease/index.html:327
+#: data/content/atomic/prerelease/index.html:335
 #: data/content/server/download/index.html:53
 #: data/content/server/prerelease/index.html:51
 #: data/content/workstation/download/index.html:145
@@ -883,13 +885,13 @@ msgid "Other Downloads"
 msgstr ""
 
 #: data/content/atomic/download/index.html:333
-#: data/content/atomic/prerelease/index.html:329
+#: data/content/atomic/prerelease/index.html:337
 #, python-format
 msgid "Atomic Host ISO image (%sMB)"
 msgstr ""
 
 #: data/content/atomic/download/index.html:334
-#: data/content/atomic/prerelease/index.html:330
+#: data/content/atomic/prerelease/index.html:338
 #, python-format
 msgid "Docker Image (%sMB)"
 msgstr ""
@@ -952,26 +954,26 @@ msgid "Download F%(rel)s Beta images"
 msgstr ""
 
 #: data/content/atomic/download/index.html:363
-#: data/content/atomic/prerelease/index.html:333
+#: data/content/atomic/prerelease/index.html:341
 #: data/content/workstation/download/index.html:179
 #: data/content/workstation/prerelease/index.html:145
 msgid "Resources"
 msgstr ""
 
 #: data/content/atomic/download/index.html:364
-#: data/content/atomic/prerelease/index.html:334
+#: data/content/atomic/prerelease/index.html:342
 msgid ""
 "<a href=\"https://www.projectatomic.io/docs/quickstart/\"><strong>Project"
 " Atomic: Getting Started</strong></a>"
 msgstr ""
 
 #: data/content/atomic/download/index.html:365
-#: data/content/atomic/prerelease/index.html:335
+#: data/content/atomic/prerelease/index.html:343
 msgid "Documentation on getting started using Project Atomic / Atomic Host."
 msgstr ""
 
 #: data/content/atomic/download/index.html:366
-#: data/content/atomic/prerelease/index.html:336
+#: data/content/atomic/prerelease/index.html:344
 msgid ""
 "<a "
 "href=\"https://lists.projectatomic.io/mailman/listinfo/atomic\"><strong>Project"
@@ -979,7 +981,7 @@ msgid ""
 msgstr ""
 
 #: data/content/atomic/download/index.html:367
-#: data/content/atomic/prerelease/index.html:337
+#: data/content/atomic/prerelease/index.html:345
 #, python-format
 msgid ""
 "Join the upstream mailing list at <a "
@@ -987,13 +989,13 @@ msgid ""
 msgstr ""
 
 #: data/content/atomic/download/index.html:368
-#: data/content/atomic/prerelease/index.html:338
+#: data/content/atomic/prerelease/index.html:346
 #, python-format
 msgid "<a href=\"%s\"><strong>Project Atomic: IRC Chat</strong></a>"
 msgstr ""
 
 #: data/content/atomic/download/index.html:369
-#: data/content/atomic/prerelease/index.html:339
+#: data/content/atomic/prerelease/index.html:347
 msgid ""
 "Join the Project Atomic channel <strong>#atomic</strong></a> on "
 "<strong>irc.freenode.org</strong></a>."
@@ -1010,14 +1012,15 @@ msgid "Download F%(rel)s %(state)s images"
 msgstr ""
 
 #: data/content/atomic/download/index.html:386
-#: data/content/atomic/prerelease/index.html:342
+#: data/content/atomic/prerelease/index.html:350
 #: data/content/server/download/index.html:97
 #: data/content/workstation/download/index.html:208
 msgid "Verify"
 msgstr ""
 
 #: data/content/atomic/download/index.html:389
-#: data/content/atomic/prerelease/index.html:345
+#: data/content/atomic/prerelease/index.html:322
+#: data/content/atomic/prerelease/index.html:353
 #: data/content/server/download/index.html:100
 #: data/content/server/prerelease/index.html:41
 #: data/content/workstation/download/index.html:211
@@ -1041,8 +1044,8 @@ msgstr ""
 #, python-format
 msgid ""
 "This is pre-release software and is supported by the <a "
-"href=\"%(team_url)s\">Cloud Working Group</a>. Please direct questions to"
-" their <a href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on "
+"href=\"%(team_url)s\"> Atomic Working Group</a>. Please direct questions "
+"to their <a href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on "
 "freenode."
 msgstr ""
 
