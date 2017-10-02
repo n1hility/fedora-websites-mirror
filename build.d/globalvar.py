@@ -214,7 +214,7 @@ iso_size={
     # Server prerelease
     'pre_x86_64_server_DVD': '2.3',     # In GB
     'pre_i386_server_DVD':   '2.9',     # In GB
-    'pre_x86_64_server_net': '511',     # In MB
+    'pre_x86_64_server_net': '514',     # In MB
     'pre_i386_server_net':   '525',     # In MB
     # Workstation
     'x86_64_workstation':  '1.5',       # In GB
@@ -267,12 +267,12 @@ iso_size={
     'x86_64_docker':       '40',        # In MB
     'atomic_iso':          '918',       # In MB
     # Cloud prerelease
-    'pre_raw_x86_64_cloud':    '149',   # In MB
+    'pre_raw_x86_64_cloud':    '143',   # In MB
     'pre_raw_i386_cloud':      '172',   # In MB
-    'pre_qcow2_x86_64_cloud':  '239',   # In MB
+    'pre_qcow2_x86_64_cloud':  '223',   # In MB
     'pre_qcow2_i386_cloud':    '268',   # In MB
-    'pre_VBvag_cloud':         '227',   # In MB
-    'pre_libvag_cloud':        '218',   # In MB
+    'pre_VBvag_cloud':         '250',   # In MB
+    'pre_libvag_cloud':        '240',   # In MB
     # Note that atomic values here get overwritten by the twoweek script.
     'pre_atomic_raw_cloud':    '???',   # In MB
     'pre_atomic_qcow2_cloud':  '???',   # In MB
@@ -283,10 +283,10 @@ iso_size={
     'pre_VBvag_cloud':         '192',   # In MB
     'pre_libvag_cloud':        '184',   # In MB
     # Manual atomic prerelease image sizes go here.
-    'manual_pre_atomic_raw_cloud':    '445',   # In MB
-    'manual_pre_atomic_qcow2_cloud':  '589',   # In MB
-    'manual_pre_atomic_VBvag_cloud':  '574',   # In MB
-    'manual_pre_atomic_libvag_cloud': '561',   # In MB
+    'manual_pre_atomic_raw_cloud':    '420',   # In MB
+    'manual_pre_atomic_qcow2_cloud':  '555',   # In MB
+    'manual_pre_atomic_VBvag_cloud':  '538',   # In MB
+    'manual_pre_atomic_libvag_cloud': '526',   # In MB
     'manual_pre_atomic_iso':          '916',   # In MB
     # Everything release
     'x86_64_ev':        '482',   #In MB
