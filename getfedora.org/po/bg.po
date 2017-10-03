@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-07-11 22:31+0200\n"
+"POT-Creation-Date: 2017-10-01 23:23+0200\n"
 "PO-Revision-Date: 2016-11-21 02:26-0500\n"
 "Last-Translator: Valentin Laskov <laskov@festa.bg>\n"
 "Language-Team: Bulgarian (http://www.transifex.com/projects/p/fedora-web/language/bg/)\n"
@@ -148,22 +148,22 @@ msgid ""
 "section."
 msgstr ""
 
-#: data/content/index.html:53
+#: data/content/index.html:54
 #, python-format
 msgid "Fedora %(rel)s released! Get it now."
 msgstr ""
 
-#: data/content/index.html:67 data/content/verify.html:39
+#: data/content/index.html:69 data/content/verify.html:39
 #: data/templates/productselector-workstation.html:12
 msgid "Workstation"
 msgstr "Работна станция"
 
-#: data/content/index.html:69 data/content/index.html:85
-#: data/content/index.html:100
+#: data/content/index.html:71 data/content/index.html:87
+#: data/content/index.html:102
 msgid "Download Now"
 msgstr ""
 
-#: data/content/index.html:74 data/content/index.html:127
+#: data/content/index.html:76 data/content/index.html:133
 msgid ""
 "Fedora Workstation is a polished, easy to use operating system for laptop "
 "and desktop computers, with a complete set of tools for developers and "
@@ -174,8 +174,8 @@ msgstr ""
 "творци от всякакъв тип."
 
 #: data/content/atomic/index.html:125 data/content/atomic/index.html:131
-#: data/content/index.html:76 data/content/index.html:91
-#: data/content/index.html:106 data/content/server/index.html:20
+#: data/content/index.html:78 data/content/index.html:93
+#: data/content/index.html:108 data/content/server/index.html:20
 #: data/content/server/index.html:125 data/content/server/index.html:131
 #: data/content/workstation/index.html:20
 #: data/content/workstation/index.html:185
@@ -183,12 +183,12 @@ msgstr ""
 msgid "Download now"
 msgstr "Свалете сега"
 
-#: data/content/index.html:83 data/content/verify.html:51
+#: data/content/index.html:85 data/content/verify.html:51
 #: data/templates/productselector-server.html:13
 msgid "Server"
 msgstr "Сървър"
 
-#: data/content/index.html:89 data/content/index.html:132
+#: data/content/index.html:91 data/content/index.html:138
 msgid ""
 "Fedora Server is a powerful, flexible operating system that includes the "
 "best and latest datacenter technologies. It puts you in control of all your "
@@ -198,13 +198,13 @@ msgstr ""
 "най-новото от технологиите за центрове за данни. Тя Ви предоставя контрол "
 "над цялата Ви инфраструктура и услуги."
 
-#: data/content/index.html:98 data/content/verify.html:60
+#: data/content/index.html:100 data/content/verify.html:60
 #: data/templates/productselector-cloud.html:13
 msgid "Atomic"
 msgstr "Atomic"
 
-#: data/content/atomic/index.html:19 data/content/index.html:104
-#: data/content/index.html:137
+#: data/content/atomic/index.html:19 data/content/index.html:106
+#: data/content/index.html:143
 msgid ""
 "Fedora Atomic provides the best platform for your Linux-Docker-Kubernetes "
 "(LDK) application stack."
@@ -212,7 +212,7 @@ msgstr ""
 "Fedora Atomic предоставя най-добрата платформа за Вашият Linux-Docker-"
 "Kubernetes (LDK) стек приложения."
 
-#: data/content/index.html:163
+#: data/content/index.html:166
 msgid ""
 "Fedora is always free for anyone to use, modify, and distribute. It is built"
 " and used by people across the globe who work together as a community: the "
@@ -222,11 +222,11 @@ msgstr ""
 "разпространение. Тя е създадена и използвана от хора от целия свят, които "
 "работят заедно като общност: това е Проектът Fedora."
 
-#: data/content/index.html:176
+#: data/content/index.html:179
 msgid "Want more Fedora options?"
 msgstr "Искате още варианти на Fedora?"
 
-#: data/content/index.html:195
+#: data/content/index.html:198
 msgid ""
 "The Fedora community also releases <a "
 "href=\"https://arm.fedoraproject.org/\">ARM images</a>, alternate live "
@@ -242,11 +242,11 @@ msgstr ""
 "href=\"https://spins.fedoraproject.org/\">Fedora Разновидности </a> или на "
 "<a href=\"https://labs.fedoraproject.org/\">Fedora Labs</a>."
 
-#: data/content/index.html:202
+#: data/content/index.html:205
 msgid "Be connected & informed."
 msgstr "Бъдете свързани и информирани."
 
-#: data/content/index.html:212
+#: data/content/index.html:215
 msgid ""
 "Want to get <a href=\"http://whatcanidoforfedora.org/\">involved</a>? Find "
 "out what's happening in the <a "
@@ -260,11 +260,11 @@ msgstr ""
 "последните новини и интересни неща в <a "
 "href=\"http://fedoramagazine.org/\">Fedora Magazine</a>."
 
-#: data/content/index.html:222
+#: data/content/index.html:225
 msgid "Read the docs."
 msgstr "Четете документацията."
 
-#: data/content/index.html:232
+#: data/content/index.html:235
 #, python-format
 msgid ""
 "Check out the Release Notes for detailed information on the current release."
@@ -276,11 +276,11 @@ msgstr ""
 "изискванията към системата, вижте <a href=\"%s\"><strong>официалната "
 "документация</strong></a>."
 
-#: data/content/index.html:239
+#: data/content/index.html:242
 msgid "Get help."
 msgstr "Помощ."
 
-#: data/content/index.html:249
+#: data/content/index.html:252
 #, python-format
 msgid ""
 "Need some help with Fedora? Check out <a href=\"%s\">Ask Fedora</a>, where "
@@ -426,16 +426,7 @@ msgstr "Fedora 25"
 msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr "Fedora 25 - други архитектури (AArch64, PPC64, PPC64le, s390 и s390x)"
 
-#: data/content/keys/index.html:102 data/content/verify.html:87
-msgid "Fedora 24"
-msgstr "Fedora 24"
-
 #: data/content/verify.html:88
-msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
-"Fedora 24 - други архитектури (AArch64, PPC64, PPC64le, s390 and s390x)"
-
-#: data/content/verify.html:90
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
@@ -443,15 +434,15 @@ msgstr ""
 "Накрая, след като CHECKSUM файлът е проверен, проверете дали контролната "
 "сума на образа съвпада:"
 
-#: data/content/verify.html:92
+#: data/content/verify.html:90
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr "Ако според резултата файлът е валиден, той е готов за употреба!"
 
-#: data/content/verify.html:93
+#: data/content/verify.html:91
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr "Как да проверя сваления образ върху друга операционна система?"
 
-#: data/content/verify.html:94
+#: data/content/verify.html:92
 msgid "Read these instructions to validate your image."
 msgstr "Следвайте тези инструкции, за да проверите образа."
 
@@ -576,9 +567,10 @@ msgid "Verify your Download!"
 msgstr "Проверете сваленото от Вас!"
 
 #: data/content/atomic/download/download-cloud-splash.html:49
+#: data/content/atomic/prerelease/index.html:323
 #: data/content/server/download/server-download-splash.html:44
 #: data/content/workstation/download/ws-download-splash.html:49
-#: data/content/workstation/prerelease/index.html:142
+#: data/content/workstation/prerelease/index.html:122
 #, python-format
 msgid ""
 "Once you have downloaded an image, verify it for security and integrity. To "
@@ -592,8 +584,9 @@ msgstr ""
 "инструкции</a>."
 
 #: data/content/atomic/download/download-cloud-splash.html:52
+#: data/content/atomic/prerelease/index.html:326
 #: data/content/server/download/server-download-splash.html:47
-#: data/content/server/prerelease/index.html:67
+#: data/content/server/prerelease/index.html:45
 #: data/content/workstation/download/ws-download-splash.html:52
 msgid "Validate!"
 msgstr "Проверете!"
@@ -885,9 +878,9 @@ msgstr ""
 #: data/content/workstation/prerelease/index.html:19
 #: data/content/workstation/prerelease/index.html:23
 #: data/content/workstation/prerelease/index.html:28
-#: data/content/workstation/prerelease/index.html:112
-#: data/content/workstation/prerelease/index.html:121
-#: data/content/workstation/prerelease/index.html:133
+#: data/content/workstation/prerelease/index.html:92
+#: data/content/workstation/prerelease/index.html:101
+#: data/content/workstation/prerelease/index.html:113
 #: data/templates/footer.html:37
 msgid "Download"
 msgstr "Свалете сега!"
@@ -1011,130 +1004,155 @@ msgid "64-bit %sMB xz-Compressed Raw Image"
 msgstr "64-битов %sMB xz-компресиран Raw образ"
 
 #: data/content/atomic/download/index.html:331
-#: data/content/atomic/prerelease/index.html:327
-#: data/content/server/download/index.html:50
-#: data/content/server/prerelease/index.html:73
+#: data/content/atomic/prerelease/index.html:335
+#: data/content/server/download/index.html:53
+#: data/content/server/prerelease/index.html:51
 #: data/content/workstation/download/index.html:145
-#: data/content/workstation/prerelease/index.html:153
+#: data/content/workstation/prerelease/index.html:133
 msgid "Other Downloads"
 msgstr "Други неща за сваляне"
 
 #: data/content/atomic/download/index.html:333
-#: data/content/atomic/prerelease/index.html:329
+#: data/content/atomic/prerelease/index.html:337
 #, python-format
 msgid "Atomic Host ISO image (%sMB)"
 msgstr ""
 
 #: data/content/atomic/download/index.html:334
-#: data/content/atomic/prerelease/index.html:330
+#: data/content/atomic/prerelease/index.html:338
 #, python-format
 msgid "Docker Image (%sMB)"
 msgstr ""
 
-#: data/content/atomic/download/index.html:337
-#: data/content/atomic/prerelease/index.html:333
-#: data/content/workstation/download/index.html:179
-#: data/content/workstation/prerelease/index.html:165
-msgid "Resources"
-msgstr "Ресурси"
-
-#: data/content/atomic/download/index.html:338
-#: data/content/atomic/prerelease/index.html:334
-msgid ""
-"<a href=\"https://www.projectatomic.io/docs/quickstart/\"><strong>Project "
-"Atomic: Getting Started</strong></a>"
-msgstr ""
-
-#: data/content/atomic/download/index.html:339
-#: data/content/atomic/prerelease/index.html:335
-msgid "Documentation on getting started using Project Atomic / Atomic Host."
-msgstr ""
-
-#: data/content/atomic/download/index.html:340
-#: data/content/atomic/prerelease/index.html:336
-msgid ""
-"<a "
-"href=\"https://lists.projectatomic.io/mailman/listinfo/atomic\"><strong>Project"
-" Atomic: Mailing List</strong></a>"
-msgstr ""
-
-#: data/content/atomic/download/index.html:341
-#: data/content/atomic/prerelease/index.html:337
-#, python-format
-msgid ""
-"Join the upstream mailing list at <a "
-"href=\"%s\">atomic@projectatomic.io</a>."
-msgstr ""
-
 #: data/content/atomic/download/index.html:342
-#: data/content/atomic/prerelease/index.html:338
+#: data/content/workstation/download/index.html:159
 #, python-format
-msgid "<a href=\"%s\"><strong>Project Atomic: IRC Chat</strong></a>"
-msgstr ""
+msgid "F%(rel)s Alpha"
+msgstr "F%(rel)s Alpha"
 
 #: data/content/atomic/download/index.html:343
-#: data/content/atomic/prerelease/index.html:339
-msgid ""
-"Join the Project Atomic channel <strong>#atomic</strong></a> on "
-"<strong>irc.freenode.org</strong></a>."
-msgstr ""
-
-#: data/content/atomic/download/index.html:348
-#, python-format
-msgid "F%(rel)s %(state)s"
-msgstr ""
-
-#: data/content/atomic/download/index.html:349
-#: data/content/server/download/index.html:62
-#: data/content/server/download/index.html:72
+#: data/content/atomic/download/index.html:353
+#: data/content/atomic/download/index.html:375
 #: data/content/workstation/download/index.html:160
 #: data/content/workstation/download/index.html:170
 msgid "Try a pre-release"
 msgstr "Пробвайте предварително издание"
 
-#: data/content/atomic/download/index.html:350
-#: data/content/server/download/index.html:63
-#: data/content/server/download/index.html:73
+#: data/content/atomic/download/index.html:344
+#: data/content/atomic/download/index.html:354
+#: data/content/atomic/download/index.html:376
 #: data/content/workstation/download/index.html:161
 #: data/content/workstation/download/index.html:171
 msgid "We're working on our next release."
 msgstr "Ние работим върху нашето следващо издание."
 
-#: data/content/atomic/download/index.html:351
-#: data/content/server/download/index.html:64
-#: data/content/server/download/index.html:74
+#: data/content/atomic/download/index.html:345
+#: data/content/atomic/download/index.html:355
+#: data/content/atomic/download/index.html:377
 #: data/content/workstation/download/index.html:162
 #: data/content/workstation/download/index.html:172
 #, python-format
 msgid "Help us get F%(rel)s ready!"
 msgstr "Помогнете ни да подготвим F%(rel)s !"
 
-#: data/content/atomic/download/index.html:352
+#: data/content/atomic/download/index.html:346
+#: data/content/workstation/download/index.html:163
 #, python-format
-msgid "Download F%(rel)s %(state)s images"
-msgstr ""
+msgid "Download F%(rel)s Alpha images"
+msgstr "Свалете F%(rel)s Alpha образи"
 
-#: data/content/atomic/download/index.html:353
-#: data/content/server/download/index.html:66
-#: data/content/server/download/index.html:76
+#: data/content/atomic/download/index.html:347
+#: data/content/atomic/download/index.html:357
+#: data/content/atomic/download/index.html:379
 #: data/content/workstation/download/index.html:164
 #: data/content/workstation/download/index.html:174
 msgid "How to test pre-releases"
 msgstr "Как да тествате предварителните издания?"
 
-#: data/content/atomic/download/index.html:360
+#: data/content/atomic/download/index.html:352
+#: data/content/workstation/download/index.html:169
+#, python-format
+msgid "F%(rel)s Beta"
+msgstr "F%(rel)s Beta"
+
+#: data/content/atomic/download/index.html:356
+#: data/content/workstation/download/index.html:173
+#, python-format
+msgid "Download F%(rel)s Beta images"
+msgstr "Свалете F%(rel)s Beta образи"
+
+#: data/content/atomic/download/index.html:363
+#: data/content/atomic/prerelease/index.html:341
+#: data/content/workstation/download/index.html:179
+#: data/content/workstation/prerelease/index.html:145
+msgid "Resources"
+msgstr "Ресурси"
+
+#: data/content/atomic/download/index.html:364
 #: data/content/atomic/prerelease/index.html:342
-#: data/content/server/download/index.html:93
+msgid ""
+"<a href=\"https://www.projectatomic.io/docs/quickstart/\"><strong>Project "
+"Atomic: Getting Started</strong></a>"
+msgstr ""
+
+#: data/content/atomic/download/index.html:365
+#: data/content/atomic/prerelease/index.html:343
+msgid "Documentation on getting started using Project Atomic / Atomic Host."
+msgstr ""
+
+#: data/content/atomic/download/index.html:366
+#: data/content/atomic/prerelease/index.html:344
+msgid ""
+"<a "
+"href=\"https://lists.projectatomic.io/mailman/listinfo/atomic\"><strong>Project"
+" Atomic: Mailing List</strong></a>"
+msgstr ""
+
+#: data/content/atomic/download/index.html:367
+#: data/content/atomic/prerelease/index.html:345
+#, python-format
+msgid ""
+"Join the upstream mailing list at <a "
+"href=\"%s\">atomic@projectatomic.io</a>."
+msgstr ""
+
+#: data/content/atomic/download/index.html:368
+#: data/content/atomic/prerelease/index.html:346
+#, python-format
+msgid "<a href=\"%s\"><strong>Project Atomic: IRC Chat</strong></a>"
+msgstr ""
+
+#: data/content/atomic/download/index.html:369
+#: data/content/atomic/prerelease/index.html:347
+msgid ""
+"Join the Project Atomic channel <strong>#atomic</strong></a> on "
+"<strong>irc.freenode.org</strong></a>."
+msgstr ""
+
+#: data/content/atomic/download/index.html:374
+#, python-format
+msgid "F%(rel)s %(state)s"
+msgstr ""
+
+#: data/content/atomic/download/index.html:378
+#, python-format
+msgid "Download F%(rel)s %(state)s images"
+msgstr ""
+
+#: data/content/atomic/download/index.html:386
+#: data/content/atomic/prerelease/index.html:350
+#: data/content/server/download/index.html:97
 #: data/content/workstation/download/index.html:208
 msgid "Verify"
 msgstr "Проверете"
 
-#: data/content/atomic/download/index.html:363
-#: data/content/atomic/prerelease/index.html:345
-#: data/content/server/download/index.html:96
-#: data/content/server/prerelease/index.html:63
+#: data/content/atomic/download/index.html:389
+#: data/content/atomic/prerelease/index.html:322
+#: data/content/atomic/prerelease/index.html:353
+#: data/content/server/download/index.html:100
+#: data/content/server/prerelease/index.html:41
 #: data/content/workstation/download/index.html:211
-#: data/content/workstation/prerelease/index.html:141
+#: data/content/workstation/prerelease/index.html:121
 msgid "Verify your Image"
 msgstr "Проверете Вашия образ"
 
@@ -1154,14 +1172,10 @@ msgstr ""
 #, python-format
 msgid ""
 "This is pre-release software and is supported by the <a "
-"href=\"%(team_url)s\">Cloud Working Group</a>. Please direct questions to "
+"href=\"%(team_url)s\"> Atomic Working Group</a>. Please direct questions to "
 "their <a href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on "
 "freenode."
 msgstr ""
-"Това е предварителна версия на софтуера и се поддържа от <a "
-"href=\"%(team_url)s\">Cloud Working Group</a>. Моля, отправяйте въпросите си"
-" към техния <a href=\"%(team_list)s\">пощенски списък</a> или %(team_irc)s "
-"във freenode."
 
 #: data/content/atomic/prerelease/index.html:49
 #: data/content/server/prerelease/index.html:29
@@ -1301,6 +1315,10 @@ msgstr "Първичен"
 #: data/content/keys/obsolete.html:358
 msgid "Secondary"
 msgstr "Вторичен"
+
+#: data/content/keys/index.html:102
+msgid "Fedora 24"
+msgstr "Fedora 24"
 
 #: data/content/keys/index.html:125
 msgid "EPEL 7"
@@ -1742,7 +1760,18 @@ msgstr "Свалете Fedora %(rel)s Server"
 msgid "64-bit %sGB installation image"
 msgstr "64-битов %sGB инсталационен образ"
 
-#: data/content/server/download/index.html:42
+#: data/content/server/download/index.html:41
+#, python-format
+msgid ""
+"Are you looking for the Fedora 27 Server Beta? We're hard at work revamping "
+"Fedora Server to be built with <a href=\"%(modularity)s\">Modularity</a> "
+"based on feedback from the <a href=\"%(boltron)s\">Boltron tech preview</a>."
+" Stay tuned for a beta release in several weeks. Read more on <a "
+"href=\"%(fedmag)s\">Fedora Magazine</a>. Or, download Fedora 26 Server "
+"below."
+msgstr ""
+
+#: data/content/server/download/index.html:45
 msgid ""
 "The Fedora Server installation image allows you to make media for your "
 "computer that boots to the installer to directly install Fedora Server on to"
@@ -1752,7 +1781,7 @@ msgstr ""
 "компютър, от която да заредите инсталатор, който ще инсталира Fedora Server "
 "директно на твърдия Ви диск"
 
-#: data/content/server/download/index.html:43
+#: data/content/server/download/index.html:46
 msgid ""
 "To use this image, you need a drive that can create or \"burn\" DVDs, or a "
 "USB flash drive at least as big as the image."
@@ -1760,49 +1789,25 @@ msgstr ""
 "За да ползвате този образ ще имате нужда от устройство, което може да "
 "записва DVD-та, или от USB флаш памет с обем поне колкото образа."
 
-#: data/content/server/download/index.html:52
-#: data/content/server/prerelease/index.html:75
+#: data/content/server/download/index.html:55
+#: data/content/server/prerelease/index.html:53
 msgid "Netinstall Image:"
 msgstr "Netinstall образ:"
 
-#: data/content/server/download/index.html:54
-#: data/content/server/prerelease/index.html:77
+#: data/content/server/download/index.html:57
+#: data/content/server/prerelease/index.html:55
 #: data/content/workstation/download/index.html:151
-#: data/content/workstation/prerelease/index.html:160
+#: data/content/workstation/prerelease/index.html:140
 #, python-format
 msgid "64-bit %sMB image"
 msgstr "64-битов %sMB образ"
 
-#: data/content/server/download/index.html:61
-#: data/content/workstation/download/index.html:159
-#, python-format
-msgid "F%(rel)s Alpha"
-msgstr "F%(rel)s Alpha"
-
-#: data/content/server/download/index.html:65
-#: data/content/workstation/download/index.html:163
-#, python-format
-msgid "Download F%(rel)s Alpha images"
-msgstr "Свалете F%(rel)s Alpha образи"
-
-#: data/content/server/download/index.html:71
-#: data/content/workstation/download/index.html:169
-#, python-format
-msgid "F%(rel)s Beta"
-msgstr "F%(rel)s Beta"
-
-#: data/content/server/download/index.html:75
-#: data/content/workstation/download/index.html:173
-#, python-format
-msgid "Download F%(rel)s Beta images"
-msgstr "Свалете F%(rel)s Beta образи"
-
-#: data/content/server/download/index.html:82
+#: data/content/server/download/index.html:86
 #: data/content/workstation/download/index.html:193
 msgid "Get more Fedora"
 msgstr "Още от Fedora"
 
-#: data/content/server/download/index.html:86
+#: data/content/server/download/index.html:90
 #: data/content/workstation/download/index.html:202
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr "ARM<span class=\"sup\">®</span> Технологии"
@@ -1888,42 +1893,17 @@ msgstr ""
 " грешки и начини за избягването им."
 
 #: data/content/server/prerelease/index.html:38
-#: data/content/workstation/prerelease/index.html:55
+#: data/content/workstation/prerelease/index.html:57
 #, python-format
 msgid "When is Fedora %s going to be released?"
 msgstr "Кога ще излезе Fedora %s ?"
 
-#: data/content/server/prerelease/index.html:42
-#: data/content/workstation/prerelease/index.html:59
-msgid "Release State"
-msgstr ""
-
-#: data/content/server/prerelease/index.html:43
-#: data/content/workstation/prerelease/index.html:60
-msgid "Release Date"
-msgstr ""
-
-#: data/content/server/prerelease/index.html:48
-#: data/content/workstation/prerelease/index.html:65
-msgid "Alpha Release Public Availability"
-msgstr ""
-
-#: data/content/server/prerelease/index.html:52
-#: data/content/workstation/prerelease/index.html:69
-msgid "Beta Release Public Availability"
-msgstr ""
-
-#: data/content/server/prerelease/index.html:56
-#: data/content/workstation/prerelease/index.html:73
-msgid "Final Release Public Availability (GA)"
-msgstr ""
-
-#: data/content/server/prerelease/index.html:61
-#: data/content/workstation/prerelease/index.html:78
+#: data/content/server/prerelease/index.html:39
+#: data/content/workstation/prerelease/index.html:58
 msgid "Read all the key milestones of the release schedule..."
 msgstr ""
 
-#: data/content/server/prerelease/index.html:64
+#: data/content/server/prerelease/index.html:42
 #, python-format
 msgid ""
 "Once you have downloaded an image, verify it for security and integrity. To "
@@ -2032,7 +2012,7 @@ msgstr "Свалете Fedora %(rel)s Workstation"
 #: data/content/workstation/download/index.html:41
 #: data/content/workstation/download/index.html:98
 #: data/content/workstation/prerelease/index.html:20
-#: data/content/workstation/prerelease/index.html:109
+#: data/content/workstation/prerelease/index.html:89
 #, python-format
 msgid "%s MB Fedora Media Writer for <strong>Mac OS X</strong>"
 msgstr "%s MB Fedora Media Writer за <strong>Mac OS X</strong>"
@@ -2040,7 +2020,7 @@ msgstr "%s MB Fedora Media Writer за <strong>Mac OS X</strong>"
 #: data/content/workstation/download/index.html:45
 #: data/content/workstation/download/index.html:126
 #: data/content/workstation/prerelease/index.html:24
-#: data/content/workstation/prerelease/index.html:131
+#: data/content/workstation/prerelease/index.html:111
 #, python-format
 msgid "64-bit %s GB ISO for <strong>Linux</strong>."
 msgstr "64-bit %s GB ISO for <strong>Linux</strong>."
@@ -2054,7 +2034,7 @@ msgstr "<a href=\"%s\">Инсталиране чрез DNF</a> ако вече �
 #: data/content/workstation/download/index.html:50
 #: data/content/workstation/download/index.html:110
 #: data/content/workstation/prerelease/index.html:29
-#: data/content/workstation/prerelease/index.html:118
+#: data/content/workstation/prerelease/index.html:98
 #, python-format
 msgid "%s MB Fedora Media Writer for <strong>Windows</strong>"
 msgstr "%s MB Fedora Media Writer за <strong>Windows</strong>"
@@ -2084,7 +2064,7 @@ msgid "Fedora Media Writer (download above)"
 msgstr "Fedora Media Writer (свалете от връзката по-горе)"
 
 #: data/content/workstation/download/index.html:69
-#: data/content/workstation/prerelease/index.html:86
+#: data/content/workstation/prerelease/index.html:66
 #, python-format
 msgid "A USB Flash drive with at least %s GB space available"
 msgstr "USB Flash памет с поне %s GB свободно пространство"
@@ -2105,7 +2085,7 @@ msgstr ""
 "флашка."
 
 #: data/content/workstation/download/index.html:72
-#: data/content/workstation/prerelease/index.html:100
+#: data/content/workstation/prerelease/index.html:80
 msgid ""
 "Optionally, you may install Fedora Workstation to a laptop or desktop "
 "computer that has at least 1 GHz processor, 1 GB RAM, and 10 GB space "
@@ -2122,30 +2102,30 @@ msgstr ""
 "указанията на екрана, за да извършите инсталирането."
 
 #: data/content/workstation/download/index.html:74
-#: data/content/workstation/prerelease/index.html:102
+#: data/content/workstation/prerelease/index.html:82
 msgid "Supported Platforms"
 msgstr "Поддържани платформи"
 
 #: data/content/workstation/download/index.html:75
-#: data/content/workstation/prerelease/index.html:103
+#: data/content/workstation/prerelease/index.html:83
 msgid "Fedora Media Writer supports the following platforms:"
 msgstr "Fedora Media Writer поддържа следните платформи:"
 
 #: data/content/workstation/download/index.html:77
 #: data/content/workstation/download/index.html:97
-#: data/content/workstation/prerelease/index.html:108
+#: data/content/workstation/prerelease/index.html:88
 msgid "Mac OS X"
 msgstr "Mac OS X"
 
 #: data/content/workstation/download/index.html:78
 #: data/content/workstation/download/index.html:109
-#: data/content/workstation/prerelease/index.html:117
+#: data/content/workstation/prerelease/index.html:97
 msgid "Windows"
 msgstr "Windows"
 
 #: data/content/workstation/download/index.html:79
 #: data/content/workstation/download/index.html:121
-#: data/content/workstation/prerelease/index.html:126
+#: data/content/workstation/prerelease/index.html:106
 msgid "Linux"
 msgstr "Linux"
 
@@ -2190,44 +2170,42 @@ msgid "View all platform downloads"
 msgstr "Всички платформи за сваляне"
 
 #: data/content/workstation/download/index.html:122
-#: data/content/workstation/prerelease/index.html:127
+#: data/content/workstation/prerelease/index.html:107
 msgid "Available via DNF for <strong>Fedora</strong>"
 msgstr "Налични чрез DNF за <strong>Fedora</strong>"
 
 #: data/content/workstation/download/index.html:123
-#: data/content/workstation/prerelease/index.html:128
+#: data/content/workstation/prerelease/index.html:108
 msgid "More details"
 msgstr "Още подробности"
 
 #: data/content/workstation/download/index.html:127
-#: data/content/workstation/prerelease/index.html:132
+#: data/content/workstation/prerelease/index.html:112
 msgid "How to use this ISO?"
 msgstr "Как да използвам това ISO?"
 
 #: data/content/workstation/download/index.html:129
-#: data/content/workstation/prerelease/index.html:134
+#: data/content/workstation/prerelease/index.html:114
 msgid "Verify this image"
 msgstr "Проверете този образ"
 
 #: data/content/workstation/download/index.html:146
-#: data/content/workstation/prerelease/index.html:154
+#: data/content/workstation/prerelease/index.html:134
 #, python-format
 msgid "64-bit %sGB Live image"
 msgstr "64-битов %sGB Жив образ"
 
 #: data/content/workstation/download/index.html:147
-#: data/content/workstation/prerelease/index.html:155
 #, python-format
 msgid "32-bit %sGB Live image"
 msgstr "32-битов %sGB Жив образ"
 
 #: data/content/workstation/download/index.html:149
-#: data/content/workstation/prerelease/index.html:158
+#: data/content/workstation/prerelease/index.html:138
 msgid "Netinstall Images:"
 msgstr "Netinstall образи:"
 
 #: data/content/workstation/download/index.html:152
-#: data/content/workstation/prerelease/index.html:161
 #, python-format
 msgid "32-bit %sMB image"
 msgstr "32-битов %sMB образ"
@@ -2274,13 +2252,13 @@ msgstr ""
 " като в него ще намерите отговори на много често задавани въпроси."
 
 #: data/content/workstation/download/index.html:186
-#: data/content/workstation/prerelease/index.html:166
+#: data/content/workstation/prerelease/index.html:146
 #, python-format
 msgid "<a href=\"%(commonbugs_url)s\"><strong>Common Bugs</strong></a>"
 msgstr "<a href=\"%(commonbugs_url)s\"><strong>Забелязани бъгове</strong></a>"
 
 #: data/content/workstation/download/index.html:187
-#: data/content/workstation/prerelease/index.html:167
+#: data/content/workstation/prerelease/index.html:147
 msgid ""
 "An excellent resource to consult in case you run into any issues installing "
 "or running Fedora."
@@ -2289,12 +2267,12 @@ msgstr ""
 " с Fedora."
 
 #: data/content/workstation/download/index.html:189
-#: data/content/workstation/prerelease/index.html:171
+#: data/content/workstation/prerelease/index.html:151
 msgid "What does \"Live\" mean?"
 msgstr "Какво е \"Жива\" (\"Live\")?"
 
 #: data/content/workstation/download/index.html:190
-#: data/content/workstation/prerelease/index.html:172
+#: data/content/workstation/prerelease/index.html:152
 msgid ""
 "Fedora Media Writer will create a complete, running Fedora Workstation you "
 "can run right away off of a USB drive. You can use the Live image to test "
@@ -2305,7 +2283,7 @@ msgstr ""
 "тествате и разцъкате Fedora без да правите промени върху твърдия Ви диск."
 
 #: data/content/workstation/download/index.html:191
-#: data/content/workstation/prerelease/index.html:173
+#: data/content/workstation/prerelease/index.html:153
 msgid ""
 "When you are ready, you can install Fedora to your hard disk from within "
 "this \"live\" version of Fedora Workstation."
@@ -2346,21 +2324,28 @@ msgstr ""
 "въпросите си към техния <a href=\"%(team_list)s\">пощенски списък</a> или "
 "%(team_irc)s във freenode."
 
-#: data/content/workstation/prerelease/index.html:82
+#: data/content/workstation/prerelease/index.html:54
+msgid ""
+"Are you looking for 32 bit images of F27 Beta? Due to some technical issues "
+"we cannot offer them, but they will be available for the F27 final release "
+"date. Stay tuned!"
+msgstr ""
+
+#: data/content/workstation/prerelease/index.html:62
 msgid "Running Pre-Release Versions of Fedora Workstation"
 msgstr "Работа с предварителни версии на Fedora Workstation"
 
-#: data/content/workstation/prerelease/index.html:83
+#: data/content/workstation/prerelease/index.html:63
 msgid "To run a prerelease version of Fedora Workstation, you will need:"
 msgstr ""
 "За да стартирате предварителна версия на Fedora Workstation, Вие ще трябва "
 "да:"
 
-#: data/content/workstation/prerelease/index.html:85
+#: data/content/workstation/prerelease/index.html:65
 msgid "Fedora Media Writer (Download available below)"
 msgstr "Fedora Media Writer (Налично за сваляне по-долу)"
 
-#: data/content/workstation/prerelease/index.html:87
+#: data/content/workstation/prerelease/index.html:67
 #, python-format
 msgid ""
 "<a href=\"%s\">A live image ISO of the pre-release version of Fedora</a> you"
@@ -2369,7 +2354,7 @@ msgstr ""
 "<a href=\"%s\">Жив ISO образ на предварителна версия на Fedora</a>, която "
 "искате да стартирате"
 
-#: data/content/workstation/prerelease/index.html:89
+#: data/content/workstation/prerelease/index.html:69
 msgid ""
 "WARNING: This procedure destroys all data on your USB media. Make sure to "
 "back up any important files from your USB media before you do this."
@@ -2377,15 +2362,15 @@ msgstr ""
 "ВНИМАНИЕ: Тази процедура унищожава всички данни на USB устройството. Убедете"
 " се, че сте съхранили другаде всички важни файлове, преди да направите това."
 
-#: data/content/workstation/prerelease/index.html:91
+#: data/content/workstation/prerelease/index.html:71
 msgid "Download the Fedora Media Writer app below."
 msgstr "Свалете приложението Fedora Media Writer по-долу."
 
-#: data/content/workstation/prerelease/index.html:92
+#: data/content/workstation/prerelease/index.html:72
 msgid "Download the desired ISO image."
 msgstr "Свалете желания ISO образ."
 
-#: data/content/workstation/prerelease/index.html:93
+#: data/content/workstation/prerelease/index.html:73
 msgid ""
 "Open the Fedora Media Writer app. You may need to provide a password to give"
 " the app the right permissions."
@@ -2393,15 +2378,15 @@ msgstr ""
 "Стартирайте Fedora Media Writer. Може да се наложи да въведете парола, за да"
 " дадете на приложението нужните му права."
 
-#: data/content/workstation/prerelease/index.html:94
+#: data/content/workstation/prerelease/index.html:74
 msgid "Select \"Custom OS...\" from the list."
 msgstr "Изберете \"Custom OS...\" от списъка."
 
-#: data/content/workstation/prerelease/index.html:95
+#: data/content/workstation/prerelease/index.html:75
 msgid "On the Custom OS page, select the \"Select Live ISO\" button."
 msgstr "На страницата за избор на OS цъкнете бутона \"Изберете живо ISO\"."
 
-#: data/content/workstation/prerelease/index.html:96
+#: data/content/workstation/prerelease/index.html:76
 msgid ""
 "In the file selection window, locate and select the ISO image you "
 "downloaded."
@@ -2409,7 +2394,7 @@ msgstr ""
 "В прозореца за избор на файл намерете и изберете ISO образа, който сте "
 "свалили."
 
-#: data/content/workstation/prerelease/index.html:97
+#: data/content/workstation/prerelease/index.html:77
 msgid ""
 "Insert your USB stick in the computer. If you used your USB stick previously"
 " to create live media, you may need to restore it to factory settings.  The "
@@ -2420,7 +2405,7 @@ msgstr ""
 "фабричните му настройки. В този случай приложението ще Ви попита дали да го "
 "направите."
 
-#: data/content/workstation/prerelease/index.html:98
+#: data/content/workstation/prerelease/index.html:78
 msgid ""
 "Select \"Create Live USB\" to write the image. Wait until the process is "
 "finished before you remove the media and close the app."
@@ -2428,15 +2413,11 @@ msgstr ""
 "Цъкнете \"Създай живо USB\", за да запишете образа. Изчакайте процесът да "
 "завърши преди да извадите устройството и да затворите приложението."
 
-#: data/content/workstation/prerelease/index.html:145
+#: data/content/workstation/prerelease/index.html:125
 msgid "Validate 64-bit!"
 msgstr "Провери 64-битови!"
 
 #: data/content/workstation/prerelease/index.html:148
-msgid "Validate 32-bit!"
-msgstr "Провери 32-битови!"
-
-#: data/content/workstation/prerelease/index.html:168
 msgid ""
 "<a href=\"https://fedoraproject.org/wiki/QA/Join#release-"
 "validation\"><strong>How to test pre-releases</strong></a>"
@@ -2444,7 +2425,7 @@ msgstr ""
 "<a href=\"https://fedoraproject.org/wiki/QA/Join#release-"
 "validation\"><strong>Как да тествате предв. издания</strong></a>"
 
-#: data/content/workstation/prerelease/index.html:169
+#: data/content/workstation/prerelease/index.html:149
 msgid "Fedora wiki guide on how to help test pre-release versions of Fedora."
 msgstr ""
 "Упътване как да помогнете за тестването на предварителни версии на Fedora в "

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-07-11 22:31+0200\n"
+"POT-Creation-Date: 2017-10-01 23:23+0200\n"
 "PO-Revision-Date: 2017-04-06 04:51-0400\n"
 "Last-Translator: Niv Baehr <bloop93@gmail.com>\n"
 "Language-Team: Hebrew (http://www.transifex.com/projects/p/fedora-web/language/he/)\n"
@@ -135,22 +135,22 @@ msgid ""
 "section."
 msgstr ""
 
-#: data/content/index.html:53
+#: data/content/index.html:54
 #, python-format
 msgid "Fedora %(rel)s released! Get it now."
 msgstr "שוחררה Fedora %(rel)s! קבלו עכשיו."
 
-#: data/content/index.html:67 data/content/verify.html:39
+#: data/content/index.html:69 data/content/verify.html:39
 #: data/templates/productselector-workstation.html:12
 msgid "Workstation"
 msgstr "Workstation"
 
-#: data/content/index.html:69 data/content/index.html:85
-#: data/content/index.html:100
+#: data/content/index.html:71 data/content/index.html:87
+#: data/content/index.html:102
 msgid "Download Now"
 msgstr "הורידו עכשיו"
 
-#: data/content/index.html:74 data/content/index.html:127
+#: data/content/index.html:76 data/content/index.html:133
 msgid ""
 "Fedora Workstation is a polished, easy to use operating system for laptop "
 "and desktop computers, with a complete set of tools for developers and "
@@ -160,8 +160,8 @@ msgstr ""
 "ומחשבים שולחניים, עם ערכת כלים מלאה למפתחים ויוצרים מכל המינים."
 
 #: data/content/atomic/index.html:125 data/content/atomic/index.html:131
-#: data/content/index.html:76 data/content/index.html:91
-#: data/content/index.html:106 data/content/server/index.html:20
+#: data/content/index.html:78 data/content/index.html:93
+#: data/content/index.html:108 data/content/server/index.html:20
 #: data/content/server/index.html:125 data/content/server/index.html:131
 #: data/content/workstation/index.html:20
 #: data/content/workstation/index.html:185
@@ -169,12 +169,12 @@ msgstr ""
 msgid "Download now"
 msgstr "הורידו עכשיו"
 
-#: data/content/index.html:83 data/content/verify.html:51
+#: data/content/index.html:85 data/content/verify.html:51
 #: data/templates/productselector-server.html:13
 msgid "Server"
 msgstr "Server"
 
-#: data/content/index.html:89 data/content/index.html:132
+#: data/content/index.html:91 data/content/index.html:138
 msgid ""
 "Fedora Server is a powerful, flexible operating system that includes the "
 "best and latest datacenter technologies. It puts you in control of all your "
@@ -183,19 +183,19 @@ msgstr ""
 "Fedora Server היא מערכת הפעלה גמישה ורבת עצמה המכילה את טכנולוגיות מרכז "
 "הנתונים האחרונות והטובות ביותר. נותנת לכם שליטה על כל השירותים והתשתיות."
 
-#: data/content/index.html:98 data/content/verify.html:60
+#: data/content/index.html:100 data/content/verify.html:60
 #: data/templates/productselector-cloud.html:13
 msgid "Atomic"
 msgstr "Atomic"
 
-#: data/content/atomic/index.html:19 data/content/index.html:104
-#: data/content/index.html:137
+#: data/content/atomic/index.html:19 data/content/index.html:106
+#: data/content/index.html:143
 msgid ""
 "Fedora Atomic provides the best platform for your Linux-Docker-Kubernetes "
 "(LDK) application stack."
 msgstr ""
 
-#: data/content/index.html:163
+#: data/content/index.html:166
 msgid ""
 "Fedora is always free for anyone to use, modify, and distribute. It is built"
 " and used by people across the globe who work together as a community: the "
@@ -204,11 +204,11 @@ msgstr ""
 "Fedora תמיד חופשית לכולם לשימוש, שינוי והפצה. היא נבנתה ונמצאת בשימוש על ידי"
 " אנשים מכל העולם העובדים יחד כקהילה: מיזם Fedora."
 
-#: data/content/index.html:176
+#: data/content/index.html:179
 msgid "Want more Fedora options?"
 msgstr "רוצים אפשרויות Fedora נוספות?"
 
-#: data/content/index.html:195
+#: data/content/index.html:198
 msgid ""
 "The Fedora community also releases <a "
 "href=\"https://arm.fedoraproject.org/\">ARM images</a>, alternate live "
@@ -223,11 +223,11 @@ msgstr ""
 "Fedora</a> או באתר <a href=\"https://labs.fedoraproject.org/\">מעבדות "
 "Fedora</a>."
 
-#: data/content/index.html:202
+#: data/content/index.html:205
 msgid "Be connected & informed."
 msgstr "היו מחוברים ומעודכנים."
 
-#: data/content/index.html:212
+#: data/content/index.html:215
 msgid ""
 "Want to get <a href=\"http://whatcanidoforfedora.org/\">involved</a>? Find "
 "out what's happening in the <a "
@@ -240,11 +240,11 @@ msgstr ""
 "קראו את החדשות האחרונות והתפתחויות מעניינות ב־<a "
 "href=\"http://fedoramagazine.org/\">Fedora Magazine</a>."
 
-#: data/content/index.html:222
+#: data/content/index.html:225
 msgid "Read the docs."
 msgstr "קראו את התיעוד."
 
-#: data/content/index.html:232
+#: data/content/index.html:235
 #, python-format
 msgid ""
 "Check out the Release Notes for detailed information on the current release."
@@ -255,11 +255,11 @@ msgstr ""
 " ב־Fedora ופרטים כגון דרישות המערכת, ראו את <a href=\"%s\"><strong>התיעוד "
 "הרשמי</strong></a>."
 
-#: data/content/index.html:239
+#: data/content/index.html:242
 msgid "Get help."
 msgstr "קבלו עזרה."
 
-#: data/content/index.html:249
+#: data/content/index.html:252
 #, python-format
 msgid ""
 "Need some help with Fedora? Check out <a href=\"%s\">Ask Fedora</a>, where "
@@ -398,31 +398,22 @@ msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Fedora 25 עבור ארכיטקטורות משניות (AArch64, PPC64, PPC64le, s390 ו־s390x)"
 
-#: data/content/keys/index.html:102 data/content/verify.html:87
-msgid "Fedora 24"
-msgstr "Fedora 24"
-
 #: data/content/verify.html:88
-msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
-"Fedora 24 עבור ארכיטקטורות משניות (AArch64, PPC64, PPC64le, s390 ו־s390x)"
-
-#: data/content/verify.html:90
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
 msgstr ""
 "לבסוף, לאחר שקובץ ה־CHECKSUM אומת, יש לבדוק שסיכום הביקורת של התמונה מתאים:"
 
-#: data/content/verify.html:92
+#: data/content/verify.html:90
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr "אם הפלט מציין שהקובץ תקין, אז הוא מוכן לשימוש!"
 
-#: data/content/verify.html:93
+#: data/content/verify.html:91
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr "איך לאמת את התמונה שהורדתי על גבי מערכת הפעלה אחרת?"
 
-#: data/content/verify.html:94
+#: data/content/verify.html:92
 msgid "Read these instructions to validate your image."
 msgstr "קראו הוראות אלו כדי לאמת את התמונה."
 
@@ -527,9 +518,10 @@ msgid "Verify your Download!"
 msgstr "אימות ההורדה!"
 
 #: data/content/atomic/download/download-cloud-splash.html:49
+#: data/content/atomic/prerelease/index.html:323
 #: data/content/server/download/server-download-splash.html:44
 #: data/content/workstation/download/ws-download-splash.html:49
-#: data/content/workstation/prerelease/index.html:142
+#: data/content/workstation/prerelease/index.html:122
 #, python-format
 msgid ""
 "Once you have downloaded an image, verify it for security and integrity. To "
@@ -542,8 +534,9 @@ msgstr ""
 "href=\"%s/%s/verify\">הוראות אלו</a>."
 
 #: data/content/atomic/download/download-cloud-splash.html:52
+#: data/content/atomic/prerelease/index.html:326
 #: data/content/server/download/server-download-splash.html:47
-#: data/content/server/prerelease/index.html:67
+#: data/content/server/prerelease/index.html:45
 #: data/content/workstation/download/ws-download-splash.html:52
 msgid "Validate!"
 msgstr "אימות!"
@@ -820,9 +813,9 @@ msgstr ""
 #: data/content/workstation/prerelease/index.html:19
 #: data/content/workstation/prerelease/index.html:23
 #: data/content/workstation/prerelease/index.html:28
-#: data/content/workstation/prerelease/index.html:112
-#: data/content/workstation/prerelease/index.html:121
-#: data/content/workstation/prerelease/index.html:133
+#: data/content/workstation/prerelease/index.html:92
+#: data/content/workstation/prerelease/index.html:101
+#: data/content/workstation/prerelease/index.html:113
 #: data/templates/footer.html:37
 msgid "Download"
 msgstr "הורדה"
@@ -946,35 +939,92 @@ msgid "64-bit %sMB xz-Compressed Raw Image"
 msgstr "תמונה גולמית בדחיסת xz של 64 סיביות %s מ״ב"
 
 #: data/content/atomic/download/index.html:331
-#: data/content/atomic/prerelease/index.html:327
-#: data/content/server/download/index.html:50
-#: data/content/server/prerelease/index.html:73
+#: data/content/atomic/prerelease/index.html:335
+#: data/content/server/download/index.html:53
+#: data/content/server/prerelease/index.html:51
 #: data/content/workstation/download/index.html:145
-#: data/content/workstation/prerelease/index.html:153
+#: data/content/workstation/prerelease/index.html:133
 msgid "Other Downloads"
 msgstr "שאר הורדות"
 
 #: data/content/atomic/download/index.html:333
-#: data/content/atomic/prerelease/index.html:329
+#: data/content/atomic/prerelease/index.html:337
 #, python-format
 msgid "Atomic Host ISO image (%sMB)"
 msgstr ""
 
 #: data/content/atomic/download/index.html:334
-#: data/content/atomic/prerelease/index.html:330
+#: data/content/atomic/prerelease/index.html:338
 #, python-format
 msgid "Docker Image (%sMB)"
 msgstr ""
 
-#: data/content/atomic/download/index.html:337
-#: data/content/atomic/prerelease/index.html:333
+#: data/content/atomic/download/index.html:342
+#: data/content/workstation/download/index.html:159
+#, python-format
+msgid "F%(rel)s Alpha"
+msgstr "F%(rel)s Alpha"
+
+#: data/content/atomic/download/index.html:343
+#: data/content/atomic/download/index.html:353
+#: data/content/atomic/download/index.html:375
+#: data/content/workstation/download/index.html:160
+#: data/content/workstation/download/index.html:170
+msgid "Try a pre-release"
+msgstr "נסו גרסת קדם־שחרור"
+
+#: data/content/atomic/download/index.html:344
+#: data/content/atomic/download/index.html:354
+#: data/content/atomic/download/index.html:376
+#: data/content/workstation/download/index.html:161
+#: data/content/workstation/download/index.html:171
+msgid "We're working on our next release."
+msgstr "אנו עובדים על השחרור הבא."
+
+#: data/content/atomic/download/index.html:345
+#: data/content/atomic/download/index.html:355
+#: data/content/atomic/download/index.html:377
+#: data/content/workstation/download/index.html:162
+#: data/content/workstation/download/index.html:172
+#, python-format
+msgid "Help us get F%(rel)s ready!"
+msgstr "עזרו לנו להכין את F%(rel)s!"
+
+#: data/content/atomic/download/index.html:346
+#: data/content/workstation/download/index.html:163
+#, python-format
+msgid "Download F%(rel)s Alpha images"
+msgstr "הורידו תמונות אלפא של F%(rel)s"
+
+#: data/content/atomic/download/index.html:347
+#: data/content/atomic/download/index.html:357
+#: data/content/atomic/download/index.html:379
+#: data/content/workstation/download/index.html:164
+#: data/content/workstation/download/index.html:174
+msgid "How to test pre-releases"
+msgstr "איך לבדוק גרסאות קדם־שחרור"
+
+#: data/content/atomic/download/index.html:352
+#: data/content/workstation/download/index.html:169
+#, python-format
+msgid "F%(rel)s Beta"
+msgstr "F%(rel)s Beta"
+
+#: data/content/atomic/download/index.html:356
+#: data/content/workstation/download/index.html:173
+#, python-format
+msgid "Download F%(rel)s Beta images"
+msgstr "הורידו תמונות בטא של F%(rel)s"
+
+#: data/content/atomic/download/index.html:363
+#: data/content/atomic/prerelease/index.html:341
 #: data/content/workstation/download/index.html:179
-#: data/content/workstation/prerelease/index.html:165
+#: data/content/workstation/prerelease/index.html:145
 msgid "Resources"
 msgstr "משאבים"
 
-#: data/content/atomic/download/index.html:338
-#: data/content/atomic/prerelease/index.html:334
+#: data/content/atomic/download/index.html:364
+#: data/content/atomic/prerelease/index.html:342
 msgid ""
 "<a href=\"https://www.projectatomic.io/docs/quickstart/\"><strong>Project "
 "Atomic: Getting Started</strong></a>"
@@ -982,96 +1032,64 @@ msgstr ""
 "<a href=\"https://www.projectatomic.io/docs/quickstart/\"><strong>Project "
 "Atomic: צעדים ראשונים</strong></a>"
 
-#: data/content/atomic/download/index.html:339
-#: data/content/atomic/prerelease/index.html:335
+#: data/content/atomic/download/index.html:365
+#: data/content/atomic/prerelease/index.html:343
 msgid "Documentation on getting started using Project Atomic / Atomic Host."
 msgstr ""
 
-#: data/content/atomic/download/index.html:340
-#: data/content/atomic/prerelease/index.html:336
+#: data/content/atomic/download/index.html:366
+#: data/content/atomic/prerelease/index.html:344
 msgid ""
 "<a "
 "href=\"https://lists.projectatomic.io/mailman/listinfo/atomic\"><strong>Project"
 " Atomic: Mailing List</strong></a>"
 msgstr ""
 
-#: data/content/atomic/download/index.html:341
-#: data/content/atomic/prerelease/index.html:337
+#: data/content/atomic/download/index.html:367
+#: data/content/atomic/prerelease/index.html:345
 #, python-format
 msgid ""
 "Join the upstream mailing list at <a "
 "href=\"%s\">atomic@projectatomic.io</a>."
 msgstr ""
 
-#: data/content/atomic/download/index.html:342
-#: data/content/atomic/prerelease/index.html:338
+#: data/content/atomic/download/index.html:368
+#: data/content/atomic/prerelease/index.html:346
 #, python-format
 msgid "<a href=\"%s\"><strong>Project Atomic: IRC Chat</strong></a>"
 msgstr ""
 
-#: data/content/atomic/download/index.html:343
-#: data/content/atomic/prerelease/index.html:339
+#: data/content/atomic/download/index.html:369
+#: data/content/atomic/prerelease/index.html:347
 msgid ""
 "Join the Project Atomic channel <strong>#atomic</strong></a> on "
 "<strong>irc.freenode.org</strong></a>."
 msgstr ""
 
-#: data/content/atomic/download/index.html:348
+#: data/content/atomic/download/index.html:374
 #, python-format
 msgid "F%(rel)s %(state)s"
 msgstr ""
 
-#: data/content/atomic/download/index.html:349
-#: data/content/server/download/index.html:62
-#: data/content/server/download/index.html:72
-#: data/content/workstation/download/index.html:160
-#: data/content/workstation/download/index.html:170
-msgid "Try a pre-release"
-msgstr "נסו גרסת קדם־שחרור"
-
-#: data/content/atomic/download/index.html:350
-#: data/content/server/download/index.html:63
-#: data/content/server/download/index.html:73
-#: data/content/workstation/download/index.html:161
-#: data/content/workstation/download/index.html:171
-msgid "We're working on our next release."
-msgstr "אנו עובדים על השחרור הבא."
-
-#: data/content/atomic/download/index.html:351
-#: data/content/server/download/index.html:64
-#: data/content/server/download/index.html:74
-#: data/content/workstation/download/index.html:162
-#: data/content/workstation/download/index.html:172
-#, python-format
-msgid "Help us get F%(rel)s ready!"
-msgstr "עזרו לנו להכין את F%(rel)s!"
-
-#: data/content/atomic/download/index.html:352
+#: data/content/atomic/download/index.html:378
 #, python-format
 msgid "Download F%(rel)s %(state)s images"
 msgstr "הורידו תמונות %(state)s של F%(rel)s"
 
-#: data/content/atomic/download/index.html:353
-#: data/content/server/download/index.html:66
-#: data/content/server/download/index.html:76
-#: data/content/workstation/download/index.html:164
-#: data/content/workstation/download/index.html:174
-msgid "How to test pre-releases"
-msgstr "איך לבדוק גרסאות קדם־שחרור"
-
-#: data/content/atomic/download/index.html:360
-#: data/content/atomic/prerelease/index.html:342
-#: data/content/server/download/index.html:93
+#: data/content/atomic/download/index.html:386
+#: data/content/atomic/prerelease/index.html:350
+#: data/content/server/download/index.html:97
 #: data/content/workstation/download/index.html:208
 msgid "Verify"
 msgstr "אימות"
 
-#: data/content/atomic/download/index.html:363
-#: data/content/atomic/prerelease/index.html:345
-#: data/content/server/download/index.html:96
-#: data/content/server/prerelease/index.html:63
+#: data/content/atomic/download/index.html:389
+#: data/content/atomic/prerelease/index.html:322
+#: data/content/atomic/prerelease/index.html:353
+#: data/content/server/download/index.html:100
+#: data/content/server/prerelease/index.html:41
 #: data/content/workstation/download/index.html:211
-#: data/content/workstation/prerelease/index.html:141
+#: data/content/workstation/prerelease/index.html:121
 msgid "Verify your Image"
 msgstr "אימות התמונה"
 
@@ -1091,7 +1109,7 @@ msgstr ""
 #, python-format
 msgid ""
 "This is pre-release software and is supported by the <a "
-"href=\"%(team_url)s\">Cloud Working Group</a>. Please direct questions to "
+"href=\"%(team_url)s\"> Atomic Working Group</a>. Please direct questions to "
 "their <a href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on "
 "freenode."
 msgstr ""
@@ -1219,6 +1237,10 @@ msgstr "ראשי"
 #: data/content/keys/obsolete.html:358
 msgid "Secondary"
 msgstr "משני"
+
+#: data/content/keys/index.html:102
+msgid "Fedora 24"
+msgstr "Fedora 24"
 
 #: data/content/keys/index.html:125
 msgid "EPEL 7"
@@ -1599,62 +1621,49 @@ msgstr "הורידו את Fedora %(rel)s Server"
 msgid "64-bit %sGB installation image"
 msgstr "תמונה להתקנה של 64 סיביות %s ג״ב"
 
-#: data/content/server/download/index.html:42
+#: data/content/server/download/index.html:41
+#, python-format
+msgid ""
+"Are you looking for the Fedora 27 Server Beta? We're hard at work revamping "
+"Fedora Server to be built with <a href=\"%(modularity)s\">Modularity</a> "
+"based on feedback from the <a href=\"%(boltron)s\">Boltron tech preview</a>."
+" Stay tuned for a beta release in several weeks. Read more on <a "
+"href=\"%(fedmag)s\">Fedora Magazine</a>. Or, download Fedora 26 Server "
+"below."
+msgstr ""
+
+#: data/content/server/download/index.html:45
 msgid ""
 "The Fedora Server installation image allows you to make media for your "
 "computer that boots to the installer to directly install Fedora Server on to"
 " your hard drive"
 msgstr ""
 
-#: data/content/server/download/index.html:43
+#: data/content/server/download/index.html:46
 msgid ""
 "To use this image, you need a drive that can create or \"burn\" DVDs, or a "
 "USB flash drive at least as big as the image."
 msgstr ""
 
-#: data/content/server/download/index.html:52
-#: data/content/server/prerelease/index.html:75
+#: data/content/server/download/index.html:55
+#: data/content/server/prerelease/index.html:53
 msgid "Netinstall Image:"
 msgstr "תמונה להתקנה מרשת:"
 
-#: data/content/server/download/index.html:54
-#: data/content/server/prerelease/index.html:77
+#: data/content/server/download/index.html:57
+#: data/content/server/prerelease/index.html:55
 #: data/content/workstation/download/index.html:151
-#: data/content/workstation/prerelease/index.html:160
+#: data/content/workstation/prerelease/index.html:140
 #, python-format
 msgid "64-bit %sMB image"
 msgstr "תמונת 64 סיביות %s מ״ב"
 
-#: data/content/server/download/index.html:61
-#: data/content/workstation/download/index.html:159
-#, python-format
-msgid "F%(rel)s Alpha"
-msgstr "F%(rel)s Alpha"
-
-#: data/content/server/download/index.html:65
-#: data/content/workstation/download/index.html:163
-#, python-format
-msgid "Download F%(rel)s Alpha images"
-msgstr "הורידו תמונות אלפא של F%(rel)s"
-
-#: data/content/server/download/index.html:71
-#: data/content/workstation/download/index.html:169
-#, python-format
-msgid "F%(rel)s Beta"
-msgstr "F%(rel)s Beta"
-
-#: data/content/server/download/index.html:75
-#: data/content/workstation/download/index.html:173
-#, python-format
-msgid "Download F%(rel)s Beta images"
-msgstr "הורידו תמונות בטא של F%(rel)s"
-
-#: data/content/server/download/index.html:82
+#: data/content/server/download/index.html:86
 #: data/content/workstation/download/index.html:193
 msgid "Get more Fedora"
 msgstr "קבלו עוד Fedora"
 
-#: data/content/server/download/index.html:86
+#: data/content/server/download/index.html:90
 #: data/content/workstation/download/index.html:202
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr "טכנולוגיית ARM<span class=\"sup\">®</span>"
@@ -1725,42 +1734,17 @@ msgid ""
 msgstr ""
 
 #: data/content/server/prerelease/index.html:38
-#: data/content/workstation/prerelease/index.html:55
+#: data/content/workstation/prerelease/index.html:57
 #, python-format
 msgid "When is Fedora %s going to be released?"
 msgstr "מתי צפויה Fedora %s להשתחרר?"
 
-#: data/content/server/prerelease/index.html:42
-#: data/content/workstation/prerelease/index.html:59
-msgid "Release State"
-msgstr "מצב שחרור"
-
-#: data/content/server/prerelease/index.html:43
-#: data/content/workstation/prerelease/index.html:60
-msgid "Release Date"
-msgstr "תאריך שחרור"
-
-#: data/content/server/prerelease/index.html:48
-#: data/content/workstation/prerelease/index.html:65
-msgid "Alpha Release Public Availability"
-msgstr "זמינות לציבור של גרסת אלפא"
-
-#: data/content/server/prerelease/index.html:52
-#: data/content/workstation/prerelease/index.html:69
-msgid "Beta Release Public Availability"
-msgstr "זמינות לציבור של גרסת בטא"
-
-#: data/content/server/prerelease/index.html:56
-#: data/content/workstation/prerelease/index.html:73
-msgid "Final Release Public Availability (GA)"
-msgstr " זמינות לציבור של הגרסה הסופית (GA)"
-
-#: data/content/server/prerelease/index.html:61
-#: data/content/workstation/prerelease/index.html:78
+#: data/content/server/prerelease/index.html:39
+#: data/content/workstation/prerelease/index.html:58
 msgid "Read all the key milestones of the release schedule..."
 msgstr "קראו את כל אבני הדרך המרכזיות בתכנית השחרור..."
 
-#: data/content/server/prerelease/index.html:64
+#: data/content/server/prerelease/index.html:42
 #, python-format
 msgid ""
 "Once you have downloaded an image, verify it for security and integrity. To "
@@ -1869,7 +1853,7 @@ msgstr "הורידו את Fedora %(rel)s Workstation"
 #: data/content/workstation/download/index.html:41
 #: data/content/workstation/download/index.html:98
 #: data/content/workstation/prerelease/index.html:20
-#: data/content/workstation/prerelease/index.html:109
+#: data/content/workstation/prerelease/index.html:89
 #, python-format
 msgid "%s MB Fedora Media Writer for <strong>Mac OS X</strong>"
 msgstr "%s מ״ב כותב המדיה של Fedora עבור <strong>Mac OS X</strong>"
@@ -1877,7 +1861,7 @@ msgstr "%s מ״ב כותב המדיה של Fedora עבור <strong>Mac OS X</str
 #: data/content/workstation/download/index.html:45
 #: data/content/workstation/download/index.html:126
 #: data/content/workstation/prerelease/index.html:24
-#: data/content/workstation/prerelease/index.html:131
+#: data/content/workstation/prerelease/index.html:111
 #, python-format
 msgid "64-bit %s GB ISO for <strong>Linux</strong>."
 msgstr "דמות ISO של 64 סיביות %s ג״ב עבור <strong>Linux</strong>"
@@ -1891,7 +1875,7 @@ msgstr "<a href=\"%s\">התקנה באמצעות DNF</a> אם אתם כבר מש
 #: data/content/workstation/download/index.html:50
 #: data/content/workstation/download/index.html:110
 #: data/content/workstation/prerelease/index.html:29
-#: data/content/workstation/prerelease/index.html:118
+#: data/content/workstation/prerelease/index.html:98
 #, python-format
 msgid "%s MB Fedora Media Writer for <strong>Windows</strong>"
 msgstr "%s מ״ב כותב המדיה של Fedora עבור <strong>Windows</strong>"
@@ -1921,7 +1905,7 @@ msgid "Fedora Media Writer (download above)"
 msgstr ""
 
 #: data/content/workstation/download/index.html:69
-#: data/content/workstation/prerelease/index.html:86
+#: data/content/workstation/prerelease/index.html:66
 #, python-format
 msgid "A USB Flash drive with at least %s GB space available"
 msgstr ""
@@ -1936,7 +1920,7 @@ msgid ""
 msgstr ""
 
 #: data/content/workstation/download/index.html:72
-#: data/content/workstation/prerelease/index.html:100
+#: data/content/workstation/prerelease/index.html:80
 msgid ""
 "Optionally, you may install Fedora Workstation to a laptop or desktop "
 "computer that has at least 1 GHz processor, 1 GB RAM, and 10 GB space "
@@ -1947,30 +1931,30 @@ msgid ""
 msgstr ""
 
 #: data/content/workstation/download/index.html:74
-#: data/content/workstation/prerelease/index.html:102
+#: data/content/workstation/prerelease/index.html:82
 msgid "Supported Platforms"
 msgstr ""
 
 #: data/content/workstation/download/index.html:75
-#: data/content/workstation/prerelease/index.html:103
+#: data/content/workstation/prerelease/index.html:83
 msgid "Fedora Media Writer supports the following platforms:"
 msgstr ""
 
 #: data/content/workstation/download/index.html:77
 #: data/content/workstation/download/index.html:97
-#: data/content/workstation/prerelease/index.html:108
+#: data/content/workstation/prerelease/index.html:88
 msgid "Mac OS X"
 msgstr ""
 
 #: data/content/workstation/download/index.html:78
 #: data/content/workstation/download/index.html:109
-#: data/content/workstation/prerelease/index.html:117
+#: data/content/workstation/prerelease/index.html:97
 msgid "Windows"
 msgstr ""
 
 #: data/content/workstation/download/index.html:79
 #: data/content/workstation/download/index.html:121
-#: data/content/workstation/prerelease/index.html:126
+#: data/content/workstation/prerelease/index.html:106
 msgid "Linux"
 msgstr ""
 
@@ -2003,44 +1987,42 @@ msgid "View all platform downloads"
 msgstr ""
 
 #: data/content/workstation/download/index.html:122
-#: data/content/workstation/prerelease/index.html:127
+#: data/content/workstation/prerelease/index.html:107
 msgid "Available via DNF for <strong>Fedora</strong>"
 msgstr ""
 
 #: data/content/workstation/download/index.html:123
-#: data/content/workstation/prerelease/index.html:128
+#: data/content/workstation/prerelease/index.html:108
 msgid "More details"
 msgstr ""
 
 #: data/content/workstation/download/index.html:127
-#: data/content/workstation/prerelease/index.html:132
+#: data/content/workstation/prerelease/index.html:112
 msgid "How to use this ISO?"
 msgstr ""
 
 #: data/content/workstation/download/index.html:129
-#: data/content/workstation/prerelease/index.html:134
+#: data/content/workstation/prerelease/index.html:114
 msgid "Verify this image"
 msgstr ""
 
 #: data/content/workstation/download/index.html:146
-#: data/content/workstation/prerelease/index.html:154
+#: data/content/workstation/prerelease/index.html:134
 #, python-format
 msgid "64-bit %sGB Live image"
 msgstr ""
 
 #: data/content/workstation/download/index.html:147
-#: data/content/workstation/prerelease/index.html:155
 #, python-format
 msgid "32-bit %sGB Live image"
 msgstr "תמונה חיה של 32 סיביות %s ג״ב"
 
 #: data/content/workstation/download/index.html:149
-#: data/content/workstation/prerelease/index.html:158
+#: data/content/workstation/prerelease/index.html:138
 msgid "Netinstall Images:"
 msgstr "תמונות להתקנה מרשת:"
 
 #: data/content/workstation/download/index.html:152
-#: data/content/workstation/prerelease/index.html:161
 #, python-format
 msgid "32-bit %sMB image"
 msgstr "תמונת 32 סיביות %s מ״ב"
@@ -2079,25 +2061,25 @@ msgid ""
 msgstr ""
 
 #: data/content/workstation/download/index.html:186
-#: data/content/workstation/prerelease/index.html:166
+#: data/content/workstation/prerelease/index.html:146
 #, python-format
 msgid "<a href=\"%(commonbugs_url)s\"><strong>Common Bugs</strong></a>"
 msgstr ""
 
 #: data/content/workstation/download/index.html:187
-#: data/content/workstation/prerelease/index.html:167
+#: data/content/workstation/prerelease/index.html:147
 msgid ""
 "An excellent resource to consult in case you run into any issues installing "
 "or running Fedora."
 msgstr ""
 
 #: data/content/workstation/download/index.html:189
-#: data/content/workstation/prerelease/index.html:171
+#: data/content/workstation/prerelease/index.html:151
 msgid "What does \"Live\" mean?"
 msgstr ""
 
 #: data/content/workstation/download/index.html:190
-#: data/content/workstation/prerelease/index.html:172
+#: data/content/workstation/prerelease/index.html:152
 msgid ""
 "Fedora Media Writer will create a complete, running Fedora Workstation you "
 "can run right away off of a USB drive. You can use the Live image to test "
@@ -2105,7 +2087,7 @@ msgid ""
 msgstr ""
 
 #: data/content/workstation/download/index.html:191
-#: data/content/workstation/prerelease/index.html:173
+#: data/content/workstation/prerelease/index.html:153
 msgid ""
 "When you are ready, you can install Fedora to your hard disk from within "
 "this \"live\" version of Fedora Workstation."
@@ -2140,87 +2122,90 @@ msgid ""
 "freenode."
 msgstr ""
 
-#: data/content/workstation/prerelease/index.html:82
+#: data/content/workstation/prerelease/index.html:54
+msgid ""
+"Are you looking for 32 bit images of F27 Beta? Due to some technical issues "
+"we cannot offer them, but they will be available for the F27 final release "
+"date. Stay tuned!"
+msgstr ""
+
+#: data/content/workstation/prerelease/index.html:62
 msgid "Running Pre-Release Versions of Fedora Workstation"
 msgstr ""
 
-#: data/content/workstation/prerelease/index.html:83
+#: data/content/workstation/prerelease/index.html:63
 msgid "To run a prerelease version of Fedora Workstation, you will need:"
 msgstr ""
 
-#: data/content/workstation/prerelease/index.html:85
+#: data/content/workstation/prerelease/index.html:65
 msgid "Fedora Media Writer (Download available below)"
 msgstr "כותב המדיה של Fedora (הורדה זמינה להלן)"
 
-#: data/content/workstation/prerelease/index.html:87
+#: data/content/workstation/prerelease/index.html:67
 #, python-format
 msgid ""
 "<a href=\"%s\">A live image ISO of the pre-release version of Fedora</a> you"
 " wish to run"
 msgstr ""
 
-#: data/content/workstation/prerelease/index.html:89
+#: data/content/workstation/prerelease/index.html:69
 msgid ""
 "WARNING: This procedure destroys all data on your USB media. Make sure to "
 "back up any important files from your USB media before you do this."
 msgstr ""
 
-#: data/content/workstation/prerelease/index.html:91
+#: data/content/workstation/prerelease/index.html:71
 msgid "Download the Fedora Media Writer app below."
 msgstr ""
 
-#: data/content/workstation/prerelease/index.html:92
+#: data/content/workstation/prerelease/index.html:72
 msgid "Download the desired ISO image."
 msgstr ""
 
-#: data/content/workstation/prerelease/index.html:93
+#: data/content/workstation/prerelease/index.html:73
 msgid ""
 "Open the Fedora Media Writer app. You may need to provide a password to give"
 " the app the right permissions."
 msgstr ""
 
-#: data/content/workstation/prerelease/index.html:94
+#: data/content/workstation/prerelease/index.html:74
 msgid "Select \"Custom OS...\" from the list."
 msgstr ""
 
-#: data/content/workstation/prerelease/index.html:95
+#: data/content/workstation/prerelease/index.html:75
 msgid "On the Custom OS page, select the \"Select Live ISO\" button."
 msgstr ""
 
-#: data/content/workstation/prerelease/index.html:96
+#: data/content/workstation/prerelease/index.html:76
 msgid ""
 "In the file selection window, locate and select the ISO image you "
 "downloaded."
 msgstr ""
 
-#: data/content/workstation/prerelease/index.html:97
+#: data/content/workstation/prerelease/index.html:77
 msgid ""
 "Insert your USB stick in the computer. If you used your USB stick previously"
 " to create live media, you may need to restore it to factory settings.  The "
 "app will ask you whether to do so in this case."
 msgstr ""
 
-#: data/content/workstation/prerelease/index.html:98
+#: data/content/workstation/prerelease/index.html:78
 msgid ""
 "Select \"Create Live USB\" to write the image. Wait until the process is "
 "finished before you remove the media and close the app."
 msgstr ""
 
-#: data/content/workstation/prerelease/index.html:145
+#: data/content/workstation/prerelease/index.html:125
 msgid "Validate 64-bit!"
 msgstr "אימות 64־סיביות!"
 
 #: data/content/workstation/prerelease/index.html:148
-msgid "Validate 32-bit!"
-msgstr "אימות 32־סיביות!"
-
-#: data/content/workstation/prerelease/index.html:168
 msgid ""
 "<a href=\"https://fedoraproject.org/wiki/QA/Join#release-"
 "validation\"><strong>How to test pre-releases</strong></a>"
 msgstr ""
 
-#: data/content/workstation/prerelease/index.html:169
+#: data/content/workstation/prerelease/index.html:149
 msgid "Fedora wiki guide on how to help test pre-release versions of Fedora."
 msgstr ""
 
