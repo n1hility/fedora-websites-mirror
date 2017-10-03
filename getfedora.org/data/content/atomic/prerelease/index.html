@@ -45,7 +45,7 @@
     <div class="col-md-8 col-xs-12">
       <div class="row top-margin">
           <div class="col-xs-12">
-          <p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="%(team_url)s"&gt;Cloud Working Group&lt;/a&gt;. Please direct questions to their &lt;a href="%(team_list)s"&gt;mailing list&lt;/a&gt; or %(team_irc)s on freenode.') % {'team_url':'http://fedoraproject.org/wiki/Cloud', 'team_list':'https://lists.fedoraproject.org/mailman/listinfo/cloud', 'team_irc':'#fedora-cloud'})}
+          <p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="%(team_url)s"&gt; Atomic Working Group&lt;/a&gt;. Please direct questions to their &lt;a href="%(team_list)s"&gt;mailing list&lt;/a&gt; or %(team_irc)s on freenode.') % {'team_url':'https://fedoraproject.org/wiki/Atomic_WG', 'team_list':'https://lists.projectatomic.io/mailman/listinfo/atomic-devel', 'team_irc':'#atomic'})}
           ${Markup(_('All issues or bugs should be reported via the &lt;a href="%s"&gt;Red Hat Bugzilla&lt;/a&gt;. The Fedora Project makes no guarantees as to its suitability or usefulness.') % 'https://bugzilla.redhat.com/')}
         </p>
           </div>
@@ -318,6 +318,14 @@
 		          </div>
 		      </div>
       <!-- end Base images -->
+
+          <h3>${_('Verify your Image')}</h3>
+            <p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="%s/%s/verify"&gt;these instructions&lt;/a&gt;.') % (path, lang))}</p>
+            <div class="row bottom-margin">
+              <div class="col-sm-6 col-xs-12">
+              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-CloudImages-27-x86_64-20170929.n.0-CHECKSUM">${_('Validate!')}</a>
+              </div>
+            </div>
 
     <hr />
     <xi:include href="../../../templates/export-regulations.html" />

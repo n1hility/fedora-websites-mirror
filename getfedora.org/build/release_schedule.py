@@ -16,13 +16,12 @@ def parse(cache, r):
     root = etree.fromstring(cache)
     date={}
 
-    alpha_release = root.xpath('//task[@id="f' + r + '.TestingPhase.alpha.alpha_drop"]/taskScenario/start/@humanReadable')
     beta_release = root.xpath('//task[@id="f' + r + '.TestingPhase.beta.beta_drop"]/taskScenario/start/@humanReadable')
     final_release = root.xpath('//task[@id="f' + r + '.LaunchPhase.final"]/taskScenario/start/@humanReadable')
 
 
     try:
-        date[r] = {'alpha':alpha_release[0], 'beta':beta_release[0], 'final':final_release[0]}
+        date[r] = {'beta':beta_release[0], 'final':final_release[0]}
         return date
     except IndexError:
         return {}
@@ -52,11 +51,11 @@ def schedule(release):
     try:
         u = urllib2.urlopen('http://fedorapeople.org/groups/schedule/f-' + release + '/f-' + release + '-key-milestones.tjx')
     except HTTPError:
-        date[release] = {'alpha':'2014-jan-01', 'beta':'2014-jan-01', 'final':'2014-jan-01'}
+        date[release] = {'beta':'2014-jan-01', 'final':'2014-jan-01'}
         return date
 
     except URLError:
-        date[release] = {'alpha':'2014-jan-01', 'beta':'2014-jan-01', 'final':'2014-jan-01'}
+        date[release] = {'beta':'2014-jan-01', 'final':'2014-jan-01'}
         return date
 
     # Release is already present in date if we got HTTPError

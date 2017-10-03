@@ -334,6 +334,22 @@
             <li><p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Docker/x86_64/images/Fedora-Docker-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.tar.xz">${_('Docker Image (%sMB)') % global_variables.iso_size['x86_64_docker']}</a></p></li>
             <li><p><a href="https://cloud.fedoraproject.org/">Fedora Cloud Base images</a></p></li>
           </ul>
+
+        <div class="top-space bottom-margin">
+          <py:choose>
+          <py:when test="global_variables.release['curr_atomic_state'] == 'Pre-Release'">
+            <div class="prerelease-box">
+              <h5>${Markup(_('F%(rel)s %(state)s')) % {'rel':global_variables.release['next_atomic_id'], 'state':global_variables.release['curr_atomic_state']}}</h5>
+              <h4>${_('Try a pre-release')}</h4>
+              <p>${_('We\'re working on our next release.')}<br />
+                  ${Markup(_('Help us get F%(rel)s ready!')) % {'rel':global_variables.release['next_atomic_id']}}</p>
+              <p><i class="fa fa-fw fa-sm header-icon fa-download"></i><a href="../prerelease">${Markup(_('Download F%(rel)s %(state)s images')) % {'rel':global_variables.release['next_atomic_id'], 'state':global_variables.release['curr_atomic_state']}}</a></p>
+              <p><i class="fa fa-fw fa-sm header-icon fa-book"></i><a href="//fedoraproject.org/wiki/QA/Join#release-validation">${_('How to test pre-releases')}</a></p>
+            </div>
+          </py:when>
+        </py:choose>
+        </div>
+
         <div class="top-space bottom-margin"><h4>${_('Resources')}</h4></div>
           <p><i class="fa fa-fw fa-sm header-icon fa-globe"></i>${Markup(_('&lt;a href="https://www.projectatomic.io/docs/quickstart/"&gt;&lt;strong&gt;Project Atomic: Getting Started&lt;/strong&gt;&lt;/a&gt;'))}</p>
           <div class="pull-right bottom-step"><p>${_('Documentation on getting started using Project Atomic / Atomic Host.')}</p></div>
@@ -341,20 +357,6 @@
           <div class="pull-right bottom-step"><p>${Markup(_('Join the upstream mailing list at &lt;a href="%s"&gt;atomic@projectatomic.io&lt;/a&gt;.') % ('mailto:atomic@projectatomic.io'))}</p></div>
           <p><i class="fa fa-fw fa-sm header-icon fa-comments-o"></i>${Markup(_('&lt;a href="%s"&gt;&lt;strong&gt;Project Atomic: IRC Chat&lt;/strong&gt;&lt;/a&gt;') % ('https://kiwiirc.com/client/irc.freenode.net'))}</p>
           <div class="pull-right bottom-margin"><p>${Markup(_('Join the Project Atomic channel &lt;strong&gt;#atomic&lt;/strong&gt;&lt;/a&gt; on &lt;strong&gt;irc.freenode.org&lt;/strong&gt;&lt;/a&gt;.'))}</p></div>
-          <div class="top-space bottom-margin">
-            <py:choose>
-            <py:when test="global_variables.release['curr_atomic_state'] == 'Pre-Release'">
-              <div class="prerelease-box">
-                <h5>${Markup(_('F%(rel)s %(state)s')) % {'rel':global_variables.release['next_atomic_id'], 'state':global_variables.release['curr_atomic_state']}}</h5>
-                <h4>${_('Try a pre-release')}</h4>
-                <p>${_('We\'re working on our next release.')}<br />
-                    ${Markup(_('Help us get F%(rel)s ready!')) % {'rel':global_variables.release['next_atomic_id']}}</p>
-                <p><i class="fa fa-fw fa-sm header-icon fa-download"></i><a href="../prerelease">${Markup(_('Download F%(rel)s %(state)s images')) % {'rel':global_variables.release['next_atomic_id'], 'state':global_variables.release['curr_atomic_state']}}</a></p>
-                <p><i class="fa fa-fw fa-sm header-icon fa-book"></i><a href="//fedoraproject.org/wiki/QA/Join#release-validation">${_('How to test pre-releases')}</a></p>
-              </div>
-            </py:when>
-          </py:choose>
-          </div>
           <noscript>
           <div class="bottom-margin">
             <h3>${_('Verify')}</h3>
