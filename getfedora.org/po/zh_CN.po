@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-01 23:23+0200\n"
+"POT-Creation-Date: 2017-10-03 21:02+0200\n"
 "PO-Revision-Date: 2017-07-17 07:08-0400\n"
 "Last-Translator: Jerry Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/fedora-web/language/zh_CN/)\n"
@@ -110,43 +110,45 @@ msgstr ""
 "要牢记每个人都各不相同。Fedora "
 "的强大来自于其社区的多样性，社区成员有着广泛的背景。对同一件事，不同的人有不同的观点。如果您无法理解某人为何坚持某种观点，那也并不意味着他就是错的。别忘了，是人都会犯错，互相指责就什么也干不了，不如提出有助于解决问题的建议，帮助对方认识和吸取教训。"
 
-#: data/content/index.html:8
-msgid "Fedora"
-msgstr "Fedora"
+#: data/content/index.html:9
+msgid ""
+"Get Fedora: download our Linux-based OS for developer desktops, running "
+"containers, and more"
+msgstr ""
 
-#: data/content/index.html:17
+#: data/content/index.html:18
 msgid "Choose Freedom. Choose Fedora."
 msgstr "选择自由，选择 Fedora。"
 
-#: data/content/index.html:18
+#: data/content/index.html:19
 msgid ""
 "Less setup, more innovation. Choose a flavor of Fedora<br /><br /> "
 "streamlined for your needs, and get to work right away."
 msgstr "更少的配置，更多的创新。<br /><br />只需选择一个满足您需求的 Fedora 产品，便可立即开始使用。"
 
-#: data/content/index.html:31 data/content/index.html:42
+#: data/content/index.html:32 data/content/index.html:43
 #, python-format
 msgid ""
 "<strong>Fedora %(rel)s %(state)s</strong> released! Test it in the Download "
 "section."
 msgstr "<strong>Fedora %(rel)s %(state)s</strong> 现已发布！ 在下载部分获取并测试。"
 
-#: data/content/index.html:54
+#: data/content/index.html:55
 #, python-format
 msgid "Fedora %(rel)s released! Get it now."
 msgstr "Fedora %(rel)s 现已发布！现在获取。"
 
-#: data/content/index.html:69 data/content/verify.html:39
+#: data/content/index.html:70 data/content/verify.html:39
 #: data/templates/productselector-workstation.html:12
 msgid "Workstation"
 msgstr "Workstation"
 
-#: data/content/index.html:71 data/content/index.html:87
-#: data/content/index.html:102
+#: data/content/index.html:72 data/content/index.html:88
+#: data/content/index.html:103
 msgid "Download Now"
 msgstr "现在下载"
 
-#: data/content/index.html:76 data/content/index.html:133
+#: data/content/index.html:77 data/content/index.html:134
 msgid ""
 "Fedora Workstation is a polished, easy to use operating system for laptop "
 "and desktop computers, with a complete set of tools for developers and "
@@ -154,8 +156,8 @@ msgid ""
 msgstr "Fedora Workstation 为笔记本和台式机提供优雅易用的操作系统，包含各类开发者和创客所需的整套工具。"
 
 #: data/content/atomic/index.html:125 data/content/atomic/index.html:131
-#: data/content/index.html:78 data/content/index.html:93
-#: data/content/index.html:108 data/content/server/index.html:20
+#: data/content/index.html:79 data/content/index.html:94
+#: data/content/index.html:109 data/content/server/index.html:20
 #: data/content/server/index.html:125 data/content/server/index.html:131
 #: data/content/workstation/index.html:20
 #: data/content/workstation/index.html:185
@@ -163,42 +165,42 @@ msgstr "Fedora Workstation 为笔记本和台式机提供优雅易用的操作�
 msgid "Download now"
 msgstr "马上下载"
 
-#: data/content/index.html:85 data/content/verify.html:51
+#: data/content/index.html:86 data/content/verify.html:51
 #: data/templates/productselector-server.html:13
 msgid "Server"
 msgstr "Server"
 
-#: data/content/index.html:91 data/content/index.html:138
+#: data/content/index.html:92 data/content/index.html:139
 msgid ""
 "Fedora Server is a powerful, flexible operating system that includes the "
 "best and latest datacenter technologies. It puts you in control of all your "
 "infrastructure and services."
 msgstr "Fedora Server 是一款强大而灵活的操作系统，包括了最好最新的数据中心技术。它可以让您操控全部基础架构和服务。"
 
-#: data/content/index.html:100 data/content/verify.html:60
+#: data/content/index.html:101 data/content/verify.html:60
 #: data/templates/productselector-cloud.html:13
 msgid "Atomic"
 msgstr "Atomic"
 
-#: data/content/atomic/index.html:19 data/content/index.html:106
-#: data/content/index.html:143
+#: data/content/atomic/index.html:19 data/content/index.html:107
+#: data/content/index.html:144
 msgid ""
 "Fedora Atomic provides the best platform for your Linux-Docker-Kubernetes "
 "(LDK) application stack."
 msgstr "Fedora Atomic 将是您运行 Linux-Docker-Kubernetes(LDK) 应用的最佳平台。"
 
-#: data/content/index.html:166
+#: data/content/index.html:167
 msgid ""
 "Fedora is always free for anyone to use, modify, and distribute. It is built"
 " and used by people across the globe who work together as a community: the "
 "Fedora Project."
 msgstr "Fedora 始终允许任何人自由使用，修改和发布。它由来自世界各地的人们在 Fedora 项目这一社区中协作打造。"
 
-#: data/content/index.html:179
+#: data/content/index.html:180
 msgid "Want more Fedora options?"
 msgstr "想要更多 Fedora 选项？"
 
-#: data/content/index.html:198
+#: data/content/index.html:199
 msgid ""
 "The Fedora community also releases <a "
 "href=\"https://arm.fedoraproject.org/\">ARM images</a>, alternate live "
@@ -212,11 +214,11 @@ msgstr ""
 "href=\"https://spins.fedoraproject.org/\">Fedora Spins</a> 或 <a "
 "href=\"https://labs.fedoraproject.org/\">Fedora Labs</a> 网站了解详情。"
 
-#: data/content/index.html:205
+#: data/content/index.html:206
 msgid "Be connected & informed."
 msgstr "保持联系并获得通知。"
 
-#: data/content/index.html:215
+#: data/content/index.html:216
 msgid ""
 "Want to get <a href=\"http://whatcanidoforfedora.org/\">involved</a>? Find "
 "out what's happening in the <a "
@@ -228,11 +230,11 @@ msgstr ""
 "href=\"http://communityblog.fedoraproject.org/\">社区</a>发生的事情？请前往<a "
 "href=\"http://fedoramagazine.org/\">Fedora Magazine</a>阅读最新咨询及有趣的故事。"
 
-#: data/content/index.html:225
+#: data/content/index.html:226
 msgid "Read the docs."
 msgstr "阅读文档。"
 
-#: data/content/index.html:235
+#: data/content/index.html:236
 #, python-format
 msgid ""
 "Check out the Release Notes for detailed information on the current release."
@@ -242,11 +244,11 @@ msgstr ""
 "查阅发行日志获得关于当前版本的详细信息。要了解更多关于使用 Fedora 及诸如系统需求的信息，请查阅 <a "
 "href=\"%s\"><strong>官方文档</strong></a>。"
 
-#: data/content/index.html:242
+#: data/content/index.html:243
 msgid "Get help."
 msgstr "获得帮助。"
 
-#: data/content/index.html:252
+#: data/content/index.html:253
 #, python-format
 msgid ""
 "Need some help with Fedora? Check out <a href=\"%s\">Ask Fedora</a>, where "
@@ -359,46 +361,52 @@ msgid ""
 msgstr "CHECKSUM 文件应有来自以下公钥之一的签名："
 
 #: data/content/keys/index.html:46 data/content/verify.html:82
+msgid "Fedora 28"
+msgstr ""
+
+#: data/content/keys/index.html:59 data/content/verify.html:83
 msgid "Fedora 27"
 msgstr "Fedora 27"
 
-#: data/content/keys/index.html:60 data/content/verify.html:83
+#: data/content/keys/index.html:72 data/content/verify.html:84
 msgid "Fedora 26"
 msgstr "Fedora 26"
 
-#: data/content/verify.html:84
+#: data/content/verify.html:85
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr "Fedora 26 次级架构 (AArch64、PPC64、PPC64le、s390 和 s390x)"
 
-#: data/content/keys/index.html:81 data/content/verify.html:85
+#: data/content/keys/index.html:93 data/content/verify.html:86
 msgid "Fedora 25"
 msgstr "Fedora 25"
 
-#: data/content/verify.html:86
+#: data/content/verify.html:87
 msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr "Fedora 25 次级架构 (AArch64、PPC64、PPC64le、s390 和 s390x)"
 
-#: data/content/verify.html:88
+#: data/content/verify.html:89
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
 msgstr "当 CHECKSUM 文件校验文成后，检查镜像文件的校验和值是否与其匹配："
 
-#: data/content/verify.html:90
+#: data/content/verify.html:91
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr "如果输出结果显示文件有效，则镜像文件可以使用！"
 
-#: data/content/verify.html:91
+#: data/content/verify.html:92
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr "如何在其他操作系统上校验下载镜像？"
 
-#: data/content/verify.html:92
+#: data/content/verify.html:93
 msgid "Read these instructions to validate your image."
 msgstr "请阅读这些说明以了解如何校验镜像。"
 
 #: data/content/atomic/index.html:8
-msgid "Fedora Atomic"
-msgstr "Fedora Atomic"
+msgid ""
+"Get Fedora Atomic: the best platform for your containerized applications "
+"stack"
+msgstr ""
 
 #: data/content/atomic/index.html:18
 msgid ""
@@ -953,30 +961,23 @@ msgid "Docker Image (%sMB)"
 msgstr "Docker 镜像 (%sMB)"
 
 #: data/content/atomic/download/index.html:342
-#: data/content/workstation/download/index.html:159
 #, python-format
-msgid "F%(rel)s Alpha"
-msgstr "F%(rel)s Alpha"
+msgid "F%(rel)s %(state)s"
+msgstr "F%(rel)s %(state)s"
 
 #: data/content/atomic/download/index.html:343
-#: data/content/atomic/download/index.html:353
-#: data/content/atomic/download/index.html:375
 #: data/content/workstation/download/index.html:160
 #: data/content/workstation/download/index.html:170
 msgid "Try a pre-release"
 msgstr "尝试一下预先发布版"
 
 #: data/content/atomic/download/index.html:344
-#: data/content/atomic/download/index.html:354
-#: data/content/atomic/download/index.html:376
 #: data/content/workstation/download/index.html:161
 #: data/content/workstation/download/index.html:171
 msgid "We're working on our next release."
 msgstr "我们正在开发下一个发布版"
 
 #: data/content/atomic/download/index.html:345
-#: data/content/atomic/download/index.html:355
-#: data/content/atomic/download/index.html:377
 #: data/content/workstation/download/index.html:162
 #: data/content/workstation/download/index.html:172
 #, python-format
@@ -984,39 +985,24 @@ msgid "Help us get F%(rel)s ready!"
 msgstr "帮助我们让 F%(rel)s 做好准备！"
 
 #: data/content/atomic/download/index.html:346
-#: data/content/workstation/download/index.html:163
 #, python-format
-msgid "Download F%(rel)s Alpha images"
-msgstr "下载 F%(rel)s Alpha 镜像"
+msgid "Download F%(rel)s %(state)s images"
+msgstr "下载 F%(rel)s %(state)s 镜像"
 
 #: data/content/atomic/download/index.html:347
-#: data/content/atomic/download/index.html:357
-#: data/content/atomic/download/index.html:379
 #: data/content/workstation/download/index.html:164
 #: data/content/workstation/download/index.html:174
 msgid "How to test pre-releases"
 msgstr "如何测试预先发布版"
 
-#: data/content/atomic/download/index.html:352
-#: data/content/workstation/download/index.html:169
-#, python-format
-msgid "F%(rel)s Beta"
-msgstr "F%(rel)s Beta"
-
-#: data/content/atomic/download/index.html:356
-#: data/content/workstation/download/index.html:173
-#, python-format
-msgid "Download F%(rel)s Beta images"
-msgstr "下载 F%(rel)s Beta 镜像"
-
-#: data/content/atomic/download/index.html:363
+#: data/content/atomic/download/index.html:353
 #: data/content/atomic/prerelease/index.html:341
 #: data/content/workstation/download/index.html:179
 #: data/content/workstation/prerelease/index.html:145
 msgid "Resources"
 msgstr "资源"
 
-#: data/content/atomic/download/index.html:364
+#: data/content/atomic/download/index.html:354
 #: data/content/atomic/prerelease/index.html:342
 msgid ""
 "<a href=\"https://www.projectatomic.io/docs/quickstart/\"><strong>Project "
@@ -1025,12 +1011,12 @@ msgstr ""
 "<a href=\"https://www.projectatomic.io/docs/quickstart/\"><strong>Project "
 "Atomic: 入门指南</strong></a>"
 
-#: data/content/atomic/download/index.html:365
+#: data/content/atomic/download/index.html:355
 #: data/content/atomic/prerelease/index.html:343
 msgid "Documentation on getting started using Project Atomic / Atomic Host."
 msgstr "关于如何开始使用 Project Atomic / Atomic Host 的文档。"
 
-#: data/content/atomic/download/index.html:366
+#: data/content/atomic/download/index.html:356
 #: data/content/atomic/prerelease/index.html:344
 msgid ""
 "<a "
@@ -1041,7 +1027,7 @@ msgstr ""
 "href=\"https://lists.projectatomic.io/mailman/listinfo/atomic\"><strong>Project"
 " Atomic: 邮件列表</strong></a>"
 
-#: data/content/atomic/download/index.html:367
+#: data/content/atomic/download/index.html:357
 #: data/content/atomic/prerelease/index.html:345
 #, python-format
 msgid ""
@@ -1049,13 +1035,13 @@ msgid ""
 "href=\"%s\">atomic@projectatomic.io</a>."
 msgstr "加入上游邮件列表位于 <a href=\"%s\">atomic@projectatomic.io</a>。"
 
-#: data/content/atomic/download/index.html:368
+#: data/content/atomic/download/index.html:358
 #: data/content/atomic/prerelease/index.html:346
 #, python-format
 msgid "<a href=\"%s\"><strong>Project Atomic: IRC Chat</strong></a>"
 msgstr "<a href=\"%s\"><strong>Project Atomic: IRC Chat</strong></a>"
 
-#: data/content/atomic/download/index.html:369
+#: data/content/atomic/download/index.html:359
 #: data/content/atomic/prerelease/index.html:347
 msgid ""
 "Join the Project Atomic channel <strong>#atomic</strong></a> on "
@@ -1064,24 +1050,14 @@ msgstr ""
 "加入 Project Atomic 频道 <strong>#atomic</strong></a> 位于 "
 "<strong>irc.freenode.org</strong></a>。"
 
-#: data/content/atomic/download/index.html:374
-#, python-format
-msgid "F%(rel)s %(state)s"
-msgstr "F%(rel)s %(state)s"
-
-#: data/content/atomic/download/index.html:378
-#, python-format
-msgid "Download F%(rel)s %(state)s images"
-msgstr "下载 F%(rel)s %(state)s 镜像"
-
-#: data/content/atomic/download/index.html:386
+#: data/content/atomic/download/index.html:362
 #: data/content/atomic/prerelease/index.html:350
 #: data/content/server/download/index.html:97
 #: data/content/workstation/download/index.html:208
 msgid "Verify"
 msgstr "验证"
 
-#: data/content/atomic/download/index.html:389
+#: data/content/atomic/download/index.html:365
 #: data/content/atomic/prerelease/index.html:322
 #: data/content/atomic/prerelease/index.html:353
 #: data/content/server/download/index.html:100
@@ -1217,9 +1193,9 @@ msgstr "阅读常见问题了解更多内容 »"
 msgid "Currently Used Keys"
 msgstr "当前使用的公钥"
 
-#: data/content/keys/index.html:46 data/content/keys/index.html:60
-#: data/content/keys/index.html:81 data/content/keys/index.html:102
-#: data/content/keys/index.html:125 data/content/keys/index.html:138
+#: data/content/keys/index.html:46 data/content/keys/index.html:59
+#: data/content/keys/index.html:72 data/content/keys/index.html:93
+#: data/content/keys/index.html:116 data/content/keys/index.html:129
 #: data/content/keys/obsolete.html:72 data/content/keys/obsolete.html:85
 #: data/content/keys/obsolete.html:100 data/content/keys/obsolete.html:113
 #: data/content/keys/obsolete.html:126 data/content/keys/obsolete.html:139
@@ -1229,31 +1205,28 @@ msgstr "当前使用的公钥"
 #: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
 #: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
 #: data/content/keys/obsolete.html:358 data/content/keys/obsolete.html:379
+#: data/content/keys/obsolete.html:401
 msgid "Primary"
 msgstr "主要"
 
-#: data/content/keys/index.html:60 data/content/keys/index.html:81
-#: data/content/keys/index.html:102 data/content/keys/obsolete.html:201
-#: data/content/keys/obsolete.html:225 data/content/keys/obsolete.html:247
-#: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
-#: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
-#: data/content/keys/obsolete.html:358
+#: data/content/keys/index.html:72 data/content/keys/index.html:93
+#: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
+#: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
+#: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
+#: data/content/keys/obsolete.html:337 data/content/keys/obsolete.html:358
+#: data/content/keys/obsolete.html:379
 msgid "Secondary"
 msgstr "次要"
 
-#: data/content/keys/index.html:102
-msgid "Fedora 24"
-msgstr "Fedora 24"
-
-#: data/content/keys/index.html:125
+#: data/content/keys/index.html:116
 msgid "EPEL 7"
 msgstr "EPEL 7"
 
-#: data/content/keys/index.html:138
+#: data/content/keys/index.html:129
 msgid "EPEL 6"
 msgstr "EPEL 6"
 
-#: data/content/keys/index.html:154
+#: data/content/keys/index.html:145
 #, python-format
 msgid "Looking for <a href=\"%s\">obsolete keys</a>?"
 msgstr "想查找 <a href=\"%s\">已失效公钥</a>吗？"
@@ -1394,22 +1367,26 @@ msgid "Fedora 23"
 msgstr "Fedora 23"
 
 #: data/content/keys/obsolete.html:379
+msgid "Fedora 24"
+msgstr "Fedora 24"
+
+#: data/content/keys/obsolete.html:401
 msgid "EPEL 5"
 msgstr "EPEL 5"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:414
 msgid "EPEL 4"
 msgstr "EPEL 4"
 
-#: data/content/keys/obsolete.html:393
+#: data/content/keys/obsolete.html:414
 msgid "RPM-GPG-KEY-EPEL"
 msgstr "RPM-GPG-KEY-EPEL"
 
-#: data/content/keys/obsolete.html:406
+#: data/content/keys/obsolete.html:427
 msgid "Fedora Extras"
 msgstr "Fedora Extras"
 
-#: data/content/keys/obsolete.html:406
+#: data/content/keys/obsolete.html:427
 msgid ""
 "If you are using Fedora Extras with Fedora Core 6, use this package from "
 "<strong>extras</strong> repository.  This key will no longer be used after "
@@ -1421,11 +1398,11 @@ msgstr ""
 "的软件包。该公钥在 Fedora Core 6 及 Extras 停止维护(2007年12月7日)后就不再使用。该公钥未包含在 Fedora 7 "
 "及以后发布的 <strong>fedora-release</strong> 软件包中。"
 
-#: data/content/keys/obsolete.html:423
+#: data/content/keys/obsolete.html:444
 msgid "Legacy"
 msgstr "遗留"
 
-#: data/content/keys/obsolete.html:423
+#: data/content/keys/obsolete.html:444
 msgid ""
 "This key was used for packages that were released by Fedora Legacy project "
 "to update releases that reached their official EOL. The Fedora Legacy "
@@ -1532,8 +1509,8 @@ msgid ""
 msgstr "如果您想要验证您在系统中安装的公钥与在这里列出的公钥匹配，您可以使用 GnuPG 检查公钥指纹匹配。例如："
 
 #: data/content/server/index.html:8
-msgid "Fedora Server"
-msgstr "Fedora Server"
+msgid "Get Fedora Server: the latest tech for your apps and services"
+msgstr ""
 
 #: data/content/server/index.html:19
 #: data/templates/productselector-server.html:14
@@ -1790,8 +1767,8 @@ msgstr ""
 "href=\"%s/%s/verify\">这些说明</a>进行。"
 
 #: data/content/workstation/index.html:8
-msgid "Fedora Workstation"
-msgstr "Fedora Workstation"
+msgid "Get Fedora Workstation: the best desktop OS for software developers"
+msgstr ""
 
 #: data/content/workstation/index.html:19
 #: data/templates/productselector-workstation.html:13
@@ -2067,6 +2044,26 @@ msgstr "网络安装镜像："
 msgid "32-bit %sMB image"
 msgstr "32 位 %sMB 镜像"
 
+#: data/content/workstation/download/index.html:159
+#, python-format
+msgid "F%(rel)s Alpha"
+msgstr "F%(rel)s Alpha"
+
+#: data/content/workstation/download/index.html:163
+#, python-format
+msgid "Download F%(rel)s Alpha images"
+msgstr "下载 F%(rel)s Alpha 镜像"
+
+#: data/content/workstation/download/index.html:169
+#, python-format
+msgid "F%(rel)s Beta"
+msgstr "F%(rel)s Beta"
+
+#: data/content/workstation/download/index.html:173
+#, python-format
+msgid "Download F%(rel)s Beta images"
+msgstr "下载 F%(rel)s Beta 镜像"
+
 #: data/content/workstation/download/index.html:180
 #, python-format
 msgid "<a href=\"%(fmagazine_url)s\"><strong>Release Announcement</strong></a>"
@@ -2078,10 +2075,9 @@ msgstr "在 Fedora Magazine 上阅读完整的发布公告。"
 
 #: data/content/workstation/download/index.html:182
 msgid ""
-"<a href=\"//docs.fedoraproject.org/release-notes\"><strong>Release "
-"Notes</strong></a>"
+"<a href=\"//docs.fedoraproject.org/f26/release-"
+"notes/index.html\"><strong>Release Notes</strong></a>"
 msgstr ""
-"<a href=\"//docs.fedoraproject.org/release-notes\"><strong>发行公告</strong></a>"
 
 #: data/content/workstation/download/index.html:183
 msgid ""
@@ -2091,10 +2087,9 @@ msgstr "了解最新版 Fedora 的改动以及最低系统要求和运行 Fedora
 
 #: data/content/workstation/download/index.html:184
 msgid ""
-"<a href=\"//docs.fedoraproject.org/install-guide\"><strong>Installation "
-"Guide</strong></a>"
+"<a href=\"//docs.fedoraproject.org/f26/install-"
+"guide/Book_Info.html#\"><strong>Installation Guide</strong></a>"
 msgstr ""
-"<a href=\"//docs.fedoraproject.org/install-guide\"><strong>安装指导</strong></a>"
 
 #: data/content/workstation/download/index.html:185
 msgid ""
