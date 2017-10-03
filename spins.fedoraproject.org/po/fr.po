@@ -15,16 +15,15 @@
 # Kévin Raymond <shaiton@fedoraproject.org>, 2011-2013
 # neb <nick@bebout.net>, 2011
 # Jean-Baptiste Holcroft <jean-baptiste@holcroft.fr>, 2015. #zanata
-# dominique <chepioq@gmail.com>, 2015. #zanata
-# Jean-Baptiste Holcroft <jean-baptiste@holcroft.fr>, 2016. #zanata
-# José Fournier <jaaf64@zoraldia.com>, 2016. #zanata
+# Jean-Baptiste Holcroft <jean-baptiste@holcroft.fr>, 2017. #zanata
+# José Fournier <jaaf64@zoraldia.com>, 2017. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-11-22 12:45+0100\n"
-"PO-Revision-Date: 2016-11-20 05:21-0500\n"
-"Last-Translator: Jean-Baptiste Holcroft <jean-baptiste@holcroft.fr>\n"
+"POT-Creation-Date: 2017-10-01 16:09+0200\n"
+"PO-Revision-Date: 2017-07-12 06:20-0400\n"
+"Last-Translator: José Fournier <jaaf64@zoraldia.com>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/fedora-web/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,70 +37,89 @@ msgstr ""
 msgid "Fedora Spins"
 msgstr "Variantes de Fedora"
 
-#: data/content/index.html:27 data/content/prerelease.html:47
+#: data/content/index.html:21 data/content/index.html:32
+#, python-format
+msgid ""
+"<strong>Fedora %(rel)s %(state)s</strong> released! <a "
+"href=\"%(link)s\">Test it now ></a>"
+msgstr ""
+"<strong>Fedora %(rel)s %(state)s </strong> est disponible ! <a "
+"href=\"%(link)s\">Testez-le maintenant ></a>"
+
+#: data/content/index.html:43
+#, python-format
+msgid "Fedora %(rel)s released! Get it now."
+msgstr "Fedora %(rel)s est disponible ! Récupérez-le maintenant."
+
+#: data/content/index.html:64 data/content/prerelease.html:48
 msgid "A complete, modern desktop built using the KDE Plasma Desktop."
 msgstr ""
 "Un environnement bureautique complet et moderne utilisant KDE Plasma "
 "Desktop."
 
-#: data/content/index.html:41 data/content/prerelease.html:69
+#: data/content/index.html:78 data/content/prerelease.html:70
 msgid "A complete, well-integrated Xfce Desktop."
 msgstr "Xfce, un bureau complet et bien intégré."
 
-#: data/content/index.html:55 data/content/prerelease.html:91
+#: data/content/index.html:92
+msgid "A lightweight, well-integrated LXQt desktop environment."
+msgstr "LXQt, un environnement de bureau léger et bien intégré."
+
+#: data/content/index.html:106 data/content/prerelease.html:136
+msgid "A classic Fedora Desktop with an additional 3D Windows Manager."
+msgstr ""
+"Un bureau Fedora classique avec en plus un gestionnaire de fenêtres 3D."
+
+#: data/content/index.html:120
+msgid "A modern desktop featuring traditional Gnome user experience."
+msgstr ""
+"Un bureau moderne procurant une expérience utilisateur Gnome traditionnelle."
+
+#: data/content/index.html:134 data/content/prerelease.html:92
 msgid "A light, fast, less-resource hungry desktop environment."
 msgstr ""
 "Un environnement bureautique plus léger, rapide et consommant moins de "
 "ressources."
 
-#: data/content/index.html:69
-msgid "A classic Fedora Desktop with an additional 3D Windows Manager."
-msgstr ""
-"Un bureau Fedora classique avec en plus un gestionnaire de fenêtres 3D."
-
-#: data/content/index.html:83
-msgid "A modern desktop featuring traditional Gnome user experience."
-msgstr ""
-"Un bureau moderne avec une expérience utilisateur Gnome traditionnelle."
-
-#: data/content/index.html:97 data/content/prerelease.html:157
+#: data/content/index.html:148 data/content/prerelease.html:180
 msgid "Discover. Reflect. Share. Learn."
 msgstr "Découvrir. Réfléchir. Partager. Apprendre."
 
-#: data/content/index.html:109
+#: data/content/index.html:160
 #, python-format
 msgid "Looking for more Fedora options? Try <a href=\"%s\">Fedora Labs</a>"
 msgstr ""
-"À la recherche de plus d'options Fedora ? Essayez <a href=\"%s\">Fedora "
+"À la recherche de plus d’options Fedora ? Essayez <a href=\"%s\">Fedora "
 "Labs</a>"
 
-#: data/content/index.html:119 data/content/prerelease.html:197
+#: data/content/index.html:170 data/content/prerelease.html:274
 msgid "What are Spins?"
-msgstr "Qu'est-ce qu'un spin ?"
+msgstr "Qu’est-ce qu’un spin ?"
 
-#: data/content/index.html:120 data/content/prerelease.html:198
+#: data/content/index.html:171 data/content/prerelease.html:275
 msgid ""
 "The default desktop environment of Fedora is GNOME, but if you prefer an "
 "alternative desktop environment such as KDE Plasma Desktop or Xfce, you can "
 "download a spin for your preferred desktop environment and use that to "
 "install Fedora, pre-configured for the desktop environment of your choice."
 msgstr ""
-"L'environnement de bureau par défaut de Fedora est GNOME, mais si vous "
+"L’environnement de bureau par défaut de Fedora est GNOME, mais si vous "
 "préférez une alternative telle que  Plasma Desktop de KDE ou Xfce, vous "
 "pouvez télécharger une variante (spin) avec votre environnement de bureau "
-"favori et l'utiliser pour installer Fedora, pré-configuré pour "
-"l'environnement de bureau de votre choix."
+"favori et l’utiliser pour installer Fedora, pré-configuré pour "
+"l’environnement de bureau de votre choix."
 
-#: data/content/index.html:131 data/content/index.html:150
-#: data/content/prerelease.html:209 data/content/prerelease.html:228
 #: data/content/cinnamon/download/index.html:94
-#: data/content/cinnamon/download/index.html:113
-#: data/content/kde/download/index.html:94
+#: data/content/cinnamon/download/index.html:113 data/content/index.html:182
+#: data/content/index.html:201 data/content/kde/download/index.html:94
 #: data/content/kde/download/index.html:113
 #: data/content/lxde/download/index.html:94
 #: data/content/lxde/download/index.html:113
+#: data/content/lxqt/download/index.html:94
+#: data/content/lxqt/download/index.html:113
 #: data/content/mate-compiz/download/index.html:94
 #: data/content/mate-compiz/download/index.html:113
+#: data/content/prerelease.html:286 data/content/prerelease.html:305
 #: data/content/soas/download/index.html:99
 #: data/content/soas/download/index.html:118
 #: data/content/xfce/download/index.html:94
@@ -109,13 +127,14 @@ msgstr ""
 msgid "Downloading"
 msgstr "Téléchargement"
 
-#: data/content/index.html:132 data/content/index.html:151
 #: data/content/cinnamon/download/index.html:95
-#: data/content/cinnamon/download/index.html:114
-#: data/content/kde/download/index.html:95
+#: data/content/cinnamon/download/index.html:114 data/content/index.html:183
+#: data/content/index.html:202 data/content/kde/download/index.html:95
 #: data/content/kde/download/index.html:114
 #: data/content/lxde/download/index.html:95
 #: data/content/lxde/download/index.html:114
+#: data/content/lxqt/download/index.html:95
+#: data/content/lxqt/download/index.html:114
 #: data/content/mate-compiz/download/index.html:95
 #: data/content/mate-compiz/download/index.html:114
 #: data/content/soas/download/index.html:100
@@ -129,24 +148,20 @@ msgid ""
 "alternative download methods."
 msgstr ""
 "Les variantes sont proposées en téléchargement direct, mais vous pouvez "
-"aussi les obtenir via BitTorrent. Dans ce cas vous aurez besoin d'un client "
+"aussi les obtenir via BitTorrent. Dans ce cas vous aurez besoin d’un client "
 "BitTorrent pour pouvoir télécharger une variante. Si vous ne pouvez pas "
-"utiliser BitTorrent, certaines variantes offrent d'autres méthodes de "
+"utiliser BitTorrent, certaines variantes offrent d’autres méthodes de "
 "téléchargement."
 
-#: data/content/index.html:133 data/content/index.html:138
-#: data/content/index.html:143 data/content/index.html:164
-#: data/content/index.html:167 data/content/index.html:170
-#: data/content/prerelease.html:211 data/content/prerelease.html:216
-#: data/content/prerelease.html:221 data/content/prerelease.html:242
-#: data/content/prerelease.html:245 data/content/prerelease.html:248
 #: data/content/cinnamon/download/index.html:96
 #: data/content/cinnamon/download/index.html:101
 #: data/content/cinnamon/download/index.html:106
 #: data/content/cinnamon/download/index.html:127
 #: data/content/cinnamon/download/index.html:130
-#: data/content/cinnamon/download/index.html:133
-#: data/content/kde/download/index.html:96
+#: data/content/cinnamon/download/index.html:133 data/content/index.html:184
+#: data/content/index.html:189 data/content/index.html:194
+#: data/content/index.html:215 data/content/index.html:218
+#: data/content/index.html:221 data/content/kde/download/index.html:96
 #: data/content/kde/download/index.html:101
 #: data/content/kde/download/index.html:106
 #: data/content/kde/download/index.html:127
@@ -158,12 +173,21 @@ msgstr ""
 #: data/content/lxde/download/index.html:127
 #: data/content/lxde/download/index.html:130
 #: data/content/lxde/download/index.html:133
+#: data/content/lxqt/download/index.html:96
+#: data/content/lxqt/download/index.html:101
+#: data/content/lxqt/download/index.html:106
+#: data/content/lxqt/download/index.html:127
+#: data/content/lxqt/download/index.html:130
+#: data/content/lxqt/download/index.html:133
 #: data/content/mate-compiz/download/index.html:96
 #: data/content/mate-compiz/download/index.html:101
 #: data/content/mate-compiz/download/index.html:106
 #: data/content/mate-compiz/download/index.html:127
 #: data/content/mate-compiz/download/index.html:130
 #: data/content/mate-compiz/download/index.html:133
+#: data/content/prerelease.html:288 data/content/prerelease.html:293
+#: data/content/prerelease.html:298 data/content/prerelease.html:319
+#: data/content/prerelease.html:322 data/content/prerelease.html:325
 #: data/content/soas/download/index.html:101
 #: data/content/soas/download/index.html:106
 #: data/content/soas/download/index.html:111
@@ -179,16 +203,17 @@ msgstr ""
 msgid "Learn more"
 msgstr "En savoir plus"
 
-#: data/content/index.html:136 data/content/index.html:154
-#: data/content/prerelease.html:214 data/content/prerelease.html:232
 #: data/content/cinnamon/download/index.html:99
-#: data/content/cinnamon/download/index.html:117
-#: data/content/kde/download/index.html:99
+#: data/content/cinnamon/download/index.html:117 data/content/index.html:187
+#: data/content/index.html:205 data/content/kde/download/index.html:99
 #: data/content/kde/download/index.html:117
 #: data/content/lxde/download/index.html:99
 #: data/content/lxde/download/index.html:117
+#: data/content/lxqt/download/index.html:99
+#: data/content/lxqt/download/index.html:117
 #: data/content/mate-compiz/download/index.html:99
 #: data/content/mate-compiz/download/index.html:117
+#: data/content/prerelease.html:291 data/content/prerelease.html:309
 #: data/content/soas/download/index.html:104
 #: data/content/soas/download/index.html:122
 #: data/content/xfce/download/index.html:99
@@ -196,16 +221,17 @@ msgstr "En savoir plus"
 msgid "Using"
 msgstr "Utilisation"
 
-#: data/content/index.html:137 data/content/index.html:155
-#: data/content/prerelease.html:215 data/content/prerelease.html:233
 #: data/content/cinnamon/download/index.html:100
-#: data/content/cinnamon/download/index.html:118
-#: data/content/kde/download/index.html:100
+#: data/content/cinnamon/download/index.html:118 data/content/index.html:188
+#: data/content/index.html:206 data/content/kde/download/index.html:100
 #: data/content/kde/download/index.html:118
 #: data/content/lxde/download/index.html:100
 #: data/content/lxde/download/index.html:118
+#: data/content/lxqt/download/index.html:100
+#: data/content/lxqt/download/index.html:118
 #: data/content/mate-compiz/download/index.html:100
 #: data/content/mate-compiz/download/index.html:118
+#: data/content/prerelease.html:292 data/content/prerelease.html:310
 #: data/content/soas/download/index.html:105
 #: data/content/soas/download/index.html:123
 #: data/content/xfce/download/index.html:100
@@ -217,19 +243,20 @@ msgid ""
 msgstr ""
 "Les variantes sont fournies sous forme de fichiers ISO. Pour utiliser une "
 "variante sur votre matériel, vous  pouvez utiliser son fichier ISO "
-"directement pour créer une nouvelle machine virtuelle, ou l'écrire, selon un"
+"directement pour créer une nouvelle machine virtuelle, ou l’écrire, selon un"
 " procédé particulier,  sur une clef USB ou un disque optique."
 
-#: data/content/index.html:141 data/content/index.html:158
-#: data/content/prerelease.html:219 data/content/prerelease.html:236
 #: data/content/cinnamon/download/index.html:104
-#: data/content/cinnamon/download/index.html:121
-#: data/content/kde/download/index.html:104
+#: data/content/cinnamon/download/index.html:121 data/content/index.html:192
+#: data/content/index.html:209 data/content/kde/download/index.html:104
 #: data/content/kde/download/index.html:121
 #: data/content/lxde/download/index.html:104
 #: data/content/lxde/download/index.html:121
+#: data/content/lxqt/download/index.html:104
+#: data/content/lxqt/download/index.html:121
 #: data/content/mate-compiz/download/index.html:104
 #: data/content/mate-compiz/download/index.html:121
+#: data/content/prerelease.html:296 data/content/prerelease.html:313
 #: data/content/soas/download/index.html:109
 #: data/content/soas/download/index.html:126
 #: data/content/xfce/download/index.html:104
@@ -237,16 +264,17 @@ msgstr ""
 msgid "Installing"
 msgstr "Installation"
 
-#: data/content/index.html:142 data/content/index.html:159
-#: data/content/prerelease.html:220 data/content/prerelease.html:237
 #: data/content/cinnamon/download/index.html:105
-#: data/content/cinnamon/download/index.html:122
-#: data/content/kde/download/index.html:105
+#: data/content/cinnamon/download/index.html:122 data/content/index.html:193
+#: data/content/index.html:210 data/content/kde/download/index.html:105
 #: data/content/kde/download/index.html:122
 #: data/content/lxde/download/index.html:105
 #: data/content/lxde/download/index.html:122
+#: data/content/lxqt/download/index.html:105
+#: data/content/lxqt/download/index.html:122
 #: data/content/mate-compiz/download/index.html:105
 #: data/content/mate-compiz/download/index.html:122
+#: data/content/prerelease.html:297 data/content/prerelease.html:314
 #: data/content/soas/download/index.html:110
 #: data/content/soas/download/index.html:127
 #: data/content/xfce/download/index.html:105
@@ -259,20 +287,7 @@ msgstr ""
 "Pour installer une variante, lancez-la sur votre ordinateur et cliquez sur "
 "lien \"Installer sur le disque dur\" présent sur votre bureau. Répondez "
 "ensuite aux questions qui vous sont posées pour continuer  le processus "
-"d'installation."
-
-#: data/content/index.html:183 data/content/index.html:194
-#, python-format
-msgid "Fedora %(rel)s %(state)s released! <a href=\"%(link)s\">Try it now ></a>"
-msgstr ""
-"Fedora %(rel)s %(state)s est disponible ! <a href=\"%(link)s\">Essayez la "
-"maintenant ></a>"
-
-#: data/content/index.html:205
-#, python-format
-msgid "Fedora %(rel)s released! Check it out in the Download section."
-msgstr ""
-"Fedora %(rel)s est disponible ! Allez voir dans la partie Téléchargement."
+"d’installation."
 
 #: data/content/prerelease.html:8
 msgid "Fedora Spins Prerelease Images"
@@ -290,7 +305,7 @@ msgid ""
 "href=\"%(team_url)s\">QA Team</a>. Please direct questions to their <a "
 "href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on freenode."
 msgstr ""
-"Ce logiciel est en pré-version et est maintenu par l'<a "
+"Ce logiciel est en pré-version et est maintenu par l’<a "
 "href=\"%(team_url)s\">équipe QA</a>. Veuillez adresser vos questions à leur "
 "<a href=\"%(team_list)s\">liste de diffusion</a> ou %(team_irc)s sur "
 "freenode."
@@ -303,7 +318,7 @@ msgid ""
 "or usefulness."
 msgstr ""
 "Tous les problèmes ou anomalies doivent être signalés via le <a "
-"href=\"%s\">Bugzilla de Red Hat</a>. Le projet Fedora n'offre aucune "
+"href=\"%s\">Bugzilla de Red Hat</a>. Le projet Fedora n’offre aucune "
 "garantie sur sa pertinence ou son utilité."
 
 #: data/content/prerelease.html:29 data/content/prerelease.html:31
@@ -315,39 +330,43 @@ msgid ""
 "them."
 msgstr ""
 "Lisez les <a href=\"%(relnotes_url)s\">Notes de version</a>  pour plus "
-"d'information sur les changements et nouvelles fonctionnalités, et la page "
+"d’information sur les changements et nouvelles fonctionnalités, et la page "
 "des <a href=\"%(commonbugs_url)s\">Anomalies Communes</a> pour connaître les"
 " anomalies couramment rencontrées et comment les éviter."
 
-#: data/content/prerelease.html:50 data/content/prerelease.html:54
-#: data/content/prerelease.html:72 data/content/prerelease.html:76
-#: data/content/prerelease.html:98 data/content/prerelease.html:116
-#: data/content/prerelease.html:120 data/content/prerelease.html:138
-#: data/content/prerelease.html:142
+#: data/content/prerelease.html:35
+msgid ""
+"Are you looking for 32 bit images of F27 Beta? Due to some technical issues "
+"we cannot offer them, but they will be available for the F27 final release "
+"date. Stay tuned!"
+msgstr ""
+
+#: data/content/prerelease.html:51 data/content/prerelease.html:73
+#: data/content/prerelease.html:139 data/content/prerelease.html:161
 #, python-format
 msgid "%s GB ISO Image"
 msgstr "Image ISO de %s GB"
 
-#: data/content/prerelease.html:94 data/content/prerelease.html:160
-#: data/content/prerelease.html:164
+#: data/content/prerelease.html:95 data/content/prerelease.html:117
+#: data/content/prerelease.html:183
 #, python-format
 msgid "%s MB ISO Image"
 msgstr "Image ISO de %s MB"
 
-#: data/content/prerelease.html:113
-msgid "A classic Fedora Desktop. With wobbly Windows."
-msgstr "Un bureau classique de Fedora. Avec des fenêtres tremblotantes."
+#: data/content/prerelease.html:114
+msgid "A complete and lightweight Qt-based desktop experience."
+msgstr "Une expérience de bureau Qt légère et complète."
 
-#: data/content/prerelease.html:135
+#: data/content/prerelease.html:158
 msgid "Traditional layout, advanced features, easy to use."
 msgstr "Agencement classique, fonctionnalités avancées, facile à utiliser."
 
-#: data/content/prerelease.html:178
+#: data/content/prerelease.html:201
 #: data/templates/generic/splash-checksum.html:8
 msgid "Verify your Download!"
 msgstr "Vérifier votre téléchargement !"
 
-#: data/content/prerelease.html:179
+#: data/content/prerelease.html:202
 #: data/templates/generic/splash-checksum.html:9
 #, python-format
 msgid ""
@@ -358,20 +377,15 @@ msgid ""
 msgstr ""
 "Une fois que vous avez téléchargé une image, vérifiez sa sécurité et son "
 "intégrité. Pour la vérifier, commencez par télécharger le bon fichier de "
-"CHECKSUM dans le  répertoire où vous avez téléchargé l'image  et suivez <a "
+"CHECKSUM dans le  répertoire où vous avez téléchargé l’image  et suivez <a "
 "href=\"../../%s/verify\">ces instructions</a>."
 
-#: data/content/prerelease.html:182
+#: data/content/prerelease.html:205
 #: data/templates/generic/splash-checksum.html:12
 msgid "Validate 64bit!"
 msgstr "Validez 64 bits"
 
-#: data/content/prerelease.html:185
-#: data/templates/generic/splash-checksum.html:15
-msgid "Validate 32bit!"
-msgstr "Validez 32 bits"
-
-#: data/content/prerelease.html:210 data/content/prerelease.html:229
+#: data/content/prerelease.html:287 data/content/prerelease.html:306
 msgid ""
 "Spin downloads are offered via direct download, but you can also get them "
 "via Bittorrent. In this case you will need to install a Bittorrent client in"
@@ -380,8 +394,8 @@ msgid ""
 msgstr ""
 "Les variantes sont proposées en téléchargement direct, mais vous pouvez "
 "aussi les obtenir en téléchargement via BitTorrent; dans ce cas vous aurez "
-"besoin d'un client BitTorrent. Si vous ne pouvez pas utiliser BitTorrent, "
-"certaines variantes offrent d'autres méthodes de téléchargement."
+"besoin d’un client BitTorrent. Si vous ne pouvez pas utiliser BitTorrent, "
+"certaines variantes offrent d’autres méthodes de téléchargement."
 
 #: data/content/verify.html:8 data/content/verify.html:18
 msgid "Verify your Downloaded Image"
@@ -403,7 +417,7 @@ msgid ""
 msgstr ""
 "Une fois que vous avez téléchargé une image, vérifiez son intégrité par "
 "sécurité. Pour vérifier une image, commencez par télécharger le fichier "
-"CHECKSUM dans le répertoire où vous avez téléchargé l'image."
+"CHECKSUM dans le répertoire où vous avez téléchargé l’image."
 
 #: data/content/verify.html:36
 msgid "Validate 64-bit!"
@@ -435,76 +449,60 @@ msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr ""
-"Le fichier CHECKSUM devrait avoir une signature correcte depuis l'une des "
+"Le fichier CHECKSUM devrait avoir une signature correcte depuis l’une des "
 "clés suivantes :"
 
 #: data/content/verify.html:52
+msgid "Fedora 27"
+msgstr "Fedora 27"
+
+#: data/content/verify.html:53
 msgid "Fedora 26"
 msgstr "Fedora 26"
 
-#: data/content/verify.html:53
+#: data/content/verify.html:54
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Architectures secondaires de Fedora 26 (AArch64, PPC64, PPC64le, s390 and "
 "s390x)"
 
-#: data/content/verify.html:54
+#: data/content/verify.html:55
 msgid "Fedora 25"
 msgstr "Fedora 25"
 
-#: data/content/verify.html:55
+#: data/content/verify.html:56
 msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Architectures secondaires Fedora 25  (AArch64, PPC64, PPC64le, s390 and "
 "s390x)"
 
-#: data/content/verify.html:56
-msgid "Fedora 24"
-msgstr "Fedora 24"
-
-#: data/content/verify.html:57
-msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
-"Architectures secondaires de Fedora 24 (AArch64, PPC64, PPC64le, s390 et "
-"s390x)"
-
 #: data/content/verify.html:58
-msgid "Fedora 23"
-msgstr "Fedora 23"
-
-#: data/content/verify.html:59
-msgid "Fedora 23 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
-"Architectures secondaires de Fedora 23 (AArch64, PPC64, PPC64le, s390 et "
-"s390x)"
-
-#: data/content/verify.html:61
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
 msgstr ""
 "Maintenant que le fichier CHECKSUM a été vérifié, assurez-vous que la somme "
-"de contrôle de l'ISO corresponde : "
+"de contrôle de l’ISO corresponde : "
 
-#: data/content/verify.html:63
+#: data/content/verify.html:60
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
-"Si le message de sortie dit que le fichier est valide, alors c'est qu'il est"
+"Si le message de sortie dit que le fichier est valide, alors c’est qu’il est"
 " prêt à être utilisé !"
 
-#: data/content/verify.html:64
+#: data/content/verify.html:61
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr ""
-"Comment puis-je vérifier l'image que j'ai téléchargée sur un autre système "
-"d'exploitation ?"
+"Comment puis-je vérifier l’image que j’ai téléchargée sur un autre système "
+"d’exploitation ?"
 
-#: data/content/verify.html:65
+#: data/content/verify.html:62
 msgid "Read these instructions to validate your image."
 msgstr "Lisez ces instructions afin de vérifier votre image."
 
 #: data/content/cinnamon/index.html:8
 msgid "Fedora Cinnamon Desktop"
-msgstr "Fedora avec l'environnement de bureau Cinnamon"
+msgstr "Fedora avec l’environnement de bureau Cinnamon"
 
 #: data/content/cinnamon/index.html:21
 msgid ""
@@ -515,10 +513,10 @@ msgid ""
 "comfortable desktop experience."
 msgstr ""
 "Cinammon est un environnement de bureau Linux offrant des fonctionnalités "
-"innovantes et une expérience utilisateur traditionnelle. L'agencement du "
+"innovantes et une expérience utilisateur traditionnelle. L’agencement du "
 "bureau est proche de celui de Gnome 2. Les technologies sous-jacentes sont "
 "clonées de Gnome Shell. Un effort particulier est fait pour que "
-"l'utilisateur se sente à l'aise avec un bureau simple et confortable. "
+"l’utilisateur se sente à l’aise avec un bureau simple et confortable. "
 
 #: data/content/cinnamon/index.html:22
 msgid ""
@@ -526,11 +524,12 @@ msgid ""
 "the option to quickly try and install this desktop."
 msgstr ""
 "Cinnamon est une alternative de bureau à Gnome 3 et cette variante permet de"
-" l'essayer rapidement puis d'installer ce bureau."
+" l’essayer rapidement puis d’installer ce bureau."
 
 #: data/content/cinnamon/index.html:33 data/content/cinnamon/index.html:137
 #: data/content/kde/index.html:34 data/content/kde/index.html:171
 #: data/content/lxde/index.html:33 data/content/lxde/index.html:137
+#: data/content/lxqt/index.html:32 data/content/lxqt/index.html:136
 #: data/content/mate-compiz/index.html:33
 #: data/content/mate-compiz/index.html:142 data/content/soas/index.html:34
 #: data/content/soas/index.html:176 data/content/xfce/index.html:33
@@ -539,12 +538,13 @@ msgid "Download Now"
 msgstr "Télécharger maintenant"
 
 #: data/content/cinnamon/index.html:44 data/content/kde/index.html:45
-#: data/content/lxde/index.html:44 data/content/mate-compiz/index.html:44
-#: data/content/xfce/index.html:44
+#: data/content/lxde/index.html:44 data/content/lxqt/index.html:43
+#: data/content/mate-compiz/index.html:44 data/content/xfce/index.html:44
 msgid "Going Online"
 msgstr "Restez en ligne"
 
 #: data/content/cinnamon/index.html:50 data/content/mate-compiz/index.html:55
+#: data/content/xfce/index.html:55
 msgid "Firefox"
 msgstr "Firefox"
 
@@ -563,7 +563,7 @@ msgid ""
 "use IRC client."
 msgstr ""
 "Restez en contact avec vos amis et collègues en utilisant Hexchat, un client"
-" IRC facile d'emploi."
+" IRC facile d’emploi."
 
 #: data/content/cinnamon/index.html:60 data/content/lxde/index.html:60
 #: data/content/xfce/index.html:60
@@ -577,10 +577,10 @@ msgid ""
 "Yahoo and other instant messaging systems."
 msgstr ""
 "Un client de messagerie universel. Communiquez avec le monde avec IRC, AIM, "
-"MSN, Yahoo et d'autres systèmes de messagerie instantanée."
+"MSN, Yahoo et d’autres systèmes de messagerie instantanée."
 
 #: data/content/cinnamon/index.html:65 data/content/lxde/index.html:65
-#: data/content/mate-compiz/index.html:65
+#: data/content/lxqt/index.html:64 data/content/mate-compiz/index.html:65
 msgid "Transmission"
 msgstr "Transmission"
 
@@ -593,8 +593,8 @@ msgstr ""
 " versions du bureau Cinnamon avec Fedora !"
 
 #: data/content/cinnamon/index.html:76 data/content/kde/index.html:77
-#: data/content/lxde/index.html:76 data/content/mate-compiz/index.html:76
-#: data/content/xfce/index.html:71
+#: data/content/lxde/index.html:76 data/content/lxqt/index.html:75
+#: data/content/mate-compiz/index.html:76 data/content/xfce/index.html:71
 msgid "Utilities & Configuration"
 msgstr "Utilitaires et configuration"
 
@@ -608,7 +608,7 @@ msgid ""
 "UNIX/Linux machine."
 msgstr ""
 "Fedora avec Cinnamon comporte Gnome Termina, la passerelle vers la vraie "
-"puissance de chaque machine UNIX/Linux."
+"puissance de n’importe quelle machine UNIX/Linux."
 
 #: data/content/cinnamon/index.html:84
 msgid "Cinnamon Settings"
@@ -625,8 +625,8 @@ msgstr ""
 "les paramètres qui vous satisfont."
 
 #: data/content/cinnamon/index.html:89 data/content/kde/index.html:90
-#: data/content/lxde/index.html:89 data/content/mate-compiz/index.html:89
-#: data/content/xfce/index.html:84
+#: data/content/lxde/index.html:89 data/content/lxqt/index.html:88
+#: data/content/mate-compiz/index.html:89 data/content/xfce/index.html:84
 msgid "Office & Productivity Suite"
 msgstr "Suite bureautique et de productivité"
 
@@ -639,7 +639,7 @@ msgid ""
 "LibreOffice is an integrated office suite. It utilizes free and open "
 "standards for its document formats and components."
 msgstr ""
-"LibreOffice est une suite bureautique intégrée. Il utilise des standards "
+"LibreOffice est une suite bureautique intégrée. Elle utilise des standards "
 "ouverts et libres pour ses formats de documents et ses composants."
 
 #: data/content/cinnamon/index.html:97
@@ -652,35 +652,33 @@ msgid ""
 " schedule with the included Lightning calendar application."
 msgstr ""
 "Mozilla Thunderbird est une application de messagerie et de groupes de "
-"discussions. Organisez vos rendez-vous avec Lightning, l'application "
-"intégrée de gestion d'agenda."
+"discussions. Organisez vos rendez-vous avec Lightning, l’application "
+"intégrée de gestion d’agenda."
 
 #: data/content/cinnamon/index.html:109 data/content/kde/index.html:110
-#: data/content/lxde/index.html:109 data/content/mate-compiz/index.html:109
-#: data/content/soas/index.html:110 data/content/xfce/index.html:104
+#: data/content/lxde/index.html:109 data/content/lxqt/index.html:108
+#: data/content/mate-compiz/index.html:109 data/content/soas/index.html:110
+#: data/content/xfce/index.html:104
 msgid "Multimedia"
 msgstr "Multimédia"
 
 #: data/content/cinnamon/index.html:115
-#: data/content/mate-compiz/index.html:120 data/content/xfce/index.html:115
-msgid "Parole"
-msgstr "Parole"
+msgid "XPlayer"
+msgstr "XPlayer"
 
 #: data/content/cinnamon/index.html:116
 #: data/content/mate-compiz/index.html:121
 msgid "A modern media player, using gtk3 and the gstreamer plugin framework."
 msgstr ""
-"Un lecteur de médias, utilisant gtk3 et l'ensemble de plugins gstreamer."
+"Un lecteur de médias, utilisant gtk3 et l’ensemble de plugins gstreamer."
 
 #: data/content/cinnamon/index.html:120
-msgid "Shotwell"
-msgstr "Shotwell"
+msgid "Pix"
+msgstr "Pix"
 
 #: data/content/cinnamon/index.html:121
-msgid "Shotwell is an easy-to-use, fast photo organizer, viewer, and editor."
-msgstr ""
-"Shotwell est un outil facile à utiliser pour visualiser, organiser et "
-"modifier vos photos."
+msgid "Pix is an image browser, viewer, organizer and editor."
+msgstr "Pix est navigateur, visualiseur, organiseur et éditeur d’images."
 
 #: data/content/cinnamon/index.html:125
 msgid "Brasero"
@@ -690,31 +688,33 @@ msgstr "Brasero"
 msgid "Brasero is a simple and easy to use CD/DVD burning application."
 msgstr "Brasero est un outil de gravure de CD/DVD facile à prendre en main."
 
-#: data/content/cinnamon/index.html:148
 #: data/content/cinnamon/download/index.html:146
-#: data/content/kde/index.html:182 data/content/kde/download/index.html:145
-#: data/content/lxde/index.html:148 data/content/lxde/download/index.html:146
-#: data/content/mate-compiz/index.html:153
+#: data/content/cinnamon/index.html:148
+#: data/content/kde/download/index.html:145 data/content/kde/index.html:182
+#: data/content/lxde/download/index.html:146 data/content/lxde/index.html:148
+#: data/content/lxqt/download/index.html:146 data/content/lxqt/index.html:147
 #: data/content/mate-compiz/download/index.html:146
-#: data/content/soas/index.html:187 data/content/soas/download/index.html:151
-#: data/content/xfce/index.html:143 data/content/xfce/download/index.html:146
+#: data/content/mate-compiz/index.html:153
+#: data/content/soas/download/index.html:151 data/content/soas/index.html:187
+#: data/content/xfce/download/index.html:146 data/content/xfce/index.html:143
 msgid "Support Resources"
-msgstr "Ressources d'aide"
+msgstr "Ressources d’aide"
 
-#: data/content/cinnamon/index.html:153
 #: data/content/cinnamon/download/index.html:151
-#: data/content/kde/index.html:187 data/content/kde/download/index.html:150
-#: data/content/lxde/index.html:153 data/content/lxde/download/index.html:151
-#: data/content/mate-compiz/index.html:158
+#: data/content/cinnamon/index.html:153
+#: data/content/kde/download/index.html:150 data/content/kde/index.html:187
+#: data/content/lxde/download/index.html:151 data/content/lxde/index.html:153
+#: data/content/lxqt/download/index.html:151 data/content/lxqt/index.html:152
 #: data/content/mate-compiz/download/index.html:151
-#: data/content/soas/index.html:66 data/content/soas/index.html:192
-#: data/content/soas/download/index.html:156 data/content/xfce/index.html:148
-#: data/content/xfce/download/index.html:151
+#: data/content/mate-compiz/index.html:158
+#: data/content/soas/download/index.html:156 data/content/soas/index.html:66
+#: data/content/soas/index.html:192 data/content/xfce/download/index.html:151
+#: data/content/xfce/index.html:148
 msgid "Chat"
 msgstr "Conversation"
 
-#: data/content/cinnamon/index.html:154
 #: data/content/cinnamon/download/index.html:152
+#: data/content/cinnamon/index.html:154
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-"
@@ -725,21 +725,22 @@ msgstr ""
 "cinnamon</a>, un canal IRC sur <strong>irc.freenode.net</strong> pour les "
 "discussions en temps réel."
 
-#: data/content/cinnamon/index.html:157
 #: data/content/cinnamon/download/index.html:155
-#: data/content/kde/index.html:191 data/content/kde/download/index.html:154
-#: data/content/lxde/index.html:157 data/content/lxde/download/index.html:155
-#: data/content/mate-compiz/index.html:162
+#: data/content/cinnamon/index.html:157
+#: data/content/kde/download/index.html:154 data/content/kde/index.html:191
+#: data/content/lxde/download/index.html:155 data/content/lxde/index.html:157
+#: data/content/lxqt/download/index.html:155 data/content/lxqt/index.html:156
 #: data/content/mate-compiz/download/index.html:155
-#: data/content/soas/index.html:196 data/content/soas/download/index.html:160
-#: data/content/xfce/index.html:152 data/content/xfce/download/index.html:155
+#: data/content/mate-compiz/index.html:162
+#: data/content/soas/download/index.html:160 data/content/soas/index.html:196
+#: data/content/xfce/download/index.html:155 data/content/xfce/index.html:152
 msgid "Email"
 msgstr "Courriel"
 
-#: data/content/cinnamon/index.html:158
 #: data/content/cinnamon/download/index.html:156
-#: data/content/mate-compiz/index.html:163
+#: data/content/cinnamon/index.html:158
 #: data/content/mate-compiz/download/index.html:156
+#: data/content/mate-compiz/index.html:163
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -748,19 +749,20 @@ msgstr ""
 "Les utilisateurs et les développeurs sont également joignables sur la liste "
 "de diffusion <a href=\"%s\">users@lists.fedoraproject.org</a>."
 
-#: data/content/cinnamon/index.html:161
 #: data/content/cinnamon/download/index.html:159
-#: data/content/kde/index.html:195 data/content/kde/download/index.html:158
-#: data/content/lxde/index.html:161 data/content/lxde/download/index.html:159
-#: data/content/mate-compiz/index.html:166
+#: data/content/cinnamon/index.html:161
+#: data/content/kde/download/index.html:158 data/content/kde/index.html:195
+#: data/content/lxde/download/index.html:159 data/content/lxde/index.html:161
+#: data/content/lxqt/download/index.html:159 data/content/lxqt/index.html:160
 #: data/content/mate-compiz/download/index.html:159
-#: data/content/soas/index.html:200 data/content/soas/download/index.html:164
-#: data/content/xfce/index.html:156 data/content/xfce/download/index.html:159
+#: data/content/mate-compiz/index.html:166
+#: data/content/soas/download/index.html:164 data/content/soas/index.html:200
+#: data/content/xfce/download/index.html:159 data/content/xfce/index.html:156
 msgid "Documentation"
 msgstr "Documentation"
 
-#: data/content/cinnamon/index.html:162
 #: data/content/cinnamon/download/index.html:160
+#: data/content/cinnamon/index.html:162
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
@@ -769,25 +771,27 @@ msgstr ""
 "Des documentations plus spécifiques ainsi que des tutoriels sont disponibles"
 " sur le <a href=\"%s\">site amont du projet Cinnamon</a>."
 
-#: data/content/cinnamon/index.html:167
 #: data/content/cinnamon/download/index.html:165
-#: data/content/kde/index.html:201 data/content/kde/download/index.html:164
-#: data/content/lxde/index.html:167 data/content/lxde/download/index.html:165
-#: data/content/mate-compiz/index.html:172
+#: data/content/cinnamon/index.html:167
+#: data/content/kde/download/index.html:164 data/content/kde/index.html:201
+#: data/content/lxde/download/index.html:165 data/content/lxde/index.html:167
+#: data/content/lxqt/download/index.html:165 data/content/lxqt/index.html:166
 #: data/content/mate-compiz/download/index.html:165
-#: data/content/soas/index.html:206 data/content/soas/download/index.html:170
-#: data/content/xfce/index.html:162 data/content/xfce/download/index.html:165
+#: data/content/mate-compiz/index.html:172
+#: data/content/soas/download/index.html:170 data/content/soas/index.html:206
+#: data/content/xfce/download/index.html:165 data/content/xfce/index.html:162
 msgid "General Help Using Fedora"
-msgstr "Aide générale concernant l'utilisation de Fedora"
+msgstr "Aide générale concernant l’utilisation de Fedora"
 
-#: data/content/cinnamon/index.html:168
 #: data/content/cinnamon/download/index.html:166
-#: data/content/kde/index.html:202 data/content/kde/download/index.html:165
-#: data/content/lxde/index.html:168 data/content/lxde/download/index.html:166
-#: data/content/mate-compiz/index.html:173
+#: data/content/cinnamon/index.html:168
+#: data/content/kde/download/index.html:165 data/content/kde/index.html:202
+#: data/content/lxde/download/index.html:166 data/content/lxde/index.html:168
+#: data/content/lxqt/download/index.html:166 data/content/lxqt/index.html:167
 #: data/content/mate-compiz/download/index.html:166
-#: data/content/soas/index.html:207 data/content/soas/download/index.html:171
-#: data/content/xfce/index.html:163 data/content/xfce/download/index.html:166
+#: data/content/mate-compiz/index.html:173
+#: data/content/soas/download/index.html:171 data/content/soas/index.html:207
+#: data/content/xfce/download/index.html:166 data/content/xfce/index.html:163
 #, python-format
 msgid ""
 "Sometimes you may encounter an issue with this spin that you can get help "
@@ -797,42 +801,45 @@ msgstr ""
 "Parfois vous pouvez rencontrer une difficulté avec cette variante. Dans un "
 "tel cas, les moyens de support généraux de Fedora peuvent vous apporter une "
 "aide. Une liste de ces moyens est disponible sur la <a href=\"%s\">page « "
-"Obtenir de l'aide » de Fedora</a>."
+"Obtenir de l’aide » de Fedora</a>."
 
 #: data/content/cinnamon/download/cinnamon-download-splash.html:8
 #: data/content/cinnamon/download/index.html:8
 msgid "Download Fedora Cinnamon Desktop"
-msgstr "Téléchargez Fedora avec l'environnement de bureau Cinnamon"
+msgstr "Téléchargez Fedora avec l’environnement de bureau Cinnamon"
 
 #: data/content/cinnamon/download/cinnamon-download-splash.html:18
 #: data/content/kde/download/kde-download-splash.html:18
 #: data/content/lxde/download/lxde-download-splash.html:18
+#: data/content/lxqt/download/lxqt-download-splash.html:18
 #: data/content/mate-compiz/download/mate-compiz-download-splash.html:18
 #: data/content/soas/download/soas-download-splash.html:18
 #: data/content/xfce/download/xfce-download-splash.html:18
 msgid "Thanks for Downloading Fedora!"
-msgstr "Merci d'avoir téléchargé Fedora !"
+msgstr "Merci d’avoir téléchargé Fedora !"
 
 #: data/content/cinnamon/download/cinnamon-download-splash.html:19
 #: data/content/kde/download/kde-download-splash.html:19
 #: data/content/lxde/download/lxde-download-splash.html:19
+#: data/content/lxqt/download/lxqt-download-splash.html:19
 #: data/content/mate-compiz/download/mate-compiz-download-splash.html:19
 #: data/content/soas/download/soas-download-splash.html:19
 #: data/content/xfce/download/xfce-download-splash.html:19
 msgid ""
 "Your download should begin in a few seconds. If not, click the link below:"
 msgstr ""
-"Votre téléchargement devrait débuter dans quelques secondes. S'il ne démarre"
+"Votre téléchargement devrait débuter dans quelques secondes. S’il ne démarre"
 " pas, cliquez sur le lien ci-dessous :"
 
 #: data/content/cinnamon/download/index.html:19
 #, python-format
 msgid "Download Fedora %(rel)s Cinnamon Desktop"
-msgstr "Téléchargez Fedora %(rel)s avec l'environnement de bureau Cinnamon"
+msgstr "Téléchargez Fedora %(rel)s avec l’environnement de bureau Cinnamon"
 
 #: data/content/cinnamon/download/index.html:20
 #: data/content/kde/download/index.html:20
 #: data/content/lxde/download/index.html:20
+#: data/content/lxqt/download/index.html:20
 #: data/content/mate-compiz/download/index.html:20
 #: data/content/soas/download/index.html:21
 #: data/content/xfce/download/index.html:20 data/templates/footer.html:37
@@ -850,11 +857,12 @@ msgstr "Image ISO de %s Gio pour les PC 64 bits"
 #: data/content/cinnamon/download/index.html:29
 #: data/content/kde/download/index.html:29
 #: data/content/lxde/download/index.html:29
+#: data/content/lxqt/download/index.html:29
 #: data/content/mate-compiz/download/index.html:29
 #: data/content/soas/download/index.html:33
 #: data/content/xfce/download/index.html:29
 msgid "What is a Live image?"
-msgstr "Qu'est-ce qu'une image Live ?"
+msgstr "Qu’est-ce qu’une image Live ?"
 
 #: data/content/cinnamon/download/index.html:30
 msgid ""
@@ -865,16 +873,17 @@ msgid ""
 "install Fedora directly to your hard drive straight from the Live Media "
 "desktop if you like."
 msgstr ""
-"Fedora avec le bureau Cinnamon est fourni comme système d'exploitation « "
-"Live ». C'est tout ce dont vous avez besoin pour essayer l'environnement de "
-"bureau Cinnamon - sans avoir besoin d'effacer quoi que ce soit sur votre "
-"ordinateur, et sans risquer de perdre vos fichiers. Utilisez l'image Live "
-"pour essayer Fedora, et si vous l'appréciez, vous pourrez l'installer "
+"Fedora avec le bureau Cinnamon est fourni comme système d’exploitation « "
+"Live ». C’est tout ce dont vous avez besoin pour essayer l’environnement de "
+"bureau Cinnamon - sans avoir besoin d’effacer quoi que ce soit sur votre "
+"ordinateur, et sans risquer de perdre vos fichiers. Utilisez l’image Live "
+"pour essayer Fedora, et si vous l’appréciez, vous pourrez l’installer "
 "directement sur votre disque dur à partir du média live."
 
 #: data/content/cinnamon/download/index.html:31
 #: data/content/kde/download/index.html:31
 #: data/content/lxde/download/index.html:31
+#: data/content/lxqt/download/index.html:31
 #: data/content/mate-compiz/download/index.html:31
 #: data/content/soas/download/index.html:35
 #: data/content/xfce/download/index.html:31
@@ -884,11 +893,12 @@ msgid ""
 msgstr ""
 "Pour utiliser cette image, vous devez posséder un périphérique pouvant créer"
 " ou graver des DVD, ou un périphérique flash USB au moins aussi grand que "
-"l'image."
+"l’image."
 
 #: data/content/cinnamon/download/index.html:34
 #: data/content/kde/download/index.html:34
 #: data/content/lxde/download/index.html:34
+#: data/content/lxqt/download/index.html:34
 #: data/content/mate-compiz/download/index.html:34
 #: data/content/soas/download/index.html:38
 #: data/content/xfce/download/index.html:34
@@ -898,6 +908,7 @@ msgstr "Autres téléchargements"
 #: data/content/cinnamon/download/index.html:35
 #: data/content/kde/download/index.html:35
 #: data/content/lxde/download/index.html:35
+#: data/content/lxqt/download/index.html:35
 #: data/content/mate-compiz/download/index.html:35
 #: data/content/soas/download/index.html:39
 #: data/content/xfce/download/index.html:35
@@ -906,6 +917,8 @@ msgstr "Téléchargements directs"
 
 #: data/content/cinnamon/download/index.html:38
 #: data/content/kde/download/index.html:38
+#: data/content/lxde/download/index.html:38
+#: data/content/lxqt/download/index.html:38
 #: data/content/mate-compiz/download/index.html:38
 #: data/content/xfce/download/index.html:38
 #, python-format
@@ -915,6 +928,7 @@ msgstr "Image Live 32 bits %s Gio"
 #: data/content/cinnamon/download/index.html:41
 #: data/content/kde/download/index.html:41
 #: data/content/lxde/download/index.html:41
+#: data/content/lxqt/download/index.html:41
 #: data/content/mate-compiz/download/index.html:41
 #: data/content/soas/download/index.html:46
 #: data/content/xfce/download/index.html:41
@@ -924,6 +938,7 @@ msgstr "Technologie ARM<span class=\"sup\">®</span>"
 #: data/content/cinnamon/download/index.html:45
 #: data/content/kde/download/index.html:45
 #: data/content/lxde/download/index.html:45
+#: data/content/lxqt/download/index.html:45
 #: data/content/mate-compiz/download/index.html:45
 #: data/content/soas/download/index.html:50
 #: data/content/xfce/download/index.html:45
@@ -933,6 +948,7 @@ msgstr "Anciennes versions"
 #: data/content/cinnamon/download/index.html:55
 #: data/content/kde/download/index.html:55
 #: data/content/lxde/download/index.html:55
+#: data/content/lxqt/download/index.html:55
 #: data/content/mate-compiz/download/index.html:55
 #: data/content/soas/download/index.html:60
 #: data/content/xfce/download/index.html:55
@@ -946,6 +962,8 @@ msgstr "F%(rel)s Alpha"
 #: data/content/kde/download/index.html:66
 #: data/content/lxde/download/index.html:56
 #: data/content/lxde/download/index.html:66
+#: data/content/lxqt/download/index.html:56
+#: data/content/lxqt/download/index.html:66
 #: data/content/mate-compiz/download/index.html:56
 #: data/content/mate-compiz/download/index.html:66
 #: data/content/soas/download/index.html:61
@@ -961,6 +979,8 @@ msgstr "Essayez une pré-version"
 #: data/content/kde/download/index.html:67
 #: data/content/lxde/download/index.html:57
 #: data/content/lxde/download/index.html:67
+#: data/content/lxqt/download/index.html:57
+#: data/content/lxqt/download/index.html:67
 #: data/content/mate-compiz/download/index.html:57
 #: data/content/mate-compiz/download/index.html:67
 #: data/content/soas/download/index.html:62
@@ -976,6 +996,8 @@ msgstr "Nous travaillons sur la future version."
 #: data/content/kde/download/index.html:68
 #: data/content/lxde/download/index.html:58
 #: data/content/lxde/download/index.html:68
+#: data/content/lxqt/download/index.html:58
+#: data/content/lxqt/download/index.html:68
 #: data/content/mate-compiz/download/index.html:58
 #: data/content/mate-compiz/download/index.html:68
 #: data/content/soas/download/index.html:63
@@ -989,6 +1011,7 @@ msgstr "Aidez-nous à rendre prête F%(rel)s !"
 #: data/content/cinnamon/download/index.html:59
 #: data/content/kde/download/index.html:59
 #: data/content/lxde/download/index.html:59
+#: data/content/lxqt/download/index.html:59
 #: data/content/mate-compiz/download/index.html:59
 #: data/content/soas/download/index.html:64
 #: data/content/xfce/download/index.html:59
@@ -1002,6 +1025,8 @@ msgstr "Télécharger les images F%(rel)s Alpha"
 #: data/content/kde/download/index.html:70
 #: data/content/lxde/download/index.html:60
 #: data/content/lxde/download/index.html:70
+#: data/content/lxqt/download/index.html:60
+#: data/content/lxqt/download/index.html:70
 #: data/content/mate-compiz/download/index.html:60
 #: data/content/mate-compiz/download/index.html:70
 #: data/content/soas/download/index.html:65
@@ -1014,6 +1039,7 @@ msgstr "Comment tester les pré-versions"
 #: data/content/cinnamon/download/index.html:65
 #: data/content/kde/download/index.html:65
 #: data/content/lxde/download/index.html:65
+#: data/content/lxqt/download/index.html:65
 #: data/content/mate-compiz/download/index.html:65
 #: data/content/soas/download/index.html:70
 #: data/content/xfce/download/index.html:65
@@ -1024,6 +1050,7 @@ msgstr "F%(rel)s Beta"
 #: data/content/cinnamon/download/index.html:69
 #: data/content/kde/download/index.html:69
 #: data/content/lxde/download/index.html:69
+#: data/content/lxqt/download/index.html:69
 #: data/content/mate-compiz/download/index.html:69
 #: data/content/soas/download/index.html:74
 #: data/content/xfce/download/index.html:69
@@ -1034,6 +1061,7 @@ msgstr "Télécharger les images F%(rel)s Beta"
 #: data/content/cinnamon/download/index.html:77
 #: data/content/kde/download/index.html:77
 #: data/content/lxde/download/index.html:77
+#: data/content/lxqt/download/index.html:77
 #: data/content/mate-compiz/download/index.html:77
 #: data/content/soas/download/index.html:82
 #: data/content/xfce/download/index.html:77
@@ -1043,6 +1071,7 @@ msgstr "Vérifiez"
 #: data/content/cinnamon/download/index.html:80
 #: data/content/kde/download/index.html:80
 #: data/content/lxde/download/index.html:80
+#: data/content/lxqt/download/index.html:80
 #: data/content/mate-compiz/download/index.html:80
 #: data/content/soas/download/index.html:85
 #: data/content/xfce/download/index.html:80
@@ -1051,15 +1080,15 @@ msgstr "Vérifiez votre image"
 
 #: data/content/kde/index.html:8
 msgid "Fedora KDE Plasma Desktop"
-msgstr "Fedora avec l'environnement de bureau KDE Plasma Desktop"
+msgstr "Fedora avec l’environnement de bureau KDE Plasma Desktop"
 
 #: data/content/kde/index.html:21
 msgid ""
 "The Fedora KDE Plasma Desktop Edition is a powerful Fedora-based operating "
 "system utilizing the KDE Plasma Desktop as the main user interface."
 msgstr ""
-"Fedora avec l'environnement  de bureau Plasma Desktop de KDE est un système "
-"d'exploitation puissant, basé sur Fedora, qui  utilise l’environnement de "
+"Fedora avec l’environnement  de bureau Plasma Desktop de KDE est un système "
+"d’exploitation puissant, basé sur Fedora, qui  utilise l’environnement de "
 "bureau  Plasma Desktop de KDE comme interface utilisateur principale."
 
 #: data/content/kde/index.html:22
@@ -1071,12 +1100,12 @@ msgid ""
 "productivity suite, including office applications and enterprise grade "
 "personal information management."
 msgstr ""
-"Fedora avec l'environnement de bureau Plasma Desktop de KDE est fourni avec "
+"Fedora avec l’environnement de bureau Plasma Desktop de KDE est fourni avec "
 "une présélection de nombreux logiciels de première qualité, convenant à tous"
-" les cas d'utilisation d'un bureau moderne – depuis la communication en "
+" les cas d’utilisation d’un bureau moderne – depuis la communication en "
 "ligne comme la navigation sur internet, en passant par la messagerie "
 "instantanée, la correspondance par courriels,  le multimédia et les "
-"divertissements, jusqu'à une suite avancée de productivité, incluant des "
+"divertissements, jusqu’à une suite avancée de productivité, incluant des "
 "logiciels de bureautique et une gestion professionnelle des informations "
 "personnelles."
 
@@ -1099,7 +1128,7 @@ msgid ""
 " many supported 3G mobile broadband cards."
 msgstr ""
 "En un clic, connectez-vous à votre routeur sans fil local, ou en ligne via "
-"l'une des nombreuses cartes 3G prises en charge."
+"l’une des nombreuses cartes 3G prises en charge."
 
 #: data/content/kde/index.html:56
 msgid "Konqueror"
@@ -1135,7 +1164,7 @@ msgid ""
 " Plasma Desktop Edition!"
 msgstr ""
 "Vous êtes adepte du téléchargement ? Utilisez KTorrent ou KGet pour obtenir "
-"les nouvelles versions de Fedora avec l'environnement de bureau Plasma "
+"les nouvelles versions de Fedora avec l’environnement de bureau Plasma "
 "Desktop de KDE.  "
 
 #: data/content/kde/index.html:80
@@ -1147,9 +1176,9 @@ msgid ""
 "Fedora KDE Plasma Desktop ships a terminal, the gateway to the real power of"
 " any UNIX/linux machine, called Konsole."
 msgstr ""
-"Fedora avec l'environnement de bureau KDE Plasma Desktop est fourni avec  un"
+"Fedora avec l’environnement de bureau KDE Plasma Desktop est fourni avec  un"
 " terminal nommé Konsole :  la passerelle vers la puissance réelle de "
-"n'importe quelle machine UNIX/Linux."
+"n’importe quelle machine UNIX/Linux."
 
 #: data/content/kde/index.html:85 data/content/xfce/index.html:79
 msgid "System Settings"
@@ -1179,7 +1208,7 @@ msgid ""
 "Desktop. The Kontact suite unites mature and proven KDE PIM applications "
 "under one easy to use application."
 msgstr ""
-"Kontact est le gestionnaire de données personnelles de l'environnement de "
+"Kontact est le gestionnaire de données personnelles de l’environnement de "
 "bureau  Plasma Desktop de KDE. La suite Kontact unifie les logiciels matures"
 " et éprouvés de KDE PIM sous une application unique et facile à utiliser. "
 
@@ -1196,13 +1225,13 @@ msgstr ""
 "Amarok prend en charge  les listes de lecture, y compris celles générées "
 "dynamiquement, avec les pochettes, paroles et même les informations sur la "
 "piste courante ou son groupe. Amarok possède également une intégration avec "
-"Last.fm et d'autres services de musique."
+"Last.fm et d’autres services de musique."
 
-#: data/content/kde/index.html:121
+#: data/content/kde/index.html:121 data/content/lxqt/index.html:114
 msgid "Dragon Player"
 msgstr "Dragon Player"
 
-#: data/content/kde/index.html:122
+#: data/content/kde/index.html:122 data/content/lxqt/index.html:115
 msgid ""
 "Dragon Player is a multimedia player where the focus is on simplicity, "
 "instead of features. Its simple interface is designed not to get in your way"
@@ -1224,9 +1253,9 @@ msgid ""
 "CDs, video CDs, DVDs, copying, CD ripping and more."
 msgstr ""
 "K3B vous permet de sauvegarder facilement vos fichiers multimédia puisque "
-"c'est un logiciel de gravure de CD/DVD complet. K3B prend en charge "
-"l'écriture de CD/DVD de données,  de CD audio, de CD vidéo, de DVD, la "
-"copie, l'extraction de pistes des CD et bien plus."
+"c’est un logiciel de gravure de CD/DVD complet. K3B prend en charge "
+"l’écriture de CD/DVD de données,  de CD audio, de CD vidéo, de DVD, la "
+"copie, l’extraction de pistes des CD et bien plus."
 
 #: data/content/kde/index.html:138
 msgid "Education"
@@ -1241,9 +1270,9 @@ msgid ""
 "Marble is a virtual globe and world atlas in your computer. You can learn a "
 "lot about Earth or you can just enjoy virtual trips around our planet."
 msgstr ""
-"Marble est un Globe virtuel ainsi qu'un Atlas du monde sur votre ordinateur."
+"Marble est un Globe virtuel ainsi qu’un Atlas du monde sur votre ordinateur."
 " Vous pouvez en apprendre beaucoup sur la Terre ou simplement appréciez des "
-"parcours virtuels autour de la planète."
+"voyages virtuels autour de la planète."
 
 #: data/content/kde/index.html:149
 msgid "Parley"
@@ -1254,8 +1283,8 @@ msgid ""
 "Parley is a vocabulary trainer that helps you memorize things via virtual "
 "flashcards. It provides a rich set of tools to manage your card sets."
 msgstr ""
-"Parley est un logiciel d'entrainement au vocabulaire pour vous aider à "
-"mémoriser les choses avec des cartes mémoire. Il offre un ensemble d'outils "
+"Parley est un logiciel d’entrainement au vocabulaire pour vous aider à "
+"mémoriser les choses avec des cartes mémoire. Il offre un ensemble d’outils "
 "pour gérer vos groupes de cartes mémoire."
 
 #: data/content/kde/index.html:154
@@ -1267,7 +1296,7 @@ msgid ""
 "Kiten is a Japanese dictionary application as well as a Japanese language "
 "reference. It includes a kanji lookup tool and browsing interface."
 msgstr ""
-"Kiten est un dictionnaire japonais ainsi qu'une base de référence de la "
+"Kiten est un dictionnaire japonais ainsi qu’une base de référence de la "
 "langue japonaise. Il inclut un outil de recherche de kanji et une interface "
 "de navigation."
 
@@ -1280,11 +1309,11 @@ msgid ""
 "Kalzium allows you to explore the periodic table of elements. It has a 3D "
 "molecule editor plus multiple simulators and calculators."
 msgstr ""
-"Kalzium vous permet d'explorer le tableau périodique des éléments. Il "
+"Kalzium vous permet d’explorer le tableau périodique des éléments. Il "
 "possède un éditeur de molécule en 3D et  plusieurs simulateurs et "
 "calculateurs."
 
-#: data/content/kde/index.html:188 data/content/kde/download/index.html:151
+#: data/content/kde/download/index.html:151 data/content/kde/index.html:188
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-kde</a> IRC"
@@ -1294,7 +1323,7 @@ msgstr ""
 "kde</a>, un canal IRC sur <strong>irc.freenode.net</strong> pour les "
 "discussions en temps réel."
 
-#: data/content/kde/index.html:192 data/content/kde/download/index.html:155
+#: data/content/kde/download/index.html:155 data/content/kde/index.html:192
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -1303,7 +1332,7 @@ msgstr ""
 "Les utilisateurs et les développeurs sont également joignables sur la liste "
 "de diffusion <a href=\"%s\">kde@lists.fedoraproject.org</a>."
 
-#: data/content/kde/index.html:196 data/content/kde/download/index.html:159
+#: data/content/kde/download/index.html:159 data/content/kde/index.html:196
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a href=\"%s\">KDE"
@@ -1316,13 +1345,13 @@ msgstr ""
 #: data/content/kde/download/kde-download-splash.html:8
 msgid "Download Fedora KDE Plasma Desktop"
 msgstr ""
-"Télécharger Fedora avec l'environnement de bureau Plasma Desktop de KDE"
+"Télécharger Fedora avec l’environnement de bureau Plasma Desktop de KDE"
 
 #: data/content/kde/download/index.html:19
 #, python-format
 msgid "Download Fedora %(rel)s KDE Plasma Desktop"
 msgstr ""
-"Télécharger Fedora %(rel)s avec l'environnement de bureau Plasma Desktop de "
+"Télécharger Fedora %(rel)s avec l’environnement de bureau Plasma Desktop de "
 "KDE"
 
 #: data/content/kde/download/index.html:30
@@ -1334,17 +1363,17 @@ msgid ""
 "can install Fedora directly to your hard drive straight from the Live Media "
 "desktop if you like."
 msgstr ""
-"Fedora avec le bureau Plasma Desktop de KDE est fourni sous forme d'un "
-"système d'exploitation « Live ». C'est tout ce dont vous avez besoin pour "
-"essayer l'environnement de bureau Plasma Desktop  – sans avoir besoin "
-"d'effacer quoi que ce soit sur votre ordinateur, et sans risquer de perdre "
-"vos fichiers. Utilisez l'image Live du  Fedora pour la tester, et si vous "
-"l'appréciez vous pourrez l'installer directement sur votre disque dur à "
+"Fedora avec le bureau Plasma Desktop de KDE est fourni sous forme d’un "
+"système d’exploitation « Live ». C’est tout ce dont vous avez besoin pour "
+"essayer l’environnement de bureau Plasma Desktop  – sans avoir besoin "
+"d’effacer quoi que ce soit sur votre ordinateur, et sans risquer de perdre "
+"vos fichiers. Utilisez l’image Live du  Fedora pour la tester, et si vous "
+"l’appréciez vous pourrez l’installer directement sur votre disque dur à "
 "partir du média live."
 
 #: data/content/lxde/index.html:8
 msgid "Fedora LXDE Desktop"
-msgstr "Fedora avec l'environnement de bureau LXDE"
+msgstr "Fedora avec l’environnement de bureau LXDE"
 
 #: data/content/lxde/index.html:21
 msgid ""
@@ -1354,11 +1383,11 @@ msgid ""
 "multi-language support, standard keyboard shortcuts and additional features "
 "like tabbed file browsing."
 msgstr ""
-"LXDE, l'environnement bureautique X11 léger, est un environnement de bureau "
+"LXDE, l’environnement bureautique X11 léger, est un environnement de bureau "
 "très rapide, performant et économe en énergie. Il est maintenu par une "
 "communauté internationale de développeurs et est fourni avec une belle "
 "interface, la prise en charge de plusieurs langues, des raccourcis clavier "
-"standard et d'autres fonctionnalités supplémentaires comme la navigation par"
+"standard et d’autres fonctionnalités supplémentaires comme la navigation par"
 " onglet."
 
 #: data/content/lxde/index.html:22
@@ -1368,8 +1397,8 @@ msgid ""
 " designed for computers with low hardware specifications like netbooks, "
 "mobile devices (e.g. MIDs) or older computers."
 msgstr ""
-"LXDE n'est pas conçu pour être puissant  et  complet, mais pour être "
-"utilisable et prendre peu de place. Le but principal de LXDE est d'utiliser "
+"LXDE n’est pas conçu pour être puissant  et  complet, mais pour être "
+"utilisable et prendre peu de place. Le but principal de LXDE est d’utiliser "
 "un minimum de ressources matérielles. Il est spécialement conçu pour les "
 "ordinateurs au matériel minimaliste comme les netbooks, les appareils "
 "mobiles (ex. MID) ou les  ordinateurs anciens."
@@ -1386,11 +1415,11 @@ msgstr ""
 "Sylpheed logiciel de messagerie simple, léger mais plein de fonctionnalités "
 "et facile à utiliser."
 
-#: data/content/lxde/index.html:55 data/content/xfce/index.html:55
+#: data/content/lxde/index.html:55
 msgid "Midori"
 msgstr "Midori"
 
-#: data/content/lxde/index.html:56 data/content/xfce/index.html:56
+#: data/content/lxde/index.html:56
 msgid ""
 "A lightweight and full featured web browser using GTK+2 and WebKit. Surf the"
 " web with speed and simplicity."
@@ -1415,8 +1444,8 @@ msgid ""
 "Fedora LXDE Desktop ships a terminal, the gateway to the real power of any "
 "UNIX/linux machine, called LXTerminal."
 msgstr ""
-"Fedora avec l'environnement de bureau LXDE embarque un terminal, la "
-"passerelle vers la puissance réelle de n'importe quelle machine UNIX/Linux, "
+"Fedora avec l’environnement de bureau LXDE embarque un terminal, la "
+"passerelle vers la puissance réelle de n’importe quelle machine UNIX/Linux, "
 "appelé LXTerminal."
 
 #: data/content/lxde/index.html:84
@@ -1429,7 +1458,7 @@ msgid ""
 "format for distribution."
 msgstr ""
 "ObConf installe facilement de nouveaux thèmes utilisant le format de "
-"distribution d'archive de thèmes Openbox .obt."
+"distribution d’archive de thèmes Openbox .obt."
 
 #: data/content/lxde/index.html:92 data/content/xfce/index.html:87
 msgid "AbiWord"
@@ -1449,7 +1478,7 @@ msgid ""
 "address book and notes modules."
 msgstr ""
 "Osmo est un organiseur personnel pratique, incluant des modules de "
-"calendrier, de gestionnaire de tâches, de carnet d'adresses et de carnet de "
+"calendrier, de gestionnaire de tâches, de carnet d’adresses et de carnet de "
 "notes."
 
 #: data/content/lxde/index.html:115
@@ -1488,10 +1517,10 @@ msgid ""
 "Musepack, AAC, and Monkey's Audio files."
 msgstr ""
 "ASunder est un extracteur et encodeur graphique de CD audio. Vous pouvez "
-"l'utiliser pour sauvegarder les pistes d'un CD audio en tant que fichiers "
+"l’utiliser pour sauvegarder les pistes d’un CD audio en tant que fichiers "
 "audio WAV, MP3, OGG, FLAC, Opus, WavPack, Musepack, AAC, et Monkey."
 
-#: data/content/lxde/index.html:154 data/content/lxde/download/index.html:152
+#: data/content/lxde/download/index.html:152 data/content/lxde/index.html:154
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#lxde</a> IRC "
@@ -1501,7 +1530,7 @@ msgstr ""
 "un canal IRC sur <strong>irc.freenode.net</strong> pour les discussions en "
 "temps réel."
 
-#: data/content/lxde/index.html:158 data/content/lxde/download/index.html:156
+#: data/content/lxde/download/index.html:156 data/content/lxde/index.html:158
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -1510,7 +1539,7 @@ msgstr ""
 "Les utilisateurs et les développeurs sont également joignables sur la liste "
 "de diffusion <a href=\"%s\">lxde@lists.fedoraproject.org</a>."
 
-#: data/content/lxde/index.html:162 data/content/lxde/download/index.html:160
+#: data/content/lxde/download/index.html:160 data/content/lxde/index.html:162
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
@@ -1522,14 +1551,15 @@ msgstr ""
 #: data/content/lxde/download/index.html:8
 #: data/content/lxde/download/lxde-download-splash.html:8
 msgid "Download Fedora LXDE Desktop"
-msgstr "Télécharger Fedora avec l'environnement de bureau LXDE"
+msgstr "Télécharger Fedora avec l’environnement de bureau LXDE"
 
 #: data/content/lxde/download/index.html:19
 #, python-format
 msgid "Download Fedora %(rel)s LXDE Desktop"
-msgstr "Télécharger Fedora %(rel)s avec l'environnement de bureau LXDE"
+msgstr "Télécharger Fedora %(rel)s avec l’environnement de bureau LXDE"
 
 #: data/content/lxde/download/index.html:21
+#: data/content/lxqt/download/index.html:21
 #: data/content/soas/download/index.html:22
 #, python-format
 msgid "%s MB ISO Image for 64-bit PC"
@@ -1544,22 +1574,210 @@ msgid ""
 "directly to your hard drive straight from the Live Media desktop if you "
 "like."
 msgstr ""
-"Fedora avec le bureau LXDE est fourni sous forme de système d'exploitation «"
-" Live ». C'est tout ce dont vous avez besoin pour essayer l'environnement de"
-" bureau LXDE – sans avoir besoin d'effacer quoi que ce soit sur votre "
+"Fedora avec le bureau LXDE est fourni sous forme de système d’exploitation «"
+" Live ». C’est tout ce dont vous avez besoin pour essayer l’environnement de"
+" bureau LXDE – sans avoir besoin d’effacer quoi que ce soit sur votre "
 "ordinateur, et sans risquer de perdre vos fichiers. Utilisez une image Live "
-"de Fedora pour la tester et, si vous l'appréciez, vous pourrez l'installer "
+"de Fedora pour la tester et, si vous l’appréciez, vous pourrez l’installer "
 "directement sur votre disque dur à partir du média live."
 
-#: data/content/lxde/download/index.html:38
-#: data/content/soas/download/index.html:42
+#: data/content/lxqt/index.html:8
+msgid "Fedora LXQt Desktop"
+msgstr "Fedora LXQt Desktop"
+
+#: data/content/lxqt/index.html:21
+msgid ""
+"Fedora LXQt provides a lightweight, well-integrated LXQt desktop "
+"environment. In addition to LXQt itself it provides a small, well selected "
+"collection of applications like the QupZilla browser, which combines "
+"Chromium's rendering engine with a nice Qt experience. Other applications "
+"include the Trojita mail client, the qBittorrent client, the Yarock music "
+"player and a set of some more commonly used applications. As all "
+"applications use the same Qt5 toolkit and the Breeze theme known from KDE, "
+"the desktop provides a unified and well-integrated style and theming. In "
+"addition breeze-gtk is provided to allow the user to integrate GTK "
+"applications too."
+msgstr ""
+"Fedora LXQt fournit un environnement de bureau léger et bien intégré. En "
+"plus de LXQt, vous aurez une petite collection d’applications, sélectionnées"
+" avec soin, tel le navigateur QupZilla. Celui-ci combine le moteur de rendu "
+"de Chromium avec l’expérience utilisateur agréable permise par Qt. Vous "
+"trouverez aussi la messagerie Trojita, le client qBittorent, le lecteur de "
+"musique Yarock et un ensemble d’applications communément utilisées. Comme "
+"toutes les applications utilisent la même boîte à outil Qt5 et le thème "
+"Breeze connu de KDE, le bureau apporte un visuel et un rendu unifié et bien "
+"bien intégré. De plus, breeze-gtk est fourni pour permettre à l’utilisateur "
+"d’intégrer aussi des applications GTK."
+
+#: data/content/lxqt/index.html:49
+msgid "NetworkManager"
+msgstr "NetworkManager"
+
+#: data/content/lxqt/index.html:50
+msgid ""
+"The goal of NetworkManager is to make networking just work with a minimum of"
+" user hassle, but still allow customization."
+msgstr ""
+"Le but de NetworkManager est simplement de faire fonctionner le réseau avec "
+"un minimum de tracas pour l’utilisateur mais en autorisant cependant la "
+"personnalisation."
+
+#: data/content/lxqt/index.html:54
+msgid "QupZilla"
+msgstr "QupZilla"
+
+#: data/content/lxqt/index.html:55
+msgid ""
+"A lightweight multiplatform web browser written in Qt Framework and using "
+"its web rendering engine QtWebEngine."
+msgstr ""
+"Un navigateur web léger et multiplateforme basé sur Qt et le moteur de rendu"
+" QtWebEngine."
+
+#: data/content/lxqt/index.html:59
+msgid "Quassel"
+msgstr "Quassel"
+
+#: data/content/lxqt/index.html:60
+msgid ""
+"Quassel IRC is a modern, cross-platform, distributed IRC client, meaning "
+"that one clients can attach to and detach from a central core"
+msgstr ""
+"Quassel IRC est un client IRC moderne,  multi-plateforme et distribué, ce "
+"qui signifie qu’un client peut se raccorder ou se détacher d’un  noyau "
+"central."
+
+#: data/content/lxqt/index.html:65
+msgid ""
+"Are you a downloader? Use Transmission to get new versions of Fedora LXQt "
+"Desktop!"
+msgstr ""
+"Vous êtes un adepte du téléchargement ! Utilisez Transmission pour obtenir "
+"de nouvelles versions de  Fedora LXQt Desktop !"
+
+#: data/content/lxqt/index.html:78
+msgid "QTerminal"
+msgstr "QTerminal"
+
+#: data/content/lxqt/index.html:79
+msgid "QTerminal is a lightweight Qt terminal emulator based on QTermWidget."
+msgstr ""
+"QTerminal est un émulateur de terminal léger en QT, basé sur QTermWidget."
+
+#: data/content/lxqt/index.html:83
+msgid "dnfdragora"
+msgstr "dnfdragora"
+
+#: data/content/lxqt/index.html:84
+msgid ""
+"dnfdragora is a DNF frontend, based on rpmdragora, written in Python 3 and "
+"uses libYui."
+msgstr ""
+"dnfdragora est une interface pour DNF, basée sur rpmdragora, écrite en  "
+"Python 3 et utilisant libYui."
+
+#: data/content/lxqt/index.html:91
+msgid "FeatherPad"
+msgstr "FeatherPad"
+
+#: data/content/lxqt/index.html:92
+msgid ""
+"FeatherPad is a desktop indipendent and lightweight Qt5 plain-text editor "
+"for Linux."
+msgstr ""
+"FeatherPad est un éditeur de texte léger pour Linux, basé sur Qt5 et "
+"indépendant de l’environnement de bureau."
+
+#: data/content/lxqt/index.html:96
+msgid "qpdfview"
+msgstr "qpdfview"
+
+#: data/content/lxqt/index.html:97
+msgid "qpdfview is a tabbed document viewer."
+msgstr "qpdfview est une visionneuse de documents à onglet."
+
+#: data/content/lxqt/index.html:119
+msgid "LXImage-Qt"
+msgstr "LXImage-Qt"
+
+#: data/content/lxqt/index.html:120
+msgid ""
+"LXImage-Qt is the Qt port of LXImage, a simple and fast image viewer you can"
+" also take screenshots with."
+msgstr ""
+"LXImage-Qt est le portage de LXImage pour Qt. C’est une visionneuse d’images"
+" simple et rapide, qui permet aussi de prendre des captures d’écran."
+
+#: data/content/lxqt/index.html:124
+msgid "Yarock"
+msgstr "Yarock"
+
+#: data/content/lxqt/index.html:125
+msgid ""
+"Yarock is Qt4/Qt5 Modern Music Player designed to provide an easy and pretty"
+" music collection browser based on cover art."
+msgstr ""
+"Yarock est un lecteur de musique Qt4/Qt5 moderne, conçu pour présenter "
+"facilement et agréablement une collection de musiques, en se basant sur les "
+"couvertures d’album."
+
+#: data/content/lxqt/download/index.html:152 data/content/lxqt/index.html:153
 #, python-format
-msgid "32-bit %sMB Live image"
-msgstr "Image Live 32-bit %s Mo"
+msgid ""
+"General help is available in <a href=\"%s\">#fedora-lxqt</a> IRC channel on "
+"<strong>irc.freenode.org</strong> for real-time chat."
+msgstr ""
+"De l’assistance générale est disponible sur <a href=\"%s\">#fedora-lxqt</a> "
+"le canal IRC de <strong>irc.freenode.org</strong> pour une discussion en "
+"temps réel."
+
+#: data/content/lxqt/download/index.html:156 data/content/lxqt/index.html:157
+#, python-format
+msgid ""
+"Users and developers are also available on the mailing list at <a "
+"href=\"%s\">lxqt@lists.fedoraproject.org</a>."
+msgstr ""
+"Les utilisateurs et les développeurs peuvent aussi être contactés via la "
+"liste de diffusion <a href=\"%s\">lxqt@lists.fedoraproject.org</a>."
+
+#: data/content/lxqt/download/index.html:160 data/content/lxqt/index.html:161
+#, python-format
+msgid ""
+"Specific documentation and tutorials are available at the <a "
+"href=\"%s\">LXQt project upstream website</a>."
+msgstr ""
+"De la documentation spécifique et des tutoriels sont disponibles sur  <a "
+"href=\"%s\">le site web du projet LXQt</a>."
+
+#: data/content/lxqt/download/index.html:8
+#: data/content/lxqt/download/lxqt-download-splash.html:8
+msgid "Download Fedora LXQt Desktop"
+msgstr "Télécharger Fedora LXQt Desktop"
+
+#: data/content/lxqt/download/index.html:19
+#, python-format
+msgid "Download Fedora %(rel)s LXQt Desktop"
+msgstr "Télécharger Fedora %(rel)s LXQt Desktop"
+
+#: data/content/lxqt/download/index.html:30
+msgid ""
+"Fedora LXQt Desktop is shipped as a live operating system. It's everything "
+"you need to try out Fedora's LXQt Desktop - you don't have to erase anything"
+" on your current system to try it out, and it won't put your files at risk. "
+"Take Fedora for a test drive, and if you like it, you can install Fedora "
+"directly to your hard drive straight from the Live Media desktop if you "
+"like."
+msgstr ""
+"Fedora LXQt Desktop est fourni comme système d’exploitation « Live ». C’est "
+"tout ce dont vous avez besoin pour essayer l’environnement de bureau LXQt - "
+"sans avoir besoin d’effacer quoi que ce soit sur votre ordinateur, et sans "
+"risquer la perte de vos fichiers. Essayez cette variante de Fedora, et si "
+"vous l’appréciez vous pourrez l’installer directement sur votre disque dur à"
+" partir du média live."
 
 #: data/content/mate-compiz/index.html:8
 msgid "Fedora MATE-Compiz Desktop"
-msgstr "Fedora avec l'environnement de bureau MATE-Compiz"
+msgstr "Fedora avec l’environnement de bureau MATE-Compiz"
 
 #: data/content/mate-compiz/index.html:21
 msgid ""
@@ -1573,7 +1791,7 @@ msgstr ""
 " Fusion. Le bureau MATE est un environnement de bureau puissant, léger et "
 "conçu pour la productivité et la performance. Le gestionnaire de fenêtres "
 "par défaut est Marco qui est utilisable sur toute machine ou machine "
-"virtuelle. Quant à Compiz Fusion, c'est un magnifique gestionnaire de "
+"virtuelle. Quant à Compiz Fusion, c’est un magnifique gestionnaire de "
 "fenêtres 3D incluant le gestionnaire de thèmes Emerald et GTK+."
 
 #: data/content/mate-compiz/index.html:22
@@ -1586,17 +1804,16 @@ msgstr ""
 "MATE-Compiz."
 
 #: data/content/mate-compiz/index.html:50
-msgid "Blueman"
-msgstr "Blueman"
+msgid "Blueberry"
+msgstr "Blueberry"
 
 #: data/content/mate-compiz/index.html:51
 msgid ""
-"Blueman is designed to provide a simple yet effective means for controlling "
-"BlueZ API. It is lightweight, easy to use, Python based, and GPL licensed."
+"Blueberry is a gnome-bluetooth based bluetooth configuration tool which "
+"integrates very well in almost any desktop environment."
 msgstr ""
-"Blueman est conçu pour offrir un moyen simple mais efficace pour contrôler "
-"une API BlueZ. Il est léger, facile à utiliser, basé sur Python et sous "
-"licence GPL."
+"Blueberry  est un outil de configuration bluetooth basé sur gnome-bluetooth."
+" Il s’intègre très bien dans quasiment tous les environnements de bureau."
 
 #: data/content/mate-compiz/index.html:66
 msgid ""
@@ -1616,7 +1833,7 @@ msgid ""
 "UNIX/Linux machine, called MATE Terminal."
 msgstr ""
 "Fedora avec MATE-Compiz comporte un terminal, la passerelle vers la vraie "
-"puissance de chaque machine UNIX/Linux, appelé MATE-Terminal."
+"puissance de n’importe quelle machine UNIX/Linux, appelé MATE-Terminal."
 
 #: data/content/mate-compiz/index.html:84
 msgid "DConf Editor"
@@ -1644,8 +1861,12 @@ msgid ""
 " tagging. Automatic album art. Lyrics. Streaming Radio. Podcasts."
 msgstr ""
 "Interface simple. Gestion puissante de musiques. Listes de lecture "
-"intelligentes. Balisage de pistes avancé. Pochettes d'album automatiques. "
+"intelligentes. Balisage de pistes avancé. Pochettes d’album automatiques. "
 "Radio en continu. Balladodiffusion."
+
+#: data/content/mate-compiz/index.html:120 data/content/xfce/index.html:115
+msgid "Parole"
+msgstr "Parole"
 
 #: data/content/mate-compiz/index.html:125
 msgid "Eye of MATE"
@@ -1656,7 +1877,7 @@ msgid ""
 "Eye of MATE is meant to be a fast and functional image viewer for the MATE-"
 "Compiz Desktop."
 msgstr ""
-"Eye of MATE est un visionneur d'images rapide et fonctionnel pour le bureau "
+"Eye of MATE est un visionneur d’images rapide et fonctionnel pour le bureau "
 "MATE-Compiz."
 
 #: data/content/mate-compiz/index.html:130
@@ -1669,12 +1890,12 @@ msgid ""
 "tools, helping you to move files quickly between your computer and Web "
 "server."
 msgstr ""
-"FilleZilla est une solution FTP multiplateforme libre, dotée d'une multitude"
-" d'outils intuitifs pour déplacer rapidement des fichiers entre votre "
+"FilleZilla est une solution FTP multiplateforme libre, dotée d’une multitude"
+" d’outils intuitifs pour déplacer rapidement des fichiers entre votre "
 "ordinateur et un serveur Web."
 
-#: data/content/mate-compiz/index.html:159
 #: data/content/mate-compiz/download/index.html:152
+#: data/content/mate-compiz/index.html:159
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-mate</a> "
@@ -1684,8 +1905,8 @@ msgstr ""
 "mate</a>, un canal IRC sur <strong>irc.freenode.net</strong> pour les "
 "discussions en temps réel."
 
-#: data/content/mate-compiz/index.html:167
 #: data/content/mate-compiz/download/index.html:160
+#: data/content/mate-compiz/index.html:167
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
@@ -1697,12 +1918,12 @@ msgstr ""
 #: data/content/mate-compiz/download/index.html:8
 #: data/content/mate-compiz/download/mate-compiz-download-splash.html:8
 msgid "Download Fedora MATE-Compiz Desktop"
-msgstr "Télécharger Fedora avec l'environnement de bureau MATE-Compiz"
+msgstr "Télécharger Fedora avec l’environnement de bureau MATE-Compiz"
 
 #: data/content/mate-compiz/download/index.html:19
 #, python-format
 msgid "Download Fedora %(rel)s MATE-Compiz Desktop"
-msgstr "Télécharger Fedora %(rel)s avec l'environnement de bureau MATE-Compiz"
+msgstr "Télécharger Fedora %(rel)s avec l’environnement de bureau MATE-Compiz"
 
 #: data/content/mate-compiz/download/index.html:30
 msgid ""
@@ -1714,16 +1935,16 @@ msgid ""
 "desktop if you like."
 msgstr ""
 "Fedora avec le bureau MATE-Compiz est fourni sous forme de système "
-"d'exploitation « Live ». C'est tout ce dont vous avez besoin pour essayer "
-"l'environnement de bureau MATE-Compiz – sans avoir besoin d'effacer quoi que"
+"d’exploitation « Live ». C’est tout ce dont vous avez besoin pour essayer "
+"l’environnement de bureau MATE-Compiz – sans avoir besoin d’effacer quoi que"
 " ce soit sur votre ordinateur, et sans risquer de perdre vos fichiers. "
-"Utilisez une image Live de Fedora pour la tester et, si vous l'appréciez, "
-"vous pourrez l'installer directement sur votre disque dur à partir du média "
+"Utilisez une image Live de Fedora pour la tester et, si vous l’appréciez, "
+"vous pourrez l’installer directement sur votre disque dur à partir du média "
 "live."
 
 #: data/content/soas/index.html:8
 msgid "Fedora SoaS Desktop"
-msgstr "Fedora avec l'environnement de bureau SoaS"
+msgstr "Fedora avec l’environnement de bureau SoaS"
 
 #: data/content/soas/index.html:21
 msgid ""
@@ -1731,8 +1952,8 @@ msgid ""
 "winning Sugar Learning Platform and designed to fit on an ordinary USB "
 "thumbdrive (\"stick\")."
 msgstr ""
-"« Sugar on a Stick » est un système d'exploitation basé sur Fedora proposant"
-" la  plateforme d'apprentissage Sugar renommée et conçue pour tenir sur une "
+"« Sugar on a Stick » est un système d’exploitation basé sur Fedora proposant"
+" la  plateforme d’apprentissage Sugar renommée et conçue pour tenir sur une "
 "clé USB."
 
 #: data/content/soas/index.html:22
@@ -1748,10 +1969,10 @@ msgstr ""
 "En laissant de côté la métaphore traditionnelle le présentant comme un "
 "environnement graphique adapté aux enfants, Sugar enregistre automatiquement"
 " vos progrès dans un journal sur votre clé USB.  Cela permet par exemple aux"
-" professeurs et aux parents  d'extraire toutes les sessions de navigation "
+" professeurs et aux parents  d’extraire toutes les sessions de navigation "
 "collaboratives faites dans la dernière semaine, ou tous les documents écrits"
 " par Daniel et Sarah lors des dernières 24 heures, tout cela par une requête"
-" simple plutôt que d'avoir à mémoriser des structures de dossiers et de "
+" simple plutôt que d’avoir à mémoriser des structures de dossiers et de "
 "fichiers complexes. Les applications dans Sugar sont appelées « Activités » "
 "; nous en décrivons quelques unes, plus bas."
 
@@ -1763,12 +1984,12 @@ msgid ""
 " environment without touching the host machine’s hard disk or existing "
 "system at all."
 msgstr ""
-"Il se diffuse désormais sur une simple clé USB économisant ainsi l'achat par"
-" les parents d'un ordinateur portable ; les élèves peuvent le transporter "
-"sur une clé,  la brancher sur n'importe quel ordinateur – à l'école, à la "
+"Il se diffuse désormais sur une simple clé USB économisant ainsi l’achat par"
+" les parents d’un ordinateur portable ; les élèves peuvent le transporter "
+"sur une clé,  la brancher sur n’importe quel ordinateur – à l’école, à la "
 "maison, à la bibliothèque ou au centre de loisirs – et démarrer sur leur "
 "environnement personnalisé sans la moindre modification du disque dur de la "
-"machine d'accueil ou du système existant."
+"machine d’accueil ou du système existant."
 
 #: data/content/soas/index.html:45
 msgid "Exploring the wider world"
@@ -1783,7 +2004,7 @@ msgid ""
 "Access the internet with Browse Activity, bookmark sites to research with "
 "friends and save sessions to keep organized."
 msgstr ""
-"Accédez à l'Internet grâce à l'activité de navigation, marquez des sites "
+"Accédez à l’Internet grâce à l’activité de navigation, marquez des sites "
 "pour des recherches avec des amis, enregistrez des sessions et restez "
 "organisé(e)."
 
@@ -1798,7 +2019,7 @@ msgid ""
 msgstr ""
 "Téléchargez des livres électroniques depuis le web tout entier. Explorez "
 "facilement la littérature  classique et moderne  des bibliothèques en ligne "
-"que sont   l'Internet Archive,  Feedbooks, et autres."
+"que sont   l’Internet Archive,  Feedbooks, et autres."
 
 #: data/content/soas/index.html:61
 msgid "Read"
@@ -1807,7 +2028,7 @@ msgstr "Lisez"
 #: data/content/soas/index.html:62
 msgid "Explore reports, documents, books and comics with the Read Activity."
 msgstr ""
-"Utilisez l'activité de lecture (Read) pour explorer des rapports, des livres"
+"Utilisez l’activité de lecture (Read) pour explorer des rapports, des livres"
 " et des bandes dessinées."
 
 #: data/content/soas/index.html:67
@@ -1815,8 +2036,8 @@ msgid ""
 "Chat provides a simple interface for collaborative discussion between two "
 "individuals or among a group as large as an entire classroom."
 msgstr ""
-"Utilisez l'interface simple de Chat pour des discussions collaboratives "
-"entre deux personnes ou avec un groupe aussi large qu'une classe toute "
+"Utilisez l’interface simple de Chat pour des discussions collaboratives "
+"entre deux personnes ou avec un groupe aussi large qu’une classe toute "
 "entière."
 
 #: data/content/soas/index.html:77
@@ -1836,7 +2057,7 @@ msgstr ""
 "Le Journal vous  fournit une interface avec un dépôt de tout ce que vous "
 "avez créé avec Sugar. Des outils de marquage de pages et de commentaires "
 "sont intégrés au Journal pour permettre aux parents et aux professeurs de "
-"suivre les progrès d'un enfant."
+"suivre les progrès d’un enfant."
 
 #: data/content/soas/index.html:85
 msgid "Portfolio"
@@ -1848,7 +2069,7 @@ msgid ""
 " representative work that shows what the learner can do."
 msgstr ""
 "Portfolio fournit un moyen de créer des instantanés périodiques sous forme "
-"de diapositives montrant ce qu'un apprenant peut faire."
+"de diapositives montrant ce qu’un apprenant peut faire."
 
 #: data/content/soas/index.html:90
 msgid "Getting technical"
@@ -1863,8 +2084,8 @@ msgid ""
 "Learn programming concepts with snap together blocks. Create art, animations"
 " and interactive programs in a graphics focused environment."
 msgstr ""
-"Découvrez les concepts de la programmation avec des blocs qui s'emboîtent. "
-"Créez des œuvres d'art, des animations et des programmes interactifs dans un"
+"Découvrez les concepts de la programmation avec des blocs qui s’emboîtent. "
+"Créez des œuvres d’art, des animations et des programmes interactifs dans un"
 " environnement  centré sur les graphiques."
 
 #: data/content/soas/index.html:98
@@ -1876,7 +2097,7 @@ msgid ""
 "Program applications in a simple environment. The Python backend provides "
 "unlimited opportunities within a simple language."
 msgstr ""
-"Programmez des applications dans un environnement simple. L'application "
+"Programmez des applications dans un environnement simple. L’application "
 "Python sous-jacente met à votre disposition des possibilités sans nombre "
 "dans un langage simple."
 
@@ -1902,8 +2123,8 @@ msgid ""
 "shapes, text and images to create beautiful pictures."
 msgstr ""
 "Paint met à votre disposition les outils de la création artistique. Utilisez"
-" des brosses, des tampons, des fomes, des textes et des images pour créer de"
-" belles images."
+" des brosses, des tampons, des formes, des textes et des images pour créer "
+"de belles images."
 
 #: data/content/soas/index.html:126
 msgid "Record"
@@ -1926,7 +2147,7 @@ msgid ""
 "A simple and fast image viewer tool for Sugar. It has standard features, "
 "like zoom and rotate."
 msgstr ""
-"Une visionneuse d'images rapide et simple pour Sugar. Elle est dotée de "
+"Une visionneuse d’images rapide et simple pour Sugar. Elle est dotée de "
 "fonctionnalités standard telles que le zoom et la rotation. "
 
 #: data/content/soas/index.html:143
@@ -1942,7 +2163,7 @@ msgid ""
 "Create a story, poem, report or anything with Write. Use formatting tools to"
 " add images or colors and work together with friends."
 msgstr ""
-"Créez une histoire, un poème ou n'importe quelle sorte d'écrit. Utilisez les"
+"Créez une histoire, un poème ou n’importe quelle sorte d’écrit. Utilisez les"
 " outils de formatage pour ajouter des images ou des couleurs et travaillez "
 "ensemble avec des amis."
 
@@ -1955,7 +2176,7 @@ msgid ""
 "Put complex ideas on the computer. Use the Labyrinth Activity to mind map "
 "about new concepts, to explore new ideas or to reflect."
 msgstr ""
-"Entrez vos idées complexes dans l'ordinateur. Utilisez l' actvité Labyrinth "
+"Entrez vos idées complexes dans l’ordinateur. Utilisez l’ actvité Labyrinth "
 "pour représenter  de nouveaux concepts sous forme de graphes, pour explorez "
 "de nouvelles idées ou pour réfléchir."
 
@@ -1968,7 +2189,7 @@ msgid ""
 "Create real life simulations using shapes, motors, ropes and bolts to "
 "explore physics in the world."
 msgstr ""
-"Créez des simulations de la vie réelle à l'aide de formes, moteurs, cordes "
+"Créez des simulations de la vie réelle à l’aide de formes, moteurs, cordes "
 "et boulons pour explorer les  sciences physiques du monde."
 
 #: data/content/soas/index.html:164
@@ -1984,7 +2205,7 @@ msgstr ""
 " fournit de nombreuses options pour ajouter du mouvement, des paroles et des"
 " idées à vos créations."
 
-#: data/content/soas/index.html:193 data/content/soas/download/index.html:157
+#: data/content/soas/download/index.html:157 data/content/soas/index.html:193
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#sugar</a> IRC "
@@ -1994,7 +2215,7 @@ msgstr ""
 " un canal IRC sur <strong>irc.freenode.net</strong> pour les discussions en "
 "temps réel."
 
-#: data/content/soas/index.html:197 data/content/soas/download/index.html:161
+#: data/content/soas/download/index.html:161 data/content/soas/index.html:197
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -2003,7 +2224,7 @@ msgstr ""
 "Les utilisateurs et les développeurs sont également joignables sur la liste "
 "de diffusion <a href=\"%s\">soas@lists.sugarlabs.org</a>."
 
-#: data/content/soas/index.html:201 data/content/soas/download/index.html:165
+#: data/content/soas/download/index.html:165 data/content/soas/index.html:201
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
@@ -2015,12 +2236,12 @@ msgstr ""
 #: data/content/soas/download/index.html:8
 #: data/content/soas/download/soas-download-splash.html:8
 msgid "Download Fedora SoaS Desktop"
-msgstr "Télécharger Fedora avec l'environnement de bureau SoaS"
+msgstr "Télécharger Fedora avec l’environnement de bureau SoaS"
 
 #: data/content/soas/download/index.html:19
 #, python-format
 msgid "Download Fedora %(rel)s SoaS Desktop"
-msgstr "Télécharger Fedora %(rel)s avec l'environnement de bureau SoaS"
+msgstr "Télécharger Fedora %(rel)s avec l’environnement de bureau SoaS"
 
 #: data/content/soas/download/index.html:34
 msgid ""
@@ -2031,16 +2252,21 @@ msgid ""
 "directly to your hard drive straight from the Live Media desktop if you "
 "like."
 msgstr ""
-"Fedora avec le bureau SoaS est fourni comme système d'exploitation « Live »."
-" C'est tout ce que vous avez besoin pour essayer l'environnement de bureau "
-"SoaS - sans avoir besoin d'effacer quoi que ce soit sur votre ordinateur, et"
-" sans risquer la perte de vos fichiers. Essayez Fedora pour la tester, et si"
-" vous l'appréciez vous pourrez l'installer directement sur votre disque dur "
-"à partir du média live."
+"Fedora avec le bureau SoaS est fourni comme système d’exploitation « Live »."
+" C’est tout ce dont vous avez besoin pour essayer l’environnement de bureau "
+"SoaS - sans avoir besoin d’effacer quoi que ce soit sur votre ordinateur, et"
+" sans risquer la perte de vos fichiers. Essayez cette variante de Fedora, et"
+" si vous l’appréciez vous pourrez l’installer directement sur votre disque "
+"dur à partir du média live."
+
+#: data/content/soas/download/index.html:42
+#, python-format
+msgid "32-bit %sMB Live image"
+msgstr "Image Live 32-bit %s Mo"
 
 #: data/content/xfce/index.html:8
 msgid "Fedora Xfce Desktop"
-msgstr "Fedora avec l'environnement de bureau Xfce"
+msgstr "Fedora avec l’environnement de bureau Xfce"
 
 #: data/content/xfce/index.html:21
 msgid ""
@@ -2055,6 +2281,14 @@ msgid ""
 "Fedora Xfce is a full-fledged desktop using the freedesktop.org standards."
 msgstr ""
 "Xfce est un bureau à part entière utilisant les normes de freedesktop.org."
+
+#: data/content/xfce/index.html:56
+msgid ""
+"The most popular fully open-source web browser, made by Mozilla. Customize "
+"it with useful add-ons."
+msgstr ""
+"Le plus populaire des navigateurs web open-source, fait par Mozilla. "
+"Personnalisez le avec des extensions utiles."
 
 #: data/content/xfce/index.html:74
 msgid "Gnumeric"
@@ -2081,12 +2315,12 @@ msgstr "Ristretto"
 
 #: data/content/xfce/index.html:111
 msgid "A quick and easy to use image viewer."
-msgstr "Un visionneur d'images rapide et facile à utiliser."
+msgstr "Un visionneur d’images rapide et facile à utiliser."
 
 #: data/content/xfce/index.html:116
 msgid "A modern media player, using GTK+3 and the GStreamer plugin framework."
 msgstr ""
-"Un lecteur de médias, utilisant GTK-3 et l'ensemble de plugins GStreamer."
+"Un lecteur de médias, utilisant GTK-3 et l’ensemble de plugins GStreamer."
 
 #: data/content/xfce/index.html:120
 msgid "Pragha"
@@ -2096,7 +2330,7 @@ msgstr "Pragha"
 msgid "Manage and play your music with ease."
 msgstr "Gérez et jouez votre musique facilement."
 
-#: data/content/xfce/index.html:149 data/content/xfce/download/index.html:152
+#: data/content/xfce/download/index.html:152 data/content/xfce/index.html:149
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#xfce</a> IRC "
@@ -2106,7 +2340,7 @@ msgstr ""
 "un canal IRC sur <strong>irc.freenode.net</strong> pour les discussions en "
 "temps réel."
 
-#: data/content/xfce/index.html:153 data/content/xfce/download/index.html:156
+#: data/content/xfce/download/index.html:156 data/content/xfce/index.html:153
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -2115,7 +2349,7 @@ msgstr ""
 "Les utilisateurs et les développeurs sont également joignables sur la liste "
 "de diffusion <a href=\"%s\">xfce@lists.fedoraproject.org</a>."
 
-#: data/content/xfce/index.html:157 data/content/xfce/download/index.html:160
+#: data/content/xfce/download/index.html:160 data/content/xfce/index.html:157
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
@@ -2127,12 +2361,12 @@ msgstr ""
 #: data/content/xfce/download/index.html:8
 #: data/content/xfce/download/xfce-download-splash.html:8
 msgid "Download Fedora Xfce Desktop"
-msgstr "Télécharger Fedora avec l'environnement de bureau Xfce"
+msgstr "Télécharger Fedora avec l’environnement de bureau Xfce"
 
 #: data/content/xfce/download/index.html:19
 #, python-format
 msgid "Download Fedora %(rel)s Xfce Desktop"
-msgstr "Télécharger Fedora %(rel)s avec l'environnement de bureau Xfce"
+msgstr "Télécharger Fedora %(rel)s avec l’environnement de bureau Xfce"
 
 #: data/content/xfce/download/index.html:30
 msgid ""
@@ -2143,21 +2377,37 @@ msgid ""
 "directly to your hard drive straight from the Live Media desktop if you "
 "like."
 msgstr ""
-"Fedora avec le bureau Xfce est fourni comme système d'exploitation « Live »."
-" C'est tout ce que vous avez besoin pour essayer l'environnement de bureau "
-"Xfce - sans avoir besoin d'effacer quoi que ce soit sur votre ordinateur, et"
-" sans risquer la perte de vos fichiers. Essayez Fedora pour la tester, et si"
-" vous l'appréciez vous pourrez l'installer directement sur votre disque dur "
-"à partir du média live."
+"Fedora avec le bureau Xfce est fourni comme système d’exploitation « Live »."
+" C’est tout ce dont vous avez besoin pour essayer l’environnement de bureau "
+"Xfce - sans avoir besoin d’effacer quoi que ce soit sur votre ordinateur, et"
+" sans risquer la perte de vos fichiers. Essayez cette variante de Fedora, et"
+" si vous l’appréciez vous pourrez l’installer directement sur votre disque "
+"dur à partir du média live."
 
 #: data/templates/content-export-regulations.html:25
 msgid "Read full export regulations"
-msgstr "Plus d'informations relatives à l'export"
+msgstr "Plus d’informations relatives à l’export"
 
 #: data/templates/content-export-regulations.html:26
 msgid "Hide full export regulations"
 msgstr ""
-"Masquer les informations complètes de régulations relatives à l'export"
+"Masquer les informations complètes de réglementation relatives à l’export"
+
+#: data/templates/devel.html:11
+#, python-format
+msgid ""
+"Although the MATE-Compiz and the Cinnamon spins failed to compose for the "
+"actual prerelease, the nightly test compose contains the same package set, "
+"and should meet most users' needs. You can download and verify the test "
+"compose images for <a href=\"%(x86_64)s\">64-bit</a> and <a "
+"href=\"%(i386)s\">32-bit</a> architectures."
+msgstr ""
+"Bien que les constructions des spins MATE-Compiz et Cinnamon aient échoué "
+"pour la pré-version actuelle, les versions de test nocturnes (nightly) "
+"contiennent les mêmes ensembles de paquets et devraient répondre à la "
+"majorité des besoins. Vous pouvez  télécharger et vérifier ces images pour "
+"les architectures <a href=\"%(x86_64)s\">64-bit</a> et <a "
+"href=\"%(i386)s\">32-bit</a> ."
 
 #: data/templates/export-regulations.html:12
 msgid ""
@@ -2189,7 +2439,7 @@ msgstr "Magazine Fedora"
 
 #: data/templates/footer.html:20
 msgid "Legal"
-msgstr "Documents juridiques de référence"
+msgstr "Mentions légales"
 
 #: data/templates/footer.html:40
 msgid "Get Fedora Workstation"
@@ -2201,7 +2451,7 @@ msgstr "Télécharger Fedora Server"
 
 #: data/templates/footer.html:42
 msgid "Get Fedora Atomic"
-msgstr ""
+msgstr "Télécharger Fedora Atomic"
 
 #: data/templates/footer.html:44
 msgid "Fedora Labs"
@@ -2213,7 +2463,7 @@ msgstr "Fedora ARM<span class=\"sup\">®</span>"
 
 #: data/templates/footer.html:46
 msgid "Alternative Downloads"
-msgstr ""
+msgstr "Téléchargements alternatifs"
 
 #: data/templates/footer.html:52
 msgid "Support"
@@ -2221,78 +2471,74 @@ msgstr "Assistance"
 
 #: data/templates/footer.html:55
 msgid "Get Help"
-msgstr "Obtenir de l'aide"
+msgstr "Obtenir de l’aide"
 
 #: data/templates/footer.html:56
 msgid "Ask Fedora"
 msgstr "Aide Fedora"
 
 #: data/templates/footer.html:57
-msgid "Forums"
-msgstr "Forums"
-
-#: data/templates/footer.html:58
 msgid "Common Bugs"
 msgstr "Anomalies communes"
 
-#: data/templates/footer.html:59
+#: data/templates/footer.html:58
 msgid "Fedora Developer Portal"
 msgstr "Portail développeur de Fedora"
 
-#: data/templates/footer.html:60
+#: data/templates/footer.html:59
 msgid "Installation Guide"
-msgstr "Guide d'installation"
+msgstr "Guide d’installation"
 
-#: data/templates/footer.html:66
+#: data/templates/footer.html:65
 msgid "Join"
-msgstr "Rejoindre"
+msgstr "Nous rejoindre"
 
-#: data/templates/footer.html:69
+#: data/templates/footer.html:68
 msgid "Join Fedora"
 msgstr "Rejoindre Fedora"
 
-#: data/templates/footer.html:70
+#: data/templates/footer.html:69
 msgid "Planet Fedora"
 msgstr "Planet Fedora"
 
-#: data/templates/footer.html:71
+#: data/templates/footer.html:70
 msgid "Fedora SIGs"
 msgstr "Fedora SIG"
 
-#: data/templates/footer.html:72
+#: data/templates/footer.html:71
 msgid "Fedora Account System"
 msgstr "Fedora Account System"
 
-#: data/templates/footer.html:73
+#: data/templates/footer.html:72
 msgid "Fedora Community"
 msgstr "Communauté Fedora"
 
-#: data/templates/footer.html:87
+#: data/templates/footer.html:86
 msgid "Fedora is sponsored by Red Hat."
-msgstr "Fedora est sponsorisée par Red Hat."
+msgstr "Fedora est sponsorisé par Red Hat."
 
-#: data/templates/footer.html:88
+#: data/templates/footer.html:87
 msgid "Learn more about the relationship between Red Hat and Fedora »"
 msgstr "En savoir plus sur la relation entre Red Hat et Fedora »"
 
-#: data/templates/footer.html:89
+#: data/templates/footer.html:88
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
 msgstr "© %(year)s Red Hat, Inc. and others."
 
-#: data/templates/footer.html:89
+#: data/templates/footer.html:88
 msgid ""
-"Please send any comments or corrections to the <a href=\"//fedorahosted.org"
-"/fedora-websites/\">websites team</a>."
+"Please send any comments or corrections to the <a href=\"//pagure.io/fedora-"
+"websites\">websites team</a>."
 msgstr ""
-"Veuillez transmettre tout commentaire ou correction à <a "
-"href=\"//fedorahosted.org/fedora-websites/\">l'équipe sites internet</a>."
+"Veuillez transmettre tout commentaire ou correction à <a href=\"//pagure.io"
+"/fedora-websites\">l’équipe sites internet</a>."
 
-#: data/templates/footer.html:95
+#: data/templates/footer.html:94
 msgid "Change Language"
 msgstr "Changer de langue"
 
-#: data/templates/footer.html:99
+#: data/templates/footer.html:98
 msgid "OK"
 msgstr "OK"
 
@@ -2312,7 +2558,7 @@ msgid ""
 " to see minimum requirements and recommendations."
 msgstr ""
 "Si vous voulez vous assurer que votre système respecte les prérequis "
-"minimums avant d'installer Fedora, consultez <a href=\"%s\">les notes de "
+"minimums avant d’installer Fedora, consultez <a href=\"%s\">les notes de "
 "version en ligne</a> pour les connaître  et pour obtenir des "
 "recommandations."
 
@@ -2323,9 +2569,13 @@ msgid ""
 " recommend you look through it before installing to your system, since it "
 "answers many common questions."
 msgstr ""
-"Un <a href=\"%s\">guide d'installation complet</a> est également disponible."
-" Nous vous recommandons de le consulter avant d'installer sur votre système "
+"Un <a href=\"%s\">guide d’installation complet</a> est également disponible."
+" Nous vous recommandons de le consulter avant d’installer sur votre système "
 "car il apporte une réponse à  de nombreuses questions classiques."
+
+#: data/templates/generic/splash-checksum.html:15
+msgid "Validate 32bit!"
+msgstr "Validez 32 bits"
 
 #: data/templates/generic/unofficial.html:11
 #, python-format
@@ -2335,7 +2585,7 @@ msgid ""
 "You can verify the test compose image with a dedicated CHECKSUM file for <a "
 "href=\"%(x86_64)s\">64-bit</a> and <a href=\"%(i386)s\">32-bit</a> images."
 msgstr ""
-"Bien que la construction de ce Spin ai échoué pour la version finale, la "
+"Bien que la construction de ce Spin ait échoué pour la version finale, la "
 "version de test nocturne (nightly) contient les mêmes ensembles de paquets "
 "et devrait répondre à la majorité des besoins. Vous pouvez vérifier ces "
 "images avec les sommes de contrôles dédiées pour les images <a "

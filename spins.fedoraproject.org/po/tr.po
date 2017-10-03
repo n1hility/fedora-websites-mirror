@@ -7,12 +7,13 @@
 # Onuralp SEZER <thunderbirdtr@gmail.com>, 2013.
 # Akın Ömeroğlu <akinomeroglu@gmail.com>, 2015. #zanata
 # Emin Tufan Çetin <etcetin@gmail.com>, 2016. #zanata
+# Emin Tufan Çetin <etcetin@gmail.com>, 2017. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-11-22 12:45+0100\n"
-"PO-Revision-Date: 2016-10-22 02:05-0400\n"
+"POT-Creation-Date: 2017-10-01 16:09+0200\n"
+"PO-Revision-Date: 2017-07-12 04:35-0400\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/projects/p/fedora/language/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -27,42 +28,60 @@ msgstr ""
 msgid "Fedora Spins"
 msgstr "Fedora Spinleri"
 
-#: data/content/index.html:27 data/content/prerelease.html:47
+#: data/content/index.html:21 data/content/index.html:32
+#, python-format
+msgid ""
+"<strong>Fedora %(rel)s %(state)s</strong> released! <a "
+"href=\"%(link)s\">Test it now ></a>"
+msgstr ""
+"<strong>Fedora %(rel)s %(state)s</strong> yayımlandı! <a "
+"href=\"%(link)s\">Şimdi dene ></a>"
+
+#: data/content/index.html:43
+#, python-format
+msgid "Fedora %(rel)s released! Get it now."
+msgstr "Fedora %(rel)s yayımlandı! Şimdi al."
+
+#: data/content/index.html:64 data/content/prerelease.html:48
 msgid "A complete, modern desktop built using the KDE Plasma Desktop."
-msgstr "KDE Plasma Masaüstü ile inşa edilmiş tam ve çağdaş bir masaüstü"
+msgstr "KDE Plasma Masaüstü ile inşa edilmiş tam ve çağdaş bir masaüstü."
 
-#: data/content/index.html:41 data/content/prerelease.html:69
+#: data/content/index.html:78 data/content/prerelease.html:70
 msgid "A complete, well-integrated Xfce Desktop."
-msgstr "Tam ve iyi tümlenmiş XFCE Masüstü"
+msgstr "Tam ve iyi tümlenmiş bir XFCE Masüstü."
 
-#: data/content/index.html:55 data/content/prerelease.html:91
-msgid "A light, fast, less-resource hungry desktop environment."
-msgstr "Hafif, hızlı ve az kaynak tüketen masaüstü ortamı"
+#: data/content/index.html:92
+msgid "A lightweight, well-integrated LXQt desktop environment."
+msgstr "Hafif, iyi tümlenmiş bir LXQt masaüstü ortamı."
 
-#: data/content/index.html:69
+#: data/content/index.html:106 data/content/prerelease.html:136
 msgid "A classic Fedora Desktop with an additional 3D Windows Manager."
-msgstr "3B Pencere Yöneticisi ile geleneksel Fedora Masaüstü "
+msgstr "3B Pencere Yöneticisi ile geleneksel Fedora Masaüstü."
 
-#: data/content/index.html:83
+#: data/content/index.html:120
 msgid "A modern desktop featuring traditional Gnome user experience."
-msgstr "Geleneksel Gnome kullanıcı deneyimini sunan çağdaş masaüstü"
+msgstr "Geleneksel Gnome kullanıcı deneyimini sunan çağdaş masaüstü."
 
-#: data/content/index.html:97 data/content/prerelease.html:157
+#: data/content/index.html:134 data/content/prerelease.html:92
+msgid "A light, fast, less-resource hungry desktop environment."
+msgstr "Hafif, hızlı ve az kaynak tüketen bir masaüstü ortamı."
+
+#: data/content/index.html:148 data/content/prerelease.html:180
 msgid "Discover. Reflect. Share. Learn."
 msgstr "Keşfet. Yansıt. Paylaş. Öğren."
 
-#: data/content/index.html:109
+#: data/content/index.html:160
 #, python-format
 msgid "Looking for more Fedora options? Try <a href=\"%s\">Fedora Labs</a>"
 msgstr ""
-"Daha fazla Fedora seçeneğine mi bakıyorsun? <a href=\"%s\">Fedora "
-"Labları</a> dene"
+"Daha çok Fedora seçeneğine mi bakıyorsun? <a href=\"%s\">Fedora Labları</a> "
+"dene"
 
-#: data/content/index.html:119 data/content/prerelease.html:197
+#: data/content/index.html:170 data/content/prerelease.html:274
 msgid "What are Spins?"
 msgstr "Spinler nedir?"
 
-#: data/content/index.html:120 data/content/prerelease.html:198
+#: data/content/index.html:171 data/content/prerelease.html:275
 msgid ""
 "The default desktop environment of Fedora is GNOME, but if you prefer an "
 "alternative desktop environment such as KDE Plasma Desktop or Xfce, you can "
@@ -75,30 +94,32 @@ msgstr ""
 "istediğiniz masaüstü ortamına sahip Fedora'yı yüklemek için "
 "kullanabilirsiniz."
 
-#: data/content/index.html:131 data/content/index.html:150
-#: data/content/prerelease.html:209 data/content/prerelease.html:228
 #: data/content/cinnamon/download/index.html:94
-#: data/content/cinnamon/download/index.html:113
-#: data/content/kde/download/index.html:94
+#: data/content/cinnamon/download/index.html:113 data/content/index.html:182
+#: data/content/index.html:201 data/content/kde/download/index.html:94
 #: data/content/kde/download/index.html:113
 #: data/content/lxde/download/index.html:94
 #: data/content/lxde/download/index.html:113
+#: data/content/lxqt/download/index.html:94
+#: data/content/lxqt/download/index.html:113
 #: data/content/mate-compiz/download/index.html:94
 #: data/content/mate-compiz/download/index.html:113
+#: data/content/prerelease.html:286 data/content/prerelease.html:305
 #: data/content/soas/download/index.html:99
 #: data/content/soas/download/index.html:118
 #: data/content/xfce/download/index.html:94
 #: data/content/xfce/download/index.html:113
 msgid "Downloading"
-msgstr "İndiriliyor"
+msgstr "İndirme"
 
-#: data/content/index.html:132 data/content/index.html:151
 #: data/content/cinnamon/download/index.html:95
-#: data/content/cinnamon/download/index.html:114
-#: data/content/kde/download/index.html:95
+#: data/content/cinnamon/download/index.html:114 data/content/index.html:183
+#: data/content/index.html:202 data/content/kde/download/index.html:95
 #: data/content/kde/download/index.html:114
 #: data/content/lxde/download/index.html:95
 #: data/content/lxde/download/index.html:114
+#: data/content/lxqt/download/index.html:95
+#: data/content/lxqt/download/index.html:114
 #: data/content/mate-compiz/download/index.html:95
 #: data/content/mate-compiz/download/index.html:114
 #: data/content/soas/download/index.html:100
@@ -116,19 +137,15 @@ msgstr ""
 "istemcisi kurmanız gerekecektir. Eğer BitTorrent kullanamıyorsanız, bazı "
 "spin'ler başka indirme yöntemleri sunar."
 
-#: data/content/index.html:133 data/content/index.html:138
-#: data/content/index.html:143 data/content/index.html:164
-#: data/content/index.html:167 data/content/index.html:170
-#: data/content/prerelease.html:211 data/content/prerelease.html:216
-#: data/content/prerelease.html:221 data/content/prerelease.html:242
-#: data/content/prerelease.html:245 data/content/prerelease.html:248
 #: data/content/cinnamon/download/index.html:96
 #: data/content/cinnamon/download/index.html:101
 #: data/content/cinnamon/download/index.html:106
 #: data/content/cinnamon/download/index.html:127
 #: data/content/cinnamon/download/index.html:130
-#: data/content/cinnamon/download/index.html:133
-#: data/content/kde/download/index.html:96
+#: data/content/cinnamon/download/index.html:133 data/content/index.html:184
+#: data/content/index.html:189 data/content/index.html:194
+#: data/content/index.html:215 data/content/index.html:218
+#: data/content/index.html:221 data/content/kde/download/index.html:96
 #: data/content/kde/download/index.html:101
 #: data/content/kde/download/index.html:106
 #: data/content/kde/download/index.html:127
@@ -140,12 +157,21 @@ msgstr ""
 #: data/content/lxde/download/index.html:127
 #: data/content/lxde/download/index.html:130
 #: data/content/lxde/download/index.html:133
+#: data/content/lxqt/download/index.html:96
+#: data/content/lxqt/download/index.html:101
+#: data/content/lxqt/download/index.html:106
+#: data/content/lxqt/download/index.html:127
+#: data/content/lxqt/download/index.html:130
+#: data/content/lxqt/download/index.html:133
 #: data/content/mate-compiz/download/index.html:96
 #: data/content/mate-compiz/download/index.html:101
 #: data/content/mate-compiz/download/index.html:106
 #: data/content/mate-compiz/download/index.html:127
 #: data/content/mate-compiz/download/index.html:130
 #: data/content/mate-compiz/download/index.html:133
+#: data/content/prerelease.html:288 data/content/prerelease.html:293
+#: data/content/prerelease.html:298 data/content/prerelease.html:319
+#: data/content/prerelease.html:322 data/content/prerelease.html:325
 #: data/content/soas/download/index.html:101
 #: data/content/soas/download/index.html:106
 #: data/content/soas/download/index.html:111
@@ -159,18 +185,19 @@ msgstr ""
 #: data/content/xfce/download/index.html:130
 #: data/content/xfce/download/index.html:133
 msgid "Learn more"
-msgstr "Daha fazlasını öğren"
+msgstr "Daha çoğunu öğren"
 
-#: data/content/index.html:136 data/content/index.html:154
-#: data/content/prerelease.html:214 data/content/prerelease.html:232
 #: data/content/cinnamon/download/index.html:99
-#: data/content/cinnamon/download/index.html:117
-#: data/content/kde/download/index.html:99
+#: data/content/cinnamon/download/index.html:117 data/content/index.html:187
+#: data/content/index.html:205 data/content/kde/download/index.html:99
 #: data/content/kde/download/index.html:117
 #: data/content/lxde/download/index.html:99
 #: data/content/lxde/download/index.html:117
+#: data/content/lxqt/download/index.html:99
+#: data/content/lxqt/download/index.html:117
 #: data/content/mate-compiz/download/index.html:99
 #: data/content/mate-compiz/download/index.html:117
+#: data/content/prerelease.html:291 data/content/prerelease.html:309
 #: data/content/soas/download/index.html:104
 #: data/content/soas/download/index.html:122
 #: data/content/xfce/download/index.html:99
@@ -178,16 +205,17 @@ msgstr "Daha fazlasını öğren"
 msgid "Using"
 msgstr "Kullanım"
 
-#: data/content/index.html:137 data/content/index.html:155
-#: data/content/prerelease.html:215 data/content/prerelease.html:233
 #: data/content/cinnamon/download/index.html:100
-#: data/content/cinnamon/download/index.html:118
-#: data/content/kde/download/index.html:100
+#: data/content/cinnamon/download/index.html:118 data/content/index.html:188
+#: data/content/index.html:206 data/content/kde/download/index.html:100
 #: data/content/kde/download/index.html:118
 #: data/content/lxde/download/index.html:100
 #: data/content/lxde/download/index.html:118
+#: data/content/lxqt/download/index.html:100
+#: data/content/lxqt/download/index.html:118
 #: data/content/mate-compiz/download/index.html:100
 #: data/content/mate-compiz/download/index.html:118
+#: data/content/prerelease.html:292 data/content/prerelease.html:310
 #: data/content/soas/download/index.html:105
 #: data/content/soas/download/index.html:123
 #: data/content/xfce/download/index.html:100
@@ -201,16 +229,17 @@ msgstr ""
 "makine yaratmak için kullanabilir ya da ISO'yu özel bir şekilde USB ya da "
 "optik ortamınıza yazarak spin'leri donanım üzerinde kullanabilirsiniz."
 
-#: data/content/index.html:141 data/content/index.html:158
-#: data/content/prerelease.html:219 data/content/prerelease.html:236
 #: data/content/cinnamon/download/index.html:104
-#: data/content/cinnamon/download/index.html:121
-#: data/content/kde/download/index.html:104
+#: data/content/cinnamon/download/index.html:121 data/content/index.html:192
+#: data/content/index.html:209 data/content/kde/download/index.html:104
 #: data/content/kde/download/index.html:121
 #: data/content/lxde/download/index.html:104
 #: data/content/lxde/download/index.html:121
+#: data/content/lxqt/download/index.html:104
+#: data/content/lxqt/download/index.html:121
 #: data/content/mate-compiz/download/index.html:104
 #: data/content/mate-compiz/download/index.html:121
+#: data/content/prerelease.html:296 data/content/prerelease.html:313
 #: data/content/soas/download/index.html:109
 #: data/content/soas/download/index.html:126
 #: data/content/xfce/download/index.html:104
@@ -218,16 +247,17 @@ msgstr ""
 msgid "Installing"
 msgstr "Kurulum"
 
-#: data/content/index.html:142 data/content/index.html:159
-#: data/content/prerelease.html:220 data/content/prerelease.html:237
 #: data/content/cinnamon/download/index.html:105
-#: data/content/cinnamon/download/index.html:122
-#: data/content/kde/download/index.html:105
+#: data/content/cinnamon/download/index.html:122 data/content/index.html:193
+#: data/content/index.html:210 data/content/kde/download/index.html:105
 #: data/content/kde/download/index.html:122
 #: data/content/lxde/download/index.html:105
 #: data/content/lxde/download/index.html:122
+#: data/content/lxqt/download/index.html:105
+#: data/content/lxqt/download/index.html:122
 #: data/content/mate-compiz/download/index.html:105
 #: data/content/mate-compiz/download/index.html:122
+#: data/content/prerelease.html:297 data/content/prerelease.html:314
 #: data/content/soas/download/index.html:110
 #: data/content/soas/download/index.html:127
 #: data/content/xfce/download/index.html:105
@@ -241,24 +271,14 @@ msgstr ""
 "\"Diske Yükle\" bağlantısına tıklayın. Yükleme esnasında bir dizi ileti size"
 " rehberlik edecektir."
 
-#: data/content/index.html:183 data/content/index.html:194
-#, python-format
-msgid "Fedora %(rel)s %(state)s released! <a href=\"%(link)s\">Try it now ></a>"
-msgstr ""
-
-#: data/content/index.html:205
-#, python-format
-msgid "Fedora %(rel)s released! Check it out in the Download section."
-msgstr ""
-
 #: data/content/prerelease.html:8
 msgid "Fedora Spins Prerelease Images"
-msgstr ""
+msgstr "Fedora Spinleri Sürüm Öncesi Görüntüleri"
 
 #: data/content/prerelease.html:21
 #, python-format
 msgid "Download Fedora %(rel)s %(state)s Desktop Spins"
-msgstr ""
+msgstr "Fedora %(rel)s %(state)s Masaüstü Spinlerini İndir"
 
 #: data/content/prerelease.html:26
 #, python-format
@@ -285,35 +305,39 @@ msgid ""
 "them."
 msgstr ""
 
-#: data/content/prerelease.html:50 data/content/prerelease.html:54
-#: data/content/prerelease.html:72 data/content/prerelease.html:76
-#: data/content/prerelease.html:98 data/content/prerelease.html:116
-#: data/content/prerelease.html:120 data/content/prerelease.html:138
-#: data/content/prerelease.html:142
+#: data/content/prerelease.html:35
+msgid ""
+"Are you looking for 32 bit images of F27 Beta? Due to some technical issues "
+"we cannot offer them, but they will be available for the F27 final release "
+"date. Stay tuned!"
+msgstr ""
+
+#: data/content/prerelease.html:51 data/content/prerelease.html:73
+#: data/content/prerelease.html:139 data/content/prerelease.html:161
 #, python-format
 msgid "%s GB ISO Image"
-msgstr ""
+msgstr "%s GB ISO Görüntüsü"
 
-#: data/content/prerelease.html:94 data/content/prerelease.html:160
-#: data/content/prerelease.html:164
+#: data/content/prerelease.html:95 data/content/prerelease.html:117
+#: data/content/prerelease.html:183
 #, python-format
 msgid "%s MB ISO Image"
-msgstr ""
+msgstr "%s MB ISO Görüntüsü"
 
-#: data/content/prerelease.html:113
-msgid "A classic Fedora Desktop. With wobbly Windows."
-msgstr ""
+#: data/content/prerelease.html:114
+msgid "A complete and lightweight Qt-based desktop experience."
+msgstr "Tam ve hafif Qt-tabanlı bir masaüstü deneyimi."
 
-#: data/content/prerelease.html:135
+#: data/content/prerelease.html:158
 msgid "Traditional layout, advanced features, easy to use."
-msgstr ""
+msgstr "Geleneksel düzen, gelişmiş özellikler, kolay kullanım."
 
-#: data/content/prerelease.html:178
+#: data/content/prerelease.html:201
 #: data/templates/generic/splash-checksum.html:8
 msgid "Verify your Download!"
 msgstr "İndirmenizi Doğrulayın!"
 
-#: data/content/prerelease.html:179
+#: data/content/prerelease.html:202
 #: data/templates/generic/splash-checksum.html:9
 #, python-format
 msgid ""
@@ -322,18 +346,17 @@ msgid ""
 "same directory as the image you downloaded and follow <a "
 "href=\"../../%s/verify\">these instructions</a>."
 msgstr ""
+"Görüntü indirdiğinizde güvenlik ve doğruluk için görüntüyü doğrulayın. "
+"Görüntünüzü doğrulamak için indirdiğiniz dosyayla ilişkili CHECKSUM "
+"dosyasını da indirin ve görüntünüzle aynı dizine kaydedin ve <a "
+"href=\"../../%s/verify\">bu yönergeleri</a> uygulayın."
 
-#: data/content/prerelease.html:182
+#: data/content/prerelease.html:205
 #: data/templates/generic/splash-checksum.html:12
 msgid "Validate 64bit!"
 msgstr "64bit'i Doğrula!"
 
-#: data/content/prerelease.html:185
-#: data/templates/generic/splash-checksum.html:15
-msgid "Validate 32bit!"
-msgstr "32bit'i Doğrula!"
-
-#: data/content/prerelease.html:210 data/content/prerelease.html:229
+#: data/content/prerelease.html:287 data/content/prerelease.html:306
 msgid ""
 "Spin downloads are offered via direct download, but you can also get them "
 "via Bittorrent. In this case you will need to install a Bittorrent client in"
@@ -369,7 +392,7 @@ msgstr ""
 
 #: data/content/verify.html:36
 msgid "Validate 64-bit!"
-msgstr ""
+msgstr "64-bit'i Doğrula!"
 
 #: data/content/verify.html:39
 msgid "Validate 32-bit!"
@@ -401,38 +424,26 @@ msgstr ""
 "olmalıdır:"
 
 #: data/content/verify.html:52
-msgid "Fedora 26"
+msgid "Fedora 27"
 msgstr ""
 
 #: data/content/verify.html:53
-msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgid "Fedora 26"
 msgstr ""
 
 #: data/content/verify.html:54
-msgid "Fedora 25"
+msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
 #: data/content/verify.html:55
-msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgid "Fedora 25"
 msgstr ""
 
 #: data/content/verify.html:56
-msgid "Fedora 24"
-msgstr ""
-
-#: data/content/verify.html:57
-msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
 #: data/content/verify.html:58
-msgid "Fedora 23"
-msgstr "Fedora 23"
-
-#: data/content/verify.html:59
-msgid "Fedora 23 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
-
-#: data/content/verify.html:61
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
@@ -440,19 +451,19 @@ msgstr ""
 "Son olarak, CHECKSUM dosyası doğrulandığına göre görüntünün checksum sonucu "
 "ile uyuştuğunu denetleyin:"
 
-#: data/content/verify.html:63
+#: data/content/verify.html:60
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
 "Eğer çıktı dosyanın geçerli olduğunu doğruluyorsa artık kullanıma hazır "
 "demektir!"
 
-#: data/content/verify.html:64
+#: data/content/verify.html:61
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr ""
 "İndirdiğim görüntünün doğruluğunu başka bir işletim sisteminde nasıl "
 "denetleyebilirim?"
 
-#: data/content/verify.html:65
+#: data/content/verify.html:62
 msgid "Read these instructions to validate your image."
 msgstr "Görüntünüzü doğrulamak için bu yönergeleri okuyun."
 
@@ -478,6 +489,7 @@ msgstr ""
 #: data/content/cinnamon/index.html:33 data/content/cinnamon/index.html:137
 #: data/content/kde/index.html:34 data/content/kde/index.html:171
 #: data/content/lxde/index.html:33 data/content/lxde/index.html:137
+#: data/content/lxqt/index.html:32 data/content/lxqt/index.html:136
 #: data/content/mate-compiz/index.html:33
 #: data/content/mate-compiz/index.html:142 data/content/soas/index.html:34
 #: data/content/soas/index.html:176 data/content/xfce/index.html:33
@@ -486,19 +498,20 @@ msgid "Download Now"
 msgstr "Şimdi indir"
 
 #: data/content/cinnamon/index.html:44 data/content/kde/index.html:45
-#: data/content/lxde/index.html:44 data/content/mate-compiz/index.html:44
-#: data/content/xfce/index.html:44
+#: data/content/lxde/index.html:44 data/content/lxqt/index.html:43
+#: data/content/mate-compiz/index.html:44 data/content/xfce/index.html:44
 msgid "Going Online"
 msgstr "Çevrim İçi Olmak"
 
 #: data/content/cinnamon/index.html:50 data/content/mate-compiz/index.html:55
+#: data/content/xfce/index.html:55
 msgid "Firefox"
 msgstr "Firefox"
 
 #: data/content/cinnamon/index.html:51 data/content/mate-compiz/index.html:56
 msgid ""
 "Explore the World Wide Web with Firefox, the full featured web browser."
-msgstr ""
+msgstr "World Wide Web'i tam donanımlı web tarayıcısı Firefox ile keşfedin."
 
 #: data/content/cinnamon/index.html:55 data/content/mate-compiz/index.html:60
 msgid "Hexchat"
@@ -509,6 +522,8 @@ msgid ""
 "Stay connected with your friends and colleagues using Hexchat, an easy to "
 "use IRC client."
 msgstr ""
+"Kullanımı kolay IRC istemcisi Hexchat ile arkadaşlarınız ve "
+"meslektaşlarınızla bağlı kalın."
 
 #: data/content/cinnamon/index.html:60 data/content/lxde/index.html:60
 #: data/content/xfce/index.html:60
@@ -521,9 +536,11 @@ msgid ""
 "Universal messaging client. Communicate with the world via IRC, AIM, MSN, "
 "Yahoo and other instant messaging systems."
 msgstr ""
+"Evrensel iletişim istemcisi. IRC, AIM, MSN, Yahoo ve diğer anında iletişim "
+"sistemleri aracılığıyla dünyayla iletişime geç."
 
 #: data/content/cinnamon/index.html:65 data/content/lxde/index.html:65
-#: data/content/mate-compiz/index.html:65
+#: data/content/lxqt/index.html:64 data/content/mate-compiz/index.html:65
 msgid "Transmission"
 msgstr "Transmission"
 
@@ -532,10 +549,12 @@ msgid ""
 "Are you a downloader? Use Transmission to get new versions of Fedora "
 "Cinnamon Desktop!"
 msgstr ""
+"Dosya indirenlerden misiniz? Fedora Cinnamon Masaüstü'nün yeni sürümlerini "
+"almak için Transmission kullanın!"
 
 #: data/content/cinnamon/index.html:76 data/content/kde/index.html:77
-#: data/content/lxde/index.html:76 data/content/mate-compiz/index.html:76
-#: data/content/xfce/index.html:71
+#: data/content/lxde/index.html:76 data/content/lxqt/index.html:75
+#: data/content/mate-compiz/index.html:76 data/content/xfce/index.html:71
 msgid "Utilities & Configuration"
 msgstr "Araçlar ve Ayarlar"
 
@@ -563,20 +582,22 @@ msgstr ""
 "istediğiniz ayarları seçin ve sizi mutlu edecek düzenlemeleri yapın."
 
 #: data/content/cinnamon/index.html:89 data/content/kde/index.html:90
-#: data/content/lxde/index.html:89 data/content/mate-compiz/index.html:89
-#: data/content/xfce/index.html:84
+#: data/content/lxde/index.html:89 data/content/lxqt/index.html:88
+#: data/content/mate-compiz/index.html:89 data/content/xfce/index.html:84
 msgid "Office & Productivity Suite"
 msgstr "Ofis ve Üretkenlik Paketi"
 
 #: data/content/cinnamon/index.html:92 data/content/mate-compiz/index.html:92
 msgid "LibreOffice"
-msgstr ""
+msgstr "LibreOffice"
 
 #: data/content/cinnamon/index.html:93 data/content/mate-compiz/index.html:93
 msgid ""
 "LibreOffice is an integrated office suite. It utilizes free and open "
 "standards for its document formats and components."
 msgstr ""
+"LibreOffice tümleşik ofis takımıdır. Belge biçimleri ve bileşenleri için "
+"özgür ve açık standartlardan yararlanmaktadır."
 
 #: data/content/cinnamon/index.html:97
 msgid "Thunderbird"
@@ -589,27 +610,28 @@ msgid ""
 msgstr ""
 
 #: data/content/cinnamon/index.html:109 data/content/kde/index.html:110
-#: data/content/lxde/index.html:109 data/content/mate-compiz/index.html:109
-#: data/content/soas/index.html:110 data/content/xfce/index.html:104
+#: data/content/lxde/index.html:109 data/content/lxqt/index.html:108
+#: data/content/mate-compiz/index.html:109 data/content/soas/index.html:110
+#: data/content/xfce/index.html:104
 msgid "Multimedia"
-msgstr "Multimedya"
+msgstr "Çoklu ortam"
 
 #: data/content/cinnamon/index.html:115
-#: data/content/mate-compiz/index.html:120 data/content/xfce/index.html:115
-msgid "Parole"
-msgstr "Parole"
+msgid "XPlayer"
+msgstr ""
 
 #: data/content/cinnamon/index.html:116
 #: data/content/mate-compiz/index.html:121
 msgid "A modern media player, using gtk3 and the gstreamer plugin framework."
 msgstr ""
+"GTK+3 ve GStreamer eklenti çerçevesini kullanan, çağdaş ortam oynatıcı."
 
 #: data/content/cinnamon/index.html:120
-msgid "Shotwell"
+msgid "Pix"
 msgstr ""
 
 #: data/content/cinnamon/index.html:121
-msgid "Shotwell is an easy-to-use, fast photo organizer, viewer, and editor."
+msgid "Pix is an image browser, viewer, organizer and editor."
 msgstr ""
 
 #: data/content/cinnamon/index.html:125
@@ -620,103 +642,120 @@ msgstr ""
 msgid "Brasero is a simple and easy to use CD/DVD burning application."
 msgstr ""
 
-#: data/content/cinnamon/index.html:148
 #: data/content/cinnamon/download/index.html:146
-#: data/content/kde/index.html:182 data/content/kde/download/index.html:145
-#: data/content/lxde/index.html:148 data/content/lxde/download/index.html:146
-#: data/content/mate-compiz/index.html:153
+#: data/content/cinnamon/index.html:148
+#: data/content/kde/download/index.html:145 data/content/kde/index.html:182
+#: data/content/lxde/download/index.html:146 data/content/lxde/index.html:148
+#: data/content/lxqt/download/index.html:146 data/content/lxqt/index.html:147
 #: data/content/mate-compiz/download/index.html:146
-#: data/content/soas/index.html:187 data/content/soas/download/index.html:151
-#: data/content/xfce/index.html:143 data/content/xfce/download/index.html:146
+#: data/content/mate-compiz/index.html:153
+#: data/content/soas/download/index.html:151 data/content/soas/index.html:187
+#: data/content/xfce/download/index.html:146 data/content/xfce/index.html:143
 msgid "Support Resources"
 msgstr "Destek Kaynakları"
 
-#: data/content/cinnamon/index.html:153
 #: data/content/cinnamon/download/index.html:151
-#: data/content/kde/index.html:187 data/content/kde/download/index.html:150
-#: data/content/lxde/index.html:153 data/content/lxde/download/index.html:151
-#: data/content/mate-compiz/index.html:158
+#: data/content/cinnamon/index.html:153
+#: data/content/kde/download/index.html:150 data/content/kde/index.html:187
+#: data/content/lxde/download/index.html:151 data/content/lxde/index.html:153
+#: data/content/lxqt/download/index.html:151 data/content/lxqt/index.html:152
 #: data/content/mate-compiz/download/index.html:151
-#: data/content/soas/index.html:66 data/content/soas/index.html:192
-#: data/content/soas/download/index.html:156 data/content/xfce/index.html:148
-#: data/content/xfce/download/index.html:151
+#: data/content/mate-compiz/index.html:158
+#: data/content/soas/download/index.html:156 data/content/soas/index.html:66
+#: data/content/soas/index.html:192 data/content/xfce/download/index.html:151
+#: data/content/xfce/index.html:148
 msgid "Chat"
 msgstr "Sohbet"
 
-#: data/content/cinnamon/index.html:154
 #: data/content/cinnamon/download/index.html:152
+#: data/content/cinnamon/index.html:154
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-"
 "cinnamon</a> IRC channel on <strong>irc.freenode.org</strong> for real-time "
 "chat."
 msgstr ""
+"Kullanıcılar ve geliştiriciler <strong>irc.freenode.org</strong> üzerindeki "
+"<a href=\"%s\">#fedora-cinnamon</a> IRC kanalında gerçek zamanlı konuşma "
+"için bulunurlar."
 
-#: data/content/cinnamon/index.html:157
 #: data/content/cinnamon/download/index.html:155
-#: data/content/kde/index.html:191 data/content/kde/download/index.html:154
-#: data/content/lxde/index.html:157 data/content/lxde/download/index.html:155
-#: data/content/mate-compiz/index.html:162
+#: data/content/cinnamon/index.html:157
+#: data/content/kde/download/index.html:154 data/content/kde/index.html:191
+#: data/content/lxde/download/index.html:155 data/content/lxde/index.html:157
+#: data/content/lxqt/download/index.html:155 data/content/lxqt/index.html:156
 #: data/content/mate-compiz/download/index.html:155
-#: data/content/soas/index.html:196 data/content/soas/download/index.html:160
-#: data/content/xfce/index.html:152 data/content/xfce/download/index.html:155
+#: data/content/mate-compiz/index.html:162
+#: data/content/soas/download/index.html:160 data/content/soas/index.html:196
+#: data/content/xfce/download/index.html:155 data/content/xfce/index.html:152
 msgid "Email"
 msgstr "E-posta"
 
-#: data/content/cinnamon/index.html:158
 #: data/content/cinnamon/download/index.html:156
-#: data/content/mate-compiz/index.html:163
+#: data/content/cinnamon/index.html:158
 #: data/content/mate-compiz/download/index.html:156
+#: data/content/mate-compiz/index.html:163
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
 "href=\"%s\">users@lists.fedoraproject.org</a>."
 msgstr ""
+"Kullanıcılar ve geliştiriciler ayrıca <a "
+"href=\"%s\">users@lists.fedoraproject.org</a> postalaşma listesi üzerinde de"
+" bulunurlar."
 
-#: data/content/cinnamon/index.html:161
 #: data/content/cinnamon/download/index.html:159
-#: data/content/kde/index.html:195 data/content/kde/download/index.html:158
-#: data/content/lxde/index.html:161 data/content/lxde/download/index.html:159
-#: data/content/mate-compiz/index.html:166
+#: data/content/cinnamon/index.html:161
+#: data/content/kde/download/index.html:158 data/content/kde/index.html:195
+#: data/content/lxde/download/index.html:159 data/content/lxde/index.html:161
+#: data/content/lxqt/download/index.html:159 data/content/lxqt/index.html:160
 #: data/content/mate-compiz/download/index.html:159
-#: data/content/soas/index.html:200 data/content/soas/download/index.html:164
-#: data/content/xfce/index.html:156 data/content/xfce/download/index.html:159
+#: data/content/mate-compiz/index.html:166
+#: data/content/soas/download/index.html:164 data/content/soas/index.html:200
+#: data/content/xfce/download/index.html:159 data/content/xfce/index.html:156
 msgid "Documentation"
 msgstr "Belgelendirme"
 
-#: data/content/cinnamon/index.html:162
 #: data/content/cinnamon/download/index.html:160
+#: data/content/cinnamon/index.html:162
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
 "href=\"%s\">Cinnamon project upstream website</a>."
 msgstr ""
+"Özel belgelendirme ve öğreticiler <a href=\"%s\">Cinnamon tasarısı üst akım "
+"web sitesinde</a> bulunur."
 
-#: data/content/cinnamon/index.html:167
 #: data/content/cinnamon/download/index.html:165
-#: data/content/kde/index.html:201 data/content/kde/download/index.html:164
-#: data/content/lxde/index.html:167 data/content/lxde/download/index.html:165
-#: data/content/mate-compiz/index.html:172
+#: data/content/cinnamon/index.html:167
+#: data/content/kde/download/index.html:164 data/content/kde/index.html:201
+#: data/content/lxde/download/index.html:165 data/content/lxde/index.html:167
+#: data/content/lxqt/download/index.html:165 data/content/lxqt/index.html:166
 #: data/content/mate-compiz/download/index.html:165
-#: data/content/soas/index.html:206 data/content/soas/download/index.html:170
-#: data/content/xfce/index.html:162 data/content/xfce/download/index.html:165
+#: data/content/mate-compiz/index.html:172
+#: data/content/soas/download/index.html:170 data/content/soas/index.html:206
+#: data/content/xfce/download/index.html:165 data/content/xfce/index.html:162
 msgid "General Help Using Fedora"
-msgstr ""
+msgstr "Fedora Kullanımı Genel Yardımı"
 
-#: data/content/cinnamon/index.html:168
 #: data/content/cinnamon/download/index.html:166
-#: data/content/kde/index.html:202 data/content/kde/download/index.html:165
-#: data/content/lxde/index.html:168 data/content/lxde/download/index.html:166
-#: data/content/mate-compiz/index.html:173
+#: data/content/cinnamon/index.html:168
+#: data/content/kde/download/index.html:165 data/content/kde/index.html:202
+#: data/content/lxde/download/index.html:166 data/content/lxde/index.html:168
+#: data/content/lxqt/download/index.html:166 data/content/lxqt/index.html:167
 #: data/content/mate-compiz/download/index.html:166
-#: data/content/soas/index.html:207 data/content/soas/download/index.html:171
-#: data/content/xfce/index.html:163 data/content/xfce/download/index.html:166
+#: data/content/mate-compiz/index.html:173
+#: data/content/soas/download/index.html:171 data/content/soas/index.html:207
+#: data/content/xfce/download/index.html:166 data/content/xfce/index.html:163
 #, python-format
 msgid ""
 "Sometimes you may encounter an issue with this spin that you can get help "
 "with using general Fedora support resources. A list of resources is "
 "available at the <a href=\"%s\">Fedora “Get Help” page</a>."
 msgstr ""
+"Bazen bu spin'de genel Fedora yardım kaynaklarını kullanarak yardım "
+"alabileceğiniz bir hatayla karşılaşabilirsiniz. Kaynakların bir listesi <a "
+"href=\"%s\">Fedora \"Yardım Al\"</a> sayfasında bulunabilir."
 
 #: data/content/cinnamon/download/cinnamon-download-splash.html:8
 #: data/content/cinnamon/download/index.html:8
@@ -726,6 +765,7 @@ msgstr ""
 #: data/content/cinnamon/download/cinnamon-download-splash.html:18
 #: data/content/kde/download/kde-download-splash.html:18
 #: data/content/lxde/download/lxde-download-splash.html:18
+#: data/content/lxqt/download/lxqt-download-splash.html:18
 #: data/content/mate-compiz/download/mate-compiz-download-splash.html:18
 #: data/content/soas/download/soas-download-splash.html:18
 #: data/content/xfce/download/xfce-download-splash.html:18
@@ -735,6 +775,7 @@ msgstr "Fedora'yı İndirdiğiniz için Teşekkürler!"
 #: data/content/cinnamon/download/cinnamon-download-splash.html:19
 #: data/content/kde/download/kde-download-splash.html:19
 #: data/content/lxde/download/lxde-download-splash.html:19
+#: data/content/lxqt/download/lxqt-download-splash.html:19
 #: data/content/mate-compiz/download/mate-compiz-download-splash.html:19
 #: data/content/soas/download/soas-download-splash.html:19
 #: data/content/xfce/download/xfce-download-splash.html:19
@@ -752,6 +793,7 @@ msgstr ""
 #: data/content/cinnamon/download/index.html:20
 #: data/content/kde/download/index.html:20
 #: data/content/lxde/download/index.html:20
+#: data/content/lxqt/download/index.html:20
 #: data/content/mate-compiz/download/index.html:20
 #: data/content/soas/download/index.html:21
 #: data/content/xfce/download/index.html:20 data/templates/footer.html:37
@@ -764,11 +806,12 @@ msgstr "İndir"
 #: data/content/xfce/download/index.html:21
 #, python-format
 msgid "%s GB ISO Image for 64-bit PC"
-msgstr ""
+msgstr "64-bit PC için %s GB ISO Görüntüsü"
 
 #: data/content/cinnamon/download/index.html:29
 #: data/content/kde/download/index.html:29
 #: data/content/lxde/download/index.html:29
+#: data/content/lxqt/download/index.html:29
 #: data/content/mate-compiz/download/index.html:29
 #: data/content/soas/download/index.html:33
 #: data/content/xfce/download/index.html:29
@@ -788,6 +831,7 @@ msgstr ""
 #: data/content/cinnamon/download/index.html:31
 #: data/content/kde/download/index.html:31
 #: data/content/lxde/download/index.html:31
+#: data/content/lxqt/download/index.html:31
 #: data/content/mate-compiz/download/index.html:31
 #: data/content/soas/download/index.html:35
 #: data/content/xfce/download/index.html:31
@@ -795,10 +839,13 @@ msgid ""
 "To use this image, you need a drive that can create or \"burn\" DVDs, or a "
 "USB flash drive at least as big as the image."
 msgstr ""
+"Bu görüntüyü kullanmak için DVD oluşturan ya da \"yakan\" sürücüye, ya da en"
+" az görüntü kadar büyük olan bir USB flash sürücüye gereksiniminiz var."
 
 #: data/content/cinnamon/download/index.html:34
 #: data/content/kde/download/index.html:34
 #: data/content/lxde/download/index.html:34
+#: data/content/lxqt/download/index.html:34
 #: data/content/mate-compiz/download/index.html:34
 #: data/content/soas/download/index.html:38
 #: data/content/xfce/download/index.html:34
@@ -808,6 +855,7 @@ msgstr "Diğer İndirmeler"
 #: data/content/cinnamon/download/index.html:35
 #: data/content/kde/download/index.html:35
 #: data/content/lxde/download/index.html:35
+#: data/content/lxqt/download/index.html:35
 #: data/content/mate-compiz/download/index.html:35
 #: data/content/soas/download/index.html:39
 #: data/content/xfce/download/index.html:35
@@ -816,33 +864,38 @@ msgstr "Doğrudan İndirme"
 
 #: data/content/cinnamon/download/index.html:38
 #: data/content/kde/download/index.html:38
+#: data/content/lxde/download/index.html:38
+#: data/content/lxqt/download/index.html:38
 #: data/content/mate-compiz/download/index.html:38
 #: data/content/xfce/download/index.html:38
 #, python-format
 msgid "32-bit %sGB Live image"
-msgstr ""
+msgstr "32-bit %sGB Canlı görüntü"
 
 #: data/content/cinnamon/download/index.html:41
 #: data/content/kde/download/index.html:41
 #: data/content/lxde/download/index.html:41
+#: data/content/lxqt/download/index.html:41
 #: data/content/mate-compiz/download/index.html:41
 #: data/content/soas/download/index.html:46
 #: data/content/xfce/download/index.html:41
 msgid "ARM<span class=\"sup\">®</span> Technology"
-msgstr ""
+msgstr "ARM<span class=\"sup\">®</span> Teknolojisi"
 
 #: data/content/cinnamon/download/index.html:45
 #: data/content/kde/download/index.html:45
 #: data/content/lxde/download/index.html:45
+#: data/content/lxqt/download/index.html:45
 #: data/content/mate-compiz/download/index.html:45
 #: data/content/soas/download/index.html:50
 #: data/content/xfce/download/index.html:45
 msgid "Older Releases"
-msgstr ""
+msgstr "Eski Sürümler"
 
 #: data/content/cinnamon/download/index.html:55
 #: data/content/kde/download/index.html:55
 #: data/content/lxde/download/index.html:55
+#: data/content/lxqt/download/index.html:55
 #: data/content/mate-compiz/download/index.html:55
 #: data/content/soas/download/index.html:60
 #: data/content/xfce/download/index.html:55
@@ -856,6 +909,8 @@ msgstr ""
 #: data/content/kde/download/index.html:66
 #: data/content/lxde/download/index.html:56
 #: data/content/lxde/download/index.html:66
+#: data/content/lxqt/download/index.html:56
+#: data/content/lxqt/download/index.html:66
 #: data/content/mate-compiz/download/index.html:56
 #: data/content/mate-compiz/download/index.html:66
 #: data/content/soas/download/index.html:61
@@ -863,7 +918,7 @@ msgstr ""
 #: data/content/xfce/download/index.html:56
 #: data/content/xfce/download/index.html:66
 msgid "Try a pre-release"
-msgstr ""
+msgstr "Sürüm öncesini dene"
 
 #: data/content/cinnamon/download/index.html:57
 #: data/content/cinnamon/download/index.html:67
@@ -871,6 +926,8 @@ msgstr ""
 #: data/content/kde/download/index.html:67
 #: data/content/lxde/download/index.html:57
 #: data/content/lxde/download/index.html:67
+#: data/content/lxqt/download/index.html:57
+#: data/content/lxqt/download/index.html:67
 #: data/content/mate-compiz/download/index.html:57
 #: data/content/mate-compiz/download/index.html:67
 #: data/content/soas/download/index.html:62
@@ -878,7 +935,7 @@ msgstr ""
 #: data/content/xfce/download/index.html:57
 #: data/content/xfce/download/index.html:67
 msgid "We're working on our next release."
-msgstr ""
+msgstr "Sonraki sürümümüz üzerinde çalışıyoruz."
 
 #: data/content/cinnamon/download/index.html:58
 #: data/content/cinnamon/download/index.html:68
@@ -886,6 +943,8 @@ msgstr ""
 #: data/content/kde/download/index.html:68
 #: data/content/lxde/download/index.html:58
 #: data/content/lxde/download/index.html:68
+#: data/content/lxqt/download/index.html:58
+#: data/content/lxqt/download/index.html:68
 #: data/content/mate-compiz/download/index.html:58
 #: data/content/mate-compiz/download/index.html:68
 #: data/content/soas/download/index.html:63
@@ -894,17 +953,18 @@ msgstr ""
 #: data/content/xfce/download/index.html:68
 #, python-format
 msgid "Help us get F%(rel)s ready!"
-msgstr ""
+msgstr "F%(rel)s'i hazırlamamıza yardım edin!"
 
 #: data/content/cinnamon/download/index.html:59
 #: data/content/kde/download/index.html:59
 #: data/content/lxde/download/index.html:59
+#: data/content/lxqt/download/index.html:59
 #: data/content/mate-compiz/download/index.html:59
 #: data/content/soas/download/index.html:64
 #: data/content/xfce/download/index.html:59
 #, python-format
 msgid "Download F%(rel)s Alpha images"
-msgstr ""
+msgstr "F%(rel)s Alpha görüntülerini indir"
 
 #: data/content/cinnamon/download/index.html:60
 #: data/content/cinnamon/download/index.html:70
@@ -912,6 +972,8 @@ msgstr ""
 #: data/content/kde/download/index.html:70
 #: data/content/lxde/download/index.html:60
 #: data/content/lxde/download/index.html:70
+#: data/content/lxqt/download/index.html:60
+#: data/content/lxqt/download/index.html:70
 #: data/content/mate-compiz/download/index.html:60
 #: data/content/mate-compiz/download/index.html:70
 #: data/content/soas/download/index.html:65
@@ -919,11 +981,12 @@ msgstr ""
 #: data/content/xfce/download/index.html:60
 #: data/content/xfce/download/index.html:70
 msgid "How to test pre-releases"
-msgstr ""
+msgstr "Sürüm önceleri nasıl denenir"
 
 #: data/content/cinnamon/download/index.html:65
 #: data/content/kde/download/index.html:65
 #: data/content/lxde/download/index.html:65
+#: data/content/lxqt/download/index.html:65
 #: data/content/mate-compiz/download/index.html:65
 #: data/content/soas/download/index.html:70
 #: data/content/xfce/download/index.html:65
@@ -934,16 +997,18 @@ msgstr ""
 #: data/content/cinnamon/download/index.html:69
 #: data/content/kde/download/index.html:69
 #: data/content/lxde/download/index.html:69
+#: data/content/lxqt/download/index.html:69
 #: data/content/mate-compiz/download/index.html:69
 #: data/content/soas/download/index.html:74
 #: data/content/xfce/download/index.html:69
 #, python-format
 msgid "Download F%(rel)s Beta images"
-msgstr ""
+msgstr "F%(rel)s Beta görüntülerini indir"
 
 #: data/content/cinnamon/download/index.html:77
 #: data/content/kde/download/index.html:77
 #: data/content/lxde/download/index.html:77
+#: data/content/lxqt/download/index.html:77
 #: data/content/mate-compiz/download/index.html:77
 #: data/content/soas/download/index.html:82
 #: data/content/xfce/download/index.html:77
@@ -953,11 +1018,12 @@ msgstr ""
 #: data/content/cinnamon/download/index.html:80
 #: data/content/kde/download/index.html:80
 #: data/content/lxde/download/index.html:80
+#: data/content/lxqt/download/index.html:80
 #: data/content/mate-compiz/download/index.html:80
 #: data/content/soas/download/index.html:85
 #: data/content/xfce/download/index.html:80
 msgid "Verify your Image"
-msgstr ""
+msgstr "Görüntünüzü Doğrulayın"
 
 #: data/content/kde/index.html:8
 msgid "Fedora KDE Plasma Desktop"
@@ -997,14 +1063,14 @@ msgstr ""
 
 #: data/content/kde/index.html:51 data/content/xfce/index.html:50
 msgid "Network Manager"
-msgstr "Network Manager"
+msgstr "Ağ Yöneticisi"
 
 #: data/content/kde/index.html:52 data/content/xfce/index.html:51
 msgid ""
 "Just a click and you're connected to your wireless LAN router, or online via"
 " many supported 3G mobile broadband cards."
 msgstr ""
-"Yalnızca tıklayın ve artık kablosuz LAN yönlendiricinize ya da desteklenen "
+"Yalnızca tıklayın ve artık kablosuz LAN yönlendiriciniz ya da desteklenen "
 "çok sayıda 3G genişbant kartı aracılığıyla çevrim içi olun."
 
 #: data/content/kde/index.html:56
@@ -1103,11 +1169,11 @@ msgstr ""
 "destekler. Üstelik Amarok Last.fm ve diğer müzik hizmetleriyle tümleşmeyi de"
 " destekler."
 
-#: data/content/kde/index.html:121
+#: data/content/kde/index.html:121 data/content/lxqt/index.html:114
 msgid "Dragon Player"
 msgstr "Dragon Player"
 
-#: data/content/kde/index.html:122
+#: data/content/kde/index.html:122 data/content/lxqt/index.html:115
 msgid ""
 "Dragon Player is a multimedia player where the focus is on simplicity, "
 "instead of features. Its simple interface is designed not to get in your way"
@@ -1129,7 +1195,7 @@ msgid ""
 msgstr ""
 "K3B, çoklu ortam dosyalarını kolayca yedekleyebileceğin tam donanımlı bir "
 "CD/DVD yazıcı yazılımdır. K3B veri CDleri/DVDleri yazmayı, ses CDleri, video"
-" CDleri, DVDleri, kopyalamayı, CD riplemeyi ve daha fazlasını destekler."
+" CDleri, DVDleri, kopyalamayı, CD riplemeyi ve daha çoğunu destekler."
 
 #: data/content/kde/index.html:138
 msgid "Education"
@@ -1185,7 +1251,7 @@ msgstr ""
 "Kalzium elementler çizelgesini keşfetmeni sağlar. 3B madde düzenleyici artı "
 "çoklu benzeteç ve hesaplayıcılar barındırır."
 
-#: data/content/kde/index.html:188 data/content/kde/download/index.html:151
+#: data/content/kde/download/index.html:151 data/content/kde/index.html:188
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-kde</a> IRC"
@@ -1195,7 +1261,7 @@ msgstr ""
 "<a href=\"%s\">#fedora-kde</a> IRC kanalında gerçek zamanlı konuşma için "
 "bulunurlar."
 
-#: data/content/kde/index.html:192 data/content/kde/download/index.html:155
+#: data/content/kde/download/index.html:155 data/content/kde/index.html:192
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -1205,14 +1271,14 @@ msgstr ""
 "href=\"%s\">kde@lists.fedoraproject.org</a> postalaşma listesi üzerinde de "
 "bulunurlar."
 
-#: data/content/kde/index.html:196 data/content/kde/download/index.html:159
+#: data/content/kde/download/index.html:159 data/content/kde/index.html:196
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a href=\"%s\">KDE"
 " project upstream website</a>."
 msgstr ""
 "Özel belgelendirme ve öğreticiler <a href=\"%s\">KDE tasarısı üst akım web "
-"sitesinde</a> bulunurlar."
+"sitesinde</a> bulunur."
 
 #: data/content/kde/download/index.html:8
 #: data/content/kde/download/kde-download-splash.html:8
@@ -1222,7 +1288,7 @@ msgstr "Fedora KDE Plasma Masaüstü'nü İndirin"
 #: data/content/kde/download/index.html:19
 #, python-format
 msgid "Download Fedora %(rel)s KDE Plasma Desktop"
-msgstr ""
+msgstr "Fedora %(rel)s KDE Plasma Masaüstü indir"
 
 #: data/content/kde/download/index.html:30
 msgid ""
@@ -1233,6 +1299,12 @@ msgid ""
 "can install Fedora directly to your hard drive straight from the Live Media "
 "desktop if you like."
 msgstr ""
+"Fedora KDE Plasma Masaüstü canlı işletim sistemi olarak sunulmuştur. "
+"Fedora'nın KDE Plasma Masaüstünü denemeniz için gereken her şey bulunur - "
+"denemek için halihazırdaki sisteminizden herhangi bir şeyi silmeniz "
+"gerekmez, dosyalarınızı riske atmaz. Fedora'yı deneme sürüşü için edinin ve "
+"eğer beğenirseniz, Fedora'yı Canlı Ortam masaüstünden doğrudan sabit "
+"sürücünüze kurabilirsiniz."
 
 #: data/content/lxde/index.html:8
 msgid "Fedora LXDE Desktop"
@@ -1246,6 +1318,11 @@ msgid ""
 "multi-language support, standard keyboard shortcuts and additional features "
 "like tabbed file browsing."
 msgstr ""
+"LXDE, \"Lightweight X11 Desktop Environment\", aşırı hızlı, performanslı ve "
+"enerji tasarruflu bir masaüstü ortamıdır. Uluslararası geliştirici topluluğu"
+" tarafından geliştirilmektedir ve zarif bir arayüz, çoklu dil desteği, "
+"standart klavye kısayolları ve sekmeli dosya tarama gibi ek özelliklerle "
+"gelmektedir."
 
 #: data/content/lxde/index.html:22
 msgid ""
@@ -1254,6 +1331,11 @@ msgid ""
 " designed for computers with low hardware specifications like netbooks, "
 "mobile devices (e.g. MIDs) or older computers."
 msgstr ""
+"LXDE güçlü ve şişirilmiş olması için değil, kullanışlı ve ince olması için "
+"tasarlanmıştır. LXDE'nin ana hedefi bilgisayarın kaynak kullanımını düşük "
+"tutmaktır. Netbooklar, mobil aygıtlar (örn. Mobil İnternet Aygıtları) veya "
+"eski bilgisayarlar gibi düşük donanım özellikli bilgisayarlar için "
+"tasarlanmıştır."
 
 #: data/content/lxde/index.html:50
 msgid "Sylpheed"
@@ -1264,22 +1346,27 @@ msgid ""
 "Sylpheed is a simple, lightweight but featureful, and easy-to-use e-mail "
 "client."
 msgstr ""
+"Sylpheed basit, hafif ama özellikli, kullanımı kolay e-posta istemcisidir."
 
-#: data/content/lxde/index.html:55 data/content/xfce/index.html:55
+#: data/content/lxde/index.html:55
 msgid "Midori"
 msgstr "Midori"
 
-#: data/content/lxde/index.html:56 data/content/xfce/index.html:56
+#: data/content/lxde/index.html:56
 msgid ""
 "A lightweight and full featured web browser using GTK+2 and WebKit. Surf the"
 " web with speed and simplicity."
 msgstr ""
+"GTK+2 ve WebKit kullanan tam donanımlı ve hafif bir web tarayıcı. Webi hız "
+"ve basitlikle dolaş."
 
 #: data/content/lxde/index.html:66
 msgid ""
 "Are you a downloader? Use Transmission to get new versions of Fedora LXDE "
 "Desktop!"
 msgstr ""
+"Dosya indirenlerden misiniz? Fedora LXDE Masaüstü'nün yeni sürümlerini almak"
+" için Transmission kullanın!"
 
 #: data/content/lxde/index.html:79
 msgid "LXTerminal"
@@ -1290,6 +1377,8 @@ msgid ""
 "Fedora LXDE Desktop ships a terminal, the gateway to the real power of any "
 "UNIX/linux machine, called LXTerminal."
 msgstr ""
+"Fedora LXDE Masaüstü herhangi bir UNIX/linux makinenin gerçek gücüne giden "
+"yolu, bir uçbirimi sunar, adı LXTerminal."
 
 #: data/content/lxde/index.html:84
 msgid "ObConf"
@@ -1300,6 +1389,8 @@ msgid ""
 "ObConf easily installs new themes which use the .obt Openbox theme archive "
 "format for distribution."
 msgstr ""
+"ObConf, dağıtım için .obt Openbox tema arşiv biçimini kullanan yeni temaları"
+" kolayca yükler."
 
 #: data/content/lxde/index.html:92 data/content/xfce/index.html:87
 msgid "AbiWord"
@@ -1307,7 +1398,7 @@ msgstr ""
 
 #: data/content/lxde/index.html:93 data/content/xfce/index.html:88
 msgid "Quick and full featured word processing made easy."
-msgstr ""
+msgstr "Hızlı ve tam donanımlı sözcük işlemci."
 
 #: data/content/lxde/index.html:97
 msgid "Osmo"
@@ -1318,6 +1409,8 @@ msgid ""
 "Osmo is a handy personal organizer, which includes calendar, tasks manager, "
 "address book and notes modules."
 msgstr ""
+"Osmo; takvim, görev yöneticisi, adres defteri ve not modüllerini içeren "
+"kullanışlı bir kişisel örgütleyicidir."
 
 #: data/content/lxde/index.html:115
 msgid "LXMusic"
@@ -1328,6 +1421,8 @@ msgid ""
 "LXMusic is the minimalist music player for LXDE. This is based on XMMS2, "
 "which is lightweight and has server/client design. "
 msgstr ""
+"LXMusic, LXDE için yalınlıktan yana olan bir müzik çalardır. Bu, hafif ve "
+"sunucu/istemci tasarımı olan XMMS2 tabanlıdır."
 
 #: data/content/lxde/index.html:120
 msgid "GPicView"
@@ -1338,6 +1433,8 @@ msgid ""
 "GPicView is the standard picture viewer of LXDE. GPicView features lightning"
 " fast startup and an intuitive interface."
 msgstr ""
+"GPicView, LXDE için standart resim görüntüleyicidir. GPicView yıldırım "
+"hızında başlamaya ve sezgisel bir arayüze sahiptir."
 
 #: data/content/lxde/index.html:125
 msgid "ASunder"
@@ -1349,27 +1446,38 @@ msgid ""
 "tracks from an Audio CD as any of WAV, MP3, OGG, FLAC, Opus, WavPack, "
 "Musepack, AAC, and Monkey's Audio files."
 msgstr ""
+"ASunder, grafiksel Ses CD'si kopyalayıcı ve kodlayıcısıdır. Bir Ses "
+"CD'sinden parçaları WAV, MP3, OGG, FLAC, Opus, WavPack, Musepack, AAC ve "
+"Monkey's Audio dosyaları olarak kaydetmek için kullanabilirsiniz."
 
-#: data/content/lxde/index.html:154 data/content/lxde/download/index.html:152
+#: data/content/lxde/download/index.html:152 data/content/lxde/index.html:154
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#lxde</a> IRC "
 "channel on <strong>irc.freenode.org</strong> for real-time chat."
 msgstr ""
+"Kullanıcılar ve geliştiriciler <strong>irc.freenode.org</strong> üzerindeki "
+"<a href=\"%s\">#lxde</a> IRC kanalında gerçek zamanlı konuşma için "
+"bulunurlar."
 
-#: data/content/lxde/index.html:158 data/content/lxde/download/index.html:156
+#: data/content/lxde/download/index.html:156 data/content/lxde/index.html:158
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
 "href=\"%s\">lxde@lists.fedoraproject.org</a>."
 msgstr ""
+"Kullanıcılar ve geliştiriciler ayrıca <a "
+"href=\"%s\">lxde@lists.fedoraproject.org</a> postalaşma listesi üzerinde de "
+"bulunurlar."
 
-#: data/content/lxde/index.html:162 data/content/lxde/download/index.html:160
+#: data/content/lxde/download/index.html:160 data/content/lxde/index.html:162
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
 "href=\"%s\">LXDE project upstream website</a>."
 msgstr ""
+"Özel belgelendirme ve öğreticiler <a href=\"%s\">LXDE tasarısı üst akım web "
+"sitesinde</a> bulunur."
 
 #: data/content/lxde/download/index.html:8
 #: data/content/lxde/download/lxde-download-splash.html:8
@@ -1382,10 +1490,11 @@ msgid "Download Fedora %(rel)s LXDE Desktop"
 msgstr ""
 
 #: data/content/lxde/download/index.html:21
+#: data/content/lxqt/download/index.html:21
 #: data/content/soas/download/index.html:22
 #, python-format
 msgid "%s MB ISO Image for 64-bit PC"
-msgstr ""
+msgstr "64-bit PC için %s MB ISO Görüntüsü"
 
 #: data/content/lxde/download/index.html:30
 msgid ""
@@ -1397,15 +1506,160 @@ msgid ""
 "like."
 msgstr ""
 
-#: data/content/lxde/download/index.html:38
-#: data/content/soas/download/index.html:42
+#: data/content/lxqt/index.html:8
+msgid "Fedora LXQt Desktop"
+msgstr ""
+
+#: data/content/lxqt/index.html:21
+msgid ""
+"Fedora LXQt provides a lightweight, well-integrated LXQt desktop "
+"environment. In addition to LXQt itself it provides a small, well selected "
+"collection of applications like the QupZilla browser, which combines "
+"Chromium's rendering engine with a nice Qt experience. Other applications "
+"include the Trojita mail client, the qBittorrent client, the Yarock music "
+"player and a set of some more commonly used applications. As all "
+"applications use the same Qt5 toolkit and the Breeze theme known from KDE, "
+"the desktop provides a unified and well-integrated style and theming. In "
+"addition breeze-gtk is provided to allow the user to integrate GTK "
+"applications too."
+msgstr ""
+
+#: data/content/lxqt/index.html:49
+msgid "NetworkManager"
+msgstr ""
+
+#: data/content/lxqt/index.html:50
+msgid ""
+"The goal of NetworkManager is to make networking just work with a minimum of"
+" user hassle, but still allow customization."
+msgstr ""
+
+#: data/content/lxqt/index.html:54
+msgid "QupZilla"
+msgstr ""
+
+#: data/content/lxqt/index.html:55
+msgid ""
+"A lightweight multiplatform web browser written in Qt Framework and using "
+"its web rendering engine QtWebEngine."
+msgstr ""
+
+#: data/content/lxqt/index.html:59
+msgid "Quassel"
+msgstr ""
+
+#: data/content/lxqt/index.html:60
+msgid ""
+"Quassel IRC is a modern, cross-platform, distributed IRC client, meaning "
+"that one clients can attach to and detach from a central core"
+msgstr ""
+
+#: data/content/lxqt/index.html:65
+msgid ""
+"Are you a downloader? Use Transmission to get new versions of Fedora LXQt "
+"Desktop!"
+msgstr ""
+
+#: data/content/lxqt/index.html:78
+msgid "QTerminal"
+msgstr ""
+
+#: data/content/lxqt/index.html:79
+msgid "QTerminal is a lightweight Qt terminal emulator based on QTermWidget."
+msgstr ""
+
+#: data/content/lxqt/index.html:83
+msgid "dnfdragora"
+msgstr ""
+
+#: data/content/lxqt/index.html:84
+msgid ""
+"dnfdragora is a DNF frontend, based on rpmdragora, written in Python 3 and "
+"uses libYui."
+msgstr ""
+
+#: data/content/lxqt/index.html:91
+msgid "FeatherPad"
+msgstr ""
+
+#: data/content/lxqt/index.html:92
+msgid ""
+"FeatherPad is a desktop indipendent and lightweight Qt5 plain-text editor "
+"for Linux."
+msgstr ""
+
+#: data/content/lxqt/index.html:96
+msgid "qpdfview"
+msgstr ""
+
+#: data/content/lxqt/index.html:97
+msgid "qpdfview is a tabbed document viewer."
+msgstr ""
+
+#: data/content/lxqt/index.html:119
+msgid "LXImage-Qt"
+msgstr ""
+
+#: data/content/lxqt/index.html:120
+msgid ""
+"LXImage-Qt is the Qt port of LXImage, a simple and fast image viewer you can"
+" also take screenshots with."
+msgstr ""
+
+#: data/content/lxqt/index.html:124
+msgid "Yarock"
+msgstr ""
+
+#: data/content/lxqt/index.html:125
+msgid ""
+"Yarock is Qt4/Qt5 Modern Music Player designed to provide an easy and pretty"
+" music collection browser based on cover art."
+msgstr ""
+
+#: data/content/lxqt/download/index.html:152 data/content/lxqt/index.html:153
 #, python-format
-msgid "32-bit %sMB Live image"
+msgid ""
+"General help is available in <a href=\"%s\">#fedora-lxqt</a> IRC channel on "
+"<strong>irc.freenode.org</strong> for real-time chat."
+msgstr ""
+
+#: data/content/lxqt/download/index.html:156 data/content/lxqt/index.html:157
+#, python-format
+msgid ""
+"Users and developers are also available on the mailing list at <a "
+"href=\"%s\">lxqt@lists.fedoraproject.org</a>."
+msgstr ""
+
+#: data/content/lxqt/download/index.html:160 data/content/lxqt/index.html:161
+#, python-format
+msgid ""
+"Specific documentation and tutorials are available at the <a "
+"href=\"%s\">LXQt project upstream website</a>."
+msgstr ""
+
+#: data/content/lxqt/download/index.html:8
+#: data/content/lxqt/download/lxqt-download-splash.html:8
+msgid "Download Fedora LXQt Desktop"
+msgstr ""
+
+#: data/content/lxqt/download/index.html:19
+#, python-format
+msgid "Download Fedora %(rel)s LXQt Desktop"
+msgstr ""
+
+#: data/content/lxqt/download/index.html:30
+msgid ""
+"Fedora LXQt Desktop is shipped as a live operating system. It's everything "
+"you need to try out Fedora's LXQt Desktop - you don't have to erase anything"
+" on your current system to try it out, and it won't put your files at risk. "
+"Take Fedora for a test drive, and if you like it, you can install Fedora "
+"directly to your hard drive straight from the Live Media desktop if you "
+"like."
 msgstr ""
 
 #: data/content/mate-compiz/index.html:8
 msgid "Fedora MATE-Compiz Desktop"
-msgstr ""
+msgstr "Fedora MATE-Compiz Masaüstü"
 
 #: data/content/mate-compiz/index.html:21
 msgid ""
@@ -1415,21 +1669,28 @@ msgid ""
 "for all machines and VMs. Compiz Fusion is a beautiful 3D windowing manager "
 "with Emerald and GTK+ theming."
 msgstr ""
+"MATE Compiz spini, MATE Masaüstü ile Compiz Fusion'u birlikte sunar. MATE "
+"Masaüstü, verimlilik ve performans düşünülerek tasarlanmış hafif ve güçlü "
+"bir masaüstüdür. Öntanımlı pencere yöneticisi tüm makine ve sanal makineler "
+"için kullanışlı olan Macro'dur. Compiz Fusion; Emerald ve GTK+ tema "
+"yapılandırmasıyla birlikte harika bir 3B pencereleme yöneticisidir."
 
 #: data/content/mate-compiz/index.html:22
 msgid ""
 "If you want a powerful, lightweight Fedora desktop with 3D eyecandy you "
 "should definitely try the MATE-Compiz spin."
 msgstr ""
+"Eğer göze hitap eden 3B, güçlü, hafif bir Fedora masaüstü istiyorsanız "
+"mutlaka MATE-Compiz spinini denemelisiniz."
 
 #: data/content/mate-compiz/index.html:50
-msgid "Blueman"
+msgid "Blueberry"
 msgstr ""
 
 #: data/content/mate-compiz/index.html:51
 msgid ""
-"Blueman is designed to provide a simple yet effective means for controlling "
-"BlueZ API. It is lightweight, easy to use, Python based, and GPL licensed."
+"Blueberry is a gnome-bluetooth based bluetooth configuration tool which "
+"integrates very well in almost any desktop environment."
 msgstr ""
 
 #: data/content/mate-compiz/index.html:66
@@ -1437,20 +1698,24 @@ msgid ""
 "Are you a downloader? Use Transmission to get new versions of Fedora MATE-"
 "Compiz Desktop!"
 msgstr ""
+"Dosya indirenlerden misiniz? Fedora MATE-Compiz Masaüstü'nün yeni "
+"sürümlerini almak için Transmission kullanın!"
 
 #: data/content/mate-compiz/index.html:79
 msgid "MATE Terminal"
-msgstr ""
+msgstr "MATE Terminal"
 
 #: data/content/mate-compiz/index.html:80
 msgid ""
 "Fedora MATE-Compiz ships a terminal, the gateway to the real power of any "
 "UNIX/Linux machine, called MATE Terminal."
 msgstr ""
+"Fedora MATE-Compiz herhangi bir UNIX/linux makinenin gerçek gücüne giden "
+"yolu, bir uçbirimi sunar, adı MATE Terminal."
 
 #: data/content/mate-compiz/index.html:84
 msgid "DConf Editor"
-msgstr ""
+msgstr "DConf Düzenleyici"
 
 #: data/content/mate-compiz/index.html:97 data/content/xfce/index.html:92
 msgid "Claws Mail"
@@ -1461,16 +1726,24 @@ msgid ""
 "Claws Mail is an easy to configure and full featured email application for "
 "the MATE-Compiz Desktop."
 msgstr ""
+"Claws Mail, MATE-Compiz Masaüstü için kolay yapılandırılabilen ve tam "
+"donanımlı e-posta uygulamasıdır."
 
 #: data/content/mate-compiz/index.html:115
 msgid "Exaile"
-msgstr ""
+msgstr "Exaile"
 
 #: data/content/mate-compiz/index.html:116
 msgid ""
 "Simple interface. Powerful music management. Smart Playlists. Advanced track"
 " tagging. Automatic album art. Lyrics. Streaming Radio. Podcasts."
 msgstr ""
+"Basit arayüz. Güçlü müzik yönetimi. Akıllı çalma listeleri. Gelişmiş parça "
+"etiketleme. Kendiliğinden albüm kapağı. Sözler. Radyo yayını. Podcastler."
+
+#: data/content/mate-compiz/index.html:120 data/content/xfce/index.html:115
+msgid "Parole"
+msgstr "Parole"
 
 #: data/content/mate-compiz/index.html:125
 msgid "Eye of MATE"
@@ -1481,10 +1754,12 @@ msgid ""
 "Eye of MATE is meant to be a fast and functional image viewer for the MATE-"
 "Compiz Desktop."
 msgstr ""
+"Eye of MATE, MATE-Compiz Masaüstü için hızlı ve işlevsel bir görüntü "
+"gösterici anlamına gelir."
 
 #: data/content/mate-compiz/index.html:130
 msgid "FileZilla"
-msgstr ""
+msgstr "FileZilla"
 
 #: data/content/mate-compiz/index.html:131
 msgid ""
@@ -1492,22 +1767,30 @@ msgid ""
 "tools, helping you to move files quickly between your computer and Web "
 "server."
 msgstr ""
+"FileZilla, bilgisayarınız ve Web sunucusu arasında dosyaları taşımanıza "
+"yardımcı olan tonlarca sezgisel araç ile birlikte çok platformlu özgür FTP "
+"çözümüdür."
 
-#: data/content/mate-compiz/index.html:159
 #: data/content/mate-compiz/download/index.html:152
+#: data/content/mate-compiz/index.html:159
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-mate</a> "
 "IRC channel on <strong>irc.freenode.org</strong> for real-time chat."
 msgstr ""
+"Kullanıcılar ve geliştiriciler <strong>irc.freenode.org</strong> üzerindeki "
+"<a href=\"%s\">#fedora-mate</a> IRC kanalında gerçek zamanlı konuşma için "
+"bulunurlar."
 
-#: data/content/mate-compiz/index.html:167
 #: data/content/mate-compiz/download/index.html:160
+#: data/content/mate-compiz/index.html:167
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
 "href=\"%s\">MATE project upstream website</a>."
 msgstr ""
+"Özel belgelendirme ve öğreticiler <a href=\"%s\">MATE tasarısı üst akım web "
+"sitesinde</a> bulunur."
 
 #: data/content/mate-compiz/download/index.html:8
 #: data/content/mate-compiz/download/mate-compiz-download-splash.html:8
@@ -1731,26 +2014,34 @@ msgid ""
 "to add motion, speech and thought to creations."
 msgstr ""
 
-#: data/content/soas/index.html:193 data/content/soas/download/index.html:157
+#: data/content/soas/download/index.html:157 data/content/soas/index.html:193
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#sugar</a> IRC "
 "channel on <strong>irc.freenode.org</strong> for real-time chat."
 msgstr ""
+"Kullanıcılar ve geliştiriciler <strong>irc.freenode.org</strong> üzerindeki "
+"<a href=\"%s\">#sugar</a> IRC kanalında gerçek zamanlı konuşma için "
+"bulunurlar."
 
-#: data/content/soas/index.html:197 data/content/soas/download/index.html:161
+#: data/content/soas/download/index.html:161 data/content/soas/index.html:197
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
 "href=\"%s\">soas@lists.sugarlabs.org</a>."
 msgstr ""
+"Kullanıcılar ve geliştiriciler ayrıca <a "
+"href=\"%s\">soas@lists.sugarlabs.org</a> postalaşma listesi üzerinde de "
+"bulunurlar."
 
-#: data/content/soas/index.html:201 data/content/soas/download/index.html:165
+#: data/content/soas/download/index.html:165 data/content/soas/index.html:201
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
 "href=\"%s\">SoaS project upstream website</a>."
 msgstr ""
+"Özel belgelendirme ve öğreticiler <a href=\"%s\">SoaS tasarısı üst akım web "
+"sitesinde</a> bulunur."
 
 #: data/content/soas/download/index.html:8
 #: data/content/soas/download/soas-download-splash.html:8
@@ -1772,6 +2063,11 @@ msgid ""
 "like."
 msgstr ""
 
+#: data/content/soas/download/index.html:42
+#, python-format
+msgid "32-bit %sMB Live image"
+msgstr "32-bit %sMB Canlı görüntü"
+
 #: data/content/xfce/index.html:8
 msgid "Fedora Xfce Desktop"
 msgstr "Fedora Xfce Masaüstü"
@@ -1781,10 +2077,20 @@ msgid ""
 "The Fedora Xfce spin showcases the Xfce desktop, which aims to be fast and "
 "lightweight, while still being visually appealing and user friendly."
 msgstr ""
+"Fedora Xfce Spini; görsel olarak çekici ve kullanıcı dostu olan, aynı "
+"zamanda hızlı ve hafif olmayı hedefleyen Xfce masaüstünü sunar."
 
 #: data/content/xfce/index.html:22
 msgid ""
 "Fedora Xfce is a full-fledged desktop using the freedesktop.org standards."
+msgstr ""
+"Fedora Xfce freedesktop.org standartlarını kullanan tam teşekküllü bir "
+"masaüstüdür."
+
+#: data/content/xfce/index.html:56
+msgid ""
+"The most popular fully open-source web browser, made by Mozilla. Customize "
+"it with useful add-ons."
 msgstr ""
 
 #: data/content/xfce/index.html:74
@@ -1795,12 +2101,15 @@ msgstr "Gnumeric"
 msgid ""
 "Gnumeric is a lightweight application to create lightning fast spreadsheets."
 msgstr ""
+"Gnumeric, ışık hızında hesap çizelgeleri oluşturan hafif bir uygulamadır."
 
 #: data/content/xfce/index.html:93
 msgid ""
 "Claws Mail is an easy to configure and full featured email application for "
 "the Xfce Desktop."
 msgstr ""
+"Claws Mail, Xfce Masaüstü için kolay yapılandırılabilen ve tam donanımlı "
+"e-posta uygulamasıdır."
 
 #: data/content/xfce/index.html:110
 msgid "Ristretto"
@@ -1808,11 +2117,12 @@ msgstr "Ristretto"
 
 #: data/content/xfce/index.html:111
 msgid "A quick and easy to use image viewer."
-msgstr ""
+msgstr "Hızlı ve kullanımı kolay görüntü gösterici."
 
 #: data/content/xfce/index.html:116
 msgid "A modern media player, using GTK+3 and the GStreamer plugin framework."
 msgstr ""
+"GTK+3 ve GStreamer eklenti çerçevesini kullanan, çağdaş ortam oynatıcı."
 
 #: data/content/xfce/index.html:120
 msgid "Pragha"
@@ -1820,28 +2130,36 @@ msgstr "Pragha"
 
 #: data/content/xfce/index.html:121
 msgid "Manage and play your music with ease."
-msgstr ""
+msgstr "Müziğinizi kolayca yönetin veya oynatın."
 
-#: data/content/xfce/index.html:149 data/content/xfce/download/index.html:152
+#: data/content/xfce/download/index.html:152 data/content/xfce/index.html:149
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#xfce</a> IRC "
 "channel on <strong>irc.freenode.org</strong> for real-time chat."
 msgstr ""
+"Kullanıcılar ve geliştiriciler <strong>irc.freenode.org</strong> üzerindeki "
+"<a href=\"%s\">#xfce</a> IRC kanalında gerçek zamanlı konuşma için "
+"bulunurlar."
 
-#: data/content/xfce/index.html:153 data/content/xfce/download/index.html:156
+#: data/content/xfce/download/index.html:156 data/content/xfce/index.html:153
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
 "href=\"%s\">xfce@lists.fedoraproject.org</a>."
 msgstr ""
+"Kullanıcılar ve geliştiriciler ayrıca <a "
+"href=\"%s\">xfce@lists.fedoraproject.org</a> postalaşma listesi üzerinde de "
+"bulunurlar."
 
-#: data/content/xfce/index.html:157 data/content/xfce/download/index.html:160
+#: data/content/xfce/download/index.html:160 data/content/xfce/index.html:157
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
 "href=\"%s\">Xfce project upstream website</a>."
 msgstr ""
+"Özel belgelendirme ve öğreticiler <a href=\"%s\">Xfce tasarısı üst akım web "
+"sitesinde</a> bulunur."
 
 #: data/content/xfce/download/index.html:8
 #: data/content/xfce/download/xfce-download-splash.html:8
@@ -1871,15 +2189,27 @@ msgstr "Tüm ihracat düzenlemelerini okuyun"
 msgid "Hide full export regulations"
 msgstr "Tüm ihracat düzenlemelerini gizleyin"
 
+#: data/templates/devel.html:11
+#, python-format
+msgid ""
+"Although the MATE-Compiz and the Cinnamon spins failed to compose for the "
+"actual prerelease, the nightly test compose contains the same package set, "
+"and should meet most users' needs. You can download and verify the test "
+"compose images for <a href=\"%(x86_64)s\">64-bit</a> and <a "
+"href=\"%(i386)s\">32-bit</a> architectures."
+msgstr ""
+
 #: data/templates/export-regulations.html:12
 msgid ""
 "By clicking on and downloading Fedora, you agree to comply with the "
 "following terms and conditions."
 msgstr ""
+"Buraya tıklamakla ve Fedora'yı indirmekle şartlar ve koşullara uyacağınızı "
+"kabul edersiniz."
 
 #: data/templates/export-regulations.html:13
 msgid "Read more >"
-msgstr ""
+msgstr "Daha çoğunu oku >"
 
 #: data/templates/footer.html:14
 msgid "About"
@@ -1903,23 +2233,23 @@ msgstr ""
 
 #: data/templates/footer.html:40
 msgid "Get Fedora Workstation"
-msgstr "Fedora İş İstasyonu'nu Edinin"
+msgstr "Fedora İş İstasyonu'nu Edin"
 
 #: data/templates/footer.html:41
 msgid "Get Fedora Server"
-msgstr "Fedora Sunucu'yu Edinin"
+msgstr "Fedora Sunucu'yu Edin"
 
 #: data/templates/footer.html:42
 msgid "Get Fedora Atomic"
-msgstr ""
+msgstr "Fedora Atomic'i Edin"
 
 #: data/templates/footer.html:44
 msgid "Fedora Labs"
-msgstr ""
+msgstr "Fedora Labları"
 
 #: data/templates/footer.html:45
 msgid "Fedora ARM<span class=\"sup\">®</span>"
-msgstr ""
+msgstr "Fedora ARM<span class=\"sup\">®</span>"
 
 #: data/templates/footer.html:46
 msgid "Alternative Downloads"
@@ -1938,69 +2268,65 @@ msgid "Ask Fedora"
 msgstr "Ask Fedora"
 
 #: data/templates/footer.html:57
-msgid "Forums"
-msgstr "Forumlar"
-
-#: data/templates/footer.html:58
 msgid "Common Bugs"
 msgstr "Bilinen Hatalar"
 
-#: data/templates/footer.html:59
+#: data/templates/footer.html:58
 msgid "Fedora Developer Portal"
 msgstr ""
 
-#: data/templates/footer.html:60
+#: data/templates/footer.html:59
 msgid "Installation Guide"
 msgstr "Kurulum Rehberi"
 
-#: data/templates/footer.html:66
+#: data/templates/footer.html:65
 msgid "Join"
 msgstr "Katıl"
 
-#: data/templates/footer.html:69
+#: data/templates/footer.html:68
 msgid "Join Fedora"
 msgstr "Fedora'ya Katıl"
 
-#: data/templates/footer.html:70
+#: data/templates/footer.html:69
 msgid "Planet Fedora"
 msgstr "Planet Fedora"
 
-#: data/templates/footer.html:71
+#: data/templates/footer.html:70
 msgid "Fedora SIGs"
 msgstr "Fedora SIGleri"
 
-#: data/templates/footer.html:72
+#: data/templates/footer.html:71
 msgid "Fedora Account System"
 msgstr "Fedora Hesap Sistemi"
 
-#: data/templates/footer.html:73
+#: data/templates/footer.html:72
 msgid "Fedora Community"
 msgstr "Fedora Topluluğu"
 
-#: data/templates/footer.html:87
+#: data/templates/footer.html:86
 msgid "Fedora is sponsored by Red Hat."
 msgstr "Fedora, Red Hat tarafından desteklenmektedir."
 
-#: data/templates/footer.html:88
+#: data/templates/footer.html:87
 msgid "Learn more about the relationship between Red Hat and Fedora »"
-msgstr "Red Hat ve Fedora arasındaki ilişkiyle ilgili daha fazlasını öğrenin"
+msgstr "Red Hat ve Fedora arasındaki ilişkiyle ilgili daha çoğunu öğren »"
 
-#: data/templates/footer.html:89
+#: data/templates/footer.html:88
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
 msgstr "© %(year)s Red Hat, Inc. ve diğerleri."
 
-#: data/templates/footer.html:89
+#: data/templates/footer.html:88
 msgid ""
-"Please send any comments or corrections to the <a href=\"//fedorahosted.org"
-"/fedora-websites/\">websites team</a>."
+"Please send any comments or corrections to the <a href=\"//pagure.io/fedora-"
+"websites\">websites team</a>."
 msgstr ""
 
-#: data/templates/footer.html:95
+#: data/templates/footer.html:94
 msgid "Change Language"
 msgstr "Dili Değiştir"
 
-#: data/templates/footer.html:99
+#: data/templates/footer.html:98
 msgid "OK"
 msgstr "Tamam"
 
@@ -2031,6 +2357,10 @@ msgid ""
 " recommend you look through it before installing to your system, since it "
 "answers many common questions."
 msgstr ""
+
+#: data/templates/generic/splash-checksum.html:15
+msgid "Validate 32bit!"
+msgstr "32bit'i Doğrula!"
 
 #: data/templates/generic/unofficial.html:11
 #, python-format
