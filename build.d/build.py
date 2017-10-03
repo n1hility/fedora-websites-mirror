@@ -45,23 +45,7 @@ except ImportError:
     feedparse = None
     pass
 
-try:
-    from cloud import get_amis
-except ImportError:
-    get_amis = None
-    pass
 
-try:
-    from atomic_vars import collect as collect_atomic_vars
-    from atomic_vars import update_age as update_atomic_age
-except ImportError:
-    collect_atomic_vars = None
-    update_atomic_age = None
-
-try:
-    from fedimg_vars import collect as collect_fedimg_vars
-except ImportError:
-    collect_fedimg_vars = None
 
 try:
     from release_schedule import schedule
@@ -149,54 +133,8 @@ def process_dir(dirpath, filenames):
             continue;
         release_date = None
 
-        ec2 = None
-        if get_amis is not None:
-            ec2 = get_amis()
 
-        # This is cached
-        if collect_atomic_vars is not None:
-            # Go get two-week-atomic release info from datagrepper
-            collected_atomic_vars = collect_atomic_vars(
-                globalvar.release['curr_atomic_id'],
-                globalvar.release['next_atomic_id'],
-            )
-            # Overwrite the handwritten vars with ones from datagrepper
-            for key1, entry in collected_atomic_vars.items():
-                for key2, value in entry.items():
-                    getattr(globalvar, key1)[key2] = value
 
-            # Write htaccess rewrite and informational files for 'latest'
-            with open(os.path.join(options.output, ".htaccess"), 'w') as htaccess_f:
-                for artifact in collected_atomic_vars['release']['redir_map']:
-                    htaccess_f.write('Redirect 302 "/{}_latest" "{}"\n'.format(
-                        artifact,
-                        collected_atomic_vars['release']['redir_map'][artifact]['redirect']
-                        )
-                    )
-            # Write a file that returns the artifact name that corresponds to
-            # the current 'latest' (for scripting purposes).
-            for artifact in collected_atomic_vars['release']['redir_map']:
-                with open(os.path.join(options.output, "{}_latest_filename".format(artifact)), 'w') as artifact_f:
-                    artifact_f.write(
-                        collected_atomic_vars['release']['redir_map'][artifact]['filename']
-                    )
-
-        # This is *not* cached
-        if update_atomic_age is not None:
-            # Go get two-week-atomic release info from datagrepper
-            updated_atomic_vars = update_atomic_age(globalvar.release)
-            # Overwrite the handwritten vars with ones from datagrepper
-            for key1, entry in updated_atomic_vars.items():
-                for key2, value in entry.items():
-                    getattr(globalvar, key1)[key2] = value
-
-        # This is cached
-        if collect_fedimg_vars is not None:
-            # Go get AMI ids from datagrepper (or our local cache)
-            collected_fedimg_vars = collect_fedimg_vars(globalvar.release)
-            # Overwrite the handwritten vars with ones from datagrepper
-            for key, value in collected_fedimg_vars.items():
-                setattr(globalvar, key, value)
 
         dest_file = os.path.join(options.output, src_file[len(options.input):]) + '.' + options.lang # Hideous
         curpage = src_file[len(options.input):].rstrip('.html')
@@ -215,7 +153,6 @@ def process_dir(dirpath, filenames):
             curpage=curpage,
             global_variables=globalvar,
             schedule = release_date,
-            ec2_ami = ec2
             ).render(method='html', doctype='html', encoding='utf-8')
         output = open(dest_file, 'w')
         output.write(page)
