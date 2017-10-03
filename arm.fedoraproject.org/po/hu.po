@@ -1,172 +1,200 @@
-# Kardos László <kardiweb@protonmail.ch>, 2015. #zanata
-# Teknős Ferenc <teferenc@t-online.hu>, 2015. #zanata
-# Bendegúz Gyönki <gyonkibendeguz@gmail.com>, 2016. #zanata
-# TheWanderer <sz.kornelgeza@gmail.com>, 2016. #zanata
+# Meskó Balázs <meskobalazs@gmail.com>, 2017. #zanata
+# Zoltan Hoppar <zoltanh721@fedoraproject.org>, 2017. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-11-22 12:46+0100\n"
-"PO-Revision-Date: 2016-11-08 09:35-0500\n"
-"Last-Translator: TheWanderer <sz.kornelgeza@gmail.com>\n"
+"POT-Creation-Date: 2017-10-01 16:07+0200\n"
+"PO-Revision-Date: 2017-09-17 05:56-0400\n"
+"Last-Translator: Meskó Balázs <meskobalazs@gmail.com>\n"
 "Language-Team: Hungarian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"Generated-By: Babel 1.3\n"
+"Generated-By: Babel 2.3.4\n"
 "X-Generator: Zanata 3.9.6\n"
 
 #: data/content/index.html:8
 msgid "Fedora ARM"
 msgstr "Fedora ARM"
 
-#: data/content/index.html:19 data/content/index.html:65
-#: data/content/index.html:101
-msgid "ARM<span class=\"sup\">®</span> Servers"
-msgstr "ARM<span class=\"sup\">®</span> Szerverek"
+#: data/content/index.html:21 data/content/index.html:32
+#, python-format
+msgid ""
+"<strong>Fedora %(rel)s %(state)s</strong> released! <a "
+"href=\"%(link)s\">Test it now ></a>"
+msgstr ""
+"<strong>A Fedora %(rel)s %(state)s</strong> elérhető! <a "
+"href=\"%(link)s\">Tesztelje most ></a>"
 
-#: data/content/index.html:24 data/content/index.html:70
-#: data/content/index.html:106
+#: data/content/index.html:43
+#, python-format
+msgid "Fedora %(rel)s released! Get it now."
+msgstr "A Fedora %(rel)s elérhető! Szerezze be most."
+
+#: data/content/index.html:56 data/content/index.html:102
+#: data/content/index.html:138
+msgid "ARM<span class=\"sup\">®</span> Servers"
+msgstr "ARM<span class=\"sup\">®</span> kiszolgálók"
+
+#: data/content/index.html:61 data/content/index.html:107
+#: data/content/index.html:143
 msgid ""
 "These images are geared towards ARM-based computers used as servers, "
 "typically in a headless environment."
 msgstr ""
-"Ezek a lemezképek az általában kijelzők nélküli szerverként használt ARM "
+"Ezek a lemezképek az általában kijelző nélküli kiszolgálóként használt ARM-"
 "alapú számítógépekhez készültek."
 
-#: data/content/index.html:32 data/content/index.html:79
-#: data/content/index.html:115 data/content/prerelease.html:46
+#: data/content/index.html:69 data/content/index.html:116
+#: data/content/index.html:152 data/content/prerelease.html:46
 #: data/content/prerelease.html:55
 msgid "Fedora Server"
-msgstr "Fedora Szerver"
+msgstr "Fedora Server"
 
-#: data/content/index.html:35 data/content/index.html:49
-#: data/content/index.html:199 data/content/index.html:227
-#: data/content/prerelease.html:67 data/content/prerelease.html:139
-#: data/content/prerelease.html:194
+#: data/content/index.html:72 data/content/index.html:194
+#: data/content/index.html:208 data/content/index.html:222
+#: data/content/index.html:250 data/content/index.html:452
+#: data/content/prerelease.html:85 data/content/prerelease.html:103
+#: data/content/prerelease.html:121 data/content/prerelease.html:177
 #, python-format
-msgid "%sMB raw image"
-msgstr "%sMB nyers lemezkép"
+msgid "%sGB raw image"
+msgstr "%s GB-os nyers lemezkép"
 
-#: data/content/index.html:38 data/content/index.html:52
-#: data/content/index.html:80 data/content/index.html:89
-#: data/content/index.html:118 data/content/index.html:129
-#: data/content/index.html:160 data/content/index.html:174
-#: data/content/index.html:188 data/content/index.html:202
-#: data/content/index.html:216 data/content/index.html:230
-#: data/content/index.html:258 data/content/index.html:267
-#: data/content/index.html:276 data/content/index.html:285
-#: data/content/index.html:294 data/content/index.html:303
-#: data/content/index.html:332 data/content/index.html:343
-#: data/content/index.html:354 data/content/index.html:365
-#: data/content/index.html:376 data/content/index.html:387
-#: data/content/prerelease.html:52 data/content/prerelease.html:56
-#: data/content/prerelease.html:70 data/content/prerelease.html:74
-#: data/content/prerelease.html:88 data/content/prerelease.html:92
-#: data/content/prerelease.html:106 data/content/prerelease.html:110
-#: data/content/prerelease.html:124 data/content/prerelease.html:128
-#: data/content/prerelease.html:142 data/content/prerelease.html:146
-#: data/content/prerelease.html:160 data/content/prerelease.html:164
-#: data/content/prerelease.html:197 data/content/prerelease.html:201
-#: data/templates/footer.html:37
+#: data/content/index.html:75 data/content/index.html:89
+#: data/content/index.html:117 data/content/index.html:126
+#: data/content/index.html:155 data/content/index.html:166
+#: data/content/index.html:197 data/content/index.html:211
+#: data/content/index.html:225 data/content/index.html:239
+#: data/content/index.html:253 data/content/index.html:267
+#: data/content/index.html:295 data/content/index.html:304
+#: data/content/index.html:313 data/content/index.html:322
+#: data/content/index.html:331 data/content/index.html:340
+#: data/content/index.html:369 data/content/index.html:380
+#: data/content/index.html:391 data/content/index.html:402
+#: data/content/index.html:413 data/content/index.html:424
+#: data/content/index.html:455 data/content/index.html:483
+#: data/content/index.html:512 data/content/prerelease.html:52
+#: data/content/prerelease.html:56 data/content/prerelease.html:70
+#: data/content/prerelease.html:74 data/content/prerelease.html:88
+#: data/content/prerelease.html:92 data/content/prerelease.html:106
+#: data/content/prerelease.html:110 data/content/prerelease.html:124
+#: data/content/prerelease.html:128 data/content/prerelease.html:180
+#: data/content/prerelease.html:184 data/content/prerelease.html:218
+#: data/content/prerelease.html:222 data/templates/footer.html:37
 msgid "Download"
 msgstr "Letöltés"
 
-#: data/content/index.html:38 data/content/index.html:52
-#: data/content/index.html:80 data/content/index.html:89
-#: data/content/index.html:118 data/content/index.html:129
-#: data/content/index.html:160 data/content/index.html:174
-#: data/content/index.html:188 data/content/index.html:202
-#: data/content/index.html:216 data/content/index.html:230
-#: data/content/index.html:258 data/content/index.html:267
-#: data/content/index.html:276 data/content/index.html:285
-#: data/content/index.html:294 data/content/index.html:303
-#: data/content/index.html:332 data/content/index.html:343
-#: data/content/index.html:354 data/content/index.html:365
-#: data/content/index.html:376 data/content/index.html:387
-#: data/content/prerelease.html:52 data/content/prerelease.html:56
-#: data/content/prerelease.html:70 data/content/prerelease.html:74
-#: data/content/prerelease.html:88 data/content/prerelease.html:92
-#: data/content/prerelease.html:106 data/content/prerelease.html:110
-#: data/content/prerelease.html:124 data/content/prerelease.html:128
-#: data/content/prerelease.html:142 data/content/prerelease.html:146
-#: data/content/prerelease.html:160 data/content/prerelease.html:164
-#: data/content/prerelease.html:197 data/content/prerelease.html:201
+#: data/content/index.html:75 data/content/index.html:89
+#: data/content/index.html:117 data/content/index.html:126
+#: data/content/index.html:155 data/content/index.html:166
+#: data/content/index.html:197 data/content/index.html:211
+#: data/content/index.html:225 data/content/index.html:239
+#: data/content/index.html:253 data/content/index.html:267
+#: data/content/index.html:295 data/content/index.html:304
+#: data/content/index.html:313 data/content/index.html:322
+#: data/content/index.html:331 data/content/index.html:340
+#: data/content/index.html:369 data/content/index.html:380
+#: data/content/index.html:391 data/content/index.html:402
+#: data/content/index.html:413 data/content/index.html:424
+#: data/content/index.html:455 data/content/index.html:483
+#: data/content/index.html:512 data/content/prerelease.html:52
+#: data/content/prerelease.html:56 data/content/prerelease.html:70
+#: data/content/prerelease.html:74 data/content/prerelease.html:88
+#: data/content/prerelease.html:92 data/content/prerelease.html:106
+#: data/content/prerelease.html:110 data/content/prerelease.html:124
+#: data/content/prerelease.html:128 data/content/prerelease.html:180
+#: data/content/prerelease.html:184 data/content/prerelease.html:218
+#: data/content/prerelease.html:222
 msgid "Verify"
 msgstr "Ellenőrzés"
 
-#: data/content/index.html:46 data/content/index.html:88
-#: data/content/index.html:126 data/content/prerelease.html:64
+#: data/content/index.html:83 data/content/index.html:125
+#: data/content/index.html:163 data/content/prerelease.html:64
 #: data/content/prerelease.html:73
 msgid "Fedora Minimal"
 msgstr "Minimális Fedora"
 
-#: data/content/index.html:141 data/content/index.html:243
-#: data/content/index.html:315
-msgid "Desktop Computing"
-msgstr "Számítástechnika"
+#: data/content/index.html:86 data/content/index.html:236
+#: data/content/index.html:264 data/content/prerelease.html:49
+#: data/content/prerelease.html:67 data/content/prerelease.html:215
+#, python-format
+msgid "%sMB raw image"
+msgstr "%s MB-os nyers lemezkép"
 
-#: data/content/index.html:146 data/content/index.html:248
-#: data/content/index.html:320
+#: data/content/index.html:178 data/content/index.html:280
+#: data/content/index.html:352
+msgid "Desktop Computing"
+msgstr "Asztali számítástechnika"
+
+#: data/content/index.html:183 data/content/index.html:285
+#: data/content/index.html:357
 msgid ""
 "These images are for ARM-based mediacenters, kiosks, laptops, and other ARM-"
 "powered devices where a graphical interface is desired."
 msgstr ""
-"Ezek a lemezképek ARM alapú médiaközpontokhoz, kioskokhoz, laptopokhoz, és "
-"más ARM hajtású eszközökhöz vannak, ahol grafikus felület megkívánt."
+"Ezek a lemezképek ARM alapú médiaközpontokhoz, kioszkokhoz, laptopokhoz, és "
+"olyan más ARM-alapú eszközökhöz valók, ahol szükséges a grafikus felület."
 
-#: data/content/index.html:154 data/content/index.html:257
-#: data/content/index.html:329 data/content/prerelease.html:82
+#: data/content/index.html:191 data/content/index.html:294
+#: data/content/index.html:366 data/content/prerelease.html:82
 #: data/content/prerelease.html:91
 msgid "Fedora Workstation"
-msgstr "Fedora Munkaállomás"
+msgstr "Fedora Workstation"
 
-#: data/content/index.html:157 data/content/index.html:171
-#: data/content/index.html:185 data/content/index.html:213
-#: data/content/prerelease.html:49 data/content/prerelease.html:85
-#: data/content/prerelease.html:103 data/content/prerelease.html:121
-#: data/content/prerelease.html:157
-#, python-format
-msgid "%sGB raw image"
-msgstr "%sGB nyers lemezkép"
-
-#: data/content/index.html:168 data/content/index.html:266
-#: data/content/index.html:340 data/content/prerelease.html:100
+#: data/content/index.html:205 data/content/index.html:303
+#: data/content/index.html:377 data/content/prerelease.html:100
 #: data/content/prerelease.html:109
 msgid "KDE Plasma Desktop"
-msgstr "KDE Plasma Asztal"
+msgstr "KDE Plasma asztal"
 
-#: data/content/index.html:182 data/content/index.html:275
-#: data/content/index.html:351 data/content/prerelease.html:118
+#: data/content/index.html:219 data/content/index.html:312
+#: data/content/index.html:388 data/content/prerelease.html:118
 #: data/content/prerelease.html:127
 msgid "Xfce Desktop"
-msgstr "Xfce Asztal"
+msgstr "Xfce asztal"
 
-#: data/content/index.html:196 data/content/index.html:284
-#: data/content/index.html:362 data/content/prerelease.html:136
-#: data/content/prerelease.html:145
-msgid "LXDE Desktop"
-msgstr "LXDE Asztal"
+#: data/content/index.html:233 data/content/index.html:321
+#: data/content/index.html:399
+msgid "LXQt Desktop"
+msgstr "LXQt felület"
 
-#: data/content/index.html:210 data/content/index.html:293
-#: data/content/index.html:373 data/content/prerelease.html:154
-#: data/content/prerelease.html:163
+#: data/content/index.html:247 data/content/index.html:330
+#: data/content/index.html:410 data/content/prerelease.html:174
+#: data/content/prerelease.html:183
 msgid "MATE-Compiz Desktop"
-msgstr "MATE-Compiz Asztal"
+msgstr "MATE-Compiz asztal"
 
-#: data/content/index.html:224 data/content/index.html:302
-#: data/content/index.html:384 data/content/prerelease.html:191
-#: data/content/prerelease.html:200
+#: data/content/index.html:261 data/content/index.html:339
+#: data/content/index.html:421 data/content/prerelease.html:212
+#: data/content/prerelease.html:221
 msgid "Sugar on a Stick"
 msgstr "Sugar on a Stick"
 
-#: data/content/index.html:399 data/content/prerelease.html:217
-msgid "What is ARM Technology?"
-msgstr "Mi az az ARM technológia?"
+#: data/content/index.html:436 data/content/index.html:468
+#: data/content/index.html:495
+msgid "ARM<span class=\"sup\">®</span> Labs"
+msgstr ""
 
-#: data/content/index.html:400 data/content/prerelease.html:218
+#: data/content/index.html:441 data/content/index.html:473
+#: data/content/index.html:500
+msgid ""
+"These images are for ARM-based devices where a bundle of purpose-drive "
+"software is needed."
+msgstr ""
+
+#: data/content/index.html:449 data/content/index.html:482
+#: data/content/index.html:509
+msgid "Fedora Python-Classroom"
+msgstr ""
+
+#: data/content/index.html:524
+msgid "What is ARM<span class=\"sup\">®</span> Technology?"
+msgstr ""
+
+#: data/content/index.html:525 data/content/prerelease.html:239
 msgid ""
 "ARM microprocessors are the most widely-produced processor family in the "
 "world; they have historically been used in cell phones and embedded "
@@ -176,37 +204,40 @@ msgstr ""
 "Az ARM mikroprocesszorok a legszélesebb körben gyártott processzorcsalád a "
 "világon;  a múltban mobiltelefonokban, és beágyazott alkalmazásokban "
 "használták, és egyre inkább használják tabletekben és alacsony  "
-"erőforrásigényű szerverekben."
+"erőforrásigényű kiszolgálókban."
 
-#: data/content/index.html:401 data/content/prerelease.html:219
+#: data/content/index.html:526 data/content/prerelease.html:240
 msgid ""
 "The Fedora ARM project is an initiative to bring Fedora to this processor "
 "family. The images provided here are versions of Fedora tailored for running"
 " in on ARM-based systems."
 msgstr ""
+"A Fedora ARM projekt egy kezdeményezés, hogy elhozza a Fedorát erre a "
+"processzorcsaládra. Az itt biztosított lemezképek, a Fedora az ARM-alapú "
+"rendszereken futásra átszabott verziói."
 
-#: data/content/index.html:412 data/content/prerelease.html:230
+#: data/content/index.html:537 data/content/prerelease.html:251
 msgid "Support Resources"
-msgstr "Támogatási források"
+msgstr "Támogatási erőforrások"
 
-#: data/content/index.html:417 data/content/prerelease.html:235
+#: data/content/index.html:542 data/content/prerelease.html:256
 msgid "Documentation"
 msgstr "Dokumentáció"
 
-#: data/content/index.html:418 data/content/prerelease.html:236
+#: data/content/index.html:543 data/content/prerelease.html:257
 #, python-format
 msgid ""
 "Fedora ARM documentation and installation guides are available at the <a "
 "href=\"%s\">Fedora ARM wiki page</a>."
 msgstr ""
-"A Fedora ARM dokumentáció és telepítési útmutató rendelkezésre áll a <a "
-"href=\"%s\"> Fedora ARM wiki oldalon</a>."
+"A Fedora ARM dokumentáció és telepítési útmutató a <a href=\"%s\">Fedora ARM"
+" wiki oldalon</a> érhető el."
 
-#: data/content/index.html:421 data/content/prerelease.html:239
+#: data/content/index.html:546 data/content/prerelease.html:260
 msgid "Email"
 msgstr "E-mail"
 
-#: data/content/index.html:422 data/content/prerelease.html:240
+#: data/content/index.html:547 data/content/prerelease.html:261
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -215,46 +246,34 @@ msgstr ""
 "A felhasználók és a fejlesztők is rendelkezésre állnak a levelezőlistán: <a "
 "href=\"%s\"> arm@lists.fedoraproject.org </a>."
 
-#: data/content/index.html:425 data/content/prerelease.html:243
+#: data/content/index.html:550 data/content/prerelease.html:264
 msgid "Chat"
-msgstr "Chat"
+msgstr "Csevegés"
 
-#: data/content/index.html:426 data/content/prerelease.html:244
+#: data/content/index.html:551 data/content/prerelease.html:265
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-arm</a> irc"
 " channel on <strong>irc.freenode.org</strong> for real-time chat."
 msgstr ""
-"A felhasználók és a fejlesztők rendelkezésre állnak az <a href=\"%s"
-"\">#fedora-arm</a> IRC-csatornán a <strong> irc.freenode.org </strong> a "
-"valós idejű chaten."
+"A felhasználók és a fejlesztők valós idejű csevegéshez a <a href=\"%s"
+"\">#fedora-arm</a> IRC-csatornán érhetőek el a <strong> "
+"irc.freenode.org</strong> oldalon."
 
-#: data/content/index.html:431 data/content/prerelease.html:249
+#: data/content/index.html:556 data/content/prerelease.html:270
 msgid "General Help Using Fedora"
 msgstr "Általános segítség a Fedora használatához"
 
-#: data/content/index.html:432 data/content/prerelease.html:250
+#: data/content/index.html:557 data/content/prerelease.html:271
 #, python-format
 msgid ""
 "Sometimes you may encounter an issue with this spin that you can get help "
 "with using general Fedora support resources. A list of resources is "
 "available at the <a href=\"%s\">Fedora “Get Help” page</a>."
 msgstr ""
-"Néha előfordulhatnak hibák ebben a Fedora spinben, bár fellelhetünk "
-"segítséget a Fedora támogatásnál. Ezeknek a listája megtalálható a <a "
-"href=\"%s\">Fedora “Segítség” oldalán</a>."
-
-#: data/content/index.html:445 data/content/index.html:456
-#, python-format
-msgid "Fedora %(rel)s %(state)s released! <a href=\"%(link)s\">Try it now ></a>"
-msgstr ""
-"Fedora %(rel)s %(state)s elérhető! <a href=\"%(link)s\">Próbálja ki "
-"most!></a>"
-
-#: data/content/index.html:467
-#, python-format
-msgid "Fedora %(rel)s released! Try it now."
-msgstr "Fedora %(rel)s elérhető! Próbálja ki most."
+"Néha előfordulhatnak hibák ebben a spinben, amelyhez segítséget kaphat az "
+"általános Fedora támogatási erőforrásoknál. Az erőforrások listája "
+"megtalálható a <a href=\"%s\">Fedora „Segítség” oldalán</a>."
 
 #: data/content/prerelease.html:8
 msgid "Fedora ARM Prerelease Images"
@@ -276,6 +295,10 @@ msgid ""
 "href=\"%(team_url)s\">ARM Team</a>. Please direct questions to their <a "
 "href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on freenode."
 msgstr ""
+"Ez egy kiadás előtti szoftver, ami az <a href=\"%(team_url)s\">ARM "
+"csapat</a> által támogatott. Kérjük, hogy kérdéseit a <a "
+"href=\"%(team_list)s\">levezelőlistájukon</a> vagy a freenode-on lévő "
+"%(team_irc)s IRC csatornán tegye fel."
 
 #: data/content/prerelease.html:27
 #, python-format
@@ -284,6 +307,9 @@ msgid ""
 "Bugzilla</a>. The Fedora Project makes no guarantees as to its suitability "
 "or usefulness."
 msgstr ""
+"Az összes problémát, illetve hibát a <a href=\"%s\">Red Hat Bugzilla</a> "
+"rendszeren keresztül kell bejelenteni. A Fedora Projekt nem garantálja a "
+"szoftver alkalmasságát, illetve hasznosságát."
 
 #: data/content/prerelease.html:29 data/content/prerelease.html:31
 #, python-format
@@ -293,23 +319,26 @@ msgid ""
 "Bugs</a> page for information on commonly-encountered bugs and how to avoid "
 "them."
 msgstr ""
-"Olvassa el<a href=\"%(relnotes_url)s\">Kiadási megjegyzés</a> eket  további "
-"információkért és változásokért,képességekért,és a <a "
-"href=\"%(commonbugs_url)s\">Gyakori Hibák</a>  ra  vonatkozó oldalt  "
-"információkért a legyakrabban előforduló  hibákért és hogyan kerüljük el "
-"őket."
+"Olvassa el a <a href=\"%(relnotes_url)s\">kiadási megjegyzéseket </a> a "
+"változtatásokkal és az új funkciókkal kapcsolatos további információkért, és"
+" a <a href=\"%(commonbugs_url)s\">gyakori hibák</a> listáját a gyakran "
+"előforduló hibákkal, és azok elkerülésével kapcsolatos információkért."
+
+#: data/content/prerelease.html:238
+msgid "What is ARM Technology?"
+msgstr "Mi az az ARM technológia?"
 
 #: data/content/verify.html:8 data/content/verify.html:18
 msgid "Verify your Downloaded Image"
-msgstr "Letöltött kép ellenőrzése"
+msgstr "Ellenőrizze a letöltött lemezképet"
 
 #: data/content/verify.html:20
 msgid "CHECKSUM and Verify Instructions"
-msgstr "CHECKSUM és ellenőrzési utasítások"
+msgstr "Ellenőrzőösszeg és ellenőrzési utasítások"
 
 #: data/content/verify.html:30
 msgid "How do I verify my image?"
-msgstr "Hogyan ellenőrizhetem a lemezképet?"
+msgstr "Hogyan ellenőrizheti a lemezképet?"
 
 #: data/content/verify.html:31
 msgid ""
@@ -317,106 +346,100 @@ msgid ""
 "verify your image, start by downloading the proper CHECKSUM file into the "
 "same directory as the image you downloaded."
 msgstr ""
-"Ha letöltött egy ISO fájlt, érdemes azt integritás és biztonság miatt "
-"ellenőriznie. Az ellenőrzéshez töltse le a megfelelő CHECKSUM fájlt az ISO "
-"fájlt is tartalmazó mappába."
+"Ha letöltött egy lemezképet, akkor érdemes azt az épsége és biztonsága miatt"
+" ellenőriznie. Az ellenőrzéshez töltse le a megfelelő CHECKSUM fájlt "
+"ugyanabba a mappába, ahová a lemezképet letöltötte."
 
 #: data/content/verify.html:36
 msgid "Validate Server!"
-msgstr "Szerver ellenőrzés!"
+msgstr "Server ellenőrzése!"
 
 #: data/content/verify.html:39
-msgid "Validate Workstation!"
-msgstr "Munkaállomás ellenőrzés!"
+msgid "Validate Minimal!"
+msgstr "Minimal ellenőrzése!"
 
 #: data/content/verify.html:42
+msgid "Validate Workstation!"
+msgstr "Workstation ellenőrzése!"
+
+#: data/content/verify.html:45
 msgid "Validate Spins!"
-msgstr ""
+msgstr "Spinek ellenőrzése!"
 
-#: data/content/verify.html:48
+#: data/content/verify.html:51
 msgid "Next, import Fedora's GPG key(s):"
-msgstr "Következő, Fedora GPG kulcsok importálása:"
+msgstr "Ezután importálja a Fedorához tartozó GPG kulcso(ka)t:"
 
-#: data/content/verify.html:50
+#: data/content/verify.html:53
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
-msgstr "Ellenőrizheti a GPG kulcs(ok) részleteit <a href=\"%s/%s/keys\">itt</a>."
+msgstr "A GPG kulcs(ok) részleteit <a href=\"%s/%s/keys\">itt</a> ellenőrizheti."
 
-#: data/content/verify.html:51
+#: data/content/verify.html:54
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Most ellenőrizzük, hogy a CHECKSUM fájl érvényes:"
 
-#: data/content/verify.html:53
+#: data/content/verify.html:56
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr ""
-"A CHECKSUM fájlnak a következő kulcsok közül kell rendelkeznie egy jó "
-"aláírással:"
-
-#: data/content/verify.html:55
-msgid "Fedora 26"
-msgstr ""
-
-#: data/content/verify.html:56
-msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
-
-#: data/content/verify.html:57
-msgid "Fedora 25"
-msgstr ""
+"A CHECKSUM fájlnak rendelkeznie kell egy jó aláírással a következő kulcsok "
+"valamelyikével:"
 
 #: data/content/verify.html:58
-msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
+msgid "Fedora 27"
+msgstr "Fedora 27"
 
 #: data/content/verify.html:59
-msgid "Fedora 24"
-msgstr "Fedora 24"
+msgid "Fedora 26"
+msgstr "Fedora 26"
 
 #: data/content/verify.html:60
-msgid "Fedora 24 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
+"Fedora 26 másodlagos architektúrák (AArch64, PPC64, PPC64le, s390 és s390x)"
 
 #: data/content/verify.html:61
-msgid "Fedora 23"
-msgstr "Fedora 23"
+msgid "Fedora 25"
+msgstr "Fedora 25"
 
 #: data/content/verify.html:62
-msgid "Fedora 23 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
+"Fedora 25 másodlagos architektúrák (AArch64, PPC64, PPC64le, s390 és s390x)"
 
 #: data/content/verify.html:64
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
 msgstr ""
-"Végül, miután a CHECKSUM fájlt ellenőriztük, megnézzük, hogy az ISO "
-"ellenőrző összeg egyezik-e:"
+"Végül, miután a CHECKSUM fájlt ellenőrizte, nézze meg, hogy az ISO "
+"ellenőrzőösszeg egyezik-e:"
 
 #: data/content/verify.html:66
 msgid "If the output states that the file is valid, then it's ready to use!"
-msgstr "Ha a kimenet állítja, hogy a fájl érvényes, akkor már indíthatja is!"
+msgstr "Ha a kimenet szerint a fájl érvényes, akkor már használhatja is!"
 
 #: data/content/verify.html:67
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr ""
-"Hogyan ellenőrizhetem a letöltött lemezképeket egy idegen operációs "
+"Hogyan ellenőrizheti a letöltött lemezképeket egy másik operációs "
 "rendszeren?"
 
 #: data/content/verify.html:68
 msgid "Read these instructions to validate your image."
-msgstr "Olvassuk el az utasításokat a lemezkép érvényesítéséhez."
+msgstr "Olvassa el az utasításokat a lemezkép ellenőrzéséhez."
 
 #: data/content/e/404.html:7
 msgid "Fedora Project - Page Not Found"
-msgstr "Fedora projekt - A keresett oldal nem található"
+msgstr "Fedora Projekt – Az oldal nem található"
 
 #: data/content/e/404.html:16
 msgid "404: Page Not Found"
-msgstr "404: A keresett oldal nem található"
+msgstr "404: Az oldal nem található"
 
 #: data/content/e/404.html:18
 msgid "We apologize, but the file or page you requested could not be found."
@@ -429,7 +452,8 @@ msgstr "Hibaelhárítási ötletek"
 #: data/content/e/404.html:29
 msgid ""
 "Double-check the URL if you entered it manually. Did you copy it correctly?"
-msgstr "Ellenőrizze az URL-t még egyszer, ha úgy gépelte be! Jól másolta le?"
+msgstr ""
+"Ellenőrizze az URL-t még egyszer, ha kézzel adta meg. Helyesen másolta be?"
 
 #: data/content/e/404.html:32
 #, python-format
@@ -438,7 +462,7 @@ msgid ""
 "brought you here."
 msgstr ""
 "Egy rossz hivatkozás juttatta ide? Lépjen kapcsolatba <a href=\"%s\">a "
-"webmesterrel</a> és tudassa, hogy mely hivatkozás mutat ide!"
+"webmesterrel</a> és tudassa, hogy mely hivatkozás hozta ide!"
 
 #: data/content/e/404.html:35
 #, python-format
@@ -447,8 +471,8 @@ msgid ""
 " or search our <a href=\"%(wiki)s\">wiki</a>."
 msgstr ""
 "A keresett oldal vagy fájl elköltözhetett. Ellenőrizze a <a "
-"href=\"%(fpo)s\">központi oldalt</a> vagy keressen a  <a "
-"href=\"%(wiki)s\">wiki</a> oldalakban."
+"href=\"%(fpo)s\">főoldalt</a>, vagy keressen a <a href=\"%(wiki)s\">wiki</a>"
+" oldalakon."
 
 #: data/templates/footer.html:14
 msgid "About"
@@ -456,7 +480,7 @@ msgstr "Névjegy"
 
 #: data/templates/footer.html:17
 msgid "About Fedora"
-msgstr "Fedora névjegye"
+msgstr "A Fedora névjegye"
 
 #: data/templates/footer.html:18
 msgid "Sponsors"
@@ -464,7 +488,7 @@ msgstr "Támogatók"
 
 #: data/templates/footer.html:19
 msgid "Fedora Magazine"
-msgstr "Fedora Magazin"
+msgstr "Fedora Magazine"
 
 #: data/templates/footer.html:20
 msgid "Legal"
@@ -472,15 +496,15 @@ msgstr "Jogi információk"
 
 #: data/templates/footer.html:40
 msgid "Get Fedora Workstation"
-msgstr "Fedora munkaállomás beszerzése"
+msgstr "Fedora Workstation beszerzése"
 
 #: data/templates/footer.html:41
 msgid "Get Fedora Server"
-msgstr "Fedora szerver beszerzése"
+msgstr "Fedora Server beszerzése"
 
 #: data/templates/footer.html:42
 msgid "Get Fedora Atomic"
-msgstr ""
+msgstr "Fedora Atomic beszerzése"
 
 #: data/templates/footer.html:43
 msgid "Fedora Spins"
@@ -496,7 +520,7 @@ msgstr "Fedora ARM<span class=\"sup\">®</span>"
 
 #: data/templates/footer.html:46
 msgid "Alternative Downloads"
-msgstr ""
+msgstr "Alternatív letöltési lehetőségek"
 
 #: data/templates/footer.html:53
 msgid "Support"
@@ -508,80 +532,76 @@ msgstr "Segítség"
 
 #: data/templates/footer.html:57
 msgid "Ask Fedora"
-msgstr "Kérdezz a Fedorától"
+msgstr "Ask Fedora – Kérdezz a Fedorától"
 
 #: data/templates/footer.html:58
-msgid "Forums"
-msgstr "Fórumok"
-
-#: data/templates/footer.html:59
 msgid "Common Bugs"
 msgstr "Gyakori hibák"
 
-#: data/templates/footer.html:60
+#: data/templates/footer.html:59
 msgid "Fedora Developer Portal"
-msgstr "Fedora Fejlesztői Portál"
+msgstr "Fedora fejlesztői portál"
 
-#: data/templates/footer.html:61
+#: data/templates/footer.html:60
 msgid "Installation Guide"
 msgstr "Telepítési útmutató"
 
-#: data/templates/footer.html:67
+#: data/templates/footer.html:66
 msgid "Join"
 msgstr "Csatlakozás"
 
-#: data/templates/footer.html:70
+#: data/templates/footer.html:69
 msgid "Join Fedora"
 msgstr "Csatlakozás a Fedorához"
 
-#: data/templates/footer.html:71
+#: data/templates/footer.html:70
 msgid "Planet Fedora"
 msgstr "Fedora Planet"
 
-#: data/templates/footer.html:72
+#: data/templates/footer.html:71
 msgid "Fedora SIGs"
 msgstr "Fedora SIG-ek"
 
-#: data/templates/footer.html:73
+#: data/templates/footer.html:72
 msgid "Fedora Account System"
-msgstr "Fedora Nyilvántartó Rendszer (FAS)"
+msgstr "Fedora fiókrendszer (FAS)"
 
-#: data/templates/footer.html:74
+#: data/templates/footer.html:73
 msgid "Fedora Community"
-msgstr "Fedora Közösség"
+msgstr "Fedora közösség"
+
+#: data/templates/footer.html:87
+msgid "Fedora is sponsored by Red Hat."
+msgstr "A Fedorát a Red Hat támogatja."
 
 #: data/templates/footer.html:88
-msgid "Fedora is sponsored by Red Hat."
-msgstr "Fedora a Red Hat által támogatott."
+msgid "Learn more about the relationship between Red Hat and Fedora »"
+msgstr "Tudjon meg többet a Red Hat és a Fedora kapcsolatáról »"
 
 #: data/templates/footer.html:89
-msgid "Learn more about the relationship between Red Hat and Fedora »"
-msgstr "Tudjon meg többet a Red Hat és Fedora kapcsolatáról »"
-
-#: data/templates/footer.html:90
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
 msgstr "© %(year)s Red Hat, Inc. és mások."
 
-#: data/templates/footer.html:90
+#: data/templates/footer.html:89
 msgid ""
-"Please send any comments or corrections to the <a href=\"//fedorahosted.org"
-"/fedora-websites/\">websites team</a>."
+"Please send any comments or corrections to the <a href=\"//pagure.io/fedora-"
+"websites\">websites team</a>."
 msgstr ""
-"Kérjük, a megjegyzéseit és javításait a <a href=\"//fedorahosted.org/fedora-"
-"websites/\">weboldalakért felelős csapatnak</a> küldje el."
+"A megjegyzéseit és javításait a <a href=\"//pagure.io/fedora-"
+"websites\">weboldalakért felelős csapatnak</a> küldje el."
 
-#: data/templates/footer.html:96
+#: data/templates/footer.html:95
 msgid "Change Language"
 msgstr "Az oldal nyelve:"
 
-#: data/templates/footer.html:100
+#: data/templates/footer.html:99
 msgid "OK"
 msgstr "OK"
 
 #: data/templates/head.html:13
 msgid "Fedora Images for ARM<sup>®</sup>-based Computers"
-msgstr "Fedora ARM alapú számítógép <sup>®</sup>"
+msgstr "Fedora lemezképek ARM<sup>®</sup>-alapú számítógépekhez"
 
 #: data/templates/generic/docs-links.html:8
 msgid "Documentation and other resources"
@@ -606,10 +626,13 @@ msgid ""
 " recommend you look through it before installing to your system, since it "
 "answers many common questions."
 msgstr ""
+"<a href=\"%s\">Teljes telepítési útmutató</a> is elérhető. Javasoljuk, hogy "
+"nézze át a rendszer telepítése előtt, mivel számos gyakori kérdésre választ "
+"ad."
 
 #: data/templates/generic/other-media-sources.html:8
 msgid "Other ways of obtaining media"
-msgstr "Más módszerek a média beszerzéséhez"
+msgstr "Más média beszerzési módszerek"
 
 #: data/templates/generic/other-media-sources.html:9
 #, python-format
@@ -617,6 +640,8 @@ msgid ""
 "You may purchase installation media for Fedora from <a href=\"%s\">online "
 "vendors</a> or a <a href=\"%s\">local vendor</a> in your area."
 msgstr ""
+"Vásárolhat Fedora telepítési médiát <a href=\"%s\">online</a> és <a "
+"href=\"%s\">helyi</a> viszonteladóktól is."
 
 #: data/templates/generic/other-media-sources.html:10
 #, python-format
@@ -625,4 +650,4 @@ msgid ""
 "media from the <a href=\"%s\">Fedora Free Media Program</a>."
 msgstr ""
 "Nem engedheti meg magának a telepítő média árát? Igényeljen Fedora telepítő "
-"médiát a <a href=\"%s\">Fedora Ingyen Média Program</a>ban."
+"médiát a <a href=\"%s\">Fedora ingyen média programban</a>."
