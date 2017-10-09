@@ -38,9 +38,6 @@
   </header>
     <div class="container recover-heading top-space">
       <div class="row">
-        <p class="warning">${Markup(_('Are you looking for the Fedora 27 Server Beta? We\'re hard at work revamping Fedora Server to be built with &lt;a href="%(modularity)s"&gt;Modularity&lt;/a&gt; based on feedback from the &lt;a href="%(boltron)s"&gt;Boltron tech preview&lt;/a&gt;. Stay tuned for a beta release in several weeks. Read more on &lt;a href="%(fedmag)s"&gt;Fedora Magazine&lt;/a&gt;. Or, download Fedora 26 Server below.') % {'modularity':'https://docs.pagure.org/modularity/', 'boltron':'https://fedoramagazine.org/announcing-boltron/', 'fedmag':'https://fedoramagazine.org/where-is-fedora-server-27-beta/'})}
-        </p>
-
         <div class="col-md-8 text-left bottom-space top-space">
           <p>${_('The Fedora Server installation image allows you to make media for your computer that boots to the installer to directly install Fedora Server on to your hard drive')}</p>
           <p>${_('To use this image, you need a drive that can create or "burn" DVDs, or a USB flash drive at least as big as the image.')}</p>
@@ -57,7 +54,7 @@
           <li><p><a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('64-bit %sMB image')) % global_variables.iso_size['x86_64_server_net']}</a></p></li>
           </ul>
           </p>
-<!--          <div class="top-space bottom-margin">
+          <div class="top-space bottom-margin">
             <py:choose>
             <py:when test="global_variables.release['curr_state'] == 'Alpha'">
               <div class="prerelease-box">
@@ -81,7 +78,6 @@
             </py:when>
           </py:choose>
           </div>
-          -->
           <div class="bottom-margin">
             <h3>${_('Get more Fedora')}</h3>
             <div class="bottom-margin">
