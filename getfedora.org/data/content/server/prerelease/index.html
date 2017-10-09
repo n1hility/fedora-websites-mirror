@@ -5,7 +5,7 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../../../templates/master.html" />
   <head>
-    <title>${Markup(_('Download Fedora Server %s')) % global_variables.release['curr_state']}</title>
+    <title>${Markup(_('Download Fedora Modular Server %s')) % global_variables.release['curr_state']}</title>
   </head>
   <body id="server">
 
@@ -14,7 +14,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-7 col-md-offset-5 text-left">
-          <h2>${Markup(_('Download Fedora %(rel)s %(state)s Server')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h2>
+          <h2>${Markup(_('Download Fedora %(rel)s %(state)s Modular Server')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h2>
             <p><a class="btn btn-warning" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Server/x86_64/iso/Fedora-Server-dvd-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">${_('Download')}</a></p>
             <h5>${Markup(_('64-bit %sGB Installation Image')) % global_variables.iso_size['pre_x86_64_server_DVD']}</h5>
         </div>
