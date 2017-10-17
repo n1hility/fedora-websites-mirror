@@ -16,66 +16,12 @@ import functools
 import logging
 import os
 
-import requests
-import dogpile.cache
+from fedimg_vars_lib import get_messages, sanity_check
 
 log = logging.getLogger('fedimg_vars')
 
-base_url = 'https://apps.fedoraproject.org/datagrepper/raw'
-topic = "org.fedoraproject.prod.fedimg.image.upload"
-
-session = requests.session()
-
-cache = dogpile.cache.make_region().configure(
-    "dogpile.cache.dbm",
-    # 'make clean' does not remove this cache, but we let the values expire
-    # once every this many seconds (once a day)
-    expiration_time=86400,
-    arguments={
-        "filename": os.path.join(os.getcwd(), 'build/amis.cache')
-    },
-)
-
-def get_page(page, pages):
-    """ Retrieve the JSON for a particular page of datagrepper results """
-    log.debug("Getting page %i of %s", page, pages)
-    response = session.get(base_url, params=dict(
-        topic=topic,
-        page=page,
-        # Get messages from 28 weeks (7 months)
-        delta=16934400,
-        rows_per_page=100,
-    ))
-    return response.json()
-
-
-def retrieve_messages():
-    """ Generator that yields messages from datagrepper """
-
-    # Get the first page
-    data = get_page(1, 'unknown')
-    for message in data['raw_messages']:
-        yield message
-
-    more = functools.partial(get_page, pages=data['pages'])
-
-    # Get all subsequent pages (if there are any...)
-    for page in range(1, data['pages']):
-        data = more(page + 1)
-
-        for message in data['raw_messages']:
-            yield message
-
-
-def get_messages(target):
-    """ Filter the messages on target. """
-    for message in retrieve_messages():
-        if target in str(message):
-            yield message
-
 
 # We cache this guy on disk for 500s
-@cache.cache_on_arguments()
 def collect(release):
     results = collections.defaultdict(dict)
 
@@ -138,31 +84,3 @@ def collect(release):
                     results[name][region] = ami
 
     return results
-
-
-def sanity_check(globalvar, collected_fedimg_vars):
-    """ This is a sanity check just to make sure the datagrepper code is not
-    way off from what we had hand-typed before.
-
-    Eventually, remove this.
-    """
-
-    names = [
-        'pre_HVM_base_AMI',
-        'pre_GP2_HVM_base_AMI',
-        'pre_PV_base_AMI',
-        'pre_GP2_PV_base_AMI',
-        'pre_HVM_atomic_AMI',
-        'pre_GP2_HVM_atomic_AMI',
-    ]
-    for name in names:
-        handtyped = getattr(globalvar, name)
-        collected = collected_fedimg_vars[name]
-
-        for key in handtyped:
-            if not key in collected:
-                log.warn("collected %r is missing %r" % (name, key))
-
-        for key in collected:
-            if not key in handtyped:
-                log.warn("handtyped %r is missing %r" % (name, key))
