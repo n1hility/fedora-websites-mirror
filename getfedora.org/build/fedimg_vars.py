@@ -36,27 +36,28 @@ cache = dogpile.cache.make_region().configure(
     },
 )
 
-def get_page(page, pages, target):
+def get_page(page, pages):
     """ Retrieve the JSON for a particular page of datagrepper results """
     log.debug("Getting page %i of %s", page, pages)
     response = session.get(base_url, params=dict(
         topic=topic,
         page=page,
-        contains=target,
+        # Get messages from 28 weeks (7 months)
+        delta=16934400,
         rows_per_page=100,
     ))
     return response.json()
 
 
-def get_messages(target):
+def retrieve_messages():
     """ Generator that yields messages from datagrepper """
 
     # Get the first page
-    data = get_page(1, 'unknown', target)
+    data = get_page(1, 'unknown')
     for message in data['raw_messages']:
         yield message
 
-    more = functools.partial(get_page, pages=data['pages'], target=target)
+    more = functools.partial(get_page, pages=data['pages'])
 
     # Get all subsequent pages (if there are any...)
     for page in range(1, data['pages']):
@@ -64,6 +65,14 @@ def get_messages(target):
 
         for message in data['raw_messages']:
             yield message
+
+
+def get_messages(target):
+    """ Filter the messages on target. """
+    for message in retrieve_messages():
+        if target in str(message):
+            yield message
+
 
 # We cache this guy on disk for 500s
 @cache.cache_on_arguments()
