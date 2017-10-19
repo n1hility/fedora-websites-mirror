@@ -14,6 +14,7 @@ from __future__ import print_function
 import collections
 import functools
 from datetime import datetime, timedelta
+from hashlib import sha1
 import logging
 import shelve
 import os
@@ -24,12 +25,12 @@ logging.basicConfig(level=logging.INFO)
 
 log = logging.getLogger('fedimg_vars')
 
-cachefile = '/tmp/fedora_websites_fedimg_alt_%s_%s.cache'
+cachefile = '/tmp/fedora_websites_fedimg_alt_%s.cache'
 
 
 # We cache this guy on disk for 500s
 def collect(release):
-    shelf = shelve.open(cachefile % (release['curr_cloud_AMI_id'], release['atomic_composedate']))
+    shelf = shelve.open(cachefile % (sha1(str(release)).hexdigest()))
     if shelf.get('timestamp') and shelf.get('timestamp') > (datetime.utcnow() - timedelta(hours=1)):
         log.info('Retrieving release data from shelf')
         toreturn = shelf['collected']
