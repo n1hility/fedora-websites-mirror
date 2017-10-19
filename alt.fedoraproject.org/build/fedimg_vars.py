@@ -13,16 +13,29 @@ from __future__ import print_function
 
 import collections
 import functools
+from datetime import datetime, timedelta
 import logging
+import shelve
 import os
 
 from fedimg_vars_lib import get_messages, sanity_check
 
+logging.basicConfig(level=logging.INFO)
+
 log = logging.getLogger('fedimg_vars')
+
+cachefile = '/tmp/fedora_websites_fedimg_alt_%s_%s.cache'
 
 
 # We cache this guy on disk for 500s
 def collect(release):
+    shelf = shelve.open(cachefile % (release['curr_cloud_AMI_id'], release['atomic_composedate']))
+    if shelf.get('timestamp') and shelf.get('timestamp') > (datetime.utcnow() - timedelta(hours=1)):
+        log.info('Retrieving release data from shelf')
+        toreturn = shelf['collected']
+        shelf.close()
+        return toreturn
+
     results = collections.defaultdict(dict)
 
     # 1 - transform release vars into an image name we want to query for
@@ -70,5 +83,9 @@ def collect(release):
                     # The region looks like "EC2 (REGION)", so we strip stuff.
                     region = upload['destination'][5:-1]
                     results[name][region] = ami
+
+    shelf['timestamp'] = datetime.utcnow()
+    shelf['collected'] = results
+    shelf.close()
 
     return results
