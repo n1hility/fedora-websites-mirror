@@ -20,7 +20,7 @@ release={
     'curr_arm_id': '27',
     'curr_alt_id': '27',
     'curr_cloud_id': '27',
-    'curr_atomic_id': '27',
+    'curr_atomic_id': '26',
     'curr_cloud_AMI_id': '27',
     'next_arm_id': '28',
     'next_alt_id': '28',
