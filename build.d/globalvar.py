@@ -2,40 +2,40 @@
 # -*- coding: utf-8 -*-
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
 release={
-    'prev_id':     '25',
-    'curr_id':     '26',
-    'next_id':     '27',
+    'prev_id':     '26',
+    'curr_id':     '27',
+    'next_id':     '28',
     'curr_name':   '',
     'next_name':   '',
-    'curr_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  'Beta',         # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_alt_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_AMI_state':  'Beta',   # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_atomic_state':  'Pre-Release',   # No Alpha/Beta for Atomic Host
-    'prev_arm_id': '25',
-    'prev_alt_id': '25',
-    'prev_cloud_id': '25',
-    'prev_atomic_id': '25',
-    'curr_arm_id': '26',
-    'curr_alt_id': '26',
-    'curr_cloud_id': '26',
-    'curr_atomic_id': '26',
-    'curr_cloud_AMI_id': '26',
-    'next_arm_id': '27',
-    'next_alt_id': '27',
-    'next_cloud_id': '27',
-    'next_atomic_id': '27',
-    'next_cloud_AMI_id': '27',
+    'curr_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_alt_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_AMI_state':  '',   # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_atomic_state':  '',   # No Alpha/Beta for Atomic Host
+    'prev_arm_id': '26',
+    'prev_alt_id': '26',
+    'prev_cloud_id': '26',
+    'prev_atomic_id': '26',
+    'curr_arm_id': '27',
+    'curr_alt_id': '27',
+    'curr_cloud_id': '27',
+    'curr_atomic_id': '27',
+    'curr_cloud_AMI_id': '27',
+    'next_arm_id': '28',
+    'next_alt_id': '28',
+    'next_cloud_id': '28',
+    'next_atomic_id': '28',
+    'next_cloud_AMI_id': '28',
     'composedate': '20160616',
     'unofficial_compose': '20160614',
     'alt_composedate': '20161118',
     # Fedora Media Writer
     'fmw': '4.1.0',
     # These variables are only necessary to keep fedoraproject.org working
-    'curr_ppc64_id': '26',
-    'prev_ppc64_id': '25',
-    'curr_s390_id': '26',
+    'curr_ppc64_id': '27',
+    'prev_ppc64_id': '26',
+    'curr_s390_id': '27',
     # Note that atomic values here get overwritten by the twoweek script.
     'atomic_composedate': '20160616',
     'pre_cloud_composedate': '20150915',
@@ -48,11 +48,11 @@ release={
     # Note that atomic values here get overwritten by the twoweek script.
     'pre_cloud_atomic_composedate': '20150915',
     'pre_cloud_AMI_atomic_composedate': '20150915',
-    'RC_gold': '1.5',             # insert the number of the RC version declared GOLD
-    'RC_build': '1.5',            # sometimes releng use the RC build
-    'RC_gold_aarch64': '1.5',     # RC Gold for aarch64
-    'RC_gold_ppc64': '1.5',       # RC Gold for ppc64
-    'RC_gold_s390x': '1.5',       # RC Gold for s390x
+    'RC_gold': '1.6',             # insert the number of the RC version declared GOLD
+    'RC_build': '1.6',            # sometimes releng use the RC build
+    'RC_gold_aarch64': '1.6',     # RC Gold for aarch64
+    'RC_gold_ppc64': '1.6',       # RC Gold for ppc64
+    'RC_gold_s390x': '1.6',       # RC Gold for s390x
     'RC_pre_gold': '1.5',         # insert the number of the prerelease RC version declared GOLD
     'RC_pre_build': '5',        # sometimes releng use the RC build
     'RC_pre_gold_aarch64': '1.5', # Pre RC Gold for aarch64
