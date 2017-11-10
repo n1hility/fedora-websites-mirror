@@ -12,6 +12,7 @@ release={
     'curr_alt_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_cloud_AMI_state':  '',   # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_server_state':  'Beta',         # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_atomic_state':  '',   # No Alpha/Beta for Atomic Host
     'prev_arm_id': '26',
     'prev_alt_id': '26',
@@ -21,12 +22,14 @@ release={
     'curr_alt_id': '27',
     'curr_cloud_id': '27',
     'curr_atomic_id': '26',
-    'curr_cloud_AMI_id': '27',
+    'curr_server_id': '26',
+    'curr_cloud_AMI_id': '26',
     'next_arm_id': '28',
     'next_alt_id': '28',
     'next_cloud_id': '28',
-    'next_atomic_id': '28',
-    'next_cloud_AMI_id': '28',
+    'next_atomic_id': '27',
+    'next_server_id': '27',
+    'next_cloud_AMI_id': '27',
     'composedate': '20160616',
     'unofficial_compose': '20160614',
     'alt_composedate': '20161118',
@@ -80,6 +83,7 @@ path={
     'torrent':         'https://torrent.fedoraproject.org/torrents',
     'torrent_spins':   'https://torrent.fedoraproject.org/torrents',
     'download':        'https://download.fedoraproject.org/pub/fedora/linux/releases',
+    'download_modular':'https://download.fedoraproject.org/pub/fedora/linux/modular/releases',
     'dl':              'https://download.fedoraproject.org/pub/fedora/linux/updates',
     'download_spins':  'https://download.fedoraproject.org/pub/alt/releases',
     'download_atomic': 'https://download.fedoraproject.org/pub/alt/atomic',
