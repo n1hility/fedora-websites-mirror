@@ -19,7 +19,7 @@ import logging
 import shelve
 import os
 
-from fedimg_vars_lib import get_messages, sanity_check
+from fedimg_vars_lib import get_messages, sanity_check, mocked_fedimg
 
 logging.basicConfig(level=logging.INFO)
 
@@ -53,6 +53,9 @@ def collect(release):
         #    'pre_GP2_HVM_base_AMI': lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') == 'gp2',
         #}),
     ]
+
+    if not os.path.exists('/var/fedora_websites_live_fedimg'):
+        return mocked_fedimg(templates)
 
     for template, buckets in templates:
         # 2 - Build an intermediary dict

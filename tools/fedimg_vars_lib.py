@@ -12,6 +12,7 @@ License:    LGPLv2+
 from __future__ import print_function
 
 import collections
+import copy
 from datetime import datetime, timedelta
 import functools
 import logging
@@ -111,3 +112,16 @@ def sanity_check(globalvar, collected_fedimg_vars):
         for key in collected:
             if not key in handtyped:
                 log.warn("handtyped %r is missing %r" % (name, key))
+
+
+def mocked_fedimg(templates):
+    regions = ['us-east-1', 'ap-northeast-1', 'sa-east-1', 'ap-southeast-1', 'ap-southeast-2',
+               'us-west-2', 'us-west-1', 'eu-central-1', 'eu-west-1']
+    mockdata = {}
+    for region in regions:
+        mockdata[region] = 'ami-mocked'
+    toreturn = {}
+    for template in templates:
+        for restype in template[1].keys():
+            toreturn[restype] = copy.copy(mockdata)
+    return toreturn
