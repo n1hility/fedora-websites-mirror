@@ -30,7 +30,7 @@
       <div class="row">
         <div class="col-md-7 col-md-offset-5 text-left">
           <h2>${Markup(_('Download Fedora %(rel)s Server')) % {'rel':global_variables.release['curr_server_id']}}</h2>
-            <p><a class="btn btn-success server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/x86_64/iso/Fedora-Server-dvd-x86_64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p>
+            <p><a class="btn btn-success server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/x86_64/iso/Fedora-Server-dvd-x86_64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.iso" role="button">${_('Download')}</a></p>
             <h5>${Markup(_('64-bit %sGB installation image')) % global_variables.iso_size['x86_64_server_DVD']}</h5>
         </div>
       </div>
@@ -54,7 +54,7 @@
           <p>
           ${_('Netinstall Image:')}
           <ul>
-          <li><p><a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('64-bit %sMB image')) % global_variables.iso_size['x86_64_server_net']}</a></p></li>
+          <li><p><a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.iso">${Markup(_('64-bit %sMB image')) % global_variables.iso_size['x86_64_server_net']}</a></p></li>
           </ul>
           </p>
           <div class="top-space bottom-margin">

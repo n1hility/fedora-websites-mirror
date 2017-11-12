@@ -52,6 +52,7 @@ release={
     'pre_cloud_atomic_composedate': '20150915',
     'pre_cloud_AMI_atomic_composedate': '20150915',
     'RC_gold': '1.6',             # insert the number of the RC version declared GOLD
+    'RC_server_gold': '1.5',      # insert the number of the RC version declared GOLD
     'RC_gold_AMI': '1.5',         # we do this for late AMIs
     'RC_build': '1.6',            # sometimes releng use the RC build
     'RC_gold_aarch64': '1.6',     # RC Gold for aarch64
