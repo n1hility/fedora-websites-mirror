@@ -29,7 +29,7 @@ release={
     'next_cloud_id': '28',
     'next_atomic_id': '27',
     'next_server_id': '27',
-    'next_cloud_AMI_id': '28',
+    'next_cloud_AMI_id': '27',
     'composedate': '20160616',
     'unofficial_compose': '20160614',
     'alt_composedate': '20161118',
@@ -53,7 +53,6 @@ release={
     'pre_cloud_AMI_atomic_composedate': '20150915',
     'RC_gold': '1.6',             # insert the number of the RC version declared GOLD
     'RC_server_gold': '1.5',      # insert the number of the RC version declared GOLD
-    'RC_gold_AMI': '1.5',         # we do this for late AMIs
     'RC_build': '1.6',            # sometimes releng use the RC build
     'RC_gold_aarch64': '1.6',     # RC Gold for aarch64
     'RC_gold_ppc64': '1.6',       # RC Gold for ppc64
