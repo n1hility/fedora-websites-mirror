@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-01 16:07+0200\n"
+"POT-Creation-Date: 2017-11-14 12:28+0100\n"
 "PO-Revision-Date: 2017-02-15 01:28-0500\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
 "Language-Team: Russian\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 1.3\n"
 "X-Generator: Zanata 3.9.6\n"
 
 #: data/content/index.html:8
@@ -32,13 +32,13 @@ msgstr ""
 msgid "Fedora %(rel)s released! Get it now."
 msgstr ""
 
-#: data/content/index.html:56 data/content/index.html:102
-#: data/content/index.html:138
+#: data/content/index.html:56 data/content/index.html:103
+#: data/content/index.html:140
 msgid "ARM<span class=\"sup\">®</span> Servers"
 msgstr "Серверы ARM<span class=\"sup\">®</span>"
 
-#: data/content/index.html:61 data/content/index.html:107
-#: data/content/index.html:143
+#: data/content/index.html:61 data/content/index.html:108
+#: data/content/index.html:145
 msgid ""
 "These images are geared towards ARM-based computers used as servers, "
 "typically in a headless environment."
@@ -46,35 +46,30 @@ msgstr ""
 "Эти образы предназначены для компьютерах на основе ARM, используемых в "
 "качестве серверов, обычно без монитора."
 
-#: data/content/index.html:69 data/content/index.html:116
-#: data/content/index.html:152 data/content/prerelease.html:46
-#: data/content/prerelease.html:55
-msgid "Fedora Server"
-msgstr "Fedora Server"
+#: data/content/index.html:84 data/content/index.html:127
+#: data/content/index.html:166 data/content/prerelease.html:64
+#: data/content/prerelease.html:73
+msgid "Fedora Minimal"
+msgstr "Минимальная Fedora"
 
-#: data/content/index.html:72 data/content/index.html:194
-#: data/content/index.html:208 data/content/index.html:222
-#: data/content/index.html:250 data/content/index.html:452
-#: data/content/prerelease.html:85 data/content/prerelease.html:103
-#: data/content/prerelease.html:121 data/content/prerelease.html:177
+#: data/content/index.html:87 data/content/index.html:267
+#: data/content/prerelease.html:49 data/content/prerelease.html:67
+#: data/content/prerelease.html:215
 #, python-format
-msgid "%sGB raw image"
-msgstr "%sГБ raw-образ"
+msgid "%sMB raw image"
+msgstr "%sМБ raw-образ"
 
-#: data/content/index.html:75 data/content/index.html:89
-#: data/content/index.html:117 data/content/index.html:126
-#: data/content/index.html:155 data/content/index.html:166
-#: data/content/index.html:197 data/content/index.html:211
-#: data/content/index.html:225 data/content/index.html:239
-#: data/content/index.html:253 data/content/index.html:267
-#: data/content/index.html:295 data/content/index.html:304
-#: data/content/index.html:313 data/content/index.html:322
-#: data/content/index.html:331 data/content/index.html:340
-#: data/content/index.html:369 data/content/index.html:380
-#: data/content/index.html:391 data/content/index.html:402
-#: data/content/index.html:413 data/content/index.html:424
-#: data/content/index.html:455 data/content/index.html:483
-#: data/content/index.html:512 data/content/prerelease.html:52
+#: data/content/index.html:90 data/content/index.html:128
+#: data/content/index.html:169 data/content/index.html:200
+#: data/content/index.html:214 data/content/index.html:228
+#: data/content/index.html:242 data/content/index.html:256
+#: data/content/index.html:270 data/content/index.html:298
+#: data/content/index.html:307 data/content/index.html:316
+#: data/content/index.html:325 data/content/index.html:334
+#: data/content/index.html:343 data/content/index.html:372
+#: data/content/index.html:383 data/content/index.html:394
+#: data/content/index.html:405 data/content/index.html:416
+#: data/content/index.html:427 data/content/prerelease.html:52
 #: data/content/prerelease.html:56 data/content/prerelease.html:70
 #: data/content/prerelease.html:74 data/content/prerelease.html:88
 #: data/content/prerelease.html:92 data/content/prerelease.html:106
@@ -85,20 +80,17 @@ msgstr "%sГБ raw-образ"
 msgid "Download"
 msgstr "Загрузить"
 
-#: data/content/index.html:75 data/content/index.html:89
-#: data/content/index.html:117 data/content/index.html:126
-#: data/content/index.html:155 data/content/index.html:166
-#: data/content/index.html:197 data/content/index.html:211
-#: data/content/index.html:225 data/content/index.html:239
-#: data/content/index.html:253 data/content/index.html:267
-#: data/content/index.html:295 data/content/index.html:304
-#: data/content/index.html:313 data/content/index.html:322
-#: data/content/index.html:331 data/content/index.html:340
-#: data/content/index.html:369 data/content/index.html:380
-#: data/content/index.html:391 data/content/index.html:402
-#: data/content/index.html:413 data/content/index.html:424
-#: data/content/index.html:455 data/content/index.html:483
-#: data/content/index.html:512 data/content/prerelease.html:52
+#: data/content/index.html:90 data/content/index.html:128
+#: data/content/index.html:169 data/content/index.html:200
+#: data/content/index.html:214 data/content/index.html:228
+#: data/content/index.html:242 data/content/index.html:256
+#: data/content/index.html:270 data/content/index.html:298
+#: data/content/index.html:307 data/content/index.html:316
+#: data/content/index.html:325 data/content/index.html:334
+#: data/content/index.html:343 data/content/index.html:372
+#: data/content/index.html:383 data/content/index.html:394
+#: data/content/index.html:405 data/content/index.html:416
+#: data/content/index.html:427 data/content/prerelease.html:52
 #: data/content/prerelease.html:56 data/content/prerelease.html:70
 #: data/content/prerelease.html:74 data/content/prerelease.html:88
 #: data/content/prerelease.html:92 data/content/prerelease.html:106
@@ -109,26 +101,13 @@ msgstr "Загрузить"
 msgid "Verify"
 msgstr "Проверить правильность"
 
-#: data/content/index.html:83 data/content/index.html:125
-#: data/content/index.html:163 data/content/prerelease.html:64
-#: data/content/prerelease.html:73
-msgid "Fedora Minimal"
-msgstr "Минимальная Fedora"
-
-#: data/content/index.html:86 data/content/index.html:236
-#: data/content/index.html:264 data/content/prerelease.html:49
-#: data/content/prerelease.html:67 data/content/prerelease.html:215
-#, python-format
-msgid "%sMB raw image"
-msgstr "%sМБ raw-образ"
-
-#: data/content/index.html:178 data/content/index.html:280
-#: data/content/index.html:352
+#: data/content/index.html:181 data/content/index.html:283
+#: data/content/index.html:355
 msgid "Desktop Computing"
 msgstr "Рабочие среды"
 
-#: data/content/index.html:183 data/content/index.html:285
-#: data/content/index.html:357
+#: data/content/index.html:186 data/content/index.html:288
+#: data/content/index.html:360
 msgid ""
 "These images are for ARM-based mediacenters, kiosks, laptops, and other ARM-"
 "powered devices where a graphical interface is desired."
@@ -136,63 +115,55 @@ msgstr ""
 "Эти образы предназначены для медиацентров, киосков, носимых компьютеров и "
 "других устройств на основе ARM, где нужен графический интерфейс."
 
-#: data/content/index.html:191 data/content/index.html:294
-#: data/content/index.html:366 data/content/prerelease.html:82
+#: data/content/index.html:194 data/content/index.html:297
+#: data/content/index.html:369 data/content/prerelease.html:82
 #: data/content/prerelease.html:91
 msgid "Fedora Workstation"
 msgstr "Fedora Workstation"
 
-#: data/content/index.html:205 data/content/index.html:303
-#: data/content/index.html:377 data/content/prerelease.html:100
+#: data/content/index.html:197 data/content/index.html:211
+#: data/content/index.html:225 data/content/index.html:239
+#: data/content/index.html:253 data/content/prerelease.html:85
+#: data/content/prerelease.html:103 data/content/prerelease.html:121
+#: data/content/prerelease.html:177
+#, python-format
+msgid "%sGB raw image"
+msgstr "%sГБ raw-образ"
+
+#: data/content/index.html:208 data/content/index.html:306
+#: data/content/index.html:380 data/content/prerelease.html:100
 #: data/content/prerelease.html:109
 msgid "KDE Plasma Desktop"
 msgstr "Рабочая среда KDE Plasma"
 
-#: data/content/index.html:219 data/content/index.html:312
-#: data/content/index.html:388 data/content/prerelease.html:118
+#: data/content/index.html:222 data/content/index.html:315
+#: data/content/index.html:391 data/content/prerelease.html:118
 #: data/content/prerelease.html:127
 msgid "Xfce Desktop"
 msgstr "Рабочая среда Xfce"
 
-#: data/content/index.html:233 data/content/index.html:321
-#: data/content/index.html:399
+#: data/content/index.html:236 data/content/index.html:324
+#: data/content/index.html:402
 msgid "LXQt Desktop"
 msgstr ""
 
-#: data/content/index.html:247 data/content/index.html:330
-#: data/content/index.html:410 data/content/prerelease.html:174
+#: data/content/index.html:250 data/content/index.html:333
+#: data/content/index.html:413 data/content/prerelease.html:174
 #: data/content/prerelease.html:183
 msgid "MATE-Compiz Desktop"
 msgstr "Рабочая среда MATE-Compiz"
 
-#: data/content/index.html:261 data/content/index.html:339
-#: data/content/index.html:421 data/content/prerelease.html:212
+#: data/content/index.html:264 data/content/index.html:342
+#: data/content/index.html:424 data/content/prerelease.html:212
 #: data/content/prerelease.html:221
 msgid "Sugar on a Stick"
 msgstr "Sugar on a Stick"
 
-#: data/content/index.html:436 data/content/index.html:468
-#: data/content/index.html:495
-msgid "ARM<span class=\"sup\">®</span> Labs"
-msgstr ""
-
-#: data/content/index.html:441 data/content/index.html:473
-#: data/content/index.html:500
-msgid ""
-"These images are for ARM-based devices where a bundle of purpose-drive "
-"software is needed."
-msgstr ""
-
-#: data/content/index.html:449 data/content/index.html:482
-#: data/content/index.html:509
-msgid "Fedora Python-Classroom"
-msgstr ""
-
-#: data/content/index.html:524
+#: data/content/index.html:528
 msgid "What is ARM<span class=\"sup\">®</span> Technology?"
 msgstr ""
 
-#: data/content/index.html:525 data/content/prerelease.html:239
+#: data/content/index.html:529 data/content/prerelease.html:239
 msgid ""
 "ARM microprocessors are the most widely-produced processor family in the "
 "world; they have historically been used in cell phones and embedded "
@@ -204,7 +175,7 @@ msgstr ""
 "применяются в  планшетных устройствах и серверах с низким "
 "энергопотреблением."
 
-#: data/content/index.html:526 data/content/prerelease.html:240
+#: data/content/index.html:530 data/content/prerelease.html:240
 msgid ""
 "The Fedora ARM project is an initiative to bring Fedora to this processor "
 "family. The images provided here are versions of Fedora tailored for running"
@@ -214,15 +185,15 @@ msgstr ""
 "Предлагаемые здесь образы являются версиями Fedora, приспособленными для "
 "работы на системах на основе ARM."
 
-#: data/content/index.html:537 data/content/prerelease.html:251
+#: data/content/index.html:541 data/content/prerelease.html:251
 msgid "Support Resources"
 msgstr "Ресурсы поддержки"
 
-#: data/content/index.html:542 data/content/prerelease.html:256
+#: data/content/index.html:546 data/content/prerelease.html:256
 msgid "Documentation"
 msgstr "Документация"
 
-#: data/content/index.html:543 data/content/prerelease.html:257
+#: data/content/index.html:547 data/content/prerelease.html:257
 #, python-format
 msgid ""
 "Fedora ARM documentation and installation guides are available at the <a "
@@ -231,11 +202,11 @@ msgstr ""
 "Документация и руководства по установке для Fedora ARM находятся на <a "
 "href=\"%s\">вики-странице Fedora ARM</a>."
 
-#: data/content/index.html:546 data/content/prerelease.html:260
+#: data/content/index.html:550 data/content/prerelease.html:260
 msgid "Email"
 msgstr "Эл. почта"
 
-#: data/content/index.html:547 data/content/prerelease.html:261
+#: data/content/index.html:551 data/content/prerelease.html:261
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -244,11 +215,11 @@ msgstr ""
 "Пользователи и разработчики есть также в списке рассылке <a "
 "href=\"%s\">arm@lists.fedoraproject.org</a>."
 
-#: data/content/index.html:550 data/content/prerelease.html:264
+#: data/content/index.html:554 data/content/prerelease.html:264
 msgid "Chat"
 msgstr "Чат"
 
-#: data/content/index.html:551 data/content/prerelease.html:265
+#: data/content/index.html:555 data/content/prerelease.html:265
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-arm</a> irc"
@@ -258,11 +229,11 @@ msgstr ""
 " на  <a href=\"%s\">#fedora-arm</a> канале irc  "
 "<strong>irc.freenode.org</strong>."
 
-#: data/content/index.html:556 data/content/prerelease.html:270
+#: data/content/index.html:560 data/content/prerelease.html:270
 msgid "General Help Using Fedora"
 msgstr "Общие вопросы о Fedora"
 
-#: data/content/index.html:557 data/content/prerelease.html:271
+#: data/content/index.html:561 data/content/prerelease.html:271
 #, python-format
 msgid ""
 "Sometimes you may encounter an issue with this spin that you can get help "
@@ -322,6 +293,10 @@ msgstr ""
 "href=\"%(commonbugs_url)s\">Распространенные ошибки</a> - для информации о "
 "часто встречающихся ошибках и о том, как их избежать."
 
+#: data/content/prerelease.html:46 data/content/prerelease.html:55
+msgid "Fedora Server"
+msgstr "Fedora Server"
+
 #: data/content/prerelease.html:238
 msgid "What is ARM Technology?"
 msgstr "Технология ARM - что это?"
@@ -349,26 +324,30 @@ msgstr ""
 "каталог, куда загружен образ."
 
 #: data/content/verify.html:36
-msgid "Validate Server!"
-msgstr "Проверьте Server!"
-
-#: data/content/verify.html:39
-msgid "Validate Minimal!"
+msgid "Server"
 msgstr ""
 
 #: data/content/verify.html:42
+msgid "Validate Minimal!"
+msgstr ""
+
+#: data/content/verify.html:46
+msgid "Desktop"
+msgstr ""
+
+#: data/content/verify.html:48
 msgid "Validate Workstation!"
 msgstr "Проверьте Workstation!"
 
-#: data/content/verify.html:45
+#: data/content/verify.html:51
 msgid "Validate Spins!"
 msgstr "Проверьте сборки!"
 
-#: data/content/verify.html:51
+#: data/content/verify.html:65
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Далее, импортируйте GPG-ключи Fedora:"
 
-#: data/content/verify.html:53
+#: data/content/verify.html:67
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
@@ -377,39 +356,43 @@ msgstr ""
 "Вы можете проверить подробные сведения о GPG ключах <a "
 "href=\"%s/%s/keys\">здесь</a>."
 
-#: data/content/verify.html:54
+#: data/content/verify.html:68
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Теперь проверьте файл CHECKSUM:"
 
-#: data/content/verify.html:56
+#: data/content/verify.html:70
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr "Файл CHECKSUM должен иметь верную подпись одного из следующих ключей:"
 
-#: data/content/verify.html:58
+#: data/content/verify.html:72
+msgid "Fedora 28"
+msgstr ""
+
+#: data/content/verify.html:73
 msgid "Fedora 27"
 msgstr ""
 
-#: data/content/verify.html:59
+#: data/content/verify.html:74
 msgid "Fedora 26"
 msgstr "Fedora 26"
 
-#: data/content/verify.html:60
+#: data/content/verify.html:75
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Неглавные архитектуры Fedora 26 (AArch64, PPC64, PPC64le, s390 и s390x)"
 
-#: data/content/verify.html:61
+#: data/content/verify.html:76
 msgid "Fedora 25"
 msgstr "Fedora 25"
 
-#: data/content/verify.html:62
+#: data/content/verify.html:77
 msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Неглавные архитектуры Fedora 25 (AArch64, PPC64, PPC64le, s390 и s390x)"
 
-#: data/content/verify.html:64
+#: data/content/verify.html:79
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
@@ -417,16 +400,16 @@ msgstr ""
 "Наконец, когда файл CHECKSUM проверен, убедитесь, что контрольная сумма "
 "образа совпадает:"
 
-#: data/content/verify.html:66
+#: data/content/verify.html:81
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
 "Если результат подтверждает, что файл правильный, он готов к использованию!"
 
-#: data/content/verify.html:67
+#: data/content/verify.html:82
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr "Как проверить загруженные образы на другой операционной системе?"
 
-#: data/content/verify.html:68
+#: data/content/verify.html:83
 msgid "Read these instructions to validate your image."
 msgstr "Прочитайте эти инструкции для проверки образа."
 

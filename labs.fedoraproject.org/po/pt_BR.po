@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-01 16:08+0200\n"
+"POT-Creation-Date: 2017-11-14 12:29+0100\n"
 "PO-Revision-Date: 2017-04-05 01:07-0400\n"
 "Last-Translator: Frederico Henrique Gonçalves Lima <fred@fredericolima.com.br>\n"
 "Language-Team: Portuguese (Brazil)\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt-BR\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 1.3\n"
 "X-Generator: Zanata 3.9.6\n"
 
 #: data/content/index.html:8 data/templates/footer.html:44
@@ -39,12 +39,12 @@ msgstr ""
 msgid "Fedora %(rel)s released! Get it now."
 msgstr "Fedora %(rel)s lançado! Obtenha-o agora."
 
-#: data/content/index.html:60 data/content/index.html:110
+#: data/content/index.html:60 data/content/index.html:121
 #: data/content/prerelease.html:46
 msgid "Explore the Outer Space."
 msgstr "Explore o Espaço Sideral."
 
-#: data/content/index.html:61 data/content/index.html:111
+#: data/content/index.html:61 data/content/index.html:122
 msgid ""
 "Powerful completely open-source and free tool for amateurs and "
 "professionals."
@@ -52,12 +52,12 @@ msgstr ""
 "Poderosa ferramenta completamente livre e open-source para amadores e "
 "profissionais."
 
-#: data/content/index.html:66 data/content/index.html:118
+#: data/content/index.html:66 data/content/index.html:129
 #: data/content/prerelease.html:68
 msgid "Open Creativity."
 msgstr "Criatividade Livre."
 
-#: data/content/index.html:67 data/content/index.html:119
+#: data/content/index.html:67 data/content/index.html:130
 msgid ""
 "Visual design, multimedia production, and publishing suite of free and open "
 "source creative tools."
@@ -65,31 +65,44 @@ msgstr ""
 "Ferramentas criativas de código aberto e livre para design visual, produção "
 "multimédia e publicação."
 
-#: data/content/index.html:75 data/content/index.html:126
+#: data/content/index.html:75 data/content/index.html:137
 #: data/content/prerelease.html:89
 msgid "Play with Fedora Today!"
 msgstr "Jogue com o Fedora Hoje!"
 
-#: data/content/index.html:76 data/content/index.html:127
+#: data/content/index.html:76 data/content/index.html:138
 msgid ""
 "A collection and perfect show-case of the best games available in Fedora."
 msgstr "Uma coleção dos melhores jogos disponíveis no Fedora."
 
-#: data/content/index.html:81 data/content/index.html:134
+#: data/content/index.html:81 data/content/index.html:145
+#: data/content/prerelease.html:110
+msgid "Unleash your inner musician."
+msgstr "Liberte o seu músico dentro de você."
+
+#: data/content/index.html:82 data/content/index.html:146
+msgid ""
+"For audio enthusiasts and musicians who want to create, edit and produce "
+"audio and music on Linux."
+msgstr ""
+"Para os entusiastas de áudio e músicos que querem criar, editar e produzir "
+"áudio e música no Linux."
+
+#: data/content/index.html:90 data/content/index.html:153
 msgid "Teach Python with ease"
 msgstr ""
 
-#: data/content/index.html:82 data/content/index.html:135
+#: data/content/index.html:91 data/content/index.html:154
 msgid ""
 "A classroom lab for teaching the Python programming language to students"
 msgstr ""
 
-#: data/content/index.html:90 data/content/index.html:142
+#: data/content/index.html:96 data/content/index.html:161
 #: data/content/prerelease.html:154
 msgid "Dive into Robotics."
 msgstr "Mergulhe na Robótica."
 
-#: data/content/index.html:91 data/content/index.html:143
+#: data/content/index.html:97 data/content/index.html:162
 msgid ""
 "A wide variety of free and open robotics software packages for beginners and"
 " experts in robotics."
@@ -97,12 +110,12 @@ msgstr ""
 "Uma grande variedade de pacotes de software livres e abertos para iniciantes"
 " e especialistas em robótica."
 
-#: data/content/index.html:96 data/content/index.html:150
+#: data/content/index.html:106 data/content/index.html:169
 #: data/content/prerelease.html:200
 msgid "Thorough, safe and secure."
 msgstr "Completo, seguro e protegido."
 
-#: data/content/index.html:97 data/content/index.html:151
+#: data/content/index.html:107 data/content/index.html:170
 msgid ""
 "A safe test environment to work on security auditing, forensics, system "
 "rescue and teaching security testing methodologies."
@@ -111,11 +124,11 @@ msgstr ""
 "forense, recuperação de sistema e ensino de metodologias de teste de "
 "segurança."
 
-#: data/content/index.html:163 data/content/prerelease.html:338
+#: data/content/index.html:182 data/content/prerelease.html:338
 msgid "What is Fedora Labs?"
 msgstr "O que é o Fedora Labs?"
 
-#: data/content/index.html:164 data/content/prerelease.html:339
+#: data/content/index.html:183 data/content/prerelease.html:339
 msgid ""
 "Fedora Labs is a selection of curated bundles of purpose-driven software and"
 " content as curated and maintained by members of the Fedora Community. These"
@@ -127,27 +140,28 @@ msgstr ""
 "Fedora. Estes podem ser instalados como versões completas autônomas do "
 "Fedora ou como complementos para instalações existentes do Fedora."
 
-#: data/content/astronomy/download/index.html:90
-#: data/content/astronomy/download/index.html:109
-#: data/content/design-suite/download/index.html:96
-#: data/content/design-suite/download/index.html:115
-#: data/content/games/download/index.html:90
-#: data/content/games/download/index.html:109 data/content/index.html:175
-#: data/content/index.html:194 data/content/jam/download/index.html:90
-#: data/content/jam/download/index.html:109 data/content/prerelease.html:350
-#: data/content/prerelease.html:369
-#: data/content/python-classroom/download/index.html:111
-#: data/content/python-classroom/download/index.html:130
-#: data/content/robotics/download/index.html:90
-#: data/content/robotics/download/index.html:109
-#: data/content/scientific/download/index.html:90
-#: data/content/scientific/download/index.html:109
-#: data/content/security/download/index.html:90
-#: data/content/security/download/index.html:109
+#: data/content/index.html:194 data/content/index.html:213
+#: data/content/prerelease.html:350 data/content/prerelease.html:369
+#: data/content/astronomy/download/index.html:91
+#: data/content/astronomy/download/index.html:110
+#: data/content/design-suite/download/index.html:97
+#: data/content/design-suite/download/index.html:116
+#: data/content/games/download/index.html:91
+#: data/content/games/download/index.html:110
+#: data/content/jam/download/index.html:91
+#: data/content/jam/download/index.html:110
+#: data/content/python-classroom/download/index.html:113
+#: data/content/python-classroom/download/index.html:132
+#: data/content/robotics/download/index.html:91
+#: data/content/robotics/download/index.html:110
+#: data/content/scientific/download/index.html:91
+#: data/content/scientific/download/index.html:110
+#: data/content/security/download/index.html:91
+#: data/content/security/download/index.html:110
 msgid "Downloading"
 msgstr "Baixando"
 
-#: data/content/index.html:176 data/content/index.html:195
+#: data/content/index.html:195 data/content/index.html:214
 #: data/content/prerelease.html:351 data/content/prerelease.html:370
 msgid ""
 "You can download these tools as complete Fedora image, or you can install "
@@ -157,97 +171,100 @@ msgstr ""
 "instalá-las utilizando um gerenciador de software em uma instalação "
 "existente do Fedora."
 
-#: data/content/astronomy/download/index.html:92
-#: data/content/astronomy/download/index.html:97
-#: data/content/astronomy/download/index.html:102
-#: data/content/astronomy/download/index.html:123
-#: data/content/astronomy/download/index.html:126
-#: data/content/astronomy/download/index.html:129
-#: data/content/design-suite/download/index.html:98
-#: data/content/design-suite/download/index.html:103
-#: data/content/design-suite/download/index.html:108
-#: data/content/design-suite/download/index.html:129
-#: data/content/design-suite/download/index.html:132
-#: data/content/design-suite/download/index.html:135
-#: data/content/games/download/index.html:92
-#: data/content/games/download/index.html:97
-#: data/content/games/download/index.html:102
-#: data/content/games/download/index.html:123
-#: data/content/games/download/index.html:126
-#: data/content/games/download/index.html:129 data/content/index.html:177
-#: data/content/index.html:182 data/content/index.html:187
-#: data/content/index.html:208 data/content/index.html:211
-#: data/content/index.html:214 data/content/jam/download/index.html:92
-#: data/content/jam/download/index.html:97
-#: data/content/jam/download/index.html:102
-#: data/content/jam/download/index.html:123
-#: data/content/jam/download/index.html:126
-#: data/content/jam/download/index.html:129 data/content/prerelease.html:352
-#: data/content/prerelease.html:357 data/content/prerelease.html:362
-#: data/content/prerelease.html:383 data/content/prerelease.html:386
-#: data/content/prerelease.html:389
-#: data/content/python-classroom/download/index.html:113
-#: data/content/python-classroom/download/index.html:118
-#: data/content/python-classroom/download/index.html:123
-#: data/content/python-classroom/download/index.html:144
-#: data/content/python-classroom/download/index.html:147
-#: data/content/python-classroom/download/index.html:150
-#: data/content/robotics/download/index.html:92
-#: data/content/robotics/download/index.html:97
-#: data/content/robotics/download/index.html:102
-#: data/content/robotics/download/index.html:123
-#: data/content/robotics/download/index.html:126
-#: data/content/robotics/download/index.html:129
-#: data/content/scientific/download/index.html:92
-#: data/content/scientific/download/index.html:97
-#: data/content/scientific/download/index.html:102
-#: data/content/scientific/download/index.html:123
-#: data/content/scientific/download/index.html:126
-#: data/content/scientific/download/index.html:129
-#: data/content/security/download/index.html:92
-#: data/content/security/download/index.html:97
-#: data/content/security/download/index.html:102
-#: data/content/security/download/index.html:123
-#: data/content/security/download/index.html:126
-#: data/content/security/download/index.html:129
+#: data/content/index.html:196 data/content/index.html:201
+#: data/content/index.html:206 data/content/index.html:227
+#: data/content/index.html:230 data/content/index.html:233
+#: data/content/prerelease.html:352 data/content/prerelease.html:357
+#: data/content/prerelease.html:362 data/content/prerelease.html:383
+#: data/content/prerelease.html:386 data/content/prerelease.html:389
+#: data/content/astronomy/download/index.html:93
+#: data/content/astronomy/download/index.html:98
+#: data/content/astronomy/download/index.html:103
+#: data/content/astronomy/download/index.html:124
+#: data/content/astronomy/download/index.html:127
+#: data/content/astronomy/download/index.html:130
+#: data/content/design-suite/download/index.html:99
+#: data/content/design-suite/download/index.html:104
+#: data/content/design-suite/download/index.html:109
+#: data/content/design-suite/download/index.html:130
+#: data/content/design-suite/download/index.html:133
+#: data/content/design-suite/download/index.html:136
+#: data/content/games/download/index.html:93
+#: data/content/games/download/index.html:98
+#: data/content/games/download/index.html:103
+#: data/content/games/download/index.html:124
+#: data/content/games/download/index.html:127
+#: data/content/games/download/index.html:130
+#: data/content/jam/download/index.html:93
+#: data/content/jam/download/index.html:98
+#: data/content/jam/download/index.html:103
+#: data/content/jam/download/index.html:124
+#: data/content/jam/download/index.html:127
+#: data/content/jam/download/index.html:130
+#: data/content/python-classroom/download/index.html:115
+#: data/content/python-classroom/download/index.html:120
+#: data/content/python-classroom/download/index.html:125
+#: data/content/python-classroom/download/index.html:146
+#: data/content/python-classroom/download/index.html:149
+#: data/content/python-classroom/download/index.html:152
+#: data/content/robotics/download/index.html:93
+#: data/content/robotics/download/index.html:98
+#: data/content/robotics/download/index.html:103
+#: data/content/robotics/download/index.html:124
+#: data/content/robotics/download/index.html:127
+#: data/content/robotics/download/index.html:130
+#: data/content/scientific/download/index.html:93
+#: data/content/scientific/download/index.html:98
+#: data/content/scientific/download/index.html:103
+#: data/content/scientific/download/index.html:124
+#: data/content/scientific/download/index.html:127
+#: data/content/scientific/download/index.html:130
+#: data/content/security/download/index.html:93
+#: data/content/security/download/index.html:98
+#: data/content/security/download/index.html:103
+#: data/content/security/download/index.html:124
+#: data/content/security/download/index.html:127
+#: data/content/security/download/index.html:130
 msgid "Learn more"
 msgstr "Saiba mais"
 
-#: data/content/astronomy/download/index.html:95
-#: data/content/astronomy/download/index.html:113
-#: data/content/design-suite/download/index.html:101
-#: data/content/design-suite/download/index.html:119
-#: data/content/games/download/index.html:95
-#: data/content/games/download/index.html:113 data/content/index.html:180
-#: data/content/index.html:198 data/content/jam/download/index.html:95
-#: data/content/jam/download/index.html:113 data/content/prerelease.html:355
-#: data/content/prerelease.html:373
-#: data/content/python-classroom/download/index.html:116
-#: data/content/python-classroom/download/index.html:134
-#: data/content/robotics/download/index.html:95
-#: data/content/robotics/download/index.html:113
-#: data/content/scientific/download/index.html:95
-#: data/content/scientific/download/index.html:113
-#: data/content/security/download/index.html:95
-#: data/content/security/download/index.html:113
-msgid "Installing"
-msgstr "Instalando"
-
+#: data/content/index.html:199 data/content/index.html:217
+#: data/content/prerelease.html:355 data/content/prerelease.html:373
 #: data/content/astronomy/download/index.html:96
 #: data/content/astronomy/download/index.html:114
 #: data/content/design-suite/download/index.html:102
 #: data/content/design-suite/download/index.html:120
 #: data/content/games/download/index.html:96
-#: data/content/games/download/index.html:114 data/content/index.html:181
-#: data/content/index.html:199 data/content/jam/download/index.html:96
-#: data/content/jam/download/index.html:114 data/content/prerelease.html:356
-#: data/content/prerelease.html:374
+#: data/content/games/download/index.html:114
+#: data/content/jam/download/index.html:96
+#: data/content/jam/download/index.html:114
+#: data/content/python-classroom/download/index.html:118
+#: data/content/python-classroom/download/index.html:136
 #: data/content/robotics/download/index.html:96
 #: data/content/robotics/download/index.html:114
 #: data/content/scientific/download/index.html:96
 #: data/content/scientific/download/index.html:114
 #: data/content/security/download/index.html:96
 #: data/content/security/download/index.html:114
+msgid "Installing"
+msgstr "Instalando"
+
+#: data/content/index.html:200 data/content/index.html:218
+#: data/content/prerelease.html:356 data/content/prerelease.html:374
+#: data/content/astronomy/download/index.html:97
+#: data/content/astronomy/download/index.html:115
+#: data/content/design-suite/download/index.html:103
+#: data/content/design-suite/download/index.html:121
+#: data/content/games/download/index.html:97
+#: data/content/games/download/index.html:115
+#: data/content/jam/download/index.html:97
+#: data/content/jam/download/index.html:115
+#: data/content/robotics/download/index.html:97
+#: data/content/robotics/download/index.html:115
+#: data/content/scientific/download/index.html:97
+#: data/content/scientific/download/index.html:115
+#: data/content/security/download/index.html:97
+#: data/content/security/download/index.html:115
 msgid ""
 "To install a spin, you run the spin on your computer and click the \"Install"
 " to Hard Drive\" link on the desktop. You'll be guided through the install "
@@ -257,43 +274,45 @@ msgstr ""
 "link \"Instalar no Disco Rígido\" no desktop. Você será guiado no processo "
 "de instalação através de uma série de telas."
 
-#: data/content/astronomy/download/index.html:100
-#: data/content/astronomy/download/index.html:117
-#: data/content/design-suite/download/index.html:106
-#: data/content/design-suite/download/index.html:123
-#: data/content/games/download/index.html:100
-#: data/content/games/download/index.html:117 data/content/index.html:185
-#: data/content/index.html:202 data/content/jam/download/index.html:100
-#: data/content/jam/download/index.html:117 data/content/prerelease.html:360
-#: data/content/prerelease.html:377
-#: data/content/python-classroom/download/index.html:121
-#: data/content/python-classroom/download/index.html:138
-#: data/content/robotics/download/index.html:100
-#: data/content/robotics/download/index.html:117
-#: data/content/scientific/download/index.html:100
-#: data/content/scientific/download/index.html:117
-#: data/content/security/download/index.html:100
-#: data/content/security/download/index.html:117
-msgid "Using"
-msgstr "Usando"
-
+#: data/content/index.html:204 data/content/index.html:221
+#: data/content/prerelease.html:360 data/content/prerelease.html:377
 #: data/content/astronomy/download/index.html:101
 #: data/content/astronomy/download/index.html:118
 #: data/content/design-suite/download/index.html:107
 #: data/content/design-suite/download/index.html:124
 #: data/content/games/download/index.html:101
-#: data/content/games/download/index.html:118 data/content/index.html:186
-#: data/content/index.html:203 data/content/jam/download/index.html:101
-#: data/content/jam/download/index.html:118 data/content/prerelease.html:361
-#: data/content/prerelease.html:378
-#: data/content/python-classroom/download/index.html:122
-#: data/content/python-classroom/download/index.html:139
+#: data/content/games/download/index.html:118
+#: data/content/jam/download/index.html:101
+#: data/content/jam/download/index.html:118
+#: data/content/python-classroom/download/index.html:123
+#: data/content/python-classroom/download/index.html:140
 #: data/content/robotics/download/index.html:101
 #: data/content/robotics/download/index.html:118
 #: data/content/scientific/download/index.html:101
 #: data/content/scientific/download/index.html:118
 #: data/content/security/download/index.html:101
 #: data/content/security/download/index.html:118
+msgid "Using"
+msgstr "Usando"
+
+#: data/content/index.html:205 data/content/index.html:222
+#: data/content/prerelease.html:361 data/content/prerelease.html:378
+#: data/content/astronomy/download/index.html:102
+#: data/content/astronomy/download/index.html:119
+#: data/content/design-suite/download/index.html:108
+#: data/content/design-suite/download/index.html:125
+#: data/content/games/download/index.html:102
+#: data/content/games/download/index.html:119
+#: data/content/jam/download/index.html:102
+#: data/content/jam/download/index.html:119
+#: data/content/python-classroom/download/index.html:124
+#: data/content/python-classroom/download/index.html:141
+#: data/content/robotics/download/index.html:102
+#: data/content/robotics/download/index.html:119
+#: data/content/scientific/download/index.html:102
+#: data/content/scientific/download/index.html:119
+#: data/content/security/download/index.html:102
+#: data/content/security/download/index.html:119
 msgid ""
 "After installing either the software bundle or the complete Fedora version "
 "you can run these tools by launching the applications that correspond with "
@@ -362,10 +381,6 @@ msgstr ""
 msgid "%s GB ISO Image"
 msgstr "Imagem ISO de %s GB"
 
-#: data/content/prerelease.html:110
-msgid "Unleash your inner musician."
-msgstr "Liberte o seu músico dentro de você."
-
 #: data/content/prerelease.html:132
 msgid "Teach Python with ease."
 msgstr "Ensine Python com facilidade."
@@ -420,15 +435,11 @@ msgstr ""
 msgid "Validate 64-bit!"
 msgstr "Validar 64-bit!"
 
-#: data/content/verify.html:39
-msgid "Validate 32-bit!"
-msgstr "Validar 32-bit!"
-
-#: data/content/verify.html:45
+#: data/content/verify.html:46
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Em seguida, importe a(s) chave(s) GPG do Fedora:"
 
-#: data/content/verify.html:47
+#: data/content/verify.html:48
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
@@ -437,42 +448,46 @@ msgstr ""
 "Você pode verificar os detalhes da(s) chave(s) GPG <a "
 "href=\"%s/%s/keys\">aqui</a>."
 
-#: data/content/verify.html:48
+#: data/content/verify.html:49
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Agora, verifique se o arquivo CHECKSUM é válido:"
 
-#: data/content/verify.html:50
+#: data/content/verify.html:51
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr ""
 "O arquivo CHECKSUM deve ter uma boa assinatura de uma das seguintes chaves:"
 
-#: data/content/verify.html:52
+#: data/content/verify.html:53
+msgid "Fedora 28"
+msgstr ""
+
+#: data/content/verify.html:54
 msgid "Fedora 27"
 msgstr ""
 
-#: data/content/verify.html:53
+#: data/content/verify.html:55
 msgid "Fedora 26"
 msgstr "Fedora 26"
 
-#: data/content/verify.html:54
+#: data/content/verify.html:56
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Arquiteturas secundárias do Fedora 26 (AArch64, PPC64, PPC64le, s390 e "
 "s390x)"
 
-#: data/content/verify.html:55
+#: data/content/verify.html:57
 msgid "Fedora 25"
 msgstr "Fedora 25"
 
-#: data/content/verify.html:56
+#: data/content/verify.html:58
 msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Arquiteturas secundárias do Fedora 25 (AArch64, PPC64, PPC64le, s390 e "
 "s390x)"
 
-#: data/content/verify.html:58
+#: data/content/verify.html:60
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
@@ -480,18 +495,18 @@ msgstr ""
 "Finalmente, agora que o arquivo CHECKSUM foi verificado, verifique se o "
 "checksum da image corresponde:"
 
-#: data/content/verify.html:60
+#: data/content/verify.html:62
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
 "Se a saída indica que o arquivo é válido, então ele está pronto para uso!"
 
-#: data/content/verify.html:61
+#: data/content/verify.html:63
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr ""
 "Como faço para verificar a minha imagem baixada em outro sistema "
 "operacional?"
 
-#: data/content/verify.html:62
+#: data/content/verify.html:64
 msgid "Read these instructions to validate your image."
 msgstr "Leia estas instruções para validar sua imagem."
 
@@ -696,42 +711,42 @@ msgstr "Astromatic"
 msgid "AstrOmatic is a set of astronomical pipeline software."
 msgstr "AstrOmatic é um conjunto de software de pipeline astronômico."
 
-#: data/content/astronomy/download/index.html:141
 #: data/content/astronomy/index.html:140
-#: data/content/design-suite/download/index.html:147
+#: data/content/astronomy/download/index.html:142
 #: data/content/design-suite/index.html:140
-#: data/content/games/download/index.html:141
-#: data/content/games/index.html:140 data/content/jam/download/index.html:141
-#: data/content/jam/index.html:140
-#: data/content/robotics/download/index.html:141
+#: data/content/design-suite/download/index.html:148
+#: data/content/games/index.html:140
+#: data/content/games/download/index.html:142 data/content/jam/index.html:140
+#: data/content/jam/download/index.html:142
 #: data/content/robotics/index.html:140
-#: data/content/scientific/download/index.html:141
+#: data/content/robotics/download/index.html:142
 #: data/content/scientific/index.html:140
-#: data/content/security/download/index.html:141
+#: data/content/scientific/download/index.html:142
 #: data/content/security/index.html:140
+#: data/content/security/download/index.html:142
 #: data/templates/python-classroom/supportresources.html:13
 msgid "Support Resources"
 msgstr "Recursos de suporte"
 
-#: data/content/astronomy/download/index.html:146
 #: data/content/astronomy/index.html:145
-#: data/content/design-suite/download/index.html:152
+#: data/content/astronomy/download/index.html:147
 #: data/content/design-suite/index.html:145
-#: data/content/games/download/index.html:146
-#: data/content/games/index.html:145 data/content/jam/download/index.html:146
-#: data/content/jam/index.html:145
-#: data/content/robotics/download/index.html:146
+#: data/content/design-suite/download/index.html:153
+#: data/content/games/index.html:145
+#: data/content/games/download/index.html:147 data/content/jam/index.html:145
+#: data/content/jam/download/index.html:147
 #: data/content/robotics/index.html:145
-#: data/content/scientific/download/index.html:146
+#: data/content/robotics/download/index.html:147
 #: data/content/scientific/index.html:145
-#: data/content/security/download/index.html:146
+#: data/content/scientific/download/index.html:147
 #: data/content/security/index.html:145
+#: data/content/security/download/index.html:147
 #: data/templates/python-classroom/supportresources.html:18
 msgid "Chat"
 msgstr "Bate-papo"
 
-#: data/content/astronomy/download/index.html:147
 #: data/content/astronomy/index.html:146
+#: data/content/astronomy/download/index.html:148
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-"
@@ -742,25 +757,25 @@ msgstr ""
 "\">#fedora-astronomy</a> no <strong>irc.freenode.org</strong> para um bate-"
 "papo."
 
-#: data/content/astronomy/download/index.html:150
 #: data/content/astronomy/index.html:149
-#: data/content/design-suite/download/index.html:156
+#: data/content/astronomy/download/index.html:151
 #: data/content/design-suite/index.html:149
-#: data/content/games/download/index.html:150
-#: data/content/games/index.html:149 data/content/jam/download/index.html:150
-#: data/content/jam/index.html:149
-#: data/content/robotics/download/index.html:150
+#: data/content/design-suite/download/index.html:157
+#: data/content/games/index.html:149
+#: data/content/games/download/index.html:151 data/content/jam/index.html:149
+#: data/content/jam/download/index.html:151
 #: data/content/robotics/index.html:149
-#: data/content/scientific/download/index.html:150
+#: data/content/robotics/download/index.html:151
 #: data/content/scientific/index.html:149
-#: data/content/security/download/index.html:150
+#: data/content/scientific/download/index.html:151
 #: data/content/security/index.html:149
+#: data/content/security/download/index.html:151
 #: data/templates/python-classroom/supportresources.html:22
 msgid "Email"
 msgstr "E-mail"
 
-#: data/content/astronomy/download/index.html:151
 #: data/content/astronomy/index.html:150
+#: data/content/astronomy/download/index.html:152
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -769,25 +784,25 @@ msgstr ""
 "Usuários e desenvolvedores estão disponíveis na lista discussão <a "
 "href=\"%s\">astronomy@lists.fedoraproject.org</a>."
 
-#: data/content/astronomy/download/index.html:154
 #: data/content/astronomy/index.html:153
-#: data/content/design-suite/download/index.html:160
+#: data/content/astronomy/download/index.html:155
 #: data/content/design-suite/index.html:153
-#: data/content/games/download/index.html:154
-#: data/content/games/index.html:153 data/content/jam/download/index.html:154
-#: data/content/jam/index.html:153
-#: data/content/robotics/download/index.html:154
+#: data/content/design-suite/download/index.html:161
+#: data/content/games/index.html:153
+#: data/content/games/download/index.html:155 data/content/jam/index.html:153
+#: data/content/jam/download/index.html:155
 #: data/content/robotics/index.html:153
-#: data/content/scientific/download/index.html:154
+#: data/content/robotics/download/index.html:155
 #: data/content/scientific/index.html:153
-#: data/content/security/download/index.html:154
+#: data/content/scientific/download/index.html:155
 #: data/content/security/index.html:153
+#: data/content/security/download/index.html:155
 #: data/templates/python-classroom/supportresources.html:26
 msgid "Documentation"
 msgstr "Documentação"
 
-#: data/content/astronomy/download/index.html:155
 #: data/content/astronomy/index.html:154
+#: data/content/astronomy/download/index.html:156
 #, python-format
 msgid ""
 "Specific documentation is available at the <a href=\"%s\">Astronomy wiki "
@@ -796,19 +811,19 @@ msgstr ""
 "A documentação específica está disponível na página <a href=\"%s\">wiki do "
 "Astronomy</a>."
 
-#: data/content/astronomy/download/index.html:160
 #: data/content/astronomy/index.html:159
-#: data/content/design-suite/download/index.html:166
+#: data/content/astronomy/download/index.html:161
 #: data/content/design-suite/index.html:159
-#: data/content/games/download/index.html:160
-#: data/content/games/index.html:159 data/content/jam/download/index.html:160
-#: data/content/jam/index.html:159
-#: data/content/robotics/download/index.html:160
+#: data/content/design-suite/download/index.html:167
+#: data/content/games/index.html:159
+#: data/content/games/download/index.html:161 data/content/jam/index.html:159
+#: data/content/jam/download/index.html:161
 #: data/content/robotics/index.html:159
-#: data/content/scientific/download/index.html:160
+#: data/content/robotics/download/index.html:161
 #: data/content/scientific/index.html:159
-#: data/content/security/download/index.html:160
+#: data/content/scientific/download/index.html:161
 #: data/content/security/index.html:159
+#: data/content/security/download/index.html:161
 #: data/templates/python-classroom/supportresources.html:32
 msgid "General Help Using Fedora"
 msgstr "Ajuda Geral Usando o Fedora"
@@ -935,70 +950,28 @@ msgstr ""
 msgid "Other Downloads"
 msgstr "Outros Downloads"
 
-#: data/content/astronomy/download/index.html:35
-#: data/content/design-suite/download/index.html:40
-#: data/content/games/download/index.html:35
-#: data/content/jam/download/index.html:35
-#: data/content/python-classroom/download/index.html:44
-#: data/content/robotics/download/index.html:35
-#: data/content/scientific/download/index.html:35
-#: data/content/security/download/index.html:35
-msgid "Direct Downloads"
-msgstr "Downloads Diretos"
-
-#: data/content/astronomy/download/index.html:38
-#: data/content/design-suite/download/index.html:43
-#: data/content/games/download/index.html:38
-#: data/content/jam/download/index.html:38
-#: data/content/python-classroom/download/index.html:47
-#: data/content/robotics/download/index.html:38
-#: data/content/scientific/download/index.html:38
-#: data/content/security/download/index.html:38
-#, python-format
-msgid "32-bit %sGB Live image"
-msgstr "Imagem Live 32-bit de %sGB"
-
-#: data/content/astronomy/download/index.html:41
-#: data/content/design-suite/download/index.html:47
-#: data/content/games/download/index.html:41
-#: data/content/jam/download/index.html:41
-#: data/content/python-classroom/download/index.html:62
-#: data/content/robotics/download/index.html:41
-#: data/content/scientific/download/index.html:41
-#: data/content/security/download/index.html:41
+#: data/content/astronomy/download/index.html:42
+#: data/content/design-suite/download/index.html:48
+#: data/content/games/download/index.html:42
+#: data/content/jam/download/index.html:42
+#: data/content/python-classroom/download/index.html:64
+#: data/content/robotics/download/index.html:42
+#: data/content/scientific/download/index.html:42
+#: data/content/security/download/index.html:42
 msgid "Older Releases"
 msgstr "Versões antigas"
 
-#: data/content/astronomy/download/index.html:51
-#: data/content/design-suite/download/index.html:57
-#: data/content/games/download/index.html:51
-#: data/content/jam/download/index.html:51
-#: data/content/python-classroom/download/index.html:72
-#: data/content/robotics/download/index.html:51
-#: data/content/scientific/download/index.html:51
-#: data/content/security/download/index.html:51
+#: data/content/astronomy/download/index.html:52
+#: data/content/design-suite/download/index.html:58
+#: data/content/games/download/index.html:52
+#: data/content/jam/download/index.html:52
+#: data/content/python-classroom/download/index.html:74
+#: data/content/robotics/download/index.html:52
+#: data/content/scientific/download/index.html:52
+#: data/content/security/download/index.html:52
 #, python-format
 msgid "F%(rel)s Alpha"
 msgstr "F%(rel)s Alfa"
-
-#: data/content/astronomy/download/index.html:52
-#: data/content/astronomy/download/index.html:62
-#: data/content/design-suite/download/index.html:58
-#: data/content/design-suite/download/index.html:68
-#: data/content/games/download/index.html:52
-#: data/content/games/download/index.html:62
-#: data/content/jam/download/index.html:52
-#: data/content/jam/download/index.html:62
-#: data/content/python-classroom/download/index.html:73
-#: data/content/python-classroom/download/index.html:83
-#: data/content/robotics/download/index.html:52
-#: data/content/robotics/download/index.html:62
-#: data/content/scientific/download/index.html:52
-#: data/content/scientific/download/index.html:62
-#: data/content/security/download/index.html:52
-#: data/content/security/download/index.html:62
-msgid "Try a pre-release"
-msgstr "Experimente um pré-lançamento"
 
 #: data/content/astronomy/download/index.html:53
 #: data/content/astronomy/download/index.html:63
@@ -1008,16 +981,16 @@ msgstr "Experimente um pré-lançamento"
 #: data/content/games/download/index.html:63
 #: data/content/jam/download/index.html:53
 #: data/content/jam/download/index.html:63
-#: data/content/python-classroom/download/index.html:74
-#: data/content/python-classroom/download/index.html:84
+#: data/content/python-classroom/download/index.html:75
+#: data/content/python-classroom/download/index.html:85
 #: data/content/robotics/download/index.html:53
 #: data/content/robotics/download/index.html:63
 #: data/content/scientific/download/index.html:53
 #: data/content/scientific/download/index.html:63
 #: data/content/security/download/index.html:53
 #: data/content/security/download/index.html:63
-msgid "We're working on our next release."
-msgstr "Estamos trabalhando em nosso próximo lançamento."
+msgid "Try a pre-release"
+msgstr "Experimente um pré-lançamento"
 
 #: data/content/astronomy/download/index.html:54
 #: data/content/astronomy/download/index.html:64
@@ -1027,107 +1000,126 @@ msgstr "Estamos trabalhando em nosso próximo lançamento."
 #: data/content/games/download/index.html:64
 #: data/content/jam/download/index.html:54
 #: data/content/jam/download/index.html:64
-#: data/content/python-classroom/download/index.html:75
-#: data/content/python-classroom/download/index.html:85
+#: data/content/python-classroom/download/index.html:76
+#: data/content/python-classroom/download/index.html:86
 #: data/content/robotics/download/index.html:54
 #: data/content/robotics/download/index.html:64
 #: data/content/scientific/download/index.html:54
 #: data/content/scientific/download/index.html:64
 #: data/content/security/download/index.html:54
 #: data/content/security/download/index.html:64
+msgid "We're working on our next release."
+msgstr "Estamos trabalhando em nosso próximo lançamento."
+
+#: data/content/astronomy/download/index.html:55
+#: data/content/astronomy/download/index.html:65
+#: data/content/design-suite/download/index.html:61
+#: data/content/design-suite/download/index.html:71
+#: data/content/games/download/index.html:55
+#: data/content/games/download/index.html:65
+#: data/content/jam/download/index.html:55
+#: data/content/jam/download/index.html:65
+#: data/content/python-classroom/download/index.html:77
+#: data/content/python-classroom/download/index.html:87
+#: data/content/robotics/download/index.html:55
+#: data/content/robotics/download/index.html:65
+#: data/content/scientific/download/index.html:55
+#: data/content/scientific/download/index.html:65
+#: data/content/security/download/index.html:55
+#: data/content/security/download/index.html:65
 #, python-format
 msgid "Help us get F%(rel)s ready!"
 msgstr "Nos ajude a ter o F%(rel)s pronto!"
 
-#: data/content/astronomy/download/index.html:55
-#: data/content/design-suite/download/index.html:61
-#: data/content/games/download/index.html:55
-#: data/content/jam/download/index.html:55
-#: data/content/python-classroom/download/index.html:76
-#: data/content/robotics/download/index.html:55
-#: data/content/scientific/download/index.html:55
-#: data/content/security/download/index.html:55
+#: data/content/astronomy/download/index.html:56
+#: data/content/design-suite/download/index.html:62
+#: data/content/games/download/index.html:56
+#: data/content/jam/download/index.html:56
+#: data/content/python-classroom/download/index.html:78
+#: data/content/robotics/download/index.html:56
+#: data/content/scientific/download/index.html:56
+#: data/content/security/download/index.html:56
 #, python-format
 msgid "Download F%(rel)s Alpha images"
 msgstr "Download de imagens F%(rel)s Alfa"
 
-#: data/content/astronomy/download/index.html:56
-#: data/content/astronomy/download/index.html:66
-#: data/content/design-suite/download/index.html:62
-#: data/content/design-suite/download/index.html:72
-#: data/content/games/download/index.html:56
-#: data/content/games/download/index.html:66
-#: data/content/jam/download/index.html:56
-#: data/content/jam/download/index.html:66
-#: data/content/python-classroom/download/index.html:77
-#: data/content/python-classroom/download/index.html:87
-#: data/content/robotics/download/index.html:56
-#: data/content/robotics/download/index.html:66
-#: data/content/scientific/download/index.html:56
-#: data/content/scientific/download/index.html:66
-#: data/content/security/download/index.html:56
-#: data/content/security/download/index.html:66
+#: data/content/astronomy/download/index.html:57
+#: data/content/astronomy/download/index.html:67
+#: data/content/design-suite/download/index.html:63
+#: data/content/design-suite/download/index.html:73
+#: data/content/games/download/index.html:57
+#: data/content/games/download/index.html:67
+#: data/content/jam/download/index.html:57
+#: data/content/jam/download/index.html:67
+#: data/content/python-classroom/download/index.html:79
+#: data/content/python-classroom/download/index.html:89
+#: data/content/robotics/download/index.html:57
+#: data/content/robotics/download/index.html:67
+#: data/content/scientific/download/index.html:57
+#: data/content/scientific/download/index.html:67
+#: data/content/security/download/index.html:57
+#: data/content/security/download/index.html:67
 msgid "How to test pre-releases"
 msgstr "Como testar os pré-lançamentos"
 
-#: data/content/astronomy/download/index.html:61
-#: data/content/design-suite/download/index.html:67
-#: data/content/games/download/index.html:61
-#: data/content/jam/download/index.html:61
-#: data/content/python-classroom/download/index.html:82
-#: data/content/robotics/download/index.html:61
-#: data/content/scientific/download/index.html:61
-#: data/content/security/download/index.html:61
+#: data/content/astronomy/download/index.html:62
+#: data/content/design-suite/download/index.html:68
+#: data/content/games/download/index.html:62
+#: data/content/jam/download/index.html:62
+#: data/content/python-classroom/download/index.html:84
+#: data/content/robotics/download/index.html:62
+#: data/content/scientific/download/index.html:62
+#: data/content/security/download/index.html:62
 #, python-format
 msgid "F%(rel)s Beta"
 msgstr "F%(rel)s Beta"
 
-#: data/content/astronomy/download/index.html:65
-#: data/content/design-suite/download/index.html:71
-#: data/content/games/download/index.html:65
-#: data/content/jam/download/index.html:65
-#: data/content/python-classroom/download/index.html:86
-#: data/content/robotics/download/index.html:65
-#: data/content/scientific/download/index.html:65
-#: data/content/security/download/index.html:65
+#: data/content/astronomy/download/index.html:66
+#: data/content/design-suite/download/index.html:72
+#: data/content/games/download/index.html:66
+#: data/content/jam/download/index.html:66
+#: data/content/python-classroom/download/index.html:88
+#: data/content/robotics/download/index.html:66
+#: data/content/scientific/download/index.html:66
+#: data/content/security/download/index.html:66
 #, python-format
 msgid "Download F%(rel)s Beta images"
 msgstr "Download de imagens F%(rel)s Beta"
 
-#: data/content/astronomy/download/index.html:73
-#: data/content/design-suite/download/index.html:79
-#: data/content/games/download/index.html:73
-#: data/content/jam/download/index.html:73
-#: data/content/python-classroom/download/index.html:94
-#: data/content/robotics/download/index.html:73
-#: data/content/scientific/download/index.html:73
-#: data/content/security/download/index.html:73
+#: data/content/astronomy/download/index.html:74
+#: data/content/design-suite/download/index.html:80
+#: data/content/games/download/index.html:74
+#: data/content/jam/download/index.html:74
+#: data/content/python-classroom/download/index.html:96
+#: data/content/robotics/download/index.html:74
+#: data/content/scientific/download/index.html:74
+#: data/content/security/download/index.html:74
 msgid "Verify"
 msgstr "Verificar"
 
-#: data/content/astronomy/download/index.html:76
-#: data/content/design-suite/download/index.html:82
-#: data/content/games/download/index.html:76
-#: data/content/jam/download/index.html:76
-#: data/content/python-classroom/download/index.html:97
-#: data/content/robotics/download/index.html:76
-#: data/content/scientific/download/index.html:76
-#: data/content/security/download/index.html:76
+#: data/content/astronomy/download/index.html:77
+#: data/content/design-suite/download/index.html:83
+#: data/content/games/download/index.html:77
+#: data/content/jam/download/index.html:77
+#: data/content/python-classroom/download/index.html:99
+#: data/content/robotics/download/index.html:77
+#: data/content/scientific/download/index.html:77
+#: data/content/security/download/index.html:77
 msgid "Verify your Image"
 msgstr "Verifique sua Imagem"
 
-#: data/content/astronomy/download/index.html:91
-#: data/content/astronomy/download/index.html:110
-#: data/content/games/download/index.html:91
-#: data/content/games/download/index.html:110
-#: data/content/jam/download/index.html:91
-#: data/content/jam/download/index.html:110
-#: data/content/robotics/download/index.html:91
-#: data/content/robotics/download/index.html:110
-#: data/content/scientific/download/index.html:91
-#: data/content/scientific/download/index.html:110
-#: data/content/security/download/index.html:91
-#: data/content/security/download/index.html:110
+#: data/content/astronomy/download/index.html:92
+#: data/content/astronomy/download/index.html:111
+#: data/content/games/download/index.html:92
+#: data/content/games/download/index.html:111
+#: data/content/jam/download/index.html:92
+#: data/content/jam/download/index.html:111
+#: data/content/robotics/download/index.html:92
+#: data/content/robotics/download/index.html:111
+#: data/content/scientific/download/index.html:92
+#: data/content/scientific/download/index.html:111
+#: data/content/security/download/index.html:92
+#: data/content/security/download/index.html:111
 msgid ""
 "Spin downloads are offered via direct download, but you can also get them "
 "via BitTorrent. In this case you will need to install a BitTorrent client in"
@@ -1139,13 +1131,13 @@ msgstr ""
 "cliente BitTorrent para baixar um spin. Se você não puder usar Bittorrent, "
 "alguns spins oferecem métodos de download alternativos."
 
-#: data/content/astronomy/download/index.html:161
-#: data/content/design-suite/download/index.html:167
-#: data/content/games/download/index.html:161
-#: data/content/jam/download/index.html:161
-#: data/content/robotics/download/index.html:161
-#: data/content/scientific/download/index.html:161
-#: data/content/security/download/index.html:161
+#: data/content/astronomy/download/index.html:162
+#: data/content/design-suite/download/index.html:168
+#: data/content/games/download/index.html:162
+#: data/content/jam/download/index.html:162
+#: data/content/robotics/download/index.html:162
+#: data/content/scientific/download/index.html:162
+#: data/content/security/download/index.html:162
 #, python-format
 msgid ""
 "Sometimes you may encounter an issue with this spin that you can get help "
@@ -1282,8 +1274,8 @@ msgstr ""
 "Gerencie, instale, e gere perfis de cores para o seu desktop. Mantenha sua "
 "tela calibrada!"
 
-#: data/content/design-suite/download/index.html:153
 #: data/content/design-suite/index.html:146
+#: data/content/design-suite/download/index.html:154
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-design</a> "
@@ -1293,8 +1285,8 @@ msgstr ""
 "\">#fedora-design</a> no <strong>irc.freenode.org</strong> para um bate-"
 "papo."
 
-#: data/content/design-suite/download/index.html:157
 #: data/content/design-suite/index.html:150
+#: data/content/design-suite/download/index.html:158
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a href=\"%s"
@@ -1303,8 +1295,8 @@ msgstr ""
 "Usuários e desenvolvedores estão disponíveis na lista discussão <a href=\"%s"
 "\">design-team@lists.fedoraproject.org</a>."
 
-#: data/content/design-suite/download/index.html:161
 #: data/content/design-suite/index.html:154
+#: data/content/design-suite/download/index.html:162
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
@@ -1339,7 +1331,7 @@ msgstr ""
 " você poderá instalar o Fedora diretamente em seu disco rígido diretamente "
 "da Mídia Live desktop se você desejar."
 
-#: data/content/design-suite/download/index.html:97
+#: data/content/design-suite/download/index.html:98
 msgid ""
 "Spin downloads are offered via direct download, but you can also get them "
 "via BitTorrent. In this case you will need to install a Bittorrent client in"
@@ -1351,7 +1343,7 @@ msgstr ""
 "cliente BitTorrent para baixar um spin. Se você não puder usar Bittorrent, "
 "alguns spins oferecem métodos de download alternativos."
 
-#: data/content/design-suite/download/index.html:116
+#: data/content/design-suite/download/index.html:117
 msgid ""
 "Spin downloads are offered via direct download, but you can also get them "
 "via BitTorrent. In this case you will need to install a BitTorrent client in"
@@ -1529,10 +1521,10 @@ msgstr ""
 "Fish Fillets NG é um port para o Linux do maravilhoso jogo de quebra-cabeças"
 " de peixes do ALTAR interativo."
 
-#: data/content/games/download/index.html:147
 #: data/content/games/index.html:146
-#: data/content/security/download/index.html:147
+#: data/content/games/download/index.html:148
 #: data/content/security/index.html:146
+#: data/content/security/download/index.html:148
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora</a> IRC "
@@ -1542,8 +1534,8 @@ msgstr ""
 "href=\"%s\">#fedora</a> no <strong>irc.freenode.org</strong> para um bate-"
 "papo."
 
-#: data/content/games/download/index.html:151
 #: data/content/games/index.html:150
+#: data/content/games/download/index.html:152
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -1552,8 +1544,8 @@ msgstr ""
 "Usuários e desenvolvedores estão disponíveis na lista discussão <a "
 "href=\"%s\">games@lists.fedoraproject.org</a>."
 
-#: data/content/games/download/index.html:155
 #: data/content/games/index.html:154
+#: data/content/games/download/index.html:156
 #, python-format
 msgid ""
 "Specific documentation is available at the <a href=\"%s\">Games wiki "
@@ -1717,7 +1709,7 @@ msgstr ""
 "Plugins de áudio estado-da-arte profissionais para músicos e software multi-"
 "faixa."
 
-#: data/content/jam/download/index.html:147 data/content/jam/index.html:146
+#: data/content/jam/index.html:146 data/content/jam/download/index.html:148
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-audio</a> "
@@ -1726,7 +1718,7 @@ msgstr ""
 "Usuários e desenvolvedores estão disponíveis no canal IRC <a href=\"%s"
 "\">#fedora-audio</a> no <strong>irc.freenode.org</strong> para um bate-papo."
 
-#: data/content/jam/download/index.html:151 data/content/jam/index.html:150
+#: data/content/jam/index.html:150 data/content/jam/download/index.html:152
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -1735,7 +1727,7 @@ msgstr ""
 "Usuários e desenvolvedores estão disponíveis na lista discussão <a "
 "href=\"%s\">music@lists.fedoraproject.org</a>."
 
-#: data/content/jam/download/index.html:155 data/content/jam/index.html:154
+#: data/content/jam/index.html:154 data/content/jam/download/index.html:156
 #, python-format
 msgid ""
 "Specific documentation is available at the <a href=\"%s\">Jam wiki page</a>."
@@ -1920,26 +1912,21 @@ msgid ""
 "desktop if you like."
 msgstr ""
 
-#: data/content/python-classroom/download/index.html:50
+#: data/content/python-classroom/download/index.html:44
+msgid "Direct Downloads"
+msgstr "Downloads Diretos"
+
+#: data/content/python-classroom/download/index.html:51
 #, python-format
 msgid "Libvirt %sMB Vagrant image"
 msgstr ""
 
-#: data/content/python-classroom/download/index.html:53
+#: data/content/python-classroom/download/index.html:54
 #, python-format
 msgid "VirtualBox %sMB Vagrant image"
 msgstr ""
 
-#: data/content/python-classroom/download/index.html:56
-msgid "ARM<span class=\"sup\">®</span> Technology"
-msgstr ""
-
-#: data/content/python-classroom/download/index.html:59
-#, python-format
-msgid "%sGB ARM image"
-msgstr ""
-
-#: data/content/python-classroom/download/index.html:112
+#: data/content/python-classroom/download/index.html:114
 msgid ""
 "Lab downloads are offered via direct download, but you can also get them via"
 " BitTorrent. In this case you will need to install a BitTorrent client in "
@@ -1947,15 +1934,15 @@ msgid ""
 "alternative download methods."
 msgstr ""
 
-#: data/content/python-classroom/download/index.html:117
-#: data/content/python-classroom/download/index.html:135
+#: data/content/python-classroom/download/index.html:119
+#: data/content/python-classroom/download/index.html:137
 msgid ""
 "To install a lab, you run the lab on your computer and click the \"Install "
 "to Hard Drive\" link on the desktop. You'll be guided through the install "
 "process via a series of prompts."
 msgstr ""
 
-#: data/content/python-classroom/download/index.html:131
+#: data/content/python-classroom/download/index.html:133
 msgid ""
 "lab downloads are offered via direct download, but you can also get them via"
 " BitTorrent. In this case you will need to install a BitTorrent client in "
@@ -2075,8 +2062,8 @@ msgid "Libraries and applications for robotics system development."
 msgstr ""
 "Bibliotecas e aplicações para o desenvolvimento de sistemas de robótica."
 
-#: data/content/robotics/download/index.html:147
 #: data/content/robotics/index.html:146
+#: data/content/robotics/download/index.html:148
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-"
@@ -2087,8 +2074,8 @@ msgstr ""
 "\">#fedora-robotics</a> no <strong>irc.freenode.org</strong> para um bate-"
 "papo."
 
-#: data/content/robotics/download/index.html:151
 #: data/content/robotics/index.html:150
+#: data/content/robotics/download/index.html:152
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -2097,8 +2084,8 @@ msgstr ""
 "Usuários e desenvolvedores estão disponíveis na lista discussão <a "
 "href=\"%s\">robotics@lists.fedoraproject.org</a>."
 
-#: data/content/robotics/download/index.html:155
 #: data/content/robotics/index.html:154
+#: data/content/robotics/download/index.html:156
 #, python-format
 msgid ""
 "Specific documentation is available at the <a href=\"%s\">Robotics Suite "
@@ -2260,8 +2247,8 @@ msgstr ""
 "O GNU Scientific Library é uma biblioteca C/C ++ que fornece uma extensa "
 "coleção de rotinas matemáticas."
 
-#: data/content/scientific/download/index.html:147
 #: data/content/scientific/index.html:146
+#: data/content/scientific/download/index.html:148
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-science</a>"
@@ -2271,8 +2258,8 @@ msgstr ""
 "\">#fedora-science</a> no <strong>irc.freenode.org</strong> para um bate-"
 "papo."
 
-#: data/content/scientific/download/index.html:151
 #: data/content/scientific/index.html:150
+#: data/content/scientific/download/index.html:152
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -2316,7 +2303,7 @@ msgstr ""
 "poderá instalar o Fedora diretamente em seu disco rígido diretamente da "
 "Mídia Live desktop se você desejar."
 
-#: data/content/scientific/download/index.html:155
+#: data/content/scientific/download/index.html:156
 #, python-format
 msgid ""
 "Specific documentation is available at the <a href=\"%s\">Scientific wiki "
@@ -2461,8 +2448,8 @@ msgstr ""
 "Yersinia é uma ferramenta de rede projetada para tirar vantagem de algumas "
 "fraquezas em diferentes protocolos de rede."
 
-#: data/content/security/download/index.html:151
 #: data/content/security/index.html:150
+#: data/content/security/download/index.html:152
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -2471,8 +2458,8 @@ msgstr ""
 "Usuários e desenvolvedores estão disponíveis na lista de e-mail <a "
 "href=\"%s\">users@lists.fedoraproject.org</a>."
 
-#: data/content/security/download/index.html:155
 #: data/content/security/index.html:154
+#: data/content/security/download/index.html:156
 #, python-format
 msgid ""
 "Specific documentation is available at the <a href=\"%s\">Security Lab wiki "
@@ -2666,24 +2653,17 @@ msgstr "Documentação e outros recursos"
 #, python-format
 msgid ""
 "Before installing Fedora, you may want to confirm your system meets minimum "
-"requirements for Fedora. Consult <a href=\"%s\">the online release notes</a>"
-" to see minimum requirements and recommendations."
+"requirements for Fedora. Consult <a href=\"%(release_notes)s\">the online "
+"release notes</a> to see minimum requirements and recommendations."
 msgstr ""
-"Antes de instalar o Fedora, você pode desejar confirmar se o seu sistema "
-"atende aos requisitos mínimos para o Fedora. Consulte <a href=\"%s\">as "
-"notas de lançamento online</a> para ver os requisitos mínimos e "
-"recomendações."
 
 #: data/templates/generic/docs-links.html:10
 #, python-format
 msgid ""
-"There is also a <a href=\"%s\">complete Installation Guide</a> available. We"
-" recommend you look through it before installing to your system, since it "
-"answers many common questions."
+"There is also a <a href=\"%(install_guide)s\">complete Installation "
+"Guide</a> available. We recommend you look through it before installing to "
+"your system, since it answers many common questions."
 msgstr ""
-"Há também um <a href=\"%s\">Guia completo de instalação</a> disponível. "
-"Recomendamos que você dê uma lida nele antes de instalar o seu sistema, uma "
-"vez que responde a muitas perguntas comuns."
 
 #: data/templates/generic/other-media-sources.html:8
 msgid "Other ways of obtaining media"
@@ -2709,10 +2689,6 @@ msgstr ""
 "instalação do Fedora pelo <a href=\"%s\"> programa de mídia gratuita do "
 "Fedora</a>."
 
-#: data/templates/generic/splash-checksum.html:15
-msgid "Validate 32bit!"
-msgstr "Validar 32bit!"
-
 #: data/templates/generic/unofficial.html:11
 #, python-format
 msgid ""
@@ -2729,10 +2705,6 @@ msgstr ""
 
 #: data/templates/python-classroom/splash-python.html:10
 msgid "Validate Vagrant!"
-msgstr ""
-
-#: data/templates/python-classroom/splash-python.html:13
-msgid "Validate ARM!"
 msgstr ""
 
 #: data/templates/python-classroom/supportresources.html:19

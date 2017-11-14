@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-01 16:07+0200\n"
-"PO-Revision-Date: 2017-09-17 05:56-0400\n"
+"POT-Creation-Date: 2017-11-14 12:28+0100\n"
+"PO-Revision-Date: 2017-10-12 10:42-0400\n"
 "Last-Translator: Meskó Balázs <meskobalazs@gmail.com>\n"
 "Language-Team: Hungarian\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 1.3\n"
 "X-Generator: Zanata 3.9.6\n"
 
 #: data/content/index.html:8
@@ -34,13 +34,13 @@ msgstr ""
 msgid "Fedora %(rel)s released! Get it now."
 msgstr "A Fedora %(rel)s elérhető! Szerezze be most."
 
-#: data/content/index.html:56 data/content/index.html:102
-#: data/content/index.html:138
+#: data/content/index.html:56 data/content/index.html:103
+#: data/content/index.html:140
 msgid "ARM<span class=\"sup\">®</span> Servers"
 msgstr "ARM<span class=\"sup\">®</span> kiszolgálók"
 
-#: data/content/index.html:61 data/content/index.html:107
-#: data/content/index.html:143
+#: data/content/index.html:61 data/content/index.html:108
+#: data/content/index.html:145
 msgid ""
 "These images are geared towards ARM-based computers used as servers, "
 "typically in a headless environment."
@@ -48,35 +48,30 @@ msgstr ""
 "Ezek a lemezképek az általában kijelző nélküli kiszolgálóként használt ARM-"
 "alapú számítógépekhez készültek."
 
-#: data/content/index.html:69 data/content/index.html:116
-#: data/content/index.html:152 data/content/prerelease.html:46
-#: data/content/prerelease.html:55
-msgid "Fedora Server"
-msgstr "Fedora Server"
+#: data/content/index.html:84 data/content/index.html:127
+#: data/content/index.html:166 data/content/prerelease.html:64
+#: data/content/prerelease.html:73
+msgid "Fedora Minimal"
+msgstr "Minimális Fedora"
 
-#: data/content/index.html:72 data/content/index.html:194
-#: data/content/index.html:208 data/content/index.html:222
-#: data/content/index.html:250 data/content/index.html:452
-#: data/content/prerelease.html:85 data/content/prerelease.html:103
-#: data/content/prerelease.html:121 data/content/prerelease.html:177
+#: data/content/index.html:87 data/content/index.html:267
+#: data/content/prerelease.html:49 data/content/prerelease.html:67
+#: data/content/prerelease.html:215
 #, python-format
-msgid "%sGB raw image"
-msgstr "%s GB-os nyers lemezkép"
+msgid "%sMB raw image"
+msgstr "%s MB-os nyers lemezkép"
 
-#: data/content/index.html:75 data/content/index.html:89
-#: data/content/index.html:117 data/content/index.html:126
-#: data/content/index.html:155 data/content/index.html:166
-#: data/content/index.html:197 data/content/index.html:211
-#: data/content/index.html:225 data/content/index.html:239
-#: data/content/index.html:253 data/content/index.html:267
-#: data/content/index.html:295 data/content/index.html:304
-#: data/content/index.html:313 data/content/index.html:322
-#: data/content/index.html:331 data/content/index.html:340
-#: data/content/index.html:369 data/content/index.html:380
-#: data/content/index.html:391 data/content/index.html:402
-#: data/content/index.html:413 data/content/index.html:424
-#: data/content/index.html:455 data/content/index.html:483
-#: data/content/index.html:512 data/content/prerelease.html:52
+#: data/content/index.html:90 data/content/index.html:128
+#: data/content/index.html:169 data/content/index.html:200
+#: data/content/index.html:214 data/content/index.html:228
+#: data/content/index.html:242 data/content/index.html:256
+#: data/content/index.html:270 data/content/index.html:298
+#: data/content/index.html:307 data/content/index.html:316
+#: data/content/index.html:325 data/content/index.html:334
+#: data/content/index.html:343 data/content/index.html:372
+#: data/content/index.html:383 data/content/index.html:394
+#: data/content/index.html:405 data/content/index.html:416
+#: data/content/index.html:427 data/content/prerelease.html:52
 #: data/content/prerelease.html:56 data/content/prerelease.html:70
 #: data/content/prerelease.html:74 data/content/prerelease.html:88
 #: data/content/prerelease.html:92 data/content/prerelease.html:106
@@ -87,20 +82,17 @@ msgstr "%s GB-os nyers lemezkép"
 msgid "Download"
 msgstr "Letöltés"
 
-#: data/content/index.html:75 data/content/index.html:89
-#: data/content/index.html:117 data/content/index.html:126
-#: data/content/index.html:155 data/content/index.html:166
-#: data/content/index.html:197 data/content/index.html:211
-#: data/content/index.html:225 data/content/index.html:239
-#: data/content/index.html:253 data/content/index.html:267
-#: data/content/index.html:295 data/content/index.html:304
-#: data/content/index.html:313 data/content/index.html:322
-#: data/content/index.html:331 data/content/index.html:340
-#: data/content/index.html:369 data/content/index.html:380
-#: data/content/index.html:391 data/content/index.html:402
-#: data/content/index.html:413 data/content/index.html:424
-#: data/content/index.html:455 data/content/index.html:483
-#: data/content/index.html:512 data/content/prerelease.html:52
+#: data/content/index.html:90 data/content/index.html:128
+#: data/content/index.html:169 data/content/index.html:200
+#: data/content/index.html:214 data/content/index.html:228
+#: data/content/index.html:242 data/content/index.html:256
+#: data/content/index.html:270 data/content/index.html:298
+#: data/content/index.html:307 data/content/index.html:316
+#: data/content/index.html:325 data/content/index.html:334
+#: data/content/index.html:343 data/content/index.html:372
+#: data/content/index.html:383 data/content/index.html:394
+#: data/content/index.html:405 data/content/index.html:416
+#: data/content/index.html:427 data/content/prerelease.html:52
 #: data/content/prerelease.html:56 data/content/prerelease.html:70
 #: data/content/prerelease.html:74 data/content/prerelease.html:88
 #: data/content/prerelease.html:92 data/content/prerelease.html:106
@@ -111,26 +103,13 @@ msgstr "Letöltés"
 msgid "Verify"
 msgstr "Ellenőrzés"
 
-#: data/content/index.html:83 data/content/index.html:125
-#: data/content/index.html:163 data/content/prerelease.html:64
-#: data/content/prerelease.html:73
-msgid "Fedora Minimal"
-msgstr "Minimális Fedora"
-
-#: data/content/index.html:86 data/content/index.html:236
-#: data/content/index.html:264 data/content/prerelease.html:49
-#: data/content/prerelease.html:67 data/content/prerelease.html:215
-#, python-format
-msgid "%sMB raw image"
-msgstr "%s MB-os nyers lemezkép"
-
-#: data/content/index.html:178 data/content/index.html:280
-#: data/content/index.html:352
+#: data/content/index.html:181 data/content/index.html:283
+#: data/content/index.html:355
 msgid "Desktop Computing"
 msgstr "Asztali számítástechnika"
 
-#: data/content/index.html:183 data/content/index.html:285
-#: data/content/index.html:357
+#: data/content/index.html:186 data/content/index.html:288
+#: data/content/index.html:360
 msgid ""
 "These images are for ARM-based mediacenters, kiosks, laptops, and other ARM-"
 "powered devices where a graphical interface is desired."
@@ -138,63 +117,55 @@ msgstr ""
 "Ezek a lemezképek ARM alapú médiaközpontokhoz, kioszkokhoz, laptopokhoz, és "
 "olyan más ARM-alapú eszközökhöz valók, ahol szükséges a grafikus felület."
 
-#: data/content/index.html:191 data/content/index.html:294
-#: data/content/index.html:366 data/content/prerelease.html:82
+#: data/content/index.html:194 data/content/index.html:297
+#: data/content/index.html:369 data/content/prerelease.html:82
 #: data/content/prerelease.html:91
 msgid "Fedora Workstation"
 msgstr "Fedora Workstation"
 
-#: data/content/index.html:205 data/content/index.html:303
-#: data/content/index.html:377 data/content/prerelease.html:100
+#: data/content/index.html:197 data/content/index.html:211
+#: data/content/index.html:225 data/content/index.html:239
+#: data/content/index.html:253 data/content/prerelease.html:85
+#: data/content/prerelease.html:103 data/content/prerelease.html:121
+#: data/content/prerelease.html:177
+#, python-format
+msgid "%sGB raw image"
+msgstr "%s GB-os nyers lemezkép"
+
+#: data/content/index.html:208 data/content/index.html:306
+#: data/content/index.html:380 data/content/prerelease.html:100
 #: data/content/prerelease.html:109
 msgid "KDE Plasma Desktop"
 msgstr "KDE Plasma asztal"
 
-#: data/content/index.html:219 data/content/index.html:312
-#: data/content/index.html:388 data/content/prerelease.html:118
+#: data/content/index.html:222 data/content/index.html:315
+#: data/content/index.html:391 data/content/prerelease.html:118
 #: data/content/prerelease.html:127
 msgid "Xfce Desktop"
 msgstr "Xfce asztal"
 
-#: data/content/index.html:233 data/content/index.html:321
-#: data/content/index.html:399
+#: data/content/index.html:236 data/content/index.html:324
+#: data/content/index.html:402
 msgid "LXQt Desktop"
 msgstr "LXQt felület"
 
-#: data/content/index.html:247 data/content/index.html:330
-#: data/content/index.html:410 data/content/prerelease.html:174
+#: data/content/index.html:250 data/content/index.html:333
+#: data/content/index.html:413 data/content/prerelease.html:174
 #: data/content/prerelease.html:183
 msgid "MATE-Compiz Desktop"
 msgstr "MATE-Compiz asztal"
 
-#: data/content/index.html:261 data/content/index.html:339
-#: data/content/index.html:421 data/content/prerelease.html:212
+#: data/content/index.html:264 data/content/index.html:342
+#: data/content/index.html:424 data/content/prerelease.html:212
 #: data/content/prerelease.html:221
 msgid "Sugar on a Stick"
 msgstr "Sugar on a Stick"
 
-#: data/content/index.html:436 data/content/index.html:468
-#: data/content/index.html:495
-msgid "ARM<span class=\"sup\">®</span> Labs"
-msgstr ""
-
-#: data/content/index.html:441 data/content/index.html:473
-#: data/content/index.html:500
-msgid ""
-"These images are for ARM-based devices where a bundle of purpose-drive "
-"software is needed."
-msgstr ""
-
-#: data/content/index.html:449 data/content/index.html:482
-#: data/content/index.html:509
-msgid "Fedora Python-Classroom"
-msgstr ""
-
-#: data/content/index.html:524
+#: data/content/index.html:528
 msgid "What is ARM<span class=\"sup\">®</span> Technology?"
-msgstr ""
+msgstr "Mi az az ARM<span class=\"sup\">®</span> technológia?"
 
-#: data/content/index.html:525 data/content/prerelease.html:239
+#: data/content/index.html:529 data/content/prerelease.html:239
 msgid ""
 "ARM microprocessors are the most widely-produced processor family in the "
 "world; they have historically been used in cell phones and embedded "
@@ -206,7 +177,7 @@ msgstr ""
 "használták, és egyre inkább használják tabletekben és alacsony  "
 "erőforrásigényű kiszolgálókban."
 
-#: data/content/index.html:526 data/content/prerelease.html:240
+#: data/content/index.html:530 data/content/prerelease.html:240
 msgid ""
 "The Fedora ARM project is an initiative to bring Fedora to this processor "
 "family. The images provided here are versions of Fedora tailored for running"
@@ -216,15 +187,15 @@ msgstr ""
 "processzorcsaládra. Az itt biztosított lemezképek, a Fedora az ARM-alapú "
 "rendszereken futásra átszabott verziói."
 
-#: data/content/index.html:537 data/content/prerelease.html:251
+#: data/content/index.html:541 data/content/prerelease.html:251
 msgid "Support Resources"
 msgstr "Támogatási erőforrások"
 
-#: data/content/index.html:542 data/content/prerelease.html:256
+#: data/content/index.html:546 data/content/prerelease.html:256
 msgid "Documentation"
 msgstr "Dokumentáció"
 
-#: data/content/index.html:543 data/content/prerelease.html:257
+#: data/content/index.html:547 data/content/prerelease.html:257
 #, python-format
 msgid ""
 "Fedora ARM documentation and installation guides are available at the <a "
@@ -233,11 +204,11 @@ msgstr ""
 "A Fedora ARM dokumentáció és telepítési útmutató a <a href=\"%s\">Fedora ARM"
 " wiki oldalon</a> érhető el."
 
-#: data/content/index.html:546 data/content/prerelease.html:260
+#: data/content/index.html:550 data/content/prerelease.html:260
 msgid "Email"
 msgstr "E-mail"
 
-#: data/content/index.html:547 data/content/prerelease.html:261
+#: data/content/index.html:551 data/content/prerelease.html:261
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -246,11 +217,11 @@ msgstr ""
 "A felhasználók és a fejlesztők is rendelkezésre állnak a levelezőlistán: <a "
 "href=\"%s\"> arm@lists.fedoraproject.org </a>."
 
-#: data/content/index.html:550 data/content/prerelease.html:264
+#: data/content/index.html:554 data/content/prerelease.html:264
 msgid "Chat"
 msgstr "Csevegés"
 
-#: data/content/index.html:551 data/content/prerelease.html:265
+#: data/content/index.html:555 data/content/prerelease.html:265
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-arm</a> irc"
@@ -260,11 +231,11 @@ msgstr ""
 "\">#fedora-arm</a> IRC-csatornán érhetőek el a <strong> "
 "irc.freenode.org</strong> oldalon."
 
-#: data/content/index.html:556 data/content/prerelease.html:270
+#: data/content/index.html:560 data/content/prerelease.html:270
 msgid "General Help Using Fedora"
 msgstr "Általános segítség a Fedora használatához"
 
-#: data/content/index.html:557 data/content/prerelease.html:271
+#: data/content/index.html:561 data/content/prerelease.html:271
 #, python-format
 msgid ""
 "Sometimes you may encounter an issue with this spin that you can get help "
@@ -324,6 +295,10 @@ msgstr ""
 " a <a href=\"%(commonbugs_url)s\">gyakori hibák</a> listáját a gyakran "
 "előforduló hibákkal, és azok elkerülésével kapcsolatos információkért."
 
+#: data/content/prerelease.html:46 data/content/prerelease.html:55
+msgid "Fedora Server"
+msgstr "Fedora Server"
+
 #: data/content/prerelease.html:238
 msgid "What is ARM Technology?"
 msgstr "Mi az az ARM technológia?"
@@ -351,37 +326,41 @@ msgstr ""
 "ugyanabba a mappába, ahová a lemezképet letöltötte."
 
 #: data/content/verify.html:36
-msgid "Validate Server!"
-msgstr "Server ellenőrzése!"
+msgid "Server"
+msgstr "Server"
 
-#: data/content/verify.html:39
+#: data/content/verify.html:42
 msgid "Validate Minimal!"
 msgstr "Minimal ellenőrzése!"
 
-#: data/content/verify.html:42
+#: data/content/verify.html:46
+msgid "Desktop"
+msgstr "Asztali"
+
+#: data/content/verify.html:48
 msgid "Validate Workstation!"
 msgstr "Workstation ellenőrzése!"
 
-#: data/content/verify.html:45
+#: data/content/verify.html:51
 msgid "Validate Spins!"
 msgstr "Spinek ellenőrzése!"
 
-#: data/content/verify.html:51
+#: data/content/verify.html:65
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Ezután importálja a Fedorához tartozó GPG kulcso(ka)t:"
 
-#: data/content/verify.html:53
+#: data/content/verify.html:67
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
 msgstr "A GPG kulcs(ok) részleteit <a href=\"%s/%s/keys\">itt</a> ellenőrizheti."
 
-#: data/content/verify.html:54
+#: data/content/verify.html:68
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Most ellenőrizzük, hogy a CHECKSUM fájl érvényes:"
 
-#: data/content/verify.html:56
+#: data/content/verify.html:70
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
@@ -389,29 +368,33 @@ msgstr ""
 "A CHECKSUM fájlnak rendelkeznie kell egy jó aláírással a következő kulcsok "
 "valamelyikével:"
 
-#: data/content/verify.html:58
+#: data/content/verify.html:72
+msgid "Fedora 28"
+msgstr "Fedora 28"
+
+#: data/content/verify.html:73
 msgid "Fedora 27"
 msgstr "Fedora 27"
 
-#: data/content/verify.html:59
+#: data/content/verify.html:74
 msgid "Fedora 26"
 msgstr "Fedora 26"
 
-#: data/content/verify.html:60
+#: data/content/verify.html:75
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Fedora 26 másodlagos architektúrák (AArch64, PPC64, PPC64le, s390 és s390x)"
 
-#: data/content/verify.html:61
+#: data/content/verify.html:76
 msgid "Fedora 25"
 msgstr "Fedora 25"
 
-#: data/content/verify.html:62
+#: data/content/verify.html:77
 msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Fedora 25 másodlagos architektúrák (AArch64, PPC64, PPC64le, s390 és s390x)"
 
-#: data/content/verify.html:64
+#: data/content/verify.html:79
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
@@ -419,17 +402,17 @@ msgstr ""
 "Végül, miután a CHECKSUM fájlt ellenőrizte, nézze meg, hogy az ISO "
 "ellenőrzőösszeg egyezik-e:"
 
-#: data/content/verify.html:66
+#: data/content/verify.html:81
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr "Ha a kimenet szerint a fájl érvényes, akkor már használhatja is!"
 
-#: data/content/verify.html:67
+#: data/content/verify.html:82
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr ""
 "Hogyan ellenőrizheti a letöltött lemezképeket egy másik operációs "
 "rendszeren?"
 
-#: data/content/verify.html:68
+#: data/content/verify.html:83
 msgid "Read these instructions to validate your image."
 msgstr "Olvassa el az utasításokat a lemezkép ellenőrzéséhez."
 

@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-01 16:09+0200\n"
+"POT-Creation-Date: 2017-11-14 12:30+0100\n"
 "PO-Revision-Date: 2017-10-02 10:20-0400\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish (http://www.transifex.com/projects/p/fedora-web/language/pl/)\n"
@@ -93,27 +93,11 @@ msgstr ""
 "obraz zawierający inne środowisko, takie jak KDE Plasma lub Xfce, i użyć go "
 "do zainstalowania Fedory."
 
-#: data/content/cinnamon/download/index.html:94
-#: data/content/cinnamon/download/index.html:113 data/content/index.html:182
-#: data/content/index.html:201 data/content/kde/download/index.html:94
-#: data/content/kde/download/index.html:113
-#: data/content/lxde/download/index.html:94
-#: data/content/lxde/download/index.html:113
-#: data/content/lxqt/download/index.html:94
-#: data/content/lxqt/download/index.html:113
-#: data/content/mate-compiz/download/index.html:94
-#: data/content/mate-compiz/download/index.html:113
+#: data/content/index.html:182 data/content/index.html:201
 #: data/content/prerelease.html:286 data/content/prerelease.html:305
-#: data/content/soas/download/index.html:99
-#: data/content/soas/download/index.html:118
-#: data/content/xfce/download/index.html:94
-#: data/content/xfce/download/index.html:113
-msgid "Downloading"
-msgstr "Pobieranie"
-
 #: data/content/cinnamon/download/index.html:95
-#: data/content/cinnamon/download/index.html:114 data/content/index.html:183
-#: data/content/index.html:202 data/content/kde/download/index.html:95
+#: data/content/cinnamon/download/index.html:114
+#: data/content/kde/download/index.html:95
 #: data/content/kde/download/index.html:114
 #: data/content/lxde/download/index.html:95
 #: data/content/lxde/download/index.html:114
@@ -121,10 +105,28 @@ msgstr "Pobieranie"
 #: data/content/lxqt/download/index.html:114
 #: data/content/mate-compiz/download/index.html:95
 #: data/content/mate-compiz/download/index.html:114
-#: data/content/soas/download/index.html:100
-#: data/content/soas/download/index.html:119
+#: data/content/soas/download/index.html:99
+#: data/content/soas/download/index.html:118
 #: data/content/xfce/download/index.html:95
 #: data/content/xfce/download/index.html:114
+msgid "Downloading"
+msgstr "Pobieranie"
+
+#: data/content/index.html:183 data/content/index.html:202
+#: data/content/cinnamon/download/index.html:96
+#: data/content/cinnamon/download/index.html:115
+#: data/content/kde/download/index.html:96
+#: data/content/kde/download/index.html:115
+#: data/content/lxde/download/index.html:96
+#: data/content/lxde/download/index.html:115
+#: data/content/lxqt/download/index.html:96
+#: data/content/lxqt/download/index.html:115
+#: data/content/mate-compiz/download/index.html:96
+#: data/content/mate-compiz/download/index.html:115
+#: data/content/soas/download/index.html:100
+#: data/content/soas/download/index.html:119
+#: data/content/xfce/download/index.html:96
+#: data/content/xfce/download/index.html:115
 msgid ""
 "Spin downloads are offered via direct download, but you can also get them "
 "via BitTorrent. In this case you will need to install a BitTorrent client in"
@@ -135,77 +137,62 @@ msgstr ""
 " przypadku należy zainstalować klienta sieci BitTorrent. Niektóre obrazy "
 "można pobrać na inne sposoby niż BitTorrent."
 
-#: data/content/cinnamon/download/index.html:96
-#: data/content/cinnamon/download/index.html:101
-#: data/content/cinnamon/download/index.html:106
-#: data/content/cinnamon/download/index.html:127
-#: data/content/cinnamon/download/index.html:130
-#: data/content/cinnamon/download/index.html:133 data/content/index.html:184
-#: data/content/index.html:189 data/content/index.html:194
-#: data/content/index.html:215 data/content/index.html:218
-#: data/content/index.html:221 data/content/kde/download/index.html:96
-#: data/content/kde/download/index.html:101
-#: data/content/kde/download/index.html:106
-#: data/content/kde/download/index.html:127
-#: data/content/kde/download/index.html:130
-#: data/content/kde/download/index.html:133
-#: data/content/lxde/download/index.html:96
-#: data/content/lxde/download/index.html:101
-#: data/content/lxde/download/index.html:106
-#: data/content/lxde/download/index.html:127
-#: data/content/lxde/download/index.html:130
-#: data/content/lxde/download/index.html:133
-#: data/content/lxqt/download/index.html:96
-#: data/content/lxqt/download/index.html:101
-#: data/content/lxqt/download/index.html:106
-#: data/content/lxqt/download/index.html:127
-#: data/content/lxqt/download/index.html:130
-#: data/content/lxqt/download/index.html:133
-#: data/content/mate-compiz/download/index.html:96
-#: data/content/mate-compiz/download/index.html:101
-#: data/content/mate-compiz/download/index.html:106
-#: data/content/mate-compiz/download/index.html:127
-#: data/content/mate-compiz/download/index.html:130
-#: data/content/mate-compiz/download/index.html:133
+#: data/content/index.html:184 data/content/index.html:189
+#: data/content/index.html:194 data/content/index.html:215
+#: data/content/index.html:218 data/content/index.html:221
 #: data/content/prerelease.html:288 data/content/prerelease.html:293
 #: data/content/prerelease.html:298 data/content/prerelease.html:319
 #: data/content/prerelease.html:322 data/content/prerelease.html:325
+#: data/content/cinnamon/download/index.html:97
+#: data/content/cinnamon/download/index.html:102
+#: data/content/cinnamon/download/index.html:107
+#: data/content/cinnamon/download/index.html:128
+#: data/content/cinnamon/download/index.html:131
+#: data/content/cinnamon/download/index.html:134
+#: data/content/kde/download/index.html:97
+#: data/content/kde/download/index.html:102
+#: data/content/kde/download/index.html:107
+#: data/content/kde/download/index.html:128
+#: data/content/kde/download/index.html:131
+#: data/content/kde/download/index.html:134
+#: data/content/lxde/download/index.html:97
+#: data/content/lxde/download/index.html:102
+#: data/content/lxde/download/index.html:107
+#: data/content/lxde/download/index.html:128
+#: data/content/lxde/download/index.html:131
+#: data/content/lxde/download/index.html:134
+#: data/content/lxqt/download/index.html:97
+#: data/content/lxqt/download/index.html:102
+#: data/content/lxqt/download/index.html:107
+#: data/content/lxqt/download/index.html:128
+#: data/content/lxqt/download/index.html:131
+#: data/content/lxqt/download/index.html:134
+#: data/content/mate-compiz/download/index.html:97
+#: data/content/mate-compiz/download/index.html:102
+#: data/content/mate-compiz/download/index.html:107
+#: data/content/mate-compiz/download/index.html:128
+#: data/content/mate-compiz/download/index.html:131
+#: data/content/mate-compiz/download/index.html:134
 #: data/content/soas/download/index.html:101
 #: data/content/soas/download/index.html:106
 #: data/content/soas/download/index.html:111
 #: data/content/soas/download/index.html:132
 #: data/content/soas/download/index.html:135
 #: data/content/soas/download/index.html:138
-#: data/content/xfce/download/index.html:96
-#: data/content/xfce/download/index.html:101
-#: data/content/xfce/download/index.html:106
-#: data/content/xfce/download/index.html:127
-#: data/content/xfce/download/index.html:130
-#: data/content/xfce/download/index.html:133
+#: data/content/xfce/download/index.html:97
+#: data/content/xfce/download/index.html:102
+#: data/content/xfce/download/index.html:107
+#: data/content/xfce/download/index.html:128
+#: data/content/xfce/download/index.html:131
+#: data/content/xfce/download/index.html:134
 msgid "Learn more"
 msgstr "Więcej informacji"
 
-#: data/content/cinnamon/download/index.html:99
-#: data/content/cinnamon/download/index.html:117 data/content/index.html:187
-#: data/content/index.html:205 data/content/kde/download/index.html:99
-#: data/content/kde/download/index.html:117
-#: data/content/lxde/download/index.html:99
-#: data/content/lxde/download/index.html:117
-#: data/content/lxqt/download/index.html:99
-#: data/content/lxqt/download/index.html:117
-#: data/content/mate-compiz/download/index.html:99
-#: data/content/mate-compiz/download/index.html:117
+#: data/content/index.html:187 data/content/index.html:205
 #: data/content/prerelease.html:291 data/content/prerelease.html:309
-#: data/content/soas/download/index.html:104
-#: data/content/soas/download/index.html:122
-#: data/content/xfce/download/index.html:99
-#: data/content/xfce/download/index.html:117
-msgid "Using"
-msgstr "Używanie"
-
 #: data/content/cinnamon/download/index.html:100
-#: data/content/cinnamon/download/index.html:118 data/content/index.html:188
-#: data/content/index.html:206 data/content/kde/download/index.html:100
+#: data/content/cinnamon/download/index.html:118
+#: data/content/kde/download/index.html:100
 #: data/content/kde/download/index.html:118
 #: data/content/lxde/download/index.html:100
 #: data/content/lxde/download/index.html:118
@@ -213,11 +200,29 @@ msgstr "Używanie"
 #: data/content/lxqt/download/index.html:118
 #: data/content/mate-compiz/download/index.html:100
 #: data/content/mate-compiz/download/index.html:118
-#: data/content/prerelease.html:292 data/content/prerelease.html:310
-#: data/content/soas/download/index.html:105
-#: data/content/soas/download/index.html:123
+#: data/content/soas/download/index.html:104
+#: data/content/soas/download/index.html:122
 #: data/content/xfce/download/index.html:100
 #: data/content/xfce/download/index.html:118
+msgid "Using"
+msgstr "Używanie"
+
+#: data/content/index.html:188 data/content/index.html:206
+#: data/content/prerelease.html:292 data/content/prerelease.html:310
+#: data/content/cinnamon/download/index.html:101
+#: data/content/cinnamon/download/index.html:119
+#: data/content/kde/download/index.html:101
+#: data/content/kde/download/index.html:119
+#: data/content/lxde/download/index.html:101
+#: data/content/lxde/download/index.html:119
+#: data/content/lxqt/download/index.html:101
+#: data/content/lxqt/download/index.html:119
+#: data/content/mate-compiz/download/index.html:101
+#: data/content/mate-compiz/download/index.html:119
+#: data/content/soas/download/index.html:105
+#: data/content/soas/download/index.html:123
+#: data/content/xfce/download/index.html:101
+#: data/content/xfce/download/index.html:119
 msgid ""
 "Spins are provided as ISO files. You may use the ISO file to create a new "
 "virtual machine, or you can burn the ISO in a special way to a USB stick or "
@@ -227,27 +232,11 @@ msgstr ""
 "nowej maszyny wirtualnej lub nagrać go na dysk USB lub płytę w celu "
 "uruchomienia na komputerze."
 
-#: data/content/cinnamon/download/index.html:104
-#: data/content/cinnamon/download/index.html:121 data/content/index.html:192
-#: data/content/index.html:209 data/content/kde/download/index.html:104
-#: data/content/kde/download/index.html:121
-#: data/content/lxde/download/index.html:104
-#: data/content/lxde/download/index.html:121
-#: data/content/lxqt/download/index.html:104
-#: data/content/lxqt/download/index.html:121
-#: data/content/mate-compiz/download/index.html:104
-#: data/content/mate-compiz/download/index.html:121
+#: data/content/index.html:192 data/content/index.html:209
 #: data/content/prerelease.html:296 data/content/prerelease.html:313
-#: data/content/soas/download/index.html:109
-#: data/content/soas/download/index.html:126
-#: data/content/xfce/download/index.html:104
-#: data/content/xfce/download/index.html:121
-msgid "Installing"
-msgstr "Instalowanie"
-
 #: data/content/cinnamon/download/index.html:105
-#: data/content/cinnamon/download/index.html:122 data/content/index.html:193
-#: data/content/index.html:210 data/content/kde/download/index.html:105
+#: data/content/cinnamon/download/index.html:122
+#: data/content/kde/download/index.html:105
 #: data/content/kde/download/index.html:122
 #: data/content/lxde/download/index.html:105
 #: data/content/lxde/download/index.html:122
@@ -255,11 +244,29 @@ msgstr "Instalowanie"
 #: data/content/lxqt/download/index.html:122
 #: data/content/mate-compiz/download/index.html:105
 #: data/content/mate-compiz/download/index.html:122
-#: data/content/prerelease.html:297 data/content/prerelease.html:314
-#: data/content/soas/download/index.html:110
-#: data/content/soas/download/index.html:127
+#: data/content/soas/download/index.html:109
+#: data/content/soas/download/index.html:126
 #: data/content/xfce/download/index.html:105
 #: data/content/xfce/download/index.html:122
+msgid "Installing"
+msgstr "Instalowanie"
+
+#: data/content/index.html:193 data/content/index.html:210
+#: data/content/prerelease.html:297 data/content/prerelease.html:314
+#: data/content/cinnamon/download/index.html:106
+#: data/content/cinnamon/download/index.html:123
+#: data/content/kde/download/index.html:106
+#: data/content/kde/download/index.html:123
+#: data/content/lxde/download/index.html:106
+#: data/content/lxde/download/index.html:123
+#: data/content/lxqt/download/index.html:106
+#: data/content/lxqt/download/index.html:123
+#: data/content/mate-compiz/download/index.html:106
+#: data/content/mate-compiz/download/index.html:123
+#: data/content/soas/download/index.html:110
+#: data/content/soas/download/index.html:127
+#: data/content/xfce/download/index.html:106
+#: data/content/xfce/download/index.html:123
 msgid ""
 "To install a spin, you run the spin on your computer and click the \"Install"
 " to Hard Drive\" link on the desktop. You'll be guided through the install "
@@ -323,24 +330,29 @@ msgstr ""
 "z powodów technicznych, ale będą dostępne w finalnym wydaniu Fedory 27."
 
 #: data/content/prerelease.html:51 data/content/prerelease.html:73
-#: data/content/prerelease.html:139 data/content/prerelease.html:161
+#: data/content/prerelease.html:95 data/content/prerelease.html:139
+#: data/content/prerelease.html:161
 #, python-format
 msgid "%s GB ISO Image"
 msgstr "Obraz ISO (%s GB)"
-
-#: data/content/prerelease.html:95 data/content/prerelease.html:117
-#: data/content/prerelease.html:183
-#, python-format
-msgid "%s MB ISO Image"
-msgstr "Obraz ISO (%s MB)"
 
 #: data/content/prerelease.html:114
 msgid "A complete and lightweight Qt-based desktop experience."
 msgstr "Pełne i lekkie środowisko oparte na bibliotece Qt."
 
+#: data/content/prerelease.html:117
+#, python-format
+msgid "%s GSB ISO Image"
+msgstr ""
+
 #: data/content/prerelease.html:158
 msgid "Traditional layout, advanced features, easy to use."
 msgstr "Łatwy w użyciu, tradycyjny układ i zaawansowane funkcje."
+
+#: data/content/prerelease.html:183
+#, python-format
+msgid "%s MB ISO Image"
+msgstr "Obraz ISO (%s MB)"
 
 #: data/content/prerelease.html:201
 #: data/templates/generic/splash-checksum.html:8
@@ -403,15 +415,11 @@ msgstr ""
 msgid "Validate 64-bit!"
 msgstr "Sprawdzanie poprawności obrazu 64-bitowego"
 
-#: data/content/verify.html:39
-msgid "Validate 32-bit!"
-msgstr "Sprawdzanie poprawności obrazu 32-bitowego"
-
-#: data/content/verify.html:45
+#: data/content/verify.html:46
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Następnie należy zaimportować klucze GPG Fedory:"
 
-#: data/content/verify.html:47
+#: data/content/verify.html:48
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
@@ -420,40 +428,44 @@ msgstr ""
 "Można sprawdzić informacje o kluczach GPG <a href=\"%s/%s/keys\">w tym "
 "miejscu</a>."
 
-#: data/content/verify.html:48
+#: data/content/verify.html:49
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Teraz należy sprawdzić, czy plik CHECKSUM jest prawidłowy:"
 
-#: data/content/verify.html:50
+#: data/content/verify.html:51
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr ""
 "Plik CHECKSUM powinien posiadać dobry podpis z jednego z poniższych kluczy:"
 
-#: data/content/verify.html:52
+#: data/content/verify.html:53
+msgid "Fedora 28"
+msgstr ""
+
+#: data/content/verify.html:54
 msgid "Fedora 27"
 msgstr "Fedora 27"
 
-#: data/content/verify.html:53
+#: data/content/verify.html:55
 msgid "Fedora 26"
 msgstr "Fedora 26"
 
-#: data/content/verify.html:54
+#: data/content/verify.html:56
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Drugorzędne architektury Fedory 26 (AArch64, PPC64, PPC64le, s390 i s390x)"
 
-#: data/content/verify.html:55
+#: data/content/verify.html:57
 msgid "Fedora 25"
 msgstr "Fedora 25"
 
-#: data/content/verify.html:56
+#: data/content/verify.html:58
 msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Drugorzędne architektury Fedory 25 (AArch64, PPC64, PPC64le, s390 i s390x)"
 
-#: data/content/verify.html:58
+#: data/content/verify.html:60
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
@@ -461,16 +473,16 @@ msgstr ""
 "Na koniec należy sprawdzić, czy suma kontrolna obrazu zgadza się z tą z "
 "pliku CHECKSUM:"
 
-#: data/content/verify.html:60
+#: data/content/verify.html:62
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr "Jeśli zostanie wypisane, że plik jest prawidłowy, to można go użyć."
 
-#: data/content/verify.html:61
+#: data/content/verify.html:63
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr ""
 "Jak sprawdzić poprawność pobranego obrazu w innym systemie operacyjnym?"
 
-#: data/content/verify.html:62
+#: data/content/verify.html:64
 msgid "Read these instructions to validate your image."
 msgstr "Instrukcje sprawdzania poprawności obrazu."
 
@@ -660,33 +672,33 @@ msgstr "Brasero"
 msgid "Brasero is a simple and easy to use CD/DVD burning application."
 msgstr "Brasero to prosty i łatwy w użyciu program do nagrywania płyt CD/DVD."
 
-#: data/content/cinnamon/download/index.html:146
 #: data/content/cinnamon/index.html:148
-#: data/content/kde/download/index.html:145 data/content/kde/index.html:182
-#: data/content/lxde/download/index.html:146 data/content/lxde/index.html:148
-#: data/content/lxqt/download/index.html:146 data/content/lxqt/index.html:147
-#: data/content/mate-compiz/download/index.html:146
+#: data/content/cinnamon/download/index.html:147
+#: data/content/kde/index.html:182 data/content/kde/download/index.html:146
+#: data/content/lxde/index.html:148 data/content/lxde/download/index.html:147
+#: data/content/lxqt/index.html:147 data/content/lxqt/download/index.html:147
 #: data/content/mate-compiz/index.html:153
-#: data/content/soas/download/index.html:151 data/content/soas/index.html:187
-#: data/content/xfce/download/index.html:146 data/content/xfce/index.html:143
+#: data/content/mate-compiz/download/index.html:147
+#: data/content/soas/index.html:187 data/content/soas/download/index.html:151
+#: data/content/xfce/index.html:143 data/content/xfce/download/index.html:147
 msgid "Support Resources"
 msgstr "Wsparcie"
 
-#: data/content/cinnamon/download/index.html:151
 #: data/content/cinnamon/index.html:153
-#: data/content/kde/download/index.html:150 data/content/kde/index.html:187
-#: data/content/lxde/download/index.html:151 data/content/lxde/index.html:153
-#: data/content/lxqt/download/index.html:151 data/content/lxqt/index.html:152
-#: data/content/mate-compiz/download/index.html:151
+#: data/content/cinnamon/download/index.html:152
+#: data/content/kde/index.html:187 data/content/kde/download/index.html:151
+#: data/content/lxde/index.html:153 data/content/lxde/download/index.html:152
+#: data/content/lxqt/index.html:152 data/content/lxqt/download/index.html:152
 #: data/content/mate-compiz/index.html:158
-#: data/content/soas/download/index.html:156 data/content/soas/index.html:66
-#: data/content/soas/index.html:192 data/content/xfce/download/index.html:151
-#: data/content/xfce/index.html:148
+#: data/content/mate-compiz/download/index.html:152
+#: data/content/soas/index.html:66 data/content/soas/index.html:192
+#: data/content/soas/download/index.html:156 data/content/xfce/index.html:148
+#: data/content/xfce/download/index.html:152
 msgid "Chat"
 msgstr "Czat"
 
-#: data/content/cinnamon/download/index.html:152
 #: data/content/cinnamon/index.html:154
+#: data/content/cinnamon/download/index.html:153
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-"
@@ -697,22 +709,22 @@ msgstr ""
 "\">#fedora-cinnamon</a> na serwerze <strong>irc.freenode.org</strong> (w "
 "języku angielskim)."
 
-#: data/content/cinnamon/download/index.html:155
 #: data/content/cinnamon/index.html:157
-#: data/content/kde/download/index.html:154 data/content/kde/index.html:191
-#: data/content/lxde/download/index.html:155 data/content/lxde/index.html:157
-#: data/content/lxqt/download/index.html:155 data/content/lxqt/index.html:156
-#: data/content/mate-compiz/download/index.html:155
+#: data/content/cinnamon/download/index.html:156
+#: data/content/kde/index.html:191 data/content/kde/download/index.html:155
+#: data/content/lxde/index.html:157 data/content/lxde/download/index.html:156
+#: data/content/lxqt/index.html:156 data/content/lxqt/download/index.html:156
 #: data/content/mate-compiz/index.html:162
-#: data/content/soas/download/index.html:160 data/content/soas/index.html:196
-#: data/content/xfce/download/index.html:155 data/content/xfce/index.html:152
+#: data/content/mate-compiz/download/index.html:156
+#: data/content/soas/index.html:196 data/content/soas/download/index.html:160
+#: data/content/xfce/index.html:152 data/content/xfce/download/index.html:156
 msgid "Email"
 msgstr "E-mail"
 
-#: data/content/cinnamon/download/index.html:156
 #: data/content/cinnamon/index.html:158
-#: data/content/mate-compiz/download/index.html:156
+#: data/content/cinnamon/download/index.html:157
 #: data/content/mate-compiz/index.html:163
+#: data/content/mate-compiz/download/index.html:157
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -722,20 +734,20 @@ msgstr ""
 "adresem <a href=\"%s\">users@lists.fedoraproject.org</a> (w języku "
 "angielskim)."
 
-#: data/content/cinnamon/download/index.html:159
 #: data/content/cinnamon/index.html:161
-#: data/content/kde/download/index.html:158 data/content/kde/index.html:195
-#: data/content/lxde/download/index.html:159 data/content/lxde/index.html:161
-#: data/content/lxqt/download/index.html:159 data/content/lxqt/index.html:160
-#: data/content/mate-compiz/download/index.html:159
+#: data/content/cinnamon/download/index.html:160
+#: data/content/kde/index.html:195 data/content/kde/download/index.html:159
+#: data/content/lxde/index.html:161 data/content/lxde/download/index.html:160
+#: data/content/lxqt/index.html:160 data/content/lxqt/download/index.html:160
 #: data/content/mate-compiz/index.html:166
-#: data/content/soas/download/index.html:164 data/content/soas/index.html:200
-#: data/content/xfce/download/index.html:159 data/content/xfce/index.html:156
+#: data/content/mate-compiz/download/index.html:160
+#: data/content/soas/index.html:200 data/content/soas/download/index.html:164
+#: data/content/xfce/index.html:156 data/content/xfce/download/index.html:160
 msgid "Documentation"
 msgstr "Dokumentacja"
 
-#: data/content/cinnamon/download/index.html:160
 #: data/content/cinnamon/index.html:162
+#: data/content/cinnamon/download/index.html:161
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
@@ -744,27 +756,27 @@ msgstr ""
 "Konkretna dokumentacja i samouczki są dostępne na <a href=\"%s\">stronie "
 "projektu Cinnamon</a>."
 
-#: data/content/cinnamon/download/index.html:165
 #: data/content/cinnamon/index.html:167
-#: data/content/kde/download/index.html:164 data/content/kde/index.html:201
-#: data/content/lxde/download/index.html:165 data/content/lxde/index.html:167
-#: data/content/lxqt/download/index.html:165 data/content/lxqt/index.html:166
-#: data/content/mate-compiz/download/index.html:165
+#: data/content/cinnamon/download/index.html:166
+#: data/content/kde/index.html:201 data/content/kde/download/index.html:165
+#: data/content/lxde/index.html:167 data/content/lxde/download/index.html:166
+#: data/content/lxqt/index.html:166 data/content/lxqt/download/index.html:166
 #: data/content/mate-compiz/index.html:172
-#: data/content/soas/download/index.html:170 data/content/soas/index.html:206
-#: data/content/xfce/download/index.html:165 data/content/xfce/index.html:162
+#: data/content/mate-compiz/download/index.html:166
+#: data/content/soas/index.html:206 data/content/soas/download/index.html:170
+#: data/content/xfce/index.html:162 data/content/xfce/download/index.html:166
 msgid "General Help Using Fedora"
 msgstr "Ogólna pomoc z używaniem Fedory"
 
-#: data/content/cinnamon/download/index.html:166
 #: data/content/cinnamon/index.html:168
-#: data/content/kde/download/index.html:165 data/content/kde/index.html:202
-#: data/content/lxde/download/index.html:166 data/content/lxde/index.html:168
-#: data/content/lxqt/download/index.html:166 data/content/lxqt/index.html:167
-#: data/content/mate-compiz/download/index.html:166
+#: data/content/cinnamon/download/index.html:167
+#: data/content/kde/index.html:202 data/content/kde/download/index.html:166
+#: data/content/lxde/index.html:168 data/content/lxde/download/index.html:167
+#: data/content/lxqt/index.html:167 data/content/lxqt/download/index.html:167
 #: data/content/mate-compiz/index.html:173
-#: data/content/soas/download/index.html:171 data/content/soas/index.html:207
-#: data/content/xfce/download/index.html:166 data/content/xfce/index.html:163
+#: data/content/mate-compiz/download/index.html:167
+#: data/content/soas/index.html:207 data/content/soas/download/index.html:171
+#: data/content/xfce/index.html:163 data/content/xfce/download/index.html:167
 #, python-format
 msgid ""
 "Sometimes you may encounter an issue with this spin that you can get help "
@@ -820,6 +832,8 @@ msgstr "Pobierz"
 
 #: data/content/cinnamon/download/index.html:21
 #: data/content/kde/download/index.html:21
+#: data/content/lxde/download/index.html:21
+#: data/content/lxqt/download/index.html:21
 #: data/content/mate-compiz/download/index.html:21
 #: data/content/xfce/download/index.html:21
 #, python-format
@@ -874,73 +888,36 @@ msgstr ""
 msgid "Other Downloads"
 msgstr "Inne opcje pobierania"
 
-#: data/content/cinnamon/download/index.html:35
-#: data/content/kde/download/index.html:35
-#: data/content/lxde/download/index.html:35
-#: data/content/lxqt/download/index.html:35
-#: data/content/mate-compiz/download/index.html:35
-#: data/content/soas/download/index.html:39
-#: data/content/xfce/download/index.html:35
-msgid "Direct Downloads"
-msgstr "Bezpośrednie pobieranie"
-
-#: data/content/cinnamon/download/index.html:38
-#: data/content/kde/download/index.html:38
-#: data/content/lxde/download/index.html:38
-#: data/content/lxqt/download/index.html:38
-#: data/content/mate-compiz/download/index.html:38
-#: data/content/xfce/download/index.html:38
-#, python-format
-msgid "32-bit %sGB Live image"
-msgstr "32-bitowy obraz Live (%s GB)"
-
-#: data/content/cinnamon/download/index.html:41
-#: data/content/kde/download/index.html:41
-#: data/content/lxde/download/index.html:41
-#: data/content/lxqt/download/index.html:41
-#: data/content/mate-compiz/download/index.html:41
+#: data/content/cinnamon/download/index.html:42
+#: data/content/kde/download/index.html:42
+#: data/content/lxde/download/index.html:42
+#: data/content/lxqt/download/index.html:42
+#: data/content/mate-compiz/download/index.html:42
 #: data/content/soas/download/index.html:46
-#: data/content/xfce/download/index.html:41
+#: data/content/xfce/download/index.html:42
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr "Technologia ARM<span class=\"sup\">®</span>"
 
-#: data/content/cinnamon/download/index.html:45
-#: data/content/kde/download/index.html:45
-#: data/content/lxde/download/index.html:45
-#: data/content/lxqt/download/index.html:45
-#: data/content/mate-compiz/download/index.html:45
+#: data/content/cinnamon/download/index.html:46
+#: data/content/kde/download/index.html:46
+#: data/content/lxde/download/index.html:46
+#: data/content/lxqt/download/index.html:46
+#: data/content/mate-compiz/download/index.html:46
 #: data/content/soas/download/index.html:50
-#: data/content/xfce/download/index.html:45
+#: data/content/xfce/download/index.html:46
 msgid "Older Releases"
 msgstr "Poprzednie wydania"
 
-#: data/content/cinnamon/download/index.html:55
-#: data/content/kde/download/index.html:55
-#: data/content/lxde/download/index.html:55
-#: data/content/lxqt/download/index.html:55
-#: data/content/mate-compiz/download/index.html:55
+#: data/content/cinnamon/download/index.html:56
+#: data/content/kde/download/index.html:56
+#: data/content/lxde/download/index.html:56
+#: data/content/lxqt/download/index.html:56
+#: data/content/mate-compiz/download/index.html:56
 #: data/content/soas/download/index.html:60
-#: data/content/xfce/download/index.html:55
+#: data/content/xfce/download/index.html:56
 #, python-format
 msgid "F%(rel)s Alpha"
 msgstr "F%(rel)s Alfa"
-
-#: data/content/cinnamon/download/index.html:56
-#: data/content/cinnamon/download/index.html:66
-#: data/content/kde/download/index.html:56
-#: data/content/kde/download/index.html:66
-#: data/content/lxde/download/index.html:56
-#: data/content/lxde/download/index.html:66
-#: data/content/lxqt/download/index.html:56
-#: data/content/lxqt/download/index.html:66
-#: data/content/mate-compiz/download/index.html:56
-#: data/content/mate-compiz/download/index.html:66
-#: data/content/soas/download/index.html:61
-#: data/content/soas/download/index.html:71
-#: data/content/xfce/download/index.html:56
-#: data/content/xfce/download/index.html:66
-msgid "Try a pre-release"
-msgstr "Wydanie testowe"
 
 #: data/content/cinnamon/download/index.html:57
 #: data/content/cinnamon/download/index.html:67
@@ -952,12 +929,12 @@ msgstr "Wydanie testowe"
 #: data/content/lxqt/download/index.html:67
 #: data/content/mate-compiz/download/index.html:57
 #: data/content/mate-compiz/download/index.html:67
-#: data/content/soas/download/index.html:62
-#: data/content/soas/download/index.html:72
+#: data/content/soas/download/index.html:61
+#: data/content/soas/download/index.html:71
 #: data/content/xfce/download/index.html:57
 #: data/content/xfce/download/index.html:67
-msgid "We're working on our next release."
-msgstr "Pracujemy nad następnym wydaniem Fedory."
+msgid "Try a pre-release"
+msgstr "Wydanie testowe"
 
 #: data/content/cinnamon/download/index.html:58
 #: data/content/cinnamon/download/index.html:68
@@ -969,81 +946,98 @@ msgstr "Pracujemy nad następnym wydaniem Fedory."
 #: data/content/lxqt/download/index.html:68
 #: data/content/mate-compiz/download/index.html:58
 #: data/content/mate-compiz/download/index.html:68
-#: data/content/soas/download/index.html:63
-#: data/content/soas/download/index.html:73
+#: data/content/soas/download/index.html:62
+#: data/content/soas/download/index.html:72
 #: data/content/xfce/download/index.html:58
 #: data/content/xfce/download/index.html:68
+msgid "We're working on our next release."
+msgstr "Pracujemy nad następnym wydaniem Fedory."
+
+#: data/content/cinnamon/download/index.html:59
+#: data/content/cinnamon/download/index.html:69
+#: data/content/kde/download/index.html:59
+#: data/content/kde/download/index.html:69
+#: data/content/lxde/download/index.html:59
+#: data/content/lxde/download/index.html:69
+#: data/content/lxqt/download/index.html:59
+#: data/content/lxqt/download/index.html:69
+#: data/content/mate-compiz/download/index.html:59
+#: data/content/mate-compiz/download/index.html:69
+#: data/content/soas/download/index.html:63
+#: data/content/soas/download/index.html:73
+#: data/content/xfce/download/index.html:59
+#: data/content/xfce/download/index.html:69
 #, python-format
 msgid "Help us get F%(rel)s ready!"
 msgstr "Pomóż nam przygotować F%(rel)s!"
 
-#: data/content/cinnamon/download/index.html:59
-#: data/content/kde/download/index.html:59
-#: data/content/lxde/download/index.html:59
-#: data/content/lxqt/download/index.html:59
-#: data/content/mate-compiz/download/index.html:59
+#: data/content/cinnamon/download/index.html:60
+#: data/content/kde/download/index.html:60
+#: data/content/lxde/download/index.html:60
+#: data/content/lxqt/download/index.html:60
+#: data/content/mate-compiz/download/index.html:60
 #: data/content/soas/download/index.html:64
-#: data/content/xfce/download/index.html:59
+#: data/content/xfce/download/index.html:60
 #, python-format
 msgid "Download F%(rel)s Alpha images"
 msgstr "Pobierz obrazy F%(rel)s Alfa"
 
-#: data/content/cinnamon/download/index.html:60
-#: data/content/cinnamon/download/index.html:70
-#: data/content/kde/download/index.html:60
-#: data/content/kde/download/index.html:70
-#: data/content/lxde/download/index.html:60
-#: data/content/lxde/download/index.html:70
-#: data/content/lxqt/download/index.html:60
-#: data/content/lxqt/download/index.html:70
-#: data/content/mate-compiz/download/index.html:60
-#: data/content/mate-compiz/download/index.html:70
+#: data/content/cinnamon/download/index.html:61
+#: data/content/cinnamon/download/index.html:71
+#: data/content/kde/download/index.html:61
+#: data/content/kde/download/index.html:71
+#: data/content/lxde/download/index.html:61
+#: data/content/lxde/download/index.html:71
+#: data/content/lxqt/download/index.html:61
+#: data/content/lxqt/download/index.html:71
+#: data/content/mate-compiz/download/index.html:61
+#: data/content/mate-compiz/download/index.html:71
 #: data/content/soas/download/index.html:65
 #: data/content/soas/download/index.html:75
-#: data/content/xfce/download/index.html:60
-#: data/content/xfce/download/index.html:70
+#: data/content/xfce/download/index.html:61
+#: data/content/xfce/download/index.html:71
 msgid "How to test pre-releases"
 msgstr "Jak testować wydania testowe"
 
-#: data/content/cinnamon/download/index.html:65
-#: data/content/kde/download/index.html:65
-#: data/content/lxde/download/index.html:65
-#: data/content/lxqt/download/index.html:65
-#: data/content/mate-compiz/download/index.html:65
+#: data/content/cinnamon/download/index.html:66
+#: data/content/kde/download/index.html:66
+#: data/content/lxde/download/index.html:66
+#: data/content/lxqt/download/index.html:66
+#: data/content/mate-compiz/download/index.html:66
 #: data/content/soas/download/index.html:70
-#: data/content/xfce/download/index.html:65
+#: data/content/xfce/download/index.html:66
 #, python-format
 msgid "F%(rel)s Beta"
 msgstr "F%(rel)s Beta"
 
-#: data/content/cinnamon/download/index.html:69
-#: data/content/kde/download/index.html:69
-#: data/content/lxde/download/index.html:69
-#: data/content/lxqt/download/index.html:69
-#: data/content/mate-compiz/download/index.html:69
+#: data/content/cinnamon/download/index.html:70
+#: data/content/kde/download/index.html:70
+#: data/content/lxde/download/index.html:70
+#: data/content/lxqt/download/index.html:70
+#: data/content/mate-compiz/download/index.html:70
 #: data/content/soas/download/index.html:74
-#: data/content/xfce/download/index.html:69
+#: data/content/xfce/download/index.html:70
 #, python-format
 msgid "Download F%(rel)s Beta images"
 msgstr "Pobierz obrazy F%(rel)s Beta"
 
-#: data/content/cinnamon/download/index.html:77
-#: data/content/kde/download/index.html:77
-#: data/content/lxde/download/index.html:77
-#: data/content/lxqt/download/index.html:77
-#: data/content/mate-compiz/download/index.html:77
+#: data/content/cinnamon/download/index.html:78
+#: data/content/kde/download/index.html:78
+#: data/content/lxde/download/index.html:78
+#: data/content/lxqt/download/index.html:78
+#: data/content/mate-compiz/download/index.html:78
 #: data/content/soas/download/index.html:82
-#: data/content/xfce/download/index.html:77
+#: data/content/xfce/download/index.html:78
 msgid "Verify"
 msgstr "Sprawdzanie poprawności"
 
-#: data/content/cinnamon/download/index.html:80
-#: data/content/kde/download/index.html:80
-#: data/content/lxde/download/index.html:80
-#: data/content/lxqt/download/index.html:80
-#: data/content/mate-compiz/download/index.html:80
+#: data/content/cinnamon/download/index.html:81
+#: data/content/kde/download/index.html:81
+#: data/content/lxde/download/index.html:81
+#: data/content/lxqt/download/index.html:81
+#: data/content/mate-compiz/download/index.html:81
 #: data/content/soas/download/index.html:85
-#: data/content/xfce/download/index.html:80
+#: data/content/xfce/download/index.html:81
 msgid "Verify your Image"
 msgstr "Sprawdzanie poprawności pobranego obrazu"
 
@@ -1267,7 +1261,7 @@ msgstr ""
 "Kalzium umożliwia badanie układu okresowego pierwiastków. Posiada on edytor "
 "cząsteczek w 3D oraz wiele symulatorów i kalkulatorów."
 
-#: data/content/kde/download/index.html:151 data/content/kde/index.html:188
+#: data/content/kde/index.html:188 data/content/kde/download/index.html:152
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-kde</a> IRC"
@@ -1277,7 +1271,7 @@ msgstr ""
 "\">#fedora-kde</a> na serwerze <strong>irc.freenode.org</strong> (w języku "
 "angielskim)."
 
-#: data/content/kde/download/index.html:155 data/content/kde/index.html:192
+#: data/content/kde/index.html:192 data/content/kde/download/index.html:156
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -1287,7 +1281,7 @@ msgstr ""
 "adresem <a href=\"%s\">kde@lists.fedoraproject.org</a> (w języku "
 "angielskim)."
 
-#: data/content/kde/download/index.html:159 data/content/kde/index.html:196
+#: data/content/kde/index.html:196 data/content/kde/download/index.html:160
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a href=\"%s\">KDE"
@@ -1319,6 +1313,10 @@ msgstr ""
 "Live. Zawiera wszystko, czego potrzeba do jej wypróbowania — nie trzeba "
 "usuwać obecnego systemu, i żadne dane nie zostaną naruszone. Po wypróbowaniu"
 " można jednak zainstalować Fedorę na dysku twardym."
+
+#: data/content/kde/download/index.html:35
+msgid "Direct Downloads"
+msgstr "Bezpośrednie pobieranie"
 
 #: data/content/lxde/index.html:8
 msgid "Fedora LXDE Desktop"
@@ -1464,7 +1462,7 @@ msgstr ""
 "jako pliki WAV, MP3, Ogg, FLAC, Opus, WavPack, Musepack, AAC lub Monkey’s "
 "Audio."
 
-#: data/content/lxde/download/index.html:152 data/content/lxde/index.html:154
+#: data/content/lxde/index.html:154 data/content/lxde/download/index.html:153
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#lxde</a> IRC "
@@ -1474,7 +1472,7 @@ msgstr ""
 "href=\"%s\">#lxde</a> na serwerze <strong>irc.freenode.org</strong> (w "
 "języku angielskim)."
 
-#: data/content/lxde/download/index.html:156 data/content/lxde/index.html:158
+#: data/content/lxde/index.html:158 data/content/lxde/download/index.html:157
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -1484,7 +1482,7 @@ msgstr ""
 "adresem <a href=\"%s\">lxde@lists.fedoraproject.org</a> (w języku "
 "angielskim)."
 
-#: data/content/lxde/download/index.html:160 data/content/lxde/index.html:162
+#: data/content/lxde/index.html:162 data/content/lxde/download/index.html:161
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
@@ -1502,13 +1500,6 @@ msgstr "Pobieranie Fedory ze środowiskiem LXDE"
 #, python-format
 msgid "Download Fedora %(rel)s LXDE Desktop"
 msgstr "Pobieranie Fedory %(rel)s ze środowiskiem LXDE"
-
-#: data/content/lxde/download/index.html:21
-#: data/content/lxqt/download/index.html:21
-#: data/content/soas/download/index.html:22
-#, python-format
-msgid "%s MB ISO Image for 64-bit PC"
-msgstr "Obraz ISO dla komputerów 64-bitowych (%s MB)"
 
 #: data/content/lxde/download/index.html:30
 msgid ""
@@ -1660,7 +1651,7 @@ msgstr ""
 "Qt4/Qt5, dostarczający łatwą w użyciu i estetyczną przeglądarkę kolekcji "
 "muzycznej opartą na okładkach."
 
-#: data/content/lxqt/download/index.html:152 data/content/lxqt/index.html:153
+#: data/content/lxqt/index.html:153 data/content/lxqt/download/index.html:153
 #, python-format
 msgid ""
 "General help is available in <a href=\"%s\">#fedora-lxqt</a> IRC channel on "
@@ -1669,7 +1660,7 @@ msgstr ""
 "Ogólna pomoc jest dostępna na kanale IRC <a href=\"%s\">#fedora-lxqt</a> w "
 "sieci <strong>irc.freenode.org</strong> (w języku angielskim)."
 
-#: data/content/lxqt/download/index.html:156 data/content/lxqt/index.html:157
+#: data/content/lxqt/index.html:157 data/content/lxqt/download/index.html:157
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -1679,7 +1670,7 @@ msgstr ""
 "adresem <a href=\"%s\">lxqt@lists.fedoraproject.org</a> (w języku "
 "angielskim)."
 
-#: data/content/lxqt/download/index.html:160 data/content/lxqt/index.html:161
+#: data/content/lxqt/index.html:161 data/content/lxqt/download/index.html:161
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
@@ -1829,8 +1820,8 @@ msgstr ""
 "narzędzi, pomagających w szybkim przenoszeniu plików między komputerami a "
 "serwerami sieciowymi."
 
-#: data/content/mate-compiz/download/index.html:152
 #: data/content/mate-compiz/index.html:159
+#: data/content/mate-compiz/download/index.html:153
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-mate</a> "
@@ -1840,8 +1831,8 @@ msgstr ""
 "\">#fedora-mate</a> na serwerze <strong>irc.freenode.org</strong> (w języku "
 "angielskim)."
 
-#: data/content/mate-compiz/download/index.html:160
 #: data/content/mate-compiz/index.html:167
+#: data/content/mate-compiz/download/index.html:161
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
@@ -2127,7 +2118,7 @@ msgstr ""
 "Tworzenie pasków komiksowych za pomocą obrazków i tekstu. Aktywność FotoToon"
 " dostarcza wiele możliwości dodawania ruchu i dymków."
 
-#: data/content/soas/download/index.html:157 data/content/soas/index.html:193
+#: data/content/soas/index.html:193 data/content/soas/download/index.html:157
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#sugar</a> IRC "
@@ -2137,7 +2128,7 @@ msgstr ""
 "href=\"%s\">#sugar</a> na serwerze <strong>irc.freenode.org</strong> (w "
 "języku angielskim)."
 
-#: data/content/soas/download/index.html:161 data/content/soas/index.html:197
+#: data/content/soas/index.html:197 data/content/soas/download/index.html:161
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -2147,7 +2138,7 @@ msgstr ""
 "adresem <a href=\"%s\">soas@lists.fedoraproject.org</a> (w języku "
 "angielskim)."
 
-#: data/content/soas/download/index.html:165 data/content/soas/index.html:201
+#: data/content/soas/index.html:201 data/content/soas/download/index.html:165
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
@@ -2166,6 +2157,11 @@ msgstr "Pobieranie Fedory ze środowiskiem SoaS"
 msgid "Download Fedora %(rel)s SoaS Desktop"
 msgstr "Pobieranie Fedory %(rel)s ze środowiskiem SoaS"
 
+#: data/content/soas/download/index.html:22
+#, python-format
+msgid "%s MB ISO Image for 64-bit PC"
+msgstr "Obraz ISO dla komputerów 64-bitowych (%s MB)"
+
 #: data/content/soas/download/index.html:34
 msgid ""
 "Fedora SoaS Desktop is shipped as a live operating system. It's everything "
@@ -2179,11 +2175,6 @@ msgstr ""
 "Zawiera wszystko, czego potrzeba do jej wypróbowania — nie trzeba usuwać "
 "obecnego systemu, i żadne dane nie zostaną naruszone. Po wypróbowaniu można "
 "jednak zainstalować Fedorę na dysku twardym."
-
-#: data/content/soas/download/index.html:42
-#, python-format
-msgid "32-bit %sMB Live image"
-msgstr "32-bitowy obraz Live (%s MB)"
 
 #: data/content/xfce/index.html:8
 msgid "Fedora Xfce Desktop"
@@ -2250,7 +2241,7 @@ msgstr "Pragha"
 msgid "Manage and play your music with ease."
 msgstr "Łatwe zarządzanie i odtwarzanie muzyki."
 
-#: data/content/xfce/download/index.html:152 data/content/xfce/index.html:149
+#: data/content/xfce/index.html:149 data/content/xfce/download/index.html:153
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#xfce</a> IRC "
@@ -2260,7 +2251,7 @@ msgstr ""
 "href=\"%s\">#xfce</a> na serwerze <strong>irc.freenode.org</strong> (w "
 "języku angielskim)."
 
-#: data/content/xfce/download/index.html:156 data/content/xfce/index.html:153
+#: data/content/xfce/index.html:153 data/content/xfce/download/index.html:157
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -2270,7 +2261,7 @@ msgstr ""
 "adresem <a href=\"%s\">xfce@lists.fedoraproject.org</a> (w języku "
 "angielskim)."
 
-#: data/content/xfce/download/index.html:160 data/content/xfce/index.html:157
+#: data/content/xfce/index.html:157 data/content/xfce/download/index.html:161
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
@@ -2486,10 +2477,6 @@ msgid ""
 msgstr ""
 "Dostępny jest także <a href=\"%s\">pełny podręcznik instalacji</a>. Zalecamy"
 " jego przeczytanie przed instalacją."
-
-#: data/templates/generic/splash-checksum.html:15
-msgid "Validate 32bit!"
-msgstr "Sprawdzanie obrazu 32-bitowego"
 
 #: data/templates/generic/unofficial.html:11
 #, python-format
