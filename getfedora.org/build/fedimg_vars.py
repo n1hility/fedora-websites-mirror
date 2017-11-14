@@ -50,7 +50,7 @@ def collect(release):
         #    'PV_base_AMI':      lambda e: e.get('virt_type') == 'paravirtual' and e.get('vol_type') == 'standard',
         #    'GP2_PV_base_AMI':  lambda e: e.get('virt_type') == 'paravirtual' and e.get('vol_type') == 'gp2',
         #}),
-        ("Fedora-Atomic-{curr_cloud_AMI_id}-{atomic_composedate}.x86_64", {
+        ("Fedora-Atomic-{curr_atomic_id}-{atomic_composedate}.x86_64", {
            'HVM_atomic_AMI':     lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') == 'standard',
            'GP2_HVM_atomic_AMI': lambda e: e.get('virt_type') == 'hvm' and e.get('vol_type') == 'gp2',
         }),
