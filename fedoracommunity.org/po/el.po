@@ -1,33 +1,26 @@
 # Translations template for PROJECT.
 # Copyright (C) 2013 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# 
+#
 # Translators:
 # Giannis Konstantinidis, <giannisk@fedoraproject.org>, 2012
 # Greek Fedora Community, 2012
 # Nikos Roussos <nikos@roussos.cc>, 2012
 msgid ""
 msgstr ""
-"Project-Id-Version: Fedora Websites\n"
+"Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-08-10 10:24+0200\n"
-"PO-Revision-Date: 2015-02-03 15:16+0000\n"
-"Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
+"POT-Creation-Date: 2017-11-14 17:45+0100\n"
+"PO-Revision-Date: 2015-02-17 10:50-0500\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Greek (http://www.transifex.com/projects/p/fedora-web/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 0.9.6\n"
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#: data/content/apac.html:1
-msgid "Fedora Bangladesh Community"
-msgstr "Κοινότητα Fedora Μπαγκλαντές"
-
-#: data/content/apac.html:1
-msgid "Fedora China Community"
-msgstr "Κοινότητα Fedora Κίνας"
+"Generated-By: Babel 0.9.6\n"
+"X-Generator: Zanata 3.9.6\n"
 
 #: data/content/apac.html:1
 msgid "Fedora Indonesia Community"
@@ -38,12 +31,8 @@ msgid "Fedora Japan Community"
 msgstr "Κοινότητα Fedora Ιαπωνίας"
 
 #: data/content/apac.html:1
-msgid "Fedora Phillipines Community"
-msgstr "Κοινότητα Fedora Φιλλιπινών"
-
-#: data/content/apac.html:1
-msgid "Fedora Taiwan Community"
-msgstr "Κοινότητα Fedora Ταιβάν"
+msgid "Fedora Philippines Community"
+msgstr ""
 
 #: data/content/apac.html:1
 msgid "Fedora Sri Lanka Community"
@@ -54,45 +43,45 @@ msgid "Fedora Vietnam Community"
 msgstr "Κοινότητα Fedora Βιετνάμ"
 
 #: data/content/apac.html:1
-msgid "Fedora Malaysia Community"
-msgstr "Κοινότητα Fedora Μαλαισίας"
+msgid "Fedora Myanmar Community"
+msgstr ""
 
-#: data/content/apac.html:26
+#: data/content/apac.html:1
+msgid "Fedora Taiwan Community"
+msgstr "Κοινότητα Fedora Ταιβάν"
+
+#: data/content/apac.html:24
 msgid "Fedora Community | Asia Pacific (APAC)"
 msgstr "Κοινότητα Fedora | Ασία Ειρηνικός (APAC)"
 
-#: data/content/apac.html:36 data/templates/head.html:50
+#: data/content/apac.html:34 data/templates/head.html:50
 msgid "Asia-Pacific"
 msgstr "Ασία-Ειρηνικός"
 
-#: data/content/apac.html:37 data/content/emea.html:42
-#: data/content/latam.html:39 data/content/northam.html:29
+#: data/content/apac.html:35 data/content/emea.html:37
+#: data/content/latam.html:30 data/content/northam.html:29
 msgid "Region-Wide Resources"
 msgstr "Πόροι κατανεμημένοι ανα περιοχή"
 
-#: data/content/apac.html:44 data/content/northam.html:35
+#: data/content/apac.html:42 data/content/northam.html:35
 msgid "Fedora Wiki Page"
 msgstr "Σελίδα του Fedora Wiki"
 
-#: data/content/apac.html:47 data/content/latam.html:49
+#: data/content/apac.html:45 data/content/latam.html:35
 #: data/content/northam.html:38
 msgid "Mailing List"
 msgstr "Λίστα Ταχυδρομείου"
 
-#: data/content/apac.html:51 data/content/emea.html:54
-#: data/content/latam.html:56 data/content/northam.html:41
+#: data/content/apac.html:49 data/content/emea.html:49
+#: data/content/latam.html:42 data/content/northam.html:41
 #: data/templates/footer.html:15
 msgid "Events"
 msgstr "Εκδηλώσεις"
 
-#: data/content/apac.html:62 data/content/emea.html:64
-#: data/content/latam.html:67 data/content/northam.html:52
+#: data/content/apac.html:60 data/content/emea.html:59
+#: data/content/latam.html:53 data/content/northam.html:52
 msgid "Community Sites in this Region"
 msgstr "Ιστοσελίδες Κοινοτήτων σε αυτή την Περιοχή"
-
-#: data/content/emea.html:1
-msgid "Fedora Belgium Community"
-msgstr "Κοινότητα Fedora Βελγίου"
 
 #: data/content/emea.html:1
 msgid "Fedora Czech Republic Community"
@@ -111,16 +100,8 @@ msgid "Fedora Greek Community Portal"
 msgstr "Πόρταλ Ελληνικής Κοινότητας Fedora"
 
 #: data/content/emea.html:1
-msgid "Fedora Hungarian Community"
-msgstr "Κοινότητα Fedora Ουγγαρίας"
-
-#: data/content/emea.html:1
 msgid "Fedora Italian Community"
 msgstr "Κοινότητα Fedora Ιταλίας"
-
-#: data/content/emea.html:1
-msgid "Fedora Moldavia Community"
-msgstr "Κοινότητα Fedora Μολβαδίας"
 
 #: data/content/emea.html:1
 msgid "Fedora Netherlands Community"
@@ -129,10 +110,6 @@ msgstr "Κοινότητα Fedora Ολλανδίας"
 #: data/content/emea.html:1
 msgid "Fedora Poland Community"
 msgstr "Κοινότητα Fedora Πολωνίας"
-
-#: data/content/emea.html:1
-msgid "Fedora Romania Community"
-msgstr "Κοινότητα Fedora Ρουμανίας"
 
 #: data/content/emea.html:1
 msgid "Fedora Russian Community"
@@ -146,30 +123,30 @@ msgstr "Κοινότητα Fedora Ισπανίας"
 msgid "Fedora Tunisia Community"
 msgstr "Κοινότητα Fedora Τυνησίας"
 
-#: data/content/emea.html:1
-msgid "Fedora UK Community"
-msgstr "Κοινότητα Fedora Ηνωμένου Βασιλείου"
-
-#: data/content/emea.html:32
+#: data/content/emea.html:27
 msgid "Fedora Community | Europe (EMEA)"
 msgstr "Κοινότητα Fedora | Ευρώπη (EMEA)"
 
-#: data/content/emea.html:41
+#: data/content/emea.html:36
 msgid "Europe, Middle East, & Africa"
 msgstr "Ευρώπη, Μέση Ανατολή, & Αφρική"
 
-#: data/content/emea.html:44
+#: data/content/emea.html:39
 msgid ""
 "The EMEA region, including Europe, the Middle East, & Africa, is served by "
 "the <a href=\"http://fedoraproject.org/wiki/Ambassadors/EMEA\">Fedora "
 "Ambassadors EMEA group</a>."
-msgstr "Η περιοχή EMEA, συμπεριλαμβανομένης της Ευρώπης, της Μέσης Ανατολής, & της Αφρικής, συντηρείται από <a href=\"http://fedoraproject.org/wiki/Ambassadors/EMEA\">την EMEA ομάδα Fedora Ambassadors</a>."
+msgstr ""
+"Η περιοχή EMEA, συμπεριλαμβανομένης της Ευρώπης, της Μέσης Ανατολής, & της "
+"Αφρικής, συντηρείται από <a "
+"href=\"http://fedoraproject.org/wiki/Ambassadors/EMEA\">την EMEA ομάδα "
+"Fedora Ambassadors</a>."
 
-#: data/content/emea.html:48 data/content/latam.html:46
+#: data/content/emea.html:43
 msgid "Website"
 msgstr "Ιστοσελίδα"
 
-#: data/content/emea.html:51
+#: data/content/emea.html:46
 msgid "Email Address"
 msgstr "Διεύθυνση ηλεκτρονικού ταχυδρομείου"
 
@@ -185,7 +162,9 @@ msgstr "Αρχική"
 msgid ""
 "This is a a place where folks seeking out their particular local Fedora "
 "community could go find it."
-msgstr "Αυτό είναι ένα μέρος οπού οι φίλοι που ψάχνουν την συγκεκριμένη τοπική κοινότητα Fedora μπορούν να τη βρούν."
+msgstr ""
+"Αυτό είναι ένα μέρος οπού οι φίλοι που ψάχνουν την συγκεκριμένη τοπική "
+"κοινότητα Fedora μπορούν να τη βρούν."
 
 #: data/content/index.html:31
 msgid "Asia Pacific"
@@ -195,7 +174,7 @@ msgstr "Ασία Ειρηνικός"
 msgid "Europe"
 msgstr "Ευρώπη"
 
-#: data/content/index.html:33 data/content/latam.html:38
+#: data/content/index.html:33 data/content/latam.html:29
 #: data/templates/head.html:52
 msgid "Latin America"
 msgstr "Λατινική Αμερική"
@@ -206,10 +185,6 @@ msgid "North America"
 msgstr "Βόρειος Αμερική"
 
 #: data/content/latam.html:1
-msgid "Fedora Argentina Community"
-msgstr "Κοινότητα Fedora Αργετινής"
-
-#: data/content/latam.html:1
 msgid "Fedora Brazil Portal"
 msgstr "Πόρταλ Fedora Βραζιλίας"
 
@@ -218,46 +193,14 @@ msgid "Fedora Chile Community"
 msgstr "Κοινότητα Fedora Χιλής"
 
 #: data/content/latam.html:1
-msgid "Fedora Colombia Community"
-msgstr "Κοινότητα Fedora Κολομβίας"
-
-#: data/content/latam.html:1
-msgid "Fedora El Salvador Community"
-msgstr "Κοινότητα Fedora Ελ Σαλβαντόρ"
-
-#: data/content/latam.html:1
-msgid "Fedora Guatemala Community"
-msgstr "Κοινότητα Fedora Γουατεμάλας"
-
-#: data/content/latam.html:1
-msgid "Fedora Latin America Community"
-msgstr "Κοινότητα Fedora Λατινικής Αμερικής"
-
-#: data/content/latam.html:1
-msgid "Fedora Mexico Community"
-msgstr "Κοινότητα Fedora Μεξικό"
-
-#: data/content/latam.html:1
 msgid "Fedora Nicaragua Community"
 msgstr "Κοινότητα Fedora Νικαράγουας"
 
-#: data/content/latam.html:1
-msgid "Fedora Panama Community"
-msgstr "Κοινότητα Fedora Παναμά"
-
-#: data/content/latam.html:1
-msgid "Fedora Peru Community"
-msgstr "Κοινότητα Fedora Περού"
-
-#: data/content/latam.html:1
-msgid "Fedora Venezuela Community"
-msgstr "Κοινότητα Fedora Βενεζουέλας"
-
-#: data/content/latam.html:28
+#: data/content/latam.html:19
 msgid "Fedora Community | Latin America (LATAM)"
 msgstr "Κοινότητα Fedora | Λατινική Αμερική (LATAM)"
 
-#: data/content/latam.html:53
+#: data/content/latam.html:39
 msgid "Chat"
 msgstr "Chat"
 
@@ -267,14 +210,19 @@ msgstr "Κοινότητα Fedora | Βόρειος Αμερική (NA)"
 
 #: data/templates/content-fpolinkback.html:9
 msgid "There's more to Fedora. Visit the official Fedora project website at:"
-msgstr "Υπάρχουν περισσότερα για το Fedora. Επισκευτείτε την επίσημη ιστοσελίδα του Έργου Fedora στο:"
+msgstr ""
+"Υπάρχουν περισσότερα για το Fedora. Επισκευτείτε την επίσημη ιστοσελίδα του "
+"Έργου Fedora στο:"
 
 #: data/templates/content-fpolinkback.html:14
 #, python-format
 msgid ""
 "Want to add your local community's Fedora website to this directory? <a "
 "href=\"%s\">Email the Fedora Websites team </a>"
-msgstr "Θέλετε να προσθέσετε την ιστοσελίδα της τοπικής σας κοινότητας Fedora σε αυτόν τον ιστότοπο; <a href=\"%s\">Στείλτε ένα μήνυμα ηλεκτρονικού ταχυδρομείου στην ομάδα διαχείρησης ιστοσελίδων του Fedora.</a>"
+msgstr ""
+"Θέλετε να προσθέσετε την ιστοσελίδα της τοπικής σας κοινότητας Fedora σε "
+"αυτόν τον ιστότοπο; <a href=\"%s\">Στείλτε ένα μήνυμα ηλεκτρονικού "
+"ταχυδρομείου στην ομάδα διαχείρησης ιστοσελίδων του Fedora.</a>"
 
 #: data/templates/footer.html:10
 msgid "About Fedora"
@@ -285,11 +233,11 @@ msgid "Planet Fedora"
 msgstr "Πλανήτης Fedora"
 
 #: data/templates/footer.html:12
-msgid "Fedora Weekly News"
-msgstr "Εβδομαδιαία νέα του  Fedora"
+msgid "Fedora Magazine"
+msgstr ""
 
-#: data/templates/footer.html:13 data/templates/footer.html:32
-#: data/templates/footer.html:47
+#: data/templates/footer.html:13 data/templates/footer.html:37
+#: data/templates/footer.html:52
 msgid "Documentation"
 msgstr "Τεκμηρίωση"
 
@@ -301,131 +249,163 @@ msgstr "Fedora Wiki"
 msgid "Download"
 msgstr "Λήψη"
 
-#: data/templates/footer.html:21 data/templates/head.html:15
-msgid "Get Fedora"
-msgstr "Λήψη Fedora"
+#: data/templates/footer.html:21
+msgid "Get Fedora Workstation"
+msgstr ""
 
 #: data/templates/footer.html:22
-msgid "Full Download List"
-msgstr "Πλήρης Λίστα Λήψεων"
+msgid "Get Fedora Server"
+msgstr ""
+
+#: data/templates/footer.html:23
+msgid "Get Fedora Atomic"
+msgstr ""
+
+#: data/templates/footer.html:24
+msgid "Fedora Spins"
+msgstr ""
+
+#: data/templates/footer.html:25
+msgid "Fedora Labs"
+msgstr ""
+
+#: data/templates/footer.html:26
+msgid "Fedora ARM<span class=\"sup\">®</span>"
+msgstr ""
 
 #: data/templates/footer.html:27
+msgid "Alternative Downloads"
+msgstr ""
+
+#: data/templates/footer.html:32
 msgid "Support"
 msgstr "Υποστήριξη"
 
-#: data/templates/footer.html:28
+#: data/templates/footer.html:33
 msgid "Get Help"
 msgstr "Λήψη Βοήθειας"
 
-#: data/templates/footer.html:29
+#: data/templates/footer.html:34
 msgid "IRC Help"
 msgstr "Βοήθεια με το IRC"
 
-#: data/templates/footer.html:30
+#: data/templates/footer.html:35
 msgid "Mailing List Help"
 msgstr "Βοήθεια με τη Λίστα Ταχυδρομείου"
 
-#: data/templates/footer.html:31
-msgid "Forums"
-msgstr "Forums"
+#: data/templates/footer.html:36
+msgid "Ask Fedora"
+msgstr ""
 
-#: data/templates/footer.html:37
+#: data/templates/footer.html:42
 msgid "Join"
 msgstr "Συμμετοχή"
 
-#: data/templates/footer.html:38
+#: data/templates/footer.html:43
 msgid "Join Fedora"
 msgstr "Συμμετοχή στο Fedora"
 
-#: data/templates/footer.html:39
+#: data/templates/footer.html:44
 msgid "Fedora SIGs"
 msgstr "Fedora SIGs"
 
-#: data/templates/footer.html:40
+#: data/templates/footer.html:45
 msgid "Fedora Account System"
 msgstr "Σύστημα Διαχείρισης Λογαριασμών Fedora"
 
-#: data/templates/footer.html:41
+#: data/templates/footer.html:46
 msgid "Fedora Community"
 msgstr "Κοινότητα Fedora"
 
-#: data/templates/footer.html:46
+#: data/templates/footer.html:51
 msgid "Subprojects"
 msgstr "Υποέργα"
 
-#: data/templates/footer.html:48
+#: data/templates/footer.html:53
 msgid "Translation"
 msgstr "Μετάφραση"
 
-#: data/templates/footer.html:49
+#: data/templates/footer.html:54
 msgid "Marketing"
 msgstr "Προώθηση"
 
-#: data/templates/footer.html:50
+#: data/templates/footer.html:55
 msgid "Ambassadors"
 msgstr "Ambassadors"
 
-#: data/templates/footer.html:51
+#: data/templates/footer.html:56
 msgid "Design"
 msgstr "Σχεδίαση"
 
-#: data/templates/footer.html:52
+#: data/templates/footer.html:57
 msgid "Infrastructure"
 msgstr "Δομή"
 
-#: data/templates/footer.html:58
+#: data/templates/footer.html:63
 msgid "Websites"
 msgstr "Ιστοσελίδες"
 
-#: data/templates/footer.html:59
+#: data/templates/footer.html:64
 msgid "Internationalization"
 msgstr "Διαθνοποίηση"
 
-#: data/templates/footer.html:60
+#: data/templates/footer.html:65
 msgid "News"
 msgstr "Νέα"
 
-#: data/templates/footer.html:61
+#: data/templates/footer.html:66
 msgid "Special Interest Groups (SIGs)"
 msgstr "Ειδικές Ομάδες Ενδιαφέροντος (SIGs)"
 
-#: data/templates/footer.html:67
+#: data/templates/footer.html:72
 msgid "Fedora is sponsored by Red Hat."
 msgstr "To Fedora επιχορηγείται από τη Red Hat."
 
-#: data/templates/footer.html:68
+#: data/templates/footer.html:73
 msgid "Learn more about the relationship between Red Hat and Fedora >"
 msgstr "Μάθετε περισσότερα για τη σχέση μεταξύ Red Hat και Fedora >"
 
-#: data/templates/footer.html:69
-msgid "© 2011 Red Hat, Inc. and others."
-msgstr "© 2011 Red Hat, Inc. και άλλοι."
-
-#: data/templates/footer.html:71
-msgid "Contact"
-msgstr "Επικοινωνία"
-
-#: data/templates/footer.html:72
-msgid "Sponsors"
-msgstr "Χορηγοί"
-
-#: data/templates/footer.html:73
-msgid "Legal"
-msgstr "Νομικά"
-
 #: data/templates/footer.html:74
-msgid "Trademark Guidelines"
-msgstr "Οδηγίες Λογότυπου"
+#, python-format
+msgid "© %(year)s Red Hat, Inc. and others."
+msgstr ""
 
 #: data/templates/footer.html:76
 msgid ""
 "The Fedora Project is maintained and driven by the community. This is a "
 "community maintained site. Red Hat is not responsible for content."
-msgstr "Το Έργο Fedora συντηρείται και οδηγείται από την κοινότητα. Αυτός είναι ένας ιστότοπος συντηρούμενος από την κοινότητα. Η Red Hat δεν ευθύνεται για το περιεχόμενο."
+msgstr ""
+"Το Έργο Fedora συντηρείται και οδηγείται από την κοινότητα. Αυτός είναι ένας"
+" ιστότοπος συντηρούμενος από την κοινότητα. Η Red Hat δεν ευθύνεται για το "
+"περιεχόμενο."
+
+#: data/templates/footer.html:78
+msgid "Contact"
+msgstr "Επικοινωνία"
+
+#: data/templates/footer.html:79
+msgid "Sponsors"
+msgstr "Χορηγοί"
+
+#: data/templates/footer.html:80
+msgid "Legal"
+msgstr "Νομικά"
+
+#: data/templates/footer.html:81
+msgid "Trademark Guidelines"
+msgstr "Οδηγίες Λογότυπου"
+
+#: data/templates/footer.html:82
+msgid "Content License"
+msgstr ""
 
 #: data/templates/head.html:9
 msgid "Region-Specific Fedora Websites"
 msgstr "Ιστοσελίδες Fedora με βάση την περιοχή"
+
+#: data/templates/head.html:15
+msgid "Get Fedora"
+msgstr "Λήψη Fedora"
 
 #: data/templates/head.html:16
 msgid "Help"
@@ -435,11 +415,16 @@ msgstr "Βοήθεια"
 msgid ""
 "Fedora Project contributors in various countries maintain their own region-"
 "specific content. Each site is solely responsible for the content they post."
-msgstr "Οι συντελεστές του Έργου Fedora σε διάφορες χώρες συντηρούν το δικό τους περιεχόμενο στη γλώσσα τους. Κάθε ιστότοπος είναι αποκλειστικά υπέυθυνος για το περιεχόμενο που αναρτεί."
+msgstr ""
+"Οι συντελεστές του Έργου Fedora σε διάφορες χώρες συντηρούν το δικό τους "
+"περιεχόμενο στη γλώσσα τους. Κάθε ιστότοπος είναι αποκλειστικά υπέυθυνος για"
+" το περιεχόμενο που αναρτεί."
 
 #: data/templates/head.html:46
 msgid "A list of region-specific websites is available below."
-msgstr "Μια λίστα με τις κοινότητες κατανεμημένες με βάση την περιοχή είναι διαθέσιμη παρακάτω."
+msgstr ""
+"Μια λίστα με τις κοινότητες κατανεμημένες με βάση την περιοχή είναι "
+"διαθέσιμη παρακάτω."
 
 #: data/templates/head.html:51
 msgid "Europe, Middle East, and Africa"

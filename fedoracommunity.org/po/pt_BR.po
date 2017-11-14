@@ -1,7 +1,7 @@
 # Translations template for PROJECT.
 # Copyright (C) 2013 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# 
+#
 # Translators:
 # Andrei Jiácomo Zuse <andrei.j.zuse@gmail.com>, 2013
 # Andrei Jiácomo Zuse <andrei.j.zuse@gmail.com>, 2013
@@ -11,28 +11,23 @@
 # neb <nick@bebout.net>, 2011
 # Ramilton Costa Gomes Junior <ramilton_costa@hotmail.com>, 2013
 # Ricardo Gyorfy <rgyorfy@redhat.com>, 2011
+# Marco Aurélio Krause <ouesten@me.com>, 2015. #zanata
+# Ana Mativi <mativi@fedoraproject.org>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: Fedora Websites\n"
+"Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-08-10 10:24+0200\n"
-"PO-Revision-Date: 2015-02-03 15:16+0000\n"
-"Last-Translator: Daniel Lara <danniel@fedoraproject.org>\n"
+"POT-Creation-Date: 2017-11-14 17:45+0100\n"
+"PO-Revision-Date: 2016-05-20 09:40-0400\n"
+"Last-Translator: Ana Mativi <mativi@fedoraproject.org>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/fedora-web/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 0.9.6\n"
-"Language: pt_BR\n"
+"Language: pt-BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-
-#: data/content/apac.html:1
-msgid "Fedora Bangladesh Community"
-msgstr "Comunidade Fedora de Bangladesh"
-
-#: data/content/apac.html:1
-msgid "Fedora China Community"
-msgstr "Comunidade Fedora da China"
+"Generated-By: Babel 0.9.6\n"
+"X-Generator: Zanata 3.9.6\n"
 
 #: data/content/apac.html:1
 msgid "Fedora Indonesia Community"
@@ -43,12 +38,8 @@ msgid "Fedora Japan Community"
 msgstr "Comunidade Fedora do Japão"
 
 #: data/content/apac.html:1
-msgid "Fedora Phillipines Community"
+msgid "Fedora Philippines Community"
 msgstr "Comunidade Fedora das Filipinas"
-
-#: data/content/apac.html:1
-msgid "Fedora Taiwan Community"
-msgstr "Comunidade Fedora de Taiwan"
 
 #: data/content/apac.html:1
 msgid "Fedora Sri Lanka Community"
@@ -59,45 +50,45 @@ msgid "Fedora Vietnam Community"
 msgstr "Comunidade Fedora do Vietnã"
 
 #: data/content/apac.html:1
-msgid "Fedora Malaysia Community"
-msgstr "Comunidade Fedora da Malasia"
+msgid "Fedora Myanmar Community"
+msgstr "Comunidade Fedora de Myanmar"
 
-#: data/content/apac.html:26
+#: data/content/apac.html:1
+msgid "Fedora Taiwan Community"
+msgstr "Comunidade Fedora de Taiwan"
+
+#: data/content/apac.html:24
 msgid "Fedora Community | Asia Pacific (APAC)"
 msgstr "Comunidade Fedora | Pacífico Ásia (APAC)"
 
-#: data/content/apac.html:36 data/templates/head.html:50
+#: data/content/apac.html:34 data/templates/head.html:50
 msgid "Asia-Pacific"
 msgstr "Pacífico-Ásia"
 
-#: data/content/apac.html:37 data/content/emea.html:42
-#: data/content/latam.html:39 data/content/northam.html:29
+#: data/content/apac.html:35 data/content/emea.html:37
+#: data/content/latam.html:30 data/content/northam.html:29
 msgid "Region-Wide Resources"
 msgstr "Recursos em escala regional "
 
-#: data/content/apac.html:44 data/content/northam.html:35
+#: data/content/apac.html:42 data/content/northam.html:35
 msgid "Fedora Wiki Page"
 msgstr "Wiki do Fedora"
 
-#: data/content/apac.html:47 data/content/latam.html:49
+#: data/content/apac.html:45 data/content/latam.html:35
 #: data/content/northam.html:38
 msgid "Mailing List"
 msgstr "Lista de Discussão"
 
-#: data/content/apac.html:51 data/content/emea.html:54
-#: data/content/latam.html:56 data/content/northam.html:41
+#: data/content/apac.html:49 data/content/emea.html:49
+#: data/content/latam.html:42 data/content/northam.html:41
 #: data/templates/footer.html:15
 msgid "Events"
 msgstr "Eventos"
 
-#: data/content/apac.html:62 data/content/emea.html:64
-#: data/content/latam.html:67 data/content/northam.html:52
+#: data/content/apac.html:60 data/content/emea.html:59
+#: data/content/latam.html:53 data/content/northam.html:52
 msgid "Community Sites in this Region"
 msgstr "Sites da Comunidade nessa região"
-
-#: data/content/emea.html:1
-msgid "Fedora Belgium Community"
-msgstr "Comunidade Fedora da Bélgica"
 
 #: data/content/emea.html:1
 msgid "Fedora Czech Republic Community"
@@ -116,16 +107,8 @@ msgid "Fedora Greek Community Portal"
 msgstr "Portal da Comunidade Fedora da Grécia"
 
 #: data/content/emea.html:1
-msgid "Fedora Hungarian Community"
-msgstr "Comunidade Fedora da Hungria"
-
-#: data/content/emea.html:1
 msgid "Fedora Italian Community"
 msgstr "Comunidade Fedora da Itália"
-
-#: data/content/emea.html:1
-msgid "Fedora Moldavia Community"
-msgstr "Comunidade Fedora da Moldavia"
 
 #: data/content/emea.html:1
 msgid "Fedora Netherlands Community"
@@ -134,10 +117,6 @@ msgstr "Comunidade Fedora da Holanda"
 #: data/content/emea.html:1
 msgid "Fedora Poland Community"
 msgstr "Comunidade Fedora da Polônia"
-
-#: data/content/emea.html:1
-msgid "Fedora Romania Community"
-msgstr "Comunidade Fedora da Roménia"
 
 #: data/content/emea.html:1
 msgid "Fedora Russian Community"
@@ -151,30 +130,29 @@ msgstr "Comunidade Fedora da Espanha"
 msgid "Fedora Tunisia Community"
 msgstr "Comunidade Fedora da Tunísia"
 
-#: data/content/emea.html:1
-msgid "Fedora UK Community"
-msgstr "Comunidade Fedora do Reino Unido"
-
-#: data/content/emea.html:32
+#: data/content/emea.html:27
 msgid "Fedora Community | Europe (EMEA)"
 msgstr "Comunidade Fedora | Europa (EMEA)"
 
-#: data/content/emea.html:41
+#: data/content/emea.html:36
 msgid "Europe, Middle East, & Africa"
 msgstr "Europa, Oriente Médio & Africa"
 
-#: data/content/emea.html:44
+#: data/content/emea.html:39
 msgid ""
 "The EMEA region, including Europe, the Middle East, & Africa, is served by "
 "the <a href=\"http://fedoraproject.org/wiki/Ambassadors/EMEA\">Fedora "
 "Ambassadors EMEA group</a>."
-msgstr "A Região EMEA, incluindo Europa, Oriente Médio & Africa, é atendida pelo <a href=\"http://fedoraproject.org/wiki/Ambassadors/EMEA\">Grupo de Embaixadores Fedora EMEA</a>."
+msgstr ""
+"A Região EMEA, incluindo Europa, Oriente Médio & Africa, é atendida pelo <a "
+"href=\"http://fedoraproject.org/wiki/Ambassadors/EMEA\">Grupo de "
+"Embaixadores Fedora EMEA</a>."
 
-#: data/content/emea.html:48 data/content/latam.html:46
+#: data/content/emea.html:43
 msgid "Website"
 msgstr "Website"
 
-#: data/content/emea.html:51
+#: data/content/emea.html:46
 msgid "Email Address"
 msgstr "Endereço de Email"
 
@@ -200,7 +178,7 @@ msgstr "Pacífico Ásia"
 msgid "Europe"
 msgstr "Europa"
 
-#: data/content/index.html:33 data/content/latam.html:38
+#: data/content/index.html:33 data/content/latam.html:29
 #: data/templates/head.html:52
 msgid "Latin America"
 msgstr "América Latina"
@@ -211,10 +189,6 @@ msgid "North America"
 msgstr "América do Norte"
 
 #: data/content/latam.html:1
-msgid "Fedora Argentina Community"
-msgstr "Comunidade Fedora da Argentina"
-
-#: data/content/latam.html:1
 msgid "Fedora Brazil Portal"
 msgstr "Portal do Fedora Brasil"
 
@@ -223,46 +197,14 @@ msgid "Fedora Chile Community"
 msgstr "Comunidade Fedora do Chile"
 
 #: data/content/latam.html:1
-msgid "Fedora Colombia Community"
-msgstr "Comunidade Fedora da Colômbia"
-
-#: data/content/latam.html:1
-msgid "Fedora El Salvador Community"
-msgstr "Comunidade Fedora El Salvador"
-
-#: data/content/latam.html:1
-msgid "Fedora Guatemala Community"
-msgstr "Comunidade Fedora da Guatemala"
-
-#: data/content/latam.html:1
-msgid "Fedora Latin America Community"
-msgstr "Comunidade Fedora da América Latina"
-
-#: data/content/latam.html:1
-msgid "Fedora Mexico Community"
-msgstr "Comunidade Fedora do México"
-
-#: data/content/latam.html:1
 msgid "Fedora Nicaragua Community"
 msgstr "Comunidade Fedora da Nicarágua"
 
-#: data/content/latam.html:1
-msgid "Fedora Panama Community"
-msgstr "Comunidade Fedora do Panamá"
-
-#: data/content/latam.html:1
-msgid "Fedora Peru Community"
-msgstr "Comunidade Fedora do Peru"
-
-#: data/content/latam.html:1
-msgid "Fedora Venezuela Community"
-msgstr "Comunidade Fedora da Venezuela"
-
-#: data/content/latam.html:28
+#: data/content/latam.html:19
 msgid "Fedora Community | Latin America (LATAM)"
 msgstr "Comunidade Fedora | América Latina (LATAM)"
 
-#: data/content/latam.html:53
+#: data/content/latam.html:39
 msgid "Chat"
 msgstr "Conversa"
 
@@ -279,7 +221,9 @@ msgstr "Há mais para o Fedora. Visite o website oficial do projeto Fedora em:"
 msgid ""
 "Want to add your local community's Fedora website to this directory? <a "
 "href=\"%s\">Email the Fedora Websites team </a>"
-msgstr "Quer adicionar o site Fedora de sua comunidade local para este diretório? <a href=\"%s\"> E-mail a equipe Fedora sites </a>"
+msgstr ""
+"Quer adicionar o site Fedora de sua comunidade local para este diretório? <a"
+" href=\"%s\"> E-mail a equipe Fedora sites </a>"
 
 #: data/templates/footer.html:10
 msgid "About Fedora"
@@ -290,11 +234,11 @@ msgid "Planet Fedora"
 msgstr "Planeta Fedora"
 
 #: data/templates/footer.html:12
-msgid "Fedora Weekly News"
-msgstr "Notícias Semanais do Fedora"
+msgid "Fedora Magazine"
+msgstr "Fedora Magazine"
 
-#: data/templates/footer.html:13 data/templates/footer.html:32
-#: data/templates/footer.html:47
+#: data/templates/footer.html:13 data/templates/footer.html:37
+#: data/templates/footer.html:52
 msgid "Documentation"
 msgstr "Documentação"
 
@@ -306,131 +250,162 @@ msgstr "Wiki do Fedora"
 msgid "Download"
 msgstr "Download"
 
-#: data/templates/footer.html:21 data/templates/head.html:15
-msgid "Get Fedora"
-msgstr "Obtenha o Fedora"
+#: data/templates/footer.html:21
+msgid "Get Fedora Workstation"
+msgstr ""
 
 #: data/templates/footer.html:22
-msgid "Full Download List"
-msgstr "Lista de download completa"
+msgid "Get Fedora Server"
+msgstr ""
+
+#: data/templates/footer.html:23
+msgid "Get Fedora Atomic"
+msgstr ""
+
+#: data/templates/footer.html:24
+msgid "Fedora Spins"
+msgstr ""
+
+#: data/templates/footer.html:25
+msgid "Fedora Labs"
+msgstr ""
+
+#: data/templates/footer.html:26
+msgid "Fedora ARM<span class=\"sup\">®</span>"
+msgstr ""
 
 #: data/templates/footer.html:27
+msgid "Alternative Downloads"
+msgstr ""
+
+#: data/templates/footer.html:32
 msgid "Support"
 msgstr "Suporte"
 
-#: data/templates/footer.html:28
+#: data/templates/footer.html:33
 msgid "Get Help"
 msgstr "Obtenha Ajuda"
 
-#: data/templates/footer.html:29
+#: data/templates/footer.html:34
 msgid "IRC Help"
 msgstr "Ajuda IRC"
 
-#: data/templates/footer.html:30
+#: data/templates/footer.html:35
 msgid "Mailing List Help"
 msgstr "Ajuda via Lista de Discussão"
 
-#: data/templates/footer.html:31
-msgid "Forums"
-msgstr "Fórum"
+#: data/templates/footer.html:36
+msgid "Ask Fedora"
+msgstr "Pergunte ao Fedora"
 
-#: data/templates/footer.html:37
+#: data/templates/footer.html:42
 msgid "Join"
 msgstr "Entre"
 
-#: data/templates/footer.html:38
+#: data/templates/footer.html:43
 msgid "Join Fedora"
 msgstr "Entre para o Fedora"
 
-#: data/templates/footer.html:39
+#: data/templates/footer.html:44
 msgid "Fedora SIGs"
 msgstr "SIGs Fedora"
 
-#: data/templates/footer.html:40
+#: data/templates/footer.html:45
 msgid "Fedora Account System"
 msgstr "Sistema de contas Fedora"
 
-#: data/templates/footer.html:41
+#: data/templates/footer.html:46
 msgid "Fedora Community"
 msgstr "Comunidade Fedora"
 
-#: data/templates/footer.html:46
+#: data/templates/footer.html:51
 msgid "Subprojects"
 msgstr "Sub Projetos"
 
-#: data/templates/footer.html:48
+#: data/templates/footer.html:53
 msgid "Translation"
 msgstr "Tradução"
 
-#: data/templates/footer.html:49
+#: data/templates/footer.html:54
 msgid "Marketing"
 msgstr "Marketing"
 
-#: data/templates/footer.html:50
+#: data/templates/footer.html:55
 msgid "Ambassadors"
 msgstr "Embaixadores"
 
-#: data/templates/footer.html:51
+#: data/templates/footer.html:56
 msgid "Design"
 msgstr "Design"
 
-#: data/templates/footer.html:52
+#: data/templates/footer.html:57
 msgid "Infrastructure"
 msgstr "Infraestrutura"
 
-#: data/templates/footer.html:58
+#: data/templates/footer.html:63
 msgid "Websites"
 msgstr "Sites"
 
-#: data/templates/footer.html:59
+#: data/templates/footer.html:64
 msgid "Internationalization"
 msgstr "Internacionalização"
 
-#: data/templates/footer.html:60
+#: data/templates/footer.html:65
 msgid "News"
 msgstr "Notícias"
 
-#: data/templates/footer.html:61
+#: data/templates/footer.html:66
 msgid "Special Interest Groups (SIGs)"
 msgstr "Grupos de interesse especial (SIGs)"
 
-#: data/templates/footer.html:67
+#: data/templates/footer.html:72
 msgid "Fedora is sponsored by Red Hat."
 msgstr "Fedora é patrocinado pela Red Hat."
 
-#: data/templates/footer.html:68
+#: data/templates/footer.html:73
 msgid "Learn more about the relationship between Red Hat and Fedora >"
 msgstr "Aprenda mais sobre a relação entre a Red Hat e o Fedora"
 
-#: data/templates/footer.html:69
-msgid "© 2011 Red Hat, Inc. and others."
-msgstr "© 2011 Red Hat, Inc. e outras."
-
-#: data/templates/footer.html:71
-msgid "Contact"
-msgstr "Contato"
-
-#: data/templates/footer.html:72
-msgid "Sponsors"
-msgstr "Patrocinadores"
-
-#: data/templates/footer.html:73
-msgid "Legal"
-msgstr "Legal"
-
 #: data/templates/footer.html:74
-msgid "Trademark Guidelines"
-msgstr "Diretrizes de marca"
+#, python-format
+msgid "© %(year)s Red Hat, Inc. and others."
+msgstr "© %(year)s Red Hat, Inc. e outros."
 
 #: data/templates/footer.html:76
 msgid ""
 "The Fedora Project is maintained and driven by the community. This is a "
 "community maintained site. Red Hat is not responsible for content."
-msgstr "O Projeto Fedora é mantido e dirigido pela comunidade. Esse é um site mantido pela comunidade. A Red Hat não é responsável por seu conteúdo."
+msgstr ""
+"O Projeto Fedora é mantido e dirigido pela comunidade. Esse é um site "
+"mantido pela comunidade. A Red Hat não é responsável por seu conteúdo."
+
+#: data/templates/footer.html:78
+msgid "Contact"
+msgstr "Contato"
+
+#: data/templates/footer.html:79
+msgid "Sponsors"
+msgstr "Patrocinadores"
+
+#: data/templates/footer.html:80
+msgid "Legal"
+msgstr "Legal"
+
+#: data/templates/footer.html:81
+msgid "Trademark Guidelines"
+msgstr "Diretrizes de marca"
+
+#: data/templates/footer.html:82
+msgid "Content License"
+msgstr "Licença de Conteúdo"
 
 #: data/templates/head.html:9
 msgid "Region-Specific Fedora Websites"
 msgstr "Sites Fedora Específicos de cada Região"
+
+#: data/templates/head.html:15
+msgid "Get Fedora"
+msgstr "Obtenha o Fedora"
 
 #: data/templates/head.html:16
 msgid "Help"
@@ -440,11 +415,15 @@ msgstr "Ajuda"
 msgid ""
 "Fedora Project contributors in various countries maintain their own region-"
 "specific content. Each site is solely responsible for the content they post."
-msgstr "Contribuidores do Projeto Fedora em vários paises mantém seus conteúdos próprios, especificos de cada região. Cada site é responsável pelo conteúdo que disponibiliza."
+msgstr ""
+"Contribuidores do Projeto Fedora em vários paises mantém seus conteúdos "
+"próprios, especificos de cada região. Cada site é responsável pelo conteúdo "
+"que disponibiliza."
 
 #: data/templates/head.html:46
 msgid "A list of region-specific websites is available below."
-msgstr "Um lista com sites específicos de cada região estão disponíveis abaixo."
+msgstr ""
+"Um lista com sites específicos de cada região estão disponíveis abaixo."
 
 #: data/templates/head.html:51
 msgid "Europe, Middle East, and Africa"
