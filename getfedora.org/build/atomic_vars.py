@@ -67,7 +67,7 @@ def get_page(page, pages):
     """ Retrieve the JSON for a particular page of datagrepper results """
     log.debug("Getting page %i of %s", page, pages)
     params = dict(
-        start=1441402109,  # the timestamp of when we first started doing this
+        delta=2419200, # 4 weeks in seconds
         topic=topic,
         page=page,
         rows_per_page=1,
