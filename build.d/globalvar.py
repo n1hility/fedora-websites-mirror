@@ -296,6 +296,7 @@ iso_size={
     # Everything release
     'x86_64_ev':        '508',   #In MB
     'i386_ev':          '566',   #In MB
+    's390x_ev':         '425',   #In MB
     # Everything prerelease
     'pre_x86_64_ev':        '511',   #In MB
     'pre_i386_ev':          '507',   #In MB

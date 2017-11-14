@@ -839,8 +839,8 @@
   <div class="white-hr"></div>
   <!-- end PowerPC -->
 
-  <!-- s390x
-    Desktop
+  <!-- s390x -->
+  <!-- Desktop -->
   <div class="jumbotron main-head hidden-xs hidden-sm">
     <div class="container using">
       <div class="row">
@@ -853,6 +853,7 @@
         <p>${_('If you want to install Fedora on IBM z Systems, then you are looking for this architecture.')}</p>
         </div>
         <div class="col-md-9">
+        <!--
           <div class="white">
             <div class="col-md-1">
             <img src="/static/images/server.png" />
@@ -867,12 +868,27 @@
             <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/s390x/iso/Fedora-Server-dvd-s390x-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
             </div>
           </div>
+        -->
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/ev.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Everything')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB dvd iso')) % global_variables.iso_size['s390x_ev']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Everything/s390x/iso/Fedora-Everything-netinst-s390x-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/static/checksums/Fedora-Everything-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-s390x-CHECKSUM">${_('Verify')}</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!- Mobile phones ->
+  <!-- Mobile phones -->
   <div class="jumbotron main-head visible-xs">
     <div class="container using">
       <div class="row">
@@ -886,7 +902,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="white">
+      <!--  <div class="white">
           <div class="col-xs-3">
           <img src="/static/images/server.png" />
           </div>
@@ -895,11 +911,21 @@
           <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/s390x/iso/Fedora-Server-dvd-s390x-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
           </div>
         </div>
+      -->
+          <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/ev.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Everything')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Everything/s390x/iso/Fedora-Everything-netinst-s390x-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/static/checksums/Fedora-Everything-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-s390x-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <!- Tablets ->
+  <!-- Tablets -->
   <div class="jumbotron main-head visible-sm">
     <div class="container using">
       <div class="row">
@@ -913,7 +939,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="white">
+      <!--  <div class="white">
           <div class="col-sm-3">
           <img src="/static/images/server.png" />
           </div>
@@ -924,11 +950,23 @@
           <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Server/s390x/iso/Fedora-Server-dvd-s390x-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
           </div>
         </div>
+      -->
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/ev.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Everything')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Everything/s390x/iso/Fedora-Everything-netinst-s390x-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/static/checksums/Fedora-Everything-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-s390x-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <!- Resources ->
+  <!-- Resources -->
   <div class="jumbotron main-head">
     <div class="container">
       <div class="row">
@@ -960,10 +998,7 @@
   </div>
 
   <div class="white-hr"></div>
-  <!- end s390x ->
--->
-
-
+  <!-- end s390x -->
 
   </body>
 </html>
