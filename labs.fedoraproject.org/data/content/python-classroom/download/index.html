@@ -43,9 +43,10 @@
           <h3>${_('Other Downloads')}</h3>
           <h4>${_('Direct Downloads')}</h4>
           <ul>
-              <li>
+<!--              <li>
                   <p><a class="python-classroom-download-splash" href="${global_variables.path['download_arch']}/${global_variables.release['curr_id']}/Labs/i386/iso/Fedora-Python-Classroom-Live-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('32-bit %sGB Live image')) % global_variables.iso_size['i686_Live_Py_Class']}</a></p>
               </li>
+-->
               <li>
                   <p><a class="python-classroom-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Labs/x86_64/images/Fedora-Python-Classroom-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box">${Markup(_('Libvirt %sMB Vagrant image')) % global_variables.iso_size['libvirt_Py_Class']}</a></p>
               </li>
@@ -53,12 +54,13 @@
                   <p><a class="python-classroom-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Labs/x86_64/images/Fedora-Python-Classroom-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box">${Markup(_('VirtualBox %sMB Vagrant image')) % global_variables.iso_size['virtualbox_Py_Class']}</a></p>
               </li>
           </ul>
-          <h4>${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; Technology'))}</h4>
+<!--          <h4>${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; Technology'))}</h4>
           <ul>
               <li>
                   <p><a class="python-classroom-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Labs/armhfp/images/Fedora-Python-Classroom-armhfp-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('%sGB ARM image')) % global_variables.iso_size['ARM_Py_Class']}</a></p>
               </li>
           </ul>
+-->
           <h4>${_('Older Releases')}</h4>
           <ul>
               <li>
@@ -110,17 +112,17 @@
   	  <div class="col-xs-12 text-center">
   	  	<h2>${_('Downloading')}</h2>
 	      <p class="text-justify">${_('Lab downloads are offered via direct download, but you can also get them via BitTorrent. In this case you will need to install a BitTorrent client in order to download a lab. If you cannot use Bittorrent, some labs offer alternative download methods.')}</p>
-	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/f26/install-guide/Downloading_Fedora.html#chap-downloading-fedora" role="button">${_('Learn more')}</a></p>
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/f${global_variables.release['curr_id']}/install-guide/Downloading_Fedora.html#chap-downloading-fedora" role="button">${_('Learn more')}</a></p>
   	  </div>
   	  <div class="col-xs-12 text-center">
   	  	<h2>${_('Installing')}</h2>
 	      <p class="text-justify">${_('To install a lab, you run the lab on your computer and click the "Install to Hard Drive" link on the desktop. You\'ll be guided through the install process via a series of prompts.')}</p>
-	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/f26/install-guide/install/Preparing_for_Installation.html#sect-preparing-boot-media" role="button">${_('Learn more')}</a></p>
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/f${global_variables.release['curr_id']}/install-guide/install/Preparing_for_Installation.html#sect-preparing-boot-media" role="button">${_('Learn more')}</a></p>
   	  </div>
   	  <div class="col-xs-12 text-center">
   	  	<h2>${_('Using')}</h2>
 	      <p class="text-justify">${_('After installing either the software bundle or the complete Fedora version you can run these tools by launching the applications that correspond with them.')}</p>
-	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/f26/install-guide/install/Installing_Using_Anaconda.html" role="button">${_('Learn more')}</a></p>
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/f${global_variables.release['curr_id']}/install-guide/install/Installing_Using_Anaconda.html" role="button">${_('Learn more')}</a></p>
   	  </div>
   	</div>
 
@@ -141,13 +143,13 @@
   	</div>
   	<div class="row bottom-space hidden-xs">
   	  <div class="col-sm-4 text-center">
-	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/f26/install-guide/Downloading_Fedora.html#chap-downloading-fedora" role="button">${_('Learn more')}</a></p>
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/f${global_variables.release['curr_id']}/install-guide/Downloading_Fedora.html#chap-downloading-fedora" role="button">${_('Learn more')}</a></p>
   	  </div>
   	  <div class="col-sm-4 text-center">
-	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/f26/install-guide/install/Installing_Using_Anaconda.html" role="button">${_('Learn more')}</a></p>
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/f${global_variables.release['curr_id']}/install-guide/install/Installing_Using_Anaconda.html" role="button">${_('Learn more')}</a></p>
   	  </div>
   	  <div class="col-sm-4 text-center">
-	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/f26/install-guide/install/Preparing_for_Installation.html#sect-preparing-boot-media" role="button">${_('Learn more')}</a></p>
+	      <p><a class="btn btn-primary" href="http://docs.fedoraproject.org/f${global_variables.release['curr_id']}/install-guide/install/Preparing_for_Installation.html#sect-preparing-boot-media" role="button">${_('Learn more')}</a></p>
   	  </div>
   	</div>
   </div>

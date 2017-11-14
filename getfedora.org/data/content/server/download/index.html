@@ -29,8 +29,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-7 col-md-offset-5 text-left">
-          <h2>${Markup(_('Download Fedora %(rel)s Server')) % {'rel':global_variables.release['curr_id']}}</h2>
-            <p><a class="btn btn-success server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/x86_64/iso/Fedora-Server-dvd-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p>
+          <h2>${Markup(_('Download Fedora %(rel)s Server')) % {'rel':global_variables.release['curr_server_id']}}</h2>
+            <p><a class="btn btn-success server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/x86_64/iso/Fedora-Server-dvd-x86_64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.iso" role="button">${_('Download')}</a></p>
             <h5>${Markup(_('64-bit %sGB installation image')) % global_variables.iso_size['x86_64_server_DVD']}</h5>
         </div>
       </div>
@@ -38,7 +38,7 @@
   </header>
     <div class="container recover-heading top-space">
       <div class="row">
-        <p class="warning">${Markup(_('Are you looking for the Fedora 27 Server Beta? We\'re hard at work revamping Fedora Server to be built with &lt;a href="%(modularity)s"&gt;Modularity&lt;/a&gt; based on feedback from the &lt;a href="%(boltron)s"&gt;Boltron tech preview&lt;/a&gt;. Stay tuned for a beta release in several weeks. Read more on &lt;a href="%(fedmag)s"&gt;Fedora Magazine&lt;/a&gt;. Or, download Fedora 26 Server below.') % {'modularity':'https://docs.pagure.org/modularity/', 'boltron':'https://fedoramagazine.org/announcing-boltron/', 'fedmag':'https://fedoramagazine.org/where-is-fedora-server-27-beta/'})}
+        <p class="warning">${_('Are you looking for Fedora 27 Modular Server Beta?')} <a href="../prerelease">${_('Download it here!')}</a>
         </p>
 
         <div class="col-md-8 text-left bottom-space top-space">
@@ -54,11 +54,11 @@
           <p>
           ${_('Netinstall Image:')}
           <ul>
-          <li><p><a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('64-bit %sMB image')) % global_variables.iso_size['x86_64_server_net']}</a></p></li>
+          <li><p><a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.iso">${Markup(_('64-bit %sMB image')) % global_variables.iso_size['x86_64_server_net']}</a></p></li>
           </ul>
           </p>
-<!--          <div class="top-space bottom-margin">
-            <py:choose>
+          <div class="top-space bottom-margin">
+<!--            <py:choose>
             <py:when test="global_variables.release['curr_state'] == 'Alpha'">
               <div class="prerelease-box">
                 <h5>${Markup(_('F%(rel)s Alpha')) % {'rel':global_variables.release['next_id']}}</h5>
@@ -70,18 +70,19 @@
               </div>
             </py:when>
             <py:when test="global_variables.release['curr_state'] == 'Beta'">
+-->
               <div class="prerelease-box">
-                <h5>${Markup(_('F%(rel)s Beta')) % {'rel':global_variables.release['next_id']}}</h5>
+                <h5>${Markup(_('F%(rel)s Beta')) % {'rel':global_variables.release['next_server_id']}}</h5>
                 <h4>${_('Try a pre-release')}</h4>
                 <p>${_('We\'re working on our next release.')}<br />
-                    ${Markup(_('Help us get F%(rel)s ready!')) % {'rel':global_variables.release['next_id']}}</p>
-                <p><i class="fa fa-fw fa-sm header-icon fa-download"></i><a href="../prerelease">${Markup(_('Download F%(rel)s Beta images')) % {'rel':global_variables.release['next_id']}}</a></p>
+                    ${Markup(_('Help us get F%(rel)s ready!')) % {'rel':global_variables.release['next_server_id']}}</p>
+                <p><i class="fa fa-fw fa-sm header-icon fa-download"></i><a href="../prerelease">${Markup(_('Download F%(rel)s Beta images')) % {'rel':global_variables.release['next_server_id']}}</a></p>
                 <p><i class="fa fa-fw fa-sm header-icon fa-book"></i><a href="//fedoraproject.org/wiki/QA/Join#release-validation">${_('How to test pre-releases')}</a></p>
               </div>
-            </py:when>
+<!--            </py:when>
           </py:choose>
+-->
           </div>
-          -->
           <div class="bottom-margin">
             <h3>${_('Get more Fedora')}</h3>
             <div class="bottom-margin">
