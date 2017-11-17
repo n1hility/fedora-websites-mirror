@@ -121,6 +121,8 @@ iso_size={
     'aarch64_qcow2':       '265',       # In MB
     'aarch64_raw':         '151',       # In MB
     'aarch64_docker':      '46',        # In MB
+    'aarch64_WS':          '1.2',       # In GB
+    'aarch64_min':         '46',        # In MB
     'ppc64_Server_DVD':    '1.8',       # In GB
     'ppc64_Server_net':    '447',       # In MB
     'ppc64_Cloud_net':     '520',       # In MB
