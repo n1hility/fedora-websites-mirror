@@ -12,7 +12,7 @@ release={
     'curr_alt_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_cloud_AMI_state':  '',   # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_server_state':  'Beta',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_server_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_atomic_state':  '',   # No Alpha/Beta for Atomic Host
     'prev_arm_id': '26',
     'prev_alt_id': '26',
@@ -22,13 +22,13 @@ release={
     'curr_alt_id': '27',
     'curr_cloud_id': '27',
     'curr_atomic_id': '27',
-    'curr_server_id': '26',
+    'curr_server_id': '27',
     'curr_cloud_AMI_id': '27',
     'next_arm_id': '28',
     'next_alt_id': '28',
     'next_cloud_id': '28',
     'next_atomic_id': '28',
-    'next_server_id': '27',
+    'next_server_id': '28',
     'next_cloud_AMI_id': '28',
     'composedate': '20160616',
     'unofficial_compose': '20160614',
@@ -52,7 +52,7 @@ release={
     'pre_cloud_atomic_composedate': '20150915',
     'pre_cloud_AMI_atomic_composedate': '20150915',
     'RC_gold': '1.6',             # insert the number of the RC version declared GOLD
-    'RC_server_gold': '1.5',      # insert the number of the RC version declared GOLD
+    'RC_server_gold': '1.6',      # insert the number of the RC version declared GOLD
     'RC_build': '1.6',            # sometimes releng use the RC build
     'RC_gold_aarch64': '1.6',     # RC Gold for aarch64
     'RC_gold_ppc64': '1.6',       # RC Gold for ppc64
@@ -115,27 +115,27 @@ iso_size={
     'x86_64_Netinstall':   '321',       # In MB
     'PPC64_DVD':           '4.3',       # In GB
     'PPC64_Netinstall':    '340',       # In MB
-    'aarch64_Server_DVD':  '1.7',       # In GB
-    'aarch64_Server_net':  '414',       # In MB
+    'aarch64_Server_DVD':  '2.2',       # In GB
+    'aarch64_Server_net':  '462',       # In MB
     'aarch64_Cloud_net':   '459',       # In MB
     'aarch64_qcow2':       '265',       # In MB
     'aarch64_raw':         '151',       # In MB
     'aarch64_docker':      '46',        # In MB
     'aarch64_WS':          '1.2',       # In GB
     'aarch64_min':         '46',        # In MB
-    'ppc64_Server_DVD':    '1.8',       # In GB
-    'ppc64_Server_net':    '447',       # In MB
+    'ppc64_Server_DVD':    '2.3',       # In GB
+    'ppc64_Server_net':    '523',       # In MB
     'ppc64_Cloud_net':     '520',       # In MB
     'ppc64_qcow2':         '244',       # In MB
     'ppc64_raw':           '137',       # In MB
     'ppc64_docker':        '61',        # In MB
-    'ppc64le_Server_DVD':  '1.8',       # In GB
-    'ppc64le_Server_net':  '406',       # In MB
+    'ppc64le_Server_DVD':  '2.4',       # In GB
+    'ppc64le_Server_net':  '489',       # In MB
     'ppc64le_Cloud_net':   '488',       # In MB
     'ppc64le_qcow2':       '235',       # In MB
     'ppc64le_raw':         '134',       # In MB
     'ppc64le_docker':      '48',        # In MB
-    's390x_Server_DVD':    '1.6',       # In GB
+    's390x_Server_DVD':    '2.1',       # In GB
     'i686_sda.qcow2':      '212',       # In MB
     'x86_64_sda.qcow2':    '207',       # In MB
     'i686_raw':            '122',       # In MB
@@ -214,10 +214,10 @@ iso_size={
     'pre_i686_Live_Python':    '1.5',   # In GB
     'pre_x86_64_Live_Python':  '1.5',   # In GB
     # Server
-    'x86_64_server_DVD':   '2.2',       # In GB
-    'i386_server_DVD':     '2.3',       # In GB
-    'x86_64_server_net':   '484',       # In MB
-    'i386_server_net':     '540',       # In MB
+    'x86_64_server_DVD':   '2.3',       # In GB
+    'i386_server_DVD':     '2.4',       # In GB
+    'x86_64_server_net':   '511',       # In MB
+    'i386_server_net':     '569',       # In MB
     # Server prerelease
     'pre_x86_64_server_DVD': '2.3',     # In GB
     'pre_i386_server_DVD':   '2.9',     # In GB
@@ -235,7 +235,7 @@ iso_size={
     'pre_i386_workstation_net': '525',  # In MB
     # ARM
     'ARM_Workstation':     '1.3',       # In GB
-    'ARM_Server':          '2.1',       # In GB
+    'ARM_Server':          '537',       # In MB
     'ARM_Minimal':         '434',       # In MB
     'ARM_KDE':             '1.3',       # In GB
     'ARM_Xfce':            '1.1',       # In MB
