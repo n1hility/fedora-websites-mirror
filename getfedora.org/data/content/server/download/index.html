@@ -38,9 +38,6 @@
   </header>
     <div class="container recover-heading top-space">
       <div class="row">
-        <p class="warning">${_('Are you looking for Fedora 27 Modular Server Beta?')} <a href="../prerelease">${_('Download it here!')}</a>
-        </p>
-
         <div class="col-md-8 text-left bottom-space top-space">
           <p>${_('The Fedora Server installation image allows you to make media for your computer that boots to the installer to directly install Fedora Server on to your hard drive')}</p>
           <p>${_('To use this image, you need a drive that can create or "burn" DVDs, or a USB flash drive at least as big as the image.')}</p>
@@ -58,7 +55,7 @@
           </ul>
           </p>
           <div class="top-space bottom-margin">
-<!--            <py:choose>
+          <py:choose>
             <py:when test="global_variables.release['curr_state'] == 'Alpha'">
               <div class="prerelease-box">
                 <h5>${Markup(_('F%(rel)s Alpha')) % {'rel':global_variables.release['next_id']}}</h5>
@@ -70,7 +67,6 @@
               </div>
             </py:when>
             <py:when test="global_variables.release['curr_state'] == 'Beta'">
--->
               <div class="prerelease-box">
                 <h5>${Markup(_('F%(rel)s Beta')) % {'rel':global_variables.release['next_server_id']}}</h5>
                 <h4>${_('Try a pre-release')}</h4>
@@ -79,9 +75,8 @@
                 <p><i class="fa fa-fw fa-sm header-icon fa-download"></i><a href="../prerelease">${Markup(_('Download F%(rel)s Beta images')) % {'rel':global_variables.release['next_server_id']}}</a></p>
                 <p><i class="fa fa-fw fa-sm header-icon fa-book"></i><a href="//fedoraproject.org/wiki/QA/Join#release-validation">${_('How to test pre-releases')}</a></p>
               </div>
-<!--            </py:when>
+            </py:when>
           </py:choose>
--->
           </div>
           <div class="bottom-margin">
             <h3>${_('Get more Fedora')}</h3>
