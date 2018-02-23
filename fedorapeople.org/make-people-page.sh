@@ -26,6 +26,7 @@ cat <<EOM>>$outfile
         #content
         {
             margin-left: 2ex!important;
+            height: auto;
         }
 
         td, th
