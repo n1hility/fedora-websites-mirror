@@ -399,6 +399,27 @@
 
     <div class="row">
       ${keys_for_release(
+      _('Fedora 25'),
+      [
+        KeyInfo(
+           _('Primary'),
+            '4096R/FDB19C98 2016-03-31',
+            'C437 DCCD 558A 66A3 7D6F  4372 4089 D8F2 FDB1 9C98',
+            ['Fedora 25 Primary (25) &lt;fedora-25-primary@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/FDB19C98.txt', 'Fedora Project')
+            ])
+      , KeyInfo(
+           _('Secondary'),
+            '4096R/E372E838 2016-03-31',
+            '838B D48E 1B70 069F 4111  BDE9 1A18 5CDD E372 E838',
+            ['Fedora 25 Secondary (25) &lt;fedora-25-secondary@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/E372E838.txt', 'Fedora Project')
+            ])
+      ])}
+
+      ${keys_for_release(
       _('EPEL 5'),
       [
           KeyInfo(
@@ -441,6 +462,21 @@
               Markup(_('If you are using Fedora Extras with Fedora Core 6, use this package from &lt;strong&gt;extras&lt;/strong&gt; repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007). This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.')))
       ])}
 
+      ${keys_for_release(
+      _('Legacy'),
+      [
+          KeyInfo(
+              _('Legacy'),
+              '1024D/731002FA 2004-01-19',
+              'D66D 121F 9784 5E7B 2757  8C46 108C 4512 7310 02FA',
+              ['Fedora Legacy (http://www.fedoralegacy.org) &lt;secnotice@fedoralegacy.org&gt;'],
+              '2048g/D12E351D 2004-01-19',
+              [],
+              Markup(_('This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL. The Fedora Legacy project no longer exists, so this key will no longer be used to sign packages. This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.')))
+      ])}
+    </div>
+
+    <div class="row">
       ${keys_for_release(
       _('Legacy'),
       [
