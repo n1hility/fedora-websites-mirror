@@ -286,7 +286,7 @@ iso_size={
     'pre_atomic_VBvag_cloud':  '???',   # In MB
     'pre_atomic_libvag_cloud': '???',   # In MB
     'pre_atomic_iso':          '918',   # In MB
-    'pre_x86_64_docker':        '42',   # In MB
+    'pre_x86_64_Container':    '42',    # In MB
     'pre_VBvag_cloud':         '192',   # In MB
     'pre_libvag_cloud':        '184',   # In MB
     # Manual atomic prerelease image sizes go here.
