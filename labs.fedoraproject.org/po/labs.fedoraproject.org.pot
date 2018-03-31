@@ -1,23 +1,23 @@
 # Translations template for PROJECT.
-# Copyright (C) 2017 ORGANIZATION
+# Copyright (C) 2018 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-11-14 12:29+0100\n"
+"POT-Creation-Date: 2018-03-31 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 1.3\n"
+"Generated-By: Babel 2.3.4\n"
 
-#: data/content/index.html:8 data/templates/footer.html:44
+#: data/content/index.html:8 data/templates/footer.html:45
 msgid "Fedora Labs"
 msgstr ""
 
@@ -34,7 +34,7 @@ msgid "Fedora %(rel)s released! Get it now."
 msgstr ""
 
 #: data/content/index.html:60 data/content/index.html:121
-#: data/content/prerelease.html:46
+#: data/content/prerelease.html:45
 msgid "Explore the Outer Space."
 msgstr ""
 
@@ -45,7 +45,7 @@ msgid ""
 msgstr ""
 
 #: data/content/index.html:66 data/content/index.html:129
-#: data/content/prerelease.html:68
+#: data/content/prerelease.html:67
 msgid "Open Creativity."
 msgstr ""
 
@@ -56,7 +56,7 @@ msgid ""
 msgstr ""
 
 #: data/content/index.html:75 data/content/index.html:137
-#: data/content/prerelease.html:89
+#: data/content/prerelease.html:88
 msgid "Play with Fedora Today!"
 msgstr ""
 
@@ -65,7 +65,7 @@ msgid "A collection and perfect show-case of the best games available in Fedora.
 msgstr ""
 
 #: data/content/index.html:81 data/content/index.html:145
-#: data/content/prerelease.html:110
+#: data/content/prerelease.html:109
 msgid "Unleash your inner musician."
 msgstr ""
 
@@ -84,7 +84,7 @@ msgid "A classroom lab for teaching the Python programming language to students"
 msgstr ""
 
 #: data/content/index.html:96 data/content/index.html:161
-#: data/content/prerelease.html:154
+#: data/content/prerelease.html:153
 msgid "Dive into Robotics."
 msgstr ""
 
@@ -95,7 +95,7 @@ msgid ""
 msgstr ""
 
 #: data/content/index.html:106 data/content/index.html:169
-#: data/content/prerelease.html:200
+#: data/content/prerelease.html:197
 msgid "Thorough, safe and secure."
 msgstr ""
 
@@ -105,11 +105,11 @@ msgid ""
 "rescue and teaching security testing methodologies."
 msgstr ""
 
-#: data/content/index.html:182 data/content/prerelease.html:338
+#: data/content/index.html:182 data/content/prerelease.html:335
 msgid "What is Fedora Labs?"
 msgstr ""
 
-#: data/content/index.html:183 data/content/prerelease.html:339
+#: data/content/index.html:183 data/content/prerelease.html:336
 msgid ""
 "Fedora Labs is a selection of curated bundles of purpose-driven software "
 "and content as curated and maintained by members of the Fedora Community."
@@ -117,16 +117,15 @@ msgid ""
 "ons to existing Fedora installations."
 msgstr ""
 
-#: data/content/index.html:194 data/content/index.html:213
-#: data/content/prerelease.html:350 data/content/prerelease.html:369
 #: data/content/astronomy/download/index.html:91
 #: data/content/astronomy/download/index.html:110
 #: data/content/design-suite/download/index.html:97
 #: data/content/design-suite/download/index.html:116
 #: data/content/games/download/index.html:91
-#: data/content/games/download/index.html:110
-#: data/content/jam/download/index.html:91
-#: data/content/jam/download/index.html:110
+#: data/content/games/download/index.html:110 data/content/index.html:194
+#: data/content/index.html:213 data/content/jam/download/index.html:91
+#: data/content/jam/download/index.html:110 data/content/prerelease.html:347
+#: data/content/prerelease.html:366
 #: data/content/python-classroom/download/index.html:113
 #: data/content/python-classroom/download/index.html:132
 #: data/content/robotics/download/index.html:91
@@ -139,18 +138,12 @@ msgid "Downloading"
 msgstr ""
 
 #: data/content/index.html:195 data/content/index.html:214
-#: data/content/prerelease.html:351 data/content/prerelease.html:370
+#: data/content/prerelease.html:348 data/content/prerelease.html:367
 msgid ""
 "You can download these tools as complete Fedora image, or you can install"
 " them using a software manager on an existing Fedora installation."
 msgstr ""
 
-#: data/content/index.html:196 data/content/index.html:201
-#: data/content/index.html:206 data/content/index.html:227
-#: data/content/index.html:230 data/content/index.html:233
-#: data/content/prerelease.html:352 data/content/prerelease.html:357
-#: data/content/prerelease.html:362 data/content/prerelease.html:383
-#: data/content/prerelease.html:386 data/content/prerelease.html:389
 #: data/content/astronomy/download/index.html:93
 #: data/content/astronomy/download/index.html:98
 #: data/content/astronomy/download/index.html:103
@@ -168,13 +161,18 @@ msgstr ""
 #: data/content/games/download/index.html:103
 #: data/content/games/download/index.html:124
 #: data/content/games/download/index.html:127
-#: data/content/games/download/index.html:130
-#: data/content/jam/download/index.html:93
+#: data/content/games/download/index.html:130 data/content/index.html:196
+#: data/content/index.html:201 data/content/index.html:206
+#: data/content/index.html:227 data/content/index.html:230
+#: data/content/index.html:233 data/content/jam/download/index.html:93
 #: data/content/jam/download/index.html:98
 #: data/content/jam/download/index.html:103
 #: data/content/jam/download/index.html:124
 #: data/content/jam/download/index.html:127
-#: data/content/jam/download/index.html:130
+#: data/content/jam/download/index.html:130 data/content/prerelease.html:349
+#: data/content/prerelease.html:354 data/content/prerelease.html:359
+#: data/content/prerelease.html:380 data/content/prerelease.html:383
+#: data/content/prerelease.html:386
 #: data/content/python-classroom/download/index.html:115
 #: data/content/python-classroom/download/index.html:120
 #: data/content/python-classroom/download/index.html:125
@@ -202,16 +200,15 @@ msgstr ""
 msgid "Learn more"
 msgstr ""
 
-#: data/content/index.html:199 data/content/index.html:217
-#: data/content/prerelease.html:355 data/content/prerelease.html:373
 #: data/content/astronomy/download/index.html:96
 #: data/content/astronomy/download/index.html:114
 #: data/content/design-suite/download/index.html:102
 #: data/content/design-suite/download/index.html:120
 #: data/content/games/download/index.html:96
-#: data/content/games/download/index.html:114
-#: data/content/jam/download/index.html:96
-#: data/content/jam/download/index.html:114
+#: data/content/games/download/index.html:114 data/content/index.html:199
+#: data/content/index.html:217 data/content/jam/download/index.html:96
+#: data/content/jam/download/index.html:114 data/content/prerelease.html:352
+#: data/content/prerelease.html:370
 #: data/content/python-classroom/download/index.html:118
 #: data/content/python-classroom/download/index.html:136
 #: data/content/robotics/download/index.html:96
@@ -223,16 +220,15 @@ msgstr ""
 msgid "Installing"
 msgstr ""
 
-#: data/content/index.html:200 data/content/index.html:218
-#: data/content/prerelease.html:356 data/content/prerelease.html:374
 #: data/content/astronomy/download/index.html:97
 #: data/content/astronomy/download/index.html:115
 #: data/content/design-suite/download/index.html:103
 #: data/content/design-suite/download/index.html:121
 #: data/content/games/download/index.html:97
-#: data/content/games/download/index.html:115
-#: data/content/jam/download/index.html:97
-#: data/content/jam/download/index.html:115
+#: data/content/games/download/index.html:115 data/content/index.html:200
+#: data/content/index.html:218 data/content/jam/download/index.html:97
+#: data/content/jam/download/index.html:115 data/content/prerelease.html:353
+#: data/content/prerelease.html:371
 #: data/content/robotics/download/index.html:97
 #: data/content/robotics/download/index.html:115
 #: data/content/scientific/download/index.html:97
@@ -245,16 +241,15 @@ msgid ""
 "the install process via a series of prompts."
 msgstr ""
 
-#: data/content/index.html:204 data/content/index.html:221
-#: data/content/prerelease.html:360 data/content/prerelease.html:377
 #: data/content/astronomy/download/index.html:101
 #: data/content/astronomy/download/index.html:118
 #: data/content/design-suite/download/index.html:107
 #: data/content/design-suite/download/index.html:124
 #: data/content/games/download/index.html:101
-#: data/content/games/download/index.html:118
-#: data/content/jam/download/index.html:101
-#: data/content/jam/download/index.html:118
+#: data/content/games/download/index.html:118 data/content/index.html:204
+#: data/content/index.html:221 data/content/jam/download/index.html:101
+#: data/content/jam/download/index.html:118 data/content/prerelease.html:357
+#: data/content/prerelease.html:374
 #: data/content/python-classroom/download/index.html:123
 #: data/content/python-classroom/download/index.html:140
 #: data/content/robotics/download/index.html:101
@@ -266,16 +261,15 @@ msgstr ""
 msgid "Using"
 msgstr ""
 
-#: data/content/index.html:205 data/content/index.html:222
-#: data/content/prerelease.html:361 data/content/prerelease.html:378
 #: data/content/astronomy/download/index.html:102
 #: data/content/astronomy/download/index.html:119
 #: data/content/design-suite/download/index.html:108
 #: data/content/design-suite/download/index.html:125
 #: data/content/games/download/index.html:102
-#: data/content/games/download/index.html:119
-#: data/content/jam/download/index.html:102
-#: data/content/jam/download/index.html:119
+#: data/content/games/download/index.html:119 data/content/index.html:205
+#: data/content/index.html:222 data/content/jam/download/index.html:102
+#: data/content/jam/download/index.html:119 data/content/prerelease.html:358
+#: data/content/prerelease.html:375
 #: data/content/python-classroom/download/index.html:124
 #: data/content/python-classroom/download/index.html:141
 #: data/content/robotics/download/index.html:102
@@ -324,31 +318,29 @@ msgid ""
 "commonly-encountered bugs and how to avoid them."
 msgstr ""
 
-#: data/content/prerelease.html:34
-msgid ""
-"Are you looking for 32 bit images of F27 Beta? Due to some technical "
-"issues we cannot offer them, but they will be available for the F27 final"
-" release date. Stay tuned!"
-msgstr ""
-
-#: data/content/prerelease.html:49 data/content/prerelease.html:71
-#: data/content/prerelease.html:92 data/content/prerelease.html:113
-#: data/content/prerelease.html:135 data/content/prerelease.html:157
-#: data/content/prerelease.html:203
+#: data/content/prerelease.html:48 data/content/prerelease.html:70
+#: data/content/prerelease.html:91 data/content/prerelease.html:112
+#: data/content/prerelease.html:134 data/content/prerelease.html:138
+#: data/content/prerelease.html:156 data/content/prerelease.html:178
+#: data/content/prerelease.html:200 data/content/prerelease.html:204
 #, python-format
 msgid "%s GB ISO Image"
 msgstr ""
 
-#: data/content/prerelease.html:132
+#: data/content/prerelease.html:131
 msgid "Teach Python with ease."
 msgstr ""
 
-#: data/content/prerelease.html:221
+#: data/content/prerelease.html:175
+msgid "Open source scientific computing."
+msgstr ""
+
+#: data/content/prerelease.html:218
 #: data/templates/generic/splash-checksum.html:8
 msgid "Verify your Download!"
 msgstr ""
 
-#: data/content/prerelease.html:222
+#: data/content/prerelease.html:219
 #: data/templates/generic/splash-checksum.html:9
 #, python-format
 msgid ""
@@ -358,9 +350,13 @@ msgid ""
 "href=\"../../%s/verify\">these instructions</a>."
 msgstr ""
 
-#: data/content/prerelease.html:225
+#: data/content/prerelease.html:222
 #: data/templates/generic/splash-checksum.html:12
 msgid "Validate 64bit!"
+msgstr ""
+
+#: data/content/prerelease.html:225
+msgid "Validate 32bit!"
 msgstr ""
 
 #: data/content/verify.html:8 data/content/verify.html:18
@@ -408,44 +404,40 @@ msgid ""
 msgstr ""
 
 #: data/content/verify.html:53
-msgid "Fedora 28"
+msgid "Fedora 29"
 msgstr ""
 
 #: data/content/verify.html:54
-msgid "Fedora 27"
+msgid "Fedora 28"
 msgstr ""
 
 #: data/content/verify.html:55
-msgid "Fedora 26"
+msgid "Fedora 27"
 msgstr ""
 
 #: data/content/verify.html:56
-msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgid "Fedora 26"
 msgstr ""
 
 #: data/content/verify.html:57
-msgid "Fedora 25"
+msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
-#: data/content/verify.html:58
-msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
-
-#: data/content/verify.html:60
+#: data/content/verify.html:59
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
 msgstr ""
 
-#: data/content/verify.html:62
+#: data/content/verify.html:61
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
 
-#: data/content/verify.html:63
+#: data/content/verify.html:62
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr ""
 
-#: data/content/verify.html:64
+#: data/content/verify.html:63
 msgid "Read these instructions to validate your image."
 msgstr ""
 
@@ -626,40 +618,40 @@ msgstr ""
 msgid "AstrOmatic is a set of astronomical pipeline software."
 msgstr ""
 
-#: data/content/astronomy/index.html:140
 #: data/content/astronomy/download/index.html:142
-#: data/content/design-suite/index.html:140
+#: data/content/astronomy/index.html:140
 #: data/content/design-suite/download/index.html:148
-#: data/content/games/index.html:140 data/content/games/download/index.html:142
-#: data/content/jam/index.html:140 data/content/jam/download/index.html:142
-#: data/content/robotics/index.html:140
+#: data/content/design-suite/index.html:140
+#: data/content/games/download/index.html:142 data/content/games/index.html:140
+#: data/content/jam/download/index.html:142 data/content/jam/index.html:140
 #: data/content/robotics/download/index.html:142
-#: data/content/scientific/index.html:140
+#: data/content/robotics/index.html:140
 #: data/content/scientific/download/index.html:142
-#: data/content/security/index.html:140
+#: data/content/scientific/index.html:140
 #: data/content/security/download/index.html:142
+#: data/content/security/index.html:140
 #: data/templates/python-classroom/supportresources.html:13
 msgid "Support Resources"
 msgstr ""
 
-#: data/content/astronomy/index.html:145
 #: data/content/astronomy/download/index.html:147
-#: data/content/design-suite/index.html:145
+#: data/content/astronomy/index.html:145
 #: data/content/design-suite/download/index.html:153
-#: data/content/games/index.html:145 data/content/games/download/index.html:147
-#: data/content/jam/index.html:145 data/content/jam/download/index.html:147
-#: data/content/robotics/index.html:145
+#: data/content/design-suite/index.html:145
+#: data/content/games/download/index.html:147 data/content/games/index.html:145
+#: data/content/jam/download/index.html:147 data/content/jam/index.html:145
 #: data/content/robotics/download/index.html:147
-#: data/content/scientific/index.html:145
+#: data/content/robotics/index.html:145
 #: data/content/scientific/download/index.html:147
-#: data/content/security/index.html:145
+#: data/content/scientific/index.html:145
 #: data/content/security/download/index.html:147
+#: data/content/security/index.html:145
 #: data/templates/python-classroom/supportresources.html:18
 msgid "Chat"
 msgstr ""
 
-#: data/content/astronomy/index.html:146
 #: data/content/astronomy/download/index.html:148
+#: data/content/astronomy/index.html:146
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-"
@@ -667,66 +659,66 @@ msgid ""
 "time chat."
 msgstr ""
 
-#: data/content/astronomy/index.html:149
 #: data/content/astronomy/download/index.html:151
-#: data/content/design-suite/index.html:149
+#: data/content/astronomy/index.html:149
 #: data/content/design-suite/download/index.html:157
-#: data/content/games/index.html:149 data/content/games/download/index.html:151
-#: data/content/jam/index.html:149 data/content/jam/download/index.html:151
-#: data/content/robotics/index.html:149
+#: data/content/design-suite/index.html:149
+#: data/content/games/download/index.html:151 data/content/games/index.html:149
+#: data/content/jam/download/index.html:151 data/content/jam/index.html:149
 #: data/content/robotics/download/index.html:151
-#: data/content/scientific/index.html:149
+#: data/content/robotics/index.html:149
 #: data/content/scientific/download/index.html:151
-#: data/content/security/index.html:149
+#: data/content/scientific/index.html:149
 #: data/content/security/download/index.html:151
+#: data/content/security/index.html:149
 #: data/templates/python-classroom/supportresources.html:22
 msgid "Email"
 msgstr ""
 
-#: data/content/astronomy/index.html:150
 #: data/content/astronomy/download/index.html:152
+#: data/content/astronomy/index.html:150
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
 "href=\"%s\">astronomy@lists.fedoraproject.org</a>."
 msgstr ""
 
-#: data/content/astronomy/index.html:153
 #: data/content/astronomy/download/index.html:155
-#: data/content/design-suite/index.html:153
+#: data/content/astronomy/index.html:153
 #: data/content/design-suite/download/index.html:161
-#: data/content/games/index.html:153 data/content/games/download/index.html:155
-#: data/content/jam/index.html:153 data/content/jam/download/index.html:155
-#: data/content/robotics/index.html:153
+#: data/content/design-suite/index.html:153
+#: data/content/games/download/index.html:155 data/content/games/index.html:153
+#: data/content/jam/download/index.html:155 data/content/jam/index.html:153
 #: data/content/robotics/download/index.html:155
-#: data/content/scientific/index.html:153
+#: data/content/robotics/index.html:153
 #: data/content/scientific/download/index.html:155
-#: data/content/security/index.html:153
+#: data/content/scientific/index.html:153
 #: data/content/security/download/index.html:155
+#: data/content/security/index.html:153
 #: data/templates/python-classroom/supportresources.html:26
 msgid "Documentation"
 msgstr ""
 
-#: data/content/astronomy/index.html:154
 #: data/content/astronomy/download/index.html:156
+#: data/content/astronomy/index.html:154
 #, python-format
 msgid ""
 "Specific documentation is available at the <a href=\"%s\">Astronomy wiki "
 "page</a>."
 msgstr ""
 
-#: data/content/astronomy/index.html:159
 #: data/content/astronomy/download/index.html:161
-#: data/content/design-suite/index.html:159
+#: data/content/astronomy/index.html:159
 #: data/content/design-suite/download/index.html:167
-#: data/content/games/index.html:159 data/content/games/download/index.html:161
-#: data/content/jam/index.html:159 data/content/jam/download/index.html:161
-#: data/content/robotics/index.html:159
+#: data/content/design-suite/index.html:159
+#: data/content/games/download/index.html:161 data/content/games/index.html:159
+#: data/content/jam/download/index.html:161 data/content/jam/index.html:159
 #: data/content/robotics/download/index.html:161
-#: data/content/scientific/index.html:159
+#: data/content/robotics/index.html:159
 #: data/content/scientific/download/index.html:161
-#: data/content/security/index.html:159
+#: data/content/scientific/index.html:159
 #: data/content/security/download/index.html:161
+#: data/content/security/index.html:159
 #: data/templates/python-classroom/supportresources.html:32
 msgid "General Help Using Fedora"
 msgstr ""
@@ -783,7 +775,7 @@ msgstr ""
 #: data/content/python-classroom/download/index.html:20
 #: data/content/robotics/download/index.html:20
 #: data/content/scientific/download/index.html:20
-#: data/content/security/download/index.html:20 data/templates/footer.html:37
+#: data/content/security/download/index.html:20 data/templates/footer.html:38
 msgid "Download"
 msgstr ""
 
@@ -1135,8 +1127,8 @@ msgid ""
 "screen calibrated!"
 msgstr ""
 
-#: data/content/design-suite/index.html:146
 #: data/content/design-suite/download/index.html:154
+#: data/content/design-suite/index.html:146
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-"
@@ -1144,16 +1136,16 @@ msgid ""
 " chat."
 msgstr ""
 
-#: data/content/design-suite/index.html:150
 #: data/content/design-suite/download/index.html:158
+#: data/content/design-suite/index.html:150
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
 "href=\"%s\">design-team@lists.fedoraproject.org</a>."
 msgstr ""
 
-#: data/content/design-suite/index.html:154
 #: data/content/design-suite/download/index.html:162
+#: data/content/design-suite/index.html:154
 #, python-format
 msgid ""
 "Specific documentation and tutorials are available at the <a "
@@ -1333,23 +1325,23 @@ msgid ""
 " from ALTAR interactive."
 msgstr ""
 
-#: data/content/games/index.html:146 data/content/games/download/index.html:148
-#: data/content/security/index.html:146
+#: data/content/games/download/index.html:148 data/content/games/index.html:146
 #: data/content/security/download/index.html:148
+#: data/content/security/index.html:146
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora</a> IRC "
 "channel on <strong>irc.freenode.org</strong> for real-time chat."
 msgstr ""
 
-#: data/content/games/index.html:150 data/content/games/download/index.html:152
+#: data/content/games/download/index.html:152 data/content/games/index.html:150
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
 "href=\"%s\">games@lists.fedoraproject.org</a>."
 msgstr ""
 
-#: data/content/games/index.html:154 data/content/games/download/index.html:156
+#: data/content/games/download/index.html:156 data/content/games/index.html:154
 #, python-format
 msgid ""
 "Specific documentation is available at the <a href=\"%s\">Games wiki "
@@ -1483,7 +1475,7 @@ msgid ""
 "software."
 msgstr ""
 
-#: data/content/jam/index.html:146 data/content/jam/download/index.html:148
+#: data/content/jam/download/index.html:148 data/content/jam/index.html:146
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-"
@@ -1491,14 +1483,14 @@ msgid ""
 "chat."
 msgstr ""
 
-#: data/content/jam/index.html:150 data/content/jam/download/index.html:152
+#: data/content/jam/download/index.html:152 data/content/jam/index.html:150
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
 "href=\"%s\">music@lists.fedoraproject.org</a>."
 msgstr ""
 
-#: data/content/jam/index.html:154 data/content/jam/download/index.html:156
+#: data/content/jam/download/index.html:156 data/content/jam/index.html:154
 #, python-format
 msgid ""
 "Specific documentation is available at the <a href=\"%s\">Jam wiki "
@@ -1820,8 +1812,8 @@ msgstr ""
 msgid "Libraries and applications for robotics system development."
 msgstr ""
 
-#: data/content/robotics/index.html:146
 #: data/content/robotics/download/index.html:148
+#: data/content/robotics/index.html:146
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-"
@@ -1829,16 +1821,16 @@ msgid ""
 "time chat."
 msgstr ""
 
-#: data/content/robotics/index.html:150
 #: data/content/robotics/download/index.html:152
+#: data/content/robotics/index.html:150
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
 "href=\"%s\">robotics@lists.fedoraproject.org</a>."
 msgstr ""
 
-#: data/content/robotics/index.html:154
 #: data/content/robotics/download/index.html:156
+#: data/content/robotics/index.html:154
 #, python-format
 msgid ""
 "Specific documentation is available at the <a href=\"%s\">Robotics Suite "
@@ -1967,8 +1959,8 @@ msgid ""
 "collection of mathematical routines."
 msgstr ""
 
-#: data/content/scientific/index.html:146
 #: data/content/scientific/download/index.html:148
+#: data/content/scientific/index.html:146
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-"
@@ -1976,8 +1968,8 @@ msgid ""
 "time chat."
 msgstr ""
 
-#: data/content/scientific/index.html:150
 #: data/content/scientific/download/index.html:152
+#: data/content/scientific/index.html:150
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -2125,16 +2117,16 @@ msgid ""
 " different network protocols"
 msgstr ""
 
-#: data/content/security/index.html:150
 #: data/content/security/download/index.html:152
+#: data/content/security/index.html:150
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
 "href=\"%s\">users@lists.fedoraproject.org</a>."
 msgstr ""
 
-#: data/content/security/index.html:154
 #: data/content/security/download/index.html:156
+#: data/content/security/index.html:154
 #, python-format
 msgid ""
 "Specific documentation is available at the <a href=\"%s\">Security Lab "
@@ -2191,102 +2183,106 @@ msgstr ""
 msgid "Legal"
 msgstr ""
 
-#: data/templates/footer.html:40
-msgid "Get Fedora Workstation"
+#: data/templates/footer.html:21
+msgid "Fedora Code of Conduct"
 msgstr ""
 
 #: data/templates/footer.html:41
-msgid "Get Fedora Server"
+msgid "Get Fedora Workstation"
 msgstr ""
 
 #: data/templates/footer.html:42
-msgid "Get Fedora Atomic"
+msgid "Get Fedora Server"
 msgstr ""
 
 #: data/templates/footer.html:43
+msgid "Get Fedora Atomic"
+msgstr ""
+
+#: data/templates/footer.html:44
 msgid "Fedora Spins"
 msgstr ""
 
-#: data/templates/footer.html:45
+#: data/templates/footer.html:46
 msgid "Fedora ARM<span class=\"sup\">®</span>"
 msgstr ""
 
-#: data/templates/footer.html:46
+#: data/templates/footer.html:47
 msgid "Alternative Downloads"
 msgstr ""
 
-#: data/templates/footer.html:53
+#: data/templates/footer.html:54
 msgid "Support"
 msgstr ""
 
-#: data/templates/footer.html:56
+#: data/templates/footer.html:57
 msgid "Get Help"
 msgstr ""
 
-#: data/templates/footer.html:57
+#: data/templates/footer.html:58
 msgid "Ask Fedora"
 msgstr ""
 
-#: data/templates/footer.html:58
+#: data/templates/footer.html:59
 msgid "Common Bugs"
 msgstr ""
 
-#: data/templates/footer.html:59
+#: data/templates/footer.html:60
 msgid "Fedora Developer Portal"
 msgstr ""
 
-#: data/templates/footer.html:60
+#: data/templates/footer.html:61
 msgid "Installation Guide"
 msgstr ""
 
-#: data/templates/footer.html:66
+#: data/templates/footer.html:67
 msgid "Join"
 msgstr ""
 
-#: data/templates/footer.html:69
+#: data/templates/footer.html:70
 msgid "Join Fedora"
 msgstr ""
 
-#: data/templates/footer.html:70
+#: data/templates/footer.html:71
 msgid "Planet Fedora"
 msgstr ""
 
-#: data/templates/footer.html:71
+#: data/templates/footer.html:72
 msgid "Fedora SIGs"
 msgstr ""
 
-#: data/templates/footer.html:72
+#: data/templates/footer.html:73
 msgid "Fedora Account System"
 msgstr ""
 
-#: data/templates/footer.html:73
+#: data/templates/footer.html:74
 msgid "Fedora Community"
 msgstr ""
 
-#: data/templates/footer.html:87
+#: data/templates/footer.html:88
 msgid "Fedora is sponsored by Red Hat."
 msgstr ""
 
-#: data/templates/footer.html:88
+#: data/templates/footer.html:89
 msgid "Learn more about the relationship between Red Hat and Fedora »"
 msgstr ""
 
-#: data/templates/footer.html:89
+#: data/templates/footer.html:90
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
 msgstr ""
 
-#: data/templates/footer.html:89
+#: data/templates/footer.html:90
 msgid ""
 "Please send any comments or corrections to the <a href=\"//pagure.io"
 "/fedora-websites\">websites team</a>."
 msgstr ""
 
-#: data/templates/footer.html:95
+#: data/templates/footer.html:96
 msgid "Change Language"
 msgstr ""
 
-#: data/templates/footer.html:99
+#: data/templates/footer.html:100
 msgid "OK"
 msgstr ""
 
