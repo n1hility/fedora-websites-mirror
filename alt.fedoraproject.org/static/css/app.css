@@ -942,16 +942,16 @@ p.warning a {
 }
 
 .panel-heading .accordion-toggle:after {
-    /* symbol for "opening" panels */
-    content: "\f077";
+    /* - symbol for "opening" panels */
+    content: "\2796";
     float: right;
     color: grey;
     padding: 15px 15px;
     vertical-align: middle;
 }
 .panel-heading .accordion-toggle.collapsed:after {
-    /* symbol for "collapsed" panels */
-    content: "\f078";
+    /* + symbol for "collapsed" panels */
+    content: "\2795";
 }
 
 .panel-heading img {
