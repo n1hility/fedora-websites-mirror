@@ -411,27 +411,27 @@ GP2_HVM_atomic_AMI={
 # EC2 AMI IDs PRERELEASE!!!
 
 pre_HVM_base_AMI={
-    #'us-east-1':        'ami-307a1927',     # Virginia
-    #'us-west-2':        'ami-ab55a7cb',     # Oregon
-    #'us-west-1':        'ami-8b4c35eb',     # California
-    #'eu-west-1':        'ami-fb40cb88',     # Ireland
-    #'eu-central-1':     'ami-b29974dd',     # Frankfurt
-    #'ap-southeast-1':   'ami-6471a607',     # Singapore
-    #'ap-northeast-1':   'ami-6b6a8f0a',     # Tokyo
-    #'ap-southeast-2':   'ami-aae7cbc9',     # Sydney
-    #'sa-east-1':        'ami-be1099d2'      # Sao Paolo
+    'us-east-1':        'ami-b6a47fcb',     # Virginia
+    'us-west-2':        'ami-a98c17d1',     # Oregon
+    'us-west-1':        'ami-224c5d42',     # California
+    'eu-west-1':        'ami-4207553b',     # Ireland
+    'eu-central-1':     'ami-8b623f60',     # Frankfurt
+    'ap-southeast-1':   'ami-b0dc85cc',     # Singapore
+    'ap-northeast-1':   'ami-cf4348b3',     # Tokyo
+    'ap-southeast-2':   'ami-717bb713',     # Sydney
+    'sa-east-1':        'ami-4662352a'      # Sao Paolo
 }
 
 pre_GP2_HVM_base_AMI={
-    #'us-east-1':        'ami-76701361',     # Virginia
-    #'us-west-2':        'ami-80895ee0',     # Oregon
-    #'us-west-1':        'ami-0e08456e',     # California
-    #'eu-west-1':        'ami-8c2253ff',     # Ireland
-    #'eu-central-1':     'ami-7189791e',     # Frankfurt
-    #'ap-southeast-1':   'ami-0efa226d',     # Singapore
-    #'ap-northeast-1':   'ami-a5d01ec4',     # Tokyo
-    #'ap-southeast-2':   'ami-6d9fa80e',     # Sydney
-    #'sa-east-1':        'ami-3c8c1d50'      # Sao Paolo
+    'us-east-1':        'ami-f4a47f89',     # Virginia
+    'us-west-2':        'ami-128e156a',     # Oregon
+    'us-west-1':        'ami-114a5b71',     # California
+    'eu-west-1':        'ami-111d4f68',     # Ireland
+    'eu-central-1':     'ami-91613c7a',     # Frankfurt
+    'ap-southeast-1':   'ami-51de872d',     # Singapore
+    'ap-northeast-1':   'ami-78434804',     # Tokyo
+    'ap-southeast-2':   'ami-4775b925',     # Sydney
+    'sa-east-1':        'ami-e063348c'      # Sao Paolo
 }
 
 pre_PV_base_AMI={
