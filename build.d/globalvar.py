@@ -290,11 +290,11 @@ iso_size={
     'pre_VBvag_cloud':         '192',   # In MB
     'pre_libvag_cloud':        '184',   # In MB
     # Manual atomic prerelease image sizes go here.
-    'manual_pre_atomic_raw_cloud':    '420',   # In MB
-    'manual_pre_atomic_qcow2_cloud':  '555',   # In MB
-    'manual_pre_atomic_VBvag_cloud':  '538',   # In MB
-    'manual_pre_atomic_libvag_cloud': '526',   # In MB
-    'manual_pre_atomic_iso':          '916',   # In MB
+    'manual_pre_atomic_raw_cloud':    '419',   # In MB
+    'manual_pre_atomic_qcow2_cloud':  '569',   # In MB
+    'manual_pre_atomic_VBvag_cloud':  '555',   # In MB
+    'manual_pre_atomic_libvag_cloud': '543',   # In MB
+    'manual_pre_atomic_iso':          '950',   # In MB
     # Everything release
     'x86_64_ev':        '508',   #In MB
     'i386_ev':          '566',   #In MB
@@ -459,25 +459,25 @@ pre_GP2_PV_base_AMI={
 }
 
 pre_HVM_atomic_AMI={
-    'us-east-1':        'ami-19b54963',     # Virginia
-    'us-west-2':        'ami-e5d62e9d',     # Oregon
-    'us-west-1':        'ami-9a1121fa',     # California
-    'eu-west-1':        'ami-dec10ba7',     # Ireland
-    'eu-central-1':     'ami-c650e3a9',     # Frankfurt
-    'ap-southeast-1':   'ami-9dee9cfe',     # Singapore
-    'ap-northeast-1':   'ami-e564b083',     # Tokyo
-    'ap-southeast-2':   'ami-59f6163b',     # Sydney
-    'sa-east-1':        'ami-aeea96c2'      # Sao Paolo
+    'us-east-1':        'ami-f4ca1189',     # Virginia
+    'us-west-2':        'ami-0eba2176',     # Oregon
+    'us-west-1':        'ami-0e4f5e6e',     # California
+    'eu-west-1':        'ami-da0a58a3',     # Ireland
+    'eu-central-1':     'ami-ab623f40',     # Frankfurt
+    'ap-southeast-1':   'ami-f9d08985',     # Singapore
+    'ap-northeast-1':   'ami-45404b39',     # Tokyo
+    'ap-southeast-2':   'ami-b07ab6d2',     # Sydney
+    'sa-east-1':        'ami-de6037b2'      # Sao Paolo
 }
 
 pre_GP2_HVM_atomic_AMI={
-    'us-east-1':        'ami-92bb47e8',     # Virginia
-    'us-west-2':        'ami-2bd42c53',     # Oregon
-    'us-west-1':        'ami-51102031',     # California
-    'eu-west-1':        'ami-12c50f6b',     # Ireland
-    'eu-central-1':     'ami-2e56e541',     # Frankfurt
-    'ap-southeast-1':   'ami-d1ec9eb2',     # Singapore
-    'ap-northeast-1':   'ami-f365b195',     # Tokyo
-    'ap-southeast-2':   'ami-98f414fa',     # Sydney
-    'sa-east-1':        'ami-32ea965e'      # Sao Paolo
+    'us-east-1':        'ami-53c11a2e',     # Virginia
+    'us-west-2':        'ami-e5841f9d',     # Oregon
+    'us-west-1':        'ami-7a4c5d1a',     # California
+    'eu-west-1':        'ami-bb0755c2',     # Ireland
+    'eu-central-1':     'ami-539cc1b8',     # Frankfurt
+    'ap-southeast-1':   'ami-ced089b2',     # Singapore
+    'ap-northeast-1':   'ami-14454e68',     # Tokyo
+    'ap-southeast-2':   'ami-a17bb7c3',     # Sydney
+    'sa-east-1':        'ami-0062356c'      # Sao Paolo
 }
