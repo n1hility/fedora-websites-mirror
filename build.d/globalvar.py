@@ -2,43 +2,43 @@
 # -*- coding: utf-8 -*-
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
 release={
-    'prev_id':     '26',
-    'curr_id':     '27',
-    'next_id':     '28',
+    'prev_id':     '27',
+    'curr_id':     '28',
+    'next_id':     '29',
     'curr_name':   '',
     'next_name':   '',
-    'curr_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  'Beta',         # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_alt_state':  'Beta',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_AMI_state':  'Beta',   # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_server_state':  'Beta',         # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_atomic_state':  'Pre-Release',   # No Alpha/Beta for Atomic Host
-    'prev_arm_id': '26',
-    'prev_alt_id': '26',
-    'prev_cloud_id': '26',
+    'curr_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_alt_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_AMI_state':  '',   # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_server_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_atomic_state':  '',   # No Alpha/Beta for Atomic Host
+    'prev_arm_id': '27',
+    'prev_alt_id': '27',
+    'prev_cloud_id': '27',
     'prev_atomic_id': '26',
-    'curr_arm_id': '27',
-    'curr_alt_id': '27',
-    'curr_cloud_id': '27',
+    'curr_arm_id': '28',
+    'curr_alt_id': '28',
+    'curr_cloud_id': '28',
     'curr_atomic_id': '27',
-    'curr_server_id': '27',
-    'curr_cloud_AMI_id': '27',
-    'next_arm_id': '28',
-    'next_alt_id': '28',
-    'next_cloud_id': '28',
+    'curr_server_id': '28',
+    'curr_cloud_AMI_id': '28',
+    'next_arm_id': '29',
+    'next_alt_id': '29',
+    'next_cloud_id': '29',
     'next_atomic_id': '28',
-    'next_server_id': '28',
-    'next_cloud_AMI_id': '28',
+    'next_server_id': '29',
+    'next_cloud_AMI_id': '29',
     'composedate': '20160616',
     'unofficial_compose': '20160614',
     'alt_composedate': '20161118',
     # Fedora Media Writer
     'fmw': '4.1.0',
     # These variables are only necessary to keep fedoraproject.org working
-    'curr_ppc64_id': '27',
-    'prev_ppc64_id': '26',
-    'curr_s390_id': '27',
+    'curr_ppc64_id': '28',
+    'prev_ppc64_id': '27',
+    'curr_s390_id': '28',
     # Note that atomic values here get overwritten by the twoweek script.
     'atomic_composedate': '20160616',
     'pre_cloud_composedate': '20150915',
