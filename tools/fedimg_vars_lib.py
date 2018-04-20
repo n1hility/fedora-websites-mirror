@@ -62,7 +62,7 @@ def retrieve_messages():
 
 def filter_messages(messages, target):
     for message in messages:
-        if target in str(message):
+        if target in str(message) and 'completed' in str(message):
             yield message
 
 
@@ -116,7 +116,7 @@ def sanity_check(globalvar, collected_fedimg_vars):
 
 def mocked_fedimg(templates):
     regions = ['us-east-1', 'ap-northeast-1', 'sa-east-1', 'ap-southeast-1', 'ap-southeast-2',
-               'us-west-2', 'us-west-1', 'eu-central-1', 'eu-west-1']
+               'us-west-2', 'us-west-1', 'eu-central-1', 'eu-west-1', 'ap-northeast-2', 'ap-south-1']
     mockdata = {}
     for region in regions:
         mockdata[region] = 'ami-mocked'
