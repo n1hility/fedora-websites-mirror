@@ -324,6 +324,8 @@ EC2_regions = [
     region(u'Asia Pacific NE (Tokyo)',         u'Tokyo',        u'ap-northeast-1'),
     region(u'Asia Pacific SE (Sydney)',        u'Sydney',       u'ap-southeast-2'),
     region(u'South America East (Sāo Paulo)',  u'Saopaolo',     u'sa-east-1'),
+    region(u'Asia Pacific (Seoul)',            u'Seoul',        u'ap-northeast-2'),
+    region(u'Asia Pacific (Mumbai)',           u'Mumbai',       u'ap-south-1')
 ]
 
 path_stats={
