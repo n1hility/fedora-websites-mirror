@@ -879,36 +879,61 @@ readable*/
 #server .header-splash {
   background: black url(../images/server/server-splash.jpg) no-repeat center top 0px;
   background-size: cover;
+  border-bottom: 10px solid #e59728;
+}
+
+#server .header-splash p {
+  font-size: 1.4em;
+}
+
+#server .header-splash h1 {
+  margin-bottom: 12px;
 }
 
 #server .downloadheader .btn,
 #server .header-splash .btn-success,
-#server .download-lower .btn {
+#server .download-lower .btn,
+#server .modularity .btn-success {
   background-color: #e59728;
 }
 
 #server .product-definition {
-  background: #e59728 url(../images/server/server-pattern.png);
+  background: white url(../images/server/server-pattern.2.png);
+  border-bottom: 10px solid #e59728;
+  color: black;
+}
+
+#server .modularity {
+  background: #143c79 url(../images/server/server-pattern.3.png);
   color: white;
+  border-bottom: 10px solid #e59728;
+}
+
+#server .modularity img {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+	display: block;
 }
 
 #server .two-col {
    background: white url(../images/server/server-splash.2.jpg) no-repeat center center;
    background-size: cover;
-   text-align: center;
    color: white;
-   text-shadow: 1px 1px .5px black;
-}
+   border-bottom: 10px solid #e59728;
+  }
 
 #server .cockpit {
   background-size: cover;
   background: white url(../images/server/server-features-cockpit-bg.png) no-repeat top center / 100%;
+  border-bottom: 10px solid #e59728;
 }
 
 #server .freeipa {
   background-size: cover;
   background: white url(../images/server/server-features-freeipa-bg.png) no-repeat top center / 100%;
-  border-bottom: 35px solid #e59728;
+  border-bottom: 10px solid #e59728;
 }
 
 /*Cloud*/
