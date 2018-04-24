@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-06 22:20+0200\n"
+"POT-Creation-Date: 2018-04-24 22:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,8 +136,8 @@ msgstr ""
 
 #: data/content/atomic/index.html:125 data/content/atomic/index.html:131
 #: data/content/index.html:79 data/content/index.html:94
-#: data/content/index.html:109 data/content/server/index.html:20
-#: data/content/server/index.html:125 data/content/server/index.html:131
+#: data/content/index.html:109 data/content/server/index.html:22
+#: data/content/server/index.html:139 data/content/server/index.html:145
 #: data/content/workstation/index.html:20
 #: data/content/workstation/index.html:185
 #: data/content/workstation/index.html:191
@@ -1436,91 +1436,95 @@ msgstr ""
 msgid "Get Fedora Server: the latest tech for your apps and services"
 msgstr ""
 
-#: data/content/server/index.html:19
-#: data/templates/productselector-server.html:14
+#: data/content/server/index.html:20
 msgid ""
-"The latest technology. A stable foundation. Together, for your "
-"applications and services."
+"Run your applications on a Linux server OS with the latest open source "
+"technology."
+msgstr ""
+
+#: data/content/server/index.html:21
+msgid ""
+"Now with content in multiple versions on independent lifecycles — so your"
+" server can move both fast and slow."
+msgstr ""
+
+#: data/content/server/index.html:37
+msgid "Fedora Server"
 msgstr ""
 
 #: data/content/server/index.html:38
-#, python-format
-msgid ""
-"“The simplicity introduced with rolekit and cockpit have made server "
-"deployments a breeze. What took me a few days on other operating systems "
-"took less than an hour with Fedora %(rel)s Server. It just works.”"
-msgstr ""
-
-#: data/content/server/index.html:39
-msgid "Systems Engineer"
-msgstr ""
-
-#: data/content/server/index.html:51
 msgid ""
 "Fedora Server is a short-lifecycle, community-supported server operating "
-"system that enables seasoned system administrators experienced with any "
-"OS to make use of the very latest server-based technologies available in "
-"the open source community."
+"system that enables seasoned system administrators, experienced with any "
+"OS, to make use of the very latest technologies available in the open "
+"source community."
 msgstr ""
 
-#: data/content/server/index.html:62
+#: data/content/server/index.html:52
+msgid "Introducing Modularity"
+msgstr ""
+
+#: data/content/server/index.html:53
+msgid ""
+"Modularity brings a new Modular repository providing additional versions "
+"of software on independent lifecycles."
+msgstr ""
+
+#: data/content/server/index.html:54
+msgid ""
+"Choose the right version of an application or a language stack you need, "
+"and keep it even when your OS upgrades to a newer version."
+msgstr ""
+
+#: data/content/server/index.html:55
+msgid "Learn more about Modularity"
+msgstr ""
+
+#: data/content/server/index.html:66
 msgid "Easy Administration"
 msgstr ""
 
-#: data/content/server/index.html:63
+#: data/content/server/index.html:67
 msgid ""
 "Manage your system simply with Cockpit's powerful, modern interface. View"
 " and monitor system performance and status, and deploy and manage "
 "container-based services."
 msgstr ""
 
-#: data/content/server/index.html:77
-msgid "Server Roles"
-msgstr ""
-
-#: data/content/server/index.html:78
-msgid ""
-"There's no need to set up your server from scratch when you use server "
-"roles. Server roles plug into your Fedora Server system, providing a "
-"well-integrated service on top of the Fedora Server platform. Deploy and "
-"manage these prepared roles simply using the Rolekit tool."
-msgstr ""
-
-#: data/content/server/index.html:81
+#: data/content/server/index.html:98
 msgid "Database Services"
 msgstr ""
 
-#: data/content/server/index.html:82
+#: data/content/server/index.html:99
 msgid ""
 "Fedora Server brings with it an enterprise-class, scalable database "
 "server powered by the open-source PostgreSQL project."
 msgstr ""
 
-#: data/content/server/index.html:96
+#: data/content/server/index.html:109
 msgid "Complete Enterprise Domain Solution"
-msgstr ""
-
-#: data/content/server/index.html:97
-msgid ""
-"Level up your Linux network with advanced identity management, DNS, "
-"certificate services, Windows(TM) domain integration throughout your "
-"environment with FreeIPA, the engine that drives Fedora Server's Domain "
-"Controller role."
 msgstr ""
 
 #: data/content/server/index.html:110
 msgid ""
-"“The Docker Role for Fedora Server was simple and fast to install so that"
-" you can run your Docker images. This makes a great testbed for beginners"
-" and experts with docker so that they can develop their applications on "
-"the fly.”"
+"Level up your Linux network with advanced identity management, DNS, "
+"certificate services, Windows(TM) domain integration throughout your "
+"environment with FreeIPA, the open-source domain controller."
 msgstr ""
 
-#: data/content/server/index.html:111
-msgid "Information Systems Student"
+#: data/content/server/index.html:125
+msgid ""
+"“For DevConf US, I needed a system to manage the conference. I discovered"
+" regcfp, by Patrick Uiterwijk, which seemed to suit my needs. However, it"
+" won't run in nodejs 8 in F27. Launching F28 Server, choosing the "
+"\"nodejs:6\" stream, worked like a charm!”"
 msgstr ""
 
-#: data/content/server/index.html:125 data/content/server/index.html:130
+#: data/content/server/index.html:126
+msgid "DevConf US Conference Co-Chair"
+msgstr ""
+
+#: data/content/server/index.html:139 data/content/server/index.html:144
 msgid "Ready to give Fedora Server a try?"
 msgstr ""
 
@@ -2300,6 +2304,12 @@ msgstr ""
 
 #: data/templates/productselector-cloud.html:14
 msgid "Lean. Powerful. Everycloud ready."
+msgstr ""
+
+#: data/templates/productselector-server.html:14
+msgid ""
+"The latest technology. A stable foundation. Together, for your "
+"applications and services."
 msgstr ""
 
 #: data/templates/generic/docs-links.html:8
