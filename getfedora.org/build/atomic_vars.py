@@ -179,7 +179,6 @@ def collect(curr_atomic_id, next_atomic_id):
                 continue
 
             length = int(response.headers['content-length']) / 1000000
-
             # Provide the download URL
             url_key = mapping[key] + "_url"
             results['release'][url_key] = download_url
@@ -196,16 +195,16 @@ def collect(curr_atomic_id, next_atomic_id):
 
     # Special case for Atomic ISO latest redirect rule mapping because it's
     # not included in fedmsg data
-    atomic_iso_filename = "Fedora-Atomic-ostree-x86_64-{}-{}.iso".format(
-        globalvar.release['curr_id'],
+    atomic_iso_filename = "Fedora-AtomicHost-ostree-x86_64-{}-{}.iso".format(
+        globalvar.release['curr_atomic_id'],
         results['release'][composedate_prefix + 'atomic_composedate']
     )
     results['release']['redir_map']['atomic_iso'] = {}
     results['release']['redir_map']['atomic_iso']['redirect'] = \
-        globalvar.path['download_atomic'] + "/stable/Fedora-Atomic-" + \
-        globalvar.release['curr_id'] + '-' + \
+        globalvar.path['download_atomic'] + "/stable/Fedora-AtomicHost-" + \
+        globalvar.release['curr_atomic_id'] + '-' + \
         results['release'][composedate_prefix + 'atomic_composedate'] + \
-        "/Atomic/x86_64/iso/{}".format(atomic_iso_filename)
+        "/AtomicHost/x86_64/iso/{}".format(atomic_iso_filename)
     results['release']['redir_map']['atomic_iso']['filename'] = atomic_iso_filename
 
     return results

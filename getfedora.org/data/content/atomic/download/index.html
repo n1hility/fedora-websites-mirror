@@ -289,13 +289,13 @@
 		      <div class="row visible-xs">
 		          <div class="col-xs-12">
 		            <h5 class="bold">${_('qcow2 Image')}</h5>
-		            <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a Qcow2-formatted image for use with OpenStack.')) % {'rel':global_variables.release['curr_id']}}</p>
+		            <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a Qcow2-formatted image for use with OpenStack.')) % {'rel':global_variables.release['curr_atomic_id']}}</p>
 		            <a class="btn btn-success download-cloud-splash" href="${global_variables.release['atomic_qcow2_cloud_url']}" role="button">${_('Download')}</a>
 		              <p class="caption">${_('64-bit %sMB Qcow2 Image') % global_variables.iso_size['atomic_qcow2_cloud']}</p>
 		          </div>
 		          <div class="col-xs-12">
 		            <h5 class="bold">${_('Raw Image')}</h5>
-		            <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a compressed raw image format. If you\'re not sure what to use, try this.')) % {'rel':global_variables.release['curr_id']}}</p>
+		            <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a compressed raw image format. If you\'re not sure what to use, try this.')) % {'rel':global_variables.release['curr_atomic_id']}}</p>
 		            <a class="btn btn-success download-cloud-splash" href="${global_variables.release['atomic_raw_cloud_url']}" role="button">${_('Download')}</a>
 		              <p class="caption">${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.iso_size['atomic_raw_cloud']}</p>
 		          </div>
@@ -304,11 +304,11 @@
 		      <div class="row hidden-xs">
 		          <div class="col-sm-6">
 		            <h5 class="bold">${_('qcow2 Image')}</h5>
-		            <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a Qcow2-formatted image for use with OpenStack.')) % {'rel':global_variables.release['curr_id']}}</p>
+		            <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a Qcow2-formatted image for use with OpenStack.')) % {'rel':global_variables.release['curr_atomic_id']}}</p>
 		          </div>
 		          <div class="col-sm-6">
 		            <h5 class="bold">${_('Raw Image')}</h5>
-		            <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a compressed raw image format. If you\'re not sure what to use, try this.')) % {'rel':global_variables.release['curr_id']}}</p>
+		            <p>${Markup(_('This is Fedora %(rel)s Cloud Atomic Host in a compressed raw image format. If you\'re not sure what to use, try this.')) % {'rel':global_variables.release['curr_atomic_id']}}</p>
 		          </div>
 		      </div>
 		      <div class="row hidden-xs">
@@ -330,7 +330,7 @@
     <div class="col-md-3 col-xs-12 col-md-offset-1 top-margin">
         <h3>${_('Other Downloads')}</h3>
           <ul>
-            <li><p><a class="download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/Fedora-Atomic-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}/Atomic/x86_64/iso/Fedora-Atomic-ostree-x86_64-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}.iso">${_('Atomic Host ISO image (%sMB)') % global_variables.iso_size['atomic_iso']}</a></p></li>
+            <li><p><a class="download-cloud-splash" href="${global_variables.path['download_atomic']}/stable/Fedora-Atomic-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}/AtomicHost/x86_64/iso/Fedora-AtomicHost-ostree-x86_64-${global_variables.release['curr_atomic_id']}-${global_variables.release['atomic_composedate']}.iso">${_('Atomic Host ISO image (%sMB)') % global_variables.iso_size['atomic_iso']}</a></p></li>
             <li><p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Container/x86_64/images/Fedora-Container-Base-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.tar.xz">${_('Container Image (%sMB)') % global_variables.iso_size['x86_64_Container']}</a></p></li>
             <li><p><a href="https://cloud.fedoraproject.org/">Fedora Cloud Base images</a></p></li>
           </ul>
