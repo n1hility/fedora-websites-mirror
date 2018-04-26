@@ -322,12 +322,14 @@ EC2_regions = [
     region(u'US West (N. California)',         u'California',   u'us-west-1'),
     region(u'EU West (Ireland)',               u'Ireland',      u'eu-west-1'),
     region(u'EU Central (Frankfurt)',          u'Frankfurt',    u'eu-central-1'),
+    region(u'EU West (London)',                u'London',       u'eu-west-2'),
     region(u'Asia Pacific SE (Singapore)',     u'Singapore',    u'ap-southeast-1'),
     region(u'Asia Pacific NE (Tokyo)',         u'Tokyo',        u'ap-northeast-1'),
     region(u'Asia Pacific SE (Sydney)',        u'Sydney',       u'ap-southeast-2'),
     region(u'South America East (Sāo Paulo)',  u'Saopaolo',     u'sa-east-1'),
     region(u'Asia Pacific (Seoul)',            u'Seoul',        u'ap-northeast-2'),
-    region(u'Asia Pacific (Mumbai)',           u'Mumbai',       u'ap-south-1')
+    region(u'Asia Pacific (Mumbai)',           u'Mumbai',       u'ap-south-1'),
+    region(u'Canada (Central)',                u'Central',      u'ca-central-1')
 ]
 
 path_stats={
