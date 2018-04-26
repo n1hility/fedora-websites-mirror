@@ -233,8 +233,6 @@ iso_size={
     'pre_i386_workstation':    '1.8',   # In GB
     'pre_x86_64_workstation_net': '571',# In MB
     'pre_i386_workstation_net': '525',  # In MB
-    # Atomic Workstation
-    'x64_atomic_workstation':   '2.2',   # In GB
     # ARM
     'ARM_Workstation':     '1.3',       # In GB
     'ARM_Server':          '537',       # In MB

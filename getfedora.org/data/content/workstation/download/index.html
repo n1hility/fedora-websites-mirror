@@ -177,19 +177,6 @@
             </py:when>
           </py:choose>
           </div>
-
-          <!-- Atomic Workstation -->
-          <div class="top-space bottom-margin">
-            <div class="prerelease-box">
-              <h4>${_('Try Atomic Workstation')}</h4>
-              <p>${_('Atomic provides an immutable OS image and updates via OSTree.')}</p>
-              <p><i class="fa fa-fw fa-sm header-icon fa-download"></i>
-                <a class="ws-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/AtomicWorkstation/x86_64/iso/Fedora-AtomicWorkstation-ostree-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('64-bit %sGB Atomic image')) % global_variables.iso_size['x64_atomic_workstation']}</a>
-              </p>
-              <p><i class="fa fa-fw fa-sm header-icon fa-book"></i><a href="//fedoraproject.org/wiki/Workstation/AtomicWorkstation">${_('Learn more')}</a></p>
-            </div>
-          </div>
-          
           <div class="top-margin bottom-margin"><h4>${_('Resources')}</h4></div>
           <p><i class="fa fa-fw fa-sm header-icon fa-globe"></i>${Markup(_('&lt;a href="%(fmagazine_url)s"&gt;&lt;strong&gt;Release Announcement&lt;/strong&gt;&lt;/a&gt;') % {'fmagazine_url': 'https://fedoramagazine.org/announcing-fedora-%s' % (global_variables.release['curr_id'])})}</p>
           <div class="pull-right bottom-step"><p>${_('Read the full Release Announcement on Fedora Magazine.')}</p></div>
