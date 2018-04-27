@@ -34,7 +34,7 @@ release={
     'unofficial_compose': '20160614',
     'alt_composedate': '20161118',
     # Fedora Media Writer
-    'fmw': '4.1.0',
+    'fmw': '4.1.1',
     # These variables are only necessary to keep fedoraproject.org working
     'curr_ppc64_id': '28',
     'prev_ppc64_id': '27',
