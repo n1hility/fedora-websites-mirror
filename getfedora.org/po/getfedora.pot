@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-26 23:04+0200\n"
+"POT-Creation-Date: 2018-04-27 17:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -880,7 +880,7 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:331
 #: data/content/atomic/prerelease/index.html:335
-#: data/content/server/download/index.html:50
+#: data/content/server/download/index.html:51
 #: data/content/server/prerelease/index.html:51
 #: data/content/workstation/download/index.html:145
 #: data/content/workstation/prerelease/index.html:131
@@ -904,24 +904,24 @@ msgid "F%(rel)s %(state)s"
 msgstr ""
 
 #: data/content/atomic/download/index.html:343
-#: data/content/server/download/index.html:62
-#: data/content/server/download/index.html:72
+#: data/content/server/download/index.html:63
+#: data/content/server/download/index.html:73
 #: data/content/workstation/download/index.html:161
 #: data/content/workstation/download/index.html:171
 msgid "Try a pre-release"
 msgstr ""
 
 #: data/content/atomic/download/index.html:344
-#: data/content/server/download/index.html:63
-#: data/content/server/download/index.html:73
+#: data/content/server/download/index.html:64
+#: data/content/server/download/index.html:74
 #: data/content/workstation/download/index.html:162
 #: data/content/workstation/download/index.html:172
 msgid "We're working on our next release."
 msgstr ""
 
 #: data/content/atomic/download/index.html:345
-#: data/content/server/download/index.html:64
-#: data/content/server/download/index.html:74
+#: data/content/server/download/index.html:65
+#: data/content/server/download/index.html:75
 #: data/content/workstation/download/index.html:163
 #: data/content/workstation/download/index.html:173
 #, python-format
@@ -934,8 +934,8 @@ msgid "Download F%(rel)s %(state)s images"
 msgstr ""
 
 #: data/content/atomic/download/index.html:347
-#: data/content/server/download/index.html:66
-#: data/content/server/download/index.html:76
+#: data/content/server/download/index.html:67
+#: data/content/server/download/index.html:77
 #: data/content/workstation/download/index.html:165
 #: data/content/workstation/download/index.html:175
 msgid "How to test pre-releases"
@@ -991,7 +991,7 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:362
 #: data/content/atomic/prerelease/index.html:350
-#: data/content/server/download/index.html:93
+#: data/content/server/download/index.html:94
 #: data/content/workstation/download/index.html:222
 msgid "Verify"
 msgstr ""
@@ -999,7 +999,7 @@ msgstr ""
 #: data/content/atomic/download/index.html:365
 #: data/content/atomic/prerelease/index.html:322
 #: data/content/atomic/prerelease/index.html:353
-#: data/content/server/download/index.html:96
+#: data/content/server/download/index.html:97
 #: data/content/server/prerelease/index.html:41
 #: data/content/workstation/download/index.html:225
 #: data/content/workstation/prerelease/index.html:119
@@ -1556,12 +1556,22 @@ msgid ""
 "a USB flash drive at least as big as the image."
 msgstr ""
 
-#: data/content/server/download/index.html:52
+#: data/content/server/download/index.html:45
+#, python-format
+msgid ""
+"If you would like to try out the new modular features of Fedora Server, "
+"please visit the <a href=\"%(modules)s\">Using Modules</a> section of the"
+" Modularity Documentation. If you would like more information about "
+"Modularity in general, please see the <a href=\"%(website)s\">website on "
+"pagure</a>."
+msgstr ""
+
+#: data/content/server/download/index.html:53
 #: data/content/server/prerelease/index.html:53
 msgid "Netinstall Image:"
 msgstr ""
 
-#: data/content/server/download/index.html:54
+#: data/content/server/download/index.html:55
 #: data/content/server/prerelease/index.html:55
 #: data/content/workstation/download/index.html:152
 #: data/content/workstation/prerelease/index.html:138
@@ -1569,36 +1579,36 @@ msgstr ""
 msgid "64-bit %sMB image"
 msgstr ""
 
-#: data/content/server/download/index.html:61
+#: data/content/server/download/index.html:62
 #: data/content/workstation/download/index.html:160
 #, python-format
 msgid "F%(rel)s Alpha"
 msgstr ""
 
-#: data/content/server/download/index.html:65
+#: data/content/server/download/index.html:66
 #: data/content/workstation/download/index.html:164
 #, python-format
 msgid "Download F%(rel)s Alpha images"
 msgstr ""
 
-#: data/content/server/download/index.html:71
+#: data/content/server/download/index.html:72
 #: data/content/workstation/download/index.html:170
 #, python-format
 msgid "F%(rel)s Beta"
 msgstr ""
 
-#: data/content/server/download/index.html:75
+#: data/content/server/download/index.html:76
 #: data/content/workstation/download/index.html:174
 #, python-format
 msgid "Download F%(rel)s Beta images"
 msgstr ""
 
-#: data/content/server/download/index.html:82
+#: data/content/server/download/index.html:83
 #: data/content/workstation/download/index.html:207
 msgid "Get more Fedora"
 msgstr ""
 
-#: data/content/server/download/index.html:86
+#: data/content/server/download/index.html:87
 #: data/content/workstation/download/index.html:216
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr ""
