@@ -88,6 +88,14 @@ def collect(release):
                     region = upload['destination']
                     results[name][region] = ami
 
+    # Hardcode AMIs for regions eu-west-3 and us-east-2 for F28 cloud-base
+    # This is because fedmsg topic 'org.fedoraproject.prod.fedimg.image.upload'
+    # doesn't have AMI information for these two regions.
+    results['HVM_base_AMI']['us-east-2'] = 'ami-8d3b09e8'
+    results['HVM_base_AMI']['eu-west-3'] = 'ami-fdcc7d80'
+    results['GP2_HVM_base_AMI']['us-east-2'] = 'ami-013b0964'
+    results['GP2_HVM_base_AMI']['eu-west-3'] = 'ami-a5cc7dd8'
+
     shelf['timestamp'] = datetime.utcnow()
     shelf['collected'] = results
     shelf.close()

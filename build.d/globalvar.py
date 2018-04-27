@@ -318,11 +318,13 @@ region = collections.namedtuple('EC2_region', ['long', 'short', 'code'])
 EC2_regions = [
     # long,                                    short,           code
     region(u'US East (N. Virginia)',           u'Virginia',     u'us-east-1'),
+    region(u'US East (Ohio)',                  u'Ohio',         u'us-east-2'),
     region(u'US West (Oregon)',                u'Oregon',       u'us-west-2'),
     region(u'US West (N. California)',         u'California',   u'us-west-1'),
     region(u'EU West (Ireland)',               u'Ireland',      u'eu-west-1'),
     region(u'EU Central (Frankfurt)',          u'Frankfurt',    u'eu-central-1'),
     region(u'EU West (London)',                u'London',       u'eu-west-2'),
+    region(u'EU West (Paris)',                 u'Paris',        u'eu-west-3'),
     region(u'Asia Pacific SE (Singapore)',     u'Singapore',    u'ap-southeast-1'),
     region(u'Asia Pacific NE (Tokyo)',         u'Tokyo',        u'ap-northeast-1'),
     region(u'Asia Pacific SE (Sydney)',        u'Sydney',       u'ap-southeast-2'),
