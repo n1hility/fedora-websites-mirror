@@ -85,7 +85,7 @@ def collect(release):
                 if matches(upload['extra']):
                     ami = upload['extra']['id']
                     # The region looks like "EC2 (REGION)", so we strip stuff.
-                    region = upload['destination'][5:-1]
+                    region = upload['destination']
                     results[name][region] = ami
 
     shelf['timestamp'] = datetime.utcnow()
