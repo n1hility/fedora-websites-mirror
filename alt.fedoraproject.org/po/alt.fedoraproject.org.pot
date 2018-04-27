@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-03-31 22:54+0200\n"
+"POT-Creation-Date: 2018-04-27 22:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -170,8 +170,6 @@ msgstr ""
 #: data/content/prerelease/index.html:345
 #: data/content/prerelease/index.html:351
 #: data/content/prerelease/index.html:356
-#: data/content/prerelease/index.html:362
-#: data/content/prerelease/index.html:367
 #: data/content/prerelease/index.html:392
 #: data/content/prerelease/index.html:397
 #: data/content/prerelease/index.html:403
@@ -288,8 +286,6 @@ msgstr ""
 #: data/content/prerelease/index.html:345
 #: data/content/prerelease/index.html:351
 #: data/content/prerelease/index.html:356
-#: data/content/prerelease/index.html:362
-#: data/content/prerelease/index.html:367
 #: data/content/prerelease/index.html:392
 #: data/content/prerelease/index.html:397
 #: data/content/prerelease/index.html:403
@@ -555,10 +551,9 @@ msgid "For Cloud Base images"
 msgstr ""
 
 #: data/content/prerelease/index.html:292
-#: data/content/prerelease/index.html:366
 #: data/content/prerelease/index.html:440
 #: data/content/prerelease/index.html:514
-#: data/content/verify-prereleases.html:116 data/content/verify.html:96
+#: data/content/verify-prereleases.html:116
 msgid "Docker"
 msgstr ""
 
@@ -635,6 +630,10 @@ msgstr ""
 
 #: data/content/verify.html:83
 msgid "For ppc64le iso"
+msgstr ""
+
+#: data/content/verify.html:96
+msgid "Container"
 msgstr ""
 
 #: data/content/alt/index.html:8
@@ -719,16 +718,12 @@ msgstr ""
 #: data/content/alt/index.html:152 data/content/alt/index.html:257
 #: data/content/alt/index.html:372 data/content/alt/index.html:624
 #: data/content/alt/index.html:782 data/content/alt/index.html:960
-#: data/content/prerelease/index.html:287
-#: data/content/prerelease/index.html:361
-#: data/content/prerelease/index.html:435
-#: data/content/prerelease/index.html:509
-msgid "Fedora Docker"
+msgid "Fedora Container"
 msgstr ""
 
 #: data/content/alt/index.html:155 data/content/alt/index.html:627
 #, python-format
-msgid "%sMB Docker image"
+msgid "%sMB Container image"
 msgstr ""
 
 #: data/content/alt/index.html:393 data/content/alt/index.html:981
@@ -1150,6 +1145,12 @@ msgstr ""
 #: data/content/prerelease/index.html:429
 #: data/content/prerelease/index.html:503
 msgid "raw"
+msgstr ""
+
+#: data/content/prerelease/index.html:287
+#: data/content/prerelease/index.html:435
+#: data/content/prerelease/index.html:509
+msgid "Fedora Docker"
 msgstr ""
 
 #: data/content/prerelease/index.html:303

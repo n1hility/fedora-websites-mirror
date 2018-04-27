@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-27 17:30+0200\n"
+"POT-Creation-Date: 2018-04-27 22:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -445,7 +445,7 @@ msgid "Ready to give Fedora Atomic a try?"
 msgstr ""
 
 #: data/content/atomic/download/download-cloud-splash.html:8
-msgid "Download Fedora Cloud"
+msgid "Download Fedora Atomic Host"
 msgstr ""
 
 #: data/content/atomic/download/download-cloud-splash.html:37
@@ -894,8 +894,9 @@ msgid "Atomic Host ISO image (%sMB)"
 msgstr ""
 
 #: data/content/atomic/download/index.html:334
+#: data/content/atomic/prerelease/index.html:338
 #, python-format
-msgid "Docker Image (%sMB)"
+msgid "Container Image (%sMB)"
 msgstr ""
 
 #: data/content/atomic/download/index.html:342
@@ -1072,11 +1073,6 @@ msgstr ""
 msgid ""
 "This is Fedora %(rel)s %(state)s Cloud Atomic Host in a compressed raw "
 "image format. If you're not sure what to use, try this."
-msgstr ""
-
-#: data/content/atomic/prerelease/index.html:338
-#, python-format
-msgid "Container Image (%sMB)"
 msgstr ""
 
 #: data/content/e/404.html:7
