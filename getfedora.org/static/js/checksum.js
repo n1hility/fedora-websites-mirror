@@ -1,6 +1,6 @@
 var dir_path = '../../static/checksums/';
 var atom_path = 'https://dl.fedoraproject.org/pub/alt/atomic/stable/Fedora-Atomic-' + curr_atomic_id + '-' + atomic_composedate + '.0/CloudImages/x86_64/images/';
-var dock_path = 'https://dl.fedoraproject.org/pub/alt/atomic/stable/Fedora-Atomic-' + curr_atomic_id + '-' + atomic_composedate + '.0/Docker/x86_64/images/';
+var dock_path = 'https://dl.fedoraproject.org/pub/alt/atomic/stable/Fedora-Atomic-' + curr_atomic_id + '-' + atomic_composedate + '.0/Container/x86_64/images/';
 var iso_path = 'https://dl.fedoraproject.org/pub/alt/atomic/stable/Fedora-Atomic-' + curr_atomic_id + '-' + atomic_composedate + '.0/Atomic/x86_64/iso/';
 
 var checksums = [];
@@ -11,7 +11,7 @@ checksums['Fedora-Workstation-Live-i386-' + curr_id + '-' + RC_gold + '.iso'] = 
 checksums['Fedora-Workstation-netinst-i386-' + curr_id + '-' + RC_gold + '.iso'] = dir_path + 'Fedora-Workstation-' + curr_id + '-' + RC_gold + '-i386-CHECKSUM';
 checksums['Fedora-Server-dvd-x86_64-' + curr_server_id + '-' + RC_server_gold + '.iso'] = dir_path + 'Fedora-Server-' + curr_server_id + '-' + RC_server_gold + '-x86_64-CHECKSUM';
 checksums['Fedora-Server-netinst-x86_64-' + curr_server_id + '-' + RC_server_gold + '.iso'] = dir_path + 'Fedora-Server-' + curr_server_id + '-' + RC_server_gold + '-x86_64-CHECKSUM';
-checksums['Fedora-Docker-Base-' + curr_id + '-' + RC_gold + '.x86_64.tar.xz'] = dir_path + 'Fedora-Docker-' + curr_id + '-' + RC_gold + '-x86_64-CHECKSUM';
+checksums['Fedora-Container-Base-' + curr_id + '-' + RC_gold + '.x86_64.tar.xz'] = dir_path + 'Fedora-Container-' + curr_id + '-' + RC_gold + '-x86_64-CHECKSUM';
 checksums['Fedora-Atomic-' + curr_atomic_id + '-' + atomic_composedate + '.0.x86_64.qcow2'] = atom_path + 'Fedora-CloudImages-' + curr_atomic_id + '-' + atomic_composedate + '.0-x86_64-CHECKSUM';
 checksums['Fedora-Atomic-' + curr_atomic_id + '-' + atomic_composedate + '.0.x86_64.raw.xz'] = atom_path + 'Fedora-CloudImages-' + curr_atomic_id + '-' + atomic_composedate + '.0-x86_64-CHECKSUM';
 checksums['Fedora-Atomic-Vagrant-' + curr_atomic_id + '-' + atomic_composedate + '.0.x86_64.vagrant-libvirt.box'] = atom_path + 'Fedora-CloudImages-' + curr_atomic_id + '-' + atomic_composedate + '.0-x86_64-CHECKSUM';

@@ -120,7 +120,7 @@ iso_size={
     'aarch64_Cloud_net':   '459',       # In MB
     'aarch64_qcow2':       '265',       # In MB
     'aarch64_raw':         '151',       # In MB
-    'aarch64_docker':      '46',        # In MB
+    'aarch64_Container':   '46',        # In MB
     'aarch64_WS':          '1.2',       # In GB
     'aarch64_min':         '46',        # In MB
     'ppc64_Server_DVD':    '2.3',       # In GB
@@ -128,13 +128,13 @@ iso_size={
     'ppc64_Cloud_net':     '520',       # In MB
     'ppc64_qcow2':         '244',       # In MB
     'ppc64_raw':           '137',       # In MB
-    'ppc64_docker':        '61',        # In MB
+    'ppc64_Container':     '61',        # In MB
     'ppc64le_Server_DVD':  '2.4',       # In GB
     'ppc64le_Server_net':  '489',       # In MB
     'ppc64le_Cloud_net':   '488',       # In MB
     'ppc64le_qcow2':       '235',       # In MB
     'ppc64le_raw':         '134',       # In MB
-    'ppc64le_docker':      '48',        # In MB
+    'ppc64le_Container':   '48',        # In MB
     's390x_Server_DVD':    '2.1',       # In GB
     'i686_sda.qcow2':      '212',       # In MB
     'x86_64_sda.qcow2':    '207',       # In MB
@@ -264,7 +264,7 @@ iso_size={
     'qcow2_i386_cloud':    '216',       # In MB
     'VBvag_cloud':         '253',       # In MB
     'libvag_cloud':        '243',       # In MB
-    'x86_64_docker':       '48',        # In MB
+    'x86_64_Container':    '48',        # In MB
     'raw_i386_cloud':      '144',       # In MB
     # Note that atomic values here get overwritten by the twoweek script.
     'atomic_raw_cloud':    '???',       # In MB
@@ -273,7 +273,7 @@ iso_size={
     'atomic_libvag_cloud': '???',       # In MB
     'VBvag_cloud':         '208',       # In MB
     'libvag_cloud':        '199',       # In MB
-    'x86_64_docker':       '40',        # In MB
+    'x86_64_Container':    '40',        # In MB
     'atomic_iso':          '918',       # In MB
     # Cloud prerelease
     'pre_raw_x86_64_cloud':    '150',   # In MB
