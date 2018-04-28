@@ -51,12 +51,12 @@ release={
     # Note that atomic values here get overwritten by the twoweek script.
     'pre_cloud_atomic_composedate': '20150915',
     'pre_cloud_AMI_atomic_composedate': '20150915',
-    'RC_gold': '1.6',             # insert the number of the RC version declared GOLD
-    'RC_server_gold': '1.6',      # insert the number of the RC version declared GOLD
-    'RC_build': '1.6',            # sometimes releng use the RC build
-    'RC_gold_aarch64': '1.6',     # RC Gold for aarch64
-    'RC_gold_ppc64': '1.6',       # RC Gold for ppc64
-    'RC_gold_s390x': '1.6',       # RC Gold for s390x
+    'RC_gold': '1.1',             # insert the number of the RC version declared GOLD
+    'RC_server_gold': '1.1',      # insert the number of the RC version declared GOLD
+    'RC_build': '1.1',            # sometimes releng use the RC build
+    'RC_gold_aarch64': '1.1',     # RC Gold for aarch64
+    'RC_gold_ppc64': '1.1',       # RC Gold for ppc64
+    'RC_gold_s390x': '1.1',       # RC Gold for s390x
     'RC_pre_gold': '1.3',         # insert the number of the prerelease RC version declared GOLD
     'RC_pre_build': '3',        # sometimes releng use the RC build
     'RC_pre_gold_aarch64': '1.3', # Pre RC Gold for aarch64
