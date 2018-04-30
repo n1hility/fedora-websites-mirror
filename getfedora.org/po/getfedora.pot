@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-27 22:39+0200\n"
+"POT-Creation-Date: 2018-04-30 22:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -144,7 +144,7 @@ msgstr ""
 msgid "Download now"
 msgstr ""
 
-#: data/content/index.html:86 data/content/verify.html:51
+#: data/content/index.html:86 data/content/verify.html:54
 #: data/templates/productselector-server.html:13
 msgid "Server"
 msgstr ""
@@ -156,7 +156,7 @@ msgid ""
 "your infrastructure and services."
 msgstr ""
 
-#: data/content/index.html:101 data/content/verify.html:60
+#: data/content/index.html:101 data/content/verify.html:63
 #: data/templates/productselector-cloud.html:13
 msgid "Atomic"
 msgstr ""
@@ -286,7 +286,7 @@ msgid ""
 "the same directory as the image you downloaded."
 msgstr ""
 
-#: data/content/verify.html:41 data/content/verify.html:53
+#: data/content/verify.html:41 data/content/verify.html:56
 msgid "For 64-bit images"
 msgstr ""
 
@@ -294,74 +294,78 @@ msgstr ""
 msgid "For 32-bit images"
 msgstr ""
 
-#: data/content/verify.html:62
-msgid "For Atomic Host Iso"
+#: data/content/verify.html:47
+msgid "For Atomic WS"
 msgstr ""
 
 #: data/content/verify.html:65
-msgid "For Atomic Host images"
+msgid "For Atomic Host Iso"
 msgstr ""
 
 #: data/content/verify.html:68
+msgid "For Atomic Host images"
+msgstr ""
+
+#: data/content/verify.html:71
 msgid "For Docker"
 msgstr ""
 
-#: data/content/verify.html:75
+#: data/content/verify.html:78
 msgid "Next, import Fedora's GPG key(s):"
 msgstr ""
 
-#: data/content/verify.html:77
+#: data/content/verify.html:80
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
 msgstr ""
 
-#: data/content/verify.html:78
+#: data/content/verify.html:81
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr ""
 
-#: data/content/verify.html:80
+#: data/content/verify.html:83
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr ""
 
-#: data/content/keys/index.html:46 data/content/verify.html:82
+#: data/content/keys/index.html:46 data/content/verify.html:85
 msgid "Fedora 29"
 msgstr ""
 
-#: data/content/keys/index.html:59 data/content/verify.html:83
+#: data/content/keys/index.html:59 data/content/verify.html:86
 msgid "Fedora 28"
 msgstr ""
 
-#: data/content/keys/index.html:72 data/content/verify.html:84
+#: data/content/keys/index.html:72 data/content/verify.html:87
 msgid "Fedora 27"
 msgstr ""
 
-#: data/content/keys/index.html:85 data/content/verify.html:85
+#: data/content/keys/index.html:85 data/content/verify.html:88
 msgid "Fedora 26"
 msgstr ""
 
-#: data/content/verify.html:86
+#: data/content/verify.html:89
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
-#: data/content/verify.html:88
+#: data/content/verify.html:91
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
 msgstr ""
 
-#: data/content/verify.html:90
+#: data/content/verify.html:93
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
 
-#: data/content/verify.html:91
+#: data/content/verify.html:94
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr ""
 
-#: data/content/verify.html:92
+#: data/content/verify.html:95
 msgid "Read these instructions to validate your image."
 msgstr ""
 
@@ -907,24 +911,24 @@ msgstr ""
 #: data/content/atomic/download/index.html:343
 #: data/content/server/download/index.html:63
 #: data/content/server/download/index.html:73
-#: data/content/workstation/download/index.html:161
-#: data/content/workstation/download/index.html:171
+#: data/content/workstation/download/index.html:160
+#: data/content/workstation/download/index.html:170
 msgid "Try a pre-release"
 msgstr ""
 
 #: data/content/atomic/download/index.html:344
 #: data/content/server/download/index.html:64
 #: data/content/server/download/index.html:74
-#: data/content/workstation/download/index.html:162
-#: data/content/workstation/download/index.html:172
+#: data/content/workstation/download/index.html:161
+#: data/content/workstation/download/index.html:171
 msgid "We're working on our next release."
 msgstr ""
 
 #: data/content/atomic/download/index.html:345
 #: data/content/server/download/index.html:65
 #: data/content/server/download/index.html:75
-#: data/content/workstation/download/index.html:163
-#: data/content/workstation/download/index.html:173
+#: data/content/workstation/download/index.html:162
+#: data/content/workstation/download/index.html:172
 #, python-format
 msgid "Help us get F%(rel)s ready!"
 msgstr ""
@@ -937,14 +941,14 @@ msgstr ""
 #: data/content/atomic/download/index.html:347
 #: data/content/server/download/index.html:67
 #: data/content/server/download/index.html:77
-#: data/content/workstation/download/index.html:165
-#: data/content/workstation/download/index.html:175
+#: data/content/workstation/download/index.html:164
+#: data/content/workstation/download/index.html:174
 msgid "How to test pre-releases"
 msgstr ""
 
 #: data/content/atomic/download/index.html:353
 #: data/content/atomic/prerelease/index.html:341
-#: data/content/workstation/download/index.html:193
+#: data/content/workstation/download/index.html:192
 #: data/content/workstation/prerelease/index.html:143
 msgid "Resources"
 msgstr ""
@@ -993,7 +997,7 @@ msgstr ""
 #: data/content/atomic/download/index.html:362
 #: data/content/atomic/prerelease/index.html:350
 #: data/content/server/download/index.html:94
-#: data/content/workstation/download/index.html:222
+#: data/content/workstation/download/index.html:221
 msgid "Verify"
 msgstr ""
 
@@ -1002,7 +1006,7 @@ msgstr ""
 #: data/content/atomic/prerelease/index.html:353
 #: data/content/server/download/index.html:97
 #: data/content/server/prerelease/index.html:41
-#: data/content/workstation/download/index.html:225
+#: data/content/workstation/download/index.html:224
 #: data/content/workstation/prerelease/index.html:119
 msgid "Verify your Image"
 msgstr ""
@@ -1569,43 +1573,43 @@ msgstr ""
 
 #: data/content/server/download/index.html:55
 #: data/content/server/prerelease/index.html:55
-#: data/content/workstation/download/index.html:152
+#: data/content/workstation/download/index.html:151
 #: data/content/workstation/prerelease/index.html:138
 #, python-format
 msgid "64-bit %sMB image"
 msgstr ""
 
 #: data/content/server/download/index.html:62
-#: data/content/workstation/download/index.html:160
+#: data/content/workstation/download/index.html:159
 #, python-format
 msgid "F%(rel)s Alpha"
 msgstr ""
 
 #: data/content/server/download/index.html:66
-#: data/content/workstation/download/index.html:164
+#: data/content/workstation/download/index.html:163
 #, python-format
 msgid "Download F%(rel)s Alpha images"
 msgstr ""
 
 #: data/content/server/download/index.html:72
-#: data/content/workstation/download/index.html:170
+#: data/content/workstation/download/index.html:169
 #, python-format
 msgid "F%(rel)s Beta"
 msgstr ""
 
 #: data/content/server/download/index.html:76
-#: data/content/workstation/download/index.html:174
+#: data/content/workstation/download/index.html:173
 #, python-format
 msgid "Download F%(rel)s Beta images"
 msgstr ""
 
 #: data/content/server/download/index.html:83
-#: data/content/workstation/download/index.html:207
+#: data/content/workstation/download/index.html:206
 msgid "Get more Fedora"
 msgstr ""
 
 #: data/content/server/download/index.html:87
-#: data/content/workstation/download/index.html:216
+#: data/content/workstation/download/index.html:215
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr ""
 
@@ -1943,84 +1947,90 @@ msgstr ""
 msgid "64-bit %sGB Live image"
 msgstr ""
 
-#: data/content/workstation/download/index.html:150
+#: data/content/workstation/download/index.html:147
+#: data/content/workstation/prerelease/index.html:133
+#, python-format
+msgid "32-bit %sGB Live image"
+msgstr ""
+
+#: data/content/workstation/download/index.html:149
 #: data/content/workstation/prerelease/index.html:136
 msgid "Netinstall Images:"
 msgstr ""
 
-#: data/content/workstation/download/index.html:153
+#: data/content/workstation/download/index.html:152
 #: data/content/workstation/prerelease/index.html:139
 #, python-format
 msgid "32-bit %sMB image"
 msgstr ""
 
-#: data/content/workstation/download/index.html:184
+#: data/content/workstation/download/index.html:183
 msgid "Try Atomic Workstation"
 msgstr ""
 
-#: data/content/workstation/download/index.html:185
+#: data/content/workstation/download/index.html:184
 msgid "Atomic provides an immutable OS image and updates via OSTree."
 msgstr ""
 
-#: data/content/workstation/download/index.html:187
+#: data/content/workstation/download/index.html:186
 #, python-format
 msgid "64-bit %sGB Atomic image"
 msgstr ""
 
-#: data/content/workstation/download/index.html:189
+#: data/content/workstation/download/index.html:188
 msgid "Learn more"
 msgstr ""
 
-#: data/content/workstation/download/index.html:194
+#: data/content/workstation/download/index.html:193
 #, python-format
 msgid "<a href=\"%(fmagazine_url)s\"><strong>Release Announcement</strong></a>"
 msgstr ""
 
-#: data/content/workstation/download/index.html:195
+#: data/content/workstation/download/index.html:194
 msgid "Read the full Release Announcement on Fedora Magazine."
 msgstr ""
 
-#: data/content/workstation/download/index.html:196
+#: data/content/workstation/download/index.html:195
 #, python-format
 msgid "<a href=\"%(release_notes)s\"><strong>Release Notes</strong></a>"
 msgstr ""
 
-#: data/content/workstation/download/index.html:197
+#: data/content/workstation/download/index.html:196
 msgid ""
 "Learn about changes since the last version of Fedora as well as minimum "
 "requirements and recommendations for running Fedora."
 msgstr ""
 
-#: data/content/workstation/download/index.html:198
+#: data/content/workstation/download/index.html:197
 #, python-format
 msgid "<a href=\"%(install_guide)s\"><strong>Installation Guide</strong></a>"
 msgstr ""
 
-#: data/content/workstation/download/index.html:199
+#: data/content/workstation/download/index.html:198
 msgid ""
 "We recommend you look through this before installing to your system, "
 "since it answers many common questions."
 msgstr ""
 
-#: data/content/workstation/download/index.html:200
+#: data/content/workstation/download/index.html:199
 #: data/content/workstation/prerelease/index.html:144
 #, python-format
 msgid "<a href=\"%(commonbugs_url)s\"><strong>Common Bugs</strong></a>"
 msgstr ""
 
-#: data/content/workstation/download/index.html:201
+#: data/content/workstation/download/index.html:200
 #: data/content/workstation/prerelease/index.html:145
 msgid ""
 "An excellent resource to consult in case you run into any issues "
 "installing or running Fedora."
 msgstr ""
 
-#: data/content/workstation/download/index.html:203
+#: data/content/workstation/download/index.html:202
 #: data/content/workstation/prerelease/index.html:149
 msgid "What does \"Live\" mean?"
 msgstr ""
 
-#: data/content/workstation/download/index.html:204
+#: data/content/workstation/download/index.html:203
 #: data/content/workstation/prerelease/index.html:150
 msgid ""
 "Fedora Media Writer will create a complete, running Fedora Workstation "
@@ -2028,19 +2038,19 @@ msgid ""
 "test and play with Fedora without making changes to your hard disk."
 msgstr ""
 
-#: data/content/workstation/download/index.html:205
+#: data/content/workstation/download/index.html:204
 #: data/content/workstation/prerelease/index.html:151
 msgid ""
 "When you are ready, you can install Fedora to your hard disk from within "
 "this \"live\" version of Fedora Workstation."
 msgstr ""
 
-#: data/content/workstation/download/index.html:210
+#: data/content/workstation/download/index.html:209
 #: data/templates/footer.html:44
 msgid "Fedora Spins"
 msgstr ""
 
-#: data/content/workstation/download/index.html:213
+#: data/content/workstation/download/index.html:212
 #: data/templates/footer.html:45
 msgid "Fedora Labs"
 msgstr ""
@@ -2136,11 +2146,6 @@ msgstr ""
 
 #: data/content/workstation/prerelease/index.html:126
 msgid "Validate 32-bit!"
-msgstr ""
-
-#: data/content/workstation/prerelease/index.html:133
-#, python-format
-msgid "32-bit %sGB Live image"
 msgstr ""
 
 #: data/content/workstation/prerelease/index.html:146
