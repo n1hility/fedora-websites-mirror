@@ -335,7 +335,7 @@ EC2_regions = [
 ]
 
 path_stats={
-    'path':        'https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2',
+    'path': 'https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2',
 }
 _path_template = 'home?region={code}#LaunchInstanceWizard:ami='
 for _, short, code in EC2_regions:
@@ -345,27 +345,35 @@ for _, short, code in EC2_regions:
 # EC2 AMI IDs
 
 HVM_base_AMI={
-    #'us-east-1':        'ami-775c9b1a',     # Virginia
-    #'us-west-2':        'ami-cf00c5af',     # Oregon
-    #'us-west-1':        'ami-4e98dd2e',     # California
-    #'eu-west-1':        'ami-19fa646a',     # Ireland
-    #'eu-central-1':     'ami-62628b0d',     # Frankfurt
-    #'ap-southeast-1':   'ami-fde0339e',     # Singapore
-    #'ap-northeast-1':   'ami-0c0be16d',     # Tokyo
-    #'ap-southeast-2':   'ami-90a38af3',     # Sydney
-    #'sa-east-1':        'ami-3ebf3552'      # Sao Paolo
+    'us-east-1':        'ami-5c69df23',     # Virginia
+    'us-west-2':        'ami-56fb932e',     # Oregon
+    'us-west-1':        'ami-25adb045',     # California
+    'eu-west-1':        'ami-420d213b',     # Ireland
+    'eu-west-2':        'ami-ca14f7ad',     # London
+    'eu-central-1':     'ami-6065438b',     # Frankfurt
+    'ap-southeast-1':   'ami-b8c5eac4',     # Singapore
+    'ap-northeast-1':   'ami-8b05e3f4',     # Tokyo
+    'ap-northeast-2':   'ami-ddf851b3',     # Seoul
+    'ap-southeast-2':   'ami-976ea4f5',     # Sydney
+    'ap-south-1':       'ami-c12b0aae',     # Mumbai
+    'sa-east-1':        'ami-0e9dce62',     # Sao Paolo
+    'ca-central-1':     'ami-67129303'      # Canada
 }
 
 GP2_HVM_base_AMI={
-    #'us-east-1':        'ami-2a5d9a47',     # Virginia
-    #'us-west-2':        'ami-dcfe3bbc',     # Oregon
-    #'us-west-1':        'ami-aa9edbca',     # California
-    #'eu-west-1':        'ami-16fd6365',     # Ireland
-    #'eu-central-1':     'ami-a36188cc',     # Frankfurt
-    #'ap-southeast-1':   'ami-1be73478',     # Singapore
-    #'ap-northeast-1':   'ami-8a35dfeb',     # Tokyo
-    #'ap-southeast-2':   'ami-93a38af0',     # Sydney
-    #'sa-east-1':        'ami-0a46cc66'      # Sao Paolo
+    'us-east-1':        'ami-e754e298',     # Virginia
+    'us-west-2':        'ami-f5fc948d',     # Oregon
+    'us-west-1':        'ami-77b3ae17',     # California
+    'eu-west-1':        'ami-8b0824f2',     # Ireland
+    'eu-west-2':        'ami-691af90e',     # London
+    'eu-central-1':     'ami-436640a8',     # Frankfurt
+    'ap-southeast-1':   'ami-04c7e878',     # Singapore
+    'ap-northeast-1':   'ami-a600e6d9',     # Tokyo
+    'ap-northeast-2':   'ami-a2ff56cc',     # Seoul
+    'ap-southeast-2':   'ami-3f6ca65d',     # Sydney
+    'ap-south-1':       'ami-052a0b6a',     # Mumbai
+    'sa-east-1':        'ami-9c8ad9f0',     # Sao Paolo
+    'ca-central-1':     'ami-c40e8fa0'      # Canada
 }
 
 PV_base_AMI={
