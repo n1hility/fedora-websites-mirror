@@ -7,12 +7,13 @@
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2015. #zanata
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2016. #zanata
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2017. #zanata
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-11-14 12:29+0100\n"
-"PO-Revision-Date: 2017-11-13 02:05-0500\n"
+"POT-Creation-Date: 2018-04-30 22:24+0200\n"
+"PO-Revision-Date: 2018-04-29 01:43-0400\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/projects/p/fedora-web/language/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +24,7 @@ msgstr ""
 "Generated-By: Babel 1.3\n"
 "X-Generator: Zanata 3.9.6\n"
 
-#: data/content/code-of-conduct.html:8
+#: data/content/code-of-conduct.html:8 data/templates/footer.html:21
 msgid "Fedora Code of Conduct"
 msgstr "Codi de conducta de Fedora"
 
@@ -181,17 +182,17 @@ msgstr ""
 " ordinadors portàtils i de sobretaula, amb un ampli ventall d'eines per a "
 "desenvolupadors i creadors de tot tipus."
 
+#: data/content/atomic/index.html:125 data/content/atomic/index.html:131
 #: data/content/index.html:79 data/content/index.html:94
-#: data/content/index.html:109 data/content/atomic/index.html:125
-#: data/content/atomic/index.html:131 data/content/server/index.html:20
-#: data/content/server/index.html:125 data/content/server/index.html:131
+#: data/content/index.html:109 data/content/server/index.html:22
+#: data/content/server/index.html:139 data/content/server/index.html:145
 #: data/content/workstation/index.html:20
 #: data/content/workstation/index.html:185
 #: data/content/workstation/index.html:191
 msgid "Download now"
 msgstr "Baixar-ho ara"
 
-#: data/content/index.html:86 data/content/verify.html:51
+#: data/content/index.html:86 data/content/verify.html:54
 #: data/templates/productselector-server.html:13
 msgid "Server"
 msgstr "Server"
@@ -206,13 +207,13 @@ msgstr ""
 "millors i darreres tecnologies de centres de dades. Us dóna el control de "
 "tots els vostres serveis d'infraestructura."
 
-#: data/content/index.html:101 data/content/verify.html:60
+#: data/content/index.html:101 data/content/verify.html:63
 #: data/templates/productselector-cloud.html:13
 msgid "Atomic"
 msgstr "Atomic"
 
-#: data/content/index.html:107 data/content/index.html:144
-#: data/content/atomic/index.html:19
+#: data/content/atomic/index.html:19 data/content/index.html:107
+#: data/content/index.html:144
 msgid ""
 "Fedora Atomic provides the best platform for your Linux-Docker-Kubernetes "
 "(LDK) application stack."
@@ -372,7 +373,7 @@ msgstr ""
 "fitxer correcte CHECKSUM al mateix directori on us heu baixat la vostra "
 "imatge."
 
-#: data/content/verify.html:41 data/content/verify.html:53
+#: data/content/verify.html:41 data/content/verify.html:56
 msgid "For 64-bit images"
 msgstr "Per a les imatges de 64 bits"
 
@@ -380,23 +381,27 @@ msgstr "Per a les imatges de 64 bits"
 msgid "For 32-bit images"
 msgstr "Per a les imatges de 32 bits"
 
-#: data/content/verify.html:62
+#: data/content/verify.html:47
+msgid "For Atomic WS"
+msgstr ""
+
+#: data/content/verify.html:65
 msgid "For Atomic Host Iso"
 msgstr "Per a l'ISO d'Atomic Host"
 
-#: data/content/verify.html:65
+#: data/content/verify.html:68
 msgid "For Atomic Host images"
 msgstr "Per a les imatges d'Atomic Host"
 
-#: data/content/verify.html:68
+#: data/content/verify.html:71
 msgid "For Docker"
 msgstr "Per a Docker"
 
-#: data/content/verify.html:75
+#: data/content/verify.html:78
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "A continuació, importeu les claus GPG de Fedora:"
 
-#: data/content/verify.html:77
+#: data/content/verify.html:80
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
@@ -405,45 +410,39 @@ msgstr ""
 "<a href=\"%s/%s/keys\">Aquí</a> podeu verificar els detalls de les claus "
 "GPG."
 
-#: data/content/verify.html:78
+#: data/content/verify.html:81
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Ara, verifiqueu que el fitxer CHECKSUM és vàlid:"
 
-#: data/content/verify.html:80
+#: data/content/verify.html:83
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr "El fitxer CHECKSUM hauria de tenir una de les següents claus vàlides:"
 
-#: data/content/verify.html:82 data/content/keys/index.html:46
+#: data/content/keys/index.html:46 data/content/verify.html:85
+msgid "Fedora 29"
+msgstr "Fedora 29"
+
+#: data/content/keys/index.html:59 data/content/verify.html:86
 msgid "Fedora 28"
 msgstr "Fedora 28"
 
-#: data/content/verify.html:83 data/content/keys/index.html:59
+#: data/content/keys/index.html:72 data/content/verify.html:87
 msgid "Fedora 27"
 msgstr "Fedora 27"
 
-#: data/content/verify.html:84 data/content/keys/index.html:72
+#: data/content/keys/index.html:85 data/content/verify.html:88
 msgid "Fedora 26"
 msgstr "Fedora 26"
 
-#: data/content/verify.html:85
+#: data/content/verify.html:89
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Arquitectures secundàries de Fedora 26 (AArch64, PPC64, PPC64le, s390 i "
 "s390x)"
 
-#: data/content/verify.html:86 data/content/keys/index.html:93
-msgid "Fedora 25"
-msgstr "Fedora 25"
-
-#: data/content/verify.html:87
-msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
-"Arquitectures secundàries de Fedora 25 (AArch64, PPC64, PPC64le, s390 i "
-"s390x)"
-
-#: data/content/verify.html:89
+#: data/content/verify.html:91
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
@@ -451,17 +450,17 @@ msgstr ""
 "Finalment, un cop el fitxer CHECKSUM ha estat verificat, comproveu que la "
 "suma de verificació de l'ISO concordi:"
 
-#: data/content/verify.html:91
+#: data/content/verify.html:93
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
 "Si la sortida indica que el fitxer és vàlid, llavors esteu preparat per "
 "utilitzar-la!"
 
-#: data/content/verify.html:92
+#: data/content/verify.html:94
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr "Com verifico la imatge que he baixat en un altre sistema operatiu?"
 
-#: data/content/verify.html:93
+#: data/content/verify.html:95
 msgid "Read these instructions to validate your image."
 msgstr "Llegiu-vos aquestes instruccions per validar la vostra imatge."
 
@@ -567,8 +566,8 @@ msgid "Ready to give Fedora Atomic a try?"
 msgstr "Esteu preparat per donar una oportunitat a Fedora Atomic?"
 
 #: data/content/atomic/download/download-cloud-splash.html:8
-msgid "Download Fedora Cloud"
-msgstr "Baixar Fedora Cloud"
+msgid "Download Fedora Atomic Host"
+msgstr "Baixar Fedora Atomic Host"
 
 #: data/content/atomic/download/download-cloud-splash.html:37
 #: data/content/server/download/server-download-splash.html:31
@@ -595,7 +594,7 @@ msgstr "Verifiqueu la vostra baixada!"
 #: data/content/atomic/prerelease/index.html:323
 #: data/content/server/download/server-download-splash.html:44
 #: data/content/workstation/download/ws-download-splash.html:49
-#: data/content/workstation/prerelease/index.html:122
+#: data/content/workstation/prerelease/index.html:120
 #, python-format
 msgid ""
 "Once you have downloaded an image, verify it for security and integrity. To "
@@ -611,7 +610,7 @@ msgstr ""
 #: data/content/atomic/download/download-cloud-splash.html:52
 #: data/content/atomic/prerelease/index.html:326
 #: data/content/server/download/server-download-splash.html:47
-#: data/content/server/prerelease/index.html:46
+#: data/content/server/prerelease/index.html:45
 #: data/content/workstation/download/ws-download-splash.html:52
 msgid "Validate!"
 msgstr "Valideu-la!"
@@ -851,18 +850,17 @@ msgid "Atomic Host Images for Vagrant"
 msgstr "Imatges d'Atomic Host per a Vagrant"
 
 #: data/content/atomic/download/index.html:212
-#: data/content/atomic/prerelease/index.html:208
 #, python-format
 msgid ""
 "Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and "
 "Libvirt providers. You can bring up Fedora Atomic Host in a vagrant box by "
 "downloading the images from Fedora or using the vagrant tools to pull the "
-"images from <a href=\"%s\">HashiCorp's Atlas</a>."
+"images from <a href=\"%s\">HashiCorp's Vagrant Cloud</a>."
 msgstr ""
 "Vagrant Boxes per a Fedora Atomic Host estan disponibles per als proveïdors "
 "VirtualBox i Libvirt. Podeu fer aparèixer Fedora Atomic Host en un Vagrant "
 "Box amb la baixada de les imatges des de Fedora o bé utilitzar les eines per"
-" a agafar les imatges des de <a href=\"%s\">HashiCorp's Atlas</a>."
+" a agafar les imatges des de <a href=\"%s\">HashiCorp's Vagrant Cloud</a>."
 
 #: data/content/atomic/download/index.html:213
 #: data/content/atomic/prerelease/index.html:209
@@ -929,10 +927,10 @@ msgstr ""
 #: data/content/workstation/prerelease/index.html:19
 #: data/content/workstation/prerelease/index.html:23
 #: data/content/workstation/prerelease/index.html:28
-#: data/content/workstation/prerelease/index.html:92
-#: data/content/workstation/prerelease/index.html:101
-#: data/content/workstation/prerelease/index.html:113
-#: data/templates/footer.html:37
+#: data/content/workstation/prerelease/index.html:90
+#: data/content/workstation/prerelease/index.html:99
+#: data/content/workstation/prerelease/index.html:111
+#: data/templates/footer.html:38
 msgid "Download"
 msgstr "Baixar"
 
@@ -1066,10 +1064,10 @@ msgstr "Imatge RAW comprimida amb XZ de 64 bits de %s MB"
 
 #: data/content/atomic/download/index.html:331
 #: data/content/atomic/prerelease/index.html:335
-#: data/content/server/download/index.html:53
-#: data/content/server/prerelease/index.html:52
+#: data/content/server/download/index.html:51
+#: data/content/server/prerelease/index.html:51
 #: data/content/workstation/download/index.html:145
-#: data/content/workstation/prerelease/index.html:133
+#: data/content/workstation/prerelease/index.html:131
 msgid "Other Downloads"
 msgstr "Altres baixades"
 
@@ -1082,8 +1080,8 @@ msgstr "Imatge ISO d'Atomic Host (%s MB)"
 #: data/content/atomic/download/index.html:334
 #: data/content/atomic/prerelease/index.html:338
 #, python-format
-msgid "Docker Image (%sMB)"
-msgstr "Imatge Docker (%s MB)"
+msgid "Container Image (%sMB)"
+msgstr "Imatge de contenidor (%s MB)"
 
 #: data/content/atomic/download/index.html:342
 #, python-format
@@ -1091,23 +1089,26 @@ msgid "F%(rel)s %(state)s"
 msgstr "F%(rel)s %(state)s"
 
 #: data/content/atomic/download/index.html:343
-#: data/content/server/download/index.html:76
-#: data/content/workstation/download/index.html:161
-#: data/content/workstation/download/index.html:171
+#: data/content/server/download/index.html:63
+#: data/content/server/download/index.html:73
+#: data/content/workstation/download/index.html:160
+#: data/content/workstation/download/index.html:170
 msgid "Try a pre-release"
 msgstr "Proveu un llançament previ"
 
 #: data/content/atomic/download/index.html:344
-#: data/content/server/download/index.html:77
-#: data/content/workstation/download/index.html:162
-#: data/content/workstation/download/index.html:172
+#: data/content/server/download/index.html:64
+#: data/content/server/download/index.html:74
+#: data/content/workstation/download/index.html:161
+#: data/content/workstation/download/index.html:171
 msgid "We're working on our next release."
 msgstr "Estem treballant en el nostre següent llançament."
 
 #: data/content/atomic/download/index.html:345
-#: data/content/server/download/index.html:78
-#: data/content/workstation/download/index.html:163
-#: data/content/workstation/download/index.html:173
+#: data/content/server/download/index.html:65
+#: data/content/server/download/index.html:75
+#: data/content/workstation/download/index.html:162
+#: data/content/workstation/download/index.html:172
 #, python-format
 msgid "Help us get F%(rel)s ready!"
 msgstr "Ajudeu-nos a tenir a punt F%(rel)s!"
@@ -1118,16 +1119,17 @@ msgid "Download F%(rel)s %(state)s images"
 msgstr "Baixar imatges de F%(rel)s %(state)s"
 
 #: data/content/atomic/download/index.html:347
-#: data/content/server/download/index.html:80
-#: data/content/workstation/download/index.html:165
-#: data/content/workstation/download/index.html:175
+#: data/content/server/download/index.html:67
+#: data/content/server/download/index.html:77
+#: data/content/workstation/download/index.html:164
+#: data/content/workstation/download/index.html:174
 msgid "How to test pre-releases"
 msgstr "Com provar els llançaments previs"
 
 #: data/content/atomic/download/index.html:353
 #: data/content/atomic/prerelease/index.html:341
-#: data/content/workstation/download/index.html:180
-#: data/content/workstation/prerelease/index.html:145
+#: data/content/workstation/download/index.html:192
+#: data/content/workstation/prerelease/index.html:143
 msgid "Resources"
 msgstr "Recursos"
 
@@ -1185,18 +1187,18 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:362
 #: data/content/atomic/prerelease/index.html:350
-#: data/content/server/download/index.html:98
-#: data/content/workstation/download/index.html:209
+#: data/content/server/download/index.html:94
+#: data/content/workstation/download/index.html:221
 msgid "Verify"
 msgstr "Verificar"
 
 #: data/content/atomic/download/index.html:365
 #: data/content/atomic/prerelease/index.html:322
 #: data/content/atomic/prerelease/index.html:353
-#: data/content/server/download/index.html:101
-#: data/content/server/prerelease/index.html:42
-#: data/content/workstation/download/index.html:212
-#: data/content/workstation/prerelease/index.html:121
+#: data/content/server/download/index.html:97
+#: data/content/server/prerelease/index.html:41
+#: data/content/workstation/download/index.html:224
+#: data/content/workstation/prerelease/index.html:119
 msgid "Verify your Image"
 msgstr "Verifiqueu la vostra imatge"
 
@@ -1251,6 +1253,19 @@ msgstr "Els AMI en HVM de Fedora GP2 Atomic Host %(rel)s %(state)s"
 #, python-format
 msgid "Fedora %(rel)s %(state)s Standard Atomic Host HVM AMIs"
 msgstr "Els AMI en HVM de Fedora Standard Atomic Host %(rel)s %(state)s"
+
+#: data/content/atomic/prerelease/index.html:208
+#, python-format
+msgid ""
+"Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and "
+"Libvirt providers. You can bring up Fedora Atomic Host in a vagrant box by "
+"downloading the images from Fedora or using the vagrant tools to pull the "
+"images from <a href=\"%s\">HashiCorp's Atlas</a>."
+msgstr ""
+"Vagrant Boxes per a Fedora Atomic Host estan disponibles per als proveïdors "
+"VirtualBox i Libvirt. Podeu fer aparèixer Fedora Atomic Host en un Vagrant "
+"Box amb la baixada de les imatges des de Fedora o bé utilitzar les eines per"
+" a agafar les imatges des de <a href=\"%s\">HashiCorp's Atlas</a>."
 
 #: data/content/atomic/prerelease/index.html:288
 #: data/content/atomic/prerelease/index.html:303
@@ -1349,8 +1364,8 @@ msgid "Currently Used Keys"
 msgstr "Claus utilitzades actualment"
 
 #: data/content/keys/index.html:46 data/content/keys/index.html:59
-#: data/content/keys/index.html:72 data/content/keys/index.html:93
-#: data/content/keys/index.html:116 data/content/keys/index.html:129
+#: data/content/keys/index.html:72 data/content/keys/index.html:85
+#: data/content/keys/index.html:110 data/content/keys/index.html:123
 #: data/content/keys/obsolete.html:72 data/content/keys/obsolete.html:85
 #: data/content/keys/obsolete.html:100 data/content/keys/obsolete.html:113
 #: data/content/keys/obsolete.html:126 data/content/keys/obsolete.html:139
@@ -1360,28 +1375,28 @@ msgstr "Claus utilitzades actualment"
 #: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
 #: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
 #: data/content/keys/obsolete.html:358 data/content/keys/obsolete.html:379
-#: data/content/keys/obsolete.html:401
+#: data/content/keys/obsolete.html:401 data/content/keys/obsolete.html:422
 msgid "Primary"
 msgstr "Principal"
 
-#: data/content/keys/index.html:72 data/content/keys/index.html:93
-#: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
-#: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
-#: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
-#: data/content/keys/obsolete.html:337 data/content/keys/obsolete.html:358
-#: data/content/keys/obsolete.html:379
+#: data/content/keys/index.html:85 data/content/keys/obsolete.html:201
+#: data/content/keys/obsolete.html:225 data/content/keys/obsolete.html:247
+#: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
+#: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
+#: data/content/keys/obsolete.html:358 data/content/keys/obsolete.html:379
+#: data/content/keys/obsolete.html:401
 msgid "Secondary"
 msgstr "Secundari"
 
-#: data/content/keys/index.html:116
+#: data/content/keys/index.html:110
 msgid "EPEL 7"
 msgstr "EPEL 7"
 
-#: data/content/keys/index.html:129
+#: data/content/keys/index.html:123
 msgid "EPEL 6"
 msgstr "EPEL 6"
 
-#: data/content/keys/index.html:145
+#: data/content/keys/index.html:138
 #, python-format
 msgid "Looking for <a href=\"%s\">obsolete keys</a>?"
 msgstr "Esteu buscant <a href=\"%s\">claus obsoletes</a>?"
@@ -1533,22 +1548,26 @@ msgid "Fedora 24"
 msgstr "Fedora 24"
 
 #: data/content/keys/obsolete.html:401
+msgid "Fedora 25"
+msgstr "Fedora 25"
+
+#: data/content/keys/obsolete.html:422
 msgid "EPEL 5"
 msgstr "EPEL 5"
 
-#: data/content/keys/obsolete.html:414
+#: data/content/keys/obsolete.html:435
 msgid "EPEL 4"
 msgstr "EPEL 4"
 
-#: data/content/keys/obsolete.html:414
+#: data/content/keys/obsolete.html:435
 msgid "RPM-GPG-KEY-EPEL"
 msgstr "RPM-GPG-KEY-EPEL"
 
-#: data/content/keys/obsolete.html:427
+#: data/content/keys/obsolete.html:448
 msgid "Fedora Extras"
 msgstr "Fedora Extras"
 
-#: data/content/keys/obsolete.html:427
+#: data/content/keys/obsolete.html:448
 msgid ""
 "If you are using Fedora Extras with Fedora Core 6, use this package from "
 "<strong>extras</strong> repository.  This key will no longer be used after "
@@ -1562,11 +1581,11 @@ msgstr ""
 "(7 de desembre del 2007). Aquesta clau no està inclosa en el paquet <strong"
 ">fedora-release</strong> a partir de Fedora 7."
 
-#: data/content/keys/obsolete.html:444
+#: data/content/keys/obsolete.html:465 data/content/keys/obsolete.html:480
 msgid "Legacy"
 msgstr "Llegat"
 
-#: data/content/keys/obsolete.html:444
+#: data/content/keys/obsolete.html:465 data/content/keys/obsolete.html:480
 msgid ""
 "This key was used for packages that were released by Fedora Legacy project "
 "to update releases that reached their official EOL. The Fedora Legacy "
@@ -1705,49 +1724,68 @@ msgstr ""
 "Obtenir Fedora Server: l'última tecnologia per a les vostres aplicacions i "
 "serveis"
 
-#: data/content/server/index.html:19
-#: data/templates/productselector-server.html:14
+#: data/content/server/index.html:20
 msgid ""
-"The latest technology. A stable foundation. Together, for your applications "
-"and services."
+"Run your applications on a Linux server OS with the latest open source "
+"technology."
 msgstr ""
-"L'última tecnologia. Una base estable. Junts, per a les vostres aplicacions "
-"i per als vostres serveis."
+"Executeu les vostres aplicacions en un SO servidor Linux amb la tecnologia "
+"de codi obert més recent."
+
+#: data/content/server/index.html:21
+msgid ""
+"Now with content in multiple versions on independent lifecycles — so your "
+"server can move both fast and slow."
+msgstr ""
+"Ara, amb el contingut en diverses versions amb cicles de vida independents, "
+"el vostre servidor es pot moure tant ràpidament com lentament."
+
+#: data/content/server/index.html:37
+msgid "Fedora Server"
+msgstr "Fedora Server"
 
 #: data/content/server/index.html:38
-#, python-format
-msgid ""
-"“The simplicity introduced with rolekit and cockpit have made server "
-"deployments a breeze. What took me a few days on other operating systems "
-"took less than an hour with Fedora %(rel)s Server. It just works.”"
-msgstr ""
-"“La simplicitat que s'ha introduït amb rolekit i cockpit han convertit el "
-"desplegament de servidors una lleugera brisa. El que em pren un parell de "
-"dies en altres sistemes operatius em pren menys d'una hora amb Fedora Server"
-" %(rel)s. Simplement funciona.”"
-
-#: data/content/server/index.html:39
-msgid "Systems Engineer"
-msgstr "Enginyer de sistemes"
-
-#: data/content/server/index.html:51
 msgid ""
 "Fedora Server is a short-lifecycle, community-supported server operating "
-"system that enables seasoned system administrators experienced with any OS "
-"to make use of the very latest server-based technologies available in the "
-"open source community."
+"system that enables seasoned system administrators, experienced with any OS,"
+" to make use of the very latest technologies available in the open source "
+"community."
 msgstr ""
-"Fedora Server és un sistema operatiu de servidor, amb un cicle de vida curt,"
-" està recolzat per la comunitat i permet als administradors de sistemes "
-"experimentats la planificació amb qualsevol sistema operatiu per utilitzar "
-"les últimes tecnologies basades en servidors disponibles en la comunitat de "
-"codi obert."
+"Fedora Server és un sistema operatiu servidor, amb cicles de vida breus i "
+"amb suport de la comunitat, que permet als administradors de sistemes "
+"experimentats amb qualsevol SO, fer ús de les últimes tecnologies "
+"disponibles a la comunitat de codi obert."
 
-#: data/content/server/index.html:62
+#: data/content/server/index.html:52
+msgid "Introducing Modularity"
+msgstr "Us presentem Modularity"
+
+#: data/content/server/index.html:53
+msgid ""
+"Modularity brings a new Modular repository providing additional versions of "
+"software on independent lifecycles."
+msgstr ""
+"Modularity porta un nou dipòsit Modular, aquest dipòsit proporciona versions"
+" addicionals de programari en cicles de vida independents."
+
+#: data/content/server/index.html:54
+msgid ""
+"Choose the right version of an application or a language stack you need, and"
+" keep it even when your OS upgrades to a newer version."
+msgstr ""
+"Trieu la versió correcta d'una aplicació o una pila d'idiomes que necessiteu"
+" i conserveu-ho, fins i tot quan el vostre sistema operatiu s'actualitzi a "
+"una versió més recent."
+
+#: data/content/server/index.html:55
+msgid "Learn more about Modularity"
+msgstr "Apreneu més detalls quant a Modularity"
+
+#: data/content/server/index.html:66
 msgid "Easy Administration"
 msgstr "Administració senzilla"
 
-#: data/content/server/index.html:63
+#: data/content/server/index.html:67
 msgid ""
 "Manage your system simply with Cockpit's powerful, modern interface. View "
 "and monitor system performance and status, and deploy and manage container-"
@@ -1757,28 +1795,11 @@ msgstr ""
 "moderna de Cockpit. Vegeu i monitoreu l'estat i el rendiment del sistema, i "
 "desplegueu i administreu els serveis basats en contenidors."
 
-#: data/content/server/index.html:77
-msgid "Server Roles"
-msgstr "Rols del servidor"
-
-#: data/content/server/index.html:78
-msgid ""
-"There's no need to set up your server from scratch when you use server "
-"roles. Server roles plug into your Fedora Server system, providing a well-"
-"integrated service on top of the Fedora Server platform. Deploy and manage "
-"these prepared roles simply using the Rolekit tool."
-msgstr ""
-"No hi ha cap necessitat de configurar el servidor des de zero quan utilitzeu"
-" els rols del servidor. Els rols del servidor es connecten al vostre sistema"
-" Fedora Server, proporcionant un servei ben integrat en la capa superior de "
-"la plataforma Fedora Server. Implementeu i administreu aquests rols "
-"preparats simplement fent ús de l'eina Rolekit."
-
-#: data/content/server/index.html:81
+#: data/content/server/index.html:98
 msgid "Database Services"
 msgstr "Serveis de bases de dades"
 
-#: data/content/server/index.html:82
+#: data/content/server/index.html:99
 msgid ""
 "Fedora Server brings with it an enterprise-class, scalable database server "
 "powered by the open-source PostgreSQL project."
@@ -1786,39 +1807,38 @@ msgstr ""
 "Fedora Server incorpora un servidor de bases de dades de nivell empresarial "
 "i escalable, impulsat pel projecte de codi obert PostgreSQL."
 
-#: data/content/server/index.html:96
+#: data/content/server/index.html:109
 msgid "Complete Enterprise Domain Solution"
 msgstr "Solució completa de domini empresarial"
 
-#: data/content/server/index.html:97
+#: data/content/server/index.html:110
 msgid ""
 "Level up your Linux network with advanced identity management, DNS, "
 "certificate services, Windows(TM) domain integration throughout your "
-"environment with FreeIPA, the engine that drives Fedora Server's Domain "
-"Controller role."
+"environment with FreeIPA, the open-source domain controller."
 msgstr ""
-"Pugeu de nivell la vostra xarxa Linux amb la gestió avançada de la "
-"identitat, els DNS, els serveis de certificats, la integració de domini "
-"Windows(TM), en tot el vostre entorn amb FreeIPA, el motor que impulsa el "
-"rol de controlador de domini de Fedora Server."
+"Pugeu el nivell de la vostra xarxa Linux amb una gestió d'identitats "
+"avançada, DNS, serveis de certificats, integració de dominis de Windows (TM)"
+" a tot el vostre entorn amb FreeIPA, el controlador de domini de codi obert."
 
-#: data/content/server/index.html:110
+#: data/content/server/index.html:125
 msgid ""
-"“The Docker Role for Fedora Server was simple and fast to install so that "
-"you can run your Docker images. This makes a great testbed for beginners and"
-" experts with docker so that they can develop their applications on the "
-"fly.”"
+"“For DevConf US, I needed a system to manage the conference. I discovered "
+"regcfp, by Patrick Uiterwijk, which seemed to suit my needs. However, it "
+"won't run in nodejs 8 in F27. Launching F28 Server, choosing the "
+"\"nodejs:6\" stream, worked like a charm!”"
 msgstr ""
-"“El rol Docker per a Fedora Server va ser senzill i ràpid d'instal·lar, "
-"perquè pugueu executar les vostres imatges Docker. Això fa un gran banc de "
-"proves per als principiants i experts amb docker perquè puguin desenvolupar "
-"les seves aplicacions en marxa.”"
+"“Per al DevConf US, necessitava un sistema per gestionar la conferència. "
+"Vaig descobrir regcfp, per Patrick Uiterwijk, el qual semblava adaptar-se a "
+"les meves necessitats. No obstant això, no s'executaria a nodejs 8 en F27. "
+"Llançant F28 Server, i triant el flux \"nodejs:6\", va funcionar com un "
+"rellotge!”"
 
-#: data/content/server/index.html:111
-msgid "Information Systems Student"
-msgstr "Estudiant de sistemes d'informació"
+#: data/content/server/index.html:126
+msgid "DevConf US Conference Co-Chair"
+msgstr "Vicepresident del consell d'administració de DevConf US"
 
-#: data/content/server/index.html:125 data/content/server/index.html:130
+#: data/content/server/index.html:139 data/content/server/index.html:144
 msgid "Ready to give Fedora Server a try?"
 msgstr "Esteu preparat per donar una oportunitat a Fedora Server?"
 
@@ -1837,15 +1857,7 @@ msgstr "Baixar Fedora Server %(rel)s"
 msgid "64-bit %sGB installation image"
 msgstr "Imatge d'instal·lació de 64 bits de %s GB"
 
-#: data/content/server/download/index.html:41
-msgid "Are you looking for Fedora 27 Modular Server Beta?"
-msgstr "Esteu buscant la Fedora Modular Server 27 Beta?"
-
-#: data/content/server/download/index.html:41
-msgid "Download it here!"
-msgstr "Baixeu-ho aquí!"
-
-#: data/content/server/download/index.html:45
+#: data/content/server/download/index.html:42
 msgid ""
 "The Fedora Server installation image allows you to make media for your "
 "computer that boots to the installer to directly install Fedora Server on to"
@@ -1855,7 +1867,7 @@ msgstr ""
 "vostre ordinador que arrenqui directament l'instal·lador per instal·lar "
 "Fedora Server al vostre disc dur"
 
-#: data/content/server/download/index.html:46
+#: data/content/server/download/index.html:43
 msgid ""
 "To use this image, you need a drive that can create or \"burn\" DVDs, or a "
 "USB flash drive at least as big as the image."
@@ -1863,38 +1875,64 @@ msgstr ""
 "Per utilitzar aquesta imatge, necessiteu una unitat que pugui crear o cremar"
 " discs DVD o bé un llapis USB com a mínim tan gran com la imatge."
 
-#: data/content/server/download/index.html:55
-#: data/content/server/prerelease/index.html:54
+#: data/content/server/download/index.html:45
+#, python-format
+msgid ""
+"If you would like to try out the new modular features of Fedora Server, "
+"please visit the <a href=\"%(modules)s\">Using Modules</a> section of the "
+"Modularity Documentation. If you would like more information about "
+"Modularity in general, please see the <a href=\"%(website)s\">website on "
+"pagure</a>."
+msgstr ""
+"Si voleu provar les característiques modulars noves de Fedora Server, "
+"visiteu la secció <a href=\"%(modules)s\">Using Modules</a> de la "
+"documentació de Modularity. Si voleu més informació sobre Modularity en "
+"general, consulteu el <a href=\"%(website)s\">lloc web a pagure</a>."
+
+#: data/content/server/download/index.html:53
+#: data/content/server/prerelease/index.html:53
 msgid "Netinstall Image:"
 msgstr "Imatge d'instal·lació per xarxa:"
 
-#: data/content/server/download/index.html:57
-#: data/content/server/prerelease/index.html:56
-#: data/content/workstation/download/index.html:152
-#: data/content/workstation/prerelease/index.html:140
+#: data/content/server/download/index.html:55
+#: data/content/server/prerelease/index.html:55
+#: data/content/workstation/download/index.html:151
+#: data/content/workstation/prerelease/index.html:138
 #, python-format
 msgid "64-bit %sMB image"
 msgstr "Imatge de 64 bits de %s MB"
 
-#: data/content/server/download/index.html:75
-#: data/content/workstation/download/index.html:170
+#: data/content/server/download/index.html:62
+#: data/content/workstation/download/index.html:159
+#, python-format
+msgid "F%(rel)s Alpha"
+msgstr "F%(rel)s Alpha"
+
+#: data/content/server/download/index.html:66
+#: data/content/workstation/download/index.html:163
+#, python-format
+msgid "Download F%(rel)s Alpha images"
+msgstr "Baixar imatges de F%(rel)s Alpha"
+
+#: data/content/server/download/index.html:72
+#: data/content/workstation/download/index.html:169
 #, python-format
 msgid "F%(rel)s Beta"
 msgstr "F%(rel)s Beta"
 
-#: data/content/server/download/index.html:79
-#: data/content/workstation/download/index.html:174
+#: data/content/server/download/index.html:76
+#: data/content/workstation/download/index.html:173
 #, python-format
 msgid "Download F%(rel)s Beta images"
 msgstr "Baixar imatges de F%(rel)s Beta"
 
-#: data/content/server/download/index.html:87
-#: data/content/workstation/download/index.html:194
+#: data/content/server/download/index.html:83
+#: data/content/workstation/download/index.html:206
 msgid "Get more Fedora"
 msgstr "Obtenir més Fedora"
 
-#: data/content/server/download/index.html:91
-#: data/content/workstation/download/index.html:203
+#: data/content/server/download/index.html:87
+#: data/content/workstation/download/index.html:215
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr "Tecnologia ARM<span class=\"sup\">®</span>"
 
@@ -1936,13 +1974,13 @@ msgstr ""
 
 #: data/content/server/prerelease/index.html:8
 #, python-format
-msgid "Download Fedora %s Modular Server"
-msgstr "Baixar Fedora Modular Server %s"
+msgid "Download Fedora %s Server"
+msgstr "Baixar Fedora Server %s"
 
 #: data/content/server/prerelease/index.html:17
 #, python-format
-msgid "Download Fedora %(rel)s %(state)s Modular Server"
-msgstr "Baixar Fedora Modular Server %(rel)s %(state)s"
+msgid "Download Fedora %(rel)s %(state)s Server"
+msgstr "Baixar Fedora Server %(rel)s %(state)s"
 
 #: data/content/server/prerelease/index.html:19
 #, python-format
@@ -1978,7 +2016,18 @@ msgstr ""
 "href=\"%(commonbugs_url)s\">Errors de programari comuns</a> per informació "
 "sobre els errors que es produeixen habitualment i com evitar-los."
 
-#: data/content/server/prerelease/index.html:43
+#: data/content/server/prerelease/index.html:38
+#: data/content/workstation/prerelease/index.html:55
+#, python-format
+msgid "When is Fedora %s going to be released?"
+msgstr "Quan s'alliberarà Fedora %s?"
+
+#: data/content/server/prerelease/index.html:39
+#: data/content/workstation/prerelease/index.html:56
+msgid "Read all the key milestones of the release schedule..."
+msgstr "Llegiu-vos totes les fites clau del calendari de llançaments..."
+
+#: data/content/server/prerelease/index.html:42
 #, python-format
 msgid ""
 "Once you have downloaded an image, verify it for security and integrity. To "
@@ -2102,7 +2151,7 @@ msgstr "Baixar Fedora Workstation %(rel)s"
 #: data/content/workstation/download/index.html:41
 #: data/content/workstation/download/index.html:98
 #: data/content/workstation/prerelease/index.html:20
-#: data/content/workstation/prerelease/index.html:89
+#: data/content/workstation/prerelease/index.html:87
 #, python-format
 msgid "%s MB Fedora Media Writer for <strong>Mac OS X</strong>"
 msgstr "Fedora Media Writer de %s MB per a <strong>Mac OS X</strong>"
@@ -2110,7 +2159,7 @@ msgstr "Fedora Media Writer de %s MB per a <strong>Mac OS X</strong>"
 #: data/content/workstation/download/index.html:45
 #: data/content/workstation/download/index.html:126
 #: data/content/workstation/prerelease/index.html:24
-#: data/content/workstation/prerelease/index.html:111
+#: data/content/workstation/prerelease/index.html:109
 #, python-format
 msgid "64-bit %s GB ISO for <strong>Linux</strong>."
 msgstr "ISO de 64 bits de %s GB per a <strong>Linux</strong>."
@@ -2124,7 +2173,7 @@ msgstr "<a href=\"%s\">Instal·leu a través de DNF</a> si ja esteu en Fedora."
 #: data/content/workstation/download/index.html:50
 #: data/content/workstation/download/index.html:110
 #: data/content/workstation/prerelease/index.html:29
-#: data/content/workstation/prerelease/index.html:98
+#: data/content/workstation/prerelease/index.html:96
 #, python-format
 msgid "%s MB Fedora Media Writer for <strong>Windows</strong>"
 msgstr "Fedora Media Writer de %s MB per a <strong>Windows</strong>"
@@ -2154,7 +2203,7 @@ msgid "Fedora Media Writer (download above)"
 msgstr "Fedora Media Writer (baixada a sota)"
 
 #: data/content/workstation/download/index.html:69
-#: data/content/workstation/prerelease/index.html:66
+#: data/content/workstation/prerelease/index.html:64
 #, python-format
 msgid "A USB Flash drive with at least %s GB space available"
 msgstr "Una unitat USB amb com a mínim %s GB d'espai lliure"
@@ -2175,7 +2224,7 @@ msgstr ""
 "versió autònoma de Fedora Workstation des de la unitat flash USB."
 
 #: data/content/workstation/download/index.html:72
-#: data/content/workstation/prerelease/index.html:80
+#: data/content/workstation/prerelease/index.html:78
 msgid ""
 "Optionally, you may install Fedora Workstation to a laptop or desktop "
 "computer that has at least 1 GHz processor, 1 GB RAM, and 10 GB space "
@@ -2192,30 +2241,30 @@ msgstr ""
 "indicacions que es mostren en pantalla per completar la instal·lació."
 
 #: data/content/workstation/download/index.html:74
-#: data/content/workstation/prerelease/index.html:82
+#: data/content/workstation/prerelease/index.html:80
 msgid "Supported Platforms"
 msgstr "Plataformes admeses"
 
 #: data/content/workstation/download/index.html:75
-#: data/content/workstation/prerelease/index.html:83
+#: data/content/workstation/prerelease/index.html:81
 msgid "Fedora Media Writer supports the following platforms:"
 msgstr "Fedora Media Writer admet les següents plataformes:"
 
 #: data/content/workstation/download/index.html:77
 #: data/content/workstation/download/index.html:97
-#: data/content/workstation/prerelease/index.html:88
+#: data/content/workstation/prerelease/index.html:86
 msgid "Mac OS X"
 msgstr "Mac OS X"
 
 #: data/content/workstation/download/index.html:78
 #: data/content/workstation/download/index.html:109
-#: data/content/workstation/prerelease/index.html:97
+#: data/content/workstation/prerelease/index.html:95
 msgid "Windows"
 msgstr "Windows"
 
 #: data/content/workstation/download/index.html:79
 #: data/content/workstation/download/index.html:121
-#: data/content/workstation/prerelease/index.html:106
+#: data/content/workstation/prerelease/index.html:104
 msgid "Linux"
 msgstr "Linux"
 
@@ -2261,66 +2310,82 @@ msgid "View all platform downloads"
 msgstr "Mostra les baixades de totes les plataformes"
 
 #: data/content/workstation/download/index.html:122
-#: data/content/workstation/prerelease/index.html:107
+#: data/content/workstation/prerelease/index.html:105
 msgid "Available via DNF for <strong>Fedora</strong>"
 msgstr "Disponible a través de DNF per a <strong>Fedora</strong>"
 
 #: data/content/workstation/download/index.html:123
-#: data/content/workstation/prerelease/index.html:108
+#: data/content/workstation/prerelease/index.html:106
 msgid "More details"
 msgstr "Més detalls"
 
 #: data/content/workstation/download/index.html:127
-#: data/content/workstation/prerelease/index.html:112
+#: data/content/workstation/prerelease/index.html:110
 msgid "How to use this ISO?"
 msgstr "Com s'utilitza aquesta ISO?"
 
 #: data/content/workstation/download/index.html:129
-#: data/content/workstation/prerelease/index.html:114
+#: data/content/workstation/prerelease/index.html:112
 msgid "Verify this image"
 msgstr "Verificació d'aquesta imatge"
 
 #: data/content/workstation/download/index.html:146
-#: data/content/workstation/prerelease/index.html:134
+#: data/content/workstation/prerelease/index.html:132
 #, python-format
 msgid "64-bit %sGB Live image"
 msgstr "Imatge autònoma de 64 bits de %s GB"
 
-#: data/content/workstation/download/index.html:150
-#: data/content/workstation/prerelease/index.html:138
+#: data/content/workstation/download/index.html:147
+#: data/content/workstation/prerelease/index.html:133
+#, python-format
+msgid "32-bit %sGB Live image"
+msgstr "Imatge autònoma de 32 bits de %s GB"
+
+#: data/content/workstation/download/index.html:149
+#: data/content/workstation/prerelease/index.html:136
 msgid "Netinstall Images:"
 msgstr "Imatges d'instal·lació per xarxa:"
 
-#: data/content/workstation/download/index.html:153
+#: data/content/workstation/download/index.html:152
+#: data/content/workstation/prerelease/index.html:139
 #, python-format
 msgid "32-bit %sMB image"
 msgstr "Imatge de 32 bits de %s MB"
 
-#: data/content/workstation/download/index.html:160
-#, python-format
-msgid "F%(rel)s Alpha"
-msgstr "F%(rel)s Alpha"
+#: data/content/workstation/download/index.html:183
+msgid "Try Atomic Workstation"
+msgstr "Provar Atomic Workstation"
 
-#: data/content/workstation/download/index.html:164
-#, python-format
-msgid "Download F%(rel)s Alpha images"
-msgstr "Baixar imatges de F%(rel)s Alpha"
+#: data/content/workstation/download/index.html:184
+msgid "Atomic provides an immutable OS image and updates via OSTree."
+msgstr ""
+"Atomic proporciona una imatge immutable del SO i actualitzacions a través "
+"d'OSTree."
 
-#: data/content/workstation/download/index.html:181
+#: data/content/workstation/download/index.html:186
+#, python-format
+msgid "64-bit %sGB Atomic image"
+msgstr "Imatge d'Atomic de 64 bits de %s GB"
+
+#: data/content/workstation/download/index.html:188
+msgid "Learn more"
+msgstr "Conegueu més detalls"
+
+#: data/content/workstation/download/index.html:193
 #, python-format
 msgid "<a href=\"%(fmagazine_url)s\"><strong>Release Announcement</strong></a>"
 msgstr "<a href=\"%(fmagazine_url)s\"><strong>Anunci del llançament</strong></a>"
 
-#: data/content/workstation/download/index.html:182
+#: data/content/workstation/download/index.html:194
 msgid "Read the full Release Announcement on Fedora Magazine."
 msgstr "Llegiu tot l'anunci del llançament a Fedora Magazine."
 
-#: data/content/workstation/download/index.html:183
+#: data/content/workstation/download/index.html:195
 #, python-format
 msgid "<a href=\"%(release_notes)s\"><strong>Release Notes</strong></a>"
 msgstr "<a href=\"%(release_notes)s\"><strong>Notes del llançament</strong></a>"
 
-#: data/content/workstation/download/index.html:184
+#: data/content/workstation/download/index.html:196
 msgid ""
 "Learn about changes since the last version of Fedora as well as minimum "
 "requirements and recommendations for running Fedora."
@@ -2328,12 +2393,12 @@ msgstr ""
 "Obteniu més informació sobre canvis des de l'última versió de Fedora, així "
 "com els requisits mínims i les recomanacions per al funcionament de Fedora."
 
-#: data/content/workstation/download/index.html:185
+#: data/content/workstation/download/index.html:197
 #, python-format
 msgid "<a href=\"%(install_guide)s\"><strong>Installation Guide</strong></a>"
 msgstr "<a href=\"%(install_guide)s\"><strong>Guia d'instal·lació</strong></a>"
 
-#: data/content/workstation/download/index.html:186
+#: data/content/workstation/download/index.html:198
 msgid ""
 "We recommend you look through this before installing to your system, since "
 "it answers many common questions."
@@ -2341,16 +2406,16 @@ msgstr ""
 "Us recomanem que li doneu un cop d'ull abans d'instal·lar-ho al vostre "
 "sistema, ja que respon a diverses qüestions comunes."
 
-#: data/content/workstation/download/index.html:187
-#: data/content/workstation/prerelease/index.html:146
+#: data/content/workstation/download/index.html:199
+#: data/content/workstation/prerelease/index.html:144
 #, python-format
 msgid "<a href=\"%(commonbugs_url)s\"><strong>Common Bugs</strong></a>"
 msgstr ""
 "<a href=\"%(commonbugs_url)s\"><strong>Errors de programari "
 "comuns</strong></a>"
 
-#: data/content/workstation/download/index.html:188
-#: data/content/workstation/prerelease/index.html:147
+#: data/content/workstation/download/index.html:200
+#: data/content/workstation/prerelease/index.html:145
 msgid ""
 "An excellent resource to consult in case you run into any issues installing "
 "or running Fedora."
@@ -2358,13 +2423,13 @@ msgstr ""
 "Un recurs excel·lent per consultar en cas que us trobeu amb qualsevol "
 "incidència amb la instal·lació o l'execució de Fedora."
 
-#: data/content/workstation/download/index.html:190
-#: data/content/workstation/prerelease/index.html:151
+#: data/content/workstation/download/index.html:202
+#: data/content/workstation/prerelease/index.html:149
 msgid "What does \"Live\" mean?"
 msgstr "Què significa «autònoma»?"
 
-#: data/content/workstation/download/index.html:191
-#: data/content/workstation/prerelease/index.html:152
+#: data/content/workstation/download/index.html:203
+#: data/content/workstation/prerelease/index.html:150
 msgid ""
 "Fedora Media Writer will create a complete, running Fedora Workstation you "
 "can run right away off of a USB drive. You can use the Live image to test "
@@ -2375,8 +2440,8 @@ msgstr ""
 "imatge autònoma per a provar i jugar amb Fedora sense fer cap canvi al "
 "vostre disc dur."
 
-#: data/content/workstation/download/index.html:192
-#: data/content/workstation/prerelease/index.html:153
+#: data/content/workstation/download/index.html:204
+#: data/content/workstation/prerelease/index.html:151
 msgid ""
 "When you are ready, you can install Fedora to your hard disk from within "
 "this \"live\" version of Fedora Workstation."
@@ -2384,13 +2449,13 @@ msgstr ""
 "Quan estigueu preparat, podeu instal·lar Fedora al vostre disc dur sense "
 "aquesta versió «autònoma» de Fedora Workstation."
 
-#: data/content/workstation/download/index.html:197
-#: data/templates/footer.html:43
+#: data/content/workstation/download/index.html:209
+#: data/templates/footer.html:44
 msgid "Fedora Spins"
 msgstr "Fedora Spins"
 
-#: data/content/workstation/download/index.html:200
-#: data/templates/footer.html:44
+#: data/content/workstation/download/index.html:212
+#: data/templates/footer.html:45
 msgid "Fedora Labs"
 msgstr "Fedora Labs"
 
@@ -2417,40 +2482,21 @@ msgstr ""
 "preguntes a la seva <a href=\"%(team_list)s\">llista de correu</a> o en "
 "%(team_irc)s del freenode."
 
-#: data/content/workstation/prerelease/index.html:54
-msgid ""
-"Are you looking for 32 bit images of F27 Beta? Due to some technical issues "
-"we cannot offer them, but they will be available for the F27 final release "
-"date. Stay tuned!"
-msgstr ""
-"Esteu buscant imatges de 32 bits de F27 Beta? A causa d'alguns problemes "
-"tècnics que no les podem oferir, però estaran disponibles per a la data de "
-"llançament final de F27. Estigueu atent!"
-
-#: data/content/workstation/prerelease/index.html:57
-#, python-format
-msgid "When is Fedora %s going to be released?"
-msgstr "Quan s'alliberarà Fedora %s?"
-
-#: data/content/workstation/prerelease/index.html:58
-msgid "Read all the key milestones of the release schedule..."
-msgstr "Llegiu-vos totes les fites clau del calendari de llançaments..."
-
-#: data/content/workstation/prerelease/index.html:62
+#: data/content/workstation/prerelease/index.html:60
 msgid "Running Pre-Release Versions of Fedora Workstation"
 msgstr "Execució de versions prèvies al llançament de Fedora Workstation"
 
-#: data/content/workstation/prerelease/index.html:63
+#: data/content/workstation/prerelease/index.html:61
 msgid "To run a prerelease version of Fedora Workstation, you will need:"
 msgstr ""
 "Per a l'execució d'una versió prèvia al llançament de Fedora Workstation "
 "necessitareu:"
 
-#: data/content/workstation/prerelease/index.html:65
+#: data/content/workstation/prerelease/index.html:63
 msgid "Fedora Media Writer (Download available below)"
 msgstr "Fedora Media Writer (baixada disponible a sota)"
 
-#: data/content/workstation/prerelease/index.html:67
+#: data/content/workstation/prerelease/index.html:65
 #, python-format
 msgid ""
 "<a href=\"%s\">A live image ISO of the pre-release version of Fedora</a> you"
@@ -2459,7 +2505,7 @@ msgstr ""
 "<a href=\"%s\">Una imatge ISO autònoma de la versió prèvia al llançament de "
 "Fedora</a> que vulgueu executar"
 
-#: data/content/workstation/prerelease/index.html:69
+#: data/content/workstation/prerelease/index.html:67
 msgid ""
 "WARNING: This procedure destroys all data on your USB media. Make sure to "
 "back up any important files from your USB media before you do this."
@@ -2468,15 +2514,15 @@ msgstr ""
 "USB. Assegureu-vos que salvaguardeu qualsevol fitxer que sigui important del"
 " vostre mitjà USB abans de fer-ho."
 
-#: data/content/workstation/prerelease/index.html:71
+#: data/content/workstation/prerelease/index.html:69
 msgid "Download the Fedora Media Writer app below."
 msgstr "Baixeu l'aplicació Fedora Media Writer de sota."
 
-#: data/content/workstation/prerelease/index.html:72
+#: data/content/workstation/prerelease/index.html:70
 msgid "Download the desired ISO image."
 msgstr "Baixeu la imatge ISO que us interessi."
 
-#: data/content/workstation/prerelease/index.html:73
+#: data/content/workstation/prerelease/index.html:71
 msgid ""
 "Open the Fedora Media Writer app. You may need to provide a password to give"
 " the app the right permissions."
@@ -2484,17 +2530,17 @@ msgstr ""
 "Obriu  l'aplicació Fedora Media Writer. Haureu de proporcionar una "
 "contrasenya per donar a l'aplicació els permisos necessaris."
 
-#: data/content/workstation/prerelease/index.html:74
+#: data/content/workstation/prerelease/index.html:72
 msgid "Select \"Custom OS...\" from the list."
 msgstr "Seleccioneu el «SO personalitzat...» de la llista."
 
-#: data/content/workstation/prerelease/index.html:75
+#: data/content/workstation/prerelease/index.html:73
 msgid "On the Custom OS page, select the \"Select Live ISO\" button."
 msgstr ""
 "En la pàgina del SO personalitzat, seleccioneu el botó «Selecciona l'ISO "
 "autònoma»."
 
-#: data/content/workstation/prerelease/index.html:76
+#: data/content/workstation/prerelease/index.html:74
 msgid ""
 "In the file selection window, locate and select the ISO image you "
 "downloaded."
@@ -2502,7 +2548,7 @@ msgstr ""
 "En la finestra de selecció del fitxer, localitzeu i seleccioneu la imatge "
 "ISO que heu baixat."
 
-#: data/content/workstation/prerelease/index.html:77
+#: data/content/workstation/prerelease/index.html:75
 msgid ""
 "Insert your USB stick in the computer. If you used your USB stick previously"
 " to create live media, you may need to restore it to factory settings.  The "
@@ -2513,7 +2559,7 @@ msgstr ""
 "restaurar-ho als ajusts de fàbrica. Aquesta aplicació us demanarà fer-ho si "
 "fos el cas."
 
-#: data/content/workstation/prerelease/index.html:78
+#: data/content/workstation/prerelease/index.html:76
 msgid ""
 "Select \"Create Live USB\" to write the image. Wait until the process is "
 "finished before you remove the media and close the app."
@@ -2521,11 +2567,15 @@ msgstr ""
 "Seleccioneu «Crea un USB autònom» per escriure la imatge. Espereu fins que "
 "acabi el procés abans d'extraure el mitjà i tancar l'aplicació."
 
-#: data/content/workstation/prerelease/index.html:125
+#: data/content/workstation/prerelease/index.html:123
 msgid "Validate 64-bit!"
 msgstr "Validació de 64 bits!"
 
-#: data/content/workstation/prerelease/index.html:148
+#: data/content/workstation/prerelease/index.html:126
+msgid "Validate 32-bit!"
+msgstr "Validació de 32 bits!"
+
+#: data/content/workstation/prerelease/index.html:146
 msgid ""
 "<a href=\"https://fedoraproject.org/wiki/QA/Join#release-"
 "validation\"><strong>How to test pre-releases</strong></a>"
@@ -2533,7 +2583,7 @@ msgstr ""
 "<a href=\"https://fedoraproject.org/wiki/QA/Join#release-"
 "validation\"><strong>Com provar els llançaments previs</strong></a>"
 
-#: data/content/workstation/prerelease/index.html:149
+#: data/content/workstation/prerelease/index.html:147
 msgid "Fedora wiki guide on how to help test pre-release versions of Fedora."
 msgstr ""
 "La guia wiki de Fedora quant a com provar una versió prèvia al llançament de"
@@ -2612,88 +2662,88 @@ msgstr "Fedora Magazine"
 msgid "Legal"
 msgstr "Apunts legals"
 
-#: data/templates/footer.html:40
+#: data/templates/footer.html:41
 msgid "Get Fedora Workstation"
 msgstr "Obtenir Fedora Workstation"
 
-#: data/templates/footer.html:41
+#: data/templates/footer.html:42
 msgid "Get Fedora Server"
 msgstr "Obtenir Fedora Server"
 
-#: data/templates/footer.html:42
+#: data/templates/footer.html:43
 msgid "Get Fedora Atomic"
 msgstr "Obtenir Fedora Atomic"
 
-#: data/templates/footer.html:45
+#: data/templates/footer.html:46
 msgid "Fedora ARM<span class=\"sup\">®</span>"
 msgstr "Fedora ARM<span class=\"sup\">®</span>"
 
-#: data/templates/footer.html:46
+#: data/templates/footer.html:47
 msgid "Alternative Downloads"
 msgstr "Baixades alternatives"
 
-#: data/templates/footer.html:53
+#: data/templates/footer.html:54
 msgid "Support"
 msgstr "Suport"
 
-#: data/templates/footer.html:56
+#: data/templates/footer.html:57
 msgid "Get Help"
 msgstr "Obtenir ajuda"
 
-#: data/templates/footer.html:57
+#: data/templates/footer.html:58
 msgid "Ask Fedora"
 msgstr "Preguntar a Fedora"
 
-#: data/templates/footer.html:58
+#: data/templates/footer.html:59
 msgid "Common Bugs"
 msgstr "Errors de programari comuns"
 
-#: data/templates/footer.html:59
+#: data/templates/footer.html:60
 msgid "Fedora Developer Portal"
 msgstr "Portal de Fedora Developer"
 
-#: data/templates/footer.html:60
+#: data/templates/footer.html:61
 msgid "Installation Guide"
 msgstr "Guia d'instal·lació"
 
-#: data/templates/footer.html:66
+#: data/templates/footer.html:67
 msgid "Join"
 msgstr "Unir-se"
 
-#: data/templates/footer.html:69
+#: data/templates/footer.html:70
 msgid "Join Fedora"
 msgstr "Unir-se a Fedora"
 
-#: data/templates/footer.html:70
+#: data/templates/footer.html:71
 msgid "Planet Fedora"
 msgstr "Planeta Fedora"
 
-#: data/templates/footer.html:71
+#: data/templates/footer.html:72
 msgid "Fedora SIGs"
 msgstr "Grups d'interès especial de Fedora"
 
-#: data/templates/footer.html:72
+#: data/templates/footer.html:73
 msgid "Fedora Account System"
 msgstr "Sistema de comptes de Fedora"
 
-#: data/templates/footer.html:73
+#: data/templates/footer.html:74
 msgid "Fedora Community"
 msgstr "Comunitat de Fedora"
 
-#: data/templates/footer.html:87
+#: data/templates/footer.html:88
 msgid "Fedora is sponsored by Red Hat."
 msgstr "Fedora disposa del patrocini de Red Hat."
 
-#: data/templates/footer.html:88
+#: data/templates/footer.html:89
 msgid "Learn more about the relationship between Red Hat and Fedora »"
 msgstr "Conegueu més detalls quant a la relació entre Red Hat i Fedora »"
 
-#: data/templates/footer.html:89
+#: data/templates/footer.html:90
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
 msgstr "© %(year)s Red Hat, Inc. i altres."
 
-#: data/templates/footer.html:89
+#: data/templates/footer.html:90
 msgid ""
 "Please send any comments or corrections to the <a href=\"//pagure.io/fedora-"
 "websites\">websites team</a>."
@@ -2701,11 +2751,11 @@ msgstr ""
 "Si us plau, envieu qualsevol comentari o correcció a <a href=\"//pagure.io"
 "/fedora-websites\">l'equip dels llocs web</a>."
 
-#: data/templates/footer.html:95
+#: data/templates/footer.html:96
 msgid "Change Language"
 msgstr "Canvieu l'idioma"
 
-#: data/templates/footer.html:99
+#: data/templates/footer.html:100
 msgid "OK"
 msgstr "D'acord"
 
@@ -2721,6 +2771,14 @@ msgstr ""
 msgid "Lean. Powerful. Everycloud ready."
 msgstr "Lleuger. Potent. Està totalment preparat per a Everycloud."
 
+#: data/templates/productselector-server.html:14
+msgid ""
+"The latest technology. A stable foundation. Together, for your applications "
+"and services."
+msgstr ""
+"L'última tecnologia. Una base estable. Junts, per a les vostres aplicacions "
+"i per als vostres serveis."
+
 #: data/templates/generic/docs-links.html:8
 msgid "Documentation and other resources"
 msgstr "Documentació i altres recursos"
@@ -2729,24 +2787,24 @@ msgstr "Documentació i altres recursos"
 #, python-format
 msgid ""
 "Before installing Fedora, you may want to confirm your system meets minimum "
-"requirements for Fedora. Consult <a href=\"%s\">the online release notes</a>"
-" to see minimum requirements and recommendations."
+"requirements for Fedora. Consult <a href=\"%(release_notes)s\">the online "
+"release notes</a> to see minimum requirements and recommendations."
 msgstr ""
 "Abans d'instal·lar Fedora, potser voldreu confirmar que el vostre sistema "
-"compleixi els requisits mínims de Fedora. Consulteu <a href=\"%s\">les notes"
-" del llançament en línia</a> per veure els requisits mínims i les "
-"recomanacions."
+"compleixi els requisits mínims de Fedora. Consulteu <a "
+"href=\"%(release_notes)s\">les notes del llançament en línia</a> per veure "
+"els requisits mínims i les recomanacions."
 
 #: data/templates/generic/docs-links.html:10
 #, python-format
 msgid ""
-"There is also a <a href=\"%s\">complete Installation Guide</a> available. We"
-" recommend you look through it before installing to your system, since it "
-"answers many common questions."
+"There is also a <a href=\"%(install_guide)s\">complete Installation "
+"Guide</a> available. We recommend you look through it before installing to "
+"your system, since it answers many common questions."
 msgstr ""
-"També hi ha disponible una <a href=\"%s\">guia completa d'instal·lació</a>. "
-"Us recomanem que li doneu un cop d'ull abans d'instal·lar-la al vostre "
-"sistema, ja que respon a diverses qüestions comunes."
+"També hi ha disponible una <a href=\"%(install_guide)s\">guia completa "
+"d'instal·lació</a>. Us recomanem que li doneu un cop d'ull abans d'instal"
+"·lar-la al vostre sistema, ja que respon a diverses qüestions comunes."
 
 #: data/templates/generic/other-media-sources.html:8
 msgid "Other ways of obtaining media"

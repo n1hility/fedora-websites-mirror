@@ -10,12 +10,13 @@
 # Lode Claassen <lodeclaassen@xs4all.nl>, 2016. #zanata
 # Geert Warrink <geert.warrink@onsnet.nu>, 2017. #zanata
 # Renate Oude Nijeweme <fedoracommunity@renateoudenijeweme.nl>, 2017. #zanata
+# Geert Warrink <geert.warrink@onsnet.nu>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-11-14 12:29+0100\n"
-"PO-Revision-Date: 2017-10-07 12:47-0400\n"
+"POT-Creation-Date: 2018-04-30 22:24+0200\n"
+"PO-Revision-Date: 2018-04-26 03:28-0400\n"
 "Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/fedora-web/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +27,7 @@ msgstr ""
 "Generated-By: Babel 1.3\n"
 "X-Generator: Zanata 3.9.6\n"
 
-#: data/content/code-of-conduct.html:8
+#: data/content/code-of-conduct.html:8 data/templates/footer.html:21
 msgid "Fedora Code of Conduct"
 msgstr "Fedora gedragscode"
 
@@ -183,17 +184,17 @@ msgstr ""
 "besturingssysteem voor laptop en desktop computers, met een complete set "
 "gereedschappen voor ontwikkelaars en allerlei soorten makers."
 
+#: data/content/atomic/index.html:125 data/content/atomic/index.html:131
 #: data/content/index.html:79 data/content/index.html:94
-#: data/content/index.html:109 data/content/atomic/index.html:125
-#: data/content/atomic/index.html:131 data/content/server/index.html:20
-#: data/content/server/index.html:125 data/content/server/index.html:131
+#: data/content/index.html:109 data/content/server/index.html:22
+#: data/content/server/index.html:139 data/content/server/index.html:145
 #: data/content/workstation/index.html:20
 #: data/content/workstation/index.html:185
 #: data/content/workstation/index.html:191
 msgid "Download now"
 msgstr "Nu downloaden"
 
-#: data/content/index.html:86 data/content/verify.html:51
+#: data/content/index.html:86 data/content/verify.html:54
 #: data/templates/productselector-server.html:13
 msgid "Server"
 msgstr "Server"
@@ -208,13 +209,13 @@ msgstr ""
 "nieuwste datacenter technologieën bevat. Het geeft jou de controle over al "
 "je infrastructuur en services. "
 
-#: data/content/index.html:101 data/content/verify.html:60
+#: data/content/index.html:101 data/content/verify.html:63
 #: data/templates/productselector-cloud.html:13
 msgid "Atomic"
 msgstr "Atomic"
 
-#: data/content/index.html:107 data/content/index.html:144
-#: data/content/atomic/index.html:19
+#: data/content/atomic/index.html:19 data/content/index.html:107
+#: data/content/index.html:144
 msgid ""
 "Fedora Atomic provides the best platform for your Linux-Docker-Kubernetes "
 "(LDK) application stack."
@@ -374,7 +375,7 @@ msgstr ""
 "juiste CHECKSUM bestand in dezelfde map als waarin je de image gedownloaded "
 "hebt:"
 
-#: data/content/verify.html:41 data/content/verify.html:53
+#: data/content/verify.html:41 data/content/verify.html:56
 msgid "For 64-bit images"
 msgstr "Voor 64-bit images"
 
@@ -382,23 +383,27 @@ msgstr "Voor 64-bit images"
 msgid "For 32-bit images"
 msgstr "Voor 32-bit images"
 
-#: data/content/verify.html:62
+#: data/content/verify.html:47
+msgid "For Atomic WS"
+msgstr ""
+
+#: data/content/verify.html:65
 msgid "For Atomic Host Iso"
 msgstr "Voor Atomic Host Iso"
 
-#: data/content/verify.html:65
+#: data/content/verify.html:68
 msgid "For Atomic Host images"
 msgstr "Voor Atomic Host images"
 
-#: data/content/verify.html:68
+#: data/content/verify.html:71
 msgid "For Docker"
 msgstr "Voor Docker"
 
-#: data/content/verify.html:75
+#: data/content/verify.html:78
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Vervolgens importeer je Fedora's GPG-sleutel(s):"
 
-#: data/content/verify.html:77
+#: data/content/verify.html:80
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
@@ -407,11 +412,11 @@ msgstr ""
 "Je kunt de details van de GPG-sleutel(s) <a href=\"%s/%s/keys\">hier</a>  "
 "verifiëren."
 
-#: data/content/verify.html:78
+#: data/content/verify.html:81
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Verifieer vervolgens of het CHECKSUM-bestand geldig is:"
 
-#: data/content/verify.html:80
+#: data/content/verify.html:83
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
@@ -419,33 +424,28 @@ msgstr ""
 "Het CHECKSUM-bestand zou een goede handtekening moeten hebben van één van de"
 " volgende sleutels:"
 
-#: data/content/verify.html:82 data/content/keys/index.html:46
+#: data/content/keys/index.html:46 data/content/verify.html:85
+msgid "Fedora 29"
+msgstr "Fedora 29"
+
+#: data/content/keys/index.html:59 data/content/verify.html:86
 msgid "Fedora 28"
 msgstr "Fedora 28"
 
-#: data/content/verify.html:83 data/content/keys/index.html:59
+#: data/content/keys/index.html:72 data/content/verify.html:87
 msgid "Fedora 27"
 msgstr "Fedora 27"
 
-#: data/content/verify.html:84 data/content/keys/index.html:72
+#: data/content/keys/index.html:85 data/content/verify.html:88
 msgid "Fedora 26"
 msgstr "Fedora 26"
 
-#: data/content/verify.html:85
+#: data/content/verify.html:89
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Fedora 26 secondaire architecturen (AArch64, PPC64, PPC64le, s390 en s390x)"
 
-#: data/content/verify.html:86 data/content/keys/index.html:93
-msgid "Fedora 25"
-msgstr "Fedora 25"
-
-#: data/content/verify.html:87
-msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
-"Fedora 25 secondaire architecturen (AArch64, PPC64, PPC64le, s390 en s390x)"
-
-#: data/content/verify.html:89
+#: data/content/verify.html:91
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
@@ -453,18 +453,18 @@ msgstr ""
 "Nu het CHECKSUM bestand geverifieerd is, controleer je tenslotte of de "
 "checksum van de image overeenkomt:"
 
-#: data/content/verify.html:91
+#: data/content/verify.html:93
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
 "Als de output aangeeft dat het bestand geldig is, dan is het nu klaar voor "
 "gebruik!"
 
-#: data/content/verify.html:92
+#: data/content/verify.html:94
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr ""
 "Hoe verifieer ik mijn gedownloade images op een ander besturingssysteem?"
 
-#: data/content/verify.html:93
+#: data/content/verify.html:95
 msgid "Read these instructions to validate your image."
 msgstr "Lees deze instructies om je image te valideren."
 
@@ -568,8 +568,8 @@ msgid "Ready to give Fedora Atomic a try?"
 msgstr "Ben je er klaar voor om Fedora Atomic uit te proberen?"
 
 #: data/content/atomic/download/download-cloud-splash.html:8
-msgid "Download Fedora Cloud"
-msgstr "Download Fedora Cloud"
+msgid "Download Fedora Atomic Host"
+msgstr ""
 
 #: data/content/atomic/download/download-cloud-splash.html:37
 #: data/content/server/download/server-download-splash.html:31
@@ -596,7 +596,7 @@ msgstr "Verifieer je Download!"
 #: data/content/atomic/prerelease/index.html:323
 #: data/content/server/download/server-download-splash.html:44
 #: data/content/workstation/download/ws-download-splash.html:49
-#: data/content/workstation/prerelease/index.html:122
+#: data/content/workstation/prerelease/index.html:120
 #, python-format
 msgid ""
 "Once you have downloaded an image, verify it for security and integrity. To "
@@ -612,7 +612,7 @@ msgstr ""
 #: data/content/atomic/download/download-cloud-splash.html:52
 #: data/content/atomic/prerelease/index.html:326
 #: data/content/server/download/server-download-splash.html:47
-#: data/content/server/prerelease/index.html:46
+#: data/content/server/prerelease/index.html:45
 #: data/content/workstation/download/ws-download-splash.html:52
 msgid "Validate!"
 msgstr "Valideren!"
@@ -844,19 +844,15 @@ msgid "Atomic Host Images for Vagrant"
 msgstr "Atomic Host images voor Vagrant"
 
 #: data/content/atomic/download/index.html:212
-#: data/content/atomic/prerelease/index.html:208
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and "
 "Libvirt providers. You can bring up Fedora Atomic Host in a vagrant box by "
 "downloading the images from Fedora or using the vagrant tools to pull the "
-"images from <a href=\"%s\">HashiCorp's Atlas</a>."
+"images from <a href=\"%s\">HashiCorp's Vagrant Cloud</a>."
 msgstr ""
-"Vagrant Boxes voor Fedora Atomic Host zijn beschikbaar voor de VirtualBox en"
-" Libvirt aanbieders. Je kunt Fedora Atomic Host aanmaken in een vagrant box "
-"door het downloaden van de images van Fedora of met het gebruik van de "
-"vagrant gereedschappen om de images van <a href=\"%s\">HashiCorp's Atlas</a>"
-" te halen."
+"Vagrant Boxes voor Fedora Atomic Host zijn beschikbaar voor de VirtualBox en Libvirt aanbieders. Je kunt Fedora Atomic Host aanmaken in een vagrant box door het downloaden van de images van Fedora of met het gebruik van de vagrant gereedschappen om de images van  <a href=\"%s\">HashiCorp's Vagrant Cloud</a>\n"
+"te halen."
 
 #: data/content/atomic/download/index.html:213
 #: data/content/atomic/prerelease/index.html:209
@@ -923,10 +919,10 @@ msgstr ""
 #: data/content/workstation/prerelease/index.html:19
 #: data/content/workstation/prerelease/index.html:23
 #: data/content/workstation/prerelease/index.html:28
-#: data/content/workstation/prerelease/index.html:92
-#: data/content/workstation/prerelease/index.html:101
-#: data/content/workstation/prerelease/index.html:113
-#: data/templates/footer.html:37
+#: data/content/workstation/prerelease/index.html:90
+#: data/content/workstation/prerelease/index.html:99
+#: data/content/workstation/prerelease/index.html:111
+#: data/templates/footer.html:38
 msgid "Download"
 msgstr "Download"
 
@@ -1060,10 +1056,10 @@ msgstr "64-bit %sMB xz-Compressed Raw image"
 
 #: data/content/atomic/download/index.html:331
 #: data/content/atomic/prerelease/index.html:335
-#: data/content/server/download/index.html:53
-#: data/content/server/prerelease/index.html:52
+#: data/content/server/download/index.html:51
+#: data/content/server/prerelease/index.html:51
 #: data/content/workstation/download/index.html:145
-#: data/content/workstation/prerelease/index.html:133
+#: data/content/workstation/prerelease/index.html:131
 msgid "Other Downloads"
 msgstr "Andere downloads"
 
@@ -1076,8 +1072,8 @@ msgstr "Atomic Host ISO image (%sMB)"
 #: data/content/atomic/download/index.html:334
 #: data/content/atomic/prerelease/index.html:338
 #, python-format
-msgid "Docker Image (%sMB)"
-msgstr "Docker image (%sMB)"
+msgid "Container Image (%sMB)"
+msgstr "Container image (%sMB)"
 
 #: data/content/atomic/download/index.html:342
 #, python-format
@@ -1085,23 +1081,26 @@ msgid "F%(rel)s %(state)s"
 msgstr "F%(rel)s %(state)s"
 
 #: data/content/atomic/download/index.html:343
-#: data/content/server/download/index.html:76
-#: data/content/workstation/download/index.html:161
-#: data/content/workstation/download/index.html:171
+#: data/content/server/download/index.html:63
+#: data/content/server/download/index.html:73
+#: data/content/workstation/download/index.html:160
+#: data/content/workstation/download/index.html:170
 msgid "Try a pre-release"
 msgstr "Probeer een proefversie"
 
 #: data/content/atomic/download/index.html:344
-#: data/content/server/download/index.html:77
-#: data/content/workstation/download/index.html:162
-#: data/content/workstation/download/index.html:172
+#: data/content/server/download/index.html:64
+#: data/content/server/download/index.html:74
+#: data/content/workstation/download/index.html:161
+#: data/content/workstation/download/index.html:171
 msgid "We're working on our next release."
 msgstr "We zijn bezig met onze volgende uitgave."
 
 #: data/content/atomic/download/index.html:345
-#: data/content/server/download/index.html:78
-#: data/content/workstation/download/index.html:163
-#: data/content/workstation/download/index.html:173
+#: data/content/server/download/index.html:65
+#: data/content/server/download/index.html:75
+#: data/content/workstation/download/index.html:162
+#: data/content/workstation/download/index.html:172
 #, python-format
 msgid "Help us get F%(rel)s ready!"
 msgstr "Help ons om F%(rel)s klaar te maken!"
@@ -1112,16 +1111,17 @@ msgid "Download F%(rel)s %(state)s images"
 msgstr "Download F%(rel)s %(state)s images"
 
 #: data/content/atomic/download/index.html:347
-#: data/content/server/download/index.html:80
-#: data/content/workstation/download/index.html:165
-#: data/content/workstation/download/index.html:175
+#: data/content/server/download/index.html:67
+#: data/content/server/download/index.html:77
+#: data/content/workstation/download/index.html:164
+#: data/content/workstation/download/index.html:174
 msgid "How to test pre-releases"
 msgstr "Hoe kun je proefversies testen"
 
 #: data/content/atomic/download/index.html:353
 #: data/content/atomic/prerelease/index.html:341
-#: data/content/workstation/download/index.html:180
-#: data/content/workstation/prerelease/index.html:145
+#: data/content/workstation/download/index.html:192
+#: data/content/workstation/prerelease/index.html:143
 msgid "Resources"
 msgstr "Hulpbronnen"
 
@@ -1179,18 +1179,18 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:362
 #: data/content/atomic/prerelease/index.html:350
-#: data/content/server/download/index.html:98
-#: data/content/workstation/download/index.html:209
+#: data/content/server/download/index.html:94
+#: data/content/workstation/download/index.html:221
 msgid "Verify"
 msgstr "Verifiëren"
 
 #: data/content/atomic/download/index.html:365
 #: data/content/atomic/prerelease/index.html:322
 #: data/content/atomic/prerelease/index.html:353
-#: data/content/server/download/index.html:101
-#: data/content/server/prerelease/index.html:42
-#: data/content/workstation/download/index.html:212
-#: data/content/workstation/prerelease/index.html:121
+#: data/content/server/download/index.html:97
+#: data/content/server/prerelease/index.html:41
+#: data/content/workstation/download/index.html:224
+#: data/content/workstation/prerelease/index.html:119
 msgid "Verify your Image"
 msgstr "Verifieer je image"
 
@@ -1200,7 +1200,7 @@ msgid "Download Fedora %(rel)s %(state)s Atomic Host"
 msgstr "Download Fedora %(rel)s %(state)s Atomic Host"
 
 #: data/content/atomic/prerelease/index.html:37
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "These are the latest Fedora Atomic Host images, produced on "
 "%(manual_pre_atomic_date)s."
@@ -1244,6 +1244,20 @@ msgstr "Fedora %(rel)s %(state)s GP2 Atomic Host HVM AMI's"
 #, python-format
 msgid "Fedora %(rel)s %(state)s Standard Atomic Host HVM AMIs"
 msgstr "Fedora %(rel)s %(state)s Standard Atomic Host HVM AMI's"
+
+#: data/content/atomic/prerelease/index.html:208
+#, fuzzy, python-format
+msgid ""
+"Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and "
+"Libvirt providers. You can bring up Fedora Atomic Host in a vagrant box by "
+"downloading the images from Fedora or using the vagrant tools to pull the "
+"images from <a href=\"%s\">HashiCorp's Atlas</a>."
+msgstr ""
+"Vagrant Boxes voor Fedora Atomic Host zijn beschikbaar voor de VirtualBox en"
+" Libvirt aanbieders. Je kunt Fedora Atomic Host aanmaken in een vagrant box "
+"door het downloaden van de images van Fedora of met het gebruik van de "
+"vagrant gereedschappen om de images van <a href=\"%s\">HashiCorp's Atlas</a>"
+" te halen."
 
 #: data/content/atomic/prerelease/index.html:288
 #: data/content/atomic/prerelease/index.html:303
@@ -1342,8 +1356,8 @@ msgid "Currently Used Keys"
 msgstr "Momenteel gebruikte sleutels"
 
 #: data/content/keys/index.html:46 data/content/keys/index.html:59
-#: data/content/keys/index.html:72 data/content/keys/index.html:93
-#: data/content/keys/index.html:116 data/content/keys/index.html:129
+#: data/content/keys/index.html:72 data/content/keys/index.html:85
+#: data/content/keys/index.html:110 data/content/keys/index.html:123
 #: data/content/keys/obsolete.html:72 data/content/keys/obsolete.html:85
 #: data/content/keys/obsolete.html:100 data/content/keys/obsolete.html:113
 #: data/content/keys/obsolete.html:126 data/content/keys/obsolete.html:139
@@ -1353,28 +1367,28 @@ msgstr "Momenteel gebruikte sleutels"
 #: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
 #: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
 #: data/content/keys/obsolete.html:358 data/content/keys/obsolete.html:379
-#: data/content/keys/obsolete.html:401
+#: data/content/keys/obsolete.html:401 data/content/keys/obsolete.html:422
 msgid "Primary"
 msgstr "Primair"
 
-#: data/content/keys/index.html:72 data/content/keys/index.html:93
-#: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
-#: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
-#: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
-#: data/content/keys/obsolete.html:337 data/content/keys/obsolete.html:358
-#: data/content/keys/obsolete.html:379
+#: data/content/keys/index.html:85 data/content/keys/obsolete.html:201
+#: data/content/keys/obsolete.html:225 data/content/keys/obsolete.html:247
+#: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
+#: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
+#: data/content/keys/obsolete.html:358 data/content/keys/obsolete.html:379
+#: data/content/keys/obsolete.html:401
 msgid "Secondary"
 msgstr "Secundair"
 
-#: data/content/keys/index.html:116
+#: data/content/keys/index.html:110
 msgid "EPEL 7"
 msgstr "EPEL 7"
 
-#: data/content/keys/index.html:129
+#: data/content/keys/index.html:123
 msgid "EPEL 6"
 msgstr "EPEL 6"
 
-#: data/content/keys/index.html:145
+#: data/content/keys/index.html:138
 #, python-format
 msgid "Looking for <a href=\"%s\">obsolete keys</a>?"
 msgstr "Zoek je naar <a href=\"%s\">verouderde sleutels</a>?"
@@ -1527,22 +1541,26 @@ msgid "Fedora 24"
 msgstr "Fedora 24"
 
 #: data/content/keys/obsolete.html:401
+msgid "Fedora 25"
+msgstr "Fedora 25"
+
+#: data/content/keys/obsolete.html:422
 msgid "EPEL 5"
 msgstr "EPEL 5"
 
-#: data/content/keys/obsolete.html:414
+#: data/content/keys/obsolete.html:435
 msgid "EPEL 4"
 msgstr "EPEL 4"
 
-#: data/content/keys/obsolete.html:414
+#: data/content/keys/obsolete.html:435
 msgid "RPM-GPG-KEY-EPEL"
 msgstr "RPM-GPG-KEY-EPEL"
 
-#: data/content/keys/obsolete.html:427
+#: data/content/keys/obsolete.html:448
 msgid "Fedora Extras"
 msgstr "Fedora Extras"
 
-#: data/content/keys/obsolete.html:427
+#: data/content/keys/obsolete.html:448
 msgid ""
 "If you are using Fedora Extras with Fedora Core 6, use this package from "
 "<strong>extras</strong> repository.  This key will no longer be used after "
@@ -1556,11 +1574,11 @@ msgstr ""
 "2007). Deze sleutel is geen deel meer van het <strong>fedora-"
 "release</strong> pakket in Fedora 7 en nieuwere vrijgaven."
 
-#: data/content/keys/obsolete.html:444
+#: data/content/keys/obsolete.html:465 data/content/keys/obsolete.html:480
 msgid "Legacy"
 msgstr "Legacy"
 
-#: data/content/keys/obsolete.html:444
+#: data/content/keys/obsolete.html:465 data/content/keys/obsolete.html:480
 msgid ""
 "This key was used for packages that were released by Fedora Legacy project "
 "to update releases that reached their official EOL. The Fedora Legacy "
@@ -1701,49 +1719,67 @@ msgstr ""
 "Haal Fedora Server binnen: de nieuwste technologie voor je toepassingen en "
 "services"
 
-#: data/content/server/index.html:19
-#: data/templates/productselector-server.html:14
+#: data/content/server/index.html:20
 msgid ""
-"The latest technology. A stable foundation. Together, for your applications "
-"and services."
+"Run your applications on a Linux server OS with the latest open source "
+"technology."
 msgstr ""
-"De nieuwste technologie. Een stabiele fundering. Bij elkaar voor je "
-"toepassingen en services."
+"Draai je toepassingen op een Linux server OS met de nieuwste open source "
+"technologie."
+
+#: data/content/server/index.html:21
+msgid ""
+"Now with content in multiple versions on independent lifecycles — so your "
+"server can move both fast and slow."
+msgstr ""
+"Nu met inhoud in meerdere versies met onafhankelijke levenscycli — dus je "
+"server zowel snel als langzaam bewegen."
+
+#: data/content/server/index.html:37
+msgid "Fedora Server"
+msgstr "Fedora Server"
 
 #: data/content/server/index.html:38
-#, python-format
-msgid ""
-"“The simplicity introduced with rolekit and cockpit have made server "
-"deployments a breeze. What took me a few days on other operating systems "
-"took less than an hour with Fedora %(rel)s Server. It just works.”"
-msgstr ""
-"“De eenvoud geïntroduceerd met rolekit en cockpit hebben van het inzetten "
-"van servers een koud kunstje gemaakt. Wat me een paar dagen kostte voor "
-"andere besturingssystemen duurde minder dan een uur met Fedora %(rel)s "
-"Server. Het werkt gewoon.”"
-
-#: data/content/server/index.html:39
-msgid "Systems Engineer"
-msgstr "Systeem Engineer"
-
-#: data/content/server/index.html:51
 msgid ""
 "Fedora Server is a short-lifecycle, community-supported server operating "
-"system that enables seasoned system administrators experienced with any OS "
-"to make use of the very latest server-based technologies available in the "
-"open source community."
+"system that enables seasoned system administrators, experienced with any OS,"
+" to make use of the very latest technologies available in the open source "
+"community."
 msgstr ""
 "Fedora Server is een korte-levenscyclus,  gemeenschap-ondersteund server "
 "besturingssysteem dat doorgewinterde systeembeheerders met ervaring met enig"
 " besturingssysteem in staat stelt om gebruik te maken van de meest recente "
-"server-gebaseerde technologieën die beschikbaar zijn in de open-bron "
-"gemeenschap."
+"technologieën die beschikbaar zijn in de open-bron gemeenschap."
 
-#: data/content/server/index.html:62
+#: data/content/server/index.html:52
+msgid "Introducing Modularity"
+msgstr "Modularity introduceren"
+
+#: data/content/server/index.html:53
+msgid ""
+"Modularity brings a new Modular repository providing additional versions of "
+"software on independent lifecycles."
+msgstr ""
+"Modularity is een nieuwe modulaire repository welke extra softwareversies "
+"bevat met onafhankelijke levenscycli."
+
+#: data/content/server/index.html:54
+msgid ""
+"Choose the right version of an application or a language stack you need, and"
+" keep it even when your OS upgrades to a newer version."
+msgstr ""
+"Kies de juiste versie van een toepassing of een taal stack die je nodig "
+"hebt, en behoud die zelfs als je OS upgrades naar een nieuwere versie."
+
+#: data/content/server/index.html:55
+msgid "Learn more about Modularity"
+msgstr "Kom meer te weten over Modularity"
+
+#: data/content/server/index.html:66
 msgid "Easy Administration"
 msgstr "Gemakkelijk beheer"
 
-#: data/content/server/index.html:63
+#: data/content/server/index.html:67
 msgid ""
 "Manage your system simply with Cockpit's powerful, modern interface. View "
 "and monitor system performance and status, and deploy and manage container-"
@@ -1753,28 +1789,11 @@ msgstr ""
 "Cockpit. Bekijk en monitor systeemperformance en status, en pas container-"
 "gebaseerde services toe en beheer ze."
 
-#: data/content/server/index.html:77
-msgid "Server Roles"
-msgstr "Server rollen"
-
-#: data/content/server/index.html:78
-msgid ""
-"There's no need to set up your server from scratch when you use server "
-"roles. Server roles plug into your Fedora Server system, providing a well-"
-"integrated service on top of the Fedora Server platform. Deploy and manage "
-"these prepared roles simply using the Rolekit tool."
-msgstr ""
-"Het is niet nodig om je server van de grond af op te zetten als je server "
-"rollen gebruikt. Server rollen pluggen in op je Fedora Server systeem, en "
-"bieden een goed geïntegreerde service bovenop het Fedora Server platform. "
-"Implementeer en beheer deze voorbereide rollen eenvoudig met gebruik ban het"
-" Rolekit gereedschap."
-
-#: data/content/server/index.html:81
+#: data/content/server/index.html:98
 msgid "Database Services"
 msgstr "Database services"
 
-#: data/content/server/index.html:82
+#: data/content/server/index.html:99
 msgid ""
 "Fedora Server brings with it an enterprise-class, scalable database server "
 "powered by the open-source PostgreSQL project."
@@ -1782,38 +1801,38 @@ msgstr ""
 "Fedora Server bevat een enterprise-class, schaalbare database server "
 "aangedreven door het open-bron PostgreSQL project."
 
-#: data/content/server/index.html:96
+#: data/content/server/index.html:109
 msgid "Complete Enterprise Domain Solution"
 msgstr "Volledige Enterprise Domain oplossing"
 
-#: data/content/server/index.html:97
+#: data/content/server/index.html:110
 msgid ""
 "Level up your Linux network with advanced identity management, DNS, "
 "certificate services, Windows(TM) domain integration throughout your "
-"environment with FreeIPA, the engine that drives Fedora Server's Domain "
-"Controller role."
+"environment with FreeIPA, the open-source domain controller."
 msgstr ""
 "Verhoog het niveau van je Linux netwerk met geavanceerde identiteitbeheer, "
 "DNS, certificaat services, Windows(TM) domein integratie in je hele omgeving"
-" met FreeIPA, de engine die Fedora Server's Domain Controller rol aandrijft."
+" met FreeIPA, de open-bron domain controller."
 
-#: data/content/server/index.html:110
+#: data/content/server/index.html:125
 msgid ""
-"“The Docker Role for Fedora Server was simple and fast to install so that "
-"you can run your Docker images. This makes a great testbed for beginners and"
-" experts with docker so that they can develop their applications on the "
-"fly.”"
+"“For DevConf US, I needed a system to manage the conference. I discovered "
+"regcfp, by Patrick Uiterwijk, which seemed to suit my needs. However, it "
+"won't run in nodejs 8 in F27. Launching F28 Server, choosing the "
+"\"nodejs:6\" stream, worked like a charm!”"
 msgstr ""
-"“De Docker rol voor Fedora Server was eenvoudig en snel te installeren zodat"
-" je jouw Docker images kun draaien. Dit biedt een goede proefbank voor "
-"beginnelingen en experts met docker zodat ze hun toepassingen al doende "
-"kunnen ontwikkelen.”"
+"“Voor DevConf US had ik een systeem nodig om de conferentie te beheren. Ik "
+"ontdekte regcfp, gemaakt door Patrick Uiterwijk, welke aan mijn behoefte "
+"leek te voldoen. Het wil echter niet in nodejs 8 in F27 draien. Het "
+"opstarten van F28 Server en het kiezen van de \"nodejs:6\" stream, werkte "
+"voortreffelijk."
 
-#: data/content/server/index.html:111
-msgid "Information Systems Student"
-msgstr "Information Systems Student"
+#: data/content/server/index.html:126
+msgid "DevConf US Conference Co-Chair"
+msgstr "DevConf US Conferentie Co-Chair"
 
-#: data/content/server/index.html:125 data/content/server/index.html:130
+#: data/content/server/index.html:139 data/content/server/index.html:144
 msgid "Ready to give Fedora Server a try?"
 msgstr "Ben je er klaar voor om Fedora Server uit te proberen?"
 
@@ -1832,15 +1851,7 @@ msgstr "Download Fedora %(rel)s Server"
 msgid "64-bit %sGB installation image"
 msgstr "64-bit %sGB installatie image"
 
-#: data/content/server/download/index.html:41
-msgid "Are you looking for Fedora 27 Modular Server Beta?"
-msgstr ""
-
-#: data/content/server/download/index.html:41
-msgid "Download it here!"
-msgstr ""
-
-#: data/content/server/download/index.html:45
+#: data/content/server/download/index.html:42
 msgid ""
 "The Fedora Server installation image allows you to make media for your "
 "computer that boots to the installer to directly install Fedora Server on to"
@@ -1850,7 +1861,7 @@ msgstr ""
 "opstart met het installatieprogramma zodat je Fedora Server direct op je "
 "harde schijf kunt installeren"
 
-#: data/content/server/download/index.html:46
+#: data/content/server/download/index.html:43
 msgid ""
 "To use this image, you need a drive that can create or \"burn\" DVDs, or a "
 "USB flash drive at least as big as the image."
@@ -1859,38 +1870,60 @@ msgstr ""
 "\"branden\", of een USB flash drive die tenminste even groot is als de "
 "image."
 
-#: data/content/server/download/index.html:55
-#: data/content/server/prerelease/index.html:54
+#: data/content/server/download/index.html:45
+#, python-format
+msgid ""
+"If you would like to try out the new modular features of Fedora Server, "
+"please visit the <a href=\"%(modules)s\">Using Modules</a> section of the "
+"Modularity Documentation. If you would like more information about "
+"Modularity in general, please see the <a href=\"%(website)s\">website on "
+"pagure</a>."
+msgstr ""
+
+#: data/content/server/download/index.html:53
+#: data/content/server/prerelease/index.html:53
 msgid "Netinstall Image:"
 msgstr "Netinstall Image:"
 
-#: data/content/server/download/index.html:57
-#: data/content/server/prerelease/index.html:56
-#: data/content/workstation/download/index.html:152
-#: data/content/workstation/prerelease/index.html:140
+#: data/content/server/download/index.html:55
+#: data/content/server/prerelease/index.html:55
+#: data/content/workstation/download/index.html:151
+#: data/content/workstation/prerelease/index.html:138
 #, python-format
 msgid "64-bit %sMB image"
 msgstr "64-bit %sMB image"
 
-#: data/content/server/download/index.html:75
-#: data/content/workstation/download/index.html:170
+#: data/content/server/download/index.html:62
+#: data/content/workstation/download/index.html:159
+#, python-format
+msgid "F%(rel)s Alpha"
+msgstr "F%(rel)s Alfa"
+
+#: data/content/server/download/index.html:66
+#: data/content/workstation/download/index.html:163
+#, python-format
+msgid "Download F%(rel)s Alpha images"
+msgstr "Download F%(rel)s Alfa images"
+
+#: data/content/server/download/index.html:72
+#: data/content/workstation/download/index.html:169
 #, python-format
 msgid "F%(rel)s Beta"
 msgstr "F%(rel)s Beta"
 
-#: data/content/server/download/index.html:79
-#: data/content/workstation/download/index.html:174
+#: data/content/server/download/index.html:76
+#: data/content/workstation/download/index.html:173
 #, python-format
 msgid "Download F%(rel)s Beta images"
 msgstr "Download F%(rel)s Beta images"
 
-#: data/content/server/download/index.html:87
-#: data/content/workstation/download/index.html:194
+#: data/content/server/download/index.html:83
+#: data/content/workstation/download/index.html:206
 msgid "Get more Fedora"
 msgstr "Verkrijg meer Fedora"
 
-#: data/content/server/download/index.html:91
-#: data/content/workstation/download/index.html:203
+#: data/content/server/download/index.html:87
+#: data/content/workstation/download/index.html:215
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr "ARM<span class=\"sup\">®</span> technologie"
 
@@ -1932,13 +1965,13 @@ msgstr ""
 
 #: data/content/server/prerelease/index.html:8
 #, python-format
-msgid "Download Fedora %s Modular Server"
-msgstr ""
+msgid "Download Fedora %s Server"
+msgstr "Download Fedora %s Server"
 
 #: data/content/server/prerelease/index.html:17
 #, python-format
-msgid "Download Fedora %(rel)s %(state)s Modular Server"
-msgstr ""
+msgid "Download Fedora %(rel)s %(state)s Server"
+msgstr "Download Fedora %(rel)s %(state)s Server"
 
 #: data/content/server/prerelease/index.html:19
 #, python-format
@@ -1973,7 +2006,18 @@ msgstr ""
 "href=\"%(commonbugs_url)s\">Common Bugs</a> pagina voor informatie over   "
 "veelvoorkomende fouten en hoe je ze kunt vermijden."
 
-#: data/content/server/prerelease/index.html:43
+#: data/content/server/prerelease/index.html:38
+#: data/content/workstation/prerelease/index.html:55
+#, python-format
+msgid "When is Fedora %s going to be released?"
+msgstr "Wanneer wordt Fedora %s vrijgegeven?"
+
+#: data/content/server/prerelease/index.html:39
+#: data/content/workstation/prerelease/index.html:56
+msgid "Read all the key milestones of the release schedule..."
+msgstr "Bekijk alle belangrijke mijlpalen van het vrijgave schema..."
+
+#: data/content/server/prerelease/index.html:42
 #, python-format
 msgid ""
 "Once you have downloaded an image, verify it for security and integrity. To "
@@ -2097,7 +2141,7 @@ msgstr "Download Fedora %(rel)s Workstation"
 #: data/content/workstation/download/index.html:41
 #: data/content/workstation/download/index.html:98
 #: data/content/workstation/prerelease/index.html:20
-#: data/content/workstation/prerelease/index.html:89
+#: data/content/workstation/prerelease/index.html:87
 #, python-format
 msgid "%s MB Fedora Media Writer for <strong>Mac OS X</strong>"
 msgstr "%s MB Fedora Media Writer voor <strong>Mac OS X</strong>"
@@ -2105,7 +2149,7 @@ msgstr "%s MB Fedora Media Writer voor <strong>Mac OS X</strong>"
 #: data/content/workstation/download/index.html:45
 #: data/content/workstation/download/index.html:126
 #: data/content/workstation/prerelease/index.html:24
-#: data/content/workstation/prerelease/index.html:111
+#: data/content/workstation/prerelease/index.html:109
 #, python-format
 msgid "64-bit %s GB ISO for <strong>Linux</strong>."
 msgstr "64-bit %s GB ISO voor <strong>Linux</strong>."
@@ -2119,7 +2163,7 @@ msgstr "<a href=\"%s\">Installeer via DNF</a> als je Fedora al gebruikt."
 #: data/content/workstation/download/index.html:50
 #: data/content/workstation/download/index.html:110
 #: data/content/workstation/prerelease/index.html:29
-#: data/content/workstation/prerelease/index.html:98
+#: data/content/workstation/prerelease/index.html:96
 #, python-format
 msgid "%s MB Fedora Media Writer for <strong>Windows</strong>"
 msgstr "%s MB Fedora Media Writer voor <strong>Windows</strong>"
@@ -2149,7 +2193,7 @@ msgid "Fedora Media Writer (download above)"
 msgstr "Fedora Media Writer (download hierboven)"
 
 #: data/content/workstation/download/index.html:69
-#: data/content/workstation/prerelease/index.html:66
+#: data/content/workstation/prerelease/index.html:64
 #, python-format
 msgid "A USB Flash drive with at least %s GB space available"
 msgstr "Een USB Flash drive met ten minste %s GB beschikbare ruimte"
@@ -2170,7 +2214,7 @@ msgstr ""
 "je USB flash drive."
 
 #: data/content/workstation/download/index.html:72
-#: data/content/workstation/prerelease/index.html:80
+#: data/content/workstation/prerelease/index.html:78
 msgid ""
 "Optionally, you may install Fedora Workstation to a laptop or desktop "
 "computer that has at least 1 GHz processor, 1 GB RAM, and 10 GB space "
@@ -2187,30 +2231,30 @@ msgstr ""
 "aanwijzingen op het scherm om de installatie uit te voeren."
 
 #: data/content/workstation/download/index.html:74
-#: data/content/workstation/prerelease/index.html:82
+#: data/content/workstation/prerelease/index.html:80
 msgid "Supported Platforms"
 msgstr "Ondersteunde platformen"
 
 #: data/content/workstation/download/index.html:75
-#: data/content/workstation/prerelease/index.html:83
+#: data/content/workstation/prerelease/index.html:81
 msgid "Fedora Media Writer supports the following platforms:"
 msgstr "Fedora Media Writer ondersteunt de volgende platformen:"
 
 #: data/content/workstation/download/index.html:77
 #: data/content/workstation/download/index.html:97
-#: data/content/workstation/prerelease/index.html:88
+#: data/content/workstation/prerelease/index.html:86
 msgid "Mac OS X"
 msgstr "Mac OS X"
 
 #: data/content/workstation/download/index.html:78
 #: data/content/workstation/download/index.html:109
-#: data/content/workstation/prerelease/index.html:97
+#: data/content/workstation/prerelease/index.html:95
 msgid "Windows"
 msgstr "Windows"
 
 #: data/content/workstation/download/index.html:79
 #: data/content/workstation/download/index.html:121
-#: data/content/workstation/prerelease/index.html:106
+#: data/content/workstation/prerelease/index.html:104
 msgid "Linux"
 msgstr "Linux"
 
@@ -2255,66 +2299,80 @@ msgid "View all platform downloads"
 msgstr "Bekijk alle platform downloads"
 
 #: data/content/workstation/download/index.html:122
-#: data/content/workstation/prerelease/index.html:107
+#: data/content/workstation/prerelease/index.html:105
 msgid "Available via DNF for <strong>Fedora</strong>"
 msgstr "Beschikbaar via DNF voor <strong>Fedora</strong>"
 
 #: data/content/workstation/download/index.html:123
-#: data/content/workstation/prerelease/index.html:108
+#: data/content/workstation/prerelease/index.html:106
 msgid "More details"
 msgstr "Meer details"
 
 #: data/content/workstation/download/index.html:127
-#: data/content/workstation/prerelease/index.html:112
+#: data/content/workstation/prerelease/index.html:110
 msgid "How to use this ISO?"
 msgstr "Hoe gebruik je deze ISO?"
 
 #: data/content/workstation/download/index.html:129
-#: data/content/workstation/prerelease/index.html:114
+#: data/content/workstation/prerelease/index.html:112
 msgid "Verify this image"
 msgstr "Verifieer deze image"
 
 #: data/content/workstation/download/index.html:146
-#: data/content/workstation/prerelease/index.html:134
+#: data/content/workstation/prerelease/index.html:132
 #, python-format
 msgid "64-bit %sGB Live image"
 msgstr "64-bit %sGB Live image"
 
-#: data/content/workstation/download/index.html:150
-#: data/content/workstation/prerelease/index.html:138
+#: data/content/workstation/download/index.html:147
+#: data/content/workstation/prerelease/index.html:133
+#, python-format
+msgid "32-bit %sGB Live image"
+msgstr "32-bit %sGB Live image"
+
+#: data/content/workstation/download/index.html:149
+#: data/content/workstation/prerelease/index.html:136
 msgid "Netinstall Images:"
 msgstr "Netinstall images:"
 
-#: data/content/workstation/download/index.html:153
+#: data/content/workstation/download/index.html:152
+#: data/content/workstation/prerelease/index.html:139
 #, python-format
 msgid "32-bit %sMB image"
 msgstr "32-bit %sMB image"
 
-#: data/content/workstation/download/index.html:160
-#, python-format
-msgid "F%(rel)s Alpha"
-msgstr "F%(rel)s Alfa"
+#: data/content/workstation/download/index.html:183
+msgid "Try Atomic Workstation"
+msgstr ""
 
-#: data/content/workstation/download/index.html:164
-#, python-format
-msgid "Download F%(rel)s Alpha images"
-msgstr "Download F%(rel)s Alfa images"
+#: data/content/workstation/download/index.html:184
+msgid "Atomic provides an immutable OS image and updates via OSTree."
+msgstr ""
 
-#: data/content/workstation/download/index.html:181
+#: data/content/workstation/download/index.html:186
+#, python-format
+msgid "64-bit %sGB Atomic image"
+msgstr ""
+
+#: data/content/workstation/download/index.html:188
+msgid "Learn more"
+msgstr ""
+
+#: data/content/workstation/download/index.html:193
 #, python-format
 msgid "<a href=\"%(fmagazine_url)s\"><strong>Release Announcement</strong></a>"
 msgstr "<a href=\"%(fmagazine_url)s\"><strong>Vrijgave aankondiging</strong></a>"
 
-#: data/content/workstation/download/index.html:182
+#: data/content/workstation/download/index.html:194
 msgid "Read the full Release Announcement on Fedora Magazine."
 msgstr "Lees de volledige Vrijgave aankondiging op Fedora Magazine."
 
-#: data/content/workstation/download/index.html:183
+#: data/content/workstation/download/index.html:195
 #, python-format
 msgid "<a href=\"%(release_notes)s\"><strong>Release Notes</strong></a>"
-msgstr ""
+msgstr "<a href=\"%(release_notes)s\"><strong>Vrijgave-informatie</strong></a>"
 
-#: data/content/workstation/download/index.html:184
+#: data/content/workstation/download/index.html:196
 msgid ""
 "Learn about changes since the last version of Fedora as well as minimum "
 "requirements and recommendations for running Fedora."
@@ -2322,12 +2380,12 @@ msgstr ""
 "Kom meer te weten over de veranderingen sinds de vorige versie van Fedora en"
 " de minimale vereisten en aanbevelingen om Fedora uit te voeren."
 
-#: data/content/workstation/download/index.html:185
+#: data/content/workstation/download/index.html:197
 #, python-format
 msgid "<a href=\"%(install_guide)s\"><strong>Installation Guide</strong></a>"
-msgstr ""
+msgstr "<a href=\"%(install_guide)s\"><strong>Installatiegids</strong></a>"
 
-#: data/content/workstation/download/index.html:186
+#: data/content/workstation/download/index.html:198
 msgid ""
 "We recommend you look through this before installing to your system, since "
 "it answers many common questions."
@@ -2335,14 +2393,14 @@ msgstr ""
 "We raden je aan om dit te bekijken voordat je je systeem installeert, omdat "
 "het vele veel voorkomende  vragen beantwoord."
 
-#: data/content/workstation/download/index.html:187
-#: data/content/workstation/prerelease/index.html:146
+#: data/content/workstation/download/index.html:199
+#: data/content/workstation/prerelease/index.html:144
 #, python-format
 msgid "<a href=\"%(commonbugs_url)s\"><strong>Common Bugs</strong></a>"
 msgstr "<a href=\"%(commonbugs_url)s\"><strong>Common Bugs</strong></a>"
 
-#: data/content/workstation/download/index.html:188
-#: data/content/workstation/prerelease/index.html:147
+#: data/content/workstation/download/index.html:200
+#: data/content/workstation/prerelease/index.html:145
 msgid ""
 "An excellent resource to consult in case you run into any issues installing "
 "or running Fedora."
@@ -2350,13 +2408,13 @@ msgstr ""
 "Een uitstekende hulpbron om te raadplegen als je tegen problemen aanloopt "
 "bij het installeren of uitvoeren van Fedora."
 
-#: data/content/workstation/download/index.html:190
-#: data/content/workstation/prerelease/index.html:151
+#: data/content/workstation/download/index.html:202
+#: data/content/workstation/prerelease/index.html:149
 msgid "What does \"Live\" mean?"
 msgstr "Wat betekent \"Live\"?"
 
-#: data/content/workstation/download/index.html:191
-#: data/content/workstation/prerelease/index.html:152
+#: data/content/workstation/download/index.html:203
+#: data/content/workstation/prerelease/index.html:150
 msgid ""
 "Fedora Media Writer will create a complete, running Fedora Workstation you "
 "can run right away off of a USB drive. You can use the Live image to test "
@@ -2367,8 +2425,8 @@ msgstr ""
 "image gebruiken voor het uittesten en spelen met Fedora voordat je "
 "veranderingen maakt op je harde schijf."
 
-#: data/content/workstation/download/index.html:192
-#: data/content/workstation/prerelease/index.html:153
+#: data/content/workstation/download/index.html:204
+#: data/content/workstation/prerelease/index.html:151
 msgid ""
 "When you are ready, you can install Fedora to your hard disk from within "
 "this \"live\" version of Fedora Workstation."
@@ -2376,13 +2434,13 @@ msgstr ""
 "Als je er klaar voor bent, kun je Fedora installeren op je harde schijf "
 "vanuit deze \"live\" versie van Fedora Workstation."
 
-#: data/content/workstation/download/index.html:197
-#: data/templates/footer.html:43
+#: data/content/workstation/download/index.html:209
+#: data/templates/footer.html:44
 msgid "Fedora Spins"
 msgstr "Fedora Spins"
 
-#: data/content/workstation/download/index.html:200
-#: data/templates/footer.html:44
+#: data/content/workstation/download/index.html:212
+#: data/templates/footer.html:45
 msgid "Fedora Labs"
 msgstr "Fedora Labs"
 
@@ -2408,39 +2466,21 @@ msgstr ""
 "href=\"%(team_url)s\">Workstation Working Group</a>. Stel vragen hierover op"
 " hun <a href=\"%(team_list)s\">maillijst</a> of %(team_irc)s op freenode."
 
-#: data/content/workstation/prerelease/index.html:54
-msgid ""
-"Are you looking for 32 bit images of F27 Beta? Due to some technical issues "
-"we cannot offer them, but they will be available for the F27 final release "
-"date. Stay tuned!"
-msgstr ""
-"Zoek je naar 32 bit images van F27 Beta? Door technische problemen kunnen we je deze niet aanbieden, maar ze zullen beschikbaar zijn voor de\n"
-"F27 definitieve vrijgavedatum. Blijf kijken!"
-
-#: data/content/workstation/prerelease/index.html:57
-#, python-format
-msgid "When is Fedora %s going to be released?"
-msgstr "Wanneer wordt Fedora %s vrijgegeven?"
-
-#: data/content/workstation/prerelease/index.html:58
-msgid "Read all the key milestones of the release schedule..."
-msgstr "Bekijk alle belangrijke mijlpalen van het vrijgave schema..."
-
-#: data/content/workstation/prerelease/index.html:62
+#: data/content/workstation/prerelease/index.html:60
 msgid "Running Pre-Release Versions of Fedora Workstation"
 msgstr "Het uitvoeren van Pre-Release Versies van Fedora Workstation"
 
-#: data/content/workstation/prerelease/index.html:63
+#: data/content/workstation/prerelease/index.html:61
 msgid "To run a prerelease version of Fedora Workstation, you will need:"
 msgstr ""
 "Om een prerelease versie van Fedora Workstation uit te voeren, heb je het "
 "volgende nodig:"
 
-#: data/content/workstation/prerelease/index.html:65
+#: data/content/workstation/prerelease/index.html:63
 msgid "Fedora Media Writer (Download available below)"
 msgstr "Fedora Media Writer (Download is hier onder beschikbaar)"
 
-#: data/content/workstation/prerelease/index.html:67
+#: data/content/workstation/prerelease/index.html:65
 #, python-format
 msgid ""
 "<a href=\"%s\">A live image ISO of the pre-release version of Fedora</a> you"
@@ -2449,7 +2489,7 @@ msgstr ""
 "<a href=\"%s\">Een live image ISO van de pre-release versie van Fedora</a> "
 "die je wilkt uitvoeren"
 
-#: data/content/workstation/prerelease/index.html:69
+#: data/content/workstation/prerelease/index.html:67
 msgid ""
 "WARNING: This procedure destroys all data on your USB media. Make sure to "
 "back up any important files from your USB media before you do this."
@@ -2458,15 +2498,15 @@ msgstr ""
 "zeker van dat je een back-up maakt van belangerijke bestanden op je USB "
 "media voordat je dit doet."
 
-#: data/content/workstation/prerelease/index.html:71
+#: data/content/workstation/prerelease/index.html:69
 msgid "Download the Fedora Media Writer app below."
 msgstr "Download de Fedora Media Writer app hier onder."
 
-#: data/content/workstation/prerelease/index.html:72
+#: data/content/workstation/prerelease/index.html:70
 msgid "Download the desired ISO image."
 msgstr "Download de gewenste ISO image."
 
-#: data/content/workstation/prerelease/index.html:73
+#: data/content/workstation/prerelease/index.html:71
 msgid ""
 "Open the Fedora Media Writer app. You may need to provide a password to give"
 " the app the right permissions."
@@ -2474,15 +2514,15 @@ msgstr ""
 "Open de Fedora Media Writer app. Je moet misschien een wachtwoord aanbieden "
 "om de app de juiste rechten te geven."
 
-#: data/content/workstation/prerelease/index.html:74
+#: data/content/workstation/prerelease/index.html:72
 msgid "Select \"Custom OS...\" from the list."
 msgstr "Selecteer \"Aangepast OS...\" uit de lijst."
 
-#: data/content/workstation/prerelease/index.html:75
+#: data/content/workstation/prerelease/index.html:73
 msgid "On the Custom OS page, select the \"Select Live ISO\" button."
 msgstr "Op de Aangepast OS pagina, selecteeer je de \"Selecteer Live ISO\" knop."
 
-#: data/content/workstation/prerelease/index.html:76
+#: data/content/workstation/prerelease/index.html:74
 msgid ""
 "In the file selection window, locate and select the ISO image you "
 "downloaded."
@@ -2490,7 +2530,7 @@ msgstr ""
 "In het bestandselectie venster, zoek en selecteer je de ISO image die je "
 "gedownload hebt."
 
-#: data/content/workstation/prerelease/index.html:77
+#: data/content/workstation/prerelease/index.html:75
 msgid ""
 "Insert your USB stick in the computer. If you used your USB stick previously"
 " to create live media, you may need to restore it to factory settings.  The "
@@ -2500,7 +2540,7 @@ msgstr ""
 "hebt om live media te maken, moet je deze misschien herstellen naar de "
 "fabrieksinstelling.  De app zal in dit geval je hierom vragen"
 
-#: data/content/workstation/prerelease/index.html:78
+#: data/content/workstation/prerelease/index.html:76
 msgid ""
 "Select \"Create Live USB\" to write the image. Wait until the process is "
 "finished before you remove the media and close the app."
@@ -2508,11 +2548,15 @@ msgstr ""
 "Selecteer \"Live USB aabmaken\" om de image te schrijven. Wacht to het "
 "process klaar is voordat je de media verwijdert en de app afsluit."
 
-#: data/content/workstation/prerelease/index.html:125
+#: data/content/workstation/prerelease/index.html:123
 msgid "Validate 64-bit!"
 msgstr "Valideer 64-bit!"
 
-#: data/content/workstation/prerelease/index.html:148
+#: data/content/workstation/prerelease/index.html:126
+msgid "Validate 32-bit!"
+msgstr "Valideer 32-bit!"
+
+#: data/content/workstation/prerelease/index.html:146
 msgid ""
 "<a href=\"https://fedoraproject.org/wiki/QA/Join#release-"
 "validation\"><strong>How to test pre-releases</strong></a>"
@@ -2520,7 +2564,7 @@ msgstr ""
 "<a href=\"https://fedoraproject.org/wiki/QA/Join#release-"
 "validation\"><strong>Hoe test je pre-releases</strong></a>"
 
-#: data/content/workstation/prerelease/index.html:149
+#: data/content/workstation/prerelease/index.html:147
 msgid "Fedora wiki guide on how to help test pre-release versions of Fedora."
 msgstr ""
 "Fedora wiki gids voor hoe je helpt met het testen van pre-release versies "
@@ -2599,88 +2643,88 @@ msgstr "Fedora Magazine"
 msgid "Legal"
 msgstr "Legaal"
 
-#: data/templates/footer.html:40
+#: data/templates/footer.html:41
 msgid "Get Fedora Workstation"
 msgstr "Verkrijg Fedora Workstation"
 
-#: data/templates/footer.html:41
+#: data/templates/footer.html:42
 msgid "Get Fedora Server"
 msgstr "Verkrijg Fedora Server"
 
-#: data/templates/footer.html:42
+#: data/templates/footer.html:43
 msgid "Get Fedora Atomic"
 msgstr "Verkrijg Fedora Atomic"
 
-#: data/templates/footer.html:45
+#: data/templates/footer.html:46
 msgid "Fedora ARM<span class=\"sup\">®</span>"
 msgstr "Fedora ARM<span class=\"sup\">®</span>"
 
-#: data/templates/footer.html:46
+#: data/templates/footer.html:47
 msgid "Alternative Downloads"
 msgstr "Alternatieve downloads"
 
-#: data/templates/footer.html:53
+#: data/templates/footer.html:54
 msgid "Support"
 msgstr "Ondersteuning"
 
-#: data/templates/footer.html:56
+#: data/templates/footer.html:57
 msgid "Get Help"
 msgstr "Verkrijg hulp"
 
-#: data/templates/footer.html:57
+#: data/templates/footer.html:58
 msgid "Ask Fedora"
 msgstr "Vraag het Fedora"
 
-#: data/templates/footer.html:58
+#: data/templates/footer.html:59
 msgid "Common Bugs"
 msgstr "Bekende bugs"
 
-#: data/templates/footer.html:59
+#: data/templates/footer.html:60
 msgid "Fedora Developer Portal"
 msgstr "Fedora Ontwikkelingsportaal"
 
-#: data/templates/footer.html:60
+#: data/templates/footer.html:61
 msgid "Installation Guide"
 msgstr "Installatiegids"
 
-#: data/templates/footer.html:66
+#: data/templates/footer.html:67
 msgid "Join"
 msgstr "Doe mee"
 
-#: data/templates/footer.html:69
+#: data/templates/footer.html:70
 msgid "Join Fedora"
 msgstr "Aan Fedora deelnemen"
 
-#: data/templates/footer.html:70
+#: data/templates/footer.html:71
 msgid "Planet Fedora"
 msgstr "Planeet Fedora"
 
-#: data/templates/footer.html:71
+#: data/templates/footer.html:72
 msgid "Fedora SIGs"
 msgstr "Fedora SIG's"
 
-#: data/templates/footer.html:72
+#: data/templates/footer.html:73
 msgid "Fedora Account System"
 msgstr "Fedora Account systeem"
 
-#: data/templates/footer.html:73
+#: data/templates/footer.html:74
 msgid "Fedora Community"
 msgstr "Fedoragemeenschap"
 
-#: data/templates/footer.html:87
+#: data/templates/footer.html:88
 msgid "Fedora is sponsored by Red Hat."
 msgstr "Fedora wordt gesponsord door Red Hat."
 
-#: data/templates/footer.html:88
+#: data/templates/footer.html:89
 msgid "Learn more about the relationship between Red Hat and Fedora »"
 msgstr "Kom meer te weten over de relatie tussen Red Hat en Fedora »"
 
-#: data/templates/footer.html:89
+#: data/templates/footer.html:90
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
 msgstr "© %(year)s Red Hat, Inc. en anderen."
 
-#: data/templates/footer.html:89
+#: data/templates/footer.html:90
 msgid ""
 "Please send any comments or corrections to the <a href=\"//pagure.io/fedora-"
 "websites\">websites team</a>."
@@ -2688,11 +2732,11 @@ msgstr ""
 "Stuur commentaar of correcties naar het <a href=\"//pagure.io/fedora-"
 "websites\">websites team</a>."
 
-#: data/templates/footer.html:95
+#: data/templates/footer.html:96
 msgid "Change Language"
 msgstr "Verander de taal"
 
-#: data/templates/footer.html:99
+#: data/templates/footer.html:100
 msgid "OK"
 msgstr "OK"
 
@@ -2708,6 +2752,14 @@ msgstr ""
 msgid "Lean. Powerful. Everycloud ready."
 msgstr "Gestroomlijnd. Krachtig. Klaar voor Everycloud."
 
+#: data/templates/productselector-server.html:14
+msgid ""
+"The latest technology. A stable foundation. Together, for your applications "
+"and services."
+msgstr ""
+"De nieuwste technologie. Een stabiele fundering. Bij elkaar voor je "
+"toepassingen en services."
+
 #: data/templates/generic/docs-links.html:8
 msgid "Documentation and other resources"
 msgstr "Documentatie en andere hulpbronnen"
@@ -2716,24 +2768,24 @@ msgstr "Documentatie en andere hulpbronnen"
 #, python-format
 msgid ""
 "Before installing Fedora, you may want to confirm your system meets minimum "
-"requirements for Fedora. Consult <a href=\"%s\">the online release notes</a>"
-" to see minimum requirements and recommendations."
+"requirements for Fedora. Consult <a href=\"%(release_notes)s\">the online "
+"release notes</a> to see minimum requirements and recommendations."
 msgstr ""
 "Voor het installeren van Fedora wil je er misschien zeker van zijn dat je "
 "systeem voldoet aan de minimale eisen voor Fedora. Raadpleeg <a "
-"href=\"%s\">de online vrijgave-informatie</a> voor het bekijken van de "
-"minimale eisen en aanbevelingen."
+"href=\"%(release_notes)s\">de online vrijgave-informatie</a> voor het "
+"bekijken van de minimale eisen en aanbevelingen."
 
 #: data/templates/generic/docs-links.html:10
 #, python-format
 msgid ""
-"There is also a <a href=\"%s\">complete Installation Guide</a> available. We"
-" recommend you look through it before installing to your system, since it "
-"answers many common questions."
+"There is also a <a href=\"%(install_guide)s\">complete Installation "
+"Guide</a> available. We recommend you look through it before installing to "
+"your system, since it answers many common questions."
 msgstr ""
-"Er is ook een <a href=\"%s\">complete Installatiegids</a> beschikbaar. We "
-"bevelen je aan om deze door te kijken voor het installeren van je systeem, "
-"omdat het antwoord geeft op veel voorkomende vragen."
+"Er is ook een <a href=\"%(install_guide)s\">complete Installatiegids</a> "
+"beschikbaar. We bevelen je aan om deze door te kijken voor het installeren "
+"van je systeem, omdat het antwoord geeft op veel voorkomende vragen."
 
 #: data/templates/generic/other-media-sources.html:8
 msgid "Other ways of obtaining media"

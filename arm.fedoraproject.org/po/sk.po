@@ -1,11 +1,12 @@
 # feonsu <feonsu@gmail.com>, 2016. #zanata
 # feonsu <feonsu@gmail.com>, 2017. #zanata
+# feonsu <feonsu@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-11-14 12:28+0100\n"
-"PO-Revision-Date: 2017-10-17 11:10-0400\n"
+"POT-Creation-Date: 2018-04-30 22:26+0200\n"
+"PO-Revision-Date: 2018-04-04 05:58-0400\n"
 "Last-Translator: feonsu <feonsu@gmail.com>\n"
 "Language-Team: Slovak\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sk\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
-"Generated-By: Babel 1.3\n"
+"Generated-By: Babel 2.3.4\n"
 "X-Generator: Zanata 3.9.6\n"
 
 #: data/content/index.html:8
@@ -34,13 +35,13 @@ msgstr ""
 msgid "Fedora %(rel)s released! Get it now."
 msgstr "Bola vydaná Fedora %(rel)s! Stiahnite ju teraz."
 
-#: data/content/index.html:56 data/content/index.html:103
-#: data/content/index.html:140
+#: data/content/index.html:56 data/content/index.html:102
+#: data/content/index.html:138
 msgid "ARM<span class=\"sup\">®</span> Servers"
 msgstr "Servery ARM<span class=\"sup\">®</span>"
 
-#: data/content/index.html:61 data/content/index.html:108
-#: data/content/index.html:145
+#: data/content/index.html:61 data/content/index.html:107
+#: data/content/index.html:143
 msgid ""
 "These images are geared towards ARM-based computers used as servers, "
 "typically in a headless environment."
@@ -48,68 +49,87 @@ msgstr ""
 "Tieto obrazy sú prispôsobené serverom založených na ARM, ktoré sú obyčajne "
 "spravované na diaľku bez grafického rozhrania."
 
-#: data/content/index.html:84 data/content/index.html:127
-#: data/content/index.html:166 data/content/prerelease.html:64
-#: data/content/prerelease.html:73
-msgid "Fedora Minimal"
-msgstr "Fedora Minimal"
+#: data/content/index.html:69 data/content/index.html:116
+#: data/content/index.html:152 data/content/prerelease.html:46
+#: data/content/prerelease.html:55
+msgid "Fedora Server"
+msgstr "Fedora Server"
 
-#: data/content/index.html:87 data/content/index.html:267
-#: data/content/prerelease.html:49 data/content/prerelease.html:67
-#: data/content/prerelease.html:215
+#: data/content/index.html:72 data/content/index.html:86
+#: data/content/index.html:278 data/content/prerelease.html:49
+#: data/content/prerelease.html:67 data/content/prerelease.html:213
 #, python-format
 msgid "%sMB raw image"
 msgstr "Surový obraz (%sMB)"
 
-#: data/content/index.html:90 data/content/index.html:128
-#: data/content/index.html:169 data/content/index.html:200
-#: data/content/index.html:214 data/content/index.html:228
-#: data/content/index.html:242 data/content/index.html:256
-#: data/content/index.html:270 data/content/index.html:298
-#: data/content/index.html:307 data/content/index.html:316
-#: data/content/index.html:325 data/content/index.html:334
-#: data/content/index.html:343 data/content/index.html:372
-#: data/content/index.html:383 data/content/index.html:394
-#: data/content/index.html:405 data/content/index.html:416
-#: data/content/index.html:427 data/content/prerelease.html:52
-#: data/content/prerelease.html:56 data/content/prerelease.html:70
-#: data/content/prerelease.html:74 data/content/prerelease.html:88
-#: data/content/prerelease.html:92 data/content/prerelease.html:106
-#: data/content/prerelease.html:110 data/content/prerelease.html:124
-#: data/content/prerelease.html:128 data/content/prerelease.html:180
-#: data/content/prerelease.html:184 data/content/prerelease.html:218
-#: data/content/prerelease.html:222 data/templates/footer.html:37
+#: data/content/index.html:75 data/content/index.html:89
+#: data/content/index.html:117 data/content/index.html:126
+#: data/content/index.html:155 data/content/index.html:166
+#: data/content/index.html:197 data/content/index.html:211
+#: data/content/index.html:225 data/content/index.html:239
+#: data/content/index.html:253 data/content/index.html:267
+#: data/content/index.html:281 data/content/index.html:309
+#: data/content/index.html:318 data/content/index.html:327
+#: data/content/index.html:336 data/content/index.html:345
+#: data/content/index.html:354 data/content/index.html:363
+#: data/content/index.html:392 data/content/index.html:403
+#: data/content/index.html:414 data/content/index.html:425
+#: data/content/index.html:436 data/content/index.html:447
+#: data/content/index.html:458 data/content/index.html:489
+#: data/content/index.html:517 data/content/index.html:546
+#: data/content/prerelease.html:52 data/content/prerelease.html:56
+#: data/content/prerelease.html:70 data/content/prerelease.html:74
+#: data/content/prerelease.html:88 data/content/prerelease.html:92
+#: data/content/prerelease.html:106 data/content/prerelease.html:110
+#: data/content/prerelease.html:124 data/content/prerelease.html:128
+#: data/content/prerelease.html:142 data/content/prerelease.html:146
+#: data/content/prerelease.html:160 data/content/prerelease.html:164
+#: data/content/prerelease.html:178 data/content/prerelease.html:182
+#: data/content/prerelease.html:216 data/content/prerelease.html:220
+#: data/templates/footer.html:38
 msgid "Download"
 msgstr "Stiahnuť"
 
-#: data/content/index.html:90 data/content/index.html:128
-#: data/content/index.html:169 data/content/index.html:200
-#: data/content/index.html:214 data/content/index.html:228
-#: data/content/index.html:242 data/content/index.html:256
-#: data/content/index.html:270 data/content/index.html:298
-#: data/content/index.html:307 data/content/index.html:316
-#: data/content/index.html:325 data/content/index.html:334
-#: data/content/index.html:343 data/content/index.html:372
-#: data/content/index.html:383 data/content/index.html:394
-#: data/content/index.html:405 data/content/index.html:416
-#: data/content/index.html:427 data/content/prerelease.html:52
-#: data/content/prerelease.html:56 data/content/prerelease.html:70
-#: data/content/prerelease.html:74 data/content/prerelease.html:88
-#: data/content/prerelease.html:92 data/content/prerelease.html:106
-#: data/content/prerelease.html:110 data/content/prerelease.html:124
-#: data/content/prerelease.html:128 data/content/prerelease.html:180
-#: data/content/prerelease.html:184 data/content/prerelease.html:218
-#: data/content/prerelease.html:222
+#: data/content/index.html:75 data/content/index.html:89
+#: data/content/index.html:117 data/content/index.html:126
+#: data/content/index.html:155 data/content/index.html:166
+#: data/content/index.html:197 data/content/index.html:211
+#: data/content/index.html:225 data/content/index.html:239
+#: data/content/index.html:253 data/content/index.html:267
+#: data/content/index.html:281 data/content/index.html:309
+#: data/content/index.html:318 data/content/index.html:327
+#: data/content/index.html:336 data/content/index.html:345
+#: data/content/index.html:354 data/content/index.html:363
+#: data/content/index.html:392 data/content/index.html:403
+#: data/content/index.html:414 data/content/index.html:425
+#: data/content/index.html:436 data/content/index.html:447
+#: data/content/index.html:458 data/content/index.html:489
+#: data/content/index.html:517 data/content/index.html:546
+#: data/content/prerelease.html:52 data/content/prerelease.html:56
+#: data/content/prerelease.html:70 data/content/prerelease.html:74
+#: data/content/prerelease.html:88 data/content/prerelease.html:92
+#: data/content/prerelease.html:106 data/content/prerelease.html:110
+#: data/content/prerelease.html:124 data/content/prerelease.html:128
+#: data/content/prerelease.html:142 data/content/prerelease.html:146
+#: data/content/prerelease.html:160 data/content/prerelease.html:164
+#: data/content/prerelease.html:178 data/content/prerelease.html:182
+#: data/content/prerelease.html:216 data/content/prerelease.html:220
 msgid "Verify"
 msgstr "Overiť"
 
-#: data/content/index.html:181 data/content/index.html:283
-#: data/content/index.html:355
+#: data/content/index.html:83 data/content/index.html:125
+#: data/content/index.html:163 data/content/prerelease.html:64
+#: data/content/prerelease.html:73
+msgid "Fedora Minimal"
+msgstr "Fedora Minimal"
+
+#: data/content/index.html:178 data/content/index.html:294
+#: data/content/index.html:375
 msgid "Desktop Computing"
 msgstr "Stolné počítače"
 
-#: data/content/index.html:186 data/content/index.html:288
-#: data/content/index.html:360
+#: data/content/index.html:183 data/content/index.html:299
+#: data/content/index.html:380
 msgid ""
 "These images are for ARM-based mediacenters, kiosks, laptops, and other ARM-"
 "powered devices where a graphical interface is desired."
@@ -117,55 +137,83 @@ msgstr ""
 "Tieto obrazy sú vhodné pre multimediálne centrá, kiosky, notebooky a ďalšie "
 "zariadenia založené na ARM, kde sa vyžaduje grafické rozhranie."
 
-#: data/content/index.html:194 data/content/index.html:297
-#: data/content/index.html:369 data/content/prerelease.html:82
+#: data/content/index.html:191 data/content/index.html:308
+#: data/content/index.html:389 data/content/prerelease.html:82
 #: data/content/prerelease.html:91
 msgid "Fedora Workstation"
 msgstr "Fedora Workstation"
 
-#: data/content/index.html:197 data/content/index.html:211
-#: data/content/index.html:225 data/content/index.html:239
-#: data/content/index.html:253 data/content/prerelease.html:85
+#: data/content/index.html:194 data/content/index.html:208
+#: data/content/index.html:222 data/content/index.html:236
+#: data/content/index.html:250 data/content/index.html:264
+#: data/content/index.html:486 data/content/prerelease.html:85
 #: data/content/prerelease.html:103 data/content/prerelease.html:121
-#: data/content/prerelease.html:177
+#: data/content/prerelease.html:139 data/content/prerelease.html:157
+#: data/content/prerelease.html:175
 #, python-format
 msgid "%sGB raw image"
 msgstr "Surový obraz (%sGB)"
 
-#: data/content/index.html:208 data/content/index.html:306
-#: data/content/index.html:380 data/content/prerelease.html:100
+#: data/content/index.html:205 data/content/index.html:317
+#: data/content/index.html:400 data/content/prerelease.html:100
 #: data/content/prerelease.html:109
 msgid "KDE Plasma Desktop"
 msgstr "Pracovné prostredie KDE"
 
-#: data/content/index.html:222 data/content/index.html:315
-#: data/content/index.html:391 data/content/prerelease.html:118
+#: data/content/index.html:219 data/content/index.html:326
+#: data/content/index.html:411 data/content/prerelease.html:118
 #: data/content/prerelease.html:127
 msgid "Xfce Desktop"
 msgstr "Pracovné prostredie Xfce"
 
-#: data/content/index.html:236 data/content/index.html:324
-#: data/content/index.html:402
+#: data/content/index.html:233 data/content/index.html:335
+#: data/content/index.html:422 data/content/prerelease.html:154
+#: data/content/prerelease.html:163
 msgid "LXQt Desktop"
 msgstr "Pracovné prostredie LXQt"
 
-#: data/content/index.html:250 data/content/index.html:333
-#: data/content/index.html:413 data/content/prerelease.html:174
-#: data/content/prerelease.html:183
+#: data/content/index.html:247 data/content/index.html:344
+#: data/content/index.html:433 data/content/prerelease.html:136
+#: data/content/prerelease.html:145
+msgid "LXDE Desktop"
+msgstr "Pracovné prostredie LXDE"
+
+#: data/content/index.html:261 data/content/index.html:353
+#: data/content/index.html:444 data/content/prerelease.html:172
+#: data/content/prerelease.html:181
 msgid "MATE-Compiz Desktop"
 msgstr "Pracovné prostredie MATE"
 
-#: data/content/index.html:264 data/content/index.html:342
-#: data/content/index.html:424 data/content/prerelease.html:212
-#: data/content/prerelease.html:221
+#: data/content/index.html:275 data/content/index.html:362
+#: data/content/index.html:455 data/content/prerelease.html:210
+#: data/content/prerelease.html:219
 msgid "Sugar on a Stick"
 msgstr "Pracovné prostredie Sugar"
 
-#: data/content/index.html:528
+#: data/content/index.html:470 data/content/index.html:502
+#: data/content/index.html:529
+msgid "ARM<span class=\"sup\">®</span> Labs"
+msgstr "ARM<span class=\"sup\">®</span> Lab"
+
+#: data/content/index.html:475 data/content/index.html:507
+#: data/content/index.html:534
+msgid ""
+"These images are for ARM-based devices where a bundle of purpose-drive "
+"software is needed."
+msgstr ""
+"Tieto obrazy sú vhodné pre ARM zariadenia, kde je potrebný balík špeciálneho"
+" softvéru."
+
+#: data/content/index.html:483 data/content/index.html:516
+#: data/content/index.html:543
+msgid "Python-Classroom"
+msgstr "Učebňa pythonu"
+
+#: data/content/index.html:558
 msgid "What is ARM<span class=\"sup\">®</span> Technology?"
 msgstr "Čo je ARM<span class=\"sup\">®</span> technoógia?"
 
-#: data/content/index.html:529 data/content/prerelease.html:239
+#: data/content/index.html:559 data/content/prerelease.html:237
 msgid ""
 "ARM microprocessors are the most widely-produced processor family in the "
 "world; they have historically been used in cell phones and embedded "
@@ -176,7 +224,7 @@ msgstr ""
 "používané v mobilných telefónoch a embedded zariadeniach, a stále viac sa "
 "používajú v tabletoch a serveroch s nízkou spotrebou."
 
-#: data/content/index.html:530 data/content/prerelease.html:240
+#: data/content/index.html:560 data/content/prerelease.html:238
 msgid ""
 "The Fedora ARM project is an initiative to bring Fedora to this processor "
 "family. The images provided here are versions of Fedora tailored for running"
@@ -186,15 +234,15 @@ msgstr ""
 "procesory. Obrazy dostupné na tejto stránke sú verziou Fedory prispôsobené "
 "pre beh systémov založených na ARM."
 
-#: data/content/index.html:541 data/content/prerelease.html:251
+#: data/content/index.html:571 data/content/prerelease.html:249
 msgid "Support Resources"
 msgstr "Zdroje podpory"
 
-#: data/content/index.html:546 data/content/prerelease.html:256
+#: data/content/index.html:576 data/content/prerelease.html:254
 msgid "Documentation"
 msgstr "Dokumentácia"
 
-#: data/content/index.html:547 data/content/prerelease.html:257
+#: data/content/index.html:577 data/content/prerelease.html:255
 #, python-format
 msgid ""
 "Fedora ARM documentation and installation guides are available at the <a "
@@ -203,11 +251,11 @@ msgstr ""
 "Dokumentácia Fedory ARM a inštalačná príručka sú dostupné vo <a "
 "href=\"%s\">wiki stránkach Fedora ARM</a>."
 
-#: data/content/index.html:550 data/content/prerelease.html:260
+#: data/content/index.html:580 data/content/prerelease.html:258
 msgid "Email"
 msgstr "E-mail"
 
-#: data/content/index.html:551 data/content/prerelease.html:261
+#: data/content/index.html:581 data/content/prerelease.html:259
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
@@ -216,11 +264,11 @@ msgstr ""
 "Používatelia a vývojári sú k dispozícii aj v diskusnej skupine <a "
 "href=\"%s\">arm@lists.fedoraproject.org</a>."
 
-#: data/content/index.html:554 data/content/prerelease.html:264
+#: data/content/index.html:584 data/content/prerelease.html:262
 msgid "Chat"
 msgstr "Chat"
 
-#: data/content/index.html:555 data/content/prerelease.html:265
+#: data/content/index.html:585 data/content/prerelease.html:263
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-arm</a> irc"
@@ -230,11 +278,11 @@ msgstr ""
 "irc kanáli <a href=\"%s\">#fedora-arm</a> na "
 "<strong>irc.freenode.org</strong>."
 
-#: data/content/index.html:560 data/content/prerelease.html:270
+#: data/content/index.html:590 data/content/prerelease.html:268
 msgid "General Help Using Fedora"
 msgstr "Všeobecná pomoc s používaním Fedory"
 
-#: data/content/index.html:561 data/content/prerelease.html:271
+#: data/content/index.html:591 data/content/prerelease.html:269
 #, python-format
 msgid ""
 "Sometimes you may encounter an issue with this spin that you can get help "
@@ -293,11 +341,7 @@ msgstr ""
 "href=\"%(commonbugs_url)s\">Bežné chyby</a> pre informácie o bežne sa "
 "vyskytujúcich chybách a ako sa im vyhnúť."
 
-#: data/content/prerelease.html:46 data/content/prerelease.html:55
-msgid "Fedora Server"
-msgstr "Fedora Server"
-
-#: data/content/prerelease.html:238
+#: data/content/prerelease.html:236
 msgid "What is ARM Technology?"
 msgstr "Čo je to technológia ARM?"
 
@@ -327,27 +371,39 @@ msgstr ""
 msgid "Server"
 msgstr "Server"
 
-#: data/content/verify.html:42
+#: data/content/verify.html:38
+msgid "Validate Server!"
+msgstr "Overiť Server!"
+
+#: data/content/verify.html:41
 msgid "Validate Minimal!"
 msgstr "Overiť Fedoru Minimal!"
 
-#: data/content/verify.html:46
+#: data/content/verify.html:45
 msgid "Desktop"
 msgstr "Desktop"
 
-#: data/content/verify.html:48
+#: data/content/verify.html:47
 msgid "Validate Workstation!"
 msgstr "Overiť Workstation!"
 
-#: data/content/verify.html:51
+#: data/content/verify.html:50
 msgid "Validate Spins!"
 msgstr "Overiť Spiny!"
 
-#: data/content/verify.html:65
+#: data/content/verify.html:54
+msgid "Labs"
+msgstr "Labs"
+
+#: data/content/verify.html:56
+msgid "Validate Labs!"
+msgstr "Overiť Labs!"
+
+#: data/content/verify.html:63
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Ďalej naimportujte GPG kľúč Fedory:"
 
-#: data/content/verify.html:67
+#: data/content/verify.html:65
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
@@ -356,11 +412,11 @@ msgstr ""
 "<a href=\"%s/%s/keys\">Na tomto mieste</a> si môžete overiť detaily GPG "
 "kľúčov."
 
-#: data/content/verify.html:68
+#: data/content/verify.html:66
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Teraz overte, či je súbor CHECKSUM platný:"
 
-#: data/content/verify.html:70
+#: data/content/verify.html:68
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
@@ -368,31 +424,27 @@ msgstr ""
 "Súbor CHECKSUM by mal mať v poriadku signatúru z jedného z nasledujúcich "
 "kľúčov:"
 
-#: data/content/verify.html:72
+#: data/content/verify.html:70
+msgid "Fedora 29"
+msgstr "Fedora 29"
+
+#: data/content/verify.html:71
 msgid "Fedora 28"
 msgstr "Fedora 28"
 
-#: data/content/verify.html:73
+#: data/content/verify.html:72
 msgid "Fedora 27"
 msgstr "Fedora 27"
 
-#: data/content/verify.html:74
+#: data/content/verify.html:73
 msgid "Fedora 26"
 msgstr "Fedora 26"
 
-#: data/content/verify.html:75
+#: data/content/verify.html:74
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr "Fedora 26 ďalšie architektúry (AArch64, PPC64, PPC64le, s390 a s390x)"
 
 #: data/content/verify.html:76
-msgid "Fedora 25"
-msgstr "Fedora 25"
-
-#: data/content/verify.html:77
-msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr "Fedora 25 ďalšie architektúry (AArch64, PPC64, PPC64le, s390 a s390x)"
-
-#: data/content/verify.html:79
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
@@ -400,16 +452,16 @@ msgstr ""
 "A nakoniec po kontrole súboru CHECKSUM sa presvedčte, že kontrolný súčet "
 "obrazu sedí:"
 
-#: data/content/verify.html:81
+#: data/content/verify.html:78
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
 "Ak výstup uvádza, že je súbor platný, potom je obraz pripravený na použitie."
 
-#: data/content/verify.html:82
+#: data/content/verify.html:79
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr "Ako overím stiahnutý obraz v inom operačnom systéme?"
 
-#: data/content/verify.html:83
+#: data/content/verify.html:80
 msgid "Read these instructions to validate your image."
 msgstr "Prečítajte si tieto inštrukcie ako overíte váš obraz."
 
@@ -474,96 +526,100 @@ msgstr "Časopis Fedora"
 msgid "Legal"
 msgstr "Právne poznámky"
 
-#: data/templates/footer.html:40
+#: data/templates/footer.html:21
+msgid "Fedora Code of Conduct"
+msgstr "Pravidlá správania Fedora"
+
+#: data/templates/footer.html:41
 msgid "Get Fedora Workstation"
 msgstr "Stiahnuť Fedoru Workstation"
 
-#: data/templates/footer.html:41
+#: data/templates/footer.html:42
 msgid "Get Fedora Server"
 msgstr "Stiahnuť Fedoru Server"
 
-#: data/templates/footer.html:42
+#: data/templates/footer.html:43
 msgid "Get Fedora Atomic"
 msgstr "Stiahnuť Fedoru Atomic"
 
-#: data/templates/footer.html:43
+#: data/templates/footer.html:44
 msgid "Fedora Spins"
 msgstr "Fedora spiny"
 
-#: data/templates/footer.html:44
+#: data/templates/footer.html:45
 msgid "Fedora Labs"
 msgstr "Fedora Labs"
 
-#: data/templates/footer.html:45
+#: data/templates/footer.html:46
 msgid "Fedora ARM<span class=\"sup\">®</span>"
 msgstr "Fedora ARM<span class=\"sup\">®</span>"
 
-#: data/templates/footer.html:46
+#: data/templates/footer.html:47
 msgid "Alternative Downloads"
 msgstr "Alternatívne stiahnutia"
 
-#: data/templates/footer.html:53
+#: data/templates/footer.html:54
 msgid "Support"
 msgstr "Podpora"
 
-#: data/templates/footer.html:56
+#: data/templates/footer.html:57
 msgid "Get Help"
 msgstr "Získajte pomoc"
 
-#: data/templates/footer.html:57
+#: data/templates/footer.html:58
 msgid "Ask Fedora"
 msgstr "Spýtajte sa Fedory"
 
-#: data/templates/footer.html:58
+#: data/templates/footer.html:59
 msgid "Common Bugs"
 msgstr "Bežné chyby"
 
-#: data/templates/footer.html:59
+#: data/templates/footer.html:60
 msgid "Fedora Developer Portal"
 msgstr "Portál Fedory pre vývojárov"
 
-#: data/templates/footer.html:60
+#: data/templates/footer.html:61
 msgid "Installation Guide"
 msgstr "Inštalačná príručka"
 
-#: data/templates/footer.html:66
+#: data/templates/footer.html:67
 msgid "Join"
 msgstr "Pridajte sa"
 
-#: data/templates/footer.html:69
+#: data/templates/footer.html:70
 msgid "Join Fedora"
 msgstr "Pridajte sa k Fedore"
 
-#: data/templates/footer.html:70
+#: data/templates/footer.html:71
 msgid "Planet Fedora"
 msgstr "Planéta Fedora"
 
-#: data/templates/footer.html:71
+#: data/templates/footer.html:72
 msgid "Fedora SIGs"
 msgstr "Fedora SIG"
 
-#: data/templates/footer.html:72
+#: data/templates/footer.html:73
 msgid "Fedora Account System"
 msgstr "Systém účtov Fedory"
 
-#: data/templates/footer.html:73
+#: data/templates/footer.html:74
 msgid "Fedora Community"
 msgstr "Komunita Fedory"
 
-#: data/templates/footer.html:87
+#: data/templates/footer.html:88
 msgid "Fedora is sponsored by Red Hat."
 msgstr "Fedora je sponzorovaná firmou Red Hat."
 
-#: data/templates/footer.html:88
+#: data/templates/footer.html:89
 msgid "Learn more about the relationship between Red Hat and Fedora »"
 msgstr "Zistite viac o vzťahu medzi firmou Red Hat a Fedorou »"
 
-#: data/templates/footer.html:89
+#: data/templates/footer.html:90
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
 msgstr "© %(year)s Red Hat, Inc. a ďalší."
 
-#: data/templates/footer.html:89
+#: data/templates/footer.html:90
 msgid ""
 "Please send any comments or corrections to the <a href=\"//pagure.io/fedora-"
 "websites\">websites team</a>."
@@ -571,11 +627,11 @@ msgstr ""
 "Akékoľvek pripomienky a opravy pošlite <a href=\"//pagure.io/fedora-"
 "websites\">tímu webových stránok</a>."
 
-#: data/templates/footer.html:95
+#: data/templates/footer.html:96
 msgid "Change Language"
 msgstr "Zmeniť jazyk"
 
-#: data/templates/footer.html:99
+#: data/templates/footer.html:100
 msgid "OK"
 msgstr "OK"
 
@@ -591,23 +647,23 @@ msgstr "Dokumentácia a ďalšie zdroje"
 #, python-format
 msgid ""
 "Before installing Fedora, you may want to confirm your system meets minimum "
-"requirements for Fedora. Consult <a href=\"%s\">the online release notes</a>"
-" to see minimum requirements and recommendations."
+"requirements for Fedora. Consult <a href=\"%(release_notes)s\">the online "
+"release notes</a> to see minimum requirements and recommendations."
 msgstr ""
 "Pred inštaláciou Fedory by ste sa mali uistiť, či vás systém spĺňa minimálne"
 " požiadavky. Minimálne požiadavky a odporúčania nájdete v <a "
-"href=\"%s\">poznámkach k vydaniu</a>."
+"href=\"%(release_notes)s\">poznámkach k vydaniu</a>."
 
 #: data/templates/generic/docs-links.html:10
 #, python-format
 msgid ""
-"There is also a <a href=\"%s\">complete Installation Guide</a> available. We"
-" recommend you look through it before installing to your system, since it "
-"answers many common questions."
+"There is also a <a href=\"%(install_guide)s\">complete Installation "
+"Guide</a> available. We recommend you look through it before installing to "
+"your system, since it answers many common questions."
 msgstr ""
-"K dispozícii je tiež <a href=\"%s\">kompletná inštalačná príručka</a>. Pred "
-"inštaláciou odporúčame, aby ste si ju prezreli, pretože obsahuje odpovede na"
-" veľa bežných otázok."
+"K dispozícii je tiež <a href=\"%(install_guide)s\">kompletná inštalačná "
+"príručka</a>. Pred inštaláciou odporúčame, aby ste si ju prezreli, pretože "
+"obsahuje odpovede na veľa bežných otázok."
 
 #: data/templates/generic/other-media-sources.html:8
 msgid "Other ways of obtaining media"

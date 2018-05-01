@@ -1,31 +1,27 @@
-# Translations template for PROJECT.
-# Copyright (C) 2017 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
-#
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-11-14 12:28+0100\n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2018-04-30 22:25+0200\n"
+"PO-Revision-Date: 2018-03-20 05:14-0400\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: he\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n==2 ? 2 : 1;\n"
-"Generated-By: Babel 1.3\n"
+"Generated-By: Babel 2.3.4\n"
 "X-Generator: Zanata 3.9.6\n"
 
 #: data/content/index.html:8
 msgid "Fedora Alternative Downloads"
-msgstr ""
+msgstr "הורדות חלופיות לפדורה"
 
-#: data/content/index.html:19 data/templates/footer.html:46
+#: data/content/index.html:19 data/templates/footer.html:47
 msgid "Alternative Downloads"
-msgstr ""
+msgstr "הורדות חלופיות"
 
 #: data/content/index.html:20
 msgid ""
@@ -39,7 +35,7 @@ msgstr ""
 msgid ""
 "This page is meant to serve as a single central resource for locating "
 "alternative versions of Fedora."
-msgstr ""
+msgstr "עמוד זה אמור לשרת כמשאב מרכזי לאיתור גרסאות חלופיות של פדורה."
 
 #: data/content/index.html:35 data/content/index.html:46
 #, python-format
@@ -47,323 +43,427 @@ msgid ""
 "<strong>Fedora %(rel)s %(state)s</strong> released! <a "
 "href=\"%(link)s\">Test it now ></a>"
 msgstr ""
+"<strong>פדורה %(rel)s %(state)s</strong> יצאה לאור! <a "
+"href=\"%(link)s\">ניתן לבדוק אותה כעת ></a>"
 
 #: data/content/index.html:57
 #, python-format
 msgid "Fedora %(rel)s released! Get it now."
-msgstr ""
+msgstr "פדורה %(rel)s יצאה לאור! ניתן להוריד אותה כעת."
 
-#: data/content/index.html:70 data/content/index.html:131
-#: data/content/index.html:176 data/content/prerelease/index.html:54
-#: data/content/prerelease/index.html:115
-#: data/content/prerelease/index.html:161
+#: data/content/index.html:70 data/content/index.html:130
+#: data/content/index.html:175 data/content/prerelease/index.html:53
+#: data/content/prerelease/index.html:114
+#: data/content/prerelease/index.html:160
 msgid "Network Installers"
-msgstr ""
+msgstr "מתקינים מהרשת"
 
-#: data/content/index.html:75 data/content/index.html:136
-#: data/content/index.html:181 data/content/prerelease/index.html:59
-#: data/content/prerelease/index.html:120
-#: data/content/prerelease/index.html:166
+#: data/content/index.html:75 data/content/index.html:135
+#: data/content/index.html:180 data/content/prerelease/index.html:58
+#: data/content/prerelease/index.html:119
+#: data/content/prerelease/index.html:165
 msgid ""
 "These are very small images you can use to install Fedora over the network."
-msgstr ""
+msgstr "אלו דמויות התקנה קטנות מאוד שמשמשות להתקנת פדורה דרך הרשת."
 
-#: data/content/index.html:98 data/content/index.html:112
-#: data/content/index.html:201 data/content/index.html:212
-#: data/content/prerelease/index.html:81
-#: data/content/prerelease/index.html:186
-msgid "Fedora Workstation"
-msgstr ""
+#: data/content/alt/index.html:40 data/content/alt/index.html:54
+#: data/content/alt/index.html:185 data/content/alt/index.html:194
+#: data/content/alt/index.html:284 data/content/alt/index.html:295
+#: data/content/alt/index.html:434 data/content/alt/index.html:448
+#: data/content/alt/index.html:540 data/content/alt/index.html:554
+#: data/content/alt/index.html:657 data/content/alt/index.html:666
+#: data/content/alt/index.html:728 data/content/alt/index.html:737
+#: data/content/alt/index.html:809 data/content/alt/index.html:820
+#: data/content/alt/index.html:894 data/content/alt/index.html:905
+#: data/content/alt/index.html:1022 data/content/alt/index.html:1069
+#: data/content/alt/index.html:1105 data/content/index.html:83
+#: data/content/index.html:144 data/content/index.html:189
+#: data/content/prerelease/index.html:66
+#: data/content/prerelease/index.html:128
+#: data/content/prerelease/index.html:174
+#: data/content/prerelease/index.html:465
+msgid "Fedora Server"
+msgstr "פדורה לשרתים"
 
-#: data/content/index.html:101 data/content/index.html:303
-#: data/content/prerelease/index.html:84
-#: data/content/prerelease/index.html:1179
+#: data/content/index.html:86 data/content/index.html:100
+#: data/content/index.html:302 data/content/prerelease/index.html:69
+#: data/content/prerelease/index.html:83
+#: data/content/prerelease/index.html:1187
+#: data/content/prerelease/index.html:1201
 #, python-format
 msgid "64 bit %sMB ISO"
-msgstr ""
+msgstr "ISO עבור 64 סיביות בגודל %sמ״ב"
 
-#: data/content/index.html:104 data/content/index.html:118
-#: data/content/index.html:146 data/content/index.html:155
-#: data/content/index.html:164 data/content/index.html:193
-#: data/content/index.html:204 data/content/index.html:215
-#: data/content/index.html:254 data/content/index.html:273
-#: data/content/index.html:306 data/content/index.html:320
-#: data/content/index.html:351 data/content/index.html:360
-#: data/content/index.html:392 data/content/index.html:403
-#: data/content/alt/index.html:75 data/content/alt/index.html:89
-#: data/content/alt/index.html:103 data/content/alt/index.html:117
-#: data/content/alt/index.html:164 data/content/alt/index.html:173
-#: data/content/alt/index.html:182 data/content/alt/index.html:191
-#: data/content/alt/index.html:243 data/content/alt/index.html:254
-#: data/content/alt/index.html:265 data/content/alt/index.html:276
-#: data/content/alt/index.html:370 data/content/alt/index.html:384
-#: data/content/alt/index.html:398 data/content/alt/index.html:463
-#: data/content/alt/index.html:477 data/content/alt/index.html:491
-#: data/content/alt/index.html:505 data/content/alt/index.html:552
-#: data/content/alt/index.html:561 data/content/alt/index.html:570
-#: data/content/alt/index.html:615 data/content/alt/index.html:624
-#: data/content/alt/index.html:633 data/content/alt/index.html:642
-#: data/content/alt/index.html:694 data/content/alt/index.html:705
-#: data/content/alt/index.html:716 data/content/alt/index.html:769
-#: data/content/alt/index.html:780 data/content/alt/index.html:791
-#: data/content/alt/index.html:802 data/content/cloud/index.html:45
-#: data/content/cloud/index.html:59 data/content/cloud/index.html:86
-#: data/content/cloud/index.html:95 data/content/cloud/index.html:124
-#: data/content/cloud/index.html:135 data/content/cloud/index.html:170
-#: data/content/cloud/index.html:184 data/content/cloud/index.html:211
-#: data/content/cloud/index.html:220 data/content/cloud/index.html:249
-#: data/content/cloud/index.html:260 data/content/prerelease/index.html:87
-#: data/content/prerelease/index.html:130
-#: data/content/prerelease/index.html:139
-#: data/content/prerelease/index.html:178
-#: data/content/prerelease/index.html:189
-#: data/content/prerelease/index.html:245
-#: data/content/prerelease/index.html:250
-#: data/content/prerelease/index.html:256
-#: data/content/prerelease/index.html:261
-#: data/content/prerelease/index.html:267
-#: data/content/prerelease/index.html:272
-#: data/content/prerelease/index.html:278
-#: data/content/prerelease/index.html:283
-#: data/content/prerelease/index.html:289
-#: data/content/prerelease/index.html:294
-#: data/content/prerelease/index.html:300
-#: data/content/prerelease/index.html:305
-#: data/content/prerelease/index.html:330
-#: data/content/prerelease/index.html:335
-#: data/content/prerelease/index.html:341
-#: data/content/prerelease/index.html:346
-#: data/content/prerelease/index.html:352
-#: data/content/prerelease/index.html:357
-#: data/content/prerelease/index.html:416
-#: data/content/prerelease/index.html:421
-#: data/content/prerelease/index.html:427
-#: data/content/prerelease/index.html:432
-#: data/content/prerelease/index.html:438
-#: data/content/prerelease/index.html:443
-#: data/content/prerelease/index.html:449
-#: data/content/prerelease/index.html:454
-#: data/content/prerelease/index.html:460
-#: data/content/prerelease/index.html:465
+#: data/content/alt/index.html:46 data/content/alt/index.html:60
+#: data/content/alt/index.html:74 data/content/alt/index.html:88
+#: data/content/alt/index.html:102 data/content/alt/index.html:116
+#: data/content/alt/index.html:130 data/content/alt/index.html:144
+#: data/content/alt/index.html:158 data/content/alt/index.html:186
+#: data/content/alt/index.html:195 data/content/alt/index.html:204
+#: data/content/alt/index.html:213 data/content/alt/index.html:222
+#: data/content/alt/index.html:231 data/content/alt/index.html:240
+#: data/content/alt/index.html:249 data/content/alt/index.html:258
+#: data/content/alt/index.html:287 data/content/alt/index.html:298
+#: data/content/alt/index.html:309 data/content/alt/index.html:320
+#: data/content/alt/index.html:331 data/content/alt/index.html:342
+#: data/content/alt/index.html:353 data/content/alt/index.html:364
+#: data/content/alt/index.html:375 data/content/alt/index.html:440
+#: data/content/alt/index.html:454 data/content/alt/index.html:468
+#: data/content/alt/index.html:482 data/content/alt/index.html:496
+#: data/content/alt/index.html:510 data/content/alt/index.html:546
+#: data/content/alt/index.html:560 data/content/alt/index.html:574
+#: data/content/alt/index.html:588 data/content/alt/index.html:602
+#: data/content/alt/index.html:616 data/content/alt/index.html:630
+#: data/content/alt/index.html:658 data/content/alt/index.html:667
+#: data/content/alt/index.html:676 data/content/alt/index.html:685
+#: data/content/alt/index.html:694 data/content/alt/index.html:703
+#: data/content/alt/index.html:729 data/content/alt/index.html:738
+#: data/content/alt/index.html:747 data/content/alt/index.html:756
+#: data/content/alt/index.html:765 data/content/alt/index.html:774
+#: data/content/alt/index.html:783 data/content/alt/index.html:812
+#: data/content/alt/index.html:823 data/content/alt/index.html:834
+#: data/content/alt/index.html:845 data/content/alt/index.html:856
+#: data/content/alt/index.html:867 data/content/alt/index.html:897
+#: data/content/alt/index.html:908 data/content/alt/index.html:919
+#: data/content/alt/index.html:930 data/content/alt/index.html:941
+#: data/content/alt/index.html:952 data/content/alt/index.html:963
+#: data/content/alt/index.html:1028 data/content/alt/index.html:1042
+#: data/content/alt/index.html:1070 data/content/alt/index.html:1079
+#: data/content/alt/index.html:1108 data/content/alt/index.html:1119
+#: data/content/cloud/index.html:45 data/content/cloud/index.html:59
+#: data/content/cloud/index.html:86 data/content/cloud/index.html:95
+#: data/content/cloud/index.html:124 data/content/cloud/index.html:135
+#: data/content/cloud/index.html:170 data/content/cloud/index.html:184
+#: data/content/cloud/index.html:211 data/content/cloud/index.html:220
+#: data/content/cloud/index.html:249 data/content/cloud/index.html:260
+#: data/content/index.html:89 data/content/index.html:103
+#: data/content/index.html:117 data/content/index.html:145
+#: data/content/index.html:154 data/content/index.html:163
+#: data/content/index.html:192 data/content/index.html:203
+#: data/content/index.html:214 data/content/index.html:253
+#: data/content/index.html:272 data/content/index.html:305
+#: data/content/index.html:319 data/content/index.html:350
+#: data/content/index.html:359 data/content/index.html:391
+#: data/content/index.html:402 data/content/prerelease/index.html:72
+#: data/content/prerelease/index.html:86
+#: data/content/prerelease/index.html:100
+#: data/content/prerelease/index.html:129
+#: data/content/prerelease/index.html:138
+#: data/content/prerelease/index.html:147
+#: data/content/prerelease/index.html:177
+#: data/content/prerelease/index.html:188
+#: data/content/prerelease/index.html:199
+#: data/content/prerelease/index.html:244
+#: data/content/prerelease/index.html:249
+#: data/content/prerelease/index.html:255
+#: data/content/prerelease/index.html:260
+#: data/content/prerelease/index.html:266
+#: data/content/prerelease/index.html:271
+#: data/content/prerelease/index.html:277
+#: data/content/prerelease/index.html:282
+#: data/content/prerelease/index.html:288
+#: data/content/prerelease/index.html:293
+#: data/content/prerelease/index.html:318
+#: data/content/prerelease/index.html:323
+#: data/content/prerelease/index.html:329
+#: data/content/prerelease/index.html:334
+#: data/content/prerelease/index.html:340
+#: data/content/prerelease/index.html:345
+#: data/content/prerelease/index.html:351
+#: data/content/prerelease/index.html:356
+#: data/content/prerelease/index.html:392
+#: data/content/prerelease/index.html:397
+#: data/content/prerelease/index.html:403
+#: data/content/prerelease/index.html:408
+#: data/content/prerelease/index.html:414
+#: data/content/prerelease/index.html:419
+#: data/content/prerelease/index.html:425
+#: data/content/prerelease/index.html:430
+#: data/content/prerelease/index.html:436
+#: data/content/prerelease/index.html:441
+#: data/content/prerelease/index.html:466
 #: data/content/prerelease/index.html:471
-#: data/content/prerelease/index.html:476
-#: data/content/prerelease/index.html:546
-#: data/content/prerelease/index.html:560
-#: data/content/prerelease/index.html:574
-#: data/content/prerelease/index.html:588
-#: data/content/prerelease/index.html:766
-#: data/content/prerelease/index.html:775
-#: data/content/prerelease/index.html:784
-#: data/content/prerelease/index.html:793
-#: data/content/prerelease/index.html:964
-#: data/content/prerelease/index.html:975
-#: data/content/prerelease/index.html:986
-#: data/content/prerelease/index.html:997
-#: data/content/prerelease/index.html:1182
-#: data/content/prerelease/index.html:1224
-#: data/content/prerelease/index.html:1262 data/templates/footer.html:37
+#: data/content/prerelease/index.html:477
+#: data/content/prerelease/index.html:482
+#: data/content/prerelease/index.html:488
+#: data/content/prerelease/index.html:493
+#: data/content/prerelease/index.html:499
+#: data/content/prerelease/index.html:504
+#: data/content/prerelease/index.html:510
+#: data/content/prerelease/index.html:515
+#: data/content/prerelease/index.html:554
+#: data/content/prerelease/index.html:568
+#: data/content/prerelease/index.html:582
+#: data/content/prerelease/index.html:596
+#: data/content/prerelease/index.html:774
+#: data/content/prerelease/index.html:783
+#: data/content/prerelease/index.html:792
+#: data/content/prerelease/index.html:801
+#: data/content/prerelease/index.html:972
+#: data/content/prerelease/index.html:983
+#: data/content/prerelease/index.html:994
+#: data/content/prerelease/index.html:1005
+#: data/content/prerelease/index.html:1190
+#: data/content/prerelease/index.html:1204
+#: data/content/prerelease/index.html:1232
+#: data/content/prerelease/index.html:1241
+#: data/content/prerelease/index.html:1270
+#: data/content/prerelease/index.html:1281 data/templates/footer.html:38
 msgid "Download"
-msgstr ""
+msgstr "הורדה"
 
-#: data/content/index.html:104 data/content/index.html:118
-#: data/content/index.html:146 data/content/index.html:155
-#: data/content/index.html:164 data/content/index.html:193
-#: data/content/index.html:204 data/content/index.html:215
-#: data/content/index.html:306 data/content/index.html:320
-#: data/content/index.html:351 data/content/index.html:360
-#: data/content/index.html:392 data/content/index.html:403
-#: data/content/alt/index.html:75 data/content/alt/index.html:89
-#: data/content/alt/index.html:103 data/content/alt/index.html:117
-#: data/content/alt/index.html:164 data/content/alt/index.html:173
-#: data/content/alt/index.html:182 data/content/alt/index.html:191
-#: data/content/alt/index.html:243 data/content/alt/index.html:254
-#: data/content/alt/index.html:265 data/content/alt/index.html:276
-#: data/content/alt/index.html:370 data/content/alt/index.html:384
-#: data/content/alt/index.html:398 data/content/alt/index.html:463
-#: data/content/alt/index.html:477 data/content/alt/index.html:491
-#: data/content/alt/index.html:505 data/content/alt/index.html:552
-#: data/content/alt/index.html:561 data/content/alt/index.html:570
-#: data/content/alt/index.html:615 data/content/alt/index.html:624
-#: data/content/alt/index.html:633 data/content/alt/index.html:642
-#: data/content/alt/index.html:694 data/content/alt/index.html:705
-#: data/content/alt/index.html:716 data/content/alt/index.html:769
-#: data/content/alt/index.html:780 data/content/alt/index.html:791
-#: data/content/alt/index.html:802 data/content/cloud/index.html:45
-#: data/content/cloud/index.html:59 data/content/cloud/index.html:86
-#: data/content/cloud/index.html:95 data/content/cloud/index.html:124
-#: data/content/cloud/index.html:135 data/content/cloud/index.html:170
-#: data/content/cloud/index.html:184 data/content/cloud/index.html:211
-#: data/content/cloud/index.html:220 data/content/cloud/index.html:249
-#: data/content/cloud/index.html:260 data/content/prerelease/index.html:87
-#: data/content/prerelease/index.html:130
-#: data/content/prerelease/index.html:139
-#: data/content/prerelease/index.html:178
-#: data/content/prerelease/index.html:189
-#: data/content/prerelease/index.html:245
-#: data/content/prerelease/index.html:250
-#: data/content/prerelease/index.html:256
-#: data/content/prerelease/index.html:261
-#: data/content/prerelease/index.html:267
-#: data/content/prerelease/index.html:272
-#: data/content/prerelease/index.html:278
-#: data/content/prerelease/index.html:283
-#: data/content/prerelease/index.html:289
-#: data/content/prerelease/index.html:294
-#: data/content/prerelease/index.html:300
-#: data/content/prerelease/index.html:305
-#: data/content/prerelease/index.html:330
-#: data/content/prerelease/index.html:335
-#: data/content/prerelease/index.html:341
-#: data/content/prerelease/index.html:346
-#: data/content/prerelease/index.html:352
-#: data/content/prerelease/index.html:357
-#: data/content/prerelease/index.html:416
-#: data/content/prerelease/index.html:421
-#: data/content/prerelease/index.html:427
-#: data/content/prerelease/index.html:432
-#: data/content/prerelease/index.html:438
-#: data/content/prerelease/index.html:443
-#: data/content/prerelease/index.html:449
-#: data/content/prerelease/index.html:454
-#: data/content/prerelease/index.html:460
-#: data/content/prerelease/index.html:465
+#: data/content/alt/index.html:46 data/content/alt/index.html:60
+#: data/content/alt/index.html:74 data/content/alt/index.html:88
+#: data/content/alt/index.html:102 data/content/alt/index.html:116
+#: data/content/alt/index.html:130 data/content/alt/index.html:144
+#: data/content/alt/index.html:158 data/content/alt/index.html:186
+#: data/content/alt/index.html:195 data/content/alt/index.html:204
+#: data/content/alt/index.html:213 data/content/alt/index.html:222
+#: data/content/alt/index.html:231 data/content/alt/index.html:240
+#: data/content/alt/index.html:249 data/content/alt/index.html:258
+#: data/content/alt/index.html:287 data/content/alt/index.html:298
+#: data/content/alt/index.html:309 data/content/alt/index.html:320
+#: data/content/alt/index.html:331 data/content/alt/index.html:342
+#: data/content/alt/index.html:353 data/content/alt/index.html:364
+#: data/content/alt/index.html:375 data/content/alt/index.html:440
+#: data/content/alt/index.html:454 data/content/alt/index.html:468
+#: data/content/alt/index.html:482 data/content/alt/index.html:496
+#: data/content/alt/index.html:510 data/content/alt/index.html:546
+#: data/content/alt/index.html:560 data/content/alt/index.html:574
+#: data/content/alt/index.html:588 data/content/alt/index.html:602
+#: data/content/alt/index.html:616 data/content/alt/index.html:630
+#: data/content/alt/index.html:658 data/content/alt/index.html:667
+#: data/content/alt/index.html:676 data/content/alt/index.html:685
+#: data/content/alt/index.html:694 data/content/alt/index.html:703
+#: data/content/alt/index.html:729 data/content/alt/index.html:738
+#: data/content/alt/index.html:747 data/content/alt/index.html:756
+#: data/content/alt/index.html:765 data/content/alt/index.html:774
+#: data/content/alt/index.html:783 data/content/alt/index.html:812
+#: data/content/alt/index.html:823 data/content/alt/index.html:834
+#: data/content/alt/index.html:845 data/content/alt/index.html:856
+#: data/content/alt/index.html:867 data/content/alt/index.html:897
+#: data/content/alt/index.html:908 data/content/alt/index.html:919
+#: data/content/alt/index.html:930 data/content/alt/index.html:941
+#: data/content/alt/index.html:952 data/content/alt/index.html:963
+#: data/content/alt/index.html:1028 data/content/alt/index.html:1042
+#: data/content/alt/index.html:1070 data/content/alt/index.html:1079
+#: data/content/alt/index.html:1108 data/content/alt/index.html:1119
+#: data/content/cloud/index.html:45 data/content/cloud/index.html:59
+#: data/content/cloud/index.html:86 data/content/cloud/index.html:95
+#: data/content/cloud/index.html:124 data/content/cloud/index.html:135
+#: data/content/cloud/index.html:170 data/content/cloud/index.html:184
+#: data/content/cloud/index.html:211 data/content/cloud/index.html:220
+#: data/content/cloud/index.html:249 data/content/cloud/index.html:260
+#: data/content/index.html:89 data/content/index.html:103
+#: data/content/index.html:117 data/content/index.html:145
+#: data/content/index.html:154 data/content/index.html:163
+#: data/content/index.html:192 data/content/index.html:203
+#: data/content/index.html:214 data/content/index.html:305
+#: data/content/index.html:319 data/content/index.html:350
+#: data/content/index.html:359 data/content/index.html:391
+#: data/content/index.html:402 data/content/prerelease/index.html:72
+#: data/content/prerelease/index.html:86
+#: data/content/prerelease/index.html:100
+#: data/content/prerelease/index.html:129
+#: data/content/prerelease/index.html:138
+#: data/content/prerelease/index.html:147
+#: data/content/prerelease/index.html:177
+#: data/content/prerelease/index.html:188
+#: data/content/prerelease/index.html:199
+#: data/content/prerelease/index.html:244
+#: data/content/prerelease/index.html:249
+#: data/content/prerelease/index.html:255
+#: data/content/prerelease/index.html:260
+#: data/content/prerelease/index.html:266
+#: data/content/prerelease/index.html:271
+#: data/content/prerelease/index.html:277
+#: data/content/prerelease/index.html:282
+#: data/content/prerelease/index.html:288
+#: data/content/prerelease/index.html:293
+#: data/content/prerelease/index.html:318
+#: data/content/prerelease/index.html:323
+#: data/content/prerelease/index.html:329
+#: data/content/prerelease/index.html:334
+#: data/content/prerelease/index.html:340
+#: data/content/prerelease/index.html:345
+#: data/content/prerelease/index.html:351
+#: data/content/prerelease/index.html:356
+#: data/content/prerelease/index.html:392
+#: data/content/prerelease/index.html:397
+#: data/content/prerelease/index.html:403
+#: data/content/prerelease/index.html:408
+#: data/content/prerelease/index.html:414
+#: data/content/prerelease/index.html:419
+#: data/content/prerelease/index.html:425
+#: data/content/prerelease/index.html:430
+#: data/content/prerelease/index.html:436
+#: data/content/prerelease/index.html:441
+#: data/content/prerelease/index.html:466
 #: data/content/prerelease/index.html:471
-#: data/content/prerelease/index.html:476
-#: data/content/prerelease/index.html:546
-#: data/content/prerelease/index.html:560
-#: data/content/prerelease/index.html:574
-#: data/content/prerelease/index.html:588
-#: data/content/prerelease/index.html:766
-#: data/content/prerelease/index.html:775
-#: data/content/prerelease/index.html:784
-#: data/content/prerelease/index.html:793
-#: data/content/prerelease/index.html:964
-#: data/content/prerelease/index.html:975
-#: data/content/prerelease/index.html:986
-#: data/content/prerelease/index.html:997
-#: data/content/prerelease/index.html:1182
-#: data/content/prerelease/index.html:1224
-#: data/content/prerelease/index.html:1262
+#: data/content/prerelease/index.html:477
+#: data/content/prerelease/index.html:482
+#: data/content/prerelease/index.html:488
+#: data/content/prerelease/index.html:493
+#: data/content/prerelease/index.html:499
+#: data/content/prerelease/index.html:504
+#: data/content/prerelease/index.html:510
+#: data/content/prerelease/index.html:515
+#: data/content/prerelease/index.html:554
+#: data/content/prerelease/index.html:568
+#: data/content/prerelease/index.html:582
+#: data/content/prerelease/index.html:596
+#: data/content/prerelease/index.html:774
+#: data/content/prerelease/index.html:783
+#: data/content/prerelease/index.html:792
+#: data/content/prerelease/index.html:801
+#: data/content/prerelease/index.html:972
+#: data/content/prerelease/index.html:983
+#: data/content/prerelease/index.html:994
+#: data/content/prerelease/index.html:1005
+#: data/content/prerelease/index.html:1190
+#: data/content/prerelease/index.html:1204
+#: data/content/prerelease/index.html:1232
+#: data/content/prerelease/index.html:1241
+#: data/content/prerelease/index.html:1270
+#: data/content/prerelease/index.html:1281
 msgid "Verify"
-msgstr ""
+msgstr "אימות"
 
-#: data/content/index.html:115 data/content/index.html:317
+#: data/content/alt/index.html:68 data/content/alt/index.html:203
+#: data/content/alt/index.html:306 data/content/index.html:97
+#: data/content/index.html:111 data/content/index.html:200
+#: data/content/index.html:211 data/content/prerelease/index.html:80
+#: data/content/prerelease/index.html:94
+#: data/content/prerelease/index.html:185
+#: data/content/prerelease/index.html:196
+msgid "Fedora Workstation"
+msgstr "פדורה למחשבים שולחניים"
+
+#: data/content/index.html:114 data/content/index.html:316
+#: data/content/prerelease/index.html:97
 #, python-format
 msgid "32 bit %sMB ISO"
-msgstr ""
+msgstr "ISO עבור 32 סיביות בגודל %sמ״ב"
 
-#: data/content/index.html:145 data/content/index.html:190
-#: data/content/prerelease/index.html:129
-#: data/content/prerelease/index.html:175
-msgid "Fedora Server"
-msgstr ""
-
-#: data/content/index.html:154 data/content/index.html:163
-#: data/content/prerelease/index.html:138
+#: data/content/index.html:153 data/content/index.html:162
+#: data/content/prerelease/index.html:137
+#: data/content/prerelease/index.html:146 data/content/verify.html:39
 msgid "Workstation"
-msgstr ""
+msgstr "מחשב שולחני"
 
-#: data/content/index.html:227
+#: data/content/index.html:226
 msgid "Bittorrent Downloads"
-msgstr ""
+msgstr "הורדות מביטורנט"
 
-#: data/content/index.html:232
+#: data/content/index.html:231
 msgid ""
 "Fedora offers many bittorrent downloads. Access our directory of torrents "
 "below:"
 msgstr ""
+"פדורה מציעה מגוון הורדות מביטורנט. ניתן לגשת לספריית הטורנטים שלנו להלן:"
 
-#: data/content/index.html:235
+#: data/content/index.html:234
 msgid "torrent.fedoraproject.org"
-msgstr ""
+msgstr "torrent.fedoraproject.org"
 
-#: data/content/index.html:246 data/content/alt/index.html:16
-#: data/content/prerelease/index.html:216
+#: data/content/alt/index.html:16 data/content/index.html:245
+#: data/content/prerelease/index.html:215
 msgid "Alternate Architectures"
-msgstr ""
+msgstr "ארכיטקטורות חלופיות"
 
-#: data/content/index.html:251
+#: data/content/index.html:250
 msgid ""
 "These are additional architectures supported by Fedora beyond the standard "
 "set."
-msgstr ""
+msgstr "אלו הן הארכיטקטורות הנוספות שנתמכות על ידי פדורה מעבר לערכה הרגילה"
 
-#: data/content/index.html:265 data/content/cloud/index.html:17
-#: data/content/prerelease/index.html:527
-#: data/content/prerelease/index.html:751
-#: data/content/prerelease/index.html:947
+#: data/content/cloud/index.html:17 data/content/index.html:264
+#: data/content/prerelease/index.html:535
+#: data/content/prerelease/index.html:759
+#: data/content/prerelease/index.html:955
 msgid "Cloud Base Images"
-msgstr ""
+msgstr "דמויות בסיס לענן"
 
-#: data/content/index.html:270
+#: data/content/index.html:269
 msgid "These are standard Cloud Base images."
-msgstr ""
+msgstr "אלו הן דמויות בסיס תקניות לסביבת ענן."
 
-#: data/content/index.html:284 data/content/index.html:300
-#: data/content/index.html:314 data/content/index.html:333
-#: data/content/index.html:350 data/content/index.html:359
-#: data/content/index.html:372 data/content/index.html:389
-#: data/content/index.html:400 data/content/prerelease/index.html:1163
-#: data/content/prerelease/index.html:1209
-#: data/content/prerelease/index.html:1245
+#: data/content/alt/index.html:96 data/content/alt/index.html:221
+#: data/content/alt/index.html:328 data/content/alt/index.html:462
+#: data/content/alt/index.html:568 data/content/alt/index.html:675
+#: data/content/alt/index.html:746 data/content/alt/index.html:831
+#: data/content/alt/index.html:916 data/content/alt/index.html:1036
+#: data/content/alt/index.html:1078 data/content/alt/index.html:1116
+#: data/content/index.html:283 data/content/index.html:299
+#: data/content/index.html:313 data/content/index.html:332
+#: data/content/index.html:349 data/content/index.html:358
+#: data/content/index.html:371 data/content/index.html:388
+#: data/content/index.html:399 data/content/prerelease/index.html:1171
+#: data/content/prerelease/index.html:1217
+#: data/content/prerelease/index.html:1253
 msgid "Everything"
-msgstr ""
+msgstr "הכול"
 
-#: data/content/index.html:287 data/content/index.html:336
-#: data/content/index.html:375
+#: data/content/index.html:286 data/content/index.html:335
+#: data/content/index.html:374
 msgid "Experts only!"
-msgstr ""
+msgstr "מומחים בלבד!"
 
-#: data/content/index.html:292 data/content/index.html:341
-#: data/content/index.html:380 data/content/prerelease/index.html:1168
-#: data/content/prerelease/index.html:1214
-#: data/content/prerelease/index.html:1250
+#: data/content/index.html:291 data/content/index.html:340
+#: data/content/index.html:379 data/content/prerelease/index.html:1176
+#: data/content/prerelease/index.html:1222
+#: data/content/prerelease/index.html:1258
 msgid ""
 "Choose from thousands of packages to customize your installation; requires a"
 " fast network connection."
 msgstr ""
+"ניתן לבחור מבין אלפי חבילות כדי להתאים את ההתקנה שלך; נדרש חיבור מהיר "
+"לאינטרנט."
 
-#: data/content/index.html:415 data/content/index.html:455
-#: data/content/index.html:491
+#: data/content/index.html:414 data/content/index.html:454
+#: data/content/index.html:490
 msgid "Testing Images"
-msgstr ""
+msgstr "בדיקת דמויות"
 
-#: data/content/index.html:420 data/content/index.html:460
-#: data/content/index.html:496
+#: data/content/index.html:419 data/content/index.html:459
+#: data/content/index.html:495
 msgid ""
 "These are unreleased development versions of Fedora made available for "
 "testing the next official Fedora release."
 msgstr ""
+"אלו גרסאות פיתוח של פדורה שטרם יצאו לאור והן זמינות לבדיקה לטובת המהדורה "
+"הרשמית הבאה של פדורה."
 
-#: data/content/index.html:428 data/content/index.html:469
-#: data/content/index.html:505
+#: data/content/index.html:427 data/content/index.html:468
+#: data/content/index.html:504
 msgid "Nightly builds"
-msgstr ""
+msgstr "בנייה לילית"
 
-#: data/content/index.html:431 data/content/index.html:442
-#: data/content/index.html:470 data/content/index.html:479
-#: data/content/index.html:508 data/content/index.html:519
+#: data/content/index.html:430 data/content/index.html:441
+#: data/content/index.html:469 data/content/index.html:478
+#: data/content/index.html:507 data/content/index.html:518
 msgid "View Images >"
+msgstr "הצגת הדמויות >"
+
+#: data/content/index.html:438
+msgid "Other composes (Beta / TCs / RCs)"
 msgstr ""
 
-#: data/content/index.html:439
-msgid "Other composes (Alpha / Beta / TCs / RCs)"
-msgstr ""
-
-#: data/content/index.html:478 data/content/index.html:516
+#: data/content/index.html:477 data/content/index.html:515
 msgid "Other test composes"
 msgstr ""
 
-#: data/content/index.html:619 data/content/alt/index.html:288
-#: data/content/alt/index.html:814 data/content/cloud/index.html:475
+#: data/content/alt/index.html:387 data/content/alt/index.html:975
+#: data/content/alt/index.html:1131 data/content/cloud/index.html:475
+#: data/content/index.html:618
 msgid "Support Resources"
-msgstr ""
+msgstr "משאבי תמיכה"
 
-#: data/content/index.html:624 data/content/prerelease/index.html:1313
+#: data/content/index.html:623 data/content/prerelease/index.html:1321
 msgid "General Help Using Fedora"
-msgstr ""
+msgstr "עזרה כללית על שימוש בפדורה"
 
-#: data/content/index.html:625
+#: data/content/index.html:624
 #, python-format
 msgid ""
 "Need some help with Fedora? Check out <a href=\"%s\">Ask Fedora</a>, where "
@@ -374,31 +474,31 @@ msgstr ""
 #: data/content/verify-prereleases.html:8 data/content/verify.html:8
 #: data/content/verify.html:18
 msgid "Verify your Downloaded Image"
-msgstr ""
+msgstr "אימות הדמות שהורדת"
 
 #: data/content/verify-prereleases.html:18
 msgid "Verify your Downloaded Prerelease Image"
-msgstr ""
+msgstr "אימות הדמות של המהדורה הטרומית שהורדת"
 
 #: data/content/verify-prereleases.html:20 data/content/verify.html:20
 msgid "CHECKSUM and Verify Instructions"
-msgstr ""
+msgstr "הנחיות לבדיקת סכום ספרות ואימות"
 
+#: data/content/prerelease/index.html:28 data/content/prerelease/index.html:39
 #: data/content/verify-prereleases.html:34
 #: data/content/verify-prereleases.html:45
-#: data/content/prerelease/index.html:28 data/content/prerelease/index.html:39
 #, python-format
 msgid "Currently offering <strong>Fedora %(rel)s %(state)s</strong>."
 msgstr ""
 
-#: data/content/verify-prereleases.html:34
 #: data/content/prerelease/index.html:28
+#: data/content/verify-prereleases.html:34
 msgid "Released 4 april 2017."
-msgstr ""
+msgstr "יצאה לאור ב־4 באפריל 2017."
 
 #: data/content/verify-prereleases.html:56 data/content/verify.html:30
 msgid "How do I verify my image?"
-msgstr ""
+msgstr "איך אוכל לאמת את הדמות שלי?"
 
 #: data/content/verify-prereleases.html:57 data/content/verify.html:31
 msgid ""
@@ -407,200 +507,240 @@ msgid ""
 "same directory as the image you downloaded."
 msgstr ""
 
-#: data/content/verify-prereleases.html:65 data/content/verify.html:39
+#: data/content/prerelease/index.html:470
+#: data/content/verify-prereleases.html:65 data/content/verify.html:48
 msgid "Server"
-msgstr ""
+msgstr "שרת"
 
 #: data/content/verify-prereleases.html:67
-#: data/content/verify-prereleases.html:115 data/content/verify.html:87
+#: data/content/verify-prereleases.html:118 data/content/verify.html:41
+#: data/content/verify.html:53 data/content/verify.html:98
 msgid "For aarch64"
-msgstr ""
+msgstr "עבור aarch64"
 
 #: data/content/verify-prereleases.html:70
+#: data/content/verify-prereleases.html:121 data/content/verify.html:56
 msgid "For ppc64"
-msgstr ""
+msgstr "עבור ppc64"
 
 #: data/content/verify-prereleases.html:73
-#: data/content/verify-prereleases.html:122 data/content/verify.html:94
+#: data/content/verify-prereleases.html:124 data/content/verify.html:59
+#: data/content/verify.html:105
 msgid "For ppc64le"
+msgstr "עבור ppc64le"
+
+#: data/content/verify-prereleases.html:76
+#: data/content/verify-prereleases.html:127 data/content/verify.html:62
+msgid "For s390x"
 msgstr ""
 
-#: data/content/verify-prereleases.html:84 data/content/verify.html:58
+#: data/content/verify-prereleases.html:83 data/content/verify.html:69
 msgid "Cloud"
-msgstr ""
+msgstr "ענן"
 
-#: data/content/verify-prereleases.html:86 data/content/verify.html:60
-msgid "For aarch64 iso"
-msgstr ""
-
-#: data/content/verify-prereleases.html:89 data/content/verify.html:63
+#: data/content/verify-prereleases.html:88 data/content/verify.html:74
 msgid "For aarch64 images"
+msgstr "עבור דמויות ל־aarch64"
+
+#: data/content/verify-prereleases.html:94 data/content/verify.html:80
+msgid "For ppc64 images"
+msgstr "לדמויות מסוג ppc64"
+
+#: data/content/verify-prereleases.html:100 data/content/verify.html:86
+msgid "For ppc64le images"
+msgstr "לדמויות מסוג ppc64le"
+
+#: data/content/verify-prereleases.html:106
+msgid "For s390x images"
 msgstr ""
 
-#: data/content/verify-prereleases.html:92 data/content/verify.html:66
-msgid "For ppc64 iso"
-msgstr ""
-
-#: data/content/verify-prereleases.html:99 data/content/verify.html:72
-msgid "For ppc64le iso"
-msgstr ""
-
-#: data/content/verify-prereleases.html:106 data/content/verify.html:78
+#: data/content/verify-prereleases.html:109 data/content/verify.html:89
 msgid "For Cloud Base images"
-msgstr ""
+msgstr "לדמויות מבוססות ענן"
 
-#: data/content/verify-prereleases.html:113 data/content/verify.html:85
-#: data/content/prerelease/index.html:304
-#: data/content/prerelease/index.html:475
+#: data/content/prerelease/index.html:292
+#: data/content/prerelease/index.html:440
+#: data/content/prerelease/index.html:514
+#: data/content/verify-prereleases.html:116
 msgid "Docker"
-msgstr ""
+msgstr "Docker"
 
-#: data/content/verify-prereleases.html:129 data/content/verify.html:101
+#: data/content/verify-prereleases.html:134 data/content/verify.html:112
 msgid "Next, import Fedora's GPG key(s):"
-msgstr ""
+msgstr "לאחר מכן, יש לייבא את מפתחות ה־GPG של פדורה:"
 
-#: data/content/verify-prereleases.html:131 data/content/verify.html:103
+#: data/content/verify-prereleases.html:136 data/content/verify.html:114
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
-msgstr ""
+msgstr "ניתן לאמת את פרטי מפתחות ה־GPG <a href=\"%s/%s/keys\">פה</a>."
 
-#: data/content/verify-prereleases.html:132 data/content/verify.html:104
+#: data/content/verify-prereleases.html:137 data/content/verify.html:115
 msgid "Now, verify that the CHECKSUM file is valid:"
-msgstr ""
+msgstr "כעת, עליך לוודא שקובץ בדיקת הסכום תקין (CHECKSUM):"
 
-#: data/content/verify-prereleases.html:134 data/content/verify.html:106
+#: data/content/verify-prereleases.html:139 data/content/verify.html:117
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr ""
 
-#: data/content/verify-prereleases.html:136 data/content/verify.html:108
+#: data/content/verify-prereleases.html:141 data/content/verify.html:119
+msgid "Fedora 29"
+msgstr ""
+
+#: data/content/verify-prereleases.html:142 data/content/verify.html:120
 msgid "Fedora 28"
-msgstr ""
+msgstr "פדורה 28"
 
-#: data/content/verify-prereleases.html:137 data/content/verify.html:109
+#: data/content/verify-prereleases.html:143 data/content/verify.html:121
 msgid "Fedora 27"
-msgstr ""
+msgstr "פדורה 27"
 
-#: data/content/verify-prereleases.html:138 data/content/verify.html:110
+#: data/content/verify-prereleases.html:144 data/content/verify.html:122
 msgid "Fedora 26"
-msgstr ""
+msgstr "פדורה 26"
 
-#: data/content/verify-prereleases.html:139 data/content/verify.html:111
+#: data/content/verify-prereleases.html:145 data/content/verify.html:123
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
+msgstr "ארכיטקטורות משניות לפדורה 26 (AArch64, PPC64, PPC64le, s390 ו־s390x)"
 
-#: data/content/verify-prereleases.html:140 data/content/verify.html:112
-msgid "Fedora 25"
-msgstr ""
-
-#: data/content/verify-prereleases.html:141 data/content/verify.html:113
-msgid "Fedora 25 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
-
-#: data/content/verify-prereleases.html:143 data/content/verify.html:115
+#: data/content/verify-prereleases.html:147 data/content/verify.html:125
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
 msgstr ""
 
-#: data/content/verify-prereleases.html:145 data/content/verify.html:117
+#: data/content/verify-prereleases.html:149 data/content/verify.html:127
 msgid "If the output states that the file is valid, then it's ready to use!"
-msgstr ""
+msgstr "אם הפלט מעיד שהקובץ תקין אז הקובץ מוכן לשימוש!"
 
-#: data/content/verify-prereleases.html:146 data/content/verify.html:118
+#: data/content/verify-prereleases.html:150 data/content/verify.html:128
 msgid "How do I verify my downloaded image on another operating system?"
-msgstr ""
+msgstr "איך לאמת את קובץ הדמות שהורדתי במערכת הפעלה אחרת?"
 
-#: data/content/verify-prereleases.html:147 data/content/verify.html:119
+#: data/content/verify-prereleases.html:151 data/content/verify.html:129
 msgid "Read these instructions to validate your image."
+msgstr "ההוראות האלה ינחו אותך לאימות קובץ הדמות שלך."
+
+#: data/content/verify.html:50
+msgid "aarch64 Minimal"
 msgstr ""
 
-#: data/content/verify.html:69
-msgid "For ppc64 images"
-msgstr ""
+#: data/content/verify.html:71
+msgid "For aarch64 iso"
+msgstr "עבור iso ל־aarch64"
 
-#: data/content/verify.html:75
-msgid "For ppc64le images"
+#: data/content/verify.html:77
+msgid "For ppc64 iso"
+msgstr "עבור iso ל־ppc64"
+
+#: data/content/verify.html:83
+msgid "For ppc64le iso"
+msgstr "עבור iso ל־ppc64le"
+
+#: data/content/verify.html:96
+msgid "Container"
 msgstr ""
 
 #: data/content/alt/index.html:8
 msgid "Fedora Alternate Architectures"
-msgstr ""
+msgstr "ארכיטקטורות חלופיות לפדורה"
 
 #: data/content/alt/index.html:17
 msgid "Additional architectures supported by Fedora"
-msgstr ""
+msgstr "ארכיטקטורות חלופיות שנתמכות על ידי פדורה"
 
-#: data/content/alt/index.html:27 data/content/alt/index.html:130
-#: data/content/alt/index.html:203 data/content/prerelease/index.html:230
+#: data/content/alt/index.html:27 data/content/alt/index.html:171
+#: data/content/alt/index.html:270 data/content/prerelease/index.html:229
 msgid "ARM<span class=\"sup\">®</span> aarch64 Architecture"
 msgstr ""
 
-#: data/content/alt/index.html:32 data/content/alt/index.html:135
-#: data/content/alt/index.html:208
+#: data/content/alt/index.html:32 data/content/alt/index.html:176
+#: data/content/alt/index.html:275
 msgid ""
 "These images are for use with AArch64 “Server Base System Architecture” "
 "(SBSA) compliant systems or Single Board Computers."
 msgstr ""
 
-#: data/content/alt/index.html:69 data/content/alt/index.html:83
-#: data/content/alt/index.html:97 data/content/alt/index.html:163
-#: data/content/alt/index.html:172 data/content/alt/index.html:181
-#: data/content/alt/index.html:240 data/content/alt/index.html:251
-#: data/content/alt/index.html:262 data/content/alt/index.html:364
-#: data/content/alt/index.html:378 data/content/alt/index.html:392
-#: data/content/alt/index.html:457 data/content/alt/index.html:471
-#: data/content/alt/index.html:485 data/content/alt/index.html:551
-#: data/content/alt/index.html:560 data/content/alt/index.html:569
-#: data/content/alt/index.html:614 data/content/alt/index.html:623
-#: data/content/alt/index.html:632 data/content/alt/index.html:691
-#: data/content/alt/index.html:702 data/content/alt/index.html:713
-#: data/content/alt/index.html:766 data/content/alt/index.html:777
-#: data/content/alt/index.html:788 data/content/cloud/index.html:8
-#: data/content/cloud/index.html:16
-msgid "Fedora Cloud"
+#: data/content/alt/index.html:43 data/content/alt/index.html:437
+#: data/content/alt/index.html:543 data/content/alt/index.html:1025
+#, python-format
+msgid "%sGB dvd iso"
 msgstr ""
 
-#: data/content/alt/index.html:72 data/content/alt/index.html:367
-#: data/content/alt/index.html:460
+#: data/content/alt/index.html:57 data/content/alt/index.html:113
+#: data/content/alt/index.html:451 data/content/alt/index.html:479
+#: data/content/alt/index.html:557 data/content/alt/index.html:585
 #, python-format
 msgid "%sMB netinstall iso"
 msgstr ""
 
-#: data/content/alt/index.html:86 data/content/alt/index.html:381
-#: data/content/alt/index.html:474 data/content/cloud/index.html:56
+#: data/content/alt/index.html:71
 #, python-format
-msgid "%sMB qcow2 image"
+msgid "%sGB raw image"
 msgstr ""
 
-#: data/content/alt/index.html:100 data/content/alt/index.html:395
-#: data/content/alt/index.html:488
+#: data/content/alt/index.html:82 data/content/alt/index.html:212
+#: data/content/alt/index.html:317
+msgid "Fedora Minimal"
+msgstr ""
+
+#: data/content/alt/index.html:85 data/content/alt/index.html:141
+#: data/content/alt/index.html:507 data/content/alt/index.html:613
 #, python-format
 msgid "%sMB raw image"
 msgstr ""
 
-#: data/content/alt/index.html:111 data/content/alt/index.html:190
-#: data/content/alt/index.html:273 data/content/alt/index.html:499
-#: data/content/alt/index.html:641 data/content/alt/index.html:799
-#: data/content/prerelease/index.html:299
-#: data/content/prerelease/index.html:470
-msgid "Fedora Docker"
-msgstr ""
-
-#: data/content/alt/index.html:114 data/content/alt/index.html:502
+#: data/content/alt/index.html:99 data/content/alt/index.html:465
+#: data/content/alt/index.html:571 data/content/alt/index.html:1039
 #, python-format
-msgid "%sMB Docker image"
+msgid "%sMB dvd iso"
 msgstr ""
 
-#: data/content/alt/index.html:294 data/content/alt/index.html:820
-#: data/content/cloud/index.html:481 data/content/prerelease/index.html:1294
+#: data/content/alt/index.html:110 data/content/alt/index.html:124
+#: data/content/alt/index.html:138 data/content/alt/index.html:230
+#: data/content/alt/index.html:239 data/content/alt/index.html:248
+#: data/content/alt/index.html:339 data/content/alt/index.html:350
+#: data/content/alt/index.html:361 data/content/alt/index.html:476
+#: data/content/alt/index.html:490 data/content/alt/index.html:504
+#: data/content/alt/index.html:582 data/content/alt/index.html:596
+#: data/content/alt/index.html:610 data/content/alt/index.html:684
+#: data/content/alt/index.html:693 data/content/alt/index.html:702
+#: data/content/alt/index.html:755 data/content/alt/index.html:764
+#: data/content/alt/index.html:773 data/content/alt/index.html:842
+#: data/content/alt/index.html:853 data/content/alt/index.html:864
+#: data/content/alt/index.html:927 data/content/alt/index.html:938
+#: data/content/alt/index.html:949 data/content/cloud/index.html:8
+#: data/content/cloud/index.html:16
+msgid "Fedora Cloud"
+msgstr "פדורה לענן"
+
+#: data/content/alt/index.html:127 data/content/alt/index.html:493
+#: data/content/alt/index.html:599 data/content/cloud/index.html:56
+#, python-format
+msgid "%sMB qcow2 image"
+msgstr ""
+
+#: data/content/alt/index.html:152 data/content/alt/index.html:257
+#: data/content/alt/index.html:372 data/content/alt/index.html:624
+#: data/content/alt/index.html:782 data/content/alt/index.html:960
+msgid "Fedora Container"
+msgstr ""
+
+#: data/content/alt/index.html:155 data/content/alt/index.html:627
+#, python-format
+msgid "%sMB Container image"
+msgstr ""
+
+#: data/content/alt/index.html:393 data/content/alt/index.html:981
+#: data/content/alt/index.html:1137 data/content/cloud/index.html:481
+#: data/content/prerelease/index.html:1302
 msgid "Documentation"
-msgstr ""
+msgstr "תיעוד"
 
-#: data/content/alt/index.html:295
+#: data/content/alt/index.html:394
 #, python-format
 msgid ""
 "A guide for Fedora on AArch64, including a list of supported hardware "
@@ -608,71 +748,99 @@ msgid ""
 "href=\"%s\">Fedora Documentation Site</a>."
 msgstr ""
 
-#: data/content/alt/index.html:300 data/content/alt/index.html:826
-#: data/content/cloud/index.html:487 data/content/prerelease/index.html:1300
+#: data/content/alt/index.html:399 data/content/alt/index.html:987
+#: data/content/alt/index.html:1143 data/content/cloud/index.html:487
+#: data/content/prerelease/index.html:1308
 msgid "Email"
-msgstr ""
+msgstr "דוא״ל"
 
-#: data/content/alt/index.html:301
+#: data/content/alt/index.html:400
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
 "href=\"%s\">arm@lists.fedoraproject.org</a>."
 msgstr ""
 
-#: data/content/alt/index.html:306 data/content/alt/index.html:832
-#: data/content/cloud/index.html:493 data/content/prerelease/index.html:1306
+#: data/content/alt/index.html:405 data/content/alt/index.html:993
+#: data/content/alt/index.html:1149 data/content/cloud/index.html:493
+#: data/content/prerelease/index.html:1314
 msgid "Chat"
-msgstr ""
+msgstr "צ׳אט"
 
-#: data/content/alt/index.html:307
+#: data/content/alt/index.html:406
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-arm</a> IRC"
 " channel on <strong>irc.freenode.org</strong> for real-time chat."
 msgstr ""
 
-#: data/content/alt/index.html:322 data/content/alt/index.html:518
-#: data/content/alt/index.html:654
+#: data/content/alt/index.html:421 data/content/alt/index.html:643
+#: data/content/alt/index.html:795
 msgid "Power Architecture"
 msgstr ""
 
-#: data/content/alt/index.html:327 data/content/alt/index.html:523
+#: data/content/alt/index.html:426 data/content/alt/index.html:648
 msgid ""
 "PPC64 images are for installation on IBM Power systems or OpenPOWER systems."
 msgstr ""
 
-#: data/content/alt/index.html:420 data/content/alt/index.html:586
-#: data/content/alt/index.html:734
+#: data/content/alt/index.html:532 data/content/alt/index.html:719
+#: data/content/alt/index.html:885
 msgid ""
 "PPC64LE images are for installation on IBM Power systems or OpenPOWER "
 "systems."
 msgstr ""
 
-#: data/content/alt/index.html:659
+#: data/content/alt/index.html:800
 msgid ""
 "These images are for installation on IBM Power systems or OpenPOWER systems."
 msgstr ""
 
-#: data/content/alt/index.html:821
+#: data/content/alt/index.html:982 data/content/alt/index.html:1138
 #, python-format
 msgid ""
 "A wiki page with information about Power Architecture on Fedora is available"
 " on the <a href=\"%s\">Fedora Project Wiki</a>."
 msgstr ""
 
-#: data/content/alt/index.html:827
+#: data/content/alt/index.html:988
 #, python-format
 msgid ""
 "Users and developers are also available on the mailing list at <a "
 "href=\"%s\">ppc@lists.fedoraproject.org</a>."
 msgstr ""
 
-#: data/content/alt/index.html:833
+#: data/content/alt/index.html:994
 #, python-format
 msgid ""
 "Users and developers are available in the <a href=\"%s\">#fedora-ppc</a> IRC"
 " channel on <strong>irc.freenode.org</strong> for real-time chat."
+msgstr ""
+
+#: data/content/alt/index.html:1009 data/content/alt/index.html:1055
+#: data/content/alt/index.html:1091 data/content/prerelease/index.html:451
+msgid "s390x Architecture"
+msgstr "ארכיטקטורת s390x"
+
+#: data/content/alt/index.html:1014 data/content/alt/index.html:1060
+#: data/content/alt/index.html:1096
+msgid ""
+"If you want to install Fedora on IBM z Systems, then you are looking for "
+"this architecture."
+msgstr ""
+
+#: data/content/alt/index.html:1144
+#, python-format
+msgid ""
+"Users and developers are also available on the mailing list at <a "
+"href=\"%s\">s390x@lists.fedoraproject.org</a>."
+msgstr ""
+
+#: data/content/alt/index.html:1150
+#, python-format
+msgid ""
+"Users and developers are available in the <a href=\"%s\">#fedora-s390x</a> "
+"IRC channel on <strong>irc.freenode.org</strong> for real-time chat."
 msgstr ""
 
 #: data/content/cloud/index.html:25
@@ -738,8 +906,8 @@ msgid ""
 msgstr ""
 
 #: data/content/cloud/index.html:164 data/content/cloud/index.html:210
-#: data/content/cloud/index.html:246 data/content/prerelease/index.html:783
-#: data/content/prerelease/index.html:983
+#: data/content/cloud/index.html:246 data/content/prerelease/index.html:791
+#: data/content/prerelease/index.html:991
 msgid "VirtualBox image"
 msgstr ""
 
@@ -751,12 +919,12 @@ msgstr ""
 #: data/content/cloud/index.html:178 data/content/cloud/index.html:219
 #: data/content/cloud/index.html:257
 msgid "libvirt/KVM image"
-msgstr ""
+msgstr "דמות libvirt/KVM"
 
 #: data/content/cloud/index.html:181
 #, python-format
 msgid "%sMB libvirt image"
-msgstr ""
+msgstr "דמות libvirt בגודל של%s מ״ב"
 
 #: data/content/cloud/index.html:276 data/content/cloud/index.html:369
 #, python-format
@@ -778,33 +946,33 @@ msgid ""
 msgstr ""
 
 #: data/content/cloud/index.html:291 data/content/cloud/index.html:385
-#: data/content/prerelease/index.html:597
-#: data/content/prerelease/index.html:802
-#: data/content/prerelease/index.html:1006
+#: data/content/prerelease/index.html:605
+#: data/content/prerelease/index.html:810
+#: data/content/prerelease/index.html:1014
 msgid "GP2 HVM AMIs"
 msgstr ""
 
 #: data/content/cloud/index.html:294 data/content/cloud/index.html:331
 #: data/content/cloud/index.html:386 data/content/cloud/index.html:421
-#: data/content/prerelease/index.html:600
-#: data/content/prerelease/index.html:637
-#: data/content/prerelease/index.html:803
-#: data/content/prerelease/index.html:838
-#: data/content/prerelease/index.html:1009
-#: data/content/prerelease/index.html:1046
+#: data/content/prerelease/index.html:608
+#: data/content/prerelease/index.html:645
+#: data/content/prerelease/index.html:811
+#: data/content/prerelease/index.html:846
+#: data/content/prerelease/index.html:1017
+#: data/content/prerelease/index.html:1054
 msgid "Click to launch"
 msgstr ""
 
 #: data/content/cloud/index.html:299 data/content/cloud/index.html:336
 #: data/content/cloud/index.html:391 data/content/cloud/index.html:426
-#: data/content/prerelease/index.html:605
-#: data/content/prerelease/index.html:642
-#: data/content/prerelease/index.html:808
-#: data/content/prerelease/index.html:843
-#: data/content/prerelease/index.html:1014
-#: data/content/prerelease/index.html:1051
+#: data/content/prerelease/index.html:613
+#: data/content/prerelease/index.html:650
+#: data/content/prerelease/index.html:816
+#: data/content/prerelease/index.html:851
+#: data/content/prerelease/index.html:1022
+#: data/content/prerelease/index.html:1059
 msgid "Close"
-msgstr ""
+msgstr "סגירה"
 
 #: data/content/cloud/index.html:300 data/content/cloud/index.html:392
 #, python-format
@@ -813,41 +981,41 @@ msgstr ""
 
 #: data/content/cloud/index.html:305 data/content/cloud/index.html:342
 #: data/content/cloud/index.html:397 data/content/cloud/index.html:432
-#: data/content/prerelease/index.html:611
-#: data/content/prerelease/index.html:648
-#: data/content/prerelease/index.html:814
-#: data/content/prerelease/index.html:849
-#: data/content/prerelease/index.html:1020
-#: data/content/prerelease/index.html:1057
+#: data/content/prerelease/index.html:619
+#: data/content/prerelease/index.html:656
+#: data/content/prerelease/index.html:822
+#: data/content/prerelease/index.html:857
+#: data/content/prerelease/index.html:1028
+#: data/content/prerelease/index.html:1065
 msgid "Region"
-msgstr ""
+msgstr "אזור"
 
 #: data/content/cloud/index.html:306 data/content/cloud/index.html:343
 #: data/content/cloud/index.html:398 data/content/cloud/index.html:433
-#: data/content/prerelease/index.html:612
-#: data/content/prerelease/index.html:649
-#: data/content/prerelease/index.html:815
-#: data/content/prerelease/index.html:850
-#: data/content/prerelease/index.html:1021
-#: data/content/prerelease/index.html:1058
+#: data/content/prerelease/index.html:620
+#: data/content/prerelease/index.html:657
+#: data/content/prerelease/index.html:823
+#: data/content/prerelease/index.html:858
+#: data/content/prerelease/index.html:1029
+#: data/content/prerelease/index.html:1066
 msgid "AMI ID"
-msgstr ""
+msgstr "מזהה AMI"
 
 #: data/content/cloud/index.html:307 data/content/cloud/index.html:344
 #: data/content/cloud/index.html:399 data/content/cloud/index.html:434
-#: data/content/prerelease/index.html:613
-#: data/content/prerelease/index.html:650
-#: data/content/prerelease/index.html:816
-#: data/content/prerelease/index.html:851
-#: data/content/prerelease/index.html:1022
-#: data/content/prerelease/index.html:1059
+#: data/content/prerelease/index.html:621
+#: data/content/prerelease/index.html:658
+#: data/content/prerelease/index.html:824
+#: data/content/prerelease/index.html:859
+#: data/content/prerelease/index.html:1030
+#: data/content/prerelease/index.html:1067
 msgid "Launch"
 msgstr ""
 
 #: data/content/cloud/index.html:328 data/content/cloud/index.html:420
-#: data/content/prerelease/index.html:634
-#: data/content/prerelease/index.html:837
-#: data/content/prerelease/index.html:1043
+#: data/content/prerelease/index.html:642
+#: data/content/prerelease/index.html:845
+#: data/content/prerelease/index.html:1051
 msgid "Standard HVM AMIs"
 msgstr ""
 
@@ -898,116 +1066,120 @@ msgid "Official pre-releases of Fedora alternative downloads."
 msgstr ""
 
 #: data/content/prerelease/index.html:53
-msgid ""
-"Are you looking for 32 bit images of F27 Beta? Due to some technical issues "
-"we cannot offer them, but they will be available for the F27 final release "
-"date. Stay tuned!"
-msgstr ""
-
-#: data/content/prerelease/index.html:54
-#: data/content/prerelease/index.html:115
-#: data/content/prerelease/index.html:161
-#: data/content/prerelease/index.html:216
-#: data/content/prerelease/index.html:527
-#: data/content/prerelease/index.html:751
-#: data/content/prerelease/index.html:947
-#: data/content/prerelease/index.html:1163
-#: data/content/prerelease/index.html:1209
-#: data/content/prerelease/index.html:1245
+#: data/content/prerelease/index.html:114
+#: data/content/prerelease/index.html:160
+#: data/content/prerelease/index.html:215
+#: data/content/prerelease/index.html:535
+#: data/content/prerelease/index.html:759
+#: data/content/prerelease/index.html:955
+#: data/content/prerelease/index.html:1171
+#: data/content/prerelease/index.html:1217
+#: data/content/prerelease/index.html:1253
 #, python-format
 msgid "F%(rel)s %(state)s"
 msgstr ""
 
-#: data/content/prerelease/index.html:114
-#: data/content/prerelease/index.html:160
+#: data/content/prerelease/index.html:113
+#: data/content/prerelease/index.html:159
 msgid ""
 "Are you looking for 32 bit images for F27 Beta? Due to some technical issues"
 " we cannot offer them, but they will be available for the F27 final release "
 "date. Stay tuned!"
 msgstr ""
 
-#: data/content/prerelease/index.html:221
+#: data/content/prerelease/index.html:220
 msgid ""
 "These are additional architectures supported by Fedora beyond the standard "
 "set"
 msgstr ""
 
-#: data/content/prerelease/index.html:236
+#: data/content/prerelease/index.html:235
 msgid "ARM<span class=\"sup\">®</span>"
-msgstr ""
+msgstr "ARM<span class=\"sup\">®</span>"
 
-#: data/content/prerelease/index.html:244
-#: data/content/prerelease/index.html:329
-#: data/content/prerelease/index.html:415
+#: data/content/prerelease/index.html:243
+#: data/content/prerelease/index.html:317
+#: data/content/prerelease/index.html:391
 msgid "Fedora Server DVD"
-msgstr ""
+msgstr "DVD של פדורה לשרתים"
 
-#: data/content/prerelease/index.html:249
-#: data/content/prerelease/index.html:334
-#: data/content/prerelease/index.html:420
+#: data/content/prerelease/index.html:248
+#: data/content/prerelease/index.html:322
+#: data/content/prerelease/index.html:396
 msgid "DVD"
-msgstr ""
+msgstr "DVD"
 
-#: data/content/prerelease/index.html:255
-#: data/content/prerelease/index.html:340
-#: data/content/prerelease/index.html:426
+#: data/content/prerelease/index.html:254
+#: data/content/prerelease/index.html:328
+#: data/content/prerelease/index.html:402
+#: data/content/prerelease/index.html:476
 msgid "Fedora Server Netinstall"
-msgstr ""
+msgstr "התקנה מהרשת של פדורה לשרתים"
 
-#: data/content/prerelease/index.html:260
-#: data/content/prerelease/index.html:271
-#: data/content/prerelease/index.html:345
-#: data/content/prerelease/index.html:356
-#: data/content/prerelease/index.html:431
-#: data/content/prerelease/index.html:442
+#: data/content/prerelease/index.html:259
+#: data/content/prerelease/index.html:333
+#: data/content/prerelease/index.html:407
+#: data/content/prerelease/index.html:481
 msgid "Net"
-msgstr ""
+msgstr "רשת"
 
-#: data/content/prerelease/index.html:266
-#: data/content/prerelease/index.html:351
-#: data/content/prerelease/index.html:437
-msgid "Fedora Cloud Netinstall"
-msgstr ""
-
-#: data/content/prerelease/index.html:277
-#: data/content/prerelease/index.html:448
+#: data/content/prerelease/index.html:265
+#: data/content/prerelease/index.html:339
+#: data/content/prerelease/index.html:413
+#: data/content/prerelease/index.html:487
 msgid "Fedora Cloud qcow2"
 msgstr ""
 
-#: data/content/prerelease/index.html:282
-#: data/content/prerelease/index.html:453
+#: data/content/prerelease/index.html:270
+#: data/content/prerelease/index.html:344
+#: data/content/prerelease/index.html:418
+#: data/content/prerelease/index.html:492
 msgid "qcow2"
-msgstr ""
+msgstr "qcow2"
 
-#: data/content/prerelease/index.html:288
-#: data/content/prerelease/index.html:459
+#: data/content/prerelease/index.html:276
+#: data/content/prerelease/index.html:350
+#: data/content/prerelease/index.html:424
+#: data/content/prerelease/index.html:498
 msgid "Fedora Cloud raw"
 msgstr ""
 
-#: data/content/prerelease/index.html:293
-#: data/content/prerelease/index.html:464
+#: data/content/prerelease/index.html:281
+#: data/content/prerelease/index.html:355
+#: data/content/prerelease/index.html:429
+#: data/content/prerelease/index.html:503
 msgid "raw"
+msgstr "raw"
+
+#: data/content/prerelease/index.html:287
+#: data/content/prerelease/index.html:435
+#: data/content/prerelease/index.html:509
+msgid "Fedora Docker"
 msgstr ""
 
-#: data/content/prerelease/index.html:315
+#: data/content/prerelease/index.html:303
 msgid "PowerPC Architecture (PPC64)"
 msgstr ""
 
-#: data/content/prerelease/index.html:321
+#: data/content/prerelease/index.html:309
 msgid "PPC64"
-msgstr ""
+msgstr "PPC64"
 
-#: data/content/prerelease/index.html:401
+#: data/content/prerelease/index.html:377
 msgid "PowerPC Architecture (PPC64LE)"
 msgstr ""
 
-#: data/content/prerelease/index.html:407
+#: data/content/prerelease/index.html:383
 msgid "PPC64LE"
+msgstr "PPC64LE"
+
+#: data/content/prerelease/index.html:457
+msgid "s390x"
 msgstr ""
 
-#: data/content/prerelease/index.html:532
-#: data/content/prerelease/index.html:756
-#: data/content/prerelease/index.html:952
+#: data/content/prerelease/index.html:540
+#: data/content/prerelease/index.html:764
+#: data/content/prerelease/index.html:960
 msgid ""
 "These are the Cloud Base Images you can use as qcow2 for Openstack or as a "
 "compressed raw image. You can use them also for deployment on Vagrant, as "
@@ -1016,97 +1188,103 @@ msgid ""
 "your needs."
 msgstr ""
 
-#: data/content/prerelease/index.html:540
-#: data/content/prerelease/index.html:765
-#: data/content/prerelease/index.html:961
+#: data/content/prerelease/index.html:548
+#: data/content/prerelease/index.html:773
+#: data/content/prerelease/index.html:969
 msgid "raw image"
 msgstr ""
 
-#: data/content/prerelease/index.html:543
+#: data/content/prerelease/index.html:551
 #, python-format
 msgid "%sMB raw.xz"
 msgstr ""
 
-#: data/content/prerelease/index.html:554
-#: data/content/prerelease/index.html:774
-#: data/content/prerelease/index.html:972
+#: data/content/prerelease/index.html:562
+#: data/content/prerelease/index.html:782
+#: data/content/prerelease/index.html:980
 msgid "qcow2 image"
 msgstr ""
 
-#: data/content/prerelease/index.html:557
+#: data/content/prerelease/index.html:565
 #, python-format
 msgid "%sMB qcow2"
 msgstr ""
 
-#: data/content/prerelease/index.html:568
+#: data/content/prerelease/index.html:576
 msgid "Vagrant VBox image"
 msgstr ""
 
-#: data/content/prerelease/index.html:571
+#: data/content/prerelease/index.html:579
 #, python-format
 msgid "%sMB vbox"
 msgstr ""
 
-#: data/content/prerelease/index.html:582
+#: data/content/prerelease/index.html:590
 msgid "Vagrant libvirt image"
 msgstr ""
 
-#: data/content/prerelease/index.html:585
+#: data/content/prerelease/index.html:593
 #, python-format
 msgid "%sMB libvirt"
 msgstr ""
 
-#: data/content/prerelease/index.html:606
-#: data/content/prerelease/index.html:809
-#: data/content/prerelease/index.html:1015
+#: data/content/prerelease/index.html:614
+#: data/content/prerelease/index.html:817
+#: data/content/prerelease/index.html:1023
 #, python-format
 msgid "Fedora %(rel)s %(state)s GP2 Base Cloud HVM AMIs"
 msgstr ""
 
-#: data/content/prerelease/index.html:643
-#: data/content/prerelease/index.html:844
-#: data/content/prerelease/index.html:1052
+#: data/content/prerelease/index.html:651
+#: data/content/prerelease/index.html:852
+#: data/content/prerelease/index.html:1060
 #, python-format
 msgid "Fedora %(rel)s %(state)s Standard Base Cloud HVM AMIs"
 msgstr ""
 
-#: data/content/prerelease/index.html:792
-#: data/content/prerelease/index.html:994
+#: data/content/prerelease/index.html:800
+#: data/content/prerelease/index.html:1002
 msgid "libvirt image"
 msgstr ""
 
-#: data/content/prerelease/index.html:1176
-#: data/content/prerelease/index.html:1223
-#: data/content/prerelease/index.html:1259
+#: data/content/prerelease/index.html:1184
+#: data/content/prerelease/index.html:1231
+#: data/content/prerelease/index.html:1267
 msgid "Everything 64-bit"
+msgstr "הכול 64 סיביות"
+
+#: data/content/prerelease/index.html:1198
+#: data/content/prerelease/index.html:1240
+#: data/content/prerelease/index.html:1278
+msgid "Everything 32-bit"
 msgstr ""
 
-#: data/content/prerelease/index.html:1288
+#: data/content/prerelease/index.html:1296
 msgid "Testing Resources"
-msgstr ""
+msgstr "משאבי בדיקות"
 
-#: data/content/prerelease/index.html:1295
+#: data/content/prerelease/index.html:1303
 #, python-format
 msgid ""
 "Some basic information about getting involved in Fedora's testing efforts is"
 " available on <a href=\"%s\">the Fedora QA wiki</a>."
 msgstr ""
 
-#: data/content/prerelease/index.html:1301
+#: data/content/prerelease/index.html:1309
 #, python-format
 msgid ""
 "Email discussion of Fedora testing is available on the mailing list at <a "
 "href=\"%s\">test@lists.fedoraproject.org</a>."
 msgstr ""
 
-#: data/content/prerelease/index.html:1307
+#: data/content/prerelease/index.html:1315
 #, python-format
 msgid ""
 "Discussion of Fedora testing takes place in the <a href=\"%s\">#fedora-"
 "qa</a> IRC channel on <strong>irc.freenode.org.</strong>"
 msgstr ""
 
-#: data/content/prerelease/index.html:1314
+#: data/content/prerelease/index.html:1322
 #, python-format
 msgid ""
 "Sometimes you may encounter an issue with this spin that you can get help "
@@ -1130,162 +1308,168 @@ msgstr ""
 
 #: data/templates/export-regulations.html:13
 msgid "Read more >"
-msgstr ""
+msgstr "מידע נוסף >"
 
 #: data/templates/footer.html:14
 msgid "About"
-msgstr ""
+msgstr "על אודות"
 
 #: data/templates/footer.html:17
 msgid "About Fedora"
-msgstr ""
+msgstr "על אודות פדורה"
 
 #: data/templates/footer.html:18
 msgid "Sponsors"
-msgstr ""
+msgstr "מממנים"
 
 #: data/templates/footer.html:19
 msgid "Fedora Magazine"
-msgstr ""
+msgstr "מגזין פדורה"
 
 #: data/templates/footer.html:20
 msgid "Legal"
-msgstr ""
+msgstr "מידע משפטי"
 
-#: data/templates/footer.html:40
-msgid "Get Fedora Workstation"
+#: data/templates/footer.html:21
+msgid "Fedora Code of Conduct"
 msgstr ""
 
 #: data/templates/footer.html:41
-msgid "Get Fedora Server"
-msgstr ""
+msgid "Get Fedora Workstation"
+msgstr "הורדת פדורה לשולחן העבודה"
 
 #: data/templates/footer.html:42
-msgid "Get Fedora Atomic"
-msgstr ""
+msgid "Get Fedora Server"
+msgstr "הורדת פדורה לשרתים"
 
 #: data/templates/footer.html:43
+msgid "Get Fedora Atomic"
+msgstr "הורדת פדורה Atomic"
+
+#: data/templates/footer.html:44
 msgid "Fedora Spins"
 msgstr ""
 
-#: data/templates/footer.html:44
-msgid "Fedora Labs"
-msgstr ""
-
 #: data/templates/footer.html:45
+msgid "Fedora Labs"
+msgstr "מעבדות פדורה"
+
+#: data/templates/footer.html:46
 msgid "Fedora ARM<span class=\"sup\">®</span>"
-msgstr ""
+msgstr "פדורה ARM<span class=\"sup\">®</span>"
 
-#: data/templates/footer.html:52
+#: data/templates/footer.html:53
 msgid "Support"
-msgstr ""
-
-#: data/templates/footer.html:55
-msgid "Get Help"
-msgstr ""
+msgstr "תמיכה"
 
 #: data/templates/footer.html:56
-msgid "Ask Fedora"
-msgstr ""
+msgid "Get Help"
+msgstr "קבלת עזרה"
 
 #: data/templates/footer.html:57
-msgid "Common Bugs"
-msgstr ""
+msgid "Ask Fedora"
+msgstr "לשאול על פדורה"
 
 #: data/templates/footer.html:58
-msgid "Fedora Developer Portal"
-msgstr ""
+msgid "Common Bugs"
+msgstr "תקלות נפוצות"
 
 #: data/templates/footer.html:59
+msgid "Fedora Developer Portal"
+msgstr "שער המפתחים של פדורה"
+
+#: data/templates/footer.html:60
 msgid "Installation Guide"
-msgstr ""
+msgstr "מדריך התקנה"
 
-#: data/templates/footer.html:65
+#: data/templates/footer.html:66
 msgid "Join"
-msgstr ""
-
-#: data/templates/footer.html:68
-msgid "Join Fedora"
-msgstr ""
+msgstr "הצטרפות"
 
 #: data/templates/footer.html:69
-msgid "Planet Fedora"
-msgstr ""
+msgid "Join Fedora"
+msgstr "הצטרפות לפדורה"
 
 #: data/templates/footer.html:70
+msgid "Planet Fedora"
+msgstr "פלאנט פדורה"
+
+#: data/templates/footer.html:71
 msgid "Fedora SIGs"
 msgstr ""
 
-#: data/templates/footer.html:71
-msgid "Fedora Account System"
-msgstr ""
-
 #: data/templates/footer.html:72
-msgid "Fedora Community"
-msgstr ""
+msgid "Fedora Account System"
+msgstr "מערכת החשבונות של פדורה"
 
-#: data/templates/footer.html:86
-msgid "Fedora is sponsored by Red Hat."
-msgstr ""
+#: data/templates/footer.html:73
+msgid "Fedora Community"
+msgstr "קהילת פדורה"
 
 #: data/templates/footer.html:87
-msgid "Learn more about the relationship between Red Hat and Fedora »"
-msgstr ""
+msgid "Fedora is sponsored by Red Hat."
+msgstr "פדורה ממומנת על ידי Red Hat."
 
 #: data/templates/footer.html:88
+msgid "Learn more about the relationship between Red Hat and Fedora »"
+msgstr "מידע נוסף על הקשר בין Red Hat לפדורה  »"
+
+#: data/templates/footer.html:89
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
-msgstr ""
+msgstr "© %(year)s Red Hat, בע״מ. וגופים נוספים."
 
-#: data/templates/footer.html:88
+#: data/templates/footer.html:89
 msgid ""
 "Please send any comments or corrections to the <a href=\"//pagure.io/fedora-"
 "websites\">websites team</a>."
 msgstr ""
+"נא לשלוח הערות ותיקונים ל<a href=\"//pagure.io/fedora-websites\">צוות "
+"האתרים</a>."
 
-#: data/templates/footer.html:94
+#: data/templates/footer.html:95
 msgid "Change Language"
-msgstr ""
+msgstr "החלפת שפה"
 
-#: data/templates/footer.html:98
+#: data/templates/footer.html:99
 msgid "OK"
-msgstr ""
+msgstr "אישור"
 
 #: data/templates/head.html:13
 msgid "Alternative versions and formats of Fedora for download"
-msgstr ""
+msgstr "גרסאות ותסדירים שונים של פדורה להורדה"
 
 #: data/templates/morecloud.html:12
 msgid "Want to try something new?"
-msgstr ""
+msgstr "אפשר להציע לך לנסות משהו חדש?"
 
 #: data/templates/productselector-atomic.html:13
 msgid "Atomic"
-msgstr ""
+msgstr "Atomic"
 
 #: data/templates/generic/docs-links.html:8
 msgid "Documentation and other resources"
-msgstr ""
+msgstr "תיעוד ומשאבים נוספים"
 
 #: data/templates/generic/docs-links.html:9
 #, python-format
 msgid ""
 "Before installing Fedora, you may want to confirm your system meets minimum "
-"requirements for Fedora. Consult <a href=\"%s\">the online release notes</a>"
-" to see minimum requirements and recommendations."
+"requirements for Fedora. Consult <a href=\"%(release_notes)s\">the online "
+"release notes</a> to see minimum requirements and recommendations."
 msgstr ""
 
 #: data/templates/generic/docs-links.html:10
 #, python-format
 msgid ""
-"There is also a <a href=\"%s\">complete Installation Guide</a> available. We"
-" recommend you look through it before installing to your system, since it "
-"answers many common questions."
+"There is also a <a href=\"%(install_guide)s\">complete Installation "
+"Guide</a> available. We recommend you look through it before installing to "
+"your system, since it answers many common questions."
 msgstr ""
 
 #: data/templates/generic/splash-checksum.html:8
 msgid "Verify your Download!"
-msgstr ""
+msgstr "אימות ההורדה שלך!"
 
 #: data/templates/generic/splash-checksum.html:9
 #, python-format
@@ -1298,8 +1482,8 @@ msgstr ""
 
 #: data/templates/generic/splash-checksum.html:12
 msgid "Validate 64bit!"
-msgstr ""
+msgstr "אימות 64 סיביות!"
 
 #: data/templates/generic/splash-checksum.html:15
 msgid "Validate 32bit!"
-msgstr ""
+msgstr "אימות 32 סיביות!"
