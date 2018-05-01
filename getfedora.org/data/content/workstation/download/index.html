@@ -68,7 +68,7 @@
               <li>${_('Fedora Media Writer (download above)')}</li>
               <li>${Markup(_('A USB Flash drive with at least %s GB space available')) % global_variables.iso_size['x86_64_workstation']}</li>
             </ul>
-          <p>${_('Fedora Workstation is provided via Fedora Media Writer. Download this program via the download link above and run it on your system, following the prompts to generate a live version (see \'What does "Live" mean?\' to the right) of Fedora Workstation on a USB flash drive. You may then run the live version of Fedora Workstation from your USB flash drive.')}</p>
+          <p>${Markup(_('Fedora Workstation is provided via Fedora Media Writer. Download this program for your &lt;a href="%s"&gt;supported platform&lt;/a&gt; and follow the prompts to generate a live version (see \'What does "Live" mean?\' to the right) of Fedora Workstation on a USB flash drive. You may then run the live version of Fedora Workstation from your USB flash drive.') % ('#fmw'))}</p>
           <p>${_('Optionally, you may install Fedora Workstation to a laptop or desktop computer that has at least 1 GHz processor, 1 GB RAM, and 10 GB space available. To do this, run the live version of Fedora Workstation from your USB flash drive on the computer you\'d like to install to, run the Fedora Media Writer application, and follow the on-screen prompts to complete installation.')}</p>
 
           <h3>${_('Supported Platforms')}</h3>
