@@ -15,9 +15,11 @@
 	<div class="jumbotron header-splash">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-md-offset-1 text-left liveusb">
-            <h1>${_('The latest technology. A stable foundation. Together, for your applications and services.')}</h1>
-              <p><a class="btn-success btn" href="./download/" role="button">${_('Download now')}</a></p>
+          <div class="col-md-8 text-left liveusb">
+            <!--<h1>${_('Run your applications on a Linux server OS with multiple versions of content.')}</h1>-->
+            <h1>${_('Run your applications on a Linux server OS with the latest open source technology.')}</h1>
+            <p>${_('Now with content in multiple versions on independent lifecycles — so your server can move both fast and slow.')}</p>
+            <p><a class="btn-success btn" href="./download/" role="button">${_('Download now')}</a></p>
           </div>
         </div>
       </div>
@@ -26,29 +28,31 @@
 
   <!-- /Server Header -->
 
-  <!-- Product Testimonial #1 -->
-  <div class="jumbotron product-testimonial">
-    <div class="container text-center">
-	  <div class="row">
-		 <div class="col-md-4">
-          <img src="/static/images/server/dan-headshot.jpg" class="img-circle" />
-     </div>
-		    <div class="col-md-8 liveusb">
-          <blockquote>
-            <p>${Markup(_('&ldquo;The simplicity introduced with rolekit and cockpit have made server deployments a breeze. What took me a few days on other operating systems took less than an hour with Fedora %(rel)s Server. It just works.&rdquo;')) % {'rel':global_variables.release['curr_server_id']}}</p>
-            <footer><cite>Dan Mossor, ${_('Systems Engineer')}</cite></footer>
-          </blockquote>
+
+  <!-- Product definition -->
+  <div class="jumbotron product-definition">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 caption liveusb">
+          <h3>${_('Fedora Server')}</h3>
+          <p>${_('Fedora Server is a short-lifecycle, community-supported server operating system that enables seasoned system administrators, experienced with any OS, to make use of the very latest technologies available in the open source community.')}</p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Product definition -->
-  <div class="jumbotron product-definition">
-    <div class="container text-center">
+  <!-- Feature: Modularity -->
+  <div class="jumbotron product-feature modularity">
+    <div class="container">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3 liveusb">
-            <p>${_('Fedora Server is a short-lifecycle, community-supported server operating system that enables seasoned system administrators experienced with any OS to make use of the very latest server-based technologies available in the open source community.')}</p>
+        <div class="col-md-6 screenshot">
+            <img src="/static/images/server/modularity.png" />
+        </div>
+	      <div class="col-md-6 caption liveusb">
+  	      <h3>${_('Introducing Modularity')}</h3>
+          <p>${_('Modularity brings a new Modular repository providing additional versions of software on independent lifecycles.')}</p>
+          <p>${_('Choose the right version of an application or a language stack you need, and keep it even when your OS upgrades to a newer version.')}</p>
+          <p><a class="btn-success btn-sm btn" href="https://docs.pagure.org/modularity/" role="button">${_('Learn more about Modularity')}</a></p>
         </div>
       </div>
     </div>
@@ -64,58 +68,68 @@
         </div>
         <div class="col-md-6 screenshot">
 	        <img src="/static/images/server/server-features-cockpit.png" />
-	    </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Feature: Server Roles & Role Kit and OpenLMI  -->
-  <div class="jumbotron product-feature two-col">
-    <div class="container">
-      <div class="row">
-	      <div class="col-md-offset-1 col-md-6 rolekit liveusb">
-		      <h3>${_('Server Roles')}</h3>
-	        <p>${_('There\'s no need to set up your server from scratch when you use server roles. Server roles plug into your Fedora Server system, providing a well-integrated service on top of the Fedora Server platform. Deploy and manage these prepared roles simply using the Rolekit tool.')}</p>
-        </div>
-        <div class="col-md-5 openlmi liveusb">
-          <h3>${_('Database Services')}</h3>
-	        <p>${_('Fedora Server brings with it an enterprise-class, scalable database server powered by the open-source PostgreSQL project.')}</p>
-        </div>
+	      </div>
       </div>
     </div>
   </div>
 
   <!-- Feature: freeIPA -->
-  <div class="jumbotron product-feature freeipa">
+  <!--<div class="jumbotron product-feature freeipa">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 caption liveusb">
+            <h3>${_('Complete Enterprise Domain Solution')}</h3>
+            <p>${_('Level up your Linux network with advanced identity management, DNS, certificate services, Windows(TM) domain integration throughout your environment with FreeIPA, the engine that drives Fedora Server\'s Domain Controller role.')}</p>
+          </div>
+          <div class="col-md-6 screenshot">
+            <img src="/static/images/server/server-features-freeipa.png" />
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+  <!-- Feature: Server Roles & Role Kit and OpenLMI  -->
+  <div class="jumbotron product-feature two-col">
     <div class="container">
       <div class="row">
         <div class="col-md-6 screenshot">
-	      <img src="/static/images/server/server-features-freeipa.png" />
-	      </div>
-	      <div class="col-md-6 caption liveusb">
-	      <h3>${_('Complete Enterprise Domain Solution')}</h3>
-	      <p>${_('Level up your Linux network with advanced identity management, DNS, certificate services, Windows(TM) domain integration throughout your environment with FreeIPA, the engine that drives Fedora Server\'s Domain Controller role.')}</p>
+        </div>
+        <div class="col-md-6 openlmi liveusb">
+          <h3>${_('Database Services')}</h3>
+          <p>${_('Fedora Server brings with it an enterprise-class, scalable database server powered by the open-source PostgreSQL project.')}</p>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="jumbotron product-feature freeipa">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 openlmi liveusb">
+          <h3>${_('Complete Enterprise Domain Solution')}</h3>
+            <p>${_('Level up your Linux network with advanced identity management, DNS, certificate services, Windows(TM) domain integration throughout your environment with FreeIPA, the open-source domain controller.')}</p>
+        </div>
+        <div class="col-md-6 screenshot">
+          <img src="/static/images/server/server-features-freeipa.png" />
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Product Testimonial #2 -->
+<!-- Product Testimonial #2 -->
   <div class="jumbotron product-testimonial">
     <div class="container text-center">
-	  <div class="row">
-		    <div class="col-md-8 liveusb">
+      <div class="row">
+        <div class="col-md-8 liveusb">
           <blockquote>
-            <p>${Markup(_('&ldquo;The Docker Role for Fedora Server was simple and fast to install so that you can run your Docker images. This makes a great testbed for beginners and experts with docker so that they can develop their applications on the fly.&rdquo;'))}</p>
-            <footer><cite>John Unland, ${_('Information Systems Student')}</cite></footer>
+            <p>${Markup(_('&ldquo;For DevConf US, I needed a system to manage the conference. I discovered regcfp, by Patrick Uiterwijk, which seemed to suit my needs. However, it won\'t run in nodejs 8 in F27. Launching F28 Server, choosing the "nodejs:6" stream, worked like a charm!&rdquo;'))}</p>
+            <footer><cite>Langdon White, ${_('DevConf US Conference Co-Chair')}</cite></footer>
           </blockquote>
         </div>
-		    <div class="col-md-4">
-          <img src="/static/images/server/john-headshot.jpg" class="img-circle" />
+        <div class="col-md-4">
+          <img src="/static/images/server/langdon-white.png" class="img-circle" />
         </div>
-
-    </div>
+      </div>
     </div>
   </div>
 
