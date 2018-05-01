@@ -265,6 +265,7 @@ iso_size={
     'VBvag_cloud':         '240',       # In MB
     'libvag_cloud':        '231',       # In MB
     'x86_64_Container':    '43',        # In MB
+    'x86_64_docker':       '40',        # In MB NOTE: this is just to make fedoraproject.org build happy
     'raw_i386_cloud':      '144',       # In MB
     # Note that atomic values here get overwritten by the twoweek script.
     'atomic_raw_cloud':    '???',       # In MB
