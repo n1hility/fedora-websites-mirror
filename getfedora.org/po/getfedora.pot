@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-30 22:24+0200\n"
+"POT-Creation-Date: 2018-05-03 22:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -307,7 +307,7 @@ msgid "For Atomic Host images"
 msgstr ""
 
 #: data/content/verify.html:71
-msgid "For Docker"
+msgid "For Container"
 msgstr ""
 
 #: data/content/verify.html:78
@@ -366,7 +366,7 @@ msgid "How do I verify my downloaded image on another operating system?"
 msgstr ""
 
 #: data/content/verify.html:95
-msgid "Read these instructions to validate your image."
+msgid "Read these instructions to verify your image."
 msgstr ""
 
 #: data/content/atomic/index.html:8
@@ -488,7 +488,7 @@ msgstr ""
 #: data/content/server/download/server-download-splash.html:47
 #: data/content/server/prerelease/index.html:45
 #: data/content/workstation/download/ws-download-splash.html:52
-msgid "Validate!"
+msgid "Verify!"
 msgstr ""
 
 #: data/content/atomic/download/index.html:10
@@ -1802,9 +1802,10 @@ msgid "64-bit %s GB ISO for <strong>Linux</strong>."
 msgstr ""
 
 #: data/content/workstation/download/index.html:46
-#: data/content/workstation/prerelease/index.html:25
 #, python-format
-msgid "<a href=\"%s\">Install via DNF</a> if you are already on Fedora."
+msgid ""
+"A download is only needed for new installs. To upgrade, <a "
+"href=\"%s\">follow these instructions.</a>"
 msgstr ""
 
 #: data/content/workstation/download/index.html:50
@@ -1846,12 +1847,13 @@ msgid "A USB Flash drive with at least %s GB space available"
 msgstr ""
 
 #: data/content/workstation/download/index.html:71
+#, python-format
 msgid ""
 "Fedora Workstation is provided via Fedora Media Writer. Download this "
-"program via the download link above and run it on your system, following "
-"the prompts to generate a live version (see 'What does \"Live\" mean?' to"
-" the right) of Fedora Workstation on a USB flash drive. You may then run "
-"the live version of Fedora Workstation from your USB flash drive."
+"program for your <a href=\"%s\">supported platform</a> and follow the "
+"prompts to generate a live version (see 'What does \"Live\" mean?' to the"
+" right) of Fedora Workstation on a USB flash drive. You may then run the "
+"live version of Fedora Workstation from your USB flash drive."
 msgstr ""
 
 #: data/content/workstation/download/index.html:72
@@ -2065,6 +2067,11 @@ msgstr ""
 msgid "Download Fedora %(rel)s %(state)s Workstation"
 msgstr ""
 
+#: data/content/workstation/prerelease/index.html:25
+#, python-format
+msgid "<a href=\"%s\">Upgrade via DNF</a> if you are already on Fedora."
+msgstr ""
+
 #: data/content/workstation/prerelease/index.html:45
 #, python-format
 msgid ""
@@ -2141,11 +2148,11 @@ msgid ""
 msgstr ""
 
 #: data/content/workstation/prerelease/index.html:123
-msgid "Validate 64-bit!"
+msgid "Verify 64-bit!"
 msgstr ""
 
 #: data/content/workstation/prerelease/index.html:126
-msgid "Validate 32-bit!"
+msgid "Verify 32-bit!"
 msgstr ""
 
 #: data/content/workstation/prerelease/index.html:146
