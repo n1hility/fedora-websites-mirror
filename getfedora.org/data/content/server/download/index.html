@@ -53,6 +53,15 @@
           ${_('Netinstall Image:')}
           <ul>
           <li><p><a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.iso">${Markup(_('64-bit %sMB image')) % global_variables.iso_size['x86_64_server_net']}</a></p></li>
+          <li><p><a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/aarch64/iso/Fedora-Server-netinst-aarch64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.iso">${Markup(_('aarch64 %sMB image')) % global_variables.iso_size['aarch64_Server_net']}</a></p></li>
+          </ul>
+          ${_('DVD ISO Image:')}
+          <ul>
+          <li><p><a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.iso">${Markup(_('aarch64 %sMB image')) % global_variables.iso_size['aarch64_Server_DVD']}</a></p></li>
+          </ul>
+          ${_('Raw Disk Image:')}
+          <ul>
+          <li><p><a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/aarch64/images/Fedora-Server-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.aarch64.raw.xz">${Markup(_('aarch64 %sMB image')) % global_variables.iso_size['aarch64_Server_raw']}</a></p></li>
           </ul>
           </p>
           <div class="top-space bottom-margin">
