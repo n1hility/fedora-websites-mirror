@@ -26,7 +26,7 @@ log = logging.getLogger('fedimg_vars')
 cache_file = '/tmp/fedora_websites_fedimg.cache'
 dateformat = '%Y-%m-%dT%H:%MZ'
 base_url = 'https://apps.fedoraproject.org/datagrepper/raw'
-topic = "org.fedoraproject.prod.fedimg.image.upload"
+topic = "org.fedoraproject.prod.fedimg.image.publish"
 
 session = requests.session()
 
@@ -62,7 +62,7 @@ def retrieve_messages():
 
 def filter_messages(messages, target):
     for message in messages:
-        if target in str(message) and 'completed' in str(message):
+        if target in str(message):
             yield message
 
 
