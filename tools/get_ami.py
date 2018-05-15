@@ -20,7 +20,7 @@ import requests
 log = logging.getLogger()
 
 base_url = 'https://apps.fedoraproject.org/datagrepper/raw'
-topic = "org.fedoraproject.prod.fedimg.image.upload"
+topic = "org.fedoraproject.prod.fedimg.image.publish"
 
 
 def get_page(page, pages, delta):
@@ -34,8 +34,6 @@ def get_page(page, pages, delta):
     return response.json()
 
 
-completed = lambda message: message['msg']['status'] == 'completed'
-
 
 def get_messages(days):
     """ Generator that yields messages from datagrepper """
@@ -45,8 +43,7 @@ def get_messages(days):
     # Get the first page
     data = get_page(1, 'unknown', delta)
     for message in data['raw_messages']:
-        if completed(message):
-            yield message
+         yield message
 
     more = functools.partial(get_page, pages=data['pages'], delta=delta)
 
@@ -55,8 +52,7 @@ def get_messages(days):
         data = more(page + 1)
 
         for message in data['raw_messages']:
-            if completed(message):
-                yield message
+            yield message
 
 
 def parse_args():
