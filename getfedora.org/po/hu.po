@@ -7,13 +7,14 @@
 # Meskó Balázs <meskobalazs@gmail.com>, 2016. #zanata
 # Meskó Balázs <meskobalazs@gmail.com>, 2017. #zanata
 # Meskó Balázs <meskobalazs@gmail.com>, 2018. #zanata
+# Teknős Ferenc <teferenc@t-online.hu>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-30 22:24+0200\n"
-"PO-Revision-Date: 2018-04-30 05:27-0400\n"
-"Last-Translator: Meskó Balázs <meskobalazs@gmail.com>\n"
+"POT-Creation-Date: 2018-05-13 22:03+0200\n"
+"PO-Revision-Date: 2018-05-12 07:01-0400\n"
+"Last-Translator: Teknős Ferenc <teferenc@t-online.hu>\n"
 "Language-Team: Hungarian (http://www.transifex.com/projects/p/fedora-web/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -202,7 +203,7 @@ msgstr ""
 "a legjobb és a legújabb adatközpont technológiákat. A kezébe adja a teljes "
 "infrastruktúra, és a szolgáltatások irányítását."
 
-#: data/content/index.html:101 data/content/verify.html:63
+#: data/content/index.html:101 data/content/verify.html:69
 #: data/templates/productselector-cloud.html:13
 msgid "Atomic"
 msgstr "Atomic"
@@ -378,34 +379,42 @@ msgstr "32 bites lemezképek"
 msgid "For Atomic WS"
 msgstr "Atomic WS-hez"
 
-#: data/content/verify.html:65
+#: data/content/verify.html:59
+msgid "For aarch64 images"
+msgstr ""
+
+#: data/content/verify.html:62
+msgid "For aarch64 raw"
+msgstr ""
+
+#: data/content/verify.html:71
 msgid "For Atomic Host Iso"
 msgstr "Atomic Host Iso-khoz"
 
-#: data/content/verify.html:68
+#: data/content/verify.html:74
 msgid "For Atomic Host images"
 msgstr "Atomic Host lemezképekhez"
 
-#: data/content/verify.html:71
-msgid "For Docker"
-msgstr "Docker"
+#: data/content/verify.html:77
+msgid "For Container"
+msgstr "A konténerhez"
 
-#: data/content/verify.html:78
+#: data/content/verify.html:84
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Ezután importálja a Fedorához tartozó GPG kulcso(ka)t:"
 
-#: data/content/verify.html:80
+#: data/content/verify.html:86
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
 msgstr "A GPG kulcs(ok) részleteit <a href=\"%s/%s/keys\">itt</a> ellenőrizheti."
 
-#: data/content/verify.html:81
+#: data/content/verify.html:87
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Most ellenőrizzük, hogy a CHECKSUM fájl érvényes:"
 
-#: data/content/verify.html:83
+#: data/content/verify.html:89
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
@@ -413,28 +422,28 @@ msgstr ""
 "A CHECKSUM fájlnak rendelkeznie kell egy jó aláírással a következő kulcsok "
 "valamelyikével:"
 
-#: data/content/keys/index.html:46 data/content/verify.html:85
+#: data/content/keys/index.html:46 data/content/verify.html:91
 msgid "Fedora 29"
 msgstr "Fedora 29"
 
-#: data/content/keys/index.html:59 data/content/verify.html:86
+#: data/content/keys/index.html:59 data/content/verify.html:92
 msgid "Fedora 28"
 msgstr "Fedora 28"
 
-#: data/content/keys/index.html:72 data/content/verify.html:87
+#: data/content/keys/index.html:72 data/content/verify.html:93
 msgid "Fedora 27"
 msgstr "Fedora 27"
 
-#: data/content/keys/index.html:85 data/content/verify.html:88
+#: data/content/keys/index.html:85 data/content/verify.html:94
 msgid "Fedora 26"
 msgstr "Fedora 26"
 
-#: data/content/verify.html:89
+#: data/content/verify.html:95
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Fedora 26 másodlagos architektúrák (AArch64, PPC64, PPC64le, s390 és s390x)"
 
-#: data/content/verify.html:91
+#: data/content/verify.html:97
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
@@ -442,19 +451,19 @@ msgstr ""
 "Végül, miután a CHECKSUM fájlt ellenőriztük, megnézzük, hogy az ISO "
 "ellenőrző összeg egyezik-e:"
 
-#: data/content/verify.html:93
+#: data/content/verify.html:99
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr "Ha a kimenet szerint a fájl érvényes, akkor már használhatja is!"
 
-#: data/content/verify.html:94
+#: data/content/verify.html:100
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr ""
 "Hogyan ellenőrizhetem a letöltött lemezképeket egy másik operációs "
 "rendszeren?"
 
-#: data/content/verify.html:95
-msgid "Read these instructions to validate your image."
-msgstr "Olvassa el az utasításokat a lemezkép ellenőrzéséhez."
+#: data/content/verify.html:101
+msgid "Read these instructions to verify your image."
+msgstr "Olvassa el az utasításokat, hogy ellenőrizze a lemezképet."
 
 #: data/content/atomic/index.html:8
 msgid ""
@@ -603,8 +612,8 @@ msgstr ""
 #: data/content/server/download/server-download-splash.html:47
 #: data/content/server/prerelease/index.html:45
 #: data/content/workstation/download/ws-download-splash.html:52
-msgid "Validate!"
-msgstr "Ellenőrzés!"
+msgid "Verify!"
+msgstr "Ellenőrizze!"
 
 #: data/content/atomic/download/index.html:10
 #: data/content/atomic/prerelease/index.html:10
@@ -1074,24 +1083,24 @@ msgid "F%(rel)s %(state)s"
 msgstr "F%(rel)s %(state)s"
 
 #: data/content/atomic/download/index.html:343
-#: data/content/server/download/index.html:63
-#: data/content/server/download/index.html:73
+#: data/content/server/download/index.html:72
+#: data/content/server/download/index.html:82
 #: data/content/workstation/download/index.html:160
 #: data/content/workstation/download/index.html:170
 msgid "Try a pre-release"
 msgstr "Próbáljon ki egy kiadás előtt verziót"
 
 #: data/content/atomic/download/index.html:344
-#: data/content/server/download/index.html:64
-#: data/content/server/download/index.html:74
+#: data/content/server/download/index.html:73
+#: data/content/server/download/index.html:83
 #: data/content/workstation/download/index.html:161
 #: data/content/workstation/download/index.html:171
 msgid "We're working on our next release."
 msgstr "A következő kiadáson dolgozunk."
 
 #: data/content/atomic/download/index.html:345
-#: data/content/server/download/index.html:65
-#: data/content/server/download/index.html:75
+#: data/content/server/download/index.html:74
+#: data/content/server/download/index.html:84
 #: data/content/workstation/download/index.html:162
 #: data/content/workstation/download/index.html:172
 #, python-format
@@ -1104,8 +1113,8 @@ msgid "Download F%(rel)s %(state)s images"
 msgstr "F%(rel)s %(state)s lemezképek letöltése"
 
 #: data/content/atomic/download/index.html:347
-#: data/content/server/download/index.html:67
-#: data/content/server/download/index.html:77
+#: data/content/server/download/index.html:76
+#: data/content/server/download/index.html:86
 #: data/content/workstation/download/index.html:164
 #: data/content/workstation/download/index.html:174
 msgid "How to test pre-releases"
@@ -1170,7 +1179,7 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:362
 #: data/content/atomic/prerelease/index.html:350
-#: data/content/server/download/index.html:94
+#: data/content/server/download/index.html:103
 #: data/content/workstation/download/index.html:221
 msgid "Verify"
 msgstr "Ellenőrzés"
@@ -1178,7 +1187,7 @@ msgstr "Ellenőrzés"
 #: data/content/atomic/download/index.html:365
 #: data/content/atomic/prerelease/index.html:322
 #: data/content/atomic/prerelease/index.html:353
-#: data/content/server/download/index.html:97
+#: data/content/server/download/index.html:106
 #: data/content/server/prerelease/index.html:41
 #: data/content/workstation/download/index.html:224
 #: data/content/workstation/prerelease/index.html:119
@@ -1876,36 +1885,51 @@ msgstr "Hálózati telepítő lemezkép:"
 msgid "64-bit %sMB image"
 msgstr "64 bites, %s MB-os lemezkép"
 
+#: data/content/server/download/index.html:56
+#: data/content/server/download/index.html:60
+#: data/content/server/download/index.html:64
+#, python-format
+msgid "aarch64 %sMB image"
+msgstr ""
+
+#: data/content/server/download/index.html:58
+msgid "DVD ISO Image:"
+msgstr ""
+
 #: data/content/server/download/index.html:62
+msgid "Raw Disk Image:"
+msgstr ""
+
+#: data/content/server/download/index.html:71
 #: data/content/workstation/download/index.html:159
 #, python-format
 msgid "F%(rel)s Alpha"
 msgstr "F%(rel)s Alfa"
 
-#: data/content/server/download/index.html:66
+#: data/content/server/download/index.html:75
 #: data/content/workstation/download/index.html:163
 #, python-format
 msgid "Download F%(rel)s Alpha images"
 msgstr " F%(rel)s Alfa lemezképfájlok letöltése"
 
-#: data/content/server/download/index.html:72
+#: data/content/server/download/index.html:81
 #: data/content/workstation/download/index.html:169
 #, python-format
 msgid "F%(rel)s Beta"
 msgstr "F%(rel)s Béta"
 
-#: data/content/server/download/index.html:76
+#: data/content/server/download/index.html:85
 #: data/content/workstation/download/index.html:173
 #, python-format
 msgid "Download F%(rel)s Beta images"
 msgstr " F%(rel)s Béta lemezképfájlok letöltése"
 
-#: data/content/server/download/index.html:83
+#: data/content/server/download/index.html:92
 #: data/content/workstation/download/index.html:206
 msgid "Get more Fedora"
 msgstr "Még több Fedora beszerzése"
 
-#: data/content/server/download/index.html:87
+#: data/content/server/download/index.html:96
 #: data/content/workstation/download/index.html:215
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr "ARM<span class=\"sup\">®</span> technológia"
@@ -2141,10 +2165,13 @@ msgid "64-bit %s GB ISO for <strong>Linux</strong>."
 msgstr "64 bites, %s GB méretű ISO <strong>Linuxhoz</strong>"
 
 #: data/content/workstation/download/index.html:46
-#: data/content/workstation/prerelease/index.html:25
 #, python-format
-msgid "<a href=\"%s\">Install via DNF</a> if you are already on Fedora."
-msgstr "<a href=\"%s\">Telepítés DNF-fel</a>, ha már Fedorát használ."
+msgid ""
+"A download is only needed for new installs. To upgrade, <a "
+"href=\"%s\">follow these instructions.</a>"
+msgstr ""
+"A letöltés csak új telepítések esetén szükséges.A frissítéshez, <a "
+"href=\"%s\">kövesse az alábbi utasításokat.</a>"
 
 #: data/content/workstation/download/index.html:50
 #: data/content/workstation/download/index.html:110
@@ -2185,18 +2212,14 @@ msgid "A USB Flash drive with at least %s GB space available"
 msgstr "Egy USB flash meghajtó legalább %s GB szabad hellyel"
 
 #: data/content/workstation/download/index.html:71
+#, python-format
 msgid ""
 "Fedora Workstation is provided via Fedora Media Writer. Download this "
-"program via the download link above and run it on your system, following the"
-" prompts to generate a live version (see 'What does \"Live\" mean?' to the "
+"program for your <a href=\"%s\">supported platform</a> and follow the "
+"prompts to generate a live version (see 'What does \"Live\" mean?' to the "
 "right) of Fedora Workstation on a USB flash drive. You may then run the live"
 " version of Fedora Workstation from your USB flash drive."
 msgstr ""
-"A Fedora Workstationt a Fedora médiaíró biztosítja. Töltse le a programot a "
-"fenti letöltési hivatkozással, és futtassa a rendszerén, követve a "
-"kérdéseket készítsen egy Live verziót (lásd jobbra: „Mit jelent az hogy "
-"Live?”) a Fedora Workstationből egy USB flash meghajtóra. Aztán futtathatja "
-"a Fedora Workstationt az USB meghajtóról."
 
 #: data/content/workstation/download/index.html:72
 #: data/content/workstation/prerelease/index.html:78
@@ -2439,6 +2462,11 @@ msgstr "Fedora Workstation %s letöltése"
 msgid "Download Fedora %(rel)s %(state)s Workstation"
 msgstr "Fedora %(rel)s %(state)s Workstation letöltése"
 
+#: data/content/workstation/prerelease/index.html:25
+#, python-format
+msgid "<a href=\"%s\">Upgrade via DNF</a> if you are already on Fedora."
+msgstr "<a href=\"%s\">Frissítés DNF-en keresztül,</a>ha már Fedorán van ."
+
 #: data/content/workstation/prerelease/index.html:45
 #, python-format
 msgid ""
@@ -2535,12 +2563,12 @@ msgstr ""
 "alkalmazást."
 
 #: data/content/workstation/prerelease/index.html:123
-msgid "Validate 64-bit!"
-msgstr "64 bites ellenőrzése!"
+msgid "Verify 64-bit!"
+msgstr " 64 bit ellenőrzése !"
 
 #: data/content/workstation/prerelease/index.html:126
-msgid "Validate 32-bit!"
-msgstr "32 bites ellenőrzése!"
+msgid "Verify 32-bit!"
+msgstr "32 bit ellenőrzése !"
 
 #: data/content/workstation/prerelease/index.html:146
 msgid ""

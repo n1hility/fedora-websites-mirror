@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-30 22:24+0200\n"
-"PO-Revision-Date: 2018-04-30 04:35-0400\n"
+"POT-Creation-Date: 2018-05-13 22:03+0200\n"
+"PO-Revision-Date: 2018-05-07 03:43-0400\n"
 "Last-Translator: Josef Hruška <hrusjos@gmail.com>\n"
 "Language-Team: Czech (http://www.transifex.com/projects/p/fedora-web/language/cs/)\n"
 "MIME-Version: 1.0\n"
@@ -206,7 +206,7 @@ msgstr ""
 " a nejnovější z technologií pro datová centra. Dostane všechnu "
 "infrastrukturu a služby pod vaši kontrolu."
 
-#: data/content/index.html:101 data/content/verify.html:63
+#: data/content/index.html:101 data/content/verify.html:69
 #: data/templates/productselector-cloud.html:13
 msgid "Atomic"
 msgstr "Atomic"
@@ -382,62 +382,70 @@ msgstr "Pro 32bitové obrazy"
 msgid "For Atomic WS"
 msgstr "Pro Atomic WS"
 
-#: data/content/verify.html:65
+#: data/content/verify.html:59
+msgid "For aarch64 images"
+msgstr ""
+
+#: data/content/verify.html:62
+msgid "For aarch64 raw"
+msgstr ""
+
+#: data/content/verify.html:71
 msgid "For Atomic Host Iso"
 msgstr "Pro ISO Atomic Host"
 
-#: data/content/verify.html:68
+#: data/content/verify.html:74
 msgid "For Atomic Host images"
 msgstr "Pro obrazy Atomic Host"
 
-#: data/content/verify.html:71
-msgid "For Docker"
-msgstr "Pro Docker"
+#: data/content/verify.html:77
+msgid "For Container"
+msgstr "Pro Container"
 
-#: data/content/verify.html:78
+#: data/content/verify.html:84
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Dále importujte GPG klíč(e) Fedory:"
 
-#: data/content/verify.html:80
+#: data/content/verify.html:86
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
 msgstr "Detaily GPG klíče(-ů) lze ověřit <a href=\"%s/%s/keys\">zde</a>."
 
-#: data/content/verify.html:81
+#: data/content/verify.html:87
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Nyní ověřte, že soubor CHECKSUM je platný:"
 
-#: data/content/verify.html:83
+#: data/content/verify.html:89
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr ""
 "Soubor CHECKSUM by měl mít podpis založený na jednom z následujících klíčů:"
 
-#: data/content/keys/index.html:46 data/content/verify.html:85
+#: data/content/keys/index.html:46 data/content/verify.html:91
 msgid "Fedora 29"
 msgstr "Fedora 29"
 
-#: data/content/keys/index.html:59 data/content/verify.html:86
+#: data/content/keys/index.html:59 data/content/verify.html:92
 msgid "Fedora 28"
 msgstr "Fedora 28"
 
-#: data/content/keys/index.html:72 data/content/verify.html:87
+#: data/content/keys/index.html:72 data/content/verify.html:93
 msgid "Fedora 27"
 msgstr "Fedora 27"
 
-#: data/content/keys/index.html:85 data/content/verify.html:88
+#: data/content/keys/index.html:85 data/content/verify.html:94
 msgid "Fedora 26"
 msgstr "Fedora 26"
 
-#: data/content/verify.html:89
+#: data/content/verify.html:95
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Sekundární architektury Fedory 26 (AArch64, PPC64, PPC64le, s390 a s390x)"
 
-#: data/content/verify.html:91
+#: data/content/verify.html:97
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
@@ -445,17 +453,17 @@ msgstr ""
 "A nakonec po kontrole souboru CHECKSUM ověřte, že kontrolní součet obrazu s "
 "ním souhlasí:"
 
-#: data/content/verify.html:93
+#: data/content/verify.html:99
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
 "Prohlásí-li výstup, že je soubor platný, pak je soubor připraven k použití!"
 
-#: data/content/verify.html:94
+#: data/content/verify.html:100
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr "Jak si ověřím stažený obraz na jiném operačním systému?"
 
-#: data/content/verify.html:95
-msgid "Read these instructions to validate your image."
+#: data/content/verify.html:101
+msgid "Read these instructions to verify your image."
 msgstr "Chcete-li si ověřit obraz, přečtěte si tyto pokyny."
 
 #: data/content/atomic/index.html:8
@@ -602,7 +610,7 @@ msgstr ""
 #: data/content/server/download/server-download-splash.html:47
 #: data/content/server/prerelease/index.html:45
 #: data/content/workstation/download/ws-download-splash.html:52
-msgid "Validate!"
+msgid "Verify!"
 msgstr "Ověřit!"
 
 #: data/content/atomic/download/index.html:10
@@ -1073,24 +1081,24 @@ msgid "F%(rel)s %(state)s"
 msgstr "F%(rel)s %(state)s"
 
 #: data/content/atomic/download/index.html:343
-#: data/content/server/download/index.html:63
-#: data/content/server/download/index.html:73
+#: data/content/server/download/index.html:72
+#: data/content/server/download/index.html:82
 #: data/content/workstation/download/index.html:160
 #: data/content/workstation/download/index.html:170
 msgid "Try a pre-release"
 msgstr "Vyzkoušejte připravovanou verzi"
 
 #: data/content/atomic/download/index.html:344
-#: data/content/server/download/index.html:64
-#: data/content/server/download/index.html:74
+#: data/content/server/download/index.html:73
+#: data/content/server/download/index.html:83
 #: data/content/workstation/download/index.html:161
 #: data/content/workstation/download/index.html:171
 msgid "We're working on our next release."
 msgstr "Pracujeme na novém vydání."
 
 #: data/content/atomic/download/index.html:345
-#: data/content/server/download/index.html:65
-#: data/content/server/download/index.html:75
+#: data/content/server/download/index.html:74
+#: data/content/server/download/index.html:84
 #: data/content/workstation/download/index.html:162
 #: data/content/workstation/download/index.html:172
 #, python-format
@@ -1103,8 +1111,8 @@ msgid "Download F%(rel)s %(state)s images"
 msgstr "Stáhnout obrazy F%(rel)s %(state)s"
 
 #: data/content/atomic/download/index.html:347
-#: data/content/server/download/index.html:67
-#: data/content/server/download/index.html:77
+#: data/content/server/download/index.html:76
+#: data/content/server/download/index.html:86
 #: data/content/workstation/download/index.html:164
 #: data/content/workstation/download/index.html:174
 msgid "How to test pre-releases"
@@ -1169,7 +1177,7 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:362
 #: data/content/atomic/prerelease/index.html:350
-#: data/content/server/download/index.html:94
+#: data/content/server/download/index.html:103
 #: data/content/workstation/download/index.html:221
 msgid "Verify"
 msgstr "Ověřit"
@@ -1177,7 +1185,7 @@ msgstr "Ověřit"
 #: data/content/atomic/download/index.html:365
 #: data/content/atomic/prerelease/index.html:322
 #: data/content/atomic/prerelease/index.html:353
-#: data/content/server/download/index.html:97
+#: data/content/server/download/index.html:106
 #: data/content/server/prerelease/index.html:41
 #: data/content/workstation/download/index.html:224
 #: data/content/workstation/prerelease/index.html:119
@@ -1872,36 +1880,51 @@ msgstr "Obraz pro instalaci ze sítě:"
 msgid "64-bit %sMB image"
 msgstr "64bitový obraz %s MB"
 
+#: data/content/server/download/index.html:56
+#: data/content/server/download/index.html:60
+#: data/content/server/download/index.html:64
+#, python-format
+msgid "aarch64 %sMB image"
+msgstr ""
+
+#: data/content/server/download/index.html:58
+msgid "DVD ISO Image:"
+msgstr ""
+
 #: data/content/server/download/index.html:62
+msgid "Raw Disk Image:"
+msgstr ""
+
+#: data/content/server/download/index.html:71
 #: data/content/workstation/download/index.html:159
 #, python-format
 msgid "F%(rel)s Alpha"
 msgstr "F%(rel)s Alfa"
 
-#: data/content/server/download/index.html:66
+#: data/content/server/download/index.html:75
 #: data/content/workstation/download/index.html:163
 #, python-format
 msgid "Download F%(rel)s Alpha images"
 msgstr "Stáhněte si obrazy F%(rel)s Alfa"
 
-#: data/content/server/download/index.html:72
+#: data/content/server/download/index.html:81
 #: data/content/workstation/download/index.html:169
 #, python-format
 msgid "F%(rel)s Beta"
 msgstr "F%(rel)s Beta"
 
-#: data/content/server/download/index.html:76
+#: data/content/server/download/index.html:85
 #: data/content/workstation/download/index.html:173
 #, python-format
 msgid "Download F%(rel)s Beta images"
 msgstr "Stáhněte si obrazy F%(rel)s Beta"
 
-#: data/content/server/download/index.html:83
+#: data/content/server/download/index.html:92
 #: data/content/workstation/download/index.html:206
 msgid "Get more Fedora"
 msgstr "Ještě více Fedory"
 
-#: data/content/server/download/index.html:87
+#: data/content/server/download/index.html:96
 #: data/content/workstation/download/index.html:215
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr "ARM<span class=\"sup\">®</span> Technologie"
@@ -2133,12 +2156,13 @@ msgid "64-bit %s GB ISO for <strong>Linux</strong>."
 msgstr "64-bit %s GB ISO pro <strong>Linux</strong>."
 
 #: data/content/workstation/download/index.html:46
-#: data/content/workstation/prerelease/index.html:25
 #, python-format
-msgid "<a href=\"%s\">Install via DNF</a> if you are already on Fedora."
+msgid ""
+"A download is only needed for new installs. To upgrade, <a "
+"href=\"%s\">follow these instructions.</a>"
 msgstr ""
-"<a href=\"%s\">Nainstalujte pomocí DNF</a>, pokud jste již na systému "
-"Fedora."
+"Stažení souboru je nutné pouze pro nové instalace. Chcete-li přejít na vyšší"
+" verzi, <a href=\"%s\">postupujte dle těchto pokynů.</a>"
 
 #: data/content/workstation/download/index.html:50
 #: data/content/workstation/download/index.html:110
@@ -2179,18 +2203,19 @@ msgid "A USB Flash drive with at least %s GB space available"
 msgstr "USB flash disk s nejméně %s GB volného místa"
 
 #: data/content/workstation/download/index.html:71
+#, python-format
 msgid ""
 "Fedora Workstation is provided via Fedora Media Writer. Download this "
-"program via the download link above and run it on your system, following the"
-" prompts to generate a live version (see 'What does \"Live\" mean?' to the "
+"program for your <a href=\"%s\">supported platform</a> and follow the "
+"prompts to generate a live version (see 'What does \"Live\" mean?' to the "
 "right) of Fedora Workstation on a USB flash drive. You may then run the live"
 " version of Fedora Workstation from your USB flash drive."
 msgstr ""
 "Fedora Workstation je k dispozici pomocí programu Fedora Media Writer. "
-"Stáhněte si tento program z výše uvedeného odkazu a spusťte ho na svém "
-"systému, postupujte dle pokynů a vytvořte si tak živou verzi (viz vpravo 'Co"
-" znamená \"živá\"?') verzi Fedory Workstation na USB flash disku. Poté lze "
-"spustit spustitelnou verzi Fedory Workstation z tohoto USB disku."
+"Stáhněte si tento program pro svou <a href=\"%s\">podporovanou platformu</a>"
+" a dle pokynů v něm si vytvořte spustitelnou (viz vpravo 'Co znamená "
+"\"živá\"?') verzi Fedory Workstation na USB flash disku. Poté lze spustit "
+"spustitelnou verzi Fedory Workstation z tohoto USB disku."
 
 #: data/content/workstation/download/index.html:72
 #: data/content/workstation/prerelease/index.html:78
@@ -2437,6 +2462,13 @@ msgstr "Stáhněte si Fedoru Workstation %s"
 msgid "Download Fedora %(rel)s %(state)s Workstation"
 msgstr "Stáhnout Fedoru %(rel)s %(state)s Workstation"
 
+#: data/content/workstation/prerelease/index.html:25
+#, python-format
+msgid "<a href=\"%s\">Upgrade via DNF</a> if you are already on Fedora."
+msgstr ""
+"Pokud již Fedoru používáte, <a href=\"%s\">přejděte na vyšší verzi pomocí "
+"DNF</a>."
+
 #: data/content/workstation/prerelease/index.html:45
 #, python-format
 msgid ""
@@ -2530,11 +2562,11 @@ msgstr ""
 "počkejte na dokončení procesu a zavřete aplikaci."
 
 #: data/content/workstation/prerelease/index.html:123
-msgid "Validate 64-bit!"
+msgid "Verify 64-bit!"
 msgstr "Ověřit 64bitový!"
 
 #: data/content/workstation/prerelease/index.html:126
-msgid "Validate 32-bit!"
+msgid "Verify 32-bit!"
 msgstr "Ověřit 32bitový!"
 
 #: data/content/workstation/prerelease/index.html:146

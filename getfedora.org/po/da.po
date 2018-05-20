@@ -6,12 +6,13 @@
 # Kris Thomsen <lakristho@gmail.com>, 2014
 # Kris <mail@kristhomsen.dk>, 2015. #zanata
 # scootergrisen <scootergrisen@gmail.com>, 2017. #zanata
+# scootergrisen <scootergrisen@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-30 22:24+0200\n"
-"PO-Revision-Date: 2017-11-18 06:38-0500\n"
+"POT-Creation-Date: 2018-05-13 22:03+0200\n"
+"PO-Revision-Date: 2018-05-12 03:13-0400\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
 "Language-Team: Danish (http://www.transifex.com/projects/p/fedora-web/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -169,7 +170,7 @@ msgstr ""
 "bedste og seneste datacenter-teknologier. Den giver dig styringen over al "
 "din infrastruktur og tjenester."
 
-#: data/content/index.html:101 data/content/verify.html:63
+#: data/content/index.html:101 data/content/verify.html:69
 #: data/templates/productselector-cloud.html:13
 msgid "Atomic"
 msgstr "Atomic"
@@ -335,76 +336,84 @@ msgstr ""
 msgid "For Atomic WS"
 msgstr ""
 
-#: data/content/verify.html:65
-msgid "For Atomic Host Iso"
+#: data/content/verify.html:59
+msgid "For aarch64 images"
 msgstr ""
 
-#: data/content/verify.html:68
-msgid "For Atomic Host images"
+#: data/content/verify.html:62
+msgid "For aarch64 raw"
 msgstr ""
 
 #: data/content/verify.html:71
-msgid "For Docker"
+msgid "For Atomic Host Iso"
 msgstr ""
 
-#: data/content/verify.html:78
+#: data/content/verify.html:74
+msgid "For Atomic Host images"
+msgstr ""
+
+#: data/content/verify.html:77
+msgid "For Container"
+msgstr ""
+
+#: data/content/verify.html:84
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Importér herefter Fedoras GPG-nøgle(r):"
 
-#: data/content/verify.html:80
+#: data/content/verify.html:86
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
 msgstr "Du kan verificere GPG-nøglernes detaljer <a href=\"%s/%s/keys\">her</a>."
 
-#: data/content/verify.html:81
+#: data/content/verify.html:87
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Nu skal du verificere om CHECKSUM-filen er gyldig:"
 
-#: data/content/verify.html:83
+#: data/content/verify.html:89
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr ""
 "CHECKSUM-filen burde have en god signatur fra én af de følgende nøgler:"
 
-#: data/content/keys/index.html:46 data/content/verify.html:85
+#: data/content/keys/index.html:46 data/content/verify.html:91
 msgid "Fedora 29"
 msgstr ""
 
-#: data/content/keys/index.html:59 data/content/verify.html:86
+#: data/content/keys/index.html:59 data/content/verify.html:92
 msgid "Fedora 28"
 msgstr ""
 
-#: data/content/keys/index.html:72 data/content/verify.html:87
+#: data/content/keys/index.html:72 data/content/verify.html:93
 msgid "Fedora 27"
 msgstr "Fedora 27"
 
-#: data/content/keys/index.html:85 data/content/verify.html:88
+#: data/content/keys/index.html:85 data/content/verify.html:94
 msgid "Fedora 26"
 msgstr "Fedora 26"
 
-#: data/content/verify.html:89
+#: data/content/verify.html:95
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 
-#: data/content/verify.html:91
+#: data/content/verify.html:97
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
 msgstr ""
 
-#: data/content/verify.html:93
+#: data/content/verify.html:99
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
 
-#: data/content/verify.html:94
+#: data/content/verify.html:100
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr ""
 
-#: data/content/verify.html:95
-msgid "Read these instructions to validate your image."
+#: data/content/verify.html:101
+msgid "Read these instructions to verify your image."
 msgstr ""
 
 #: data/content/atomic/index.html:8
@@ -530,7 +539,7 @@ msgstr ""
 #: data/content/server/download/server-download-splash.html:47
 #: data/content/server/prerelease/index.html:45
 #: data/content/workstation/download/ws-download-splash.html:52
-msgid "Validate!"
+msgid "Verify!"
 msgstr ""
 
 #: data/content/atomic/download/index.html:10
@@ -952,24 +961,24 @@ msgid "F%(rel)s %(state)s"
 msgstr ""
 
 #: data/content/atomic/download/index.html:343
-#: data/content/server/download/index.html:63
-#: data/content/server/download/index.html:73
+#: data/content/server/download/index.html:72
+#: data/content/server/download/index.html:82
 #: data/content/workstation/download/index.html:160
 #: data/content/workstation/download/index.html:170
 msgid "Try a pre-release"
 msgstr "Prøv en præ-udgivelse"
 
 #: data/content/atomic/download/index.html:344
-#: data/content/server/download/index.html:64
-#: data/content/server/download/index.html:74
+#: data/content/server/download/index.html:73
+#: data/content/server/download/index.html:83
 #: data/content/workstation/download/index.html:161
 #: data/content/workstation/download/index.html:171
 msgid "We're working on our next release."
 msgstr "Vi arbejder på vores næste udgivelse."
 
 #: data/content/atomic/download/index.html:345
-#: data/content/server/download/index.html:65
-#: data/content/server/download/index.html:75
+#: data/content/server/download/index.html:74
+#: data/content/server/download/index.html:84
 #: data/content/workstation/download/index.html:162
 #: data/content/workstation/download/index.html:172
 #, python-format
@@ -982,8 +991,8 @@ msgid "Download F%(rel)s %(state)s images"
 msgstr ""
 
 #: data/content/atomic/download/index.html:347
-#: data/content/server/download/index.html:67
-#: data/content/server/download/index.html:77
+#: data/content/server/download/index.html:76
+#: data/content/server/download/index.html:86
 #: data/content/workstation/download/index.html:164
 #: data/content/workstation/download/index.html:174
 msgid "How to test pre-releases"
@@ -1039,7 +1048,7 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:362
 #: data/content/atomic/prerelease/index.html:350
-#: data/content/server/download/index.html:94
+#: data/content/server/download/index.html:103
 #: data/content/workstation/download/index.html:221
 msgid "Verify"
 msgstr "Verificer"
@@ -1047,7 +1056,7 @@ msgstr "Verificer"
 #: data/content/atomic/download/index.html:365
 #: data/content/atomic/prerelease/index.html:322
 #: data/content/atomic/prerelease/index.html:353
-#: data/content/server/download/index.html:97
+#: data/content/server/download/index.html:106
 #: data/content/server/prerelease/index.html:41
 #: data/content/workstation/download/index.html:224
 #: data/content/workstation/prerelease/index.html:119
@@ -1060,7 +1069,7 @@ msgid "Download Fedora %(rel)s %(state)s Atomic Host"
 msgstr ""
 
 #: data/content/atomic/prerelease/index.html:37
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "These are the latest Fedora Atomic Host images, produced on "
 "%(manual_pre_atomic_date)s."
@@ -1098,7 +1107,7 @@ msgid "Fedora %(rel)s %(state)s Standard Atomic Host HVM AMIs"
 msgstr ""
 
 #: data/content/atomic/prerelease/index.html:208
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and "
 "Libvirt providers. You can bring up Fedora Atomic Host in a vagrant box by "
@@ -1629,36 +1638,51 @@ msgstr "Netinstall-aftryk:"
 msgid "64-bit %sMB image"
 msgstr "64-bit %sMB aftryk"
 
+#: data/content/server/download/index.html:56
+#: data/content/server/download/index.html:60
+#: data/content/server/download/index.html:64
+#, python-format
+msgid "aarch64 %sMB image"
+msgstr ""
+
+#: data/content/server/download/index.html:58
+msgid "DVD ISO Image:"
+msgstr ""
+
 #: data/content/server/download/index.html:62
+msgid "Raw Disk Image:"
+msgstr ""
+
+#: data/content/server/download/index.html:71
 #: data/content/workstation/download/index.html:159
 #, python-format
 msgid "F%(rel)s Alpha"
 msgstr "F%(rel)s Alpha"
 
-#: data/content/server/download/index.html:66
+#: data/content/server/download/index.html:75
 #: data/content/workstation/download/index.html:163
 #, python-format
 msgid "Download F%(rel)s Alpha images"
 msgstr "Download F%(rel)s Alpha-aftryk"
 
-#: data/content/server/download/index.html:72
+#: data/content/server/download/index.html:81
 #: data/content/workstation/download/index.html:169
 #, python-format
 msgid "F%(rel)s Beta"
 msgstr "F%(rel)s Beta"
 
-#: data/content/server/download/index.html:76
+#: data/content/server/download/index.html:85
 #: data/content/workstation/download/index.html:173
 #, python-format
 msgid "Download F%(rel)s Beta images"
 msgstr "Download F%(rel)s Beta-aftryk"
 
-#: data/content/server/download/index.html:83
+#: data/content/server/download/index.html:92
 #: data/content/workstation/download/index.html:206
 msgid "Get more Fedora"
 msgstr "Hent flere Fedora"
 
-#: data/content/server/download/index.html:87
+#: data/content/server/download/index.html:96
 #: data/content/workstation/download/index.html:215
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr ""
@@ -1755,7 +1779,7 @@ msgstr ""
 #: data/content/workstation/index.html:19
 #: data/templates/productselector-workstation.html:13
 msgid "This is the Linux workstation you've been waiting for."
-msgstr "Dette er Linux-arbejdstationen du har ventet på."
+msgstr "Linux-arbejdstationen som du har ventet på."
 
 #: data/content/workstation/index.html:31
 msgid ""
@@ -1860,10 +1884,11 @@ msgid "64-bit %s GB ISO for <strong>Linux</strong>."
 msgstr "64-bit %s GB ISO til <strong>Linux</strong>."
 
 #: data/content/workstation/download/index.html:46
-#: data/content/workstation/prerelease/index.html:25
 #, python-format
-msgid "<a href=\"%s\">Install via DNF</a> if you are already on Fedora."
-msgstr "<a href=\"%s\">Installer via DNF</a> hvis du allerede er på Fedora."
+msgid ""
+"A download is only needed for new installs. To upgrade, <a "
+"href=\"%s\">follow these instructions.</a>"
+msgstr ""
 
 #: data/content/workstation/download/index.html:50
 #: data/content/workstation/download/index.html:110
@@ -1887,11 +1912,11 @@ msgstr "Har du brug for instruktioner? Eller en anden version?"
 
 #: data/content/workstation/download/index.html:65
 msgid "Running Fedora Workstation"
-msgstr "Kører Fedora Workstation"
+msgstr "Køre Fedora Workstation"
 
 #: data/content/workstation/download/index.html:66
 msgid "To run Fedora Workstation, you will need:"
-msgstr "For at køre Fedora Workstation, har du brug for:"
+msgstr "For at køre Fedora Workstation, skal du bruge:"
 
 #: data/content/workstation/download/index.html:68
 msgid "Fedora Media Writer (download above)"
@@ -1904,13 +1929,19 @@ msgid "A USB Flash drive with at least %s GB space available"
 msgstr "Et USB-flashdrev med mindst %s GB tilgængelig plads"
 
 #: data/content/workstation/download/index.html:71
+#, python-format
 msgid ""
 "Fedora Workstation is provided via Fedora Media Writer. Download this "
-"program via the download link above and run it on your system, following the"
-" prompts to generate a live version (see 'What does \"Live\" mean?' to the "
+"program for your <a href=\"%s\">supported platform</a> and follow the "
+"prompts to generate a live version (see 'What does \"Live\" mean?' to the "
 "right) of Fedora Workstation on a USB flash drive. You may then run the live"
 " version of Fedora Workstation from your USB flash drive."
 msgstr ""
+"Fedora Workstation leveres via Fedora-medieskriver. Download programmet til "
+"din <a href=\"%s\">understøttede platform</a> og følg spørgsmålene for at "
+"generere en live-version (se 'Hvad betyder \"Live\"?' til højre) af Fedora "
+"Workstation på et USB flash-drev. Du kan så køre live-versionen af Fedora "
+"Workstation fra dit USB flash-drev."
 
 #: data/content/workstation/download/index.html:72
 #: data/content/workstation/prerelease/index.html:78
@@ -1922,6 +1953,11 @@ msgid ""
 "Media Writer application, and follow the on-screen prompts to complete "
 "installation."
 msgstr ""
+"Du kan også installere Fedora Workstation på en bærbar eller stationær "
+"computer med minimum 1 GHz processor, 1 GB RAM og 10 GB ledig diskplads. Det"
+" gøres ved at køre live-versionen af Fedora Workstation fra dit USB flash-"
+"drev på computeren du vil installere på, og kør så Fedora-medieskriver-"
+"programmet og følg spørgsmålene på skærmen for at fuldføre installationen."
 
 #: data/content/workstation/download/index.html:74
 #: data/content/workstation/prerelease/index.html:80
@@ -1958,6 +1994,10 @@ msgid ""
 "system incorrectly or you would like to download a different version, please"
 " click the \"View all platform downloads\" button below."
 msgstr ""
+"Vi har automatisk registeret at du kører <strong>Mac OS X</strong> og "
+"tilbyder den version til download. Hvis vi har registreret dit styresystem "
+"forkert eller du vil downloade en anden version, så klik venligst på \"Vis "
+"downloads til alle platforme\"-knappen nedenfor."
 
 #: data/content/workstation/download/index.html:85
 msgid ""
@@ -1966,6 +2006,10 @@ msgid ""
 " incorrectly or you would like to download a different version, please click"
 " the \"View all platform downloads\" button below."
 msgstr ""
+"Vi har automatisk registeret at du kører <strong>Linux</strong> og tilbyder "
+"den version til download. Hvis vi har registreret dit styresystem forkert "
+"eller du vil downloade en anden version, så klik venligst på \"Vis downloads"
+" til alle platforme\"-knappen nedenfor."
 
 #: data/content/workstation/download/index.html:88
 msgid ""
@@ -1974,6 +2018,10 @@ msgid ""
 "system incorrectly or you would like to download a different version, please"
 " click the \"View all platform downloads\" button below."
 msgstr ""
+"Vi har automatisk registeret at du kører <strong>Windows</strong> og "
+"tilbyder den version til download. Hvis vi har registreret dit styresystem "
+"forkert eller du vil downloade en anden version, så klik venligst på \"Vis "
+"downloads til alle platforme\"-knappen nedenfor."
 
 #: data/content/workstation/download/index.html:92
 msgid "View all platform downloads"
@@ -1997,7 +2045,7 @@ msgstr "Hvordan bruges denne ISO?"
 #: data/content/workstation/download/index.html:129
 #: data/content/workstation/prerelease/index.html:112
 msgid "Verify this image"
-msgstr "Verificer dette aftryk"
+msgstr "Verificer aftrykket"
 
 #: data/content/workstation/download/index.html:146
 #: data/content/workstation/prerelease/index.html:132
@@ -2024,7 +2072,7 @@ msgstr "32-bit %sMB aftryk"
 
 #: data/content/workstation/download/index.html:183
 msgid "Try Atomic Workstation"
-msgstr ""
+msgstr "Prøv Atomic Workstation"
 
 #: data/content/workstation/download/index.html:184
 msgid "Atomic provides an immutable OS image and updates via OSTree."
@@ -2037,7 +2085,7 @@ msgstr ""
 
 #: data/content/workstation/download/index.html:188
 msgid "Learn more"
-msgstr ""
+msgstr "Lær mere"
 
 #: data/content/workstation/download/index.html:193
 #, python-format
@@ -2052,7 +2100,7 @@ msgstr ""
 #: data/content/workstation/download/index.html:195
 #, python-format
 msgid "<a href=\"%(release_notes)s\"><strong>Release Notes</strong></a>"
-msgstr ""
+msgstr "<a href=\"%(release_notes)s\"><strong>Udgivelsesnoter</strong></a>"
 
 #: data/content/workstation/download/index.html:196
 msgid ""
@@ -2063,7 +2111,7 @@ msgstr ""
 #: data/content/workstation/download/index.html:197
 #, python-format
 msgid "<a href=\"%(install_guide)s\"><strong>Installation Guide</strong></a>"
-msgstr ""
+msgstr "<a href=\"%(install_guide)s\"><strong>Installationsguide</strong></a>"
 
 #: data/content/workstation/download/index.html:198
 msgid ""
@@ -2123,6 +2171,11 @@ msgstr "Download Fedora Workstation %s"
 #, python-format
 msgid "Download Fedora %(rel)s %(state)s Workstation"
 msgstr "Download Fedora %(rel)s %(state)s Workstation"
+
+#: data/content/workstation/prerelease/index.html:25
+#, python-format
+msgid "<a href=\"%s\">Upgrade via DNF</a> if you are already on Fedora."
+msgstr ""
 
 #: data/content/workstation/prerelease/index.html:45
 #, python-format
@@ -2200,12 +2253,12 @@ msgid ""
 msgstr ""
 
 #: data/content/workstation/prerelease/index.html:123
-msgid "Validate 64-bit!"
-msgstr "Valider 64-bit!"
+msgid "Verify 64-bit!"
+msgstr ""
 
 #: data/content/workstation/prerelease/index.html:126
-msgid "Validate 32-bit!"
-msgstr "Valider 32-bit!"
+msgid "Verify 32-bit!"
+msgstr ""
 
 #: data/content/workstation/prerelease/index.html:146
 msgid ""
@@ -2265,6 +2318,8 @@ msgid ""
 "By clicking on and downloading Fedora, you agree to comply with the "
 "following terms and conditions."
 msgstr ""
+"Ved at klikke på og downloade Fedora, accepterer du at overholde følgende "
+"vilkår og betingelser."
 
 #: data/templates/export-regulations.html:11
 msgid "Read more >"
@@ -2435,6 +2490,9 @@ msgid ""
 "You may purchase installation media for Fedora from <a href=\"%s\">online "
 "vendors</a> or a <a href=\"%s\">local vendor</a> in your area."
 msgstr ""
+"Du kan købe installationsmedier til Fedora fra <a "
+"href=\"%s\">onlineforhandlere</a> eller en <a href=\"%s\">lokal "
+"forhandler</a> i dit område."
 
 #: data/templates/generic/other-media-sources.html:10
 #, python-format
@@ -2442,6 +2500,8 @@ msgid ""
 "Can't afford the price of installation media? Request Fedora installation "
 "media from the <a href=\"%s\">Fedora Free Media Program</a>."
 msgstr ""
+"Har du ikke råd til installationsmedier? Anmod om Fedora-installationsmedier"
+" fra <a href=\"%s\">Fedora Free Media Program</a>."
 
 #: data/templates/keys/key-button-and-modal-obsolete.html:45
 #: data/templates/keys/key-button-and-modal.html:45

@@ -5,13 +5,16 @@
 # Translators:
 # Ahmad Haghighi <haghighi.ahmad@gmail.com>, 2017. #zanata
 # Mahdi Sefidi <sefidi82@gmail.com>, 2017. #zanata
+# Ahmad Haghighi <haghighi.ahmad@gmail.com>, 2018. #zanata
+# Pooria Teimoory <poorya.teimoory@gmail.com>, 2018. #zanata
+# Robert Mayr <robyduck@fedoraproject.org>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-30 22:24+0200\n"
-"PO-Revision-Date: 2017-10-10 03:21-0400\n"
-"Last-Translator: Ahmad Haghighi <haghighi.ahmad@gmail.com>\n"
+"POT-Creation-Date: 2018-05-13 22:03+0200\n"
+"PO-Revision-Date: 2018-05-20 10:09-0400\n"
+"Last-Translator: Robert Mayr <robyduck@fedoraproject.org>\n"
 "Language-Team: Persian (http://www.transifex.com/projects/p/fedora-web/language/fa/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -139,8 +142,8 @@ msgid ""
 "<strong>Fedora %(rel)s %(state)s</strong> released! Test it in the Download "
 "section."
 msgstr ""
-"<strong>فدورای  %(rel)s %(state)s</strong> منتشر شد! در قسمت دانلود آن را "
-"تست کنید."
+"<strong>فدورا  %(rel)s %(state)s</strong> منتشر شد! در قسمت دانلود آن را تست"
+" کنید."
 
 #: data/content/index.html:55
 #, python-format
@@ -189,10 +192,10 @@ msgid ""
 "infrastructure and services."
 msgstr ""
 "نسخه‌ی کارگزار فدورا، یک سیستم‌عامل قدرتمند و منعطف است که بهترین و آخرین "
-"فناوری‌های دیتاسنتر ها را در خود دارد که کنترل تمامی زیرساخت‌ها و خدمات شما "
+"فناوری‌های دیتاسنترها را در خود دارد که کنترل تمامی زیرساخت‌ها و خدمات شما "
 "را در اختیارتان قرار می‌دهد."
 
-#: data/content/index.html:101 data/content/verify.html:63
+#: data/content/index.html:101 data/content/verify.html:69
 #: data/templates/productselector-cloud.html:13
 msgid "Atomic"
 msgstr "اتمی"
@@ -302,13 +305,16 @@ msgid ""
 "resources, including full-time employee support, infrastructure hardware and"
 " bandwidth, event funding, and legal counsel."
 msgstr ""
+"<a href=\"%s\">ردهت, Inc.</a> حامی اصلی پروژه فدورا است. ردهت پروژه فدورا را"
+" با انواع منابع، اعم از کارمندان تمام وقت پشتیبانی، زیربنای سخت‌افزار و "
+"پهنای‌باند، رویداد سرمایه‌گذاری، و مشاور حقوقی حمایت می‌کند."
 
 #: data/content/sponsors.html:38
 msgid ""
 "The Fedora Project is also grateful to the following sponsors for providing "
 "substantial support:"
 msgstr ""
-"پروژه فدورا همچنین از حامیان زیر به خاطر کمک‌های بی‌دریغ آنها سپاسگذار است:"
+"پروژه فدورا همچنین از حامیان زیر به خاطر کمک‌های بی‌دریغشان سپاسگزار است:"
 
 #: data/content/sponsors.html:98
 msgid "Interested in sponsoring something for Fedora?"
@@ -320,6 +326,9 @@ msgid ""
 "Contact <a href=\"%(mail_url)s\">admin@fedoraproject.org</a> or stop by "
 "<strong>#fedora-admin</strong> on <strong>irc.freenode.net</strong>."
 msgstr ""
+"با <a href=\"%(mail_url)s\">admin@fedoraproject.org</a>تماس بگیرید یا توسط "
+"<strong>#fedora-admin</strong> در <strong>irc.freenode.net</strong> متوقف "
+"شوید."
 
 #: data/content/verify.html:8 data/content/verify.html:18
 msgid "Verify your Downloaded Image"
@@ -327,7 +336,7 @@ msgstr "تصویری دانلود شده‌ی خود را صحت سنجی کنی
 
 #: data/content/verify.html:20
 msgid "CHECKSUM and Verify Instructions"
-msgstr ""
+msgstr "CHECKSUM و ساختار صحت سنجی"
 
 #: data/content/verify.html:30
 msgid "How do I verify my image?"
@@ -355,23 +364,31 @@ msgstr "برای تصاویر ۳۲-بیتی"
 msgid "For Atomic WS"
 msgstr ""
 
-#: data/content/verify.html:65
+#: data/content/verify.html:59
+msgid "For aarch64 images"
+msgstr "برای ایمیج‌های aarch64"
+
+#: data/content/verify.html:62
+msgid "For aarch64 raw"
+msgstr "برای aarch64 raw"
+
+#: data/content/verify.html:71
 msgid "For Atomic Host Iso"
 msgstr "برای ISO  میزبان اتمی"
 
-#: data/content/verify.html:68
+#: data/content/verify.html:74
 msgid "For Atomic Host images"
 msgstr "برای تصاویر میزبان اتمی"
 
-#: data/content/verify.html:71
-msgid "For Docker"
-msgstr "برای داکر"
+#: data/content/verify.html:77
+msgid "For Container"
+msgstr ""
 
-#: data/content/verify.html:78
+#: data/content/verify.html:84
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "سپس، اضافه کردن کلید(های) GPG فدورا:"
 
-#: data/content/verify.html:80
+#: data/content/verify.html:86
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
@@ -380,37 +397,37 @@ msgstr ""
 "‌(های)شما می‌توانید جزئیات کلید‌ GPG را از <a href=\"%s/%s/keys\">اینجا</a> "
 "صحت سنجی کنید."
 
-#: data/content/verify.html:81
+#: data/content/verify.html:87
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "حال تایید کنید که فایل CHECKSUM صحیح است:"
 
-#: data/content/verify.html:83
+#: data/content/verify.html:89
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr "فایل CHECKSUM باید یک امضای مناسب از یکی از کلیدهای زیر داشته باشد:"
 
-#: data/content/keys/index.html:46 data/content/verify.html:85
+#: data/content/keys/index.html:46 data/content/verify.html:91
 msgid "Fedora 29"
-msgstr ""
+msgstr "فدورا ۲۹"
 
-#: data/content/keys/index.html:59 data/content/verify.html:86
+#: data/content/keys/index.html:59 data/content/verify.html:92
 msgid "Fedora 28"
-msgstr ""
+msgstr "فدورا ۲۸"
 
-#: data/content/keys/index.html:72 data/content/verify.html:87
+#: data/content/keys/index.html:72 data/content/verify.html:93
 msgid "Fedora 27"
 msgstr "قدورا ۲۷"
 
-#: data/content/keys/index.html:85 data/content/verify.html:88
+#: data/content/keys/index.html:85 data/content/verify.html:94
 msgid "Fedora 26"
 msgstr "فدورا ۲۶"
 
-#: data/content/verify.html:89
+#: data/content/verify.html:95
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr "معماری‌های دیگر فدورا ۲۶  (AArch64, PPC64, PPC64le, s390 and s390x)"
 
-#: data/content/verify.html:91
+#: data/content/verify.html:97
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
@@ -418,25 +435,26 @@ msgstr ""
 "در انتها، حال که فایل CHECKSUM صحت سنجی شد، بررسی کنید که checksum مربوط به "
 "تصویر  یکی باشد:"
 
-#: data/content/verify.html:93
+#: data/content/verify.html:99
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
 "اگر خروجی بیانگر این بود که فایل صحیح (معتبر) است، آنگاه می‌توان از آن "
 "استفاده کرد!"
 
-#: data/content/verify.html:94
+#: data/content/verify.html:100
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr "چگونه تصویری را که در سیستم‌عامل دیگری دانلود کرده ام، صحت سنجی کنم؟"
 
-#: data/content/verify.html:95
-msgid "Read these instructions to validate your image."
-msgstr "برای صحت سنجی تصویر خود، دستورالعمل‌های زیر را مطالعه کنید."
+#: data/content/verify.html:101
+msgid "Read these instructions to verify your image."
+msgstr "این دستورالعمل‌ها را برای صحت سنجی ایمیج‌تان مطالعه کنید."
 
 #: data/content/atomic/index.html:8
 msgid ""
 "Get Fedora Atomic: the best platform for your containerized applications "
 "stack"
 msgstr ""
+"فدورا اتمی را دریافت کنید: بهترین بستر برای پشته‌ی برنامه‌های قابل حمل شما."
 
 #: data/content/atomic/index.html:18
 msgid ""
@@ -511,11 +529,11 @@ msgstr ""
 
 #: data/content/atomic/index.html:125 data/content/atomic/index.html:130
 msgid "Ready to give Fedora Atomic a try?"
-msgstr "آماده‌اید تا فدوار اتمی را امتحان کنید؟"
+msgstr "آماده‌اید تا فدورا اتمی را امتحان کنید؟"
 
 #: data/content/atomic/download/download-cloud-splash.html:8
 msgid "Download Fedora Atomic Host"
-msgstr ""
+msgstr "دانلود میزبان اتمی فدورا"
 
 #: data/content/atomic/download/download-cloud-splash.html:37
 #: data/content/server/download/server-download-splash.html:31
@@ -529,8 +547,8 @@ msgstr "سپاس بابت دانلود فدورا!"
 msgid ""
 "Your download should begin in a few seconds. If not, click the link below:"
 msgstr ""
-"دانلود شما طی چند ثانیه بایستی شروع شود، اگر اینطور نبود، بر روی پیوند زیر "
-"کلیک کنید:"
+"دانلود شما باید طی چند ثانیه شروع شود، اگر این اتفاق نیفتاد، بر روی پیوند "
+"زیر کلیک کنید:"
 
 #: data/content/atomic/download/download-cloud-splash.html:48
 #: data/content/server/download/server-download-splash.html:43
@@ -560,8 +578,8 @@ msgstr ""
 #: data/content/server/download/server-download-splash.html:47
 #: data/content/server/prerelease/index.html:45
 #: data/content/workstation/download/ws-download-splash.html:52
-msgid "Validate!"
-msgstr "اعتبار سنجی!"
+msgid "Verify!"
+msgstr "صحت سنجی!"
 
 #: data/content/atomic/download/index.html:10
 #: data/content/atomic/prerelease/index.html:10
@@ -576,7 +594,7 @@ msgstr "دانلود میزبان اتمی فدورای %(rel)s"
 #: data/content/atomic/download/index.html:35
 #: data/content/atomic/prerelease/index.html:35
 msgid "Atomic Host is built every 2 weeks or so."
-msgstr ""
+msgstr "میزبان اتمی هر دو هفته یا بیشتر ساخته می‌شود."
 
 #: data/content/atomic/download/index.html:36
 #: data/content/atomic/prerelease/index.html:36
@@ -593,6 +611,8 @@ msgid ""
 "These are the latest official Fedora Atomic Host images, produced "
 "%(atomic_age)s days ago."
 msgstr ""
+"اینها آخرین ایمیج‌های رسمی میزبان فدورا اتمی هستند،  %(atomic_age)s روز "
+"گذشته تولید شده است."
 
 #: data/content/atomic/download/index.html:48
 msgid "Atomic Host Images"
@@ -650,7 +670,7 @@ msgstr ""
 #: data/content/atomic/prerelease/index.html:64
 #: data/content/atomic/prerelease/index.html:132
 msgid "GP2 Format"
-msgstr ""
+msgstr "قالب GP2"
 
 #: data/content/atomic/download/index.html:69
 #: data/content/atomic/download/index.html:137
@@ -723,12 +743,12 @@ msgstr ""
 #: data/content/atomic/prerelease/index.html:186
 #: data/templates/cloud-tab.html:17
 msgid "Launch"
-msgstr ""
+msgstr "اجرا"
 
 #: data/content/atomic/download/index.html:100
 #: data/content/atomic/prerelease/index.html:96
 msgid "Standard Format)"
-msgstr ""
+msgstr "قالب استاندارد("
 
 #: data/content/atomic/download/index.html:101
 #: data/content/atomic/download/index.html:141
@@ -962,13 +982,13 @@ msgstr ""
 #: data/content/workstation/download/index.html:145
 #: data/content/workstation/prerelease/index.html:131
 msgid "Other Downloads"
-msgstr ""
+msgstr "دیگر دانلودها"
 
 #: data/content/atomic/download/index.html:333
 #: data/content/atomic/prerelease/index.html:337
 #, python-format
 msgid "Atomic Host ISO image (%sMB)"
-msgstr ""
+msgstr "تصویر ISO میزبان اتمی (%sMB)"
 
 #: data/content/atomic/download/index.html:334
 #: data/content/atomic/prerelease/index.html:338
@@ -979,45 +999,45 @@ msgstr ""
 #: data/content/atomic/download/index.html:342
 #, python-format
 msgid "F%(rel)s %(state)s"
-msgstr ""
+msgstr "F%(rel)s %(state)s"
 
 #: data/content/atomic/download/index.html:343
-#: data/content/server/download/index.html:63
-#: data/content/server/download/index.html:73
+#: data/content/server/download/index.html:72
+#: data/content/server/download/index.html:82
 #: data/content/workstation/download/index.html:160
 #: data/content/workstation/download/index.html:170
 msgid "Try a pre-release"
-msgstr "یک پیش‌از-انتشار راه امتحان کنید"
+msgstr "یک پیش‌-انتشار را امتحان کنید"
 
 #: data/content/atomic/download/index.html:344
-#: data/content/server/download/index.html:64
-#: data/content/server/download/index.html:74
+#: data/content/server/download/index.html:73
+#: data/content/server/download/index.html:83
 #: data/content/workstation/download/index.html:161
 #: data/content/workstation/download/index.html:171
 msgid "We're working on our next release."
-msgstr "روی انتشار بعدی‌مان کار می‌کنیم."
+msgstr "در حال کار بر روی انتشار بعدی‌مان هستیم."
 
 #: data/content/atomic/download/index.html:345
-#: data/content/server/download/index.html:65
-#: data/content/server/download/index.html:75
+#: data/content/server/download/index.html:74
+#: data/content/server/download/index.html:84
 #: data/content/workstation/download/index.html:162
 #: data/content/workstation/download/index.html:172
 #, python-format
 msgid "Help us get F%(rel)s ready!"
-msgstr ""
+msgstr "Help us get F%(rel)s ready!"
 
 #: data/content/atomic/download/index.html:346
 #, python-format
 msgid "Download F%(rel)s %(state)s images"
-msgstr ""
+msgstr "Download F%(rel)s %(state)s images"
 
 #: data/content/atomic/download/index.html:347
-#: data/content/server/download/index.html:67
-#: data/content/server/download/index.html:77
+#: data/content/server/download/index.html:76
+#: data/content/server/download/index.html:86
 #: data/content/workstation/download/index.html:164
 #: data/content/workstation/download/index.html:174
 msgid "How to test pre-releases"
-msgstr ""
+msgstr "چطور نسخه‌های پیش-نمایش را آزمایش کنیم"
 
 #: data/content/atomic/download/index.html:353
 #: data/content/atomic/prerelease/index.html:341
@@ -1032,11 +1052,13 @@ msgid ""
 "<a href=\"https://www.projectatomic.io/docs/quickstart/\"><strong>Project "
 "Atomic: Getting Started</strong></a>"
 msgstr ""
+"<a href=\"https://www.projectatomic.io/docs/quickstart/\"><strong>پروژه "
+"اتمی: شروع</strong></a>"
 
 #: data/content/atomic/download/index.html:355
 #: data/content/atomic/prerelease/index.html:343
 msgid "Documentation on getting started using Project Atomic / Atomic Host."
-msgstr ""
+msgstr "مستندات شروع توسط پروژه اتمی / میزبان اتمی."
 
 #: data/content/atomic/download/index.html:356
 #: data/content/atomic/prerelease/index.html:344
@@ -1045,6 +1067,9 @@ msgid ""
 "href=\"https://lists.projectatomic.io/mailman/listinfo/atomic\"><strong>Project"
 " Atomic: Mailing List</strong></a>"
 msgstr ""
+"<a "
+"href=\"https://lists.projectatomic.io/mailman/listinfo/atomic\"><strong>پروژه"
+" اتمی: لیست پست الکترونیک</strong></a>"
 
 #: data/content/atomic/download/index.html:357
 #: data/content/atomic/prerelease/index.html:345
@@ -1058,7 +1083,7 @@ msgstr ""
 #: data/content/atomic/prerelease/index.html:346
 #, python-format
 msgid "<a href=\"%s\"><strong>Project Atomic: IRC Chat</strong></a>"
-msgstr ""
+msgstr "<a href=\"%s\"><strong>پروژه تمی: چت IRC</strong></a>"
 
 #: data/content/atomic/download/index.html:359
 #: data/content/atomic/prerelease/index.html:347
@@ -1066,10 +1091,12 @@ msgid ""
 "Join the Project Atomic channel <strong>#atomic</strong></a> on "
 "<strong>irc.freenode.org</strong></a>."
 msgstr ""
+"به کانال پروژه اتمی <strong>#atomic</strong></a> در  "
+"<strong>irc.freenode.org</strong></a> ملحق شوید."
 
 #: data/content/atomic/download/index.html:362
 #: data/content/atomic/prerelease/index.html:350
-#: data/content/server/download/index.html:94
+#: data/content/server/download/index.html:103
 #: data/content/workstation/download/index.html:221
 msgid "Verify"
 msgstr "صحت سنجی"
@@ -1077,7 +1104,7 @@ msgstr "صحت سنجی"
 #: data/content/atomic/download/index.html:365
 #: data/content/atomic/prerelease/index.html:322
 #: data/content/atomic/prerelease/index.html:353
-#: data/content/server/download/index.html:97
+#: data/content/server/download/index.html:106
 #: data/content/server/prerelease/index.html:41
 #: data/content/workstation/download/index.html:224
 #: data/content/workstation/prerelease/index.html:119
@@ -1087,14 +1114,16 @@ msgstr "تصویرتان را صحت سنجی کنید"
 #: data/content/atomic/prerelease/index.html:34
 #, python-format
 msgid "Download Fedora %(rel)s %(state)s Atomic Host"
-msgstr ""
+msgstr "Download Fedora %(rel)s %(state)s Atomic Host"
 
 #: data/content/atomic/prerelease/index.html:37
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "These are the latest Fedora Atomic Host images, produced on "
 "%(manual_pre_atomic_date)s."
 msgstr ""
+"These are the latest Fedora Atomic Host images, produced on "
+"%(manual_pre_atomic_date)s."
 
 #: data/content/atomic/prerelease/index.html:48
 #, python-format
@@ -1104,6 +1133,10 @@ msgid ""
 "their <a href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on "
 "freenode."
 msgstr ""
+"This is pre-release software and is supported by the <a "
+"href=\"%(team_url)s\"> Atomic Working Group</a>. Please direct questions to "
+"their <a href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on "
+"freenode."
 
 #: data/content/atomic/prerelease/index.html:49
 #: data/content/server/prerelease/index.html:29
@@ -1114,6 +1147,9 @@ msgid ""
 "Bugzilla</a>. The Fedora Project makes no guarantees as to its suitability "
 "or usefulness."
 msgstr ""
+"توصیه می‌شود تمامی مسایل و مشکلات از طریق <a href=\"%s\">Red Hat "
+"Bugzilla</a> گزارش شود. پروژه فدورا هیچ تضمینی اعم از مناسب بودن یا "
+"غیرکاربردی بودن آن نمی‌دهد."
 
 #: data/content/atomic/prerelease/index.html:73
 #: data/content/atomic/prerelease/index.html:149
@@ -1128,7 +1164,7 @@ msgid "Fedora %(rel)s %(state)s Standard Atomic Host HVM AMIs"
 msgstr ""
 
 #: data/content/atomic/prerelease/index.html:208
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and "
 "Libvirt providers. You can bring up Fedora Atomic Host in a vagrant box by "
@@ -1163,10 +1199,12 @@ msgstr "۴۰۴: صفحه یافت نشد"
 #: data/content/e/404.html:18
 msgid "We apologize, but the file or page you requested could not be found."
 msgstr ""
+"معذرت می‌خواهیم، ولی پرونده یا صفحه‌ای را که درخواست کرده‌اید را نمی‌توان "
+"یافت."
 
 #: data/content/e/404.html:25
 msgid "Troubleshooting Ideas"
-msgstr ""
+msgstr "ایده‌های عیب‌یابی"
 
 #: data/content/e/404.html:29
 msgid ""
@@ -1181,6 +1219,8 @@ msgid ""
 "Bad Link? Contact <a href=\"%s\">the webmaster</a> and explain which link "
 "brought you here."
 msgstr ""
+"پیوند خراب؟ با <a href=\"%s\">the webmaster</a> تماس بگیرید و پیوندی را که "
+"در اینجا شکسته دیدید را توضیح دهد."
 
 #: data/content/e/404.html:35
 #, python-format
@@ -1188,6 +1228,8 @@ msgid ""
 "The page or file may have moved. Check the <a href=\"%(fpo)s\">main site</a>"
 " or search our <a href=\"%(wiki)s\">wiki</a>."
 msgstr ""
+"ممکن است صفحه یا پرونده منتقل شده باشد.  <a href=\"%(fpo)s\">سایت اصلی</a> "
+"را بررسی کنید یا در <a href=\"%(wiki)s\">ویکی</a> یمان جستجو کنید."
 
 #: data/content/keys/index.html:8 data/content/keys/index.html:19
 msgid "Package Signing Keys"
@@ -1200,7 +1242,7 @@ msgstr ""
 
 #: data/content/keys/index.html:30 data/content/keys/obsolete.html:30
 msgid "Learn how Fedora protects you."
-msgstr ""
+msgstr "ببینید که چطور فدورا از شما مراقبت می‌کند."
 
 #: data/content/keys/index.html:31 data/content/keys/obsolete.html:31
 msgid ""
@@ -1210,11 +1252,11 @@ msgstr ""
 
 #: data/content/keys/index.html:32 data/content/keys/obsolete.html:32
 msgid "Read the FAQ to learn more »"
-msgstr ""
+msgstr "پرسش‌های متداول را برای بیشتر دانستن بخوانید"
 
 #: data/content/keys/index.html:39
 msgid "Currently Used Keys"
-msgstr ""
+msgstr "کلیدهایی که تاکنون استفاده شده‌اند"
 
 #: data/content/keys/index.html:46 data/content/keys/index.html:59
 #: data/content/keys/index.html:72 data/content/keys/index.html:85
@@ -1230,7 +1272,7 @@ msgstr ""
 #: data/content/keys/obsolete.html:358 data/content/keys/obsolete.html:379
 #: data/content/keys/obsolete.html:401 data/content/keys/obsolete.html:422
 msgid "Primary"
-msgstr "اولیه"
+msgstr "اصلی"
 
 #: data/content/keys/index.html:85 data/content/keys/obsolete.html:201
 #: data/content/keys/obsolete.html:225 data/content/keys/obsolete.html:247
@@ -1270,11 +1312,11 @@ msgstr ""
 
 #: data/content/keys/obsolete.html:46
 msgid "Fedora <= 9"
-msgstr ""
+msgstr "فدورا <= ۹"
 
 #: data/content/keys/obsolete.html:46
 msgid "Fedora GPG key"
-msgstr ""
+msgstr "کلید GPG فدورا"
 
 #: data/content/keys/obsolete.html:46
 msgid ""
@@ -1287,6 +1329,13 @@ msgid ""
 "announce-list/2008-August/msg00012.html</a> for information on why this key "
 "is obsolete."
 msgstr ""
+"بسته های موجود در رسانه نصب با این کلید امضا شده اند. مخازن dnf مربوط "
+"عبارتند از <strong>fedora</strong> و <strong>fedora-updates</strong> برای "
+"فدورا ۷ تا ۹، و <strong>core</strong> و <strong>core-updates</strong> برای "
+"فدورا کور (ورژن ۶ و قبل‌تر). برای اطلاعات بیشتر در مورد دلیل منسوخ شدن این "
+"کلید <a href=\"http://www.redhat.com/archives/fedora-announce-"
+"list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-"
+"announce-list/2008-August/msg00012.html</a> را ببینید."
 
 #: data/content/keys/obsolete.html:59
 msgid "Fedora >= 7 testing"
@@ -1294,7 +1343,7 @@ msgstr ""
 
 #: data/content/keys/obsolete.html:59
 msgid "Fedora Test"
-msgstr ""
+msgstr "تست فدورا"
 
 #: data/content/keys/obsolete.html:59
 msgid ""
@@ -1306,30 +1355,36 @@ msgid ""
 "announce-list/2008-August/msg00012.html</a> for information on why this key "
 "is obsolete."
 msgstr ""
+"اگر شما در آزمایش بسته‌ها شرکت می‌کنید این کلیدی است که برای تایید بسته‌های "
+"آزمایشی استفاده خواهید کرد. این کلید بسته هایی که در مخزن <strong>fedora-"
+"testing</strong>قرار دارند را امضا می کند. برای اطلاعات بیشتر در مورد دلیل "
+"منسوخ شدن این کلید <a href=\"http://www.redhat.com/archives/fedora-announce-"
+"list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-"
+"announce-list/2008-August/msg00012.html</a> را ببینید."
 
 #: data/content/keys/obsolete.html:72
 msgid "Fedora 8-9"
-msgstr ""
+msgstr "فدورا ۹-8"
 
 #: data/content/keys/obsolete.html:85
 msgid "Fedora 8-9 testing"
-msgstr ""
+msgstr "فدورا ۹-8 آزمایشی"
 
 #: data/content/keys/obsolete.html:100
 msgid "Fedora 10"
-msgstr ""
+msgstr "فدورا 10"
 
 #: data/content/keys/obsolete.html:113
 msgid "Fedora 10 testing"
-msgstr ""
+msgstr "فدورا 10 آزمایشی"
 
 #: data/content/keys/obsolete.html:126
 msgid "Fedora 11"
-msgstr ""
+msgstr "فدورا 11"
 
 #: data/content/keys/obsolete.html:139
 msgid "Fedora 12"
-msgstr ""
+msgstr "فدورا 12"
 
 #: data/content/keys/obsolete.html:154
 msgid "Fedora 13"
@@ -1341,7 +1396,7 @@ msgstr "فدورا ۱۴"
 
 #: data/content/keys/obsolete.html:167
 msgid "s390x"
-msgstr ""
+msgstr "s390x"
 
 #: data/content/keys/obsolete.html:188
 msgid "Fedora 15"
@@ -1349,19 +1404,19 @@ msgstr "فدورا ۱۵"
 
 #: data/content/keys/obsolete.html:201
 msgid "Fedora 16"
-msgstr ""
+msgstr "فدورا 16"
 
 #: data/content/keys/obsolete.html:225
 msgid "Fedora 17"
-msgstr ""
+msgstr "فدورا 17"
 
 #: data/content/keys/obsolete.html:247
 msgid "Fedora 18"
-msgstr ""
+msgstr "فدورا 18"
 
 #: data/content/keys/obsolete.html:269
 msgid "Fedora 19"
-msgstr ""
+msgstr "فدورا 19"
 
 #: data/content/keys/obsolete.html:292
 msgid "Fedora 20"
@@ -1659,36 +1714,51 @@ msgstr ""
 msgid "64-bit %sMB image"
 msgstr ""
 
+#: data/content/server/download/index.html:56
+#: data/content/server/download/index.html:60
+#: data/content/server/download/index.html:64
+#, python-format
+msgid "aarch64 %sMB image"
+msgstr ""
+
+#: data/content/server/download/index.html:58
+msgid "DVD ISO Image:"
+msgstr ""
+
 #: data/content/server/download/index.html:62
+msgid "Raw Disk Image:"
+msgstr ""
+
+#: data/content/server/download/index.html:71
 #: data/content/workstation/download/index.html:159
 #, python-format
 msgid "F%(rel)s Alpha"
 msgstr ""
 
-#: data/content/server/download/index.html:66
+#: data/content/server/download/index.html:75
 #: data/content/workstation/download/index.html:163
 #, python-format
 msgid "Download F%(rel)s Alpha images"
 msgstr ""
 
-#: data/content/server/download/index.html:72
+#: data/content/server/download/index.html:81
 #: data/content/workstation/download/index.html:169
 #, python-format
 msgid "F%(rel)s Beta"
 msgstr ""
 
-#: data/content/server/download/index.html:76
+#: data/content/server/download/index.html:85
 #: data/content/workstation/download/index.html:173
 #, python-format
 msgid "Download F%(rel)s Beta images"
 msgstr ""
 
-#: data/content/server/download/index.html:83
+#: data/content/server/download/index.html:92
 #: data/content/workstation/download/index.html:206
 msgid "Get more Fedora"
 msgstr ""
 
-#: data/content/server/download/index.html:87
+#: data/content/server/download/index.html:96
 #: data/content/workstation/download/index.html:215
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr ""
@@ -1745,6 +1815,10 @@ msgid ""
 "their <a href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on "
 "freenode."
 msgstr ""
+"This is pre-release software and is supported by the <a "
+"href=\"%(team_url)s\">Server Working Group</a>. Please direct questions to "
+"their <a href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on "
+"freenode."
 
 #: data/content/server/prerelease/index.html:31
 #: data/content/server/prerelease/index.html:33
@@ -1807,7 +1881,7 @@ msgstr ""
 
 #: data/content/workstation/index.html:42
 msgid "JVM performance engineer"
-msgstr ""
+msgstr "ابزارهای کارایی JVM"
 
 #: data/content/workstation/index.html:53
 msgid "Sleek user interface"
@@ -1864,12 +1938,12 @@ msgstr "آماده‌اید تا ایستگاه‌کار فدورا را امت�
 #: data/content/workstation/download/index.html:8
 #: data/content/workstation/download/ws-download-splash.html:8
 msgid "Download Fedora Workstation"
-msgstr "دانلود ایستگاه‌کار فدورا"
+msgstr "بارگیری ایستگاه‌کار فدورا"
 
 #: data/content/workstation/download/index.html:38
 #, python-format
 msgid "Download Fedora %(rel)s Workstation"
-msgstr "دانلود نسخه‌ی %(rel)s ایستگاه‌کار فدورا"
+msgstr "بارگیری نسخه‌ی %(rel)s ایستگاه‌کار فدورا"
 
 #: data/content/workstation/download/index.html:41
 #: data/content/workstation/download/index.html:98
@@ -1878,6 +1952,7 @@ msgstr "دانلود نسخه‌ی %(rel)s ایستگاه‌کار فدورا"
 #, python-format
 msgid "%s MB Fedora Media Writer for <strong>Mac OS X</strong>"
 msgstr ""
+"%s مگابایت نگارنده‌ی رسانه‌ی فدورا برای <strong>سیستم عامل مک 10</strong>"
 
 #: data/content/workstation/download/index.html:45
 #: data/content/workstation/download/index.html:126
@@ -1885,13 +1960,16 @@ msgstr ""
 #: data/content/workstation/prerelease/index.html:109
 #, python-format
 msgid "64-bit %s GB ISO for <strong>Linux</strong>."
-msgstr ""
+msgstr "64-بیتی %s گیگابایت ISO برای <strong>لینوکس</strong>."
 
 #: data/content/workstation/download/index.html:46
-#: data/content/workstation/prerelease/index.html:25
 #, python-format
-msgid "<a href=\"%s\">Install via DNF</a> if you are already on Fedora."
+msgid ""
+"A download is only needed for new installs. To upgrade, <a "
+"href=\"%s\">follow these instructions.</a>"
 msgstr ""
+"فقط برای نصب جدید به بارگیری نیاز دارید. برای ارتقا، <a href=\"%s\">این "
+"دستورالعمل‌ها را دنبال کنید.</a>"
 
 #: data/content/workstation/download/index.html:50
 #: data/content/workstation/download/index.html:110
@@ -1899,19 +1977,19 @@ msgstr ""
 #: data/content/workstation/prerelease/index.html:96
 #, python-format
 msgid "%s MB Fedora Media Writer for <strong>Windows</strong>"
-msgstr ""
+msgstr "%s مگابایت نگارنده‌ی رسانه‌ی فدورا برای <strong>ویندوز</strong>"
 
 #: data/content/workstation/download/index.html:52
 #: data/content/workstation/download/index.html:57
 #: data/content/workstation/prerelease/index.html:31
 #: data/content/workstation/prerelease/index.html:36
 msgid "Download Fedora Media Writer for your operating system."
-msgstr ""
+msgstr "بارگیری نگارنده‌ی رسانه‌ی فدورا برای سیستم عاملتان."
 
 #: data/content/workstation/download/index.html:53
 #: data/content/workstation/prerelease/index.html:32
 msgid "Need instructions? Or a different version?"
-msgstr ""
+msgstr "دستورالعمل نیاز دارید؟ یا یک نسخه‌ی متفاوت؟"
 
 #: data/content/workstation/download/index.html:65
 msgid "Running Fedora Workstation"
@@ -1923,27 +2001,29 @@ msgstr "برای اجرای ایستگاه‌کار فدورا شما نیاز �
 
 #: data/content/workstation/download/index.html:68
 msgid "Fedora Media Writer (download above)"
-msgstr ""
+msgstr "نگارنده‌ی رسانه‌ی فدورا ( بارگیری بالاست)"
 
 #: data/content/workstation/download/index.html:69
 #: data/content/workstation/prerelease/index.html:64
 #, python-format
 msgid "A USB Flash drive with at least %s GB space available"
-msgstr ""
+msgstr "یک فلش درایو یواس‌بی با حداقل %sگیگابایت فضای آزاد"
 
 #: data/content/workstation/download/index.html:71
+#, python-format
 msgid ""
 "Fedora Workstation is provided via Fedora Media Writer. Download this "
-"program via the download link above and run it on your system, following the"
-" prompts to generate a live version (see 'What does \"Live\" mean?' to the "
+"program for your <a href=\"%s\">supported platform</a> and follow the "
+"prompts to generate a live version (see 'What does \"Live\" mean?' to the "
 "right) of Fedora Workstation on a USB flash drive. You may then run the live"
 " version of Fedora Workstation from your USB flash drive."
 msgstr ""
-"ایستگاه‌کار فدروا به همراه Media Writer فدورا ارائه می‌شود. از طریق پیوند "
-"فوق این برنامه را دانلود کرده و آن‌را در سیستم‌تان اجرا کنید، مراحل را دنبال"
-" کنید و یک نسخه‌ی زنده از ایستگاه‌کار فدورا روی درایو فلش USB خود ایجاد "
-"کنید(برای اطلاع از مفهوم نسخه‌ی «زنده» به پیوند سمت راست مراجه نمایید). سپس "
-"می‌توانید نسخه‌ی زنده ایستگاه‌کار فدورا را از روی فلش USB اجرا کنید."
+"فدورا نسخه‌ی ایستگاه کاری از طریق نگارنده‌ی رسانه فدورا ارایه می‌شود. این "
+"برنامه را برای  <a href=\"%s\">بستر پشتیبانی شده</a> بارگیری کنید و "
+"پیشنهادات را برای تولید نسخه‌ی زنده‌ی( ببینید ' \"زنده\" یعنی چه؟' در سمت "
+"راست) فدورا ایستگاه کاری بر روی فلش درایو یواس‌بی را دنبال کنید. سپس ممکن "
+"است بخواهید نسخه‌ی زنده‌ی فدورا ایستگاه کاری از روی فلش درایو یواس‌بی‌تان را"
+" اجرا کنید."
 
 #: data/content/workstation/download/index.html:72
 #: data/content/workstation/prerelease/index.html:78
@@ -1955,34 +2035,40 @@ msgid ""
 "Media Writer application, and follow the on-screen prompts to complete "
 "installation."
 msgstr ""
+"اختیاری، ممکن است بخواهید فدورا نسخه‌ی ایستگاه کاری را در یک لپ‌تاپ یا "
+"دسکتاپ کامپیوتر با حداقل پردازنده 1 گیگاهرتز، رم 1 گیگابایت، و فضای آزاد 10 "
+"گیگابایت نصب کنید. برای این کار، نسخه‌ی زنده‌ی فدورا ایستگاه کاری را از فلش "
+"درایو یواس‌بیِ روی کامپیوتری که می‌خواهید آن را نصب کنید اجرا کنید، برنامه "
+"نگارنده‌ی  رسانه‌ی فدورا را اجرا کنید، و پیشنهادات نصب کامل را از روی صفحه "
+"دنبال کنید."
 
 #: data/content/workstation/download/index.html:74
 #: data/content/workstation/prerelease/index.html:80
 msgid "Supported Platforms"
-msgstr ""
+msgstr "بسترهای پشتیبانی شده"
 
 #: data/content/workstation/download/index.html:75
 #: data/content/workstation/prerelease/index.html:81
 msgid "Fedora Media Writer supports the following platforms:"
-msgstr ""
+msgstr "نگارنده‌ی رسانه فدورا از بسترهای زیر پشتیبانی می‌کند:"
 
 #: data/content/workstation/download/index.html:77
 #: data/content/workstation/download/index.html:97
 #: data/content/workstation/prerelease/index.html:86
 msgid "Mac OS X"
-msgstr ""
+msgstr "سیستم عامل مک 10"
 
 #: data/content/workstation/download/index.html:78
 #: data/content/workstation/download/index.html:109
 #: data/content/workstation/prerelease/index.html:95
 msgid "Windows"
-msgstr ""
+msgstr "ویندوز"
 
 #: data/content/workstation/download/index.html:79
 #: data/content/workstation/download/index.html:121
 #: data/content/workstation/prerelease/index.html:104
 msgid "Linux"
-msgstr ""
+msgstr "لینوکس"
 
 #: data/content/workstation/download/index.html:82
 msgid ""
@@ -1991,6 +2077,11 @@ msgid ""
 "system incorrectly or you would like to download a different version, please"
 " click the \"View all platform downloads\" button below."
 msgstr ""
+"ما بطور اتوماتیک تشخیص دادیم که شما در حال اجرای <strong>سیستم عامل مک "
+"10</strong>  هستید و آن ورژن  آنرا برای بارگیری پیشنهاد می‌کنیم. اگر ما "
+"سیستم عامل‌تان را اشتباه تشخیص داده‌ایم یا اینکه اگر شما مایل به بارگیری یک "
+"نسخه‌ی دیگر هستید، لطفا بر روی \"نمایش تمامی بسترهای بارگیری\" در دکمه زیر "
+"کلیک کنید."
 
 #: data/content/workstation/download/index.html:85
 msgid ""
@@ -1999,6 +2090,10 @@ msgid ""
 " incorrectly or you would like to download a different version, please click"
 " the \"View all platform downloads\" button below."
 msgstr ""
+"ما بطور اتوماتیک تشخیص دادیم که شما در حال اجرای <strong>لینوکس</strong>  "
+"هستید و ورژن آن را برای بارگیری پیشنهاد می‌کنیم. اگر ما سیستم عامل‌تان را "
+"اشتباه تشخیص داده‌ایم یا اینکه اگر شما مایل به بارگیری یک نسخه‌ی دیگر هستید،"
+" لطفا بر روی \"نمایش تمامی بسترهای بارگیری\" در دکمه زیر کلیک کنید."
 
 #: data/content/workstation/download/index.html:88
 msgid ""
@@ -2007,42 +2102,46 @@ msgid ""
 "system incorrectly or you would like to download a different version, please"
 " click the \"View all platform downloads\" button below."
 msgstr ""
+"ما بطور اتوماتیک تشخیص دادیم که شما در حال اجرای <strong>ویندوز</strong>  "
+"هستید و آن ورژن  آنرا برای بارگیری پیشنهاد می‌کنیم. اگر ما سیستم عامل‌تان را"
+" اشتباه تشخیص داده‌ایم یا اینکه اگر شما مایل به بارگیری یک نسخه‌ی دیگر "
+"هستید، لطفا بر روی \"نمایش تمامی بسترهای بارگیری\" در دکمه زیر کلیک کنید."
 
 #: data/content/workstation/download/index.html:92
 msgid "View all platform downloads"
-msgstr ""
+msgstr "نمایش تمامی بسترهای بارگیری"
 
 #: data/content/workstation/download/index.html:122
 #: data/content/workstation/prerelease/index.html:105
 msgid "Available via DNF for <strong>Fedora</strong>"
-msgstr ""
+msgstr "از طریق dnf برای <strong>فدورا</strong> موجود است"
 
 #: data/content/workstation/download/index.html:123
 #: data/content/workstation/prerelease/index.html:106
 msgid "More details"
-msgstr ""
+msgstr "جزییات بیشتر"
 
 #: data/content/workstation/download/index.html:127
 #: data/content/workstation/prerelease/index.html:110
 msgid "How to use this ISO?"
-msgstr ""
+msgstr "چگونه از ISO استفاده کنیم؟"
 
 #: data/content/workstation/download/index.html:129
 #: data/content/workstation/prerelease/index.html:112
 msgid "Verify this image"
-msgstr ""
+msgstr "صحت سنجی این تصویر"
 
 #: data/content/workstation/download/index.html:146
 #: data/content/workstation/prerelease/index.html:132
 #, python-format
 msgid "64-bit %sGB Live image"
-msgstr ""
+msgstr "64-بیتی %sگیگابایتی تصویر زنده‌ی"
 
 #: data/content/workstation/download/index.html:147
 #: data/content/workstation/prerelease/index.html:133
 #, python-format
 msgid "32-bit %sGB Live image"
-msgstr ""
+msgstr "32-بیتی %sگیگابایتی تصویر زنده‌ی"
 
 #: data/content/workstation/download/index.html:149
 #: data/content/workstation/prerelease/index.html:136
@@ -2053,61 +2152,68 @@ msgstr ""
 #: data/content/workstation/prerelease/index.html:139
 #, python-format
 msgid "32-bit %sMB image"
-msgstr ""
+msgstr "32-بیتی %sمگابایتی تصویر"
 
 #: data/content/workstation/download/index.html:183
 msgid "Try Atomic Workstation"
-msgstr ""
+msgstr "ایستگاه کاری اتمی را امتحان کنید."
 
 #: data/content/workstation/download/index.html:184
 msgid "Atomic provides an immutable OS image and updates via OSTree."
 msgstr ""
+"اتمی یک تصویر سیستم عامل تغییر ناپذیر و بروزرسانی از طریق OSTree را فراهم "
+"می‌کند."
 
 #: data/content/workstation/download/index.html:186
 #, python-format
 msgid "64-bit %sGB Atomic image"
-msgstr ""
+msgstr "64-بیت %sگیگابایتی تصویر اتمی"
 
 #: data/content/workstation/download/index.html:188
 msgid "Learn more"
-msgstr ""
+msgstr "بیشتر بدانید"
 
 #: data/content/workstation/download/index.html:193
 #, python-format
 msgid "<a href=\"%(fmagazine_url)s\"><strong>Release Announcement</strong></a>"
-msgstr ""
+msgstr "<a href=\"%(fmagazine_url)s\"><strong>اطلاعیه‌های منتشر شده</strong></a>"
 
 #: data/content/workstation/download/index.html:194
 msgid "Read the full Release Announcement on Fedora Magazine."
-msgstr ""
+msgstr "اطلاعیه‌های انتشار یافته در مجله‌ی فدورا را کامل بخوانید."
 
 #: data/content/workstation/download/index.html:195
 #, python-format
 msgid "<a href=\"%(release_notes)s\"><strong>Release Notes</strong></a>"
 msgstr ""
+"<a href=\"%(release_notes)s\"><strong>یادداشت‌های انتشار یافته</strong></a>"
 
 #: data/content/workstation/download/index.html:196
 msgid ""
 "Learn about changes since the last version of Fedora as well as minimum "
 "requirements and recommendations for running Fedora."
 msgstr ""
+"درباره‌ی تغییرات آخرین نسخه فدورا همانند حداقل‌های سیستم مورد نیاز و پیشنهاد"
+" شده برای اجرای فدورا بیشتر بدانید."
 
 #: data/content/workstation/download/index.html:197
 #, python-format
 msgid "<a href=\"%(install_guide)s\"><strong>Installation Guide</strong></a>"
-msgstr ""
+msgstr "<a href=\"%(install_guide)s\"><strong>راهنمای نصب</strong></a>"
 
 #: data/content/workstation/download/index.html:198
 msgid ""
 "We recommend you look through this before installing to your system, since "
 "it answers many common questions."
 msgstr ""
+"پیشنهاد می‌کنیم این را قبل از نصب بر روی سیستم‌تان بخوانید، از آنجایی که "
+"پاسخ بسیاری از پرسش‌های متداول را دارا می‌باشد."
 
 #: data/content/workstation/download/index.html:199
 #: data/content/workstation/prerelease/index.html:144
 #, python-format
 msgid "<a href=\"%(commonbugs_url)s\"><strong>Common Bugs</strong></a>"
-msgstr ""
+msgstr "<a href=\"%(commonbugs_url)s\"><strong>باگ‌های معمول</strong></a>"
 
 #: data/content/workstation/download/index.html:200
 #: data/content/workstation/prerelease/index.html:145
@@ -2119,7 +2225,7 @@ msgstr ""
 #: data/content/workstation/download/index.html:202
 #: data/content/workstation/prerelease/index.html:149
 msgid "What does \"Live\" mean?"
-msgstr ""
+msgstr "منظور از \"لایو\" چیست؟"
 
 #: data/content/workstation/download/index.html:203
 #: data/content/workstation/prerelease/index.html:150
@@ -2135,6 +2241,8 @@ msgid ""
 "When you are ready, you can install Fedora to your hard disk from within "
 "this \"live\" version of Fedora Workstation."
 msgstr ""
+"وقتی آماده بودید، می‌توانید فدورا را بر روی هارد دیسک‌تان از داخل این نسخه‌ی"
+" \"لایو\" فدورا ایستگاه کاری نصب کنید."
 
 #: data/content/workstation/download/index.html:209
 #: data/templates/footer.html:44
@@ -2144,17 +2252,22 @@ msgstr ""
 #: data/content/workstation/download/index.html:212
 #: data/templates/footer.html:45
 msgid "Fedora Labs"
-msgstr ""
+msgstr "آزمایشگاه فدورا"
 
 #: data/content/workstation/prerelease/index.html:8
 #, python-format
 msgid "Download Fedora Workstation %s"
-msgstr ""
+msgstr "دانلود فدورا ایستگاه کاری. %s"
 
 #: data/content/workstation/prerelease/index.html:17
 #, python-format
 msgid "Download Fedora %(rel)s %(state)s Workstation"
-msgstr ""
+msgstr "دانلود فدورا %(rel)s %(state)s ایستگاه کاری"
+
+#: data/content/workstation/prerelease/index.html:25
+#, python-format
+msgid "<a href=\"%s\">Upgrade via DNF</a> if you are already on Fedora."
+msgstr "<a href=\"%s\">ارتقا از طریق DNF</a> اگر شما در حال حاضر در فدورا هستید."
 
 #: data/content/workstation/prerelease/index.html:45
 #, python-format
@@ -2164,18 +2277,22 @@ msgid ""
 " to their <a href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on "
 "freenode."
 msgstr ""
+"این پیش-انتشار نرم‌افزار است و توسط <a href=\"%(team_url)s\">گروه کاری "
+"ایستگاه کاری</a>پشتیبانی می‌شود. لطفا پرسش‌هایتان را به <a "
+"href=\"%(team_list)s\">لیست پست الکترونیک</a> یا %(team_irc)s در فری‌نود "
+"بفرستید."
 
 #: data/content/workstation/prerelease/index.html:60
 msgid "Running Pre-Release Versions of Fedora Workstation"
-msgstr ""
+msgstr "اجرای نسخه‌های پیش-انتشار فدورا ایستگاه کاری"
 
 #: data/content/workstation/prerelease/index.html:61
 msgid "To run a prerelease version of Fedora Workstation, you will need:"
-msgstr ""
+msgstr "برای اجرای نسخه‌های پیش-انتشار فدورا ایستگاه کاری، لازم خواهید داشت:"
 
 #: data/content/workstation/prerelease/index.html:63
 msgid "Fedora Media Writer (Download available below)"
-msgstr ""
+msgstr "رسانه رایتر فدورا (دانلود در زیر موجود است)"
 
 #: data/content/workstation/prerelease/index.html:65
 #, python-format
@@ -2183,40 +2300,49 @@ msgid ""
 "<a href=\"%s\">A live image ISO of the pre-release version of Fedora</a> you"
 " wish to run"
 msgstr ""
+"<a href=\"%s\">ایمیج ایزو لایو نسخه‌ی پیش-انتشار فدورا</a> اگر میخواهید اجرا"
+" کنید"
 
 #: data/content/workstation/prerelease/index.html:67
 msgid ""
 "WARNING: This procedure destroys all data on your USB media. Make sure to "
 "back up any important files from your USB media before you do this."
 msgstr ""
+"اخطار: این عملیات تمامی اطلاعات بر روی رسانه‌ی یواس‌بی‌تان را از بین می‌برد."
+" قبل از انجام این کار از تهیه نسخه‌ی پشتیبان هر فایل مهمی که بر روی رسانه "
+"یواس‌بی‌تان است اطمینان حاصل کنید."
 
 #: data/content/workstation/prerelease/index.html:69
 msgid "Download the Fedora Media Writer app below."
-msgstr ""
+msgstr "برنامه رایتر رسانه فدورای زیر را دانلود کنید."
 
 #: data/content/workstation/prerelease/index.html:70
 msgid "Download the desired ISO image."
-msgstr ""
+msgstr "ایمیج ایزوی دلخواه را دانلود کنید."
 
 #: data/content/workstation/prerelease/index.html:71
 msgid ""
 "Open the Fedora Media Writer app. You may need to provide a password to give"
 " the app the right permissions."
 msgstr ""
+"برنامه‌ی رایتر رسانه‌ی فدورا را باز کنید. ممکن است لازم باشد برای دسترسی‌های"
+" مجاز برنامه گذرواژه‌ای تعیین کنید"
 
 #: data/content/workstation/prerelease/index.html:72
 msgid "Select \"Custom OS...\" from the list."
-msgstr ""
+msgstr "\"سیستم عامل سفارشی...\" را از لیست انتخاب کنید"
 
 #: data/content/workstation/prerelease/index.html:73
 msgid "On the Custom OS page, select the \"Select Live ISO\" button."
-msgstr ""
+msgstr "در صفحه‌ی سیستم عامل سفارشی، دکمه \"انتخاب ایزو لایو\" را انتخاب کنید."
 
 #: data/content/workstation/prerelease/index.html:74
 msgid ""
 "In the file selection window, locate and select the ISO image you "
 "downloaded."
 msgstr ""
+"در پنجره‌ی انتخاب فایل، محل را تعیین و ایمیج ایزو دانلود شده‌تان را انتخاب "
+"کنید."
 
 #: data/content/workstation/prerelease/index.html:75
 msgid ""
@@ -2224,30 +2350,39 @@ msgid ""
 " to create live media, you may need to restore it to factory settings.  The "
 "app will ask you whether to do so in this case."
 msgstr ""
+"یو اس بی را در کامپیوتر قرار دهید. اگر قبلا از یو اس بی‌تان برای نسخه لایو "
+"استفاده کرده‌اید، ممکن است لازم باشد به تنظیمات کارخانه بازگردانید. اگر در "
+"این زمینه نیاز باشد برنامه از شما درخواست خواهد کرد."
 
 #: data/content/workstation/prerelease/index.html:76
 msgid ""
 "Select \"Create Live USB\" to write the image. Wait until the process is "
 "finished before you remove the media and close the app."
 msgstr ""
+"برای رایت ایمیج \"ساختن یو اس بی لایو\" را انتخاب کنید. تا زمان پایان پردازش"
+" صبر کنید سپس رسانه را جدا و برنامه را ببندید."
 
 #: data/content/workstation/prerelease/index.html:123
-msgid "Validate 64-bit!"
-msgstr ""
+msgid "Verify 64-bit!"
+msgstr "صحت سنجی 64-بیت!"
 
 #: data/content/workstation/prerelease/index.html:126
-msgid "Validate 32-bit!"
-msgstr ""
+msgid "Verify 32-bit!"
+msgstr "صحت سنجی 32-بیت!"
 
 #: data/content/workstation/prerelease/index.html:146
 msgid ""
 "<a href=\"https://fedoraproject.org/wiki/QA/Join#release-"
 "validation\"><strong>How to test pre-releases</strong></a>"
 msgstr ""
+"<a href=\"https://fedoraproject.org/wiki/QA/Join#release-"
+"validation\"><strong>چطور نسخه‌های پیش-انتشار را آزمایش کنیم</strong></a>"
 
 #: data/content/workstation/prerelease/index.html:147
 msgid "Fedora wiki guide on how to help test pre-release versions of Fedora."
 msgstr ""
+"ویکی فدورا راهنمایی می‌کند چطور با آزمایش نسخه‌های پیش-انتشار فدورا  را کمک "
+"کنید."
 
 #: data/templates/cloud-tab.html:9
 #, python-format
@@ -2268,19 +2403,19 @@ msgstr ""
 
 #: data/templates/cloud-tab.html:43
 msgid "Select the nearest region"
-msgstr ""
+msgstr "نزدیکترین محل را انتخاب کنید"
 
 #: data/templates/cloud-tab.html:49
 msgid "64-bit (x86_64)"
-msgstr ""
+msgstr "64-بیت (x86_64)"
 
 #: data/templates/cloud-tab.html:50
 msgid "32-bit (i386)"
-msgstr ""
+msgstr "32-بیت (i386)"
 
 #: data/templates/cloud-tab.html:54
 msgid "Launch it!"
-msgstr ""
+msgstr "راه‌اندازی کن!"
 
 #: data/templates/content-export-regulations.html:9
 msgid "Export Regulations"
@@ -2288,17 +2423,17 @@ msgstr "مقررات صادراتی"
 
 #: data/templates/content-export-regulations.html:11
 msgid "Read full export regulations"
-msgstr ""
+msgstr "مقررات صادراتی را کامل بخوانید"
 
 #: data/templates/export-regulations.html:10
 msgid ""
 "By clicking on and downloading Fedora, you agree to comply with the "
 "following terms and conditions."
-msgstr ""
+msgstr "با کیک کردن و دانلود کردن فدورا، با شرایط و ضوابط زیر موافقید."
 
 #: data/templates/export-regulations.html:11
 msgid "Read more >"
-msgstr ""
+msgstr "بیشتر بخوانید>"
 
 #: data/templates/footer.html:14
 msgid "About"
@@ -2322,11 +2457,11 @@ msgstr "حقوق"
 
 #: data/templates/footer.html:41
 msgid "Get Fedora Workstation"
-msgstr "دریافت ایستگاه کاری فدورا"
+msgstr "دریافت فدورا ایستگاه کاری"
 
 #: data/templates/footer.html:42
 msgid "Get Fedora Server"
-msgstr "دریافت کارگزار فدورا"
+msgstr "دریافت فدورا سرور"
 
 #: data/templates/footer.html:43
 msgid "Get Fedora Atomic"
@@ -2334,11 +2469,11 @@ msgstr "دریافت فدورا اتمی"
 
 #: data/templates/footer.html:46
 msgid "Fedora ARM<span class=\"sup\">®</span>"
-msgstr ""
+msgstr "فدورا ARM<span class=\"sup\">®</span>"
 
 #: data/templates/footer.html:47
 msgid "Alternative Downloads"
-msgstr ""
+msgstr "دانلودهای جایگزین"
 
 #: data/templates/footer.html:54
 msgid "Support"
@@ -2358,7 +2493,7 @@ msgstr "باگ‌های معمول"
 
 #: data/templates/footer.html:60
 msgid "Fedora Developer Portal"
-msgstr "پرتال توسعه دهنده‌های فدورا"
+msgstr "پرتال توسعه دهندگان فدورا"
 
 #: data/templates/footer.html:61
 msgid "Installation Guide"
@@ -2399,17 +2534,19 @@ msgstr "« در مورد رابطه‌ی بین ردهت و فدورا بیشت�
 #: data/templates/footer.html:90
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
-msgstr ""
+msgstr "© %(year)s ردهت، Inc. و دیگران."
 
 #: data/templates/footer.html:90
 msgid ""
 "Please send any comments or corrections to the <a href=\"//pagure.io/fedora-"
 "websites\">websites team</a>."
 msgstr ""
+"لطفا هر نظر یا تصحیحی به <a href=\"//pagure.io/fedora-websites\">وب‌سایت "
+"گروه</a> ارسال کنید."
 
 #: data/templates/footer.html:96
 msgid "Change Language"
-msgstr ""
+msgstr "تغییر زبان"
 
 #: data/templates/footer.html:100
 msgid "OK"
@@ -2425,18 +2562,18 @@ msgstr ""
 
 #: data/templates/productselector-cloud.html:14
 msgid "Lean. Powerful. Everycloud ready."
-msgstr "ناب. قدرتمند.  Everycloud ready."
+msgstr "قابل اتکا، قدرتمند. هرکدام حاضر است."
 
 #: data/templates/productselector-server.html:14
 msgid ""
 "The latest technology. A stable foundation. Together, for your applications "
 "and services."
 msgstr ""
-"آخرین فناوری. بنیان‌ی پایدار. در کنار هم، برای برنامه‌ها و سرویس‌های شما."
+"آخرین فناوری. با بنیانی پایدار. با همدیگر، برای برنامه‌ها و سرویس‌هایتان."
 
 #: data/templates/generic/docs-links.html:8
 msgid "Documentation and other resources"
-msgstr ""
+msgstr "مستندات و دیگر منابع"
 
 #: data/templates/generic/docs-links.html:9
 #, python-format
@@ -2445,6 +2582,9 @@ msgid ""
 "requirements for Fedora. Consult <a href=\"%(release_notes)s\">the online "
 "release notes</a> to see minimum requirements and recommendations."
 msgstr ""
+"قبل از نصب فدورا، ممکن است بخواهید از حداقل سیستم مورد نیاز برای فدورا "
+"اطمینان حاصل کنید. مشورت با <a href=\"%(release_notes)s\">یادداشت‌های آنلاین"
+" منتشر شده</a>برای دیدن حداقل سیستم مورد نیاز و توصیه شده."
 
 #: data/templates/generic/docs-links.html:10
 #, python-format
@@ -2453,10 +2593,13 @@ msgid ""
 "Guide</a> available. We recommend you look through it before installing to "
 "your system, since it answers many common questions."
 msgstr ""
+"همچنین یک<a href=\"%(install_guide)s\">راهنمای کامل نصب</a>موجود است. توصیه "
+"می‌کنیم آن را قبل از نصب بر روی سیستمتان بخوانید، از آنجایی که آن پاسخ "
+"بسیاری از پرسش‌های متداول را داده است."
 
 #: data/templates/generic/other-media-sources.html:8
 msgid "Other ways of obtaining media"
-msgstr ""
+msgstr "دیگر راه‌های بدست آوردن رسانه"
 
 #: data/templates/generic/other-media-sources.html:9
 #, python-format
@@ -2464,6 +2607,8 @@ msgid ""
 "You may purchase installation media for Fedora from <a href=\"%s\">online "
 "vendors</a> or a <a href=\"%s\">local vendor</a> in your area."
 msgstr ""
+"ممکن است بخواهید نصاب و راه‌اندازبرای  فدورا از <a href=\"%s\">فروشندگان "
+"آنلاین</a> یا یک <a href=\"%s\">فروشنده‌ی محلی</a> در محلتان خریداری کنید."
 
 #: data/templates/generic/other-media-sources.html:10
 #, python-format
@@ -2471,26 +2616,29 @@ msgid ""
 "Can't afford the price of installation media? Request Fedora installation "
 "media from the <a href=\"%s\">Fedora Free Media Program</a>."
 msgstr ""
+" نمی‌توانید هزینه‌ی تهیه‌ی نصاب و راه‌انداز رسانه را بدهید؟ از نصاب و "
+"راه‌انداز رسانه‌ی فدورا درخواست کنید <a href=\"%s\">برنامه‌ی رایگان رسانه "
+"فدورا</a>."
 
 #: data/templates/keys/key-button-and-modal-obsolete.html:45
 #: data/templates/keys/key-button-and-modal.html:45
 msgid "GPG Key Information"
-msgstr ""
+msgstr "کد اطلاعات GPG"
 
 #: data/templates/keys/key-button-and-modal-obsolete.html:50
 #: data/templates/keys/key-button-and-modal.html:50
 msgid "Key ID"
-msgstr ""
+msgstr "کد شناسه"
 
 #: data/templates/keys/key-button-and-modal-obsolete.html:54
 #: data/templates/keys/key-button-and-modal.html:54
 msgid "Fingerprint"
-msgstr ""
+msgstr "اثرانگشت"
 
 #: data/templates/keys/key-button-and-modal-obsolete.html:59
 #: data/templates/keys/key-button-and-modal.html:59
 msgid "uid"
-msgstr ""
+msgstr "شناسه اختصاصی و منحصر به فرد"
 
 #: data/templates/keys/key-button-and-modal-obsolete.html:65
 #: data/templates/keys/key-button-and-modal.html:65
@@ -2500,4 +2648,4 @@ msgstr ""
 #: data/templates/keys/key-button-and-modal-obsolete.html:79
 #: data/templates/keys/key-button-and-modal.html:79
 msgid "Get it from:"
-msgstr ""
+msgstr "آن را بگیر از:"

@@ -15,13 +15,14 @@
 # Máximo Castañeda Riloba <mcrcctm@gmail.com>, 2016. #zanata
 # Máximo Castañeda Riloba <mcrcctm@gmail.com>, 2017. #zanata
 # Adolfo Jayme <fitoschido@gmail.com>, 2018. #zanata
+# Eduard Lucena <x3mboy@fedoraproject.org>, 2018. #zanata
 # Máximo Castañeda Riloba <mcrcctm@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-30 22:24+0200\n"
-"PO-Revision-Date: 2018-04-25 05:38-0400\n"
+"POT-Creation-Date: 2018-05-13 22:03+0200\n"
+"PO-Revision-Date: 2018-05-15 07:43-0400\n"
 "Last-Translator: Máximo Castañeda Riloba <mcrcctm@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/fedora-web/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -215,7 +216,7 @@ msgstr ""
 "mejores y últimas tecnologías para centros de datos. Le pone en control de "
 "todos sus servicios e infraestructura."
 
-#: data/content/index.html:101 data/content/verify.html:63
+#: data/content/index.html:101 data/content/verify.html:69
 #: data/templates/productselector-cloud.html:13
 msgid "Atomic"
 msgstr "Atomic"
@@ -389,25 +390,33 @@ msgstr "Para imágenes de 32 bits"
 
 #: data/content/verify.html:47
 msgid "For Atomic WS"
-msgstr ""
+msgstr "Para Atomic WS"
 
-#: data/content/verify.html:65
+#: data/content/verify.html:59
+msgid "For aarch64 images"
+msgstr "Para imágenes aarch64"
+
+#: data/content/verify.html:62
+msgid "For aarch64 raw"
+msgstr "Para aarch64 en bruto"
+
+#: data/content/verify.html:71
 msgid "For Atomic Host Iso"
 msgstr "Para la ISO de Atomic Host"
 
-#: data/content/verify.html:68
+#: data/content/verify.html:74
 msgid "For Atomic Host images"
 msgstr "Para las imágenes de Atomic Host"
 
-#: data/content/verify.html:71
-msgid "For Docker"
-msgstr "Para Docker"
+#: data/content/verify.html:77
+msgid "For Container"
+msgstr "Para Contenedor"
 
-#: data/content/verify.html:78
+#: data/content/verify.html:84
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "A continuación, importe las claves GPG de Fedora:"
 
-#: data/content/verify.html:80
+#: data/content/verify.html:86
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
@@ -416,11 +425,11 @@ msgstr ""
 "Puede verificar los detalles de las claves GPG <a "
 "href=\"%s/%s/keys\">aquí</a>."
 
-#: data/content/verify.html:81
+#: data/content/verify.html:87
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Ahora compruebe que el archivo CHECKSUM sea válido:"
 
-#: data/content/verify.html:83
+#: data/content/verify.html:89
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
@@ -428,29 +437,29 @@ msgstr ""
 "El archivo CHECKSUM debe tener una firma adecuada de alguna de las "
 "siguientes llaves:"
 
-#: data/content/keys/index.html:46 data/content/verify.html:85
+#: data/content/keys/index.html:46 data/content/verify.html:91
 msgid "Fedora 29"
 msgstr "Fedora 29"
 
-#: data/content/keys/index.html:59 data/content/verify.html:86
+#: data/content/keys/index.html:59 data/content/verify.html:92
 msgid "Fedora 28"
 msgstr "Fedora 28"
 
-#: data/content/keys/index.html:72 data/content/verify.html:87
+#: data/content/keys/index.html:72 data/content/verify.html:93
 msgid "Fedora 27"
 msgstr "Fedora 27"
 
-#: data/content/keys/index.html:85 data/content/verify.html:88
+#: data/content/keys/index.html:85 data/content/verify.html:94
 msgid "Fedora 26"
 msgstr "Fedora 26"
 
-#: data/content/verify.html:89
+#: data/content/verify.html:95
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Fedora 26 - arquitecturas secundarias (AArch64, PPC64, PPC64le, s390 y "
 "s390x)"
 
-#: data/content/verify.html:91
+#: data/content/verify.html:97
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
@@ -458,17 +467,17 @@ msgstr ""
 "Finalmente, ahora que el archivo CHECKSUM ha sido verificado, compruebe que "
 "la suma de verificación de la imagen concuerde:"
 
-#: data/content/verify.html:93
+#: data/content/verify.html:99
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr "Si la salida indica que el archivo es válido, entonces puede usarlo."
 
-#: data/content/verify.html:94
+#: data/content/verify.html:100
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr "¿Cómo verifico mi imagen descargada en otro sistema operativo?"
 
-#: data/content/verify.html:95
-msgid "Read these instructions to validate your image."
-msgstr "Lea las instrucciones para verificar su imagen."
+#: data/content/verify.html:101
+msgid "Read these instructions to verify your image."
+msgstr "Lea estas instrucciones para verificar su imagen."
 
 #: data/content/atomic/index.html:8
 msgid ""
@@ -572,7 +581,7 @@ msgstr "¿Listo para probar Fedora Atomic?"
 
 #: data/content/atomic/download/download-cloud-splash.html:8
 msgid "Download Fedora Atomic Host"
-msgstr ""
+msgstr "Descargue Fedora Atomic Host"
 
 #: data/content/atomic/download/download-cloud-splash.html:37
 #: data/content/server/download/server-download-splash.html:31
@@ -617,7 +626,7 @@ msgstr ""
 #: data/content/server/download/server-download-splash.html:47
 #: data/content/server/prerelease/index.html:45
 #: data/content/workstation/download/ws-download-splash.html:52
-msgid "Validate!"
+msgid "Verify!"
 msgstr "¡Verificar!"
 
 #: data/content/atomic/download/index.html:10
@@ -1088,24 +1097,24 @@ msgid "F%(rel)s %(state)s"
 msgstr "F%(rel)s %(state)s"
 
 #: data/content/atomic/download/index.html:343
-#: data/content/server/download/index.html:63
-#: data/content/server/download/index.html:73
+#: data/content/server/download/index.html:72
+#: data/content/server/download/index.html:82
 #: data/content/workstation/download/index.html:160
 #: data/content/workstation/download/index.html:170
 msgid "Try a pre-release"
 msgstr "Pruebe una versión prelanzamiento"
 
 #: data/content/atomic/download/index.html:344
-#: data/content/server/download/index.html:64
-#: data/content/server/download/index.html:74
+#: data/content/server/download/index.html:73
+#: data/content/server/download/index.html:83
 #: data/content/workstation/download/index.html:161
 #: data/content/workstation/download/index.html:171
 msgid "We're working on our next release."
 msgstr "Estamos trabajando en nuestra próxima versión."
 
 #: data/content/atomic/download/index.html:345
-#: data/content/server/download/index.html:65
-#: data/content/server/download/index.html:75
+#: data/content/server/download/index.html:74
+#: data/content/server/download/index.html:84
 #: data/content/workstation/download/index.html:162
 #: data/content/workstation/download/index.html:172
 #, python-format
@@ -1118,8 +1127,8 @@ msgid "Download F%(rel)s %(state)s images"
 msgstr "Descargue las imágenes de F%(rel)s %(state)s"
 
 #: data/content/atomic/download/index.html:347
-#: data/content/server/download/index.html:67
-#: data/content/server/download/index.html:77
+#: data/content/server/download/index.html:76
+#: data/content/server/download/index.html:86
 #: data/content/workstation/download/index.html:164
 #: data/content/workstation/download/index.html:174
 msgid "How to test pre-releases"
@@ -1184,7 +1193,7 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:362
 #: data/content/atomic/prerelease/index.html:350
-#: data/content/server/download/index.html:94
+#: data/content/server/download/index.html:103
 #: data/content/workstation/download/index.html:221
 msgid "Verify"
 msgstr "Verificar"
@@ -1192,7 +1201,7 @@ msgstr "Verificar"
 #: data/content/atomic/download/index.html:365
 #: data/content/atomic/prerelease/index.html:322
 #: data/content/atomic/prerelease/index.html:353
-#: data/content/server/download/index.html:97
+#: data/content/server/download/index.html:106
 #: data/content/server/prerelease/index.html:41
 #: data/content/workstation/download/index.html:224
 #: data/content/workstation/prerelease/index.html:119
@@ -1205,7 +1214,7 @@ msgid "Download Fedora %(rel)s %(state)s Atomic Host"
 msgstr "Descargue Fedora %(rel)s %(state)s Atomic Host"
 
 #: data/content/atomic/prerelease/index.html:37
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "These are the latest Fedora Atomic Host images, produced on "
 "%(manual_pre_atomic_date)s."
@@ -1252,7 +1261,7 @@ msgid "Fedora %(rel)s %(state)s Standard Atomic Host HVM AMIs"
 msgstr "AMI HVM Estándar de Fedora %(rel)s %(state)s Atomic Host"
 
 #: data/content/atomic/prerelease/index.html:208
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Vagrant Boxes for Fedora Atomic Host are available for the VirtualBox and "
 "Libvirt providers. You can bring up Fedora Atomic Host in a vagrant box by "
@@ -1718,8 +1727,8 @@ msgid ""
 "Run your applications on a Linux server OS with the latest open source "
 "technology."
 msgstr ""
-"Ejecute sus aplicaciones en un sistema operativo Linux de servidor con con "
-"la última tecnología libre."
+"Ejecute sus aplicaciones en un sistema operativo Linux de servidor con la "
+"última tecnología libre."
 
 #: data/content/server/index.html:21
 msgid ""
@@ -1872,6 +1881,10 @@ msgid ""
 "Modularity in general, please see the <a href=\"%(website)s\">website on "
 "pagure</a>."
 msgstr ""
+"Si quiere probar las nuevas características modulares de Fedora Server, "
+"visite la sección <a href=\"%(modules)s\">Uso de módulos</a> de la "
+"documentación de Modularity. Si quiere información sobre Modularity en "
+"general, visite <a href=\"%(website)s\">el sitio web en pagure</a>."
 
 #: data/content/server/download/index.html:53
 #: data/content/server/prerelease/index.html:53
@@ -1886,36 +1899,51 @@ msgstr "Imagen de instalación por red:"
 msgid "64-bit %sMB image"
 msgstr "Imagen de 64 bits %sMB"
 
+#: data/content/server/download/index.html:56
+#: data/content/server/download/index.html:60
+#: data/content/server/download/index.html:64
+#, python-format
+msgid "aarch64 %sMB image"
+msgstr "Imagen aarch64 %sMB"
+
+#: data/content/server/download/index.html:58
+msgid "DVD ISO Image:"
+msgstr "Imagen ISO DVD:"
+
 #: data/content/server/download/index.html:62
+msgid "Raw Disk Image:"
+msgstr "Imagen de disco en bruto:"
+
+#: data/content/server/download/index.html:71
 #: data/content/workstation/download/index.html:159
 #, python-format
 msgid "F%(rel)s Alpha"
 msgstr "F%(rel)s Alpha"
 
-#: data/content/server/download/index.html:66
+#: data/content/server/download/index.html:75
 #: data/content/workstation/download/index.html:163
 #, python-format
 msgid "Download F%(rel)s Alpha images"
 msgstr "Descargue las imágenes de F%(rel)s Alpha"
 
-#: data/content/server/download/index.html:72
+#: data/content/server/download/index.html:81
 #: data/content/workstation/download/index.html:169
 #, python-format
 msgid "F%(rel)s Beta"
 msgstr "F%(rel)s Beta"
 
-#: data/content/server/download/index.html:76
+#: data/content/server/download/index.html:85
 #: data/content/workstation/download/index.html:173
 #, python-format
 msgid "Download F%(rel)s Beta images"
 msgstr "Descargue las imágenes de F%(rel)s Beta"
 
-#: data/content/server/download/index.html:83
+#: data/content/server/download/index.html:92
 #: data/content/workstation/download/index.html:206
 msgid "Get more Fedora"
 msgstr "Más Fedora"
 
-#: data/content/server/download/index.html:87
+#: data/content/server/download/index.html:96
 #: data/content/workstation/download/index.html:215
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr "Tecnología ARM<span class=\"sup\">®</span>"
@@ -2149,12 +2177,13 @@ msgid "64-bit %s GB ISO for <strong>Linux</strong>."
 msgstr "ISO para <strong>Linux</strong> de 64 bits (%s GB)."
 
 #: data/content/workstation/download/index.html:46
-#: data/content/workstation/prerelease/index.html:25
 #, python-format
-msgid "<a href=\"%s\">Install via DNF</a> if you are already on Fedora."
+msgid ""
+"A download is only needed for new installs. To upgrade, <a "
+"href=\"%s\">follow these instructions.</a>"
 msgstr ""
-"<a href=\"%s\">Haga la instalación mediante DNF</a> si ya está usando "
-"Fedora."
+"Sólo necesita una descarga para instalaciones nuevas. <a href=\"%s\">Siga "
+"estas instrucciones</a> si lo que quiere es actualizar."
 
 #: data/content/workstation/download/index.html:50
 #: data/content/workstation/download/index.html:110
@@ -2197,19 +2226,19 @@ msgid "A USB Flash drive with at least %s GB space available"
 msgstr "Un dispositivo USB con al menos %s GB de espacio disponible"
 
 #: data/content/workstation/download/index.html:71
+#, python-format
 msgid ""
 "Fedora Workstation is provided via Fedora Media Writer. Download this "
-"program via the download link above and run it on your system, following the"
-" prompts to generate a live version (see 'What does \"Live\" mean?' to the "
+"program for your <a href=\"%s\">supported platform</a> and follow the "
+"prompts to generate a live version (see 'What does \"Live\" mean?' to the "
 "right) of Fedora Workstation on a USB flash drive. You may then run the live"
 " version of Fedora Workstation from your USB flash drive."
 msgstr ""
-"Fedora Workstation se distribuye mediante Fedora Media Writer. Descargue el "
-"programa desde el enlace anterior y ejecútelo en su sistema. No tiene más "
-"que seguir los pasos que se le indiquen para generar una versión viva (vea "
-"'¿Qué significa imagen \"Viva\"?' en las notas a la derecha) de Fedora "
-"Workstation en una unidad USB. Después podrá ejecutar esa versión de Fedora "
-"Workstation desde el USB."
+"Fedora Workstation se distribuye mediante Fedora Media Writer. <a "
+"href=\"%s\">Descargue el programa para su plataforma</a> y siga los pasos "
+"que se le indiquen para generar una versión viva (vea '¿Qué significa imagen"
+" \"Viva\"?' en las notas a la derecha) de Fedora Workstation en una unidad "
+"USB. Después podrá ejecutar esa versión de Fedora Workstation desde el USB."
 
 #: data/content/workstation/download/index.html:72
 #: data/content/workstation/prerelease/index.html:78
@@ -2340,20 +2369,22 @@ msgstr "Imagen de 32 bits %sMB"
 
 #: data/content/workstation/download/index.html:183
 msgid "Try Atomic Workstation"
-msgstr ""
+msgstr "Pruebe Atomic Workstation"
 
 #: data/content/workstation/download/index.html:184
 msgid "Atomic provides an immutable OS image and updates via OSTree."
 msgstr ""
+"Atomic proporciona una imagen inmutable del SO y actualizaciones mediante "
+"OSTree."
 
 #: data/content/workstation/download/index.html:186
 #, python-format
 msgid "64-bit %sGB Atomic image"
-msgstr ""
+msgstr "Imagen Atomic de 64 bits %sGB"
 
 #: data/content/workstation/download/index.html:188
 msgid "Learn more"
-msgstr ""
+msgstr "Más información"
 
 #: data/content/workstation/download/index.html:193
 #, python-format
@@ -2449,6 +2480,11 @@ msgstr "Descargar Fedora Workstation %s"
 #, python-format
 msgid "Download Fedora %(rel)s %(state)s Workstation"
 msgstr "Descargar Fedora %(rel)s Workstation %(state)s "
+
+#: data/content/workstation/prerelease/index.html:25
+#, python-format
+msgid "<a href=\"%s\">Upgrade via DNF</a> if you are already on Fedora."
+msgstr "<a href=\"%s\">Actualice mediante DNF</a> si ya está usando Fedora."
 
 #: data/content/workstation/prerelease/index.html:45
 #, python-format
@@ -2547,12 +2583,12 @@ msgstr ""
 "proceso, tras lo cual podrá retirar el dispositivo y cerrar la aplicación."
 
 #: data/content/workstation/prerelease/index.html:123
-msgid "Validate 64-bit!"
-msgstr "¡Validar 64 bits!"
+msgid "Verify 64-bit!"
+msgstr "¡Verificar imagen de 64 bits!"
 
 #: data/content/workstation/prerelease/index.html:126
-msgid "Validate 32-bit!"
-msgstr "¡Validar 32 bits!"
+msgid "Verify 32-bit!"
+msgstr "¡Verificar imagen de 32 bits!"
 
 #: data/content/workstation/prerelease/index.html:146
 msgid ""

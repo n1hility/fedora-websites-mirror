@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-30 22:24+0200\n"
+"POT-Creation-Date: 2018-05-13 22:03+0200\n"
 "PO-Revision-Date: 2017-11-17 09:40-0500\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/fedora-web/language/zh_TW/)\n"
@@ -169,7 +169,7 @@ msgid ""
 "infrastructure and services."
 msgstr "Fedora Server 是強大又不失彈性的作業系統，內含最好、最新的資料中心科技。它讓你一手掌控所有的基礎設施與服務。"
 
-#: data/content/index.html:101 data/content/verify.html:63
+#: data/content/index.html:101 data/content/verify.html:69
 #: data/templates/productselector-cloud.html:13
 msgid "Atomic"
 msgstr "Atomic"
@@ -328,76 +328,84 @@ msgstr "給 32 位元映像檔使用"
 msgid "For Atomic WS"
 msgstr ""
 
-#: data/content/verify.html:65
+#: data/content/verify.html:59
+msgid "For aarch64 images"
+msgstr ""
+
+#: data/content/verify.html:62
+msgid "For aarch64 raw"
+msgstr ""
+
+#: data/content/verify.html:71
 msgid "For Atomic Host Iso"
 msgstr "給 Atomic Host Iso 使用"
 
-#: data/content/verify.html:68
+#: data/content/verify.html:74
 msgid "For Atomic Host images"
 msgstr "給 Atomic Host 映像檔使用"
 
-#: data/content/verify.html:71
-msgid "For Docker"
-msgstr "適用 Docker"
+#: data/content/verify.html:77
+msgid "For Container"
+msgstr ""
 
-#: data/content/verify.html:78
+#: data/content/verify.html:84
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "下一步，匯入 Fedora 的 GPG 金鑰："
 
-#: data/content/verify.html:80
+#: data/content/verify.html:86
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
 msgstr "你可以從<a href=\"%s/%s/keys\">這裡</a>核驗 GPG 金鑰的詳細資料。"
 
-#: data/content/verify.html:81
+#: data/content/verify.html:87
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "現在，核驗 CHECKSUM 檔案是否有效："
 
-#: data/content/verify.html:83
+#: data/content/verify.html:89
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr "CHECKSUM 檔案應有來自於以下金鑰之一的簽章："
 
-#: data/content/keys/index.html:46 data/content/verify.html:85
+#: data/content/keys/index.html:46 data/content/verify.html:91
 msgid "Fedora 29"
 msgstr ""
 
-#: data/content/keys/index.html:59 data/content/verify.html:86
+#: data/content/keys/index.html:59 data/content/verify.html:92
 msgid "Fedora 28"
 msgstr "Fedora 28"
 
-#: data/content/keys/index.html:72 data/content/verify.html:87
+#: data/content/keys/index.html:72 data/content/verify.html:93
 msgid "Fedora 27"
 msgstr "Fedora 27"
 
-#: data/content/keys/index.html:85 data/content/verify.html:88
+#: data/content/keys/index.html:85 data/content/verify.html:94
 msgid "Fedora 26"
 msgstr "Fedora 26"
 
-#: data/content/verify.html:89
+#: data/content/verify.html:95
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr "Fedora 26 第二支援架構 (AArch64、PPC64、PPC64le、s390 和 s390x)"
 
-#: data/content/verify.html:91
+#: data/content/verify.html:97
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
 msgstr "最後，現在 CHECKSUM 檔案已經過核驗，請檢查 ISO 檔案的 checksum 是否相符："
 
-#: data/content/verify.html:93
+#: data/content/verify.html:99
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr "若輸出內容表示檔案有效，那麼你就可以開始了！"
 
-#: data/content/verify.html:94
+#: data/content/verify.html:100
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr "我該如何用其他作業系統核驗下載的映像檔？"
 
-#: data/content/verify.html:95
-msgid "Read these instructions to validate your image."
-msgstr "閱讀這些指示來驗證你的映像檔。"
+#: data/content/verify.html:101
+msgid "Read these instructions to verify your image."
+msgstr ""
 
 #: data/content/atomic/index.html:8
 msgid ""
@@ -525,8 +533,8 @@ msgstr ""
 #: data/content/server/download/server-download-splash.html:47
 #: data/content/server/prerelease/index.html:45
 #: data/content/workstation/download/ws-download-splash.html:52
-msgid "Validate!"
-msgstr "驗證！"
+msgid "Verify!"
+msgstr ""
 
 #: data/content/atomic/download/index.html:10
 #: data/content/atomic/prerelease/index.html:10
@@ -951,24 +959,24 @@ msgid "F%(rel)s %(state)s"
 msgstr ""
 
 #: data/content/atomic/download/index.html:343
-#: data/content/server/download/index.html:63
-#: data/content/server/download/index.html:73
+#: data/content/server/download/index.html:72
+#: data/content/server/download/index.html:82
 #: data/content/workstation/download/index.html:160
 #: data/content/workstation/download/index.html:170
 msgid "Try a pre-release"
 msgstr "試試預先發行版"
 
 #: data/content/atomic/download/index.html:344
-#: data/content/server/download/index.html:64
-#: data/content/server/download/index.html:74
+#: data/content/server/download/index.html:73
+#: data/content/server/download/index.html:83
 #: data/content/workstation/download/index.html:161
 #: data/content/workstation/download/index.html:171
 msgid "We're working on our next release."
 msgstr "我們正在處理下個發行版。"
 
 #: data/content/atomic/download/index.html:345
-#: data/content/server/download/index.html:65
-#: data/content/server/download/index.html:75
+#: data/content/server/download/index.html:74
+#: data/content/server/download/index.html:84
 #: data/content/workstation/download/index.html:162
 #: data/content/workstation/download/index.html:172
 #, python-format
@@ -981,8 +989,8 @@ msgid "Download F%(rel)s %(state)s images"
 msgstr "下載 F%(rel)s %(state)s 映像檔"
 
 #: data/content/atomic/download/index.html:347
-#: data/content/server/download/index.html:67
-#: data/content/server/download/index.html:77
+#: data/content/server/download/index.html:76
+#: data/content/server/download/index.html:86
 #: data/content/workstation/download/index.html:164
 #: data/content/workstation/download/index.html:174
 msgid "How to test pre-releases"
@@ -1045,7 +1053,7 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:362
 #: data/content/atomic/prerelease/index.html:350
-#: data/content/server/download/index.html:94
+#: data/content/server/download/index.html:103
 #: data/content/workstation/download/index.html:221
 msgid "Verify"
 msgstr "核驗"
@@ -1053,7 +1061,7 @@ msgstr "核驗"
 #: data/content/atomic/download/index.html:365
 #: data/content/atomic/prerelease/index.html:322
 #: data/content/atomic/prerelease/index.html:353
-#: data/content/server/download/index.html:97
+#: data/content/server/download/index.html:106
 #: data/content/server/prerelease/index.html:41
 #: data/content/workstation/download/index.html:224
 #: data/content/workstation/prerelease/index.html:119
@@ -1646,36 +1654,51 @@ msgstr "Netinstall 映像檔："
 msgid "64-bit %sMB image"
 msgstr "64 位元 %sMB 映像檔"
 
+#: data/content/server/download/index.html:56
+#: data/content/server/download/index.html:60
+#: data/content/server/download/index.html:64
+#, python-format
+msgid "aarch64 %sMB image"
+msgstr ""
+
+#: data/content/server/download/index.html:58
+msgid "DVD ISO Image:"
+msgstr ""
+
 #: data/content/server/download/index.html:62
+msgid "Raw Disk Image:"
+msgstr ""
+
+#: data/content/server/download/index.html:71
 #: data/content/workstation/download/index.html:159
 #, python-format
 msgid "F%(rel)s Alpha"
 msgstr "F%(rel)s Alpha"
 
-#: data/content/server/download/index.html:66
+#: data/content/server/download/index.html:75
 #: data/content/workstation/download/index.html:163
 #, python-format
 msgid "Download F%(rel)s Alpha images"
 msgstr "下載 F%(rel)s Alpha 映像檔"
 
-#: data/content/server/download/index.html:72
+#: data/content/server/download/index.html:81
 #: data/content/workstation/download/index.html:169
 #, python-format
 msgid "F%(rel)s Beta"
 msgstr "F%(rel)s Beta"
 
-#: data/content/server/download/index.html:76
+#: data/content/server/download/index.html:85
 #: data/content/workstation/download/index.html:173
 #, python-format
 msgid "Download F%(rel)s Beta images"
 msgstr "下載 F%(rel)s Beta 映像檔"
 
-#: data/content/server/download/index.html:83
+#: data/content/server/download/index.html:92
 #: data/content/workstation/download/index.html:206
 msgid "Get more Fedora"
 msgstr "取得其他類型的 Fedora"
 
-#: data/content/server/download/index.html:87
+#: data/content/server/download/index.html:96
 #: data/content/workstation/download/index.html:215
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr "ARM<span class=\"sup\">®</span> 科技"
@@ -1885,10 +1908,11 @@ msgid "64-bit %s GB ISO for <strong>Linux</strong>."
 msgstr "<strong>Linux</strong> 平臺的 64 位元 %s GB ISO。"
 
 #: data/content/workstation/download/index.html:46
-#: data/content/workstation/prerelease/index.html:25
 #, python-format
-msgid "<a href=\"%s\">Install via DNF</a> if you are already on Fedora."
-msgstr "若你正在使用 Fedora，則可 <a href=\"%s\">透過 DNF 安裝</a>。"
+msgid ""
+"A download is only needed for new installs. To upgrade, <a "
+"href=\"%s\">follow these instructions.</a>"
+msgstr ""
 
 #: data/content/workstation/download/index.html:50
 #: data/content/workstation/download/index.html:110
@@ -1929,16 +1953,14 @@ msgid "A USB Flash drive with at least %s GB space available"
 msgstr "USB 隨身碟，至少 %s GB 可用空間"
 
 #: data/content/workstation/download/index.html:71
+#, python-format
 msgid ""
 "Fedora Workstation is provided via Fedora Media Writer. Download this "
-"program via the download link above and run it on your system, following the"
-" prompts to generate a live version (see 'What does \"Live\" mean?' to the "
+"program for your <a href=\"%s\">supported platform</a> and follow the "
+"prompts to generate a live version (see 'What does \"Live\" mean?' to the "
 "right) of Fedora Workstation on a USB flash drive. You may then run the live"
 " version of Fedora Workstation from your USB flash drive."
 msgstr ""
-"Fedora Workstation 可透過 Fedora Media Writer 取得。從上方的下載連結下載該程式，並且在系統上執行，遵循提示並在 "
-"USB 隨身碟上製作 Fedora Workstation 的 Live 版本（可參見右側的「『Live』是什麼？」）。你接著可以從 USB 隨身碟執行"
-" Live 版本的 Fedora Workstation。"
 
 #: data/content/workstation/download/index.html:72
 #: data/content/workstation/prerelease/index.html:78
@@ -2162,6 +2184,11 @@ msgstr "下載 Fedora Workstation %s"
 msgid "Download Fedora %(rel)s %(state)s Workstation"
 msgstr "下載 Fedora %(rel)s %(state)s 工作站版"
 
+#: data/content/workstation/prerelease/index.html:25
+#, python-format
+msgid "<a href=\"%s\">Upgrade via DNF</a> if you are already on Fedora."
+msgstr ""
+
 #: data/content/workstation/prerelease/index.html:45
 #, python-format
 msgid ""
@@ -2241,12 +2268,12 @@ msgid ""
 msgstr ""
 
 #: data/content/workstation/prerelease/index.html:123
-msgid "Validate 64-bit!"
-msgstr "驗證 64 位元版！"
+msgid "Verify 64-bit!"
+msgstr ""
 
 #: data/content/workstation/prerelease/index.html:126
-msgid "Validate 32-bit!"
-msgstr "驗證 32 位元版！"
+msgid "Verify 32-bit!"
+msgstr ""
 
 #: data/content/workstation/prerelease/index.html:146
 msgid ""

@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-30 22:24+0200\n"
-"PO-Revision-Date: 2018-04-28 09:43-0400\n"
+"POT-Creation-Date: 2018-05-13 22:03+0200\n"
+"PO-Revision-Date: 2018-05-14 12:10-0400\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish (http://www.transifex.com/projects/p/fedora-web/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -206,7 +206,7 @@ msgstr ""
 "zawierającym najlepsze i najnowsze technologie dla centrów danych. Umożliwia"
 " on kontrolowanie całej infrastruktury i usług."
 
-#: data/content/index.html:101 data/content/verify.html:63
+#: data/content/index.html:101 data/content/verify.html:69
 #: data/templates/productselector-cloud.html:13
 msgid "Atomic"
 msgstr "Atomic"
@@ -332,7 +332,7 @@ msgstr ""
 
 #: data/content/sponsors.html:98
 msgid "Interested in sponsoring something for Fedora?"
-msgstr "Zainteresowany sponsorowaniem czegoś Fedorze?"
+msgstr "Zainteresowani sponsorowaniem czegoś Fedorze?"
 
 #: data/content/sponsors.html:99
 #, python-format
@@ -340,7 +340,7 @@ msgid ""
 "Contact <a href=\"%(mail_url)s\">admin@fedoraproject.org</a> or stop by "
 "<strong>#fedora-admin</strong> on <strong>irc.freenode.net</strong>."
 msgstr ""
-"Proszę skontaktować się z <a "
+"Prosimy skontaktować się z <a "
 "href=\"%(mail_url)s\">admin@fedoraproject.org</a> (w języku angielskim) lub "
 "zajrzeć na kanał <strong>#fedora-admin</strong> w sieci "
 "<strong>irc.freenode.net</strong>."
@@ -363,9 +363,9 @@ msgid ""
 "verify your image, start by downloading the proper CHECKSUM file into the "
 "same directory as the image you downloaded."
 msgstr ""
-"Po pobraniu obrazu należy sprawdzić jego bezpieczeństwo i integralność. Aby "
-"sprawdzić poprawność obrazu, należy najpierw pobrać odpowiedni plik CHECKSUM"
-" do tego samego katalogu, w którym znajduje się obraz."
+"Po pobraniu obrazu sprawdź jego bezpieczeństwo i integralność. Aby sprawdzić"
+" poprawność obrazu, najpierw pobierz odpowiedni plik CHECKSUM do tego samego"
+" katalogu, w którym znajduje się obraz."
 
 #: data/content/verify.html:41 data/content/verify.html:56
 msgid "For 64-bit images"
@@ -377,84 +377,92 @@ msgstr "Obrazy 32-bitowe"
 
 #: data/content/verify.html:47
 msgid "For Atomic WS"
-msgstr ""
+msgstr "Atomic Workstation"
 
-#: data/content/verify.html:65
+#: data/content/verify.html:59
+msgid "For aarch64 images"
+msgstr "Obrazy AArch64"
+
+#: data/content/verify.html:62
+msgid "For aarch64 raw"
+msgstr "Surowe obrazy AArch64"
+
+#: data/content/verify.html:71
 msgid "For Atomic Host Iso"
 msgstr "Obrazy ISO Atomic Host"
 
-#: data/content/verify.html:68
+#: data/content/verify.html:74
 msgid "For Atomic Host images"
 msgstr "Obrazy Atomic Host"
 
-#: data/content/verify.html:71
-msgid "For Docker"
-msgstr "Docker"
+#: data/content/verify.html:77
+msgid "For Container"
+msgstr "Kontener"
 
-#: data/content/verify.html:78
+#: data/content/verify.html:84
 msgid "Next, import Fedora's GPG key(s):"
-msgstr "Następnie należy zaimportować klucze GPG Fedory:"
+msgstr "Następnie zaimportuj klucze GPG Fedory:"
 
-#: data/content/verify.html:80
+#: data/content/verify.html:86
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
 msgstr ""
-"Można sprawdzić informacje o kluczach GPG <a href=\"%s/%s/keys\">w tym "
+"Można sprawdzić informacje o kluczach GPG <a href=\"%s/%s/keys\">w tym "
 "miejscu</a>."
 
-#: data/content/verify.html:81
+#: data/content/verify.html:87
 msgid "Now, verify that the CHECKSUM file is valid:"
-msgstr "Teraz należy sprawdzić, czy plik CHECKSUM jest prawidłowy:"
+msgstr "Teraz sprawdź, czy plik CHECKSUM jest prawidłowy:"
 
-#: data/content/verify.html:83
+#: data/content/verify.html:89
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr ""
 "Plik CHECKSUM powinien posiadać dobry podpis z jednego z poniższych kluczy:"
 
-#: data/content/keys/index.html:46 data/content/verify.html:85
+#: data/content/keys/index.html:46 data/content/verify.html:91
 msgid "Fedora 29"
 msgstr "Fedora 29"
 
-#: data/content/keys/index.html:59 data/content/verify.html:86
+#: data/content/keys/index.html:59 data/content/verify.html:92
 msgid "Fedora 28"
 msgstr "Fedora 28"
 
-#: data/content/keys/index.html:72 data/content/verify.html:87
+#: data/content/keys/index.html:72 data/content/verify.html:93
 msgid "Fedora 27"
 msgstr "Fedora 27"
 
-#: data/content/keys/index.html:85 data/content/verify.html:88
+#: data/content/keys/index.html:85 data/content/verify.html:94
 msgid "Fedora 26"
 msgstr "Fedora 26"
 
-#: data/content/verify.html:89
+#: data/content/verify.html:95
 msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
 msgstr ""
 "Drugorzędne architektury Fedory 26 (AArch64, PPC64, PPC64le, s390 i s390x)"
 
-#: data/content/verify.html:91
+#: data/content/verify.html:97
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
 msgstr ""
-"Na koniec należy sprawdzić, czy suma kontrolna obrazu zgadza się z tą z "
-"pliku CHECKSUM:"
+"Na koniec sprawdź, czy suma kontrolna obrazu zgadza się z tą z pliku "
+"CHECKSUM:"
 
-#: data/content/verify.html:93
+#: data/content/verify.html:99
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr "Jeśli zostanie wypisane, że plik jest prawidłowy, to można go użyć."
 
-#: data/content/verify.html:94
+#: data/content/verify.html:100
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr ""
 "Jak sprawdzić poprawność pobranego obrazu w innym systemie operacyjnym?"
 
-#: data/content/verify.html:95
-msgid "Read these instructions to validate your image."
+#: data/content/verify.html:101
+msgid "Read these instructions to verify your image."
 msgstr "Instrukcje sprawdzania poprawności obrazu."
 
 #: data/content/atomic/index.html:8
@@ -569,8 +577,8 @@ msgstr "Dziękujemy za pobranie Fedory!"
 msgid ""
 "Your download should begin in a few seconds. If not, click the link below:"
 msgstr ""
-"Pobieranie powinno rozpocząć się za kilka sekund. Jeśli nie, należy nacisnąć"
-" odnośnik poniżej:"
+"Pobieranie powinno rozpocząć się za kilka sekund. Jeśli nie, kliknij "
+"odnośnik poniżej:"
 
 #: data/content/atomic/download/download-cloud-splash.html:48
 #: data/content/server/download/server-download-splash.html:43
@@ -590,17 +598,17 @@ msgid ""
 "same directory as the image you downloaded and follow <a "
 "href=\"%s/%s/verify\">these instructions</a>."
 msgstr ""
-"Po pobraniu obrazu należy sprawdzić jego bezpieczeństwo i integralność. Aby "
-"sprawdzić poprawność obrazu, należy najpierw pobrać odpowiedni plik CHECKSUM"
-" do tego samego katalogu, w którym znajduje się obraz i wypełnić <a "
-"href=\"%s/%s/verify\">te instrukcje</a>."
+"Po pobraniu obrazu sprawdź jego bezpieczeństwo i integralność. Aby sprawdzić"
+" poprawność obrazu, najpierw pobierz odpowiedni plik CHECKSUM do tego samego"
+" katalogu, w którym znajduje się obraz i postępuj zgodnie z <a "
+"href=\"%s/%s/verify\">tymi instrukcjami</a>."
 
 #: data/content/atomic/download/download-cloud-splash.html:52
 #: data/content/atomic/prerelease/index.html:326
 #: data/content/server/download/server-download-splash.html:47
 #: data/content/server/prerelease/index.html:45
 #: data/content/workstation/download/ws-download-splash.html:52
-msgid "Validate!"
+msgid "Verify!"
 msgstr "Sprawdź poprawność"
 
 #: data/content/atomic/download/index.html:10
@@ -880,7 +888,7 @@ msgid ""
 "you'll want to use."
 msgstr ""
 "Ten obraz jest odpowiedni do używania z oprogramowaniem Vagrant w systemach "
-"Mac OS X lub Windows."
+"macOS lub Windows."
 
 #: data/content/atomic/download/index.html:224
 #: data/content/atomic/download/index.html:230
@@ -1071,24 +1079,24 @@ msgid "F%(rel)s %(state)s"
 msgstr "F%(rel)s %(state)s"
 
 #: data/content/atomic/download/index.html:343
-#: data/content/server/download/index.html:63
-#: data/content/server/download/index.html:73
+#: data/content/server/download/index.html:72
+#: data/content/server/download/index.html:82
 #: data/content/workstation/download/index.html:160
 #: data/content/workstation/download/index.html:170
 msgid "Try a pre-release"
 msgstr "Wydanie testowe"
 
 #: data/content/atomic/download/index.html:344
-#: data/content/server/download/index.html:64
-#: data/content/server/download/index.html:74
+#: data/content/server/download/index.html:73
+#: data/content/server/download/index.html:83
 #: data/content/workstation/download/index.html:161
 #: data/content/workstation/download/index.html:171
 msgid "We're working on our next release."
 msgstr "Pracujemy nad następnym wydaniem Fedory."
 
 #: data/content/atomic/download/index.html:345
-#: data/content/server/download/index.html:65
-#: data/content/server/download/index.html:75
+#: data/content/server/download/index.html:74
+#: data/content/server/download/index.html:84
 #: data/content/workstation/download/index.html:162
 #: data/content/workstation/download/index.html:172
 #, python-format
@@ -1101,8 +1109,8 @@ msgid "Download F%(rel)s %(state)s images"
 msgstr "Pobierz obrazy F%(rel)s %(state)s"
 
 #: data/content/atomic/download/index.html:347
-#: data/content/server/download/index.html:67
-#: data/content/server/download/index.html:77
+#: data/content/server/download/index.html:76
+#: data/content/server/download/index.html:86
 #: data/content/workstation/download/index.html:164
 #: data/content/workstation/download/index.html:174
 msgid "How to test pre-releases"
@@ -1167,7 +1175,7 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:362
 #: data/content/atomic/prerelease/index.html:350
-#: data/content/server/download/index.html:94
+#: data/content/server/download/index.html:103
 #: data/content/workstation/download/index.html:221
 msgid "Verify"
 msgstr "Sprawdzanie poprawności"
@@ -1175,7 +1183,7 @@ msgstr "Sprawdzanie poprawności"
 #: data/content/atomic/download/index.html:365
 #: data/content/atomic/prerelease/index.html:322
 #: data/content/atomic/prerelease/index.html:353
-#: data/content/server/download/index.html:97
+#: data/content/server/download/index.html:106
 #: data/content/server/prerelease/index.html:41
 #: data/content/workstation/download/index.html:224
 #: data/content/workstation/prerelease/index.html:119
@@ -1188,7 +1196,7 @@ msgid "Download Fedora %(rel)s %(state)s Atomic Host"
 msgstr "Pobieranie Fedory %(rel)s %(state)s Atomic Host"
 
 #: data/content/atomic/prerelease/index.html:37
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "These are the latest Fedora Atomic Host images, produced on "
 "%(manual_pre_atomic_date)s."
@@ -1253,7 +1261,7 @@ msgid ""
 "This is Fedora %(rel)s %(state)s Cloud Atomic Host in a Qcow2-formatted "
 "image for use with OpenStack."
 msgstr ""
-"Fedora %(rel)s %(state)s Cloud Atomic Host jako obraz Qcow2 do użycia z "
+"Fedora %(rel)s %(state)s Cloud Atomic Host jako obraz Qcow2 do użycia z "
 "OpenStack."
 
 #: data/content/atomic/prerelease/index.html:294
@@ -1263,8 +1271,8 @@ msgid ""
 "This is Fedora %(rel)s %(state)s Cloud Atomic Host in a compressed raw image"
 " format. If you're not sure what to use, try this."
 msgstr ""
-"Fedora %(rel)s %(state)s Cloud Atomic Host w skompresowanym surowym obrazie."
-" Należy użyć tej Fedory w razie niepewności."
+"Fedora %(rel)s %(state)s Cloud Atomic Host w skompresowanym surowym obrazie."
+" Należy użyć tej Fedory w razie niepewności."
 
 #: data/content/e/404.html:7
 msgid "Fedora Project - Page Not Found"
@@ -1286,8 +1294,8 @@ msgstr "Rozwiązywanie problemów"
 msgid ""
 "Double-check the URL if you entered it manually. Did you copy it correctly?"
 msgstr ""
-"Należy dwa razy sprawdzić poprawność adresu, jeśli wpisano go ręcznie. A "
-"może niepoprawnie się skopiował?"
+"Należy dwa razy sprawdzić adres, jeśli wpisano go ręcznie. A może "
+"niepoprawnie go skopiowano?"
 
 #: data/content/e/404.html:32
 #, python-format
@@ -1454,7 +1462,7 @@ msgstr "Fedora 8-9"
 
 #: data/content/keys/obsolete.html:85
 msgid "Fedora 8-9 testing"
-msgstr "Fedora 8-9 aktualizacje testowe"
+msgstr "Testowe pakiety Fedory 8-9"
 
 #: data/content/keys/obsolete.html:100
 msgid "Fedora 10"
@@ -1552,11 +1560,11 @@ msgid ""
 "included in the <strong>fedora-release</strong> package in Fedora 7 and "
 "later releases."
 msgstr ""
-"Jeśli używana jest Fedora Extras z Fedorą Core 6, należy użyć tego pakietu z"
-" repozytorium <strong>extras</strong>. Ten klucz nie będzie dłużej używany "
-"po osiągnięciu przez Fedorę Core 6 i Extras stanu EOL (7 grudnia 2007). Ten "
-"klucz nie jest zawarty w pakiecie <strong>fedora-release</strong> w Fedorze "
-"7 i późniejszych wydaniach."
+"Jeśli używana jest Fedora Extras z Fedorą Core 6, to należy użyć tego "
+"pakietu z repozytorium <strong>extras</strong>. Ten klucz nie będzie dłużej "
+"używany po osiągnięciu przez Fedorę Core 6 i Extras stanu EOL (7 grudnia "
+"2007). Ten klucz nie jest zawarty w pakiecie <strong>fedora-release</strong>"
+" w Fedorze 7 i późniejszych wydaniach."
 
 #: data/content/keys/obsolete.html:465 data/content/keys/obsolete.html:480
 msgid "Legacy"
@@ -1578,7 +1586,7 @@ msgstr ""
 
 #: data/content/keys/faq/index.html:8 data/content/keys/faq/index.html:18
 msgid "Package Signing FAQ"
-msgstr "FAQ podpisywania pakietów"
+msgstr "Najczęściej zadawane pytania o podpisywanie pakietów"
 
 #: data/content/keys/faq/index.html:20
 msgid ""
@@ -1642,7 +1650,7 @@ msgstr ""
 "nie wszystkie klucze w tym katalogu są używane przez Projekt Fedora — "
 "niektóre są używane do podpisywania pakietów systemu Red Hat Enterprise "
 "Linux lub w ogóle nie są już używane. Jeśli używane są pakiety systemu Red "
-"Hat Enterprise Linux, proszę zobaczyć stronę <a "
+"Hat Enterprise Linux, to proszę zobaczyć stronę <a "
 "href=\"%s\">https://www.redhat.com/security/team/key</a>. Klucze używane "
 "przez Fedorę są włączone w konfiguracji repozytoriów programu dnf, więc "
 "ogólnie rzecz biorąc, nie trzeba ich ręcznie importować do bazy danych RPM."
@@ -1805,7 +1813,7 @@ msgstr ""
 
 #: data/content/server/index.html:126
 msgid "DevConf US Conference Co-Chair"
-msgstr "Współprzewodniczący konferencji DevConf US"
+msgstr "współprzewodniczący konferencji DevConf US"
 
 #: data/content/server/index.html:139 data/content/server/index.html:144
 msgid "Ready to give Fedora Server a try?"
@@ -1841,7 +1849,7 @@ msgid ""
 "USB flash drive at least as big as the image."
 msgstr ""
 "Aby użyć tego obrazu, wymagany jest napęd, który może nagrywać płyty DVD lub"
-" dysk USB co najmniej o rozmiarze obrazu."
+" pendrive co najmniej o rozmiarze obrazu."
 
 #: data/content/server/download/index.html:45
 #, python-format
@@ -1870,36 +1878,51 @@ msgstr "Obraz instalacji sieciowej:"
 msgid "64-bit %sMB image"
 msgstr "64-bitowy obraz (%s MB)"
 
+#: data/content/server/download/index.html:56
+#: data/content/server/download/index.html:60
+#: data/content/server/download/index.html:64
+#, python-format
+msgid "aarch64 %sMB image"
+msgstr "Obraz AArch64 (%s MB)"
+
+#: data/content/server/download/index.html:58
+msgid "DVD ISO Image:"
+msgstr "Obraz ISO płyty DVD:"
+
 #: data/content/server/download/index.html:62
+msgid "Raw Disk Image:"
+msgstr "Surowy obraz dysku:"
+
+#: data/content/server/download/index.html:71
 #: data/content/workstation/download/index.html:159
 #, python-format
 msgid "F%(rel)s Alpha"
 msgstr "F%(rel)s Alfa"
 
-#: data/content/server/download/index.html:66
+#: data/content/server/download/index.html:75
 #: data/content/workstation/download/index.html:163
 #, python-format
 msgid "Download F%(rel)s Alpha images"
 msgstr "Pobierz obrazy F%(rel)s Alfa"
 
-#: data/content/server/download/index.html:72
+#: data/content/server/download/index.html:81
 #: data/content/workstation/download/index.html:169
 #, python-format
 msgid "F%(rel)s Beta"
 msgstr "F%(rel)s Beta"
 
-#: data/content/server/download/index.html:76
+#: data/content/server/download/index.html:85
 #: data/content/workstation/download/index.html:173
 #, python-format
 msgid "Download F%(rel)s Beta images"
 msgstr "Pobierz obrazy F%(rel)s Beta"
 
-#: data/content/server/download/index.html:83
+#: data/content/server/download/index.html:92
 #: data/content/workstation/download/index.html:206
 msgid "Get more Fedora"
 msgstr "Inne warianty Fedory"
 
-#: data/content/server/download/index.html:87
+#: data/content/server/download/index.html:96
 #: data/content/workstation/download/index.html:215
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr "Technologia ARM<span class=\"sup\">®</span>"
@@ -1917,9 +1940,8 @@ msgid ""
 "<a href=\"%s\">burn the image to a blank DVD disc</a>, or <a "
 "href=\"%s\">write the image to a USB flash drive</a>."
 msgstr ""
-"Po pobraniu obrazu należy utworzyć z niego uruchamialny nośnik. Należy <a "
-"href=\"%s\">nagrać obraz na pustą płytę DVD</a> lub <a href=\"%s\">zapisać "
-"go na dysku USB</a>."
+"Po pobraniu obrazu utwórz z niego uruchamialny nośnik. <a href=\"%s\">Nagraj"
+" obraz na pustą płytę DVD</a> lub <a href=\"%s\">zapisz go na pendrivie</a>."
 
 #: data/content/server/download/server-download-splash.html:52
 #: data/content/workstation/download/ws-download-splash.html:57
@@ -2003,10 +2025,10 @@ msgid ""
 "same directory as the image you downloaded and follow <a "
 "href=\"%s/%s/verify\">these instructions</a>."
 msgstr ""
-"Po pobraniu obrazu należy sprawdzić jego bezpieczeństwo i integralność. Aby "
-"sprawdzić poprawność obrazu, należy najpierw pobrać poniższy plik CHECKSUM "
-"do tego samego katalogu, w którym znajduje się obraz i wypełnić <a "
-"href=\"%s/%s/verify\">te instrukcje</a>."
+"Po pobraniu obrazu sprawdź jego bezpieczeństwo i integralność. Aby sprawdzić"
+" poprawność obrazu, najpierw pobierz poniższy plik CHECKSUM do tego samego "
+"katalogu, w którym znajduje się obraz i postępuj zgodnie z <a "
+"href=\"%s/%s/verify\">tymi instrukcjami</a>."
 
 #: data/content/workstation/index.html:8
 msgid "Get Fedora Workstation: the best desktop OS for software developers"
@@ -2083,8 +2105,8 @@ msgid ""
 " tools for even more control."
 msgstr ""
 "Za pomocą programu GNOME Boxes można szybko uruchamiać maszyny wirtualne, "
-"aby testować kod na wielu platformach. Jeszcze więcej możliwości dostarczają"
-" potężne, skryptowalne narzędzia wirtualizacji."
+"aby testować kod na wielu systemach. Jeszcze więcej możliwości dostarczają "
+"potężne, skryptowalne narzędzia wirtualizacji."
 
 #: data/content/workstation/index.html:104
 msgid "Built-in Docker support"
@@ -2119,7 +2141,7 @@ msgstr "Pobieranie Fedory %(rel)s Workstation"
 #: data/content/workstation/prerelease/index.html:87
 #, python-format
 msgid "%s MB Fedora Media Writer for <strong>Mac OS X</strong>"
-msgstr "Fedora Media Writer (%s MB) dla systemu <strong>Mac OS X</strong>"
+msgstr "Fedora Media Writer (%s MB) dla systemu <strong>macOS</strong>"
 
 #: data/content/workstation/download/index.html:45
 #: data/content/workstation/download/index.html:126
@@ -2130,10 +2152,13 @@ msgid "64-bit %s GB ISO for <strong>Linux</strong>."
 msgstr "64-bitowy obraz ISO (%s GB) dla systemu <strong>Linux</strong>."
 
 #: data/content/workstation/download/index.html:46
-#: data/content/workstation/prerelease/index.html:25
 #, python-format
-msgid "<a href=\"%s\">Install via DNF</a> if you are already on Fedora."
-msgstr "<a href=\"%s\">Zainstaluj za pomocą DNF</a> w systemie Fedora."
+msgid ""
+"A download is only needed for new installs. To upgrade, <a "
+"href=\"%s\">follow these instructions.</a>"
+msgstr ""
+"Pobranie Fedory jest wymagane tylko dla nowych instalacji. Aby ją "
+"zaktualizować, <a href=\"%s\">skorzystaj z tych instrukcji</a>."
 
 #: data/content/workstation/download/index.html:50
 #: data/content/workstation/download/index.html:110
@@ -2171,21 +2196,21 @@ msgstr "Fedora Media Writer (do pobrania powyżej)"
 #: data/content/workstation/prerelease/index.html:64
 #, python-format
 msgid "A USB Flash drive with at least %s GB space available"
-msgstr "Dysk USB z co najmniej %s GB wolnego miejsca"
+msgstr "Pendrive z co najmniej %s GB wolnego miejsca"
 
 #: data/content/workstation/download/index.html:71
+#, python-format
 msgid ""
 "Fedora Workstation is provided via Fedora Media Writer. Download this "
-"program via the download link above and run it on your system, following the"
-" prompts to generate a live version (see 'What does \"Live\" mean?' to the "
+"program for your <a href=\"%s\">supported platform</a> and follow the "
+"prompts to generate a live version (see 'What does \"Live\" mean?' to the "
 "right) of Fedora Workstation on a USB flash drive. You may then run the live"
 " version of Fedora Workstation from your USB flash drive."
 msgstr ""
 "Fedora Workstation jest dostarczana za pomocą narzędzia Fedora Media Writer."
-" Pobierz ten program za pomocą odnośnika powyżej i uruchom go w swoim "
-"systemie, postępując zgodnie ze wskazówkami na ekranie, aby utworzyć wersję "
-"Live (po prawej znajduje się wyjaśnienie, co to znaczy) Fedory Workstation "
-"na dysku USB."
+" Pobierz ten program dla <a href=\"%s\">używanego systemu</a> i postępuj "
+"zgodnie ze wskazówkami na ekranie, aby utworzyć wersję Live (po prawej "
+"znajduje się wyjaśnienie, co to znaczy) Fedory Workstation na pendrivie."
 
 #: data/content/workstation/download/index.html:72
 #: data/content/workstation/prerelease/index.html:78
@@ -2199,25 +2224,25 @@ msgid ""
 msgstr ""
 "Można też zainstalować Fedorę Workstation na laptopie lub komputerze "
 "stacjonarnym mającym co najmniej procesor o prędkości 1 GHz, 1 GB pamięci "
-"RAM i 10 GB miejsca na dysku. Aby to zrobić, należy uruchomić wersję Live "
-"Fedory Workstation z dysku USB, włączyć aplikację Fedora Media Writer i "
-"postępować zgodnie z instrukcjami na ekranie."
+"RAM i 10 GB miejsca na dysku. Aby to zrobić, uruchom wersję Live Fedory "
+"Workstation z pendrive’a, włącz aplikację Fedora Media Writer i postępuj "
+"zgodnie z instrukcjami na ekranie."
 
 #: data/content/workstation/download/index.html:74
 #: data/content/workstation/prerelease/index.html:80
 msgid "Supported Platforms"
-msgstr "Obsługiwane platformy"
+msgstr "Obsługiwane systemy"
 
 #: data/content/workstation/download/index.html:75
 #: data/content/workstation/prerelease/index.html:81
 msgid "Fedora Media Writer supports the following platforms:"
-msgstr "Platformy obsługiwane przez Fedora Media Writer:"
+msgstr "Systemy obsługiwane przez Fedora Media Writer:"
 
 #: data/content/workstation/download/index.html:77
 #: data/content/workstation/download/index.html:97
 #: data/content/workstation/prerelease/index.html:86
 msgid "Mac OS X"
-msgstr "Mac OS X"
+msgstr "macOS"
 
 #: data/content/workstation/download/index.html:78
 #: data/content/workstation/download/index.html:109
@@ -2238,9 +2263,9 @@ msgid ""
 "system incorrectly or you would like to download a different version, please"
 " click the \"View all platform downloads\" button below."
 msgstr ""
-"Automatycznie wykryto system <strong>Mac OS X</strong> i udostępniono tę "
-"wersję do pobrania. Jeśli wykryto niewłaściwy system operacyjny lub chcesz "
-"pobrać inną wersję, proszę nacisnąć przycisk „Wszystkie platformy” poniżej."
+"Automatycznie wykryto system <strong>macOS</strong> i udostępniono tę wersję"
+" do pobrania. Jeśli wykryto niewłaściwy system operacyjny lub chcesz pobrać "
+"inną wersję, to proszę kliknąć przycisk „Wszystkie systemy” poniżej."
 
 #: data/content/workstation/download/index.html:85
 msgid ""
@@ -2251,7 +2276,7 @@ msgid ""
 msgstr ""
 "Automatycznie wykryto system <strong>Linux</strong> i udostępniono tę wersję"
 " do pobrania. Jeśli wykryto niewłaściwy system operacyjny lub chcesz pobrać "
-"inną wersję, proszę nacisnąć przycisk „Wszystkie platformy” poniżej."
+"inną wersję, to proszę kliknąć przycisk „Wszystkie systemy” poniżej."
 
 #: data/content/workstation/download/index.html:88
 msgid ""
@@ -2262,11 +2287,11 @@ msgid ""
 msgstr ""
 "Automatycznie wykryto system <strong>Windows</strong> i udostępniono tę "
 "wersję do pobrania. Jeśli wykryto niewłaściwy system operacyjny lub chcesz "
-"pobrać inną wersję, proszę nacisnąć przycisk „Wszystkie platformy” poniżej."
+"pobrać inną wersję, to proszę kliknąć przycisk „Wszystkie systemy” poniżej."
 
 #: data/content/workstation/download/index.html:92
 msgid "View all platform downloads"
-msgstr "Wszystkie platformy"
+msgstr "Wszystkie systemy"
 
 #: data/content/workstation/download/index.html:122
 #: data/content/workstation/prerelease/index.html:105
@@ -2393,8 +2418,8 @@ msgid ""
 "and play with Fedora without making changes to your hard disk."
 msgstr ""
 "Fedora Media Writer utworzy pełny system Fedora Workstation działający z "
-"dysku USB. Można używać obrazu Live do wypróbowania Fedory bez wprowadzania "
-"zmian na dysku twardym."
+"pendrive’a. Można używać obrazu Live do wypróbowania Fedory bez wprowadzania"
+" zmian na dysku twardym."
 
 #: data/content/workstation/download/index.html:204
 #: data/content/workstation/prerelease/index.html:151
@@ -2424,6 +2449,11 @@ msgstr "Pobieranie Fedory Workstation %s"
 #, python-format
 msgid "Download Fedora %(rel)s %(state)s Workstation"
 msgstr "Pobieranie Fedory %(rel)s %(state)s Workstation"
+
+#: data/content/workstation/prerelease/index.html:25
+#, python-format
+msgid "<a href=\"%s\">Upgrade via DNF</a> if you are already on Fedora."
+msgstr "<a href=\"%s\">Zaktualizuj za pomocą DNF</a> w systemie Fedora."
 
 #: data/content/workstation/prerelease/index.html:45
 #, python-format
@@ -2462,8 +2492,8 @@ msgid ""
 "WARNING: This procedure destroys all data on your USB media. Make sure to "
 "back up any important files from your USB media before you do this."
 msgstr ""
-"OSTRZEŻENIE: spowoduje to usunięcie wszystkich danych na dysku USB. Należy "
-"się upewnić, że skopiowano z niego wszystkie ważne pliki."
+"OSTRZEŻENIE: spowoduje to usunięcie wszystkich danych na pendrivie. Upewnij "
+"się, że skopiowano z niego wszystkie ważne pliki."
 
 #: data/content/workstation/prerelease/index.html:69
 msgid "Download the Fedora Media Writer app below."
@@ -2502,9 +2532,9 @@ msgid ""
 " to create live media, you may need to restore it to factory settings.  The "
 "app will ask you whether to do so in this case."
 msgstr ""
-"Włóż dysk do portu USB. Jeśli był on wcześniej używany do tworzenia nośnika "
-"Live, to należy go przywrócić do ustawień fabrycznych. Aplikacja zapyta, czy"
-" to zrobić."
+"Włóż pendrive do portu USB. Jeśli był on wcześniej używany do tworzenia "
+"nośnika Live, to należy go przywrócić do ustawień fabrycznych. Aplikacja "
+"zapyta, czy to zrobić."
 
 #: data/content/workstation/prerelease/index.html:76
 msgid ""
@@ -2515,12 +2545,12 @@ msgstr ""
 "wyjęciem nośnika i zamknięciem aplikacji."
 
 #: data/content/workstation/prerelease/index.html:123
-msgid "Validate 64-bit!"
-msgstr "Sprawdzanie poprawności obrazu 64-bitowego"
+msgid "Verify 64-bit!"
+msgstr "Sprawdź poprawność obrazu 64-bitowego"
 
 #: data/content/workstation/prerelease/index.html:126
-msgid "Validate 32-bit!"
-msgstr "Sprawdzanie poprawności obrazu 32-bitowego"
+msgid "Verify 32-bit!"
+msgstr "Sprawdź poprawność obrazu 32-bitowego"
 
 #: data/content/workstation/prerelease/index.html:146
 msgid ""
@@ -2553,7 +2583,7 @@ msgstr "Uruchamia instancję AMI"
 
 #: data/templates/cloud-tab.html:43
 msgid "Select the nearest region"
-msgstr "Proszę wybrać najbliższy region"
+msgstr "Wybierz najbliższy region"
 
 #: data/templates/cloud-tab.html:49
 msgid "64-bit (x86_64)"
@@ -2767,7 +2797,7 @@ msgid ""
 "media from the <a href=\"%s\">Fedora Free Media Program</a>."
 msgstr ""
 "Jeśli użytkownik nie może sobie pozwolić na zapłacenie za płytę "
-"instalacyjną, może poprosić o nią w <a href=\"%s\">programie darmowych "
+"instalacyjną, może poprosić o nią w <a href=\"%s\">programie bezpłatnych "
 "nośników Fedory</a>."
 
 #: data/templates/keys/key-button-and-modal-obsolete.html:45
