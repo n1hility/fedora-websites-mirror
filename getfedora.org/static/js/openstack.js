@@ -11,3 +11,9 @@ $("#openstack-cont-click").click(function(event) {
   $("#openstack-cont-link").toggle('slow');
   $("#raw-cont-link").stop().fadeTo(600, this.toggle ? 0.3 : 1);
 });
+
+$(".reveal-link").click(function(event) {
+  target = $(this).attr("data-target");
+  $("#"+target).toggle();
+  $(".fa", this).toggleClass("fa-caret-down fa-caret-up");
+});

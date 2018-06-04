@@ -18,6 +18,7 @@ import logging
 import os
 import sys
 import socket
+import pprint
 
 from datetime import datetime, timedelta
 
@@ -163,32 +164,34 @@ def collect(curr_atomic_id, next_atomic_id):
             'atomic_vagrant_virtualbox': 'atomic_VBvag_cloud',
             'atomic_dvd_ostree': 'atomic_dvd_iso',
         }
-        for key, entry in message['msg']['x86_64'].items():
-            # There are some other keys in there we don't care about.
-            if not key.startswith('atomic_'):
-                continue
 
-            # Do an HTTP HEAD to find the size of the file in megabytes
-            url = entry['image_url']
-            download_url = entry['image_url']
-            if not url.startswith('http'):
-                url = DL_URL_PREFIX + url
-                download_url = download_fpo + entry['image_url']
+        for arch, items in message['msg'].items():       
+            for key, entry in items.items():
+                # There are some other keys in there we don't care about.
+                if not key.startswith('atomic_'):
+                    continue
 
-            length = int(entry['size']) / (1024 * 1024)
-            # Provide the download URL
-            url_key = mapping[key] + "_url"
-            results['release'][url_key] = download_url
+                url = entry['image_url']
+                download_url = entry['image_url']
+                if not url.startswith('http'):
+                    url = DL_URL_PREFIX + url
+                    download_url = download_fpo + entry['image_url']
 
-            # Provide the redirect rule mapping
-            img_filename = download_url.split('/')[-1]
-            results['release']['redir_map'][key] = {}
-            results['release']['redir_map'][key]['redirect'] = download_url
-            results['release']['redir_map'][key]['filename'] = img_filename
+                length = int(entry['size']) / (1024 * 1024)
+                # Provide the download URL
+                url_key = mapping[key] + "_url"
+                results['release'][url_key] = download_url
 
-            # Figure out which of our vars we're going to set, and set it
-            iso_size_key = iso_size_prefix + mapping[key]
-            results['iso_size'][iso_size_key] = str(length)
+                # Provide the redirect rule mapping
+                img_filename = download_url.split('/')[-1]
+                results['release']['redir_map'][key+'_'+arch] = {}
+                results['release']['redir_map'][key+'_'+arch]['redirect'] = download_url
+                results['release']['redir_map'][key+'_'+arch]['filename'] = img_filename
+                results['release']['redir_map'][key+'_'+arch]['iso_size'] = str(length)
+
+                # Figure out which of our vars we're going to set, and set it
+                iso_size_key = iso_size_prefix + mapping[key]
+                results['iso_size'][iso_size_key] = str(length)
 
     return results
 
