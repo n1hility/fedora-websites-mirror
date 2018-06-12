@@ -1,49 +1,19 @@
-body {
-  margin: -0px !important;
-  padding: 0px !important;
+body{
+  position:relative;
+  margin-top:50px;
 }
 
-.container {
-  padding: 3em 6em;
-}
-
-.bg {
-  background: #1a3c6d url('https://i.imgur.com/XGOrohP.png') no-repeat center center;
-  width: 100%;
-  height: 350px; /*same height as jumbotron */
-  top:0;
-  left:0;
-  z-index: -1;
-  background-size: cover;
-  margin: 0px;
+#welcome2 {
+//  background-image: url('/static/images/capecod-landscape.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 15em !important;
 }
 
 #welcome {
-  height: 350px;
-  color: white;
-  text-shadow: #444 0 1px 1px;
-  background:transparent;
-  font-family: "Montserrat", sans-serif !important;
-  text-align: center;
-  text-transform: uppercase;
+  background: linear-gradient(to bottom, #3c6eb4 0%,#e2faf5 100%);
+  padding-bottom: 0px;
 }
-
-#welcome h1 {
-  font-weight: 900;
-  font-size: 5em;
-  margin: 0px;
-}
-
-#welcome h2 {
-  margin-top: -10px;
-  font-weight: 300;
-  font-size: 3em;
-  }
-  
-#welcome img {
-  margin-top: 4em;
-  margin-bottom: 0px;
-  }
 
 .flock-navbar {
     font-family: "Montserrat";
@@ -69,7 +39,7 @@ body {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active  {
   background-color: #eee; */
-  color: #1a3c6d;
+  color: #3c6eb4;
 }
 
 .navbar-brand{
@@ -94,6 +64,10 @@ body {
 a {
   color: #3c6eb4 !important;
   font-weight: bold;
+}
+
+h2 {
+  color: #294172;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -137,6 +111,16 @@ font-size: 50px;
 }
 
 
+.non-jumbo.light-blue{
+  background-color: #cceaec;
+  color:#3c6eb4;
+}
+
+.non-jumbo.blue{
+  background-color: #3c6eb4;
+  color: white;
+}
+
 .non-jumbo.blue a {
   color: white !important;
   text-decoration: underline !important;
@@ -155,6 +139,10 @@ hr { margin: 3em; border-top: 3px #dee1dd solid; }
 .blue hr, .light-blue hr { border-top: 3px white solid; }
 
 
+#welcome
+{
+  padding-top: 1em;
+}
 
 /* calendar for schedule area */
 .calendar th,
