@@ -145,7 +145,7 @@ def collect(curr_atomic_id, next_atomic_id):
             continue
 
         # Parse the composedate out of the image_name
-        image_name = message['msg']['atomic_qcow2']['image_name']
+        image_name = message['msg']['x86_64']['atomic_qcow2']['image_name']
         composedate = '.'.join(image_name.split('-')[-1].split('.')[:-2])
         log.info("    Found composedate: %s" % composedate)
         results['release'][composedate_prefix + 'atomic_composedate'] = composedate
@@ -161,8 +161,9 @@ def collect(curr_atomic_id, next_atomic_id):
             'atomic_raw': 'atomic_raw_cloud',
             'atomic_vagrant_libvirt': 'atomic_libvag_cloud',
             'atomic_vagrant_virtualbox': 'atomic_VBvag_cloud',
+            'atomic_dvd_ostree': 'atomic_dvd_iso',
         }
-        for key, entry in message['msg'].items():
+        for key, entry in message['msg']['x86_64'].items():
             # There are some other keys in there we don't care about.
             if not key.startswith('atomic_'):
                 continue
@@ -173,12 +174,8 @@ def collect(curr_atomic_id, next_atomic_id):
             if not url.startswith('http'):
                 url = DL_URL_PREFIX + url
                 download_url = download_fpo + entry['image_url']
-            response = requests.head(url)
-            if not bool(response):
-                log.error("Failed to HEAD %s for size.  %r" % (url, response))
-                continue
 
-            length = int(response.headers['content-length']) / 1000000
+            length = int(entry['size']) / (1024 * 1024)
             # Provide the download URL
             url_key = mapping[key] + "_url"
             results['release'][url_key] = download_url
@@ -192,20 +189,6 @@ def collect(curr_atomic_id, next_atomic_id):
             # Figure out which of our vars we're going to set, and set it
             iso_size_key = iso_size_prefix + mapping[key]
             results['iso_size'][iso_size_key] = str(length)
-
-    # Special case for Atomic ISO latest redirect rule mapping because it's
-    # not included in fedmsg data
-    atomic_iso_filename = "Fedora-AtomicHost-ostree-x86_64-{}-{}.iso".format(
-        globalvar.release['curr_atomic_id'],
-        results['release'][composedate_prefix + 'atomic_composedate']
-    )
-    results['release']['redir_map']['atomic_iso'] = {}
-    results['release']['redir_map']['atomic_iso']['redirect'] = \
-        globalvar.path['download_atomic'] + "/stable/Fedora-AtomicHost-" + \
-        globalvar.release['curr_atomic_id'] + '-' + \
-        results['release'][composedate_prefix + 'atomic_composedate'] + \
-        "/AtomicHost/x86_64/iso/{}".format(atomic_iso_filename)
-    results['release']['redir_map']['atomic_iso']['filename'] = atomic_iso_filename
 
     return results
 
