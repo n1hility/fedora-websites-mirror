@@ -153,7 +153,7 @@
                   <small>${_('If you\'re using Vagrant on Mac OS X or Windows, this is likely the image you\'ll want to use.')}</small>
                 </div>
                 <div class="col-xs-2 text-right">
-                  <a href="${global_variables.release['atomic_VBvag_cloud_url']}" class="btn btn-success download-cloud download-cloud-sm" role="button" title="${_('64-bit %sMB VirtualBox Base Vagrant Image') % global_variables.iso_size['atomic_VBvag_cloud']}">
+                  <a href="${global_variables.release['atomic_VBvag_cloud_url']}" class="btn btn-success download-cloud download-cloud-sm download-cloud-splash" role="button" title="${_('64-bit %sMB VirtualBox Base Vagrant Image') % global_variables.iso_size['atomic_VBvag_cloud']}">
                     <span class="fa fa-fw fa-download" aria-hidden="true"></span>
                   </a>
                 </div>
@@ -166,7 +166,7 @@
                   <small>${_('If you\'re using Vagrant on Fedora, this is the image you\'ll want to use.')}</small> 
                 </div>
                 <div class="col-xs-2 text-right">
-                  <a href="${global_variables.release['atomic_libvag_cloud_url']}" class="btn btn-success download-cloud download-cloud-sm" role="button" title="${_('64-bit %sMB libvirt/KVM Base Vagrant Image') % global_variables.iso_size['atomic_libvag_cloud']}">
+                  <a href="${global_variables.release['atomic_libvag_cloud_url']}" class="btn btn-success download-cloud download-cloud-sm download-cloud-splash" role="button" title="${_('64-bit %sMB libvirt/KVM Base Vagrant Image') % global_variables.iso_size['atomic_libvag_cloud']}">
                     <span class="fa fa-fw fa-download" aria-hidden="true"></span>
                   </a>
                 </div>
@@ -223,7 +223,7 @@
                           <h5 class="bold"> qcow2 image for x86_64</h5>
                         </div>
                         <div class="col-xs-3 text-right">
-                          <a href="${global_variables.release['redir_map']['atomic_qcow2_x86_64']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm" role="button" title="${_('64-bit %sMB Qcow2 Image') % global_variables.release['redir_map']['atomic_qcow2_x86_64']['iso_size']}">
+                          <a href="${global_variables.release['redir_map']['atomic_qcow2_x86_64']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm download-cloud-splash" role="button" title="${_('64-bit %sMB Qcow2 Image') % global_variables.release['redir_map']['atomic_qcow2_x86_64']['iso_size']}">
                             <span class="fa fa-fw fa-download" aria-hidden="true"></span> x86_64
                           </a>
                         </div>
@@ -235,7 +235,7 @@
                           <h5 class="bold"> qcow2 image for aarch64</h5>
                         </div>
                         <div class="col-xs-3 text-right">
-                          <a href="${global_variables.release['redir_map']['atomic_qcow2_aarch64']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm" role="button" title="${_('64-bit %sMB Qcow2 Image') % global_variables.release['redir_map']['atomic_qcow2_aarch64']['iso_size']}">
+                          <a href="${global_variables.release['redir_map']['atomic_qcow2_aarch64']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm download-cloud-splash" role="button" title="${_('64-bit %sMB Qcow2 Image') % global_variables.release['redir_map']['atomic_qcow2_aarch64']['iso_size']}">
                             <span class="fa fa-fw fa-download" aria-hidden="true"></span> aarch64
                           </a>
                         </div>
@@ -247,7 +247,7 @@
                           <h5 class="bold"> qcow2 image for ppc64le</h5>
                         </div>
                         <div class="col-xs-3 text-right">
-                          <a href="${global_variables.release['redir_map']['atomic_qcow2_ppc64le']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm" role="button" title="${_('64-bit %sMB Qcow2 Image') % global_variables.release['redir_map']['atomic_qcow2_ppc64le']['iso_size']}">
+                          <a href="${global_variables.release['redir_map']['atomic_qcow2_ppc64le']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm download-cloud-splash" role="button" title="${_('64-bit %sMB Qcow2 Image') % global_variables.release['redir_map']['atomic_qcow2_ppc64le']['iso_size']}">
                             <span class="fa fa-fw fa-download" aria-hidden="true"></span> ppc64le
                           </a>
                         </div>
@@ -276,7 +276,7 @@
                           <h5 class="bold"> raw image for x86_64</h5>
                         </div>
                         <div class="col-xs-3 text-right">
-                          <a href="${global_variables.release['redir_map']['atomic_raw_x86_64']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm" role="button" title="${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.release['redir_map']['atomic_raw_x86_64']['iso_size']}">
+                          <a href="${global_variables.release['redir_map']['atomic_raw_x86_64']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm download-cloud-splash" role="button" title="${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.release['redir_map']['atomic_raw_x86_64']['iso_size']}">
                             <span class="fa fa-fw fa-download" aria-hidden="true"></span> x86_64
                           </a>
                         </div>
@@ -288,7 +288,7 @@
                           <h5 class="bold"> raw image for aarch64</h5>
                         </div>
                         <div class="col-xs-3 text-right">
-                          <a href="${global_variables.release['redir_map']['atomic_raw_aarch64']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm" role="button" title="${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.release['redir_map']['atomic_raw_aarch64']['iso_size']}">
+                          <a href="${global_variables.release['redir_map']['atomic_raw_aarch64']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm download-cloud-splash" role="button" title="${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.release['redir_map']['atomic_raw_aarch64']['iso_size']}">
                             <span class="fa fa-fw fa-download" aria-hidden="true"></span> aarch64
                           </a>
                         </div>
@@ -300,7 +300,7 @@
                           <h5 class="bold"> raw image for ppc64le</h5>
                         </div>
                         <div class="col-xs-3 text-right">
-                          <a href="${global_variables.release['redir_map']['atomic_raw_ppc64le']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm" role="button" title="${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.release['redir_map']['atomic_raw_ppc64le']['iso_size']}">
+                          <a href="${global_variables.release['redir_map']['atomic_raw_ppc64le']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm download-cloud-splash" role="button" title="${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.release['redir_map']['atomic_raw_ppc64le']['iso_size']}">
                             <span class="fa fa-fw fa-download" aria-hidden="true"></span> ppc64le
                           </a>
                         </div>
@@ -344,7 +344,7 @@
                           <h5 class="bold"> ISO image for x86_64</h5>
                         </div>
                         <div class="col-xs-3 text-right">
-                          <a href="${global_variables.release['redir_map']['atomic_dvd_ostree_x86_64']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm" role="button" title="${_('Atomic Host ISO image (%sMB)') % global_variables.release['redir_map']['atomic_dvd_ostree_x86_64']['iso_size']}">
+                          <a href="${global_variables.release['redir_map']['atomic_dvd_ostree_x86_64']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm download-cloud-splash" role="button" title="${_('Atomic Host ISO image (%sMB)') % global_variables.release['redir_map']['atomic_dvd_ostree_x86_64']['iso_size']}">
                             <span class="fa fa-fw fa-download" aria-hidden="true"></span> x86_64
                           </a>
                         </div>
@@ -356,7 +356,7 @@
                           <h5 class="bold"> ISO image for aarch64</h5>
                         </div>
                         <div class="col-xs-3 text-right">
-                          <a href="${global_variables.release['redir_map']['atomic_dvd_ostree_aarch64']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm" role="button" title="${_('Atomic Host ISO image (%sMB)') % global_variables.release['redir_map']['atomic_dvd_ostree_aarch64']['iso_size']}">
+                          <a href="${global_variables.release['redir_map']['atomic_dvd_ostree_aarch64']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm download-cloud-splash" role="button" title="${_('Atomic Host ISO image (%sMB)') % global_variables.release['redir_map']['atomic_dvd_ostree_aarch64']['iso_size']}">
                             <span class="fa fa-fw fa-download" aria-hidden="true"></span> aarch64
                           </a>
                         </div>
@@ -368,7 +368,7 @@
                           <h5 class="bold"> ISO image for ppc64le</h5>
                         </div>
                         <div class="col-xs-3 text-right">
-                          <a href="${global_variables.release['redir_map']['atomic_dvd_ostree_ppc64le']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm" role="button" title="${_('Atomic Host ISO image (%sMB)') % global_variables.release['redir_map']['atomic_dvd_ostree_ppc64le']['iso_size']}">
+                          <a href="${global_variables.release['redir_map']['atomic_dvd_ostree_ppc64le']['redirect']}" class="btn btn-sm btn-success download-cloud download-cloud-sm download-cloud-splash" role="button" title="${_('Atomic Host ISO image (%sMB)') % global_variables.release['redir_map']['atomic_dvd_ostree_ppc64le']['iso_size']}">
                             <span class="fa fa-fw fa-download" aria-hidden="true"></span> ppc64le
                           </a>
                         </div>

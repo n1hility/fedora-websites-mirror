@@ -18,7 +18,6 @@ import logging
 import os
 import sys
 import socket
-import pprint
 
 from datetime import datetime, timedelta
 
