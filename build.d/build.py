@@ -180,6 +180,21 @@ def process_dir(dirpath, filenames):
                     artifact_f.write(
                         collected_atomic_vars['release']['redir_map'][artifact]['filename']
                     )
+            # Maintain legacy atomic latest urls for existing users
+            artifacts_redirect = ['atomic_qcow2', 'atomic_raw', 'atomic_vagrant_libvirt',
+                                  'atomic_vagrant_virtualbox', 'atomic_iso']
+            with open(os.path.join(options.output, ".htaccess"), 'a') as htaccess_f:
+                for artifact in artifacts_redirect:
+                    if artifact is 'atomic_iso':
+                        htaccess_f.write('Redirect 302 "/{}_latest"'
+                                         ' "/atomic_dvd_ostree_x86_64_latest"\n'.format(artifact))
+                        htaccess_f.write('Redirect 302 "/{}_latest_filename"'
+                                         ' "/atomic_dvd_ostree_x86_64_latest_filename"\n'.format( artifact))
+                    else:
+                        htaccess_f.write('Redirect 302 "/{}_latest" "/{}_x86_64_latest"\n'.format(
+                            artifact, artifact))
+                        htaccess_f.write('Redirect 302 "/{}_latest_filename" "/{}_x86_64_latest_filename"\n'.format(
+                            artifact, artifact))
 
         # This is *not* cached
         if update_atomic_age is not None:
