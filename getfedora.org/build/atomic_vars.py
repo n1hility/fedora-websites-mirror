@@ -191,6 +191,19 @@ def collect(curr_atomic_id, next_atomic_id):
                 # Figure out which of our vars we're going to set, and set it
                 iso_size_key = iso_size_prefix + mapping[key]
                 results['iso_size'][iso_size_key] = str(length)
+            results['release']['redir_map']['atomic_images_checksum_' + arch] = {}
+            results['release']['redir_map']['atomic_images_checksum_' + arch]['redirect']=\
+                download_fpo + '/pub/alt/atomic/stable/Fedora-Atomic-' + idx + '-' + composedate +\
+                '/AtomicHost/' + arch + '/images/Fedora-AtomicHost-' + idx + '-' + composedate + '-' + arch + '-CHECKSUM'
+            results['release']['redir_map']['atomic_images_checksum_' + arch]['filename'] = \
+                'Fedora-AtomicHost-' + idx + '-' + composedate + '-' + arch + '-CHECKSUM'
+
+            results['release']['redir_map']['atomic_dvd_ostree_checksum_' + arch] = {}
+            results['release']['redir_map']['atomic_dvd_ostree_checksum_' + arch]['redirect'] = \
+                download_fpo + '/pub/alt/atomic/stable/Fedora-Atomic-' + idx + '-' + composedate + \
+                '/AtomicHost/' + arch + '/iso/Fedora-AtomicHost-' + idx + '-' + composedate + '-' + arch + '-CHECKSUM'
+            results['release']['redir_map']['atomic_dvd_ostree_checksum_' + arch]['filename'] = \
+                'Fedora-AtomicHost-' + idx + '-' + composedate + '-' + arch + '-CHECKSUM'
 
     return results
 
