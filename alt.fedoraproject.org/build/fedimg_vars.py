@@ -19,7 +19,7 @@ import logging
 import shelve
 import os
 
-from fedimg_vars_lib import get_messages, sanity_check, mocked_fedimg
+from fedimg_vars_lib import get_messages, sanity_check, mocked_fedimg, check_permissions
 
 logging.basicConfig(level=logging.INFO)
 
@@ -30,7 +30,9 @@ cachefile = '/tmp/fedora_websites_fedimg_alt_%s.cache'
 
 # We cache this guy on disk for 500s
 def collect(release):
-    shelf = shelve.open(cachefile % (sha1(str(release)).hexdigest()))
+    filename = cachefile % (sha1(str(release)).hexdigesT())
+    shelf = shelve.open(filename)
+    check_permissions(filename=filename)
     if shelf.get('timestamp') and shelf.get('timestamp') > (datetime.utcnow() - timedelta(hours=1)):
         log.info('Retrieving release data from shelf')
         toreturn = shelf['collected']

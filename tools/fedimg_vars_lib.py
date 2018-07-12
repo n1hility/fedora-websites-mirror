@@ -17,6 +17,7 @@ from datetime import datetime, timedelta
 import functools
 import logging
 import json
+import stat
 import os
 
 import requests
@@ -66,10 +67,32 @@ def filter_messages(messages, target):
             yield message
 
 
+def check_permissions(fd=None, filename=None):
+    """ Make sure we are the only ones with access to this file. """
+    if fd is not None:
+        info = os.fstat(fd)
+    elif filename is not None:
+        info = os.lstat(filename)
+    else:
+        raise Exception("check_permissions called without args")
+    if stat.S_ISLNK(info.st_mode):
+        raise Exception("Cache is a symlink")
+    if not stat.S_ISREG(info.st_mode):
+        raise Exception("Cache is not a regular file")
+    if info.st_uid != os.getuid():
+        raise Exception("Cache is not owned by us")
+    if info.st_mode & stat.S_IWGRP:
+        raise Exception("Group has write permission to cache")
+    if info.st_mode & stat.S_IWOTH:
+        raise Exception("Other has write permission to cache")
+
+
 def get_messages(target):
     """ Filter the messages on target. """
+    check_permissions(filename=cache_file)
     try:
         with open(cache_file, 'r') as cf:
+            check_permissions(fd=cf.fileno())
             cache = json.load(cf)
             cachetime = datetime.strptime(cache['timestamp'], dateformat)
             if cachetime > (datetime.utcnow() - timedelta(days=1)):
@@ -79,6 +102,7 @@ def get_messages(target):
 
     messages = list(retrieve_messages())
     with open(cache_file, 'w') as cf:
+        check_permissions(fd=cf.fileno())
         cache = {'timestamp': datetime.utcnow().strftime(dateformat),
                  'messages': messages}
         json.dump(cache, cf)
