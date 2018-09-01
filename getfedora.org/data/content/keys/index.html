@@ -44,6 +44,18 @@
   <div class="container recover-heading">
     <div class="row">
       ${keys_for_release(
+      _('Fedora 30'),
+      [
+        KeyInfo(
+           _('Primary or Secondary'),
+	    '4096R/CFC659B9 2018-08-11',
+	    'F1D8 EC98 F241 AAF2 0DF6  9420 EF3C 111F CFC6 59B9',
+	    ['Fedora (30) &lt;fedora-30-primary@fedoraproject.org&gt;'],
+	    None,
+	    [('https://getfedora.org/static/CFC659B9.txt', 'Fedora Project')
+	    ])
+
+      ${keys_for_release(
       _('Fedora 29'),
       [
         KeyInfo(
@@ -82,26 +94,6 @@
             ])
       ])}
 
-      ${keys_for_release(
-      _('Fedora 26'),
-      [
-        KeyInfo(
-            _('Primary'),
-            '4096R/64DAB85D 2016-09-09',
-            'E641 850B 77DF 4353 78D1  D7E2 812A 6B4B 64DA B85D',
-            ['Fedora 26 Primary (26) &lt;fedora-26-primary@fedoraproject.org&gt;'],
-            None,
-            [('https://getfedora.org/static/64DAB85D.txt', 'Fedora Project')
-            ])
-      , KeyInfo(
-            _('Secondary'),
-            '4096R/3B921D09 2016-08-08',
-            '19AA 0442 2491 9109 8B3D  8035 4560 FD4D 3B92 1D09',
-            ['Fedora 26 Secondary (26) &lt;fedora-26-secondary@fedoraproject.org&gt;'],
-            None,
-            [('https://getfedora.org/static/3B921D09.txt', 'Fedora Project')
-            ])
-      ])}
 
     </div>
 
