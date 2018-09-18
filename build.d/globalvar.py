@@ -7,13 +7,13 @@ release={
     'next_id':     '29',
     'curr_name':   '',
     'next_name':   '',
-    'curr_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_alt_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_AMI_state':  '',   # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_server_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_atomic_state':  '',   # No Alpha/Beta for Atomic Host
+    'curr_state':  'Beta',           # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_alt_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  'Beta',     # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_AMI_state':  'Beta', # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_server_state':  'Beta',    # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_atomic_state':  '',        # No Alpha/Beta for Atomic Host
     'prev_arm_id': '27',
     'prev_alt_id': '27',
     'prev_cloud_id': '27',
