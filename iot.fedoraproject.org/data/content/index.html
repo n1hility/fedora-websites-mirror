@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Fedora Internet of Things Edition')}</title>
+  </head>
+
+<body class="home">
+<xi:include href="../templates/head.html" />
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="warning" style="text-align: center;">${Markup(_('This is pre-release software and is supported by the &lt;a href="%(team_url)s"&gt;IoT Team&lt;/a&gt;. Please direct questions to their &lt;a href="%(team_list)s"&gt;mailing list&lt;/a&gt; or %(team_irc)s on freenode.') % {'team_url':'https://fedoraproject.org/wiki/InternetOfThings', 'team_list':'https://lists.fedoraproject.org/mailman/listinfo/iot', 'team_irc':'#fedora-iot'})}
+          ${Markup(_('All issues or bugs should be reported via the &lt;a href="%s"&gt;Red Hat Bugzilla&lt;/a&gt;. The Fedora Project makes no guarantees as to its suitability or usefulness.') % 'https://bugzilla.redhat.com/')}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature: IoT -->
+  <div class="jumbotron product-feature bluebox">
+    <div class="container">
+      <div class="row">
+	    <div class="col-xs-12 caption">
+	      <h2 class="text-center">${Markup(_('What is Fedora Internet of Things Edition?'))}</h2>
+	      <p class="thin text-justify">${_('Fedora Internet of Things is an edition of Fedora that...')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron main-head hidden-xs hidden-sm">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>${Markup(_('Downloads'))}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 product-feature">
+          <p>${_('Download the latest version of Fedora IoT Edition for your architecture here.')}</p>
+        </div>
+        <div class="col-md-9">
+          <div py:for="k,v in iot_links['arches'].iteritems()" class="white">
+            <div class="col-md-1">
+              <img src="/static/images/minimal.png" />
+            </div>
+            <div class="col-md-7">
+              <h3>${k}</h3>
+            </div>
+            <div class="col-md-4 text-right">
+              <p class="download text-right"><a href="${v['iso']}">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <em><small>Latest release: ${iot_links['date']}</small></em>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IoT mobile phones-->
+  <div class="jumbotron main-head visible-xs">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>${Markup(_('Downloads'))}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+          <p>${_('Download the latest version of Fedora IoT Edition for your architecture here.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div py:for="k,v in iot_links['arches'].iteritems()" class="white">
+          <div class="col-xs-3">
+            <img src="/static/images/minimal.png" />
+          </div>
+          <div class="col-xs-9">
+            <h3>${k}</h3>
+            <p class="download"><a href="${v['iso']}">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <em><small>Latest release: ${iot_links['date']}</small></em>
+      </div>
+    </div>
+  </div>
+
+  <!-- IoT mobile tablets-->
+  <div class="jumbotron main-head visible-sm">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>${Markup(_('Downloads'))}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 product-feature">
+          <p>${_('Download the latest version of Fedora IoT Edition for your architecture here.')}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div py:for="k,v in iot_links['arches'].iteritems()" class="white">
+          <div class="col-sm-3">
+            <img src="/static/images/minimal.png" />
+          </div>
+          <div class="col-sm-5">
+            <h3>${k}</h3>
+          </div>
+          <div class="col-sm-4">
+            <p class="download"><a href="${v['iso']}">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <em><small>Latest release: ${iot_links['date']}</small></em>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="jumbotron whitesupport">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Fedora Internet of Things Edition documentation and installation guides are available at the &lt;a href="%s"&gt;Fedora IoT wiki page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/InternetOfThings'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;iot@lists.fedoraproject.org&lt;/a&gt;.') % ('https://admin.fedoraproject.org/mailman/listinfo/iot'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('Users and developers are available in the &lt;a href="%s"&gt;#fedora-iot&lt;/a&gt; irc channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-iot'))}</p>
+        </div>
+ 
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

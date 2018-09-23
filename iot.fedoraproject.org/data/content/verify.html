@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Verify your Downloaded Image')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../templates/head.html" />
+
+  <header id="head" class="recover-heading bluebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-left">
+          <h1>${_('Verify your Downloaded Image')}</h1>
+          <p class="nopad">
+            ${_('CHECKSUM and Verify Instructions')}
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>${Markup(_('How do I verify my image?'))}</h3>
+            <p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded.'))}</p>
+        </div>
+    </div>
+    <div class="row bottom-margin">
+        <div class="col-sm-4 col-xs-12 text-center">
+          <h4 class="uppercase top-margin">${_('Server')}</h4>
+          <div class="h-body text-center">
+            <a class="btn btn-default btn-topmargin btn-fix-verify" href="${path}/static/checksums/Fedora-Server-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-armhfp-CHECKSUM">${_('Verify Server!')}</a>
+          </div>
+          <div class="h-body text-center">
+            <a class="btn btn-default btn-topmargin btn-fix-verify" href="${path}/static/checksums/Fedora-Spins-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-armhfp-CHECKSUM">${_('Verify Minimal!')}</a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 text-center">
+          <h4 class="uppercase top-margin">${_('Desktop')}</h4>
+          <div class="h-body text-center">
+            <a class="btn btn-default btn-topmargin btn-fix-verify" href="${path}/static/checksums/Fedora-Workstation-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-armhfp-CHECKSUM">${_('Verify Workstation!')}</a>
+          </div>
+          <div class="h-body text-center">
+            <a class="btn btn-default btn-topmargin btn-fix-verify" href="${path}/static/checksums/Fedora-Spins-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-armhfp-CHECKSUM">${_('Verify Spins!')}</a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 text-center">
+          <h4 class="uppercase top-margin">${_('Labs')}</h4>
+          <div class="h-body text-center">
+            <a class="btn btn-default btn-topmargin btn-fix-verify" href="${path}/static/checksums/Fedora-Labs-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-armhfp-CHECKSUM">${_('Verify Labs!')}</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="row bottom-space">
+        <div class="col-md-12 top-margin">
+            <p>${Markup(_('Next, import Fedora\'s GPG key(s):'))}</p>
+            <pre class="command">$ curl https://getfedora.org/static/fedora.gpg | gpg --import</pre>
+            <p>${Markup(_('You can verify the details of the GPG key(s) &lt;a href="%s/%s/keys"&gt;here&lt;/a&gt;.') % ('https://getfedora.org', lang))}</p>
+            <p>${Markup(_('Now, verify that the CHECKSUM file is valid:'))}</p>
+            <pre class="command">$ gpg --verify-files *-CHECKSUM</pre>
+            <p>${Markup(_('The CHECKSUM file should have a good signature from one of the following keys:'))}</p>
+            <ul>
+                <li><code>CFC659B9</code> - ${_('Fedora 30')}</li>
+                <li><code>429476B4</code> - ${_('Fedora 29')}</li>
+                <li><code>9DB62FB1</code> - ${_('Fedora 28')}</li>
+                <li><code>F5282EE4</code> - ${_('Fedora 27')}</li>
+            </ul>
+            <p>${Markup(_('Finally, now that the CHECKSUM file has been verified, check that the image\'s checksum matches:'))}</p>
+            <pre class="command">$ sha256sum -c *-CHECKSUM</pre>
+            <p>${Markup(_('If the output states that the file is valid, then it\'s ready to use!'))}</p>
+	    <h3 class="top-margin">${_('How do I verify my downloaded image on another operating system?')}</h3>
+	    <p><a href="//docs.fedoraproject.org/f26/install-guide/install/Preparing_for_Installation.html#sect-verifying-images">${_('Read these instructions to verify your image.')}</a></p>
+        </div>
+    </div>
+  </div>
+  </body>
+</html>

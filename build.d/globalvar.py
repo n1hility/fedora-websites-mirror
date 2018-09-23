@@ -24,6 +24,7 @@ release={
     'curr_atomic_id': '28',
     'curr_server_id': '28',
     'curr_cloud_AMI_id': '28',
+    'curr_iot_id': '29',
     'next_arm_id': '29',
     'next_alt_id': '29',
     'next_cloud_id': '29',

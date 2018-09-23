@@ -1,0 +1,689 @@
+# Marco Aurélio Krause <ouesten@me.com>, 2015. #zanata
+# Roní Gonçalves <ronignc@gmail.com>, 2015. #zanata
+# Frederico Henrique Gonçalves Lima <fred@fredericolima.com.br>, 2016. #zanata
+# Marco Aurélio Krause <ouesten@me.com>, 2016. #zanata
+# Rafael Rodrigues Nakano <lazpeng@gmail.com>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-04-30 22:26+0200\n"
+"PO-Revision-Date: 2017-12-01 04:37-0500\n"
+"Last-Translator: Rafael Rodrigues Nakano <lazpeng@gmail.com>\n"
+"Language-Team: Portuguese (Brazil)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt-BR\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Generated-By: Babel 2.3.4\n"
+"X-Generator: Zanata 3.9.6\n"
+
+#: data/content/index.html:8
+msgid "Fedora ARM"
+msgstr "Fedora ARM"
+
+#: data/content/index.html:21 data/content/index.html:32
+#, python-format
+msgid ""
+"<strong>Fedora %(rel)s %(state)s</strong> released! <a "
+"href=\"%(link)s\">Test it now ></a>"
+msgstr ""
+"<strong>Fedora %(rel)s %(state)s</strong> disponível! <a "
+"href=\"%(link)s\">Teste agora</a>"
+
+#: data/content/index.html:43
+#, python-format
+msgid "Fedora %(rel)s released! Get it now."
+msgstr "Fedora %(rel)s disponível! Obtenha-o agora."
+
+#: data/content/index.html:56 data/content/index.html:102
+#: data/content/index.html:138
+msgid "ARM<span class=\"sup\">®</span> Servers"
+msgstr "Servidores ARM<span class=\"sup\">®</span>"
+
+#: data/content/index.html:61 data/content/index.html:107
+#: data/content/index.html:143
+msgid ""
+"These images are geared towards ARM-based computers used as servers, "
+"typically in a headless environment."
+msgstr ""
+"Estas imagens são voltadas para computadores baseados em ARM utilizados como"
+" servidores, tipicamente sem ambiente gráfico."
+
+#: data/content/index.html:69 data/content/index.html:116
+#: data/content/index.html:152 data/content/prerelease.html:46
+#: data/content/prerelease.html:55
+msgid "Fedora Server"
+msgstr "Fedora Server"
+
+#: data/content/index.html:72 data/content/index.html:86
+#: data/content/index.html:278 data/content/prerelease.html:49
+#: data/content/prerelease.html:67 data/content/prerelease.html:213
+#, python-format
+msgid "%sMB raw image"
+msgstr "Imagem raw %sMB"
+
+#: data/content/index.html:75 data/content/index.html:89
+#: data/content/index.html:117 data/content/index.html:126
+#: data/content/index.html:155 data/content/index.html:166
+#: data/content/index.html:197 data/content/index.html:211
+#: data/content/index.html:225 data/content/index.html:239
+#: data/content/index.html:253 data/content/index.html:267
+#: data/content/index.html:281 data/content/index.html:309
+#: data/content/index.html:318 data/content/index.html:327
+#: data/content/index.html:336 data/content/index.html:345
+#: data/content/index.html:354 data/content/index.html:363
+#: data/content/index.html:392 data/content/index.html:403
+#: data/content/index.html:414 data/content/index.html:425
+#: data/content/index.html:436 data/content/index.html:447
+#: data/content/index.html:458 data/content/index.html:489
+#: data/content/index.html:517 data/content/index.html:546
+#: data/content/prerelease.html:52 data/content/prerelease.html:56
+#: data/content/prerelease.html:70 data/content/prerelease.html:74
+#: data/content/prerelease.html:88 data/content/prerelease.html:92
+#: data/content/prerelease.html:106 data/content/prerelease.html:110
+#: data/content/prerelease.html:124 data/content/prerelease.html:128
+#: data/content/prerelease.html:142 data/content/prerelease.html:146
+#: data/content/prerelease.html:160 data/content/prerelease.html:164
+#: data/content/prerelease.html:178 data/content/prerelease.html:182
+#: data/content/prerelease.html:216 data/content/prerelease.html:220
+#: data/templates/footer.html:38
+msgid "Download"
+msgstr "Baixar"
+
+#: data/content/index.html:75 data/content/index.html:89
+#: data/content/index.html:117 data/content/index.html:126
+#: data/content/index.html:155 data/content/index.html:166
+#: data/content/index.html:197 data/content/index.html:211
+#: data/content/index.html:225 data/content/index.html:239
+#: data/content/index.html:253 data/content/index.html:267
+#: data/content/index.html:281 data/content/index.html:309
+#: data/content/index.html:318 data/content/index.html:327
+#: data/content/index.html:336 data/content/index.html:345
+#: data/content/index.html:354 data/content/index.html:363
+#: data/content/index.html:392 data/content/index.html:403
+#: data/content/index.html:414 data/content/index.html:425
+#: data/content/index.html:436 data/content/index.html:447
+#: data/content/index.html:458 data/content/index.html:489
+#: data/content/index.html:517 data/content/index.html:546
+#: data/content/prerelease.html:52 data/content/prerelease.html:56
+#: data/content/prerelease.html:70 data/content/prerelease.html:74
+#: data/content/prerelease.html:88 data/content/prerelease.html:92
+#: data/content/prerelease.html:106 data/content/prerelease.html:110
+#: data/content/prerelease.html:124 data/content/prerelease.html:128
+#: data/content/prerelease.html:142 data/content/prerelease.html:146
+#: data/content/prerelease.html:160 data/content/prerelease.html:164
+#: data/content/prerelease.html:178 data/content/prerelease.html:182
+#: data/content/prerelease.html:216 data/content/prerelease.html:220
+msgid "Verify"
+msgstr "Verificar"
+
+#: data/content/index.html:83 data/content/index.html:125
+#: data/content/index.html:163 data/content/prerelease.html:64
+#: data/content/prerelease.html:73
+msgid "Fedora Minimal"
+msgstr "Fedora Minimal"
+
+#: data/content/index.html:178 data/content/index.html:294
+#: data/content/index.html:375
+msgid "Desktop Computing"
+msgstr "Computação Desktop"
+
+#: data/content/index.html:183 data/content/index.html:299
+#: data/content/index.html:380
+msgid ""
+"These images are for ARM-based mediacenters, kiosks, laptops, and other ARM-"
+"powered devices where a graphical interface is desired."
+msgstr ""
+"Estas imagens são para mídia centers baseados em ARM, notebooks, e outros "
+"dispositivos ARM aonde uma interface gráfica é desejada."
+
+#: data/content/index.html:191 data/content/index.html:308
+#: data/content/index.html:389 data/content/prerelease.html:82
+#: data/content/prerelease.html:91
+msgid "Fedora Workstation"
+msgstr "Fedora Workstation"
+
+#: data/content/index.html:194 data/content/index.html:208
+#: data/content/index.html:222 data/content/index.html:236
+#: data/content/index.html:250 data/content/index.html:264
+#: data/content/index.html:486 data/content/prerelease.html:85
+#: data/content/prerelease.html:103 data/content/prerelease.html:121
+#: data/content/prerelease.html:139 data/content/prerelease.html:157
+#: data/content/prerelease.html:175
+#, python-format
+msgid "%sGB raw image"
+msgstr "Imagem raw de %sGB"
+
+#: data/content/index.html:205 data/content/index.html:317
+#: data/content/index.html:400 data/content/prerelease.html:100
+#: data/content/prerelease.html:109
+msgid "KDE Plasma Desktop"
+msgstr "KDE Plasma Desktop"
+
+#: data/content/index.html:219 data/content/index.html:326
+#: data/content/index.html:411 data/content/prerelease.html:118
+#: data/content/prerelease.html:127
+msgid "Xfce Desktop"
+msgstr "Xfce Desktop"
+
+#: data/content/index.html:233 data/content/index.html:335
+#: data/content/index.html:422 data/content/prerelease.html:154
+#: data/content/prerelease.html:163
+msgid "LXQt Desktop"
+msgstr "Ambiente LXQt"
+
+#: data/content/index.html:247 data/content/index.html:344
+#: data/content/index.html:433 data/content/prerelease.html:136
+#: data/content/prerelease.html:145
+msgid "LXDE Desktop"
+msgstr "LXDE Desktop"
+
+#: data/content/index.html:261 data/content/index.html:353
+#: data/content/index.html:444 data/content/prerelease.html:172
+#: data/content/prerelease.html:181
+msgid "MATE-Compiz Desktop"
+msgstr "MATE-Compiz Desktop"
+
+#: data/content/index.html:275 data/content/index.html:362
+#: data/content/index.html:455 data/content/prerelease.html:210
+#: data/content/prerelease.html:219
+msgid "Sugar on a Stick"
+msgstr "Sugar on a Stick"
+
+#: data/content/index.html:470 data/content/index.html:502
+#: data/content/index.html:529
+msgid "ARM<span class=\"sup\">®</span> Labs"
+msgstr ""
+
+#: data/content/index.html:475 data/content/index.html:507
+#: data/content/index.html:534
+msgid ""
+"These images are for ARM-based devices where a bundle of purpose-drive "
+"software is needed."
+msgstr ""
+
+#: data/content/index.html:483 data/content/index.html:516
+#: data/content/index.html:543
+msgid "Python-Classroom"
+msgstr ""
+
+#: data/content/index.html:558
+msgid "What is ARM<span class=\"sup\">®</span> Technology?"
+msgstr "O que é tecnologia ARM<span class=\"sup\">®</span>?"
+
+#: data/content/index.html:559 data/content/prerelease.html:237
+msgid ""
+"ARM microprocessors are the most widely-produced processor family in the "
+"world; they have historically been used in cell phones and embedded "
+"applications, and are increasingly used in tablet devices and low-power-"
+"consumption servers."
+msgstr ""
+"Os microprocessadores ARM são a família de processadores mais produzida no "
+"mundo; historicamente, eles são usados em telefones celulares e em sistemas "
+"embarcados. Eles são usados cada vez mais em dispositivos como tablets e "
+"servidores com baixo consumo de energia."
+
+#: data/content/index.html:560 data/content/prerelease.html:238
+msgid ""
+"The Fedora ARM project is an initiative to bring Fedora to this processor "
+"family. The images provided here are versions of Fedora tailored for running"
+" in on ARM-based systems."
+msgstr ""
+"O projeto Fedora ARM é uma iniciativa para levar o Fedora até essa família "
+"de processadores. As imagens fornecidas aqui são versões do Fedora sob "
+"medida para execução em sistemas baseados em ARM."
+
+#: data/content/index.html:571 data/content/prerelease.html:249
+msgid "Support Resources"
+msgstr "Recursos suportados"
+
+#: data/content/index.html:576 data/content/prerelease.html:254
+msgid "Documentation"
+msgstr "Documentação"
+
+#: data/content/index.html:577 data/content/prerelease.html:255
+#, python-format
+msgid ""
+"Fedora ARM documentation and installation guides are available at the <a "
+"href=\"%s\">Fedora ARM wiki page</a>."
+msgstr ""
+"A documentação e os guias de instalação estão disponíveis na <a "
+"href=\"%s\">página wiki do Fedora ARM</a>."
+
+#: data/content/index.html:580 data/content/prerelease.html:258
+msgid "Email"
+msgstr "Email"
+
+#: data/content/index.html:581 data/content/prerelease.html:259
+#, python-format
+msgid ""
+"Users and developers are also available on the mailing list at <a "
+"href=\"%s\">arm@lists.fedoraproject.org</a>."
+msgstr ""
+"Usuários e desenvolvedores estão disponíveis na lista de discussão em <a "
+"href=\"%s\">arm@lists.fedoraproject.org</a>."
+
+#: data/content/index.html:584 data/content/prerelease.html:262
+msgid "Chat"
+msgstr "Bate-papo"
+
+#: data/content/index.html:585 data/content/prerelease.html:263
+#, python-format
+msgid ""
+"Users and developers are available in the <a href=\"%s\">#fedora-arm</a> irc"
+" channel on <strong>irc.freenode.org</strong> for real-time chat."
+msgstr ""
+"Usuários e desenvolvedores estão disponíveis no canal IRC <a href=\"%s"
+"\">#fedora-arm</a> no <strong>irc.freenode.org</strong> para um bate-papo."
+
+#: data/content/index.html:590 data/content/prerelease.html:268
+msgid "General Help Using Fedora"
+msgstr "Ajuda Geral Usando o Fedora"
+
+#: data/content/index.html:591 data/content/prerelease.html:269
+#, python-format
+msgid ""
+"Sometimes you may encounter an issue with this spin that you can get help "
+"with using general Fedora support resources. A list of resources is "
+"available at the <a href=\"%s\">Fedora “Get Help” page</a>."
+msgstr ""
+"As vezes você poderá encontrar algum problema com este spin e poderá obter "
+"ajuda utilizando recursos de suporte geral do Fedora. Uma lista de recursos "
+"está disponível na página do<a href=\"%s\">Fedora “Obter Ajuda”</a>."
+
+#: data/content/prerelease.html:8
+msgid "Fedora ARM Prerelease Images"
+msgstr "Imagens de pré-lançamento do Fedora ARM"
+
+#: data/content/prerelease.html:21
+#, python-format
+msgid ""
+"Download Fedora %(rel)s %(state)s for ARM<span class=\"sup\">®</span>-based "
+"Computers"
+msgstr ""
+"Baixar o Fedora %(rel)s %(state)s para Computadores baseados em ARM<span "
+"class=\"sup\">®</span>"
+
+#: data/content/prerelease.html:26
+#, python-format
+msgid ""
+"This is pre-release software and is supported by the <a "
+"href=\"%(team_url)s\">ARM Team</a>. Please direct questions to their <a "
+"href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on freenode."
+msgstr ""
+"Este é um software de pré-lançamento e é mantido pelo <a "
+"href=\"%(team_url)s\">ARM Team</a>. Por favor, direcione perguntas para sua "
+"<a href=\"%(team_list)s\">lista de discussão</a> ou %(team_irc)s na "
+"freenode."
+
+#: data/content/prerelease.html:27
+#, python-format
+msgid ""
+"All issues or bugs should be reported via the <a href=\"%s\">Red Hat "
+"Bugzilla</a>. The Fedora Project makes no guarantees as to its suitability "
+"or usefulness."
+msgstr ""
+"Todas as questões ou bugs devem ser comunicadas através do <a "
+"href=\"%s\">Red Hat Bugzilla</a>. O Projeto Fedora não dá nenhuma garantia "
+"quanto à sua adequação ou utilidade."
+
+#: data/content/prerelease.html:29 data/content/prerelease.html:31
+#, python-format
+msgid ""
+"Read the <a href=\"%(relnotes_url)s\">Release Notes</a> for more information"
+" on changes and new features, and the <a href=\"%(commonbugs_url)s\">Common "
+"Bugs</a> page for information on commonly-encountered bugs and how to avoid "
+"them."
+msgstr ""
+"Leia as <a href=\"%(relnotes_url)s\">Notas de lançamento</a> para maiores "
+"informações sobre mudanças e novos recursos, e a página de <a "
+"href=\"%(commonbugs_url)s\">Bugs comuns</a> para informações sobre os bugs "
+"mais comumente encontrados e saber como evitá-los."
+
+#: data/content/prerelease.html:236
+msgid "What is ARM Technology?"
+msgstr "O que é a tecnologia ARM?"
+
+#: data/content/verify.html:8 data/content/verify.html:18
+msgid "Verify your Downloaded Image"
+msgstr "Verifique a sua imagem baixada"
+
+#: data/content/verify.html:20
+msgid "CHECKSUM and Verify Instructions"
+msgstr "CHECKSUM e instruções de verificação"
+
+#: data/content/verify.html:30
+msgid "How do I verify my image?"
+msgstr "Como eu verifico minha imagem?"
+
+#: data/content/verify.html:31
+msgid ""
+"Once you have downloaded an image, verify it for security and integrity. To "
+"verify your image, start by downloading the proper CHECKSUM file into the "
+"same directory as the image you downloaded."
+msgstr ""
+"Uma vez que tenha baixado uma imagem, verifique-a quanto a segurança e "
+"integridade. Para verificar sua imagem, comece por baixar o arquivo CHECKSUM"
+" apropriado para o mesmo diretório da imagem:"
+
+#: data/content/verify.html:36
+msgid "Server"
+msgstr "Servidor"
+
+#: data/content/verify.html:38
+msgid "Validate Server!"
+msgstr "Validar Server!"
+
+#: data/content/verify.html:41
+msgid "Validate Minimal!"
+msgstr "Validar Mínima!"
+
+#: data/content/verify.html:45
+msgid "Desktop"
+msgstr "Desktop"
+
+#: data/content/verify.html:47
+msgid "Validate Workstation!"
+msgstr "Validar Workstation!"
+
+#: data/content/verify.html:50
+msgid "Validate Spins!"
+msgstr "Validar Spins!"
+
+#: data/content/verify.html:54
+msgid "Labs"
+msgstr ""
+
+#: data/content/verify.html:56
+msgid "Validate Labs!"
+msgstr ""
+
+#: data/content/verify.html:63
+msgid "Next, import Fedora's GPG key(s):"
+msgstr "Em seguida, importe a(s) chave(s) GPG do Fedora:"
+
+#: data/content/verify.html:65
+#, python-format
+msgid ""
+"You can verify the details of the GPG key(s) <a "
+"href=\"%s/%s/keys\">here</a>."
+msgstr ""
+"Você pode verificar os detalhes da(s) chave(s) GPG <a "
+"href=\"%s/%s/keys\">aqui</a>."
+
+#: data/content/verify.html:66
+msgid "Now, verify that the CHECKSUM file is valid:"
+msgstr "Agora, verifique se o arquivo CHECKSUM é válido:"
+
+#: data/content/verify.html:68
+msgid ""
+"The CHECKSUM file should have a good signature from one of the following "
+"keys:"
+msgstr ""
+"O arquivo CHECKSUM deve ter uma boa assinatura de uma das seguintes chaves:"
+
+#: data/content/verify.html:70
+msgid "Fedora 29"
+msgstr ""
+
+#: data/content/verify.html:71
+msgid "Fedora 28"
+msgstr "Fedora 28"
+
+#: data/content/verify.html:72
+msgid "Fedora 27"
+msgstr "Fedora 27"
+
+#: data/content/verify.html:73
+msgid "Fedora 26"
+msgstr "Fedora 26"
+
+#: data/content/verify.html:74
+msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
+msgstr ""
+"Arquiteturas secundárias do Fedora 26 (AArch64, PPC64, PPC64le, s390 e "
+"s390x)"
+
+#: data/content/verify.html:76
+msgid ""
+"Finally, now that the CHECKSUM file has been verified, check that the "
+"image's checksum matches:"
+msgstr ""
+"Finalmente, agora que o arquivo CHECKSUM foi verificado, verifique se o "
+"checksum da image corresponde:"
+
+#: data/content/verify.html:78
+msgid "If the output states that the file is valid, then it's ready to use!"
+msgstr ""
+"Se a saída indica que o arquivo é válido, então ele está pronto para uso!"
+
+#: data/content/verify.html:79
+msgid "How do I verify my downloaded image on another operating system?"
+msgstr "Como verifico a imagem baixada em outro sistema operacional?"
+
+#: data/content/verify.html:80
+msgid "Read these instructions to validate your image."
+msgstr "Leia estas instruções para validar sua imagem."
+
+#: data/content/e/404.html:7
+msgid "Fedora Project - Page Not Found"
+msgstr "Projeto Fedora - página não encontrada"
+
+#: data/content/e/404.html:16
+msgid "404: Page Not Found"
+msgstr "404: página não encontrada"
+
+#: data/content/e/404.html:18
+msgid "We apologize, but the file or page you requested could not be found."
+msgstr ""
+"Desculpe-nos, mas o arquivo ou a página que você solicitou não foi "
+"encontrado."
+
+#: data/content/e/404.html:25
+msgid "Troubleshooting Ideas"
+msgstr "Ideias para solução de problemas"
+
+#: data/content/e/404.html:29
+msgid ""
+"Double-check the URL if you entered it manually. Did you copy it correctly?"
+msgstr ""
+"Verifique novamente a URL caso você tenha digitado manualmente. Você a "
+"copiou corretamente?"
+
+#: data/content/e/404.html:32
+#, python-format
+msgid ""
+"Bad Link? Contact <a href=\"%s\">the webmaster</a> and explain which link "
+"brought you here."
+msgstr ""
+"Link quebrado? Contate <a href=\"%s\">o webmaster</a> e explique qual link "
+"lhe trouxe aqui. "
+
+#: data/content/e/404.html:35
+#, python-format
+msgid ""
+"The page or file may have moved. Check the <a href=\"%(fpo)s\">main site</a>"
+" or search our <a href=\"%(wiki)s\">wiki</a>."
+msgstr ""
+"A página ou o arquivo pode ter sido movido. Verifique o <a "
+"href=\"%(fpo)s\">site principal</a> ou procure na nossa <a "
+"href=\"%(wiki)s\">wiki</a>."
+
+#: data/templates/footer.html:14
+msgid "About"
+msgstr "Sobre"
+
+#: data/templates/footer.html:17
+msgid "About Fedora"
+msgstr "Sobre o Fedora"
+
+#: data/templates/footer.html:18
+msgid "Sponsors"
+msgstr "Patrocinadores"
+
+#: data/templates/footer.html:19
+msgid "Fedora Magazine"
+msgstr "Fedora Magazine"
+
+#: data/templates/footer.html:20
+msgid "Legal"
+msgstr "Legal"
+
+#: data/templates/footer.html:21
+msgid "Fedora Code of Conduct"
+msgstr ""
+
+#: data/templates/footer.html:41
+msgid "Get Fedora Workstation"
+msgstr "Fedora Workstation"
+
+#: data/templates/footer.html:42
+msgid "Get Fedora Server"
+msgstr "Fedora Server"
+
+#: data/templates/footer.html:43
+msgid "Get Fedora Atomic"
+msgstr "Obter o Fedora Atomic"
+
+#: data/templates/footer.html:44
+msgid "Fedora Spins"
+msgstr "Fedora Spins"
+
+#: data/templates/footer.html:45
+msgid "Fedora Labs"
+msgstr "Fedora Labs"
+
+#: data/templates/footer.html:46
+msgid "Fedora ARM<span class=\"sup\">®</span>"
+msgstr "Fedora ARM<span class=\"sup\">®</span>"
+
+#: data/templates/footer.html:47
+msgid "Alternative Downloads"
+msgstr "Downloads alternativos"
+
+#: data/templates/footer.html:54
+msgid "Support"
+msgstr "Suporte"
+
+#: data/templates/footer.html:57
+msgid "Get Help"
+msgstr "Obter Ajuda"
+
+#: data/templates/footer.html:58
+msgid "Ask Fedora"
+msgstr "Pergunte ao Fedora"
+
+#: data/templates/footer.html:59
+msgid "Common Bugs"
+msgstr "Problemas comuns"
+
+#: data/templates/footer.html:60
+msgid "Fedora Developer Portal"
+msgstr "Portal Fedora Developer"
+
+#: data/templates/footer.html:61
+msgid "Installation Guide"
+msgstr "Guia de instalação"
+
+#: data/templates/footer.html:67
+msgid "Join"
+msgstr "Entre"
+
+#: data/templates/footer.html:70
+msgid "Join Fedora"
+msgstr "Junte-se ao Fedora"
+
+#: data/templates/footer.html:71
+msgid "Planet Fedora"
+msgstr "Planeta Fedora"
+
+#: data/templates/footer.html:72
+msgid "Fedora SIGs"
+msgstr "Fedora SIGs"
+
+#: data/templates/footer.html:73
+msgid "Fedora Account System"
+msgstr "Sistema de contas do Fedora"
+
+#: data/templates/footer.html:74
+msgid "Fedora Community"
+msgstr "Comunidade Fedora"
+
+#: data/templates/footer.html:88
+msgid "Fedora is sponsored by Red Hat."
+msgstr "O Fedora é patrocinado pela Red Hat."
+
+#: data/templates/footer.html:89
+msgid "Learn more about the relationship between Red Hat and Fedora »"
+msgstr "Saiba mais sobre a relação entre Red Hat e Fedora »"
+
+#: data/templates/footer.html:90
+#, python-format
+msgid "© %(year)s Red Hat, Inc. and others."
+msgstr "© %(year)s Red Hat, Inc. e outros."
+
+#: data/templates/footer.html:90
+msgid ""
+"Please send any comments or corrections to the <a href=\"//pagure.io/fedora-"
+"websites\">websites team</a>."
+msgstr ""
+"Por favor envie quaisquer comentários ou correções para o <a "
+"href=\"//pagure.io/fedora-websites\">time de websites</a>."
+
+#: data/templates/footer.html:96
+msgid "Change Language"
+msgstr "Mudar idioma"
+
+#: data/templates/footer.html:100
+msgid "OK"
+msgstr "OK"
+
+#: data/templates/head.html:13
+msgid "Fedora Images for ARM<sup>®</sup>-based Computers"
+msgstr "Imagens do Fedora para Computadores baseados em ARM<sup>®</sup>"
+
+#: data/templates/generic/docs-links.html:8
+msgid "Documentation and other resources"
+msgstr "Documentação e outros recursos"
+
+#: data/templates/generic/docs-links.html:9
+#, python-format
+msgid ""
+"Before installing Fedora, you may want to confirm your system meets minimum "
+"requirements for Fedora. Consult <a href=\"%(release_notes)s\">the online "
+"release notes</a> to see minimum requirements and recommendations."
+msgstr ""
+
+#: data/templates/generic/docs-links.html:10
+#, python-format
+msgid ""
+"There is also a <a href=\"%(install_guide)s\">complete Installation "
+"Guide</a> available. We recommend you look through it before installing to "
+"your system, since it answers many common questions."
+msgstr ""
+
+#: data/templates/generic/other-media-sources.html:8
+msgid "Other ways of obtaining media"
+msgstr "Outras formas de obtenção da mídia"
+
+#: data/templates/generic/other-media-sources.html:9
+#, python-format
+msgid ""
+"You may purchase installation media for Fedora from <a href=\"%s\">online "
+"vendors</a> or a <a href=\"%s\">local vendor</a> in your area."
+msgstr ""
+"Você pode comprar a mídia de instalação do Fedora com <a "
+"href=\"%s\">vendedores on-line</a> ou com <a href=\"%s\">vendedores "
+"locais</a> na sua região."
+
+#: data/templates/generic/other-media-sources.html:10
+#, python-format
+msgid ""
+"Can't afford the price of installation media? Request Fedora installation "
+"media from the <a href=\"%s\">Fedora Free Media Program</a>."
+msgstr ""
+"Não pode pagar o preço da mídia de instalação? Solicite a mídia de "
+"instalação do Fedora pelo <a href=\"%s\"> programa de mídia gratuita do "
+"Fedora</a>."

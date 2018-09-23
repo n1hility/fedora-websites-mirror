@@ -69,6 +69,15 @@ except ImportError:
     schedule = None
     pass
 
+# iot.fpo
+try:
+    import iot_compose
+    iot_compose_links = iot_compose.iot_compose_links()
+except ImportError:
+    iot_compose_links = None
+    pass
+
+
 
 # Avoid race condition for concurrent builds
 def safe_makedir(path):
@@ -230,7 +239,8 @@ def process_dir(dirpath, filenames):
             curpage=curpage,
             global_variables=globalvar,
             schedule = release_date,
-            ec2_ami = ec2
+            ec2_ami = ec2,
+            iot_links = iot_compose_links
             ).render(method='html', doctype='html', encoding='utf-8')
         output = open(dest_file, 'w')
         output.write(page)
