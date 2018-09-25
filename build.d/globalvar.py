@@ -13,7 +13,7 @@ release={
     'curr_cloud_state':  'Beta',     # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_cloud_AMI_state':  'Beta', # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_server_state':  'Beta',    # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_atomic_state':  '',        # No Alpha/Beta for Atomic Host
+    'curr_atomic_state':  'Pre-Release',        # No Alpha/Beta for Atomic Host
     'prev_arm_id': '27',
     'prev_alt_id': '27',
     'prev_cloud_id': '27',
