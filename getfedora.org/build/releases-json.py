@@ -11,7 +11,7 @@ def hashify(version, milestone, arch, link, variant, subvariant):
            , 'subvariant': subvariant
            }
 releases_to_report = [
-      #fedfind.release.get_release(28, 'Beta'),
+      fedfind.release.get_release(29, 'Beta'),
       fedfind.release.get_release(28),
       fedfind.release.get_release(27)
     ]
