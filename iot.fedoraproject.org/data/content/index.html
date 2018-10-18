@@ -27,7 +27,7 @@
       <div class="row">
 	    <div class="col-xs-12 caption">
 	      <h2 class="text-center">${Markup(_('What is Fedora Internet of Things Edition?'))}</h2>
-	      <p class="thin text-justify">${_('Fedora Internet of Things is an edition of Fedora that...')}</p>
+	      <p class="thin text-justify">${_('Fedora Internet of Things is a variant of Fedora focused on IoT ecosystems. Whether you\'re working on a home assistant, industrial gateways, or data storage and analytics, Fedora IoT provides a trusted open source platform to build on. Fedora IoT produces a monthly rolling release to help you keep your ecosystem up-to-date.')}</p>
         </div>
       </div>
     </div>
@@ -45,24 +45,40 @@
           <p>${_('Download the latest version of Fedora IoT Edition for your architecture here.')}</p>
         </div>
         <div class="col-md-9">
-          <div py:for="k,v in iot_links['arches'].iteritems()" class="white">
+          <!-- No margin/padding on this first one so the top lines up. -->
+          <h3 style="margin-top: 0 !important; padding-top: 0 !important;">${_('Raw Images')}</h3>
+          <div py:for="k1,v1 in iot_links['type']['raw-xz'].iteritems()" class="white">
             <div class="col-md-1">
               <img src="/static/images/minimal.png" />
             </div>
             <div class="col-md-7">
-              <h3>${k}</h3>
+              <h3>${k1}</h3>
             </div>
             <div class="col-md-4 text-right">
-              <p class="download text-right"><a href="${v['iso']}">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+              <p class="download text-right"><a href="${v1}">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
             </div>
           </div>
+
+          <h3>${_('Installer ISOs')}</h3>
+          <div py:for="k1,v1 in iot_links['type']['dvd-ostree'].iteritems()" class="white">
+            <div class="col-md-1">
+              <img src="/static/images/minimal.png" />
+            </div>
+            <div class="col-md-7">
+              <h3>${k1}</h3>
+            </div>
+            <div class="col-md-4 text-right">
+              <p class="download text-right"><a href="${v1}">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+
           <em><small>Latest release: ${iot_links['date']}</small></em>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- IoT mobile phones-->
+  <!-- IoT mobile phones -->
   <div class="jumbotron main-head visible-xs">
     <div class="container using">
       <div class="row">
@@ -76,21 +92,35 @@
         </div>
       </div>
       <div class="row">
-        <div py:for="k,v in iot_links['arches'].iteritems()" class="white">
+        <!-- No margin/padding on this first one so the top lines up. -->
+        <h3 style="margin-top: 0 !important; padding-top: 0 !important;">${_('Raw Images')}</h3>
+        <div py:for="k1,v1 in iot_links['type']['raw-xz'].iteritems()" class="white">
           <div class="col-xs-3">
             <img src="/static/images/minimal.png" />
           </div>
-          <div class="col-xs-9">
-            <h3>${k}</h3>
-            <p class="download"><a href="${v['iso']}">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          <div class="col-md-9">
+            <h3>${k1}</h3>
+            <p class="download"><a href="${v1}">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
           </div>
         </div>
+
+        <h3>${_('Installer ISOs')}</h3>
+        <div py:for="k1,v1 in iot_links['type']['dvd-ostree'].iteritems()" class="white">
+          <div class="col-xs-3">
+            <img src="/static/images/minimal.png" />
+          </div>
+          <div class="col-md-9">
+            <h3>${k1}</h3>
+            <p class="download"><a href="${v1}">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+
         <em><small>Latest release: ${iot_links['date']}</small></em>
       </div>
     </div>
   </div>
 
-  <!-- IoT mobile tablets-->
+  <!-- IoT mobile tablets -->
   <div class="jumbotron main-head visible-sm">
     <div class="container using">
       <div class="row">
@@ -99,22 +129,38 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 product-feature">
+        <div class="col-md-12 product-feature">
           <p>${_('Download the latest version of Fedora IoT Edition for your architecture here.')}</p>
         </div>
       </div>
       <div class="row">
-        <div py:for="k,v in iot_links['arches'].iteritems()" class="white">
+        <!-- No margin/padding on this first one so the top lines up. -->
+        <h3 style="margin-top: 0 !important; padding-top: 0 !important;">${_('Raw Images')}</h3>
+        <div py:for="k1,v1 in iot_links['type']['raw-xz'].iteritems()" class="white">
           <div class="col-sm-3">
             <img src="/static/images/minimal.png" />
           </div>
           <div class="col-sm-5">
-            <h3>${k}</h3>
+            <h3>${k1}</h3>
           </div>
           <div class="col-sm-4">
-            <p class="download"><a href="${v['iso']}">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+            <p class="download text-right"><a href="${v1}">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
           </div>
         </div>
+
+        <h3>${_('Installer ISOs')}</h3>
+        <div py:for="k1,v1 in iot_links['type']['dvd-ostree'].iteritems()" class="white">
+          <div class="col-sm-3">
+            <img src="/static/images/minimal.png" />
+          </div>
+          <div class="col-sm-5">
+            <h3>${k1}</h3>
+          </div>
+          <div class="col-sm-4">
+            <p class="download text-right"><a href="${v1}">${_('Download')}</a> | <a href="verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+
         <em><small>Latest release: ${iot_links['date']}</small></em>
       </div>
     </div>

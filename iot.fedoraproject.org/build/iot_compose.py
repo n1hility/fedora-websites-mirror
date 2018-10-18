@@ -9,29 +9,23 @@ except ImportError:
     print "Unable to import globalvar"
     sys.exit(1)
 
-IOT_ARCHES = ['x86_64', 'aarch64']
 VERSION = globalvar.release['curr_iot_id']
+BASEURL = 'https://dl.fedoraproject.org/pub/alt/iot/' + VERSION + '/'
 
 def iot_compose_links():
-    compose = requests.get(
-        'https://kojipkgs.fedoraproject.org/compose/iot/latest-Fedora-IoT-' +
-         VERSION + '/COMPOSE_ID').text
+    json = requests.get(BASEURL + '/metadata/images.json').json()
 
-    date = compose.split('-')[-1].split('.')[0]
+    date = json['payload']['compose']['date']
 
     links = {}
     links['date'] = date[0:4] + '-' + date[4:6] + '-' + date[6:8]
-    links['arches'] = {}
+    links['type'] = {}
 
-    for arch in IOT_ARCHES:
-        if arch not in links['arches'].keys():
-            links['arches'][arch] = {}
-        compose_iso = compose.replace(
-            'Fedora-IoT',
-            'Fedora-IoT-dvd-' + arch)
+    for arch,lst in json['payload']['images']['IoT'].iteritems():
+        for img in lst:
+            if img['type'] not in links['type'].keys():
+                links['type'][img['type']] = {}
 
-        links['date'] = date[0:4] + '-' + date[4:6] + '-' + date[6:8]
-        links['arches'][arch]['iso'] = 'https://kojipkgs.fedoraproject.org/compose/' +\
-                      'iot/latest-Fedora-IoT-' + VERSION + '/compose/IoT/' +\
-                      arch + '/iso/' + compose_iso + '.iso'
+            links['type'][img['type']][img['arch']] = BASEURL + img['path']
+
     return links
