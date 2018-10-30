@@ -30,83 +30,126 @@
       <div class="row">
         <div class="col-md-7 col-md-offset-5 text-left">
           <h2>${Markup(_('Download Fedora %(rel)s Server')) % {'rel':global_variables.release['curr_server_id']}}</h2>
-            <p><a class="btn btn-success server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/x86_64/iso/Fedora-Server-dvd-x86_64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.iso" role="button">${_('Download')}</a></p>
-            <h5>${Markup(_('64-bit %sGB installation image')) % global_variables.iso_size['x86_64_server_DVD']}</h5>
+            <h5>${Markup(_('Select the format and architecture you require from the list below to get started using Fedora Server now.'))}</h5>
         </div>
       </div>
     </div>
   </header>
-    <div class="container recover-heading top-space">
+    <div class="container recover-heading">
       <div class="row">
-        <div class="col-md-8 text-left bottom-space top-space">
+        <div class="col-md-8 text-left bottom-space">
+          <h2>${_('Fedora Server Images')}</h2>
           <p>${_('The Fedora Server installation image allows you to make media for your computer that boots to the installer to directly install Fedora Server on to your hard drive')}</p>
           <p>${_('To use this image, you need a drive that can create or "burn" DVDs, or a USB flash drive at least as big as the image.')}</p>
+
+          <h3>${_('x86_64 Images')}</h3>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>${_('Description')}</th>
+                <th class="hidden-xs">${_('Size')}</th>
+                <th>${_('Download')}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DVD ISO</td>
+                <td>${Markup(_('%sGB')) % global_variables.iso_size['x86_64_server_DVD']}</td>
+                <td>
+                  <a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/x86_64/iso/Fedora-Server-dvd-x86_64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.iso" role="button">${_('Download')}</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Net-install ISO</td>
+                <td>${Markup(_('%sMB')) % global_variables.iso_size['x86_64_server_net']}</td>
+                <td>
+                  <a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.iso">${_('Download')}</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+
+
+          <h3>${_('aarch64 Images')}</h3>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>${_('Description')}</th>
+                <th class="hidden-xs">${_('Size')}</th>
+                <th>${_('Download')}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DVD ISO</td>
+                <td>${Markup(_('%sGB')) % global_variables.iso_size['aarch64_Server_DVD']}</td>
+                <td>
+                  <a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.iso" role="button">${_('Download')}</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Net-install ISO</td>
+                <td>${Markup(_('%sMB')) % global_variables.iso_size['aarch64_Server_net']}</td>
+                <td>
+                  <a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/aarch64/iso/Fedora-Server-netinst-aarch64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.iso">${_('Download')}</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Raw Image</td>
+                <td>${Markup(_('%sMB')) % global_variables.iso_size['aarch64_Server_raw']}</td>
+                <td>
+                  <a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/aarch64/images/Fedora-Server-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.aarch64.raw.xz">${_('Download')}</a>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+
           <xi:include href="../../../templates/generic/docs-links.html" />
           <p>${Markup(_('If you would like to try out the new modular features of Fedora Server, please visit the &lt;a href="%(modules)s"&gt;Using Modules&lt;/a&gt; section of the Modularity Documentation. If you would like more information about Modularity in general, please see the &lt;a href="%(website)s"&gt;website on pagure&lt;/a&gt;.') % {'modules': 'https://docs.fedoraproject.org/fedora-project/subprojects/fesco/en-US/Using_Modules.html', 'website': 'https://docs.pagure.org/modularity/'})}</p>
           <xi:include href="../../../templates/generic/other-media-sources.html" />
           <hr />
           <xi:include href="../../../templates/export-regulations.html" />
-        </div>
+        </div> <!-- left col -->
+
         <div class="col-md-3 text-left col-md-offset-1">
-          <h3>${_('Other Downloads')}</h3>
-          <p>
-          ${_('Netinstall Image:')}
-          <ul>
-          <li><p><a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.iso">${Markup(_('64-bit %sMB image')) % global_variables.iso_size['x86_64_server_net']}</a></p></li>
-          <li><p><a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/aarch64/iso/Fedora-Server-netinst-aarch64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.iso">${Markup(_('aarch64 %sMB image')) % global_variables.iso_size['aarch64_Server_net']}</a></p></li>
-          </ul>
-          ${_('DVD ISO Image:')}
-          <ul>
-          <li><p><a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.iso">${Markup(_('aarch64 %sMB image')) % global_variables.iso_size['aarch64_Server_DVD']}</a></p></li>
-          </ul>
-          ${_('Raw Disk Image:')}
-          <ul>
-          <li><p><a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_server_id']}/Server/aarch64/images/Fedora-Server-${global_variables.release['curr_server_id']}-${global_variables.release['RC_server_gold']}.aarch64.raw.xz">${Markup(_('aarch64 %sMB image')) % global_variables.iso_size['aarch64_Server_raw']}</a></p></li>
-          </ul>
-          </p>
-          <div class="top-space bottom-margin">
-          <py:choose>
-            <py:when test="global_variables.release['curr_state'] == 'Alpha'">
-              <div class="prerelease-box">
-                <h5>${Markup(_('F%(rel)s Alpha')) % {'rel':global_variables.release['next_id']}}</h5>
-                <h4>${_('Try a pre-release')}</h4>
-                <p>${_('We\'re working on our next release.')}<br />
-                    ${Markup(_('Help us get F%(rel)s ready!')) % {'rel':global_variables.release['next_id']}}</p>
-                <p><i class="fa fa-fw fa-sm header-icon fa-download"></i><a href="../prerelease">${Markup(_('Download F%(rel)s Alpha images')) % {'rel':global_variables.release['next_id']}}</a></p>
-                <p><i class="fa fa-fw fa-sm header-icon fa-book"></i><a href="//fedoraproject.org/wiki/QA/Join#release-validation">${_('How to test pre-releases')}</a></p>
-              </div>
-            </py:when>
-            <py:when test="global_variables.release['curr_state'] == 'Beta'">
-              <div class="prerelease-box">
-                <h5>${Markup(_('F%(rel)s Beta')) % {'rel':global_variables.release['next_server_id']}}</h5>
-                <h4>${_('Try a pre-release')}</h4>
-                <p>${_('We\'re working on our next release.')}<br />
-                    ${Markup(_('Help us get F%(rel)s ready!')) % {'rel':global_variables.release['next_server_id']}}</p>
-                <p><i class="fa fa-fw fa-sm header-icon fa-download"></i><a href="../prerelease">${Markup(_('Download F%(rel)s Beta images')) % {'rel':global_variables.release['next_server_id']}}</a></p>
-                <p><i class="fa fa-fw fa-sm header-icon fa-book"></i><a href="//fedoraproject.org/wiki/QA/Join#release-validation">${_('How to test pre-releases')}</a></p>
-              </div>
-            </py:when>
-          </py:choose>
-          </div>
+          <py:if test="global_variables.release['curr_state'] == 'Beta'">
+            <h3>${_('Other Downloads')}</h3>
+            <div class="prerelease-box">
+              <h5>${Markup(_('F%(rel)s Beta')) % {'rel':global_variables.release['next_server_id']}}</h5>
+              <h4>${_('Try a pre-release')}</h4>
+              <p>${_('We\'re working on our next release.')}<br />
+                ${Markup(_('Help us get F%(rel)s ready!')) % {'rel':global_variables.release['next_server_id']}}</p>
+              <p><i class="fa fa-fw fa-sm header-icon fa-download"></i><a href="../prerelease">${Markup(_('Download F%(rel)s Beta images')) % {'rel':global_variables.release['next_server_id']}}</a></p>
+              <p><i class="fa fa-fw fa-sm header-icon fa-book"></i><a href="//fedoraproject.org/wiki/QA/Join#release-validation">${_('How to test pre-releases')}</a></p>
+            </div>
+          </py:if>
+
           <div class="bottom-margin">
             <h3>${_('Get more Fedora')}</h3>
             <div class="bottom-margin">
               <ul>
-              <li>
+                <li>
                   <p><a href="https://arm.fedoraproject.org/">${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; Technology'))}</a></p>
-              </li>
+                </li>
               </ul>
             </div>
           </div>
           <noscript>
-          <div class="bottom-margin">
-            <h3>${_('Verify')}</h3>
+            <div class="bottom-margin">
+              <h3>${_('Verify')}</h3>
               <ul>
-              <li>
+                <li>
                   <p><a href="/verify">${_('Verify your Image')}</a></p>
-              </li>
+                </li>
               </ul>
-          </div>
+            </div>
           </noscript>
         </div>
       </div>

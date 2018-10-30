@@ -78,7 +78,7 @@
                     </a>
                   </div>
                   <div id="gp2-reveal-link" class="col-xs-12" style="display: none;">
-                    <p>${_('GP2 format AMIs use faster SSD storage; use these AMIs for speed, although note your storage costs will be more than standard.')}</p>    
+                    <p>${_('GP2 format AMIs use faster SSD storage; use these AMIs for speed, although note your storage costs will be more than standard.')}</p>
                     <table class="table table-hover">
                       <thead>
                         <tr>
@@ -94,7 +94,7 @@
                           <td py:if="r.code in global_variables.GP2_HVM_atomic_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.GP2_HVM_atomic_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
                         </tr>
                       </tbody>
-                    </table>                    
+                    </table>
                   </div>
                 </div>
               </div>
@@ -109,7 +109,7 @@
                     </a>
                   </div>
                   <div id="standardami-reveal-link" class="col-xs-12" style="display: none;">
-                    <p>${_('Standard format AMIs are more suitable if you have infrequently accessed data and want to keep storage cost low.')}</p>    
+                    <p>${_('Standard format AMIs are more suitable if you have infrequently accessed data and want to keep storage cost low.')}</p>
                     <table class="table table-hover">
                       <thead>
                         <tr>
@@ -125,7 +125,7 @@
                           <td py:if="r.code in global_variables.HVM_atomic_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.HVM_atomic_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
                         </tr>
                       </tbody>
-                    </table>                   
+                    </table>
                   </div>
                 </div>
               </div>
@@ -163,7 +163,7 @@
               <div class="row">
                 <div class="col-xs-10">
                   <h5 class="bold mb-0">${_('libvirt/KVM Image for Vagrant')}</h5>
-                  <small>${_('If you\'re using Vagrant on Fedora, this is the image you\'ll want to use.')}</small> 
+                  <small>${_('If you\'re using Vagrant on Fedora, this is the image you\'ll want to use.')}</small>
                 </div>
                 <div class="col-xs-2 text-right">
                   <a href="${global_variables.release['atomic_libvag_cloud_url']}" class="btn btn-success download-cloud download-cloud-sm download-cloud-splash" role="button" title="${_('64-bit %sMB libvirt/KVM Base Vagrant Image') % global_variables.iso_size['atomic_libvag_cloud']}">
@@ -186,7 +186,7 @@
                     <p>${Markup(_('Use the following command to grab the Vagrant Box images from &lt;a href="%s"&gt;HashiCorp\'s Atlas&lt;/a&gt;.') % ('https://atlas.hashicorp.com/fedora'))}</p>
                   <pre>vagrant box add fedora/${global_variables.release['curr_atomic_id']}-atomic-host</pre>
                   <p>${Markup(_('If you\'ve previously run Fedora %(rel)s Atomic Host in Vagrant on your machine then you can get the latest version by running:')) % {'rel':global_variables.release['curr_atomic_id']}}</p>
-                  <pre>vagrant box update --box=fedora/${global_variables.release['curr_atomic_id']}-atomic-host</pre>               
+                  <pre>vagrant box update --box=fedora/${global_variables.release['curr_atomic_id']}-atomic-host</pre>
                 </div>
               </div>
             </div>
@@ -253,7 +253,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>           
+                  </div>
                 </div>
               </div>
             </div>
@@ -306,7 +306,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>           
+                  </div>
                 </div>
               </div>
             </div>
@@ -374,7 +374,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>           
+                  </div>
                 </div>
               </div>
             </div>
