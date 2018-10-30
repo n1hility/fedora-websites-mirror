@@ -91,10 +91,10 @@ def collect(release):
     # Hardcode AMIs for regions eu-west-3 and us-east-2 for F28 cloud-base
     # This is because fedmsg topic 'org.fedoraproject.prod.fedimg.image.upload'
     # doesn't have AMI information for these two regions.
-    results['HVM_base_AMI']['us-east-2'] = 'ami-8d3b09e8'
-    results['HVM_base_AMI']['eu-west-3'] = 'ami-fdcc7d80'
-    results['GP2_HVM_base_AMI']['us-east-2'] = 'ami-013b0964'
-    results['GP2_HVM_base_AMI']['eu-west-3'] = 'ami-a5cc7dd8'
+    results['HVM_base_AMI']['us-east-2'] = 'ami-0f7e779f5a384f9fc'
+    results['HVM_base_AMI']['eu-west-3'] = 'ami-0ee503641c4f61ba6'
+    results['GP2_HVM_base_AMI']['us-east-2'] = 'ami-0244a68a8bc141ff6'
+    results['GP2_HVM_base_AMI']['eu-west-3'] = 'ami-05f312c1e92fda9cd'
 
     shelf['timestamp'] = datetime.utcnow()
     shelf['collected'] = results
