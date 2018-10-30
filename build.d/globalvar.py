@@ -2,45 +2,45 @@
 # -*- coding: utf-8 -*-
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
 release={
-    'prev_id':     '27',
-    'curr_id':     '28',
-    'next_id':     '29',
+    'prev_id':     '28',
+    'curr_id':     '29',
+    'next_id':     '30',
     'curr_name':   '',
     'next_name':   '',
-    'curr_state':  'Beta',           # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_alt_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  'Beta',     # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_AMI_state':  'Beta', # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_server_state':  'Beta',    # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_atomic_state':  'Pre-Release',        # No Alpha/Beta for Atomic Host
-    'prev_arm_id': '27',
-    'prev_alt_id': '27',
-    'prev_cloud_id': '27',
-    'prev_atomic_id': '27',
-    'curr_arm_id': '28',
-    'curr_alt_id': '28',
-    'curr_cloud_id': '28',
-    'curr_atomic_id': '28',
-    'curr_server_id': '28',
-    'curr_cloud_AMI_id': '28',
+    'curr_state':  '',           # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_alt_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  '',     # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_AMI_state':  '', # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_server_state':  '',    # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_atomic_state':  '',    # 'Pre-Release' or '' - No Alpha/Beta for Atomic Host
+    'prev_arm_id': '28',
+    'prev_alt_id': '28',
+    'prev_cloud_id': '28',
+    'prev_atomic_id': '28',
+    'curr_arm_id': '29',
+    'curr_alt_id': '29',
+    'curr_cloud_id': '29',
+    'curr_atomic_id': '29',
+    'curr_server_id': '29',
+    'curr_cloud_AMI_id': '29',
     'curr_iot_id': '29',
     'curr_silverblue_id': '29',
-    'next_arm_id': '29',
-    'next_alt_id': '29',
-    'next_cloud_id': '29',
-    'next_atomic_id': '29',
-    'next_server_id': '29',
-    'next_cloud_AMI_id': '29',
+    'next_arm_id': '30',
+    'next_alt_id': '30',
+    'next_cloud_id': '30',
+    'next_atomic_id': '30',
+    'next_server_id': '30',
+    'next_cloud_AMI_id': '30',
     'composedate': '20160616',
-    'unofficial_compose': '20160614',
+    'unofficial_compose': '20181029',
     'alt_composedate': '20161118',
     # Fedora Media Writer
     'fmw': '4.1.1',
     # These variables are only necessary to keep fedoraproject.org working
-    'curr_ppc64_id': '28',
-    'prev_ppc64_id': '27',
-    'curr_s390_id': '28',
+    'curr_ppc64_id': '29',
+    'prev_ppc64_id': '28',
+    'curr_s390_id': '29',
     # Note that atomic values here get overwritten by the twoweek script.
     'atomic_composedate': '20160616',
     'pre_cloud_composedate': '20150915',
@@ -53,18 +53,18 @@ release={
     # Note that atomic values here get overwritten by the twoweek script.
     'pre_cloud_atomic_composedate': '20150915',
     'pre_cloud_AMI_atomic_composedate': '20150915',
-    'RC_gold': '1.1',             # insert the number of the RC version declared GOLD
-    'RC_server_gold': '1.1',      # insert the number of the RC version declared GOLD
-    'RC_build': '1.1',            # sometimes releng use the RC build
-    'RC_gold_aarch64': '1.1',     # RC Gold for aarch64
-    'RC_gold_ppc64': '1.1',       # RC Gold for ppc64
-    'RC_gold_s390x': '1.1',       # RC Gold for s390x
-    'RC_pre_gold': '1.5',         # insert the number of the prerelease RC version declared GOLD
-    'RC_pre_build': '5',        # sometimes releng use the RC build
-    'RC_pre_gold_aarch64': '1.5', # Pre RC Gold for aarch64
-    'RC_pre_gold_ppc64': '1.5',   # Pre RC Gold for ppc64
-    'RC_pre_gold_ppc64le': '1.5', # Pre RC Gold for ppc64le
-    'RC_pre_gold_s390x': '1.5',   # Pre RC Gold for s390x
+    'RC_gold': '1.2',             # insert the number of the RC version declared GOLD
+    'RC_server_gold': '1.2',      # insert the number of the RC version declared GOLD
+    'RC_build': '1.2',            # sometimes releng use the RC build
+    'RC_gold_aarch64': '1.2',     # RC Gold for aarch64
+    'RC_gold_ppc64': '1.2',       # RC Gold for ppc64
+    'RC_gold_s390x': '1.2',       # RC Gold for s390x
+    'RC_pre_gold': '1.2',         # insert the number of the prerelease RC version declared GOLD
+    'RC_pre_build': '2',        # sometimes releng use the RC build
+    'RC_pre_gold_aarch64': '1.2', # Pre RC Gold for aarch64
+    'RC_pre_gold_ppc64': '1.2',   # Pre RC Gold for ppc64
+    'RC_pre_gold_ppc64le': '1.2', # Pre RC Gold for ppc64le
+    'RC_pre_gold_s390x': '1.2',   # Pre RC Gold for s390x
 
     'atomic_qcow2_cloud_url': 'FIXME',
     'atomic_raw_cloud_url': 'FIXME',
@@ -150,10 +150,10 @@ iso_size={
     'x86_64_Live_KDE':     '1.8',       # In GB
     'i686_Live_LXDE':      '1.1',       # In GB
     'x86_64_Live_LXDE':    '1.2',       # In GB
-    'i686_Live_LXQt':      '1.2',       # In GB
-    'x86_64_Live_LXQt':    '1.2',       # In GB
-    'i686_Live_Xfce':      '1.2',       # In GB
-    'x86_64_Live_Xfce':    '1.3',       # In GB
+    'i686_Live_LXQt':      '1.4',       # In GB
+    'x86_64_Live_LXQt':    '1.4',       # In GB
+    'i686_Live_Xfce':      '1.4',       # In GB
+    'x86_64_Live_Xfce':    '1.4',       # In GB
     'i686_Live_Mate':      '1.8',       # In GB
     'x86_64_Live_Mate':    '1.8',       # In GB
     'i686_Live_Soas':      '863',       # In MB
@@ -182,8 +182,8 @@ iso_size={
     'x86_64_Live_Games':   '4.2',       # In GB
     'i686_Live_Elab':      '2.5',       # In GB
     'x86_64_Live_Elab':    '2.5',       # In GB
-    'i686_Live_Design':    '2.1',       # In GB
-    'x86_64_Live_Design':  '2.1',       # In GB
+    'i686_Live_Design':    '2.4',       # In GB
+    'x86_64_Live_Design':  '2.4',       # In GB
     'i686_Live_Sci-kde':   '3.4',       # In GB
     'x86_64_Live_Sci-kde': '3.5',       # In GB
     'i686_Live_Robotics':  '2.5',       # In GB

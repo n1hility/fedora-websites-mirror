@@ -17,13 +17,17 @@
       <div class="row">
         <div class="col-md-7 col-md-offset-5 text-left">
           <h2>${Markup(_('Download Fedora %(rel)s Astronomy')) % {'rel':global_variables.release['curr_id']}}</h2>
-            <p class="gr"><a class="btn btn-success astronomy-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Labs/x86_64/iso/Fedora-Astronomy_KDE-Live-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p>
+            <!--<p class="gr"><a class="btn btn-success astronomy-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Labs/x86_64/iso/Fedora-Astronomy_KDE-Live-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p>-->
+            <p class="gr"><a class="btn btn-success astronomy-download-splash" href="https://dl.fedoraproject.org/pub/alt/unofficial/releases/29/x86_64/Fedora-Astronomy_KDE-Live-x86_64-29-20181029.1.iso" role="button">${_('Download')}</a></p>
             <h5>${Markup(_('%s GB ISO Image for 64-bit PC')) % global_variables.iso_size['x86_64_Live_Astronomy']}</h5>
         </div>
       </div>
     </div>
 </header>
 <div class="container download-container top-space">
+
+  <xi:include href="../../../templates/generic/unofficial.html" />
+
   <div class="row">
     <div class="col-md-8 text-left bottom-space">
         <h3>${_('What is a Live image?')}</h3>
@@ -35,7 +39,8 @@
           <h4>${_('Direct Downloads')}</h4>
           <ul>
               <li>
-                  <p><a class="astronomy-download-splash" href="${global_variables.path['download_arch']}/${global_variables.release['curr_id']}/Labs/i386/iso/Fedora-Astronomy_KDE-Live-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('32-bit %sGB Live image')) % global_variables.iso_size['i686_Live_Astronomy']}</a></p>
+                  <!--<p><a class="astronomy-download-splash" href="${global_variables.path['download_arch']}/${global_variables.release['curr_id']}/Labs/i386/iso/Fedora-Astronomy_KDE-Live-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('32-bit %sGB Live image')) % global_variables.iso_size['i686_Live_Astronomy']}</a></p>-->
+                  <p><a class="astronomy-download-splash" href="https://dl.fedoraproject.org/pub/alt/unofficial/releases/29/i386/Fedora-Astronomy_KDE-Live-i386-29-20181029.1.iso">${Markup(_('32-bit %sGB Live image')) % global_variables.iso_size['i686_Live_Astronomy']}</a></p>
               </li>
           </ul>
           <h4>${_('Older Releases')}</h4>
