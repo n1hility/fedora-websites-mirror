@@ -157,9 +157,9 @@ iso_size={
     'i686_Live_Mate':      '1.8',       # In GB
     'x86_64_Live_Mate':    '1.8',       # In GB
     'i686_Live_Soas':      '863',       # In MB
-    'x86_64_Live_Soas':    '919',       # In MB
-    'i686_Live_Cinnamon':   '1.7',       # In GB
-    'x86_64_Live_Cinnamon': '1.7',       # In GB
+    'x86_64_Live_Soas':    '959',       # In MB
+    'i686_Live_Cinnamon':   '1.8',       # In GB
+    'x86_64_Live_Cinnamon': '1.8',       # In GB
     # Spins prerelease
     'pre_i686_Live_KDE':    '1.5',       # In GB
     'pre_x86_64_Live_KDE':  '1.9',       # In GB
@@ -185,7 +185,7 @@ iso_size={
     'i686_Live_Design':    '2.4',       # In GB
     'x86_64_Live_Design':  '2.4',       # In GB
     'i686_Live_Sci-kde':   '3.4',       # In GB
-    'x86_64_Live_Sci-kde': '3.5',       # In GB
+    'x86_64_Live_Sci-kde': '3.8',       # In GB
     'i686_Live_Robotics':  '2.5',       # In GB
     'x86_64_Live_Robotics':'2.5',       # In GB
     'i686_Live_Jam':       '2.4',       # In GB
@@ -217,9 +217,9 @@ iso_size={
     'pre_i686_Live_Python':    '1.7',   # In GB
     'pre_x86_64_Live_Python':  '1.7',   # In GB
     # Server
-    'x86_64_server_DVD':   '2.7',       # In GB
+    'x86_64_server_DVD':   '2.9',       # In GB
     'i386_server_DVD':     '2.6',       # In GB
-    'x86_64_server_net':   '583',       # In MB
+    'x86_64_server_net':   '593',       # In MB
     'i386_server_net':     '536',       # In MB
     # Server prerelease
     'pre_x86_64_server_DVD': '2.7',     # In GB
@@ -227,9 +227,9 @@ iso_size={
     'pre_x86_64_server_net': '571',     # In MB
     'pre_i386_server_net':   '525',     # In MB
     # Workstation
-    'x86_64_workstation':  '1.7',       # In GB
+    'x86_64_workstation':  '1.8',       # In GB
     'i386_workstation':    '1.6',       # In GB
-    'x86_64_workstation_net': '583',    # In MB
+    'x86_64_workstation_net': '593',    # In MB
     'i386_workstation_net': '536',      # In MB
     # Workstation prerelease
     'pre_x86_64_workstation':  '1.8',   # In GB
@@ -241,13 +241,13 @@ iso_size={
     # ARM
     'ARM_Workstation':     '1.3',       # In GB
     'ARM_Server':          '493',       # In MB
-    'ARM_Minimal':         '328',       # In MB
-    'ARM_KDE':             '1.5',       # In GB
-    'ARM_Xfce':            '1.0',       # In MB
+    'ARM_Minimal':         '356',       # In MB
+    'ARM_KDE':             '1.4',       # In GB
+    'ARM_Xfce':            '1.2',       # In MB
     'ARM_LXDE':            '1.0',       # In MB
     'ARM_LXQt':            '1.0',       # In GB
     'ARM_Mate':            '1.5',       # In GB
-    'ARM_SoaS':            '660',       # In MB
+    'ARM_SoaS':            '720',       # In MB
     'ARM_Python':          '1.2',       # In GB
     # ARM prerelease
     'pre_ARM_Workstation': '1.4',       # In GB
@@ -261,12 +261,12 @@ iso_size={
     'pre_ARM_Cinnamon':    '780',       # In MB
     'pre_ARM_SoaS':        '682',       # In MB
     # Cloud
-    'raw_x86_64_cloud':    '159',       # In MB
+    'raw_x86_64_cloud':    '185',       # In MB
     'raw_i386_cloud':      '143',       # In MB
-    'qcow2_x86_64_cloud':  '250',       # In MB
+    'qcow2_x86_64_cloud':  '293',       # In MB
     'qcow2_i386_cloud':    '216',       # In MB
-    'VBvag_cloud':         '240',       # In MB
-    'libvag_cloud':        '231',       # In MB
+    'VBvag_cloud':         '279',       # In MB
+    'libvag_cloud':        '290',       # In MB
     'x86_64_Container':    '43',        # In MB
     'x86_64_docker':       '40',        # In MB NOTE: this is just to make fedoraproject.org build happy
     'raw_i386_cloud':      '144',       # In MB
@@ -277,7 +277,7 @@ iso_size={
     'atomic_libvag_cloud': '???',       # In MB
     'VBvag_cloud':         '208',       # In MB
     'libvag_cloud':        '199',       # In MB
-    'x86_64_Container':    '40',        # In MB
+    'x86_64_Container':    '51',        # In MB
     'atomic_iso':          '918',       # In MB
     # Cloud prerelease
     'pre_raw_x86_64_cloud':    '150',   # In MB
@@ -302,10 +302,10 @@ iso_size={
     'manual_pre_atomic_libvag_cloud': '648',   # In MB
     'manual_pre_atomic_iso':          '1054',  # In MB
     # Everything release
-    'x86_64_ev':        '583',   #In MB
+    'x86_64_ev':        '593',   #In MB
     'i386_ev':          '536',   #In MB
     's390x_ev':         '505',   #In MB
-    'aarch64_ev':       '524',   #In MB
+    'aarch64_ev':       '538',   #In MB
     'ppc64_ev':         '597',   #In MB
     'ppc64le_ev':       '564',   #In MB
     # Everything prerelease
