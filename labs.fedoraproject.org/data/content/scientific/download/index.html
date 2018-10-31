@@ -26,9 +26,16 @@
 <div class="container download-container top-space">
   <div class="row">
     <div class="col-md-8 text-left bottom-space">
-        <h3>${_('What is a Live image?')}</h3>
-        <p>${_('Fedora Scientific is shipped as a live operating system. It\'s everything you need to try out Fedora\'s Scientific - you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop if you like.')}</p>
-	    <p>${_('To use this image, you need a drive that can create or "burn" DVDs, or a USB flash drive at least as big as the image.')}</p>
+      <p>${Markup(_('The Scientific lab comes in two variants. A Live Image with KDE, that can be downloaded on the top of this page and Vagrant box for headless environments. Learn more about &lt;a href="%s"&gt;Docker&lt;/a&gt; and &lt;a href="%s"&gt;Vagrant&lt;/a&gt; in their documentation.') % ('https://docs.docker.com/get-started/', 'https://www.vagrantup.com/intro/getting-started/'))}</p>
+      <h3>${_('Running the Vagrant box')}</h3>
+      <p>${_('First, download the box from the right side of this page.')}</p>
+      <p>${_('For libvirt:')}</p>
+      <pre>vagrant box add fedora/${global_variables.release['curr_id']}-scientific ./Fedora-Scientific-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box  <br />vagrant init fedora/${global_variables.release['curr_id']}-scientific <br />vagrant up --provider libvirt <br />vagrant ssh</pre>
+      <p>${_('For VirtualBox:')}</p>
+      <pre>vagrant box add fedora/${global_variables.release['curr_id']}-scientific ./Fedora-Scientific-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box <br />vagrant init fedora/${global_variables.release['curr_id']}-scientific <br />vagrant up --provider virtualbox <br />vagrant ssh</pre>
+      <h3>${_('What is a Live image?')}</h3>
+      <p>${_('Fedora Scientific is shipped as a live operating system. It\'s everything you need to try out Fedora\'s Scientific - you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop if you like.')}</p>
+      <p>${_('To use this image, you need a drive that can create or "burn" DVDs, or a USB flash drive at least as big as the image.')}</p>
     </div>
     <div class="col-md-3 text-left col-md-offset-1">
           <h3>${_('Other Downloads')}</h3>
@@ -36,6 +43,12 @@
           <ul>
               <li>
                   <p><a class="scientific-download-splash" href="${global_variables.path['download_arch']}/${global_variables.release['curr_id']}/Labs/i386/iso/Fedora-Scientific_KDE-Live-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('32-bit %sGB Live image')) % global_variables.iso_size['i686_Live_Sci-kde']}</a></p>
+              </li>
+              <li>
+                  <p><a class="scientific-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Labs/x86_64/images/Fedora-Scientific-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box">${Markup(_('Libvirt %sGB Vagrant image')) % global_variables.iso_size['libvirt_Scientific']}</a></p>
+              </li>
+              <li>
+                  <p><a class="scientific-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Labs/x86_64/images/Fedora-Python-Classroom-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box">${Markup(_('VirtualBox %sGB Vagrant image')) % global_variables.iso_size['virtualbox_Scientific']}</a></p>
               </li>
           </ul>
           <h4>${_('Older Releases')}</h4>

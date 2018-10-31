@@ -197,6 +197,8 @@ iso_size={
     'libvirt_Py_Class':    '770',     	# In MB
     'virtualbox_Py_Class': '806',   	# In MB
     'ARM_Py_Class':		   '1.2',   	# In GB
+    'libvirt_Scientific':  '2.9',       # In GB
+    'virtualbox_Scientific':  '2.9',    # In GB
     # Labs prerelease
     'pre_i686_Live_Security':  '1.5',   # In GB
     'pre_x86_64_Live_Security':'1.6',   # In GB
