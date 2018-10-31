@@ -117,9 +117,9 @@ iso_size={
     'x86_64_Netinstall':   '321',       # In MB
     'PPC64_DVD':           '4.3',       # In GB
     'PPC64_Netinstall':    '340',       # In MB
-    'aarch64_Server_DVD':  '2.6',       # In GB
-    'aarch64_Server_net':  '523',       # In MB
-    'aarch64_Server_raw':  '617',       # In MB
+    'aarch64_Server_DVD':  '2.7',       # In GB
+    'aarch64_Server_net':  '538',       # In MB
+    'aarch64_Server_raw':  '520',       # In MB
     'aarch64_Cloud_net':   '459',       # In MB
     'aarch64_qcow2':       '239',       # In MB
     'aarch64_raw':         '148',       # In MB
