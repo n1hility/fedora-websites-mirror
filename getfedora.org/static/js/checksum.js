@@ -1,7 +1,7 @@
 var dir_path = '../../static/checksums/';
 var dock_path = 'https://dl.fedoraproject.org/pub/alt/atomic/stable/Fedora-Atomic-' + curr_atomic_id + '-' + atomic_composedate + '.0/Container/x86_64/images/';
-var atom_path = 'https://dl.fedoraproject.org/pub/alt/atomic/stable/Fedora-Atomic-' + curr_atomic_id + '-' + atomic_composedate + '/AtomicHost/';
-var iso_path = 'https://dl.fedoraproject.org/pub/alt/atomic/stable/Fedora-Atomic-' + curr_atomic_id + '-' + atomic_composedate + '/AtomicHost/';
+var atom_path = 'https://dl.fedoraproject.org/pub/alt/atomic/stable/Fedora-' + curr_atomic_id + '-updates-' + atomic_composedate + '/AtomicHost/';
+var iso_path = 'https://dl.fedoraproject.org/pub/alt/atomic/stable/Fedora-' + curr_atomic_id + '-updates-' + atomic_composedate + '/AtomicHost/';
 
 var checksums = [];
 // Generate dynamic checksum paths
