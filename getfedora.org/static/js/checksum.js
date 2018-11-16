@@ -9,6 +9,7 @@ checksums['Fedora-Workstation-Live-x86_64-' + curr_id + '-' + RC_gold + '.iso'] 
 checksums['Fedora-Workstation-netinst-x86_64-' + curr_id + '-' + RC_gold + '.iso'] = dir_path + 'Fedora-Workstation-' + curr_id + '-' + RC_gold + '-x86_64-CHECKSUM';
 checksums['Fedora-Workstation-Live-i386-' + curr_id + '-' + RC_gold + '.iso'] = dir_path + 'Fedora-Workstation-' + curr_id + '-' + RC_gold + '-i386-CHECKSUM';
 checksums['Fedora-Workstation-netinst-i386-' + curr_id + '-' + RC_gold + '.iso'] = dir_path + 'Fedora-Workstation-' + curr_id + '-' + RC_gold + '-i386-CHECKSUM';
+checksums['Fedora-Silverblue-ostree-x86_64-' + curr_id + '-' + RC_gold + '.iso'] = dir_path + 'Fedora-Silverblue-' + curr_id + '-' + RC_gold + '-x86_64-CHECKSUM';
 checksums['Fedora-Server-dvd-x86_64-' + curr_server_id + '-' + RC_server_gold + '.iso'] = dir_path + 'Fedora-Server-' + curr_server_id + '-' + RC_server_gold + '-x86_64-CHECKSUM';
 checksums['Fedora-Server-netinst-x86_64-' + curr_server_id + '-' + RC_server_gold + '.iso'] = dir_path + 'Fedora-Server-' + curr_server_id + '-' + RC_server_gold + '-x86_64-CHECKSUM';
 checksums['Fedora-Server-netinst-aarch64-' + curr_server_id + '-' + RC_server_gold + '.iso'] = dir_path + 'Fedora-Server-' + curr_server_id + '-' + RC_server_gold + '-aarch64-CHECKSUM';
