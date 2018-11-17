@@ -27,7 +27,6 @@ checksums['Fedora-AtomicHost-Vagrant-' + curr_atomic_id + '-' + atomic_composeda
 checksums['Fedora-AtomicHost-ostree-aarch64-' + curr_atomic_id + '-' + atomic_composedate + '.iso'] = iso_path + 'aarch64/iso/Fedora-AtomicHost-' + curr_atomic_id + '-' + atomic_composedate + '-aarch64-CHECKSUM';
 checksums['Fedora-AtomicHost-ostree-ppc64le-' + curr_atomic_id + '-' + atomic_composedate + '.iso'] = iso_path + 'ppc64le/iso/Fedora-AtomicHost-' + curr_atomic_id + '-' + atomic_composedate + '-ppc64le-CHECKSUM';
 checksums['Fedora-AtomicHost-ostree-x86_64-' + curr_atomic_id + '-' + atomic_composedate + '.iso'] = iso_path + 'x86_64/iso/Fedora-AtomicHost-' + curr_atomic_id + '-' + atomic_composedate + '-x86_64-CHECKSUM';
-checksums['Fedora-AtomicWorkstation-ostree-x86_64-' + curr_id + '-' + RC_gold + '.iso'] = dir_path + 'Fedora-AtomicWorkstation-' + curr_id + '-' + RC_gold + '-x86_64-CHECKSUM';
 
 
 var fallback = '../../verify.html';
