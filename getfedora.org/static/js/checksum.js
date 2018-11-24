@@ -12,9 +12,9 @@ checksums['Fedora-Workstation-netinst-i386-' + curr_id + '-' + RC_gold + '.iso']
 checksums['Fedora-Silverblue-ostree-x86_64-' + curr_id + '-' + RC_gold + '.iso'] = dir_path + 'Fedora-Silverblue-' + curr_id + '-' + RC_gold + '-x86_64-CHECKSUM';
 checksums['Fedora-Server-dvd-x86_64-' + curr_server_id + '-' + RC_server_gold + '.iso'] = dir_path + 'Fedora-Server-' + curr_server_id + '-' + RC_server_gold + '-x86_64-CHECKSUM';
 checksums['Fedora-Server-netinst-x86_64-' + curr_server_id + '-' + RC_server_gold + '.iso'] = dir_path + 'Fedora-Server-' + curr_server_id + '-' + RC_server_gold + '-x86_64-CHECKSUM';
-checksums['Fedora-Server-netinst-aarch64-' + curr_server_id + '-' + RC_server_gold + '.iso'] = dir_path + 'Fedora-Server-' + curr_server_id + '-' + RC_server_gold + '-aarch64-CHECKSUM';
-checksums['Fedora-Server-dvd-aarch64-' + curr_server_id + '-' + RC_server_gold + '.iso'] = dir_path + 'Fedora-Server-' + curr_server_id + '-' + RC_server_gold + '-aarch64-CHECKSUM';
-checksums['Fedora-Server-' + curr_server_id + '-' + RC_server_gold + '.aarch64.raw.xz'] = dir_path + 'Fedora-Server-disk-' + curr_server_id + '-' + RC_server_gold + '-aarch64-CHECKSUM';
+checksums['Fedora-Server-netinst-aarch64-' + curr_server_id + '-' + RC_server_gold + '.iso'] = dir_path + 'Fedora-Server-disk-' + curr_server_id + '-' + RC_server_gold + '-aarch64-CHECKSUM';
+checksums['Fedora-Server-dvd-aarch64-' + curr_server_id + '-' + RC_server_gold + '.iso'] = dir_path + 'Fedora-Server-disk-' + curr_server_id + '-' + RC_server_gold + '-aarch64-CHECKSUM';
+checksums['Fedora-Server-' + curr_server_id + '-' + RC_server_gold + '.aarch64.raw.xz'] = dir_path + 'Fedora-Server-' + curr_server_id + '-' + RC_server_gold + '-aarch64-CHECKSUM';
 checksums['Fedora-Container-Base-' + curr_id + '-' + RC_gold + '.x86_64.tar.xz'] = dir_path + 'Fedora-Container-' + curr_id + '-' + RC_gold + '-x86_64-CHECKSUM';
 checksums['Fedora-AtomicHost-' + curr_atomic_id + '-' + atomic_composedate + '.aarch64.qcow2'] = atom_path + 'aarch64/images/Fedora-AtomicHost-' + curr_atomic_id + '-' + atomic_composedate + '-aarch64-CHECKSUM';
 checksums['Fedora-AtomicHost-' + curr_atomic_id + '-' + atomic_composedate + '.ppc64le.qcow2'] = atom_path + 'ppc64le/images/Fedora-AtomicHost-' + curr_atomic_id + '-' + atomic_composedate + '-ppc64le-CHECKSUM';
