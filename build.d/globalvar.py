@@ -350,6 +350,13 @@ for _, short, code in EC2_regions:
 
 # EC2 AMI IDs
 
+ARM64_base_AMI={
+    'us-east-1':        'ami-09864c70870ea5ddf',
+    'us-east-2':        'ami-06c7b0518d1c4af58',
+    'us-west-2':        'ami-091ef9dcdddf13301',
+    'eu-west-1':        'ami-03bb84d8af3024ada',
+}
+
 HVM_base_AMI={
     'us-east-1':        'ami-5c69df23',     # Virginia
     'us-west-2':        'ami-56fb932e',     # Oregon
