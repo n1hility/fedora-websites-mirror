@@ -352,7 +352,7 @@ for _, short, code in EC2_regions:
 
 ARM64_base_AMI={
     'us-east-1':        'ami-0a93bacffeed08b4e',
-    #'us-east-2':        'ami-06c7b0518d1c4af58',
+    'us-east-2':        'ami-009107ae30a553a3b',
     'us-west-2':        'ami-091ef9dcdddf13301',
     'eu-west-1':        'ami-03bb84d8af3024ada',
 }
