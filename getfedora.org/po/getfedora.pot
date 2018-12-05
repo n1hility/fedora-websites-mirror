@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-08-27 03:07+0000\n"
+"POT-Creation-Date: 2018-12-05 22:08+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.3.4\n"
 
 #: data/content/code-of-conduct.html:8 data/templates/footer.html:21
 msgid "Fedora Code of Conduct"
@@ -355,40 +355,36 @@ msgid ""
 msgstr ""
 
 #: data/content/keys/index.html:46 data/content/verify.html:103
-msgid "Fedora 29"
+msgid "Fedora 30"
 msgstr ""
 
 #: data/content/keys/index.html:59 data/content/verify.html:104
-msgid "Fedora 28"
+msgid "Fedora 29"
 msgstr ""
 
 #: data/content/keys/index.html:72 data/content/verify.html:105
-msgid "Fedora 27"
+msgid "Fedora 28"
 msgstr ""
 
 #: data/content/keys/index.html:85 data/content/verify.html:106
-msgid "Fedora 26"
+msgid "Fedora 27"
 msgstr ""
 
-#: data/content/verify.html:107
-msgid "Fedora 26 secondary arches (AArch64, PPC64, PPC64le, s390 and s390x)"
-msgstr ""
-
-#: data/content/verify.html:109
+#: data/content/verify.html:108
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "image's checksum matches:"
 msgstr ""
 
-#: data/content/verify.html:111
+#: data/content/verify.html:110
 msgid "If the output states that the file is valid, then it's ready to use!"
 msgstr ""
 
-#: data/content/verify.html:112
+#: data/content/verify.html:111
 msgid "How do I verify my downloaded image on another operating system?"
 msgstr ""
 
-#: data/content/verify.html:113
+#: data/content/verify.html:112
 msgid "Read these instructions to verify your image."
 msgstr ""
 
@@ -804,7 +800,7 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:391
 #: data/content/atomic/prerelease/index.html:335
-#: data/content/server/download/index.html:51
+#: data/content/server/download/index.html:123
 #: data/content/server/prerelease/index.html:51
 #: data/content/workstation/download/index.html:145
 #: data/content/workstation/prerelease/index.html:131
@@ -823,24 +819,21 @@ msgid "F%(rel)s %(state)s"
 msgstr ""
 
 #: data/content/atomic/download/index.html:402
-#: data/content/server/download/index.html:72
-#: data/content/server/download/index.html:82
+#: data/content/server/download/index.html:126
 #: data/content/workstation/download/index.html:160
 #: data/content/workstation/download/index.html:170
 msgid "Try a pre-release"
 msgstr ""
 
 #: data/content/atomic/download/index.html:403
-#: data/content/server/download/index.html:73
-#: data/content/server/download/index.html:83
+#: data/content/server/download/index.html:127
 #: data/content/workstation/download/index.html:161
 #: data/content/workstation/download/index.html:171
 msgid "We're working on our next release."
 msgstr ""
 
 #: data/content/atomic/download/index.html:404
-#: data/content/server/download/index.html:74
-#: data/content/server/download/index.html:84
+#: data/content/server/download/index.html:128
 #: data/content/workstation/download/index.html:162
 #: data/content/workstation/download/index.html:172
 #, python-format
@@ -853,8 +846,7 @@ msgid "Download F%(rel)s %(state)s images"
 msgstr ""
 
 #: data/content/atomic/download/index.html:406
-#: data/content/server/download/index.html:76
-#: data/content/server/download/index.html:86
+#: data/content/server/download/index.html:130
 #: data/content/workstation/download/index.html:164
 #: data/content/workstation/download/index.html:174
 msgid "How to test pre-releases"
@@ -862,7 +854,7 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:412
 #: data/content/atomic/prerelease/index.html:341
-#: data/content/workstation/download/index.html:192
+#: data/content/workstation/download/index.html:196
 #: data/content/workstation/prerelease/index.html:143
 msgid "Resources"
 msgstr ""
@@ -910,17 +902,17 @@ msgstr ""
 
 #: data/content/atomic/download/index.html:421
 #: data/content/atomic/prerelease/index.html:350
-#: data/content/server/download/index.html:103
-#: data/content/workstation/download/index.html:221
+#: data/content/server/download/index.html:146
+#: data/content/workstation/download/index.html:225
 msgid "Verify"
 msgstr ""
 
 #: data/content/atomic/download/index.html:424
 #: data/content/atomic/prerelease/index.html:322
 #: data/content/atomic/prerelease/index.html:353
-#: data/content/server/download/index.html:106
+#: data/content/server/download/index.html:149
 #: data/content/server/prerelease/index.html:41
-#: data/content/workstation/download/index.html:224
+#: data/content/workstation/download/index.html:228
 #: data/content/workstation/prerelease/index.html:119
 msgid "Verify your Image"
 msgstr ""
@@ -1034,7 +1026,13 @@ msgstr ""
 #: data/content/atomic/prerelease/index.html:295
 #: data/content/atomic/prerelease/index.html:312
 #: data/content/atomic/prerelease/index.html:316
-#: data/content/server/download/index.html:33
+#: data/content/server/download/index.html:51
+#: data/content/server/download/index.html:59
+#: data/content/server/download/index.html:67
+#: data/content/server/download/index.html:82
+#: data/content/server/download/index.html:90
+#: data/content/server/download/index.html:98
+#: data/content/server/download/index.html:106
 #: data/content/server/prerelease/index.html:18
 #: data/content/workstation/download/index.html:40
 #: data/content/workstation/download/index.html:44
@@ -1150,40 +1148,35 @@ msgstr ""
 msgid "Currently Used Keys"
 msgstr ""
 
-#: data/content/keys/index.html:46 data/content/keys/index.html:59
-#: data/content/keys/index.html:72 data/content/keys/index.html:85
-#: data/content/keys/index.html:110 data/content/keys/index.html:123
-#: data/content/keys/obsolete.html:72 data/content/keys/obsolete.html:85
-#: data/content/keys/obsolete.html:100 data/content/keys/obsolete.html:113
-#: data/content/keys/obsolete.html:126 data/content/keys/obsolete.html:139
-#: data/content/keys/obsolete.html:154 data/content/keys/obsolete.html:167
-#: data/content/keys/obsolete.html:188 data/content/keys/obsolete.html:201
-#: data/content/keys/obsolete.html:225 data/content/keys/obsolete.html:247
-#: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
-#: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
-#: data/content/keys/obsolete.html:358 data/content/keys/obsolete.html:379
-#: data/content/keys/obsolete.html:401 data/content/keys/obsolete.html:422
+#: data/content/keys/index.html:46
+msgid "Primary or Secondary"
+msgstr ""
+
+#: data/content/keys/index.html:59 data/content/keys/index.html:72
+#: data/content/keys/index.html:85 data/content/keys/index.html:102
+#: data/content/keys/index.html:115 data/content/keys/obsolete.html:72
+#: data/content/keys/obsolete.html:85 data/content/keys/obsolete.html:100
+#: data/content/keys/obsolete.html:113 data/content/keys/obsolete.html:126
+#: data/content/keys/obsolete.html:139 data/content/keys/obsolete.html:154
+#: data/content/keys/obsolete.html:167 data/content/keys/obsolete.html:188
+#: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
+#: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
+#: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
+#: data/content/keys/obsolete.html:337 data/content/keys/obsolete.html:358
+#: data/content/keys/obsolete.html:379 data/content/keys/obsolete.html:401
+#: data/content/keys/obsolete.html:422 data/content/keys/obsolete.html:443
 msgid "Primary"
 msgstr ""
 
-#: data/content/keys/index.html:85 data/content/keys/obsolete.html:201
-#: data/content/keys/obsolete.html:225 data/content/keys/obsolete.html:247
-#: data/content/keys/obsolete.html:269 data/content/keys/obsolete.html:292
-#: data/content/keys/obsolete.html:316 data/content/keys/obsolete.html:337
-#: data/content/keys/obsolete.html:358 data/content/keys/obsolete.html:379
-#: data/content/keys/obsolete.html:401
-msgid "Secondary"
-msgstr ""
-
-#: data/content/keys/index.html:110
+#: data/content/keys/index.html:102
 msgid "EPEL 7"
 msgstr ""
 
-#: data/content/keys/index.html:123
+#: data/content/keys/index.html:115
 msgid "EPEL 6"
 msgstr ""
 
-#: data/content/keys/index.html:138
+#: data/content/keys/index.html:131
 #, python-format
 msgid "Looking for <a href=\"%s\">obsolete keys</a>?"
 msgstr ""
@@ -1285,6 +1278,15 @@ msgstr ""
 msgid "Fedora 16"
 msgstr ""
 
+#: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
+#: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
+#: data/content/keys/obsolete.html:292 data/content/keys/obsolete.html:316
+#: data/content/keys/obsolete.html:337 data/content/keys/obsolete.html:358
+#: data/content/keys/obsolete.html:379 data/content/keys/obsolete.html:401
+#: data/content/keys/obsolete.html:422
+msgid "Secondary"
+msgstr ""
+
 #: data/content/keys/obsolete.html:225
 msgid "Fedora 17"
 msgstr ""
@@ -1322,22 +1324,26 @@ msgid "Fedora 25"
 msgstr ""
 
 #: data/content/keys/obsolete.html:422
+msgid "Fedora 26"
+msgstr ""
+
+#: data/content/keys/obsolete.html:443
 msgid "EPEL 5"
 msgstr ""
 
-#: data/content/keys/obsolete.html:435
+#: data/content/keys/obsolete.html:456
 msgid "EPEL 4"
 msgstr ""
 
-#: data/content/keys/obsolete.html:435
+#: data/content/keys/obsolete.html:456
 msgid "RPM-GPG-KEY-EPEL"
 msgstr ""
 
-#: data/content/keys/obsolete.html:448
+#: data/content/keys/obsolete.html:469
 msgid "Fedora Extras"
 msgstr ""
 
-#: data/content/keys/obsolete.html:448
+#: data/content/keys/obsolete.html:469
 msgid ""
 "If you are using Fedora Extras with Fedora Core 6, use this package from "
 "<strong>extras</strong> repository.  This key will no longer be used "
@@ -1346,11 +1352,11 @@ msgid ""
 "and later releases."
 msgstr ""
 
-#: data/content/keys/obsolete.html:465 data/content/keys/obsolete.html:480
+#: data/content/keys/obsolete.html:486 data/content/keys/obsolete.html:501
 msgid "Legacy"
 msgstr ""
 
-#: data/content/keys/obsolete.html:465 data/content/keys/obsolete.html:480
+#: data/content/keys/obsolete.html:486 data/content/keys/obsolete.html:501
 msgid ""
 "This key was used for packages that were released by Fedora Legacy "
 "project to update releases that reached their official EOL. The Fedora "
@@ -1547,9 +1553,14 @@ msgstr ""
 msgid "Download Fedora %(rel)s Server"
 msgstr ""
 
-#: data/content/server/download/index.html:34
-#, python-format
-msgid "64-bit %sGB installation image"
+#: data/content/server/download/index.html:33
+msgid ""
+"Select the format and architecture you require from the list below to get"
+" started using Fedora Server now."
+msgstr ""
+
+#: data/content/server/download/index.html:41
+msgid "Fedora Server Images"
 msgstr ""
 
 #: data/content/server/download/index.html:42
@@ -1566,6 +1577,37 @@ msgid ""
 msgstr ""
 
 #: data/content/server/download/index.html:45
+msgid "x86_64 Images"
+msgstr ""
+
+#: data/content/server/download/index.html:49
+#: data/content/server/download/index.html:80
+msgid "Description"
+msgstr ""
+
+#: data/content/server/download/index.html:50
+#: data/content/server/download/index.html:81
+msgid "Size"
+msgstr ""
+
+#: data/content/server/download/index.html:57
+#: data/content/server/download/index.html:88
+#, python-format
+msgid "%sGB"
+msgstr ""
+
+#: data/content/server/download/index.html:65
+#: data/content/server/download/index.html:96
+#: data/content/server/download/index.html:104
+#, python-format
+msgid "%sMB"
+msgstr ""
+
+#: data/content/server/download/index.html:76
+msgid "aarch64 Images"
+msgstr ""
+
+#: data/content/server/download/index.html:115
 #, python-format
 msgid ""
 "If you would like to try out the new modular features of Fedora Server, "
@@ -1575,65 +1617,26 @@ msgid ""
 "pagure</a>."
 msgstr ""
 
-#: data/content/server/download/index.html:53
-#: data/content/server/prerelease/index.html:53
-msgid "Netinstall Image:"
-msgstr ""
-
-#: data/content/server/download/index.html:55
-#: data/content/server/prerelease/index.html:55
-#: data/content/workstation/download/index.html:151
-#: data/content/workstation/prerelease/index.html:138
-#, python-format
-msgid "64-bit %sMB image"
-msgstr ""
-
-#: data/content/server/download/index.html:56
-#: data/content/server/download/index.html:60
-#: data/content/server/download/index.html:64
-#, python-format
-msgid "aarch64 %sMB image"
-msgstr ""
-
-#: data/content/server/download/index.html:58
-msgid "DVD ISO Image:"
-msgstr ""
-
-#: data/content/server/download/index.html:62
-msgid "Raw Disk Image:"
-msgstr ""
-
-#: data/content/server/download/index.html:71
-#: data/content/workstation/download/index.html:159
-#, python-format
-msgid "F%(rel)s Alpha"
-msgstr ""
-
-#: data/content/server/download/index.html:75
-#: data/content/workstation/download/index.html:163
-#, python-format
-msgid "Download F%(rel)s Alpha images"
-msgstr ""
-
-#: data/content/server/download/index.html:81
+#: data/content/server/download/index.html:125
 #: data/content/workstation/download/index.html:169
+#: data/content/workstation/download/index.html:185
 #, python-format
 msgid "F%(rel)s Beta"
 msgstr ""
 
-#: data/content/server/download/index.html:85
+#: data/content/server/download/index.html:129
 #: data/content/workstation/download/index.html:173
 #, python-format
 msgid "Download F%(rel)s Beta images"
 msgstr ""
 
-#: data/content/server/download/index.html:92
-#: data/content/workstation/download/index.html:206
+#: data/content/server/download/index.html:135
+#: data/content/workstation/download/index.html:210
 msgid "Get more Fedora"
 msgstr ""
 
-#: data/content/server/download/index.html:96
-#: data/content/workstation/download/index.html:215
+#: data/content/server/download/index.html:139
+#: data/content/workstation/download/index.html:219
 msgid "ARM<span class=\"sup\">®</span> Technology"
 msgstr ""
 
@@ -1720,6 +1723,17 @@ msgid ""
 "To verify your image, start by downloading the CHECKSUM file below into "
 "the same directory as the image you downloaded and follow <a "
 "href=\"%s/%s/verify\">these instructions</a>."
+msgstr ""
+
+#: data/content/server/prerelease/index.html:53
+msgid "Netinstall Image:"
+msgstr ""
+
+#: data/content/server/prerelease/index.html:55
+#: data/content/workstation/download/index.html:151
+#: data/content/workstation/prerelease/index.html:138
+#, python-format
+msgid "64-bit %sMB image"
 msgstr ""
 
 #: data/content/workstation/index.html:8
@@ -1990,73 +2004,83 @@ msgstr ""
 msgid "32-bit %sMB image"
 msgstr ""
 
-#: data/content/workstation/download/index.html:183
-msgid "Try Atomic Workstation"
-msgstr ""
-
-#: data/content/workstation/download/index.html:184
-msgid "Atomic provides an immutable OS image and updates via OSTree."
-msgstr ""
-
-#: data/content/workstation/download/index.html:186
+#: data/content/workstation/download/index.html:159
 #, python-format
-msgid "64-bit %sGB Atomic image"
+msgid "F%(rel)s Alpha"
+msgstr ""
+
+#: data/content/workstation/download/index.html:163
+#, python-format
+msgid "Download F%(rel)s Alpha images"
+msgstr ""
+
+#: data/content/workstation/download/index.html:187
+msgid "Try Fedora Silverblue"
 msgstr ""
 
 #: data/content/workstation/download/index.html:188
+msgid "Silverblue provides an immutable OS image and updates via OSTree."
+msgstr ""
+
+#: data/content/workstation/download/index.html:190
+#, python-format
+msgid "64-bit %sGB Silverblue image"
+msgstr ""
+
+#: data/content/workstation/download/index.html:192
 msgid "Learn more"
 msgstr ""
 
-#: data/content/workstation/download/index.html:193
+#: data/content/workstation/download/index.html:197
 #, python-format
 msgid "<a href=\"%(fmagazine_url)s\"><strong>Release Announcement</strong></a>"
 msgstr ""
 
-#: data/content/workstation/download/index.html:194
+#: data/content/workstation/download/index.html:198
 msgid "Read the full Release Announcement on Fedora Magazine."
 msgstr ""
 
-#: data/content/workstation/download/index.html:195
+#: data/content/workstation/download/index.html:199
 #, python-format
 msgid "<a href=\"%(release_notes)s\"><strong>Release Notes</strong></a>"
 msgstr ""
 
-#: data/content/workstation/download/index.html:196
+#: data/content/workstation/download/index.html:200
 msgid ""
 "Learn about changes since the last version of Fedora as well as minimum "
 "requirements and recommendations for running Fedora."
 msgstr ""
 
-#: data/content/workstation/download/index.html:197
+#: data/content/workstation/download/index.html:201
 #, python-format
 msgid "<a href=\"%(install_guide)s\"><strong>Installation Guide</strong></a>"
 msgstr ""
 
-#: data/content/workstation/download/index.html:198
+#: data/content/workstation/download/index.html:202
 msgid ""
 "We recommend you look through this before installing to your system, "
 "since it answers many common questions."
 msgstr ""
 
-#: data/content/workstation/download/index.html:199
+#: data/content/workstation/download/index.html:203
 #: data/content/workstation/prerelease/index.html:144
 #, python-format
 msgid "<a href=\"%(commonbugs_url)s\"><strong>Common Bugs</strong></a>"
 msgstr ""
 
-#: data/content/workstation/download/index.html:200
+#: data/content/workstation/download/index.html:204
 #: data/content/workstation/prerelease/index.html:145
 msgid ""
 "An excellent resource to consult in case you run into any issues "
 "installing or running Fedora."
 msgstr ""
 
-#: data/content/workstation/download/index.html:202
+#: data/content/workstation/download/index.html:206
 #: data/content/workstation/prerelease/index.html:149
 msgid "What does \"Live\" mean?"
 msgstr ""
 
-#: data/content/workstation/download/index.html:203
+#: data/content/workstation/download/index.html:207
 #: data/content/workstation/prerelease/index.html:150
 msgid ""
 "Fedora Media Writer will create a complete, running Fedora Workstation "
@@ -2064,19 +2088,19 @@ msgid ""
 "test and play with Fedora without making changes to your hard disk."
 msgstr ""
 
-#: data/content/workstation/download/index.html:204
+#: data/content/workstation/download/index.html:208
 #: data/content/workstation/prerelease/index.html:151
 msgid ""
 "When you are ready, you can install Fedora to your hard disk from within "
 "this \"live\" version of Fedora Workstation."
 msgstr ""
 
-#: data/content/workstation/download/index.html:209
+#: data/content/workstation/download/index.html:213
 #: data/templates/footer.html:44
 msgid "Fedora Spins"
 msgstr ""
 
-#: data/content/workstation/download/index.html:212
+#: data/content/workstation/download/index.html:216
 #: data/templates/footer.html:45
 msgid "Fedora Labs"
 msgstr ""
