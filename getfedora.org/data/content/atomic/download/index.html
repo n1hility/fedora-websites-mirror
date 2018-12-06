@@ -69,7 +69,7 @@
                 <div class="row">
                   <div class="col-xs-10">
                     <h5 class="bold">
-                      ${_('GP2 Format HVM AMIs')}
+                      ${_('GP2 Format HVM AMIs (x86_64)')}
                    </h5>
                   </div>
                   <div class="col-xs-2 text-right">
@@ -101,7 +101,7 @@
               <div class="list-group-item">
                 <div class="row">
                   <div class="col-xs-10">
-                    <h5 class="bold">${_('Standard Format HVM AMIs')}</h5>
+                    <h5 class="bold">${_('Standard Format HVM AMIs (x86_64)')}</h5>
                   </div>
                   <div class="col-xs-2 text-right">
                     <a href="javascript:void(0)" class="btn btn-success reveal-link download-cloud download-cloud-sm" data-target="standardami-reveal-link" role="button" title="${_('GP2 HVM AMIs')}">
@@ -123,6 +123,39 @@
                           <td py:if="r.code in global_variables.HVM_atomic_AMI">${_(r.long)}</td>
                           <td py:if="r.code in global_variables.HVM_atomic_AMI" class="hidden-xs">${global_variables.HVM_atomic_AMI[r.code]}</td>
                           <td py:if="r.code in global_variables.HVM_atomic_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.HVM_atomic_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="list-group-item">
+                <div class="row">
+                  <div class="col-xs-10">
+                    <h5 class="bold">
+                      ${_('GP2 Format HVM AMIs (aarch64)')}
+                   </h5>
+                  </div>
+                  <div class="col-xs-2 text-right">
+                    <a href="javascript:void(0)" class="btn btn-success reveal-link download-cloud download-cloud-sm" data-target="aarch64-gp2-reveal-link" role="button" title="${_('GP2 HVM AMIs')}">
+                      <span class="fa fa-fw fa-caret-down" aria-hidden="true"></span>
+                    </a>
+                  </div>
+                  <div id="aarch64-gp2-reveal-link" class="col-xs-12" style="display: none;">
+                    <p>${_('GP2 format AMIs use faster SSD storage; use these AMIs for speed, although note your storage costs will be more than standard.')}</p>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>${_('Region')}</th>
+                          <th class="hidden-xs">${_('AMI ID')}</th>
+                          <th>${_('Launch')}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr py:for="r in global_variables.aarch64_EC2_regions">
+                          <td py:if="r.code in global_variables.AARCH64_GP2_HVM_atomic_AMI">${_(r.long)}</td>
+                          <td py:if="r.code in global_variables.AARCH64_GP2_HVM_atomic_AMI" class="hidden-xs">${global_variables.AARCH64_GP2_HVM_atomic_AMI[r.code]}</td>
+                          <td py:if="r.code in global_variables.AARCH64_GP2_HVM_atomic_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.AARCH64_GP2_HVM_atomic_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
                         </tr>
                       </tbody>
                     </table>

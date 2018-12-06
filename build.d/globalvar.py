@@ -340,6 +340,14 @@ EC2_regions = [
     region(u'Canada (Central)',                u'Central',      u'ca-central-1')
 ]
 
+# regions where aarch64 EC2 instances are available
+aarch64_EC2_regions = [
+    region(u'US East (N. Virginia)',           u'Virginia',     u'us-east-1'),
+    region(u'US East (Ohio)',                  u'Ohio',         u'us-east-2'),
+    region(u'US West (Oregon)',                u'Oregon',       u'us-west-2'),
+    region(u'EU West (Ireland)',               u'Ireland',      u'eu-west-1'),
+]
+
 path_stats={
     'path': 'https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2',
 }
@@ -436,6 +444,8 @@ GP2_HVM_atomic_AMI={
     #'ap-southeast-2':   'ami-31d68952',     # Sydney
     #'sa-east-1':        'ami-8509b1e9'      # Sao Paolo
 }
+
+AARCH64_GP2_HVM_atomic_AMI={}
 
 # EC2 AMI IDs PRERELEASE!!!
 pre_HVM_base_AMI={
