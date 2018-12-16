@@ -441,6 +441,21 @@
       ])}
 
       ${keys_for_release(
+      _('Fedora 27'),
+      [
+        KeyInfo(
+           _('Primary'),
+            '4096R/F5282EE4 2017-02-21',
+            '860E 19B0 AFA8 00A1 7518  81A6 F55E 7430 F528 2EE4',
+            ['Fedora 27 (27) &lt;fedora-27@fedoraproject.org&gt;'],
+            None,
+            [('https://getfedora.org/static/F5282EE4.txt', 'Fedora Project')
+            ])
+      ])}
+    </div>
+
+    <div class="row">
+      ${keys_for_release(
       _('EPEL 5'),
       [
           KeyInfo(
@@ -483,21 +498,6 @@
               Markup(_('If you are using Fedora Extras with Fedora Core 6, use this package from &lt;strong&gt;extras&lt;/strong&gt; repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007). This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.')))
       ])}
 
-      ${keys_for_release(
-      _('Legacy'),
-      [
-          KeyInfo(
-              _('Legacy'),
-              '1024D/731002FA 2004-01-19',
-              'D66D 121F 9784 5E7B 2757  8C46 108C 4512 7310 02FA',
-              ['Fedora Legacy (http://www.fedoralegacy.org) &lt;secnotice@fedoralegacy.org&gt;'],
-              '2048g/D12E351D 2004-01-19',
-              [],
-              Markup(_('This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL. The Fedora Legacy project no longer exists, so this key will no longer be used to sign packages. This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.')))
-      ])}
-    </div>
-
-    <div class="row">
       ${keys_for_release(
       _('Legacy'),
       [
