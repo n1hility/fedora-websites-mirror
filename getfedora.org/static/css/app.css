@@ -766,6 +766,20 @@ text-align:center;
   line-height: 1.5;
 }
 
+/* bootstrap sm */
+@media (min-width:768px) and (max-width:991px) {
+  .productdesc h4 {
+    padding: 0;
+  }
+}
+
+/* bootstrap md */
+@media (min-width:992px) and (max-width:1199px) {
+  .productdesc h4 {
+    padding: 0 30px;
+  }
+}
+
 .productdesc-spacer hr {
   color: #3c6eb4;
   background-color: #3c6eb4;
