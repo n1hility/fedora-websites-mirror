@@ -30,7 +30,7 @@ cachefile = '/tmp/fedora_websites_fedimg_alt_%s.cache'
 
 # We cache this guy on disk for 500s
 def collect(release):
-    filename = cachefile % (sha1(str(release)).hexdigesT())
+    filename = cachefile % (sha1(str(release)).hexdigest())
     shelf = shelve.open(filename)
     check_permissions(filename=filename)
     if shelf.get('timestamp') and shelf.get('timestamp') > (datetime.utcnow() - timedelta(hours=1)):
