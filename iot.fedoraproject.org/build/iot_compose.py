@@ -25,6 +25,8 @@ def iot_compose_links():
         if arch == 'armhfp':
             continue
         for img in lst:
+            if img['arch'] == 'armhfp':
+                continue
             if img['type'] not in links['type'].keys():
                 links['type'][img['type']] = {}
 
