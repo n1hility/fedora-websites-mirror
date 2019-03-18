@@ -22,6 +22,8 @@ def iot_compose_links():
     links['type'] = {}
 
     for arch,lst in json['payload']['images']['IoT'].iteritems():
+        if arch == 'armhfp':
+            continue
         for img in lst:
             if img['type'] not in links['type'].keys():
                 links['type'][img['type']] = {}
