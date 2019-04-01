@@ -152,6 +152,20 @@
           <li><p><a class="ws-download-splash" href="${global_variables.path['download_arch']}/${global_variables.release['curr_id']}/Workstation/i386/iso/Fedora-Workstation-netinst-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('32-bit %sMB image')) % global_variables.iso_size['i386_workstation_net']}</a></p></li>
           </ul>
           </p>
+
+          <!-- Fedora Silverblue -->
+          <div class="top-space bottom-margin">
+            <div class="prerelease-box">
+              <h4>${_('Try Fedora Silverblue')}</h4>
+              <p>${_('Silverblue provides an immutable OS image and updates via OSTree.')}</p>
+              <p><i class="fa fa-fw fa-sm header-icon fa-download"></i>
+                <a class="ws-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_silverblue_id']}/Silverblue/x86_64/iso/Fedora-Silverblue-ostree-x86_64-${global_variables.release['curr_silverblue_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('64-bit %sGB Silverblue image')) % global_variables.iso_size['x64_silverblue']}</a>
+              </p>
+              <p><i class="fa fa-fw fa-sm header-icon fa-book"></i><a href="//silverblue.fedoraproject.org/">${_('Learn more')}</a></p>
+            </div>
+          </div>
+
+
           <div class="top-space bottom-margin">
             <py:choose>
             <py:when test="global_variables.release['curr_state'] == 'Alpha'">
@@ -172,25 +186,9 @@
                     ${Markup(_('Help us get F%(rel)s ready!')) % {'rel':global_variables.release['next_id']}}</p>
                 <p><i class="fa fa-fw fa-sm header-icon fa-download"></i><a href="../prerelease">${Markup(_('Download F%(rel)s Beta images')) % {'rel':global_variables.release['next_id']}}</a></p>
                 <p><i class="fa fa-fw fa-sm header-icon fa-book"></i><a href="//fedoraproject.org/wiki/QA/Join#release-validation">${_('How to test pre-releases')}</a></p>
-              </div>
+             </div>
             </py:when>
           </py:choose>
-          </div>
-
-          <!-- Fedora Silverblue -->
-          <div class="top-space bottom-margin">
-            <div class="prerelease-box">
-              <py:if test="global_variables.release['curr_state'] == 'Beta'">
-                <!-- Special case this for now. -->
-                <h5>${Markup(_('F%(rel)s Beta')) % {'rel':global_variables.release['next_id']}}</h5>
-              </py:if>
-              <h4>${_('Try Fedora Silverblue')}</h4>
-              <p>${_('Silverblue provides an immutable OS image and updates via OSTree.')}</p>
-              <p><i class="fa fa-fw fa-sm header-icon fa-download"></i>
-                <a class="ws-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_silverblue_id']}/Silverblue/x86_64/iso/Fedora-Silverblue-ostree-x86_64-${global_variables.release['curr_silverblue_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('64-bit %sGB Silverblue image')) % global_variables.iso_size['x64_silverblue']}</a>
-              </p>
-              <p><i class="fa fa-fw fa-sm header-icon fa-book"></i><a href="//silverblue.fedoraproject.org/">${_('Learn more')}</a></p>
-            </div>
           </div>
 
           <div class="top-margin bottom-margin"><h4>${_('Resources')}</h4></div>
