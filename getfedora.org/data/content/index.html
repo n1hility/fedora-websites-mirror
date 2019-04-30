@@ -63,7 +63,7 @@
 
    <header id="head">
       <div id="product-logo-row row">
-        <div class="col-sm-4 col-xs-12 productitem workstation">
+        <div class="col-sm-6 col-xs-12 productitem workstation">
           <div class="edition-logo">
           <a href="../${lang}/workstation">
             <img src="${path}/static/images/ws-logo.png" />
@@ -79,7 +79,7 @@
               <a role="button" href="../${lang}/workstation/download" class="btn btn-edition">${_('Download now')}</a>
             </p>
         </div>
-        <div class="col-sm-4 col-xs-12 productitem server">
+        <div class="col-sm-6 col-xs-12 productitem server">
           <div class="edition-logo">
           <a href="../${lang}/server">
             <img src="${path}/static/images/server-logo-next.png" />
@@ -94,6 +94,7 @@
               <a role="button" href="../${lang}/server/download" class="btn btn-edition">${_('Download now')}</a>
             </p>
         </div>
+        <!--
         <div class="col-sm-4 col-xs-12 productitem atomic">
           <div class="edition-logo">
           <a href="../${lang}/atomic">
@@ -108,7 +109,7 @@
             <p class="text-center uppercase bottom-space">
               <a role="button" href="../${lang}/atomic/download" class="btn btn-edition">${_('Download now')}</a>
             </p>
-        </div>
+	</div> -->
       </div>
 
       <div class="visible-xs col-xs-12 blue-pattern-box"></div>
@@ -118,30 +119,22 @@
     <div class="text-center grey-pattern-box top-margin">
       <div class="container-fluid">
         <div class="hidden-xs row">
-        <div class="col-xs-12 col-sm-4 productdesc-spacer">
+        <div class="col-xs-12 col-sm-6 productdesc-spacer">
            <hr />
         </div>
-        <div class="col-xs-12 col-sm-4 productdesc-spacer">
-         <hr />
-        </div>
-        <div class="col-xs-12 col-sm-4 productdesc-spacer">
+        <div class="col-xs-12 col-sm-6 productdesc-spacer">
          <hr />
         </div>
         </div>
         <div class="hidden-xs row">
-          <div class="col-sm-4 col-xs-12 productdesc workstation">
+          <div class="col-sm-6 col-xs-12 productdesc workstation">
             <div class="h-body liveusb thin">
               <h4>${_('Fedora Workstation is a polished, easy to use operating system for laptop and desktop computers, with a complete set of tools for developers and makers of all kinds.')}</h4>
             </div>
           </div>
-          <div class="col-sm-4 col-xs-12 productdesc server">
+          <div class="col-sm-6 col-xs-12 productdesc server">
             <div class="h-body liveusb thin">
               <h4>${_('Fedora Server is a powerful, flexible operating system that includes the best and latest datacenter technologies. It puts you in control of all your infrastructure and services.')}</h4>
-            </div>
-          </div>
-          <div class="col-sm-4 col-xs-12 productdesc cloud">
-            <div class="h-body thin">
-              <h4>${_('Fedora Atomic provides the best platform for your Linux-Docker-Kubernetes (LDK) application stack.')}</h4>
             </div>
           </div>
         </div>

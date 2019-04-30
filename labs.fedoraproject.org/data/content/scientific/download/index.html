@@ -41,14 +41,17 @@
           <h3>${_('Other Downloads')}</h3>
           <h4>${_('Direct Downloads')}</h4>
           <ul>
+<!--              <li>
+              <p><a class="scientific-download-splash" href="${global_variables.path['download_arch']}/${global_variables.release['curr_id']}/Labs/i386/iso/Fedora-Scientific_KDE-Live-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('32-bit %sGB Live image')) % global_variables.iso_size['i686_Live_Sci-kde']}</a></p>
+              </li>
+-->
               <li>
-                  <p><a class="scientific-download-splash" href="${global_variables.path['download_arch']}/${global_variables.release['curr_id']}/Labs/i386/iso/Fedora-Scientific_KDE-Live-i386-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${Markup(_('32-bit %sGB Live image')) % global_variables.iso_size['i686_Live_Sci-kde']}</a></p>
+		      <!--<p><a class="scientific-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Labs/x86_64/images/Fedora-Scientific-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box">${Markup(_('Libvirt %sGB Vagrant image')) % global_variables.iso_size['libvirt_Scientific']}</a></p>-->
+                <p><a class="scientific-download-splash" href="https://download.fedoraproject.org/pub/alt/unofficial/releases/30/x86_64/Fedora-Scientific-Vagrant-30-20190427.n.0.x86_64.vagrant-libvirt.box">${Markup(_('Libvirt %sGB Vagrant image')) % global_variables.iso_size['libvirt_Scientific']}</a></p>
               </li>
               <li>
-                  <p><a class="scientific-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Labs/x86_64/images/Fedora-Scientific-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-libvirt.box">${Markup(_('Libvirt %sGB Vagrant image')) % global_variables.iso_size['libvirt_Scientific']}</a></p>
-              </li>
-              <li>
-                  <p><a class="scientific-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Labs/x86_64/images/Fedora-Scientific-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box">${Markup(_('VirtualBox %sGB Vagrant image')) % global_variables.iso_size['virtualbox_Scientific']}</a></p>
+                <p><a class="scientific-download-splash" href="https://download.fedoraproject.org/pub/alt/unofficial/releases/30/x86_64/Fedora-Scientific-Vagrant-30-20190427.n.0.x86_64.vagrant-virtualbox.box">${Markup(_('VirtualBox %sGB Vagrant image')) % global_variables.iso_size['virtualbox_Scientific']}</a></p>
+		<!--  <p><a class="scientific-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Labs/x86_64/images/Fedora-Scientific-Vagrant-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.x86_64.vagrant-virtualbox.box">${Markup(_('VirtualBox %sGB Vagrant image')) % global_variables.iso_size['virtualbox_Scientific']}</a></p>-->
               </li>
           </ul>
           <h4>${_('Older Releases')}</h4>

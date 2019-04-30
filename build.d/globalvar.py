@@ -2,37 +2,37 @@
 # -*- coding: utf-8 -*-
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
 release={
-    'prev_id':     '28',
-    'curr_id':     '29',
-    'next_id':     '30',
+    'prev_id':     '29',
+    'curr_id':     '30',
+    'next_id':     '31',
     'curr_name':   '',
     'next_name':   '',
-    'curr_state':  'Beta',           # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_alt_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  'Beta',     # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_AMI_state':  'Beta', # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_server_state':  'Beta',    # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_state':  '',           # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_alt_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  '',     # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_AMI_state':  '', # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_server_state':  '',    # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_atomic_state':  '',    # 'Pre-Release' or '' - No Alpha/Beta for Atomic Host
-    'prev_arm_id': '28',
-    'prev_alt_id': '28',
-    'prev_cloud_id': '28',
-    'prev_atomic_id': '28',
-    'curr_arm_id': '29',
-    'curr_alt_id': '29',
-    'curr_cloud_id': '29',
+    'prev_arm_id': '29',
+    'prev_alt_id': '29',
+    'prev_cloud_id': '29',
+    'prev_atomic_id': '29',
+    'curr_arm_id': '30',
+    'curr_alt_id': '30',
+    'curr_cloud_id': '30',
     'curr_atomic_id': '29',
-    'curr_server_id': '29',
-    'curr_cloud_AMI_id': '29',
-    'curr_iot_id': '29',
-    'curr_silverblue_id': '29',
-    'next_silverblue_id': '30',
-    'next_arm_id': '30',
-    'next_alt_id': '30',
-    'next_cloud_id': '30',
-    'next_atomic_id': '30',
-    'next_server_id': '30',
-    'next_cloud_AMI_id': '30',
+    'curr_server_id': '30',
+    'curr_cloud_AMI_id': '30',
+    'curr_iot_id': '30',
+    'curr_silverblue_id': '30',
+    'next_silverblue_id': '31',
+    'next_arm_id': '31',
+    'next_alt_id': '31',
+    'next_cloud_id': '31',
+    'next_atomic_id': '31',
+    'next_server_id': '31',
+    'next_cloud_AMI_id': '31',
     'composedate': '20160616',
     'unofficial_compose': '20181029',
     'alt_composedate': '20161118',
@@ -109,7 +109,7 @@ iso_size={
     'windows':            '22.7',       # In MB
 
     # Legacy
-    'x86_64_DVD':          '4.3',       # In GB
+    'x86_64_DVD':          '1.9',       # In GB
     'i386_DVD':            '4.4',       # In GB
     'source_DVD':          '9.2',       # In GB
     'i686_Live_Desktop':   '922',       # In MB
@@ -119,8 +119,8 @@ iso_size={
     'PPC64_DVD':           '4.3',       # In GB
     'PPC64_Netinstall':    '340',       # In MB
     'aarch64_Server_DVD':  '2.7',       # In GB
-    'aarch64_Server_net':  '538',       # In MB
-    'aarch64_Server_raw':  '520',       # In MB
+    'aarch64_Server_net':  '552',       # In MB
+    'aarch64_Server_raw':  '571',       # In MB
     'aarch64_Cloud_net':   '459',       # In MB
     'aarch64_qcow2':       '239',       # In MB
     'aarch64_raw':         '148',       # In MB
@@ -147,20 +147,20 @@ iso_size={
     # These variables are only necessary to keep fedoraproject.org working
     's390_DVD':            '1.5',
     # Spins
-    'i686_Live_KDE':       '1.8',       # In GB
+    'i686_Live_KDE':       '1.3',       # In GB
     'x86_64_Live_KDE':     '1.8',       # In GB
-    'i686_Live_LXDE':      '1.1',       # In GB
-    'x86_64_Live_LXDE':    '1.2',       # In GB
+    'i686_Live_LXDE':      '1.3',       # In GB
+    'x86_64_Live_LXDE':    '1.3',       # In GB
     'i686_Live_LXQt':      '1.4',       # In GB
     'x86_64_Live_LXQt':    '1.4',       # In GB
-    'i686_Live_Xfce':      '1.4',       # In GB
-    'x86_64_Live_Xfce':    '1.4',       # In GB
-    'i686_Live_Mate':      '1.8',       # In GB
-    'x86_64_Live_Mate':    '1.8',       # In GB
-    'i686_Live_Soas':      '863',       # In MB
-    'x86_64_Live_Soas':    '959',       # In MB
-    'i686_Live_Cinnamon':   '1.8',       # In GB
-    'x86_64_Live_Cinnamon': '1.8',       # In GB
+    'i686_Live_Xfce':      '1.5',       # In GB
+    'x86_64_Live_Xfce':    '1.5',       # In GB
+    'i686_Live_Mate':      '2.0',       # In GB
+    'x86_64_Live_Mate':    '2.0',       # In GB
+    'i686_Live_Soas':      '895',       # In MB
+    'x86_64_Live_Soas':    '946',       # In MB
+    'i686_Live_Cinnamon':   '2.0',       # In GB
+    'x86_64_Live_Cinnamon': '2.1',       # In GB
     # Spins prerelease
     'pre_i686_Live_KDE':    '1.5',       # In GB
     'pre_x86_64_Live_KDE':  '1.9',       # In GB
@@ -177,28 +177,28 @@ iso_size={
     'pre_i686_Live_LXQt':    '1.4',      # In GB
     'pre_x86_64_Live_LXQt':  '1.4',      # In GB
     # Labs
-    'i686_Live_Security':  '1.3',       # In GB
-    'x86_64_Live_Security':'1.4',       # In GB
-    'i686_Live_Games':     '4.2',       # In GB
-    'x86_64_Live_Games':   '4.2',       # In GB
+    'i686_Live_Security':  '1.6',       # In GB
+    'x86_64_Live_Security':'1.7',       # In GB
+    'i686_Live_Games':     '4.0',       # In GB
+    'x86_64_Live_Games':   '4.1',       # In GB
     'i686_Live_Elab':      '2.5',       # In GB
     'x86_64_Live_Elab':    '2.5',       # In GB
     'i686_Live_Design':    '2.4',       # In GB
     'x86_64_Live_Design':  '2.4',       # In GB
     'i686_Live_Sci-kde':   '3.4',       # In GB
-    'x86_64_Live_Sci-kde': '3.8',       # In GB
+    'x86_64_Live_Sci-kde': '3.7',       # In GB
     'i686_Live_Robotics':  '2.5',       # In GB
     'x86_64_Live_Robotics':'2.5',       # In GB
     'i686_Live_Jam':       '2.4',       # In GB
     'x86_64_Live_Jam':     '2.5',       # In GB
-    'i686_Live_Astronomy': '3.3',       # In GB
-    'x86_64_Live_Astronomy':'3.4',      # In GB
-    'i686_Live_Py_Class':  '1.5',       # In GB
-    'x86_64_Live_Py_Class':'1.6',       # In GB
-    'libvirt_Py_Class':    '770',     	# In MB
-    'virtualbox_Py_Class': '806',   	# In MB
+    'i686_Live_Astronomy': '3.5',       # In GB
+    'x86_64_Live_Astronomy':'3.6',      # In GB
+    'i686_Live_Py_Class':  '1.7',       # In GB
+    'x86_64_Live_Py_Class':'1.8',       # In GB
+    'libvirt_Py_Class':    '881',     	# In MB
+    'virtualbox_Py_Class': '923',   	# In MB
     'ARM_Py_Class':		   '1.2',   	# In GB
-    'libvirt_Scientific':  '2.9',       # In GB
+    'libvirt_Scientific':  '2.8',       # In GB
     'virtualbox_Scientific':  '2.9',    # In GB
     # Labs prerelease
     'pre_i686_Live_Security':  '1.5',   # In GB
@@ -220,9 +220,9 @@ iso_size={
     'pre_i686_Live_Python':    '1.7',   # In GB
     'pre_x86_64_Live_Python':  '1.7',   # In GB
     # Server
-    'x86_64_server_DVD':   '2.9',       # In GB
-    'i386_server_DVD':     '2.6',       # In GB
-    'x86_64_server_net':   '593',       # In MB
+    'x86_64_server_DVD':   '3.0',       # In GB
+    'i386_server_DVD':     '2.8',       # In GB
+    'x86_64_server_net':   '600',       # In MB
     'i386_server_net':     '536',       # In MB
     # Server prerelease
     'pre_x86_64_server_DVD': '2.7',     # In GB
@@ -230,27 +230,27 @@ iso_size={
     'pre_x86_64_server_net': '571',     # In MB
     'pre_i386_server_net':   '525',     # In MB
     # Workstation
-    'x86_64_workstation':  '1.8',       # In GB
-    'i386_workstation':    '1.6',       # In GB
-    'x86_64_workstation_net': '593',    # In MB
-    'i386_workstation_net': '536',      # In MB
+    'x86_64_workstation':  '1.9',       # In GB
+    'i386_workstation':    '1.8',       # In GB
+    'x86_64_workstation_net': '600',    # In MB
+    'i386_workstation_net': '556',      # In MB
     # Workstation prerelease
     'pre_x86_64_workstation':  '1.8',   # In GB
     'pre_i386_workstation':    '1.7',   # In GB
     'pre_x86_64_workstation_net': '594',# In MB
     'pre_i386_workstation_net': '551',  # In MB
     # Silverblue
-    'x64_silverblue':   '2.0',  # In GB
+    'x64_silverblue':   '2.1',  # In GB
     # ARM
     'ARM_Workstation':     '1.3',       # In GB
-    'ARM_Server':          '493',       # In MB
-    'ARM_Minimal':         '356',       # In MB
+    'ARM_Server':          '507',       # In MB
+    'ARM_Minimal':         '362',       # In MB
     'ARM_KDE':             '1.4',       # In GB
-    'ARM_Xfce':            '1.2',       # In MB
-    'ARM_LXDE':            '1.0',       # In MB
+    'ARM_Xfce':            '1.1',       # In MB
+    'ARM_LXDE':            '1.1',       # In MB
     'ARM_LXQt':            '1.0',       # In GB
     'ARM_Mate':            '1.5',       # In GB
-    'ARM_SoaS':            '720',       # In MB
+    'ARM_SoaS':            '730',       # In MB
     'ARM_Python':          '1.2',       # In GB
     # ARM prerelease
     'pre_ARM_Workstation': '1.4',       # In GB

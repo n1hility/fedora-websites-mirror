@@ -17,13 +17,15 @@
       <div class="row">
         <div class="col-md-7 col-md-offset-5 text-left">
           <h2>${Markup(_('Download Fedora %(rel)s Python Classroom')) % {'rel':global_variables.release['curr_id']}}</h2>
-            <p class="gr"><a class="btn btn-success python-classroom-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Labs/x86_64/iso/Fedora-Python-Classroom-Live-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p>
+	  <!--<p class="gr"><a class="btn btn-success python-classroom-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Labs/x86_64/iso/Fedora-Python-Classroom-Live-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p>-->
+            <p class="gr"><a class="btn btn-success python-classroom-download-splash" href="https://download.fedoraproject.org/pub/alt/unofficial/releases/30/x86_64/Fedora-Python-Classroom-Live-x86_64-30-20190427.n.0.iso" role="button">${_('Download')}</a></p>
             <h5>${Markup(_('%s GB ISO Image for 64-bit PC')) % global_variables.iso_size['x86_64_Live_Py_Class']}</h5>
         </div>
       </div>
     </div>
 </header>
 <div class="container download-container top-space">
+  <xi:include href="../../../templates/generic/unofficial.html" />
   <div class="row">
     <div class="col-md-8 text-left bottom-space">
         <p>${Markup(_('The Python Classroom labs comes in 3 variants. A Live Image with GNOME, that can be downloaded on the top of this page, a Docker image and a Vagrant box for headless environments. Learn more about &lt;a href="%s"&gt;Docker&lt;/a&gt; and &lt;a href="%s"&gt;Vagrant&lt;/a&gt; in their documentation.') % ('https://docs.docker.com/get-started/', 'https://www.vagrantup.com/intro/getting-started/'))}</p>
@@ -56,7 +58,7 @@
           <h4>${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; Technology'))}</h4>
           <ul>
               <li>
-                  <p><a class="python-classroom-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Labs/armhfp/images/Fedora-Python-Classroom-armhfp-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('%sGB ARM image')) % global_variables.iso_size['ARM_Py_Class']}</a></p>
+                  <p><a class="python-classroom-download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Labs/armhfp/images/Fedora-Python-Classroom-armhfp-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('%sGB ARM image')) % global_variables.iso_size['ARM_Py_Class']}</a></p>
               </li>
           </ul>
           <h4>${_('Older Releases')}</h4>
