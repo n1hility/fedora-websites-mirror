@@ -118,28 +118,28 @@ iso_size={
     'x86_64_Netinstall':   '321',       # In MB
     'PPC64_DVD':           '4.3',       # In GB
     'PPC64_Netinstall':    '340',       # In MB
-    'aarch64_Server_DVD':  '2.7',       # In GB
+    'aarch64_Server_DVD':  '2.8',       # In GB
     'aarch64_Server_net':  '552',       # In MB
     'aarch64_Server_raw':  '571',       # In MB
     'aarch64_Cloud_net':   '459',       # In MB
-    'aarch64_qcow2':       '239',       # In MB
-    'aarch64_raw':         '148',       # In MB
-    'aarch64_Container':   '40',        # In MB
-    'aarch64_WS':          '2.9',       # In GB
-    'aarch64_min':         '21',        # In MB
-    'ppc64_Server_DVD':    '2.7',       # In GB
+    'aarch64_qcow2':       '313',       # In MB
+    'aarch64_raw':         '190',       # In MB
+    'aarch64_Container':   '43',        # In MB
+    'aarch64_WS':          '2.8',       # In GB
+    'aarch64_min':         '412',       # In MB
+    'ppc64_Server_DVD':    '3.0',       # In GB
     'ppc64_Server_net':    '597',       # In MB
     'ppc64_Cloud_net':     '520',       # In MB
     'ppc64_qcow2':         '282',       # In MB
     'ppc64_raw':           '158',       # In MB
     'ppc64_Container':     '43',        # In MB
     'ppc64le_Server_DVD':  '2.8',       # In GB
-    'ppc64le_Server_net':  '564',       # In MB
+    'ppc64le_Server_net':  '578',       # In MB
     'ppc64le_Cloud_net':   '488',       # In MB
     'ppc64le_qcow2':       '273',       # In MB
     'ppc64le_raw':         '159',       # In MB
     'ppc64le_Container':   '43',        # In MB
-    's390x_Server_DVD':    '2.5',       # In GB
+    's390x_Server_DVD':    '2.7',       # In GB
     'i686_sda.qcow2':      '212',       # In MB
     'x86_64_sda.qcow2':    '207',       # In MB
     'i686_raw':            '122',       # In MB
@@ -264,22 +264,22 @@ iso_size={
     'pre_ARM_Cinnamon':    '780',       # In MB
     'pre_ARM_SoaS':        '682',       # In MB
     # Cloud
-    'raw_x86_64_cloud':    '185',       # In MB
+    'raw_x86_64_cloud':    '195',       # In MB
     'raw_i386_cloud':      '143',       # In MB
-    'qcow2_x86_64_cloud':  '293',       # In MB
+    'qcow2_x86_64_cloud':  '319',       # In MB
     'qcow2_i386_cloud':    '216',       # In MB
     'VBvag_cloud':         '279',       # In MB
     'libvag_cloud':        '290',       # In MB
     'x86_64_Container':    '43',        # In MB
-    'x86_64_docker':       '40',        # In MB NOTE: this is just to make fedoraproject.org build happy
+    'x86_64_docker':       '43',        # In MB NOTE: this is just to make fedoraproject.org build happy
     'raw_i386_cloud':      '144',       # In MB
     # Note that atomic values here get overwritten by the twoweek script.
     'atomic_raw_cloud':    '???',       # In MB
     'atomic_qcow2_cloud':  '???',       # In MB
     'atomic_VBvag_cloud':  '???',       # In MB
     'atomic_libvag_cloud': '???',       # In MB
-    'VBvag_cloud':         '208',       # In MB
-    'libvag_cloud':        '199',       # In MB
+    'VBvag_cloud':         '304',       # In MB
+    'libvag_cloud':        '294',       # In MB
     'x86_64_Container':    '51',        # In MB
     'atomic_iso':          '918',       # In MB
     # Cloud prerelease
@@ -305,12 +305,12 @@ iso_size={
     'manual_pre_atomic_libvag_cloud': '648',   # In MB
     'manual_pre_atomic_iso':          '1054',  # In MB
     # Everything release
-    'x86_64_ev':        '593',   #In MB
-    'i386_ev':          '536',   #In MB
-    's390x_ev':         '505',   #In MB
-    'aarch64_ev':       '538',   #In MB
+    'x86_64_ev':        '601',   #In MB
+    'i386_ev':          '556',   #In MB
+    's390x_ev':         '445',   #In MB
+    'aarch64_ev':       '552',   #In MB
     'ppc64_ev':         '597',   #In MB
-    'ppc64le_ev':       '564',   #In MB
+    'ppc64le_ev':       '578',   #In MB
     # Everything prerelease
     'pre_x86_64_ev':        '571',   #In MB
     'pre_i386_ev':          '525',   #In MB
