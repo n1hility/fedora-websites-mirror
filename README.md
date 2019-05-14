@@ -1,3 +1,11 @@
+# NOTE
+
+The getfedora.org sources now live in [a new repository](https://pagure.io/fedora-web/websites/)
+and are built with Flask and Frozen-Flask.
+The other sites remain in *this* current repository that you are looking at right now.
+
+---------------------------------------------------------------------------------------------------
+
 This is the Fedora Websites GIT repo used to build the websites starting
 from the F24 release cycle.
 
