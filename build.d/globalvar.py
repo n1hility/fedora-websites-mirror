@@ -461,6 +461,7 @@ pre_HVM_base_AMI={
     'eu-west-2':       'ami-016f96780e908bf4d',
     'sa-east-1':       'ami-0e995b54b555f3344',
     'us-east-1':       'ami-04520caa6eb9ffc1f',
+    'us-east-2':       'ami-0aec7e421376b5f58',
     'us-west-1':       'ami-0dd7e9e23749eb2df',
     'us-west-2':       'ami-0e86301bce37e5e36'
 }
@@ -477,6 +478,7 @@ pre_GP2_HVM_base_AMI={
     'eu-west-2':       'ami-0d364c384f03a6973',
     'sa-east-1':       'ami-0dc599e078e09e233',
     'us-east-1':       'ami-0645061389aac9c7b',
+    'us-east-2':       'ami-0c64ce1ce83eda53c',
     'us-west-1':       'ami-071d169b6f75e0a1c',
     'us-west-2':       'ami-0760d1937ffd9c65a'
 }
