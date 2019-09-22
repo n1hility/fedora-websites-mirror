@@ -450,35 +450,35 @@ AARCH64_GP2_HVM_atomic_AMI={}
 
 # EC2 AMI IDs PRERELEASE!!!
 pre_HVM_base_AMI={
-    'ap-northeast-1':  'ami-0a24cb0b129391f91',
-    'ap-northeast-2':  'ami-025a265da1a333635',
-    'ap-south-1':      'ami-032f4d743f5c677bb',
-    'ap-southeast-1':  'ami-0e014a47fd58202e1',
-    'ap-southeast-2':  'ami-04f1eafc8d8cef238',
-    'ca-central-1':    'ami-0423d7ead4d36fc13',
-    'eu-central-1':    'ami-0097aa31bfa6d957f',
-    'eu-west-1':       'ami-08779cabb5a70b267',
-    'eu-west-2':       'ami-0a2cafce4e146fa6f',
-    'sa-east-1':       'ami-07c85de0c364891f8',
-    'us-east-1':       'ami-0a5a4a027c594a3ee',
-    'us-west-1':       'ami-0db1697b106a42511',
-    'us-west-2':       'ami-0ae9bebb94df0dfb2'
+    'ap-northeast-1':  'ami-0df283a7df814088a',
+    'ap-northeast-2':  'ami-00019f41ee614202b',
+    'ap-south-1':      'ami-04161766142c985d0',
+    'ap-southeast-1':  'ami-08479c9ede08f0b90',
+    'ap-southeast-2':  'ami-035ae85a2b0dba53f',
+    'ca-central-1':    'ami-074898c90e5e6ad67',
+    'eu-central-1':    'ami-013b0d8268edfcca6',
+    'eu-west-1':       'ami-069824c3215b6a9b3',
+    'eu-west-2':       'ami-016f96780e908bf4d',
+    'sa-east-1':       'ami-0e995b54b555f3344',
+    'us-east-1':       'ami-04520caa6eb9ffc1f',
+    'us-west-1':       'ami-0dd7e9e23749eb2df',
+    'us-west-2':       'ami-0e86301bce37e5e36'
 }
 
 pre_GP2_HVM_base_AMI={
-    'ap-northeast-1':  'ami-05cb9a208a11375a0',
-    'ap-northeast-2':  'ami-03f32d94e35e8ee16',
-    'ap-south-1':      'ami-08a95ab722459da46',
-    'ap-southeast-1':  'ami-0b19c7c9c9f0e71b6',
-    'ap-southeast-2':  'ami-03df355d88c07b195',
-    'ca-central-1':    'ami-02f4f27b3c8cda214',
-    'eu-central-1':    'ami-04077be43a1aa41cf',
-    'eu-west-1':       'ami-0fa29ca888e696593',
-    'eu-west-2':       'ami-09a9fa30546daec7b',
-    'sa-east-1':       'ami-0fe4b2f13a9c10b68',
-    'us-east-1':       'ami-0ef357b3f269575be',
-    'us-west-1':       'ami-0e24cc3e688d75512',
-    'us-west-2':       'ami-0e2412f7959332635'
+    'ap-northeast-1':  'ami-00512847289ac69e5',
+    'ap-northeast-2':  'ami-0f755c41c262380b8',
+    'ap-south-1':      'ami-0159f61e7af6edefa',
+    'ap-southeast-1':  'ami-0e98edf3171f145fb',
+    'ap-southeast-2':  'ami-0599cbd94a5b6c7c9',
+    'ca-central-1':    'ami-0834d50b72d10742e',
+    'eu-central-1':    'ami-0a8fee007f6e05976',
+    'eu-west-1':       'ami-0ab4231b322d6b2c8',
+    'eu-west-2':       'ami-0d364c384f03a6973',
+    'sa-east-1':       'ami-0dc599e078e09e233',
+    'us-east-1':       'ami-0645061389aac9c7b',
+    'us-west-1':       'ami-071d169b6f75e0a1c',
+    'us-west-2':       'ami-0760d1937ffd9c65a'
 }
 
 pre_PV_base_AMI={
