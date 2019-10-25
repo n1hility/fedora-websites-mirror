@@ -346,7 +346,12 @@ aarch64_EC2_regions = [
     region(u'US East (N. Virginia)',           u'Virginia',     u'us-east-1'),
     region(u'US East (Ohio)',                  u'Ohio',         u'us-east-2'),
     region(u'US West (Oregon)',                u'Oregon',       u'us-west-2'),
+    region(u'US West (N. California)',         u'California',   u'us-west-1'),
     region(u'EU West (Ireland)',               u'Ireland',      u'eu-west-1'),
+    region(u'EU Central (Frankfurt)',          u'Frankfurt',    u'eu-central-1'),
+    region(u'Asia Pacific NE (Tokyo)',         u'Tokyo',        u'ap-northeast-1'),
+    region(u'Asia Pacific SE (Sydney)',        u'Sydney',       u'ap-southeast-2'),
+    region(u'Asia Pacific (Mumbai)',           u'Mumbai',       u'ap-south-1'),
 ]
 
 path_stats={
@@ -360,10 +365,15 @@ for _, short, code in EC2_regions:
 # EC2 AMI IDs
 
 ARM64_base_AMI={
-    'eu-west-1':        'ami-010f0ac509b6d5c90',
-    'us-east-1':        'ami-05927168596f8f271',
-    'us-east-2':        'ami-04e5f7d4b25051814',
-    'us-west-2':        'ami-0b7237050e6efd06d',
+    'ap-northeast-1':  'ami-053da64aaf77eb27a',
+    'ap-south-1':      'ami-0b2e07c377839c44c',
+    'ap-southeast-2':  'ami-0769832d06acb4fdb',
+    'eu-central-1':    'ami-0a6aa3176dca0548e',
+    'eu-west-1':       'ami-010f0ac509b6d5c90',
+    'us-east-1':       'ami-05927168596f8f271',
+    'us-east-2':       'ami-04e5f7d4b25051814',
+    'us-west-1':       'ami-09e4ae93f90e20603',
+    'us-west-2':       'ami-0b7237050e6efd06d'
 }
 
 HVM_base_AMI={
