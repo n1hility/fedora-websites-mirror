@@ -360,42 +360,44 @@ for _, short, code in EC2_regions:
 # EC2 AMI IDs
 
 ARM64_base_AMI={
-    'eu-west-1':        'ami-04943823dedf5027f',
-    'us-east-1':        'ami-051571ec5ffe08522',
-    'us-east-2':        'ami-0399b24cfadfc4f33',
-    'us-west-2':        'ami-0944f2356f6bb91bc',
+    'eu-west-1':        'ami-010f0ac509b6d5c90',
+    'us-east-1':        'ami-05927168596f8f271',
+    'us-east-2':        'ami-04e5f7d4b25051814',
+    'us-west-2':        'ami-0b7237050e6efd06d',
 }
 
 HVM_base_AMI={
-    'ap-northeast-1':   'ami-8b05e3f4',     # Tokyo
-    'ap-northeast-2':   'ami-ddf851b3',     # Seoul
-    'ap-south-1':       'ami-c12b0aae',     # Mumbai
-    'ap-southeast-1':   'ami-b8c5eac4',     # Singapore
-    'ap-southeast-2':   'ami-976ea4f5',     # Sydney
-    'ca-central-1':     'ami-67129303',     # Canada
-    'eu-central-1':     'ami-6065438b',     # Frankfurt
-    'eu-west-1':        'ami-420d213b',     # Ireland
-    'eu-west-2':        'ami-ca14f7ad',     # London
-    'sa-east-1':        'ami-0e9dce62',     # Sao Paolo
-    'us-east-1':        'ami-5c69df23',     # Virginia
-    'us-west-1':        'ami-25adb045',     # California
-    'us-west-2':        'ami-56fb932e'      # Oregon
+    'ap-northeast-1':  'ami-028fa48fe1aaca19e',
+    'ap-northeast-2':  'ami-0734c2673e727fe39',
+    'ap-south-1':      'ami-0fdf744fe7a87cee4',
+    'ap-southeast-1':  'ami-04a22e2324377cdbd',
+    'ap-southeast-2':  'ami-06b1cc1d1e719ec37',
+    'ca-central-1':    'ami-000a5122ac0f9e2d9',
+    'eu-central-1':    'ami-0a0608443984de7eb',
+    'eu-west-1':       'ami-02765e71fe7b1e036',
+    'eu-west-2':       'ami-0efbedc7174d3250e',
+    'sa-east-1':       'ami-0a8506c591298cd13',
+    'us-east-1':       'ami-0fcbe88944a53b4c8',
+    'us-east-2':       'ami-0a32ccde4ea923cc3',
+    'us-west-1':       'ami-0f0d716ff62dea395',
+    'us-west-2':       'ami-03e0bcb36412ff6e4'
 }
 
 GP2_HVM_base_AMI={
-    'ap-northeast-1':   'ami-a600e6d9',     # tokyo
-    'ap-northeast-2':   'ami-a2ff56cc',     # seoul
-    'ap-south-1':       'ami-052a0b6a',     # mumbai
-    'ap-southeast-1':   'ami-04c7e878',     # singapore
-    'ap-southeast-2':   'ami-3f6ca65d',     # sydney
-    'ca-central-1':     'ami-c40e8fa0',     # canada
-    'eu-central-1':     'ami-436640a8',     # frankfurt
-    'eu-west-1':        'ami-8b0824f2',     # ireland
-    'eu-west-2':        'ami-691af90e',     # london
-    'sa-east-1':        'ami-9c8ad9f0',     # sao paolo
-    'us-east-1':        'ami-e754e298',     # virginia
-    'us-west-1':        'ami-77b3ae17',     # california
-    'us-west-2':        'ami-f5fc948d'      # oregon
+    'ap-northeast-1':  'ami-0d8e872ddc3206741',
+    'ap-northeast-2':  'ami-08a47fe608e852f01',
+    'ap-south-1':      'ami-0a0a5815e614466e4',
+    'ap-southeast-1':  'ami-049d4c4233514a931',
+    'ap-southeast-2':  'ami-033b4a0bd9a622f58',
+    'ca-central-1':    'ami-06449af04bac4eac0',
+    'eu-central-1':    'ami-0417b5ec8768794f9',
+    'eu-west-1':       'ami-0ce2a6144475cf269',
+    'eu-west-2':       'ami-0f6b2a3d45505c6ae',
+    'sa-east-1':       'ami-0e5c67f0e4306e372',
+    'us-east-1':       'ami-0c830793775595d4b',
+    'us-east-2':       'ami-04f8478f9bc7f1453',
+    'us-west-1':       'ami-0e76ece0a3a8ad72f',
+    'us-west-2':       'ami-0e82cc6ce8f393d4b'
 }
 
 PV_base_AMI={
