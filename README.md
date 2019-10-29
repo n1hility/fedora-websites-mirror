@@ -32,7 +32,6 @@ This repository contains the sources for the following Fedora Websites:
 * http://fedoraproject.org
 * http://flocktofedora.org
 * http://fudcon.fedoraproject.org
-* http://getfedora.org
 * http://labs.fedoraproject.org
 * http://mirrors.fedoraproject.org
 * http://spins.fedoraproject.org
