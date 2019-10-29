@@ -36,6 +36,7 @@ This repository contains the sources for the following Fedora Websites:
 * http://mirrors.fedoraproject.org
 * http://spins.fedoraproject.org
 * http://start.fedoraproject.org
+* http://iot.fedoraproject.org
 
 ### Getting started
 
