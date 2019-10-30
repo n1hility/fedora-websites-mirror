@@ -35,9 +35,6 @@
         <div class="col-sm-4 col-xs-12">
           <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Labs-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-x86_64-CHECKSUM">${_('Verify 64-bit!')}</a>
         </div>
-        <div class="col-sm-4 col-xs-12">
-          <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Labs-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-i386-CHECKSUM">${_('Verify 32-bit!')}</a>
-        </div>
     </div>
 
     <div class="row bottom-space">
@@ -49,9 +46,9 @@
             <pre class="command">$ gpg --verify-files *-CHECKSUM</pre>
             <p>${Markup(_('The CHECKSUM file should have a good signature from one of the following keys:'))}</p>
             <ul>
+                <li><code>3C3359C4</code> - ${_('Fedora 31')}</li>
                 <li><code>CFC659B9</code> - ${_('Fedora 30')}</li>
                 <li><code>429476B4</code> - ${_('Fedora 29')}</li>
-                <li><code>9DB62FB1</code> - ${_('Fedora 28')}</li>
                 <li><code>DBBDCF7C</code> - ${_('IOT 2019')}</li>
             </ul>
             <p>${Markup(_('Finally, now that the CHECKSUM file has been verified, check that the image\'s checksum matches:'))}</p>
