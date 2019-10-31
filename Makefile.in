@@ -5,7 +5,7 @@ LANGUAGES := $(shell grep -v "^\#" po/LINGUAS)
 endif
 HTML_FILES = $(shell find data -name "*.html")
 RESOURCE_NAME = /var/tmp/po_dir
-PYTHON = python
+PYTHON = python2.7
 PYBABEL = $(PYTHON) /usr/bin/pybabel
 BASEPATH = /
 PWD = $(shell pwd)
