@@ -62,14 +62,14 @@
         <div class="col-md-12 top-margin">
             <p>${Markup(_('Next, import Fedora\'s GPG key(s):'))}</p>
             <pre class="command">$ curl https://getfedora.org/static/fedora.gpg | gpg --import</pre>
-            <p>${Markup(_('You can verify the details of the GPG key(s) &lt;a href="%s/%s/keys"&gt;here&lt;/a&gt;.') % ('https://getfedora.org', lang))}</p>
+            <p>${Markup(_('You can verify the details of the GPG key(s) &lt;a href="%s/%s/security"&gt;here&lt;/a&gt;.') % ('https://getfedora.org', lang))}</p>
             <p>${Markup(_('Now, verify that the CHECKSUM file is valid:'))}</p>
             <pre class="command">$ gpg --verify-files *-CHECKSUM</pre>
             <p>${Markup(_('The CHECKSUM file should have a good signature from one of the following keys:'))}</p>
             <ul>
+                <li><code>12C944D0</code> - ${_('Fedora 32')}</li>
+                <li><code>3C3359C4</code> - ${_('Fedora 31')}</li>
                 <li><code>CFC659B9</code> - ${_('Fedora 30')}</li>
-                <li><code>429476B4</code> - ${_('Fedora 29')}</li>
-                <li><code>9DB62FB1</code> - ${_('Fedora 28')}</li>
                 <li><code>DBBDCF7C</code> - ${_('IOT 2019')}</li>
             </ul>
             <p>${Markup(_('Finally, now that the CHECKSUM file has been verified, check that the image\'s checksum matches:'))}</p>
