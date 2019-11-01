@@ -11,7 +11,6 @@ License:    LGPLv2+
 
 from __future__ import print_function
 
-import collections
 import copy
 from datetime import datetime, timedelta
 import functools
@@ -30,6 +29,7 @@ base_url = 'https://apps.fedoraproject.org/datagrepper/raw'
 topic = "org.fedoraproject.prod.fedimg.image.publish"
 
 session = requests.session()
+
 
 def get_page(page, pages):
     """ Retrieve the JSON for a particular page of datagrepper results """
@@ -97,7 +97,7 @@ def get_messages(target):
             cachetime = datetime.strptime(cache['timestamp'], dateformat)
             if cachetime > (datetime.utcnow() - timedelta(days=1)):
                 return filter_messages(cache['messages'], target)
-    except:
+    except FileNotFoundError:
         log.info('No cache, loading from scratch')
 
     messages = list(retrieve_messages())
@@ -130,18 +130,19 @@ def sanity_check(globalvar, collected_fedimg_vars):
         collected = collected_fedimg_vars[name]
 
         for key in handtyped:
-            if not key in collected:
+            if key not in collected:
                 log.warn("collected %r is missing %r" % (name, key))
 
         for key in collected:
-            if not key in handtyped:
+            if key not in handtyped:
                 log.warn("handtyped %r is missing %r" % (name, key))
 
 
 def mocked_fedimg(templates):
-    regions = ['us-east-1', 'ap-northeast-1', 'sa-east-1', 'ap-southeast-1', 'ap-southeast-2',
-               'us-west-2', 'us-west-1', 'eu-central-1', 'eu-west-1', 'ap-northeast-2',
-               'ap-south-1', 'ca-central-1', 'eu-west-2', 'us-east-2', 'eu-west-3']
+    regions = ['us-east-1', 'ap-northeast-1', 'sa-east-1', 'ap-southeast-1',
+               'ap-southeast-2', 'us-west-2', 'us-west-1', 'eu-central-1',
+               'eu-west-1', 'ap-northeast-2', 'ap-south-1', 'ca-central-1',
+               'eu-west-2', 'us-east-2', 'eu-west-3']
     mockdata = {}
     for region in regions:
         mockdata[region] = 'ami-mocked'

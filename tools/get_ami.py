@@ -34,7 +34,6 @@ def get_page(page, pages, delta):
     return response.json()
 
 
-
 def get_messages(days):
     """ Generator that yields messages from datagrepper """
 
@@ -43,7 +42,7 @@ def get_messages(days):
     # Get the first page
     data = get_page(1, 'unknown', delta)
     for message in data['raw_messages']:
-         yield message
+        yield message
 
     more = functools.partial(get_page, pages=data['pages'], delta=delta)
 
@@ -80,7 +79,7 @@ if __name__ == '__main__':
     messages = get_messages(args.days)
     for message in messages:
         key = message['msg']['image_name']
-        if not key in results:
+        if key not in results:
             results[key] = []
         results[key].append(message['msg'])
 
