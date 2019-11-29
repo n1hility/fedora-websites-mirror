@@ -140,6 +140,9 @@ iso_size={
     'ppc64le_raw':         '159',       # In MB
     'ppc64le_Container':   '43',        # In MB
     's390x_Server_DVD':    '2.7',       # In GB
+    's390x_qcow2':         '273',       # In MB
+    's390x_raw':           '159',       # In MB
+    's390x_Container':     '43',        # In MB
     'i686_sda.qcow2':      '212',       # In MB
     'x86_64_sda.qcow2':    '207',       # In MB
     'i686_raw':            '122',       # In MB
