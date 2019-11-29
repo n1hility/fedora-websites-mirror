@@ -746,6 +746,48 @@
             <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Everything/s390x/iso/Fedora-Everything-netinst-s390x-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/static/checksums/Fedora-Everything-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-s390x-CHECKSUM">${_('Verify')}</a></p>
             </div>
           </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Cloud')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB qcow2 image')) % global_variables.iso_size['s390x_qcow2']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/s390x/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.s390x.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/cloud.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Cloud')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB raw image')) % global_variables.iso_size['s390x_raw']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/s390x/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.s390x.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
+          <div class="white">
+            <div class="col-md-1">
+            <img src="/static/images/docker.png" />
+            </div>
+            <div class="col-md-4">
+            <h3>${_('Fedora Container')}</h3>
+            </div>
+            <div class="col-md-3">
+            <p>${Markup(_('%sMB Container image')) % global_variables.iso_size['s390x_Container']}</p>
+            </div>
+            <div class="col-md-4">
+            <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Container/s390x/images/Fedora-Container-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.s390x.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -781,6 +823,33 @@
           <div class="col-xs-9">
           <h3>${_('Everything')}</h3>
           <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Everything/s390x/iso/Fedora-Everything-netinst-s390x-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/static/checksums/Fedora-Everything-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-s390x-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Cloud')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/s390x/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.s390x.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Cloud')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/s390x/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.s390x.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-xs-3">
+          <img src="/static/images/docker.png" />
+          </div>
+          <div class="col-xs-9">
+          <h3>${_('Fedora Container')}</h3>
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Container/s390x/images/Fedora-Container-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.s390x.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
           </div>
         </div>
       </div>
@@ -821,6 +890,39 @@
           </div>
           <div class="col-sm-4">
           <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Everything/s390x/iso/Fedora-Everything-netinst-s390x-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/static/checksums/Fedora-Everything-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-s390x-CHECKSUM">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Cloud')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/s390x/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.s390x.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/cloud.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Cloud')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Cloud/s390x/images/Fedora-Cloud-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.s390x.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="col-sm-3">
+          <img src="/static/images/docker.png" />
+          </div>
+          <div class="col-sm-5">
+          <h3>${_('Fedora Container')}</h3>
+          </div>
+          <div class="col-sm-4">
+          <p class="download"><a href="${global_variables.path['download_arch']}/${global_variables.release['curr_alt_id']}/Container/s390x/images/Fedora-Container-Base-${global_variables.release['curr_alt_id']}-${global_variables.release['RC_gold_s390x']}.s390x.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify.html">${_('Verify')}</a></p>
           </div>
         </div>
       </div>
