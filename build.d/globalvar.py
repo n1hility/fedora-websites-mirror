@@ -59,6 +59,7 @@ release={
     'RC_build': '1.9',            # sometimes releng use the RC build
     'RC_gold_aarch64': '1.9',     # RC Gold for aarch64
     'RC_gold_ppc64': '1.9',       # RC Gold for ppc64
+    'RC_gold_ppc64le': '1.9',     # RC Gold for ppc64le
     'RC_gold_s390x': '1.9',       # RC Gold for s390x
     'RC_pre_gold': '1.1',         # insert the number of the prerelease RC version declared GOLD
     'RC_pre_build': '2',        # sometimes releng use the RC build
@@ -133,13 +134,17 @@ iso_size={
     'ppc64_qcow2':         '282',       # In MB
     'ppc64_raw':           '158',       # In MB
     'ppc64_Container':     '43',        # In MB
-    'ppc64le_Server_DVD':  '2.8',       # In GB
-    'ppc64le_Server_net':  '578',       # In MB
+    'ppc64le_Server_DVD':  '1.9',       # In GB
+    'ppc64le_Server_net':  '619',       # In MB
     'ppc64le_Cloud_net':   '488',       # In MB
-    'ppc64le_qcow2':       '273',       # In MB
-    'ppc64le_raw':         '159',       # In MB
-    'ppc64le_Container':   '43',        # In MB
-    's390x_Server_DVD':    '2.7',       # In GB
+    'ppc64le_qcow2':       '366',       # In MB
+    'ppc64le_raw':         '232',       # In MB
+    'ppc64le_Container':   '42',        # In MB
+    's390x_Server_DVD':    '1.7',       # In GB
+    's390x_Server_net':    '484',       # In MB
+    's390x_qcow2':         '360',       # In MB
+    's390x_raw':           '222',       # In MB
+    's390x_Container':     '37',        # In MB
     'i686_sda.qcow2':      '212',       # In MB
     'x86_64_sda.qcow2':    '207',       # In MB
     'i686_raw':            '122',       # In MB
