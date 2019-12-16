@@ -562,7 +562,7 @@ margin-top:4px;
 
 .product-box .product-server,
 .product-box .product-workstation,
-.product-box .product-atomic
+.product-box .product-coreos
 {
   margin: 20px auto;
   display: block;
@@ -592,22 +592,22 @@ margin-top:4px;
  background-image:url(../images/smalllogo-color-workstation.png);
 }
 
-.product-box .product-atomic .greyscale
+.product-box .product-coreos .greyscale
 {
- background-image:url(../images/smalllogo-grey-atomic.png);
+ background-image:url(../images/smalllogo-grey-coreos.png);
 }
 
-.product-box .product-atomic .color
+.product-box .product-coreos .color
 {
- background-image:url(../images/smalllogo-color-atomic.png);
+ background-image:url(../images/smalllogo-color-coreos.png);
 }
 
 .product-box .product-server .greyscale,
 .product-box .product-server:hover .color,
 .product-box .product-workstation .greyscale,
 .product-box .product-workstation:hover .color,
-.product-box .product-atomic .greyscale,
-.product-box .product-atomic:hover .color
+.product-box .product-coreos .greyscale,
+.product-box .product-coreos:hover .color
 {
   opacity:1;
  transition: opacity 0.3s ease;
@@ -615,7 +615,7 @@ margin-top:4px;
 
 .product-box .product-server .color,
 .product-box .product-workstation .color,
-.product-box .product-atomic .color
+.product-box .product-coreos .color
 {
   opacity:0;
   transition: opacity 0.3s ease;
@@ -623,7 +623,7 @@ margin-top:4px;
 
 .product-box .product-server:hover .greyscale,
 .product-box .product-workstation:hover .greyscale,
-.product-box .product-atomic:hover .greyscale
+.product-box .product-coreos:hover .greyscale
 {
  opacity:0;
 }
