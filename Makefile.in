@@ -10,6 +10,8 @@ PYBABEL = $(PYTHON) /usr/bin/pybabel
 BASEPATH = /
 PWD = $(shell pwd)
 POT_FILE := $(shell ls po/*.pot)
+TRANS_TMP := $(shell mktemp -d)
+TRANS_FOLDER := $(basename $(notdir $(POT_FILE)))
 BUILDDIR = $(PWD)/../build.d
 HTTPDDIR = $(PWD)/../httpd
 
@@ -48,10 +50,19 @@ data/templates/translations.html: po/LINGUAS
 msgmerge: $(wildcard po/*.po)
 
 pushpot:
-	zanata push $(subst po/,,$(POT_FILE))
+	git clone ssh://git@pagure.io/fedora-web/translations.git $(TRANS_TMP)
+	cp $(POT_FILE) $(TRANS_TMP)/$(TRANS_FOLDER)/
+	cd $(TRANS_TMP) && git add *.pot
+	cd $(TRANS_TMP) && git commit -m "update pot file for $(TRANS_FOLDER)"
+	cd $(TRANS_TMP) && git push
+	rm -rf $(TRANS_TMP)
 
 pullpos:
-	zanata pull --no-copytrans
+	git clone ssh://git@pagure.io/fedora-web/translations.git $(TRANS_TMP)
+	ls -lah $(TRANS_TMP)
+	cp -R $(TRANS_TMP)/$(TRANS_FOLDER)/*.po ./po/
+	cp -R $(TRANS_TMP)/$(TRANS_FOLDER)/LINGUAS ./po/
+	rm -rf $(TRANS_TMP)
 
 # Use fedfind to grep all releases for the releases.json file, used by FMW
 # Use this instruction only for getfedora.org
