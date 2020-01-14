@@ -38,8 +38,8 @@ EXAMPLES:
          $ $0 -p                               (3)
 
    1. Update all but let you git add and push to tranlation repository.
-   2. Update POs POT and LINGUAS of spins.fedoraproject.org website. Let you test localy.
-   3. Update all and commit changes in 3 different commits. That's what you were looking for.
+   2. Pull POs + LINGUAS, generate pot of spins.fedoraproject.org website. Let you test localy.
+   3. Pull POs + LINGUAS, generate pot and push it to tranlation repository. That's what you were looking for.
 
 EOF
 }
@@ -97,20 +97,11 @@ do
    echo "- Updating $i POT"
    cd $i
    make pot
-   insertion_number=`git diff --numstat po/*.pot 2>&1 | awk '{print $1}'` # record the number of insertion,
-									 #if no new string found at least the build time could change (i.e. check if > 1)
-   let "$((++insertion_number))"     # cause in case the file is exactly the same, prevent no git diff output
-   if [ $insertion_number -gt 2 ]
-   then								 # POT should be uploaded
-     NEED_COMMIT=1					 # don't commit if any POT modified!
-     if [ ! -z $ADD ]
-     then
-       git add po/*.pot
-       if [ ! -z $POT_PUSH ] && [ ! -z $COMMIT ]
-       then
-         make pushpot
-       fi
-     fi
+
+   # POT should be uploaded
+   if [ ! -z $POT_PUSH ]
+   then
+     make pushpot
      echo "POT updated"
    fi
 
