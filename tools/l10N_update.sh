@@ -26,22 +26,20 @@ This script update all L10n things. Will never git push.
 
 OPTIONS:
    -h      Show this message
-   -a      Git add all
-   -c      With -a, git commit with default message (POs, POT and LINGUAS in different commits)
-   -p      With -c make pushpot (update POT on tranlation repository)
+   -p      update POT on tranlation repository
 
 WEBSITE:
     The website targeted (like "fedoraproject.org")
     Without WEBSITE specifyed, will parse the whole website array.
 
 EXAMPLES:
-         $ $0                                     (1)
-         $ $0 -a -w ../spins.fedoraproject.org    (2)
-         $ $0 -a -c -p                            (3)
+         $ $0                                  (1)
+         $ $0 -w ../spins.fedoraproject.org    (2)
+         $ $0 -p                               (3)
 
    1. Update all but let you git add and push to tranlation repository.
-   2. Update POs POT and LINGUAS of spins.fedoraproject.org website. Let you test localy.
-   3. Update all and commit changes in 3 different commits. That's what you were looking for.
+   2. Pull POs + LINGUAS, generate pot of spins.fedoraproject.org website. Let you test localy.
+   3. Pull POs + LINGUAS, generate pot and push it to tranlation repository. That's what you were looking for.
 
 EOF
 }
@@ -52,12 +50,6 @@ do
     h)
       usage
       exit 1
-      ;;
-    a)
-      ADD=1
-      ;;
-    c)
-      COMMIT=1
       ;;
     p)
       POT_PUSH=1
@@ -95,18 +87,8 @@ for i in "${site[@]}"
 do
    cd $i
    make pullpos
-   if [ ! -z $ADD ]
-   then
-     git add po/*.po
-   fi
    cd $root
 done
-
-if [ ! -z $COMMIT ] && [ ! -z $ADD ]
-then
-  git commit -m "[`basename $0`] Full POs update"
-fi
-
 
 ### POT
 
@@ -115,81 +97,19 @@ do
    echo "- Updating $i POT"
    cd $i
    make pot
-   insertion_number=`git diff --numstat po/*.pot 2>&1 | awk '{print $1}'` # record the number of insertion,
-									 #if no new string found at least the build time could change (i.e. check if > 1)
-   let "$((++insertion_number))"     # cause in case the file is exactly the same, prevent no git diff output
-   if [ $insertion_number -gt 2 ]
-   then								 # POT should be uploaded
-     NEED_COMMIT=1					 # don't commit if any POT modified!
-     if [ ! -z $ADD ]
-     then
-       git add po/*.pot
-       if [ ! -z $POT_PUSH ] && [ ! -z $COMMIT ]
-       then
-         make pushpot
-       fi
-     fi
+
+   # POT should be uploaded
+   if [ ! -z $POT_PUSH ]
+   then
+     make pushpot
      echo "POT updated"
-   else
-       git checkout -- po/*.pot     # no real change, undo (only the build time was changed)
    fi
+
    cd $root
 done
 
-if [ ! -z $NEED_COMMIT ] && [ ! -z $COMMIT ] && [ ! -z $ADD ]
-then
-  git commit -m "[`basename $0`] Full POT update"
-fi
-
 ### LINGUAS
-# update the LINGUAS file by adding all language code where translations have started
-
-for i in "${site[@]}"
-do
-  echo "- Updating $i LINGUAS file"
-  PO_PATH="$i/po"
-  LINGUAS="$PO_PATH/LINGUAS"
-
-
-  if [ ! -f $LINGUAS ]
-  then
-     echo "No $LINGUAS file there"
-  fi
-
-  tmp="l_tmp"
-  sed -i 's#\s##g' $LINGUAS                   # remove trailing whitespaces
-
-  for file in `ls $PO_PATH/*.po`
-  do
-    stat=`msgfmt -c --statistics $file 2>&1 | awk '{print $1}'`
-    if [ "$stat" != "0" ]                     # if translation is started
-    then
-      lang=`echo $file| sed -n "s#.*/\(.*\).po#\1#p" `   # filter the language code
-      echo $lang >> $tmp                      # add it in a temp file
-      new=`grep $lang"\$" $LINGUAS`
-      if [ "@$new" == "@" ]                   # if this language code is new
-      then
-        echo "$lang added, translated strings=$stat"
-      fi
-    fi
-  done
-
-  rm $LINGUAS
-  cat $tmp|sort > $LINGUAS
-  rm $tmp
-
-  git diff --exit-code $LINGUAS > /dev/null   # check if modified
-  if [ $? -eq  1 ] && [ ! -z $ADD ]
-  then
-    git add $LINGUAS
-    L_COMMIT=1
-  fi
-done
-
-if [ ! -z $L_COMMIT ] && [ ! -z $COMMIT ] && [ ! -z $ADD ]
-then
-  git commit -m "[`basename $0`] Full LINGUAS update"
-fi
+# This is now handled in pullpos
 
 
 exit 0
