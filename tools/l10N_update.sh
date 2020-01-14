@@ -1,5 +1,5 @@
 #!/bin/bash
-# this script pull all translations to transifex,
+# this script pull all translations to tranlation repository,
 #      make an new POT and push it if asked,
 #      and then fill the LINGUAS file
 
@@ -20,7 +20,7 @@ cat << EOF
 usage: $0 [OPTIONS] [-w WEBSITE_PATH]
 
 This script update all L10n things. Will never git push.
- * pull translations from transifex against WEBSITE_PATH in current branch
+ * pull translations from translation repository against WEBSITE_PATH in current branch
  * make new POT in WEBSITE_PATH
  * update the LINGUAS file in WEBSITE_PATH
 
@@ -28,7 +28,7 @@ OPTIONS:
    -h      Show this message
    -a      Git add all
    -c      With -a, git commit with default message (POs, POT and LINGUAS in different commits)
-   -p      With -c make pushpot (update POT on transifex.net)
+   -p      With -c make pushpot (update POT on tranlation repository)
 
 WEBSITE:
     The website targeted (like "fedoraproject.org")
@@ -39,8 +39,8 @@ EXAMPLES:
          $ $0 -a -w ../spins.fedoraproject.org    (2)
          $ $0 -a -c -p                            (3)
 
-   1. Update all but let you git add and push to transifex.net. (Takes time but let you do the job).
-   2. Update POs POT and LINGUAS of spins.fedoraproject.org website. Let you commit and push (git/transifex).
+   1. Update all but let you git add and push to tranlation repository.
+   2. Update POs POT and LINGUAS of spins.fedoraproject.org website. Let you test localy.
    3. Update all and commit changes in 3 different commits. That's what you were looking for.
 
 EOF
@@ -60,7 +60,7 @@ do
       COMMIT=1
       ;;
     p)
-      TXN_PUSH=1
+      POT_PUSH=1
       ;;
     w)
       WEBSITE=$OPTARG
@@ -124,7 +124,7 @@ do
      if [ ! -z $ADD ]
      then
        git add po/*.pot
-       if [ ! -z $TXN_PUSH ] && [ ! -z $COMMIT ]
+       if [ ! -z $POT_PUSH ] && [ ! -z $COMMIT ]
        then
          make pushpot
        fi
