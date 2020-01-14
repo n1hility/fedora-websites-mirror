@@ -145,8 +145,8 @@ Update website for Alpha release
 * Update Alpha Image sizes and pre_cloud_composedate in ``./build.d/globalvar.py``.
   Verify they are right in Cloud images and Docker image.
 
-* Update the new POT files and push them to Zanata (ask a maintainer to do
-  so) every time you change text strings.
+* Update the new POT files and push them to translation repository every time
+  you change text strings.
 
 * Add this build to stg.fedoraproject.org (ansible syncStatic.sh.stg) to
   test the pages online.
@@ -222,8 +222,8 @@ Update website for Beta release
 * Update Beta Image sizes and pre_cloud_composedate in ``./build.d/globalvar.py``.
   Verify they are right in Cloud images and Docker image.
 
-* Update the new POT files and push them to Zanata (ask a maintainer to do
-  so) every time you change text strings.
+* Update the new POT files and push them to translation repository every time
+  you change text strings.
 
 * Add this build to stg.fedoraproject.org (ansible syncStatic.sh.stg) to
   test the pages online.
@@ -298,8 +298,8 @@ Update website for GA
 
 * Update static/js/checksum.js and check if the paths and checksum still match.
 
-* Update the new POT files and push them to Zanata (ask a maintainer to do
-  so) every time you change text strings.
+* Update the new POT files and push them to translation repository every time
+  you change text strings.
 
 * Add this build to stg.fedoraproject.org (ansible syncStatic.sh.stg) to
   test the pages online.

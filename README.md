@@ -17,7 +17,10 @@ can easily file Pull Requests. Fork this repository, make your changes and
 submit them here. Check of the [Fedora Websites wiki](https://fedoraproject.org/wiki/Websites#Join_the_Websites_Team) for details on how to
 become a member of the websites team. 
 
-Translations are handled by the Fedora [localization team](https://fedoraproject.org/wiki/L10N) on [Zanata](https://fedora.zanata.org/project/view/fedora-web).
+Translations are handled by the Fedora [localization team](https://fedoraproject.org/wiki/L10N) on [Fedora Weblate](https://translate.stg.fedoraproject.org/projects/fedora-websites/).
+
+[![Translation status](https://translate.stg.fedoraproject.org/widgets/abrt/-/287x66-white.png)](https://translate.stg.fedoraproject.org/engage/abrt/?utm_source=widget)
+
 
 ### Websites
 This repository contains the sources for the following Fedora Websites:
