@@ -59,7 +59,6 @@ pushpot:
 
 pullpos:
 	git clone ssh://git@pagure.io/fedora-web/translations.git $(TRANS_TMP)
-	ls -lah $(TRANS_TMP)
 	cp -R $(TRANS_TMP)/$(TRANS_FOLDER)/*.po ./po/
 	cp -R $(TRANS_TMP)/$(TRANS_FOLDER)/LINGUAS ./po/
 	rm -rf $(TRANS_TMP)
