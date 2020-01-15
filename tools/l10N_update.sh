@@ -4,11 +4,21 @@
 #      and then fill the LINGUAS file
 
 # This represent the relative path to the website.
-site=( ../boot.fedoraproject.org
+site=( ../alt.fedoraproject.org
+       ../arm.fedoraproject.org
+       ../boot.fedoraproject.org
+       # ../budget.fedoraproject.org       no l10n support
        ../fedoracommunity.org
-       ../fedorahosted.org
-       ../fedoraproject.org
-       ../fudcon.fedoraproject.org
+       # ../fedorahosted.org               retired website
+       # ../fedorapeople.org               no l10n support
+       # ../fedoraproject.org              retired website
+       # ../flocktofedora.org              no l10n support
+       # ../fudcon.fedoraproject.org       retired website
+       # ../getfedora.org                  retired website, see pagure.io/fedora-web/websites
+       ../iot.fedoraproject.org
+       # ../mirrors.fedoraproject.org      retired website
+       ../labs.fedoraproject.org
+       # ../serverbeach1.fedoraproject.org retired website
        ../spins.fedoraproject.org
        ../start.fedoraproject.org )
 

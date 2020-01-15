@@ -52,6 +52,7 @@ msgmerge: $(wildcard po/*.po)
 pushpot:
 	git clone ssh://git@pagure.io/fedora-web/translations.git $(TRANS_TMP)
 	cp $(POT_FILE) $(TRANS_TMP)/$(TRANS_FOLDER)/
+	touch $(TRANS_TMP)/$(TRANS_FOLDER)/LINGUAS
 	cd $(TRANS_TMP) && git add *.pot
 	cd $(TRANS_TMP) && git commit -m "update pot file for $(TRANS_FOLDER)"
 	cd $(TRANS_TMP) && git push
