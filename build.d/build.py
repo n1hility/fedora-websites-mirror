@@ -10,7 +10,7 @@ Some code/design taken from python.org's website build script
 (https://svn.python.org/www/trunk/beta.python.org/build/new-build/)
 '''
 
-import os, sys, timing, re, shutil
+import os, sys, re, shutil
 from pkg_resources import get_distribution
 from optparse import OptionParser
 from gettext import GNUTranslations
@@ -19,6 +19,12 @@ from genshi.template import TemplateLoader
 import fileinput
 import errno
 import locale, time
+
+try:
+    import timing
+    HAVE_TIMING = True
+except ImportError:
+    HAVE_TIMING = False
 
 # Some modules log things.  Set the verbosity here.
 import logging
@@ -121,7 +127,8 @@ def process(args):
                 shutil.rmtree(outpath)
             copytree(dir, outpath)
     if options.input is not None:
-        timing.start()
+        if HAVE_TIMING:
+            timing.start()
         for dirpath, dirnames, filenames in os.walk(options.input):
             try:
                 process_dir(dirpath, filenames)
@@ -130,8 +137,9 @@ def process(args):
                     print 'Error!'
                 else:
                     raise
-        timing.finish()
-        if not options.rss:
+        if HAVE_TIMING:
+            timing.finish()
+        if not options.rss and HAVE_TIMING:
             print 'Website build time: %s' % timing.milli()
 
 def process_dir(dirpath, filenames):

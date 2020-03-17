@@ -7,13 +7,13 @@ release={
     'next_id':     '32',
     'curr_name':   '',
     'next_name':   '',
-    'curr_state':  '',           # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_alt_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  '',     # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_AMI_state':  '', # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_server_state':  '',    # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_atomic_state':  '',    # 'Pre-Release' or '' - No Alpha/Beta for Atomic Host
+    'curr_state':  'Beta',           # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_alt_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  'Beta',     # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_AMI_state':  'Beta', # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_server_state':  'Beta',    # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_atomic_state':  'Beta',    # 'Pre-Release' or '' - No Alpha/Beta for Atomic Host
     'prev_arm_id': '30',
     'prev_alt_id': '30',
     'prev_cloud_id': '30',
@@ -61,12 +61,12 @@ release={
     'RC_gold_ppc64': '1.9',       # RC Gold for ppc64
     'RC_gold_ppc64le': '1.9',     # RC Gold for ppc64le
     'RC_gold_s390x': '1.9',       # RC Gold for s390x
-    'RC_pre_gold': '1.1',         # insert the number of the prerelease RC version declared GOLD
+    'RC_pre_gold': '1.2',         # insert the number of the prerelease RC version declared GOLD
     'RC_pre_build': '2',        # sometimes releng use the RC build
-    'RC_pre_gold_aarch64': '1.1', # Pre RC Gold for aarch64
-    'RC_pre_gold_ppc64': '1.1',   # Pre RC Gold for ppc64
-    'RC_pre_gold_ppc64le': '1.1', # Pre RC Gold for ppc64le
-    'RC_pre_gold_s390x': '1.1',   # Pre RC Gold for s390x
+    'RC_pre_gold_aarch64': '1.2', # Pre RC Gold for aarch64
+    'RC_pre_gold_ppc64': '1.2',   # Pre RC Gold for ppc64
+    'RC_pre_gold_ppc64le': '1.2', # Pre RC Gold for ppc64le
+    'RC_pre_gold_s390x': '1.2',   # Pre RC Gold for s390x
 
     'atomic_qcow2_cloud_url': 'FIXME',
     'atomic_raw_cloud_url': 'FIXME',
