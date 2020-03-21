@@ -96,6 +96,10 @@ test: 	$(HTTPDDIR)/conf/httpd.conf $(HTTPDDIR)/conf/languages.conf
 	/usr/sbin/httpd -d $(HTTPDDIR) -f conf/httpd.conf
 	@echo "Test instance started at: http://localhost:5000/"
 
+testfg: 	$(HTTPDDIR)/conf/httpd.conf $(HTTPDDIR)/conf/languages.conf
+	@echo "Starting test instance at: http://localhost:5000/"
+	/usr/sbin/httpd -DFOREGROUND -d $(HTTPDDIR) -f conf/httpd.conf
+
 stoptest: clean
 	pid=`cat $(HTTPDDIR)/run/httpd.pid` && \
 	kill -TERM $$pid

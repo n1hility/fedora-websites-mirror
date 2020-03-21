@@ -96,11 +96,11 @@ LoadModule speling_module /etc/httpd/modules/mod_speling.so
 LoadModule userdir_module /etc/httpd/modules/mod_userdir.so
 LoadModule alias_module /etc/httpd/modules/mod_alias.so
 LoadModule rewrite_module /etc/httpd/modules/mod_rewrite.so
-LoadModule proxy_module /etc/httpd/modules/mod_proxy.so
-LoadModule proxy_balancer_module /etc/httpd/modules/mod_proxy_balancer.so
-LoadModule proxy_ftp_module /etc/httpd/modules/mod_proxy_ftp.so
-LoadModule proxy_http_module /etc/httpd/modules/mod_proxy_http.so
-LoadModule proxy_connect_module /etc/httpd/modules/mod_proxy_connect.so
+#LoadModule proxy_module /etc/httpd/modules/mod_proxy.so
+#LoadModule proxy_balancer_module /etc/httpd/modules/mod_proxy_balancer.so
+#LoadModule proxy_ftp_module /etc/httpd/modules/mod_proxy_ftp.so
+#LoadModule proxy_http_module /etc/httpd/modules/mod_proxy_http.so
+#LoadModule proxy_connect_module /etc/httpd/modules/mod_proxy_connect.so
 LoadModule cache_module /etc/httpd/modules/mod_cache.so
 LoadModule suexec_module /etc/httpd/modules/mod_suexec.so
 LoadModule cgi_module /etc/httpd/modules/mod_cgi.so
