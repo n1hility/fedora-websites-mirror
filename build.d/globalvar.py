@@ -94,7 +94,7 @@ path={
     'download_atomic': 'https://download.fedoraproject.org/pub/alt/atomic',
     'download_arch':   'https://download.fedoraproject.org/pub/fedora-secondary/releases',
     'mirrors':         'https://mirrors.fedoraproject.org/metalink?path=pub/fedora/linux/releases',
-    'checksums':       './static/checksums',
+    'checksums':       'https://getfedora.org/static/checksums',
     'doc':             'https://docs.fedoraproject.org/en-US/Fedora',
     'doc':             'https://docs.fedoraproject.org/en-US/Fedora',
     'unofficial':      'https://dl.fedoraproject.org/pub/alt/unofficial/releases',
