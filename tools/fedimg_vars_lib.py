@@ -89,15 +89,15 @@ def check_permissions(fd=None, filename=None):
 
 def get_messages(target):
     """ Filter the messages on target. """
-    check_permissions(filename=cache_file)
-    try:
+    if os.path.isfile(cache_file):
+        check_permissions(filename=cache_file)
         with open(cache_file, 'r') as cf:
             check_permissions(fd=cf.fileno())
             cache = json.load(cf)
             cachetime = datetime.strptime(cache['timestamp'], dateformat)
             if cachetime > (datetime.utcnow() - timedelta(days=1)):
                 return filter_messages(cache['messages'], target)
-    except FileNotFoundError:
+    else:
         log.info('No cache, loading from scratch')
 
     messages = list(retrieve_messages())
