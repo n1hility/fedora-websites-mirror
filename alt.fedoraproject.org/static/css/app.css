@@ -410,6 +410,7 @@ a.btn-lg {
 /* ARM */
 
 .white {
+  display: flex;
   background-color: #fff;
   color: #000;
   margin: 10px 0px 5px;
@@ -429,8 +430,6 @@ a.btn-lg {
   margin-top: 8px;
   font-weight: 400;
   text-align: right;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 .white p.download {
@@ -456,6 +455,10 @@ a.btn-lg {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.white div:nth-child(3) {
+  padding-left: 0;
 }
 
 .sup {
@@ -914,6 +917,11 @@ text-align:center;
 .using .btn-primary {
   background-color: #3c6eb4;
   background-image: none;
+}
+
+.using .white p {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 /*Pre-release page */

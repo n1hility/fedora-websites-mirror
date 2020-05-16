@@ -89,15 +89,15 @@ def check_permissions(fd=None, filename=None):
 
 def get_messages(target):
     """ Filter the messages on target. """
-    check_permissions(filename=cache_file)
-    try:
+    if os.path.isfile(cache_file):
+        check_permissions(filename=cache_file)
         with open(cache_file, 'r') as cf:
             check_permissions(fd=cf.fileno())
             cache = json.load(cf)
             cachetime = datetime.strptime(cache['timestamp'], dateformat)
             if cachetime > (datetime.utcnow() - timedelta(days=1)):
                 return filter_messages(cache['messages'], target)
-    except FileNotFoundError:
+    else:
         log.info('No cache, loading from scratch')
 
     messages = list(retrieve_messages())
@@ -139,10 +139,11 @@ def sanity_check(globalvar, collected_fedimg_vars):
 
 
 def mocked_fedimg(templates):
+    # eu-west-3 is left out because fedimg fails to upload there for now
     regions = ['us-east-1', 'ap-northeast-1', 'sa-east-1', 'ap-southeast-1',
                'ap-southeast-2', 'us-west-2', 'us-west-1', 'eu-central-1',
                'eu-west-1', 'ap-northeast-2', 'ap-south-1', 'ca-central-1',
-               'eu-west-2', 'us-east-2', 'eu-west-3']
+               'eu-west-2', 'us-east-2']
     mockdata = {}
     for region in regions:
         mockdata[region] = 'ami-mocked'
