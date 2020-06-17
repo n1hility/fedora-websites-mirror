@@ -369,76 +369,17 @@ for _, short, code in EC2_regions:
 
 
 # EC2 AMI IDs
-
-ARM64_base_AMI={
-    'ap-northeast-1':  'ami-053da64aaf77eb27a',
-    'ap-south-1':      'ami-0b2e07c377839c44c',
-    'ap-southeast-2':  'ami-0769832d06acb4fdb',
-    'eu-central-1':    'ami-0a6aa3176dca0548e',
-    'eu-west-1':       'ami-010f0ac509b6d5c90',
-    'us-east-1':       'ami-05927168596f8f271',
-    'us-east-2':       'ami-04e5f7d4b25051814',
-    'us-west-1':       'ami-09e4ae93f90e20603',
-    'us-west-2':       'ami-0b7237050e6efd06d'
+# values populated by searching datagrepper during website build
+AARCH64_base_AMI={
+}
+X86_64_base_AMI={
+}
+# EC2 AMI IDs PRERELEASE!!!
+pre_AARCH64_base_AMI={
+}
+pre_X86_64_base_AMI={
 }
 
-HVM_base_AMI={
-    'ap-northeast-1':  'ami-028fa48fe1aaca19e',
-    'ap-northeast-2':  'ami-0734c2673e727fe39',
-    'ap-south-1':      'ami-0fdf744fe7a87cee4',
-    'ap-southeast-1':  'ami-04a22e2324377cdbd',
-    'ap-southeast-2':  'ami-06b1cc1d1e719ec37',
-    'ca-central-1':    'ami-000a5122ac0f9e2d9',
-    'eu-central-1':    'ami-0a0608443984de7eb',
-    'eu-west-1':       'ami-02765e71fe7b1e036',
-    'eu-west-2':       'ami-0efbedc7174d3250e',
-    'sa-east-1':       'ami-0a8506c591298cd13',
-    'us-east-1':       'ami-0fcbe88944a53b4c8',
-    'us-east-2':       'ami-0a32ccde4ea923cc3',
-    'us-west-1':       'ami-0f0d716ff62dea395',
-    'us-west-2':       'ami-03e0bcb36412ff6e4'
-}
-
-GP2_HVM_base_AMI={
-    'ap-northeast-1':  'ami-0d8e872ddc3206741',
-    'ap-northeast-2':  'ami-08a47fe608e852f01',
-    'ap-south-1':      'ami-0a0a5815e614466e4',
-    'ap-southeast-1':  'ami-049d4c4233514a931',
-    'ap-southeast-2':  'ami-033b4a0bd9a622f58',
-    'ca-central-1':    'ami-06449af04bac4eac0',
-    'eu-central-1':    'ami-0417b5ec8768794f9',
-    'eu-west-1':       'ami-0ce2a6144475cf269',
-    'eu-west-2':       'ami-0f6b2a3d45505c6ae',
-    'sa-east-1':       'ami-0e5c67f0e4306e372',
-    'us-east-1':       'ami-0c830793775595d4b',
-    'us-east-2':       'ami-04f8478f9bc7f1453',
-    'us-west-1':       'ami-0e76ece0a3a8ad72f',
-    'us-west-2':       'ami-0e82cc6ce8f393d4b'
-}
-
-PV_base_AMI={
-    #'us-east-1':        'ami-015b9c6c',     # Virginia
-    #'us-west-2':        'ami-3c05c05c',     # Oregon
-    #'us-west-1':        'ami-189edb78',     # California
-    #'eu-west-1':        'ami-2afd6359',     # Ireland
-    #'eu-central-1':     'ami-f561889a',     # Frankfurt
-    #'ap-southeast-1':   'ami-f7e13294',     # Singapore
-    #'ap-northeast-1':   'ami-6a0ee40b',     # Tokyo
-    #'ap-southeast-2':   'ami-28a38a4b',     # Sydney
-    #'sa-east-1':        'ami-e34fc58f'      # Sao Paolo
-}
-
-GP2_PV_base_AMI={
-    #'us-east-1':        'ami-095b9c64',     # Virginia
-    #'us-west-2':        'ami-fa06c39a',     # Oregon
-    #'us-west-1':        'ami-a99fdac9',     # California
-    #'eu-west-1':        'ami-28ff615b',     # Ireland
-    #'eu-central-1':     'ami-6e638a01',     # Frankfurt
-    #'ap-southeast-1':   'ami-28e1324b',     # Singapore
-    #'ap-northeast-1':   'ami-b30ae0d2',     # Tokyo
-    #'ap-southeast-2':   'ami-f4a58c97',     # Sydney
-    #'sa-east-1':        'ami-4346cc2f'      # Sao Paolo
-}
 
 HVM_atomic_AMI={
     #'us-east-1':        'ami-f18fff9b',     # Virginia
@@ -465,65 +406,6 @@ GP2_HVM_atomic_AMI={
 }
 
 AARCH64_GP2_HVM_atomic_AMI={}
-
-# EC2 AMI IDs PRERELEASE!!!
-pre_HVM_base_AMI={
-    'ap-northeast-1':  'ami-053db6774d7445008',
-    'ap-northeast-2':  'ami-0442ce2f15031feb4',
-    'ap-south-1':      'ami-06fc0551e1d52cef7',
-    'ap-southeast-1':  'ami-01aa690f13cd7c4cb',
-    'ap-southeast-2':  'ami-0d5379ab9e543f8c9',
-    'ca-central-1':    'ami-039195f65eace16e5',
-    'eu-central-1':    'ami-0ae7e51b5eacc4cfa',
-    'eu-west-1':       'ami-02e9b94502ffdd3b9',
-    'eu-west-2':       'ami-0fac4adf87a0b23be',
-    'sa-east-1':       'ami-02226636bef6e4bfe',
-    'us-east-1':       'ami-0f4f76118f4ca5b59',
-    'us-east-2':       'ami-08387bf7d423dd979',
-    'us-west-1':       'ami-067f7c28153092394',
-    'us-west-2':       'ami-07650985f321a99f3'
-}
-
-pre_GP2_HVM_base_AMI={
-    'ap-northeast-1':  'ami-0a3e5ecd1af437cf6',
-    'ap-northeast-2':  'ami-0b045a55b71328675',
-    'ap-south-1':      'ami-0af5597b67dca44b2',
-    'ap-southeast-1':  'ami-0f7c110aa63ebf24f',
-    'ap-southeast-2':  'ami-06a13536a962bff9f',
-    'ca-central-1':    'ami-0500fc6a8144abc1e',
-    'eu-central-1':    'ami-0bfe51e7af68b9980',
-    'eu-west-1':       'ami-000b9d8c6830276dd',
-    'eu-west-2':       'ami-0be03c632b49517eb',
-    'sa-east-1':       'ami-067b6e5526e573986',
-    'us-east-1':       'ami-06c522b66d738d1b4',
-    'us-east-2':       'ami-0d4391c189dbf5314',
-    'us-west-1':       'ami-036700754636cd5d6',
-    'us-west-2':       'ami-0b5bffa2ebe93b6b1'
-}
-
-pre_PV_base_AMI={
-    #'us-east-1':        'ami-55791a42',     # Virginia
-    #'us-west-2':        'ami-3657a556',     # Oregon
-    #'us-west-1':        'ami-8a4039ea',     # California
-    #'eu-west-1':        'ami-ef40cb9c',     # Ireland
-    #'eu-central-1':     'ami-aa9974c5',     # Frankfurt
-    #'ap-southeast-1':   'ami-d571a6b6',     # Singapore
-    #'ap-northeast-1':   'ami-ff6a8f9e',     # Tokyo
-    #'ap-southeast-2':   'ami-7de5c91e',     # Sydney
-    #'sa-east-1':        'ami-bd1099d1'      # Sao Paolo
-}
-
-pre_GP2_PV_base_AMI={
-    #'us-east-1':        'ami-2f751638',     # Virginia
-    #'us-west-2':        'ami-c357a5a3',     # Oregon
-    #'us-west-1':        'ami-5f4a333f',     # California
-    #'eu-west-1':        'ami-f840cb8b',     # Ireland
-    #'eu-central-1':     'ami-1f987570',     # Frankfurt
-    #'ap-southeast-1':   'ami-d071a6b3',     # Singapore
-    #'ap-northeast-1':   'ami-ba6f8adb',     # Tokyo
-    #'ap-southeast-2':   'ami-39e6ca5a',     # Sydney
-    #'sa-east-1':        'ami-8b159ce7'      # Sao Paolo
-}
 
 pre_HVM_atomic_AMI={
     'eu-west-2':       'ami-0dd9376c148025bda',

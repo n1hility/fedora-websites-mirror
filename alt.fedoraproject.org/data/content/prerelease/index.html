@@ -498,16 +498,16 @@
             <img src="/static/images/cloud.png" />
             </div>
             <div class="col-md-4">
-            <h3>${_('GP2 HVM AMIs')}</h3>
+            <h3>${_('x86_64 AMIs')}</h3>
             </div>
             <div class="col-md-4 col-md-offset-3">
-              <p class="download ec2" data-toggle="modal" data-target=".pre-GP2-base-EC2-desktop">${_('Click to launch')}</p>
-                <div class="modal fade pre-GP2-base-EC2-desktop" tabindex="-1" role="dialog" aria-hidden="true">
+              <p class="download ec2" data-toggle="modal" data-target=".pre-x86_64-base-EC2-desktop">${_('Click to launch')}</p>
+                <div class="modal fade pre-x86_64-base-EC2-desktop" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog modal-cloud">
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
-                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s GP2 Base Cloud HVM AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s x86_64 Cloud Base AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
                       </div>
                       <table class="table table-hover">
                         <thead>
@@ -519,9 +519,9 @@
                         </thead>
                         <tbody>
                           <tr py:for="r in global_variables.EC2_regions">
-                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI">${_(r.long)}</td>
-                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI" class="hidden-xs">${global_variables.pre_GP2_HVM_base_AMI[r.code]}</td>
-                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_GP2_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                            <td py:if="r.code in global_variables.pre_X86_64_base_AMI">${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_X86_64_base_AMI" class="hidden-xs">${global_variables.pre_X86_64_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_X86_64_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_X86_64_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
                           </tr>
                         </tbody>
                       </table>
@@ -535,16 +535,16 @@
             <img src="/static/images/cloud.png" />
             </div>
             <div class="col-md-4">
-            <h3>${_('Standard HVM AMIs')}</h3>
+            <h3>${_('aarch64 AMIs')}</h3>
             </div>
             <div class="col-md-4 col-md-offset-3">
-              <p class="download ec2" data-toggle="modal" data-target=".pre_base-EC2-desktop">${_('Click to launch')}</p>
-                <div class="modal fade pre_base-EC2-desktop" tabindex="-1" role="dialog" aria-hidden="true">
+              <p class="download ec2" data-toggle="modal" data-target=".pre-aarch64-EC2-desktop">${_('Click to launch')}</p>
+                <div class="modal fade pre-aarch64-EC2-desktop" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog modal-cloud">
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
-                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s Standard Base Cloud HVM AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s aarch64 Cloud Base AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
                       </div>
                       <table class="table table-hover">
                         <thead>
@@ -555,10 +555,10 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr py:for="r in global_variables.EC2_regions">
-                            <td py:if="r.code in global_variables.pre_HVM_base_AMI">${_(r.long)}</td>
-                            <td py:if="r.code in global_variables.pre_HVM_base_AMI" class="hidden-xs">${global_variables.pre_HVM_base_AMI[r.code]}</td>
-                            <td py:if="r.code in global_variables.pre_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                          <tr py:for="r in global_variables.aarch64_EC2_regions">
+                            <td py:if="r.code in global_variables.pre_AARCH64_base_AMI">${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_AARCH64_base_AMI" class="hidden-xs">${global_variables.pre_AARCH64_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_AARCH64_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_AARCH64_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
                           </tr>
                         </tbody>
                       </table>
@@ -567,80 +567,6 @@
                 </div>
             </div>
           </div>
-<!--          <div class="white">
-            <div class="col-md-1">
-            <img src="/static/images/cloud.png" />
-            </div>
-            <div class="col-md-4">
-            <h3>${_('GP2 PV AMIs')}</h3>
-            </div>
-            <div class="col-md-4 col-md-offset-3">
-              <p class="download ec2" data-toggle="modal" data-target=".pre_GP2-base-EC2-PV-desktop">${_('Click to launch')}</p>
-                <div class="modal fade pre_GP2-base-EC2-PV-desktop" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog modal-cloud">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
-                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s GP2 Base Cloud PV AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
-                      </div>
-                      <table class="table table-hover">
-                        <thead>
-                          <tr>
-                            <th>${_('Region')}</th>
-                            <th class="hidden-xs">${_('AMI ID')}</th>
-                            <th class="text-center">${_('Launch')}</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr py:for="r in global_variables.EC2_regions">
-                            <td>${_(r.long)}</td>
-                            <td py:if="r.code in global_variables.pre_GP2_PV_base_AMI" class="hidden-xs">${global_variables.pre_GP2_PV_base_AMI[r.code]}</td>
-                            <td py:if="r.code in global_variables.pre_GP2_PV_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_GP2_PV_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="white">
-            <div class="col-md-1">
-            <img src="/static/images/cloud.png" />
-            </div>
-            <div class="col-md-4">
-            <h3>${_('Standard PV AMIs')}</h3>
-            </div>
-            <div class="col-md-4 col-md-offset-3">
-              <p class="download ec2" data-toggle="modal" data-target=".pre_base-EC2-PV-desktop">${_('Click to launch')}</p>
-                <div class="modal fade pre_base-EC2-PV-desktop" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog modal-cloud">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
-                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s Standard Base Cloud PV AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
-                      </div>
-                      <table class="table table-hover">
-                        <thead>
-                          <tr>
-                            <th>${_('Region')}</th>
-                            <th class="hidden-xs">${_('AMI ID')}</th>
-                            <th class="text-center">${_('Launch')}</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr py:for="r in global_variables.EC2_regions">
-                            <td>${_(r.long)}</td>
-                            <td py:if="r.code in global_variables.pre_PV_base_AMI" class="hidden-xs">${global_variables.pre_PV_base_AMI[r.code]}</td>
-                            <td py:if="r.code in global_variables.pre_PV_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_PV_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div> -->
           <!-- end EC2 images Desktop -->
         </div>
       </div>
@@ -703,9 +629,9 @@
             <img src="/static/images/cloud.png" />
             </div>
             <div class="col-xs-9">
-            <h3>${_('GP2 HVM AMIs')}</h3>
-              <p class="download ec2" data-toggle="modal" data-target=".pre-GP2-base-EC2-mobile">${_('Click to launch')}</p>
-                <div class="modal fade pre-GP2-base-EC2-mobile" tabindex="-1" role="dialog" aria-hidden="true">
+            <h3>${_('x86_64 AMIs')}</h3>
+              <p class="download ec2" data-toggle="modal" data-target=".pre-x86_64-base-EC2-mobile">${_('Click to launch')}</p>
+                <div class="modal fade pre-x86_64-base-EC2-mobile" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog modal-cloud">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -722,9 +648,9 @@
                         </thead>
                         <tbody>
                           <tr py:for="r in global_variables.EC2_regions">
-                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI">${_(r.long)}</td>
-                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI" class="hidden-xs">${global_variables.pre_GP2_HVM_base_AMI[r.code]}</td>
-                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_GP2_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                            <td py:if="r.code in global_variables.pre_X86_64_base_AMI">${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_X86_64_base_AMI" class="hidden-xs">${global_variables.pre_X86_64_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_X86_64_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_X86_64_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
                           </tr>
                         </tbody>
                       </table>
@@ -756,10 +682,10 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr py:for="r in global_variables.EC2_regions">
-                            <td py:if="r.code in global_variables.pre_HVM_base_AMI">${_(r.long)}</td>
-                            <td py:if="r.code in global_variables.pre_HVM_base_AMI" class="hidden-xs">${global_variables.pre_HVM_base_AMI[r.code]}</td>
-                            <td py:if="r.code in global_variables.pre_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                          <tr py:for="r in global_variables.aarch64_EC2_regions">
+                            <td py:if="r.code in global_variables.pre_AARCH64_base_AMI">${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_AARCH64_base_AMI" class="hidden-xs">${global_variables.pre_AARCH64_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_AARCH64_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_AARCH64_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
                           </tr>
                         </tbody>
                       </table>
@@ -768,76 +694,6 @@
                 </div>
             </div>
           </div>
-<!--          <div class="white">
-            <div class="col-xs-3">
-            <img src="/static/images/cloud.png" />
-            </div>
-            <div class="col-xs-9">
-            <h3>${_('GP2 PV AMIs')}</h3>
-              <p class="download ec2" data-toggle="modal" data-target=".pre_GP2-base-EC2-PV-mobile">${_('Click to launch')}</p>
-                <div class="modal fade pre_GP2-base-EC2-PV-mobile" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog modal-cloud">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
-                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s GP2 Base Cloud PV AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
-                      </div>
-                      <table class="table table-hover">
-                        <thead>
-                          <tr>
-                            <th>${_('Region')}</th>
-                            <th class="hidden-xs">${_('AMI ID')}</th>
-                            <th class="text-center">${_('Launch')}</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr py:for="r in global_variables.EC2_regions">
-                            <td>${_(r.long)}</td>
-                            <td py:if="r.code in global_variables.pre_GP2_PV_base_AMI" class="hidden-xs">${global_variables.pre_GP2_PV_base_AMI[r.code]}</td>
-                            <td py:if="r.code in global_variables.pre_GP2_PV_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_GP2_PV_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="white">
-            <div class="col-xs-3">
-            <img src="/static/images/cloud.png" />
-            </div>
-            <div class="col-xs-9">
-            <h3>${_('Standard PV AMIs')}</h3>
-              <p class="download ec2" data-toggle="modal" data-target=".pre_base-EC2-PV-mobile">${_('Click to launch')}</p>
-                <div class="modal fade pre_base-EC2-PV-mobile" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog modal-cloud">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
-                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s Standard Base Cloud PV AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
-                      </div>
-                      <table class="table table-hover">
-                        <thead>
-                          <tr>
-                            <th>${_('Region')}</th>
-                            <th class="hidden-xs">${_('AMI ID')}</th>
-                            <th class="text-center">${_('Launch')}</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr py:for="r in global_variables.EC2_regions">
-                            <td>${_(r.long)}</td>
-                            <td py:if="r.code in global_variables.pre_PV_base_AMI" class="hidden-xs">${global_variables.pre_PV_base_AMI[r.code]}</td>
-                            <td py:if="r.code in global_variables.pre_PV_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_PV_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div> -->
           <!-- end EC2 images Phone -->
       </div>
     </div>
@@ -907,16 +763,16 @@
           <img src="/static/images/cloud.png" />
           </div>
           <div class="col-sm-5">
-          <h3>${_('GP2 HVM AMIs')}</h3>
+          <h3>${_('x86_64 AMIs')}</h3>
           </div>
           <div class="col-sm-4">
-            <p class="download ec2" data-toggle="modal" data-target=".pre-GP2-base-EC2-tablet">${_('Click to launch')}</p>
-                <div class="modal fade pre-GP2-base-EC2-tablet" tabindex="-1" role="dialog" aria-hidden="true">
+            <p class="download ec2" data-toggle="modal" data-target=".pre-x86_64-base-EC2-tablet">${_('Click to launch')}</p>
+                <div class="modal fade pre-x86_64-base-EC2-tablet" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog modal-cloud">
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
-                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s GP2 Base Cloud HVM AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s x86_64 Cloud Base AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
                       </div>
                       <table class="table table-hover">
                         <thead>
@@ -928,9 +784,9 @@
                         </thead>
                         <tbody>
                           <tr py:for="r in global_variables.EC2_regions">
-                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI">${_(r.long)}</td>
-                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI" class="hidden-xs">${global_variables.pre_GP2_HVM_base_AMI[r.code]}</td>
-                            <td py:if="r.code in global_variables.pre_GP2_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_GP2_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                            <td py:if="r.code in global_variables.pre_X86_64_base_AMI">${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_X86_64_base_AMI" class="hidden-xs">${global_variables.pre_X86_64_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_X86_64_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_X86_64_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
                           </tr>
                         </tbody>
                       </table>
@@ -944,16 +800,16 @@
           <img src="/static/images/cloud.png" />
           </div>
           <div class="col-sm-5">
-          <h3>${_('Standard HVM AMIs')}</h3>
+          <h3>${_('aarch64 AMIs')}</h3>
           </div>
           <div class="col-sm-4">
-            <p class="download ec2" data-toggle="modal" data-target=".pre_base-EC2-tablet">${_('Click to launch')}</p>
-                <div class="modal fade pre_base-EC2-tablet" tabindex="-1" role="dialog" aria-hidden="true">
+            <p class="download ec2" data-toggle="modal" data-target=".pre-aarch64-base-EC2-tablet">${_('Click to launch')}</p>
+                <div class="modal fade pre-aarch64-base-EC2-tablet" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog modal-cloud">
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
-                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s Standard Base Cloud HVM AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s aarch64 Cloud Base AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
                       </div>
                       <table class="table table-hover">
                         <thead>
@@ -964,10 +820,10 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr py:for="r in global_variables.EC2_regions">
-                            <td py:if="r.code in global_variables.pre_HVM_base_AMI">${_(r.long)}</td>
-                            <td py:if="r.code in global_variables.pre_HVM_base_AMI" class="hidden-xs">${global_variables.pre_HVM_base_AMI[r.code]}</td>
-                            <td py:if="r.code in global_variables.pre_HVM_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_HVM_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                          <tr py:for="r in global_variables.aarch64_EC2_regions">
+                            <td py:if="r.code in global_variables.pre_AARCH64_base_AMI">${_(r.long)}</td>
+                            <td py:if="r.code in global_variables.pre_AARCH64_base_AMI" class="hidden-xs">${global_variables.pre_AARCH64_base_AMI[r.code]}</td>
+                            <td py:if="r.code in global_variables.pre_AARCH64_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_AARCH64_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
                           </tr>
                         </tbody>
                       </table>
@@ -976,80 +832,6 @@
                 </div>
           </div>
         </div>
-<!--        <div class="white">
-          <div class="col-sm-3">
-          <img src="/static/images/cloud.png" />
-          </div>
-          <div class="col-sm-5">
-          <h3>${_('GP2 PV AMIs')}</h3>
-          </div>
-          <div class="col-sm-4">
-            <p class="download ec2" data-toggle="modal" data-target=".pre_GP2-base-EC2-PV-tablet">${_('Click to launch')}</p>
-                <div class="modal fade pre_GP2-base-EC2-PV-tablet" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog modal-cloud">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
-                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s GP2 Base Cloud PV AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
-                      </div>
-                      <table class="table table-hover">
-                        <thead>
-                          <tr>
-                            <th>${_('Region')}</th>
-                            <th class="hidden-xs">${_('AMI ID')}</th>
-                            <th class="text-center">${_('Launch')}</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr py:for="r in global_variables.EC2_regions">
-                            <td>${_(r.long)}</td>
-                            <td py:if="r.code in global_variables.pre_GP2_PV_base_AMI" class="hidden-xs">${global_variables.pre_GP2_PV_base_AMI[r.code]}</td>
-                            <td py:if="r.code in global_variables.pre_GP2_PV_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_GP2_PV_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-          </div>
-        </div>
-        <div class="white">
-          <div class="col-sm-3">
-          <img src="/static/images/cloud.png" />
-          </div>
-          <div class="col-sm-5">
-          <h3>${_('Standard PV AMIs')}</h3>
-          </div>
-          <div class="col-sm-4">
-            <p class="download ec2" data-toggle="modal" data-target=".pre_base-EC2-PV-tablet">${_('Click to launch')}</p>
-                <div class="modal fade pre_base-EC2-PV-tablet" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog modal-cloud">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
-                        <h4 class="modal-title">${Markup(_('Fedora %(rel)s %(state)s Standard Base Cloud PV AMIs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
-                      </div>
-                      <table class="table table-hover">
-                        <thead>
-                          <tr>
-                            <th>${_('Region')}</th>
-                            <th class="hidden-xs">${_('AMI ID')}</th>
-                            <th class="text-center">${_('Launch')}</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr py:for="r in global_variables.EC2_regions">
-                            <td>${_(r.long)}</td>
-                            <td py:if="r.code in global_variables.pre_PV_base_AMI" class="hidden-xs">${global_variables.pre_PV_base_AMI[r.code]}</td>
-                            <td py:if="r.code in global_variables.pre_PV_base_AMI" class="text-center"><a href="${global_variables.path_stats['path']}/${global_variables.path_stats[r.short]}${global_variables.pre_PV_base_AMI[r.code]}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-          </div>
-        </div> -->
         <!-- end EC2 images Phone -->
       </div>
     </div>
