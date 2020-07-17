@@ -20,6 +20,11 @@ for feed in map(feedparser.parse, FedMag):
         # removing '[...]' from the summary, so its cleaner
         summary = item.summary.rstrip(' [&#8230;]').replace("&#8217;", "'").replace("&#8217", "'")
         item.title = item.title.replace("&", "&#38;")
+        # find the first image enclosure
+        for image_enclosure in item.enclosures:
+            if image_enclosure['type'] == 'image/jpg':
+                break
+
         html += """
         <div class="hidden-xs col-sm-1 top-margin">
 			<p class="month">%s</p>
@@ -44,7 +49,7 @@ for feed in map(feedparser.parse, FedMag):
         		</div>
         	</div>
 		</div>
-        """ % (item.updated.split()[2], item.updated.split()[1], item.enclosures[0].href.replace("&", "&#38;"), item.links[0]['href'], item.title,
+        """ % (item.updated.split()[2], item.updated.split()[1], image_enclosure.href.replace("&", "&#38;"), item.links[0]['href'], item.title,
 			item.slash_comments, summary, item.links[0]['href'])
 #print item.content
 #break
