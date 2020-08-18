@@ -22,7 +22,7 @@ for feed in map(feedparser.parse, FedMag):
         item.title = item.title.replace("&", "&#38;")
         # find the first image enclosure
         for image_enclosure in item.enclosures:
-            if image_enclosure['type'] == 'image/jpg':
+            if image_enclosure.get('type') == 'image/jpg':
                 break
 
         html += """
