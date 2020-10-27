@@ -2,37 +2,37 @@
 # -*- coding: utf-8 -*-
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
 release={
-    'prev_id':     '31',
-    'curr_id':     '32',
-    'next_id':     '33',
+    'prev_id':     '32',
+    'curr_id':     '33',
+    'next_id':     '34',
     'curr_name':   '',
     'next_name':   '',
-    'curr_state':  'Beta',           # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_alt_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  'Beta',     # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_AMI_state':  'Beta', # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_server_state':  'Beta',    # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_state':  '',           # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_alt_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  '',     # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_AMI_state':  '', # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_server_state':  '',    # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_atomic_state':  '',    # 'Pre-Release' or '' - No Alpha/Beta for Atomic Host
-    'prev_arm_id': '31',
-    'prev_alt_id': '31',
-    'prev_cloud_id': '31',
+    'prev_arm_id': '32',
+    'prev_alt_id': '32',
+    'prev_cloud_id': '32',
     'prev_atomic_id': '30',
-    'curr_arm_id': '32',
-    'curr_alt_id': '32',
-    'curr_cloud_id': '32',
+    'curr_arm_id': '33',
+    'curr_alt_id': '33',
+    'curr_cloud_id': '33',
     'curr_atomic_id': '30',
-    'curr_server_id': '32',
-    'curr_cloud_AMI_id': '32',
-    'curr_iot_id': '32',
-    'curr_silverblue_id': '32',
-    'next_silverblue_id': '33',
-    'next_arm_id': '33',
-    'next_alt_id': '33',
-    'next_cloud_id': '33',
+    'curr_server_id': '33',
+    'curr_cloud_AMI_id': '33',
+    'curr_iot_id': '33',
+    'curr_silverblue_id': '33',
+    'next_silverblue_id': '34',
+    'next_arm_id': '34',
+    'next_alt_id': '34',
+    'next_cloud_id': '34',
     'next_atomic_id': '30',
-    'next_server_id': '33',
-    'next_cloud_AMI_id': '33',
+    'next_server_id': '34',
+    'next_cloud_AMI_id': '34',
     'composedate': '20160616',
     'unofficial_compose': '20181029',
     'alt_composedate': '20161118',
@@ -54,13 +54,13 @@ release={
     # Note that atomic values here get overwritten by the twoweek script.
     'pre_cloud_atomic_composedate': '20150915',
     'pre_cloud_AMI_atomic_composedate': '20150915',
-    'RC_gold': '1.6',             # insert the number of the RC version declared GOLD
-    'RC_server_gold': '1.6',      # insert the number of the RC version declared GOLD
-    'RC_build': '1.6',            # sometimes releng use the RC build
-    'RC_gold_aarch64': '1.6',     # RC Gold for aarch64
-    'RC_gold_ppc64': '1.6',       # RC Gold for ppc64
-    'RC_gold_ppc64le': '1.6',     # RC Gold for ppc64le
-    'RC_gold_s390x': '1.6',       # RC Gold for s390x
+    'RC_gold': '1.2',             # insert the number of the RC version declared GOLD
+    'RC_server_gold': '1.2',      # insert the number of the RC version declared GOLD
+    'RC_build': '1.2',            # sometimes releng use the RC build
+    'RC_gold_aarch64': '1.2',     # RC Gold for aarch64
+    'RC_gold_ppc64': '1.2',       # RC Gold for ppc64
+    'RC_gold_ppc64le': '1.2',     # RC Gold for ppc64le
+    'RC_gold_s390x': '1.2',       # RC Gold for s390x
     'RC_pre_gold': '1.3',         # insert the number of the prerelease RC version declared GOLD
     'RC_pre_build': '1.3',        # sometimes releng use the RC build
     'RC_pre_gold_aarch64': '1.3', # Pre RC Gold for aarch64
