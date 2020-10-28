@@ -72,7 +72,7 @@ releases:
 # The next call get the Zanata resource from the config file,
 # and if it exists rsync the POs
 syncpos:
-	@$(call sync,$(RESOURCE_NAME),$(shell cat zanata.xml | sed -n 's,.*project-version>\(.*\)<.*,\1,p'))
+	../tools/l10N_update.sh -w $(PWD)
 
 $(HTTPDDIR)/conf/httpd.conf: $(HTTPDDIR)/conf/httpd.conf.in
 	cp $(HTTPDDIR)/conf/httpd.conf.in $(HTTPDDIR)/conf/httpd.conf
