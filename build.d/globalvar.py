@@ -274,6 +274,7 @@ iso_size={
     'qcow2_x86_64_cloud':  '319',       # In MB
     'qcow2_i386_cloud':    '216',       # In MB
     'VBvag_cloud':         '279',       # In MB
+    'GCP_x86_64_tar':      '263',       # In MB
     'libvag_cloud':        '290',       # In MB
     'x86_64_Container':    '43',        # In MB
     'x86_64_docker':       '43',        # In MB NOTE: this is just to make fedoraproject.org build happy
