@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="${lang}"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Fedora i3 Spin')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/i3/header.html" />
+
+  <header id="head">
+    <div class="col-xs-12 text-center widewrapper">
+      <img src="${path}/static/images/screenshots/screenshot-i3.jpg" class="img-responsive" alt="i3 screenshot" />
+    </div>
+    <div class="container product-feature">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-justify top-space bottom-space">
+          <p>${_('The Fedora i3 Spin provides the popular i3 tiling window manager. It makes i3 accessible and appealing to both novices and advanced users who prefer not to use a mouse, touchpad, or other pointing device to interact with their environment. Featuring lightweight applications for web browsing, text editing, and media playback, the Fedora i3 Spin offers a complete experience with a minimalist user interface.')}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature main-head">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/i3/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Going Online -->
+  <div class="jumbotron darkbluebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Going Online')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/lxqt/nm.png" alt="NetworkManager" />
+          <h4>${_('NetworkManager')}</h4>
+          <p>${_('The goal of NetworkManager is to make networking just work with a minimum of user hassle, but still allow customization.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/lxqt/qupzilla.png" alt="QupZilla" />
+          <h4>${_('QupZilla')}</h4>
+          <p>${_('A lightweight multiplatform web browser written in Qt Framework and using its web rendering engine QtWebEngine.')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/lxqt/quassel.png" alt="Quassel" />
+          <h4>${_('Quassel')}</h4>
+          <p>${_('Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one clients can attach to and detach from a central core')}</p>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="${path}/static/images/lxqt/transmission.png" alt="Transmission" />
+          <h4>${_('Transmission')}</h4>
+          <p>${_('Are you a downloader? Use Transmission to get new versions of Fedora LXQt Desktop!')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Utilities and Office -->
+  <div class="jumbotron jumbotron-full">
+    <div class="container-full">
+        <div class="col-md-6 col-xs-12 text-center greybg recover-jumbo">
+          <h2>${Markup(_('Utilities &amp; Configuration'))}</h2>
+	          <div class="col-md-6 col-xs-12 text-center top-margin">
+	          <img src="${path}/static/images/lxqt/qterminal.png" alt="QTerminal" />
+          	  <h4>${_('QTerminal')}</h4>
+          	  <p>${_('QTerminal is a lightweight Qt terminal emulator based on QTermWidget.')}</p>
+	        </div>
+	        <div class="col-md-6 col-xs-12 text-center top-margin">
+	          <img src="${path}/static/images/lxqt/dnfdragora.png" alt="dnfdragora" />
+          	  <h4>${_('dnfdragora')}</h4>
+          	  <p>${_('dnfdragora is a DNF frontend, based on rpmdragora, written in Python 3 and uses libYui.')}</p>
+	        </div>
+        </div>
+        <div class="col-md-6 col-xs-12 text-center darkgreybg recover-jumbo">
+          <h2>${Markup(_('Office &amp; Productivity Suite'))}</h2>
+          <div class="col-md-6 col-xs-12 text-center top-margin">
+          <img src="${path}/static/images/lxqt/featherpad.png" alt="FeatherPad" />
+          <h4>${_('FeatherPad')}</h4>
+          <p>${_('FeatherPad is a desktop indipendent and lightweight Qt5 plain-text editor for Linux.')}</p>
+        </div>
+        <div class="col-md-6 col-xs-12 text-center top-margin">
+          <img src="${path}/static/images/lxqt/qpdfview.png" alt="qpdfview" />
+          <h4>${_('qpdfview')}</h4>
+          <p>${_('qpdfview is a tabbed document viewer.')}</p>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Multimedia -->
+  <div class="jumbotron whitebox">
+    <div class="container">
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Multimedia')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin bottom-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="${path}/static/images/lxqt/dragonplayer.png" alt="Dragon Player" />
+          <h4>${_('Dragon Player')}</h4>
+          <p>${_('Dragon Player is a multimedia player where the focus is on simplicity, instead of features. Its simple interface is designed not to get in your way and instead empower you to simply play multimedia files.')}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="${path}/static/images/lxqt/lximage-qt.png" alt="LXImage-Qt" />
+          <h4>${_('LXImage-Qt')}</h4>
+          <p>${_('LXImage-Qt is the Qt port of LXImage, a simple and fast image viewer you can also take screenshots with.')}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="${path}/static/images/lxqt/yarock.png" alt="Yarock" />
+          <h4>${_('Yarock')}</h4>
+          <p>${_('Yarock is Qt4/Qt5 Modern Music Player designed to provide an easy and pretty music collection browser based on cover art.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download -->
+  <div class="jumbotron product-feature">
+    <div class="container using">
+      <div class="row">
+        <div class="col-xs-12 text-center spin-download">
+        <p><a class="btn btn-lg btn-primary" href="/i3/download/index.html" role="button">${_('Download Now')}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="jumbotron greybox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Support Resources')}</h2>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-comments"></i>${_('Chat')}</h3>
+          <p>${Markup(_('General help is available in &lt;a href="%s"&gt;#fedora-i3&lt;/a&gt; IRC channel on &lt;strong&gt;irc.freenode.org&lt;/strong&gt; for real-time chat.') % ('http://webchat.freenode.net/?channels=fedora-i3'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-envelope-o"></i>${_('Email')}</h3>
+          <p>${Markup(_('Users and developers are also available on the mailing list at &lt;a href="%s"&gt;i3wm@lists.fedoraproject.org&lt;/a&gt;.') % ('https://lists.fedoraproject.org/archives/list/i3wm@lists.fedoraproject.org/'))}</p>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <h3><i class="fa fa-fw fa-lg header-icon fa-book"></i>${_('Documentation')}</h3>
+          <p>${Markup(_('Specific documentation and tutorials are available at the &lt;a href="%s"&gt;i3 project upstream website&lt;/a&gt;.') % ('https://i3wm.org/'))}</p>
+        </div>
+      </div>
+      <div class="row top-margin">
+        <div class="col-xs-12 text-center">
+          <h4><i class="fa fa-fw header-icon fa-question-circle"></i>${_('General Help Using Fedora')}</h4>
+          <p>${Markup(_('Sometimes you may encounter an issue with this spin that you can get help with using general Fedora support resources. A list of resources is available at the &lt;a href="%s"&gt;Fedora &ldquo;Get Help&rdquo; page&lt;/a&gt;.') % ('https://fedoraproject.org/wiki/Communicating_and_getting_help'))}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>
