@@ -1,406 +1,297 @@
 <!DOCTYPE html>
 <html lang="${lang}"
-  xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:py="http://genshi.edgewall.org/"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../templates/master.html" />
   <head>
     <title>${_('Fedora Labs Prerelease Images')}</title>
   </head>
 
-<body class="home">
-<xi:include href="../templates/head.html" />
+  <body class="home">
+    <xi:include href="../templates/head.html" />
 
-  <!-- Labs Screenshots -->
-  <header id="head" class="main-head">
-  	<div class="container">
+    <!-- Labs Screenshots -->
+    <header id="head" class="main-head">
+      <div class="container">
 
-    	  <div class="row top-margin">
-    	  	<div class="col-xs-12 text-left bottom-margin">
-    	  	  <h2>${Markup(_('Download Fedora %(rel)s %(state)s Labs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h2>
-  	  	  	</div>
-  	  	  </div>
-  	   <div class="row">
-  	  	  	<div class="col-md-12 text-center">
-        	<p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="%(team_url)s"&gt;QA Team&lt;/a&gt;. Please direct questions to their &lt;a href="%(team_list)s"&gt;mailing list&lt;/a&gt; or %(team_irc)s on freenode.') % {'team_url':'http://fedoraproject.org/wiki/QA', 'team_list':'https://lists.fedoraproject.org/mailman/listinfo/test', 'team_irc':'#fedora-qa'})}
-            ${Markup(_('All issues or bugs should be reported via the &lt;a href="%s"&gt;Red Hat Bugzilla&lt;/a&gt;. The Fedora Project makes no guarantees as to its suitability or usefulness.') % 'https://bugzilla.redhat.com/')}
-                <py:choose>
-                  <py:when test="global_variables.release['curr_state'] == 'Alpha'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'https://fedoraproject.org/wiki/Fedora_%s_Alpha_release_notes' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
-                  </py:when>
-                  <py:when test="global_variables.release['curr_state'] == 'Beta'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'https://fedoraproject.org/wiki/F%s_Beta_release_announcement' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
-                  </py:when>
-                </py:choose>
+        <div class="row top-margin">
+          <div class="col-xs-12 text-left bottom-margin">
+            <h2>${Markup(_('Download Fedora %(rel)s %(state)s Labs')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="%(team_url)s"&gt;QA Team&lt;/a&gt;. Please direct questions to their &lt;a href="%(team_list)s"&gt;mailing list&lt;/a&gt; or %(team_irc)s on freenode.') % {'team_url':'http://fedoraproject.org/wiki/QA', 'team_list':'https://lists.fedoraproject.org/mailman/listinfo/test', 'team_irc':'#fedora-qa'})}
+              ${Markup(_('All issues or bugs should be reported via the &lt;a href="%s"&gt;Red Hat Bugzilla&lt;/a&gt;. The Fedora Project makes no guarantees as to its suitability or usefulness.') % 'https://bugzilla.redhat.com/')}
+              <py:choose>
+                <py:when test="global_variables.release['curr_state'] == 'Alpha'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'https://fedoraproject.org/wiki/Fedora_%s_Alpha_release_notes' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+                </py:when>
+                <py:when test="global_variables.release['curr_state'] == 'Beta'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'https://fedoraproject.org/wiki/F%s_Beta_release_announcement' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+                </py:when>
+              </py:choose>
             </p>
-        	</div>
-  	  	  </div>
-
-       <div class="high">
-        <div class="row top-margin">
-         <div class="col-xs-12 pre-box">
-          <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
-            <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-astronomy.jpg" alt="Astronomy Screenshot" />
           </div>
-          <div class="col-xs-12 col-sm-8 text-left">
-            <p class="screenshot"><img src="${path}/static/images/astronomy-pre-banner.png" alt="Astronomy banner" /><br />
-            <span class="grey">${_('Explore the Outer Space.')}</span></p>
-              <div class="col-xs-6 text-center">
-                <a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Astronomy_KDE-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
-                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Astronomy']}</h5>
+        </div>
+
+        <div class="high">
+          <div class="row top-margin">
+            <div class="col-xs-12 pre-box">
+              <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+                <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-astronomy.jpg" alt="Astronomy Screenshot" />
               </div>
-              <!-- <div class="col-xs-6 text-center"> -->
-              <!--   <a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/i386/iso/Fedora-Astronomy_KDE-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a> -->
-              <!--   <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Astronomy']}</h5> -->
-              <!-- </div> -->
-            </div>
-           </div>
-          </div>
-       </div>
-
-       <div class="high">
-        <div class="row top-margin">
-         <div class="col-xs-12 pre-box">
-          <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
-            <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-comp-neuro.jpg" alt="Comp Neuro Screenshot" />
-          </div>
-          <div class="col-xs-12 col-sm-8 text-left">
-            <p class="screenshot"><img src="${path}/static/images/comp-neuro-pre-banner.png" alt="Comp Neuro banner" /><br />
-            <span class="grey">${_('Explore the Brain.')}</span></p>
-              <div class="col-xs-6 text-center">
-                <a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Comp_Neuro-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
-<!--                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Comp_Neuro']}</h5>-->
+              <div class="col-xs-12 col-sm-8 text-left">
+                <p class="screenshot"><img src="${path}/static/images/astronomy-pre-banner.png" alt="Astronomy banner" /><br />
+                  <span class="grey">${_('Explore the Outer Space.')}</span></p>
+                <div class="col-xs-6 text-center">
+                  <a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Astronomy_KDE-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
+                  <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Astronomy']}</h5>
+                </div>
+                <!-- <div class="col-xs-6 text-center"> -->
+                  <!--   <a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/i386/iso/Fedora-Astronomy_KDE-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a> -->
+                  <!--   <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Astronomy']}</h5> -->
+                  <!-- </div> -->
               </div>
-              <!-- <div class="col-xs-6 text-center"> -->
-              <!--   <a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/i386/iso/Fedora-Astronomy_KDE-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a> -->
-              <!--   <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Astronomy']}</h5> -->
-              <!-- </div> -->
             </div>
-           </div>
           </div>
-       </div>
+        </div>
 
-       <div class="high">
-    	  <div class="row top-margin">
-    	   <div class="col-xs-12 pre-box">
-    	  	<div class="col-xs-12 col-sm-4 text-center no-leftpadding">
-    	  	  <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-design.jpg" alt="Design Suite Screenshot" />
-    	  	</div>
-    	  	<div class="col-xs-12 col-sm-8 text-left">
-    	  	  <p class="screenshot"><img src="${path}/static/images/design-suite-pre-banner.png" alt="Design Suite banner" /><br />
-    	  	  <span class="grey">${_('Open Creativity.')}</span></p>
-    	  	  	<div class="col-xs-6 text-center">
-    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Design_suite-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
-    	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Design']}</h5>
-  	  	  		</div>
-  	  	  		<!-- <div class="col-xs-6 text-center"> -->
-    	  	  		<!-- <a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/i386/iso/Fedora-Design_suite-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a> -->
-    	  	  		<!-- <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Design']}</h5> -->
-  	  	  		<!-- </div> -->
-  	  	  	</div>
-  	  	   </div>
-  	  	  </div>
-       </div>
+        <div class="high">
+          <div class="row top-margin">
+            <div class="col-xs-12 pre-box">
+              <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+                <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-comp-neuro.jpg" alt="Comp Neuro Screenshot" />
+              </div>
+              <div class="col-xs-12 col-sm-8 text-left">
+                <p class="screenshot"><img src="${path}/static/images/comp-neuro-pre-banner.png" alt="Comp Neuro banner" /><br />
+                  <span class="grey">${_('Explore the Brain.')}</span></p>
+                <div class="col-xs-6 text-center">
+                  <a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Comp_Neuro-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
+                  <!--                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Comp_Neuro']}</h5>-->
+                </div>
+                <!-- <div class="col-xs-6 text-center"> -->
+                  <!--   <a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/i386/iso/Fedora-Astronomy_KDE-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a> -->
+                  <!--   <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Astronomy']}</h5> -->
+                  <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
 
-       <div class="row top-margin">
-    	   <div class="col-xs-12 pre-box">
-    	  	<div class="col-xs-12 col-sm-4 text-center no-leftpadding">
-    	  	  <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-games.jpg" alt="Games Screenshot" />
-    	  	</div>
-    	  	<div class="col-xs-12 col-sm-8 text-left">
-    	  	  <p class="screenshot"><img src="${path}/static/images/games-pre-banner.png" alt="Games banner" /><br />
-    	  	  <span class="grey">${_('Play with Fedora Today!')}</span></p>
-    	  	  	<div class="col-xs-6 text-center">
-    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Games-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
-    	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Games']}</h5>
-  	  	  		</div>
-  	  	  </div>
-  	  	 </div>
-  	   </div>
-       
-       <div class="high">
-    	  <div class="row top-margin">
-    	   <div class="col-xs-12 pre-box">
-    	  	<div class="col-xs-12 col-sm-4 text-center no-leftpadding">
-    	  	  <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-jam.jpg" alt="Jam Screenshot" />
-    	  	</div>
-    	  	<div class="col-xs-12 col-sm-8 text-left">
-    	  	  <p class="screenshot"><img src="${path}/static/images/jam-pre-banner.png" alt="Jam banner" /><br />
-    	  	  <span class="grey">${_('Unleash your inner musician.')}</span></p>
-    	  	  	<div class="col-xs-6 text-center">
-    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Jam_KDE-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
-    	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Jam']}</h5>
-  	  	  		</div>
-  	  	  	</div>
-  	  	   </div>
-  	  	  </div>
-       </div>
+        <div class="high">
+          <div class="row top-margin">
+            <div class="col-xs-12 pre-box">
+              <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+                <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-design.jpg" alt="Design Suite Screenshot" />
+              </div>
+              <div class="col-xs-12 col-sm-8 text-left">
+                <p class="screenshot"><img src="${path}/static/images/design-suite-pre-banner.png" alt="Design Suite banner" /><br />
+                  <span class="grey">${_('Open Creativity.')}</span></p>
+                <div class="col-xs-6 text-center">
+                  <a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Design_suite-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
+                  <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Design']}</h5>
+                </div>
+                <!-- <div class="col-xs-6 text-center"> -->
+                  <!-- <a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/i386/iso/Fedora-Design_suite-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a> -->
+                  <!-- <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Design']}</h5> -->
+                  <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
 
-       <div class="high">
         <div class="row top-margin">
-         <div class="col-xs-12 pre-box">
-          <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
-            <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-python-classroom.jpg" alt="Python Classroom Lab Screenshot" />
-          </div>
-          <div class="col-xs-12 col-sm-8 text-left">
-            <p class="screenshot"><img src="${path}/static/images/python-classroom-lab-pre-banner.png" alt="Python Classroom Lab banner" /><br />
-            <span class="grey">${_('Teach Python with ease.')}</span></p>
-              <div class="col-xs-6 text-center">
-                <a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Python-Classroom-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
-                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Python']}</h5>
-	      </div>
-              <!-- <div class="col-xs-6 text-center"> -->
-              <!--   <a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/i386/iso/Fedora-Python-Classroom-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a> -->
-              <!--   <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Python']}</h5> -->
-              <!-- </div> -->
+          <div class="col-xs-12 pre-box">
+            <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+              <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-games.jpg" alt="Games Screenshot" />
             </div>
-           </div>
+            <div class="col-xs-12 col-sm-8 text-left">
+              <p class="screenshot"><img src="${path}/static/images/games-pre-banner.png" alt="Games banner" /><br />
+                <span class="grey">${_('Play with Fedora Today!')}</span></p>
+              <div class="col-xs-6 text-center">
+                <a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Games-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
+                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Games']}</h5>
+              </div>
+            </div>
           </div>
-       </div>
-       
-<!--       <div class="high">
-    	  <div class="row top-margin">
-    	   <div class="col-xs-12 pre-box">
-    	  	<div class="col-xs-12 col-sm-4 text-center no-leftpadding">
-    	  	  <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-robotics.jpg" alt="Robotics Suite Screenshot" />
-    	  	</div>
-    	  	<div class="col-xs-12 col-sm-8 text-left">
-    	  	  <p class="screenshot"><img src="${path}/static/images/robotics-suite-pre-banner.png" alt="Robotics Suite banner" /><br />
-    	  	  <span class="grey">${_('Dive into Robotics.')}</span></p>
-    	  	  	<div class="col-xs-6 text-center">
-    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Robotics-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
-    	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Robotics']}</h5>
-  	  	  		</div>
-  	  	  		<div class="col-xs-6 text-center">
-    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/i386/iso/Fedora-Robotics-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a>
-    	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Robotics']}</h5>
-  	  	  		</div>
-  	  	  	</div>
-  	  	   </div>
-  	  	  </div>
-</div>-->
+        </div>
 
-<!--
-       <div class="high">
-    	  <div class="row top-margin">
-    	   <div class="col-xs-12 pre-box">
-    	  	<div class="col-xs-12 col-sm-4 text-center no-leftpadding">
-    	  	  <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-scientific.jpg" alt="Scientific Screenshot" />
-    	  	</div>
-    	  	<div class="col-xs-12 col-sm-8 text-left">
-    	  	  <p class="screenshot"><img src="${path}/static/images/scientific-pre-banner.png" alt="Scientific banner" /><br />
-    	  	  <span class="grey">${_('Open source scientific computing.')}</span></p>
-    	  	  	<div class="col-xs-6 text-center">
-    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Scientific_KDE-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
-    	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Sci-kde']}</h5>
-  	  	  		</div>
-  	  	  		<div class="col-xs-6 text-center">
-    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/i386/iso/Fedora-Scientific_KDE-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a>
-    	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Sci-kde']}</h5>
-  	  	  		</div>
-  	  	  	</div>
-  	  	   </div>
-  	  	  </div>
-       </div>
--->
+        <div class="high">
+          <div class="row top-margin">
+            <div class="col-xs-12 pre-box">
+              <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+                <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-jam.jpg" alt="Jam Screenshot" />
+              </div>
+              <div class="col-xs-12 col-sm-8 text-left">
+                <p class="screenshot"><img src="${path}/static/images/jam-pre-banner.png" alt="Jam banner" /><br />
+                  <span class="grey">${_('Unleash your inner musician.')}</span></p>
+                <div class="col-xs-6 text-center">
+                  <a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Jam_KDE-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
+                  <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Jam']}</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-       <div class="high">
-    	  <div class="row top-margin bottom-space">
-    	   <div class="col-xs-12 pre-box">
-    	  	<div class="col-xs-12 col-sm-4 text-center no-leftpadding">
-    	  	  <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-security.jpg" alt="Security Lab Screenshot" />
-    	  	</div>
-    	  	<div class="col-xs-12 col-sm-8 text-left">
-    	  	  <p class="screenshot"><img src="${path}/static/images/security-lab-pre-banner.png" alt="Security Lab banner" /><br />
-    	  	  <span class="grey">${_('Thorough, safe and secure.')}</span></p>
-    	  	  	<div class="col-xs-6 text-center">
-    	  	  		<a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Security-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
-    	  	  		<h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Security']}</h5>
-  	  	  		</div>
-  	  	  		<!-- <div class="col-xs-6 text-center"> -->
-    	  	  		<!-- <a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/i386/iso/Fedora-Security-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a> -->
-    	  	  		<!-- <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Security']}</h5> -->
-  	  	  		<!-- </div> -->
-  	  	  	</div>
-  	  	   </div>
-  	  	  </div>
-       </div>
+        <div class="high">
+          <div class="row top-margin">
+            <div class="col-xs-12 pre-box">
+              <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+                <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-python-classroom.jpg" alt="Python Classroom Lab Screenshot" />
+              </div>
+              <div class="col-xs-12 col-sm-8 text-left">
+                <p class="screenshot"><img src="${path}/static/images/python-classroom-lab-pre-banner.png" alt="Python Classroom Lab banner" /><br />
+                  <span class="grey">${_('Teach Python with ease.')}</span></p>
+                <div class="col-xs-6 text-center">
+                  <a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Python-Classroom-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
+                  <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Python']}</h5>
+                </div>
+                <!-- <div class="col-xs-6 text-center"> -->
+                  <!--   <a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/i386/iso/Fedora-Python-Classroom-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a> -->
+                  <!--   <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Python']}</h5> -->
+                  <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
 
-    </div>
-  </header>
+        <div class="high">
+          <div class="row top-margin">
+            <div class="col-xs-12 pre-box">
+              <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+                <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-robotics.jpg" alt="Robotics Suite Screenshot" />
+              </div>
+              <div class="col-xs-12 col-sm-8 text-left">
+                <p class="screenshot"><img src="${path}/static/images/robotics-suite-pre-banner.png" alt="Robotics Suite banner" /><br />
+                  <span class="grey">${_('Dive into Robotics.')}</span></p>
+                <div class="col-xs-6 text-center">
+                  <a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Robotics-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
+                  <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Robotics']}</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <!-- Verify -->
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 text-left bottom-margin">
-        <h3>${Markup(_('Verify your Download!'))}</h3>
-      <p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="../../%s/verify"&gt;these instructions&lt;/a&gt;.') % (lang))}</p>
+        <div class="high">
+          <div class="row top-margin">
+            <div class="col-xs-12 pre-box">
+              <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+                <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-scientific.jpg" alt="Scientific Screenshot" />
+              </div>
+              <div class="col-xs-12 col-sm-8 text-left">
+                <p class="screenshot"><img src="${path}/static/images/scientific-pre-banner.png" alt="Scientific banner" /><br />
+                  <span class="grey">${_('Open source scientific computing.')}</span></p>
+                <div class="col-xs-6 text-center">
+                  <a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Scientific_KDE-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
+                  <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Sci-kde']}</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="high">
+          <div class="row top-margin bottom-space">
+            <div class="col-xs-12 pre-box">
+              <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
+                <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-security.jpg" alt="Security Lab Screenshot" />
+              </div>
+              <div class="col-xs-12 col-sm-8 text-left">
+                <p class="screenshot"><img src="${path}/static/images/security-lab-pre-banner.png" alt="Security Lab banner" /><br />
+                  <span class="grey">${_('Thorough, safe and secure.')}</span></p>
+                <div class="col-xs-6 text-center">
+                  <a class="btn btn-success btn-pre" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/x86_64/iso/Fedora-Security-Live-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">64-bit image</a>
+                  <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Security']}</h5>
+                </div>
+                <!-- <div class="col-xs-6 text-center"> -->
+                  <!-- <a class="btn btn-success btn-pre" href="${global_variables.path['download_arch']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Labs/i386/iso/Fedora-Security-Live-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}.iso" role="button">32-bit image</a> -->
+                  <!-- <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Security']}</h5> -->
+                  <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- Verify -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-left bottom-margin">
+          <h3>${Markup(_('Verify your Download!'))}</h3>
+          <p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="../../%s/verify"&gt;these instructions&lt;/a&gt;.') % (lang))}</p>
           <div class="row bottom-margin">
             <div class="col-sm-4 col-xs-12">
               <a class="btn btn-default btn-topmargin" href="https://getfedora.org/static/checksums/Fedora-Labs-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify 64bit!')}</a>
             </div>
           </div>
-      </div>
-    </div>
-  </div>
-
-<!--
-  <header id="head" class="main-head">
-    <div class="container recover-head">
-
-<xi:include href="../templates/generic/devel.html" />
-
-       <div class="high">
-        <div class="row top-margin">
-         <div class="col-xs-12 pre-box">
-          <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
-            <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-design.jpg" alt="Design Suite Screenshot" />
-          </div>
-          <div class="col-xs-12 col-sm-8 text-left">
-            <p class="screenshot"><img src="${path}/static/images/design-suite-pre-banner.png" alt="Design Suite banner" /><br />
-            <span class="grey">${_('Open Creativity.')}</span></p>
-              <div class="col-xs-6 text-center">
-                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_labs']}/${global_variables.release['next_id']}/Labs/x86_64/iso" role="button">64-bit image</a>
-                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Design']}</h5>
-              </div>
-              <div class="col-xs-6 text-center">
-                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_alt']}/${global_variables.release['next_id']}/Labs/i386/iso" role="button">32-bit image</a>
-                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Design']}</h5>
-              </div>
-            </div>
-           </div>
-          </div>
-       </div>
-
-       <div class="high">
-        <div class="row top-margin">
-         <div class="col-xs-12 pre-box">
-          <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
-            <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-jam.jpg" alt="Jam Screenshot" />
-          </div>
-          <div class="col-xs-12 col-sm-8 text-left">
-            <p class="screenshot"><img src="${path}/static/images/jam-pre-banner.png" alt="Jam banner" /><br />
-            <span class="grey">${_('Unleash your inner musician.')}</span></p>
-              <div class="col-xs-6 text-center">
-                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_labs']}/${global_variables.release['next_id']}/Labs/x86_64/iso" role="button">64-bit image</a>
-                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Jam']}</h5>
-              </div>
-              <div class="col-xs-6 text-center">
-                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_alt']}/${global_variables.release['next_id']}/Labs/i386/iso" role="button">32-bit image</a>
-                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Jam']}</h5>
-              </div>
-            </div>
-           </div>
-          </div>
-       </div>
-
-       <div class="high">
-        <div class="row top-margin">
-         <div class="col-xs-12 pre-box">
-          <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
-            <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-robotics.jpg" alt="Robotics Suite Screenshot" />
-          </div>
-          <div class="col-xs-12 col-sm-8 text-left">
-            <p class="screenshot"><img src="${path}/static/images/robotics-suite-pre-banner.png" alt="Robotics Suite banner" /><br />
-            <span class="grey">${_('Dive into Robotics.')}</span></p>
-              <div class="col-xs-6 text-center">
-                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_labs']}/${global_variables.release['next_id']}/Labs/x86_64/iso" role="button">64-bit image</a>
-                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Robotics']}</h5>
-              </div>
-              <div class="col-xs-6 text-center">
-                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_alt']}/${global_variables.release['next_id']}/Labs/i386/iso" role="button">32-bit image</a>
-                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Robotics']}</h5>
-              </div>
-            </div>
-           </div>
-          </div>
-       </div>
-
-       <div class="high">
-        <div class="row top-margin bottom-space">
-         <div class="col-xs-12 pre-box">
-          <div class="col-xs-12 col-sm-4 text-center no-leftpadding">
-            <img class="screenshot image-responsive" src="${path}/static/images/screenshots/screenshot-scientific.jpg" alt="Scientific Screenshot" />
-          </div>
-          <div class="col-xs-12 col-sm-8 text-left">
-            <p class="screenshot"><img src="${path}/static/images/scientific-pre-banner.png" alt="Scientific banner" /><br />
-            <span class="grey">${_('Open source scientific computing.')}</span></p>
-              <div class="col-xs-6 text-center">
-                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_labs']}/${global_variables.release['next_id']}/Labs/x86_64/iso" role="button">64-bit image</a>
-                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_x86_64_Live_Sci-kde']}</h5>
-              </div>
-              <div class="col-xs-6 text-center">
-                <a class="btn btn-success btn-pre" href="${global_variables.path['devel_alt']}/${global_variables.release['next_id']}/Labs/i386/iso" role="button">32-bit image</a>
-                <h5>${Markup(_('%s GB ISO Image')) % global_variables.iso_size['pre_i686_Live_Sci-kde']}</h5>
-              </div>
-            </div>
-           </div>
-          </div>
-       </div>
-
-  	</div>
-  </header>
--->
-
-  <!-- Feature: Labs -->
-  <div class="jumbotron product-feature bluebox">
-    <div class="container">
-      <div class="row">
-	    <div class="col-xs-12 caption">
-	      <h2 class="text-center">${_('What is Fedora Labs?')}</h2>
-	      <p class="thin text-justify">${_('Fedora Labs is a selection of curated bundles of purpose-driven software and content as curated and maintained by members of the Fedora Community. These may be installed as standalone full versions of Fedora or as add-ons to existing Fedora installations.')}</p>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container using">
-
-    <!-- Using Labs for mobile -->
-  	<div class="row bottom-space visible-xs">
-  	  <div class="col-xs-12 text-center">
-  	  	<h2>${_('Downloading')}</h2>
-	      <p class="text-justify">${_('You can download these tools as complete Fedora image, or you can install them using a software manager on an existing Fedora installation.')}</p>
-	      <p><a class="btn btn-primary" href="https://docs.fedoraproject.org/en-US/fedora/f29/install-guide/Downloading_Fedora/" role="button">${_('Learn more')}</a></p>
-  	  </div>
-  	  <div class="col-xs-12 text-center">
-  	  	<h2>${_('Installing')}</h2>
-	      <p class="text-justify">${_('To install a spin, you run the spin on your computer and click the "Install to Hard Drive" link on the desktop. You\'ll be guided through the install process via a series of prompts.')}</p>
-	      <p><a class="btn btn-primary" href="https://docs.fedoraproject.org/en-US/fedora/f29/install-guide/install/Installing_Using_Anaconda/" role="button">${_('Learn more')}</a></p>
-  	  </div>
-  	  <div class="col-xs-12 text-center">
-  	  	<h2>${_('Using')}</h2>
-	      <p class="text-justify">${_('After installing either the software bundle or the complete Fedora version you can run these tools by launching the applications that correspond with them.')}</p>
-	      <p><a class="btn btn-primary" href="https://docs.fedoraproject.org/en-US/fedora/f29/install-guide/install/Preparing_for_Installation/" role="button">${_('Learn more')}</a></p>
-  	  </div>
-  	</div>
-
-  <!-- Using Labs for desktop and tablet -->
-  	<div class="row hidden-xs">
-  	  <div class="col-sm-4 text-center">
-  	  	<h2>${_('Downloading')}</h2>
-	      <p class="text-justify">${_('You can download these tools as complete Fedora image, or you can install them using a software manager on an existing Fedora installation.')}</p>
-  	  </div>
-  	  <div class="col-sm-4 text-center">
-  	  	<h2>${_('Installing')}</h2>
-	      <p class="text-justify">${_('To install a spin, you run the spin on your computer and click the "Install to Hard Drive" link on the desktop. You\'ll be guided through the install process via a series of prompts.')}</p>
-  	  </div>
-  	  <div class="col-sm-4 text-center">
-  	  	<h2>${_('Using')}</h2>
-	      <p class="text-justify">${_('After installing either the software bundle or the complete Fedora version you can run these tools by launching the applications that correspond with them.')}</p>
-  	  </div>
-  	</div>
-  	<div class="row bottom-space hidden-xs">
-  	  <div class="col-sm-4 text-center">
-	      <p><a class="btn btn-primary" href="https://docs.fedoraproject.org/en-US/fedora/f29/install-guide/Downloading_Fedora/" role="button">${_('Learn more')}</a></p>
-  	  </div>
-      <div class="col-sm-4 text-center">
-        <p><a class="btn btn-primary" href="https://docs.fedoraproject.org/en-US/fedora/f29/install-guide/install/Installing_Using_Anaconda/" role="button">${_('Learn more')}</a></p>
+    <!-- Feature: Labs -->
+    <div class="jumbotron product-feature bluebox">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 caption">
+            <h2 class="text-center">${_('What is Fedora Labs?')}</h2>
+            <p class="thin text-justify">${_('Fedora Labs is a selection of curated bundles of purpose-driven software and content as curated and maintained by members of the Fedora Community. These may be installed as standalone full versions of Fedora or as add-ons to existing Fedora installations.')}</p>
+          </div>
+        </div>
       </div>
-  	  <div class="col-sm-4 text-center">
-	      <p><a class="btn btn-primary" href="https://docs.fedoraproject.org/en-US/fedora/f29/install-guide/install/Preparing_for_Installation/" role="button">${_('Learn more')}</a></p>
-  	  </div>
-  	</div>
+    </div>
 
-  </div>
+    <div class="container using">
 
-</body>
+      <!-- Using Labs for mobile -->
+      <div class="row bottom-space visible-xs">
+        <div class="col-xs-12 text-center">
+          <h2>${_('Downloading')}</h2>
+          <p class="text-justify">${_('You can download these tools as complete Fedora image, or you can install them using a software manager on an existing Fedora installation.')}</p>
+          <p><a class="btn btn-primary" href="https://docs.fedoraproject.org/en-US/fedora/f29/install-guide/Downloading_Fedora/" role="button">${_('Learn more')}</a></p>
+        </div>
+        <div class="col-xs-12 text-center">
+          <h2>${_('Installing')}</h2>
+          <p class="text-justify">${_('To install a spin, you run the spin on your computer and click the "Install to Hard Drive" link on the desktop. You\'ll be guided through the install process via a series of prompts.')}</p>
+          <p><a class="btn btn-primary" href="https://docs.fedoraproject.org/en-US/fedora/f29/install-guide/install/Installing_Using_Anaconda/" role="button">${_('Learn more')}</a></p>
+        </div>
+        <div class="col-xs-12 text-center">
+          <h2>${_('Using')}</h2>
+          <p class="text-justify">${_('After installing either the software bundle or the complete Fedora version you can run these tools by launching the applications that correspond with them.')}</p>
+          <p><a class="btn btn-primary" href="https://docs.fedoraproject.org/en-US/fedora/f29/install-guide/install/Preparing_for_Installation/" role="button">${_('Learn more')}</a></p>
+        </div>
+      </div>
+
+      <!-- Using Labs for desktop and tablet -->
+      <div class="row hidden-xs">
+        <div class="col-sm-4 text-center">
+          <h2>${_('Downloading')}</h2>
+          <p class="text-justify">${_('You can download these tools as complete Fedora image, or you can install them using a software manager on an existing Fedora installation.')}</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <h2>${_('Installing')}</h2>
+          <p class="text-justify">${_('To install a spin, you run the spin on your computer and click the "Install to Hard Drive" link on the desktop. You\'ll be guided through the install process via a series of prompts.')}</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <h2>${_('Using')}</h2>
+          <p class="text-justify">${_('After installing either the software bundle or the complete Fedora version you can run these tools by launching the applications that correspond with them.')}</p>
+        </div>
+      </div>
+      <div class="row bottom-space hidden-xs">
+        <div class="col-sm-4 text-center">
+          <p><a class="btn btn-primary" href="https://docs.fedoraproject.org/en-US/fedora/f29/install-guide/Downloading_Fedora/" role="button">${_('Learn more')}</a></p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <p><a class="btn btn-primary" href="https://docs.fedoraproject.org/en-US/fedora/f29/install-guide/install/Installing_Using_Anaconda/" role="button">${_('Learn more')}</a></p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <p><a class="btn btn-primary" href="https://docs.fedoraproject.org/en-US/fedora/f29/install-guide/install/Preparing_for_Installation/" role="button">${_('Learn more')}</a></p>
+        </div>
+      </div>
+
+    </div>
+  </body>
 </html>
