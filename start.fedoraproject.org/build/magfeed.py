@@ -20,6 +20,9 @@ for feed in map(feedparser.parse, FedMag):
         # removing '[...]' from the summary, so its cleaner
         summary = item.summary.rstrip(' [&#8230;]').replace("&#8217;", "'").replace("&#8217", "'")
         item.title = item.title.replace("&", "&#38;")
+        # The feed won't return a comment count if comments are disabled on a post
+        if not hasattr(item, 'slash_comments'):
+            item.slash_comments = "0"
         # find the first image enclosure
         for image_enclosure in item.enclosures:
             if image_enclosure.get('type') == 'image/jpg':
