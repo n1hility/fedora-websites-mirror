@@ -47,7 +47,7 @@ This repository contains the sources for the following Fedora Websites:
 
 #### 1. Setup your system
 
-    sudo dnf install git gettext python-genshi python-lxml python-setuptools python-dateutil \
+    sudo dnf install git gettext python2-genshi python-lxml python-setuptools python-dateutil \
     python-dogpile-cache babel python-feedparser fedfind python-requests python2-babel
 
     sudo dnf groups install 'Web Server'
