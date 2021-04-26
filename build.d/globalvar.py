@@ -127,6 +127,8 @@ iso_size={
     'aarch64_raw':         '190',       # In MB
     'aarch64_Container':   '43',        # In MB
     'aarch64_WS':          '2.8',       # In GB
+    'aarch64_KDE_live':         '1.9',       # In GB
+    'aarch64_KDE_raw':         '4.0',       # In GB
     'aarch64_min':         '412',       # In MB
     'ppc64_Server_DVD':    '3.0',       # In GB
     'ppc64_Server_net':    '597',       # In MB
