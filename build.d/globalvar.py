@@ -2,37 +2,37 @@
 # -*- coding: utf-8 -*-
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
 release={
-    'prev_id':     '32',
-    'curr_id':     '33',
-    'next_id':     '34',
+    'prev_id':     '33',
+    'curr_id':     '34',
+    'next_id':     '35',
     'curr_name':   '',
     'next_name':   '',
-    'curr_state':  'Beta',           # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_alt_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  'Beta',     # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_AMI_state':  'Beta', # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_server_state':  'Beta',    # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_state':  '',           # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_alt_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  '',     # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_AMI_state':  '', # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_server_state':  '',    # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_atomic_state':  '',    # 'Pre-Release' or '' - No Alpha/Beta for Atomic Host
-    'prev_arm_id': '32',
-    'prev_alt_id': '32',
-    'prev_cloud_id': '32',
+    'prev_arm_id': '33',
+    'prev_alt_id': '33',
+    'prev_cloud_id': '33',
     'prev_atomic_id': '30',
-    'curr_arm_id': '33',
-    'curr_alt_id': '33',
-    'curr_cloud_id': '33',
+    'curr_arm_id': '34',
+    'curr_alt_id': '34',
+    'curr_cloud_id': '34',
     'curr_atomic_id': '30',
-    'curr_server_id': '33',
-    'curr_cloud_AMI_id': '33',
-    'curr_iot_id': '33',
-    'curr_silverblue_id': '33',
-    'next_silverblue_id': '34',
-    'next_arm_id': '34',
-    'next_alt_id': '34',
-    'next_cloud_id': '34',
+    'curr_server_id': '34',
+    'curr_cloud_AMI_id': '34',
+    'curr_iot_id': '34',
+    'curr_silverblue_id': '34',
+    'next_silverblue_id': '35',
+    'next_arm_id': '35',
+    'next_alt_id': '35',
+    'next_cloud_id': '35',
     'next_atomic_id': '30',
-    'next_server_id': '34',
-    'next_cloud_AMI_id': '34',
+    'next_server_id': '35',
+    'next_cloud_AMI_id': '35',
     'composedate': '20160616',
     'unofficial_compose': '20181029',
     'alt_composedate': '20161118',
