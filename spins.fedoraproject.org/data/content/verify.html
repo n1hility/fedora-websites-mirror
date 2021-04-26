@@ -33,7 +33,7 @@
     </div>
     <div class="row bottom-margin">
         <div class="col-sm-4 col-xs-12">
-          <a class="btn btn-default btn-topmargin" href="https://getfedora.org/static/checksums/Fedora-Spins-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-x86_64-CHECKSUM">${_('Verify 64-bit!')}</a>
+          <a class="btn btn-default btn-topmargin" href="${global_variables.path['checksums']}/${global_variables.release['curr_alt_id']}/iso/Fedora-Spins-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}-x86_64-CHECKSUM">${_('Verify 64-bit iso')}</a>
         </div>
     </div>
 
@@ -46,9 +46,9 @@
             <pre class="command">$ gpg --verify-files *-CHECKSUM</pre>
             <p>${Markup(_('The CHECKSUM file should have a good signature from one of the following keys:'))}</p>
             <ul>
+                <li><code>45719A39</code> - ${_('Fedora 34')}</li>
+                <li><code>9570FF31</code> - ${_('Fedora 33')}</li>
                 <li><code>12C944D0</code> - ${_('Fedora 32')}</li>
-                <li><code>3C3359C4</code> - ${_('Fedora 31')}</li>
-                <li><code>CFC659B9</code> - ${_('Fedora 30')}</li>
                 <li><code>DBBDCF7C</code> - ${_('IOT 2019')}</li>
             </ul>
             <p>${Markup(_('Finally, now that the CHECKSUM file has been verified, check that the image\'s checksum matches:'))}</p>
