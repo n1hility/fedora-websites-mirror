@@ -1,6 +1,7 @@
 #!/bin/env python
 
 import ConfigParser, sys, os
+import langtable
 
 '''
 This script takes the contents of the website-specific LINGUAS file, constructs an options menu for the languages contained therein.
@@ -40,7 +41,8 @@ with open(sys.argv[2], 'r') as linguas: # Linguas is where available languages a
                 lang = lang.strip()
                 if lang and not lang.startswith('#') and not lang in banned:
                     #output.write('    <option value="' + lang + '" py:attrs="{\'selected\': lang == \'' + lang + '\' and \'selected\' or None}">' + language_map.get('Languages',lang) + '</option>\n')
-                    output.write(", '"+lang+"': '"+language_map.get('Languages',lang)+"'")
+                    #output.write(", '"+lang+"': '"+language_map.get('Languages',lang)+"'")
+                    output.write(", '"+lang+"': '"+langtable.language_name(languageId=lang).encode('utf-8')+"'")
         finally:
             linguas.close()
         output.write("""}
