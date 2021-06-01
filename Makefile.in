@@ -27,7 +27,7 @@ sync = \
 		fi   \
 	fi
 
-all:: $(LANGUAGES)
+all:: en $(LANGUAGES)
 	cp static/robots.txt out/
 
 static:
@@ -44,6 +44,9 @@ else
 for me to get its name.. Please use a wise name."
 endif
 
+po/en.po: pot
+	msginit -i $(POT_FILE) --no-translator -l en -o po/en.po
+
 data/templates/translations.html: po/LINGUAS
 	$(PYTHON) $(BUILDDIR)/construct-translations.py $(BUILDDIR)/translations.ini $^ $@
 
@@ -59,7 +62,7 @@ pushpot: pot
 	rm -rf $(TRANS_TMP)
 
 pullpos:
-	git clone ssh://git@pagure.io/fedora-web/translations.git $(TRANS_TMP)
+	git clone https://pagure.io/fedora-web/translations.git $(TRANS_TMP)
 	cp -R $(TRANS_TMP)/$(TRANS_FOLDER)/*.po ./po/
 	cp -R $(TRANS_TMP)/$(TRANS_FOLDER)/LINGUAS ./po/
 	rm -rf $(TRANS_TMP)

@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import sys
 
-languages = []
+languages = [("en", "en"),]
 
 linguasfile = sys.argv[1]
 linguas = open(linguasfile)
