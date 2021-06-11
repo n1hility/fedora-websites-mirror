@@ -49,7 +49,7 @@ data/templates/translations.html: po/LINGUAS
 
 msgmerge: $(wildcard po/*.po)
 
-pushpot:
+pushpot: pot
 	git clone ssh://git@pagure.io/fedora-web/translations.git $(TRANS_TMP)
 	cp $(POT_FILE) $(TRANS_TMP)/$(TRANS_FOLDER)/
 	touch $(TRANS_TMP)/$(TRANS_FOLDER)/LINGUAS
