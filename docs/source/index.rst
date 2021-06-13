@@ -21,7 +21,7 @@ This page contains information about the Fedora Websites team.
 Contact Information
 ===================
 
-* IRC: ``#fedora-websites`` on irc.freenode.net
+* IRC: ``#fedora-websites`` on irc.libera.chat
 * Mailing List: `websites@lists.fedoraproject.org <https://lists.fedoraproject.org/archives/list/websites@lists.fedoraproject.org/>`_
 * Issue tracker: `Fedora Websites Trac Tickets <https://fedorahosted.org/fedora-websites/newticket>`_
 
