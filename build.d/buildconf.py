@@ -13,7 +13,7 @@ for l in linguas:
 linguas.close()
 
 print '# Define the correct MIME type for specific languages'
-for lang in ['bn', 'el', 'nb', 'pl', 'es', 'tr']:
+for lang in ['bn', 'el', 'nb', 'pl', 'es', 'tr', 'sr', 'si', 'pt']:
     print 'AddType text/html .%s' % (lang)
 
 print ' '
