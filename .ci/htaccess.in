@@ -1,0 +1,21 @@
+AddLanguage en .en
+LanguagePriority en
+ForceLanguagePriority Prefer Fallback
+
+AddDefaultCharset utf-8
+
+RewriteEngine on
+
+RewriteBase "/@SITE@"
+RewriteRule ^(?:(?:en))?/(.*)$ $1? [L]
+
+Options MultiViews FollowSymLinks Indexes
+
+#SetEnvIf Request_URI ^/en/ prefer-language=en
+
+<IfModule mod_headers.c>
+    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "Thu, 1 Jan 1970 00:00:00 GMT"
+</IfModule>
+
