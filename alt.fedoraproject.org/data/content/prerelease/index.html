@@ -60,7 +60,7 @@
         <div class="col-md-9">
           <div class="white">
             <div class="col-md-1">
-            <img src="/static/images/server.png" />
+            <img src="${path}/static/images/server.png" />
             </div>
             <div class="col-md-4">
             <h3>${_('Fedora Server')}</h3>
@@ -96,7 +96,7 @@
       <div class="row">
         <div class="white">
           <div class="col-xs-3">
-          <img src="/static/images/server.png" />
+          <img src="${path}/static/images/server.png" />
           </div>
           <div class="col-xs-9">
           <h3>${_('Fedora Server')}</h3>
@@ -126,7 +126,7 @@
       <div class="row">
         <div class="white">
           <div class="col-sm-3">
-          <img src="/static/images/server.png" />
+          <img src="${path}/static/images/server.png" />
           </div>
           <div class="col-sm-5">
           <h3>${_('Fedora Server')}</h3>
@@ -164,13 +164,13 @@
             <div class="panel-heading">
               <h3 class="panel-title hidden-xs">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                <img src="/static/images/aarch64.png" />
+                <img src="${path}/static/images/aarch64.png" />
                 ${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt; aarch64 Architecture'))}
                 </a>
               </h3>
               <h3 class="panel-title visible-xs">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                <img src="/static/images/aarch64.png" />
+                <img src="${path}/static/images/aarch64.png" />
                 ${Markup(_('ARM&lt;span class="sup"&gt;&reg;&lt;/span&gt;'))}
                 </a>
               </h3>
@@ -178,56 +178,56 @@
             <div id="collapseOne" class="panel-collapse collapse in">
               <div class="panel-body panel-heading">
                 <h3 class="panel-title accordion-title hidden-xs">
-                  <img src="/static/images/server.png" />
+                  <img src="${path}/static/images/server.png" />
                   ${_('Fedora Server DVD')}
                   <span class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <h3 class="panel-title accordion-title visible-xs">
-                  <img src="/static/images/server.png" />
+                  <img src="${path}/static/images/server.png" />
                   ${_('DVD')}
                   <span class="mobile-download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/aarch64/iso/Fedora-Server-dvd-aarch64-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <div class="grey-hr"></div>
                 <h3 class="panel-title accordion-title hidden-xs">
-                  <img src="/static/images/server.png" />
+                  <img src="${path}/static/images/server.png" />
                   ${_('Fedora Server Netinstall')}
                   <span class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/aarch64/iso/Fedora-Server-netinst-aarch64-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <h3 class="panel-title accordion-title visible-xs">
-                  <img src="/static/images/server.png" />
+                  <img src="${path}/static/images/server.png" />
                   ${_('Net')}
                   <span class="mobile-download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/aarch64/iso/Fedora-Server-netinst-aarch64-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <div class="grey-hr"></div>
                 <h3 class="panel-title accordion-title hidden-xs">
-                  <img src="/static/images/cloud.png" />
+                  <img src="${path}/static/images/cloud.png" />
                   ${_('Fedora Cloud qcow2')}
                   <span class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/aarch64/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.aarch64.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <h3 class="panel-title accordion-title visible-xs">
-                  <img src="/static/images/cloud.png" />
+                  <img src="${path}/static/images/cloud.png" />
                   ${_('qcow2')}
                   <span class="mobile-download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/aarch64/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.aarch64.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <div class="grey-hr"></div>
                 <h3 class="panel-title accordion-title hidden-xs">
-                  <img src="/static/images/cloud.png" />
+                  <img src="${path}/static/images/cloud.png" />
                   ${_('Fedora Cloud raw')}
                   <span class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/aarch64/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.aarch64.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <h3 class="panel-title accordion-title visible-xs">
-                  <img src="/static/images/cloud.png" />
+                  <img src="${path}/static/images/cloud.png" />
                   ${_('raw')}
                   <span class="mobile-download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/aarch64/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.aarch64.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <div class="grey-hr"></div>
                 <h3 class="panel-title accordion-title hidden-xs">
-                  <img src="/static/images/docker.png" />
+                  <img src="${path}/static/images/docker.png" />
                   ${_('Fedora Docker')}
                   <span class="download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Container/aarch64/images/Fedora-Container-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.aarch64.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <h3 class="panel-title accordion-title visible-xs">
-                  <img src="/static/images/docker.png" />
+                  <img src="${path}/static/images/docker.png" />
                   ${_('Docker')}
                   <span class="mobile-download"><a href="${global_variables.path['download']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Container/aarch64/images/Fedora-Container-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_aarch64']}.aarch64.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
@@ -238,13 +238,13 @@
             <div class="panel-heading">
               <h3 class="panel-title hidden-xs">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                <img src="/static/images/ppc64le.png" />
+                <img src="${path}/static/images/ppc64le.png" />
                 ${Markup(_('PowerPC Architecture (PPC64LE)'))}
                 </a>
               </h3>
               <h3 class="panel-title visible-xs">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                <img src="/static/images/ppc64le.png" />
+                <img src="${path}/static/images/ppc64le.png" />
                 ${Markup(_('PPC64LE'))}
                 </a>
               </h3>
@@ -252,56 +252,56 @@
             <div id="collapseThree" class="panel-collapse collapse">
               <div class="panel-body panel-heading">
                 <h3 class="panel-title accordion-title hidden-xs">
-                  <img src="/static/images/server.png" />
+                  <img src="${path}/static/images/server.png" />
                   ${_('Fedora Server DVD')}
                   <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/ppc64le/iso/Fedora-Server-dvd-ppc64le-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <h3 class="panel-title accordion-title visible-xs">
-                  <img src="/static/images/server.png" />
+                  <img src="${path}/static/images/server.png" />
                   ${_('DVD')}
                   <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/ppc64le/iso/Fedora-Server-dvd-ppc64le-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <div class="grey-hr"></div>
                 <h3 class="panel-title accordion-title hidden-xs">
-                  <img src="/static/images/server.png" />
+                  <img src="${path}/static/images/server.png" />
                   ${_('Fedora Server Netinstall')}
                   <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/ppc64le/iso/Fedora-Server-netinst-ppc64le-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <h3 class="panel-title accordion-title visible-xs">
-                  <img src="/static/images/server.png" />
+                  <img src="${path}/static/images/server.png" />
                   ${_('Net')}
                   <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/ppc64le/iso/Fedora-Server-netinst-ppc64le-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <div class="grey-hr"></div>
                 <h3 class="panel-title accordion-title hidden-xs">
-                  <img src="/static/images/cloud.png" />
+                  <img src="${path}/static/images/cloud.png" />
                   ${_('Fedora Cloud qcow2')}
                   <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.ppc64le.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <h3 class="panel-title accordion-title visible-xs">
-                  <img src="/static/images/cloud.png" />
+                  <img src="${path}/static/images/cloud.png" />
                   ${_('qcow2')}
                   <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.ppc64le.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <div class="grey-hr"></div>
                 <h3 class="panel-title accordion-title hidden-xs">
-                  <img src="/static/images/cloud.png" />
+                  <img src="${path}/static/images/cloud.png" />
                   ${_('Fedora Cloud raw')}
                   <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.ppc64le.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <h3 class="panel-title accordion-title visible-xs">
-                  <img src="/static/images/cloud.png" />
+                  <img src="${path}/static/images/cloud.png" />
                   ${_('raw')}
                   <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/ppc64le/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.ppc64le.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <div class="grey-hr"></div>
                 <h3 class="panel-title accordion-title hidden-xs">
-                  <img src="/static/images/docker.png" />
+                  <img src="${path}/static/images/docker.png" />
                   ${_('Fedora Docker')}
                   <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Container/ppc64le/images/Fedora-Container-Minimal-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.ppc64le.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <h3 class="panel-title accordion-title visible-xs">
-                  <img src="/static/images/docker.png" />
+                  <img src="${path}/static/images/docker.png" />
                   ${_('Docker')}
                   <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Container/ppc64le/images/Fedora-Container-Minimal-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_ppc64le']}.ppc64le.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
@@ -312,13 +312,13 @@
             <div class="panel-heading">
               <h3 class="panel-title hidden-xs">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                <img src="/static/images/s390x.png" />
+                <img src="${path}/static/images/s390x.png" />
                 ${Markup(_('s390x Architecture'))}
                 </a>
               </h3>
               <h3 class="panel-title visible-xs">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                <img src="/static/images/s390x.png" />
+                <img src="${path}/static/images/s390x.png" />
                 ${Markup(_('s390x'))}
                 </a>
               </h3>
@@ -326,56 +326,56 @@
             <div id="collapseFour" class="panel-collapse collapse">
               <div class="panel-body panel-heading">
                 <h3 class="panel-title accordion-title hidden-xs">
-                  <img src="/static/images/server.png" />
+                  <img src="${path}/static/images/server.png" />
                   ${_('Fedora Server')}
                   <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/s390x/iso/Fedora-Server-dvd-s390x-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <h3 class="panel-title accordion-title visible-xs">
-                  <img src="/static/images/server.png" />
+                  <img src="${path}/static/images/server.png" />
                   ${_('Server')}
                   <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/s390x/iso/Fedora-Server-dvd-s390x-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <div class="grey-hr"></div>
                 <h3 class="panel-title accordion-title hidden-xs">
-                  <img src="/static/images/server.png" />
+                  <img src="${path}/static/images/server.png" />
                   ${_('Fedora Server Netinstall')}
                   <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/s390x/iso/Fedora-Server-netinst-s390x-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <h3 class="panel-title accordion-title visible-xs">
-                  <img src="/static/images/server.png" />
+                  <img src="${path}/static/images/server.png" />
                   ${_('Net')}
                   <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Server/s390x/iso/Fedora-Server-netinst-s390x-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_s390x']}.iso">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <div class="grey-hr"></div>
                 <h3 class="panel-title accordion-title hidden-xs">
-                  <img src="/static/images/cloud.png" />
+                  <img src="${path}/static/images/cloud.png" />
                   ${_('Fedora Cloud qcow2')}
                   <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/s390x/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_s390x']}.s390x.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <h3 class="panel-title accordion-title visible-xs">
-                  <img src="/static/images/cloud.png" />
+                  <img src="${path}/static/images/cloud.png" />
                   ${_('qcow2')}
                   <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/s390x/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_s390x']}.s390x.qcow2">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <div class="grey-hr"></div>
                 <h3 class="panel-title accordion-title hidden-xs">
-                  <img src="/static/images/cloud.png" />
+                  <img src="${path}/static/images/cloud.png" />
                   ${_('Fedora Cloud raw')}
                   <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/s390x/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_s390x']}.s390x.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <h3 class="panel-title accordion-title visible-xs">
-                  <img src="/static/images/cloud.png" />
+                  <img src="${path}/static/images/cloud.png" />
                   ${_('raw')}
                   <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Cloud/s390x/images/Fedora-Cloud-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_s390x']}.s390x.raw.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <div class="grey-hr"></div>
                 <h3 class="panel-title accordion-title hidden-xs">
-                  <img src="/static/images/docker.png" />
+                  <img src="${path}/static/images/docker.png" />
                   ${_('Fedora Docker')}
                   <span class="download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Container/s390x/images/Fedora-Container-Minimal-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_s390x']}.s390x.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
                 <h3 class="panel-title accordion-title visible-xs">
-                  <img src="/static/images/docker.png" />
+                  <img src="${path}/static/images/docker.png" />
                   ${_('Docker')}
                   <span class="mobile-download"><a href="${global_variables.path['download_arch']}/test/${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}/Container/s390x/images/Fedora-Container-Minimal-Base-${global_variables.release['next_alt_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold_s390x']}.s390x.tar.xz">${_('Download')}</a> | <a href="${path}/${lang}/verify-prereleases.html">${_('Verify')}</a></span>
                 </h3>
@@ -407,7 +407,7 @@
         <div class="col-md-9">
           <div class="white">
             <div class="col-md-1">
-            <img src="/static/images/cloud.png" />
+            <img src="${path}/static/images/cloud.png" />
             </div>
             <div class="col-md-4">
             <h3>${_('raw image')}</h3>
@@ -421,7 +421,7 @@
           </div>
           <div class="white">
             <div class="col-md-1">
-            <img src="/static/images/cloud.png" />
+            <img src="${path}/static/images/cloud.png" />
             </div>
             <div class="col-md-4">
             <h3>${_('qcow2 image')}</h3>
@@ -435,7 +435,7 @@
           </div>
           <div class="white">
             <div class="col-md-1">
-            <img src="/static/images/cloud.png" />
+            <img src="${path}/static/images/cloud.png" />
             </div>
             <div class="col-md-4">
             <h3>${_('Vagrant VBox image')}</h3>
@@ -449,7 +449,7 @@
           </div>
           <div class="white">
             <div class="col-md-1">
-            <img src="/static/images/cloud.png" />
+            <img src="${path}/static/images/cloud.png" />
             </div>
             <div class="col-md-4">
             <h3>${_('Vagrant libvirt image')}</h3>
@@ -464,7 +464,7 @@
           <!-- EC2 images Desktop -->
           <div class="white">
             <div class="col-md-1">
-            <img src="/static/images/cloud.png" />
+            <img src="${path}/static/images/cloud.png" />
             </div>
             <div class="col-md-4">
             <h3>${_('x86_64 AMIs')}</h3>
@@ -501,7 +501,7 @@
           </div>
           <div class="white">
             <div class="col-md-1">
-            <img src="/static/images/cloud.png" />
+            <img src="${path}/static/images/cloud.png" />
             </div>
             <div class="col-md-4">
             <h3>${_('aarch64 AMIs')}</h3>
@@ -558,7 +558,7 @@
       <div class="row">
         <div class="white">
           <div class="col-xs-3">
-          <img src="/static/images/cloud.png" />
+          <img src="${path}/static/images/cloud.png" />
           </div>
           <div class="col-xs-9">
           <h3>${_('raw image')}</h3>
@@ -567,7 +567,7 @@
         </div>
         <div class="white">
           <div class="col-xs-3">
-          <img src="/static/images/cloud.png" />
+          <img src="${path}/static/images/cloud.png" />
           </div>
           <div class="col-xs-9">
           <h3>${_('qcow2 image')}</h3>
@@ -576,7 +576,7 @@
         </div>
         <div class="white">
           <div class="col-xs-3">
-          <img src="/static/images/cloud.png" />
+          <img src="${path}/static/images/cloud.png" />
           </div>
           <div class="col-xs-9">
           <h3>${_('VirtualBox image')}</h3>
@@ -585,7 +585,7 @@
         </div>
         <div class="white">
           <div class="col-xs-3">
-          <img src="/static/images/cloud.png" />
+          <img src="${path}/static/images/cloud.png" />
           </div>
           <div class="col-xs-9">
           <h3>${_('libvirt image')}</h3>
@@ -595,7 +595,7 @@
         <!-- EC2 images Phone -->
         <div class="white">
             <div class="col-xs-3">
-            <img src="/static/images/cloud.png" />
+            <img src="${path}/static/images/cloud.png" />
             </div>
             <div class="col-xs-9">
             <h3>${_('x86_64 AMIs')}</h3>
@@ -630,7 +630,7 @@
         </div>
         <div class="white">
             <div class="col-xs-3">
-            <img src="/static/images/cloud.png" />
+            <img src="${path}/static/images/cloud.png" />
             </div>
             <div class="col-xs-9">
             <h3>${_('Standard HVM AMIs')}</h3>
@@ -684,7 +684,7 @@
       <div class="row">
         <div class="white">
           <div class="col-sm-3">
-          <img src="/static/images/cloud.png" />
+          <img src="${path}/static/images/cloud.png" />
           </div>
           <div class="col-sm-5">
           <h3>${_('raw image')}</h3>
@@ -695,7 +695,7 @@
         </div>
         <div class="white">
           <div class="col-sm-3">
-          <img src="/static/images/cloud.png" />
+          <img src="${path}/static/images/cloud.png" />
           </div>
           <div class="col-sm-5">
           <h3>${_('qcow2 image')}</h3>
@@ -706,7 +706,7 @@
         </div>
         <div class="white">
           <div class="col-sm-3">
-          <img src="/static/images/cloud.png" />
+          <img src="${path}/static/images/cloud.png" />
           </div>
           <div class="col-sm-5">
           <h3>${_('VirtualBox image')}</h3>
@@ -717,7 +717,7 @@
         </div>
         <div class="white">
           <div class="col-sm-3">
-          <img src="/static/images/cloud.png" />
+          <img src="${path}/static/images/cloud.png" />
           </div>
           <div class="col-sm-5">
           <h3>${_('libvirt image')}</h3>
@@ -729,7 +729,7 @@
         <!-- EC2 images Tablet -->
         <div class="white">
           <div class="col-sm-3">
-          <img src="/static/images/cloud.png" />
+          <img src="${path}/static/images/cloud.png" />
           </div>
           <div class="col-sm-5">
           <h3>${_('x86_64 AMIs')}</h3>
@@ -766,7 +766,7 @@
         </div>
         <div class="white">
           <div class="col-sm-3">
-          <img src="/static/images/cloud.png" />
+          <img src="${path}/static/images/cloud.png" />
           </div>
           <div class="col-sm-5">
           <h3>${_('aarch64 AMIs')}</h3>
@@ -825,7 +825,7 @@
         <div class="col-md-9">
           <div class="white">
             <div class="col-md-1">
-            <img src="/static/images/ev.png" />
+            <img src="${path}/static/images/ev.png" />
             </div>
             <div class="col-md-4">
             <h3>${_('Everything 64-bit')}</h3>
@@ -839,7 +839,7 @@
           </div>
           <!--<div class="white">
             <div class="col-md-1">
-            <img src="/static/images/ev.png" />
+            <img src="${path}/static/images/ev.png" />
             </div>
             <div class="col-md-4">
             <h3>${_('Everything 32-bit')}</h3>
@@ -872,7 +872,7 @@
       <div class="row">
         <div class="white">
           <div class="col-xs-3">
-          <img src="/static/images/ev.png" />
+          <img src="${path}/static/images/ev.png" />
           </div>
           <div class="col-xs-9">
           <h3>${_('Everything 64-bit')}</h3>
@@ -881,7 +881,7 @@
         </div>
         <!--<div class="white">
           <div class="col-xs-3">
-          <img src="/static/images/ev.png" />
+          <img src="${path}/static/images/ev.png" />
           </div>
           <div class="col-xs-9">
           <h3>${_('Everything 32-bit')}</h3>
@@ -908,7 +908,7 @@
       <div class="row">
         <div class="white">
           <div class="col-sm-3">
-          <img src="/static/images/ev.png" />
+          <img src="${path}/static/images/ev.png" />
           </div>
           <div class="col-sm-5">
           <h3>${_('Everything 64-bit')}</h3>
@@ -920,7 +920,7 @@
 	<!--
         <div class="white">
           <div class="col-sm-3">
-          <img src="/static/images/ev.png" />
+          <img src="${path}/static/images/ev.png" />
           </div>
           <div class="col-sm-5">
           <h3>${_('Everything 32-bit')}</h3>
