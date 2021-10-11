@@ -222,7 +222,7 @@
       <div class="row">
         <div class="col-xs-12 text-left bottom-margin">
           <h3>${Markup(_('Verify your Download!'))}</h3>
-          <p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="../../%s/verify"&gt;these instructions&lt;/a&gt;.') % (lang))}</p>
+          <p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="%s/%s/verify"&gt;these instructions&lt;/a&gt;.') % (path, lang))}</p>
           <div class="row bottom-margin">
             <div class="col-sm-4 col-xs-12">
               <a class="btn btn-default btn-topmargin" href="https://getfedora.org/static/checksums/Fedora-Labs-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_pre_gold']}-x86_64-CHECKSUM">${_('Verify 64bit!')}</a>
