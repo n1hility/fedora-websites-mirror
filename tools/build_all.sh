@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sites=()
+# BUILD_ENV = stg or prod 
 
 # Sites to build
 sites+=(alt.fedoraproject.org)
@@ -11,21 +12,40 @@ sites+=(labs.fedoraproject.org)
 sites+=(spins.fedoraproject.org)
 sites+=(start.fedoraproject.org)
 
-[ -d out ] && rm -Rf out
-mkdir  out
+[ -z "$OUTPUT" ] && OUTPUT="$(pwd)/out"
+[ ! -d $OUTPUT ] && mkdir $OUTPUT
 for site in ${sites[@]}; do
+  (
+  set -e
   echo
-  echo "************ Building $site ***************"
+  echo "**** Building $BUILD_ENV $site to ${OUTPUT}/${site} ****"
   pushd $site
-  make BASEPATH=/$site en 2>&1 | tee build.log
-  if [ $? -ne 0 ]; then
-    echo "!! Build Failed for $site !!"
-    rm -Rf out
-    mkdir out
+  if [ -z "$BUILD_ENV" ]; then
+    # local build or in CI
+    make BASEPATH=/$site en 2>&1 | tee ${OUTPUT}/${site}.log
+    sed "s|@SITE@|$site|" ../.ci/htaccess.in > out/.htaccess
+  else
+    # stg or prod build
+    make pullpos
+    make
+    [ -d ${OUTPUT}/${site}.new ] && rm -rf ${OUTPUT}/${site}.new
+    [ -d ${OUTPUT}/${site}.old ] && rm -rf ${OUTPUT}/${site}.old
   fi
-  mv build.log out/
-  sed "s|@SITE@|$site|" ../.ci/htaccess.in > out/.htaccess
-  rm -Rf ../out/$site
-  mv out ../out/$site
+
+  date +%s > out/build.timestamp
+  git rev-parse HEAD > out/build.commit
+  mv out ${OUTPUT}/${site}.new
+
+  # Final quick move
+  [ -d ${OUTPUT}/$site ] && mv ${OUTPUT}/$site ${OUTPUT}/${site}.old
+  mv ${OUTPUT}/${site}.new ${OUTPUT}/$site
+
+  # cleaning
+  rm -Rf ${OUTPUT}/${site}.old
+  rm -f  ${OUTPUT}/${site}.log
+
   popd
+  )
 done
+echo "Completed"
+
