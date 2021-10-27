@@ -1,0 +1,15 @@
+= Creating A New Site
+Rick Elrod
+:page-authors: {author}
+
+In rare cases, you might need to create an entirely new site, rather than an
+edition or page on getfedora.org.
+
+In a future world, this document will help you do so.
+
+For this to happen effectively, we'll need to abstract some things out from the
+current getfedora.org work.
+
+But familiarizing yourself with link:https://flask.palletsprojects.com/[Flask]
+and link:https://pythonhosted.org/Frozen-Flask/[Frozen-Flask] is a good starting
+point, as we plan for all of our websites to build using this toolset.

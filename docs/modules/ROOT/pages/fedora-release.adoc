@@ -1,0 +1,126 @@
+= Fedora Release
+Rick Elrod
+:page-authors: {author}
+
+== Introduction
+
+[NOTE]
+====
+This assume you have a working setup already. See the other documents (e.g. the
+one using Docker to get a development environment working) to get set up. Also,
+if using a container-based environment, *ensure that the image you're using
+reflects the latest `Dockerfile` in the root of the repository.*
+====
+
+This document guides you through updating the websites for a release (beta or
+GA) of Fedora.
+
+Most of the work comes down to editing one file,
+`sites/getfedora.org/release.yaml`. What follows are the important points to
+note.
+
+The `release.yaml` file is broken into several main sections, and the relevant
+ones are `ga`, `beta`, `fmw`, and `gpg_keys`.
+
+[NOTE]
+====
+Pushing to the `staging` branch will update https://stg.getfedora.org/, which
+pushing to the `master` branch will update https://getfedora.org/.
+====
+
+=== Beta Releases
+
+If you are updating for a *beta* release, then you are free to leave the `ga`
+section alone.
+
+In the `beta` section, you'll want `show` to be `true`. This toggles whether we
+show the beta download links at all. It also changes the banner at the top of
+the website to announce the beta instead of the previous GA release. The
+`announcement_release_number` dictates which version number is shown in that
+announcement, so you'll want to bump it to the beta version being released.
+
+Next you'll want to edit the `editions` section, still under the `beta` parent
+section. Bump the `release_number` and set the `rc_version` to the RC that was
+called gold/ready for release. Find this information out from releng, if
+necessary.
+
+== GA Releases
+
+If you are updating for a *ga* release, then in the `beta` section, set `show`
+to `false`, so that the beta downloads don't show, and the announcement at the
+top of the landing site reflects the new GA. Check with someone (usually Paul
+Frields (`stickster` on IRC) to find the URL of the Fedora Magazine announcement
+for the release, and set `announcement_url` to that, in the `ga` section.
+
+Next, bump the `release_number` and `rc_version` of each edition under
+`editions`, using the `rc_version` that was declared gold/ready for
+release. Find this information out from releng, if necessary.
+
+== `releases.json` file
+
+The next step is to produce the `releases.json` static file used by Fedora Media
+Writer to produce its list of possible downloads. In the `fmw` section of
+`release.yaml`, update the `releases_json` list to include the current non-EOL
+versions of Fedora, including any current betas. If a version is in beta, set
+the its `milestone` to `beta`. Otherwise set it to `final` or leave out the
+field altogether.
+
+For example:
+
+[source,yaml]
+----
+fmw:
+  ...
+  releases_json:
+    - version: 31
+      milestone: beta
+    - version: 30
+    - version: 29
+----
+
+Once this is done, you'll need to actually generate the `releases.json` file.
+
+If using a containerized environment, you can do this from the root of the
+repository (replacing `sudo docker` with `podman` if you use Podman):
+
+[source,bash]
+----
+sudo docker run -it --rm -v "$(pwd):/opt/:z" fedora-websites python ./scripts/releases-json.py > sites/getfedora.org/static/releases.json
+----
+
+Otherwise, if you're not using a containerized environment, you can run the
+script yourself after installing the `python-fedfind` package. From the root of
+the repository:
+
+[source,bash]
+----
+python3 sites/getfedora.org/scripts/releases-json.py > sites/getfedora.org/static/releases.json
+----
+
+Check that releases.json looks sane (it should look like a blob of JSON), then
+move on.
+
+== Checksum Files
+
+You'll need to import the checksum files into
+`sites/getfedora.org/static/checksums/`. To find out which checksums you need to
+import, you can simply do a build of getfedora.org, and it will error out and
+tell you what is missing. This is by design to ensure we don't miss a checksum
+file.
+
+== GPG Keys
+
+Lastly, you'll want to add the latest GPG key information to `gpg_keys` in
+`release.yaml`. Follow the pattern that is already there, and move any now-EOL
+releases into the `obsolete` subsection.
+
+Import any new GPG keys into `sites/getfedora.org/static/keys/`, naming the file
+`[short key id].txt` e.g. `57BBCCBA.txt`.
+
+== Conclusion
+
+That should be all. The old sites (namely spins, labs, alt, arm) which haven't
+been ported to the new system need to be updated separately and are beyond the
+scope of this document.
+
+Commit your changes, and they should auto-deploy within two hours at most.

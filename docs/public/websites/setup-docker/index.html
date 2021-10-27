@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Set Up (using Docker) :: Fedora Websites</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar" style="">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">
+        <img src="../../_/img/docs_logo.png" style="height:40px">
+      </a>
+      <!-- We don't have anything in the menu, but the burger still appears
+           on mobile devices. So let's remove it. -->
+      <!--<button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>-->
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="websites" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">Fedora Websites</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="./">Getting Set Up (Docker)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../setup/">Getting Set Up (old method)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../fedora-release/">Fedora Beta/GA Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../newcontent/">Creating New Content</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../newcontent-edition/">New Edition</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../newcontent-site/">New Site</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../team/">W&amp;A Team Docs</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../team/meetings/">Guide to W&amp;A meetings</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Fedora Websites</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Fedora Websites</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  
+  <ul>
+      <li class="crumb HO"><a href="../">Home</a></li>
+    <li class="crumb HO"><a href="../">Fedora Websites</a></li>
+    <li class="crumb HA"><a href="./">Getting Set Up (Docker)</a></li>
+  </ul>
+  
+</nav>
+</div>
+<article class="doc">
+<h1>Getting Set Up (using Docker)</h1>
+<div class="sect1">
+<h2 id="_preliminary_notes"><a class="anchor" href="#_preliminary_notes"></a>Preliminary Notes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>It is now easier to get started on developing the Fedora Websites with the use
+of Docker (or Podman).</p>
+</div>
+<div class="paragraph">
+<p>We ship a <code>Dockerfile</code> which will install dependencies into an image
+for you, so all you are left to do is mount the site as a volume, pull
+translations, and start the development server.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The documentation here refers to <code>docker</code>, but our fairly simple use
+of it means that things are likely to work with <code>podman</code> with little
+modification.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_building_the_container_image"><a class="anchor" href="#_building_the_container_image"></a>Building the container image</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>First clone the repository:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">git clone https://pagure.io/fedora-web/websites.git</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(You may instead clone your fork of it, or add your fork as a second
+remote later on.)</p>
+</div>
+<div class="paragraph">
+<p>Now ensure Docker is running and run:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sudo docker build -t fedora-websites .</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This will generate a container image for you to use.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pulling_translations"><a class="anchor" href="#_pulling_translations"></a>Pulling translations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We have a script for pulling translations. Let&#8217;s call it from within
+the container:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sudo docker run -it --rm -v "$(pwd):/opt/:z" fedora-websites ./scripts/pull-translations.sh</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Notice here that we are mounting a volume (<code>-v</code>) in Docker which
+points to our check-out of the repository. We&#8217;re referring to the
+<code>fedora-websites</code> image created above, and calling the
+<code>./scripts/pull-translations.sh</code> script from within it.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_running_the_development_server"><a class="anchor" href="#_running_the_development_server"></a>Running the development server</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Now we are ready to run the development server:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sudo docker run -it --rm -v "$(pwd):/opt/:z" -p 5000:5000 fedora-websites flask run --reload --host 0.0.0.0</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note that we need <code>-p 5000:5000</code> so that we can access the development
+server from our actual host. Also notice that we need to tell Flask to
+listen on <code>0.0.0.0</code> as by default it listens on <code>127.0.0.1</code> which
+won&#8217;t be accessible outside of the container.</p>
+</div>
+<div class="paragraph">
+<p>You may now go to <code><a href="http://localhost:5000/" class="bare">http://localhost:5000/</a></code> in your browser of choice.</p>
+</div>
+<div class="paragraph">
+<p>Now you are ready to go and any changes you make in the repository
+should be reflected immediately upon refreshing the page in your
+browser.</p>
+</div>
+</div>
+</div>
+</article>
+<div id="contributing">
+    <h3>These nice people helped write this page:</h3>
+    <p class="contributors">Rick Elrod</p>
+    <p class="contribute">Want to help? <a href="https://docs.fedoraproject.org/en-US/fedora-docs/contributing/">Learn how to contribute to Fedora Docs.</a></p>
+</div>  </main>
+</div>
+<footer class="footer">
+  <p>All Fedora Documentation content available under <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0</a> or, when specifically noted, under another <a href="https://fedoraproject.org/wiki/Licensing:Main">accepted</a> free and open content license.</p>
+  <p>Last build: </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

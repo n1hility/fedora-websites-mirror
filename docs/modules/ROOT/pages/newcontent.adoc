@@ -1,0 +1,23 @@
+= Creating New Content
+Rick Elrod
+:page-authors: {author}
+
+Content can be broken into several different components, although some of the
+process is the same for all cases.
+
+All new sites are being built with the Python link:http://flask.pocoo.org/[Flask]
+framework and the link:https://pythonhosted.org/Frozen-Flask/[Frozen-Flask] library
+for generating static pages.
+
+== New Editions
+
+New editions of Fedora should be added to the getfedora.org website. We are
+trying to get away from having a bunch of `*.fedoraproject.org` sites for each
+of the various editions (currently we have link:https://coreos.fedoraproject.org[],
+link:https://iot.fedoraproject.org[], etc.).
+
+== New Websites
+
+There are cases, however, where the content being added is *not* a new edition,
+and is deserving of having its own distinct website, separate from
+getfedora.org. These cases should probably be somewhat rare.

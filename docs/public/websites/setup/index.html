@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Set Up :: Fedora Websites</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar" style="">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">
+        <img src="../../_/img/docs_logo.png" style="height:40px">
+      </a>
+      <!-- We don't have anything in the menu, but the burger still appears
+           on mobile devices. So let's remove it. -->
+      <!--<button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>-->
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="websites" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">Fedora Websites</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../setup-docker/">Getting Set Up (Docker)</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="./">Getting Set Up (old method)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../fedora-release/">Fedora Beta/GA Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../newcontent/">Creating New Content</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../newcontent-edition/">New Edition</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../newcontent-site/">New Site</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../team/">W&amp;A Team Docs</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../team/meetings/">Guide to W&amp;A meetings</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Fedora Websites</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Fedora Websites</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  
+  <ul>
+      <li class="crumb HO"><a href="../">Home</a></li>
+    <li class="crumb HO"><a href="../">Fedora Websites</a></li>
+    <li class="crumb HA"><a href="./">Getting Set Up (old method)</a></li>
+  </ul>
+  
+</nav>
+</div>
+<article class="doc">
+<h1>Getting Set Up</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>We now have documentation on using the <code>Dockerfile</code> which ships in the Fedora
+websites repository, and suggest trying that method before using the method
+outlined on this page. See <a href="../setup-docker">this tutorial</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_preliminary_notes"><a class="anchor" href="#_preliminary_notes"></a>Preliminary Notes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are some open tickets (<a href="https://pagure.io/fedora-web/websites/issue/31">31</a>,
+<a href="https://pagure.io/fedora-web/websites/issue/11">11</a>) about getting the websites
+repository building on Fedora with Python 3.</p>
+</div>
+<div class="paragraph">
+<p>However, it should be able to be built on Fedora 30, using Python 2 packages,
+for now.</p>
+</div>
+<div class="sect2">
+<h3 id="_fedora_29_alternative"><a class="anchor" href="#_fedora_29_alternative"></a>Fedora 29 Alternative</h3>
+<div class="paragraph">
+<p>Note, the dependencies below may not currently resolve due to package renaming
+in Fedora 30. If the dependencies do not resolve in Fedora 30, running Flask
+from a Fedora 29 container is an alternative. An example to run the Fedora 29
+container using <code>podman</code> is as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code># Expose the default port for Flask, 5000.
+podman run --expose 5000 --net=host --privileged -v /path/to/websites/repo:/path/to/websites/repo -ti registry.fedoraproject.org/fedora:29</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dependencies"><a class="anchor" href="#_dependencies"></a>Dependencies</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>That said, assuming Fedora 30, install the dependencies as follows
+<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">dnf install \
+        git \
+        python-flask \
+        python-frozen-flask \
+        python-flask-assets \
+        python-rjsmin \
+        python-cssmin \
+        python-flask-babel \
+        python-flask-htmlmin \
+        python-cssutils \
+        rubygem-sass \
+        babel \
+        python3-jinja2 \
+        python-pyyaml \
+        python-dateutil \
+        python-dogpile-cache \
+        python-requests \
+        python-zanata-client</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pull_strings"><a class="anchor" href="#_pull_strings"></a>Pull Strings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Now we need to pull the current translations. After installing the dependencies
+above, you can <code>cd</code> into <code>sites/getfedora.org/</code> and run:
+<code>./scripts/pull-translations.sh</code>.</p>
+</div>
+<div class="paragraph">
+<p>Once the dependencies are installed and translations are pulled, you can do one
+of two things:</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_use_the_development_server"><a class="anchor" href="#_use_the_development_server"></a>Use the Development Server</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>One option is to use the Flask built-in development server. This is handy
+because it prevents you from needing to build the websites every time you change
+something. However, it bypasses the Frozen-Flask system which creates are static
+sites, entirely, so it&#8217;s not entirely an accurate representation of what goes
+live.</p>
+</div>
+<div class="paragraph">
+<p>To use the development server:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">export FLASK_APP=main.py
+flask run --reload</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now you many visit <a href="http://localhost:5000/" class="bare">http://localhost:5000/</a> to get to the site.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_use_apache"><a class="anchor" href="#_use_apache"></a>Use Apache</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Alternatively, you may simply run <code>python main.py</code>. You&#8217;ll get a statically
+built site in the <code>./build/</code> directory. However, the HTML files are all
+language-code-suffixed as Apache/httpd MultiViews system expects
+(e.g. <code>index.html.en</code>). As a result you <strong>cannot</strong> just run a simple HTTP server
+(like <code>python -m SimpleHTTPServer</code>) in the <code>./build/</code> directory, unfortunately.</p>
+</div>
+<div class="paragraph">
+<p>You can, however, set up an Apache on your system, and point it to the
+<code>./build/</code> directory.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>(We should probably add an example Apache config here at some point).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. This list comes directly from the Fedora Infrastructure OpenShift build for Websites found <a href="https://infrastructure.fedoraproject.org/cgit/ansible.git/tree/roles/openshift-apps/websites/templates/buildconfig.yml">here</a>.
+</div>
+</div>
+</article>
+<div id="contributing">
+    <h3>These nice people helped write this page:</h3>
+    <p class="contributors">Rick Elrod</p>
+    <p class="contribute">Want to help? <a href="https://docs.fedoraproject.org/en-US/fedora-docs/contributing/">Learn how to contribute to Fedora Docs.</a></p>
+</div>  </main>
+</div>
+<footer class="footer">
+  <p>All Fedora Documentation content available under <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0</a> or, when specifically noted, under another <a href="https://fedoraproject.org/wiki/Licensing:Main">accepted</a> free and open content license.</p>
+  <p>Last build: </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

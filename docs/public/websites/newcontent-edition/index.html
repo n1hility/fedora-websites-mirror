@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Edition :: Fedora Websites</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar" style="">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">
+        <img src="../../_/img/docs_logo.png" style="height:40px">
+      </a>
+      <!-- We don't have anything in the menu, but the burger still appears
+           on mobile devices. So let's remove it. -->
+      <!--<button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>-->
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="websites" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">Fedora Websites</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../setup-docker/">Getting Set Up (Docker)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../setup/">Getting Set Up (old method)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../fedora-release/">Fedora Beta/GA Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../newcontent/">Creating New Content</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="./">New Edition</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../newcontent-site/">New Site</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../team/">W&amp;A Team Docs</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../team/meetings/">Guide to W&amp;A meetings</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Fedora Websites</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Fedora Websites</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  
+  <ul>
+      <li class="crumb HO"><a href="../">Home</a></li>
+    <li class="crumb HO"><a href="../">Fedora Websites</a></li>
+    <li class="crumb HA"><a href="../newcontent/">Creating New Content</a></li>
+    <li class="crumb HA"><a href="./">New Edition</a></li>
+  </ul>
+  
+</nav>
+</div>
+<article class="doc">
+<h1>New Edition</h1>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Fedora editions are "versions" of Fedora that users can install. These include
+"official" editions (Workstation and Server at time of writing), but the
+ultimate goal in Websites is to also make Spins and Labs editions be considered
+"editions" in some form as far as websites are concerned. That is to say, we&#8217;d
+like to ultimately have Spins and Labs have a section on the main getfedora.org
+site, rendering <a href="https://spins.fedorparoject.org/" class="bare">https://spins.fedorparoject.org/</a> and
+<a href="https://labs.fedoraproject.org/" class="bare">https://labs.fedoraproject.org/</a> useless and able to be gotten rid of.
+Doing this effectively will take some time.</p>
+</div>
+<div class="paragraph">
+<p>Also note that most of the content in this document applies to adding pages in
+general, with the notable exception of the <code>release.yaml</code> edits. Adding a page
+to getfedora.org should follow largely the same process, though.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>All new editions should be added to getfedora.org, to aid in our goal of getting
+rid of all of the <code>*.fedoraproject.org</code> edition-specific subdomain sites. This
+generates a more consistent and less confusing user experience and makes
+maintenance of the websites easier going forward. Everything in this document
+assumes that you are working with the getfedora.org codebase, and NOT creating a
+new site from scratch.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Now then, all work in this document takes place in the repository in which
+<a href="https://pagure.io/fedora-web/websites/">getfedora.org</a> lives, and particularly
+in the <code>sites/getfedora.org/</code> directory.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_edition_specific_release_variables"><a class="anchor" href="#_edition_specific_release_variables"></a>Edition-specific Release Variables</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The first step is to edit <code>release.yaml</code>, and add the relevant sections under
+<code>ga</code> and <code>beta</code> for your new edition. Use <code>workstation</code> and <code>server</code> as
+templates. You might not need all variables that these existing sections have,
+or you might need to add new ones, depending on your templates, but these blocks
+should get you started.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exporting_the_edition_routes"><a class="anchor" href="#_exporting_the_edition_routes"></a>Exporting the Edition Routes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Now, open <code>main.py</code> and go to near the bottom, where you&#8217;ll note a number of
+<code>export_route(&#8230;&#8203;)</code> calls. This method is a custom method defined earlier in the
+file, which does a little bit of work for us: The first argument is an internal
+identifier name, so that we can reference the page using <code>url_for</code> safely (if
+the URL changes, so will the URLs that get generated by <code>url_for</code>). The second
+argument is a path to the directory that contains the templates you&#8217;ll make, but
+with a preceding and trailing <code>/</code>. Follow the example of the other, currently
+existing pages and add the appropriate <code>export_route</code> calls at the end.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hacking_the_templates"><a class="anchor" href="#_hacking_the_templates"></a>Hacking the Templates</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The templates themselves live in the <code>sites</code> directory (under
+<code>sites/getfedora.org/</code> still). There are already templates started (but not
+currently exported in <code>main.py</code>) for <code>silverblue</code>, <code>coreos</code>, and <code>iot</code>, at time
+of writing.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Every string you add <strong>must</strong> be enclosed in <code>{% trans %}</code> &#8230;&#8203; <code>{% endtrans %}</code>
+blocks so that it can be translated. If the string spans multiple lines (we tend
+to break at 80 characters but are fairly lenient about this), then the opening
+block should instead be <code>{% trans trimmed %}</code> (the closing block is still just
+<code>{% endtrans %}</code>).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>You can copy the templates from the existing editions, if you need inspiration
+or help.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_letting_the_translators_do_their_thing"><a class="anchor" href="#_letting_the_translators_do_their_thing"></a>Letting the Translators Do Their Thing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once the above is done, the next step is get all the strings in the hands of the
+Fedora Translations team. If you have an account on Fedora&#8217;s Zanata instance,
+and are in the appropriate websites group on Zanata, and have a valid
+<code>~/.config/zanata.ini</code> file, you can do this step yourself. Otherwise you&#8217;ll
+either need to be added to the appropriate team or have someone do this for you:</p>
+</div>
+<div class="paragraph">
+<p>Run <code>./scripts/translations-source.sh</code>. At the end of its output, it will give
+you the Zanata command to push the strings up: <code>zanata push getfedora.org.pot</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_concluding"><a class="anchor" href="#_concluding"></a>Concluding</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Largely, that is it. You&#8217;ve added variables that are easy to update each release
+(in <code>release.yaml</code>), you&#8217;ve exported the pages, written your templates in a
+translatable way, and pushed those strings to the Translations team. Now you can
+sit back and relax while the translators do their thing. Their translations will
+go live immediately (well, within an hour) and automatically.</p>
+</div>
+</div>
+</div>
+</article>
+<div id="contributing">
+    <h3>These nice people helped write this page:</h3>
+    <p class="contributors">Rick Elrod</p>
+    <p class="contribute">Want to help? <a href="https://docs.fedoraproject.org/en-US/fedora-docs/contributing/">Learn how to contribute to Fedora Docs.</a></p>
+</div>  </main>
+</div>
+<footer class="footer">
+  <p>All Fedora Documentation content available under <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0</a> or, when specifically noted, under another <a href="https://fedoraproject.org/wiki/Licensing:Main">accepted</a> free and open content license.</p>
+  <p>Last build: </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

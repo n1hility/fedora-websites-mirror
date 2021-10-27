@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation flow (for Fedora websites) :: Fedora Websites</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar" style="">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">
+        <img src="../../_/img/docs_logo.png" style="height:40px">
+      </a>
+      <!-- We don't have anything in the menu, but the burger still appears
+           on mobile devices. So let's remove it. -->
+      <!--<button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>-->
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="websites" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">Fedora Websites</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../setup-docker/">Getting Set Up (Docker)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../setup/">Getting Set Up (old method)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../fedora-release/">Fedora Beta/GA Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../newcontent/">Creating New Content</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../newcontent-edition/">New Edition</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../newcontent-site/">New Site</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../team/">W&amp;A Team Docs</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../team/meetings/">Guide to W&amp;A meetings</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Fedora Websites</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Fedora Websites</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  
+  <ul>
+      <li class="crumb HO"><a href="../">Home</a></li>
+    <li class="crumb HO"><a href="../">Fedora Websites</a></li>
+    <li class="crumb HA"><a href="./">Translation flow (for Fedora websites)</a></li>
+  </ul>
+  
+</nav>
+</div>
+<article class="doc">
+<h1>Translation flow (for Fedora websites)</h1>
+<div class="sect1">
+<h2 id="_general"><a class="anchor" href="#_general"></a>General</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Fedora websites can be viewed in many languages. This page gives some details on how this happens.</p>
+</div>
+<div class="sect2">
+<h3 id="_tagging_text"><a class="anchor" href="#_tagging_text"></a>Tagging text</h3>
+<div class="paragraph">
+<p>System needs to be told what strings needs to be translated.
+Generally every text inside web page should be surrounded with tags:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">{% trans trimmed %}Translate this text.{% endtrans %}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_generating_pot_file"><a class="anchor" href="#_generating_pot_file"></a>Generating pot file</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>First we need to pull all translatable strings into a file called getfedora.org.pot</p>
+</div>
+<div class="paragraph">
+<p>This file is generated by running:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">podman run -it --rm -v "$(pwd):/opt/:z" fedora-websites ./scripts/translations-source.sh</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This file needs to be sent to <a href="https://pagure.io/fedora-web/translations">translations repository</a></p>
+</div>
+<div class="paragraph">
+<p>If you don&#8217;t have access to the translations repository push it to fedora-websites and create a pull request and once approved it should be automatically sent to translations repository with 24 hours.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_weblate_process_how_strings_get_translated"><a class="anchor" href="#_weblate_process_how_strings_get_translated"></a>Weblate process (How strings get translated)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once getfedora.org.pot file is in the translations repository it will be pulled by Weblate system and merged into translatable strings.  It can then be translated by translators.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_manual_testing"><a class="anchor" href="#_manual_testing"></a>Manual testing</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Any translations made here will not get propagated to the weblate of final versions of the page.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>You can test the changes manually by:</p>
+</div>
+<div class="paragraph">
+<p>1)
+Update strings to the language files</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">podman run -it --rm -v "$(pwd):/opt/:z" fedora-websites ./scripts/translations-update-local.sh</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now edit desired language file, for example</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">nano sites/getfedora.org/translations/fi/LC_MESSAGES/messages.po</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Find the string you want to test, format inside file is:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>`#: partials/templates/download_card.html:13`   Location(s) of string.
+`msgid "Download"`   Text in english.
+`msgstr "Lataa"`     Text in desired language.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Edit the <code>msgstr</code></p>
+</div>
+<div class="paragraph">
+<p>Once edited translations need to be compiled into more efficient format for the web server. This is done by running:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">podman run -it --rm -v "$(pwd):/opt/:z" fedora-websites ./scripts/translations-compile-local.sh</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can now change your browser setting to desired language and see how the translations are working out.</p>
+</div>
+<hr>
+<div class="sect2">
+<h3 id="_description_of_translation_scripts_inside_sitesgetfedora_orgscripts"><a class="anchor" href="#_description_of_translation_scripts_inside_sitesgetfedora_orgscripts"></a>Description of translation scripts inside sites/getfedora.org/scripts</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Technically scripts can be run without using podman, but will then require proper setup in the local machine. The instructions given above are safer for generic users.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="contributing">
+    <h3>These nice people helped write this page:</h3>
+    <p class="contributors">Jan Kuparinen</p>
+    <p class="contribute">Want to help? <a href="https://docs.fedoraproject.org/en-US/fedora-docs/contributing/">Learn how to contribute to Fedora Docs.</a></p>
+</div>  </main>
+</div>
+<footer class="footer">
+  <p>All Fedora Documentation content available under <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0</a> or, when specifically noted, under another <a href="https://fedoraproject.org/wiki/Licensing:Main">accepted</a> free and open content license.</p>
+  <p>Last build: </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

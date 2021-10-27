@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fedora Release :: Fedora Websites</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar" style="">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../..">
+        <img src="../../_/img/docs_logo.png" style="height:40px">
+      </a>
+      <!-- We don't have anything in the menu, but the burger still appears
+           on mobile devices. So let's remove it. -->
+      <!--<button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>-->
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="websites" data-version="master">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../">Fedora Websites</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../setup-docker/">Getting Set Up (Docker)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../setup/">Getting Set Up (old method)</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="./">Fedora Beta/GA Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../newcontent/">Creating New Content</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../newcontent-edition/">New Edition</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../newcontent-site/">New Site</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../team/">W&amp;A Team Docs</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../team/meetings/">Guide to W&amp;A meetings</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Fedora Websites</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Fedora Websites</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  
+  <ul>
+      <li class="crumb HO"><a href="../">Home</a></li>
+    <li class="crumb HO"><a href="../">Fedora Websites</a></li>
+    <li class="crumb HA"><a href="./">Fedora Beta/GA Release</a></li>
+  </ul>
+  
+</nav>
+</div>
+<article class="doc">
+<h1>Fedora Release</h1>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This assume you have a working setup already. See the other documents (e.g. the
+one using Docker to get a development environment working) to get set up. Also,
+if using a container-based environment, <strong>ensure that the image you&#8217;re using
+reflects the latest <code>Dockerfile</code> in the root of the repository.</strong></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>This document guides you through updating the websites for a release (beta or
+GA) of Fedora.</p>
+</div>
+<div class="paragraph">
+<p>Most of the work comes down to editing one file,
+<code>sites/getfedora.org/release.yaml</code>. What follows are the important points to
+note.</p>
+</div>
+<div class="paragraph">
+<p>The <code>release.yaml</code> file is broken into several main sections, and the relevant
+ones are <code>ga</code>, <code>beta</code>, <code>fmw</code>, and <code>gpg_keys</code>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Pushing to the <code>staging</code> branch will update <a href="https://stg.getfedora.org/" class="bare">https://stg.getfedora.org/</a>, which
+pushing to the <code>master</code> branch will update <a href="https://getfedora.org/" class="bare">https://getfedora.org/</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_beta_releases"><a class="anchor" href="#_beta_releases"></a>Beta Releases</h3>
+<div class="paragraph">
+<p>If you are updating for a <strong>beta</strong> release, then you are free to leave the <code>ga</code>
+section alone.</p>
+</div>
+<div class="paragraph">
+<p>In the <code>beta</code> section, you&#8217;ll want <code>show</code> to be <code>true</code>. This toggles whether we
+show the beta download links at all. It also changes the banner at the top of
+the website to announce the beta instead of the previous GA release. The
+<code>announcement_release_number</code> dictates which version number is shown in that
+announcement, so you&#8217;ll want to bump it to the beta version being released.</p>
+</div>
+<div class="paragraph">
+<p>Next you&#8217;ll want to edit the <code>editions</code> section, still under the <code>beta</code> parent
+section. Bump the <code>release_number</code> and set the <code>rc_version</code> to the RC that was
+called gold/ready for release. Find this information out from releng, if
+necessary.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ga_releases"><a class="anchor" href="#_ga_releases"></a>GA Releases</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you are updating for a <strong>ga</strong> release, then in the <code>beta</code> section, set <code>show</code>
+to <code>false</code>, so that the beta downloads don&#8217;t show, and the announcement at the
+top of the landing site reflects the new GA. Check with someone (usually Paul
+Frields (<code>stickster</code> on IRC) to find the URL of the Fedora Magazine announcement
+for the release, and set <code>announcement_url</code> to that, in the <code>ga</code> section.</p>
+</div>
+<div class="paragraph">
+<p>Next, bump the <code>release_number</code> and <code>rc_version</code> of each edition under
+<code>editions</code>, using the <code>rc_version</code> that was declared gold/ready for
+release. Find this information out from releng, if necessary.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_releases_json_file"><a class="anchor" href="#_releases_json_file"></a><code>releases.json</code> file</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The next step is to produce the <code>releases.json</code> static file used by Fedora Media
+Writer to produce its list of possible downloads. In the <code>fmw</code> section of
+<code>release.yaml</code>, update the <code>releases_json</code> list to include the current non-EOL
+versions of Fedora, including any current betas. If a version is in beta, set
+the its <code>milestone</code> to <code>beta</code>. Otherwise set it to <code>final</code> or leave out the
+field altogether.</p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">fmw:
+  ...
+  releases_json:
+    - version: 31
+      milestone: beta
+    - version: 30
+    - version: 29</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once this is done, you&#8217;ll need to actually generate the <code>releases.json</code> file.</p>
+</div>
+<div class="paragraph">
+<p>If using a containerized environment, you can do this from the root of the
+repository (replacing <code>sudo docker</code> with <code>podman</code> if you use Podman):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sudo docker run -it --rm -v "$(pwd):/opt/:z" fedora-websites python ./scripts/releases-json.py &gt; sites/getfedora.org/static/releases.json</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Otherwise, if you&#8217;re not using a containerized environment, you can run the
+script yourself after installing the <code>python-fedfind</code> package. From the root of
+the repository:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">python3 sites/getfedora.org/scripts/releases-json.py &gt; sites/getfedora.org/static/releases.json</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Check that releases.json looks sane (it should look like a blob of JSON), then
+move on.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_checksum_files"><a class="anchor" href="#_checksum_files"></a>Checksum Files</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You&#8217;ll need to import the checksum files into
+<code>sites/getfedora.org/static/checksums/</code>. To find out which checksums you need to
+import, you can simply do a build of getfedora.org, and it will error out and
+tell you what is missing. This is by design to ensure we don&#8217;t miss a checksum
+file.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gpg_keys"><a class="anchor" href="#_gpg_keys"></a>GPG Keys</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Lastly, you&#8217;ll want to add the latest GPG key information to <code>gpg_keys</code> in
+<code>release.yaml</code>. Follow the pattern that is already there, and move any now-EOL
+releases into the <code>obsolete</code> subsection.</p>
+</div>
+<div class="paragraph">
+<p>Import any new GPG keys into <code>sites/getfedora.org/static/keys/</code>, naming the file
+<code>[short key id].txt</code> e.g. <code>57BBCCBA.txt</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion"><a class="anchor" href="#_conclusion"></a>Conclusion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>That should be all. The old sites (namely spins, labs, alt, arm) which haven&#8217;t
+been ported to the new system need to be updated separately and are beyond the
+scope of this document.</p>
+</div>
+<div class="paragraph">
+<p>Commit your changes, and they should auto-deploy within two hours at most.</p>
+</div>
+</div>
+</div>
+</article>
+<div id="contributing">
+    <h3>These nice people helped write this page:</h3>
+    <p class="contributors">Rick Elrod</p>
+    <p class="contribute">Want to help? <a href="https://docs.fedoraproject.org/en-US/fedora-docs/contributing/">Learn how to contribute to Fedora Docs.</a></p>
+</div>  </main>
+</div>
+<footer class="footer">
+  <p>All Fedora Documentation content available under <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0</a> or, when specifically noted, under another <a href="https://fedoraproject.org/wiki/Licensing:Main">accepted</a> free and open content license.</p>
+  <p>Last build: </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>
