@@ -1,0 +1,68 @@
+= Set up your environment (using containers)
+Rick Elrod; Justin W. Flory
+:page-authors: {author}, {author_2}
+:page-aliases: websites::setup-docker.adoc
+
+
+== Preliminary Notes
+
+It is now easier to get started on developing the Fedora Websites with the use of Docker (or Podman).
+
+We ship a `Dockerfile` which will install dependencies into an image for you, so all you are left to do is mount the site as a volume, pull translations, and start the development server.
+
+[NOTE]
+====
+The documentation here refers to `docker`, but our fairly simple use of it means that things are likely to work with `podman` with little modification.
+====
+
+
+== Building the container image
+
+First clone the repository:
+
+[source,bash]
+----
+git clone https://pagure.io/fedora-web/websites.git
+----
+
+(You may instead clone your fork of it, or add your fork as a second remote later on.)
+
+Now ensure Docker is running and run:
+
+[source,bash]
+----
+sudo docker build -t fedora-websites .
+----
+
+This will generate a container image for you to use.
+
+
+== Pulling translations
+
+We have a script for pulling translations.
+Let's call it from within the container:
+
+[source,bash]
+----
+sudo docker run -it --rm -v "$(pwd):/opt/:z" fedora-websites ./scripts/pull-translations.sh
+----
+
+Notice here that we are mounting a volume (`-v`) in Docker which points to our check-out of the repository.
+We're referring to the `fedora-websites` image created above, and calling the `./scripts/pull-translations.sh` script from within it.
+
+
+== Running the development server
+
+Now we are ready to run the development server:
+
+[source,bash]
+----
+sudo docker run -it --rm -v "$(pwd):/opt/:z" -p 5000:5000 fedora-websites flask run --reload --host 0.0.0.0
+----
+
+Note that we need `-p 5000:5000` so that we can access the development server from our actual host.
+Also notice that we need to tell Flask to listen on `0.0.0.0` as by default it listens on `127.0.0.1` which won't be accessible outside of the container.
+
+You may now go to `http://localhost:5000/` in your browser of choice.
+
+Now you are ready to go and any changes you make in the repository should be reflected immediately upon refreshing the page in your browser.

@@ -1,10 +1,11 @@
 site:
-  title: Fedora Websites
+  title: Fedora Websites & Apps
   start_page: websites::index
 content:
   sources:
    - url: .
      branches: HEAD
+     start_path: docs
 ui:
   bundle:
     url: https://asamalik.fedorapeople.org/ui-bundle.zip

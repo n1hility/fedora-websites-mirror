@@ -12,10 +12,10 @@ from the F24 release cycle.
 History of previous commits is still available in the [old repo on Fedora Hosted](https://git.fedorahosted.org/cgit/fedora-web.git/). **For more information please read the [documentation](https://docs.pagure.org/fedora-websites/) and the [Fedora Websites pages on the Fedora Wiki](https://fedoraproject.org/wiki/Websites)**
 
 ### Contributing
-If you like to help the websites team but are not actually a member, you 
+If you like to help the websites team but are not actually a member, you
 can easily file Pull Requests. Fork this repository, make your changes and
 submit them here. Check of the [Fedora Websites wiki](https://fedoraproject.org/wiki/Websites#Join_the_Websites_Team) for details on how to
-become a member of the websites team. 
+become a member of the websites team.
 
 Translations are handled by the Fedora [localization team](https://fedoraproject.org/wiki/L10N) on [Fedora Weblate](https://translate.stg.fedoraproject.org/projects/fedora-websites/).
 
@@ -29,6 +29,7 @@ This repository contains the sources for the following Fedora Websites:
 * http://arm.fedoraproject.org
 * http://boot.fedoraproject.org
 * http://budget.fedoraproject.org
+* https://docs.fedoraproject.org/en-US/websites/
 * http://fedoracommunity.org
 * http://fedorahosted.org
 * http://fedorapeople.org

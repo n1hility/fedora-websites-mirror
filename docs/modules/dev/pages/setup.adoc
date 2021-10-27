@@ -1,0 +1,97 @@
+= Set up your environment (old way)
+Rick Elrod; Justin W. Flory
+:page-authors: {author}, {author_2}
+:page-aliases: websites::setup.adoc
+
+[NOTE]
+====
+We now have documentation on using the `Dockerfile` which ships in the Fedora websites repository.
+We and trying that method before using the method outlined on this page.
+See xref:setup-containers.adoc[this tutorial].
+====
+
+== Preliminary Notes
+
+There are some open tickets (https://pagure.io/fedora-web/websites/issue/31[31], https://pagure.io/fedora-web/websites/issue/11[11]) about getting the websites repository building on Fedora with Python 3.
+
+However, it should be able to be built on Fedora 30, using Python 2 packages, for now.
+
+=== Fedora 29 Alternative
+
+Note, the dependencies below may not currently resolve due to package renaming in Fedora 30.
+If the dependencies do not resolve in Fedora 30, running Flask from a Fedora 29 container is an alternative.
+An example to run the Fedora 29 container using `podman` is as follows:
+
+[source,bash]
+----
+# Expose the default port for Flask, 5000.
+podman run --expose 5000 --net=host --privileged -v /path/to/websites/repo:/path/to/websites/repo -ti registry.fedoraproject.org/fedora:29
+----
+
+
+== Dependencies
+
+That said, assuming Fedora 30, install the following dependencies.
+Note this list comes directly from the Fedora Infrastructure OpenShift build for Websites found link:https://infrastructure.fedoraproject.org/cgit/ansible.git/tree/roles/openshift-apps/websites/templates/buildconfig.yml[here]:
+
+[source,bash]
+----
+dnf install \
+        git \
+        python-flask \
+        python-frozen-flask \
+        python-flask-assets \
+        python-rjsmin \
+        python-cssmin \
+        python-flask-babel \
+        python-flask-htmlmin \
+        python-cssutils \
+        rubygem-sass \
+        babel \
+        python3-jinja2 \
+        python-pyyaml \
+        python-dateutil \
+        python-dogpile-cache \
+        python-requests \
+        python-zanata-client
+----
+
+
+== Pull Strings
+
+Now we need to pull the current translations.
+After installing the dependencies above, you can `cd` into `sites/getfedora.org/` and run:
+`./scripts/pull-translations.sh`.
+
+Once the dependencies are installed and translations are pulled, you can do one of two things:
+
+
+== Use the Development Server
+
+One option is to use the Flask built-in development server.
+This is handy because it prevents you from needing to build the websites every time you change something.
+However, it bypasses the Frozen-Flask system which creates are static sites, entirely, so it's not entirely an accurate representation of what goes live.
+
+To use the development server:
+
+[source,bash]
+----
+export FLASK_APP=main.py
+flask run --reload
+----
+
+Now you many visit http://localhost:5000/ to get to the site.
+
+== Use Apache
+
+Alternatively, you may simply run `python main.py`.
+You'll get a statically built site in the `./build/` directory.
+However, the HTML files are all language-code-suffixed as Apache/httpd MultiViews system expects (e.g. `index.html.en`).
+As a result you *cannot* just run a simple HTTP server (like `python -m SimpleHTTPServer`) in the `./build/` directory, unfortunately.
+
+You can, however, set up an Apache on your system, and point it to the `./build/` directory.
+
+[NOTE]
+====
+We should probably add an example Apache config here at some point.
+====

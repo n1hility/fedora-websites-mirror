@@ -1,43 +1,106 @@
-= Fedora Websites
-Rick Elrod; Ryan Lerch
-:page-authors: {author}, {author_2}
+include::ROOT:partial$attributes.adoc[]
 
-== Who We Are
-The Fedora Websites & Apps team works on the frontend and backend of Fedora's websites and web applications.
-This team is a reboot of the previous Fedora Website's team, created by community members to update and improve Fedora's web presence and online documentation.
+= Fedora Websites & Apps
+Rick Elrod; Ryan Lerch, Justin W. Flory
+:page-authors: {author}, {author_2}, {author_3}
+:toc:
 
-We are a growing team of developers with a range of skills and interests. One of our team's first goals is to set up the foundation of an empowering mentorship program.
+Welcome to the official documentation for the Fedora Websites & Apps Team.
 
-== Our Collaborations
-Working on both websites and web applications, our team is regularly communicating  and working with different stakeholders in Fedora's community.
 
-* We work closely with the link:++https://fedoraproject.org/wiki/Design++[Fedora Design team] to build our websites that are visually pleasing, easy to use, and accessible to everybody.
-* Along with the design team, we also work closely with link:++https://fedoraproject.org/wiki/Infrastructure++[Fedora Infrastructure] on backend technologies.
-* We also collaborate with the link:++https://fedoraproject.org/wiki/L10N++[Fedora Translations team] to ensure that websites are able to be translated into different languages.
-* Typically has one member (either in Design or Websites) who sits on the
-  xref:mindshare::index.adoc[Fedora Mindshare committee].
+[[about]]
+== About our team
 
-== What We Do
-The W&A Team updates and maintains the code bases for Fedora's websites and web applications. We collaborate closely with the Fedora Design team and Fedora Infrastructure to implement new designs and update backend code. The W&A team is regularly working on a variety of tasks that are suitable for new and experienced contributors.
+The Fedora Websites & Apps Team improves Fedora's image and creates user-friendly interfaces for users and contributors on the Internet.
+We are a community-led team compromised of contributors from around the world.
+The key goals of the team includes the following activities:
 
-=== Tasks Include:
+* Consolidate key Fedora Project websites into a single uniform scheme.
+* Develop front-end and back-end components of Fedora's online web applications.
+* Maintain content that doesn't fall under any particular sub-project.
+* Generally, making the sites as fun and exciting as the project they represent!
+
+[[about-revamp]]
+=== Websites & Apps Community Revamp Objective
+
+The team was rebooted in 2021 as part of the https://fedoraproject.org/wiki/Objectives/Websites_%26_Apps_Community_Revamp[Websites & Apps Community Revamp Objective].
+We are a growing team of developers with a range of skills and interests.
+This Objective started for a few reasons:
+
+* Better coordination to facilitate a growing interest in Fedora's web presence
+* Involving diverse contributors to take part in a knowledgeable group helping maintain the Fedora Project's websites and apps in line with modern web standards.
+
+
+[[collaborations]]
+== Our collaborations
+
+In order to work in a community with as many diverse projects and stakeholders as the Fedora Project, our team aims to communicate regularly with different community members in Fedora.
+Work on specific websites is coordinated by the appropriate sub-projects and/or project lead(s).
+
+Here is a list of our frequent collaborators:
+
+[[collaborations-fedora]]
+=== Fedora sub-projects
+
+* https://fedoraproject.org/wiki/Design[*Design Team*]:
+  Create designs, wireframes, and other visual content to guide development efforts
+* *Infrastructure*:
+  Support on back-end technologies and hosting official Fedora Project infrastructure.
+* *Localization Team*:
+  Translates strings across Fedora websites and apps into different languages.
+* xref:mindshare::index.adoc[*Mindshare Committee*]:
+  W&A Team holds one seat on the Fedora Mindshare Committee.
+
+[[collaborations-friends]]
+=== Friends of Fedora
+
+* xref:cpe::index.adoc[*Red Hat Community Platform Engineering* (CPE)]:
+  A Red Hat team dedicated to the Fedora and CentOS projects where they contribute to the infrastructure and release engineering.
+* https://www.redhat.com/en/blog/channel/red-hat-open-source-program-office[*Red Hat Open Source Program Office engineers*]:
+  A Red Hat team that supports various Open Source technology initiatives across the Red Hat technology ecosystem.
+
+
+[[work]]
+== Our work
+
+The W&A Team updates and maintains the code bases for Fedora's websites and web applications.
+We work on a variety of tasks suitable for both new and experienced contributors.
+
+[[work-tasks]]
+=== Example tasks
+
 * Adding temporary content to websites
 * Coding design mockups provided by the Design Team
-* Updating server side code
-* Improving language and accessiblity support
+* Updating server-side code
+* Improving language and accessibility support
 * Revamping websites to improve user experience
-* Writing documentation for contributors 
+* Writing documentation for contributors
 
-=== The Web and Apps Team Revamp
-In 2021, the Fedora Websites Team began a revamp into the Fedora Websites & Apps Team. This was was started in order to facilitate the growing interest in Fedora's web presence as well as a need for a knowledgeable group of contributors to focus on keeping Fedora's websites and apps up to date current with modern web standards.
 
-== How To Get Involved
+[[bug]]
+== Report a bug
 
-To get involved with the Fedora W&A team get in touch with us through the email list or by messaging us on Telegram. We are looking for both front and backend contributors of all skill levels. If you are interested in getting active, feel free to check out the open tickets on pagure.
+Find a bug on one of our websites?
+See https://fedoraproject.org/wiki/How_to_fix_bugs_on_the_Fedora_Project_website[these instructions on fixing bugs].
+Otherwise please report them on our https://pagure.io/fedora-websites[Pagure repository].
 
-We also welcome new contributors to our weekly meetings. If you have something that you would like to address, send a message to one of our team leads ahead of time so that we can plan to discuss your topic at an upcomming session.
 
-=== Membership 
+
+[[contact]]
+== Contact us
+
+Have questions or want to know more?
+Get in touch with our team in the following places:
+
+* *Asynchronous*:
+** link:++{COMMS-DISCOURSE}++[Fedora Discussion]
+** link:++{COMMS-LISTSERV}++[Mailing list]
+* *Synchronous*:
+** link:++ircs://{COMMS-IRC-SERVER}:{COMMS-IRC-SERVER-PORT}/{COMMS-IRC}++[IRC]
+** link:++{COMMS-MATRIX}++[Matrix]
+** link:++{COMMS-TELEGRAM}++[Telegram]
+
+== Membership
 
 In order to become a member of the Fedora Website & Apps Team, the applicant must be register at link:++https://accounts.fedoraproject.org++[Fedora Accounts] and set up an account with the link:++https://pagure.io++[Pagure] gitforge.
 
@@ -46,37 +109,21 @@ By becoming a Fedora Contributor, you accept these terms.
 * link:++https://fedoraproject.org/wiki/Legal:Fedora_Project_Contributor_Agreement++[Fedora Project Contributor Agrement (FPCA)]
 * link:++https://docs.fedoraproject.org/en-US/project/code-of-conduct/++[Code of Conduct]
 
-=== Are You New to Web Development?
+== Are You New to Web Development?
 We flag tickets that are suitable for new contributors and those whom are newer to html, css, js, and python. If you aren't sure where to start, or cannot find documentation that you are looking for, get in touch with one of our team members and they will help point you in the right direction.
 
 One of the goals of our revamp is to offer mentorship to those who are new to the field, or just interested in advancing their skills. If you are interested in mentorship, get in touch with one of our admins and they will help connect you with someone for mentorship opportunities.
 
-=== Are you an experienced Web Developer?
+== Are you an experienced Web Developer?
 We often have tickets that demand more advanced knowledge of the technologies in our stack, and as web development is such a fast moving field, we are always interested to work with developers that bring something new to the table. Do you see something that you would like to work on? Please get in touch with us.
 
-== Meetings
-We hold weekly meetings to review tickets and other tasks, touch base on direction, check in with one another, discuss team direction, and plan activities. Feel free to join us and get involved or to come and ask any questions that you have. We are a diverse team that is always looking for new contributors. 
-
-* Location: link:++https://meet.jit.si/fedora-websites-apps-meeting++[Jitsi Room]
-* Day: Tuesdays
-* Time: 15:00 - 16:00 UTC
-
-=== Communication Channels
-The W&A Team has a couple different lines of communication. Get in touch with us in any of the following ways (most being connected together):
-
-* link:++https://t.me/joinchat/hWQIgi7L79k3Nzk5++[Telegram]: Fedora Websites and Apps Telegram Group 
-* link:++https://discussion.fedoraproject.org/c/project/websites/66++[Discussion Forum]: Public Discussion Space
-* link:++https://lists.fedoraproject.org/archives/list/websites@lists.fedoraproject.org/++[Email List]: Announcements, new member introductions
-* link:++https://matrix.to/#/#fedora-websites:matrix.org++[Matrix]: Fedora Websites and Apps Matrix Channel
-* link:++ircs://irc.libera.chat:6697/#fedora-websites++[IRC]: Fedora Websites and App IRC Channel
-
-== Resources
-The W&A Team is made up of people who work on all levels of the tech stack. We value perspectives and experience from all positions of the tech stack. Check out these resources for your own setup. We are always working to expand our instructional material and documentation.
-
-=== Fedora's Website Tech Stacks
+== Fedora's Website Tech Stacks
 * Fedora Community Blog: Wordpress
 * Fedora Websites: Flask, Jinja, HTML, CSS3, JavaScript, Python 3
 * Fedora Docs: Asciidoc
+
+== Resources
+The W&A Team is made up of people who work on all levels of the tech stack. We value perspectives and experience from all positions of the tech stack. Check out these resources for your own setup. We are always working to expand our instructional material and documentation.
 
 === Documentation
 * link:++https://fedoraproject.org/w/uploads/1/19/Websitesandappsrevamp_logicmodel.png++[Fedora Websites Revamp Logic Model]: An overview of the Websites Team revamp
@@ -84,7 +131,7 @@ The W&A Team is made up of people who work on all levels of the tech stack. We v
 * link:++https://developer.fedoraproject.org/tech/languages/python/flask-installation.html++[Fedora Developer Flask]
 * For those interested in php and working with the link:++https://communityblog.fedoraproject.org++[Fedora Community Blog]
 * link:++https://fedoramagazine.org/howto-install-wordpress-fedora/++[Wordpress Local Setup Instructions]: This article will help you setup a local wordpress deployment on Fedora.
-  
+
 == Code Repositories
 * link:++https://pagure.io/fedora-websites++[Fedora Websites]
 * link:++https://pagure.io/fedora-web/websites/++[Fedora Main Website]
