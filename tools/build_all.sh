@@ -17,6 +17,7 @@ sites+=(start.fedoraproject.org)
 for site in ${sites[@]}; do
   (
   set -e
+  set -o pipefail
   echo
   echo "**** Building $BUILD_ENV $site to ${OUTPUT}/${site} ****"
   pushd $site
